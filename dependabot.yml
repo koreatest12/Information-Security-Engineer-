@@ -1,23 +1,60 @@
-# 파일 경로: .github/dependabot.yml
 version: 2
 updates:
+  # ========================================================
   # 1. Python 라이브러리 (pip) 자동 업데이트
+  # ========================================================
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
       interval: "daily"
+      time: "09:00"          # [Upgrade] 한국 시간 기준 아침 9시 실행
+      timezone: "Asia/Seoul" # [Upgrade] 타임존 명시
+    
     open-pull-requests-limit: 10
+    
+    # [Upgrade] 리베이스 전략: 메인 브랜치가 바뀌면 PR도 자동 갱신
+    rebase-strategy: "auto"
+    
+    # [Upgrade] 커밋 메시지 컨벤션 적용 (예: build(deps): bump requests...)
+    commit-message:
+      prefix: "build(deps)"
+      prefix-development: "chore(deps-dev)"
+      include: "scope"
+
     labels:
       - "dependencies"
       - "python"
       - "security"
 
+    # [Upgrade] 그룹화: 자잘한 패치들은 하나의 PR로 묶어서 노이즈 감소
+    groups:
+      python-dependencies:
+        patterns:
+          - "*"  # 모든 패키지를 하나의 그룹으로 묶음 (원치 않으면 특정 패키지 명시 가능)
+
+  # ========================================================
   # 2. GitHub Actions 워크플로우 버전 자동 업데이트
+  # ========================================================
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
+      time: "09:00"
+      timezone: "Asia/Seoul"
+    
     open-pull-requests-limit: 10
+    rebase-strategy: "auto"
+
+    commit-message:
+      prefix: "ci(deps)"
+      include: "scope"
+
     labels:
       - "dependencies"
       - "ci/cd"
+
+    # [Upgrade] Actions 관련 업데이트도 하나로 묶음
+    groups:
+      github-actions:
+        patterns:
+          - "*"
