@@ -1,0 +1,24 @@
+version: 2
+updates:
+  # 1. Python 라이브러리 (pip) 자동 업데이트
+  # requirements.txt 파일을 감시하여 최신 버전이 나오면 PR 생성
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily" # 매일 확인 (보안 패치 즉시 반영)
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "python"
+      - "security"
+
+  # 2. GitHub Actions 워크플로우 버전 자동 업데이트
+  # 예: actions/checkout@v3 -> v4 로 업데이트
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "ci/cd"
