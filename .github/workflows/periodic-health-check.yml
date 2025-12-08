@@ -1,71 +1,152 @@
-name: "⏰ 20-Min Periodic Health Check"
+name: "⏰ 20-Min Health Check & Reporting"
 
 on:
   schedule:
-    - cron: '*/20 * * * *' # 매 20분마다 실행 (0, 20, 40)
-  workflow_dispatch:       # 필요시 수동 실행 가능
+    - cron: '*/20 * * * *' # 매 20분마다 실행
+  workflow_dispatch:       # 수동 실행 가능
+
+permissions:
+  contents: read
+  issues: write            # 실패 시 이슈 생성을 위한 권한 추가
 
 jobs:
-  health-check:
+  health-monitor:
+    name: "🩺 Monitor Services"
     runs-on: ubuntu-latest
+    
+    # 타임아웃 설정 (좀비 프로세스 방지)
+    timeout-minutes: 10
+    
     steps:
-      - name: Checkout Code
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Set up Python 3.10
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-          
-      - name: Install Requests
-        run: pip install requests
+          cache: 'pip' # 패키지 캐싱 추가
 
-      - name: 🩺 Run Health Check Script
+      - name: Install Dependencies
         run: |
-          echo ">>> Starting 20-minute Health Check..."
-          
-          # 파이썬 스크립트를 즉석에서 생성하여 실행
-          cat <<EOF > check_status.py
+          pip install requests pytz
+          # pytz: 시간대 처리를 위해 추가
+
+      - name: 📝 Generate Robust Health Check Script
+        run: |
+          # Python 스크립트 생성 (들여쓰기 문제 해결을 위해 명확한 EOF 사용)
+          cat << 'EOF' > check_status.py
           import requests
           import sys
+          import time
+          from datetime import datetime
+          import pytz
 
-          # 실제 운영 중인 서버 주소 (배포 후 URL로 교체 필요)
-          # 예시로 로컬 테스트용 설정을 가정하거나, 외부 URL을 입력
+          # ---------------------------------------------------------
+          # [설정] 실제 운영 URL은 GitHub Secrets로 관리하는 것이 좋습니다.
+          # 예: os.environ.get("PROD_URL_JAVA", "http://localhost:8080...")
+          # ---------------------------------------------------------
           TARGETS = [
-              {"name": "Java Backend", "url": "http://localhost:8080/actuator/health", "mock": True},
-              {"name": "Python API", "url": "http://localhost:8000/health", "mock": True}
+              {
+                  "name": "Java Backend", 
+                  "url": "http://localhost:8080/actuator/health", 
+                  "mock": True # 배포 후 False로 변경 및 실제 URL 입력
+              },
+              {
+                  "name": "Python API", 
+                  "url": "http://localhost:8000/health", 
+                  "mock": True # 배포 후 False로 변경 및 실제 URL 입력
+              }
           ]
 
-          success = True
-          
-          print(f"{'SERVICE':<15} | {'STATUS':<10} | {'MESSAGE'}")
-          print("-" * 40)
+          # 한국 시간 설정
+          KST = pytz.timezone('Asia/Seoul')
+          now = datetime.now(KST).strftime('%Y-%m-%d %H:%M:%S')
+
+          log_lines = []
+          def log(msg):
+              print(msg)
+              log_lines.append(msg)
+
+          log(f"=== 🩺 Health Check Report [{now}] ===")
+          log(f"{'SERVICE':<20} | {'STATUS':<10} | {'LATENCY':<10} | {'MESSAGE'}")
+          log("-" * 65)
+
+          all_success = True
 
           for target in TARGETS:
+              start_time = time.time()
+              status_code = 0
+              msg = "Unknown"
+              latency = "0ms"
+              is_up = False
+
               try:
-                  # 실제 배포 환경이 아니므로 GitHub Actions에서는 Mock 처리 예시
                   if target["mock"]:
+                      # Mock 테스트 (성공 시뮬레이션)
+                      time.sleep(0.1) 
                       status_code = 200
-                      msg = "Alive (Mock Test)"
+                      msg = "Alive (Mock)"
+                      is_up = True
                   else:
-                      response = requests.get(target["url"], timeout=5)
+                      # 실제 요청 (3초 타임아웃)
+                      response = requests.get(target["url"], timeout=3)
                       status_code = response.status_code
-                      msg = "Alive" if status_code == 200 else f"Error {status_code}"
+                      if status_code == 200:
+                          msg = "Alive"
+                          is_up = True
+                      else:
+                          msg = f"Error {status_code}"
+                          is_up = False
                   
-                  print(f"{target['name']:<15} | {status_code:<10} | {msg}")
-                  
-                  if status_code != 200:
-                      success = False
               except Exception as e:
-                  print(f"{target['name']:<15} | FAIL       | {str(e)}")
-                  success = False
+                  msg = f"Connection Fail: {str(e)[:20]}..."
+                  is_up = False
+              
+              # 레이턴시 계산
+              latency = f"{(time.time() - start_time) * 1000:.2f}ms"
+              
+              # 결과 출력
+              status_str = "✅ UP" if is_up else "❌ DOWN"
+              log(f"{target['name']:<20} | {status_str:<10} | {latency:<10} | {msg}")
 
-          if not success:
-              sys.exit(1) # 실패 시 워크플로우 에러 발생시킴
-          EOF
+              if not is_up:
+                  all_success = False
+
+          # 로그 파일 저장
+          with open("health_report.log", "w", encoding="utf-8") as f:
+              f.write("\n".join(log_lines))
+
+          if not all_success:
+              log("\n!!! CRITICAL: Some services are DOWN !!!")
+              sys.exit(1) # 워크플로우 실패 처리
           
-          python check_status.py
+          log("\n>>> All Systems Operational.")
+          EOF
 
-      - name: 🔔 Notify on Failure (Optional)
+      - name: 🩺 Run Health Check
+        id: run-check
+        run: python check_status.py
+
+      # [추가 기능 1] 점검 결과 로그를 Artifact로 업로드 (성공/실패 상관없이 수행)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: health-check-report
+          path: health_report.log
+
+      # [추가 기능 2] 실패 시 GitHub Issue 자동 생성 (알림 대용)
+      - name: 🚨 Create Incident Issue on Failure
         if: failure()
-        run: echo "::error:: One or more services are down! Please check the logs."
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # 현재 시간
+          TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
+          
+          # 이슈 제목 및 내용 생성
+          TITLE="🚨 [Incident] Service Health Check Failed - $TIMESTAMP"
+          BODY="### ⚠️ Service Down Detected\n\nOne or more services failed the health check at **$TIMESTAMP**.\n\nPlease check the [Action Logs](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) for details.\n\n**Quick Report:**\n\`\`\`\n$(cat health_report.log)\n\`\`\`"
+          
+          # 중복 이슈 방지 로직 (옵션: 이미 열린 이슈가 있으면 코멘트만 달기 등 고도화 가능)
+          gh issue create --title "$TITLE" --body "$BODY" --label "incident"
