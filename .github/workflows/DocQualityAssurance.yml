@@ -1,0 +1,38 @@
+name: 🛡️ Doc Quality Assurance (CI)
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    - cron: '0 0 * * 1' # 매주 월요일 정기 점검
+
+jobs:
+  # 1. 마크다운 문법 검사 (Linting)
+  markdown-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Markdown Linting via formatting check
+        uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: "**/*.md"
+
+  # 2. 깨진 링크 검사 (Dead Link Checker)
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Link Checker (Lychee)
+        uses: lycheeverse/lychee-action@v1.9.0
+        with:
+          # 외부 링크 체크 (timeout 20초), 내부 파일 링크 체크
+          args: --verbose --no-progress --timeout 20 "**/*.md"
+          fail: true # 깨진 링크 발견 시 워크플로우 실패 처리
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
