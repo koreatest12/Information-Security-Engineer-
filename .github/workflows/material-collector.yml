@@ -1,193 +1,107 @@
-name: 🤖 Security Material Auto-Collector
+name: 🚀 Official Release & Deploy
 
 on:
-  schedule:
-    - cron: '*/5 * * * *' # 5분마다 실행
-  workflow_dispatch:      # 수동 실행
-
-concurrency:
-  group: ${{ github.workflow }}
-  cancel-in-progress: true
-
-env:
-  TZ: 'Asia/Seoul'
+  # 1. 태그가 푸시되면 자동 릴리즈 (예: v1.0.0, v2.1.3)
+  push:
+    tags:
+      - "v*.*.*"
+  
+  # 2. 관리자가 수동으로 버튼을 눌러서 배포 가능
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release Version (e.g., v1.0.0)'
+        required: true
+        default: 'v1.0.0'
+      title:
+        description: 'Release Title'
+        required: false
+        default: 'Regular Security Update'
 
 permissions:
   contents: write
+  packages: write
 
 jobs:
-  collect-and-update:
+  build-and-release:
+    name: 📦 Build & Publish Release
     runs-on: ubuntu-latest
-    timeout-minutes: 5
     
     steps:
-      - name: Checkout Repository
+      - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # 히스토리 전체 가져오기 (필수)
+          fetch-depth: 0
 
-      # 1. 의존성 파일(requirements.txt) 자동 생성
-      - name: Generate requirements.txt
-        run: |
-          if [ ! -f requirements.txt ]; then
-            echo "Generating requirements.txt..."
-            echo "requests>=2.31.0" > requirements.txt
-            echo "beautifulsoup4>=4.12.0" >> requirements.txt
-          fi
-
-      # 2. [FIX] 파이썬 스크립트 자동 생성 (마커 오류 수정됨)
-      - name: Generate Python Script
-        run: |
-          mkdir -p scripts
-          # 스크립트 파일 내용을 덮어씁니다.
-          cat << 'EOF' > scripts/fetch_security_news.py
-          import os
-          import requests
-          import datetime
-          import sys
-
-          RESOURCE_MAP = {
-              "Exam & Certification": [
-                  {"name": "CQ (정보보안기사)", "url": "https://www.cq.or.kr"},
-                  {"name": "KISA Academy", "url": "https://academy.kisa.or.kr"}
-              ],
-              "Domestic Guidelines (KISA)": [
-                  {"name": "KISA KrCERT", "url": "https://www.boho.or.kr"},
-                  {"name": "KISA Guidelines", "url": "https://www.kisa.or.kr/2060204/form?drwCd=CD0000000005"},
-                  {"name": "ISMS-P Criteria", "url": "https://isms.kisa.or.kr/main/isp/issue/law.jsp"}
-              ],
-              "Global Standards (OWASP)": [
-                  {"name": "OWASP Top 10", "url": "https://owasp.org/www-project-top-ten/"},
-                  {"name": "OWASP WSTG", "url": "https://owasp.org/www-project-web-security-testing-guide/"}
-              ]
-          }
-
-          README_FILE = "README.md"
-          # [FIX] 마커가 비어있으면 동작하지 않으므로 HTML 주석을 정확히 명시
-          START_MARKER = ""
-          END_MARKER = ""
-
-          def check_url_status(url):
-              headers = {"User-Agent": "Mozilla/5.0"}
-              try:
-                  response = requests.get(url, headers=headers, timeout=10)
-                  return "✅ Active" if response.status_code == 200 else f"⚠️ {response.status_code}"
-              except:
-                  return "❌ Unreachable"
-
-          def update_readme():
-              today = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S (KST)")
-              md = [f"\n\n## 🧭 Security Resource Dashboard", f"> **Last Updated:** {today}\n"]
-              
-              for cat, links in RESOURCE_MAP.items():
-                  md.append(f"### {cat}\n| Name | Link | Status |\n|---|---|---|")
-                  for link in links:
-                      status = check_url_status(link['url'])
-                      md.append(f"| **{link['name']}** | [Link]({link['url']}) | {status} |")
-                  md.append("")
-              
-              dashboard = "\n".join(md)
-              full_block = f"{START_MARKER}{dashboard}{END_MARKER}"
-
-              if not os.path.exists(README_FILE):
-                  with open(README_FILE, "w", encoding="utf-8") as f: f.write(f"# InfoSec\n{full_block}")
-                  return
-
-              with open(README_FILE, "r", encoding="utf-8") as f: content = f.read()
-              
-              # find() 안전한 사용
-              s_idx = content.find(START_MARKER)
-              e_idx = content.find(END_MARKER)
-              
-              if s_idx != -1 and e_idx != -1:
-                  # 기존 대시보드 교체
-                  new_content = content[:s_idx] + full_block + content[e_idx + len(END_MARKER):]
-              else:
-                  # 없으면 끝에 추가
-                  new_content = content + "\n\n" + full_block
-              
-              with open(README_FILE, "w", encoding="utf-8") as f: f.write(new_content)
-
-          if __name__ == "__main__":
-              update_readme()
-          EOF
-
-      # 3. 파이썬 환경 설정
+      # 1. 환경 구성 (DB 및 스크립트 실행 환경)
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
           cache: 'pip'
-          cache-dependency-path: requirements.txt
 
-      # 4. 의존성 설치
       - name: Install Dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      # 5. 스크립트 실행
-      - name: Run Collection Script
-        run: python scripts/fetch_security_news.py
-
-      # 6. [FIX] 충돌 방지 및 스마트 커밋 (Stash & Rebase 전략 적용)
-      - name: Smart Commit & Clean History
-        run: |
-          git config --global user.name "SecurityBot"
-          git config --global user.email "bot@noreply.github.com"
-          
-          # [핵심] 변경사항이 있으면 먼저 Stash(임시저장)하여 작업 트리를 깨끗하게 만듦
-          git add .
-          
-          # 변경사항 체크
-          if git diff --staged --quiet; then
-            echo "✅ No changes to commit."
-            exit 0
-          fi
-
-          echo "📦 Stashing changes to allow pull..."
-          git stash
-          
-          echo "🔄 Pulling latest changes from remote..."
-          # 원격 저장소 내용을 가져와서 로컬과 동기화 (충돌 방지)
-          git pull --rebase origin main
-          
-          echo "📂 Popping stashed changes..."
-          # 임시 저장했던 내 변경사항을 다시 적용 (자동 병합)
-          git stash pop
-          
-          # 다시 스테이징 (Stash pop 이후 상태 반영)
-          git add .
-
-          # 커밋 로직 (히스토리 덮어쓰기 or 신규 생성)
-          LAST_AUTHOR=$(git log -1 --pretty=format:'%an')
-          CURRENT_TIME=$(date "+%Y-%m-%d %H:%M:%S")
-
-          if [ "$LAST_AUTHOR" == "SecurityBot" ]; then
-            echo "♻️ Overwriting previous Bot commit..."
-            git commit --amend -m "docs: [LIVE] Security Dashboard Updated ($CURRENT_TIME)"
-            
-            # [Fix] Push 실패 시 재시도 로직 (최대 3회)
-            n=0
-            until [ "$n" -ge 3 ]
-            do
-               git push --force origin main && break
-               n=$((n+1)) 
-               echo "⚠️ Push failed. Retrying... ($n/3)"
-               git pull --rebase origin main
-               sleep 5
-            done
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
           else
-            echo "🆕 Creating new commit..."
-            git commit -m "docs: Update Security Dashboard ($CURRENT_TIME)"
-            
-            n=0
-            until [ "$n" -ge 3 ]
-            do
-               git push origin main && break
-               n=$((n+1))
-               echo "⚠️ Push failed. Retrying... ($n/3)"
-               git pull --rebase origin main
-               sleep 5
-            done
+            pip install requests
           fi
+
+      # 2. 최신 데이터(DB) 확보 (배포 직전 한 번 더 업데이트)
+      - name: Refresh Security Data
+        run: |
+          # 스크립트가 있다면 실행하여 최신 상태로 DB 갱신
+          if [ -f scripts/security_db_master.py ]; then
+            echo "🔄 Refreshing DB for release..."
+            python scripts/security_db_master.py
+          else
+            echo "⚠️ Script not found. Proceeding with existing data."
+          fi
+
+      # 3. 배포용 아티팩트 압축 (Source Code 제외, 알짜배기만)
+      - name: Package Assets
+        run: |
+          echo "📦 Zipping artifacts..."
+          mkdir -p release_assets
+          
+          # DB 파일 복사
+          if [ -f data/security_archive.db ]; then
+            cp data/security_archive.db release_assets/
+          fi
+          
+          # 학습 자료(MD) 및 스크립트 압축
+          zip -r release_assets/Security_Study_Materials.zip scripts/ SECURITY.md README.md
+          
+          # 무결성 검증을 위한 해시 파일 생성 (전문가급 기능)
+          cd release_assets
+          sha256sum * > checksums.txt
+          cd ..
+
+      # 4. 릴리즈 노트 자동 생성 및 배포
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          # 수동 실행이면 입력된 버전을, 태그 실행이면 태그명을 사용
+          tag_name: ${{ github.event.inputs.version || github.ref_name }}
+          name: ${{ github.event.inputs.title || github.ref_name }}
+          
+          # 이전 릴리즈와의 차이점(Commit Log)을 자동으로 요약해줌
+          generate_release_notes: true
+          
+          # 첨부할 파일들 (DB, 압축파일, 체크섬)
+          files: |
+            release_assets/security_archive.db
+            release_assets/Security_Study_Materials.zip
+            release_assets/checksums.txt
+            
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 5. (선택사항) 배포 완료 슬랙/디스코드 알림 시뮬레이션
+      - name: Deploy Notification
+        run: |
+          echo "✅ Release ${{ github.event.inputs.version || github.ref_name }} has been deployed successfully!"
+          echo "🔗 Download URL: https://github.com/${{ github.repository }}/releases"
