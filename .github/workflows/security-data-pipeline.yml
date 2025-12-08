@@ -1,0 +1,92 @@
+name: 🔐 Security DB Master Pipeline
+
+on:
+  schedule:
+    - cron: '*/5 * * * *' # 5분마다 DB 업데이트
+  workflow_dispatch:      # 수동 실행
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+env:
+  TZ: 'Asia/Seoul'
+
+permissions:
+  contents: write
+
+jobs:
+  # 1. 사전 보안 검사 (유출 방지 워크플로우 호출 시뮬레이션 or 직접 검사)
+  pre-flight-security-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Simple Secret Check
+        run: |
+          # 기본적 키워드 검색 (Gitleaks 대용 간편 버전)
+          if grep -rE "AWS_ACCESS_KEY|PRIVATE_KEY" . --exclude-dir=.git; then
+            echo "❌ CRITICAL: Potential secret found in source code!"
+            exit 1
+          fi
+          echo "✅ Pre-flight Security Check Passed."
+
+  # 2. DB 구축 및 데이터 적재
+  database-operations:
+    needs: pre-flight-security-check # 보안 검사가 통과해야만 실행 (안전장치)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 의존성 파일 자동 생성 (필수)
+      - name: Setup Requirements
+        run: |
+          if [ ! -f requirements.txt ]; then
+            echo "requests>=2.31.0" > requirements.txt
+          fi
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+          cache-dependency-path: requirements.txt
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # [핵심] DB 마스터 스크립트 실행
+      - name: Run DB Master Engine
+        run: python scripts/security_db_master.py
+
+      # [DB 결과 확인] SQL로 조회하여 로그에 출력 (테이블 생성 확인용)
+      - name: Verify DB Integrity
+        run: |
+          sqlite3 data/security_archive.db "SELECT * FROM security_logic;" || echo "No logic data yet."
+          sqlite3 data/security_archive.db "SELECT name, status, latency_ms FROM external_resources ORDER BY id DESC LIMIT 5;"
+
+      # [스마트 커밋] 변경된 DB 파일 저장
+      - name: Commit DB Changes
+        run: |
+          git config --global user.name "SecurityDB-Bot"
+          git config --global user.email "bot@db-master.com"
+          
+          git pull --rebase origin main || true
+          git add data/security_archive.db
+          
+          if git diff --staged --quiet; then
+            echo "✅ DB Data is up to date."
+            exit 0
+          fi
+          
+          # DB 파일은 바이너리이므로 Amend 덮어쓰기 방식으로 용량 절약
+          git commit --amend -m "db(sync): update security knowledge base [skip ci]" || git commit -m "db(sync): update security knowledge base"
+          git push --force origin main || git push origin main
