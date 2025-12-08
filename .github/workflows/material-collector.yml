@@ -2,11 +2,16 @@ name: 🤖 Security Material Auto-Collector
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # 5분마다 실행 (사용자 요청 반영)
+    - cron: '*/5 * * * *' # 5분마다 실행
   workflow_dispatch:      # 수동 실행 버튼
 
+# [Upgrade 1] 병렬 실행 방지 (이전 작업이 돌고 있다면 대기하지 않고 취소하거나 관리)
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
 env:
-  TZ: 'Asia/Seoul' # 한국 시간 설정
+  TZ: 'Asia/Seoul' # 한국 시간
 
 permissions:
   contents: write
@@ -14,69 +19,74 @@ permissions:
 jobs:
   collect-and-update:
     runs-on: ubuntu-latest
-    timeout-minutes: 5 # 5분 이상 걸리면 강제 종료 (비용 절감)
+    timeout-minutes: 5 # 무한 루프 방지
     
     steps:
-      # 1. 저장소 코드 가져오기 (전체 히스토리 포함)
+      # 1. 저장소 체크아웃
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 
+          fetch-depth: 0 # 히스토리 조작을 위해 필수
 
-      # 2. [FIX] 의존성 파일 자동 생성 (에러 해결 핵심)
-      # requirements.txt 파일이 없으면 자동으로 생성하여 setup-python 에러를 방지합니다.
+      # 2. [FIX] requirements.txt 사전 생성 (캐싱 에러 해결의 핵심)
       - name: Ensure requirements.txt exists
         run: |
           if [ ! -f requirements.txt ]; then
-            echo "requests" > requirements.txt
+            echo "requests>=2.31.0" > requirements.txt
+            echo "beautifulsoup4>=4.12.0" >> requirements.txt
             echo "✅ Created requirements.txt automatically."
           else
             echo "✅ requirements.txt already exists."
           fi
 
-      # 3. 파이썬 설정 (이제 requirements.txt가 있으므로 캐싱 성공)
+      # 3. [Upgrade 2] 파이썬 설정 및 캐시 경로 명시
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-          cache: 'pip' # 캐싱 기능 활성화
+          cache: 'pip' 
+          # [핵심] 이 파일의 해시값을 기준으로 캐시를 찾도록 명시하여 "Not found" 해결
+          cache-dependency-path: requirements.txt 
 
-      # 4. 의존성 패키지 설치
-      - name: Install Dependencies
+      # 4. [Upgrade 3] Pip 최신화 및 의존성 설치
+      - name: Upgrade PIP & Install Dependencies
         run: |
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # 5. 스크립트 폴더 및 파일 안전 확인 (없으면 자동 생성)
-      - name: Ensure Script Exists
+      # 5. 스크립트 실행 환경 안전 점검
+      - name: Ensure Script Environment
         run: |
           if [ ! -d "scripts" ]; then
             mkdir scripts
             echo "📂 Created scripts directory."
           fi
-          # 스크립트 파일이 없는 경우를 대비한 체크 (실제 로직은 repo에 있어야 함)
-          if [ ! -f "scripts/fetch_security_news.py" ]; then
-            echo "⚠️ Warning: fetch_security_news.py not found! Skipping execution."
-            exit 0
-          fi
+          # Git 권한 문제 방지 (Safe Directory 설정)
+          git config --global --add safe.directory $GITHUB_WORKSPACE
 
       # 6. 수집 스크립트 실행
       - name: Run Collection Script
         run: |
-          python scripts/fetch_security_news.py
+          # 파일이 실제 존재할 때만 실행
+          if [ -f "scripts/fetch_security_news.py" ]; then
+            python scripts/fetch_security_news.py
+          else
+            echo "⚠️ Script not found. Skipping execution to prevent failure."
+          fi
 
-      # 7. 스마트 커밋 (봇 기록 덮어쓰기 & 사용자 기록 보존)
+      # 7. [Upgrade 4] 스마트 커밋 (히스토리 정리 기능)
       - name: Smart Commit & Clean History
         run: |
           git config --global user.name "SecurityBot"
           git config --global user.email "bot@noreply.github.com"
           
-          # 원격 저장소 최신 상태 반영 (Rebase)
+          # 최신 상태 당겨오기 (Rebase)
           git pull --rebase origin main || echo "Already up to date"
 
           # 변경사항 스테이징
           git add .
           
-          # 변경사항 체크
+          # 변경사항이 없으면 조기 종료
           if git diff --staged --quiet; then
             echo "✅ No changes detected. Skipping commit."
             exit 0
@@ -86,18 +96,12 @@ jobs:
           LAST_AUTHOR=$(git log -1 --pretty=format:'%an')
           CURRENT_TIME=$(date "+%Y-%m-%d %H:%M:%S")
           
-          echo "🔍 Last Commit Author: $LAST_AUTHOR"
-
           if [ "$LAST_AUTHOR" == "SecurityBot" ]; then
-            echo "♻️ Detected previous Bot commit. Overwriting (Amending) to save space..."
-            # 봇이 작성한 이전 커밋을 수정(--amend)하여 덮어쓰기
+            echo "♻️ Bot commit detected. Amending to keep history clean..."
             git commit --amend -m "docs: [LIVE] security dashboard updated ($CURRENT_TIME)"
-            
-            # 강제 푸시 (이전 기록 삭제)
             git push --force origin main
           else
-            echo "🆕 Detected Human commit. Creating a new commit..."
-            # 사람이 작성한 커밋 위에 새로 쌓기
+            echo "🆕 Human commit detected. Creating new commit..."
             git commit -m "docs: update security dashboard ($CURRENT_TIME)"
             git push origin main
           fi
