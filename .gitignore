@@ -1,30 +1,132 @@
-# ========================
-# 🛡️ Security Ignore List
-# ========================
-
-# 1. Environment Variables & Secrets
+# =======================================================
+# 🛡️ SECURITY & CREDENTIALS (최우선 방어선)
+# =======================================================
+# 환경변수 및 비밀키
 .env
-.env.local
 .env.*
+!.env.example  # 예제 파일은 커밋 허용 (협업용)
 *.key
 *.pem
 *.cer
+*.crt
 *.p12
+*.pfx
 secrets.json
 client_secret.json
+service_account.json
+auth.json
 
-# 2. IDE & System Files
-.idea/
-.vscode/
-*.DS_Store
-Thumbs.db
+# Cloud & API Credentials
+.aws/
+.azure/
+.gcloud/
+gcloud/
+aws_credentials/
+google-application-credentials.json
 
-# 3. Logs & Builds
-*.log
+# DB Connection Configs
+.pgpass
+.my.cnf
+db_config.ini
+config.yaml
+
+# =======================================================
+# 🐍 PYTHON CORE & ENVIRONMENTS
+# =======================================================
+# Byte-compiled / Optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments (가상환경)
+venv/
+env/
+.venv/
+.env/
+pip-wheel-metadata/
+
+# Distribution / Packaging
 build/
 dist/
-__pycache__/
+*.egg-info/
+.eggs/
+wheels/
+*.egg
 
-# 4. User Specific Data
-user_data/
-credentials/
+# Testing & Coverage
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+
+# Jupyter Notebook (Data Science)
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+
+# =======================================================
+# 💾 DATABASES & DATA DUMPS (DB 전문가 설정)
+# =======================================================
+# SQLite (로컬 DB 파일은 절대 커밋 금지)
+*.sqlite
+*.sqlite3
+*.db
+*.db3
+*.s3db
+*.sl3
+
+# NoSQL (Local Data)
+mongod.lock
+.redis/
+dump.rdb
+
+# DB Dumps & Backups (실수로 덤프 뜬 파일 유출 방지)
+*.sql
+*.dump
+*.backup
+*.bak
+*.tar.gz
+*.sql.gz
+
+# Data Migration / ETL Temp Files
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.jsonl
+data/
+backup/
+restored/
+
+# DB Tools & IDE Configs
+.dbeaver/
+.datagrip/
+.idea/dataSources/
+.idea/dataSources.local.xml
+
+# =======================================================
+# 🛠️ IDE & OS SYSTEM FILES
+# =======================================================
+# JetBrains (IntelliJ, PyCharm)
+.idea/
+*.iml
+*.iws
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Mac / Windows / Linux
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+*~
