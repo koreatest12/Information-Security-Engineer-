@@ -1,17 +1,17 @@
+# 파일 경로: .github/workflows/material-collector.yml
 name: 🤖 Security Material Auto-Collector
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # 5분마다 실행
-  workflow_dispatch:      # 수동 실행 버튼
+    - cron: '*/5 * * * *' # 5분마다 실행 (스마트 커밋으로 히스토리 관리)
+  workflow_dispatch:      # 수동 실행
 
-# [Upgrade 1] 병렬 실행 방지 (이전 작업이 돌고 있다면 대기하지 않고 취소하거나 관리)
 concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: true
 
 env:
-  TZ: 'Asia/Seoul' # 한국 시간
+  TZ: 'Asia/Seoul'
 
 permissions:
   contents: write
@@ -19,89 +19,139 @@ permissions:
 jobs:
   collect-and-update:
     runs-on: ubuntu-latest
-    timeout-minutes: 5 # 무한 루프 방지
+    timeout-minutes: 5
     
     steps:
-      # 1. 저장소 체크아웃
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # 히스토리 조작을 위해 필수
+          fetch-depth: 0
 
-      # 2. [FIX] requirements.txt 사전 생성 (캐싱 에러 해결의 핵심)
-      - name: Ensure requirements.txt exists
+      # 1. 의존성 파일(requirements.txt) 자동 생성 (없을 경우)
+      - name: Generate requirements.txt
         run: |
           if [ ! -f requirements.txt ]; then
+            echo "Generating requirements.txt..."
             echo "requests>=2.31.0" > requirements.txt
             echo "beautifulsoup4>=4.12.0" >> requirements.txt
-            echo "✅ Created requirements.txt automatically."
-          else
-            echo "✅ requirements.txt already exists."
           fi
 
-      # 3. [Upgrade 2] 파이썬 설정 및 캐시 경로 명시
+      # 2. 파이썬 스크립트 자동 생성 (없을 경우) - 코드 내장형
+      - name: Generate Python Script
+        run: |
+          mkdir -p scripts
+          # 스크립트 파일이 없으면 아래 내용으로 새로 만듭니다.
+          if [ ! -f scripts/fetch_security_news.py ]; then
+            echo "Generating fetch_security_news.py..."
+            cat << 'EOF' > scripts/fetch_security_news.py
+          import os
+          import requests
+          import datetime
+          import sys
+
+          RESOURCE_MAP = {
+              "Exam & Certification": [
+                  {"name": "CQ (정보보안기사)", "url": "https://www.cq.or.kr"},
+                  {"name": "KISA Academy", "url": "https://academy.kisa.or.kr"}
+              ],
+              "Domestic Guidelines (KISA)": [
+                  {"name": "KISA KrCERT", "url": "https://www.boho.or.kr"},
+                  {"name": "KISA Guidelines", "url": "https://www.kisa.or.kr/2060204/form?drwCd=CD0000000005"},
+                  {"name": "ISMS-P Criteria", "url": "https://isms.kisa.or.kr/main/isp/issue/law.jsp"}
+              ],
+              "Global Standards (OWASP)": [
+                  {"name": "OWASP Top 10", "url": "https://owasp.org/www-project-top-ten/"},
+                  {"name": "OWASP WSTG", "url": "https://owasp.org/www-project-web-security-testing-guide/"}
+              ]
+          }
+
+          README_FILE = "README.md"
+          START_MARKER = ""
+          END_MARKER = ""
+
+          def check_url_status(url):
+              headers = {"User-Agent": "Mozilla/5.0"}
+              try:
+                  response = requests.get(url, headers=headers, timeout=10)
+                  return "✅ Active" if response.status_code == 200 else f"⚠️ {response.status_code}"
+              except:
+                  return "❌ Unreachable"
+
+          def update_readme():
+              today = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S (KST)")
+              md = [f"\n\n## 🧭 Security Resource Dashboard", f"> **Last Updated:** {today}\n"]
+              
+              for cat, links in RESOURCE_MAP.items():
+                  md.append(f"### {cat}\n| Name | Link | Status |\n|---|---|---|")
+                  for link in links:
+                      status = check_url_status(link['url'])
+                      md.append(f"| **{link['name']}** | [Link]({link['url']}) | {status} |")
+                  md.append("")
+              
+              dashboard = "\n".join(md)
+              full_block = f"{START_MARKER}{dashboard}{END_MARKER}"
+
+              if not os.path.exists(README_FILE):
+                  with open(README_FILE, "w", encoding="utf-8") as f: f.write(f"# InfoSec\n{full_block}")
+                  return
+
+              with open(README_FILE, "r", encoding="utf-8") as f: content = f.read()
+              
+              s_idx = content.find(START_MARKER)
+              e_idx = content.find(END_MARKER)
+              
+              if s_idx != -1 and e_idx != -1:
+                  new_content = content[:s_idx] + full_block + content[e_idx + len(END_MARKER):]
+              else:
+                  new_content = content + "\n\n" + full_block
+              
+              with open(README_FILE, "w", encoding="utf-8") as f: f.write(new_content)
+
+          if __name__ == "__main__":
+              update_readme()
+          EOF
+          fi
+
+      # 3. 파이썬 환경 설정
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-          cache: 'pip' 
-          # [핵심] 이 파일의 해시값을 기준으로 캐시를 찾도록 명시하여 "Not found" 해결
-          cache-dependency-path: requirements.txt 
+          cache: 'pip'
+          cache-dependency-path: requirements.txt
 
-      # 4. [Upgrade 3] Pip 최신화 및 의존성 설치
-      - name: Upgrade PIP & Install Dependencies
+      # 4. 의존성 설치
+      - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # 5. 스크립트 실행 환경 안전 점검
-      - name: Ensure Script Environment
-        run: |
-          if [ ! -d "scripts" ]; then
-            mkdir scripts
-            echo "📂 Created scripts directory."
-          fi
-          # Git 권한 문제 방지 (Safe Directory 설정)
-          git config --global --add safe.directory $GITHUB_WORKSPACE
-
-      # 6. 수집 스크립트 실행
+      # 5. 스크립트 실행
       - name: Run Collection Script
-        run: |
-          # 파일이 실제 존재할 때만 실행
-          if [ -f "scripts/fetch_security_news.py" ]; then
-            python scripts/fetch_security_news.py
-          else
-            echo "⚠️ Script not found. Skipping execution to prevent failure."
-          fi
+        run: python scripts/fetch_security_news.py
 
-      # 7. [Upgrade 4] 스마트 커밋 (히스토리 정리 기능)
+      # 6. 스마트 커밋 (히스토리 덮어쓰기)
       - name: Smart Commit & Clean History
         run: |
           git config --global user.name "SecurityBot"
           git config --global user.email "bot@noreply.github.com"
-          
-          # 최신 상태 당겨오기 (Rebase)
-          git pull --rebase origin main || echo "Already up to date"
-
-          # 변경사항 스테이징
+          git pull --rebase origin main || true
           git add .
           
-          # 변경사항이 없으면 조기 종료
           if git diff --staged --quiet; then
-            echo "✅ No changes detected. Skipping commit."
+            echo "✅ No changes."
             exit 0
           fi
 
-          # 마지막 커밋 작성자 확인
           LAST_AUTHOR=$(git log -1 --pretty=format:'%an')
           CURRENT_TIME=$(date "+%Y-%m-%d %H:%M:%S")
-          
+
           if [ "$LAST_AUTHOR" == "SecurityBot" ]; then
-            echo "♻️ Bot commit detected. Amending to keep history clean..."
-            git commit --amend -m "docs: [LIVE] security dashboard updated ($CURRENT_TIME)"
+            echo "♻️ Overwriting previous Bot commit..."
+            git commit --amend -m "docs: [LIVE] Security Dashboard Updated ($CURRENT_TIME)"
             git push --force origin main
           else
-            echo "🆕 Human commit detected. Creating new commit..."
-            git commit -m "docs: update security dashboard ($CURRENT_TIME)"
+            echo "🆕 Creating new commit..."
+            git commit -m "docs: Update Security Dashboard ($CURRENT_TIME)"
             git push origin main
           fi
