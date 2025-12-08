@@ -1,0 +1,173 @@
+name: "🏗️ Scaffold Java & Python Project Structure"
+
+on:
+  workflow_dispatch:
+    inputs:
+      java_package_group:
+        description: 'Java Group ID (e.g., com.example)'
+        required: true
+        default: 'com.company.project'
+      python_app_name:
+        description: 'Python App Name'
+        required: true
+        default: 'data_processor'
+      initialize_gitkeep:
+        description: 'Create .gitkeep in empty folders?'
+        type: boolean
+        required: true
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  create-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🛠️ Generate Directory Structure & Files
+        run: |
+          echo ">>> Initializing Project Structure..."
+          
+          # 변수 설정
+          JAVA_GROUP_PATH=$(echo "${{ inputs.java_package_group }}" | tr '.' '/')
+          PYTHON_APP="${{ inputs.python_app_name }}"
+          
+          # ==========================================
+          # 1. Java (Spring Boot Style) Structure
+          # ==========================================
+          echo "Creating Java directories..."
+          mkdir -p backend-java/src/main/java/$JAVA_GROUP_PATH
+          mkdir -p backend-java/src/main/resources/static
+          mkdir -p backend-java/src/main/resources/templates
+          mkdir -p backend-java/src/test/java/$JAVA_GROUP_PATH
+          
+          # Java: pom.xml 생성 (기본 템플릿)
+          if [ ! -f backend-java/pom.xml ]; then
+            cat <<EOF > backend-java/pom.xml
+          <project>
+            <modelVersion>4.0.0</modelVersion>
+            <groupId>${{ inputs.java_package_group }}</groupId>
+            <artifactId>backend-java</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <dependencies>
+                </dependencies>
+          </project>
+          EOF
+          fi
+
+          # Java: application.yml 생성
+          touch backend-java/src/main/resources/application.yml
+          
+          # Java: Main Class 생성
+          MAIN_CLASS_PATH="backend-java/src/main/java/$JAVA_GROUP_PATH/Application.java"
+          if [ ! -f "$MAIN_CLASS_PATH" ]; then
+            cat <<EOF > "$MAIN_CLASS_PATH"
+          package ${{ inputs.java_package_group }};
+
+          public class Application {
+              public static void main(String[] args) {
+                  System.out.println("Java Backend Initialized");
+              }
+          }
+          EOF
+          fi
+
+          # ==========================================
+          # 2. Python Structure
+          # ==========================================
+          echo "Creating Python directories..."
+          mkdir -p backend-python/$PYTHON_APP/core
+          mkdir -p backend-python/$PYTHON_APP/api
+          mkdir -p backend-python/$PYTHON_APP/services
+          mkdir -p backend-python/tests
+          mkdir -p backend-python/notebooks
+          mkdir -p backend-python/configs
+          
+          # Python: requirements.txt 생성
+          if [ ! -f backend-python/requirements.txt ]; then
+            echo "fastapi>=0.68.0" > backend-python/requirements.txt
+            echo "uvicorn>=0.15.0" >> backend-python/requirements.txt
+            echo "pandas>=1.3.0" >> backend-python/requirements.txt
+            echo "pytest>=6.0.0" >> backend-python/requirements.txt
+          fi
+
+          # Python: main.py 생성
+          if [ ! -f backend-python/main.py ]; then
+            cat <<EOF > backend-python/main.py
+          import sys
+          import os
+
+          def main():
+              print("Python Environment Initialized")
+
+          if __name__ == "__main__":
+              main()
+          EOF
+          fi
+          
+          # Python: .env 파일 (예시)
+          if [ ! -f backend-python/.env.example ]; then
+            echo "DB_HOST=localhost" > backend-python/.env.example
+            echo "SECRET_KEY=change_me" >> backend-python/.env.example
+          fi
+
+          # ==========================================
+          # 3. Common Resources & Configs
+          # ==========================================
+          echo "Creating Common Resource directories..."
+          mkdir -p resources/data/raw
+          mkdir -p resources/data/processed
+          mkdir -p resources/logs/java
+          mkdir -p resources/logs/python
+          mkdir -p resources/docker
+          mkdir -p resources/scripts
+          mkdir -p docs/api
+          mkdir -p docs/architecture
+
+          # Common: .gitignore 생성 (통합)
+          if [ ! -f .gitignore ]; then
+            cat <<EOF > .gitignore
+          # Java
+          target/
+          *.class
+          
+          # Python
+          __pycache__/
+          *.pyc
+          venv/
+          .env
+          
+          # IDE
+          .idea/
+          .vscode/
+          *.swp
+          
+          # OS
+          .DS_Store
+          EOF
+          fi
+
+          # ==========================================
+          # 4. Finalize (Add .gitkeep)
+          # ==========================================
+          if [ "${{ inputs.initialize_gitkeep }}" == "true" ]; then
+            find . -type d -empty -not -path "./.git/*" -exec touch {}/.gitkeep \;
+          fi
+
+      - name: 🚀 Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git add .
+          
+          # 변경 사항이 있을 때만 커밋
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "🏗️ Scaffold: Initialize Java/Python dual-stack structure"
+            git push
+          fi
