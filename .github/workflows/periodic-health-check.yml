@@ -1,0 +1,71 @@
+name: "⏰ 20-Min Periodic Health Check"
+
+on:
+  schedule:
+    - cron: '*/20 * * * *' # 매 20분마다 실행 (0, 20, 40)
+  workflow_dispatch:       # 필요시 수동 실행 가능
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          
+      - name: Install Requests
+        run: pip install requests
+
+      - name: 🩺 Run Health Check Script
+        run: |
+          echo ">>> Starting 20-minute Health Check..."
+          
+          # 파이썬 스크립트를 즉석에서 생성하여 실행
+          cat <<EOF > check_status.py
+          import requests
+          import sys
+
+          # 실제 운영 중인 서버 주소 (배포 후 URL로 교체 필요)
+          # 예시로 로컬 테스트용 설정을 가정하거나, 외부 URL을 입력
+          TARGETS = [
+              {"name": "Java Backend", "url": "http://localhost:8080/actuator/health", "mock": True},
+              {"name": "Python API", "url": "http://localhost:8000/health", "mock": True}
+          ]
+
+          success = True
+          
+          print(f"{'SERVICE':<15} | {'STATUS':<10} | {'MESSAGE'}")
+          print("-" * 40)
+
+          for target in TARGETS:
+              try:
+                  # 실제 배포 환경이 아니므로 GitHub Actions에서는 Mock 처리 예시
+                  if target["mock"]:
+                      status_code = 200
+                      msg = "Alive (Mock Test)"
+                  else:
+                      response = requests.get(target["url"], timeout=5)
+                      status_code = response.status_code
+                      msg = "Alive" if status_code == 200 else f"Error {status_code}"
+                  
+                  print(f"{target['name']:<15} | {status_code:<10} | {msg}")
+                  
+                  if status_code != 200:
+                      success = False
+              except Exception as e:
+                  print(f"{target['name']:<15} | FAIL       | {str(e)}")
+                  success = False
+
+          if not success:
+              sys.exit(1) # 실패 시 워크플로우 에러 발생시킴
+          EOF
+          
+          python check_status.py
+
+      - name: 🔔 Notify on Failure (Optional)
+        if: failure()
+        run: echo "::error:: One or more services are down! Please check the logs."
