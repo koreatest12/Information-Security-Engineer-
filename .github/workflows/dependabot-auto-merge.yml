@@ -2,42 +2,51 @@ name: 🤖 Dependabot Auto-Merge
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [opened, synchronize, reopened] # PR이 열리거나 수정될 때 트리거
+  pull_request_target:
+    types: [opened, synchronize, reopened] # 포크된 저장소나 권한 이슈 대비용
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: write       # 코드 병합을 위해 쓰기 권한 필수
+  pull-requests: write  # PR 승인 및 코멘트를 위해 필수
+  checks: read          # CI 테스트 결과 확인용
 
 jobs:
   approve-and-merge:
     runs-on: ubuntu-latest
-    # 봇이 생성한 PR일 경우에만 실행
+    # Dependabot이 생성한 PR일 때만 실행
     if: ${{ github.actor == 'dependabot[bot]' }}
     
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # 1. PR 메타데이터 가져오기 (마이너/패치 버전인지 확인용)
-      - name: Dependabot metadata
+      # 1. PR 메타데이터 추출 (버전 정보 확인)
+      - name: Fetch Dependabot metadata
         id: metadata
-        uses: dependabot/fetch-metadata@v1
+        uses: dependabot/fetch-metadata@v2 # v1 -> v2 최신 버전 적용
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
 
       # 2. 자동 승인 (Approve)
-      # 메이저 업데이트(v1->v2)가 아닌 경우에만 안전하게 자동 승인
-      - name: Approve a PR
+      # 조건: 메이저 업데이트(v1->v2)가 아닐 경우에만 승인 (안전장치)
+      - name: Approve PR (Non-Major updates)
         if: ${{ steps.metadata.outputs.update-type != 'version-update:semver-major' }}
-        run: gh pr review --approve "$PR_URL"
+        run: |
+          echo "✅ Approving PR for ${{ steps.metadata.outputs.package-name }}"
+          gh pr review "$PR_URL" --approve --body "🤖 Dependabot automation: Approved via GitHub Actions."
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 3. 자동 병합 (Auto-merge)
-      - name: Enable auto-merge for Dependabot PRs
+      # 3. 자동 병합 활성화 (Enable Auto-Merge)
+      # 조건: 메이저 업데이트가 아니며, CI 테스트가 통과되면 즉시 병합
+      # 전략: --squash (커밋 히스토리를 깔끔하게 하나로 압축)
+      - name: Enable Auto-Merge
         if: ${{ steps.metadata.outputs.update-type != 'version-update:semver-major' }}
-        run: gh pr merge --auto --merge "$PR_URL"
+        run: |
+          echo "🚀 Enabling auto-merge for ${{ steps.metadata.outputs.package-name }}"
+          gh pr merge --auto --squash "$PR_URL"
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
