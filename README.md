@@ -1,6 +1,29 @@
 
 
 ## 🧭 Security Resource Dashboard
+> **Last Updated:** 2025-12-08 22:49:24 (KST)
+
+### Exam & Certification
+| Name | Link | Status |
+|---|---|---|
+| **CQ (정보보안기사)** | [Link](https://www.cq.or.kr) | ✅ Active |
+| **KISA Academy** | [Link](https://academy.kisa.or.kr) | ✅ Active |
+
+### Domestic Guidelines (KISA)
+| Name | Link | Status |
+|---|---|---|
+| **KISA KrCERT** | [Link](https://www.boho.or.kr) | ✅ Active |
+| **KISA Guidelines** | [Link](https://www.kisa.or.kr/2060204/form?drwCd=CD0000000005) | ⚠️ 500 |
+| **ISMS-P Criteria** | [Link](https://isms.kisa.or.kr/main/isp/issue/law.jsp) | ✅ Active |
+
+### Global Standards (OWASP)
+| Name | Link | Status |
+|---|---|---|
+| **OWASP Top 10** | [Link](https://owasp.org/www-project-top-ten/) | ✅ Active |
+| **OWASP WSTG** | [Link](https://owasp.org/www-project-web-security-testing-guide/) | ✅ Active |
+
+
+## 🧭 Security Resource Dashboard
 > **Last Updated:** 2025-12-08 22:29:19 (KST)
 > 정보보안기사 학습 및 실무에 필요한 공식 자료들의 최신 링크 상태입니다.
 
