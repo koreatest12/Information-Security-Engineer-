@@ -108,3 +108,8 @@
 2. Create a **Branch** (`study/topic-name`) and commit your notes.
 
 3. Submit a **Pull Request** and review contents.
+
+
+### 📥 Auto-Collected Materials (2025-12-08)
+- **[OWASP]** OWASP Top 10 (2021) PDF (Saved to: `materials/OWASP_Top_10_Map.png`)
+- **[KISA]** KISA 랜섬웨어 대응 가이드 (Saved to: `materials/KISA_Ransomware_Guide_Placeholder.html`)
