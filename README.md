@@ -1,6 +1,34 @@
 
 
 ## 🧭 Security Resource Dashboard
+> **Last Updated:** 2025-12-08 22:13:09 (KST)
+> 정보보안기사 학습 및 실무에 필요한 공식 자료들의 최신 링크 상태입니다.
+
+### Exam & Certification
+| Resource Name | Official Link | Status |
+| :--- | :--- | :--- |
+| **CQ (정보보안기사 접수)** | [Direct Link](https://www.cq.or.kr) | ✅ Active |
+| **KISA Academy (온라인 교육)** | [Direct Link](https://academy.kisa.or.kr) | ✅ Active |
+
+### Domestic Guidelines (KISA)
+| Resource Name | Official Link | Status |
+| :--- | :--- | :--- |
+| **KISA 보호나라 (KrCERT)** | [Direct Link](https://www.boho.or.kr) | ✅ Active |
+| **KISA 가이드라인 자료실** | [Direct Link](https://www.kisa.or.kr/2060204/form?drwCd=CD0000000005) | ⚠️ Status 500 |
+| **ISMS-P 인증 기준** | [Direct Link](https://isms.kisa.or.kr/main/isp/issue/law.jsp) | ✅ Active |
+| **개인정보보호 포털** | [Direct Link](https://www.privacy.go.kr) | ❌ Unreachable |
+
+### Global Standards (OWASP)
+| Resource Name | Official Link | Status |
+| :--- | :--- | :--- |
+| **OWASP Top 10 (Web)** | [Direct Link](https://owasp.org/www-project-top-ten/) | ✅ Active |
+| **OWASP API Security Top 10** | [Direct Link](https://owasp.org/www-project-api-security/) | ✅ Active |
+| **OWASP WSTG (Testing Guide)** | [Direct Link](https://owasp.org/www-project-web-security-testing-guide/) | ✅ Active |
+
+
+
+
+## 🧭 Security Resource Dashboard
 > **Last Updated:** 2025-12-08 13:04:38 (KST)
 > 정보보안기사 학습 및 실무에 필요한 공식 자료들의 최신 링크 상태입니다.
 
