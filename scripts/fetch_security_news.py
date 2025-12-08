@@ -5,7 +5,7 @@ import sys
 
 # ==========================================
 # 🛡️ Security Resource Configuration
-# 정보보안기사 공부에 필수적인 공식 리소스 목록
+# 정보보안기사 및 보안 실무 필수 공식 리소스
 # ==========================================
 RESOURCE_MAP = {
     "Exam & Certification": [
@@ -26,34 +26,39 @@ RESOURCE_MAP = {
 }
 
 README_FILE = "README.md"
+START_MARKER = ""
+END_MARKER = ""
 
 def check_url_status(url):
     """
-    각 사이트가 정상적으로 동작하는지 상태 코드를 확인합니다.
-    User-Agent 헤더를 사용하여 봇 차단을 방지합니다.
+    User-Agent를 사용하여 봇 차단을 우회하고 사이트 상태를 점검합니다.
     """
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
     }
     try:
+        # 타임아웃을 10초로 설정하여 무한 대기 방지
         response = requests.get(url, headers=headers, timeout=10)
         if response.status_code == 200:
             return "✅ Active"
         else:
             return f"⚠️ Status {response.status_code}"
-    except Exception:
+    except requests.exceptions.Timeout:
+        return "⏰ Timeout"
+    except Exception as e:
         return "❌ Unreachable"
 
 def generate_dashboard_markdown():
     """
-    리소스 맵을 기반으로 마크다운 대시보드 내용을 생성합니다.
+    마크다운 대시보드 내용을 생성합니다.
     """
     today = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S (KST)")
     
     md_lines = []
+    # 마커 사이에 들어갈 내용만 생성 (마커 자체는 제외)
     md_lines.append(f"\n\n## 🧭 Security Resource Dashboard")
     md_lines.append(f"> **Last Updated:** {today}")
-    md_lines.append(f"> 정보보안기사 학습에 필요한 공식 자료들의 최신 링크와 상태입니다.\n")
+    md_lines.append(f"> 정보보안기사 학습 및 실무에 필요한 공식 자료들의 최신 링크 상태입니다.\n")
     
     for category, links in RESOURCE_MAP.items():
         md_lines.append(f"### {category}")
@@ -61,45 +66,60 @@ def generate_dashboard_markdown():
         md_lines.append(f"| :--- | :--- | :--- |")
         
         for link in links:
+            print(f"Checking: {link['name']}...") # 로그 출력
             status = check_url_status(link['url'])
             md_lines.append(f"| **{link['name']}** | [Direct Link]({link['url']}) | {status} |")
-        md_lines.append("") # Empty line for spacing
+        md_lines.append("")
 
-    md_lines.append("\n---\n")
+    md_lines.append("\n")
     return "\n".join(md_lines)
 
 def update_readme():
     """
-    README.md 파일을 읽어서 기존 대시보드가 있다면 교체하고,
-    없다면 하단에 새로 추가합니다.
+    README.md 파일의 내용을 안전하게 업데이트합니다.
+    split() 대신 find()와 슬라이싱을 사용하여 안정성을 확보했습니다.
     """
     dashboard_content = generate_dashboard_markdown()
+    full_block = f"{START_MARKER}{dashboard_content}{END_MARKER}"
     
+    # 1. README 파일이 없으면 생성
     if not os.path.exists(README_FILE):
-        print(f"Error: {README_FILE} not found.")
+        print(f"Warning: {README_FILE} not found. Creating a new one.")
+        with open(README_FILE, "w", encoding="utf-8") as f:
+            f.write(f"# Information Security Engineer\n\n{full_block}")
         return
 
+    # 2. 파일 읽기
     with open(README_FILE, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # 기존에 대시보드 섹션이 있는지 확인 (마커 사용)
-    start_marker = ""
-    end_marker = ""
+    # 3. 마커 위치 찾기 (find 사용 - 안전함)
+    start_idx = content.find(START_MARKER)
+    end_idx = content.find(END_MARKER)
 
-    if start_marker in content and end_marker in content:
-        # 기존 내용 교체 (Regex 없이 문자열 슬라이싱으로 안전하게 처리)
-        pre_content = content.split(start_marker)[0]
-        post_content = content.split(end_marker)[1]
-        new_content = f"{pre_content}{start_marker}{dashboard_content}{end_marker}{post_content}"
+    # 4. 내용 교체 로직
+    if start_idx != -1 and end_idx != -1:
+        print("Updating existing dashboard...")
+        # 기존 마커 앞부분 + 새로운 내용 + 기존 마커 뒷부분(END_MARKER 이후)
+        # END_MARKER의 길이만큼 더해줘야 마커 뒤부터 자름
+        pre_content = content[:start_idx]
+        post_content = content[end_idx + len(END_MARKER):]
+        new_content = pre_content + full_block + post_content
     else:
-        # 파일 끝에 추가
-        new_content = f"{content}\n\n{start_marker}{dashboard_content}{end_marker}"
+        print("Appending new dashboard...")
+        # 마커가 없으면 파일 맨 끝에 추가
+        new_content = content + "\n\n" + full_block
 
+    # 5. 파일 쓰기
     with open(README_FILE, "w", encoding="utf-8") as f:
         f.write(new_content)
     
-    print("README.md has been successfully updated with the Security Dashboard.")
+    print("SUCCESS: README.md has been successfully updated.")
 
 if __name__ == "__main__":
-    print("Starting Security Resource Check...")
-    update_readme()
+    print("=== Starting Security Resource Collector ===")
+    try:
+        update_readme()
+    except Exception as e:
+        print(f"CRITICAL ERROR: {e}")
+        sys.exit(1)
