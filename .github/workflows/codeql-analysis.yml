@@ -1,4 +1,4 @@
-name: "🛡️ CodeQL Grand Security Analysis"
+name: "🛡️ CodeQL Grand Security Analysis (v4)"
 
 on:
   push:
@@ -6,7 +6,8 @@ on:
   pull_request:
     branches: [ "main", "master" ]
   schedule:
-    - cron: '30 1 * * 0'  # 매주 일요일 새벽 1시 30분 정기 정밀 점검
+    - cron: '30 1 * * 0'
+  workflow_dispatch:
 
 jobs:
   analyze:
@@ -18,58 +19,79 @@ jobs:
       security-events: write
 
     strategy:
-      fail-fast: false
+      fail-fast: false # 한 언어가 실패해도 나머지는 계속 진행 (중단 없음)
       matrix:
-        # 우리가 생성한 프로젝트의 핵심 언어 2가지를 병렬로 분석
         language: [ 'java-kotlin', 'python' ]
 
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
 
-    # 1. CodeQL 초기화 (보안 강도: 최상)
-    - name: Initialize CodeQL
-      uses: github/codeql-action/init@v3
+    # [Update] CodeQL Action v3 -> v4
+    - name: Initialize CodeQL (v4)
+      uses: github/codeql-action/init@v4
       with:
         languages: ${{ matrix.language }}
-        # 'security-and-quality'는 보안 취약점뿐만 아니라 코드 품질(버그, 나쁜 패턴)까지 검사함
+        # 보안 및 품질 쿼리 모두 적용
         queries: security-and-quality
 
-    # 2. Java (Spring Boot) 수동 빌드 설정
-    # 앞서 생성한 'backend-java' 폴더 구조를 인식하기 위해 수동 빌드 적용
-    - name: Build Java Application
-      if: matrix.language == 'java-kotlin'
+    # [Logic] 스킵 표시 없이 내부적으로 분기 처리하는 스마트 빌드 스텝
+    - name: 🛠️ Smart Environment Setup & Build
       run: |
-        echo ">>> ☕ Building Java Spring Boot for CodeQL analysis..."
-        # backend-java 디렉토리가 존재하는지 확인
-        if [ -d "backend-java" ]; then
-          mvn clean package -f backend-java/pom.xml -DskipTests -B
-        else
-          echo "::warning:: 'backend-java' directory not found. Using root pom.xml if exists."
-          mvn clean package -DskipTests -B
+        echo ">>> Starting Build Process for: ${{ matrix.language }}"
+        
+        # ---------------------------------------------------
+        # CASE 1: JAVA-KOTLIN (Spring Boot)
+        # ---------------------------------------------------
+        if [[ "${{ matrix.language }}" == "java-kotlin" ]]; then
+          echo ">>> ☕ Detected Java Environment."
+          
+          # Java 버전 세팅 (명시적)
+          echo "Setting up JDK 17..."
+          export JAVA_HOME=$JAVA_HOME_17_X64
+          
+          # Maven 빌드 수행
+          if [ -d "backend-java" ]; then
+            echo "Building backend-java module..."
+            mvn clean package -f backend-java/pom.xml -DskipTests -B
+          elif [ -f "pom.xml" ]; then
+             echo "Building root project..."
+             mvn clean package -DskipTests -B
+          else
+             echo "::warning:: No pom.xml found. Depending on Autobuild."
+          fi
+        
+        # ---------------------------------------------------
+        # CASE 2: PYTHON (FastAPI)
+        # ---------------------------------------------------
+        elif [[ "${{ matrix.language }}" == "python" ]]; then
+          echo ">>> 🐍 Detected Python Environment."
+          
+          echo "Upgrading pip..."
+          python -m pip install --upgrade pip
+          
+          # 의존성 파일 찾기 및 설치
+          if [ -f "backend-python/requirements.txt" ]; then
+            echo "Installing dependencies from backend-python..."
+            pip install -r backend-python/requirements.txt
+          elif [ -f "requirements.txt" ]; then
+            echo "Installing root dependencies..."
+            pip install -r requirements.txt
+          else
+            echo "::notice:: No requirements.txt found. Skipping dependency install."
+          fi
         fi
+        
+        echo ">>> ✅ Build/Setup Phase Complete."
 
-    # 3. Python 의존성 설치 (분석 정확도 향상)
-    # CodeQL이 Python 코드를 더 잘 이해하도록 의존성을 설치해줍니다.
-    - name: Install Python Dependencies
-      if: matrix.language == 'python'
-      run: |
-        echo ">>> 🐍 Installing Python dependencies for analysis..."
-        python -m pip install --upgrade pip
-        if [ -f "backend-python/requirements.txt" ]; then
-          pip install -r backend-python/requirements.txt
-        elif [ -f "requirements.txt" ]; then
-          pip install -r requirements.txt
-        fi
-
-    # 4. 자동 빌드 (Java는 위에서 수동으로 했으므로 Python만 해당)
-    # Python은 컴파일이 필요 없지만, 이 단계가 분석 환경을 정리해줍니다.
-    - name: Autobuild
+    # [Update] CodeQL Autobuild v3 -> v4
+    # Java는 위에서 수동 빌드했으므로 Python만 자동 빌드 사용 (충돌 방지 로직 포함)
+    - name: Autobuild (v4)
       if: matrix.language != 'java-kotlin'
-      uses: github/codeql-action/autobuild@v3
+      uses: github/codeql-action/autobuild@v4
 
-    # 5. 분석 수행 및 결과 업로드
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v3
+    # [Update] CodeQL Analyze v3 -> v4
+    - name: Perform CodeQL Analysis (v4)
+      uses: github/codeql-action/analyze@v4
       with:
         category: "/language:${{ matrix.language }}"
