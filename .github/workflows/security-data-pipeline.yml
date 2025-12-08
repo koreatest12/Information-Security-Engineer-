@@ -1,9 +1,9 @@
-name: 🔐 Security DB Master Pipeline
+name: 🔐 Security DB Master Pipeline V2
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # 5분마다 DB 업데이트
-  workflow_dispatch:      # 수동 실행
+    - cron: '*/5 * * * *' # 5분마다 DB 업데이트 및 백업
+  workflow_dispatch:      # 관리자 수동 실행
 
 concurrency:
   group: ${{ github.workflow }}
@@ -11,30 +11,39 @@ concurrency:
 
 env:
   TZ: 'Asia/Seoul'
+  DB_PATH: 'data/security_archive.db'
+  BACKUP_DIR: 'backup'
 
 permissions:
   contents: write
 
 jobs:
-  # 1. 사전 보안 검사 (유출 방지 워크플로우 호출 시뮬레이션 or 직접 검사)
+  # 1. 고도화된 사전 보안 검사 (Self-Detection 방지 적용)
   pre-flight-security-check:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Code
         uses: actions/checkout@v4
-      
-      - name: Simple Secret Check
-        run: |
-          # 기본적 키워드 검색 (Gitleaks 대용 간편 버전)
-          if grep -rE "AWS_ACCESS_KEY|PRIVATE_KEY" . --exclude-dir=.git; then
-            echo "❌ CRITICAL: Potential secret found in source code!"
-            exit 1
-          fi
-          echo "✅ Pre-flight Security Check Passed."
 
-  # 2. DB 구축 및 데이터 적재
+      - name: Advanced Secret Scan (Self-Correction)
+        run: |
+          echo "🔍 Starting Pre-flight Security Scan..."
+          
+          # [Fix] --exclude-dir={.git,.github} 추가
+          # .git(히스토리)과 .github(워크플로우 정의 파일)를 제외하여 
+          # 검사 스크립트가 자기 자신을 유출로 오진하는 것을 방지합니다.
+          
+          if grep -rE "AWS_ACCESS_KEY|PRIVATE_KEY|sk_live_[0-9a-zA-Z]+" . --exclude-dir={.git,.github} --exclude=*.db; then
+            echo "❌ CRITICAL: Potential secret found in source code!"
+            echo "::error::Secrets detected! Pipeline aborted to prevent leakage."
+            exit 1
+          else
+            echo "✅ Pre-flight Security Check Passed. No plaintext secrets found."
+          fi
+
+  # 2. DB 구축, 데이터 적재 및 백업
   database-operations:
-    needs: pre-flight-security-check # 보안 검사가 통과해야만 실행 (안전장치)
+    needs: pre-flight-security-check
     runs-on: ubuntu-latest
     timeout-minutes: 5
     
@@ -44,11 +53,22 @@ jobs:
         with:
           fetch-depth: 0
 
-      # 의존성 파일 자동 생성 (필수)
-      - name: Setup Requirements
+      # [Upgrade] 의존성 및 스크립트 파일 자가 복구 (Self-Healing)
+      - name: Ensure Environment
         run: |
+          # 1. 데이터 및 백업 디렉토리 생성
+          mkdir -p data backup scripts
+          
+          # 2. requirements.txt 생성
           if [ ! -f requirements.txt ]; then
             echo "requests>=2.31.0" > requirements.txt
+          fi
+
+          # 3. DB Master 스크립트 존재 여부 확인 (없으면 에러)
+          if [ ! -f scripts/security_db_master.py ]; then
+            echo "⚠️ scripts/security_db_master.py not found!"
+            echo "Please ensure the python script is committed."
+            exit 1
           fi
 
       - name: Set up Python
@@ -63,30 +83,79 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # [Upgrade] DB 백업 생성 (작업 전 스냅샷)
+      - name: Create Pre-Job Backup
+        run: |
+          if [ -f "$DB_PATH" ]; then
+            TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+            cp "$DB_PATH" "$BACKUP_DIR/security_archive_$TIMESTAMP.bak"
+            
+            # 백업 파일 5개만 유지하고 오래된 것 삭제 (용량 관리)
+            cd $BACKUP_DIR
+            ls -t *.bak | tail -n +6 | xargs -r rm --
+            echo "✅ Backup created: security_archive_$TIMESTAMP.bak"
+          else
+            echo "ℹ️ No existing DB found. Skipping backup."
+          fi
+
       # [핵심] DB 마스터 스크립트 실행
       - name: Run DB Master Engine
         run: python scripts/security_db_master.py
 
-      # [DB 결과 확인] SQL로 조회하여 로그에 출력 (테이블 생성 확인용)
-      - name: Verify DB Integrity
+      # [Upgrade] 무결성 검증 및 감사 로그(Audit Log) 생성
+      - name: Verify & Audit
         run: |
-          sqlite3 data/security_archive.db "SELECT * FROM security_logic;" || echo "No logic data yet."
-          sqlite3 data/security_archive.db "SELECT name, status, latency_ms FROM external_resources ORDER BY id DESC LIMIT 5;"
+          echo "=== 🛡️ DB Audit Report ($(date)) ===" > audit_log.txt
+          
+          # 테이블 존재 여부 및 데이터 개수 확인
+          if [ -f "$DB_PATH" ]; then
+            POLICY_COUNT=$(sqlite3 "$DB_PATH" "SELECT COUNT(*) FROM security_logic;")
+            RESOURCE_COUNT=$(sqlite3 "$DB_PATH" "SELECT COUNT(*) FROM external_resources;")
+            
+            echo "📊 Policy Records: $POLICY_COUNT" >> audit_log.txt
+            echo "📊 Resource Records: $RESOURCE_COUNT" >> audit_log.txt
+            
+            # 최근 추가된 리소스 3건 조회
+            echo -e "\n[Recent Resources]" >> audit_log.txt
+            sqlite3 -header -column "$DB_PATH" "SELECT name, status, latency_ms FROM external_resources ORDER BY id DESC LIMIT 3;" >> audit_log.txt
+            
+            cat audit_log.txt
+          else
+            echo "⚠️ DB File creation failed!"
+            exit 1
+          fi
 
-      # [스마트 커밋] 변경된 DB 파일 저장
-      - name: Commit DB Changes
+      # [Upgrade] DB 파일을 GitHub Artifact로 업로드 (다운로드 가능하게 함)
+      - name: Upload DB Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: security-database
+          path: data/security_archive.db
+          retention-days: 7
+
+      # [스마트 커밋] DB 및 백업 파일 저장
+      - name: Commit DB & Backups
         run: |
           git config --global user.name "SecurityDB-Bot"
           git config --global user.email "bot@db-master.com"
           
           git pull --rebase origin main || true
-          git add data/security_archive.db
+          
+          # DB 파일, 백업 폴더, 감사 로그 추가
+          git add data/ backup/ audit_log.txt
           
           if git diff --staged --quiet; then
-            echo "✅ DB Data is up to date."
+            echo "✅ Data is up to date."
             exit 0
           fi
           
-          # DB 파일은 바이너리이므로 Amend 덮어쓰기 방식으로 용량 절약
-          git commit --amend -m "db(sync): update security knowledge base [skip ci]" || git commit -m "db(sync): update security knowledge base"
-          git push --force origin main || git push origin main
+          # 히스토리 덮어쓰기 (Amend) 전략 사용
+          LAST_AUTHOR=$(git log -1 --pretty=format:'%an')
+          
+          if [ "$LAST_AUTHOR" == "SecurityDB-Bot" ]; then
+             git commit --amend -m "db(sync): update security archive & backup [skip ci]"
+             git push --force origin main
+          else
+             git commit -m "db(sync): update security archive & backup"
+             git push origin main
+          fi
