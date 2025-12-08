@@ -1,0 +1,39 @@
+name: 🛡️ Data Leakage Prevention (DLP)
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch: # 수동 실행 가능
+
+jobs:
+  secret-scan:
+    name: 🕵️ Gitleaks Secret Scan
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write # GitHub Security 탭에 리포트 업로드 권한
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 전체 히스토리를 가져와서 과거의 유출까지 탐지
+
+      # Gitleaks 실행 (비밀 정보 탐지)
+      - name: Run Gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          # true일 경우 유출 발견 시 워크플로우를 실패 처리함 (Merge 차단 효과)
+          fail-on-error: true 
+          verbose: true
+
+      # (선택사항) 탐지 결과 리포트 출력
+      - name: Scan Report
+        if: always()
+        run: |
+          echo "✅ Secret scanning completed."
+          echo "If this workflow failed, please check the logs. SENSITIVE DATA DETECTED!"
