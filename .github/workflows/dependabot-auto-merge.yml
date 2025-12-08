@@ -1,29 +1,32 @@
-# 파일 경로: .github/workflows/dependabot-auto-merge.yml
-name: 🤖 Dependabot Auto-Merge
+name: 🤖 Dependabot Auto-Merge & Batch Processor
 
 on:
   pull_request:
     types: [opened, synchronize, reopened]
   pull_request_target:
     types: [opened, synchronize, reopened]
-  workflow_dispatch: # 수동 일괄 처리 버튼
+  workflow_dispatch: # 관리자 수동 실행 버튼
 
 permissions:
-  contents: write
-  pull-requests: write
-  checks: read
+  contents: write       # 코드 병합 권한
+  pull-requests: write  # PR 승인 및 코멘트 권한
+  checks: read          # CI 상태 확인 권한
 
 jobs:
   approve-and-merge:
     runs-on: ubuntu-latest
-    # 봇이 만든 PR이거나, 관리자가 수동 실행했을 때만 작동
+    # 조건: 봇이 만든 PR이거나, 관리자가 수동으로 실행했을 때만 작동
     if: ${{ github.actor == 'dependabot[bot]' || github.event_name == 'workflow_dispatch' }}
     
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # [Case 1] 봇이 자동으로 PR을 올렸을 때 (단일 처리)
+      # ========================================================
+      # [Case 1] 봇이 PR을 생성했을 때 (실시간 단일 처리)
+      # ========================================================
+      
+      # 1-1. 메타데이터 추출 (Dependabot Action 사용)
       - name: Fetch Metadata (Auto Event)
         if: ${{ github.event_name != 'workflow_dispatch' }}
         id: metadata
@@ -31,36 +34,65 @@ jobs:
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
 
+      # 1-2. 승인 및 병합 (Major 버전 제외)
       - name: Approve & Merge (Auto Event)
         if: ${{ github.event_name != 'workflow_dispatch' && steps.metadata.outputs.update-type != 'version-update:semver-major' }}
         run: |
-          echo "🤖 Auto-processing PR: $PR_URL"
-          gh pr review "$PR_URL" --approve --body "🤖 Dependabot Automation: Approved by Workflow."
+          echo "🤖 Processing PR: $PR_URL"
+          echo "📦 Update Type: ${{ steps.metadata.outputs.update-type }}"
+          
+          # 승인 (Approve)
+          gh pr review "$PR_URL" --approve --body "🤖 Dependabot Automation: Approved safe update."
+          
+          # 자동 병합 활성화 (Squash Merge)
           gh pr merge --auto --squash "$PR_URL"
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # ========================================================
       # [Case 2] 수동 실행 버튼을 눌렀을 때 (일괄 처리)
-      - name: Manual Batch Process
+      # ========================================================
+      
+      - name: Manual Batch Process (Safe Mode)
         if: ${{ github.event_name == 'workflow_dispatch' }}
         run: |
           echo "🔍 Searching for open Dependabot PRs..."
-          prs=$(gh pr list --state open --app dependabot --json number,url,title --limit 50)
+          
+          # Dependabot PR 조회 (라벨 정보 포함)
+          prs=$(gh pr list --state open --app dependabot --json number,url,title,labels --limit 50)
           
           if [ -z "$prs" ] || [ "$prs" == "[]" ]; then
             echo "✅ No open Dependabot PRs found."
             exit 0
           fi
           
+          echo "📋 Found PRs. Starting safety check and merge process..."
+          
+          # PR 하나씩 순회하며 처리
           echo "$prs" | jq -c '.[]' | while read -r pr; do
             pr_url=$(echo "$pr" | jq -r '.url')
             pr_title=$(echo "$pr" | jq -r '.title')
+            # 라벨 정보를 통해 버전 확인 (dependabot은 'semver:major', 'semver:minor' 등의 라벨을 붙임)
+            labels=$(echo "$pr" | jq -r '.labels[].name')
+            
+            echo "---------------------------------------------------"
             echo "Processing: $pr_title"
             
-            # 승인 및 자동 병합 설정
-            gh pr review "$pr_url" --approve --body "🤖 Manual Dispatch: Batch Approved." || true
-            gh pr merge --auto --squash "$pr_url" || echo "⚠️ Check CI status for $pr_title"
+            # [안전장치] Major 버전 업데이트인지 확인 (라벨 분석)
+            if echo "$labels" | grep -q "semver:major"; then
+              echo "⚠️ SKIP: Major version update detected. Manual review required."
+              continue
+            fi
+
+            # 1. 승인 (Approve)
+            echo "✅ Safe update detected. Approving..."
+            gh pr review "$pr_url" --approve --body "🤖 Manual Dispatch: Batch Approved (Safe Update)." || echo "NOTE: Already approved."
+            
+            # 2. 자동 병합 (Merge)
+            echo "🚀 Enabling auto-merge..."
+            gh pr merge --auto --squash "$pr_url" || echo "⚠️ Merge waiting for checks."
+            
           done
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
