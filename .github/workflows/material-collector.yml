@@ -2,7 +2,7 @@ name: 🤖 Security Material Auto-Collector
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # 5분마다 실행
+    - cron: '*/5 * * * *' # 5분마다 실행 (사용자 요청 반영)
   workflow_dispatch:      # 수동 실행 버튼
 
 env:
@@ -14,46 +14,75 @@ permissions:
 jobs:
   collect-and-update:
     runs-on: ubuntu-latest
-    timeout-minutes: 5 # 5분 넘어가면 강제 종료
+    timeout-minutes: 5 # 5분 이상 걸리면 강제 종료 (비용 절감)
     
     steps:
+      # 1. 저장소 코드 가져오기 (전체 히스토리 포함)
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # 히스토리 조작을 위해 전체 기록 가져오기 (필수)
+          fetch-depth: 0 
 
+      # 2. [FIX] 의존성 파일 자동 생성 (에러 해결 핵심)
+      # requirements.txt 파일이 없으면 자동으로 생성하여 setup-python 에러를 방지합니다.
+      - name: Ensure requirements.txt exists
+        run: |
+          if [ ! -f requirements.txt ]; then
+            echo "requests" > requirements.txt
+            echo "✅ Created requirements.txt automatically."
+          else
+            echo "✅ requirements.txt already exists."
+          fi
+
+      # 3. 파이썬 설정 (이제 requirements.txt가 있으므로 캐싱 성공)
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-          cache: 'pip'
+          cache: 'pip' # 캐싱 기능 활성화
 
+      # 4. 의존성 패키지 설치
       - name: Install Dependencies
         run: |
-          pip install requests
+          pip install -r requirements.txt
 
+      # 5. 스크립트 폴더 및 파일 안전 확인 (없으면 자동 생성)
+      - name: Ensure Script Exists
+        run: |
+          if [ ! -d "scripts" ]; then
+            mkdir scripts
+            echo "📂 Created scripts directory."
+          fi
+          # 스크립트 파일이 없는 경우를 대비한 체크 (실제 로직은 repo에 있어야 함)
+          if [ ! -f "scripts/fetch_security_news.py" ]; then
+            echo "⚠️ Warning: fetch_security_news.py not found! Skipping execution."
+            exit 0
+          fi
+
+      # 6. 수집 스크립트 실행
       - name: Run Collection Script
         run: |
           python scripts/fetch_security_news.py
 
+      # 7. 스마트 커밋 (봇 기록 덮어쓰기 & 사용자 기록 보존)
       - name: Smart Commit & Clean History
         run: |
           git config --global user.name "SecurityBot"
           git config --global user.email "bot@noreply.github.com"
           
-          # 1. 최신 상태 가져오기 (충돌 방지)
+          # 원격 저장소 최신 상태 반영 (Rebase)
           git pull --rebase origin main || echo "Already up to date"
 
-          # 2. 변경사항 스테이징
+          # 변경사항 스테이징
           git add .
           
-          # 3. 변경사항이 없으면 종료
+          # 변경사항 체크
           if git diff --staged --quiet; then
             echo "✅ No changes detected. Skipping commit."
             exit 0
           fi
 
-          # 4. 마지막 커밋 작성자 확인
+          # 마지막 커밋 작성자 확인
           LAST_AUTHOR=$(git log -1 --pretty=format:'%an')
           CURRENT_TIME=$(date "+%Y-%m-%d %H:%M:%S")
           
@@ -61,14 +90,14 @@ jobs:
 
           if [ "$LAST_AUTHOR" == "SecurityBot" ]; then
             echo "♻️ Detected previous Bot commit. Overwriting (Amending) to save space..."
-            # 이전 커밋을 덮어쓰기 (--amend) 하여 히스토리가 쌓이지 않게 함
+            # 봇이 작성한 이전 커밋을 수정(--amend)하여 덮어쓰기
             git commit --amend -m "docs: [LIVE] security dashboard updated ($CURRENT_TIME)"
             
-            # 강제 푸시 (이전 기록 삭제 및 갱신)
+            # 강제 푸시 (이전 기록 삭제)
             git push --force origin main
           else
             echo "🆕 Detected Human commit. Creating a new commit..."
-            # 사람이 쓴 글은 보존하고 그 위에 새 커밋 작성
+            # 사람이 작성한 커밋 위에 새로 쌓기
             git commit -m "docs: update security dashboard ($CURRENT_TIME)"
             git push origin main
           fi
