@@ -1,173 +1,288 @@
-name: "🏗️ Scaffold Java & Python Project Structure"
+name: "🏗️ Mega-Scaffold: Java, Python, Docker & Resources"
 
 on:
   workflow_dispatch:
     inputs:
-      java_package_group:
-        description: 'Java Group ID (e.g., com.example)'
+      project_name:
+        description: 'Project Name (Root Folder)'
         required: true
-        default: 'com.company.project'
-      python_app_name:
-        description: 'Python App Name'
+        default: 'hybrid-platform'
+      java_group_id:
+        description: 'Java Group ID'
         required: true
-        default: 'data_processor'
-      initialize_gitkeep:
-        description: 'Create .gitkeep in empty folders?'
-        type: boolean
+        default: 'com.example.platform'
+      spring_boot_version:
+        description: 'Spring Boot Version'
         required: true
-        default: true
+        default: '3.2.0'
+      python_version:
+        description: 'Python Version'
+        required: true
+        default: '3.10'
 
 permissions:
   contents: write
 
 jobs:
-  create-structure:
+  generate-full-stack:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: 🛠️ Generate Directory Structure & Files
+      - name: 🏭 Generate Comprehensive Architecture
         run: |
-          echo ">>> Initializing Project Structure..."
+          # --- [Configuration] ---
+          PROJECT_ROOT="${{ inputs.project_name }}"
+          JAVA_PKG_PATH=$(echo "${{ inputs.java_group_id }}" | tr '.' '/')
           
-          # 변수 설정
-          JAVA_GROUP_PATH=$(echo "${{ inputs.java_package_group }}" | tr '.' '/')
-          PYTHON_APP="${{ inputs.python_app_name }}"
-          
-          # ==========================================
-          # 1. Java (Spring Boot Style) Structure
-          # ==========================================
-          echo "Creating Java directories..."
-          mkdir -p backend-java/src/main/java/$JAVA_GROUP_PATH
-          mkdir -p backend-java/src/main/resources/static
-          mkdir -p backend-java/src/main/resources/templates
-          mkdir -p backend-java/src/test/java/$JAVA_GROUP_PATH
-          
-          # Java: pom.xml 생성 (기본 템플릿)
-          if [ ! -f backend-java/pom.xml ]; then
-            cat <<EOF > backend-java/pom.xml
-          <project>
+          echo ">>> 🚀 Starting Mega-Scaffolding for $PROJECT_ROOT..."
+          mkdir -p $PROJECT_ROOT
+          cd $PROJECT_ROOT
+
+          # ======================================================
+          # 1. JAVA SPRING BOOT (Production Ready Structure)
+          # ======================================================
+          echo ">>> ☕ Building Java Spring Boot Environment..."
+          JAVA_ROOT="backend-java"
+          mkdir -p $JAVA_ROOT/src/main/java/$JAVA_PKG_PATH/controller
+          mkdir -p $JAVA_ROOT/src/main/java/$JAVA_PKG_PATH/service
+          mkdir -p $JAVA_ROOT/src/main/java/$JAVA_PKG_PATH/dto
+          mkdir -p $JAVA_ROOT/src/main/java/$JAVA_PKG_PATH/repository
+          mkdir -p $JAVA_ROOT/src/main/resources
+          mkdir -p $JAVA_ROOT/src/test/java/$JAVA_PKG_PATH
+
+          # [File] pom.xml (Real Dependencies)
+          cat <<EOF > $JAVA_ROOT/pom.xml
+          <project xmlns="http://maven.apache.org/POM/4.0.0" 
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
             <modelVersion>4.0.0</modelVersion>
-            <groupId>${{ inputs.java_package_group }}</groupId>
+            <parent>
+              <groupId>org.springframework.boot</groupId>
+              <artifactId>spring-boot-starter-parent</artifactId>
+              <version>${{ inputs.spring_boot_version }}</version>
+              <relativePath/>
+            </parent>
+            <groupId>${{ inputs.java_group_id }}</groupId>
             <artifactId>backend-java</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>1.0.0-SNAPSHOT</version>
+            <name>backend-java</name>
+            <properties>
+              <java.version>17</java.version>
+            </properties>
             <dependencies>
-                </dependencies>
+              <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+              </dependency>
+              <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-actuator</artifactId>
+              </dependency>
+              <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <optional>true</optional>
+              </dependency>
+              <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <scope>test</scope>
+              </dependency>
+            </dependencies>
+            <build>
+              <plugins>
+                <plugin>
+                  <groupId>org.springframework.boot</groupId>
+                  <artifactId>spring-boot-maven-plugin</artifactId>
+                </plugin>
+              </plugins>
+            </build>
           </project>
           EOF
-          fi
 
-          # Java: application.yml 생성
-          touch backend-java/src/main/resources/application.yml
-          
-          # Java: Main Class 생성
-          MAIN_CLASS_PATH="backend-java/src/main/java/$JAVA_GROUP_PATH/Application.java"
-          if [ ! -f "$MAIN_CLASS_PATH" ]; then
-            cat <<EOF > "$MAIN_CLASS_PATH"
-          package ${{ inputs.java_package_group }};
-
-          public class Application {
+          # [File] Application.java
+          cat <<EOF > $JAVA_ROOT/src/main/java/$JAVA_PKG_PATH/BackendApplication.java
+          package ${{ inputs.java_group_id }};
+          import org.springframework.boot.SpringApplication;
+          import org.springframework.boot.autoconfigure.SpringBootApplication;
+          @SpringBootApplication
+          public class BackendApplication {
               public static void main(String[] args) {
-                  System.out.println("Java Backend Initialized");
+                  SpringApplication.run(BackendApplication.class, args);
               }
           }
           EOF
-          fi
 
-          # ==========================================
-          # 2. Python Structure
-          # ==========================================
-          echo "Creating Python directories..."
-          mkdir -p backend-python/$PYTHON_APP/core
-          mkdir -p backend-python/$PYTHON_APP/api
-          mkdir -p backend-python/$PYTHON_APP/services
-          mkdir -p backend-python/tests
-          mkdir -p backend-python/notebooks
-          mkdir -p backend-python/configs
-          
-          # Python: requirements.txt 생성
-          if [ ! -f backend-python/requirements.txt ]; then
-            echo "fastapi>=0.68.0" > backend-python/requirements.txt
-            echo "uvicorn>=0.15.0" >> backend-python/requirements.txt
-            echo "pandas>=1.3.0" >> backend-python/requirements.txt
-            echo "pytest>=6.0.0" >> backend-python/requirements.txt
-          fi
-
-          # Python: main.py 생성
-          if [ ! -f backend-python/main.py ]; then
-            cat <<EOF > backend-python/main.py
-          import sys
-          import os
-
-          def main():
-              print("Python Environment Initialized")
-
-          if __name__ == "__main__":
-              main()
+          # [File] application.yml
+          cat <<EOF > $JAVA_ROOT/src/main/resources/application.yml
+          server:
+            port: 8080
+          spring:
+            application:
+              name: java-backend-service
+          management:
+            endpoints:
+              web:
+                exposure:
+                  include: health,info,metrics
           EOF
-          fi
+
+          # [File] Dockerfile (Java Multi-stage)
+          cat <<EOF > $JAVA_ROOT/Dockerfile
+          # Stage 1: Build
+          FROM maven:3.9-eclipse-temurin-17 AS builder
+          WORKDIR /app
+          COPY pom.xml .
+          COPY src ./src
+          RUN mvn clean package -DskipTests
+
+          # Stage 2: Run
+          FROM eclipse-temurin:17-jre
+          WORKDIR /app
+          COPY --from=builder /app/target/*.jar app.jar
+          EXPOSE 8080
+          ENTRYPOINT ["java", "-jar", "app.jar"]
+          EOF
+
+          # ======================================================
+          # 2. PYTHON (FastAPI/Data Structure)
+          # ======================================================
+          echo ">>> 🐍 Building Python Environment..."
+          PY_ROOT="backend-python"
+          mkdir -p $PY_ROOT/app/routers
+          mkdir -p $PY_ROOT/app/models
+          mkdir -p $PY_ROOT/app/utils
+          mkdir -p $PY_ROOT/tests
+
+          # [File] requirements.txt
+          cat <<EOF > $PY_ROOT/requirements.txt
+          fastapi>=0.95.0
+          uvicorn>=0.22.0
+          pandas>=2.0.0
+          numpy>=1.24.0
+          python-dotenv>=1.0.0
+          requests>=2.31.0
+          EOF
+
+          # [File] main.py
+          cat <<EOF > $PY_ROOT/app/main.py
+          from fastapi import FastAPI
+          app = FastAPI(title="Python Service")
+
+          @app.get("/")
+          def read_root():
+              return {"message": "Hello from Python Service"}
           
-          # Python: .env 파일 (예시)
-          if [ ! -f backend-python/.env.example ]; then
-            echo "DB_HOST=localhost" > backend-python/.env.example
-            echo "SECRET_KEY=change_me" >> backend-python/.env.example
-          fi
+          @app.get("/health")
+          def health_check():
+              return {"status": "ok"}
+          EOF
 
-          # ==========================================
-          # 3. Common Resources & Configs
-          # ==========================================
-          echo "Creating Common Resource directories..."
-          mkdir -p resources/data/raw
-          mkdir -p resources/data/processed
-          mkdir -p resources/logs/java
-          mkdir -p resources/logs/python
-          mkdir -p resources/docker
-          mkdir -p resources/scripts
-          mkdir -p docs/api
-          mkdir -p docs/architecture
+          # [File] Dockerfile (Python)
+          cat <<EOF > $PY_ROOT/Dockerfile
+          FROM python:${{ inputs.python_version }}-slim
+          WORKDIR /app
+          COPY requirements.txt .
+          RUN pip install --no-cache-dir -r requirements.txt
+          COPY app ./app
+          ENV PYTHONPATH=/app
+          EXPOSE 8000
+          CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+          EOF
 
-          # Common: .gitignore 생성 (통합)
-          if [ ! -f .gitignore ]; then
-            cat <<EOF > .gitignore
-          # Java
+          # ======================================================
+          # 3. DOCKER ORCHESTRATION & RESOURCES
+          # ======================================================
+          echo ">>> 🐳 Building Docker Compose & Common Resources..."
+          
+          # [File] docker-compose.yml
+          cat <<EOF > docker-compose.yml
+          version: '3.8'
+          services:
+            java-service:
+              build: ./$JAVA_ROOT
+              ports:
+                - "8080:8080"
+              environment:
+                - SPRING_PROFILES_ACTIVE=dev
+              networks:
+                - app-network
+
+            python-service:
+              build: ./$PY_ROOT
+              ports:
+                - "8000:8000"
+              environment:
+                - PYTHONUNBUFFERED=1
+              networks:
+                - app-network
+                
+            # Database (Optional Placeholder)
+            postgres-db:
+              image: postgres:15-alpine
+              environment:
+                POSTGRES_USER: admin
+                POSTGRES_PASSWORD: password
+                POSTGRES_DB: appdb
+              ports:
+                - "5432:5432"
+              networks:
+                - app-network
+                
+          networks:
+            app-network:
+              driver: bridge
+          EOF
+
+          # [Scripts] Build & Run Helpers
+          mkdir -p scripts
+          
+          # build.sh
+          cat <<EOF > scripts/build_all.sh
+          #!/bin/bash
+          echo "Building Java and Python containers..."
+          docker-compose build
+          EOF
+          chmod +x scripts/build_all.sh
+          
+          # run.sh
+          cat <<EOF > scripts/run_dev.sh
+          #!/bin/bash
+          echo "Starting stack..."
+          docker-compose up -d
+          EOF
+          chmod +x scripts/run_dev.sh
+
+          # [Resources] Common Directories
+          mkdir -p resources/configs
+          mkdir -p resources/secrets
+          mkdir -p resources/data/input
+          mkdir -p resources/data/output
+          
+          # Git Ignore
+          cat <<EOF > .gitignore
           target/
           *.class
-          
-          # Python
           __pycache__/
           *.pyc
-          venv/
           .env
-          
-          # IDE
+          venv/
           .idea/
           .vscode/
-          *.swp
-          
-          # OS
-          .DS_Store
+          *.log
           EOF
-          fi
 
-          # ==========================================
-          # 4. Finalize (Add .gitkeep)
-          # ==========================================
-          if [ "${{ inputs.initialize_gitkeep }}" == "true" ]; then
-            find . -type d -empty -not -path "./.git/*" -exec touch {}/.gitkeep \;
-          fi
-
-      - name: 🚀 Commit and Push Changes
+      - name: 🚀 Commit and Push Generated Stack
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
+          git config --global user.name "Actions Bot"
+          git config --global user.email "bot@github.com"
           git add .
           
-          # 변경 사항이 있을 때만 커밋
           if git diff --staged --quiet; then
-            echo "No changes to commit."
+            echo "No changes."
           else
-            git commit -m "🏗️ Scaffold: Initialize Java/Python dual-stack structure"
+            git commit -m "🚧 Initialize Full Stack: Java(SB), Python, Docker, Compose"
             git push
           fi
