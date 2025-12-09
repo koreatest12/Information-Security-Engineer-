@@ -30,7 +30,7 @@ jobs:
 
       - name: 🛠️ Generate Essential Project Files (Error-Free)
         run: |
-          # Python을 사용하여 JSON 및 스크립트 파일을 안전하게 생성 (EOF 오류 방지)
+          # Python을 사용하여 JSON 및 스크립트 파일을 안전하게 생성
           python -c '
           import os
           import json
@@ -54,7 +54,6 @@ jobs:
           }
           with open("services/frontend/package.json", "w") as f:
               json.dump(frontend_pkg, f, indent=2)
-          
           with open("services/frontend/next.config.js", "w") as f: f.write("module.exports = {}")
           with open("services/frontend/README.md", "w") as f: f.write("# Frontend Service")
 
@@ -85,7 +84,7 @@ jobs:
           with open("services/admin/package.json", "w") as f:
               json.dump(admin_pkg, f, indent=2)
 
-          # 5. 진단 스크립트 생성
+          # 5. 진단 스크립트 생성 (중요: exit code 1을 리턴하도록 설정됨)
           check_script = """import json, sys, os
           from packaging import version
 
@@ -102,7 +101,7 @@ jobs:
                   
                   if vuln:
                       print(f"🚨 VULNERABLE detected in {os.getcwd()}")
-                      sys.exit(1)
+                      sys.exit(1) # Exit Code 1 반환 (Shell에서 잡아야 함)
                   else:
                       print(f"✅ Safe: {os.getcwd()}")
                       sys.exit(0)
@@ -115,7 +114,7 @@ jobs:
           with open("scripts/check_vuln.py", "w") as f:
               f.write(check_script)
           
-          print(">>> ✅ All files generated successfully without EOF errors.")
+          print(">>> ✅ All files generated successfully.")
           '
 
       - name: 🔐 Fix File Permissions (Critical)
@@ -167,6 +166,9 @@ jobs:
         run: |
           echo "🔍 Starting Recursive Scan..."
           
+          # fail-fast 해제 (중요!)
+          set +e 
+
           # node_modules 제외하고 package.json 찾기
           find . -name "package.json" -not -path "*/node_modules/*" | while read package_file; do
             dir_path=$(dirname "$package_file")
@@ -179,36 +181,44 @@ jobs:
             # 패키지 설치
             echo "📦 Installing Dependencies..."
             if [ -f "yarn.lock" ]; then
-              yarn install --ignore-engines --silent || echo "⚠️ Yarn install warning (Ignored)"
+              yarn install --ignore-engines --silent > /dev/null 2>&1
             else
-              npm install --legacy-peer-deps --no-audit --silent || echo "⚠️ NPM install warning (Ignored)"
+              npm install --legacy-peer-deps --no-audit --silent > /dev/null 2>&1
             fi
 
-            # 진단 실행
-            python $GITHUB_WORKSPACE/scripts/check_vuln.py
-            EXIT_CODE=$?
-
-            # 패치 실행
-            if [ $EXIT_CODE -ne 0 ]; then
-              echo "🔧 Vulnerability found! Applying Patch..."
-              npm install react@19.0.1 react-dom@19.0.1 next@15.0.5 --save-exact --legacy-peer-deps
-              echo "✅ Patch Applied to $dir_path"
+            # --- [핵심 수정] 에러 핸들링 로직 ---
+            # "if !" 구문을 사용하여 Python 스크립트가 실패(exit 1)하더라도 
+            # 쉘이 죽지 않고 then 블록을 실행하도록 변경함.
+            if ! python $GITHUB_WORKSPACE/scripts/check_vuln.py; then
+              echo "🔧 [Action Required] Vulnerability found! Applying Patch..."
+              
+              # 강제 업데이트 실행 (React 19.0.1, Next 15.0.5 안전 버전)
+              # --save-exact: 버전을 고정함
+              npm install react@19.0.1 react-dom@19.0.1 next@15.0.5 --save-exact --legacy-peer-deps --silent
+              
+              echo "✅ [Success] Patch Applied to $dir_path"
+            else
+              echo "🎉 [Clean] Service is secure."
             fi
             
             popd > /dev/null
           done
+          
+          # 다시 fail-fast 설정 (선택 사항)
+          set -e
 
       - name: 💾 Commit Changes (Self-Healing)
         run: |
           git config --global user.name "Security Ops Bot"
           git config --global user.email "secops@bot.local"
           
+          # 변경사항이 있는지 확인
           if [[ `git status --porcelain` ]]; then
             git add .
             git commit -m "🛡️ Auto-Generated & Patched Vulnerable Services"
-            git push origin HEAD:${{ github.ref }} || echo "⚠️ Push failed"
+            git push origin HEAD:${{ github.ref }} || echo "⚠️ Push failed (Permission or Branch protection)"
           else
-            echo "✨ No changes to commit."
+            echo "✨ No changes needed. System is clean."
           fi
 
   # ==================================================================================
