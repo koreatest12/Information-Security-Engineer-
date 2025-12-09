@@ -1,12 +1,8 @@
-name: 🛡️ Security Audit (React/Next.js RCE)
+name: 🛡️ Deep Security Audit (Recursive)
 
 on:
   push:
-    branches: [ "**" ] # 모든 브랜치 푸시 시 실행
-  pull_request:
-    branches: [ "main" ]
-  schedule:
-    - cron: '0 0 * * *' # 매일 자정 실행
+    branches: [ "**" ]
   workflow_dispatch:
 
 jobs:
@@ -14,10 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-    
+
     steps:
       - name: 📥 Checkout Code
         uses: actions/checkout@v4
+
+      # [테스트용] 위에서 만든 생성 스크립트를 실행하여 강제로 취약 환경 조성 (실제 운영시 제거 가능)
+      # - name: 🧪 Generate Vulnerable Files (Test Only)
+      #   run: |
+      #     mkdir -p scripts
+      #     chmod +x scripts/generate_vulnerable_apps.sh
+      #     ./scripts/generate_vulnerable_apps.sh
 
       - name: 🐍 Set up Python
         uses: actions/setup-python@v5
@@ -31,32 +34,44 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          # 중요: 에러 방지를 위해 자동 캐싱 옵션 제거 (수동 처리 로직 사용)
 
-      - name: 🧐 Detect & Install Dependencies
-        id: install
+      - name: 🕵️ Find and Audit All Projects
+        id: audit
         run: |
-          if [ ! -f "package.json" ]; then
-            echo "::warning::No package.json found. Skipping installation."
-            echo "skip_scan=true" >> $GITHUB_OUTPUT
-            exit 0
-          fi
-
-          if [ -f "yarn.lock" ]; then
-            echo "🧶 Yarn lock file detected. Installing with Yarn..."
-            yarn install --frozen-lockfile || yarn install
-          elif [ -f "package-lock.json" ]; then
-            echo "📦 NPM lock file detected. Installing with npm ci..."
-            npm ci
-          else
-            echo "⚠️ No lock file found. Running npm install to generate dependency tree..."
-            # Lock 파일이 없으므로 npm install로 강제 설치하여 node_modules 생성
-            npm install
-          fi
-
-      - name: 🕵️ Run Vulnerability Scanner
-        if: steps.install.outputs.skip_scan != 'true'
-        run: |
-          python scripts/check_cve_2025.py
-
-      # Slack 알림 단계 삭제됨 (요청 반영)
+          echo "🔍 Searching for package.json files recursively..."
+          
+          # node_modules 제외하고 package.json이 있는 모든 디렉토리 찾기
+          find . -name "package.json" -not -path "*/node_modules/*" | while read package_file; do
+            dir_path=$(dirname "$package_file")
+            echo "---------------------------------------------------"
+            echo "📂 Detected Project at: $dir_path"
+            echo "---------------------------------------------------"
+            
+            pushd "$dir_path" > /dev/null
+            
+            # 1. 의존성 설치 (Lock 파일 우선 순위 로직)
+            if [ -f "yarn.lock" ]; then
+              echo "🧶 Installing with Yarn..."
+              yarn install --frozen-lockfile --silent || yarn install --silent
+            elif [ -f "package-lock.json" ]; then
+              echo "📦 Installing with NPM CI..."
+              npm ci --silent
+            else
+              echo "⚠️ No lock file. Running npm install..."
+              npm install --silent
+            fi
+            
+            # 2. Python 스크립트 실행 (경로 조정 필요)
+            # 스크립트 위치는 항상 루트의 scripts/ 폴더에 있다고 가정
+            SCRIPT_PATH="$GITHUB_WORKSPACE/scripts/check_cve_2025.py"
+            
+            if [ -f "$SCRIPT_PATH" ]; then
+              python "$SCRIPT_PATH"
+              # 취약점 발견 시 종료 코드 캡처 (하나라도 실패하면 전체 실패 처리하려면 로직 추가 필요)
+            else
+              echo "❌ Script not found at $SCRIPT_PATH"
+            fi
+            
+            popd > /dev/null
+            echo ""
+          done
