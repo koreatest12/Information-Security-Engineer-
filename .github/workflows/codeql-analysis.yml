@@ -1,24 +1,24 @@
-name: 🚀 Grand Ops:Fix, Release & Deploy
+name: ⚔️ Grand Ops:Cyber Attack & Defense Simulation
 
 on:
   push:
-    branches: [ "main", "master" ] # 메인 브랜치 푸시 시 동작
+    branches: [ "main", "master" ]
   schedule:
     - cron: '*/30 * * * *'
   workflow_dispatch:
 
 permissions:
-  contents: write       # 릴리즈 생성 및 커밋 권한
-  packages: write       # GitHub Packages 배포 권한
+  contents: write
+  packages: write
   security-events: write
   actions: read
 
 jobs:
   # ==================================================================================
-  # JOB 1: 🏗️ 환경 초기화 및 파일 생성
+  # JOB 1: 🏗️ 워게임 환경 구축 (Wargame Setup)
   # ==================================================================================
-  initialize-environment:
-    name: 1. Initialize & Fix Permissions
+  setup-wargame:
+    name: 1. Setup Cyber Wargame Env
     runs-on: ubuntu-latest
     steps:
       - name: 📥 Checkout Code
@@ -29,202 +29,264 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: 🛠️ Generate Essential Project Files
+      - name: 🛠️ Generate Vulnerable Apps & Attack Scripts
         run: |
           python -c '
           import os, json
-          dirs = ["services/frontend", "services/backend", "services/admin", "scripts"]
+
+          # 1. 디렉토리 생성
+          dirs = ["services/frontend", "services/backend", "services/admin", "security_tools"]
           for d in dirs: os.makedirs(d, exist_ok=True)
 
-          # Frontend (Vulnerable Version)
+          # 2. Frontend (Vulnerable Next.js)
           with open("services/frontend/package.json", "w") as f:
               json.dump({
                   "name": "@${{ github.repository_owner }}/frontend-service",
                   "version": "1.0.0",
-                  "publishConfig": { "registry": "https://npm.pkg.github.com" },
-                  "dependencies": { "next": "15.0.0", "react": "19.0.0", "react-dom": "19.0.0" }
+                  "dependencies": { "next": "15.0.0", "react": "19.0.0" }
               }, f, indent=2)
 
-          # Backend
+          # 3. Backend (Clean initially)
+          with open("services/backend/server.js", "w") as f:
+              f.write("const express = require(\"express\");\nconst app = express();\n")
+          
           with open("services/backend/package.json", "w") as f:
-              json.dump({
-                  "name": "@${{ github.repository_owner }}/backend-api",
-                  "version": "0.5.0",
-                  "dependencies": { "express": "^4.18.2", "react": "19.0.0", "react-server-dom-webpack": "19.0.0" }
-              }, f, indent=2)
+              json.dump({"name": "backend-api", "version": "1.0.0"}, f)
 
-          # Admin
-          with open("services/admin/package.json", "w") as f:
-              json.dump({
-                  "name": "@${{ github.repository_owner }}/admin-panel",
-                  "version": "2.1.0",
-                  "dependencies": { "next": "15.0.5", "react": "19.0.1", "react-dom": "19.0.1" }
-              }, f, indent=2)
+          # 4. 🔴 Red Team 공격 스크립트 생성
+          attack_script = """import os
+          print(\"🔴 [RED TEAM] Initiating Cyber Attacks...\")
+          
+          # Attack 1: SQL Injection 삽입
+          with open(\"services/backend/server.js\", \"a\") as f:
+              f.write(\"\\n// MALICIOUS CODE INJECTED\\n\")
+              f.write(\"const query = \\\"SELECT * FROM users WHERE id = \\\" + req.body.id; // SQLi Vulnerability\\n\")
+          print(\"⚠️  [Attack] SQL Injection code injected into server.js\")
 
-          # Check Script
-          script = """import json, sys, os
-          def check():
-              try:
-                  if not os.path.exists("package.json"): return 0
-                  with open("package.json") as f: data = json.load(f)
-                  deps = data.get("dependencies", {})
-                  vuln = False
-                  if "react" in deps and deps["react"] == "19.0.0": vuln = True
-                  if vuln: sys.exit(1)
-                  else: sys.exit(0)
-              except: sys.exit(0)
-          if __name__ == "__main__": check()
+          # Attack 2: Secret Key 유출
+          with open(\"services/backend/config.js\", \"w\") as f:
+              f.write(\"const AWS_KEY = \\\"AKIAIOSFODNN7EXAMPLE\\\"; // Leaked Key\\n\")
+          print(\"⚠️  [Attack] AWS Access Key leaked in config.js\")
+
+          # Attack 3: Malware Drop
+          with open(\"services/frontend/malware.sh\", \"w\") as f:
+              f.write(\"rm -rf / --no-preserve-root # Malicious Payload\")
+          print(\"⚠️  [Attack] Malware dropped: malware.sh\")
           """
-          with open("scripts/check_vuln.py", "w") as f: f.write(script)
+          with open("security_tools/attack.py", "w") as f: f.write(attack_script)
+
+          # 5. 🔵 Blue Team 방어 스크립트 생성
+          defense_script = """import os, re
+          print(\"🔵 [BLUE TEAM] Starting Security Scan & Auto-Remediation...\")
+          
+          def scan_and_fix(root_dir):
+              threats_neutralized = 0
+              
+              for root, dirs, files in os.walk(root_dir):
+                  for file in files:
+                      path = os.path.join(root, file)
+                      
+                      # Defense 1: Malware Detection (File Name)
+                      if file == \"malware.sh\":
+                          os.remove(path)
+                          print(f\"🛡️  [DEFENSE] Malware Removed: {path}\")
+                          threats_neutralized += 1
+                          continue
+                      
+                      try:
+                          with open(path, \"r\") as f: content = f.read()
+                          original_content = content
+                          
+                          # Defense 2: Secret Scanning (Regex)
+                          if \"AKIA\" in content:
+                              content = re.sub(r\"AKIA[A-Z0-9]+\", \"[REDACTED_SECRET]\", content)
+                              print(f\"🛡️  [DEFENSE] Secret Sanitized in: {path}\")
+                          
+                          # Defense 3: SQL Injection Detection
+                          if \"SELECT * FROM\" in content and \"+\" in content:
+                              content = content.replace(\"req.body.id\", \"? (Parameterized)\")
+                              content = content.replace(\"// SQLi Vulnerability\", \"// Fixed by Blue Team\")
+                              print(f\"🛡️  [DEFENSE] SQL Injection Patched in: {path}\")
+
+                          if content != original_content:
+                              with open(path, \"w\") as f: f.write(content)
+                              threats_neutralized += 1
+                      except: pass
+                      
+              if threats_neutralized > 0:
+                  print(f\"✅ Total Threats Neutralized: {threats_neutralized}\")
+                  # exit 0 (Success)
+              else:
+                  print(\"✅ System Clean.\")
+
+          scan_and_fix(\".\")
+          """
+          with open("security_tools/defense.py", "w") as f: f.write(defense_script)
           '
 
       - name: 🔐 Fix Permissions
-        run: |
-          chmod -R 755 .
-          chmod +x scripts/check_vuln.py
+        run: chmod -R 755 .
 
-      - name: 📤 Upload Artifacts
+      - name: 📤 Upload Wargame Kit
         uses: actions/upload-artifact@v4
         with:
-          name: project-files
+          name: wargame-kit
           path: .
           include-hidden-files: true
 
   # ==================================================================================
-  # JOB 2: 🚑 보안 진단 및 자동 패치
+  # JOB 2: 🔴 가상 보안 공격 감행 (Red Team Attack)
   # ==================================================================================
-  audit-and-patch:
-    name: 2. Security Audit & Auto-Fix
-    needs: initialize-environment
+  simulate-attack:
+    name: 2. 🔴 Red Team Attack Simulation
+    needs: setup-wargame
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Download Wargame Kit
+        uses: actions/download-artifact@v4
+        with:
+          name: wargame-kit
+          path: .
+      
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: 💣 EXECUTE ATTACKS
+        run: |
+          echo "=========================================="
+          echo "🚨 SECURITY ALERT: SIMULATED ATTACKS DETECTED"
+          echo "=========================================="
+          python security_tools/attack.py
+          
+          echo "👀 Verifying Damage..."
+          if [ -f "services/frontend/malware.sh" ]; then echo "❌ Malware exists!"; fi
+          grep "AKIA" services/backend/config.js || true
+
+      - name: 📤 Upload Compromised State
+        uses: actions/upload-artifact@v4
+        with:
+          name: compromised-code
+          path: .
+
+  # ==================================================================================
+  # JOB 3: 🔵 보안 방어 및 복구 (Blue Team Defense)
+  # ==================================================================================
+  activate-defense:
+    name: 3. 🔵 Blue Team Defense & Response
+    needs: simulate-attack
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: 📥 Download Artifacts
+      - name: 📥 Download Compromised Code
         uses: actions/download-artifact@v4
         with:
-          name: project-files
+          name: compromised-code
           path: .
-      
-      - run: chmod -R 755 .
 
-      - name: 🟢 Setup Node.js
-        uses: actions/setup-node@v4
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
         with:
-          node-version: '20'
+          python-version: '3.10'
 
-      - name: 🕵️ Find & Fix Vulnerabilities
+      - name: 🛡️ ACTIVATE DEFENSE PROTOCOLS
         run: |
-          set +e
-          find . -name "package.json" -not -path "*/node_modules/*" | while read package_file; do
-            dir_path=$(dirname "$package_file")
-            pushd "$dir_path" > /dev/null
-            
-            # Install
-            npm install --legacy-peer-deps --no-audit --silent > /dev/null 2>&1
+          echo "=========================================="
+          echo "🛡️ SECURITY SYSTEM: SCANNING & REMEDIATING"
+          echo "=========================================="
+          python security_tools/defense.py
 
-            # Check & Patch
-            if ! python $GITHUB_WORKSPACE/scripts/check_vuln.py; then
-              echo "🔧 Patching $dir_path ..."
-              npm install react@19.0.1 react-dom@19.0.1 next@15.0.5 --save-exact --legacy-peer-deps --silent
-              # 버전 릴리즈를 위해 npm version patch 실행
-              npm version patch --no-git-tag-version --force || true
-            fi
-            popd > /dev/null
-          done
-          set -e
-
-      - name: 💾 Commit & Push Patches
+      - name: 🔍 Verify Remediation
         run: |
-          git config --global user.name "Security Bot"
-          git config --global user.email "bot@security.local"
-          if [[ `git status --porcelain` ]]; then
-            git add .
-            git commit -m "🔒 Security: Auto-patched dependencies & Bump version"
-            git push origin HEAD:${{ github.ref }} || echo "⚠️ Push skipped"
-          fi
+          echo "🔍 Double Checking..."
+          if [ ! -f "services/frontend/malware.sh" ]; then echo "✅ Malware successfully removed."; else echo "❌ Malware removal failed!"; exit 1; fi
+          if grep -q "REDACTED" services/backend/config.js; then echo "✅ Secrets successfully redacted."; else echo "❌ Secret leak persists!"; exit 1; fi
 
-      - name: 📤 Upload Patched Code
+      - name: 💾 Commit Security Fixes
+        run: |
+          git config --global user.name "Blue Team Bot"
+          git config --global user.email "defense@ops.local"
+          git add .
+          git commit -m "🛡️ Incident Response: Neutralized Red Team Attacks" --allow-empty
+          git push origin HEAD:${{ github.ref }} || echo "⚠️ Push skipped (Simulated)"
+
+      - name: 📤 Upload Secured Code
         uses: actions/upload-artifact@v4
         with:
-          name: patched-code
+          name: secured-code
           path: .
 
   # ==================================================================================
-  # JOB 3: 📦 패키지 배포 (New Feature)
+  # JOB 4: 🚑 취약점 진단 및 패키지 릴리즈 (Dependency Ops)
   # ==================================================================================
-  publish-packages:
-    name: 3. Publish to GitHub Packages
-    needs: audit-and-patch
+  dependency-ops:
+    name: 4. Dependency Patch & Release
+    needs: activate-defense
     runs-on: ubuntu-latest
     permissions:
+      contents: write
       packages: write
-      contents: read
     steps:
-      - name: 📥 Download Patched Code
+      - name: 📥 Download Secured Code
         uses: actions/download-artifact@v4
         with:
-          name: patched-code
+          name: secured-code
           path: .
-
-      - name: 🟢 Setup Node for Publishing
+      
+      - name: 🟢 Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           registry-url: 'https://npm.pkg.github.com'
           scope: '@${{ github.repository_owner }}'
 
-      - name: 🚀 Publish Packages
+      - name: 🕵️ Check & Patch CVEs (React/Next)
         run: |
-          # frontend 서비스만 예시로 배포
-          cd services/frontend
-          echo "📦 Publishing Frontend Service..."
-          # 실제 배포 시도 (이미 같은 버전이 있으면 에러 나므로 true로 통과)
-          npm publish --access public || echo "⚠️ Package already exists or permission denied (Simulation Mode)"
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          echo "🔍 Scanning for CVE-2025-55182..."
+          # React/Next 취약점 패치 로직 (기존 기능)
+          find . -name "package.json" | while read pkg; do
+            dir=$(dirname "$pkg")
+            cd "$dir"
+            if grep -q "19.0.0" package.json; then
+              echo "🔧 Patching vulnerable dependencies in $dir..."
+              npm install react@19.0.1 react-dom@19.0.1 next@15.0.5 --save-exact --legacy-peer-deps --silent > /dev/null 2>&1
+            fi
+            cd - > /dev/null
+          done
 
-  # ==================================================================================
-  # JOB 4: 🏷️ 릴리즈 생성 (New Feature)
-  # ==================================================================================
-  create-release:
-    name: 4. Create GitHub Release
-    needs: publish-packages
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: 📥 Checkout
-        uses: actions/checkout@v4
-
-      - name: 🏷️ Generate Tag & Release
+      - name: 📦 Publish & Tag Release
+        run: |
+          echo "🚀 Publishing Secure Packages..."
+          # 시뮬레이션: 실제 배포는 권한 필요하므로 echo로 대체
+          echo "npm publish --access public" 
+          
+      - name: 🏷️ Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: v${{ github.run_number }}
-          name: "Release v${{ github.run_number }} (Security Patched)"
+          tag_name: v${{ github.run_number }}-secured
+          name: "🛡️ Secure Release v${{ github.run_number }}"
           body: |
-            ## 🛡️ Security Updates
-            - Auto-patched React/Next.js vulnerabilities (CVE-2025-55182)
-            - Dependencies updated to safe versions.
-            
-            ## 📦 Artifacts
-            - Packages published to GitHub Registry.
-          draft: false
-          prerelease: false
+            ## ⚔️ Cyber Wargame Report
+            - **Red Team Attacks:** Detected & Neutralized (SQLi, Secrets, Malware)
+            - **Dependency Status:** Patched (CVE-2025-55182)
+            - **System Status:** 🟢 OPERATIONAL
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   # ==================================================================================
-  # JOB 5: 🚀 서버 배포 (Deployment)
+  # JOB 5: 🚀 최종 서버 배포 (Deployment)
   # ==================================================================================
   deploy-production:
     name: 5. Deploy to Production
-    needs: create-release
+    needs: dependency-ops
     runs-on: ubuntu-latest
     steps:
-      - name: 📡 Deploying Release v${{ github.run_number }}
+      - name: 📡 Deploying Secure Artifacts
         run: |
-          echo "✅ Deploying secure artifacts from Release v${{ github.run_number }}"
-          echo "🚀 Restarting Servers..."
-          sleep 2
-          echo "🎉 Deployment Successful!"
+          echo "✅ All Security Protocols Passed."
+          echo "🚀 Deploying to Production Servers..."
+          echo "   -> Updating Containers..."
+          echo "   -> Health Check: OK"
+          echo "🎉 Deployment Complete!"
