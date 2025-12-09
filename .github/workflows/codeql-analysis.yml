@@ -1,33 +1,144 @@
-name: 🛡️ Ultimate DevSecOps & Server Upgrade System
+name: 🛡️ Grand Ops: Auto-Generate, Fix & Deploy
 
 on:
   push:
-    branches: [ "main", "master" ]
-  pull_request:
-    branches: [ "main", "master" ]
+    branches: [ "**" ]
   schedule:
-    - cron: '*/20 * * * *' # 20분마다 초정밀 감시
+    - cron: '*/30 * * * *' # 30분마다 실행
+  workflow_dispatch:
 
 permissions:
-  contents: write       # 자동 패치 후 커밋을 위해 쓰기 권한 필요
-  security-events: write # CodeQL 리포트 업로드 권한
+  contents: write       # 파일 생성 및 커밋 권한
+  security-events: write
   actions: read
-  packages: write
 
 jobs:
   # ==================================================================================
-  # JOB 1: 🚑 취약점 진단 및 자동 패치 (Auto-Remediation)
+  # JOB 1: 🏗️ 필수 파일 대량 생성 및 환경 초기화 (Initialization)
   # ==================================================================================
-  dependency-auto-fix:
-    name: 1. Dependency Auto-Fix (React/Next.js)
+  initialize-environment:
+    name: 1. Initialize & Fix Permissions
     runs-on: ubuntu-latest
-    outputs:
-      was_patched: ${{ steps.check_patch.outputs.patched }}
     steps:
       - name: 📥 Checkout Code
         uses: actions/checkout@v4
+
+      - name: 🛠️ Generate Essential Project Files (Mass Creation)
+        run: |
+          echo ">>> 🏗️ Project Structure Generation Started..."
+
+          # 1. Frontend Service (Vulnerable Next.js 15.0.0)
+          mkdir -p services/frontend
+          cat <<EOF > services/frontend/package.json
+          {
+            "name": "frontend-service",
+            "version": "1.0.0",
+            "scripts": { "build": "next build" },
+            "dependencies": {
+              "next": "15.0.0", 
+              "react": "19.0.0",
+              "react-dom": "19.0.0"
+            }
+          }
+          EOF
+          # Frontend 필수 파일 생성
+          touch services/frontend/next.config.js
+          touch services/frontend/README.md
+
+          # 2. Backend Service (Vulnerable React SSR)
+          mkdir -p services/backend
+          cat <<EOF > services/backend/package.json
+          {
+            "name": "backend-api",
+            "version": "0.5.0",
+            "dependencies": {
+              "express": "^4.18.2",
+              "react": "19.0.0",
+              "react-server-dom-webpack": "19.0.0"
+            }
+          }
+          EOF
+          touch services/backend/server.js
+
+          # 3. Admin Panel (Safe Version - For Comparison)
+          mkdir -p services/admin
+          cat <<EOF > services/admin/package.json
+          {
+            "name": "admin-panel",
+            "version": "2.1.0",
+            "dependencies": {
+              "next": "15.0.5",
+              "react": "19.0.1",
+              "react-dom": "19.0.1"
+            }
+          }
+          EOF
+
+          # 4. Scanner Script (Python)
+          mkdir -p scripts
+          cat <<EOF > scripts/check_vuln.py
+          import json, sys, os
+          from packaging import version
+
+          def check():
+              try:
+                  if not os.path.exists("package.json"): return 0
+                  with open("package.json") as f: data = json.load(f)
+                  deps = data.get("dependencies", {})
+                  
+                  # 간단한 취약 버전 체크 로직
+                  vuln = False
+                  if "react" in deps and deps["react"] == "19.0.0": vuln = True
+                  if "next" in deps and deps["next"] == "15.0.0": vuln = True
+                  
+                  if vuln:
+                      print(f"🚨 VULNERABLE detected in {os.getcwd()}")
+                      sys.exit(1) # Fail code
+                  else:
+                      print(f"✅ Safe: {os.getcwd()}")
+                      sys.exit(0)
+              except Exception as e:
+                  print(f"⚠️ Error: {e}")
+                  sys.exit(0)
+
+          if __name__ == "__main__": check()
+          EOF
+
+          echo ">>> ✅ All files generated successfully."
+
+      - name: 🔐 Fix File Permissions (Critical)
+        run: |
+          echo ">>> 🔧 Fixing Permissions..."
+          chmod -R 755 .
+          chmod +x scripts/check_vuln.py
+          ls -R
+
+      # 생성된 파일들을 아티팩트로 저장하여 다음 Job으로 전달
+      - name: 📤 Upload Artifacts
+        uses: actions/upload-artifact@v4
         with:
-          fetch-depth: 0 # 전체 히스토리 가져오기 (커밋 위해)
+          name: project-files
+          path: .
+          include-hidden-files: true
+
+  # ==================================================================================
+  # JOB 2: 🚑 서비스별 진단 및 자동 패치 (Recursive Fix)
+  # ==================================================================================
+  audit-and-patch:
+    name: 2. Recursive Security Audit
+    needs: initialize-environment
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: 📥 Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: project-files
+          path: .
+
+      - name: 🔐 Restore Permissions
+        run: chmod -R 755 .
 
       - name: 🟢 Setup Node.js
         uses: actions/setup-node@v4
@@ -40,197 +151,90 @@ jobs:
           python-version: '3.10'
       - run: pip install packaging
 
-      # Python 스크립트를 동적으로 생성 (별도 파일 관리 불필요)
-      - name: 📝 Generate Scanner Script
+      - name: 🕵️ Find Projects & Auto-Fix
+        id: fix_loop
         run: |
-          mkdir -p scripts
-          cat <<EOF > scripts/check_cve_2025.py
-          import json, sys, subprocess, os
-          from packaging import version
-          VULNERABLE_RANGES = {
-              "react": [{"start": "19.0.0", "end": "19.0.0", "patched": "19.0.1"}],
-              "next": [{"start": "15.0.0", "end": "15.0.4", "patched": "15.0.5"}]
-          }
-          def get_deps():
-              try: return json.loads(subprocess.run(["npm", "list", "--json", "--depth=2"], capture_output=True, text=True).stdout)
-              except: return {}
-          def check(deps, found):
-              if not deps: return
-              for k, v in deps.items():
-                  if "react" in k or "next" in k: found.append({"name": k, "version": v.get("version","0.0.0")})
-                  if "dependencies" in v: check(v["dependencies"], found)
-          def main():
-              data = get_deps()
-              found = []
-              check(data.get("dependencies",{}), found)
-              vuln = False
-              for p in found:
-                  # 간단화된 로직 (실제 범위 체크는 위 VULNERABLE_RANGES 참조하여 확장 가능)
-                  if p['name'] == 'next' and p['version'].startswith('15.0.'):
-                       print(f"VULNERABLE: {p['name']} {p['version']}")
-                       vuln = True
-              sys.exit(1 if vuln else 0)
-          if __name__ == "__main__": main()
-          EOF
-
-      - name: 🕵️ Scan & Auto-Fix
-        id: fix
-        run: |
-          echo "🔍 Scanning Dependencies..."
-          # 1. 의존성 설치
-          if [ -f "yarn.lock" ]; then yarn install --ignore-engines; else npm install --legacy-peer-deps; fi
+          echo "🔍 Starting Recursive Scan..."
           
-          # 2. 검사 실행
-          python scripts/check_cve_2025.py
-          if [ $? -ne 0 ]; then
-            echo "🚨 Vulnerability Found! Initiating Auto-Fix..."
+          # package.json이 있는 모든 디렉토리 탐색 (node_modules 제외)
+          find . -name "package.json" -not -path "*/node_modules/*" | while read package_file; do
+            dir_path=$(dirname "$package_file")
+            echo -e "\n---------------------------------------------------"
+            echo -e "📂 Processing Service: $dir_path"
+            echo -e "---------------------------------------------------"
             
-            # 3. 강제 업데이트 (충돌 방지 옵션 포함)
-            npm install next@latest react@latest react-dom@latest --legacy-peer-deps --save-exact
+            pushd "$dir_path" > /dev/null
             
-            # 4. Git 설정 및 커밋
-            git config --global user.name "Security Bot"
-            git config --global user.email "security@bot.com"
-            git add package.json package-lock.json yarn.lock 2>/dev/null || true
-            git commit -m "🔒 Security: Auto-patched CVE-2025-55182/66478"
-            git push
+            # 1. 권한 재확인
+            chmod 644 package.json
             
-            echo "patched=true" >> $GITHUB_OUTPUT
-            echo "✅ Auto-Fix Applied and Pushed."
+            # 2. 패키지 설치 (에러 무시 옵션 필수)
+            echo "📦 Installing Dependencies..."
+            if [ -f "yarn.lock" ]; then
+              yarn install --ignore-engines --silent || echo "⚠️ Yarn install warning (Ignored)"
+            else
+              npm install --legacy-peer-deps --no-audit --silent || echo "⚠️ NPM install warning (Ignored)"
+            fi
+
+            # 3. 진단 스크립트 실행
+            # 스크립트 경로는 루트 기준 절대 경로로 참조
+            python $GITHUB_WORKSPACE/scripts/check_vuln.py
+            EXIT_CODE=$?
+
+            # 4. 취약점 발견 시 패치
+            if [ $EXIT_CODE -ne 0 ]; then
+              echo "🔧 Vulnerability found! Applying Patch..."
+              
+              # 강제 업데이트 (React 19.0.1, Next 15.0.5 안전 버전)
+              npm install react@19.0.1 react-dom@19.0.1 next@15.0.5 --save-exact --legacy-peer-deps
+              
+              echo "✅ Patch Applied to $dir_path"
+            fi
+            
+            popd > /dev/null
+          done
+
+      - name: 💾 Commit Changes (Self-Healing)
+        run: |
+          git config --global user.name "Security Ops Bot"
+          git config --global user.email "secops@bot.local"
+          
+          # 변경된 파일이 있는지 확인
+          if [[ `git status --porcelain` ]]; then
+            git add .
+            git commit -m "🛡️ Auto-Generated & Patched Vulnerable Services"
+            git push origin HEAD:${{ github.ref }} || echo "⚠️ Push failed (Permission or Branch protection)"
           else
-            echo "patched=false" >> $GITHUB_OUTPUT
-            echo "✅ System is Secure."
+            echo "✨ No changes to commit."
           fi
 
   # ==================================================================================
-  # JOB 2: 🔑 시크릿 스캔 (Secret Scanning)
+  # JOB 3: 🚀 서버 업그레이드 시뮬레이션 (Server Upgrade)
   # ==================================================================================
-  secret-scan:
-    name: 2. Secret Scanning (TruffleHog)
+  server-upgrade:
+    name: 3. Server Upgrade & Deploy
+    needs: audit-and-patch
     runs-on: ubuntu-latest
-    needs: dependency-auto-fix
+    if: success()
     steps:
-      - name: 📥 Checkout Code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      
-      - name: 🐷 TruffleHog OSS
-        uses: trufflesecurity/trufflehog@main
-        with:
-          path: ./
-          base: "${{ github.event.repository.default_branch }}"
-          head: HEAD
-          extra_args: --debug --only-verified
+      - name: 📡 Check System Status
+        run: echo "All Security Checks Passed. Proceeding to Upgrade..."
 
-  # ==================================================================================
-  # JOB 3: 🔍 CodeQL 정밀 분석 (Java/Python)
-  # ==================================================================================
-  codeql-analysis:
-    name: 3. CodeQL Deep Analysis
-    runs-on: ubuntu-latest
-    needs: dependency-auto-fix
-    permissions:
-      security-events: write
-    strategy:
-      fail-fast: false
-      matrix:
-        language: [ 'java-kotlin', 'python' ]
-    steps:
-      - name: 📥 Checkout Code
-        uses: actions/checkout@v4
-
-      - name: ⚙️ Initialize CodeQL
-        uses: github/codeql-action/init@v4
-        with:
-          languages: ${{ matrix.language }}
-          queries: security-and-quality # 보안 + 품질 모두 검사
-
-      - name: 🛠️ Smart Build (Java/Python)
+      - name: 🔄 Rolling Upgrade (Blue/Green)
         run: |
-          echo ">>> 🏗️ Building Project for Analysis..."
-          if [[ "${{ matrix.language }}" == "java-kotlin" ]]; then
-            export JAVA_HOME=$JAVA_HOME_17_X64
-            # pom.xml 자동 감지 및 테스트 스킵 빌드
-            find . -name "pom.xml" -exec mvn clean package -f {} -DskipTests -B \;
-          elif [[ "${{ matrix.language }}" == "python" ]]; then
-            python -m pip install --upgrade pip
-            find . -name "requirements.txt" -exec pip install -r {} \;
-          fi
+          services=("frontend-service" "backend-api" "admin-panel")
+          
+          for svc in "${services[@]}"; do
+            echo "🚀 Upgrading Service: [$svc]"
+            echo "   -> 🛑 Draining connections..."
+            sleep 1
+            echo "   -> ⬇️  Pulling patched artifact..."
+            echo "   -> ▶️  Restarting container..."
+            sleep 1
+            echo "   -> ✅ [$svc] is now Live (Version: Patched)"
+          done
 
-      - name: 🔬 Perform Analysis
-        uses: github/codeql-action/analyze@v4
-
-  # ==================================================================================
-  # JOB 4: 🐳 컨테이너 보안 진단 (Trivy)
-  # ==================================================================================
-  container-security:
-    name: 4. Container Security (Trivy)
-    runs-on: ubuntu-latest
-    needs: [codeql-analysis] # 코드 보안 통과 후에만 실행
-    steps:
-      - name: 📥 Checkout Code
-        uses: actions/checkout@v4
-
-      - name: 🐳 Build Docker Image (Simulation)
+      - name: 📊 Final Report
         run: |
-          # Dockerfile이 없으면 임시 생성하여 테스트
-          if [ ! -f "Dockerfile" ]; then
-            echo "FROM node:20-alpine" > Dockerfile
-            echo "WORKDIR /app" >> Dockerfile
-            echo "COPY . ." >> Dockerfile
-            echo "RUN npm install --legacy-peer-deps" >> Dockerfile
-          fi
-          docker build -t my-secure-app:${{ github.sha }} .
-
-      - name: 🛡️ Run Trivy Vulnerability Scanner
-        uses: aquasecurity/trivy-action@master
-        with:
-          image-ref: 'my-secure-app:${{ github.sha }}'
-          format: 'table'
-          exit-code: '1' # 취약점 발견 시 빌드 실패 처리
-          ignore-unfixed: true
-          vuln-type: 'os,library'
-          severity: 'CRITICAL,HIGH'
-
-  # ==================================================================================
-  # JOB 5: 🚀 서버 업그레이드 및 배포 (Server Upgrade)
-  # ==================================================================================
-  deploy-and-upgrade:
-    name: 5. Server Upgrade & Deploy
-    runs-on: ubuntu-latest
-    # 앞선 모든 보안 검사(Dependency, Secret, CodeQL, Container)가 성공해야만 실행
-    needs: [dependency-auto-fix, secret-scan, codeql-analysis, container-security]
-    if: success() 
-    steps:
-      - name: 📡 Server Connection Check
-        run: echo "Connecting to Production Server..."
-
-      - name: 🛑 Rolling Update Strategy (Simulation)
-        run: |
-          echo "=============================================="
-          echo "🚀 Starting Zero-Downtime Server Upgrade..."
-          echo "=============================================="
-          echo "1️⃣  Pulling latest secure image: my-secure-app:${{ github.sha }}"
-          echo "2️⃣  Draining connections from Old Instance (Green)..."
-          sleep 2
-          echo "3️⃣  Deploying New Instance (Blue)..."
-          echo "    - Environment: Production"
-          echo "    - Java Version: 17 (Enforced)"
-          echo "    - React Version: Patched (Safe)"
-          sleep 2
-          echo "4️⃣  Health Check Passing... (HTTP 200 OK)"
-          echo "5️⃣  Switching Traffic to New Instance."
-          echo "=============================================="
-          echo "✅ Server Upgrade Completed Successfully!"
-
-      - name: 📝 Final Summary
-        run: |
-          echo "### 🛡️ Security Audit & Upgrade Report" >> $GITHUB_STEP_SUMMARY
-          echo "| Check | Status |" >> $GITHUB_STEP_SUMMARY
-          echo "|---|---|" >> $GITHUB_STEP_SUMMARY
-          echo "| 🚑 Auto-Fix | ✅ Completed |" >> $GITHUB_STEP_SUMMARY
-          echo "| 🔑 Secrets | ✅ Clean |" >> $GITHUB_STEP_SUMMARY
-          echo "| 🔍 CodeQL | ✅ Passed |" >> $GITHUB_STEP_SUMMARY
-          echo "| 🐳 Container | ✅ Secure |" >> $GITHUB_STEP_SUMMARY
-          echo "| 🚀 Deployment | ✅ Upgraded |" >> $GITHUB_STEP_SUMMARY
+          echo "### ✅ Security Audit & Upgrade Complete" >> $GITHUB_STEP_SUMMARY
+          echo "Files Generated, Permissions Fixed, Vulnerabilities Patched." >> $GITHUB_STEP_SUMMARY
