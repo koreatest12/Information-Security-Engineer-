@@ -1,4 +1,4 @@
-name: 🛡️ Grand Ops: Auto-Generate, Fix & Deploy
+name: 🛡️ Grand Ops:Auto-Generate, Fix & Deploy
 
 on:
   push:
