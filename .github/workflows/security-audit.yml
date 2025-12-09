@@ -1,4 +1,4 @@
-name: 🛡️ Deep Security Audit (Recursive)
+name: 🛡️ Deep Security Audit & Auto-Fix
 
 on:
   push:
@@ -6,21 +6,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  audit-rsc-vulnerability:
+  audit-and-fix:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write # 코드 수정(업데이트) 후 커밋을 위해 쓰기 권한 필요 (PR 생성 시)
 
     steps:
       - name: 📥 Checkout Code
         uses: actions/checkout@v4
-
-      # [테스트용] 위에서 만든 생성 스크립트를 실행하여 강제로 취약 환경 조성 (실제 운영시 제거 가능)
-      # - name: 🧪 Generate Vulnerable Files (Test Only)
-      #   run: |
-      #     mkdir -p scripts
-      #     chmod +x scripts/generate_vulnerable_apps.sh
-      #     ./scripts/generate_vulnerable_apps.sh
 
       - name: 🐍 Set up Python
         uses: actions/setup-python@v5
@@ -35,43 +28,82 @@ jobs:
         with:
           node-version: '20'
 
-      - name: 🕵️ Find and Audit All Projects
+      - name: 🕵️ Find, Audit, and Fix Projects
         id: audit
         run: |
-          echo "🔍 Searching for package.json files recursively..."
+          echo "🔍 Scanning recursively for package.json..."
           
-          # node_modules 제외하고 package.json이 있는 모든 디렉토리 찾기
+          # 전체 실패 여부를 추적하기 위한 플래그
+          GLOBAL_FAILURE=0
+
+          # node_modules 제외하고 package.json 찾기
           find . -name "package.json" -not -path "*/node_modules/*" | while read package_file; do
             dir_path=$(dirname "$package_file")
-            echo "---------------------------------------------------"
-            echo "📂 Detected Project at: $dir_path"
-            echo "---------------------------------------------------"
+            echo -e "\n==================================================="
+            echo -e "📂 Processing Project: $dir_path"
+            echo -e "==================================================="
             
             pushd "$dir_path" > /dev/null
             
-            # 1. 의존성 설치 (Lock 파일 우선 순위 로직)
+            # --- 1. 초기 의존성 설치 ---
+            # 충돌 방지: --legacy-peer-deps (npm), --ignore-engines (yarn) 사용하여 설치 에러 최소화
             if [ -f "yarn.lock" ]; then
-              echo "🧶 Installing with Yarn..."
-              yarn install --frozen-lockfile --silent || yarn install --silent
+              echo "🧶 [Setup] Installing with Yarn..."
+              yarn install --frozen-lockfile --ignore-engines --silent || yarn install --ignore-engines --silent
             elif [ -f "package-lock.json" ]; then
-              echo "📦 Installing with NPM CI..."
-              npm ci --silent
+              echo "📦 [Setup] Installing with NPM CI..."
+              npm ci --legacy-peer-deps --silent
             else
-              echo "⚠️ No lock file. Running npm install..."
-              npm install --silent
+              echo "⚠️ [Setup] No lock file. Running npm install..."
+              npm install --legacy-peer-deps --silent
             fi
             
-            # 2. Python 스크립트 실행 (경로 조정 필요)
-            # 스크립트 위치는 항상 루트의 scripts/ 폴더에 있다고 가정
+            # --- 2. 1차 취약점 진단 ---
             SCRIPT_PATH="$GITHUB_WORKSPACE/scripts/check_cve_2025.py"
-            
-            if [ -f "$SCRIPT_PATH" ]; then
+            python "$SCRIPT_PATH"
+            EXIT_CODE=$?
+
+            # --- 3. 취약점 발견 시 자동 업그레이드 (Auto-Fix) ---
+            if [ $EXIT_CODE -ne 0 ]; then
+              echo -e "\n🔧 [Fix] Vulnerability detected! Attempting Auto-Upgrade..."
+              
+              # React와 Next.js를 최신 안정 버전으로 업데이트 (충돌 방지 플래그 포함)
+              # 주의: 메이저 버전 변경(Breaking Change) 가능성 있음. 보안이 최우선인 설정.
+              
+              if [ -f "yarn.lock" ]; then
+                echo "🧶 Upgrading dependencies via Yarn..."
+                # React 19, Next 15 최신 버전 타겟팅 (필요시 버전 고정 가능)
+                yarn add react@latest react-dom@latest next@latest --ignore-engines
+              else
+                echo "📦 Upgrading dependencies via NPM..."
+                # --legacy-peer-deps: 의존성 충돌 무시하고 강제 설치
+                # --save-exact: 버전을 명시적으로 고정
+                npm install react@latest react-dom@latest next@latest --save-exact --legacy-peer-deps
+              fi
+              
+              echo "✅ [Fix] Upgrade command executed."
+
+              # --- 4. 재검증 (Re-Audit) ---
+              echo "🔄 [Re-Audit] Verifying patch..."
               python "$SCRIPT_PATH"
-              # 취약점 발견 시 종료 코드 캡처 (하나라도 실패하면 전체 실패 처리하려면 로직 추가 필요)
+              RE_CHECK_CODE=$?
+              
+              if [ $RE_CHECK_CODE -eq 0 ]; then
+                echo "🎉 [Success] Vulnerabilities fixed successfully in $dir_path!"
+                # (선택사항) 여기서 git commit 로직을 추가하여 자동 커밋 가능
+              else
+                echo "🚨 [Fail] Auto-fix failed. Manual intervention required."
+                GLOBAL_FAILURE=1
+              fi
             else
-              echo "❌ Script not found at $SCRIPT_PATH"
+              echo "✅ [Clean] No vulnerabilities found."
             fi
             
             popd > /dev/null
-            echo ""
           done
+          
+          # 하나라도 실패한 프로젝트가 있다면 워크플로우 실패 처리
+          if [ $GLOBAL_FAILURE -ne 0 ]; then
+            echo "❌ Some projects remain vulnerable."
+            exit 1
+          fi
