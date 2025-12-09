@@ -1,17 +1,20 @@
-name: 🚨 Security Audit (CVE-2025-55182/66478)
+name: 🛡️ Security Audit (React/Next.js RCE)
 
 on:
   push:
-    branches: [ "main", "develop" ]
+    branches: [ "**" ] # 모든 브랜치 푸시 시 실행
   pull_request:
     branches: [ "main" ]
   schedule:
     - cron: '0 0 * * *' # 매일 자정 실행
-  workflow_dispatch: # 수동 실행 가능
+  workflow_dispatch:
 
 jobs:
   audit-rsc-vulnerability:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    
     steps:
       - name: 📥 Checkout Code
         uses: actions/checkout@v4
@@ -28,40 +31,32 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
+          # 중요: 에러 방지를 위해 자동 캐싱 옵션 제거 (수동 처리 로직 사용)
 
-      - name: 📥 Install Dependencies
-        # 프로덕션 의존성까지 모두 설치해야 정확한 트리 확인 가능
-        run: npm ci 
+      - name: 🧐 Detect & Install Dependencies
+        id: install
+        run: |
+          if [ ! -f "package.json" ]; then
+            echo "::warning::No package.json found. Skipping installation."
+            echo "skip_scan=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          if [ -f "yarn.lock" ]; then
+            echo "🧶 Yarn lock file detected. Installing with Yarn..."
+            yarn install --frozen-lockfile || yarn install
+          elif [ -f "package-lock.json" ]; then
+            echo "📦 NPM lock file detected. Installing with npm ci..."
+            npm ci
+          else
+            echo "⚠️ No lock file found. Running npm install to generate dependency tree..."
+            # Lock 파일이 없으므로 npm install로 강제 설치하여 node_modules 생성
+            npm install
+          fi
 
       - name: 🕵️ Run Vulnerability Scanner
-        id: scan
+        if: steps.install.outputs.skip_scan != 'true'
         run: |
           python scripts/check_cve_2025.py
-        continue-on-error: true # 스크립트가 실패(1)해도 알림 단계로 넘어가기 위함
 
-      # 취약점 발견 시 Slack 알림 (선택 사항)
-      - name: 🔔 Notify Slack on Failure
-        if: steps.scan.outcome == 'failure'
-        uses: 8398a7/action-slack@v3
-        with:
-          status: custom
-          fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
-          custom_payload: |
-            {
-              "attachments": [{
-                "color": "danger",
-                "title": "🚨 Critical Security Vulnerability Detected!",
-                "text": "React/Next.js RCE Vulnerability (CVE-2025-55182/66478) found in repository. Please check the logs and update dependencies immediately.",
-                "fields": [
-                  { "title": "Repo", "value": "${{ github.repository }}", "short": true },
-                  { "title": "Workflow", "value": "${{ github.workflow }}", "short": true }
-                ]
-              }]
-            }
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-
-      - name: 🛑 Fail Workflow if Vulnerable
-        if: steps.scan.outcome == 'failure'
-        run: exit 1
+      # Slack 알림 단계 삭제됨 (요청 반영)
