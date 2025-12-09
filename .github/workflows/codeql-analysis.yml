@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   # ==================================================================================
-  # JOB 1: 🏗️ 필수 파일 대량 생성 및 환경 초기화 (Initialization)
+  # JOB 1: 🏗️ 필수 파일 대량 생성 및 환경 초기화 (Python Generator 방식)
   # ==================================================================================
   initialize-environment:
     name: 1. Initialize & Fix Permissions
@@ -23,61 +23,70 @@ jobs:
       - name: 📥 Checkout Code
         uses: actions/checkout@v4
 
-      - name: 🛠️ Generate Essential Project Files (Mass Creation)
+      - name: 🐍 Set up Python for Generation
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: 🛠️ Generate Essential Project Files (Error-Free)
         run: |
-          echo ">>> 🏗️ Project Structure Generation Started..."
+          # Python을 사용하여 JSON 및 스크립트 파일을 안전하게 생성 (EOF 오류 방지)
+          python -c '
+          import os
+          import json
 
-          # 1. Frontend Service (Vulnerable Next.js 15.0.0)
-          mkdir -p services/frontend
-          cat <<EOF > services/frontend/package.json
-          {
-            "name": "frontend-service",
-            "version": "1.0.0",
-            "scripts": { "build": "next build" },
-            "dependencies": {
-              "next": "15.0.0", 
-              "react": "19.0.0",
-              "react-dom": "19.0.0"
-            }
+          # 1. 디렉토리 구조 생성
+          dirs = ["services/frontend", "services/backend", "services/admin", "scripts"]
+          for d in dirs:
+              os.makedirs(d, exist_ok=True)
+              print(f"Created directory: {d}")
+
+          # 2. Frontend (Vulnerable Next.js 15.0.0)
+          frontend_pkg = {
+              "name": "frontend-service",
+              "version": "1.0.0",
+              "scripts": { "build": "next build" },
+              "dependencies": {
+                  "next": "15.0.0",
+                  "react": "19.0.0",
+                  "react-dom": "19.0.0"
+              }
           }
-          EOF
-          # Frontend 필수 파일 생성
-          touch services/frontend/next.config.js
-          touch services/frontend/README.md
+          with open("services/frontend/package.json", "w") as f:
+              json.dump(frontend_pkg, f, indent=2)
+          
+          with open("services/frontend/next.config.js", "w") as f: f.write("module.exports = {}")
+          with open("services/frontend/README.md", "w") as f: f.write("# Frontend Service")
 
-          # 2. Backend Service (Vulnerable React SSR)
-          mkdir -p services/backend
-          cat <<EOF > services/backend/package.json
-          {
-            "name": "backend-api",
-            "version": "0.5.0",
-            "dependencies": {
-              "express": "^4.18.2",
-              "react": "19.0.0",
-              "react-server-dom-webpack": "19.0.0"
-            }
+          # 3. Backend (Vulnerable React SSR)
+          backend_pkg = {
+              "name": "backend-api",
+              "version": "0.5.0",
+              "dependencies": {
+                  "express": "^4.18.2",
+                  "react": "19.0.0",
+                  "react-server-dom-webpack": "19.0.0"
+              }
           }
-          EOF
-          touch services/backend/server.js
+          with open("services/backend/package.json", "w") as f:
+              json.dump(backend_pkg, f, indent=2)
+          with open("services/backend/server.js", "w") as f: f.write("// Server File")
 
-          # 3. Admin Panel (Safe Version - For Comparison)
-          mkdir -p services/admin
-          cat <<EOF > services/admin/package.json
-          {
-            "name": "admin-panel",
-            "version": "2.1.0",
-            "dependencies": {
-              "next": "15.0.5",
-              "react": "19.0.1",
-              "react-dom": "19.0.1"
-            }
+          # 4. Admin (Safe Version)
+          admin_pkg = {
+              "name": "admin-panel",
+              "version": "2.1.0",
+              "dependencies": {
+                  "next": "15.0.5",
+                  "react": "19.0.1",
+                  "react-dom": "19.0.1"
+              }
           }
-          EOF
+          with open("services/admin/package.json", "w") as f:
+              json.dump(admin_pkg, f, indent=2)
 
-          # 4. Scanner Script (Python)
-          mkdir -p scripts
-          cat <<EOF > scripts/check_vuln.py
-          import json, sys, os
+          # 5. 진단 스크립트 생성
+          check_script = """import json, sys, os
           from packaging import version
 
           def check():
@@ -86,14 +95,14 @@ jobs:
                   with open("package.json") as f: data = json.load(f)
                   deps = data.get("dependencies", {})
                   
-                  # 간단한 취약 버전 체크 로직
                   vuln = False
+                  # 취약점 탐지 로직
                   if "react" in deps and deps["react"] == "19.0.0": vuln = True
                   if "next" in deps and deps["next"] == "15.0.0": vuln = True
                   
                   if vuln:
                       print(f"🚨 VULNERABLE detected in {os.getcwd()}")
-                      sys.exit(1) # Fail code
+                      sys.exit(1)
                   else:
                       print(f"✅ Safe: {os.getcwd()}")
                       sys.exit(0)
@@ -102,9 +111,12 @@ jobs:
                   sys.exit(0)
 
           if __name__ == "__main__": check()
-          EOF
-
-          echo ">>> ✅ All files generated successfully."
+          """
+          with open("scripts/check_vuln.py", "w") as f:
+              f.write(check_script)
+          
+          print(">>> ✅ All files generated successfully without EOF errors.")
+          '
 
       - name: 🔐 Fix File Permissions (Critical)
         run: |
@@ -113,7 +125,6 @@ jobs:
           chmod +x scripts/check_vuln.py
           ls -R
 
-      # 생성된 파일들을 아티팩트로 저장하여 다음 Job으로 전달
       - name: 📤 Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -156,7 +167,7 @@ jobs:
         run: |
           echo "🔍 Starting Recursive Scan..."
           
-          # package.json이 있는 모든 디렉토리 탐색 (node_modules 제외)
+          # node_modules 제외하고 package.json 찾기
           find . -name "package.json" -not -path "*/node_modules/*" | while read package_file; do
             dir_path=$(dirname "$package_file")
             echo -e "\n---------------------------------------------------"
@@ -165,10 +176,7 @@ jobs:
             
             pushd "$dir_path" > /dev/null
             
-            # 1. 권한 재확인
-            chmod 644 package.json
-            
-            # 2. 패키지 설치 (에러 무시 옵션 필수)
+            # 패키지 설치
             echo "📦 Installing Dependencies..."
             if [ -f "yarn.lock" ]; then
               yarn install --ignore-engines --silent || echo "⚠️ Yarn install warning (Ignored)"
@@ -176,18 +184,14 @@ jobs:
               npm install --legacy-peer-deps --no-audit --silent || echo "⚠️ NPM install warning (Ignored)"
             fi
 
-            # 3. 진단 스크립트 실행
-            # 스크립트 경로는 루트 기준 절대 경로로 참조
+            # 진단 실행
             python $GITHUB_WORKSPACE/scripts/check_vuln.py
             EXIT_CODE=$?
 
-            # 4. 취약점 발견 시 패치
+            # 패치 실행
             if [ $EXIT_CODE -ne 0 ]; then
               echo "🔧 Vulnerability found! Applying Patch..."
-              
-              # 강제 업데이트 (React 19.0.1, Next 15.0.5 안전 버전)
               npm install react@19.0.1 react-dom@19.0.1 next@15.0.5 --save-exact --legacy-peer-deps
-              
               echo "✅ Patch Applied to $dir_path"
             fi
             
@@ -199,11 +203,10 @@ jobs:
           git config --global user.name "Security Ops Bot"
           git config --global user.email "secops@bot.local"
           
-          # 변경된 파일이 있는지 확인
           if [[ `git status --porcelain` ]]; then
             git add .
             git commit -m "🛡️ Auto-Generated & Patched Vulnerable Services"
-            git push origin HEAD:${{ github.ref }} || echo "⚠️ Push failed (Permission or Branch protection)"
+            git push origin HEAD:${{ github.ref }} || echo "⚠️ Push failed"
           else
             echo "✨ No changes to commit."
           fi
