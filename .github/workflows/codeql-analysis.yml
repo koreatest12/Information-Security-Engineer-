@@ -35,11 +35,9 @@ jobs:
           mkdir -p .github/scripts
           cat << 'EOF' > .github/scripts/generator.py
           import os, json
-
           # 1. 디렉토리 구조 생성
           dirs = ["services/frontend", "services/backend", "services/admin", "security_tools"]
           for d in dirs: os.makedirs(d, exist_ok=True)
-
           # 2. Frontend (Vulnerable Next.js)
           with open("services/frontend/package.json", "w") as f:
               json.dump({
@@ -49,7 +47,6 @@ jobs:
               }, f, indent=2)
           with open("services/frontend/index.html", "w") as f:
               f.write("<html><body><h1>Welcome</h1></body></html>")
-
           # 3. Backend
           with open("services/backend/server.js", "w") as f:
               f.write("const express = require('express');\n")
@@ -57,7 +54,6 @@ jobs:
               f.write("const DB = 'production';\n")
           with open("services/backend/package.json", "w") as f:
               json.dump({"name": "backend-api", "version": "1.0.0"}, f)
-
           # 4. 공격 스크립트 (Red Team)
           with open("security_tools/attack.py", "w") as f:
               f.write("""import os, time
@@ -66,35 +62,28 @@ jobs:
           # SQL Injection
           with open('services/backend/server.js', 'a') as f:
               f.write('\\nconst q = \"SELECT * FROM u WHERE id=\" + req.id; // SQLi\\n')
-
           # Secret Leak
           with open('services/backend/config.js', 'w') as f:
               f.write('const AWS_KEY = \"AKIAIOSFODNN7EXAMPLE\"; // Leaked\\n')
-
           # Malware
           with open('services/frontend/backdoor.sh', 'w') as f:
               f.write('rm -rf /')
-
           # Ransomware
           if os.path.exists('services/backend/package.json'):
               os.rename('services/backend/package.json', 'services/backend/package.json.locked')
               print('💀 [Attack] Ransomware Encrypted package.json')
-
           # XSS
           with open('services/frontend/index.html', 'w') as f:
               f.write('<script>alert(\"Hacked\");</script>')
           """)
-
           # 5. 방어 스크립트 (Blue Team)
           with open("security_tools/defense.py", "w") as f:
               f.write("""import os, re, shutil
           print('🔵 [BLUE TEAM] Defense Protocol Initiated...')
-
           def scan(root_dir):
               for root, dirs, files in os.walk(root_dir):
                   for file in files:
                       path = os.path.join(root, file)
-
                       # Anti-Ransomware
                       if file.endswith('.locked'):
                           new = path.replace('.locked', '')
@@ -116,17 +105,14 @@ jobs:
                           if 'AKIA' in content:
                               content = re.sub(r'AKIA[A-Z0-9]+', '[REDACTED]', content)
                               print(f'🔒 Secret Redacted in {file}')
-
                           # SQLi Patch
                           if 'SELECT' in content and '+' in content:
                               content = content.replace('req.id', '?')
                               print(f'🛡️ SQLi Patched in {file}')
-
                           # XSS Clean
                           if '<script>' in content:
                               content = re.sub(r'<script>.*?</script>', '', content)
                               print(f'🧹 XSS Removed from {file}')
-
                           if content != orig:
                               with open(path, 'w') as f: f.write(content)
                       except: pass
@@ -136,7 +122,6 @@ jobs:
           
           # 생성기 실행
           python .github/scripts/generator.py
-
       - name: 🔐 Fix Permissions
         run: chmod -R 755 .
 
@@ -186,7 +171,6 @@ jobs:
           # 여기서는 에러 방지를 위해 간단한 파일을 생성하여 흐름을 유지함.
           touch services/backend/server.js
           touch services/frontend/index.html
-
       - name: 🐍 Set up Python
         uses: actions/setup-python@v5
         with:
@@ -205,7 +189,6 @@ jobs:
             echo "⚠️ Using Inline Attack Script"
             echo "HACKED" > services/frontend/hacked.txt
           fi
-
       - name: 📤 Upload Compromised State
         uses: actions/upload-artifact@v4
         with:
@@ -251,7 +234,6 @@ jobs:
           else
             echo "⚠️ Defense script missing (Download failed). Skipping manual defense."
           fi
-
       - name: 💾 Commit & Push Fixes
         run: |
           git config --global user.name "Blue Team Bot"
@@ -259,7 +241,6 @@ jobs:
           git add .
           git commit -m "🛡️ Incident Response: System Secured" --allow-empty
           git push origin HEAD:${{ github.ref }} || echo "⚠️ Push simulated"
-
       - name: 📤 Upload Secured Code
         uses: actions/upload-artifact@v4
         with:
@@ -306,7 +287,6 @@ jobs:
             fi
             cd - > /dev/null
           done
-
       - name: 🏷️ Create Release
         uses: softprops/action-gh-release@v1
         with:
