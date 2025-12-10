@@ -1,14 +1,13 @@
-name: ⚔️ Grand Ops:Ultimate Infrastructure Build
+name: ⚔️ Grand Ops Massive Infrastructure & Security Patch
 
 on:
   push:
     branches: [ "**" ]
   workflow_dispatch:
 
-# 🔐 권한 설정 (이 부분이 에러 해결의 핵심입니다)
 permissions:
-  contents: write      # 코드 체크아웃 및 푸시 권한
-  packages: write      # 패키지 레지스트리 쓰기 권한
+  contents: write
+  packages: write
   security-events: write
   actions: read
 
@@ -17,108 +16,133 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-and-deploy-massive-infra:
-    name: 🚀 Build Massive Infrastructure
+  deploy-grand-ops-architecture:
+    name: 🚀 Deploy Grand Ops Architecture
     runs-on: ubuntu-latest
     steps:
-      # [수정 1] 인증 에러 해결: GITHUB_TOKEN을 명시적으로 사용하여 체크아웃
-      - name: 📥 Checkout Code (Fixed Auth)
+      - name: 📥 Checkout Code (Authentication Fixed)
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }} # 여기서 권한을 획득합니다.
+          token: ${{ secrets.GITHUB_TOKEN }} # 인증 에러 완전 해결
           fetch-depth: 0
-          persist-credentials: true
 
-      # [수정 2] 대량 파일/서버 구성/방화벽/서비스 생성 로직 (요청사항 반영)
-      - name: 🏗️ Construct Grand Ops Environment (Massive Scale)
+      - name: 🏗️ Construct Massive Directory Structure
+        # [수정 1] 디렉토리 생성 시 오타 방지 및 언더바(_)로 통일하여 경로 에러 원천 차단
         run: |
           echo "🚀 Initializing Grand Ops Mega-Construction..."
           
-          # 1. 대규모 디렉토리 구조 생성 (마이크로서비스, 인프라, 보안)
-          mkdir -p apps/frontend-web
-          mkdir -p apps/backend-api
-          mkdir -p apps/payment-gateway
-          mkdir -p apps/auth-service
-          mkdir -p apps/admin-console
-          mkdir -p infrastructure/aws-cloudformation
-          mkdir -p infrastructure/k8s-manifests
-          mkdir -p infrastructure/terraform
-          mkdir -p infrastructure/firewall-rules
-          mkdir -p security-hq/red-team-tools
-          mkdir -p security-hq/blue-team-tools
-          mkdir -p security-hq/audit-logs
-          mkdir -p reports/daily-ops
+          # 1. 애플리케이션 서비스 디렉토리 (MSA 구조)
+          mkdir -p apps/frontend_web
+          mkdir -p apps/backend_api
+          mkdir -p apps/payment_gateway
+          mkdir -p apps/auth_service
+          mkdir -p apps/admin_console
+          mkdir -p apps/inventory_service
+          mkdir -p apps/notification_service
+          
+          # 2. 인프라스트럭처 디렉토리
+          mkdir -p infrastructure/aws_cloudformation
+          mkdir -p infrastructure/k8s_manifests
+          mkdir -p infrastructure/terraform_scripts
+          mkdir -p infrastructure/firewall_rules
+          mkdir -p infrastructure/nginx_config
+          
+          # 3. 보안 본부 (Security HQ) 디렉토리 - [에러 수정됨: red_team_tools]
+          mkdir -p security_hq/red_team_tools
+          mkdir -p security_hq/blue_team_tools
+          mkdir -p security_hq/audit_logs
+          mkdir -p security_hq/policies
+          
+          # 4. 리포트 및 로그 디렉토리
+          mkdir -p reports/daily_ops
+          mkdir -p .github/workflows/reports
 
-          # 2. 서비스별 설정 파일 및 코드 대량 생성
+          echo "✅ Directory Structure Created Successfully."
+
+      - name: 🏭 Generate Massive Configuration Files
+        # [수정 2] 위에서 생성한 경로에 맞춰 파일 대량 생성 (경로 불일치 해결)
+        run: |
+          # --- 1. Applications Setup ---
           
           # Frontend
-          echo "<!DOCTYPE html><html><body><h1>Grand Ops Dashboard v5</h1></body></html>" > apps/frontend-web/index.html
-          echo '{"name":"frontend","dependencies":{"react":"18.0"}}' > apps/frontend-web/package.json
+          echo "<!DOCTYPE html><html><body><h1>Grand Ops Dashboard v6</h1></body></html>" > apps/frontend_web/index.html
+          echo '{"name":"frontend","version":"2.0.0"}' > apps/frontend_web/package.json
           
-          # Backend API
-          echo "module.exports = { db: 'postgres://production' }" > apps/backend-api/config.js
-          echo "const express = require('express'); app.listen(8080);" > apps/backend-api/server.js
+          # Backend
+          echo "module.exports = { db: 'postgres://prod-db' }" > apps/backend_api/config.js
+          echo "const express = require('express'); app.listen(8080);" > apps/backend_api/server.js
           
-          # Auth Service (취약점 시뮬레이션 포함)
-          echo "def login(user, pw): return True # TODO: Fix weak auth" > apps/auth-service/auth.py
+          # Auth Service (취약점 시뮬레이션: Weak Password)
+          echo "def login(u, p): return True # TODO: Implement OAuth2" > apps/auth_service/auth.py
+          echo "[auth]\nsecret_key=weak_key_123" > apps/auth_service/config.ini
           
-          # Payment Gateway (SQL Injection 타겟)
-          echo "SELECT * FROM transactions WHERE id = " > apps/payment-gateway/query_builder.py
+          # Payment Gateway (취약점 시뮬레이션: SQL Injection)
+          echo "query = 'SELECT * FROM tx WHERE id=' + input_id" > apps/payment_gateway/payment.py
+          echo "CREATE TABLE transactions (id INT, amount DECIMAL);" > apps/payment_gateway/schema.sql
           
-          # 3. 인프라 및 방화벽 구성 (Firewall & Servers)
+          # --- 2. Infrastructure Setup ---
           
-          # Firewall (WAF) Rules
-          echo "SecRuleEngine On" > infrastructure/firewall-rules/modsecurity.conf
-          echo "Block IP 192.168.0.1" >> infrastructure/firewall-rules/blacklist.txt
+          # Firewall (WAF) & Network
+          echo "SecRuleEngine On" > infrastructure/firewall_rules/modsecurity.conf
+          echo "deny from 192.168.1.50" >> infrastructure/firewall_rules/blacklist.txt
+          echo "server { listen 80; location / { proxy_pass http://backend; } }" > infrastructure/nginx_config/nginx.conf
           
           # Kubernetes Manifests
-          echo "apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: grand-ops-backend" > infrastructure/k8s-manifests/backend-deploy.yaml
-          echo "apiVersion: v1\nkind: Service\nmetadata:\n  name: backend-svc" > infrastructure/k8s-manifests/backend-svc.yaml
+          echo "apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: grand-ops-backend" > infrastructure/k8s_manifests/backend-deploy.yaml
+          echo "apiVersion: v1\nkind: Service\nmetadata:\n  name: backend-svc" > infrastructure/k8s_manifests/backend-svc.yaml
           
           # Terraform
-          echo "provider \"aws\" { region = \"us-east-1\" }" > infrastructure/terraform/main.tf
+          echo "provider \"aws\" { region = \"us-east-1\" }" > infrastructure/terraform_scripts/main.tf
+          echo "resource \"aws_instance\" \"web\" { ami = \"ami-12345\" }" > infrastructure/terraform_scripts/ec2.tf
           
-          # 4. 공격 및 방어 툴 생성
-          echo "print('🚀 Launching DDOS Simulation...')" > security-hq/red_team_tools/ddos_sim.py
-          echo "print('🛡️ Activating IPS/IDS System...')" > security-hq/blue_team_tools/ids_system.py
+          # --- 3. Security Tools Setup (경로 에러 수정됨) ---
           
-          echo "✅ Massive Infrastructure Built Successfully."
+          # Red Team Tools
+          echo "print('🚀 Launching DDOS Simulation Script...')" > security_hq/red_team_tools/ddos_sim.py
+          echo "print('💉 Injecting SQL Payload...')" > security_hq/red_team_tools/sqli_tester.py
+          
+          # Blue Team Tools
+          echo "print('🛡️ Activating IPS/IDS System...')" > security_hq/blue_team_tools/ids_system.py
+          echo "print('🔍 Scanning for Vulnerabilities...')" > security_hq/blue_team_tools/vuln_scanner.py
+          
+          # Security Policies
+          echo "password_policy: min_length=12" > security_hq/policies/auth_policy.yaml
+          
+          echo "✅ All System Files Generated."
 
-      # [수정 3] 워게임 시뮬레이션 (공격 -> 방어 -> 리포트)
-      - name: ⚔️ Execute Cyber Wargame Simulation
+      - name: ⚔️ Execute Cyber Wargame & Auto-Recovery
         run: |
-          # 공격 로그 생성
-          echo "[$(date)] 🔴 CRITICAL: SQL Injection Detected in Payment Gateway" >> security-hq/audit-logs/alert.log
-          echo "[$(date)] 🔴 CRITICAL: Unauthorized Access Attempt on Admin Console" >> security-hq/audit-logs/alert.log
+          # 공격 로그 시뮬레이션
+          echo "[$(date)] 🔴 ALERT: DDOS Attack Detected from IP 45.33.22.11" >> security_hq/audit_logs/alert.log
+          echo "[$(date)] 🔴 ALERT: SQL Injection attempted on /payment endpoint" >> security_hq/audit_logs/alert.log
           
-          # 방어 및 복구 시뮬레이션
-          echo "Running Auto-Patch..."
-          echo "patched=true" >> apps/auth-service/config.ini
-          echo "[$(date)] 🔵 INFO: Vulnerability Patched via Auto-Remediation" >> security-hq/audit-logs/defense.log
+          # 방어 및 자동 복구 로그 시뮬레이션
+          echo "[$(date)] 🔵 ACTION: Firewall blocked IP 45.33.22.11" >> security_hq/audit_logs/defense.log
+          echo "[$(date)] 🔵 ACTION: Payment Service Rolled back to Safe State" >> security_hq/audit_logs/defense.log
           
           # 리포트 생성
-          echo "# 🛡️ Grand Ops Security Report" > reports/daily-ops/OPS_REPORT_${{ github.run_number }}.md
-          echo "## Status: SECURE" >> reports/daily-ops/OPS_REPORT_${{ github.run_number }}.md
-          echo "### Detected Threats" >> reports/daily-ops/OPS_REPORT_${{ github.run_number }}.md
-          cat security-hq/audit-logs/alert.log >> reports/daily-ops/OPS_REPORT_${{ github.run_number }}.md
-          echo "### Defense Actions" >> reports/daily-ops/OPS_REPORT_${{ github.run_number }}.md
-          cat security-hq/audit-logs/defense.log >> reports/daily-ops/OPS_REPORT_${{ github.run_number }}.md
+          REPORT_PATH="reports/daily_ops/Grand_Ops_Report_${{ github.run_number }}.md"
+          echo "# 🛡️ Grand Ops Security Report v6" > $REPORT_PATH
+          echo "### 📅 Execution Date: $(date)" >> $REPORT_PATH
+          echo "## 🔴 Detected Threats" >> $REPORT_PATH
+          cat security_hq/audit_logs/alert.log >> $REPORT_PATH
+          echo "## 🔵 Countermeasures" >> $REPORT_PATH
+          cat security_hq/audit_logs/defense.log >> $REPORT_PATH
 
-      # [수정 4] 인증 에러 원천 차단: Token을 이용한 Push
       - name: 💾 Commit & Push Massive Updates
         run: |
-          # 1. 봇 설정
+          # 1. 봇 계정 설정
           git config --global user.name "Grand Ops Commander"
           git config --global user.email "commander@grandops.io"
           
-          # 2. 모든 대량 파일 스테이징
+          # 2. 대량 생성된 모든 파일 추가
           git add .
           
-          # 3. 커밋 (변동 사항 확인 후)
-          git commit -m "🚀 Grand Ops: Massive Infra Update & Security Report #${{ github.run_number }} [skip ci]" || echo "No changes to commit"
+          # 3. 커밋
+          git commit -m "🚀 Grand Ops: Massive Infra & Security Patch v6 [skip ci]" || echo "No changes to commit"
           
-          # 4. [핵심] 리모트 URL에 토큰을 심어서 강제 인증 (Checkout 에러 해결법과 동일)
+          # 4. [중요] 인증 토큰을 URL에 포함하여 Push 권한 확보
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           
-          # 5. 푸시
+          # 5. Push 실행
           git push origin HEAD:${{ github.ref }}
