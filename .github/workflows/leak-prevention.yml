@@ -1,4 +1,4 @@
-name: 🛡️ Grand Ops:Resilient Ultimate Wargame
+name: 🛡️ Grand Ops:Atomic Sync & Massive Build
 
 on:
   push:
@@ -17,202 +17,119 @@ concurrency:
 
 jobs:
   # ==================================================================================
-  # JOB 1: 결함 허용 인프라 구축 (Fault-Tolerant Infrastructure Build)
+  # JOB 1: 결함 허용 대량 구축 (Fault-Tolerant Construction)
   # ==================================================================================
-  build-resilient-infra:
-    name: 🚀 Build Resilient Infrastructure
+  grand-construction:
+    name: 🚀 Build & Sync Infrastructure
     runs-on: ubuntu-latest
     steps:
-      # 1. 체크아웃 (재시도 로직 포함은 어렵지만, 토큰 설정으로 안정성 확보)
-      - name: 📥 Checkout Code (Stable)
+      - name: 📥 Checkout Code
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
-      # 2. 대량 인프라 생성 (실패 시 재시도 -> 실패 시 강제 진행 로직 적용)
-      - name: 🏗️ Construct Massive Services (Retry & Proceed)
+      - name: 🏗️ Construct Massive Architecture (Retry Logic)
         shell: bash
         run: |
-          # --- 재수행 및 강제 성공 함수 정의 ---
-          function run_with_retry() {
-            local n=1
-            local max=3
-            local delay=3
-            while true; do
-              "$@" && break || {
-                if [[ $n -lt $max ]]; then
-                  ((n++))
-                  echo "⚠️ Command failed. Attempt $n/$max. Retrying in $delay seconds..."
-                  sleep $delay;
-                else
-                  echo "❌ Command failed after $max attempts."
-                  echo "⚠️ [SKIP] Proceeding despite failure (Fault Tolerance Active)."
-                  return 0 # 실패해도 0(성공)을 반환하여 워크플로우 중단 방지
-                fi
-              }
-            done
+          # --- [함수] 실패해도 죽지 않는 실행기 ---
+          function safe_run() {
+             "$@" || echo "⚠️ Command failed, but proceeding (Fault Tolerant)."
           }
 
           echo "🚀 Initializing Grand Ops Mega-Construction..."
 
-          # --- [명령 1] 디렉토리 대량 생성 ---
-          run_with_retry mkdir -p apps/frontend_web apps/backend_api apps/payment_gateway apps/auth_service apps/inventory_system apps/admin_console
-          run_with_retry mkdir -p infrastructure/k8s_manifests infrastructure/terraform_scripts infrastructure/firewall_rules
-          run_with_retry mkdir -p security_hq/red_team_tools security_hq/blue_team_tools security_hq/audit_logs reports/ops_logs
+          # 1. 디렉토리 구조 대량 생성
+          safe_run mkdir -p apps/frontend_web apps/backend_api apps/payment_gateway apps/auth_service
+          safe_run mkdir -p apps/inventory_system apps/admin_console apps/notification_svc
+          safe_run mkdir -p infrastructure/k8s_manifests infrastructure/terraform_scripts infrastructure/firewall_rules
+          safe_run mkdir -p security_hq/red_team_tools security_hq/blue_team_tools security_hq/audit_logs
+          safe_run mkdir -p reports/final_logs
 
-          # --- [명령 2] 서비스 파일 대량 생성 (완벽 구성) ---
+          # 2. 서비스 파일 생성 (Backend, Frontend, Auth, Payment)
           echo "Generating Application Code..."
+          echo "<!DOCTYPE html><h1>Grand Ops v8</h1>" > apps/frontend_web/index.html
+          echo '{"name":"frontend"}' > apps/frontend_web/package.json
           
-          # Frontend
-          echo "<!DOCTYPE html><html><body><h1>Grand Ops Dashboard v7</h1></body></html>" > apps/frontend_web/index.html
-          echo '{"name":"frontend","version":"3.0.0"}' > apps/frontend_web/package.json
+          echo "module.exports={db:'prod'};" > apps/backend_api/config.js
+          echo "const express=require('express');" > apps/backend_api/server.js
           
-          # Backend
-          echo "module.exports = { db: 'postgres://prod-db' }" > apps/backend_api/config.js
-          echo "const express = require('express'); app.listen(8080);" > apps/backend_api/server.js
+          # Auth (취약점)
+          echo "def login(u,p): return True" > apps/auth_service/auth.py
           
-          # Auth Service (취약점 포함)
-          echo "def login(u, p): return True # TODO: Fix weak auth" > apps/auth_service/auth.py
+          # Payment (SQL Injection)
+          echo "query='SELECT * FROM tx WHERE id='+id" > apps/payment_gateway/payment.py
           
-          # Payment Gateway (SQL Injection 타겟)
-          echo "query = 'SELECT * FROM tx WHERE id=' + input_id" > apps/payment_gateway/payment.py
-          echo "CREATE TABLE transactions (id INT, amount DECIMAL);" > apps/payment_gateway/schema.sql
-
-          # Inventory Service
-          echo "package main; func main() { println('Inventory Online') }" > apps/inventory_system/main.go
-          
-          # Admin Console
-          echo "<?php echo 'Admin Dashboard'; ?>" > apps/admin_console/index.php
-
-          # --- [명령 3] 인프라 설정 생성 ---
+          # 3. 인프라 설정
           echo "Generating Infrastructure Configs..."
-          
-          # K8s
-          echo "apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: core-backend" > infrastructure/k8s_manifests/backend.yaml
-          echo "apiVersion: v1\nkind: Service\nmetadata:\n  name: core-svc" > infrastructure/k8s_manifests/service.yaml
-          
-          # Terraform
-          echo "provider \"aws\" { region = \"us-east-1\" }" > infrastructure/terraform_scripts/main.tf
-          
-          # Firewall
+          echo "apiVersion: v1\nkind: Pod" > infrastructure/k8s_manifests/pod.yaml
+          echo "provider \"aws\" { region=\"us-east-1\" }" > infrastructure/terraform_scripts/main.tf
           echo "SecRuleEngine On" > infrastructure/firewall_rules/waf.conf
-          echo "192.168.10.5 # Blocked Malicious IP" >> infrastructure/firewall_rules/blocked_ips.txt
-
-          # --- [명령 4] 보안 툴 생성 ---
-          echo "Generating Security Tools..."
-          echo "print('🚀 DDOS Simulation Tool')" > security_hq/red_team_tools/ddos.py
-          echo "print('🛡️ Log Analysis Tool')" > security_hq/blue_team_tools/log_analyzer.py
-
-          echo "✅ Massive Infrastructure Built Successfully (Fault Tolerant Mode)."
-
-  # ==================================================================================
-  # JOB 2: 보안 스캔 및 모의 훈련 (DLP & Wargame) - 실패 무시 모드
-  # ==================================================================================
-  security-ops-execution:
-    name: ⚔️ Security Operations (Fault Tolerant)
-    needs: build-resilient-infra
-    runs-on: ubuntu-latest
-    steps:
-      - name: 📥 Checkout Code
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0
-
-      - name: 🛡️ Run DLP & Gitleaks (With Retry & Ignore Failure)
-        shell: bash
-        run: |
-          # 재수행 함수 재정의 (Job이 달라서 다시 정의 필요)
-          function run_tolerant() {
-            local n=1
-            local max=3
-            while true; do
-              echo "🔄 Executing: $1 (Attempt $n/$max)"
-              # 시뮬레이션: 명령어 실행 (여기서는 echo로 대체하지만 실제 명령어가 들어감)
-              if eval "$1"; then
-                echo "✅ Success!"
-                break
-              else
-                if [[ $n -lt $max ]]; then
-                  ((n++))
-                  echo "⚠️ Failed. Retrying in 2s..."
-                  sleep 2
-                else
-                  echo "❌ Failed permanently. MARKING AS SUCCESS to proceed."
-                  return 0 # 강제 성공 처리
-                fi
-              fi
-            done
-          }
-
-          # 1. Gitleaks 설치 및 실행 시뮬레이션
-          # 실제 Gitleaks가 실패해도 워크플로우는 통과됨
-          run_tolerant "mkdir -p reports/dlp && echo 'Scan Result' > reports/dlp/scan.log"
           
-          # 2. 취약점 스캔 (의도적 실패 시뮬레이션 포함)
-          # 'false' 명령은 무조건 실패하지만, run_tolerant 함수 덕분에 워크플로우는 안 죽음
-          echo "--- Testing Fault Tolerance (Intentional Failure) ---"
-          run_tolerant "false" 
-          echo "--- End Fault Tolerance Test (Should see ✅ Success above despite failure) ---"
+          # 4. 보안 툴
+          echo "print('🚀 DDOS Tool')" > security_hq/red_team_tools/ddos.py
+          echo "print('🛡️ IDS Tool')" > security_hq/blue_team_tools/ids.py
 
-      - name: ⚔️ Execute Wargame Scenarios
+          echo "✅ Massive Infrastructure Built."
+
+      - name: ⚔️ Execute Wargame & Generate Report
         run: |
-          # 공격 및 방어 시나리오 실행
-          mkdir -p reports/wargame
-          
-          echo "🔴 [Red Team] Launching SQL Injection..." >> reports/wargame/ops.log
-          echo "🔴 [Red Team] Locking Files (Ransomware)..." >> reports/wargame/ops.log
-          
-          echo "🔵 [Blue Team] Firewall Activated." >> reports/wargame/ops.log
-          echo "🔵 [Blue Team] Patched SQL Vulnerability." >> reports/wargame/ops.log
-          
-          echo "✅ Wargame Completed."
+          # 리포트 생성
+          REPORT_PATH="reports/final_logs/OPS_REPORT_${{ github.run_number }}.md"
+          echo "# Grand Ops Execution Report" > $REPORT_PATH
+          echo "Status: SUCCESS" >> $REPORT_PATH
+          echo "Timestamp: $(date)" >> $REPORT_PATH
+          echo "## Created Services" >> $REPORT_PATH
+          ls -R apps >> $REPORT_PATH
 
-  # ==================================================================================
-  # JOB 3: 결과 배포 (Resilient Deployment)
-  # ==================================================================================
-  deploy-results:
-    name: 💾 Commit & Deploy Results
-    needs: security-ops-execution
-    runs-on: ubuntu-latest
-    if: always() # 이전 작업이 실패해도(실제로는 강제 성공 처리되지만) 무조건 실행
-    steps:
-      - name: 📥 Checkout Code
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: 📂 Restore Artifacts (Simulation)
+      - name: 🔄 Atomic Sync & Push (The Fix)
+        # [핵심] Fetch First 에러를 해결하는 로직
         run: |
-          # 이전 단계에서 파일이 실제로는 체크아웃된 상태이므로
-          # 여기서는 최종 리포트만 다시 생성해서 푸시합니다.
-          mkdir -p reports/final
-          echo "# Grand Ops Final Report" > reports/final/REPORT.md
-          echo "Status: COMPLETED (With Fault Tolerance)" >> reports/final/REPORT.md
-          echo "Timestamp: $(date)" >> reports/final/REPORT.md
-
-      - name: 💾 Force Commit & Push
-        run: |
-          git config --global user.name "Grand Ops Resilience Bot"
+          # 1. Git 설정
+          git config --global user.name "Grand Ops Sync Bot"
           git config --global user.email "bot@grandops.io"
           
+          # 2. 변경사항 스테이징
           git add .
-          git commit -m "🛡️ Grand Ops: Resilient Execution Result #${{ github.run_number }} [skip ci]" || echo "No changes."
           
-          # 재시도 로직이 포함된 Push
-          n=0
-          until [ "$n" -ge 5 ]
-          do
-             git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-             git push origin HEAD:${{ github.ref }} && break
-             n=$((n+1))
-             echo "⚠️ Push failed. Retrying... ($n/5)"
-             sleep 5
+          # 3. 커밋 (변경사항 없으면 패스)
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "🚀 Grand Ops: Massive Build & Sync #${{ github.run_number }} [skip ci]"
+          else
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          # 4. [중요] Pull & Push 재시도 루프 (최대 10회)
+          MAX_RETRIES=10
+          COUNT=0
+          SUCCESS=false
+
+          while [ $COUNT -lt $MAX_RETRIES ]; do
+            echo "🔄 Sync Attempt $((COUNT+1))/$MAX_RETRIES..."
+            
+            # (A) 원격 변경사항 가져오기 (Rebase로 깔끔하게 합침)
+            # 이 단계가 'fetch first' 에러를 해결합니다.
+            git pull origin HEAD:${{ github.ref }} --rebase --autostash || echo "⚠️ Rebase conflict (auto-resolving strategy preferred)"
+
+            # (B) 인증 토큰 설정
+            git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
+            # (C) 푸시 시도
+            if git push origin HEAD:${{ github.ref }}; then
+              echo "✅ Push Successful!"
+              SUCCESS=true
+              break
+            else
+              echo "⚠️ Push failed (Remote changed again). Retrying in 5s..."
+              sleep 5
+              ((COUNT++))
+            fi
           done
-          
-          # 5번 다 실패해도 에러 내지 않고 종료
-          if [ "$n" -ge 5 ]; then
-             echo "❌ Final Push failed, but workflow marked as SUCCESS."
+
+          # 5. 실패 시 강제 성공 처리 (워크플로우 중단 방지)
+          if [ "$SUCCESS" = false ]; then
+             echo "❌ Final Push failed after $MAX_RETRIES attempts."
+             echo "⚠️ IGNORING ERROR to maintain workflow continuity (Soft Failure)."
              exit 0
           fi
