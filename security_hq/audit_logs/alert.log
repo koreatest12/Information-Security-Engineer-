@@ -2,3 +2,5 @@
 [Wed Dec 10 14:07:04 UTC 2025] 🔴 ALERT: SQL Injection attempted on /payment endpoint
 [Wed Dec 10 14:12:58 UTC 2025] 🔴 ALERT: DDOS Attack Detected from IP 45.33.22.11
 [Wed Dec 10 14:12:58 UTC 2025] 🔴 ALERT: SQL Injection attempted on /payment endpoint
+[Wed Dec 10 14:16:45 UTC 2025] 🔴 ALERT: DDOS Attack Detected from IP 45.33.22.11
+[Wed Dec 10 14:16:45 UTC 2025] 🔴 ALERT: SQL Injection attempted on /payment endpoint
