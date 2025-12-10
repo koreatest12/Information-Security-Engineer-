@@ -1,137 +1,308 @@
-name: "⏰ 20-Min Health Check & Reporting"
+name: "🏗️ Enterprise Grade Health Check System"
 
 on:
   schedule:
-    - cron: '*/20 * * * *' # 매 20분마다 실행
-  workflow_dispatch:       # 수동 실행 가능
+    - cron: '*/20 * * * *'
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target Environment'
+        required: true
+        default: 'production'
 
 permissions:
   contents: read
-  issues: write            # 실패 시 이슈 생성을 위한 권한 필수
+  issues: write
+  security-events: write
 
 jobs:
-  health-monitor:
-    name: "🩺 Monitor Services"
+  system-monitor:
+    name: "🩺 Full System Inspection"
     runs-on: ubuntu-latest
-    timeout-minutes: 10    # 타임아웃 설정
-    
+    timeout-minutes: 20
+
     steps:
-      - name: Checkout Repository
+      # 1. 기본 환경 설정
+      - name: 📥 Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Python 3.10
+      - name: 🐍 Setup Python 3.11
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11'
           cache: 'pip'
 
-      - name: Install Dependencies
+      # 2. 필수 패키지 설치
+      - name: 📦 Install Dependencies
         run: |
-          pip install requests pytz
+          pip install requests pytz urllib3 safety bandit flake8 jinja2
 
-      - name: 📝 Generate Robust Health Check Script
+      # =========================================================
+      # 📂 [대량 생성 1] 디렉토리 구조 확립
+      # =========================================================
+      - name: 📂 Create Massive Directory Structure
         run: |
-          # Python 스크립트 생성 (들여쓰기 문제 해결을 위해 명확한 EOF 사용)
-          cat << 'EOF' > check_status.py
-          import requests
-          import sys
-          import time
-          from datetime import datetime
-          import pytz
-
-          # [설정] 타겟 서비스 목록
-          TARGETS = [
-              {
-                  "name": "Java Backend", 
-                  "url": "http://localhost:8080/actuator/health", 
-                  "mock": True 
-              },
-              {
-                  "name": "Python API", 
-                  "url": "http://localhost:8000/health", 
-                  "mock": True 
-              }
-          ]
-
-          KST = pytz.timezone('Asia/Seoul')
-          now = datetime.now(KST).strftime('%Y-%m-%d %H:%M:%S')
-
-          log_lines = []
-          def log(msg):
-              print(msg)
-              log_lines.append(msg)
-
-          log(f"=== 🩺 Health Check Report [{now}] ===")
-          log(f"{'SERVICE':<20} | {'STATUS':<10} | {'LATENCY':<10} | {'MESSAGE'}")
-          log("-" * 65)
-
-          all_success = True
-
-          for target in TARGETS:
-              start_time = time.time()
-              status_code = 0
-              msg = "Unknown"
-              latency = "0ms"
-              is_up = False
-
-              try:
-                  if target["mock"]:
-                      time.sleep(0.1) 
-                      status_code = 200
-                      msg = "Alive (Mock)"
-                      is_up = True
-                  else:
-                      response = requests.get(target["url"], timeout=3)
-                      status_code = response.status_code
-                      if status_code == 200:
-                          msg = "Alive"
-                          is_up = True
-                      else:
-                          msg = f"Error {status_code}"
-                          is_up = False
-                  
-              except Exception as e:
-                  msg = f"Connection Fail: {str(e)[:20]}..."
-                  is_up = False
-              
-              latency = f"{(time.time() - start_time) * 1000:.2f}ms"
-              status_str = "✅ UP" if is_up else "❌ DOWN"
-              
-              log(f"{target['name']:<20} | {status_str:<10} | {latency:<10} | {msg}")
-
-              if not is_up:
-                  all_success = False
-
-          with open("health_report.log", "w", encoding="utf-8") as f:
-              f.write("\n".join(log_lines))
-
-          if not all_success:
-              log("\n!!! CRITICAL: Some services are DOWN !!!")
-              sys.exit(1)
+          echo ">>> Initializing Directory Structure..."
           
-          log("\n>>> All Systems Operational.")
+          # 메인 디렉토리들 생성
+          mkdir -p config
+          mkdir -p scripts
+          mkdir -p logs
+          mkdir -p archive
+          
+          # 리포트 하위 디렉토리 생성 (구조화)
+          mkdir -p reports/raw
+          mkdir -p reports/security
+          mkdir -p reports/html
+          
+          echo "✅ Directory structure created successfully."
+          tree . || ls -R  # 구조 확인용 (tree가 없으면 ls -R)
+
+      # =========================================================
+      # 📄 [대량 생성 2] 설정 파일(Config) 분리 생성
+      # =========================================================
+      - name: ⚙️ Generate Configuration Files
+        env:
+          ENV_TARGETS: ${{ secrets.TARGET_URLS }} # 시크릿 없으면 아래 기본값 사용
+        run: |
+          # targets.json 파일 생성 (외부 설정 파일 시뮬레이션)
+          cat << EOF > config/targets.json
+          [
+            {
+              "name": "Core Backend API",
+              "url": "http://localhost:8080/actuator/health",
+              "tier": "critical"
+            },
+            {
+              "name": "Auth Service",
+              "url": "https://httpbin.org/status/200",
+              "tier": "critical"
+            },
+            {
+              "name": "Legacy System",
+              "url": "https://www.google.com",
+              "tier": "low"
+            }
+          ]
           EOF
+          
+          # settings.ini 파일 생성 (임계값 설정)
+          cat << EOF > config/settings.ini
+          [Thresholds]
+          latency_warning_ms = 1500
+          latency_critical_ms = 5000
+          ssl_expiry_days = 30
+          retry_count = 3
+          EOF
+          
+          echo "✅ Config files generated in /config"
 
-      - name: 🩺 Run Health Check
-        id: run-check
-        run: python check_status.py
+      # =========================================================
+      # 🛡️ [대량 생성 3] 보안 점검 수행 및 파일 저장
+      # =========================================================
+      - name: 🛡️ Run Security Scans & Save Logs
+        run: |
+          echo ">>> Running SAST & SCA Checks..."
+          
+          # 1. 라이브러리 취약점 점검 -> 파일로 저장
+          safety check --full-report > reports/security/safety_report.txt || true
+          
+          # 2. 현재 디렉토리 파일 리스트 저장 (증적 자료)
+          ls -alR > reports/security/filesystem_structure.txt
+          
+          echo "✅ Security reports saved in /reports/security"
 
-      # [수정됨] 이전 코드에서 누락되었던 스텝 이름(- name)을 추가하여 문법 오류 해결
-      - name: 📤 Upload Check Report Artifact
-        if: always() # 성공/실패 여부와 관계없이 로그 업로드
+      # =========================================================
+      # 🐍 [대량 생성 4] 메인 파이썬 로직 파일 생성
+      # =========================================================
+      - name: 📝 Generate Main Python Script
+        run: |
+          cat << 'EOF' > scripts/monitor.py
+          import json
+          import requests
+          import time
+          import sys
+          import os
+          import ssl
+          import socket
+          import pytz
+          import logging
+          from datetime import datetime
+          from requests.adapters import HTTPAdapter
+          from urllib3.util.retry import Retry
+          import configparser
+
+          # --- [1] 로깅 설정 (파일 및 콘솔 동시 출력) ---
+          logger = logging.getLogger()
+          logger.setLevel(logging.INFO)
+          formatter = logging.Formatter('%(asctime)s | %(levelname)s | %(message)s')
+
+          # 파일 로그 핸들러
+          file_handler = logging.FileHandler('logs/app.log', encoding='utf-8')
+          file_handler.setFormatter(formatter)
+          logger.addHandler(file_handler)
+
+          # 콘솔 로그 핸들러
+          stream_handler = logging.StreamHandler()
+          stream_handler.setFormatter(formatter)
+          logger.addHandler(stream_handler)
+
+          # --- [2] 설정 로드 ---
+          try:
+              with open('config/targets.json', 'r') as f:
+                  TARGETS = json.load(f)
+              logger.info(f"Loaded {len(TARGETS)} targets from config.")
+          except Exception as e:
+              logger.error(f"Failed to load config: {e}")
+              sys.exit(1)
+
+          # --- [3] 헬퍼 함수 정의 ---
+          def check_ssl(url):
+              try:
+                  hostname = url.split("//")[-1].split("/")[0].split(":")[0]
+                  context = ssl.create_default_context()
+                  with socket.create_connection((hostname, 443), timeout=3) as sock:
+                      with context.wrap_socket(sock, server_hostname=hostname) as ssock:
+                          cert = ssock.getpeercert()
+                          not_after = datetime.strptime(cert['notAfter'], '%b %d %H:%M:%S %Y %Z')
+                          remaining = (not_after - datetime.utcnow()).days
+                          return True, remaining
+              except:
+                  return False, 0
+
+          def get_session():
+              s = requests.Session()
+              retries = Retry(total=3, backoff_factor=0.5)
+              s.mount('http://', HTTPAdapter(max_retries=retries))
+              s.mount('https://', HTTPAdapter(max_retries=retries))
+              return s
+
+          # --- [4] 메인 점검 루프 ---
+          results = []
+          session = get_session()
+          has_failure = False
+
+          logger.info(">>> Starting Health Check Loop")
+
+          for t in TARGETS:
+              start = time.time()
+              res_data = {
+                  "name": t['name'],
+                  "url": t['url'],
+                  "status": "DOWN",
+                  "latency_ms": 0,
+                  "ssl_days": "N/A",
+                  "timestamp": datetime.now().isoformat()
+              }
+              
+              try:
+                  resp = session.get(t['url'], timeout=5)
+                  latency = (time.time() - start) * 1000
+                  res_data['latency_ms'] = round(latency, 2)
+
+                  if resp.status_code == 200:
+                      res_data['status'] = "UP"
+                  else:
+                      res_data['status'] = f"ERR_{resp.status_code}"
+                      has_failure = True
+                      
+                  # SSL Check
+                  if t['url'].startswith("https"):
+                      ok, days = check_ssl(t['url'])
+                      res_data['ssl_days'] = days if ok else "FAIL"
+
+              except Exception as e:
+                  res_data['status'] = "CONN_FAIL"
+                  logger.error(f"Target {t['name']} failed: {e}")
+                  has_failure = True
+
+              logger.info(f"Check: {res_data['name']} -> {res_data['status']} ({res_data['latency_ms']}ms)")
+              results.append(res_data)
+
+          # --- [5] 결과 파일 대량 생성 ---
+          
+          # 5-1. JSON Raw Data 저장
+          with open('reports/raw/data.json', 'w') as f:
+              json.dump(results, f, indent=4)
+          
+          # 5-2. CSV 리포트 생성 (엑셀용)
+          with open('reports/summary.csv', 'w') as f:
+              f.write("Name,URL,Status,Latency(ms),SSL(days)\n")
+              for r in results:
+                  f.write(f"{r['name']},{r['url']},{r['status']},{r['latency_ms']},{r['ssl_days']}\n")
+
+          # 5-3. HTML 대시보드 생성 (시각화)
+          html_content = f"""
+          <html>
+          <head><title>System Status</title></head>
+          <body style="font-family: sans-serif;">
+              <h1>🩺 System Health Report</h1>
+              <p>Generated at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</p>
+              <table border="1" cellpadding="10" style="border-collapse: collapse; width: 80%;">
+                  <tr style="background-color: #f2f2f2;">
+                      <th>Service</th><th>Status</th><th>Latency</th><th>SSL Days</th>
+                  </tr>
+          """
+          for r in results:
+              color = "#d4edda" if r['status'] == "UP" else "#f8d7da"
+              html_content += f"""
+                  <tr style="background-color: {color};">
+                      <td>{r['name']}</td>
+                      <td><b>{r['status']}</b></td>
+                      <td>{r['latency_ms']}ms</td>
+                      <td>{r['ssl_days']}</td>
+                  </tr>
+              """
+          html_content += "</table></body></html>"
+          
+          with open('reports/html/dashboard.html', 'w') as f:
+              f.write(html_content)
+
+          logger.info(">>> All reports generated successfully.")
+          
+          if has_failure:
+              sys.exit(1)
+          EOF
+          
+          # Bandit(코드 보안 검사) 결과를 파일로 저장
+          bandit -r scripts/monitor.py -f txt -o reports/security/bandit_report.txt || true
+
+      # 3. 스크립트 실행
+      - name: 🚀 Execute Monitor Script
+        run: python scripts/monitor.py
+
+      # =========================================================
+      # 📤 [대량 생성 5] 생성된 모든 파일 업로드
+      # =========================================================
+      - name: 📦 Upload All Generated Artifacts
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: health-check-report
-          path: health_report.log
-          if-no-files-found: warn
+          name: full-system-report
+          path: |
+            logs/
+            reports/
+            config/
+            scripts/
+          retention-days: 5 # 5일간 보관
 
-      - name: 🚨 Create Incident Issue on Failure
+      # 4. 실패 시 이슈 생성 (로그 파일 내용 첨부)
+      - name: 🎫 Create Issue on Failure
         if: failure()
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
-          TITLE="🚨 [Incident] Service Health Check Failed - $TIMESTAMP"
-          BODY="### ⚠️ Service Down Detected\n\nOne or more services failed the health check at **$TIMESTAMP**.\n\nPlease check the [Action Logs](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) for details.\n\n**Quick Report:**\n\`\`\`\n$(cat health_report.log)\n\`\`\`"
-          
-          gh issue create --title "$TITLE" --body "$BODY" --label "incident"
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let logBody = '';
+            try {
+              // 생성된 로그 파일을 읽어서 이슈 본문에 첨부
+              logBody = fs.readFileSync('reports/summary.csv', 'utf8');
+            } catch (e) { logBody = 'No log available'; }
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: '🚨 System Monitor Alert',
+              body: `### Critical Failure Detected\n\n**CSV Summary:**\n\`\`\`csv\n${logBody}\n\`\`\`\n\nPlease check the [Artifacts] for full HTML and JSON reports.`,
+              labels: ['incident']
+            });
