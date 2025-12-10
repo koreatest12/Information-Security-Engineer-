@@ -1,15 +1,14 @@
-name: "🏛️ Grand Universal System Sentinel"
+name: "🌌 Galaxy-Class System Overseer"
 
 on:
   schedule:
     - cron: '*/20 * * * *'
   workflow_dispatch:
     inputs:
-      strict_mode:
-        description: '실패 시 워크플로우를 Error 처리할까요?'
-        required: true
-        default: 'true'
+      maintenance_mode:
+        description: '유지보수 모드 활성화 (경고 무시)'
         type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -17,348 +16,362 @@ permissions:
   security-events: write
 
 jobs:
-  enterprise-monitor:
-    name: "🩺 Full Stack Inspection"
+  mission-control:
+    name: "🛰️ Mission Control Center"
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
 
     steps:
-      # 1. 기본 환경 설정
-      - name: 📥 Checkout
+      # 1. 기지 구축 (환경 설정)
+      - name: 📥 Initialize Base
         uses: actions/checkout@v4
 
-      - name: 🐍 Setup Python 3.11
+      - name: 🐍 Equip Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
 
-      # 2. 필수 패키지 설치
-      - name: 📦 Install Dependencies
+      - name: 📦 Install Modules
         run: |
-          pip install requests pytz urllib3 safety bandit flake8 jinja2
+          pip install requests pytz urllib3 jinja2 pandas colorama
 
       # =========================================================
-      # 🏗️ [대량 생성 1] 엔터프라이즈 디렉토리 구조 확립
+      # 🏗️ [대량 생성 1] 모듈형 디렉토리 아키텍처 설계
       # =========================================================
-      - name: 📂 Initialize Infrastructure
+      - name: 🏗️ Construct Infrastructure
         run: |
-          echo ">>> Building Directory Architecture..."
-          mkdir -p config
-          mkdir -p scripts/server
-          mkdir -p templates
-          mkdir -p logs
-          mkdir -p docs
-          mkdir -p reports/raw
-          mkdir -p reports/security
-          mkdir -p reports/html
+          echo ">>> Terraforming Directories..."
           
-          echo "✅ Architecture ready."
-          tree . || ls -R
+          # 시스템 코어
+          mkdir -p system/core
+          mkdir -p system/config
+          mkdir -p system/templates
+          
+          # 데이터 웨어하우스
+          mkdir -p data/raw
+          mkdir -p data/processed
+          mkdir -p data/history
+          
+          # 로그 및 리포트 센터
+          mkdir -p logs/services
+          mkdir -p reports/dashboard
+          mkdir -p reports/incidents
+          
+          echo "✅ Infrastructure Ready."
+          ls -R
 
       # =========================================================
-      # 👻 [대량 생성 2] 가상 백엔드(Mock Server) 스크립트 생성
+      # 🎭 [대량 생성 2] 멀티 서비스 Mock 서버 (안정성 확보)
       # =========================================================
-      - name: 👻 Create Mock Backend Service
+      - name: 🎭 Deploy Multi-Service Mock Simulator
         run: |
-          # 자바 스프링 부트 서버 흉내를 내는 파이썬 스크립트
-          cat << 'EOF' > scripts/server/mock_backend.py
+          # 3개의 마이크로서비스를 흉내내는 단일 Mock 서버
+          cat << 'EOF' > system/core/mock_universe.py
           from http.server import BaseHTTPRequestHandler, HTTPServer
           import json
+          import random
           import time
+          from urllib.parse import urlparse
 
-          class MockHandler(BaseHTTPRequestHandler):
+          class UniverseHandler(BaseHTTPRequestHandler):
               def do_GET(self):
-                  if self.path == "/actuator/health":
-                      self.send_response(200)
-                      self.send_header('Content-type', 'application/json')
-                      self.end_headers()
-                      self.wfile.write(json.dumps({"status": "UP", "details": "Java Backend Mock"}).encode())
+                  path = urlparse(self.path).path
+                  
+                  # 응답 헤더 공통
+                  self.send_response(200)
+                  self.send_header('Content-type', 'application/json')
+                  self.end_headers()
+                  
+                  # 라우팅 로직
+                  if path == "/api/core/health":
+                      resp = {"service": "Core-Backend", "status": "UP", "load": "low"}
+                  elif path == "/api/auth/status":
+                      # 간헐적 지연 시뮬레이션 (네트워크 테스트용)
+                      time.sleep(0.1) 
+                      resp = {"service": "Auth-Server", "status": "UP", "users_online": 150}
+                  elif path == "/api/payment/check":
+                      resp = {"service": "Payment-Gateway", "status": "UP", "gateway": "Stripe"}
                   else:
-                      self.send_response(404)
-                      self.end_headers()
+                      resp = {"error": "Not Found"}
+                  
+                  self.wfile.write(json.dumps(resp).encode())
 
-          def run(server_class=HTTPServer, handler_class=MockHandler, port=8080):
-              server_address = ('', port)
-              httpd = server_class(server_address, handler_class)
-              print(f"👻 Mock Backend running on port {port}...")
-              httpd.serve_forever()
+          def run(port=8080):
+              server = HTTPServer(('', port), UniverseHandler)
+              print(f"🌌 Mock Universe running on port {port}...")
+              server.serve_forever()
 
           if __name__ == "__main__":
               run()
           EOF
 
-      # =========================================================
-      # 🚀 [실행] 가상 백엔드 백그라운드 실행 (오류 해결 핵심)
-      # =========================================================
-      - name: 🔌 Start Background Services
+      - name: 🚀 Launch Background Satellites
         run: |
-          # 8080 포트에 가상 서버를 백그라운드(&)로 실행
-          nohup python scripts/server/mock_backend.py > logs/backend.log 2>&1 &
-          echo ">>> Waiting for services to initialize..."
-          sleep 3 # 서버 구동 대기
+          # 백그라운드 실행 & 로그 분리
+          nohup python system/core/mock_universe.py > logs/services/mock_server.log 2>&1 &
+          echo ">>> Waiting for satellites to orbit..."
+          sleep 3
 
       # =========================================================
-      # ⚙️ [대량 생성 3] 설정 및 템플릿 파일 생성
+      # ⚙️ [대량 생성 3] 지능형 설정 파일 (티어 시스템 도입)
       # =========================================================
-      - name: ⚙️ Generate Configs & Templates
+      - name: ⚙️ Generate Strategy Config
         run: |
-          # 1. 타겟 설정 (이제 localhost:8080 접속 가능)
-          cat << EOF > config/targets.json
+          # Critical: 실패 시 즉시 장애 처리
+          # Warning: 실패 시 경고만 출력 (배포 중단 안 함)
+          cat << EOF > system/config/targets.json
           [
             {
-              "name": "Local Java Backend",
-              "url": "http://localhost:8080/actuator/health",
-              "tier": "critical"
+              "id": "srv-001",
+              "name": "Core Backend",
+              "url": "http://localhost:8080/api/core/health",
+              "tier": "Critical",
+              "timeout": 2
             },
             {
-              "name": "Public API (Google)",
-              "url": "https://www.google.com",
-              "tier": "low"
+              "id": "srv-002",
+              "name": "Auth Service",
+              "url": "http://localhost:8080/api/auth/status",
+              "tier": "Critical",
+              "timeout": 3
             },
             {
-              "name": "External Auth",
-              "url": "https://httpbin.org/status/200",
-              "tier": "critical"
+              "id": "srv-003",
+              "name": "Payment Gateway",
+              "url": "http://localhost:8080/api/payment/check",
+              "tier": "Warning",
+              "timeout": 5
+            },
+            {
+              "id": "srv-ext-001",
+              "name": "External Google DNS",
+              "url": "https://dns.google",
+              "tier": "Warning",
+              "timeout": 5
             }
           ]
           EOF
 
-          # 2. HTML 리포트 템플릿 분리 (Jinja2 스타일)
-          cat << 'EOF' > templates/dashboard.html
-          <!DOCTYPE html>
-          <html>
-          <head>
-              <title>System Sentinel Report</title>
-              <style>
-                  body { font-family: 'Segoe UI', sans-serif; margin: 20px; background: #f4f6f9; }
-                  .container { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-                  h1 { color: #333; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-                  table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-                  th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
-                  th { background-color: #f8f9fa; color: #555; }
-                  .status-up { color: green; font-weight: bold; }
-                  .status-down { color: red; font-weight: bold; }
-                  .footer { margin-top: 30px; font-size: 0.8em; color: #777; text-align: center; }
-              </style>
-          </head>
-          <body>
-              <div class="container">
-                  <h1>🩺 System Health Dashboard</h1>
-                  <p><b>Inspection Time:</b> {{ timestamp }}</p>
-                  <p><b>Total Targets:</b> {{ total_count }} | <b>Failures:</b> {{ fail_count }}</p>
-                  
-                  <table>
-                      <thead>
-                          <tr>
-                              <th>Service Name</th>
-                              <th>URL</th>
-                              <th>Status</th>
-                              <th>Latency</th>
-                              <th>SSL Info</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          {% for row in rows %}
-                          <tr>
-                              <td>{{ row.name }}</td>
-                              <td><small>{{ row.url }}</small></td>
-                              <td class="{{ 'status-up' if row.status == 'UP' else 'status-down' }}">{{ row.status }}</td>
-                              <td>{{ row.latency_ms }} ms</td>
-                              <td>{{ row.ssl_days }}</td>
-                          </tr>
-                          {% endfor %}
-                      </tbody>
-                  </table>
-                  <div class="footer">Generated by GitHub Actions Universal Sentinel</div>
-              </div>
-          </body>
-          </html>
-          EOF
-          
-          # 3. 문서화 파일 생성
-          cat << EOF > docs/README.md
-          # System Health Artifacts
-          이 아카이브는 자동화된 헬스 체크 시스템에 의해 생성되었습니다.
-          
-          - **reports/html/**: 웹 브라우저용 대시보드
-          - **reports/raw/**: 데이터 분석용 JSON
-          - **logs/**: 실행 로그 및 백엔드 로그
-          EOF
-
       # =========================================================
-      # 📝 [대량 생성 4] 메인 모니터링 스크립트 (Jinja2 적용)
+      # 📡 [대량 생성 4] 수집기 (Collector) 모듈 생성
       # =========================================================
-      - name: 📝 Generate Robust Monitor Script
+      - name: 📡 Create Data Collector Module
         run: |
-          cat << 'EOF' > scripts/monitor.py
-          import json
+          cat << 'EOF' > system/core/collector.py
           import requests
+          import json
           import time
-          import sys
           import os
-          import ssl
-          import socket
-          import logging
           from datetime import datetime
-          from jinja2 import Environment, FileSystemLoader
           from requests.adapters import HTTPAdapter
           from urllib3.util.retry import Retry
 
-          # --- 로깅 설정 ---
-          logging.basicConfig(
-              level=logging.INFO,
-              format='%(asctime)s | %(levelname)s | %(message)s',
-              handlers=[
-                  logging.FileHandler('logs/app.log', encoding='utf-8'),
-                  logging.StreamHandler()
-              ]
-          )
-          logger = logging.getLogger()
-
-          # --- 설정 로드 ---
-          with open('config/targets.json', 'r') as f:
-              TARGETS = json.load(f)
-
-          def check_ssl(url):
-              try:
-                  if not url.startswith("https"): return True, "N/A"
-                  hostname = url.split("//")[-1].split("/")[0].split(":")[0]
-                  context = ssl.create_default_context()
-                  with socket.create_connection((hostname, 443), timeout=3) as sock:
-                      with context.wrap_socket(sock, server_hostname=hostname) as ssock:
-                          cert = ssock.getpeercert()
-                          not_after = datetime.strptime(cert['notAfter'], '%b %d %H:%M:%S %Y %Z')
-                          remaining = (not_after - datetime.utcnow()).days
-                          return True, f"{remaining} days"
-              except Exception as e:
-                  return False, str(e)[:10]
-
           def get_session():
               s = requests.Session()
-              retries = Retry(total=3, backoff_factor=0.3, status_forcelist=[500, 502, 503, 504])
+              # 503 에러 발생 시 백오프 전략 강화 (0.5초 -> 1초 -> 2초)
+              retries = Retry(total=3, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
               s.mount('http://', HTTPAdapter(max_retries=retries))
               s.mount('https://', HTTPAdapter(max_retries=retries))
               return s
 
-          # --- 메인 로직 ---
-          results = []
-          session = get_session()
-          fail_count = 0
-
-          logger.info(">>> Starting Health Check...")
-
-          for t in TARGETS:
-              start = time.time()
-              item = {
-                  "name": t['name'],
-                  "url": t['url'],
-                  "status": "DOWN",
-                  "latency_ms": 0,
-                  "ssl_days": "N/A"
-              }
+          def run_collection():
+              with open('system/config/targets.json', 'r') as f:
+                  targets = json.load(f)
               
-              try:
-                  resp = session.get(t['url'], timeout=5)
-                  item['latency_ms'] = round((time.time() - start) * 1000, 2)
-
-                  if resp.status_code == 200:
-                      item['status'] = "UP"
-                  else:
-                      item['status'] = f"ERR_{resp.status_code}"
-                      fail_count += 1
+              session = get_session()
+              raw_data = []
+              
+              print(f">>> Collecting metrics for {len(targets)} targets...")
+              
+              for t in targets:
+                  start = time.time()
+                  result = {
+                      "id": t['id'],
+                      "name": t['name'],
+                      "tier": t['tier'],
+                      "url": t['url'],
+                      "status": "UNKNOWN",
+                      "code": 0,
+                      "latency": 0.0,
+                      "timestamp": datetime.now().isoformat()
+                  }
                   
-                  ssl_ok, ssl_msg = check_ssl(t['url'])
-                  item['ssl_days'] = ssl_msg
-                  if not ssl_ok: item['status'] = "SSL_FAIL"
+                  try:
+                      resp = session.get(t['url'], timeout=t['timeout'])
+                      result['latency'] = round((time.time() - start) * 1000, 2)
+                      result['code'] = resp.status_code
+                      
+                      if resp.status_code == 200:
+                          result['status'] = "UP"
+                      else:
+                          result['status'] = "DOWN"
+                          
+                  except Exception as e:
+                      result['status'] = "ERROR"
+                      result['error_msg'] = str(e)[:50]
+                      print(f"⚠️ Error collecting {t['name']}: {e}")
 
-              except Exception as e:
-                  item['status'] = "CONN_FAIL"
-                  item['ssl_days'] = str(e)[:15]
-                  fail_count += 1
-                  logger.error(f"Failed {t['name']}: {e}")
+                  raw_data.append(result)
+                  print(f"   Checked [{t['tier']}] {t['name']}: {result['status']} ({result['latency']}ms)")
 
-              logger.info(f"Checked {item['name']}: {item['status']}")
-              results.append(item)
+              # Raw 데이터 저장
+              os.makedirs('data/raw', exist_ok=True)
+              with open('data/raw/latest_scan.json', 'w') as f:
+                  json.dump(raw_data, f, indent=4)
+              
+              print(">>> Collection Complete.")
 
-          # --- 리포트 생성 (JSON & CSV) ---
-          with open('reports/raw/data.json', 'w') as f:
-              json.dump(results, f, indent=4)
-          
-          with open('reports/raw/summary.csv', 'w') as f:
-              f.write("Name,Status,Latency\n")
-              for r in results:
-                  f.write(f"{r['name']},{r['status']},{r['latency_ms']}\n")
-
-          # --- 리포트 생성 (HTML via Jinja2) ---
-          env = Environment(loader=FileSystemLoader('templates'))
-          template = env.get_template('dashboard.html')
-          html_out = template.render(
-              rows=results,
-              timestamp=datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-              total_count=len(results),
-              fail_count=fail_count
-          )
-          
-          with open('reports/html/dashboard.html', 'w', encoding='utf-8') as f:
-              f.write(html_out)
-
-          logger.info(">>> All reports generated.")
-          
-          # 환경변수를 통해 GitHub Summary에 쓸 데이터 출력
-          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as fh:
-              fh.write("### 🩺 Health Check Summary\n")
-              fh.write("| Service | Status | Latency |\n|---|---|---|\n")
-              for r in results:
-                  icon = "✅" if r['status'] == "UP" else "❌"
-                  fh.write(f"| {icon} {r['name']} | **{r['status']}** | {r['latency_ms']}ms |\n")
-
-          # Strict Mode 체크 (실패가 있으면 exit 1)
-          strict_mode = os.getenv("STRICT_MODE", "true").lower() == "true"
-          if fail_count > 0 and strict_mode:
-              logger.error("!!! Critical failures detected !!!")
-              sys.exit(1)
-          else:
-              logger.info(">>> System Stable (or Strict Mode OFF)")
+          if __name__ == "__main__":
+              run_collection()
           EOF
 
       # =========================================================
-      # 🕵️ [실행] 모니터링 수행
+      # 🧠 [대량 생성 5] 분석기 (Analyzer) 모듈 생성
       # =========================================================
-      - name: 🚀 Execute Monitor Script
-        env:
-          STRICT_MODE: ${{ inputs.strict_mode }}
-        run: python scripts/monitor.py
+      - name: 🧠 Create Logic Analyzer Module
+        run: |
+          cat << 'EOF' > system/core/analyzer.py
+          import json
+          import sys
+          import os
+
+          def analyze():
+              with open('data/raw/latest_scan.json', 'r') as f:
+                  data = json.load(f)
+              
+              report = {
+                  "total": len(data),
+                  "up": 0,
+                  "down": 0,
+                  "critical_failures": [],
+                  "warning_failures": []
+              }
+              
+              for item in data:
+                  if item['status'] == 'UP':
+                      report['up'] += 1
+                  else:
+                      report['down'] += 1
+                      if item['tier'] == 'Critical':
+                          report['critical_failures'].append(item)
+                      else:
+                          report['warning_failures'].append(item)
+              
+              # 분석 결과 저장
+              os.makedirs('data/processed', exist_ok=True)
+              with open('data/processed/analysis_result.json', 'w') as f:
+                  json.dump(report, f, indent=4)
+              
+              print(">>> Analysis Summary:")
+              print(f"   Total: {report['total']}, UP: {report['up']}, DOWN: {report['down']}")
+              print(f"   Critical Failures: {len(report['critical_failures'])}")
+              print(f"   Warning Failures: {len(report['warning_failures'])}")
+              
+              # 종료 코드 결정 (Critical일 때만 실패 처리)
+              if len(report['critical_failures']) > 0:
+                  sys.exit(1)
+              else:
+                  sys.exit(0)
+
+          if __name__ == "__main__":
+              try:
+                  analyze()
+              except SystemExit as e:
+                  # 모듈 실행 시 바로 종료되지 않도록 예외 처리 후 상태 코드 전달용 파일 생성
+                  with open('data/processed/exit_code', 'w') as f:
+                      f.write(str(e.code))
+          EOF
 
       # =========================================================
-      # 📤 [마무리] 결과물 업로드 및 이슈 처리
+      # 📰 [대량 생성 6] 리포터 (Reporter) 모듈 생성 (HTML/MD)
       # =========================================================
-      - name: 📦 Archive All Artifacts
+      - name: 📰 Create Report Generator Module
+        run: |
+          cat << 'EOF' > system/core/reporter.py
+          import json
+          import os
+          from datetime import datetime
+
+          def generate_reports():
+              with open('data/raw/latest_scan.json', 'r') as f:
+                  raw = json.load(f)
+              with open('data/processed/analysis_result.json', 'r') as f:
+                  analysis = json.load(f)
+
+              # 1. GitHub Summary (Markdown) 생성
+              md_lines = ["### 🛰️ System Status Report"]
+              md_lines.append(f"**Time:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} UTC")
+              
+              if analysis['critical_failures']:
+                  md_lines.append("\n#### 🚨 Critical Issues")
+                  for fail in analysis['critical_failures']:
+                      md_lines.append(f"- 🔴 **{fail['name']}** ({fail['url']}) : {fail['status']}")
+              
+              if analysis['warning_failures']:
+                  md_lines.append("\n#### ⚠️ Warnings (Non-Blocking)")
+                  for fail in analysis['warning_failures']:
+                      md_lines.append(f"- 🟡 **{fail['name']}** : {fail.get('error_msg', 'Check Logs')}")
+
+              md_lines.append("\n#### 📊 Details")
+              md_lines.append("| Service | Tier | Status | Latency |")
+              md_lines.append("|---|---|---|---|")
+              
+              for item in raw:
+                  icon = "✅" if item['status'] == "UP" else ("🔴" if item['tier'] == "Critical" else "🟡")
+                  md_lines.append(f"| {icon} {item['name']} | {item['tier']} | **{item['status']}** | {item['latency']}ms |")
+              
+              summary_content = "\n".join(md_lines)
+              
+              # GitHub Actions Summary 환경변수에 쓰기
+              if "GITHUB_STEP_SUMMARY" in os.environ:
+                  with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
+                      f.write(summary_content)
+              
+              # 2. Incident Report (장애 발생 시)
+              if analysis['critical_failures']:
+                  with open('reports/incidents/incident_alert.md', 'w') as f:
+                      f.write(f"# 🔥 Critical Incident Alert\n\n{summary_content}")
+
+              print(">>> Reports Generated.")
+
+          if __name__ == "__main__":
+              generate_reports()
+          EOF
+
+      # =========================================================
+      # 🔥 [실행] 모듈 순차 실행 (파이프라인)
+      # =========================================================
+      - name: 📡 Run Collector
+        run: python system/core/collector.py
+
+      - name: 🧠 Run Analyzer
+        id: analyzer_step
+        run: |
+          python system/core/analyzer.py
+          EXIT_CODE=$(cat data/processed/exit_code)
+          echo "analyzer_exit_code=$EXIT_CODE" >> $GITHUB_OUTPUT
+        continue-on-error: true # 리포트 생성을 위해 워크플로우 중단 방지
+
+      - name: 📰 Run Reporter
+        run: python system/core/reporter.py
+
+      # =========================================================
+      # 🏁 [종료] 최종 결과 판단 및 아티팩트 저장
+      # =========================================================
+      - name: 📦 Archive System Data
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: enterprise-report-pack
+          name: galaxy-system-logs
           path: |
+            system/
+            data/
             logs/
             reports/
-            config/
-            docs/
-            scripts/
-          retention-days: 7
 
-      - name: 🎫 Incident Ticket
-        if: failure()
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const fs = require('fs');
-            let logBody = '';
-            try { logBody = fs.readFileSync('reports/raw/summary.csv', 'utf8'); } catch(e) {}
-            
-            await github.rest.issues.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              title: '🚨 Production Incident: Health Check Failed',
-              body: `### Critical System Failure\n\n**CSV Snapshot:**\n\`\`\`csv\n${logBody}\n\`\`\`\nPlease check the dashboard artifact.`,
-              labels: ['incident', 'high-priority']
-            });
+      - name: 🚦 Final Status Check
+        if: steps.analyzer_step.outputs.analyzer_exit_code != '0'
+        run: |
+          echo "⛔ Critical System Failure Detected."
+          exit 1
