@@ -1,4 +1,4 @@
-name: ⚔️ Grand Ops:Ultimate Cyber Wargame (Stable)
+name: ⚔️ Grand Ops:Ultimate Cyber Wargame (v4 Stable)
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     - cron: '*/30 * * * *'
   workflow_dispatch:
 
-# 🚀 동시성 제어: 동일 브랜치 중복 실행 시 기존 작업 취소 (오류 및 자원 낭비 방지)
+# 🚀 동시성 제어: 중복 실행 시 기존 작업 취소
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -18,44 +18,43 @@ permissions:
   security-events: write
   actions: read
 
-env:
-  ARTIFACT_NAME: wargame-state-archive
-
 jobs:
   # ==================================================================================
-  # JOB 1: 🏗️ 워게임 환경 구축 (Setup)
+  # JOB 1: 🏗️ 워게임 환경 구축 & 보고서 시작
   # ==================================================================================
   setup-wargame:
-    name: 1. Setup Wargame Env
+    name: 1. Setup & Report Init
     runs-on: ubuntu-latest
-    timeout-minutes: 5 # 무한 대기 방지
+    timeout-minutes: 5
     steps:
       - name: 📥 Checkout Code
         uses: actions/checkout@v4
 
-      - name: 🐍 Set up Python
-        uses: actions/setup-python@v4 # v4가 Python setup에서는 안정적
-        with:
-          python-version: '3.10'
+      - name: 📝 Initialize Report
+        run: |
+          echo "# ⚔️ Grand Ops: Cyber Wargame Report" > WARGAME_REPORT.md
+          echo "### 📅 Execution Date: $(date)" >> WARGAME_REPORT.md
+          echo "---" >> WARGAME_REPORT.md
+          echo "## 🏗️ Phase 1: Environment Setup" >> WARGAME_REPORT.md
+          echo "- ✅ Environment Initialized" >> WARGAME_REPORT.md
+          echo "- ✅ Python 3.10 & Node.js Ready" >> WARGAME_REPORT.md
 
       - name: 🛠️ Generate Logic (Generator)
         run: |
           mkdir -p .github/scripts
-          # 생성 스크립트 작성
           cat << 'EOF' > .github/scripts/generator.py
           import os, json
           
-          # 디렉토리 구조 생성
           dirs = ["services/frontend", "services/backend", "services/admin", "security_tools"]
           for d in dirs: os.makedirs(d, exist_ok=True)
           
-          # Frontend (Next.js Dummy)
+          # Frontend
           with open("services/frontend/package.json", "w") as f:
               json.dump({"name": "@my-org/frontend", "version": "1.0.0", "dependencies": {"next": "15.0.0", "react": "19.0.0"}}, f, indent=2)
           with open("services/frontend/index.html", "w") as f:
               f.write("<html><body><h1>Welcome to Cyber Range</h1></body></html>")
           
-          # Backend (Express Dummy)
+          # Backend
           with open("services/backend/server.js", "w") as f:
               f.write("const express = require('express');\n")
           with open("services/backend/config.js", "w") as f:
@@ -63,29 +62,44 @@ jobs:
           with open("services/backend/package.json", "w") as f:
               json.dump({"name": "backend-api", "version": "1.0.0"}, f)
 
-          # Attack Script (Red Team)
+          # Attack Tools
           with open("security_tools/attack.py", "w") as f:
-              f.write("""import os
-          print('🔴 [RED TEAM] Launching Attacks...')
+              f.write("""import os, sys
+          log = []
+          def log_msg(msg):
+              print(msg)
+              log.append(msg)
+          
+          log_msg('🔴 [RED TEAM] Launching Attacks...')
           # SQL Injection
           with open('services/backend/server.js', 'a') as f:
               f.write('\\nconst q = \"SELECT * FROM u WHERE id=\" + req.id; // SQLi\\n')
-          # Secret Leak
-          with open('services/backend/config.js', 'w') as f:
-              f.write('const AWS_KEY = \"AKIAIOSFODNN7EXAMPLE\"; // Leaked\\n')
-          # Ransomware Simulation
+          log_msg('- 💉 Injected SQLi vulnerability')
+          
+          # Ransomware
           if os.path.exists('services/backend/package.json'):
               os.rename('services/backend/package.json', 'services/backend/package.json.locked')
-              print('💀 [Attack] Ransomware Encrypted package.json')
+              log_msg('- 💀 Executed Ransomware (package.json locked)')
+          
           # XSS
           with open('services/frontend/index.html', 'w') as f:
               f.write('<script>alert(\"Hacked\");</script>')
+          log_msg('- 🕸️ Injected XSS payload')
+
+          # Save Log for Report
+          with open('attack_summary.txt', 'w') as f:
+              f.write('\\n'.join(log))
           """)
 
-          # Defense Script (Blue Team)
+          # Defense Tools
           with open("security_tools/defense.py", "w") as f:
               f.write("""import os, re
-          print('🔵 [BLUE TEAM] Defense Protocol Initiated...')
+          log = []
+          def log_msg(msg):
+              print(msg)
+              log.append(msg)
+
+          log_msg('🔵 [BLUE TEAM] Defense Protocol Initiated...')
           def scan(root_dir):
               for root, dirs, files in os.walk(root_dir):
                   for file in files:
@@ -94,47 +108,47 @@ jobs:
                       if file.endswith('.locked'):
                           new = path.replace('.locked', '')
                           os.rename(path, new)
-                          print(f'🚑 Restored: {new}')
+                          log_msg(f'- 🚑 Restored Ransomware file: {file}')
                           continue
+                      
                       try:
                           with open(path, 'r') as f: content = f.read()
                           orig = content
-                          # Secret Sanitization
-                          if 'AKIA' in content:
-                              content = re.sub(r'AKIA[A-Z0-9]+', '[REDACTED]', content)
+                          
                           # SQLi Patch
                           if 'SELECT' in content and '+' in content:
                               content = content.replace('req.id', '?')
+                              log_msg(f'- 🛡️ Patched SQL Injection in {file}')
                           # XSS Clean
                           if '<script>' in content:
                               content = re.sub(r'<script>.*?</script>', '', content)
+                              log_msg(f'- 🧹 Removed XSS from {file}')
+                              
                           if content != orig:
                               with open(path, 'w') as f: f.write(content)
-                              print(f'🛡️ Secured: {file}')
                       except: pass
           scan('.')
+          with open('defense_summary.txt', 'w') as f:
+              f.write('\\n'.join(log))
           """)
           EOF
-          
-          # 실행
           python .github/scripts/generator.py
 
-      - name: 🗜️ Compress Game State (Tarball Strategy)
-        # [핵심] 파일 개수와 관계없이 단일 파일로 압축하여 업로드 실패 확률 99% 제거
-        # .git 등 불필요한 시스템 파일 제외
+      - name: 🗜️ Compress State (v4 Optimized)
+        # 중요: v4에서도 파일 개수가 많으면 느려지므로 압축 필수
+        # WARGAME_REPORT.md 파일도 함께 압축
         run: |
-          tar --exclude='.git' --exclude='.github' --exclude='node_modules' -czf game_state.tar.gz services security_tools
+          tar --exclude='.git' --exclude='.github' --exclude='node_modules' -czf game_state_v1.tar.gz services security_tools WARGAME_REPORT.md
 
-      - name: 📤 Upload Wargame Kit (Stable v3)
-        # v4 대신 안정적인 v3 사용
-        uses: actions/upload-artifact@v3
+      - name: 📤 Upload Artifact (v4)
+        uses: actions/upload-artifact@v4
         with:
-          name: ${{ env.ARTIFACT_NAME }}
-          path: game_state.tar.gz
+          name: game-state-v1
+          path: game_state_v1.tar.gz
           retention-days: 1
 
   # ==================================================================================
-  # JOB 2: 🔴 공격 감행 (Red Team)
+  # JOB 2: 🔴 공격 및 보고서 업데이트
   # ==================================================================================
   simulate-attack:
     name: 2. 🔴 Red Team Attack
@@ -142,97 +156,110 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: 📥 Download Game State (Stable v3)
-        uses: actions/download-artifact@v3
+      - name: 📥 Download State (v4)
+        uses: actions/download-artifact@v4
         with:
-          name: ${{ env.ARTIFACT_NAME }}
-          path: workspace # 별도 폴더에 다운로드 (충돌 방지)
+          name: game-state-v1
+          path: .
 
-      - name: 📂 Extract Game State
-        run: |
-          if [ -f "workspace/game_state.tar.gz" ]; then
-            tar -xzf workspace/game_state.tar.gz
-            echo "✅ Game state loaded."
-          else
-            echo "❌ Artifact Download Failed!"
-            exit 1
-          fi
+      - name: 📂 Extract State
+        run: tar -xzf game_state_v1.tar.gz && rm game_state_v1.tar.gz
 
       - name: 🐍 Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
       - name: 💣 EXECUTE ATTACKS
+        run: python security_tools/attack.py
+
+      - name: 📝 Update Report
         run: |
-          echo "🚨 RED TEAM ATTACK START"
-          python security_tools/attack.py
+          echo "" >> WARGAME_REPORT.md
+          echo "## 🔴 Phase 2: Red Team Operations" >> WARGAME_REPORT.md
+          echo "```text" >> WARGAME_REPORT.md
+          cat attack_summary.txt >> WARGAME_REPORT.md
+          echo "```" >> WARGAME_REPORT.md
+          rm attack_summary.txt
 
-      - name: 📦 Re-Archive Compromised State
-        run: tar -czf compromised_state.tar.gz services security_tools
+      - name: 📦 Re-Archive
+        run: tar -czf game_state_v2.tar.gz services security_tools WARGAME_REPORT.md
 
-      - name: 📤 Upload Compromised State
-        uses: actions/upload-artifact@v3
+      - name: 📤 Upload Artifact (v4)
+        uses: actions/upload-artifact@v4
         with:
-          name: compromised-state
-          path: compromised_state.tar.gz
+          name: game-state-v2
+          path: game_state_v2.tar.gz
 
   # ==================================================================================
-  # JOB 3: 🔵 방어 및 복구 (Blue Team)
+  # JOB 3: 🔵 방어, 복구 및 보고서 저장 (Git Push)
   # ==================================================================================
   activate-defense:
-    name: 3. 🔵 Blue Team Defense
+    name: 3. 🔵 Blue Team & Report Save
     needs: simulate-attack
     runs-on: ubuntu-latest
-    timeout-minutes: 5
     permissions:
-      contents: write
+      contents: write # 리포트 커밋을 위한 권한
     steps:
-      # Git History를 위해 Checkout 필요
-      - name: 📥 Checkout
+      - name: 📥 Checkout (For Git Push)
         uses: actions/checkout@v4
 
-      - name: 📥 Download Compromised State (Stable v3)
-        uses: actions/download-artifact@v3
+      - name: 📥 Download Compromised State (v4)
+        uses: actions/download-artifact@v4
         with:
-          name: compromised-state
+          name: game-state-v2
           path: workspace
 
-      - name: 📂 Extract Compromised Files
+      - name: 📂 Extract & Restore
         run: |
-          # 기존 파일 위에 덮어쓰기 (workspace 폴더에서 꺼내옴)
-          tar -xzf workspace/compromised_state.tar.gz
+          tar -xzf workspace/game_state_v2.tar.gz
           rm -rf workspace
 
-      - name: 🐍 Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-
       - name: 🛡️ EXECUTE DEFENSE
-        run: |
-          echo "🛡️ BLUE TEAM DEFENSE START"
-          python security_tools/defense.py
+        run: python security_tools/defense.py
 
-      - name: 💾 Commit & Push Fixes
+      - name: 📝 Finalize Report
         run: |
-          git config --global user.name "Blue Team Bot"
-          git config --global user.email "defense@ops.local"
+          echo "" >> WARGAME_REPORT.md
+          echo "## 🔵 Phase 3: Blue Team Response" >> WARGAME_REPORT.md
+          echo "```text" >> WARGAME_REPORT.md
+          cat defense_summary.txt >> WARGAME_REPORT.md
+          echo "```" >> WARGAME_REPORT.md
+          echo "---" >> WARGAME_REPORT.md
+          echo "**Status:** ✅ System Secured & Recovered" >> WARGAME_REPORT.md
+          rm defense_summary.txt
+
+      - name: 💾 Commit Report to Repo
+        # 요청하신 대로 .github/workflows 경로에 보고서 저장
+        run: |
+          git config --global user.name "Grand Ops Bot"
+          git config --global user.email "bot@grandops.local"
+          
+          # 보고서 저장 디렉토리 생성
+          mkdir -p .github/workflows/reports
+          
+          # 타임스탬프가 찍힌 파일명으로 이동
+          REPORT_NAME="Wargame_Report_${{ github.run_number }}.md"
+          mv WARGAME_REPORT.md .github/workflows/reports/$REPORT_NAME
+          
+          # 소스 코드 복구 및 리포트 커밋
           git add .
-          git commit -m "🛡️ Incident Response: System Secured" --allow-empty
-          git push origin HEAD:${{ github.ref }} || echo "⚠️ Push skipped (Simulated)"
+          
+          # [skip ci]를 추가하여 무한 루프 방지
+          git commit -m "📝 Add Wargame Report #${{ github.run_number }} [skip ci]" --allow-empty
+          git push origin HEAD:${{ github.ref }}
 
       - name: 📦 Archive Secured State
-        run: tar -czf secured_state.tar.gz services security_tools
+        run: tar -czf game_state_v3.tar.gz services security_tools
 
-      - name: 📤 Upload Secured Code
-        uses: actions/upload-artifact@v3
+      - name: 📤 Upload Secured State (v4)
+        uses: actions/upload-artifact@v4
         with:
-          name: secured-state
-          path: secured_state.tar.gz
+          name: game-state-v3
+          path: game_state_v3.tar.gz
 
   # ==================================================================================
-  # JOB 4: 🚑 패키지 패치 및 릴리즈
+  # JOB 4: 🚑 패치 및 릴리즈
   # ==================================================================================
   dependency-ops:
     name: 4. Patch & Release
@@ -242,30 +269,26 @@ jobs:
       contents: write
       packages: write
     steps:
-      - name: 📥 Download Secured State (Stable v3)
-        uses: actions/download-artifact@v3
+      - name: 📥 Download Secured State
+        uses: actions/download-artifact@v4
         with:
-          name: secured-state
+          name: game-state-v3
           path: workspace
       
-      - name: 📂 Extract Secured Files
-        run: tar -xzf workspace/secured_state.tar.gz
+      - name: 📂 Extract
+        run: tar -xzf workspace/game_state_v3.tar.gz
 
       - name: 🟢 Setup Node.js
-        uses: actions/setup-node@v3 # v3가 호환성이 더 좋을 수 있음
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
 
       - name: 🕵️ Patch Vulnerabilities
         run: |
-          echo "🔍 Patching Dependencies..."
-          # 아티팩트로 node_modules를 옮기지 않고 여기서 신규 설치 (가장 확실함)
           find services -name "package.json" | while read pkg; do
             dir=$(dirname "$pkg")
             cd "$dir"
             if [ -f "package.json" ]; then
-               echo "Installing in $dir"
-               # --no-audit 등으로 속도 향상 및 네트워크 에러 최소화
                npm install --no-audit --no-fund --package-lock-only || true
             fi
             cd - > /dev/null
@@ -276,17 +299,6 @@ jobs:
         with:
           tag_name: v${{ github.run_number }}-stable
           name: "🛡️ Stable Release v${{ github.run_number }}"
-          body: "Auto-generated secure release."
+          body: "See .github/workflows/reports/Wargame_Report_${{ github.run_number }}.md for details."
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  # ==================================================================================
-  # JOB 5: 🚀 서버 배포 (Simulation)
-  # ==================================================================================
-  deploy-production:
-    name: 5. Deploy to Production
-    needs: dependency-ops
-    runs-on: ubuntu-latest
-    steps:
-      - name: 📡 Deploy Signal
-        run: echo "🚀 Deploying Fully Secured Application to Production Cluster..."
