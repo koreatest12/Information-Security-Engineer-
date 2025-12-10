@@ -108,7 +108,7 @@ jobs:
   # JOB 2: 🔴 전방위 사이버 공격 시뮬레이션 (Red Team - Full Scale Attack)
   # ==================================================================================
   simulate-full-scale-attack:
-    name: 2. 🔴 Red Team: Multi-Vector Assault
+    name: 2. 🔴 Red Team:Multi-Vector Assault
     needs: provision-infrastructure
     runs-on: ubuntu-latest
     steps:
@@ -185,7 +185,7 @@ jobs:
   # JOB 3: 🔵 보안 방어 및 긴급 복구 (Blue Team - Defense & Recovery)
   # ==================================================================================
   activate-defense-protocol:
-    name: 3. 🔵 Blue Team: Defense & Firewall
+    name: 3. 🔵 Blue Team:Defense & Firewall
     needs: simulate-full-scale-attack
     runs-on: ubuntu-latest
     permissions:
