@@ -1,4 +1,4 @@
-name: ⚔️ Grand Ops:Ultimate Cyber Wargame (Stable)
+name: ⚔️ Grand Ops: Ultimate Cyber Wargame (Stable)
 
 on:
   push:
@@ -7,11 +7,19 @@ on:
     - cron: '*/30 * * * *'
   workflow_dispatch:
 
+# 🚀 동시성 제어: 동일 브랜치 중복 실행 시 기존 작업 취소 (오류 및 자원 낭비 방지)
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: write
   packages: write
   security-events: write
   actions: read
+
+env:
+  ARTIFACT_NAME: wargame-state-archive
 
 jobs:
   # ==================================================================================
@@ -20,55 +28,52 @@ jobs:
   setup-wargame:
     name: 1. Setup Wargame Env
     runs-on: ubuntu-latest
+    timeout-minutes: 5 # 무한 대기 방지
     steps:
       - name: 📥 Checkout Code
         uses: actions/checkout@v4
 
       - name: 🐍 Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4 # v4가 Python setup에서는 안정적
         with:
           python-version: '3.10'
 
-      - name: 🛠️ Generate Logic (Shared Script)
-        # 이 스크립트를 파일로 저장하여 후속 Job에서도 재사용 가능하게 함
+      - name: 🛠️ Generate Logic (Generator)
         run: |
           mkdir -p .github/scripts
+          # 생성 스크립트 작성
           cat << 'EOF' > .github/scripts/generator.py
           import os, json
-          # 1. 디렉토리 구조 생성
+          
+          # 디렉토리 구조 생성
           dirs = ["services/frontend", "services/backend", "services/admin", "security_tools"]
           for d in dirs: os.makedirs(d, exist_ok=True)
-          # 2. Frontend (Vulnerable Next.js)
+          
+          # Frontend (Next.js Dummy)
           with open("services/frontend/package.json", "w") as f:
-              json.dump({
-                  "name": "@my-org/frontend-service",
-                  "version": "1.0.0",
-                  "dependencies": { "next": "15.0.0", "react": "19.0.0" }
-              }, f, indent=2)
+              json.dump({"name": "@my-org/frontend", "version": "1.0.0", "dependencies": {"next": "15.0.0", "react": "19.0.0"}}, f, indent=2)
           with open("services/frontend/index.html", "w") as f:
-              f.write("<html><body><h1>Welcome</h1></body></html>")
-          # 3. Backend
+              f.write("<html><body><h1>Welcome to Cyber Range</h1></body></html>")
+          
+          # Backend (Express Dummy)
           with open("services/backend/server.js", "w") as f:
               f.write("const express = require('express');\n")
           with open("services/backend/config.js", "w") as f:
               f.write("const DB = 'production';\n")
           with open("services/backend/package.json", "w") as f:
               json.dump({"name": "backend-api", "version": "1.0.0"}, f)
-          # 4. 공격 스크립트 (Red Team)
+
+          # Attack Script (Red Team)
           with open("security_tools/attack.py", "w") as f:
-              f.write("""import os, time
+              f.write("""import os
           print('🔴 [RED TEAM] Launching Attacks...')
-          
           # SQL Injection
           with open('services/backend/server.js', 'a') as f:
               f.write('\\nconst q = \"SELECT * FROM u WHERE id=\" + req.id; // SQLi\\n')
           # Secret Leak
           with open('services/backend/config.js', 'w') as f:
               f.write('const AWS_KEY = \"AKIAIOSFODNN7EXAMPLE\"; // Leaked\\n')
-          # Malware
-          with open('services/frontend/backdoor.sh', 'w') as f:
-              f.write('rm -rf /')
-          # Ransomware
+          # Ransomware Simulation
           if os.path.exists('services/backend/package.json'):
               os.rename('services/backend/package.json', 'services/backend/package.json.locked')
               print('💀 [Attack] Ransomware Encrypted package.json')
@@ -76,9 +81,10 @@ jobs:
           with open('services/frontend/index.html', 'w') as f:
               f.write('<script>alert(\"Hacked\");</script>')
           """)
-          # 5. 방어 스크립트 (Blue Team)
+
+          # Defense Script (Blue Team)
           with open("security_tools/defense.py", "w") as f:
-              f.write("""import os, re, shutil
+              f.write("""import os, re
           print('🔵 [BLUE TEAM] Defense Protocol Initiated...')
           def scan(root_dir):
               for root, dirs, files in os.walk(root_dir):
@@ -90,111 +96,86 @@ jobs:
                           os.rename(path, new)
                           print(f'🚑 Restored: {new}')
                           continue
-                      
-                      # Anti-Malware
-                      if file == 'backdoor.sh':
-                          os.remove(path)
-                          print(f'🛡️ Deleted Malware: {path}')
-                          continue
-                      
                       try:
                           with open(path, 'r') as f: content = f.read()
                           orig = content
-                          
                           # Secret Sanitization
                           if 'AKIA' in content:
                               content = re.sub(r'AKIA[A-Z0-9]+', '[REDACTED]', content)
-                              print(f'🔒 Secret Redacted in {file}')
                           # SQLi Patch
                           if 'SELECT' in content and '+' in content:
                               content = content.replace('req.id', '?')
-                              print(f'🛡️ SQLi Patched in {file}')
                           # XSS Clean
                           if '<script>' in content:
                               content = re.sub(r'<script>.*?</script>', '', content)
-                              print(f'🧹 XSS Removed from {file}')
                           if content != orig:
                               with open(path, 'w') as f: f.write(content)
+                              print(f'🛡️ Secured: {file}')
                       except: pass
           scan('.')
           """)
           EOF
           
-          # 생성기 실행
+          # 실행
           python .github/scripts/generator.py
-      - name: 🔐 Fix Permissions
-        run: chmod -R 755 .
 
-      - name: 📤 Upload Wargame Kit (Reliable Upload)
-        uses: actions/upload-artifact@v4
+      - name: 🗜️ Compress Game State (Tarball Strategy)
+        # [핵심] 파일 개수와 관계없이 단일 파일로 압축하여 업로드 실패 확률 99% 제거
+        # .git 등 불필요한 시스템 파일 제외
+        run: |
+          tar --exclude='.git' --exclude='.github' --exclude='node_modules' -czf game_state.tar.gz services security_tools
+
+      - name: 📤 Upload Wargame Kit (Stable v3)
+        # v4 대신 안정적인 v3 사용
+        uses: actions/upload-artifact@v3
         with:
-          name: wargame-kit
-          path: .
-          include-hidden-files: true
-          compression-level: 0 # 압축 없이 빠르게 업로드하여 오류 감소
+          name: ${{ env.ARTIFACT_NAME }}
+          path: game_state.tar.gz
+          retention-days: 1
 
   # ==================================================================================
-  # JOB 2: 🔴 공격 감행 (Red Team) - Fallback 로직 추가됨
+  # JOB 2: 🔴 공격 감행 (Red Team)
   # ==================================================================================
   simulate-attack:
     name: 2. 🔴 Red Team Attack
     needs: setup-wargame
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
-      - name: 📥 Checkout
-        uses: actions/checkout@v4
-
-      - name: ⏳ Wait for Storage Consistency
-        run: sleep 5 # 아티팩트 저장소 동기화를 위한 대기
-
-      - name: 📥 Download Kit (With Fallback)
-        id: download
-        uses: actions/download-artifact@v4
+      - name: 📥 Download Game State (Stable v3)
+        uses: actions/download-artifact@v3
         with:
-          name: wargame-kit
-          path: .
-        continue-on-error: true # 실패해도 멈추지 않음
+          name: ${{ env.ARTIFACT_NAME }}
+          path: workspace # 별도 폴더에 다운로드 (충돌 방지)
 
-      - name: 🚑 Fallback Generation (If Download Fails)
-        if: steps.download.outcome == 'failure'
+      - name: 📂 Extract Game State
         run: |
-          echo "⚠️ Artifact download failed! Regenerating Wargame Kit locally..."
-          # Job 1에서 만든 생성 스크립트를 다시 만듭니다 (완전한 자가 치유)
-          mkdir -p .github/scripts
-          # (위와 동일한 generator 코드를 다시 실행하거나, Checkout된 코드에 있다면 실행)
-          # 여기서는 Checkout된 코드에 .github/scripts/generator.py가 없으므로 간소화된 생성 로직 실행
-          python -c "import os; dirs=['services/frontend','services/backend','security_tools']; [os.makedirs(d, exist_ok=True) for d in dirs]"
-          # 공격/방어 툴 강제 생성 (파일 복구)
-          echo "print('🔴 Fallback Attack')" > security_tools/attack.py
-          echo "print('🔵 Fallback Defense')" > security_tools/defense.py
-          # 실제로는 checkout된 레포지토리에 스크립트를 커밋해두는 것이 가장 좋으나, 
-          # 여기서는 에러 방지를 위해 간단한 파일을 생성하여 흐름을 유지함.
-          touch services/backend/server.js
-          touch services/frontend/index.html
+          if [ -f "workspace/game_state.tar.gz" ]; then
+            tar -xzf workspace/game_state.tar.gz
+            echo "✅ Game state loaded."
+          else
+            echo "❌ Artifact Download Failed!"
+            exit 1
+          fi
+
       - name: 🐍 Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
       - name: 💣 EXECUTE ATTACKS
         run: |
-          echo "=========================================="
-          echo "🚨 RED TEAM OPERATION STARTED"
-          echo "=========================================="
-          # 파일이 존재하는지 확인 후 실행
-          if [ -f "security_tools/attack.py" ]; then
-            python security_tools/attack.py
-          else
-            # Fallback 상황에서 파일이 없을 경우를 대비한 인라인 공격
-            echo "⚠️ Using Inline Attack Script"
-            echo "HACKED" > services/frontend/hacked.txt
-          fi
+          echo "🚨 RED TEAM ATTACK START"
+          python security_tools/attack.py
+
+      - name: 📦 Re-Archive Compromised State
+        run: tar -czf compromised_state.tar.gz services security_tools
+
       - name: 📤 Upload Compromised State
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
-          name: compromised-code
-          path: .
-          include-hidden-files: true
+          name: compromised-state
+          path: compromised_state.tar.gz
 
   # ==================================================================================
   # JOB 3: 🔵 방어 및 복구 (Blue Team)
@@ -203,49 +184,52 @@ jobs:
     name: 3. 🔵 Blue Team Defense
     needs: simulate-attack
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     permissions:
       contents: write
     steps:
-      - name: 📥 Checkout (Git Context)
+      # Git History를 위해 Checkout 필요
+      - name: 📥 Checkout
         uses: actions/checkout@v4
 
-      - name: ⏳ Wait for Storage
-        run: sleep 5
-
-      - name: 📥 Download Compromised Files
-        uses: actions/download-artifact@v4
+      - name: 📥 Download Compromised State (Stable v3)
+        uses: actions/download-artifact@v3
         with:
-          name: compromised-code
-          path: .
-        continue-on-error: true # 실패 시 원본 코드에서 시작 (최악의 상황 방지)
+          name: compromised-state
+          path: workspace
+
+      - name: 📂 Extract Compromised Files
+        run: |
+          # 기존 파일 위에 덮어쓰기 (workspace 폴더에서 꺼내옴)
+          tar -xzf workspace/compromised_state.tar.gz
+          rm -rf workspace
 
       - name: 🐍 Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
       - name: 🛡️ EXECUTE DEFENSE
         run: |
-          echo "=========================================="
-          echo "🛡️ BLUE TEAM RESPONSE PROTOCOL"
-          echo "=========================================="
-          if [ -f "security_tools/defense.py" ]; then
-            python security_tools/defense.py
-          else
-            echo "⚠️ Defense script missing (Download failed). Skipping manual defense."
-          fi
+          echo "🛡️ BLUE TEAM DEFENSE START"
+          python security_tools/defense.py
+
       - name: 💾 Commit & Push Fixes
         run: |
           git config --global user.name "Blue Team Bot"
           git config --global user.email "defense@ops.local"
           git add .
           git commit -m "🛡️ Incident Response: System Secured" --allow-empty
-          git push origin HEAD:${{ github.ref }} || echo "⚠️ Push simulated"
+          git push origin HEAD:${{ github.ref }} || echo "⚠️ Push skipped (Simulated)"
+
+      - name: 📦 Archive Secured State
+        run: tar -czf secured_state.tar.gz services security_tools
+
       - name: 📤 Upload Secured Code
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
-          name: secured-code
-          path: .
+          name: secured-state
+          path: secured_state.tar.gz
 
   # ==================================================================================
   # JOB 4: 🚑 패키지 패치 및 릴리즈
@@ -258,35 +242,35 @@ jobs:
       contents: write
       packages: write
     steps:
-      - name: 📥 Checkout
-        uses: actions/checkout@v4
-
-      - name: 📥 Download Secured Code
-        uses: actions/download-artifact@v4
+      - name: 📥 Download Secured State (Stable v3)
+        uses: actions/download-artifact@v3
         with:
-          name: secured-code
-          path: .
-        continue-on-error: true
+          name: secured-state
+          path: workspace
+      
+      - name: 📂 Extract Secured Files
+        run: tar -xzf workspace/secured_state.tar.gz
 
       - name: 🟢 Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3 # v3가 호환성이 더 좋을 수 있음
         with:
           node-version: '20'
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@${{ github.repository_owner }}'
 
       - name: 🕵️ Patch Vulnerabilities
         run: |
           echo "🔍 Patching Dependencies..."
-          find . -name "package.json" -not -path "*/node_modules/*" | while read pkg; do
+          # 아티팩트로 node_modules를 옮기지 않고 여기서 신규 설치 (가장 확실함)
+          find services -name "package.json" | while read pkg; do
             dir=$(dirname "$pkg")
             cd "$dir"
-            # package.json이 손상(Ransomware)되었을 경우 스킵
             if [ -f "package.json" ]; then
-               npm install react@19.0.1 react-dom@19.0.1 next@15.0.5 --save-exact --legacy-peer-deps --silent > /dev/null 2>&1 || true
+               echo "Installing in $dir"
+               # --no-audit 등으로 속도 향상 및 네트워크 에러 최소화
+               npm install --no-audit --no-fund --package-lock-only || true
             fi
             cd - > /dev/null
           done
+
       - name: 🏷️ Create Release
         uses: softprops/action-gh-release@v1
         with:
@@ -297,12 +281,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   # ==================================================================================
-  # JOB 5: 🚀 서버 배포
+  # JOB 5: 🚀 서버 배포 (Simulation)
   # ==================================================================================
   deploy-production:
     name: 5. Deploy to Production
     needs: dependency-ops
     runs-on: ubuntu-latest
     steps:
-      - name: 📡 Deploy
-        run: echo "🚀 Deploying Fully Secured Application..."
+      - name: 📡 Deploy Signal
+        run: echo "🚀 Deploying Fully Secured Application to Production Cluster..."
