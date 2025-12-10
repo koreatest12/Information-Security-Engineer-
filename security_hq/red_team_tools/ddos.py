@@ -1,0 +1,1 @@
+print('🚀 DDOS Attack Simulation')
