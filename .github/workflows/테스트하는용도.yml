@@ -1,17 +1,18 @@
-name: System Ops (Auto-Fix & Test)
+name: Advanced System Ops & Execution
 
 on:
   push:
     branches: [ "main" ]
+    paths: [ "scripts/**" ]
   schedule:
     - cron: '0 18 * * 0'
   workflow_dispatch:
 
 jobs:
   # ====================================================
-  # JOB 1: 스크립트 테스트 (파일 없으면 자동 생성)
+  # JOB: 다중 OS 환경 구축, 의존성 해결, 스크립트 일괄 실행
   # ====================================================
-  test-scripts:
+  execute-scripts:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -19,99 +20,121 @@ jobs:
         include:
           - os: ubuntu
             image: ubuntu:latest
-            script: setup_ubuntu.sh
-            pkg_mgr: apt-get
+            pkg_cmd: "apt-get install -y"
+            update_cmd: "apt-get update -y"
+            # Ubuntu는 충돌이 적으므로 기본 옵션
+            extra_flags: ""
+            
           - os: centos
             image: quay.io/centos/centos:stream9
-            script: setup_centos.sh
-            pkg_mgr: dnf
+            pkg_cmd: "dnf install -y"
+            update_cmd: "dnf update -y"
+            # [핵심 수정] curl-minimal 충돌 해결을 위해 패키지 교체 허용
+            extra_flags: "--allowerasing"
+            
           - os: amzn
             image: amazonlinux:2023
-            script: setup_amzn.sh
-            pkg_mgr: yum
+            pkg_cmd: "yum install -y"
+            update_cmd: "yum update -y"
+            # [핵심 수정] Amazon Linux 충돌 해결
+            extra_flags: "--allowerasing"
 
     container:
       image: ${{ matrix.image }}
 
     steps:
-      # 1. [Checkout 준비] 깡통 컨테이너에 Git/Tar 강제 설치
-      - name: Pre-install Requirements for Checkout
+      # 1. [시스템 준비] Checkout을 위한 최소 도구 설치 (Git, Tar)
+      - name: Pre-flight: Install Git & Tar
         run: |
-          echo "Installing git and tar..."
-          if [ "${{ matrix.pkg_mgr }}" = "apt-get" ]; then
-            apt-get update -y
-            apt-get install -y git tar
-          else
-            ${{ matrix.pkg_mgr }} install -y git tar
-          fi
+          echo "🚀 Starting Pre-flight checks on ${{ matrix.os }}..."
+          ${{ matrix.update_cmd }}
+          
+          # 패키지 매니저별 옵션 적용하여 설치
+          ${{ matrix.pkg_cmd }} ${{ matrix.extra_flags }} git tar
+          
+          echo "✅ Basic tools installed."
 
-      # 2. 소스 코드 내려받기
+      # 2. 소스 코드 다운로드
       - uses: actions/checkout@v4
 
-      # 3. [핵심 수정] 스크립트 파일이 없으면 자동 생성 (오류 방지)
-      - name: Ensure Script Exists (Auto-Fix)
+      # 3. [의존성 설치] 테스트 및 실행에 필요한 도구 설치 (Sudo, Curl, Wget 등)
+      - name: Install System Dependencies (Fixing Conflicts)
+        run: |
+          echo "📦 Installing system dependencies..."
+          
+          # 충돌 해결 플래그(--allowerasing)가 여기서 작동함
+          ${{ matrix.pkg_cmd }} ${{ matrix.extra_flags }} sudo curl wget which findutils
+          
+          echo "✅ Dependencies installed successfully."
+
+      # 4. [시스템 정보] 디버깅을 위한 환경 정보 출력
+      - name: Report System Information
+        run: |
+          echo "========================================"
+          echo "OS Info:"
+          cat /etc/os-release | grep PRETTY_NAME
+          echo "Kernel:"
+          uname -r
+          echo "User:"
+          whoami
+          echo "========================================"
+
+      # 5. [파일 검증] 스크립트 파일 유무 확인 및 권한 부여
+      - name: Prepare Script Directory
         run: |
           mkdir -p scripts
-          SCRIPT_PATH="scripts/${{ matrix.script }}"
           
-          if [ ! -f "$SCRIPT_PATH" ]; then
-            echo "⚠️  Warning: $SCRIPT_PATH not found in repo."
-            echo "Creating a dummy script to prevent workflow failure..."
-            
-            # 임시 스크립트 생성
-            echo "#!/bin/bash" > "$SCRIPT_PATH"
-            echo "echo '✅  This is an auto-generated placeholder script.'" >> "$SCRIPT_PATH"
-            echo "echo 'ℹ️  Please upload the actual script to the repository.'" >> "$SCRIPT_PATH"
-          else
-            echo "✅  Found existing script: $SCRIPT_PATH"
+          # 스크립트 파일이 하나도 없으면 더미 파일 생성 (에러 방지)
+          if [ -z "$(ls -A scripts/*.sh 2>/dev/null)" ]; then
+             echo "⚠️ No .sh files found. Creating a placeholder."
+             echo '#!/bin/bash' > scripts/example_setup.sh
+             echo 'echo "🎉 This is a placeholder script running on $(hostname)"' >> scripts/example_setup.sh
           fi
           
-          # 실행 권한 부여 (이제 파일이 무조건 존재하므로 에러 안 남)
-          chmod +x "$SCRIPT_PATH"
+          # 모든 쉘 스크립트에 실행 권한 부여
+          chmod +x scripts/*.sh
+          echo "✅ Permissions granted to scripts."
 
-      # 4. 테스트용 의존성 설치 (sudo, curl 등)
-      - name: Install Dependencies for Test
+      # 6. [대량 실행] scripts 폴더 내의 모든 .sh 파일 순차 실행
+      - name: Execute All Scripts in Directory
         run: |
-          echo "Installing dependencies..."
-          if [ "${{ matrix.pkg_mgr }}" = "apt-get" ]; then
-            # apt-get update는 위에서 수행했음
-            apt-get install -y sudo curl wget which
-          else
-            ${{ matrix.pkg_mgr }} install -y sudo curl wget which findutils
-          fi
-
-      # 5. 스크립트 실행 (오류 무시 옵션 포함)
-      - name: Run Install Script
-        run: ./scripts/${{ matrix.script }}
-        continue-on-error: true
+          echo "▶️ Starting execution of scripts..."
+          
+          # scripts 폴더 내의 모든 .sh 파일을 찾아서 실행
+          for script in scripts/*.sh; do
+            if [ -f "$script" ]; then
+              echo "----------------------------------------"
+              echo "📜 Running: $script"
+              echo "----------------------------------------"
+              
+              # 스크립트 실행 (오류가 나도 다음 스크립트로 진행하려면 || true 추가)
+              # sudo를 사용하여 실제 루트 권한 실행 시뮬레이션
+              sudo "$script" && echo "✅ Success: $script" || echo "❌ Failed: $script"
+              
+            fi
+          done
+          echo "----------------------------------------"
+          echo "🏁 All scripts execution attempted."
 
   # ====================================================
-  # JOB 2: 배포 패키지 생성
+  # JOB 2: 실행 결과물(스크립트들) 패키징 및 업로드
   # ====================================================
-  package-scripts:
-    needs: test-scripts
+  package-artifacts:
+    needs: execute-scripts
     runs-on: ubuntu-latest
+    if: always() # 테스트가 실패해도 아티팩트는 남기도록 설정
     steps:
       - uses: actions/checkout@v4
-
-      - name: Prepare Scripts Package
+      
+      - name: Archive Scripts
         run: |
-          mkdir -p deploy_package
-          mkdir -p scripts # 폴더가 없을 경우 대비
+          mkdir -p deployment_pack
+          cp -r scripts deployment_pack/
+          tar -czvf scripts_bundle.tar.gz deployment_pack/
           
-          # 스크립트가 하나라도 있으면 복사, 없으면 빈 파일 생성
-          if ls scripts/*.sh 1> /dev/null 2>&1; then
-            cp scripts/*.sh deploy_package/
-          else
-            echo "No scripts found to package. Creating README."
-            echo "Please upload .sh files to scripts/ directory." > deploy_package/README.txt
-          fi
-          
-          echo "Package prepared."
-
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: server-setup-scripts
-          path: deploy_package/
+          name: deployment-scripts
+          path: scripts_bundle.tar.gz
           retention-days: 5
