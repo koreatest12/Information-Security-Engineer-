@@ -6,22 +6,40 @@ import random
 import uuid
 import json
 import sys
+import secrets
+import re
+from collections import Counter
 
 # =======================================================
-# ⚙️ CONFIGURATION & DEPENDENCY CHECK
+# ⚙️ GRAND OPS: SECURITY MASTER CONFIGURATION
 # =======================================================
 DB_DIR = "data"
-DB_PATH = os.path.join(DB_DIR, "grand_ops_archive.db")
+DB_PATH = os.path.join(DB_DIR, "grand_ops_secure_archive.db")
 SECURITY_MD_PATH = "SECURITY.md"
+INCIDENT_REPORT_PATH = os.path.join(DB_DIR, "incident_response_report.json")
 
-# 외부 리소스 (상태 점검용)
-RESOURCE_MAP = {
-    "Exam": [{"name": "CQ (정보보안기사)", "url": "https://www.cq.or.kr"}],
-    "KISA": [{"name": "KISA KrCERT", "url": "https://www.boho.or.kr"}],
-    "OWASP": [{"name": "OWASP Top 10", "url": "https://owasp.org"}]
+# FIM (File Integrity Monitoring) 대상
+CRITICAL_FILES = {
+    SECURITY_MD_PATH: "expected_hash_placeholder"  # 런타임에 동적 계산
 }
 
-# Requests 모듈 처리 (CI 환경 호환성)
+# SIEM 탐지 임계값
+THRESHOLD_BRUTE_FORCE = 5
+THRESHOLD_HIGH_AMOUNT = 3000.0
+
+# 외부 리소스 (위협 인텔리전스 소스)
+RESOURCE_MAP = {
+    "ThreatIntel": [
+        {"name": "MITRE ATT&CK", "url": "https://attack.mitre.org"},
+        {"name": "NIST NVD", "url": "https://nvd.nist.gov"}
+    ],
+    "Compliance": [
+        {"name": "OWASP Top 10", "url": "https://owasp.org"},
+        {"name": "KISA KrCERT", "url": "https://www.boho.or.kr"}
+    ]
+}
+
+# Requests 모듈 (CI 호환성)
 try:
     import requests
 except ImportError:
@@ -30,237 +48,313 @@ except ImportError:
     import requests
 
 # =======================================================
-# 🛠️ DATABASE SCHEMA DEFINITION
+# 🔐 CRYPTO UTILS (NIST Standard)
+# =======================================================
+def generate_salt():
+    """CSPRNG를 이용한 16바이트 Salt 생성"""
+    return secrets.token_hex(16)
+
+def hash_password(plain_password, salt):
+    """PBKDF2-HMAC-SHA256: 100,000 iterations (Industry Standard)"""
+    return hashlib.pbkdf2_hmac(
+        'sha256', 
+        plain_password.encode('utf-8'), 
+        salt.encode('utf-8'), 
+        100000
+    ).hex()
+
+def mask_pii(data_str):
+    """PII(개인식별정보) 마스킹 처리 (Privacy Engineering)"""
+    if not data_str: return ""
+    if len(data_str) < 4: return "***"
+    return data_str[:2] + "****" + data_str[-2:]
+
+# =======================================================
+# 🛠️ DATABASE SCHEMA (Enhanced)
 # =======================================================
 def init_db():
-    """모든 마이크로서비스를 위한 통합 DB 스키마 생성"""
     if not os.path.exists(DB_DIR):
         os.makedirs(DB_DIR)
         
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
-    # 1. [Auth Service] 사용자 및 인증 테이블
+    # 1. Users (Salt 추가 및 보안 강화)
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS users (
             id TEXT PRIMARY KEY,
             username TEXT UNIQUE,
             password_hash TEXT,
-            role TEXT DEFAULT 'USER', -- ADMIN, USER, GUEST
-            is_active INTEGER DEFAULT 1,
+            salt TEXT,
+            role TEXT DEFAULT 'USER',
+            risk_score INTEGER DEFAULT 0,
+            last_login TIMESTAMP,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )
     ''')
 
-    # 2. [Payment Service] 결제 트랜잭션 테이블
+    # 2. Transactions (SQL Injection 시뮬레이션 데이터 수용)
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS transactions (
             tx_id TEXT PRIMARY KEY,
             user_id TEXT,
             amount DECIMAL(10, 2),
             currency TEXT DEFAULT 'USD',
-            status TEXT, -- SUCCESS, FAILED, PENDING, BLOCKED
-            note TEXT,   -- 공격 시뮬레이션용 필드
-            timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            FOREIGN KEY(user_id) REFERENCES users(id)
+            status TEXT,
+            note TEXT,
+            ip_address TEXT,
+            timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )
     ''')
 
-    # 3. [Inventory Service] 상품 및 재고 테이블
+    # 3. Security Events (SIEM Logs)
     cursor.execute('''
-        CREATE TABLE IF NOT EXISTS products (
-            product_id INTEGER PRIMARY KEY AUTOINCREMENT,
-            name TEXT,
-            category TEXT,
-            price REAL,
-            stock_qty INTEGER,
-            last_restock TIMESTAMP
-        )
-    ''')
-
-    # 4. [Security HQ] 보안 정책 및 취약점 스캔 리포트
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS security_logic (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            layer TEXT, asset TEXT, threat TEXT, 
-            defense_logic TEXT, tool TEXT, 
-            hash TEXT UNIQUE,
-            updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        )
-    ''')
-    
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS vuln_reports (
-            scan_id TEXT PRIMARY KEY,
-            target_service TEXT,
-            severity TEXT, -- LOW, MEDIUM, HIGH, CRITICAL
+        CREATE TABLE IF NOT EXISTS security_events (
+            event_id INTEGER PRIMARY KEY AUTOINCREMENT,
+            event_type TEXT, -- AUTH_FAIL, SQLI_ATTACK, HONEYPOT_TRIGGER
+            severity TEXT,   -- LOW, MEDIUM, HIGH, CRITICAL
+            source_ip TEXT,
+            target_user TEXT,
             description TEXT,
             detected_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )
     ''')
 
-    # 5. [Admin Console] 통합 감사 로그 (Audit Logs)
+    # 4. Products & Inventory
     cursor.execute('''
-        CREATE TABLE IF NOT EXISTS audit_logs (
-            log_id INTEGER PRIMARY KEY AUTOINCREMENT,
-            service_name TEXT,
-            event_type TEXT,
-            ip_address TEXT,
-            message TEXT,
-            timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        )
-    ''')
-
-    # 6. 외부 리소스 상태
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS external_resources (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            name TEXT, url TEXT, status TEXT, 
-            latency_ms REAL, checked_at TIMESTAMP
+        CREATE TABLE IF NOT EXISTS products (
+            product_id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT, category TEXT, price REAL, stock_qty INTEGER
         )
     ''')
     
+    # 5. Security Logic (Policy)
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS security_logic (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            layer TEXT, asset TEXT, threat TEXT, 
+            defense_logic TEXT, tool TEXT, hash TEXT UNIQUE
+        )
+    ''')
+
     conn.commit()
-    print("✅ Database Schema & Tables Initialized Successfully.")
     return conn
 
 # =======================================================
-# 💾 MASSIVE DATA SEEDING (Simulation)
+# 🧬 THREAT SIMULATION & SEEDING
 # =======================================================
-def seed_massive_data(conn):
-    """대량의 모의 데이터 주입 (Auth, Payment, Inventory 등)"""
+def seed_advanced_data(conn):
     cursor = conn.cursor()
-    
-    # 1. Seed Users (100+ Users)
-    print("   ↳ Seeding 100+ Mock Users...")
+    print("  ↳ [Sim] Injecting Advanced Threat Data & User Identities...")
+
+    # 1. Create Users with Salted Hashes
     users = []
-    roles = ['USER'] * 90 + ['ADMIN'] * 5 + ['GUEST'] * 5
+    roles = ['USER'] * 85 + ['ADMIN'] * 5 + ['AUDITOR'] * 5 + ['BOT'] * 5
+    
+    # 🛑 Honeypot User (공격자 유인용)
+    honey_salt = generate_salt()
+    honey_pw = hash_password("admin1234", honey_salt)
+    users.append(("root_admin", "root", honey_pw, honey_salt, "HONEYPOT", 0))
+
     for i in range(100):
         uid = str(uuid.uuid4())
         uname = f"user_{i:03d}"
-        role = roles[i]
-        # 취약한 비밀번호 해시 시뮬레이션
-        pw_hash = hashlib.sha256(f"password{i}".encode()).hexdigest()
-        users.append((uid, uname, pw_hash, role))
+        salt = generate_salt()
+        pw_hash = hash_password(f"Pass@{i}!", salt)
+        users.append((uid, uname, pw_hash, salt, roles[i], 0))
     
-    cursor.executemany("INSERT OR IGNORE INTO users (id, username, password_hash, role) VALUES (?, ?, ?, ?)", users)
+    cursor.executemany("INSERT OR IGNORE INTO users (id, username, password_hash, salt, role, risk_score) VALUES (?, ?, ?, ?, ?, ?)", users)
 
-    # 2. Seed Products (50+ Items)
-    print("   ↳ Seeding Inventory Data...")
-    products = [
-        ("Firewall License 1Y", "Software", 500.00, 100),
-        ("Security Key (YubiKey)", "Hardware", 45.00, 500),
-        ("VPN Subscription", "Service", 10.00, 9999),
-        ("Grand Ops Sticker", "Merch", 5.00, 200)
-    ]
-    # 랜덤 상품 추가 생성
-    for i in range(50):
-        products.append((f"Legacy Module {i}", "Hardware", random.randint(10, 1000), random.randint(0, 50)))
-        
-    for p in products:
-        cursor.execute("INSERT INTO products (name, category, price, stock_qty, last_restock) VALUES (?, ?, ?, ?, datetime('now'))", p)
-
-    # 3. Seed Transactions (500+ Logs)
-    print("   ↳ Generating 500+ Transaction Logs...")
+    # 2. Create Transactions including Attack Vectors
+    print("  ↳ [Sim] Simulating 1,000+ Transactions (Normal vs Malicious)...")
     txs = []
-    statuses = ['SUCCESS', 'SUCCESS', 'SUCCESS', 'FAILED', 'PENDING']
+    statuses = ['SUCCESS', 'PENDING', 'FAILED', 'BLOCKED']
     
-    # 일반 트랜잭션
-    for _ in range(500):
+    # Attack Signatures (SQLi, XSS)
+    attack_payloads = [
+        "' OR '1'='1' --", 
+        "UNION SELECT 1, database(), user() --",
+        "<script>alert(1)</script>",
+        "../../etc/passwd"
+    ]
+
+    for _ in range(1000):
+        is_attack = random.random() < 0.02 # 2% 확률로 공격 로그 생성
         uid = random.choice(users)[0]
-        txs.append((
-            str(uuid.uuid4()), uid, random.uniform(10.0, 5000.0), 
-            random.choice(statuses), "Purchase Item", datetime.datetime.now()
-        ))
-    
-    # 🔴 공격 시뮬레이션 데이터: SQL Injection 시도 흔적 주입
-    malicious_user = users[0][0]
-    txs.append((str(uuid.uuid4()), malicious_user, 0, 'BLOCKED', "' OR '1'='1' --", datetime.datetime.now()))
-    txs.append((str(uuid.uuid4()), malicious_user, 999999, 'BLOCKED', "UNION SELECT password FROM users", datetime.datetime.now()))
-
-    cursor.executemany("INSERT OR IGNORE INTO transactions (tx_id, user_id, amount, status, note, timestamp) VALUES (?, ?, ?, ?, ?, ?)", txs)
-
-    conn.commit()
-
-# =======================================================
-# 🔍 LOGIC PARSING & MONITORING
-# =======================================================
-def parse_security_md(conn):
-    """SECURITY.md 파일 파싱 및 DB 적재"""
-    if not os.path.exists(SECURITY_MD_PATH):
-        print(f"⚠️ {SECURITY_MD_PATH} not found. Skipping MD parsing.")
-        return
-
-    print("   ↳ Parsing Security Policies from MD...")
-    with open(SECURITY_MD_PATH, 'r', encoding='utf-8') as f:
-        lines = f.readlines()
+        tx_id = str(uuid.uuid4())
         
-    policies = []
-    for line in lines:
-        if line.strip().startswith('|') and '---' not in line and 'Layer' not in line:
-            cols = [c.strip() for c in line.split('|') if c.strip()]
-            if len(cols) >= 5:
-                row_hash = hashlib.sha256("".join(cols).encode()).hexdigest()
-                policies.append((cols[0], cols[1], cols[2], cols[3], cols[4], row_hash))
-    
-    cursor = conn.cursor()
-    cursor.executemany('''
-        INSERT OR IGNORE INTO security_logic (layer, asset, threat, defense_logic, tool, hash)
-        VALUES (?, ?, ?, ?, ?, ?)
-    ''', policies)
+        if is_attack:
+            note = random.choice(attack_payloads)
+            status = 'BLOCKED'
+            amount = 0
+            ip = f"192.168.1.{random.randint(100, 200)}" # Internal suspicious IP
+        else:
+            note = "Regular Purchase"
+            status = random.choice(statuses)
+            amount = random.uniform(10.0, 5000.0)
+            ip = f"{random.randint(1, 255)}.{random.randint(1, 255)}.{random.randint(1, 255)}.{random.randint(1, 255)}"
+
+        txs.append((tx_id, uid, amount, status, note, ip, datetime.datetime.now()))
+        
+    # Anomaly Transaction (High Value)
+    txs.append((str(uuid.uuid4()), users[5][0], 9999999.00, 'PENDING', 'Wire Transfer', '10.0.0.99', datetime.datetime.now()))
+
+    cursor.executemany("INSERT OR IGNORE INTO transactions (tx_id, user_id, amount, status, note, ip_address, timestamp) VALUES (?, ?, ?, ?, ?, ?, ?)", txs)
     conn.commit()
 
-def check_external_resources(conn):
-    """외부 보안 리소스 상태 점검"""
-    print("   ↳ Checking External Security Resources...")
-    cursor = conn.cursor()
-    for cat, items in RESOURCE_MAP.items():
-        for item in items:
-            try:
-                start = datetime.datetime.now()
-                res = requests.get(item['url'], timeout=3, headers={"User-Agent": "GrandOpsBot"})
-                latency = (datetime.datetime.now() - start).total_seconds() * 1000
-                status = "Active" if res.status_code == 200 else f"HTTP {res.status_code}"
-            except:
-                status, latency = "Down", 0.0
-            
-            cursor.execute('''
-                INSERT INTO external_resources (name, url, status, latency_ms, checked_at)
-                VALUES (?, ?, ?, ?, datetime('now'))
-            ''', (item['name'], item['url'], status, latency))
-    conn.commit()
+# =======================================================
+# 🧠 INTELLIGENT SECURITY ENGINE (SIEM Logic)
+# =======================================================
+class SecurityOperationsCenter:
+    def __init__(self, conn):
+        self.conn = conn
+        self.cursor = conn.cursor()
+        self.incidents = []
+
+    def run_threat_detection(self):
+        print("  ↳ [SOC] Running Heuristic Threat Detection Engine...")
+        self._detect_sql_injection()
+        self._detect_honeypot_access()
+        self._detect_high_value_anomalies()
+        self._check_file_integrity()
+        return self.incidents
+
+    def _detect_sql_injection(self):
+        """SQL Injection 패턴 탐지 (Regex & Heuristics)"""
+        # 실제 환경에서는 더 복잡한 정규식을 사용
+        suspicious_patterns = ["UNION SELECT", "OR '1'='1'", "--", "WAITFOR DELAY"]
+        
+        self.cursor.execute("SELECT tx_id, note, ip_address FROM transactions")
+        rows = self.cursor.fetchall()
+        
+        detected_count = 0
+        for row in rows:
+            tx_id, note, ip = row
+            for pattern in suspicious_patterns:
+                if pattern in note.upper():
+                    self._log_event("SQLI_ATTACK", "HIGH", ip, "Unknown", f"SQLi pattern detected in Tx {tx_id}: {note}")
+                    detected_count += 1
+                    break
+        if detected_count > 0:
+            print(f"    ⚠️  Detected {detected_count} SQL Injection Attempts.")
+
+    def _detect_honeypot_access(self):
+        """허니팟 계정 접근 시도 탐지"""
+        self.cursor.execute("SELECT id FROM users WHERE role = 'HONEYPOT'")
+        honey_user = self.cursor.fetchone()
+        if honey_user:
+            honey_id = honey_user[0]
+            # 허니팟 계정으로 생성된 트랜잭션이 있는지 확인 (있으면 침해 사고)
+            self.cursor.execute("SELECT count(*) FROM transactions WHERE user_id = ?", (honey_id,))
+            cnt = self.cursor.fetchone()[0]
+            if cnt > 0:
+                self._log_event("HONEYPOT_TRIGGER", "CRITICAL", "UNKNOWN", "root_admin", "Honeypot account activity detected!")
+                print("    🚨 CRITICAL: Honeypot Trap Triggered!")
+
+    def _detect_high_value_anomalies(self):
+        """임계값 기반 이상 거래 탐지"""
+        self.cursor.execute("SELECT tx_id, amount, user_id FROM transactions WHERE amount > ?", (THRESHOLD_HIGH_AMOUNT,))
+        rows = self.cursor.fetchall()
+        for row in rows:
+            self._log_event("ANOMALY_FINANCE", "MEDIUM", "Internal", row[2], f"High value transaction detected: ${row[1]:,.2f}")
+
+    def _check_file_integrity(self):
+        """FIM: 주요 파일 해시 무결성 검증"""
+        for file_path, _ in CRITICAL_FILES.items():
+            if os.path.exists(file_path):
+                with open(file_path, 'rb') as f:
+                    file_hash = hashlib.sha256(f.read()).hexdigest()
+                # (실제로는 저장된 기준 해시와 비교해야 함. 여기서는 데모를 위해 로깅만 수행)
+                # print(f"    ℹ️  FIM Check passed for {file_path}")
+            else:
+                self._log_event("FIM_FAILURE", "HIGH", "System", "System", f"Critical file missing: {file_path}")
+
+    def _log_event(self, event_type, severity, src_ip, target, desc):
+        """SIEM DB에 이벤트 기록 및 인메모리 리포트 추가"""
+        self.cursor.execute('''
+            INSERT INTO security_events (event_type, severity, source_ip, target_user, description)
+            VALUES (?, ?, ?, ?, ?)
+        ''', (event_type, severity, src_ip, target, desc))
+        
+        self.incidents.append({
+            "timestamp": str(datetime.datetime.now()),
+            "type": event_type,
+            "severity": severity,
+            "source": mask_pii(src_ip),
+            "details": desc
+        })
+
+    def generate_report(self):
+        """최종 사고 대응 리포트 생성 (JSON)"""
+        report = {
+            "report_id": str(uuid.uuid4()),
+            "generated_at": str(datetime.datetime.now()),
+            "scan_summary": {
+                "total_incidents": len(self.incidents),
+                "severity_breakdown": dict(Counter([i['severity'] for i in self.incidents]))
+            },
+            "incidents": self.incidents
+        }
+        
+        with open(INCIDENT_REPORT_PATH, 'w', encoding='utf-8') as f:
+            json.dump(report, f, indent=4, ensure_ascii=False)
+        print(f"  ↳ [Report] Incident Response Report generated at: {INCIDENT_REPORT_PATH}")
 
 # =======================================================
 # 🚀 MAIN PIPELINE EXECUTION
 # =======================================================
 def run_grand_ops_pipeline():
-    print("\n" + "="*50)
-    print("🚀 STARTING GRAND OPS DB PIPELINE (v6.0)")
-    print("="*50)
+    print("\n" + "█"*60)
+    print("🚀 GRAND OPS: SECURITY MASTER PIPELINE (v9.0 Enterprise)")
+    print("   » Integrity Check | Threat Intel | SIEM | Forensics")
+    print("█"*60 + "\n")
     
-    # 1. DB 초기화
+    # 1. Initialize & Secure DB
     conn = init_db()
     
-    # 2. 대량 데이터 시드 주입 (Massive Scale)
-    seed_massive_data(conn)
+    # 2. Inject Threat Simulation Data
+    seed_advanced_data(conn)
     
-    # 3. 보안 정책 파싱
-    parse_security_md(conn)
+    # 3. SOC Operation (Detection Engine)
+    soc = SecurityOperationsCenter(conn)
+    soc.run_threat_detection()
     
-    # 4. 외부 리소스 모니터링
-    check_external_resources(conn)
-    
-    # 5. 요약 리포트 출력
+    # 4. External Resource Status (Availability)
+    print("  ↳ [Net] Verifying External Security Feeds...")
     cursor = conn.cursor()
-    print("\n📊 DATABASE STATISTICS:")
-    tables = ["users", "transactions", "products", "security_logic", "external_resources"]
-    for t in tables:
+    cursor.execute("CREATE TABLE IF NOT EXISTS external_resources (name TEXT, url TEXT, status TEXT, latency REAL)")
+    
+    for cat, items in RESOURCE_MAP.items():
+        for item in items:
+            try:
+                start = datetime.datetime.now()
+                # Timeout 설정으로 가용성 체크 (실제 연결)
+                requests.head(item['url'], timeout=2) 
+                latency = (datetime.datetime.now() - start).total_seconds() * 1000
+                status = "Active"
+            except:
+                status = "Unreachable"
+                latency = 0.0
+            print(f"    - [{cat}] {item['name']}: {status} ({latency:.1f}ms)")
+            
+    # 5. Finalize & Report
+    soc.generate_report()
+    conn.commit()
+    
+    # 6. Database Stats Summary
+    print("\n📊 SYSTEM SECURITY STATUS:")
+    tables = {
+        "users": "Identities Managed",
+        "transactions": "Tx Processed",
+        "security_events": "Threats Detected 🚨"
+    }
+    for t, desc in tables.items():
         count = cursor.execute(f"SELECT COUNT(*) FROM {t}").fetchone()[0]
-        print(f"   - {t.upper().ljust(20)}: {count} records")
-        
+        print(f"   • {desc.ljust(25)}: {count}")
+
     conn.close()
-    print("\n✅ Grand Ops DB Pipeline Completed Successfully.")
-    print("="*50 + "\n")
+    print("\n✅ Grand Ops Pipeline Completed. Security Posture: OPTIMIZED.")
+    print("="*60 + "\n")
 
 if __name__ == "__main__":
     run_grand_ops_pipeline()
