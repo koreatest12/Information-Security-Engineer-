@@ -1,8 +1,14 @@
-version: "1.3"
+version: "1.4"
 name: "Data Shield Workflow 23"
+on:
+  schedule:
+    - cron: '15,45 * * * *'
+  workflow_dispatch:
+  
 description: |
-  Auto-generated workflow including Server Upgrade, Security Ops,
-  and Advanced Database Lifecycle (DDL, SQL, Indexing) for batch 23.
+  Auto-generated workflow running Every 30 minutes.
+  Includes Server Upgrade, Security Ops, and Advanced Database Lifecycle.
+  Batch ID: 23
 metadata:
   owner: data-engineering
   classification: confidential
