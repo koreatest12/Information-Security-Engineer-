@@ -30,72 +30,73 @@ jobs:
       - name: 🛡️ Generate encryption/DLP/DB templates
         shell: bash
         run: |
+          # 1부터 25까지 반복하며 워크플로우 파일 대량 생성
           for i in $(seq -w 1 25); do
             cat > resources/workflows/data_shield/data_shield_workflow_${i}.yml <<TEMPLATE
-version: "1.0"
-name: "Data Shield Workflow ${i}"
-description: |
-  Auto-generated workflow covering encryption/decryption, outbound DLP, and
-  encrypted database tables with hashed indexes for batch ${i}.
-metadata:
-  owner: data-security
-  classification: restricted
-  rotation_window_hours: 12
-stages:
-  - id: encrypt_content
-    name: AES-256 Encrypt Content
-    tasks:
-      - action: crypto.encrypt
-        algorithm: aes-256-gcm
-        key_ref: secrets.KMS_PRIMARY_KEY
-        iv_strategy: random_96bit
-        inputs:
-          - source: artifacts/raw_payload_${i}.json
-            target: vault/encrypted/payload_${i}.bin
-  - id: decrypt_verify
-    name: Controlled Decryption
-    tasks:
-      - action: crypto.decrypt
-        algorithm: aes-256-gcm
-        key_ref: secrets.KMS_PRIMARY_KEY
-        integrity_check: sha256
-        inputs:
-          - source: vault/encrypted/payload_${i}.bin
-            target: artifacts/decrypted/payload_${i}.json
-  - id: outbound_guard
-    name: DLP Egress Control
-    tasks:
-      - action: dlp.scan
-        modes: [pii, secrets, credentials]
-        block_on_match: true
-        file_allowlist: ['.sql','.parquet','.json']
-        destinations: [s3, ftp, http]
-  - id: db_encrypt_and_index
-    name: Secure Table with Index
-    tasks:
-      - action: database.create_table
-        engine: sqlite
-        table: secure_dataset_${i}
-        columns:
-          - name: record_id
-            type: TEXT
-            encrypted: false
-            primary: true
-          - name: payload_ciphertext
-            type: BLOB
-            encrypted: true
-            encryption: aes-256-gcm
-          - name: payload_hash
-            type: TEXT
-            encrypted: false
-            derived_from: payload_ciphertext
-      - action: database.create_index
-        engine: sqlite
-        table: secure_dataset_${i}
-        index: idx_secure_dataset_${i}_hash
-        columns: [payload_hash]
-        unique: true
-TEMPLATE
+          version: "1.0"
+          name: "Data Shield Workflow ${i}"
+          description: |
+            Auto-generated workflow covering encryption/decryption, outbound DLP, and
+            encrypted database tables with hashed indexes for batch ${i}.
+          metadata:
+            owner: data-security
+            classification: restricted
+            rotation_window_hours: 12
+          stages:
+            - id: encrypt_content
+              name: AES-256 Encrypt Content
+              tasks:
+                - action: crypto.encrypt
+                  algorithm: aes-256-gcm
+                  key_ref: secrets.KMS_PRIMARY_KEY
+                  iv_strategy: random_96bit
+                  inputs:
+                    - source: artifacts/raw_payload_${i}.json
+                      target: vault/encrypted/payload_${i}.bin
+            - id: decrypt_verify
+              name: Controlled Decryption
+              tasks:
+                - action: crypto.decrypt
+                  algorithm: aes-256-gcm
+                  key_ref: secrets.KMS_PRIMARY_KEY
+                  integrity_check: sha256
+                  inputs:
+                    - source: vault/encrypted/payload_${i}.bin
+                      target: artifacts/decrypted/payload_${i}.json
+            - id: outbound_guard
+              name: DLP Egress Control
+              tasks:
+                - action: dlp.scan
+                  modes: [pii, secrets, credentials]
+                  block_on_match: true
+                  file_allowlist: ['.sql','.parquet','.json']
+                  destinations: [s3, ftp, http]
+            - id: db_encrypt_and_index
+              name: Secure Table with Index
+              tasks:
+                - action: database.create_table
+                  engine: sqlite
+                  table: secure_dataset_${i}
+                  columns:
+                    - name: record_id
+                      type: TEXT
+                      encrypted: false
+                      primary: true
+                    - name: payload_ciphertext
+                      type: BLOB
+                      encrypted: true
+                      encryption: aes-256-gcm
+                    - name: payload_hash
+                      type: TEXT
+                      encrypted: false
+                      derived_from: payload_ciphertext
+                - action: database.create_index
+                  engine: sqlite
+                  table: secure_dataset_${i}
+                  index: idx_secure_dataset_${i}_hash
+                  columns: [payload_hash]
+                  unique: true
+          TEMPLATE
           done
           echo "✅ Generated 25 Data Shield workflow templates"
 
