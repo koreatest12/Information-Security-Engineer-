@@ -1,13 +1,26 @@
-version: "1.0"
+version: "1.1"
 name: "Data Shield Workflow 04"
 description: |
-  Auto-generated workflow covering encryption/decryption, outbound DLP, and
-  encrypted database tables with hashed indexes for batch 04.
+  Auto-generated workflow including Server Security Upgrade,
+  Encryption/Decryption, Outbound DLP, and DB Indexing for batch 04.
 metadata:
   owner: data-security
   classification: restricted
   rotation_window_hours: 12
 stages:
+  # [NEW] 서버 업그레이드 및 보안 패치 단계 추가
+  - id: server_maintenance
+    name: Server Security Upgrade & Patch
+    tasks:
+      - action: system.package_update
+        target: os_packages
+        security_only: true
+        description: "Apply critical security patches before processing data"
+      - action: shield.agent_upgrade
+        channel: stable
+        version_constraint: ">= 2.5.0"
+        description: "Upgrade Data Shield agent to latest stable version"
+
   - id: encrypt_content
     name: AES-256 Encrypt Content
     tasks:
@@ -18,6 +31,7 @@ stages:
         inputs:
           - source: artifacts/raw_payload_04.json
             target: vault/encrypted/payload_04.bin
+
   - id: decrypt_verify
     name: Controlled Decryption
     tasks:
@@ -28,6 +42,7 @@ stages:
         inputs:
           - source: vault/encrypted/payload_04.bin
             target: artifacts/decrypted/payload_04.json
+
   - id: outbound_guard
     name: DLP Egress Control
     tasks:
@@ -36,6 +51,7 @@ stages:
         block_on_match: true
         file_allowlist: ['.sql','.parquet','.json']
         destinations: [s3, ftp, http]
+
   - id: db_encrypt_and_index
     name: Secure Table with Index
     tasks:
