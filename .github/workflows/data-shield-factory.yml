@@ -1,0 +1,115 @@
+name: 🔒 Data Shield Workflow Factory
+
+on:
+  schedule:
+    - cron: '5 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  security-events: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  generate-data-shield-workflows:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🧰 Prepare workspace
+        run: |
+          mkdir -p resources/workflows/data_shield
+          echo "⏱️ Starting bulk generation for encryption, DLP, and DB indexing templates"
+
+      - name: 🛡️ Generate encryption/DLP/DB templates
+        shell: bash
+        run: |
+          for i in $(seq -w 1 25); do
+            cat > resources/workflows/data_shield/data_shield_workflow_${i}.yml <<TEMPLATE
+version: "1.0"
+name: "Data Shield Workflow ${i}"
+description: |
+  Auto-generated workflow covering encryption/decryption, outbound DLP, and
+  encrypted database tables with hashed indexes for batch ${i}.
+metadata:
+  owner: data-security
+  classification: restricted
+  rotation_window_hours: 12
+stages:
+  - id: encrypt_content
+    name: AES-256 Encrypt Content
+    tasks:
+      - action: crypto.encrypt
+        algorithm: aes-256-gcm
+        key_ref: secrets.KMS_PRIMARY_KEY
+        iv_strategy: random_96bit
+        inputs:
+          - source: artifacts/raw_payload_${i}.json
+            target: vault/encrypted/payload_${i}.bin
+  - id: decrypt_verify
+    name: Controlled Decryption
+    tasks:
+      - action: crypto.decrypt
+        algorithm: aes-256-gcm
+        key_ref: secrets.KMS_PRIMARY_KEY
+        integrity_check: sha256
+        inputs:
+          - source: vault/encrypted/payload_${i}.bin
+            target: artifacts/decrypted/payload_${i}.json
+  - id: outbound_guard
+    name: DLP Egress Control
+    tasks:
+      - action: dlp.scan
+        modes: [pii, secrets, credentials]
+        block_on_match: true
+        file_allowlist: ['.sql','.parquet','.json']
+        destinations: [s3, ftp, http]
+  - id: db_encrypt_and_index
+    name: Secure Table with Index
+    tasks:
+      - action: database.create_table
+        engine: sqlite
+        table: secure_dataset_${i}
+        columns:
+          - name: record_id
+            type: TEXT
+            encrypted: false
+            primary: true
+          - name: payload_ciphertext
+            type: BLOB
+            encrypted: true
+            encryption: aes-256-gcm
+          - name: payload_hash
+            type: TEXT
+            encrypted: false
+            derived_from: payload_ciphertext
+      - action: database.create_index
+        engine: sqlite
+        table: secure_dataset_${i}
+        index: idx_secure_dataset_${i}_hash
+        columns: [payload_hash]
+        unique: true
+TEMPLATE
+          done
+          echo "✅ Generated 25 Data Shield workflow templates"
+
+      - name: ✅ Commit changes
+        run: |
+          git config --global user.name "data-shield-bot"
+          git config --global user.email "bot@datashield.io"
+          git add resources/workflows/data_shield
+          if git diff --cached --quiet; then
+            echo "No updates to commit"
+            exit 0
+          fi
+          git commit -m "chore: add data shield workflow templates"
+
+      - name: 🚀 Push updates
+        run: |
+          git push

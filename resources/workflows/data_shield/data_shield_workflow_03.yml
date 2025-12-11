@@ -1,0 +1,66 @@
+version: "1.0"
+name: "Data Shield Workflow 03"
+description: |
+  Encrypt, decrypt, and protect outbound movement for dataset batch 03,
+  while applying encrypted database tables with hashed indexes for fast lookups.
+metadata:
+  owner: data-security
+  classification: restricted
+  coverage:
+    encryption: aes-256-gcm
+    dlp_rules: [pii, credentials, secrets]
+    db_index: sha256_hash
+stages:
+  - id: encrypt_content
+    name: AES-256 Encrypt Content
+    tasks:
+      - action: crypto.encrypt
+        algorithm: aes-256-gcm
+        key_ref: secrets.KMS_PRIMARY_KEY
+        iv_strategy: random_96bit
+        inputs:
+          - source: artifacts/raw_payload_03.json
+            target: vault/encrypted/payload_03.bin
+  - id: decrypt_verify
+    name: Controlled Decryption
+    tasks:
+      - action: crypto.decrypt
+        algorithm: aes-256-gcm
+        key_ref: secrets.KMS_PRIMARY_KEY
+        integrity_check: sha256
+        inputs:
+          - source: vault/encrypted/payload_03.bin
+            target: artifacts/decrypted/payload_03.json
+  - id: outbound_guard
+    name: DLP Egress Control
+    tasks:
+      - action: dlp.scan
+        modes: [pii, secrets, credentials]
+        block_on_match: true
+        file_allowlist: ['.sql','.parquet','.json']
+        destinations: [s3, ftp, http]
+  - id: db_encrypt_and_index
+    name: Secure Table with Index
+    tasks:
+      - action: database.create_table
+        engine: sqlite
+        table: secure_dataset_03
+        columns:
+          - name: record_id
+            type: TEXT
+            encrypted: false
+            primary: true
+          - name: payload_ciphertext
+            type: BLOB
+            encrypted: true
+            encryption: aes-256-gcm
+          - name: payload_hash
+            type: TEXT
+            encrypted: false
+            derived_from: payload_ciphertext
+      - action: database.create_index
+        engine: sqlite
+        table: secure_dataset_03
+        index: idx_secure_dataset_03_hash
+        columns: [payload_hash]
+        unique: true
