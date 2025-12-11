@@ -1,8 +1,8 @@
 version: "1.0"
-name: "Data Shield Workflow 03"
+name: "Data Shield Workflow 23"
 description: |
   Auto-generated workflow covering encryption/decryption, outbound DLP, and
-  encrypted database tables with hashed indexes for batch 03.
+  encrypted database tables with hashed indexes for batch 23.
 metadata:
   owner: data-security
   classification: restricted
@@ -16,8 +16,8 @@ stages:
         key_ref: secrets.KMS_PRIMARY_KEY
         iv_strategy: random_96bit
         inputs:
-          - source: artifacts/raw_payload_03.json
-            target: vault/encrypted/payload_03.bin
+          - source: artifacts/raw_payload_23.json
+            target: vault/encrypted/payload_23.bin
   - id: decrypt_verify
     name: Controlled Decryption
     tasks:
@@ -26,8 +26,8 @@ stages:
         key_ref: secrets.KMS_PRIMARY_KEY
         integrity_check: sha256
         inputs:
-          - source: vault/encrypted/payload_03.bin
-            target: artifacts/decrypted/payload_03.json
+          - source: vault/encrypted/payload_23.bin
+            target: artifacts/decrypted/payload_23.json
   - id: outbound_guard
     name: DLP Egress Control
     tasks:
@@ -41,7 +41,7 @@ stages:
     tasks:
       - action: database.create_table
         engine: sqlite
-        table: secure_dataset_03
+        table: secure_dataset_23
         columns:
           - name: record_id
             type: TEXT
@@ -57,7 +57,7 @@ stages:
             derived_from: payload_ciphertext
       - action: database.create_index
         engine: sqlite
-        table: secure_dataset_03
-        index: idx_secure_dataset_03_hash
+        table: secure_dataset_23
+        index: idx_secure_dataset_23_hash
         columns: [payload_hash]
         unique: true

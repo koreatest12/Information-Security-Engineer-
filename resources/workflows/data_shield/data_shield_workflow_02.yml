@@ -1,15 +1,12 @@
 version: "1.0"
 name: "Data Shield Workflow 02"
 description: |
-  Encrypt, decrypt, and protect outbound movement for dataset batch 02,
-  while applying encrypted database tables with hashed indexes for fast lookups.
+  Auto-generated workflow covering encryption/decryption, outbound DLP, and
+  encrypted database tables with hashed indexes for batch 02.
 metadata:
   owner: data-security
   classification: restricted
-  coverage:
-    encryption: aes-256-gcm
-    dlp_rules: [pii, credentials, secrets]
-    db_index: sha256_hash
+  rotation_window_hours: 12
 stages:
   - id: encrypt_content
     name: AES-256 Encrypt Content
