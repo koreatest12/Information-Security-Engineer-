@@ -1,4 +1,4 @@
-name: ⚔️ Grand Ops Massive Infrastructure & Security Patch
+name: ⚔️ Grand Ops Massive Infrastructure & Security Patch v7
 
 on:
   push:
@@ -17,132 +17,154 @@ concurrency:
 
 jobs:
   deploy-grand-ops-architecture:
-    name: 🚀 Deploy Grand Ops Architecture
+    name: 🚀 Deploy Grand Ops Architecture & Failover System
     runs-on: ubuntu-latest
+    
     steps:
-      - name: 📥 Checkout Code (Authentication Fixed)
+      - name: 📥 Checkout Code (Secure Auth)
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }} # 인증 에러 완전 해결
+          token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
       - name: 🏗️ Construct Massive Directory Structure
-        # [수정 1] 디렉토리 생성 시 오타 방지 및 언더바(_)로 통일하여 경로 에러 원천 차단
         run: |
-          echo "🚀 Initializing Grand Ops Mega-Construction..."
+          echo "🚀 Initializing Grand Ops Mega-Construction v7..."
           
-          # 1. 애플리케이션 서비스 디렉토리 (MSA 구조)
+          # [1] MSA 애플리케이션 서비스
           mkdir -p apps/frontend_web
           mkdir -p apps/backend_api
           mkdir -p apps/payment_gateway
           mkdir -p apps/auth_service
-          mkdir -p apps/admin_console
-          mkdir -p apps/inventory_service
-          mkdir -p apps/notification_service
           
-          # 2. 인프라스트럭처 디렉토리
-          mkdir -p infrastructure/aws_cloudformation
+          # [2] 신규: 중앙 수집 서버 (Central Collector)
+          # 각 서비스의 로그와 데이터를 수집하고 비상시 백업 역할을 수행
+          mkdir -p apps/central_collector/logs
+          mkdir -p apps/central_collector/incoming_data
+          mkdir -p apps/central_collector/emergency_dump
+          
+          # [3] 인프라스트럭처 & 신규: 다운로드 노드 (Download Node)
           mkdir -p infrastructure/k8s_manifests
           mkdir -p infrastructure/terraform_scripts
           mkdir -p infrastructure/firewall_rules
-          mkdir -p infrastructure/nginx_config
+          mkdir -p infrastructure/download_node/cdn_assets
+          mkdir -p infrastructure/download_node/config
           
-          # 3. 보안 본부 (Security HQ) 디렉토리 - [에러 수정됨: red_team_tools]
+          # [4] 보안 본부 (Security HQ)
           mkdir -p security_hq/red_team_tools
           mkdir -p security_hq/blue_team_tools
           mkdir -p security_hq/audit_logs
-          mkdir -p security_hq/policies
           
-          # 4. 리포트 및 로그 디렉토리
+          # [5] 리포트
           mkdir -p reports/daily_ops
-          mkdir -p .github/workflows/reports
+          
+          echo "✅ All Directory Structures (Including Download & Collector) Created."
 
-          echo "✅ Directory Structure Created Successfully."
-
-      - name: 🏭 Generate Massive Configuration Files
-        # [수정 2] 위에서 생성한 경로에 맞춰 파일 대량 생성 (경로 불일치 해결)
+      - name: 🏭 Generate Server Configurations & Assets
         run: |
-          # --- 1. Applications Setup ---
+          # --- 1. Download Server Setup (다운로드 서버) ---
+          echo "worker_processes auto;" > infrastructure/download_node/config/nginx.conf
+          echo "limit_rate 500k; # Bandwidth Throttling" >> infrastructure/download_node/config/nginx.conf
           
-          # Frontend
-          echo "<!DOCTYPE html><html><body><h1>Grand Ops Dashboard v6</h1></body></html>" > apps/frontend_web/index.html
-          echo '{"name":"frontend","version":"2.0.0"}' > apps/frontend_web/package.json
+          # 대용량 더미 파일 생성 (다운로드 테스트용)
+          echo "Grand Ops Firmware v7.0 Binary Data..." > infrastructure/download_node/cdn_assets/firmware_v7.bin
+          echo "Grand Ops Patch Notes..." > infrastructure/download_node/cdn_assets/patch_notes.txt
           
-          # Backend
-          echo "module.exports = { db: 'postgres://prod-db' }" > apps/backend_api/config.js
-          echo "const express = require('express'); app.listen(8080);" > apps/backend_api/server.js
-          
-          # Auth Service (취약점 시뮬레이션: Weak Password)
-          echo "def login(u, p): return True # TODO: Implement OAuth2" > apps/auth_service/auth.py
-          echo "[auth]\nsecret_key=weak_key_123" > apps/auth_service/config.ini
-          
-          # Payment Gateway (취약점 시뮬레이션: SQL Injection)
-          echo "query = 'SELECT * FROM tx WHERE id=' + input_id" > apps/payment_gateway/payment.py
-          echo "CREATE TABLE transactions (id INT, amount DECIMAL);" > apps/payment_gateway/schema.sql
-          
-          # --- 2. Infrastructure Setup ---
-          
-          # Firewall (WAF) & Network
-          echo "SecRuleEngine On" > infrastructure/firewall_rules/modsecurity.conf
-          echo "deny from 192.168.1.50" >> infrastructure/firewall_rules/blacklist.txt
-          echo "server { listen 80; location / { proxy_pass http://backend; } }" > infrastructure/nginx_config/nginx.conf
-          
-          # Kubernetes Manifests
-          echo "apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: grand-ops-backend" > infrastructure/k8s_manifests/backend-deploy.yaml
-          echo "apiVersion: v1\nkind: Service\nmetadata:\n  name: backend-svc" > infrastructure/k8s_manifests/backend-svc.yaml
-          
-          # Terraform
-          echo "provider \"aws\" { region = \"us-east-1\" }" > infrastructure/terraform_scripts/main.tf
-          echo "resource \"aws_instance\" \"web\" { ami = \"ami-12345\" }" > infrastructure/terraform_scripts/ec2.tf
-          
-          # --- 3. Security Tools Setup (경로 에러 수정됨) ---
-          
-          # Red Team Tools
-          echo "print('🚀 Launching DDOS Simulation Script...')" > security_hq/red_team_tools/ddos_sim.py
-          echo "print('💉 Injecting SQL Payload...')" > security_hq/red_team_tools/sqli_tester.py
-          
-          # Blue Team Tools
-          echo "print('🛡️ Activating IPS/IDS System...')" > security_hq/blue_team_tools/ids_system.py
-          echo "print('🔍 Scanning for Vulnerabilities...')" > security_hq/blue_team_tools/vuln_scanner.py
-          
-          # Security Policies
-          echo "password_policy: min_length=12" > security_hq/policies/auth_policy.yaml
-          
-          echo "✅ All System Files Generated."
+          # 헬스 체크 스크립트 생성 (장애 감지용)
+          cat <<EOF > infrastructure/download_node/health_check.sh
+          #!/bin/bash
+          # 시뮬레이션: 랜덤하게 서버 상태를 결정 (0: 정상, 1: 장애)
+          if [ \$((RANDOM % 5)) -eq 0 ]; then
+            echo "CRITICAL: Download Server Connection Timeout!"
+            exit 1
+          else
+            echo "OK: Download Server is Healthy."
+            exit 0
+          fi
+          EOF
+          chmod +x infrastructure/download_node/health_check.sh
 
-      - name: ⚔️ Execute Cyber Wargame & Auto-Recovery
+          # --- 2. Central Collector Setup (수집 서버) ---
+          echo "server.port=9090" > apps/central_collector/application.properties
+          echo "collector.mode=active-standby" >> apps/central_collector/application.properties
+          
+          # 수집기 로직 (Python)
+          cat <<EOF > apps/central_collector/aggregator.py
+          import os
+          def ingest_data(source):
+              print(f"Ingesting data from {source}...")
+              # 로직: 데이터 파싱 및 저장
+          EOF
+
+          # --- 3. Existing MSA Setup ---
+          echo '{"service":"payment", "status":"active"}' > apps/payment_gateway/health.json
+          echo '{"service":"auth", "status":"active"}' > apps/auth_service/health.json
+
+          echo "✅ Server Configurations & Assets Generated."
+
+      - name: 🚨 Simulate Failover & Mass Data Migration
+        id: failover_logic
         run: |
-          # 공격 로그 시뮬레이션
-          echo "[$(date)] 🔴 ALERT: DDOS Attack Detected from IP 45.33.22.11" >> security_hq/audit_logs/alert.log
-          echo "[$(date)] 🔴 ALERT: SQL Injection attempted on /payment endpoint" >> security_hq/audit_logs/alert.log
+          echo "🔍 Starting Infrastructure Health Check..."
           
-          # 방어 및 자동 복구 로그 시뮬레이션
-          echo "[$(date)] 🔵 ACTION: Firewall blocked IP 45.33.22.11" >> security_hq/audit_logs/defense.log
-          echo "[$(date)] 🔵 ACTION: Payment Service Rolled back to Safe State" >> security_hq/audit_logs/defense.log
+          # 다운로드 서버 상태 점검
+          if ./infrastructure/download_node/health_check.sh; then
+            echo "✅ [STATUS: GREEN] Download Server is operating normally."
+            echo "NORMAL_OPS=true" >> $GITHUB_ENV
+          else
+            echo "❌ [STATUS: RED] Download Server FAILURE DETECTED!"
+            echo "⚠️ Initiating Emergency Failover Protocol..."
+            
+            # [장애 대응 로직]
+            # 1. 다운로드 서버의 데이터를 수집 서버로 대량 이관 (Redundancy)
+            echo "📦 Migrating Assets to Central Collector..."
+            cp -r infrastructure/download_node/cdn_assets/* apps/central_collector/emergency_dump/
+            
+            # 2. 각 MSA 서비스들이 수집 서버를 바라보도록 설정 변경 (Config Injection)
+            echo "redirect_url=http://central-collector:9090/emergency-download" >> apps/payment_gateway/config_override.ini
+            echo "redirect_url=http://central-collector:9090/emergency-download" >> apps/auth_service/config_override.ini
+            
+            # 3. 로그 기록
+            echo "[$(date)] 🔴 FAILOVER TRIGGERED: Download Node -> Collector Node" >> security_hq/audit_logs/system_events.log
+            echo "FAILOVER_ACTIVE=true" >> $GITHUB_ENV
+          fi
+
+      - name: 📊 Generate Comprehensive Report
+        run: |
+          REPORT_PATH="reports/daily_ops/Grand_Ops_Report_v7_${{ github.run_number }}.md"
           
-          # 리포트 생성
-          REPORT_PATH="reports/daily_ops/Grand_Ops_Report_${{ github.run_number }}.md"
-          echo "# 🛡️ Grand Ops Security Report v6" > $REPORT_PATH
+          echo "# 🛡️ Grand Ops Infrastructure Report v7" > $REPORT_PATH
           echo "### 📅 Execution Date: $(date)" >> $REPORT_PATH
-          echo "## 🔴 Detected Threats" >> $REPORT_PATH
-          cat security_hq/audit_logs/alert.log >> $REPORT_PATH
-          echo "## 🔵 Countermeasures" >> $REPORT_PATH
-          cat security_hq/audit_logs/defense.log >> $REPORT_PATH
+          
+          echo "## 📡 Server Status" >> $REPORT_PATH
+          if [ "$FAILOVER_ACTIVE" == "true" ]; then
+            echo "- **Download Server:** 🔴 CRITICAL FAILURE (Offline)" >> $REPORT_PATH
+            echo "- **Failover Action:** ✅ Traffic Redirected to Central Collector" >> $REPORT_PATH
+            echo "- **Data Integrity:** ✅ Assets backed up to 'apps/central_collector/emergency_dump'" >> $REPORT_PATH
+          else
+            echo "- **Download Server:** 🟢 Operational" >> $REPORT_PATH
+            echo "- **Traffic:** Normal Load" >> $REPORT_PATH
+          fi
+          
+          echo "## 🛡️ Security Audit" >> $REPORT_PATH
+          echo "- **Firewall:** Active" >> $REPORT_PATH
+          echo "- **WAF Rules:** Updated" >> $REPORT_PATH
 
       - name: 💾 Commit & Push Massive Updates
         run: |
-          # 1. 봇 계정 설정
           git config --global user.name "Grand Ops Commander"
           git config --global user.email "commander@grandops.io"
           
-          # 2. 대량 생성된 모든 파일 추가
           git add .
           
-          # 3. 커밋
-          git commit -m "🚀 Grand Ops: Massive Infra & Security Patch v6 [skip ci]" || echo "No changes to commit"
+          # 커밋 메시지에 상태 반영
+          if [ "$FAILOVER_ACTIVE" == "true" ]; then
+            MSG="🔥 Grand Ops: EMERGENCY FAILOVER executed - Download Node Down [skip ci]"
+          else
+            MSG="🚀 Grand Ops: Routine Maintenance & Security Patch v7 [skip ci]"
+          fi
           
-          # 4. [중요] 인증 토큰을 URL에 포함하여 Push 권한 확보
+          git commit -m "$MSG" || echo "No changes to commit"
+          
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          
-          # 5. Push 실행
           git push origin HEAD:${{ github.ref }}
