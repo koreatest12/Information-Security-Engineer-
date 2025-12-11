@@ -1,26 +1,25 @@
-version: "1.1"
+version: "1.3"
 name: "Data Shield Workflow 14"
 description: |
-  Auto-generated workflow including Server Security Upgrade,
-  Encryption/Decryption, Outbound DLP, and DB Indexing for batch 14.
+  Auto-generated workflow including Server Upgrade, Security Ops,
+  and Advanced Database Lifecycle (DDL, SQL, Indexing) for batch 14.
 metadata:
-  owner: data-security
-  classification: restricted
+  owner: data-engineering
+  classification: confidential
   rotation_window_hours: 12
 stages:
-  # [NEW] 서버 업그레이드 및 보안 패치 단계 추가
+  # 1. 서버 유지보수
   - id: server_maintenance
     name: Server Security Upgrade & Patch
     tasks:
       - action: system.package_update
         target: os_packages
         security_only: true
-        description: "Apply critical security patches before processing data"
       - action: shield.agent_upgrade
         channel: stable
         version_constraint: ">= 2.5.0"
-        description: "Upgrade Data Shield agent to latest stable version"
 
+  # 2. 데이터 암호화
   - id: encrypt_content
     name: AES-256 Encrypt Content
     tasks:
@@ -32,48 +31,56 @@ stages:
           - source: artifacts/raw_payload_14.json
             target: vault/encrypted/payload_14.bin
 
-  - id: decrypt_verify
-    name: Controlled Decryption
-    tasks:
-      - action: crypto.decrypt
-        algorithm: aes-256-gcm
-        key_ref: secrets.KMS_PRIMARY_KEY
-        integrity_check: sha256
-        inputs:
-          - source: vault/encrypted/payload_14.bin
-            target: artifacts/decrypted/payload_14.json
-
+  # 3. 데이터 유출 방지
   - id: outbound_guard
     name: DLP Egress Control
     tasks:
       - action: dlp.scan
         modes: [pii, secrets, credentials]
         block_on_match: true
-        file_allowlist: ['.sql','.parquet','.json']
         destinations: [s3, ftp, http]
 
-  - id: db_encrypt_and_index
-    name: Secure Table with Index
+  # 4. 데이터베이스 전체 생명주기 (DDL -> SQL -> Index)
+  - id: database_lifecycle
+    name: Advanced DB Operations
     tasks:
-      - action: database.create_table
+      # [DDL] 테이블 스키마 정의
+      - action: database.ddl_execute
         engine: sqlite
-        table: secure_dataset_14
-        columns:
-          - name: record_id
-            type: TEXT
-            encrypted: false
-            primary: true
-          - name: payload_ciphertext
-            type: BLOB
-            encrypted: true
-            encryption: aes-256-gcm
-          - name: payload_hash
-            type: TEXT
-            encrypted: false
-            derived_from: payload_ciphertext
+        description: "Define Schema for Batch 14"
+        script: |
+          CREATE TABLE IF NOT EXISTS access_log_14 (
+            log_id INTEGER PRIMARY KEY AUTOINCREMENT,
+            query_type TEXT NOT NULL,
+            timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+          );
+          CREATE TABLE IF NOT EXISTS secure_dataset_14 (
+            record_id TEXT PRIMARY KEY,
+            payload_ciphertext BLOB,
+            payload_hash TEXT
+          );
+
+      # [SQL Query] 데이터 조작
+      - action: database.sql_execute
+        engine: sqlite
+        description: "Insert Audit Log and Verify Data"
+        queries:
+          - "INSERT INTO access_log_14 (query_type) VALUES ('BATCH_START');"
+          - "DELETE FROM secure_dataset_14 WHERE record_id IS NULL;"
+          - "SELECT count(*) FROM access_log_14 WHERE timestamp > date('now', '-1 day');"
+
+      # [DB Index] 성능 최적화 인덱스
       - action: database.create_index
         engine: sqlite
         table: secure_dataset_14
         index: idx_secure_dataset_14_hash
         columns: [payload_hash]
         unique: true
+        method: b-tree
+
+      - action: database.create_index
+        engine: sqlite
+        table: access_log_14
+        index: idx_access_log_14_time
+        columns: [timestamp]
+        unique: false
