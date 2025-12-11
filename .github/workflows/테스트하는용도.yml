@@ -44,7 +44,7 @@ jobs:
 
     steps:
       # 1. [시스템 준비] Checkout을 위한 최소 도구 설치 (Git, Tar)
-      - name: Pre-flight: Install Git & Tar
+      - name: Pre-flight:Install Git & Tar
         run: |
           echo "🚀 Starting Pre-flight checks on ${{ matrix.os }}..."
           ${{ matrix.update_cmd }}
