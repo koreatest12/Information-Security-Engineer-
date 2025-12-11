@@ -1,4 +1,4 @@
-name: ⚔️ Grand Ops Massive Infrastructure & Security Patch v8
+name: ⚔️ Grand Ops Massive Infra & DB Security Patch v9
 
 on:
   push:
@@ -16,174 +16,163 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy-grand-ops-architecture:
-    name: 🚀 Deploy Grand Ops Architecture & Failover System
+  deploy-grand-ops-security-arsenal:
+    name: 🚀 Deploy DB Security Arsenal & Infra
     runs-on: ubuntu-latest
     
     steps:
-      - name: 📥 Checkout Code (Secure Auth)
+      - name: 📥 Checkout Code (Auto-Sync Ready)
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0 # 히스토리 전체를 가져와야 Rebase가 가능함
+          fetch-depth: 0
 
-      - name: 🏗️ Construct Massive Directory Structure
+      - name: 🏗️ Construct Massive Directory Structure (Expanded)
         run: |
-          echo "🚀 Initializing Grand Ops Mega-Construction v8..."
+          echo "🚀 Initializing Grand Ops Mega-Construction v9..."
           
-          # [1] MSA 애플리케이션 서비스
-          mkdir -p apps/frontend_web
-          mkdir -p apps/backend_api
-          mkdir -p apps/payment_gateway
-          mkdir -p apps/auth_service
-          
-          # [2] 중앙 수집 서버 (Central Collector) - 고가용성 구조
-          mkdir -p apps/central_collector/logs
-          mkdir -p apps/central_collector/incoming_data
-          mkdir -p apps/central_collector/emergency_dump
-          mkdir -p apps/central_collector/transaction_history # 추가: 트랜잭션 기록용
-          
-          # [3] 인프라스트럭처 & 다운로드 노드 (Download Node)
-          mkdir -p infrastructure/k8s_manifests
-          mkdir -p infrastructure/terraform_scripts
-          mkdir -p infrastructure/firewall_rules
+          # [1] 기존 Grand Ops 인프라 (유지)
+          mkdir -p apps/central_collector/transaction_history
           mkdir -p infrastructure/download_node/cdn_assets
-          mkdir -p infrastructure/download_node/config
-          mkdir -p infrastructure/download_node/recovery_snapshots # 추가: 복구 스냅샷
+          mkdir -p infrastructure/download_node/recovery_snapshots
           
-          # [4] 보안 본부
-          mkdir -p security_hq/red_team_tools
-          mkdir -p security_hq/blue_team_tools
-          mkdir -p security_hq/audit_logs
+          # [2] 신규: 데이터베이스 관리 구역 (DB Management Zone)
+          # DBeaver, pgAdmin 등 관리 도구 설정 경로
+          mkdir -p infrastructure/db_admin_console/dbeaver_config
+          mkdir -p infrastructure/db_admin_console/pgadmin_settings
+          mkdir -p infrastructure/db_admin_console/whodb_docker
           
-          # [5] 리포트
-          mkdir -p reports/daily_ops
+          # [3] 신규: SQL 공격 시뮬레이션 랩 (Red Team Labs)
+          # SQLMap, ScanQLi 등 공격 도구 경로
+          mkdir -p security_hq/red_team_tools/sql_injectors/sqlmap_core
+          mkdir -p security_hq/red_team_tools/sql_injectors/scanqli_engine
+          mkdir -p security_hq/red_team_tools/payloads/advanced_sqli
           
-          echo "✅ All Directory Structures (Including Redundancy Paths) Created."
+          # [4] 신규: DB 보안 및 암호화 본부 (Blue Team DB Defense)
+          # Acra, Inspektor 등 방어 도구 경로
+          mkdir -p security_hq/blue_team_tools/db_firewall_acra
+          mkdir -p security_hq/blue_team_tools/sql_antipattern_detector
+          
+          echo "✅ All Directory Structures (Infra + DB Security) Created."
 
-      - name: 🏭 Generate Server Configurations & Assets
+      - name: 🏭 Generate Security Tools & Configs
         run: |
-          # --- 1. Download Server Setup (다운로드 서버 강화) ---
-          # Nginx 설정: 대량 트래픽 처리 최적화
-          cat <<EOF > infrastructure/download_node/config/nginx.conf
-          worker_processes auto;
-          events { worker_connections 1024; }
-          http {
-              limit_rate 1m; # 속도 제한 완화
-              access_log /var/log/nginx/access.log;
-              error_log /var/log/nginx/error.log;
+          # --- 1. Red Team: SQL Injection Scanners Setup ---
+          
+          # [SQLMap Simulation Script]
+          cat <<EOF > security_hq/red_team_tools/sql_injectors/sqlmap_core/sqlmap_sim.py
+          import time
+          def scan_target(url):
+              print(f"[*] Starting SQLMap on {url}")
+              print("[*] Testing 'AND BOOLEAN BASED BLIND'...")
+              time.sleep(1)
+              print("[+] Vulnerability FOUND: Parameter 'id' is injectable!")
+              return True
+          if __name__ == "__main__":
+              scan_target("http://payment-gateway/tx")
+          EOF
+          
+          # [ScanQLi Setup]
+          echo "requirements: requests, bs4" > security_hq/red_team_tools/sql_injectors/scanqli_engine/requirements.txt
+          echo "def scan(): print('Running ScanQLi lightweight scan...')" > security_hq/red_team_tools/sql_injectors/scanqli_engine/scanner.py
+          
+          # [Advanced Payloads]
+          echo "' OR 1=1 --" > security_hq/red_team_tools/payloads/advanced_sqli/auth_bypass.txt
+          echo "UNION SELECT user, password FROM users" > security_hq/red_team_tools/payloads/advanced_sqli/data_exfil.txt
+
+          # --- 2. Infrastructure: DB Management Tools Config ---
+          
+          # [DBeaver Config Simulation]
+          cat <<EOF > infrastructure/db_admin_console/dbeaver_config/data-sources.json
+          {
+            "connections": {
+              "prod-db": { "provider": "postgresql", "host": "10.0.0.5", "user": "admin" },
+              "analytics-db": { "provider": "mysql", "host": "10.0.0.6", "user": "readonly" }
+            }
           }
           EOF
           
-          # 대용량 자산 생성 (버전 업데이트)
-          echo "Grand Ops Firmware v8.0 Binary Data (Stable)" > infrastructure/download_node/cdn_assets/firmware_v8.bin
-          echo "Patch Notes v8: Fixed Git Conflicts" > infrastructure/download_node/cdn_assets/patch_notes.txt
+          # [pgAdmin4 Server Config]
+          echo '{"Servers": {"1": {"Name": "GrandOps_Master", "Group": "Servers", "Port": 5432}}}' > infrastructure/db_admin_console/pgadmin_settings/servers.json
+
+          # --- 3. Blue Team: DB Security Suites ---
           
-          # [강화된 헬스 체크] 로그 파일에 상태 기록
-          cat <<EOF > infrastructure/download_node/health_check.sh
-          #!/bin/bash
-          LOG_FILE="infrastructure/download_node/recovery_snapshots/status.log"
-          # 시뮬레이션: 15% 확률로 장애 발생
-          if [ \$((RANDOM % 7)) -eq 0 ]; then
-            echo "[$(date)] CRITICAL: Connection Refused" >> \$LOG_FILE
-            exit 1
-          else
-            echo "[$(date)] OK: Service Healthy" >> \$LOG_FILE
-            exit 0
-          fi
+          # [Acra (Database Encryption) Config]
+          cat <<EOF > security_hq/blue_team_tools/db_firewall_acra/acra-server.yaml
+          version: 0.94.0
+          acracerberus:
+            incoming_connection_port: 9393
+          acraserver:
+            db_host: localhost
+            db_port: 5432
+          security:
+            sql_injection_protection: true
           EOF
-          chmod +x infrastructure/download_node/health_check.sh
-
-          # --- 2. Central Collector Setup (수집 서버 강화) ---
-          # 트랜잭션 수집기
-          cat <<EOF > apps/central_collector/transaction_logger.py
-          import time
-          def log_transaction(tx_id, status):
-              with open('transaction_history/tx_log.txt', 'a') as f:
-                  f.write(f"{time.ctime()} | TX:{tx_id} | {status}\n")
-          EOF
-
-          # --- 3. MSA Health Files ---
-          echo '{"service":"payment", "status":"active", "load":"medium"}' > apps/payment_gateway/health.json
-          echo '{"service":"auth", "status":"active", "load":"low"}' > apps/auth_service/health.json
-
-          echo "✅ Server Configurations & Assets Generated."
-
-      - name: 🚨 Simulate Failover & Mass Data Migration
-        id: failover_logic
-        run: |
-          echo "🔍 Starting Infrastructure Health Check..."
           
-          # 헬스 체크 실행
-          if ./infrastructure/download_node/health_check.sh; then
-            echo "✅ [STATUS: GREEN] Download Server is operating normally."
-            echo "NORMAL_OPS=true" >> $GITHUB_ENV
-          else
-            echo "❌ [STATUS: RED] Download Server FAILURE DETECTED!"
-            echo "⚠️ Initiating Emergency Failover Protocol..."
+          # [SQL Check (Anti-Pattern Detector)]
+          echo "Detecting: 'SELECT *' (Inefficient Fetch)" > security_hq/blue_team_tools/sql_antipattern_detector/rules.conf
+
+          echo "✅ DB Security Arsenal Generated."
+
+      - name: ⚔️ Execute Cyber Wargame:SQL Injection vs Acra Defense
+        id: wargame
+        run: |
+          echo "🚀 Launching Automated Security Assessment..."
+          
+          # 1. 공격 시뮬레이션 (SQLMap 실행)
+          echo "🔴 [Red Team] Executing SQLMap Scan..."
+          python3 security_hq/red_team_tools/sql_injectors/sqlmap_core/sqlmap_sim.py > security_hq/audit_logs/sqli_scan_results.log
+          
+          # 2. 방어 시뮬레이션 (Acra 탐지)
+          echo "🔵 [Blue Team] Acra Server analyzing traffic..."
+          if grep -q "Vulnerability FOUND" security_hq/audit_logs/sqli_scan_results.log; then
+            echo "⚠️ INTRUSION DETECTED! Blocking IP and Rotating DB Credentials..."
             
-            # [장애 대응] 1. 자산 대피 (Evacuation)
-            echo "📦 Migrating Assets to Central Collector..."
-            cp -r infrastructure/download_node/cdn_assets/* apps/central_collector/emergency_dump/
+            # 대응 로그 기록
+            echo "[$(date)] BLOCKED: SQL Injection attempt on /tx" >> security_hq/blue_team_tools/db_firewall_acra/firewall.log
+            echo "[$(date)] ACTION: Encrypted sensitive columns via Acra" >> security_hq/blue_team_tools/db_firewall_acra/encryption.log
             
-            # [장애 대응] 2. 수집 서버 기록
-            echo "[$(date)] 🚨 EMERGENCY DUMP RECEIVED from Download Node" >> apps/central_collector/incoming_data/incident_report.log
-            
-            echo "FAILOVER_ACTIVE=true" >> $GITHUB_ENV
+            # 리포트용 변수 설정
+            echo "SECURITY_BREACH=prevented" >> $GITHUB_ENV
           fi
-
-      - name: 📊 Generate Comprehensive Report
-        run: |
-          REPORT_PATH="reports/daily_ops/Grand_Ops_Report_v8_${{ github.run_number }}.md"
           
-          echo "# 🛡️ Grand Ops Infrastructure Report v8" > $REPORT_PATH
+          echo "✅ Wargame Complete."
+
+      - name: 📊 Generate DB Security Report
+        run: |
+          REPORT_PATH="reports/daily_ops/Grand_Ops_DB_Security_v9.md"
+          
+          echo "# 🛡️ Grand Ops Database Security Report v9" > $REPORT_PATH
           echo "### 📅 Execution Date: $(date)" >> $REPORT_PATH
           
-          if [ "$FAILOVER_ACTIVE" == "true" ]; then
-            echo "## 🔴 CRITICAL ALERT: Failover Executed" >> $REPORT_PATH
-            echo "- Traffic rerouted to Central Collector" >> $REPORT_PATH
-          else
-            echo "## 🟢 SYSTEM NORMAL" >> $REPORT_PATH
-            echo "- All nodes operational" >> $REPORT_PATH
-          fi
+          echo "## 🛠️ Installed Tools" >> $REPORT_PATH
+          echo "| Category | Tool | Status |" >> $REPORT_PATH
+          echo "|---|---|---|" >> $REPORT_PATH
+          echo "| **Scanner** | SQLMap | ✅ Active |" >> $REPORT_PATH
+          echo "| **Scanner** | ScanQLi | ✅ Ready |" >> $REPORT_PATH
+          echo "| **DB Admin** | DBeaver | ✅ Configured |" >> $REPORT_PATH
+          echo "| **Security** | Acra | ✅ Encryption ON |" >> $REPORT_PATH
           
-          echo "## 🔄 Synchronization Status" >> $REPORT_PATH
-          echo "- Git Conflict Resolution Protocol: ACTIVE" >> $REPORT_PATH
+          echo "## ⚔️ Wargame Results" >> $REPORT_PATH
+          cat security_hq/audit_logs/sqli_scan_results.log >> $REPORT_PATH
+          echo "---" >> $REPORT_PATH
+          echo "**Defense Action:**" >> $REPORT_PATH
+          cat security_hq/blue_team_tools/db_firewall_acra/firewall.log >> $REPORT_PATH
 
-      - name: 💾 Commit & Push with Auto-Sync (Fixes Remote Rejected)
+      - name: 💾 Commit & Push with Auto-Sync (Conflict Resolved)
         run: |
           git config --global user.name "Grand Ops Commander"
           git config --global user.email "commander@grandops.io"
           
-          # 모든 변경사항 스테이징
           git add .
           
-          # 커밋 메시지 작성
-          if [ "$FAILOVER_ACTIVE" == "true" ]; then
-            MSG="🔥 Grand Ops: EMERGENCY FAILOVER & Sync Patch v8 [skip ci]"
-          else
-            MSG="🚀 Grand Ops: Routine Maintenance & Sync Patch v8 [skip ci]"
-          fi
-          
-          # 로컬 커밋 (실패해도 진행 - 변경사항 없을 수 있음)
+          MSG="🚀 Grand Ops: Massive DB Security Patch v9 (SQLMap + DBeaver + Acra) [skip ci]"
           git commit -m "$MSG" || echo "No changes to commit"
           
-          # [핵심 수정 사항] 원격 저장소와 동기화 (Pull --rebase)
-          echo "🔄 Synchronizing with Remote Command Center..."
-          
-          # 1. 원격지 변경사항 가져오기 및 Rebase (충돌 방지)
-          # 현재 브랜치 이름을 동적으로 가져옵니다.
+          # Auto-Sync Protocol (Rebase)
+          echo "🔄 Synchronizing with Remote..."
           CURRENT_BRANCH=${{ github.ref_name }}
+          git pull --rebase origin $CURRENT_BRANCH || git pull origin $CURRENT_BRANCH --no-rebase
           
-          git pull --rebase origin $CURRENT_BRANCH || {
-            echo "❌ Rebase Conflict Detected! Attempting Auto-Merge Strategy..."
-            git rebase --abort
-            git pull origin $CURRENT_BRANCH --no-rebase
-          }
-          
-          # 2. 인증 토큰 설정
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          
-          # 3. 푸시 (재시도 로직 포함 안 함, Rebase로 해결됨)
-          echo "🚀 Pushing synchronized updates to $CURRENT_BRANCH..."
           git push origin HEAD:${{ github.ref }}
