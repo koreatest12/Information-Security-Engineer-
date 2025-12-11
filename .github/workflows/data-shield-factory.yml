@@ -25,37 +25,36 @@ jobs:
       - name: 🧰 Prepare workspace
         run: |
           mkdir -p resources/workflows/data_shield
-          echo "⏱️ Starting bulk generation: Encryption, DLP, DB, and Server Upgrade tasks"
+          echo "⏱️ Starting bulk generation: Server Upgrade, Encryption, DLP, and Full DB Ops"
 
-      - name: 🛡️ Generate Full Security Templates (w/ Server Upgrade)
+      - name: 🛡️ Generate Full Stack Templates
         shell: bash
         run: |
-          # 1부터 25까지 반복하며 '서버 업그레이드' 단계가 포함된 워크플로우 대량 생성
+          # 1부터 25까지 반복하며 SQL, DDL, Index 기능이 포함된 워크플로우 대량 생성
           for i in $(seq -w 1 25); do
             cat > resources/workflows/data_shield/data_shield_workflow_${i}.yml <<TEMPLATE
-          version: "1.1"
+          version: "1.2"
           name: "Data Shield Workflow ${i}"
           description: |
-            Auto-generated workflow including Server Security Upgrade,
-            Encryption/Decryption, Outbound DLP, and DB Indexing for batch ${i}.
+            Auto-generated workflow including Server Upgrade, Security Ops,
+            and Advanced Database Lifecycle (DDL, SQL, Indexing) for batch ${i}.
           metadata:
-            owner: data-security
-            classification: restricted
+            owner: data-engineering
+            classification: confidential
             rotation_window_hours: 12
           stages:
-            # [NEW] 서버 업그레이드 및 보안 패치 단계 추가
+            # 1. 서버 유지보수 (유지)
             - id: server_maintenance
               name: Server Security Upgrade & Patch
               tasks:
                 - action: system.package_update
                   target: os_packages
                   security_only: true
-                  description: "Apply critical security patches before processing data"
                 - action: shield.agent_upgrade
                   channel: stable
                   version_constraint: ">= 2.5.0"
-                  description: "Upgrade Data Shield agent to latest stable version"
 
+            # 2. 데이터 암호화 (유지)
             - id: encrypt_content
               name: AES-256 Encrypt Content
               tasks:
@@ -67,54 +66,62 @@ jobs:
                     - source: artifacts/raw_payload_${i}.json
                       target: vault/encrypted/payload_${i}.bin
 
-            - id: decrypt_verify
-              name: Controlled Decryption
-              tasks:
-                - action: crypto.decrypt
-                  algorithm: aes-256-gcm
-                  key_ref: secrets.KMS_PRIMARY_KEY
-                  integrity_check: sha256
-                  inputs:
-                    - source: vault/encrypted/payload_${i}.bin
-                      target: artifacts/decrypted/payload_${i}.json
-
+            # 3. 데이터 유출 방지 (유지)
             - id: outbound_guard
               name: DLP Egress Control
               tasks:
                 - action: dlp.scan
                   modes: [pii, secrets, credentials]
                   block_on_match: true
-                  file_allowlist: ['.sql','.parquet','.json']
                   destinations: [s3, ftp, http]
 
-            - id: db_encrypt_and_index
-              name: Secure Table with Index
+            # 4. [NEW] 데이터베이스 전체 생명주기 (DDL -> SQL -> Index)
+            - id: database_lifecycle
+              name: Advanced DB Operations
               tasks:
-                - action: database.create_table
+                # [DDL] 테이블 스키마 정의 및 생성
+                - action: database.ddl_execute
                   engine: sqlite
-                  table: secure_dataset_${i}
-                  columns:
-                    - name: record_id
-                      type: TEXT
-                      encrypted: false
-                      primary: true
-                    - name: payload_ciphertext
-                      type: BLOB
-                      encrypted: true
-                      encryption: aes-256-gcm
-                    - name: payload_hash
-                      type: TEXT
-                      encrypted: false
-                      derived_from: payload_ciphertext
+                  description: "Define Schema for Batch ${i}"
+                  script: |
+                    CREATE TABLE IF NOT EXISTS access_log_${i} (
+                      log_id INTEGER PRIMARY KEY AUTOINCREMENT,
+                      query_type TEXT NOT NULL,
+                      timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+                    );
+                    CREATE TABLE IF NOT EXISTS secure_dataset_${i} (
+                      record_id TEXT PRIMARY KEY,
+                      payload_ciphertext BLOB,
+                      payload_hash TEXT
+                    );
+
+                # [SQL Query] 데이터 조작 및 로그 기록
+                - action: database.sql_execute
+                  engine: sqlite
+                  description: "Insert Audit Log and Verify Data"
+                  queries:
+                    - "INSERT INTO access_log_${i} (query_type) VALUES ('BATCH_START');"
+                    - "DELETE FROM secure_dataset_${i} WHERE record_id IS NULL;"
+                    - "SELECT count(*) FROM access_log_${i} WHERE timestamp > date('now', '-1 day');"
+
+                # [DB Index] 성능 최적화를 위한 인덱스 생성
                 - action: database.create_index
                   engine: sqlite
                   table: secure_dataset_${i}
                   index: idx_secure_dataset_${i}_hash
                   columns: [payload_hash]
                   unique: true
+                  method: b-tree
+
+                - action: database.create_index
+                  engine: sqlite
+                  table: access_log_${i}
+                  index: idx_access_log_${i}_time
+                  columns: [timestamp]
+                  unique: false
           TEMPLATE
           done
-          echo "✅ Generated 25 Data Shield workflow templates with Server Upgrade features"
+          echo "✅ Generated 25 workflows with SQL, DDL, and Indexing features"
 
       - name: ✅ Commit changes
         run: |
@@ -125,7 +132,7 @@ jobs:
             echo "No updates to commit"
             exit 0
           fi
-          git commit -m "feat: add server upgrade stage to data shield workflows"
+          git commit -m "feat: add SQL, DDL, and Indexing capabilities to workflows"
 
       - name: 🚀 Push updates
         run: |
