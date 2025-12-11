@@ -1,94 +1,129 @@
-name: Daily Scripts Health Check
-run-name: 일일 스크립트 점검 - ${{ github.event_name == 'schedule' && '정기 실행' || '수동 실행' }}
+name: Robust Daily Scripts Health Check
+run-name: 🛡️ 일일 대량 스크립트 점검 - ${{ github.event_name == 'schedule' && '정기 실행' || '수동 실행' }}
 
 on:
-  # 매일 한국 시간 오전 9시 (UTC 00:00) 실행
   schedule:
-    - cron: '0 0 * * *'
-  # 필요시 수동으로 실행 가능
+    - cron: '0 0 * * *' # 한국 시간 오전 9시
   workflow_dispatch:
 
 jobs:
-  run-daily-checks:
+  bulk-check:
     runs-on: ubuntu-latest
-    
+    # 권한 설정 (이슈 생성이나 코드 푸시가 필요 없다면 read만 있어도 됨)
+    permissions:
+      contents: read
+
     steps:
-      # 1. 코드 체크아웃
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # 2. Python 환경 설정 (파이썬 스크립트가 있을 경우를 대비)
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
+          cache: 'pip' # pip 캐싱 기능 활성화로 속도 향상
 
-      # 3. 의존성 설치 (requirements.txt가 있다면 설치)
+      # 의존성 설치 (requirements.txt가 있으면 설치, 없으면 넘어감)
       - name: Install Dependencies
         run: |
           if [ -f scripts/requirements.txt ]; then
+            echo "Installing dependencies from scripts/requirements.txt..."
             pip install -r scripts/requirements.txt
+          else
+            echo "No requirements.txt found. Skipping."
           fi
 
-      # 4. 스크립트 실행 권한 부여
       - name: Grant Execute Permissions
         run: chmod +x scripts/*
 
-      # 5. 스크립트 일괄 실행 및 점검
-      - name: Execute All Scripts in 'scripts/'
+      # 핵심: 대량 스크립트 실행 및 로그 분리
+      - name: Run All Scripts with Robust Error Handling
         id: run_scripts
+        continue-on-error: true # 이 단계가 실패해도 다음 단계(로그 업로드)로 진행
         run: |
-          echo "### 🚀 일일 점검 시작" >> $GITHUB_STEP_SUMMARY
-          echo "| 스크립트 | 상태 | 결과 |" >> $GITHUB_STEP_SUMMARY
-          echo "| :--- | :---: | :--- |" >> $GITHUB_STEP_SUMMARY
+          # 로그 저장을 위한 디렉토리 생성
+          mkdir -p logs
+          
+          # GitHub Summary 헤더 작성
+          echo "## 📊 스크립트 실행 결과 리포트" >> $GITHUB_STEP_SUMMARY
+          echo "| 파일명 | 상태 | 소요 시간 | 비고 |" >> $GITHUB_STEP_SUMMARY
+          echo "| :--- | :---: | :---: | :--- |" >> $GITHUB_STEP_SUMMARY
           
           FAILED_COUNT=0
+          TOTAL_COUNT=0
           
-          # scripts 폴더 내의 모든 파일 순회
+          # scripts 폴더 순회
           for file in scripts/*; do
-            # 파일이 아니거나 requirements.txt인 경우 건너뜀
+            # 파일 체크 및 제외 조건
             if [ ! -f "$file" ] || [[ "$file" == *"requirements.txt" ]]; then
               continue
             fi
             
+            TOTAL_COUNT=$((TOTAL_COUNT+1))
             FILENAME=$(basename "$file")
-            echo "Running: $FILENAME"
+            LOG_FILE="logs/${FILENAME}.log"
             
-            # 확장자에 따른 실행 명령어 분기
+            echo "Processing: $FILENAME"
+            
+            START_TIME=$(date +%s)
+            
+            # 실행 로직 (타임아웃 300초/5분 설정)
+            # set +e를 사용하여 오류가 발생해도 쉘이 종료되지 않도록 함
+            set +e
+            
             if [[ "$file" == *.py ]]; then
-              python "$file" > output.log 2>&1
+              timeout 300s python "$file" > "$LOG_FILE" 2>&1
               EXIT_CODE=$?
             elif [[ "$file" == *.sh ]]; then
-              ./"$file" > output.log 2>&1
+              timeout 300s ./"$file" > "$LOG_FILE" 2>&1
               EXIT_CODE=$?
             else
-              # 기타 실행 가능한 파일
-              ./"$file" > output.log 2>&1
+              timeout 300s ./"$file" > "$LOG_FILE" 2>&1
               EXIT_CODE=$?
             fi
             
-            # 결과 처리
+            set -e # 다시 에러 검출 모드 복귀 (스크립트 외부 로직 보호)
+            
+            END_TIME=$(date +%s)
+            DURATION=$((END_TIME - START_TIME))
+            
+            # 결과 판별
             if [ $EXIT_CODE -eq 0 ]; then
-              echo "✅ $FILENAME : Success"
-              echo "| $FILENAME | ✅ 성공 | 정상 종료 |" >> $GITHUB_STEP_SUMMARY
+              echo "✅ $FILENAME Success (${DURATION}s)"
+              echo "| $FILENAME | ✅ 성공 | ${DURATION}s | - |" >> $GITHUB_STEP_SUMMARY
+              # 성공한 로그는 굳이 남기지 않고 삭제 (용량 절약)
+              rm "$LOG_FILE"
+            elif [ $EXIT_CODE -eq 124 ]; then
+              echo "⏰ $FILENAME Timed out"
+              echo "| $FILENAME | ⏰ 타임아웃 | 300s+ | 5분 초과로 강제 종료 |" >> $GITHUB_STEP_SUMMARY
+              FAILED_COUNT=$((FAILED_COUNT+1))
             else
-              echo "❌ $FILENAME : Failed"
-              echo "::error file=$file::Script failed execution"
-              echo "| $FILENAME | ❌ 실패 | 오류 발생 (로그 확인) |" >> $GITHUB_STEP_SUMMARY
-              cat output.log
+              echo "❌ $FILENAME Failed (Code: $EXIT_CODE)"
+              # 에러 로그의 마지막 3줄만 요약에 표시
+              ERROR_TAIL=$(tail -n 3 "$LOG_FILE" | tr '\n' ' ')
+              echo "| $FILENAME | ❌ 실패 | ${DURATION}s | \`$ERROR_TAIL\` |" >> $GITHUB_STEP_SUMMARY
               FAILED_COUNT=$((FAILED_COUNT+1))
             fi
-            
-            # 로그 정리
-            rm -f output.log
           done
           
           echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 📈 종합 요약" >> $GITHUB_STEP_SUMMARY
+          echo "- 총 스크립트: $TOTAL_COUNT 개" >> $GITHUB_STEP_SUMMARY
+          echo "- 실패: $FAILED_COUNT 개" >> $GITHUB_STEP_SUMMARY
           
-          # 실패한 스크립트가 하나라도 있으면 워크플로우 실패 처리
+          # 실패 건수를 output 변수로 저장 (다음 단계에서 참조 가능)
+          echo "failed_count=$FAILED_COUNT" >> $GITHUB_OUTPUT
+          
           if [ $FAILED_COUNT -gt 0 ]; then
-            echo "Total $FAILED_COUNT scripts failed."
-            exit 1
-          else
-            echo "All scripts executed successfully."
+            echo "Warning: $FAILED_COUNT scripts failed."
+            exit 1 # 최종적으로는 실패로 마킹하여 알림 발송
           fi
+
+      # 실패한 스크립트의 로그만 모아서 업로드 (디버깅용)
+      - name: Upload Error Logs
+        if: failure() || steps.run_scripts.outputs.failed_count > 0
+        uses: actions/upload-artifact@v4
+        with:
+          name: error-logs-report
+          path: logs/
+          retention-days: 5
