@@ -25,24 +25,37 @@ jobs:
       - name: 🧰 Prepare workspace
         run: |
           mkdir -p resources/workflows/data_shield
-          echo "⏱️ Starting bulk generation for encryption, DLP, and DB indexing templates"
+          echo "⏱️ Starting bulk generation: Encryption, DLP, DB, and Server Upgrade tasks"
 
-      - name: 🛡️ Generate encryption/DLP/DB templates
+      - name: 🛡️ Generate Full Security Templates (w/ Server Upgrade)
         shell: bash
         run: |
-          # 1부터 25까지 반복하며 워크플로우 파일 대량 생성
+          # 1부터 25까지 반복하며 '서버 업그레이드' 단계가 포함된 워크플로우 대량 생성
           for i in $(seq -w 1 25); do
             cat > resources/workflows/data_shield/data_shield_workflow_${i}.yml <<TEMPLATE
-          version: "1.0"
+          version: "1.1"
           name: "Data Shield Workflow ${i}"
           description: |
-            Auto-generated workflow covering encryption/decryption, outbound DLP, and
-            encrypted database tables with hashed indexes for batch ${i}.
+            Auto-generated workflow including Server Security Upgrade,
+            Encryption/Decryption, Outbound DLP, and DB Indexing for batch ${i}.
           metadata:
             owner: data-security
             classification: restricted
             rotation_window_hours: 12
           stages:
+            # [NEW] 서버 업그레이드 및 보안 패치 단계 추가
+            - id: server_maintenance
+              name: Server Security Upgrade & Patch
+              tasks:
+                - action: system.package_update
+                  target: os_packages
+                  security_only: true
+                  description: "Apply critical security patches before processing data"
+                - action: shield.agent_upgrade
+                  channel: stable
+                  version_constraint: ">= 2.5.0"
+                  description: "Upgrade Data Shield agent to latest stable version"
+
             - id: encrypt_content
               name: AES-256 Encrypt Content
               tasks:
@@ -53,6 +66,7 @@ jobs:
                   inputs:
                     - source: artifacts/raw_payload_${i}.json
                       target: vault/encrypted/payload_${i}.bin
+
             - id: decrypt_verify
               name: Controlled Decryption
               tasks:
@@ -63,6 +77,7 @@ jobs:
                   inputs:
                     - source: vault/encrypted/payload_${i}.bin
                       target: artifacts/decrypted/payload_${i}.json
+
             - id: outbound_guard
               name: DLP Egress Control
               tasks:
@@ -71,6 +86,7 @@ jobs:
                   block_on_match: true
                   file_allowlist: ['.sql','.parquet','.json']
                   destinations: [s3, ftp, http]
+
             - id: db_encrypt_and_index
               name: Secure Table with Index
               tasks:
@@ -98,7 +114,7 @@ jobs:
                   unique: true
           TEMPLATE
           done
-          echo "✅ Generated 25 Data Shield workflow templates"
+          echo "✅ Generated 25 Data Shield workflow templates with Server Upgrade features"
 
       - name: ✅ Commit changes
         run: |
@@ -109,7 +125,7 @@ jobs:
             echo "No updates to commit"
             exit 0
           fi
-          git commit -m "chore: add data shield workflow templates"
+          git commit -m "feat: add server upgrade stage to data shield workflows"
 
       - name: 🚀 Push updates
         run: |
