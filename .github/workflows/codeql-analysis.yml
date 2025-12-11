@@ -1,4 +1,4 @@
-name: ⚔️ Grand Ops Massive Infrastructure & Security Patch v7
+name: ⚔️ Grand Ops Massive Infrastructure & Security Patch v8
 
 on:
   push:
@@ -25,11 +25,11 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0
+          fetch-depth: 0 # 히스토리 전체를 가져와야 Rebase가 가능함
 
       - name: 🏗️ Construct Massive Directory Structure
         run: |
-          echo "🚀 Initializing Grand Ops Mega-Construction v7..."
+          echo "🚀 Initializing Grand Ops Mega-Construction v8..."
           
           # [1] MSA 애플리케이션 서비스
           mkdir -p apps/frontend_web
@@ -37,20 +37,21 @@ jobs:
           mkdir -p apps/payment_gateway
           mkdir -p apps/auth_service
           
-          # [2] 신규: 중앙 수집 서버 (Central Collector)
-          # 각 서비스의 로그와 데이터를 수집하고 비상시 백업 역할을 수행
+          # [2] 중앙 수집 서버 (Central Collector) - 고가용성 구조
           mkdir -p apps/central_collector/logs
           mkdir -p apps/central_collector/incoming_data
           mkdir -p apps/central_collector/emergency_dump
+          mkdir -p apps/central_collector/transaction_history # 추가: 트랜잭션 기록용
           
-          # [3] 인프라스트럭처 & 신규: 다운로드 노드 (Download Node)
+          # [3] 인프라스트럭처 & 다운로드 노드 (Download Node)
           mkdir -p infrastructure/k8s_manifests
           mkdir -p infrastructure/terraform_scripts
           mkdir -p infrastructure/firewall_rules
           mkdir -p infrastructure/download_node/cdn_assets
           mkdir -p infrastructure/download_node/config
+          mkdir -p infrastructure/download_node/recovery_snapshots # 추가: 복구 스냅샷
           
-          # [4] 보안 본부 (Security HQ)
+          # [4] 보안 본부
           mkdir -p security_hq/red_team_tools
           mkdir -p security_hq/blue_team_tools
           mkdir -p security_hq/audit_logs
@@ -58,47 +59,53 @@ jobs:
           # [5] 리포트
           mkdir -p reports/daily_ops
           
-          echo "✅ All Directory Structures (Including Download & Collector) Created."
+          echo "✅ All Directory Structures (Including Redundancy Paths) Created."
 
       - name: 🏭 Generate Server Configurations & Assets
         run: |
-          # --- 1. Download Server Setup (다운로드 서버) ---
-          echo "worker_processes auto;" > infrastructure/download_node/config/nginx.conf
-          echo "limit_rate 500k; # Bandwidth Throttling" >> infrastructure/download_node/config/nginx.conf
+          # --- 1. Download Server Setup (다운로드 서버 강화) ---
+          # Nginx 설정: 대량 트래픽 처리 최적화
+          cat <<EOF > infrastructure/download_node/config/nginx.conf
+          worker_processes auto;
+          events { worker_connections 1024; }
+          http {
+              limit_rate 1m; # 속도 제한 완화
+              access_log /var/log/nginx/access.log;
+              error_log /var/log/nginx/error.log;
+          }
+          EOF
           
-          # 대용량 더미 파일 생성 (다운로드 테스트용)
-          echo "Grand Ops Firmware v7.0 Binary Data..." > infrastructure/download_node/cdn_assets/firmware_v7.bin
-          echo "Grand Ops Patch Notes..." > infrastructure/download_node/cdn_assets/patch_notes.txt
+          # 대용량 자산 생성 (버전 업데이트)
+          echo "Grand Ops Firmware v8.0 Binary Data (Stable)" > infrastructure/download_node/cdn_assets/firmware_v8.bin
+          echo "Patch Notes v8: Fixed Git Conflicts" > infrastructure/download_node/cdn_assets/patch_notes.txt
           
-          # 헬스 체크 스크립트 생성 (장애 감지용)
+          # [강화된 헬스 체크] 로그 파일에 상태 기록
           cat <<EOF > infrastructure/download_node/health_check.sh
           #!/bin/bash
-          # 시뮬레이션: 랜덤하게 서버 상태를 결정 (0: 정상, 1: 장애)
-          if [ \$((RANDOM % 5)) -eq 0 ]; then
-            echo "CRITICAL: Download Server Connection Timeout!"
+          LOG_FILE="infrastructure/download_node/recovery_snapshots/status.log"
+          # 시뮬레이션: 15% 확률로 장애 발생
+          if [ \$((RANDOM % 7)) -eq 0 ]; then
+            echo "[$(date)] CRITICAL: Connection Refused" >> \$LOG_FILE
             exit 1
           else
-            echo "OK: Download Server is Healthy."
+            echo "[$(date)] OK: Service Healthy" >> \$LOG_FILE
             exit 0
           fi
           EOF
           chmod +x infrastructure/download_node/health_check.sh
 
-          # --- 2. Central Collector Setup (수집 서버) ---
-          echo "server.port=9090" > apps/central_collector/application.properties
-          echo "collector.mode=active-standby" >> apps/central_collector/application.properties
-          
-          # 수집기 로직 (Python)
-          cat <<EOF > apps/central_collector/aggregator.py
-          import os
-          def ingest_data(source):
-              print(f"Ingesting data from {source}...")
-              # 로직: 데이터 파싱 및 저장
+          # --- 2. Central Collector Setup (수집 서버 강화) ---
+          # 트랜잭션 수집기
+          cat <<EOF > apps/central_collector/transaction_logger.py
+          import time
+          def log_transaction(tx_id, status):
+              with open('transaction_history/tx_log.txt', 'a') as f:
+                  f.write(f"{time.ctime()} | TX:{tx_id} | {status}\n")
           EOF
 
-          # --- 3. Existing MSA Setup ---
-          echo '{"service":"payment", "status":"active"}' > apps/payment_gateway/health.json
-          echo '{"service":"auth", "status":"active"}' > apps/auth_service/health.json
+          # --- 3. MSA Health Files ---
+          echo '{"service":"payment", "status":"active", "load":"medium"}' > apps/payment_gateway/health.json
+          echo '{"service":"auth", "status":"active", "load":"low"}' > apps/auth_service/health.json
 
           echo "✅ Server Configurations & Assets Generated."
 
@@ -107,7 +114,7 @@ jobs:
         run: |
           echo "🔍 Starting Infrastructure Health Check..."
           
-          # 다운로드 서버 상태 점검
+          # 헬스 체크 실행
           if ./infrastructure/download_node/health_check.sh; then
             echo "✅ [STATUS: GREEN] Download Server is operating normally."
             echo "NORMAL_OPS=true" >> $GITHUB_ENV
@@ -115,56 +122,68 @@ jobs:
             echo "❌ [STATUS: RED] Download Server FAILURE DETECTED!"
             echo "⚠️ Initiating Emergency Failover Protocol..."
             
-            # [장애 대응 로직]
-            # 1. 다운로드 서버의 데이터를 수집 서버로 대량 이관 (Redundancy)
+            # [장애 대응] 1. 자산 대피 (Evacuation)
             echo "📦 Migrating Assets to Central Collector..."
             cp -r infrastructure/download_node/cdn_assets/* apps/central_collector/emergency_dump/
             
-            # 2. 각 MSA 서비스들이 수집 서버를 바라보도록 설정 변경 (Config Injection)
-            echo "redirect_url=http://central-collector:9090/emergency-download" >> apps/payment_gateway/config_override.ini
-            echo "redirect_url=http://central-collector:9090/emergency-download" >> apps/auth_service/config_override.ini
+            # [장애 대응] 2. 수집 서버 기록
+            echo "[$(date)] 🚨 EMERGENCY DUMP RECEIVED from Download Node" >> apps/central_collector/incoming_data/incident_report.log
             
-            # 3. 로그 기록
-            echo "[$(date)] 🔴 FAILOVER TRIGGERED: Download Node -> Collector Node" >> security_hq/audit_logs/system_events.log
             echo "FAILOVER_ACTIVE=true" >> $GITHUB_ENV
           fi
 
       - name: 📊 Generate Comprehensive Report
         run: |
-          REPORT_PATH="reports/daily_ops/Grand_Ops_Report_v7_${{ github.run_number }}.md"
+          REPORT_PATH="reports/daily_ops/Grand_Ops_Report_v8_${{ github.run_number }}.md"
           
-          echo "# 🛡️ Grand Ops Infrastructure Report v7" > $REPORT_PATH
+          echo "# 🛡️ Grand Ops Infrastructure Report v8" > $REPORT_PATH
           echo "### 📅 Execution Date: $(date)" >> $REPORT_PATH
           
-          echo "## 📡 Server Status" >> $REPORT_PATH
           if [ "$FAILOVER_ACTIVE" == "true" ]; then
-            echo "- **Download Server:** 🔴 CRITICAL FAILURE (Offline)" >> $REPORT_PATH
-            echo "- **Failover Action:** ✅ Traffic Redirected to Central Collector" >> $REPORT_PATH
-            echo "- **Data Integrity:** ✅ Assets backed up to 'apps/central_collector/emergency_dump'" >> $REPORT_PATH
+            echo "## 🔴 CRITICAL ALERT: Failover Executed" >> $REPORT_PATH
+            echo "- Traffic rerouted to Central Collector" >> $REPORT_PATH
           else
-            echo "- **Download Server:** 🟢 Operational" >> $REPORT_PATH
-            echo "- **Traffic:** Normal Load" >> $REPORT_PATH
+            echo "## 🟢 SYSTEM NORMAL" >> $REPORT_PATH
+            echo "- All nodes operational" >> $REPORT_PATH
           fi
           
-          echo "## 🛡️ Security Audit" >> $REPORT_PATH
-          echo "- **Firewall:** Active" >> $REPORT_PATH
-          echo "- **WAF Rules:** Updated" >> $REPORT_PATH
+          echo "## 🔄 Synchronization Status" >> $REPORT_PATH
+          echo "- Git Conflict Resolution Protocol: ACTIVE" >> $REPORT_PATH
 
-      - name: 💾 Commit & Push Massive Updates
+      - name: 💾 Commit & Push with Auto-Sync (Fixes Remote Rejected)
         run: |
           git config --global user.name "Grand Ops Commander"
           git config --global user.email "commander@grandops.io"
           
+          # 모든 변경사항 스테이징
           git add .
           
-          # 커밋 메시지에 상태 반영
+          # 커밋 메시지 작성
           if [ "$FAILOVER_ACTIVE" == "true" ]; then
-            MSG="🔥 Grand Ops: EMERGENCY FAILOVER executed - Download Node Down [skip ci]"
+            MSG="🔥 Grand Ops: EMERGENCY FAILOVER & Sync Patch v8 [skip ci]"
           else
-            MSG="🚀 Grand Ops: Routine Maintenance & Security Patch v7 [skip ci]"
+            MSG="🚀 Grand Ops: Routine Maintenance & Sync Patch v8 [skip ci]"
           fi
           
+          # 로컬 커밋 (실패해도 진행 - 변경사항 없을 수 있음)
           git commit -m "$MSG" || echo "No changes to commit"
           
+          # [핵심 수정 사항] 원격 저장소와 동기화 (Pull --rebase)
+          echo "🔄 Synchronizing with Remote Command Center..."
+          
+          # 1. 원격지 변경사항 가져오기 및 Rebase (충돌 방지)
+          # 현재 브랜치 이름을 동적으로 가져옵니다.
+          CURRENT_BRANCH=${{ github.ref_name }}
+          
+          git pull --rebase origin $CURRENT_BRANCH || {
+            echo "❌ Rebase Conflict Detected! Attempting Auto-Merge Strategy..."
+            git rebase --abort
+            git pull origin $CURRENT_BRANCH --no-rebase
+          }
+          
+          # 2. 인증 토큰 설정
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          
+          # 3. 푸시 (재시도 로직 포함 안 함, Rebase로 해결됨)
+          echo "🚀 Pushing synchronized updates to $CURRENT_BRANCH..."
           git push origin HEAD:${{ github.ref }}
