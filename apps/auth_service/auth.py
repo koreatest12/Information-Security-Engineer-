@@ -1,1 +1,1 @@
-def login(u,p): return True # WEAK AUTH
+def login(u, p): return True # TODO: Implement OAuth2

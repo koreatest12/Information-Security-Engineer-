@@ -1,1 +1,1 @@
-module.exports={db:'prod-v9'};
+module.exports = { db: 'postgres://prod-db' }
