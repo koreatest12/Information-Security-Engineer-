@@ -1,42 +1,24 @@
-name: Unified System Ops (CI/CD & Upgrade)
+name: System Ops (Test & Build Only)
 
 on:
-  # 1. CI: 코드가 수정되면 테스트 실행
+  # 1. 코드 수정 시 테스트
   push:
     branches: [ "main" ]
     paths: [ "scripts/**" ]
   
-  # 2. 유지보수: 매주 일요일 자동 업그레이드
+  # 2. 정기 실행 (서버 업데이트 대신 스크립트 건전성 체크용으로 변경됨)
   schedule:
-    - cron: '0 18 * * 0' # UTC 18:00 (KST 03:00)
+    - cron: '0 18 * * 0'
 
-  # 3. CD: 수동으로 서버 배포 또는 업그레이드 실행
+  # 3. 수동 실행
   workflow_dispatch:
-    inputs:
-      mode:
-        description: '실행 모드 선택'
-        required: true
-        default: 'install'
-        type: choice
-        options:
-          - install  # 초기 설치
-          - upgrade  # 시스템 업그레이드
-      target_os:
-        description: '대상 OS (install 모드일 때만 적용)'
-        required: false
-        default: 'ubuntu'
-        type: choice
-        options:
-          - ubuntu
-          - centos
-          - amzn
 
 jobs:
   # ====================================================
-  # JOB 1: 스크립트 무결성 테스트 (CI) - Push일 때만 실행
+  # JOB 1: 스크립트 무결성 테스트 (가상 환경에서 실행)
+  # 비밀번호 없이 GitHub 서버 내에서 작동
   # ====================================================
   test-scripts:
-    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -61,9 +43,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # 테스트를 위한 최소한의 도구 설치
       - name: Install Dependencies for Test
         run: |
-          # 컨테이너에 sudo, git 등 기본 도구 설치 (테스트용)
           if [ "${{ matrix.pkg_mgr }}" == "apt-get" ]; then
             apt-get update && apt-get install -y sudo git curl
           else
@@ -73,75 +55,32 @@ jobs:
       - name: Grant Permission
         run: chmod +x scripts/${{ matrix.script }}
 
-      - name: Run Install Script (Test)
+      # 실제 설치 테스트 (오류 발생 시에도 전체 워크플로우가 멈추지 않도록 설정)
+      - name: Run Install Script (Simulation)
         run: ./scripts/${{ matrix.script }}
-        continue-on-error: true # Docker 내 systemctl 오류는 무시하고 진행
+        continue-on-error: true
 
   # ====================================================
-  # JOB 2: 실제 서버 배포 및 유지보수 (CD) - 수동/스케줄일 때 실행
+  # JOB 2: 배포 패키지 생성 (SSH 접속 제거 -> 아티팩트 업로드)
+  # 서버 연결 대신 실행 가능한 스크립트를 ZIP으로 묶어 업로드함
   # ====================================================
-  deploy-production:
-    if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
+  package-scripts:
+    needs: test-scripts
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      # 1. 실행할 스크립트 결정 로직
-      - name: Determine Script to Run
-        id: config
+      - name: Prepare Scripts
         run: |
-          SCRIPT_NAME=""
-          
-          # 스케줄 실행이거나 수동 모드가 'upgrade'인 경우
-          if [[ "${{ github.event_name }}" == "schedule" ]] || [[ "${{ inputs.mode }}" == "upgrade" ]]; then
-            echo "Mode: System Upgrade"
-            SCRIPT_NAME="upgrade_system.sh"
-          
-          # 수동 설치 모드인 경우
-          else
-            echo "Mode: New Installation on ${{ inputs.target_os }}"
-            if [[ "${{ inputs.target_os }}" == "ubuntu" ]]; then
-              SCRIPT_NAME="setup_ubuntu.sh"
-            elif [[ "${{ inputs.target_os }}" == "centos" ]]; then
-              SCRIPT_NAME="setup_centos.sh"
-            else
-              SCRIPT_NAME="setup_amzn.sh"
-            fi
-          fi
-          
-          echo "Selected Script: $SCRIPT_NAME"
-          echo "script_file=$SCRIPT_NAME" >> $GITHUB_OUTPUT
+          mkdir -p deploy_package
+          cp scripts/*.sh deploy_package/
+          chmod +x deploy_package/*.sh
+          echo "Scripts are ready for manual deployment."
 
-      # 2. 스크립트 서버로 전송 (SCP)
-      - name: Transfer Script to Server
-        uses: appleboy/scp-action@master
+      # GitHub Actions 실행 결과 화면에서 파일을 다운로드 받을 수 있게 업로드
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
-          port: ${{ secrets.PORT }}
-          source: "scripts/${{ steps.config.outputs.script_file }}"
-          target: "/tmp/"
-
-      # 3. SSH 접속 후 스크립트 실행
-      - name: Execute Script on Server
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
-          port: ${{ secrets.PORT }}
-          timeout: 40m  # 컴파일 등 오래 걸릴 수 있으므로 넉넉히 설정
-          script: |
-            TARGET_SCRIPT="/tmp/scripts/${{ steps.config.outputs.script_file }}"
-            
-            echo "Making script executable..."
-            chmod +x $TARGET_SCRIPT
-            
-            echo "Executing $TARGET_SCRIPT..."
-            # 비밀번호 입력 없이 sudo 실행 가능해야 함 (/etc/sudoers NOPASSWD 설정 전제)
-            sudo $TARGET_SCRIPT
-            
-            echo "Operation Completed."
-            # (선택사항) 실행 후 스크립트 삭제
-            # rm -f $TARGET_SCRIPT
+          name: server-setup-scripts
+          path: deploy_package/
+          retention-days: 5
