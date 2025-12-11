@@ -1,0 +1,94 @@
+name: Daily Scripts Health Check
+run-name: 일일 스크립트 점검 - ${{ github.event_name == 'schedule' && '정기 실행' || '수동 실행' }}
+
+on:
+  # 매일 한국 시간 오전 9시 (UTC 00:00) 실행
+  schedule:
+    - cron: '0 0 * * *'
+  # 필요시 수동으로 실행 가능
+  workflow_dispatch:
+
+jobs:
+  run-daily-checks:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. 코드 체크아웃
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # 2. Python 환경 설정 (파이썬 스크립트가 있을 경우를 대비)
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      # 3. 의존성 설치 (requirements.txt가 있다면 설치)
+      - name: Install Dependencies
+        run: |
+          if [ -f scripts/requirements.txt ]; then
+            pip install -r scripts/requirements.txt
+          fi
+
+      # 4. 스크립트 실행 권한 부여
+      - name: Grant Execute Permissions
+        run: chmod +x scripts/*
+
+      # 5. 스크립트 일괄 실행 및 점검
+      - name: Execute All Scripts in 'scripts/'
+        id: run_scripts
+        run: |
+          echo "### 🚀 일일 점검 시작" >> $GITHUB_STEP_SUMMARY
+          echo "| 스크립트 | 상태 | 결과 |" >> $GITHUB_STEP_SUMMARY
+          echo "| :--- | :---: | :--- |" >> $GITHUB_STEP_SUMMARY
+          
+          FAILED_COUNT=0
+          
+          # scripts 폴더 내의 모든 파일 순회
+          for file in scripts/*; do
+            # 파일이 아니거나 requirements.txt인 경우 건너뜀
+            if [ ! -f "$file" ] || [[ "$file" == *"requirements.txt" ]]; then
+              continue
+            fi
+            
+            FILENAME=$(basename "$file")
+            echo "Running: $FILENAME"
+            
+            # 확장자에 따른 실행 명령어 분기
+            if [[ "$file" == *.py ]]; then
+              python "$file" > output.log 2>&1
+              EXIT_CODE=$?
+            elif [[ "$file" == *.sh ]]; then
+              ./"$file" > output.log 2>&1
+              EXIT_CODE=$?
+            else
+              # 기타 실행 가능한 파일
+              ./"$file" > output.log 2>&1
+              EXIT_CODE=$?
+            fi
+            
+            # 결과 처리
+            if [ $EXIT_CODE -eq 0 ]; then
+              echo "✅ $FILENAME : Success"
+              echo "| $FILENAME | ✅ 성공 | 정상 종료 |" >> $GITHUB_STEP_SUMMARY
+            else
+              echo "❌ $FILENAME : Failed"
+              echo "::error file=$file::Script failed execution"
+              echo "| $FILENAME | ❌ 실패 | 오류 발생 (로그 확인) |" >> $GITHUB_STEP_SUMMARY
+              cat output.log
+              FAILED_COUNT=$((FAILED_COUNT+1))
+            fi
+            
+            # 로그 정리
+            rm -f output.log
+          done
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # 실패한 스크립트가 하나라도 있으면 워크플로우 실패 처리
+          if [ $FAILED_COUNT -gt 0 ]; then
+            echo "Total $FAILED_COUNT scripts failed."
+            exit 1
+          else
+            echo "All scripts executed successfully."
+          fi
