@@ -1,0 +1,62 @@
+name: OS Installation Script Test
+
+on:
+  push:
+    branches: [ "main", "develop" ]
+    paths:
+      - 'scripts/**'
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  # 1. Ubuntu 환경 테스트
+  test-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Make script executable
+        run: chmod +x scripts/setup_ubuntu.sh
+
+      - name: Run Ubuntu Setup Script
+        run: sudo ./scripts/setup_ubuntu.sh
+        # CI 환경에서는 systemctl start가 실패할 수 있으나 설치 자체를 검증
+
+  # 2. CentOS 환경 테스트 (Docker 컨테이너 사용)
+  test-centos:
+    runs-on: ubuntu-latest
+    container:
+      image: quay.io/centos/centos:stream9 # 최신 CentOS Stream 사용
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Sudo & Requirements
+        # 컨테이너에는 sudo가 없을 수 있으므로 설치
+        run: |
+          dnf install -y sudo git which
+
+      - name: Make script executable
+        run: chmod +x scripts/setup_centos.sh
+
+      - name: Run CentOS Setup Script
+        run: ./scripts/setup_centos.sh
+        # Python 컴파일 시간이 오래 걸릴 수 있으므로 타임아웃 넉넉히 설정 필요
+    timeout-minutes: 30
+
+  # 3. Amazon Linux 환경 테스트 (Docker 컨테이너 사용)
+  test-amazon-linux:
+    runs-on: ubuntu-latest
+    container:
+      image: amazonlinux:2023
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Sudo & Requirements
+        run: |
+          yum install -y sudo git tar gzip which
+
+      - name: Make script executable
+        run: chmod +x scripts/setup_amzn.sh
+
+      - name: Run Amazon Linux Setup Script
+        run: ./scripts/setup_amzn.sh
