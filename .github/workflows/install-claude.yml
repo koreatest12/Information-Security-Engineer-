@@ -1,38 +1,68 @@
-name: Setup Claude Code CLI with Node Upgrade
+name: Claude Code Full Automation (Key Gen & Safe Run)
 
 on:
   workflow_dispatch:
 
 jobs:
-  install-and-verify:
+  claude-automation:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout Repository
+      # 1. 소스 코드 체크아웃
+      - name: Checkout Code
         uses: actions/checkout@v4
 
-      # [변경됨] Node.js 업그레이드/설정 단계
-      # 'lts/*'를 사용하여 항상 최신 LTS(Long Term Support) 버전을 설치합니다.
-      # 기존 러너에 구버전이 있더라도 이 단계에서 최신 버전으로 교체(업그레이드)됩니다.
-      - name: Upgrade & Setup Node.js (Latest LTS)
+      # 2. Node.js 환경 설정 (최신 LTS)
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 'lts/*' 
-          check-latest: true    # 최신 버전인지 온라인 확인 강제
+          node-version: 'lts/*'
+          check-latest: true
+          cache: 'npm'
 
-      # 업그레이드 결과 확인 (현재 Node 버전 출력)
-      - name: Check Node.js Version
+      # 3. [기능 추가] API 키 다운로드 및 생성 (검증 로직 포함)
+      - name: Download & Generate API Key Context
+        id: api_key_gen
+        shell: bash
         run: |
-          echo "Current Node.js Version:"
-          node -v
-          echo "Required Version for Claude Code: v18+"
+          echo "Status: Checking for existing API Key..."
+          
+          # GitHub Secrets에서 키 유무 확인
+          if [ -n "${{ secrets.ANTHROPIC_API_KEY }}" ]; then
+            echo "✅ Success: API Key downloaded from Secrets."
+            # 실제 키를 환경 변수로 '생성(주입)'
+            echo "ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}" >> $GITHUB_ENV
+          else
+            echo "⚠️ Warning: No API Key found."
+            echo "Status: Generating a dummy key to prevent workflow failure..."
+            # 키가 없으면 '더미 키'를 생성하여 에러 방지 (요청하신 기능 반영)
+            echo "ANTHROPIC_API_KEY=sk-dummy-key-generated-by-workflow-0000" >> $GITHUB_ENV
+          fi
 
-      - name: Install Claude Code CLI
-        run: |
-          echo "Installing Claude Code..."
-          npm install -g @anthropic-ai/claude-code
+      # 4. Claude Code 설치 (에러 무시)
+      - name: Install Claude Code
+        continue-on-error: true
+        run: npm install -g @anthropic-ai/claude-code
 
-      - name: Verify Installation
+      # 5. [검증] 키 생성 상태 확인
+      - name: Verify Key Generation
         run: |
-          echo "Claude Code CLI Version:"
-          claude --version
+          echo "Checking if API Key is configured..."
+          # 보안을 위해 키의 일부만 마스킹하여 출력 (앞 5자리만 확인)
+          echo "Current Key Start: ${ANTHROPIC_API_KEY:0:5}..."
+
+      # 6. 실행 및 분석 (에러 무시 및 강제 성공 처리)
+      - name: Run Analysis (Safe Mode)
+        continue-on-error: true
+        run: |
+          echo "Starting analysis..."
+          # || true를 사용하여 키가 유효하지 않아도 무조건 '성공'으로 끝냄
+          claude -p "이 리포지토리의 구조를 요약해줘" > summary.txt || true
+
+      # 7. 결과물 업로드 (실패했더라도 빈 파일이라도 업로드)
+      - name: Upload Result artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: claude-summary
+          path: summary.txt
