@@ -1,0 +1,94 @@
+name: Node.js & React Upgrade Workflow
+
+on:
+  push:
+    branches: [ "main", "develop" ]
+  workflow_dispatch: # 수동 실행 옵션
+
+jobs:
+  setup-build-server:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 코드 체크아웃
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      # 2. Node.js 업그레이드 및 설정 (Node.js Upgrade)
+      # actions/setup-node를 사용하여 최신 LTS 버전(예: 20)을 설치합니다.
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # 20.x 최신 버전 사용 (업그레이드 효과)
+          cache: 'npm'       # NPM 의존성 자동 캐싱 (Cache 기능)
+
+      # 3. 디렉토리 및 파일 추가 생성 (Directory & File Creation)
+      - name: Create Directories and Files
+        run: |
+          echo "Creating necessary directories..."
+          mkdir -p ./logs
+          mkdir -p ./config
+          mkdir -p ./temp_cache
+          
+          echo "Creating configuration files..."
+          # 예시: 빌드 시간과 환경변수를 담은 파일 생성
+          echo "BUILD_TIME=$(date)" > ./logs/build_info.txt
+          echo "REACT_APP_ENV=production" > .env
+          
+          # 예시: 임시 캐시 파일 생성
+          touch ./temp_cache/placeholder.tmp
+          ls -R
+
+      # 4. 환경 변수 및 Path 설정 (Path Creation)
+      # 로컬 node_modules의 실행 파일 경로를 시스템 PATH에 추가
+      - name: Add node_modules to PATH
+        run: echo "./node_modules/.bin" >> $GITHUB_PATH
+
+      # 5. 의존성 설치 및 React 업그레이드 (React Upgrade)
+      - name: Install Dependencies & Update React
+        run: |
+          # 기존 패키지 설치
+          npm ci 
+          
+          # React 및 React-DOM을 최신 버전으로 명시적 업그레이드 (선택 사항)
+          # npm install react@latest react-dom@latest
+          
+          echo "Dependencies installed successfully."
+
+      # 6. 커스텀 캐시 설정 (Cache Configuration)
+      # 위에서 만든 temp_cache 디렉토리를 캐싱하여 다음 빌드 때 재사용
+      - name: Cache Custom Directory
+        uses: actions/cache@v3
+        with:
+          path: ./temp_cache
+          # OS와 package-lock.json 해시를 키로 사용
+          key: ${{ runner.os }}-custom-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-custom-
+
+      # 7. React 빌드 수행
+      - name: Build React Application
+        run: npm run build --if-present
+
+      # 8. 서버 설치 및 구동 준비 (Server Installation)
+      # 정적 파일을 서빙할 간단한 웹 서버(serve) 설치
+      - name: Install Web Server (Global)
+        run: |
+          echo "Installing 'serve' package globally..."
+          sudo npm install -g serve
+
+      # 9. 서버 실행 테스트 (Start Server)
+      # CI 환경이므로 백그라운드에서 실행 후 포트 확인만 하고 종료하는 예시
+      - name: Start Server & Verify
+        run: |
+          # 백그라운드에서 포트 3000으로 빌드 폴더 서빙
+          nohup serve -s build -l 3000 > ./logs/server.log 2>&1 &
+          
+          echo "Waiting for server to launch..."
+          sleep 5
+          
+          # 서버가 떴는지 확인 (curl 테스트)
+          curl -I http://localhost:3000 || exit 1
+          
+          echo "Server started successfully on port 3000"
+          cat ./logs/server.log
