@@ -1,0 +1,31 @@
+name: Setup Claude Code CLI
+
+on:
+  workflow_dispatch: # 수동으로 버튼을 눌러 실행 (테스트용)
+
+jobs:
+  install-and-verify:
+    runs-on: ubuntu-latest # 리눅스 환경에서 실행
+    
+    steps:
+      # 1. 소스 코드 체크아웃 (기본)
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # 2. Node.js 환경 설정 (Claude Code는 Node v18 이상 필요)
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # 최신 LTS 버전 사용
+
+      # 3. Claude Code CLI 다운로드 및 설치
+      - name: Install Claude Code CLI
+        run: |
+          echo "Installing Claude Code..."
+          npm install -g @anthropic-ai/claude-code
+
+      # 4. 설치 확인 (버전 출력)
+      - name: Verify Installation
+        run: |
+          echo "Verifying Claude CLI version..."
+          claude --version
