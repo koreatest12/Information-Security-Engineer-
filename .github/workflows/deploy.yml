@@ -1,4 +1,4 @@
-name: Full-Stack Auto-Gen & Deploy Pipeline
+name: Massive File Generation & Maven Cache Fix
 
 on:
   push:
@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  # [Job 1] 인프라 및 코드 자동 생성 (Generator)
-  initialize-environment:
+  # [JOB 1] 파일 및 구조 대량 생성 (Generator)
+  generate-infrastructure:
     runs-on: ubuntu-latest
     outputs:
       status: success
@@ -15,27 +15,26 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # 1. [핵심] Java 스프링 부트 프로젝트 강제 생성 (파일이 없을 시)
-      # 이 단계가 setup-java보다 먼저 실행되어야 "No file matched" 에러가 사라짐
-      - name: Generate Java Spring Boot Structure
+      # 1. Maven 프로젝트 설정 파일(pom.xml) 대량 생성
+      - name: Generate pom.xml (Maven Build File)
         run: |
-          echo ">>> [GEN] Checking Java Environment..."
-          
-          # 1-1. Maven 빌드 파일(pom.xml) 생성
+          echo ">>> [GEN] Creating pom.xml..."
           if [ ! -f "pom.xml" ]; then
-            echo "   + Creating pom.xml for Spring Boot..."
             cat <<EOF > pom.xml
           <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
             <modelVersion>4.0.0</modelVersion>
-            <groupId>com.example</groupId>
-            <artifactId>security-demo</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>com.company</groupId>
+            <artifactId>enterprise-app</artifactId>
+            <version>1.0.0</version>
             <parent>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-parent</artifactId>
                 <version>3.2.0</version>
             </parent>
+            <properties>
+                <java.version>17</java.version>
+            </properties>
             <dependencies>
                 <dependency>
                     <groupId>org.springframework.boot</groupId>
@@ -50,90 +49,118 @@ jobs:
                     <artifactId>postgresql</artifactId>
                     <scope>runtime</scope>
                 </dependency>
+                <dependency>
+                    <groupId>org.projectlombok</groupId>
+                    <artifactId>lombok</artifactId>
+                    <optional>true</optional>
+                </dependency>
+                <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-test</artifactId>
+                    <scope>test</scope>
+                </dependency>
             </dependencies>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-maven-plugin</artifactId>
+                    </plugin>
+                </plugins>
+            </build>
           </project>
           EOF
           fi
 
-          # 1-2. Java 소스 디렉토리 및 메인 클래스 생성
-          mkdir -p src/main/java/com/example/demo
+      # 2. Java 디렉토리 구조 대량 생성
+      - name: Create Java Directory Structure
+        run: |
+          echo ">>> [GEN] Creating Folders..."
+          mkdir -p src/main/java/com/company/app/controller
+          mkdir -p src/main/java/com/company/app/service
+          mkdir -p src/main/java/com/company/app/model
           mkdir -p src/main/resources
-          
-          if [ ! -f "src/main/java/com/example/demo/DemoApplication.java" ]; then
-            echo "   + Creating Main Java Application Class..."
-            cat <<EOF > src/main/java/com/example/demo/DemoApplication.java
-          package com.example.demo;
+          mkdir -p src/test/java/com/company/app
+
+      # 3. Java 소스 코드 파일 대량 추가
+      - name: Generate Java Source Files
+        run: |
+          # 3-1. Main Application
+          echo ">>> [GEN] Creating Application.java..."
+          cat <<EOF > src/main/java/com/company/app/EnterpriseApplication.java
+          package com.company.app;
           import org.springframework.boot.SpringApplication;
           import org.springframework.boot.autoconfigure.SpringBootApplication;
-          import org.springframework.web.bind.annotation.GetMapping;
-          import org.springframework.web.bind.annotation.RestController;
-
           @SpringBootApplication
-          @RestController
-          public class DemoApplication {
+          public class EnterpriseApplication {
               public static void main(String[] args) {
-                  SpringApplication.run(DemoApplication.class, args);
-              }
-              
-              @GetMapping("/")
-              public String home() {
-                  return "Java Spring Boot + React + DB is Ready!";
+                  SpringApplication.run(EnterpriseApplication.class, args);
               }
           }
           EOF
-          fi
 
-          # 1-3. DB 설정 파일(application.properties) 생성
-          if [ ! -f "src/main/resources/application.properties" ]; then
-            echo "   + Creating DB Configuration..."
-            cat <<EOF > src/main/resources/application.properties
-          spring.datasource.url=jdbc:postgresql://localhost:5432/security_db
-          spring.datasource.username=postgres
-          spring.datasource.password=mysecretpassword
-          spring.jpa.hibernate.ddl-auto=update
-          server.port=8080
+          # 3-2. Controller
+          echo ">>> [GEN] Creating Controller..."
+          cat <<EOF > src/main/java/com/company/app/controller/HealthController.java
+          package com.company.app.controller;
+          import org.springframework.web.bind.annotation.GetMapping;
+          import org.springframework.web.bind.annotation.RestController;
+          @RestController
+          public class HealthController {
+              @GetMapping("/")
+              public String check() { return "System Operational"; }
+          }
           EOF
-          fi
 
-      # 2. [핵심] React 프론트엔드 강제 생성
-      - name: Generate React Frontend Structure
+          # 3-3. Service (Dummy)
+          echo ">>> [GEN] Creating Service..."
+          cat <<EOF > src/main/java/com/company/app/service/BusinessLogic.java
+          package com.company.app.service;
+          import org.springframework.stereotype.Service;
+          @Service
+          public class BusinessLogic {
+              public void process() { System.out.println("Processing data..."); }
+          }
+          EOF
+
+      # 4. 설정 파일 및 Dockerfile 생성
+      - name: Generate Config & Dockerfile
         run: |
-          echo ">>> [GEN] Checking Node.js Environment..."
-          
-          # package.json 생성
-          if [ ! -f "package.json" ]; then
-            npm init -y
-            npm install react react-dom react-scripts web-vitals axios --save
-            
-            # 스크립트 주입 (없을 경우)
-            npm pkg set scripts.start="react-scripts start"
-            npm pkg set scripts.build="react-scripts build"
-          fi
-          
-          # 필수 디렉토리 및 파일
-          mkdir -p public src
-          [ ! -f "public/index.html" ] && echo "<!DOCTYPE html><html><body><div id='root'></div></body></html>" > public/index.html
-          [ ! -f "src/index.js" ] && echo "import React from 'react'; import ReactDOM from 'react-dom/client'; const root = ReactDOM.createRoot(document.getElementById('root')); root.render(<h1>Full Stack App</h1>);" > src/index.js
+          echo ">>> [GEN] Creating application.properties..."
+          cat <<EOF > src/main/resources/application.properties
+          server.port=8080
+          spring.datasource.url=jdbc:postgresql://localhost:5432/mydb
+          spring.datasource.username=postgres
+          spring.datasource.password=password
+          spring.jpa.hibernate.ddl-auto=update
+          EOF
 
-      # 3. 생성된 파일들을 다음 Job으로 넘기기 위해 아티팩트 업로드
-      - name: Upload Generated Code
+          echo ">>> [GEN] Creating Dockerfile..."
+          cat <<EOF > Dockerfile
+          FROM eclipse-temurin:17-jdk-alpine
+          VOLUME /tmp
+          COPY target/*.jar app.jar
+          ENTRYPOINT ["java","-jar","/app.jar"]
+          EOF
+
+      # 5. 생성된 파일들을 아티팩트로 저장 (다음 Job으로 전달)
+      - name: Upload Generated Files
         uses: actions/upload-artifact@v4
         with:
-          name: source-code
+          name: project-files
           path: .
 
-  # [Job 2] 빌드, 테스트, 보안 점검, 배포
-  build-test-deploy:
-    needs: initialize-environment
+  # [JOB 2] 빌드 및 캐시 초기화 (Build & Fix Cache)
+  build-and-cache:
+    needs: generate-infrastructure
     runs-on: ubuntu-latest
     
-    # DB 서비스 컨테이너 가동
     services:
       postgres:
         image: postgres:15-alpine
         env:
-          POSTGRES_DB: security_db
-          POSTGRES_PASSWORD: mysecretpassword
+          POSTGRES_DB: mydb
+          POSTGRES_PASSWORD: password
         ports:
           - 5432:5432
         options: >-
@@ -143,93 +170,46 @@ jobs:
           --health-retries 5
 
     steps:
-      # 1. 생성된 코드 내려받기
-      - name: Download Source Code
+      # 1. 생성된 파일 다운로드
+      - name: Download Project Files
         uses: actions/download-artifact@v4
         with:
-          name: source-code
+          name: project-files
 
-      # 2. [수정됨] Java 설정 (이제 pom.xml이 존재하므로 에러 없음)
-      - name: Setup Java (Maven Cache)
+      # 2. Java 설정 (Maven 캐시 옵션 활성화)
+      - name: Setup Java Environment
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '17'
-          cache: 'maven' # Gradle 파일이 없어도 생성된 pom.xml을 감지함
+          cache: 'maven' # 이 옵션이 이제 pom.xml을 찾아서 작동합니다.
 
-      # 3. Node.js 설정
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      # 4. 보안 취약점 스캔 (Java + Node + Infra)
-      - name: Security Vulnerability Scan
-        uses: aquasecurity/trivy-action@master
-        with:
-          scan-type: 'fs'
-          scan-ref: '.'
-          hide-progress: false
-          format: 'table'
-          severity: 'CRITICAL,HIGH'
-          exit-code: '0'
-
-      # 5. Java Spring Boot 빌드 (Maven 사용)
-      - name: Build Java Backend
+      # 3. [핵심] Maven 의존성 강제 다운로드 (캐시 생성용)
+      # "Cache not found"를 해결하기 위해 의존성을 미리 받습니다.
+      - name: Resolve Dependencies (Populate Cache)
         run: |
-          echo ">>> [BUILD] Building Spring Boot..."
-          # Maven Wrapper가 없으므로 시스템 Maven 사용
+          echo ">>> Downloading Maven dependencies to populate cache..."
+          mvn dependency:go-offline -B
+          
+      # 4. 빌드 수행
+      - name: Build Application
+        run: |
+          echo ">>> Building JAR file..."
           mvn clean package -DskipTests
           
-          echo ">>> [CHECK] Verifying JAR..."
+          echo ">>> Verify Output..."
           ls -lh target/*.jar
 
-      # 6. React 빌드 (복구 로직 포함)
-      - name: Build React Frontend
+      # 5. 실행 테스트
+      - name: Test Execution
         run: |
-          echo ">>> [BUILD] Building React..."
-          npm install
-          # 보안 패치 후 스크립트 유실 방지 로직
-          npm pkg set scripts.build="react-scripts build"
-          
-          CI=false npm run build
+          nohup java -jar target/*.jar &
+          sleep 10
+          curl -I http://localhost:8080
 
-      # 7. 통합 실행 및 테스트 (Backend + Frontend + DB)
-      - name: Integration Test & Serve
-        run: |
-          echo ">>> [TEST] Starting Java Backend..."
-          # 백그라운드 실행
-          nohup java -jar target/*.jar > backend.log 2>&1 &
-          
-          echo ">>> [TEST] Starting Frontend Server..."
-          npm install -g serve
-          nohup serve -s build -l 3000 > frontend.log 2>&1 &
-          
-          echo ">>> [WAIT] Waiting for services to initialize..."
-          sleep 15
-          
-          echo ">>> [CHECK] Testing Backend URL (Port 8080)..."
-          curl -I http://localhost:8080 || echo "Backend check warning"
-          
-          echo ">>> [CHECK] Testing Frontend URL (Port 3000)..."
-          curl -I http://localhost:3000 || echo "Frontend check warning"
-          
-          echo "------------------------------------------------"
-          echo "🎉 Full Stack Environment Deployed Successfully"
-          echo "☕ Java Spring Boot: http://localhost:8080"
-          echo "⚛️ React Frontend:   http://localhost:3000"
-          echo "🐘 PostgreSQL:       localhost:5432"
-          echo "------------------------------------------------"
-
-      # 8. 최종 결과물 업로드
-      - name: Upload Deployment Artifacts
-        if: always()
+      # 6. 최종 결과물 업로드
+      - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: fullstack-release
-          path: |
-            target/*.jar
-            build/
-            backend.log
-            frontend.log
+          name: application-jar
+          path: target/*.jar
