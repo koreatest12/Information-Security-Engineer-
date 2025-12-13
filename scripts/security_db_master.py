@@ -1,174 +1,236 @@
 import sqlite3
 import os
+import json
 import datetime
 import re
 import base64
 import random
 import sys
+import shutil
 
 # =======================================================
-# ⚙️ CONFIGURATION & STEALTH PATTERNS
+# ⚙️ SYSTEM CONFIGURATION & CONSTANTS
 # =======================================================
-DB_DIR = "data"
-DB_PATH = os.path.join(DB_DIR, "security_archive.db")
-BACKUP_DIR = "backup"
+BASE_DIR = os.getcwd()
+DATA_DIR = os.path.join(BASE_DIR, "data")
+CONFIG_DIR = os.path.join(BASE_DIR, "config")
+BACKUP_DIR = os.path.join(BASE_DIR, "backup")
+DB_NAME = "grand_ops_secure.db"
+DB_PATH = os.path.join(DATA_DIR, DB_NAME)
+CONFIG_FILE = os.path.join(CONFIG_DIR, "db_engine_conf.json")
+SCHEMA_DUMP_FILE = os.path.join(DATA_DIR, "schema_snapshot.sql")
 
-# [핵심] 정규식 패턴 Base64 난독화 (소스코드 오탐지 방지)
+# [보안] 난독화된 패턴 (소스코드 스캔 오탐지 방지)
 PATTERNS_B64 = {
     "AWS_ACCESS_KEY": "QUtJQVswLTlBLVpdezE2fQ==", 
     "SSH_PRIVATE_KEY": "LS0tLS1CRUdJTiAoUlNBfDVEU0F8RUN8T1BFTlNTSCkgUFJJVkFURSBLRVktLS0tLQ=="
 }
 
-def get_pattern(name):
-    """Base64로 숨겨진 패턴을 런타임에만 복호화하여 사용"""
-    return base64.b64decode(PATTERNS_B64[name]).decode('utf-8')
+# =======================================================
+# 📜 MIGRATION PLANS (Schema Version Control)
+# =======================================================
+# 마이그레이션 스크립트 정의 (버전별 변경 사항)
+MIGRATIONS = {
+    1: [
+        """CREATE TABLE IF NOT EXISTS schema_versions (version INTEGER PRIMARY KEY, applied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)""",
+        """CREATE TABLE IF NOT EXISTS security_logic (id INTEGER PRIMARY KEY AUTOINCREMENT, rule_name TEXT, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)"""
+    ],
+    2: [
+        """ALTER TABLE security_logic ADD COLUMN severity_level TEXT DEFAULT 'LOW'""",
+        """ALTER TABLE security_logic ADD COLUMN detected_area TEXT DEFAULT 'UNKNOWN'"""
+    ],
+    3: [
+        """ALTER TABLE security_logic ADD COLUMN action_taken TEXT DEFAULT 'LOG_ONLY'""",
+        """CREATE TABLE IF NOT EXISTS audit_logs (log_id INTEGER PRIMARY KEY AUTOINCREMENT, action TEXT, status TEXT, timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP)"""
+    ],
+    4: [
+        """CREATE INDEX IF NOT EXISTS idx_severity ON security_logic(severity_level)""",
+        """CREATE INDEX IF NOT EXISTS idx_created_at ON security_logic(created_at)"""
+    ]
+}
 
 # =======================================================
-# 🛠️ DATABASE ENGINE (DB Master & Auto-Migration)
+# 🛠️ INFRASTRUCTURE & PROVISIONING MANAGER
 # =======================================================
-def init_db():
-    """DB 초기화 및 스키마 자동 마이그레이션 (Self-Healing)"""
-    if not os.path.exists(DB_DIR):
-        os.makedirs(DB_DIR)
-    
-    conn = sqlite3.connect(DB_PATH)
-    cursor = conn.cursor()
-    
-    # 1. 기본 테이블 생성 (없을 경우)
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS security_logic (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        )
-    ''')
-    
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS audit_logs (
-            log_id INTEGER PRIMARY KEY AUTOINCREMENT,
-            action TEXT,
-            status TEXT,
-            timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        )
-    ''')
-    
-    # 2. [FIX] 스키마 마이그레이션 (부족한 컬럼 자동 추가)
-    # 기존 DB 파일이 있더라도 새 컬럼이 없으면 자동으로 ALTER TABLE 수행
-    print("🔧 Checking DB Schema Integrity...")
-    cursor.execute("PRAGMA table_info(security_logic)")
-    existing_columns = {row[1] for row in cursor.fetchall()}
-    
-    required_columns = {
-        "rule_name": "TEXT",
-        "severity_level": "TEXT",
-        "detected_area": "TEXT",
-        "action_taken": "TEXT"
-    }
-    
-    for col_name, col_type in required_columns.items():
-        if col_name not in existing_columns:
-            print(f"  ↳ Migrating: Adding missing column '{col_name}'...")
+class InfraManager:
+    @staticmethod
+    def provision_environment():
+        """서버 환경 구성 및 디렉터리 권한 설정 (Installation)"""
+        print("🏗️ [Infra] Provisioning DB Environment...")
+        
+        # 1. 필수 디렉터리 생성
+        for d in [DATA_DIR, CONFIG_DIR, BACKUP_DIR]:
+            if not os.path.exists(d):
+                os.makedirs(d)
+                print(f"  ↳ Created directory: {d}")
+            
+            # [Security] 권한 강화 (Linux/Unix 환경)
+            if os.name == 'posix':
+                os.chmod(d, 0o700) # rwx------ (소유자만 접근 가능)
+
+        # 2. 설정 파일 생성 (Configuration Management)
+        config_data = {
+            "engine_version": "3.0.0",
+            "db_path": DB_PATH,
+            "max_connections": 10,
+            "maintenance_window": "02:00-04:00",
+            "last_provisioned": str(datetime.datetime.now())
+        }
+        
+        with open(CONFIG_FILE, 'w') as f:
+            json.dump(config_data, f, indent=4)
+        print("  ↳ Configuration file generated.")
+
+    @staticmethod
+    def snapshot_schema(conn):
+        """현재 DB 스키마를 SQL 파일로 덤프 (형상 관리용)"""
+        print("📸 [CM] Taking Schema Snapshot...")
+        try:
+            with open(SCHEMA_DUMP_FILE, 'w') as f:
+                for line in conn.iterdump():
+                    f.write('%s\n' % line)
+            print(f"  ↳ Schema dumped to {SCHEMA_DUMP_FILE}")
+        except Exception as e:
+            print(f"  ⚠️ Schema dump failed: {e}")
+
+# =======================================================
+# 🚀 DATABASE ENGINE & MIGRATOR
+# =======================================================
+class DBEngine:
+    def __init__(self):
+        self.conn = None
+
+    def connect(self):
+        self.conn = sqlite3.connect(DB_PATH)
+        self.conn.row_factory = sqlite3.Row
+
+    def get_current_version(self):
+        """현재 적용된 스키마 버전 확인"""
+        try:
+            cur = self.conn.cursor()
+            cur.execute("SELECT MAX(version) FROM schema_versions")
+            ver = cur.fetchone()[0]
+            return ver if ver is not None else 0
+        except sqlite3.OperationalError:
+            return 0
+
+    def run_migrations(self):
+        """버전 기반 자동 마이그레이션 실행"""
+        print("🔄 [DB] Checking for Schema Migrations...")
+        current_ver = self.get_current_version()
+        latest_ver = max(MIGRATIONS.keys())
+
+        if current_ver >= latest_ver:
+            print(f"  ✅ Database is up-to-date (Version {current_ver}).")
+            return
+
+        print(f"  ⚠️ Current Version: {current_ver} -> Target: {latest_ver}")
+        
+        for ver in range(current_ver + 1, latest_ver + 1):
+            print(f"  🚀 Applying Migration v{ver}...")
             try:
-                cursor.execute(f"ALTER TABLE security_logic ADD COLUMN {col_name} {col_type}")
-            except sqlite3.OperationalError as e:
-                print(f"  ⚠️ Migration warning for {col_name}: {e}")
+                for sql in MIGRATIONS[ver]:
+                    self.conn.execute(sql)
+                
+                # 버전 기록
+                self.conn.execute("INSERT INTO schema_versions (version) VALUES (?)", (ver,))
+                self.conn.commit()
+                print(f"    - v{ver} Applied Successfully.")
+            except Exception as e:
+                print(f"    ❌ Migration v{ver} FAILED: {e}")
+                sys.exit(1) # 마이그레이션 실패 시 즉시 중단 (데이터 보호)
 
-    conn.commit()
-    return conn
-
-def simulate_data_processing(conn):
-    """
-    [DB Master 기능] 데이터 적재 및 정리 로직
-    """
-    cursor = conn.cursor()
-    
-    # 1. 새로운 보안 로그 적재
-    actions = ["BLOCKED_IP", "QUARANTINED_FILE", "FLAGGED_USER", "SESSION_KILL"]
-    severities = ["LOW", "MEDIUM", "HIGH", "CRITICAL"]
-    
-    print("📥 Ingesting new security telemetry data...")
-    try:
-        for _ in range(random.randint(5, 15)):
+    def simulate_operations(self):
+        """데이터 처리 시뮬레이션 (Traffic Generation)"""
+        print("📊 [Ops] Processing Security Telemetry...")
+        cursor = self.conn.cursor()
+        
+        actions = ["BLOCKED", "QUARANTINED", "ALERTED", "DROPPED"]
+        severities = ["LOW", "MEDIUM", "HIGH", "CRITICAL"]
+        
+        # Data Ingestion
+        for _ in range(random.randint(5, 10)):
             cursor.execute('''
                 INSERT INTO security_logic (rule_name, severity_level, detected_area, action_taken)
                 VALUES (?, ?, ?, ?)
             ''', (
-                f"Rule-{random.randint(1000, 9999)}", 
-                random.choice(severities), 
-                "Gateway_Inbound", 
+                f"SIG-{random.randint(1000,9999)}",
+                random.choice(severities),
+                "Firewall_Zone_A",
                 random.choice(actions)
             ))
-        print("✅ Data ingestion successful.")
         
-    except sqlite3.OperationalError as e:
-        print(f"❌ DB Insert Error: {e}")
-        print("⚠️ Attempting to recreate table for next run...")
-        cursor.execute("DROP TABLE IF EXISTS security_logic")
-        # 다음 실행 때 init_db가 다시 테이블을 만들도록 유도
-    
-    # 2. 오래된 데이터 정리 (Data Pruning -> VACUUM 효과 유도)
-    try:
-        cursor.execute("DELETE FROM security_logic WHERE id % 10 == 0") 
-        conn.commit()
-    except Exception as e:
-        print(f"⚠️ Pruning skipped: {e}")
+        # Data Pruning (Optimization Prep)
+        cursor.execute("DELETE FROM security_logic WHERE id % 20 == 0")
+        self.conn.commit()
 
-    # 3. 작업 로깅
-    cursor.execute("INSERT INTO audit_logs (action, status) VALUES (?, ?)", ("DATA_SYNC", "SUCCESS"))
-    conn.commit()
+    def close(self):
+        if self.conn:
+            self.conn.close()
 
 # =======================================================
-# 🕵️‍♂️ INTERNAL SECURITY SCANNER (Self-Check)
+# 🕵️‍♂️ SECURITY & COMPLIANCE SCANNER
 # =======================================================
-def run_internal_scan():
-    """내부 파일 스캔 (자신 제외, Base64 패턴 사용)"""
-    print("\n🔍 Running Internal Logic Scanner...")
+def get_pattern(name):
+    return base64.b64decode(PATTERNS_B64[name]).decode('utf-8')
+
+def run_security_scan():
+    print("\n🔍 [Sec] Running Internal Security Scan...")
     
-    SKIP_DIRS = {'.git', '.github', 'backup', 'scripts', '__pycache__', 'venv', 'data'}
-    SKIP_EXTS = {'.db', '.bak', '.png', '.jpg', '.pyc', '.txt'}
+    SKIP_DIRS = {'.git', '.github', 'backup', 'scripts', '__pycache__', 'config', 'data'}
+    SKIP_EXTS = {'.db', '.bak', '.sql', '.json', '.pyc'}
     
-    aws_pattern = get_pattern("AWS_ACCESS_KEY")
-    ssh_pattern = get_pattern("SSH_PRIVATE_KEY")
+    patterns = {
+        "AWS": get_pattern("AWS_ACCESS_KEY"),
+        "SSH": get_pattern("SSH_PRIVATE_KEY")
+    }
     
-    found_issues = 0
-    
-    for root, dirs, files in os.walk("."):
+    issues = 0
+    for root, dirs, files in os.walk(BASE_DIR):
         dirs[:] = [d for d in dirs if d not in SKIP_DIRS]
         
         for file in files:
             if os.path.splitext(file)[1] in SKIP_EXTS: continue
-            if file == os.path.basename(__file__): continue # 자기 자신 제외
+            if file == os.path.basename(__file__): continue
             
             filepath = os.path.join(root, file)
             try:
-                with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
+                with open(filepath, 'r', errors='ignore') as f:
                     content = f.read()
-                    if re.search(aws_pattern, content):
-                        print(f"⚠️  [WARNING] Potential AWS Key in: {filepath}")
-                        found_issues += 1
-                    if re.search(ssh_pattern, content):
-                        print(f"⚠️  [WARNING] Potential SSH Key in: {filepath}")
-                        found_issues += 1
-            except Exception: pass
-
-    if found_issues == 0:
-        print("✅ Internal Logic Scan Passed.")
+                    for name, pat in patterns.items():
+                        if re.search(pat, content):
+                            print(f"  ⚠️  [ALERT] Potential {name} Key in: {filepath}")
+                            issues += 1
+            except: pass
+            
+    if issues == 0:
+        print("  ✅ Security Scan Passed.")
     else:
-        print(f"⚠️  Internal Scan found {found_issues} potential issues.")
+        print(f"  ⚠️  Found {issues} potential issues.")
 
 # =======================================================
-# 🚀 MAIN EXECUTION
+# 🎬 ENTRY POINT
 # =======================================================
 if __name__ == "__main__":
-    print(f"🚀 Security DB Master Engine Started at {datetime.datetime.now()}")
+    print(f"🚀 Security DB Master Started: {datetime.datetime.now()}")
     
-    # 1. DB 초기화 (스키마 자동 복구 포함)
-    connection = init_db()
+    # 1. 인프라 프로비저닝 (설치 및 환경구성)
+    InfraManager.provision_environment()
     
-    # 2. 데이터 처리 및 로직 수행
-    simulate_data_processing(connection)
+    # 2. DB 엔진 구동 및 마이그레이션
+    engine = DBEngine()
+    engine.connect()
+    engine.run_migrations()
     
-    # 3. 내부 보안 스캔 수행
-    run_internal_scan()
+    # 3. 데이터 오퍼레이션 수행
+    engine.simulate_operations()
     
-    connection.close()
-    print("✅ All Master Engine tasks completed successfully.")
+    # 4. 형상 관리 (스키마 스냅샷 저장)
+    InfraManager.snapshot_schema(engine.conn)
+    
+    engine.close()
+    
+    # 5. 보안 스캔
+    run_security_scan()
+    
+    print("✅ System Shutdown Gracefully.")
