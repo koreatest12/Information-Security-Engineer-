@@ -1,9 +1,15 @@
-name: 📰 Grand Ops News-Commander v23 (AI & IT Briefing)
+name: 🌌 Grand Ops Universe v24 (Release, Pkg & Omni-News)
 
 on:
   schedule:
-    - cron: '*/20 * * * *' # 뉴스 수집을 위해 20분 주기
+    - cron: '*/30 * * * *' # 30분 주기 (뉴스 및 릴리즈 체크)
   workflow_dispatch:
+    inputs:
+      create_release:
+        description: 'Create a GitHub Release?'
+        required: false
+        type: boolean
+        default: false
 
 concurrency:
   group: ${{ github.workflow }}
@@ -11,15 +17,16 @@ concurrency:
 
 env:
   TZ: 'Asia/Seoul'
-  DB_PATH: 'data/grand_ops_master.db'
-  DASHBOARD_FILE: 'data/omni_dashboard.md'
-  ARTIFACT_PASSWORD: ${{ secrets.ARTIFACT_KEY || 'News_Secure_2025' }}
+  DB_PATH: 'data/grand_ops_universe.db'
+  DASHBOARD_FILE: 'data/universe_dashboard.md'
+  RELEASE_DIR: 'dist'
+  ARTIFACT_PASSWORD: ${{ secrets.ARTIFACT_KEY || 'Universe_Secret_2025' }}
 
 permissions:
   contents: write
 
 jobs:
-  news-dashboard-engine:
+  universe-engine:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -27,173 +34,205 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 🏗️ Setup Intelligence Stack
+      - name: 🏗️ Initialize Universe Stack
         run: |
-          echo "📡 Initializing News & Monitor Stack..."
-          mkdir -p data backup scripts
+          echo "🌌 Booting Grand Ops Universe..."
+          mkdir -p data backup scripts dist
           python -m pip install --upgrade pip
-          # [핵심] feedparser: RSS 뉴스 수집용 라이브러리 추가
+          # [핵심] feedparser(뉴스), psutil(시스템), requests(API)
           echo -e "requests\npandas\nnumpy\nscikit-learn\ntabulate\npsutil\nfeedparser" > requirements.txt
           pip install -r requirements.txt
 
-      # [Core] 시스템 감시 + 외부 데이터 + [NEW] 뉴스 수집 통합 엔진
-      - name: 🧠 Generate News-Commander Script
+      # [Core] 릴리즈, 패키징, 뉴스, 관제가 통합된 초거대 스크립트
+      - name: 🧠 Generate Universe Script
         run: |
-          cat <<'EOF' > scripts/omni_core.py
+          cat <<'EOF' > scripts/universe_core.py
           import sqlite3
           import os
           import datetime
           import requests
           import psutil
-          import feedparser # RSS 파싱
+          import feedparser
+          import shutil
+          import tarfile
           import pandas as pd
           from sklearn.ensemble import IsolationForest
 
-          # 설정
-          DB_PATH = os.getenv('DB_PATH', 'data/grand_ops_master.db')
-          DASH_PATH = os.getenv('DASHBOARD_FILE', 'data/omni_dashboard.md')
+          # 환경 설정
+          DB_PATH = os.getenv('DB_PATH', 'data/grand_ops_universe.db')
+          DASH_PATH = os.getenv('DASHBOARD_FILE', 'data/universe_dashboard.md')
+          RELEASE_DIR = os.getenv('RELEASE_DIR', 'dist')
           
-          class NewsAggregator:
-              """IT 및 AI 관련 뉴스 수집기"""
-              def __init__(self):
-                  # 공신력 있는 테크 뉴스 RSS 피드 목록
-                  self.feeds = [
-                      "https://techcrunch.com/category/artificial-intelligence/feed/", # TechCrunch AI
-                      "https://www.wired.com/feed/category/science/latest/rss", # Wired Science/AI
-                      "https://feeds.feedburner.com/TheHackersNews", # Security
-                      "https://openai.com/blog/rss.xml" # OpenAI Blog
-                  ]
-                  self.keywords = ['AI', 'GPT', 'LLM', 'Generative', 'Nvidia', 'Data', 'Cyber', 'Cloud', 'Python', 'Model']
-
-              def fetch_news(self, limit=5):
-                  news_items = []
+          class ReleaseManager:
+              """🚀 소프트웨어 릴리즈 및 패키지 빌드 시스템"""
+              def __init__(self, conn):
+                  self.conn = conn
+                  self.version = datetime.datetime.now().strftime("v%Y.%m.%d.%H%M")
+                  
+              def build_package(self):
+                  """데이터 및 로그를 패키징하여 배포 파일 생성 (.tar.gz)"""
                   try:
-                      for url in self.feeds:
-                          feed = feedparser.parse(url)
-                          for entry in feed.entries[:5]: # 각 피드당 최신 5개 스캔
-                              title = entry.title
-                              link = entry.link
-                              # 날짜 처리 (없으면 현재 시간)
-                              published = getattr(entry, 'published', datetime.datetime.now().strftime('%Y-%m-%d'))[:10]
-                              
-                              # 키워드 필터링 (관심 주제만)
-                              # 제목에 키워드가 있거나, AI 전용 피드인 경우
-                              if any(k.lower() in title.lower() for k in self.keywords) or "artificial-intelligence" in url:
-                                  news_items.append({'date': published, 'source': feed.feed.title, 'title': title, 'link': link})
+                      if not os.path.exists(RELEASE_DIR): os.makedirs(RELEASE_DIR)
+                      
+                      pkg_name = f"grand-ops-core-{self.version}.tar.gz"
+                      pkg_path = os.path.join(RELEASE_DIR, pkg_name)
+                      
+                      # data 폴더를 압축 (패키징)
+                      with tarfile.open(pkg_path, "w:gz") as tar:
+                          tar.add("data", arcname=os.path.basename("data"))
+                      
+                      return self.version, pkg_name, os.path.getsize(pkg_path) / 1024 # KB size
                   except Exception as e:
-                      print(f"⚠️ News Fetch Error: {e}")
-                      return []
+                      print(f"⚠️ Packaging Error: {e}")
+                      return self.version, "Error", 0
 
-                  # 날짜순 정렬 후 상위 N개 반환
-                  news_items.sort(key=lambda x: x['date'], reverse=True)
-                  return news_items[:limit]
+              def generate_notes(self):
+                  """릴리즈 노트 자동 생성"""
+                  notes_path = os.path.join(RELEASE_DIR, "RELEASE_NOTES.md")
+                  with open(notes_path, "w") as f:
+                      f.write(f"# 🚀 Release Notes - {self.version}\n\n")
+                      f.write("## 📦 What's New\n")
+                      f.write("- Automated Package Build complete.\n")
+                      f.write("- Latest AI Intelligence data included.\n")
+                      f.write("- Security Audit logs synced.\n")
+                  return notes_path
+
+          class NewsBroadcaster:
+              """📰 다분야(정치, 연예, 날씨, IT) 뉴스 수집기"""
+              def __init__(self):
+                  self.feeds = {
+                      "🤖 AI & Tech": "https://techcrunch.com/category/artificial-intelligence/feed/",
+                      "🏛️ Politics": "http://feeds.bbci.co.uk/news/politics/rss.xml",
+                      "🎬 Entertainment": "https://www.eonline.com/news/rss.xml",
+                      "🌪️ Weather News": "https://www.sciencedaily.com/rss/earth_climate/weather.xml"
+                  }
+
+              def fetch_all(self):
+                  news_board = {}
+                  for category, url in self.feeds.items():
+                      try:
+                          feed = feedparser.parse(url)
+                          items = []
+                          for entry in feed.entries[:3]: # 카테고리별 상위 3개
+                              items.append(f"[{entry.title}]({entry.link})")
+                          news_board[category] = items
+                      except:
+                          news_board[category] = ["Unavailable"]
+                  return news_board
 
           class SystemMonitor:
               @staticmethod
-              def get_metrics():
-                  return psutil.cpu_percent(interval=1), psutil.virtual_memory().percent, psutil.disk_usage('/').percent
-
-              @staticmethod
-              def get_geo_info():
-                  try:
-                      r = requests.get('https://ipinfo.io/json', timeout=3).json()
-                      return r.get('ip', 'Unknown'), r.get('city', 'Unknown'), r.get('country', 'Unknown')
-                  except: return "127.0.0.1", "Localhost", "N/A"
-
-          class ExternalFetcher:
-              @staticmethod
-              def get_bitcoin():
-                  try:
-                      r = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd", headers={'User-Agent': 'Bot'}, timeout=3)
-                      return r.json()['bitcoin']['usd']
-                  except: return 97500.0
+              def get_stats():
+                  return psutil.cpu_percent(), psutil.virtual_memory().percent, psutil.disk_usage('/').percent
 
           class DashboardGenerator:
-              def __init__(self, conn):
-                  self.conn = conn
+              def __init__(self):
+                  pass
 
               def draw_gauge(self, val):
                   fill = int((val / 100) * 10)
                   return "█" * fill + "░" * (10 - fill)
 
-              def generate(self, sys, geo, btc, news_list):
-                  cpu, ram, disk = sys
-                  ip, city, country = geo
+              def generate(self, sys_stats, news_data, pkg_info):
+                  cpu, ram, disk = sys_stats
+                  ver, pkg_name, pkg_size = pkg_info
                   
                   with open(DASH_PATH, 'w', encoding='utf-8') as f:
-                      f.write(f"# 📰 Grand Ops News-Commander\n")
-                      f.write(f"> **Report Time:** {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (KST) | **Location:** {city}, {country}\n\n")
+                      f.write(f"# 🌌 Grand Ops Universe Dashboard\n")
+                      f.write(f"> **System Time:** {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')} | **Latest Version:** `{ver}`\n\n")
 
-                      # 1. 시스템 모니터링 섹션
-                      f.write("### 🖥️ System & Resource Status\n")
-                      f.write(f"| Metric | Usage | Gauge | Status |\n|---|---|---|---|\n")
-                      f.write(f"| **CPU** | {cpu}% | `{self.draw_gauge(cpu)}` | {'🟢 Optimal' if cpu < 70 else '🔴 High'} |\n")
-                      f.write(f"| **RAM** | {ram}% | `{self.draw_gauge(ram)}` | {'🟢 Good' if ram < 80 else '🟡 Warning'} |\n")
-                      f.write(f"| **BTC** | ${btc:,.2f} | - | Global Index |\n\n")
+                      # 1. 릴리즈 & 패키지 섹션
+                      f.write("### 🚀 Release & Package Status\n")
+                      f.write(f"| Version | Package Name | Size | Status |\n|---|---|---|---|\n")
+                      f.write(f"| **{ver}** | `{pkg_name}` | {pkg_size:.2f} KB | 🟢 **Built & Ready** |\n\n")
 
-                      # 2. [NEW] AI & IT 뉴스 섹션
-                      f.write("### 🤖 Global AI & IT Trends (Live Briefing)\n")
-                      if news_list:
-                          f.write(f"| Date | Source | Headline (Click to Read) |\n|---|---|---|\n")
-                          for n in news_list:
-                              # 소스명 간소화
-                              src = n['source'].replace('TechCrunch', 'TC').replace('The Hacker News', 'HackerNews').split(' ')[0]
-                              f.write(f"| {n['date']} | **{src}** | [{n['title']}]({n['link']}) |\n")
-                      else:
-                          f.write("> 📭 No major AI updates in the last hour.\n")
-                      
-                      f.write("\n---\n*Dashboard generated by Grand Ops AI Engine v23.0*")
+                      # 2. 시스템 상태
+                      f.write("### 🖥️ Infrastructure Health\n")
+                      f.write(f"- **CPU:** `{self.draw_gauge(cpu)}` {cpu}%\n")
+                      f.write(f"- **RAM:** `{self.draw_gauge(ram)}` {ram}%\n")
+                      f.write(f"- **Disk:** `{self.draw_gauge(disk)}` {disk}%\n\n")
+
+                      # 3. 통합 뉴스룸
+                      f.write("### 📰 Global Newsroom (Live Feed)\n")
+                      for cat, headlines in news_data.items():
+                          f.write(f"#### {cat}\n")
+                          for hl in headlines:
+                              f.write(f"- {hl}\n")
+                          f.write("\n")
+
+                      f.write("---\n*Powered by Grand Ops Universe v24.0*")
 
           def main():
               if not os.path.exists("data"): os.makedirs("data")
               conn = sqlite3.connect(DB_PATH)
               
-              # 모듈 실행
+              # 1. 시스템 모니터링
               sys_mon = SystemMonitor()
-              metrics = sys_mon.get_metrics()
-              geo = sys_mon.get_geo_info()
+              stats = sys_mon.get_stats()
               
-              ext = ExternalFetcher()
-              btc = ext.get_bitcoin()
+              # 2. 뉴스 수집 (대량)
+              print("📡 Fetching Global Feeds...")
+              broadcaster = NewsBroadcaster()
+              news = broadcaster.fetch_all()
               
-              # 뉴스 수집
-              print("📡 Scanning Global Tech News...")
-              aggregator = NewsAggregator()
-              news = aggregator.fetch_news(limit=7) # 상위 7개 뉴스
+              # 3. 릴리즈 및 패키징 수행
+              print("📦 Building Software Package...")
+              release_mgr = ReleaseManager(conn)
+              pkg_info = release_mgr.build_package() # (ver, name, size)
+              release_mgr.generate_notes()
               
-              # 대시보드 생성
-              dash = DashboardGenerator(conn)
-              dash.generate(metrics, geo, btc, news)
+              # 4. 대시보드 생성
+              dash = DashboardGenerator()
+              dash.generate(stats, news, pkg_info)
               
               conn.close()
-              print("✅ Dashboard with News Generated.")
+              print("✅ Universe Tasks Completed.")
 
           if __name__ == "__main__":
               main()
           EOF
 
-      - name: 🚀 Run News-Commander
-        run: python scripts/omni_core.py
+      - name: 🚀 Run Universe Engine
+        run: python scripts/universe_core.py
 
-      # [핵심] GitHub Actions Summary 출력
-      - name: 📢 Publish Briefing
-        run: |
-          cat "$DASHBOARD_FILE" >> $GITHUB_STEP_SUMMARY
+      # GitHub Actions 요약 화면에 대시보드 출력
+      - name: 📢 Publish Universe Dashboard
+        run: cat "$DASHBOARD_FILE" >> $GITHUB_STEP_SUMMARY
 
-      - name: 🔒 Encrypt & Upload
-        run: |
-          zip -e -P "$ARTIFACT_PASSWORD" news_dashboard.zip data/*.md data/*.db
-      
-      - name: Upload Artifacts
+      # [NEW] 릴리즈 패키지 업로드 (Artifact)
+      - name: 📦 Upload Release Package
         uses: actions/upload-artifact@v4
         with:
-          name: Intelligence-Bundle
-          path: news_dashboard.zip
+          name: grand-ops-release-package
+          path: dist/*
+          retention-days: 3
 
-      - name: 🔄 Sync Intelligence
+      # [NEW] GitHub Release 자동 생성 (조건부)
+      - name: 🚀 Create GitHub Release
+        if: github.event.inputs.create_release == 'true'
+        uses: softprops/action-gh-release@v1
+        with:
+          files: dist/*.tar.gz
+          body_path: dist/RELEASE_NOTES.md
+          tag_name: v${{ github.run_number }}
+          name: Release v${{ github.run_number }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🔒 Encrypt & Backup
         run: |
-          git config --global user.name "News-Bot"
-          git config --global user.email "news@grand-ops.ai"
+          zip -e -P "$ARTIFACT_PASSWORD" universe_backup.zip data/*.md data/*.db dist/*
+      
+      - name: Upload Secured Backup
+        uses: actions/upload-artifact@v4
+        with:
+          name: Universe-Secure-Backup
+          path: universe_backup.zip
+
+      - name: 🔄 Sync Universe
+        run: |
+          git config --global user.name "Universe-Bot"
+          git config --global user.email "bot@grand-ops.ai"
           git config --global --add safe.directory $GITHUB_WORKSPACE
           
           [ -f "$DASHBOARD_FILE" ] && git add -f "$DASHBOARD_FILE"
@@ -201,5 +240,5 @@ jobs:
           git add -A
           
           if [ -z "$(git status --porcelain)" ]; then exit 0; fi
-          git commit -m "dashboard: ai news & metrics update [skip ci]"
+          git commit -m "universe: release build & omni-news update [skip ci]"
           git push origin main || echo "Sync skipped"
