@@ -7,6 +7,7 @@ import base64
 import random
 import sys
 import shutil
+import stat  # [Security] 권한 제어를 위한 모듈 추가
 
 # =======================================================
 # ⚙️ SYSTEM CONFIGURATION
@@ -19,11 +20,6 @@ DB_NAME = "grand_ops_secure.db"
 DB_PATH = os.path.join(DATA_DIR, DB_NAME)
 CONFIG_FILE = os.path.join(CONFIG_DIR, "db_engine_conf.json")
 SCHEMA_DUMP_FILE = os.path.join(DATA_DIR, "schema_snapshot.sql")
-
-PATTERNS_B64 = {
-    "AWS_ACCESS_KEY": "QUtJQVswLTlBLVpdezE2fQ==", 
-    "SSH_PRIVATE_KEY": "LS0tLS1CRUdJTiAoUlNBfDVEU0F8RUN8T1BFTlNTSCkgUFJJVkFURSBLRVktLS0tLQ=="
-}
 
 MIGRATIONS = {
     1: [
@@ -44,22 +40,53 @@ MIGRATIONS = {
     ]
 }
 
+# =======================================================
+# 🔐 SECURITY DEFENSE LAYER (Grand Ops Logic)
+# =======================================================
+class SecurityGuardian:
+    @staticmethod
+    def enforce_permissions(path, is_dir=False):
+        """
+        [Critical] 파일/디렉토리 권한 강제 설정
+        - Directory: 700 (drwx------) : 소유자만 진입 가능
+        - File: 600 (-rw-------) : 소유자만 읽기/쓰기 가능
+        """
+        if not os.path.exists(path):
+            return
+
+        try:
+            if is_dir:
+                # 디렉터리: 소유자만 실행/읽기/쓰기 (rwx------)
+                os.chmod(path, stat.S_IRWXU)
+            else:
+                # 파일: 소유자만 읽기/쓰기 (rw-------)
+                os.chmod(path, stat.S_IRUSR | stat.S_IWUSR)
+            
+            # (옵션) 디버깅용 로그 (보안상 실제로는 조용히 처리하는 것이 좋음)
+            # print(f"  🔒 Locked down: {os.path.basename(path)}")
+        except Exception as e:
+            print(f"  ⚠️ Security Warning: Failed to chmod {path}: {e}")
+
 class InfraManager:
     @staticmethod
     def provision_environment():
-        """환경 구성 (Idempotent: 멱등성 보장)"""
-        print("🏗️ [Infra] Provisioning Environment...")
+        """환경 구성 (Idempotent + Security Hardening)"""
+        print("🏗️ [Infra] Provisioning Secure Environment...")
+        
+        # 1. 디렉토리 보안 생성
         for d in [DATA_DIR, CONFIG_DIR, BACKUP_DIR]:
             if not os.path.exists(d):
                 os.makedirs(d)
-                if os.name == 'posix': os.chmod(d, 0o700)
+            # 생성 후 즉시 권한 700 적용
+            SecurityGuardian.enforce_permissions(d, is_dir=True)
 
-        # 설정 파일은 내용이 변경될 때만 덮어쓰기 (Git 충돌 방지)
+        # 2. 설정 파일 관리
         new_config = {
             "engine_version": "3.1.0",
             "db_path": DB_PATH,
             "max_connections": 20,
-            "policy": "strict"
+            "policy": "strict_isolation",
+            "access_control": "owner_only"
         }
         
         should_write = True
@@ -67,7 +94,6 @@ class InfraManager:
             try:
                 with open(CONFIG_FILE, 'r') as f:
                     current_config = json.load(f)
-                # 날짜/시간 필드 등 불필요한 변경사항 제거하여 diff 최소화
                 if current_config == new_config:
                     should_write = False
             except: pass
@@ -76,21 +102,23 @@ class InfraManager:
             with open(CONFIG_FILE, 'w') as f:
                 json.dump(new_config, f, indent=4)
             print("  ↳ Configuration updated.")
-        else:
-            print("  ↳ Configuration is up-to-date (Skipped write).")
+        
+        # [Security] 설정 파일 권한 600 강제 (생성 혹은 수정 후)
+        SecurityGuardian.enforce_permissions(CONFIG_FILE, is_dir=False)
 
     @staticmethod
     def snapshot_schema(conn):
-        """스키마 스냅샷 (정렬하여 Git Diff 최소화)"""
+        """스키마 스냅샷 및 보안 저장"""
         try:
             with open(SCHEMA_DUMP_FILE, 'w') as f:
-                # iterdump 결과가 불규칙할 수 있으므로 정렬 고려 (단, iterdump는 제너레이터라 그대로 씀)
-                # 대신 파일 내용을 비교하여 변경없으면 터치하지 않음
                 temp_dump = ""
                 for line in conn.iterdump():
                     temp_dump += f"{line}\n"
-                
                 f.write(temp_dump)
+            
+            # [Security] 덤프 파일 권한 600 강제
+            SecurityGuardian.enforce_permissions(SCHEMA_DUMP_FILE, is_dir=False)
+            
         except Exception as e:
             print(f"  ⚠️ Schema dump warning: {e}")
 
@@ -99,8 +127,13 @@ class DBEngine:
         self.conn = None
     
     def connect(self):
+        # 연결 시점에 파일이 생성되므로 연결 직후 권한 검사 수행
         self.conn = sqlite3.connect(DB_PATH)
         self.conn.row_factory = sqlite3.Row
+        
+        # [Security] DB 파일이 존재하면 즉시 권한 600 강제
+        if os.path.exists(DB_PATH):
+            SecurityGuardian.enforce_permissions(DB_PATH, is_dir=False)
 
     def get_current_version(self):
         try:
@@ -126,15 +159,15 @@ class DBEngine:
 
     def simulate_operations(self):
         cursor = self.conn.cursor()
-        print("📊 Processing Data...")
+        print("📊 Processing Secured Data Transaction...")
         # 데이터 적재
         for _ in range(random.randint(1, 5)):
             cursor.execute('''
                 INSERT INTO security_logic (rule_name, severity_level, detected_area, action_taken)
                 VALUES (?, ?, ?, ?)
-            ''', (f"R-{random.randint(100,999)}", "MEDIUM", "DMZ", "BLOCK"))
+            ''', (f"R-{random.randint(100,999)}", "MEDIUM", "INTERNAL_NET", "ISOLATE"))
         
-        # 데이터 정리 (VACUUM 효율을 위해 일부 삭제)
+        # 데이터 정리
         cursor.execute("DELETE FROM security_logic WHERE id IN (SELECT id FROM security_logic ORDER BY random() LIMIT 2)")
         self.conn.commit()
 
@@ -142,7 +175,11 @@ class DBEngine:
         if self.conn: self.conn.close()
 
 if __name__ == "__main__":
-    print(f"🚀 Master Engine Start: {datetime.datetime.now()}")
+    print(f"\n{'='*50}")
+    print(f"🚀 GRAND OPS MASTER ENGINE START: {datetime.datetime.now()}")
+    print(f"🛡️  SECURITY PROTOCOL: STRICT (CHMOD 600/700)")
+    print(f"{'='*50}\n")
+    
     InfraManager.provision_environment()
     
     engine = DBEngine()
@@ -152,4 +189,4 @@ if __name__ == "__main__":
     InfraManager.snapshot_schema(engine.conn)
     engine.close()
     
-    print("✅ Engine Task Completed.")
+    print("\n✅ Engine Task Completed Successfully.")
