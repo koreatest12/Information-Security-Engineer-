@@ -1,0 +1,194 @@
+import sqlite3
+import os
+import datetime
+import psutil
+import requests
+import feedparser
+from bs4 import BeautifulSoup
+import pandas as pd
+from textblob import TextBlob
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
+# ==========================================
+# ⚙️ CONFIGURATION
+# ==========================================
+DB_PATH = os.getenv('DB_PATH', 'data/grand_ops_finance.db')
+DASH_PATH = os.getenv('DASHBOARD_FILE', 'data/finance_dashboard.md')
+USER_QUERY = os.getenv('USER_QUERY', '')
+
+# ==========================================
+# 1. HYPERSCALE MONITOR (시스템 자원)
+# ==========================================
+class HyperscaleMonitor:
+    def __init__(self):
+        self.v_cores = 128
+        self.v_ram_gb = 512
+    
+    def get_metrics(self):
+        real_cpu = psutil.cpu_percent()
+        real_ram = psutil.virtual_memory().percent
+        return {
+            "cpu_load": real_cpu,
+            "ram_percent": real_ram,
+            "spec_cpu": f"{self.v_cores} vCores",
+            "spec_ram": f"{(real_ram/100)*self.v_ram_gb:.1f}/{self.v_ram_gb} GB"
+        }
+
+# ==========================================
+# 2. TARGETED NEWS ENGINE (금융 특화)
+# ==========================================
+class TargetedNewsEngine:
+    """금융사(신한/하나) 및 일반 뉴스 통합 수집"""
+    def __init__(self):
+        # Google News RSS를 이용해 특정 키워드 정밀 추적
+        self.feeds = {
+            # 1. 금융사 특화 (요청사항 반영)
+            "FIN_SHINHAN_BANK": "https://news.google.com/rss/search?q=신한은행&hl=ko&gl=KR&ceid=KR:ko",
+            "FIN_HANA_BANK": "https://news.google.com/rss/search?q=하나은행&hl=ko&gl=KR&ceid=KR:ko",
+            "FIN_SHINHAN_INV": "https://news.google.com/rss/search?q=신한투자증권+OR+신한금융투자&hl=ko&gl=KR&ceid=KR:ko",
+            "FIN_HANA_INV": "https://news.google.com/rss/search?q=하나증권+OR+하나금융투자&hl=ko&gl=KR&ceid=KR:ko",
+            
+            # 2. 기존 뉴스 소스 (네이버 속보, 보안)
+            "KR_NAVER": "https://news.naver.com/main/rss/rss_flash.nhn",
+            "KR_SECURITY": "https://www.boannews.com/media/news_rss.xml",
+            "US_TECH": "https://techcrunch.com/category/artificial-intelligence/feed/"
+        }
+        self.headers = {'User-Agent': 'Mozilla/5.0 (GrandOpsBot/1.0)'}
+
+    def fetch_all(self):
+        news_data = {}
+        corpus = [] # AI 학습용 텍스트
+        
+        for source, url in self.feeds.items():
+            entries = []
+            try:
+                f = feedparser.parse(url)
+                if not f.entries: 
+                    r = requests.get(url, headers=self.headers, timeout=5)
+                    f = feedparser.parse(r.content)
+                    
+                for e in f.entries[:3]: # 소스당 상위 3개
+                    clean_title = e.title.replace("&quot;", "'").replace("<b>", "").replace("</b>", "")
+                    entries.append({"title": clean_title, "link": e.link})
+                    
+                    # AI 학습용 태깅
+                    tag = "Finance" if "FIN" in source else "General"
+                    corpus.append(f"[{tag}/{source}] {clean_title}")
+            except: pass
+            news_data[source] = entries
+        
+        return news_data, corpus
+
+# ==========================================
+# 3. AI COGNITIVE COPILOT
+# ==========================================
+class MasterCopilot:
+    def __init__(self, news_corpus, sys_metrics):
+        self.knowledge_base = news_corpus
+        # 시스템 상태 주입
+        self.knowledge_base.append(f"SYSTEM: CPU {sys_metrics['cpu_load']}%, RAM {sys_metrics['ram_percent']}%. Status: Healthy.")
+
+    def generate_response(self, query):
+        if not self.knowledge_base: return "뉴스 데이터를 수집하지 못했습니다."
+        
+        vectorizer = TfidfVectorizer()
+        tfidf_matrix = vectorizer.fit_transform(self.knowledge_base)
+        query_vec = vectorizer.transform([query])
+        
+        sim_scores = cosine_similarity(query_vec, tfidf_matrix).flatten()
+        top_indices = sim_scores.argsort()[:-5:-1] # 상위 4개
+        
+        context_lines = []
+        for idx in top_indices:
+            if sim_scores[idx] > 0.05:
+                context_lines.append(f"- {self.knowledge_base[idx]}")
+        
+        timestamp = datetime.datetime.now().strftime("%H:%M")
+        res = f"### 🤖 Copilot Briefing ({timestamp})\n"
+        res += f"> **Q:** \"{query}\"\n\n"
+        
+        if context_lines:
+            res += "**✅ AI 분석 결과 (관련성 높음):**\n" + "\n".join(context_lines)
+        else:
+            res += "❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)"
+        return res
+
+# ==========================================
+# 4. DASHBOARD ENGINE
+# ==========================================
+class DashboardEngine:
+    def draw_bar(self, val):
+        fill = int((val/100)*15)
+        return "█"*fill + "░"*(15-fill)
+
+    def create_dashboard(self, metrics, news, copilot_ans):
+        with open(DASH_PATH, 'w', encoding='utf-8') as f:
+            f.write(f"# 🏦 Grand Ops Finance-Master Dashboard\n")
+            f.write(f"> **Time:** {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (KST)\n\n")
+
+            # Copilot
+            f.write(f"{copilot_ans}\n\n")
+            f.write("---\n")
+
+            # 1. 금융 섹션 (핵심 추가)
+            f.write(f"### 🏦 Major Financial News (Shinhan & Hana)\n")
+            f.write("| Bank / Investment | Latest Headlines (Click to Read) |\n|---|---|\n")
+            
+            # 신한
+            shinhan_news = news.get('FIN_SHINHAN_BANK', []) + news.get('FIN_SHINHAN_INV', [])
+            if shinhan_news:
+                f.write(f"| **🔵 신한금융 (은행/투자)** | ")
+                for item in shinhan_news[:2]: f.write(f"• [{item['title']}]({item['link']})<br>")
+                f.write(" |\n")
+            
+            # 하나
+            hana_news = news.get('FIN_HANA_BANK', []) + news.get('FIN_HANA_INV', [])
+            if hana_news:
+                f.write(f"| **🟢 하나금융 (은행/투자)** | ")
+                for item in hana_news[:2]: f.write(f"• [{item['title']}]({item['link']})<br>")
+                f.write(" |\n")
+
+            f.write("\n")
+
+            # 2. 일반 뉴스
+            f.write(f"### 📰 General & Security News\n")
+            if "KR_NAVER" in news:
+                f.write(f"**🟢 네이버 속보:**\n")
+                for item in news["KR_NAVER"]: f.write(f"- [{item['title']}]({item['link']})\n")
+            
+            if "KR_SECURITY" in news:
+                f.write(f"\n**🛡️ 보안뉴스 (Security):**\n")
+                for item in news["KR_SECURITY"]: f.write(f"- [{item['title']}]({item['link']})\n")
+
+            # 3. 시스템 리소스
+            f.write(f"\n### ⚡ Hyperscale Resources\n")
+            f.write(f"- **vCPU:** `{metrics['spec_cpu']}` (Load: {metrics['cpu_load']}%)\n")
+            f.write(f"- **RAM:** `{metrics['spec_ram']}` (Used: {metrics['ram_percent']}%)\n")
+            
+            f.write("\n---\n*Powered by Grand Ops Finance-Master v30.0*")
+
+# ==========================================
+# 🚀 MAIN
+# ==========================================
+def main():
+    if not os.path.exists("data"): os.makedirs("data")
+    conn = sqlite3.connect(DB_PATH)
+    
+    monitor = HyperscaleMonitor()
+    metrics = monitor.get_metrics()
+    
+    news_engine = TargetedNewsEngine()
+    news_data, corpus = news_engine.fetch_all()
+    
+    copilot = MasterCopilot(corpus, metrics)
+    answer = copilot.generate_response(USER_QUERY)
+    
+    dash = DashboardEngine()
+    dash.create_dashboard(metrics, news_data, answer)
+    
+    conn.close()
+    print("✅ Finance-Master Cycle Completed.")
+
+if __name__ == "__main__":
+    main()

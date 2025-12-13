@@ -4,4 +4,6 @@ numpy
 scikit-learn
 tabulate
 psutil
+feedparser
+beautifulsoup4
 textblob
