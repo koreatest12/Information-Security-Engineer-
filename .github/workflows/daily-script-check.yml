@@ -1,201 +1,181 @@
-name: 🛡️ Ultimate Ops Health Check (Parallel & Auto-Heal)
-run-name: 🚀 [Parallel] 대량 스크립트 병렬 점검 및 자가 치유
+name: 🛡️ Ultimate Ops Health Check (Fix: Locks & Dependencies)
+run-name: 🚀 [Smart Fix] 의존성 자동 해결 및 OS 호환성 점검
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 매일 자정 실행
-  workflow_dispatch:      # 수동 실행
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 env:
-  # 🌐 환경 변수 및 경로 설정
   TZ: 'Asia/Seoul'
   RESOURCE_PATH: ${{ github.workspace }}/resources
   DATA_PATH: ${{ github.workspace }}/data
   PYTHONPATH: ${{ github.workspace }}/scripts:${{ github.workspace }}/resources
-  MAX_JOBS: 4 # 병렬 실행 개수 (CPU 코어 수에 맞춤)
+  MAX_JOBS: 4 # 병렬 실행 개수
+
+permissions:
+  contents: write
+  security-events: write
+  actions: read
 
 jobs:
-  parallel-integrity-check:
+  smart-integrity-check:
     runs-on: ubuntu-latest
     steps:
-      # 1. 저장소 체크아웃
+      # 1. 체크아웃
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          repository: 'koreatest12/Information-Security-Engineer-' # 타겟 리포지토리 명시
-          token: ${{ secrets.GITHUB_TOKEN }} # (필요시 PAT 토큰 사용)
-          path: '.' # 현재 작업 공간에 체크아웃
+          repository: 'koreatest12/Information-Security-Engineer-'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: '.'
 
-      # 2. 시스템 도구 설치 (병렬 처리를 위한 GNU Parallel)
+      # 2. 시스템 필수 도구 설치
       - name: Install System Tools
         run: |
           sudo apt-get update
           sudo apt-get install -y parallel tree
 
-      # 3. Python 설정
+      # 3. Python 설정 (3.10)
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
+          cache: 'pip' # 핍 캐시 활성화
 
-      # 4. [업그레이드] 대용량 캐시 설정 (리소스 및 Pip)
-      - name: Cache Pip & Resources
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cache/pip
-            ${{ env.RESOURCE_PATH }}
-            ${{ env.DATA_PATH }}
-          key: ${{ runner.os }}-ops-cache-v2-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-ops-cache-v2-
-
-      # 5. [업그레이드] 리소스 파일 및 환경 구성 (파일이 없으면 대량 생성)
-      - name: Provision Resources & Paths
+      # 4. [FIX-1] 필수 라이브러리 강제 설치 (ModuleNotFoundError 해결)
+      - name: Install Critical Dependencies
         run: |
-          echo "📂 Creating Directory Structures..."
-          mkdir -p "$RESOURCE_PATH" "$DATA_PATH" "logs" "scripts"
-
-          # PATH에 리소스 경로 영구 추가
-          echo "$RESOURCE_PATH" >> $GITHUB_PATH
-
-          # 대용량 더미 리소스 파일 생성 (캐시 테스트용, 없으면 생성)
-          if [ ! -f "$DATA_PATH/security_db_master.dat" ]; then
-            echo "⚡ Generating 10MB Dummy Resource DB..."
-            dd if=/dev/zero of="$DATA_PATH/security_db_master.dat" bs=1M count=10
-          fi
-
-          # 공통 설정 파일 생성
-          echo '{"env": "production", "parallel": true}' > "$RESOURCE_PATH/config.json"
+          echo "📦 Installing Core Python Libs..."
+          pip install --upgrade pip
+          # pandas, requests 등 자주 쓰이는 라이브러리 선설치
+          pip install pandas requests faker numpy 
           
-          echo "✅ Resources Ready at $RESOURCE_PATH"
-          tree -L 2
+          # 각 폴더별 requirements.txt가 있으면 추가 설치
+          find . -name "requirements.txt" | while read req; do
+             echo "   + Merging dependencies from $req"
+             pip install -r "$req" || true
+          done
 
-      # 6. 의존성 설치
-      - name: Install Python Dependencies
+      # 5. [FIX-2] 스마트 실행 래퍼 생성 (OS 호환성 체크 & 로깅)
+      - name: Create Smart Execution Wrapper
         run: |
-          if [ -f requirements.txt ]; then
-            pip install -r requirements.txt
+          cat <<'EOF' > smart_runner.sh
+          #!/bin/bash
+          SCRIPT=$1
+          FILENAME=$(basename "$SCRIPT")
+          LOGFILE="execution_results/${FILENAME}.log"
+          METAFILE="execution_results/${FILENAME}.meta"
+          
+          START=$(date +%s)
+          
+          # [OS 호환성 체크]
+          # 스크립트 내용을 읽어서 yum이 있는데 시스템에 yum이 없으면 스킵
+          if grep -q "yum" "$SCRIPT" && ! command -v yum &> /dev/null; then
+            echo "⏭️ SKIPPED: This script requires 'yum' (CentOS/RHEL) but running on Ubuntu." > "$LOGFILE"
+            echo "$FILENAME|SKIPPED|0|0" > "$METAFILE"
+            exit 0
+          fi
+          
+          # [실행 로직]
+          if [[ "$SCRIPT" == *.py ]]; then
+            timeout 300s python "$SCRIPT" > "$LOGFILE" 2>&1
+            EXIT_CODE=$?
           else
-            # 기본 필수 패키지 설치
-            pip install requests pandas numpy
+            chmod +x "$SCRIPT"
+            timeout 300s ./$SCRIPT > "$LOGFILE" 2>&1
+            EXIT_CODE=$?
           fi
-
-      # 7. [핵심] 자가 치유 (Self-Healing): 누락된 파일 자동 생성
-      - name: Auto-Heal Missing Files
-        run: |
-          echo "🩺 Starting Pre-flight Health Check..."
           
-          # 모든 하위 디렉토리 순회
-          find . -type d -not -path '*/.*' | while read -r dir; do
-            # 1. Python 패키지 초기화 파일 (__init__.py) 복구
-            if [[ "$dir" == *"/scripts"* ]] || [[ "$dir" == *"/src"* ]]; then
-              if [ ! -f "$dir/__init__.py" ]; then
-                echo "  ➕ Healing: Creating __init__.py in $dir"
-                touch "$dir/__init__.py"
-              fi
-            fi
-
-            # 2. 각 폴더에 스크립트가 하나도 없으면 기본 점검 스크립트 생성
-            FILE_COUNT=$(find "$dir" -maxdepth 1 -name "*.py" | wc -l)
-            if [ "$FILE_COUNT" -eq 0 ] && [ "$dir" != "." ]; then
-              echo "  ➕ Healing: Missing script in $dir. Creating health_check.py"
-              cat <<EOF > "$dir/health_check.py"
-          import sys, os
-          import json
-          print(f"✅ Auto-Generated Health Check for {os.path.basename('$dir')}")
-          # 환경변수 로드 확인
-          try:
-              with open('${RESOURCE_PATH}/config.json') as f:
-                  cfg = json.load(f)
-              print("   - Config Load: OK")
-          except:
-              print("   - Config Load: Failed")
-          sys.exit(0)
+          END=$(date +%s)
+          DURATION=$((END - START))
+          
+          # [결과 기록]
+          if [ $EXIT_CODE -eq 0 ]; then
+            echo "$FILENAME|SUCCESS|$DURATION|$EXIT_CODE" > "$METAFILE"
+          elif [ $EXIT_CODE -eq 124 ]; then
+            echo "$FILENAME|TIMEOUT|$DURATION|$EXIT_CODE" > "$METAFILE"
+          else
+            echo "$FILENAME|FAILURE|$DURATION|$EXIT_CODE" > "$METAFILE"
+          fi
           EOF
+          chmod +x smart_runner.sh
+
+      # 6. 리소스 디렉토리 준비 (결과 저장소)
+      - name: Prepare Workspace
+        run: mkdir -p execution_results "$RESOURCE_PATH" "$DATA_PATH"
+
+      # 7. [FIX-3] 실행 그룹 분리 (병렬 vs 순차)
+      # 시스템 설치(install_*, upgrade_*) 스크립트는 락 충돌 방지를 위해 분리
+      - name: Categorize Scripts
+        run: |
+          mkdir -p .queue/parallel .queue/sequential
+          
+          find scripts -type f \( -name "*.py" -o -name "*.sh" \) | while read file; do
+            filename=$(basename "$file")
+            
+            # 설치/업그레이드 스크립트는 순차 실행 그룹으로 이동
+            if [[ "$filename" == *"install_"* ]] || [[ "$filename" == *"upgrade_"* ]]; then
+              echo "$file" >> .queue/sequential_list.txt
+            else
+              echo "$file" >> .queue/parallel_list.txt
             fi
           done
-          echo "✅ Self-Healing Complete."
 
-      # 8. [핵심] 병렬 실행 (GNU Parallel)
-      - name: Run Scripts in Parallel
-        id: parallel_exec
-        shell: bash
+      # 8. 안전한 스크립트: 병렬 실행 (Parallel)
+      - name: Run Logic Scripts (Parallel)
+        id: run_parallel
         run: |
-          # 로그 저장소
-          mkdir -p execution_results
-          
-          echo "🚀 Executing scripts in parallel (Max Jobs: $MAX_JOBS)..."
+          if [ -f .queue/parallel_list.txt ]; then
+            echo "🚀 Running Logic Scripts in Parallel..."
+            cat .queue/parallel_list.txt | parallel -j "$MAX_JOBS" ./smart_runner.sh {}
+          else
+            echo "ℹ️ No parallel scripts found."
+          fi
 
-          # 함수 정의: 개별 스크립트 실행 로직 (Parallel에 전달됨)
-          export RESOURCE_PATH
-          export DATA_PATH
-          
-          run_wrapper() {
-            script="$1"
-            filename=$(basename "$script")
-            logfile="execution_results/${filename}.log"
-            metafile="execution_results/${filename}.meta"
-            
-            start_time=$(date +%s)
-            
-            # 실행 (타임아웃 5분)
-            if [[ "$script" == *.py ]]; then
-              timeout 300s python "$script" > "$logfile" 2>&1
-            else
-              timeout 300s bash "$script" > "$logfile" 2>&1
-            fi
-            exit_code=$?
-            
-            end_time=$(date +%s)
-            duration=$((end_time - start_time))
-            
-            # 결과 메타데이터 저장 (파일명|상태|시간|종료코드)
-            if [ $exit_code -eq 0 ]; then
-              echo "$filename|SUCCESS|$duration|$exit_code" > "$metafile"
-            elif [ $exit_code -eq 124 ]; then
-              echo "$filename|TIMEOUT|$duration|$exit_code" > "$metafile"
-            else
-              echo "$filename|FAILURE|$duration|$exit_code" > "$metafile"
-            fi
-          }
-          export -f run_wrapper
-
-          # find로 파일 찾아서 parallel로 넘김
-          # ::: 뒤에 오는 인자들이 병렬로 실행됨
-          find scripts -type f \( -name "*.py" -o -name "*.sh" \) | parallel -j "$MAX_JOBS" run_wrapper {}
-          
-          echo "✅ Parallel Execution Finished."
-
-      # 9. 결과 집계 및 리포트 생성 (Scatter-Gather 패턴)
-      - name: Aggregate Results & Report
+      # 9. 위험한 스크립트: 순차 실행 (Sequential) - APT Lock 방지
+      - name: Run Install Scripts (Sequential)
         if: always()
         run: |
-          echo "## 🛡️ 병렬 보안 점검 리포트 (koreatest12)" >> $GITHUB_STEP_SUMMARY
-          echo "| 파일명 | 상태 | 소요시간 | 결과 요약 |" >> $GITHUB_STEP_SUMMARY
+          if [ -f .queue/sequential_list.txt ]; then
+            echo "🐢 Running System Scripts Sequentially (to avoid APT locks)..."
+            while read script; do
+              echo "   ▶️ Running: $script"
+              ./smart_runner.sh "$script"
+            done < .queue/sequential_list.txt
+          fi
+
+      # 10. 결과 집계 및 리포트 (수정된 로직)
+      - name: Aggregate & Report
+        if: always()
+        run: |
+          echo "## 🛡️ 최종 수정된 보안 점검 리포트" >> $GITHUB_STEP_SUMMARY
+          echo "| 파일명 | 상태 | 시간 | 비고 |" >> $GITHUB_STEP_SUMMARY
           echo "| :--- | :---: | :---: | :--- |" >> $GITHUB_STEP_SUMMARY
           
           TOTAL_FAIL=0
           
-          # 결과 파일 순회
           for meta in execution_results/*.meta; do
             [ -e "$meta" ] || continue
-            
-            # 데이터 파싱
             IFS='|' read -r FILENAME STATUS DURATION CODE < "$meta"
             LOGFILE="execution_results/${FILENAME}.log"
             
-            # 요약 메시지 추출 (마지막 줄)
-            MSG=$(tail -n 1 "$LOGFILE" | tr -cd '\11\12\15\40-\176' | cut -c 1-40)
+            # 로그 한 줄 요약
+            MSG=$(head -n 1 "$LOGFILE" | cut -c 1-50)
             
             if [ "$STATUS" == "SUCCESS" ]; then
               ICON="✅"
+            elif [ "$STATUS" == "SKIPPED" ]; then
+              ICON="⚪" # 스킵 아이콘
+              MSG="OS Incompatible (Skipped Safe)"
             elif [ "$STATUS" == "TIMEOUT" ]; then
               ICON="⏰"
               TOTAL_FAIL=$((TOTAL_FAIL+1))
             else
               ICON="❌"
               TOTAL_FAIL=$((TOTAL_FAIL+1))
+              # 실패 시 로그 내용을 조금 더 보여줌
+              MSG=$(tail -n 1 "$LOGFILE" | tr -cd '\11\12\15\40-\176' | cut -c 1-40)
             fi
             
             echo "| **$FILENAME** | $ICON $STATUS | ${DURATION}s | \`$MSG...\` |" >> $GITHUB_STEP_SUMMARY
@@ -204,16 +184,16 @@ jobs:
           echo "TOTAL_FAIL=$TOTAL_FAIL" >> $GITHUB_ENV
           
           if [ "$TOTAL_FAIL" -gt 0 ]; then
-             echo "::warning:: $TOTAL_FAIL 개의 스크립트가 실패했습니다."
-          else
-             echo "🎉 모든 스크립트 점검 완료!"
+             echo "::error:: $TOTAL_FAIL 개의 스크립트가 여전히 실패했습니다."
+             # 실패해도 워크플로우를 빨간색으로 만들고 싶다면 exit 1, 아니면 exit 0
+             # exit 1 
           fi
 
-      # 10. 실패 로그 아티팩트 업로드
-      - name: Upload Logs
+      # 11. 로그 업로드
+      - name: Upload Execution Logs
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: security-scan-logs
+          name: fixed-execution-logs
           path: execution_results/
-          retention-days: 5
+          retention-days: 7
