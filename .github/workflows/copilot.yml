@@ -1,8 +1,8 @@
-name: 📊 Grand Ops AI-Reporting v19 (Multi-Report & Audit)
+name: 👁️ Grand Ops AI-Dashboard v20 (UI Integrated)
 
 on:
   schedule:
-    - cron: '*/10 * * * *' # 10분 주기 실행
+    - cron: '*/10 * * * *' # 10분 주기
   workflow_dispatch:
 
 concurrency:
@@ -11,21 +11,19 @@ concurrency:
 
 env:
   TZ: 'Asia/Seoul'
-  # DB 경로
   DB_PATH: 'data/grand_ops_server.db'
-  # [New] 3종 보고서 경로 정의
+  # 리포트 파일 경로
   DAILY_REPORT: 'data/daily_insight.md'
   WEEKLY_REPORT: 'data/weekly_analysis.md'
   AUDIT_REPORT: 'data/security_audit.md'
-  
   BACKUP_DIR: 'backup'
-  ARTIFACT_PASSWORD: ${{ secrets.ARTIFACT_KEY || 'Report_Secure_2025' }}
+  ARTIFACT_PASSWORD: ${{ secrets.ARTIFACT_KEY || 'Dashboard_Secure_2025' }}
 
 permissions:
   contents: write
 
 jobs:
-  ai-reporting-server:
+  ai-visual-dashboard:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -33,19 +31,19 @@ jobs:
         with:
           fetch-depth: 0
 
-      # 1. 환경 구성
-      - name: 🏗️ Setup Reporting Environment
+      # 1. 환경 설정
+      - name: 🏗️ Setup Visual Environment
         run: |
-          echo "🧬 Initializing AI & Reporting Stack..."
+          echo "🧬 Initializing Dashboard Stack..."
           mkdir -p data backup scripts
           python -m pip install --upgrade pip
           echo -e "pandas\nnumpy\nscikit-learn\nscipy\ntabulate" > requirements.txt
           pip install -r requirements.txt
 
-      # 2. [Core] 리포팅 엔진이 탑재된 통합 스크립트 (v19.0)
-      - name: 🧠 Generate Reporting Engine Script
+      # 2. [Core] 리포팅 엔진 스크립트 (v20 - UI 최적화)
+      - name: 🧠 Generate Dashboard Script
         run: |
-          cat <<'EOF' > scripts/ai_report_core.py
+          cat <<'EOF' > scripts/ai_dashboard_core.py
           import sqlite3
           import os
           import datetime
@@ -56,14 +54,13 @@ jobs:
           from sklearn.ensemble import IsolationForest
           from sklearn.linear_model import LinearRegression
 
-          # 환경 변수 로드
+          # 경로 설정
           DB_PATH = os.getenv('DB_PATH', 'data/grand_ops_server.db')
           DAILY_PATH = os.getenv('DAILY_REPORT', 'data/daily_insight.md')
           WEEKLY_PATH = os.getenv('WEEKLY_REPORT', 'data/weekly_analysis.md')
           AUDIT_PATH = os.getenv('AUDIT_REPORT', 'data/security_audit.md')
 
           class AuditSystem:
-              """보안 감사 로그 및 무결성 관리"""
               def __init__(self, conn):
                   self.conn = conn
               
@@ -80,37 +77,34 @@ jobs:
                       print(f"⚠️ Audit Error: {e}")
 
           class DataManager:
-              """데이터 시딩 및 수집"""
               def __init__(self, conn):
                   self.conn = conn
 
               def seed_data(self):
-                  """데이터가 없을 경우 초기화 (Cold Start 방지)"""
                   cursor = self.conn.cursor()
                   cursor.execute("SELECT count(*) FROM historical_data")
                   if cursor.fetchone()[0] < 10:
-                      print("🌱 Seeding dummy data...")
+                      print("🌱 Seeding initial data...")
                       data = []
                       for i in range(50):
                           data.append((
-                              np.random.normal(40, 10), 
-                              np.random.randint(500, 1500), 
-                              np.random.normal(20, 5),
+                              np.random.normal(45, 12), 
+                              np.random.randint(600, 1400), 
+                              np.random.normal(22, 6),
                               (datetime.datetime.now() - datetime.timedelta(minutes=10*i))
                           ))
                       cursor.executemany('INSERT INTO historical_data (cpu_load, traffic, latency, timestamp) VALUES (?,?,?,?)', data)
                       self.conn.commit()
 
               def collect(self):
-                  load = max(0, np.random.normal(55, 12))
-                  traffic = max(0, int(np.random.poisson(1100)))
-                  latency = max(0, np.random.exponential(18))
+                  load = max(0, np.random.normal(50, 15))
+                  traffic = max(0, int(np.random.poisson(1000)))
+                  latency = max(0, np.random.exponential(20))
                   self.conn.execute('INSERT INTO historical_data (cpu_load, traffic, latency) VALUES (?,?,?)', (load, traffic, latency))
                   self.conn.commit()
                   return load, traffic
 
           class AIAnalyzer:
-              """AI 분석 및 예측"""
               def __init__(self, conn):
                   self.conn = conn
               
@@ -118,11 +112,9 @@ jobs:
                   df = pd.read_sql_query("SELECT * FROM historical_data ORDER BY timestamp DESC LIMIT 300", self.conn)
                   if len(df) < 10: return None, None, df
                   
-                  # 이상 탐지
                   iso = IsolationForest(contamination=0.05, random_state=42)
                   df['anomaly'] = iso.fit_predict(df[['cpu_load', 'latency']].fillna(0))
                   
-                  # 예측 (최근 데이터 기준)
                   reg = LinearRegression()
                   sub = df.head(50).iloc[::-1].reset_index(drop=True)
                   reg.fit(np.array(sub.index).reshape(-1, 1), sub['cpu_load'].values)
@@ -130,154 +122,141 @@ jobs:
                   
                   return df.iloc[0]['anomaly'], pred, df
 
-          class MDReportGenerator:
-              """[New] Markdown 전문 보고서 생성기"""
+          class DashboardGenerator:
+              """GitHub Summary용 최적화 리포트 생성"""
               
               @staticmethod
               def draw_bar(val, max_v=100):
-                  l = int((val/max_v)*20)
-                  return "█" * l + "░" * (20-l)
+                  # GitHub UI에서 깔끔하게 보이도록 문자 변경
+                  l = int((val/max_v)*15)
+                  return "▓" * l + "░" * (15-l)
 
               def generate_daily(self, load, traffic, anomaly, pred, df):
-                  status = "✅ NORMAL" if anomaly == 1 else "🚨 CRITICAL"
+                  status_icon = "🟢" if anomaly == 1 else "🔴"
+                  status_text = "Stable" if anomaly == 1 else "Critical"
+                  
                   with open(DAILY_PATH, 'w', encoding='utf-8') as f:
-                      f.write(f"# 📅 Daily Ops Insight\n")
-                      f.write(f"**Generated:** {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}\n\n")
-                      f.write(f"## 🚦 System Status: {status}\n")
-                      f.write(f"- **CPU Load:** `{self.draw_bar(load)}` ({load:.1f}%)\n")
-                      f.write(f"- **Traffic:** `{self.draw_bar(traffic, 2000)}` ({traffic} hits)\n")
-                      f.write(f"- **AI Prediction (Next 10m):** {pred:.1f}% Load\n\n")
+                      f.write(f"### 📡 Real-time Dashboard\n")
+                      f.write(f"**Status:** {status_icon} {status_text} | **Time:** {datetime.datetime.now().strftime('%H:%M:%S')}\n\n")
                       
-                      f.write("### 📉 Recent Logs\n")
+                      f.write(f"| Metric | Value | Visual |\n|---|---|---|\n")
+                      f.write(f"| **CPU Load** | {load:.1f}% | `{self.draw_bar(load)}` |\n")
+                      f.write(f"| **Traffic** | {traffic} | `{self.draw_bar(traffic, 2000)}` |\n")
+                      f.write(f"| **AI Prediction** | {pred:.1f}% | (Next 10m) |\n\n")
+                      
+                      f.write("#### 📉 Recent Traffic Logs\n")
                       f.write(df.head(5)[['timestamp', 'cpu_load', 'traffic']].to_markdown(index=False))
 
               def generate_weekly(self, conn):
-                  # 주간 데이터 집계
                   df = pd.read_sql_query("SELECT * FROM historical_data WHERE timestamp >= date('now', '-7 days')", conn)
                   if df.empty: return
                   
                   with open(WEEKLY_PATH, 'w', encoding='utf-8') as f:
-                      f.write(f"# 📰 Weekly AI Analysis\n")
-                      f.write(f"**Period:** Last 7 Days\n\n")
-                      f.write(f"## 📊 Key Statistics\n")
-                      f.write(f"| Metric | Mean | Max | Min | StdDev |\n|---|---|---|---|---|\n")
-                      f.write(f"| CPU Load | {df['cpu_load'].mean():.1f}% | {df['cpu_load'].max():.1f}% | {df['cpu_load'].min():.1f}% | {df['cpu_load'].std():.1f} |\n")
-                      f.write(f"| Traffic | {df['traffic'].mean():.0f} | {df['traffic'].max()} | {df['traffic'].min()} | {df['traffic'].std():.0f} |\n")
-                      f.write(f"\n## 📈 Growth Trend\n")
-                      f.write(f"Total data points processed: **{len(df)}**\n")
+                      f.write(f"### 📰 Weekly Intelligence\n")
+                      f.write(f"**Data Points:** {len(df)}\n\n")
+                      f.write(f"| Stat | Load | Traffic |\n|---|---|---|\n")
+                      f.write(f"| **Avg** | {df['cpu_load'].mean():.1f}% | {df['traffic'].mean():.0f} |\n")
+                      f.write(f"| **Max** | {df['cpu_load'].max():.1f}% | {df['traffic'].max()} |\n")
 
               def generate_audit(self, conn):
-                  # 보안 감사 로그 리포트
-                  df = pd.read_sql_query("SELECT timestamp, actor, action, details, data_hash FROM audit_trail ORDER BY id DESC LIMIT 20", conn)
+                  df = pd.read_sql_query("SELECT timestamp, actor, action, details FROM audit_trail ORDER BY id DESC LIMIT 5", conn)
                   if df.empty: return
                   
                   with open(AUDIT_PATH, 'w', encoding='utf-8') as f:
-                      f.write(f"# 🛡️ Security Audit Log\n")
-                      f.write(f"**Verified By:** AI-Guardian System\n\n")
-                      f.write(f"## 🕵️ Recent Activities\n")
-                      # Hash는 너무 기니까 앞 8자리만 노출
-                      df['data_hash'] = df['data_hash'].apply(lambda x: x[:8] + '...')
+                      f.write(f"### 🛡️ Security Audit (Last 5)\n")
                       f.write(df.to_markdown(index=False))
 
           def main():
-              print("🚀 Starting Reporting Engine v19...")
               if not os.path.exists("data"): os.makedirs("data")
               
               conn = sqlite3.connect(DB_PATH)
               conn.execute('CREATE TABLE IF NOT EXISTS historical_data (id INTEGER PRIMARY KEY, cpu_load REAL, traffic INTEGER, latency REAL, timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP)')
               conn.execute('CREATE TABLE IF NOT EXISTS audit_trail (id INTEGER PRIMARY KEY, actor TEXT, action TEXT, details TEXT, data_hash TEXT, timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP)')
               
-              # Modules
-              data_mgr = DataManager(conn)
+              mgr = DataManager(conn)
               audit = AuditSystem(conn)
               ai = AIAnalyzer(conn)
-              reporter = MDReportGenerator()
+              dash = DashboardGenerator()
               
-              # 1. Process Data
-              data_mgr.seed_data()
-              load, traffic = data_mgr.collect()
+              mgr.seed_data()
+              load, traffic = mgr.collect()
               audit.log("System", "COLLECT", f"L:{load:.0f}")
               
-              # 2. AI Analysis
               anom, pred, df = ai.analyze()
               
-              # 3. Generate Reports
-              print("📝 Generating Daily Report...")
-              reporter.generate_daily(load, traffic, anom, pred, df)
-              
-              print("📝 Generating Weekly Report...")
-              reporter.generate_weekly(conn)
-              
-              print("📝 Generating Audit Report...")
-              audit.log("Reporter", "GENERATE", "MD Files Updated")
-              reporter.generate_audit(conn)
+              # 리포트 생성
+              dash.generate_daily(load, traffic, anom, pred, df)
+              dash.generate_weekly(conn)
+              dash.generate_audit(conn)
               
               conn.close()
-              print("✅ All Reports Generated Successfully.")
 
           if __name__ == "__main__":
               main()
           EOF
 
-      # 3. 엔진 실행
-      - name: 🚀 Run AI & Reporting
+      # 3. AI 실행
+      - name: 🚀 Run AI Engine
+        run: python scripts/ai_dashboard_core.py
+
+      # 4. [핵심] 화면에 결과 출력 (GitHub Job Summary)
+      # 이 단계가 추가되어야 사용자가 클릭했을 때 내용이 바로 보입니다.
+      - name: 📢 Publish to Action Screen
         run: |
-          python scripts/ai_report_core.py
+          echo "# 🚀 Grand Ops AI Dashboard v20" >> $GITHUB_STEP_SUMMARY
+          echo "Run ID: ${{ github.run_id }} | Ref: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "---" >> $GITHUB_STEP_SUMMARY
           
-          echo "📄 Checking Outputs..."
-          ls -l data/*.md
-
-      # 4. 보안 백업
-      - name: 🔒 Encrypt Artifacts
-        run: |
-          TIMESTAMP=$(date +%Y%m%d_%H%M%S)
-          cp "$DB_PATH" "$BACKUP_DIR/report_db_$TIMESTAMP.bak"
-          zip -e -P "$ARTIFACT_PASSWORD" secure_reports.zip data/*.md data/*.db backup/*
+          # 1. 일일 리포트 출력
+          if [ -f "$DAILY_REPORT" ]; then
+            cat "$DAILY_REPORT" >> $GITHUB_STEP_SUMMARY
+          fi
           
-          cd "$BACKUP_DIR" && ls -t *.bak | tail -n +6 | xargs -r rm --
-
-      - name: Upload Secured Data
-        uses: actions/upload-artifact@v4
-        with:
-          name: ai-reports-bundle
-          path: secure_reports.zip
-          retention-days: 1
-
-      # 5. Git 동기화 (3종 보고서 모두 반영)
-      - name: 🔄 Sync Reports
-        run: |
-          git config --global user.name "AI-Reporter-Bot"
-          git config --global user.email "reporter@grand-ops.ai"
-          git config --global --add safe.directory $GITHUB_WORKSPACE
-
-          echo "📦 Staging Reports..."
+          echo "" >> $GITHUB_STEP_SUMMARY
           
-          # 3종 보고서 존재 확인 후 Add
-          [ -f "$DAILY_REPORT" ] && git add -f "$DAILY_REPORT"
-          [ -f "$WEEKLY_REPORT" ] && git add -f "$WEEKLY_REPORT"
-          [ -f "$AUDIT_REPORT" ] && git add -f "$AUDIT_REPORT"
-          [ -f "$DB_PATH" ] && git add -f "$DB_PATH"
+          # 2. 보안 감사 출력
+          if [ -f "$AUDIT_REPORT" ]; then
+            cat "$AUDIT_REPORT" >> $GITHUB_STEP_SUMMARY
+          fi
           
-          git add -A
-
-          if [ -z "$(git status --porcelain)" ]; then
-             echo "✅ Reports are up to date."
-             exit 0
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # 3. 주간 리포트 (있으면 출력)
+          if [ -f "$WEEKLY_REPORT" ]; then
+            cat "$WEEKLY_REPORT" >> $GITHUB_STEP_SUMMARY
           fi
 
-          echo "💾 Committing New Insights..."
-          git commit -m "report: daily/weekly/audit update [skip ci]"
+      # 5. 파일 백업 및 다운로드용 유물 업로드 (기존 기능 유지)
+      - name: 🔒 Backup & Upload Artifacts
+        run: |
+          zip -e -P "$ARTIFACT_PASSWORD" dashboard_bundle.zip data/*.md data/*.db
+      
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: AI-Dashboard-Bundle
+          path: dashboard_bundle.zip
 
-          # Retry Loop
-          MAX_RETRIES=5
+      # 6. Git 동기화
+      - name: 🔄 Sync Reports
+        run: |
+          git config --global user.name "Dashboard-Bot"
+          git config --global user.email "bot@grand-ops.ai"
+          git config --global --add safe.directory $GITHUB_WORKSPACE
+          
+          [ -f "$DAILY_REPORT" ] && git add -f "$DAILY_REPORT"
+          [ -f "$AUDIT_REPORT" ] && git add -f "$AUDIT_REPORT"
+          [ -f "$DB_PATH" ] && git add -f "$DB_PATH"
+          git add -A
+          
+          if [ -z "$(git status --porcelain)" ]; then exit 0; fi
+          
+          git commit -m "dashboard: ui update [skip ci]"
+          
           COUNT=0
-          while [ $COUNT -lt $MAX_RETRIES ]; do
+          while [ $COUNT -lt 5 ]; do
             git pull --rebase origin main || git rebase --abort
-            if git push origin main; then
-              echo "🚀 Synced Successfully!"
-              exit 0
-            fi
+            git push origin main && exit 0
             sleep 5
             COUNT=$((COUNT+1))
           done
-          exit 1
