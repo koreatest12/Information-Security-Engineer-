@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      # 1. 소스 코드 체크아웃 (전체 이력 포함)
+      # 1. 소스 코드 체크아웃
       - name: 📥 Checkout Repository
         uses: actions/checkout@v4
         with:
@@ -30,7 +30,7 @@ jobs:
       - name: 🐳 Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      # 4. [핵심 수정] 통합 관리 스크립트 자동 생성 (파일이 없어도 자동 생성됨)
+      # 4. [대통합] 관리 스크립트 자동 생성 (OS관리 + 빌드 + 무중단 배포 + 스크립트 실행)
       - name: 🛠 Generate Universal Ops Manager Script
         run: |
           cat << 'EOF' > universal_ops_manager.sh
@@ -43,8 +43,13 @@ jobs:
           CACHE_DIR="${WORKSPACE_DIR}/.cache"
           SCRIPTS_DIR="${WORKSPACE_DIR}/scripts"
           LOG_FILE="${DATA_DIR}/ops_execution.log"
-          IMAGE_NAME="grand-ops-image"
           
+          # Docker Config
+          IMAGE_NAME="grand-ops-image"
+          IMAGE_TAG="latest"
+          APP_CONTAINER="grand-ops-core"
+          DB_CONTAINER="grand-ops-db"
+
           # --- UTILS ---
           log() {
               timestamp=$(date "+%Y-%m-%d %H:%M:%S")
@@ -58,17 +63,16 @@ jobs:
               if [ -f /etc/os-release ]; then . /etc/os-release; OS_NAME=$ID; else OS_NAME="unknown"; fi
               log "Detected OS: ${OS_NAME}"
               
-              # CI 환경에서는 sudo가 비밀번호 없이 동작하거나 root임
               case "${OS_NAME}" in
                   ubuntu|debian)
-                      sudo apt-get update -y
-                      # 시간 절약을 위해 upgrade는 필요한 경우만 주석 해제
-                      # sudo apt-get upgrade -y 
-                      ;;
+                      sudo apt-get update -y ;;
                   alpine)
                       apk update ;;
+                  centos|rhel)
+                      # dnf나 yum 확인 후 업데이트 (필요시 주석 해제)
+                      log "ℹ️ RPM based system detected." ;;
                   *)
-                      log "⚠️ Unknown OS or Upgrade skipped for efficiency." ;;
+                      log "⚠️ Unknown OS. Skipping package updates." ;;
               esac
           }
 
@@ -77,23 +81,69 @@ jobs:
               log "🛠 Setting up directories..."
               mkdir -p "${DATA_DIR}" "${CACHE_DIR}" "${SCRIPTS_DIR}"
               touch "${CACHE_DIR}/last_run_$(date +%Y%m%d).lock"
-              log "✅ Directories ready: ${DATA_DIR}, ${CACHE_DIR}"
+              
+              # Path 설정 (현재 쉘 세션용)
+              export PATH="${SCRIPTS_DIR}:${PATH}"
+              log "✅ Directories ready & PATH updated."
           }
 
           # --- 3. DOCKER BUILD ---
           build_image() {
               if [ -f "Dockerfile" ]; then
                   log "🐳 Building Docker Image..."
-                  docker build -t "${IMAGE_NAME}:latest" . || log "⚠️ Docker build warning"
+                  docker build -t "${IMAGE_NAME}:${IMAGE_TAG}" . || log "⚠️ Docker build warning"
               else
-                  log "ℹ️ No Dockerfile found. Skipping."
+                  log "ℹ️ No Dockerfile found. Skipping build."
               fi
           }
 
-          # --- 4. EXECUTE SCRIPTS ---
+          # --- 4. CONTAINER DEPLOYMENT (NO STOP POLICY) ---
+          # 컨테이너 정지/삭제 없이, 없으면 생성하고 꺼져있으면 켜는 로직
+          deploy_services() {
+              log "🚀 Checking Services (Policy: Do NOT Stop Existing)..."
+
+              # (A) DB Container Check
+              if [ "$(docker ps -q -f name=${DB_CONTAINER})" ]; then
+                  log "✅ [DB] Service '${DB_CONTAINER}' is already running. Skipping."
+              else
+                  if [ "$(docker ps -aq -f status=exited -f name=${DB_CONTAINER})" ]; then
+                      log "⚡ [DB] Starting existing container..."
+                      docker start ${DB_CONTAINER}
+                  else
+                      log "✨ [DB] Creating new container..."
+                      # 예시: Postgres
+                      docker run -d --name "${DB_CONTAINER}" \
+                          --restart always \
+                          -e POSTGRES_PASSWORD=securepass \
+                          postgres:13-alpine || log "⚠️ DB creation failed"
+                  fi
+              fi
+
+              # (B) App Container Check
+              if [ "$(docker ps -q -f name=${APP_CONTAINER})" ]; then
+                  log "✅ [APP] Service '${APP_CONTAINER}' is already running. Skipping."
+              else
+                  if [ "$(docker ps -aq -f status=exited -f name=${APP_CONTAINER})" ]; then
+                      log "⚡ [APP] Starting existing container..."
+                      docker start ${APP_CONTAINER}
+                  else
+                      # 이미지가 있을 때만 생성
+                      if docker image inspect "${IMAGE_NAME}:${IMAGE_TAG}" > /dev/null 2>&1; then
+                          log "✨ [APP] Creating new container from built image..."
+                          docker run -d --name "${APP_CONTAINER}" \
+                              --restart always \
+                              -v "${DATA_DIR}:/app/data" \
+                              "${IMAGE_NAME}:${IMAGE_TAG}" || log "⚠️ App creation failed"
+                      else
+                          log "❌ Image not found. Cannot start ${APP_CONTAINER}."
+                      fi
+                  fi
+              fi
+          }
+
+          # --- 5. EXECUTE SCRIPTS ---
           run_scripts() {
               log "📜 Executing scripts in ${SCRIPTS_DIR}..."
-              # 스크립트 폴더가 비어있지 않으면 실행
               if [ "$(ls -A ${SCRIPTS_DIR} 2>/dev/null)" ]; then
                   for script in "${SCRIPTS_DIR}"/*; do
                       [ -f "$script" ] || continue
@@ -108,7 +158,7 @@ jobs:
                       fi
                   done
               else
-                  log "ℹ️ No custom scripts found in scripts/ directory."
+                  log "ℹ️ No custom scripts found."
               fi
           }
 
@@ -117,13 +167,14 @@ jobs:
               detect_and_upgrade_os
               setup_environment
               build_image
+              deploy_services  # <--- 추가된 컨테이너 배포 단계
               run_scripts
-              log "🎉 Workflow Completed."
+              log "🎉 All Operations Completed."
           }
           main
           EOF
 
-      # 5. 권한 부여 및 실행 (파일이 이제 확실히 존재함)
+      # 5. 권한 부여 및 실행
       - name: 🚀 Run Universal Ops Manager
         run: |
           chmod +x ./universal_ops_manager.sh
@@ -131,23 +182,23 @@ jobs:
         env:
           TERM: xterm-256color
 
-      # 6. [에러 방지] Git 동기화 및 충돌 자동 해결 (Rebase 전략)
+      # 6. Git 동기화 (에러 방지 로직 유지)
       - name: 🔄 Sync and Commit Infrastructure State
-        if: always() # 스크립트 실행 성공/실패 여부와 관계없이 로그 저장을 위해 실행
+        if: always()
         run: |
           git config --global user.name "Grand-Ops-Bot"
           git config --global user.email "ops-bot@noreply.github.com"
           
           echo "🔎 Checking for artifacts..."
+          # scripts 폴더도 변경사항 감지에 포함
           git add data/ .cache/ config/ scripts/ || echo "Warning: Some paths not found"
           
           if git diff --staged --quiet; then
             echo "✅ No changes to commit."
           else
-            git commit -m "ops: auto-provision & migration sync [skip ci]"
+            git commit -m "ops: auto-provision & container sync [skip ci]"
             
             echo "🔄 Handling remote changes (Rebase)..."
-            # 실패 시 강제로 rebase 시도하여 병합
             git pull --rebase origin main || (git rebase --abort && git pull origin main --no-edit)
             
             echo "🚀 Pushing final state..."
