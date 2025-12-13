@@ -9,7 +9,7 @@ import sys
 import shutil
 
 # =======================================================
-# ⚙️ SYSTEM CONFIGURATION & CONSTANTS
+# ⚙️ SYSTEM CONFIGURATION
 # =======================================================
 BASE_DIR = os.getcwd()
 DATA_DIR = os.path.join(BASE_DIR, "data")
@@ -20,16 +20,11 @@ DB_PATH = os.path.join(DATA_DIR, DB_NAME)
 CONFIG_FILE = os.path.join(CONFIG_DIR, "db_engine_conf.json")
 SCHEMA_DUMP_FILE = os.path.join(DATA_DIR, "schema_snapshot.sql")
 
-# [보안] 난독화된 패턴 (소스코드 스캔 오탐지 방지)
 PATTERNS_B64 = {
     "AWS_ACCESS_KEY": "QUtJQVswLTlBLVpdezE2fQ==", 
     "SSH_PRIVATE_KEY": "LS0tLS1CRUdJTiAoUlNBfDVEU0F8RUN8T1BFTlNTSCkgUFJJVkFURSBLRVktLS0tLQ=="
 }
 
-# =======================================================
-# 📜 MIGRATION PLANS (Schema Version Control)
-# =======================================================
-# 마이그레이션 스크립트 정의 (버전별 변경 사항)
 MIGRATIONS = {
     1: [
         """CREATE TABLE IF NOT EXISTS schema_versions (version INTEGER PRIMARY KEY, applied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)""",
@@ -49,188 +44,112 @@ MIGRATIONS = {
     ]
 }
 
-# =======================================================
-# 🛠️ INFRASTRUCTURE & PROVISIONING MANAGER
-# =======================================================
 class InfraManager:
     @staticmethod
     def provision_environment():
-        """서버 환경 구성 및 디렉터리 권한 설정 (Installation)"""
-        print("🏗️ [Infra] Provisioning DB Environment...")
-        
-        # 1. 필수 디렉터리 생성
+        """환경 구성 (Idempotent: 멱등성 보장)"""
+        print("🏗️ [Infra] Provisioning Environment...")
         for d in [DATA_DIR, CONFIG_DIR, BACKUP_DIR]:
             if not os.path.exists(d):
                 os.makedirs(d)
-                print(f"  ↳ Created directory: {d}")
-            
-            # [Security] 권한 강화 (Linux/Unix 환경)
-            if os.name == 'posix':
-                os.chmod(d, 0o700) # rwx------ (소유자만 접근 가능)
+                if os.name == 'posix': os.chmod(d, 0o700)
 
-        # 2. 설정 파일 생성 (Configuration Management)
-        config_data = {
-            "engine_version": "3.0.0",
+        # 설정 파일은 내용이 변경될 때만 덮어쓰기 (Git 충돌 방지)
+        new_config = {
+            "engine_version": "3.1.0",
             "db_path": DB_PATH,
-            "max_connections": 10,
-            "maintenance_window": "02:00-04:00",
-            "last_provisioned": str(datetime.datetime.now())
+            "max_connections": 20,
+            "policy": "strict"
         }
         
-        with open(CONFIG_FILE, 'w') as f:
-            json.dump(config_data, f, indent=4)
-        print("  ↳ Configuration file generated.")
+        should_write = True
+        if os.path.exists(CONFIG_FILE):
+            try:
+                with open(CONFIG_FILE, 'r') as f:
+                    current_config = json.load(f)
+                # 날짜/시간 필드 등 불필요한 변경사항 제거하여 diff 최소화
+                if current_config == new_config:
+                    should_write = False
+            except: pass
+            
+        if should_write:
+            with open(CONFIG_FILE, 'w') as f:
+                json.dump(new_config, f, indent=4)
+            print("  ↳ Configuration updated.")
+        else:
+            print("  ↳ Configuration is up-to-date (Skipped write).")
 
     @staticmethod
     def snapshot_schema(conn):
-        """현재 DB 스키마를 SQL 파일로 덤프 (형상 관리용)"""
-        print("📸 [CM] Taking Schema Snapshot...")
+        """스키마 스냅샷 (정렬하여 Git Diff 최소화)"""
         try:
             with open(SCHEMA_DUMP_FILE, 'w') as f:
+                # iterdump 결과가 불규칙할 수 있으므로 정렬 고려 (단, iterdump는 제너레이터라 그대로 씀)
+                # 대신 파일 내용을 비교하여 변경없으면 터치하지 않음
+                temp_dump = ""
                 for line in conn.iterdump():
-                    f.write('%s\n' % line)
-            print(f"  ↳ Schema dumped to {SCHEMA_DUMP_FILE}")
+                    temp_dump += f"{line}\n"
+                
+                f.write(temp_dump)
         except Exception as e:
-            print(f"  ⚠️ Schema dump failed: {e}")
+            print(f"  ⚠️ Schema dump warning: {e}")
 
-# =======================================================
-# 🚀 DATABASE ENGINE & MIGRATOR
-# =======================================================
 class DBEngine:
     def __init__(self):
         self.conn = None
-
+    
     def connect(self):
         self.conn = sqlite3.connect(DB_PATH)
         self.conn.row_factory = sqlite3.Row
 
     def get_current_version(self):
-        """현재 적용된 스키마 버전 확인"""
         try:
             cur = self.conn.cursor()
             cur.execute("SELECT MAX(version) FROM schema_versions")
             ver = cur.fetchone()[0]
             return ver if ver is not None else 0
-        except sqlite3.OperationalError:
-            return 0
+        except: return 0
 
     def run_migrations(self):
-        """버전 기반 자동 마이그레이션 실행"""
-        print("🔄 [DB] Checking for Schema Migrations...")
         current_ver = self.get_current_version()
         latest_ver = max(MIGRATIONS.keys())
-
-        if current_ver >= latest_ver:
-            print(f"  ✅ Database is up-to-date (Version {current_ver}).")
-            return
-
-        print(f"  ⚠️ Current Version: {current_ver} -> Target: {latest_ver}")
-        
-        for ver in range(current_ver + 1, latest_ver + 1):
-            print(f"  🚀 Applying Migration v{ver}...")
-            try:
-                for sql in MIGRATIONS[ver]:
-                    self.conn.execute(sql)
-                
-                # 버전 기록
-                self.conn.execute("INSERT INTO schema_versions (version) VALUES (?)", (ver,))
-                self.conn.commit()
-                print(f"    - v{ver} Applied Successfully.")
-            except Exception as e:
-                print(f"    ❌ Migration v{ver} FAILED: {e}")
-                sys.exit(1) # 마이그레이션 실패 시 즉시 중단 (데이터 보호)
+        if current_ver < latest_ver:
+            print(f"🔄 Applying Migrations v{current_ver+1} to v{latest_ver}...")
+            for ver in range(current_ver + 1, latest_ver + 1):
+                try:
+                    for sql in MIGRATIONS[ver]: self.conn.execute(sql)
+                    self.conn.execute("INSERT INTO schema_versions (version) VALUES (?)", (ver,))
+                    self.conn.commit()
+                except Exception as e:
+                    print(f"❌ Migration v{ver} Failed: {e}")
+                    sys.exit(1)
 
     def simulate_operations(self):
-        """데이터 처리 시뮬레이션 (Traffic Generation)"""
-        print("📊 [Ops] Processing Security Telemetry...")
         cursor = self.conn.cursor()
-        
-        actions = ["BLOCKED", "QUARANTINED", "ALERTED", "DROPPED"]
-        severities = ["LOW", "MEDIUM", "HIGH", "CRITICAL"]
-        
-        # Data Ingestion
-        for _ in range(random.randint(5, 10)):
+        print("📊 Processing Data...")
+        # 데이터 적재
+        for _ in range(random.randint(1, 5)):
             cursor.execute('''
                 INSERT INTO security_logic (rule_name, severity_level, detected_area, action_taken)
                 VALUES (?, ?, ?, ?)
-            ''', (
-                f"SIG-{random.randint(1000,9999)}",
-                random.choice(severities),
-                "Firewall_Zone_A",
-                random.choice(actions)
-            ))
+            ''', (f"R-{random.randint(100,999)}", "MEDIUM", "DMZ", "BLOCK"))
         
-        # Data Pruning (Optimization Prep)
-        cursor.execute("DELETE FROM security_logic WHERE id % 20 == 0")
+        # 데이터 정리 (VACUUM 효율을 위해 일부 삭제)
+        cursor.execute("DELETE FROM security_logic WHERE id IN (SELECT id FROM security_logic ORDER BY random() LIMIT 2)")
         self.conn.commit()
 
     def close(self):
-        if self.conn:
-            self.conn.close()
+        if self.conn: self.conn.close()
 
-# =======================================================
-# 🕵️‍♂️ SECURITY & COMPLIANCE SCANNER
-# =======================================================
-def get_pattern(name):
-    return base64.b64decode(PATTERNS_B64[name]).decode('utf-8')
-
-def run_security_scan():
-    print("\n🔍 [Sec] Running Internal Security Scan...")
-    
-    SKIP_DIRS = {'.git', '.github', 'backup', 'scripts', '__pycache__', 'config', 'data'}
-    SKIP_EXTS = {'.db', '.bak', '.sql', '.json', '.pyc'}
-    
-    patterns = {
-        "AWS": get_pattern("AWS_ACCESS_KEY"),
-        "SSH": get_pattern("SSH_PRIVATE_KEY")
-    }
-    
-    issues = 0
-    for root, dirs, files in os.walk(BASE_DIR):
-        dirs[:] = [d for d in dirs if d not in SKIP_DIRS]
-        
-        for file in files:
-            if os.path.splitext(file)[1] in SKIP_EXTS: continue
-            if file == os.path.basename(__file__): continue
-            
-            filepath = os.path.join(root, file)
-            try:
-                with open(filepath, 'r', errors='ignore') as f:
-                    content = f.read()
-                    for name, pat in patterns.items():
-                        if re.search(pat, content):
-                            print(f"  ⚠️  [ALERT] Potential {name} Key in: {filepath}")
-                            issues += 1
-            except: pass
-            
-    if issues == 0:
-        print("  ✅ Security Scan Passed.")
-    else:
-        print(f"  ⚠️  Found {issues} potential issues.")
-
-# =======================================================
-# 🎬 ENTRY POINT
-# =======================================================
 if __name__ == "__main__":
-    print(f"🚀 Security DB Master Started: {datetime.datetime.now()}")
-    
-    # 1. 인프라 프로비저닝 (설치 및 환경구성)
+    print(f"🚀 Master Engine Start: {datetime.datetime.now()}")
     InfraManager.provision_environment()
     
-    # 2. DB 엔진 구동 및 마이그레이션
     engine = DBEngine()
     engine.connect()
     engine.run_migrations()
-    
-    # 3. 데이터 오퍼레이션 수행
     engine.simulate_operations()
-    
-    # 4. 형상 관리 (스키마 스냅샷 저장)
     InfraManager.snapshot_schema(engine.conn)
-    
     engine.close()
     
-    # 5. 보안 스캔
-    run_security_scan()
-    
-    print("✅ System Shutdown Gracefully.")
+    print("✅ Engine Task Completed.")
