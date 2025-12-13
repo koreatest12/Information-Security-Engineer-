@@ -1,8 +1,8 @@
-name: 🖥️ Grand Ops Omni-Dashboard v22 (Full-Stack Observability)
+name: 📰 Grand Ops News-Commander v23 (AI & IT Briefing)
 
 on:
   schedule:
-    - cron: '*/15 * * * *' # 15분 주기
+    - cron: '*/20 * * * *' # 뉴스 수집을 위해 20분 주기
   workflow_dispatch:
 
 concurrency:
@@ -13,14 +13,13 @@ env:
   TZ: 'Asia/Seoul'
   DB_PATH: 'data/grand_ops_master.db'
   DASHBOARD_FILE: 'data/omni_dashboard.md'
-  AUDIT_REPORT: 'data/security_audit.md'
-  ARTIFACT_PASSWORD: ${{ secrets.ARTIFACT_KEY || 'OmniDash_2025' }}
+  ARTIFACT_PASSWORD: ${{ secrets.ARTIFACT_KEY || 'News_Secure_2025' }}
 
 permissions:
   contents: write
 
 jobs:
-  omni-dashboard-engine:
+  news-dashboard-engine:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -28,176 +27,173 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 🏗️ Setup Full-Stack Environment
+      - name: 🏗️ Setup Intelligence Stack
         run: |
-          echo "📡 Initializing Omni-Dashboard..."
+          echo "📡 Initializing News & Monitor Stack..."
           mkdir -p data backup scripts
           python -m pip install --upgrade pip
-          # [핵심] psutil(시스템정보), requests(통신), pandas(분석), tabulate(표)
-          echo -e "requests\npandas\nnumpy\nscikit-learn\ntabulate\npsutil" > requirements.txt
+          # [핵심] feedparser: RSS 뉴스 수집용 라이브러리 추가
+          echo -e "requests\npandas\nnumpy\nscikit-learn\ntabulate\npsutil\nfeedparser" > requirements.txt
           pip install -r requirements.txt
 
-      # [Core] 시스템 자원 + 외부 데이터 + AI 분석을 통합한 대시보드 엔진
-      - name: 🧠 Generate Omni-Dashboard Script
+      # [Core] 시스템 감시 + 외부 데이터 + [NEW] 뉴스 수집 통합 엔진
+      - name: 🧠 Generate News-Commander Script
         run: |
           cat <<'EOF' > scripts/omni_core.py
           import sqlite3
           import os
           import datetime
-          import hashlib
           import requests
           import psutil
+          import feedparser # RSS 파싱
           import pandas as pd
-          import numpy as np
           from sklearn.ensemble import IsolationForest
 
           # 설정
           DB_PATH = os.getenv('DB_PATH', 'data/grand_ops_master.db')
           DASH_PATH = os.getenv('DASHBOARD_FILE', 'data/omni_dashboard.md')
           
+          class NewsAggregator:
+              """IT 및 AI 관련 뉴스 수집기"""
+              def __init__(self):
+                  # 공신력 있는 테크 뉴스 RSS 피드 목록
+                  self.feeds = [
+                      "https://techcrunch.com/category/artificial-intelligence/feed/", # TechCrunch AI
+                      "https://www.wired.com/feed/category/science/latest/rss", # Wired Science/AI
+                      "https://feeds.feedburner.com/TheHackersNews", # Security
+                      "https://openai.com/blog/rss.xml" # OpenAI Blog
+                  ]
+                  self.keywords = ['AI', 'GPT', 'LLM', 'Generative', 'Nvidia', 'Data', 'Cyber', 'Cloud', 'Python', 'Model']
+
+              def fetch_news(self, limit=5):
+                  news_items = []
+                  try:
+                      for url in self.feeds:
+                          feed = feedparser.parse(url)
+                          for entry in feed.entries[:5]: # 각 피드당 최신 5개 스캔
+                              title = entry.title
+                              link = entry.link
+                              # 날짜 처리 (없으면 현재 시간)
+                              published = getattr(entry, 'published', datetime.datetime.now().strftime('%Y-%m-%d'))[:10]
+                              
+                              # 키워드 필터링 (관심 주제만)
+                              # 제목에 키워드가 있거나, AI 전용 피드인 경우
+                              if any(k.lower() in title.lower() for k in self.keywords) or "artificial-intelligence" in url:
+                                  news_items.append({'date': published, 'source': feed.feed.title, 'title': title, 'link': link})
+                  except Exception as e:
+                      print(f"⚠️ News Fetch Error: {e}")
+                      return []
+
+                  # 날짜순 정렬 후 상위 N개 반환
+                  news_items.sort(key=lambda x: x['date'], reverse=True)
+                  return news_items[:limit]
+
           class SystemMonitor:
-              """서버 물리 리소스 및 네트워크 정보 수집"""
               @staticmethod
               def get_metrics():
-                  cpu = psutil.cpu_percent(interval=1)
-                  ram = psutil.virtual_memory().percent
-                  disk = psutil.disk_usage('/').percent
-                  return cpu, ram, disk
+                  return psutil.cpu_percent(interval=1), psutil.virtual_memory().percent, psutil.disk_usage('/').percent
 
               @staticmethod
               def get_geo_info():
                   try:
-                      r = requests.get('https://ipinfo.io/json', timeout=5)
-                      data = r.json()
-                      return data.get('ip', 'Unknown'), data.get('city', 'Unknown'), data.get('country', 'Unknown')
-                  except:
-                      return "127.0.0.1", "Localhost", "N/A"
+                      r = requests.get('https://ipinfo.io/json', timeout=3).json()
+                      return r.get('ip', 'Unknown'), r.get('city', 'Unknown'), r.get('country', 'Unknown')
+                  except: return "127.0.0.1", "Localhost", "N/A"
 
           class ExternalFetcher:
-              """외부 API 데이터 (경제, 날씨)"""
               @staticmethod
               def get_bitcoin():
                   try:
-                      url = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
-                      r = requests.get(url, headers={'User-Agent': 'Bot'}, timeout=5)
+                      r = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd", headers={'User-Agent': 'Bot'}, timeout=3)
                       return r.json()['bitcoin']['usd']
-                  except: return 97000.0 # Fallback
+                  except: return 97500.0
 
-              @staticmethod
-              def get_weather():
-                  try:
-                      # Seoul
-                      url = "https://api.open-meteo.com/v1/forecast?latitude=37.5665&longitude=126.9780&current_weather=true"
-                      r = requests.get(url, timeout=5)
-                      return r.json()['current_weather']['temperature']
-                  except: return 20.0
-
-          class AIDashboard:
+          class DashboardGenerator:
               def __init__(self, conn):
                   self.conn = conn
 
-              def get_trend(self, current, metric_name):
-                  """이전 데이터와 비교하여 추세 아이콘 반환"""
-                  cursor = self.conn.cursor()
-                  cursor.execute(f"SELECT {metric_name} FROM system_logs ORDER BY id DESC LIMIT 1")
-                  row = cursor.fetchone()
-                  if not row: return "⏺️"
-                  prev = row[0]
-                  if current > prev: return "🔼"
-                  elif current < prev: return "🔽"
-                  else: return "⏺️"
+              def draw_gauge(self, val):
+                  fill = int((val / 100) * 10)
+                  return "█" * fill + "░" * (10 - fill)
 
-              def draw_gauge(self, val, max_val=100, length=10):
-                  fill = int((val / max_val) * length)
-                  bar = "█" * fill + "░" * (length - fill)
-                  if val > 90: color = "🔴"
-                  elif val > 70: color = "🟡"
-                  else: color = "🟢"
-                  return f"{bar} {color}"
-
-              def generate_ui(self, sys_metrics, geo, btc, temp):
-                  cpu, ram, disk = sys_metrics
+              def generate(self, sys, geo, btc, news_list):
+                  cpu, ram, disk = sys
                   ip, city, country = geo
                   
-                  # AI 분석 (간략화)
-                  ai_status = "✅ OPTIMAL" if cpu < 80 else "⚠️ HIGH LOAD"
-                  
-                  # 트렌드 계산
-                  btc_trend = self.get_trend(btc, "btc_price")
-                  cpu_trend = self.get_trend(cpu, "cpu_usage")
-
                   with open(DASH_PATH, 'w', encoding='utf-8') as f:
-                      f.write(f"# 🚀 Grand Ops Mission Control\n")
-                      f.write(f"> **System Time:** {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (KST) | **Server:** {city}, {country}\n\n")
+                      f.write(f"# 📰 Grand Ops News-Commander\n")
+                      f.write(f"> **Report Time:** {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (KST) | **Location:** {city}, {country}\n\n")
 
-                      f.write("### 🖥️ Infrastructure Health\n")
-                      f.write(f"| Resource | Usage | Trend | Status |\n|---|---|---|---|\n")
-                      f.write(f"| **CPU Core** | `{self.draw_gauge(cpu)}` {cpu}% | {cpu_trend} | {ai_status} |\n")
-                      f.write(f"| **Memory** | `{self.draw_gauge(ram)}` {ram}% | - | Running |\n")
-                      f.write(f"| **Storage** | `{self.draw_gauge(disk)}` {disk}% | - | Healthy |\n\n")
+                      # 1. 시스템 모니터링 섹션
+                      f.write("### 🖥️ System & Resource Status\n")
+                      f.write(f"| Metric | Usage | Gauge | Status |\n|---|---|---|---|\n")
+                      f.write(f"| **CPU** | {cpu}% | `{self.draw_gauge(cpu)}` | {'🟢 Optimal' if cpu < 70 else '🔴 High'} |\n")
+                      f.write(f"| **RAM** | {ram}% | `{self.draw_gauge(ram)}` | {'🟢 Good' if ram < 80 else '🟡 Warning'} |\n")
+                      f.write(f"| **BTC** | ${btc:,.2f} | - | Global Index |\n\n")
 
-                      f.write("### 🌍 Real-World Intelligence\n")
-                      f.write(f"| Indicator | Value | Trend | Context |\n|---|---|---|---|\n")
-                      f.write(f"| **Bitcoin** | `${btc:,.2f}` | {btc_trend} | Global Market |\n")
-                      f.write(f"| **Seoul Temp** | `{temp}°C` | - | Environment |\n")
-                      f.write(f"| **Public IP** | `{ip}` | - | Network |\n\n")
-
-                      f.write("### 🧠 AI Anomaly Analysis\n")
-                      f.write(f"- **Algorithm:** Isolation Forest (v22.0)\n")
-                      f.write(f"- **Assessment:** System creates a stable baseline. No significant anomalies detected in the last 15 mins.\n")
+                      # 2. [NEW] AI & IT 뉴스 섹션
+                      f.write("### 🤖 Global AI & IT Trends (Live Briefing)\n")
+                      if news_list:
+                          f.write(f"| Date | Source | Headline (Click to Read) |\n|---|---|---|\n")
+                          for n in news_list:
+                              # 소스명 간소화
+                              src = n['source'].replace('TechCrunch', 'TC').replace('The Hacker News', 'HackerNews').split(' ')[0]
+                              f.write(f"| {n['date']} | **{src}** | [{n['title']}]({n['link']}) |\n")
+                      else:
+                          f.write("> 📭 No major AI updates in the last hour.\n")
                       
-                      # DB 저장
-                      self.conn.execute('INSERT INTO system_logs (cpu_usage, ram_usage, btc_price, temp) VALUES (?,?,?,?)', 
-                                        (cpu, ram, btc, temp))
-                      self.conn.commit()
+                      f.write("\n---\n*Dashboard generated by Grand Ops AI Engine v23.0*")
 
           def main():
               if not os.path.exists("data"): os.makedirs("data")
               conn = sqlite3.connect(DB_PATH)
-              conn.execute('CREATE TABLE IF NOT EXISTS system_logs (id INTEGER PRIMARY KEY, cpu_usage REAL, ram_usage REAL, btc_price REAL, temp REAL, timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP)')
               
-              # 데이터 수집
+              # 모듈 실행
               sys_mon = SystemMonitor()
-              metrics = sys_mon.get_metrics() # cpu, ram, disk
+              metrics = sys_mon.get_metrics()
               geo = sys_mon.get_geo_info()
               
               ext = ExternalFetcher()
               btc = ext.get_bitcoin()
-              temp = ext.get_weather()
+              
+              # 뉴스 수집
+              print("📡 Scanning Global Tech News...")
+              aggregator = NewsAggregator()
+              news = aggregator.fetch_news(limit=7) # 상위 7개 뉴스
               
               # 대시보드 생성
-              dash = AIDashboard(conn)
-              dash.generate_ui(metrics, geo, btc, temp)
+              dash = DashboardGenerator(conn)
+              dash.generate(metrics, geo, btc, news)
               
               conn.close()
-              print("✅ Omni-Dashboard Generated.")
+              print("✅ Dashboard with News Generated.")
 
           if __name__ == "__main__":
               main()
           EOF
 
-      - name: 🚀 Run Dashboard Engine
+      - name: 🚀 Run News-Commander
         run: python scripts/omni_core.py
 
-      # [핵심] GitHub Actions Summary 화면에 대시보드 투사
-      - name: 📢 Publish to Mission Control
+      # [핵심] GitHub Actions Summary 출력
+      - name: 📢 Publish Briefing
         run: |
           cat "$DASHBOARD_FILE" >> $GITHUB_STEP_SUMMARY
 
-      - name: 🔒 Encrypt & Backup
+      - name: 🔒 Encrypt & Upload
         run: |
-          zip -e -P "$ARTIFACT_PASSWORD" mission_control_data.zip data/*.md data/*.db
+          zip -e -P "$ARTIFACT_PASSWORD" news_dashboard.zip data/*.md data/*.db
       
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: Mission-Control-Bundle
-          path: mission_control_data.zip
+          name: Intelligence-Bundle
+          path: news_dashboard.zip
 
-      - name: 🔄 Sync Data
+      - name: 🔄 Sync Intelligence
         run: |
-          git config --global user.name "Omni-Bot"
-          git config --global user.email "bot@grand-ops.ai"
+          git config --global user.name "News-Bot"
+          git config --global user.email "news@grand-ops.ai"
           git config --global --add safe.directory $GITHUB_WORKSPACE
           
           [ -f "$DASHBOARD_FILE" ] && git add -f "$DASHBOARD_FILE"
@@ -205,5 +201,5 @@ jobs:
           git add -A
           
           if [ -z "$(git status --porcelain)" ]; then exit 0; fi
-          git commit -m "dashboard: system internals & trends update [skip ci]"
-          git push origin main || echo "Sync skipped (Conflict)"
+          git commit -m "dashboard: ai news & metrics update [skip ci]"
+          git push origin main || echo "Sync skipped"
