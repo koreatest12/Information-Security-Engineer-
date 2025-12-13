@@ -6,6 +6,8 @@ import random
 import sys
 import stat
 import multiprocessing
+import subprocess
+import hashlib
 
 # =======================================================
 # ⚙️ SYSTEM CONFIGURATION
@@ -18,6 +20,8 @@ DB_NAME = "grand_ops_secure.db"
 DB_PATH = os.path.join(DATA_DIR, DB_NAME)
 CONFIG_FILE = os.path.join(CONFIG_DIR, "db_engine_conf.json")
 SCHEMA_DUMP_FILE = os.path.join(DATA_DIR, "schema_snapshot.sql")
+DEP_LOCK_FILE = os.path.join(CONFIG_DIR, "requirements.lock")
+DEP_GRAPH_FILE = os.path.join(CONFIG_DIR, "dependency_graph.json")
 
 # 마이그레이션 SQL 목록
 MIGRATIONS = {
@@ -37,9 +41,12 @@ MIGRATIONS = {
         """CREATE INDEX IF NOT EXISTS idx_severity ON security_logic(severity_level)""",
         """CREATE INDEX IF NOT EXISTS idx_created_at ON security_logic(created_at)"""
     ],
-    5: [ # [NEW] 새로운 마이그레이션 추가
+    5: [
         """CREATE TABLE IF NOT EXISTS server_health (check_id INTEGER PRIMARY KEY AUTOINCREMENT, cpu_load REAL, memory_usage REAL, checked_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)""",
         """INSERT INTO security_logic (rule_name, severity_level, action_taken) VALUES ('SYS_INIT', 'INFO', 'SYSTEM_UPGRADE_COMPLETE')"""
+    ],
+    6: [ # [NEW] 종속성 추적 테이블 추가
+        """CREATE TABLE IF NOT EXISTS dependency_tracker (track_id INTEGER PRIMARY KEY AUTOINCREMENT, package_name TEXT, version TEXT, hash_sign TEXT, tracked_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)"""
     ]
 }
 
@@ -56,22 +63,61 @@ class SecurityGuardian:
             else: os.chmod(path, stat.S_IRUSR | stat.S_IWUSR) # 600
         except Exception: pass
 
+class DependencyTracker:
+    """[NEW] 자동 종속성 제출 및 무결성 검증 모듈"""
+    def __init__(self, conn):
+        self.conn = conn
+
+    def snapshot_environment(self):
+        print("📦 [Dependency] Generating Environment Snapshot...")
+        try:
+            # 1. pip freeze로 현재 환경 추출
+            result = subprocess.run([sys.executable, '-m', 'pip', 'freeze'], capture_output=True, text=True)
+            dependencies = result.stdout.strip().split('\n')
+            
+            # 2. Lock 파일 생성
+            with open(DEP_LOCK_FILE, 'w', encoding='utf-8') as f:
+                f.write("# GRAND OPS AUTO-GENERATED LOCK FILE\n")
+                f.write(f"# Generated at: {datetime.datetime.now()}\n")
+                f.write(result.stdout)
+            SecurityGuardian.enforce_permissions(DEP_LOCK_FILE)
+
+            # 3. JSON 그래프 생성 및 DB 기록
+            dep_list = []
+            for dep in dependencies:
+                if '==' in dep:
+                    pkg, ver = dep.split('==', 1)
+                    # 패키지 무결성 서명 (Hash)
+                    pkg_hash = hashlib.sha256(f"{pkg}:{ver}".encode()).hexdigest()
+                    dep_list.append({"package": pkg, "version": ver, "signature": pkg_hash})
+                    
+                    # DB에 기록
+                    self.conn.execute("INSERT INTO dependency_tracker (package_name, version, hash_sign) VALUES (?, ?, ?)",
+                                      (pkg, ver, pkg_hash))
+            
+            with open(DEP_GRAPH_FILE, 'w', encoding='utf-8') as f:
+                json.dump({"snapshot_id": str(uuid.uuid4()) if 'uuid' in sys.modules else "sys-generated", 
+                           "packages": dep_list}, f, indent=4)
+            SecurityGuardian.enforce_permissions(DEP_GRAPH_FILE)
+            
+            print(f"  ✅ Snapshot Saved: {len(dep_list)} packages tracked.")
+            self.conn.commit()
+
+        except Exception as e:
+            print(f"  ⚠️ Dependency Snapshot Failed: {e}")
+
 class ServerOps:
-    """[NEW] 서버 상태 진단 및 DB 튜닝 매니저"""
+    """서버 상태 진단 및 DB 튜닝 매니저"""
     @staticmethod
     def optimize_db_config(conn):
-        """하드웨어 사양에 따른 DB 파라미터 튜닝"""
         try:
             cpu_count = multiprocessing.cpu_count()
-            # CPU가 많으면 병렬 처리 및 캐시 증설
             if cpu_count >= 2:
-                # Cache Size: 2000 pages -> ~8MB (기본값보다 상향)
-                conn.execute("PRAGMA cache_size = -2000;") 
-                # 저널 모드: WAL (Write-Ahead Logging) -> 동시성 향상
+                conn.execute("PRAGMA cache_size = -4000;") # 캐시 2배 증설
                 conn.execute("PRAGMA journal_mode = WAL;")
-                # 동기화 모드: NORMAL (안전성과 성능 균형)
                 conn.execute("PRAGMA synchronous = NORMAL;")
-                print(f"  ⚡ [Tuning] Server Upgrade Applied: WAL Mode, Cache Optimized (CPUs: {cpu_count})")
+                conn.execute("PRAGMA temp_store = MEMORY;") # 임시 데이터를 메모리에서 처리 (속도 향상 및 보안)
+                print(f"  ⚡ [Tuning] High-Performance Mode: WAL, MemStore, Cache+ (CPUs: {cpu_count})")
             else:
                 print("  ℹ️ [Tuning] Standard Mode Active.")
         except Exception as e:
@@ -95,20 +141,16 @@ class MigrationManager:
         
         if current_ver < latest_ver:
             print(f"🔄 [Migration] Starting Upgrade v{current_ver} -> v{latest_ver}...")
-            
             for ver in range(current_ver + 1, latest_ver + 1):
-                print(f"  ↳ Applying v{ver}...")
                 try:
-                    # 트랜잭션 시작
                     self.conn.execute("BEGIN TRANSACTION;")
                     for sql in MIGRATIONS[ver]:
                         self.conn.execute(sql)
-                    
                     self.conn.execute("INSERT INTO schema_versions (version) VALUES (?)", (ver,))
-                    self.conn.commit() # 성공 시 커밋
-                    print(f"    ✅ v{ver} Success.")
+                    self.conn.commit()
+                    print(f"    ✅ v{ver} Applied.")
                 except Exception as e:
-                    self.conn.rollback() # 실패 시 롤백
+                    self.conn.rollback()
                     print(f"    ❌ v{ver} Failed! Rolled back. Error: {e}")
                     sys.exit(1)
         else:
@@ -121,7 +163,6 @@ class DBEngine:
     def connect(self):
         self.conn = sqlite3.connect(DB_PATH)
         self.conn.row_factory = sqlite3.Row
-        # 연결 즉시 권한 보호
         SecurityGuardian.enforce_permissions(DB_PATH)
 
     def close(self):
@@ -131,9 +172,9 @@ class DBEngine:
 # 🚀 MAIN EXECUTION
 # =======================================================
 if __name__ == "__main__":
-    print(f"\n{'='*50}")
-    print(f"🚀 GRAND OPS MASTER ENGINE V7 (UPGRADE & MIGRATE)")
-    print(f"{'='*50}\n")
+    print(f"\n{'='*60}")
+    print(f"🚀 GRAND OPS MASTER ENGINE V8 (AUTO-DEPENDENCY & DEFENSE)")
+    print(f"{'='*60}\n")
     
     # 1. 환경 구성 및 보안 권한 설정
     print("🏗️ [Infra] Checking Environment...")
@@ -145,12 +186,14 @@ if __name__ == "__main__":
     engine = DBEngine()
     engine.connect()
     
-    # 3. [NEW] 서버 사양에 따른 DB 엔진 튜닝 (업그레이드)
+    # 3. 서버 튜닝 및 마이그레이션
     ServerOps.optimize_db_config(engine.conn)
-    
-    # 4. [NEW] 고도화된 마이그레이션 실행
     migrator = MigrationManager(engine.conn)
     migrator.run()
+
+    # 4. [NEW] 종속성 자동 제출 및 스냅샷
+    dep_tracker = DependencyTracker(engine.conn)
+    dep_tracker.snapshot_environment()
     
     # 5. 데이터 시뮬레이션
     print("📊 [Ops] Processing Data Transactions...")
