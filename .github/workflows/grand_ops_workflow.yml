@@ -1,0 +1,64 @@
+name: Grand Ops Unified Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ops-execution:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. 소스 코드 체크아웃
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 전체 히스토리를 가져와야 rebase 가능
+
+      # 2. 파이썬 환경 설정 (사용자 스크립트용)
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          cache: 'pip'
+
+      # 3. Docker Buildx 설정 (이미지 빌드용)
+      - name: 🐳 Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      # 4. 통합 스크립트 실행 권한 부여
+      - name: 🔐 Grant Permissions
+        run: chmod +x ./universal_ops_manager.sh
+
+      # 5. 대통합 스크립트 실행 (OS 업그레이드, 빌드, 스크립트 실행 등)
+      - name: 🚀 Run Universal Ops Manager
+        run: ./universal_ops_manager.sh
+        env:
+          TERM: xterm-256color # 컬러 로그 출력 지원
+
+      # 6. Git 충돌 자동 해결 및 커밋 (에러 방지 핵심 로직)
+      - name: 🔄 Sync and Commit Infrastructure State
+        run: |
+          git config --global user.name "Grand-Ops-Bot"
+          git config --global user.email "ops-bot@example.com"
+          
+          echo "🔎 Checking for changes..."
+          git add data/ .cache/ config/ || echo "Nothing to add"
+          
+          # 변경사항이 없으면 종료하지 않고 넘어감
+          if git diff --staged --quiet; then
+            echo "✅ No changes to commit."
+          else
+            git commit -m "ops: auto-update infrastructure state [skip ci]"
+            
+            echo "🔄 Pulling latest changes (Rebase Strategy)..."
+            # 원격 변경사항을 가져와서 로컬 커밋 위에 재적용 (충돌 방지)
+            git pull --rebase origin main || git pull origin main --no-edit
+            
+            echo "🚀 Pushing changes..."
+            git push origin main
+          fi
