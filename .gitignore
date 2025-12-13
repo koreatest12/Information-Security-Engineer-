@@ -130,3 +130,7 @@ $RECYCLE.BIN/
 *.swp
 *.swo
 *~
+
+!data/grand_ops_secure.db
+!config/*.sig
+!config/*.lock

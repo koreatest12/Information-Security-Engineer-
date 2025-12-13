@@ -1,4 +1,0 @@
-=== 🩺 DB Health Check Report ===
-ok
-📊 Table Stats:
-2

@@ -1,26 +1,8 @@
-# =======================================================
-# 🛡️ Information Security Engineer Repository Dependencies
-# Python Runtime Environment for GitHub Actions
-# =======================================================
-
-# [Core Network Library]
-# HTTP 요청 전송, API 호출, KISA/OWASP 사이트 상태 점검용
-# Security Update: Ensure usage of versions with SSL fixes
-requests>=2.31.0
-
-# [HTML Parsing & Scraping]
-# 추후 KISA 공지사항 제목 크롤링 등 기능 확장을 위해 미리 구성
-# (BeautifulSoup4 is standard for parsing HTML/XML)
-beautifulsoup4>=4.12.0
-
-# [Security & Encoding]
-# SSL 인증서 검증 및 문자열 인코딩 처리 (Requests 의존성 명시)
-certifi>=2023.7.22      # Mozilla's CA Bundle for SSL verification
-charset-normalizer>=3.2.0 # Universal encoding detector
-idna>=3.4               # Internationalized Domain Names support
-urllib3>=2.0.0          # HTTP client for Python (Thread-safe)
-
-# [Development Tools] (Optional)
-# 로컬 테스트 시 코드 포맷팅 및 정적 분석용
-# black                 # Code Formatter
-# pylint                # Code Analysis
+beautifulsoup4==4.14.3
+certifi==2025.11.12
+charset-normalizer==3.4.4
+idna==3.11
+requests==2.32.5
+soupsieve==2.8
+typing_extensions==4.15.0
+urllib3==2.6.2
