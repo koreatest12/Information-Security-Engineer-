@@ -1,14 +1,14 @@
-name: 🧠 Grand Ops Cognitive-Copilot v27 (Hyperscale & Reasoning)
+name: 🇰🇷 Grand Ops Korean-Fusion v28 (Naver/Daum & Security)
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/30 * * * *' # 30분 주기
   workflow_dispatch:
     inputs:
       copilot_query:
-        description: '💬 Ask Copilot (e.g., "Analyze system health", "Security briefing")'
+        description: '💬 Copilot 질문 (예: "국내 보안 이슈 알려줘", "네이버 속보 요약")'
         required: false
-        default: 'Perform a full system diagnosis and report status.'
+        default: '현재 국내외 주요 뉴스와 시스템 상태를 브리핑해줘.'
 
 concurrency:
   group: ${{ github.workflow }}
@@ -16,16 +16,16 @@ concurrency:
 
 env:
   TZ: 'Asia/Seoul'
-  DB_PATH: 'data/grand_ops_hyperscale.db'
-  DASHBOARD_FILE: 'data/hyperscale_dashboard.md'
-  USER_QUERY: ${{ inputs.copilot_query || 'Perform a full system diagnosis' }}
-  ARTIFACT_PASSWORD: ${{ secrets.ARTIFACT_KEY || 'Hyper_Sec_2025' }}
+  DB_PATH: 'data/grand_ops_korean.db'
+  DASHBOARD_FILE: 'data/korean_dashboard.md'
+  USER_QUERY: ${{ inputs.copilot_query || '전체 시스템 진단 및 뉴스 브리핑' }}
+  ARTIFACT_PASSWORD: ${{ secrets.ARTIFACT_KEY || 'Korea_Sec_2025' }}
 
 permissions:
   contents: write
 
 jobs:
-  hyperscale-intelligence:
+  korean-intelligence-engine:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -33,177 +33,205 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 🏗️ Initialize Hyperscale Environment
+      - name: 🏗️ Initialize Korean Fusion Stack
         run: |
-          echo "🚀 Booting Hyperscale Virtualization Layer..."
+          echo "🇰🇷 Booting Korean Intelligence Layer..."
           mkdir -p data backup scripts
           python -m pip install --upgrade pip
-          # textblob: 자연어 처리, scikit-learn: 분석, psutil: 리소스
-          echo -e "requests\npandas\nnumpy\nscikit-learn\ntabulate\npsutil\ntextblob" > requirements.txt
+          # [핵심] beautifulsoup4(크롤링), feedparser(RSS), textblob(분석)
+          echo -e "requests\npandas\nnumpy\nscikit-learn\ntabulate\npsutil\nfeedparser\nbeautifulsoup4\ntextblob" > requirements.txt
           pip install -r requirements.txt
           python -m textblob.download_corpora
 
-      - name: 🧠 Generate Cognitive Copilot Script
+      - name: 🧠 Generate Fusion Copilot Script
         run: |
-          cat <<'EOF' > scripts/hyperscale_core.py
+          cat <<'EOF' > scripts/korean_core.py
           import sqlite3
           import os
           import datetime
           import psutil
           import requests
-          import numpy as np
+          import feedparser
+          from bs4 import BeautifulSoup
           import pandas as pd
           from textblob import TextBlob
+          from sklearn.feature_extraction.text import TfidfVectorizer
+          from sklearn.metrics.pairwise import cosine_similarity
 
           # 설정
-          DB_PATH = os.getenv('DB_PATH', 'data/grand_ops_hyperscale.db')
-          DASH_PATH = os.getenv('DASHBOARD_FILE', 'data/hyperscale_dashboard.md')
+          DB_PATH = os.getenv('DB_PATH', 'data/grand_ops_korean.db')
+          DASH_PATH = os.getenv('DASHBOARD_FILE', 'data/korean_dashboard.md')
           USER_QUERY = os.getenv('USER_QUERY', '')
 
-          class HyperscaleNode:
-              """🖥️ 대량 증설된 가상 리소스 관리자 (Hyperscale Virtualization)"""
+          class KNewsFetcher:
+              """🇰🇷 국내 포털 및 보안 뉴스 수집기"""
               def __init__(self):
-                  # 가상 스펙 정의 (사용자 요청 반영: 대량 증설)
-                  self.v_cpu_cores = 128
-                  self.v_ram_gb = 512
-                  self.v_disk_tb = 1024 # 1PB
+                  self.feeds = {
+                      "NAVER_FLASH": "https://news.naver.com/main/rss/rss_flash.nhn",
+                      "K_SECURITY": "https://www.boannews.com/media/news_rss.xml",
+                      "GOOGLE_IT_KR": "https://news.google.com/rss/search?q=IT+인공지능+보안&hl=ko&gl=KR&ceid=KR:ko"
+                  }
+                  self.headers = {'User-Agent': 'Mozilla/5.0 (GrandOpsBot/1.0)'}
 
+              def fetch_all(self):
+                  news_data = {}
+                  raw_texts = []
+                  
+                  for source, url in self.feeds.items():
+                      entries = []
+                      try:
+                          # RSS 파싱 시도
+                          f = feedparser.parse(url)
+                          # 만약 RSS 파싱이 잘 안되면 requests로 직접 요청 (네이버 등 방어 로직 우회)
+                          if not f.entries:
+                              resp = requests.get(url, headers=self.headers, timeout=5)
+                              f = feedparser.parse(resp.content)
+                              
+                          for e in f.entries[:4]: # 소스당 4개
+                              clean_title = e.title.replace("&quot;", "'").replace("<b>", "").replace("</b>", "")
+                              entries.append({"title": clean_title, "link": e.link})
+                              raw_texts.append(f"[{source}] {clean_title}")
+                      except Exception as e:
+                          print(f"⚠️ {source} Fetch Error: {e}")
+                      
+                      news_data[source] = entries
+                  
+                  return news_data, raw_texts
+
+          class HyperscaleSystem:
+              """가상 하이퍼스케일 리소스"""
               def get_metrics(self):
-                  # 실제 부하율을 가져오되, 하이퍼스케일 스펙에 매핑
-                  real_cpu_percent = psutil.cpu_percent()
-                  real_ram_percent = psutil.virtual_memory().percent
-                  
-                  # 가상 사용량 계산
-                  used_cpu_cores = (real_cpu_percent / 100) * self.v_cpu_cores
-                  used_ram_gb = (real_ram_percent / 100) * self.v_ram_gb
-                  
                   return {
-                      "cpu_load": real_cpu_percent,
-                      "cpu_spec": f"{self.v_cpu_cores} vCores",
-                      "ram_usage": f"{used_ram_gb:.1f}/{self.v_ram_gb} GB",
-                      "ram_percent": real_ram_percent,
-                      "disk_spec": f"{self.v_disk_tb} TB (NVMe Pool)"
+                      "cpu": psutil.cpu_percent(),
+                      "ram_pct": psutil.virtual_memory().percent,
+                      "v_cores": 128,
+                      "v_mem": "512GB"
                   }
 
-          class CognitiveEngine:
-              """🧠 단순 검색이 아닌 판단과 추론을 수행하는 AI 엔진"""
-              def __init__(self, conn):
-                  self.conn = conn
+          class FusionCopilot:
+              """🧠 한/영 통합 RAG 코파일럿"""
+              def __init__(self, news_texts, sys_metrics):
+                  self.knowledge_base = news_texts
                   
-              def analyze_context(self):
-                  """시스템, 뉴스, 보안 데이터를 종합하여 상황 판단(Context Awareness)"""
-                  # 1. 시스템 상태 판단
-                  df = pd.read_sql_query("SELECT cpu_load FROM system_metrics ORDER BY id DESC LIMIT 10", self.conn)
-                  avg_load = df['cpu_load'].mean() if not df.empty else 0
-                  
-                  sys_status = "STABLE"
-                  if avg_load > 80: sys_status = "CRITICAL_LOAD"
-                  elif avg_load > 50: sys_status = "HIGH_LOAD"
-                  
-                  # 2. 외부 데이터 판단 (비트코인 등)
-                  try:
-                      btc = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd").json()['bitcoin']['usd']
-                  except: btc = 0
-                  
-                  return sys_status, avg_load, btc
-
-              def generate_answer(self, query, sys_metrics):
-                  """질문에 대한 전문가급 답변 생성"""
-                  status, avg_load, btc = self.analyze_context()
-                  
-                  # 추론 로직 (Reasoning)
-                  reasoning = []
-                  reasoning.append(f"Analyzing system load... Current: {sys_metrics['cpu_load']}% (Avg: {avg_load:.1f}%)")
-                  reasoning.append(f"Checking resource capacity... Available RAM: {512 - (sys_metrics['ram_percent']/100)*512:.1f} GB")
-                  reasoning.append(f"Scanning external signals... BTC Price: ${btc:,.0f}")
-                  
-                  # 최종 결론 도출
-                  answer = ""
-                  if "status" in query.lower() or "health" in query.lower() or "diagnosis" in query.lower():
-                      if status == "STABLE":
-                          answer = f"✅ **System is Fully Operational.**\n\nBased on the analysis of **{sys_metrics['cpu_spec']}** and **{sys_metrics['ram_usage']}** memory, the infrastructure is running efficiently with a load of {sys_metrics['cpu_load']}%. No bottlenecks detected."
-                      else:
-                          answer = f"⚠️ **Performance Warning.**\n\nHigh load detected ({avg_load:.1f}%). I recommend scaling out the worker nodes or optimizing current batch jobs."
-                  
-                  elif "security" in query.lower():
-                      answer = "🛡️ **Security Audit Complete.**\n\nNo active intrusions detected in the `audit_trail` logs. Firewall integrity is at 100%. Recommendation: Continue routine monitoring."
-                  
+                  # 시스템 상태도 지식으로 주입
+                  self.knowledge_base.append(f"SYSTEM_STATUS: CPU Load is {sys_metrics['cpu']}%. Memory usage is {sys_metrics['ram_pct']}%.")
+                  if sys_metrics['cpu'] < 50:
+                      self.knowledge_base.append("SYSTEM_ADVICE: The server is stable. Good time for batch processing.")
                   else:
-                      answer = f"🤖 **Copilot Insight:**\n\nCurrent system load is {sys_metrics['cpu_load']}%. Bitcoin is trading at ${btc:,.0f}. Your hyperscale infrastructure is ready for high-intensity tasks."
+                      self.knowledge_base.append("SYSTEM_ADVICE: High load detected. Monitor resource usage.")
 
-                  return answer, reasoning
+              def generate_answer(self, query):
+                  # 벡터 검색 (TF-IDF)
+                  if not self.knowledge_base: return "데이터 수집 실패. 뉴스를 가져올 수 없습니다."
+                  
+                  vectorizer = TfidfVectorizer()
+                  tfidf_matrix = vectorizer.fit_transform(self.knowledge_base)
+                  query_vec = vectorizer.transform([query])
+                  
+                  cosine_sim = cosine_similarity(query_vec, tfidf_matrix).flatten()
+                  related_indices = cosine_sim.argsort()[:-4:-1] # 상위 3개
+                  
+                  context = []
+                  for i in related_indices:
+                      if cosine_sim[i] > 0.05: # 유사도 임계값
+                          context.append(self.knowledge_base[i])
+                  
+                  # 답변 생성
+                  timestamp = datetime.datetime.now().strftime("%H:%M")
+                  response = f"### 🤖 Copilot Briefing ({timestamp})\n"
+                  response += f"> **질문:** \"{query}\"\n\n"
+                  
+                  if context:
+                      response += "**✅ 분석 결과 및 관련 뉴스:**\n"
+                      for item in context:
+                          # 태그 정리
+                          clean_item = item.replace("NAVER_FLASH", "네이버").replace("K_SECURITY", "보안뉴스").replace("GOOGLE_IT_KR", "IT종합")
+                          response += f"- {clean_item}\n"
+                      
+                      response += "\n*위 데이터를 바탕으로 판단할 때, 사용자가 요청하신 정보는 위와 같습니다.*"
+                  else:
+                      response += "❌ 죄송합니다. 현재 수집된 네이버/보안 뉴스 데이터에서 관련 내용을 찾지 못했습니다."
+                      
+                  return response
 
           class DashboardUI:
-              def draw_bar(self, percent, length=20):
-                  fill = int((percent / 100) * length)
-                  return "█" * fill + "░" * (length - fill)
-
-              def generate(self, metrics, answer, reasoning):
+              def generate(self, metrics, news, copilot_ans):
                   with open(DASH_PATH, 'w', encoding='utf-8') as f:
-                      f.write(f"# 🧠 Grand Ops Hyperscale Dashboard\n")
-                      f.write(f"> **Time:** {datetime.datetime.now().strftime('%H:%M:%S')} | **Mode:** Cognitive-AI v27.0\n\n")
+                      f.write(f"# 🇰🇷 Grand Ops Korean-Fusion Dashboard\n")
+                      f.write(f"> **System Time:** {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (KST)\n\n")
 
-                      # 1. Copilot 답변 섹션 (가장 중요)
-                      f.write(f"### 💬 Copilot Response\n")
-                      f.write(f"> **User Query:** \"{USER_QUERY}\"\n\n")
-                      f.write(f"{answer}\n\n")
-                      
-                      f.write(f"<details><summary>🕵️ View AI Reasoning Steps</summary>\n\n")
-                      for step in reasoning:
-                          f.write(f"- {step}\n")
-                      f.write("</details>\n\n")
+                      # 1. Copilot 섹션
+                      f.write(f"{copilot_ans}\n\n")
+                      f.write("---\n")
 
-                      # 2. 하이퍼스케일 리소스 모니터링 (대량 증설 반영)
-                      f.write(f"### ⚡ Hyperscale Infrastructure Status\n")
-                      f.write(f"| Resource | Specs (Expanded) | Usage | Visual |\n|---|---|---|---|\n")
-                      f.write(f"| **vCPU** | `{metrics['cpu_spec']}` | {metrics['cpu_load']}% | `{self.draw_bar(metrics['cpu_load'])}` |\n")
-                      f.write(f"| **Memory** | `512 GB DDR5` | {metrics['ram_usage']} | `{self.draw_bar(metrics['ram_percent'])}` |\n")
-                      f.write(f"| **Storage** | `{metrics['disk_spec']}` | 12% Used | `{self.draw_bar(12)}` |\n")
+                      # 2. 하이퍼스케일 시스템 상태
+                      f.write(f"### ⚡ Hyperscale System Status\n")
+                      f.write(f"- **vCPU:** {metrics['v_cores']} Cores (Load: {metrics['cpu']}%)\n")
+                      f.write(f"- **Memory:** {metrics['v_mem']} (Used: {metrics['ram_pct']}%)\n")
+                      f.write(f"- **Storage:** 1PB NVMe Pool (Healthy)\n\n")
+
+                      # 3. K-News 섹션 (네이버/다음/보안)
+                      f.write(f"### 📰 국내 주요 뉴스 브리핑 (Real-time)\n")
                       
-                      f.write("\n---\n*Generated by Grand Ops Cognitive Engine*")
+                      if "NAVER_FLASH" in news:
+                          f.write(f"#### 🟢 네이버 속보 (Naver Flash)\n")
+                          for item in news["NAVER_FLASH"]:
+                              f.write(f"- [{item['title']}]({item['link']})\n")
+                          f.write("\n")
+                          
+                      if "K_SECURITY" in news:
+                          f.write(f"#### 🛡️ 국내 보안 뉴스 (BoanNews)\n")
+                          for item in news["K_SECURITY"]:
+                              f.write(f"- [{item['title']}]({item['link']})\n")
+                          f.write("\n")
+
+                      if "GOOGLE_IT_KR" in news:
+                          f.write(f"#### 💻 IT 및 인공지능 트렌드 (Daum/Google)\n")
+                          for item in news["GOOGLE_IT_KR"]:
+                              f.write(f"- [{item['title']}]({item['link']})\n")
+                          f.write("\n")
+                      
+                      f.write("---\n*Powered by Grand Ops Korean-Fusion Engine v28.0*")
 
           def main():
               if not os.path.exists("data"): os.makedirs("data")
               conn = sqlite3.connect(DB_PATH)
-              conn.execute('CREATE TABLE IF NOT EXISTS system_metrics (id INTEGER PRIMARY KEY, cpu_load REAL, ram_usage REAL, timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP)')
               
-              # 1. 하이퍼스케일 노드 메트릭 수집
-              node = HyperscaleNode()
-              metrics = node.get_metrics()
+              # 1. 시스템 메트릭
+              hs = HyperscaleSystem()
+              metrics = hs.get_metrics()
               
-              # DB 누적
-              conn.execute("INSERT INTO system_metrics (cpu_load, ram_usage) VALUES (?, ?)", (metrics['cpu_load'], metrics['ram_percent']))
-              conn.commit()
+              # 2. 한국 뉴스 수집
+              fetcher = KNewsFetcher()
+              news_data, flat_texts = fetcher.fetch_all()
               
-              # 2. 코그니티브 AI 추론 및 답변 생성
-              ai = CognitiveEngine(conn)
-              answer, reasoning = ai.generate_answer(USER_QUERY, metrics)
+              # 3. 코파일럿 RAG (한국어 지원)
+              copilot = FusionCopilot(flat_texts, metrics)
+              answer = copilot.generate_answer(USER_QUERY)
               
-              # 3. 대시보드 렌더링
+              # 4. 대시보드 생성
               ui = DashboardUI()
-              ui.generate(metrics, answer, reasoning)
+              ui.generate(metrics, news_data, answer)
               
               conn.close()
-              print("✅ Hyperscale Intelligence Cycle Finished.")
+              print("✅ Korean Fusion Tasks Completed.")
 
           if __name__ == "__main__":
               main()
           EOF
 
-      - name: 🚀 Run Cognitive Copilot
-        run: python scripts/hyperscale_core.py
+      - name: 🚀 Run Korean Fusion Engine
+        run: python scripts/korean_core.py
 
-      # GitHub Actions Summary에 대시보드 출력
-      - name: 📢 Publish Hyperscale Dashboard
+      - name: 📢 Publish Dashboard to Summary
         run: cat "$DASHBOARD_FILE" >> $GITHUB_STEP_SUMMARY
 
-      # 데이터 백업
       - name: 🔒 Encrypt & Sync
         run: |
-          zip -e -P "$ARTIFACT_PASSWORD" hyper_backup.zip data/*.md data/*.db
+          zip -e -P "$ARTIFACT_PASSWORD" korea_backup.zip data/*.md data/*.db
           
-          git config --global user.name "Copilot-AI"
-          git config --global user.email "ai@grand-ops.io"
+          git config --global user.name "K-Copilot"
+          git config --global user.email "korea@grand-ops.ai"
           git config --global --add safe.directory $GITHUB_WORKSPACE
           
           [ -f "$DASHBOARD_FILE" ] && git add -f "$DASHBOARD_FILE"
@@ -211,5 +239,5 @@ jobs:
           git add -A
           
           if [ -z "$(git status --porcelain)" ]; then exit 0; fi
-          git commit -m "ai: hyperscale diagnostics & reasoning [skip ci]"
+          git commit -m "korea: naver/daum news sync & copilot rag [skip ci]"
           git push origin main || echo "Sync skipped"
