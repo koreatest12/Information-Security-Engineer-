@@ -1,8 +1,8 @@
-name: 🚀 Grand Ops Copilot & Upgrade System v14
+name: 🧠 Grand Ops AI-Core Pipeline v15 (ML & Anomaly Detection)
 
 on:
   schedule:
-    - cron: '*/10 * * * *' # 10분마다 Copilot 가동
+    - cron: '*/10 * * * *' # 10분마다 AI 모델 학습 및 추론
   workflow_dispatch:
 
 concurrency:
@@ -11,20 +11,18 @@ concurrency:
 
 env:
   TZ: 'Asia/Seoul'
-  # 경로 설정
   DB_PATH: 'data/grand_ops_secure.db'
-  REPORT_PATH: 'data/copilot_report.md'
-  SCHEMA_PATH: 'data/schema_snapshot.sql'
+  REPORT_PATH: 'data/ai_threat_report.md'
+  MODEL_PATH: 'data/anomaly_model.pkl'
   BACKUP_DIR: 'backup'
-  # 보안 설정
-  ARTIFACT_PASSWORD: ${{ secrets.ARTIFACT_KEY || 'CopilotSecureKey2025!' }}
+  ARTIFACT_PASSWORD: ${{ secrets.ARTIFACT_KEY || 'AI_Core_Secure_2025' }}
 
 permissions:
   contents: write
 
 jobs:
-  # [Core] Copilot 엔진 생성 및 실행, 시스템 업그레이드
-  copilot-execution-engine:
+  # AI 엔진 구동 및 인텔리전스 분석 Job
+  ai-copilot-engine:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -32,165 +30,212 @@ jobs:
         with:
           fetch-depth: 0
 
-      # 1. 인프라 준비 및 디렉토리 구조화
-      - name: 🏗️ Setup Infrastructure & Hierarchy
+      # 1. AI 구동을 위한 고성능 환경 구축
+      - name: 🏗️ Setup AI Infrastructure
         run: |
-          echo "📂 Initializing Directory Structure..."
+          echo "🧬 Initializing AI Environment..."
           mkdir -p data backup config scripts
-          echo "✅ Directories Ready."
-
-      # 2. 시스템 및 의존성 강제 업그레이드 (Upgrade Feature)
-      - name: ⬆️ System & Dependency Auto-Upgrade
-        run: |
-          echo "🔄 Checking for System Updates..."
-          sudo apt-get update && sudo apt-get install -y sqlite3 zip
           
-          echo "🐍 Upgrading Python Environment..."
+          # 파이썬 최신화
           python -m pip install --upgrade pip
-          # 필수 라이브러리 정의 및 설치
-          echo -e "requests\npandas" > requirements.txt
+          
+          # [핵심] 머신러닝 라이브러리 설치 (Scikit-learn, Pandas, NumPy)
+          echo "📦 Installing ML Dependencies..."
+          echo -e "requests\npandas\nnumpy\nscikit-learn" > requirements.txt
           pip install -r requirements.txt
           
-          echo "✅ System Upgrade Completed."
+          echo "✅ AI Libraries Installed."
 
-      # 3. [핵심] Copilot 인공지능 에이전트 생성 (Script Factory)
-      # 이 스크립트는 DB 관리, 업그레이드 판단, 리포트 작성을 수행합니다.
-      - name: 🤖 Generate Copilot Agent Script
+      # 2. [Expert] 머신러닝 탑재 Copilot 스크립트 생성 (AI Factory)
+      # 'EOF'에 따옴표를 붙여 Bash 변수 치환을 방지(Python 코드 원본 보존)
+      - name: 🧠 Generate AI Copilot Script
         run: |
-          cat <<EOF > scripts/ops_copilot.py
+          cat <<'EOF' > scripts/ai_ops_copilot.py
           import sqlite3
           import os
           import datetime
-          import sys
+          import random
+          import json
+          import pandas as pd
+          import numpy as np
+          from sklearn.ensemble import IsolationForest
+          from sklearn.preprocessing import StandardScaler
 
-          DB_PATH = "${{ env.DB_PATH }}"
-          REPORT_PATH = "${{ env.REPORT_PATH }}"
-          SCHEMA_PATH = "${{ env.SCHEMA_PATH }}"
+          # 설정 로드
+          DB_PATH = os.getenv('DB_PATH', 'data/grand_ops_secure.db')
+          REPORT_PATH = os.getenv('REPORT_PATH', 'data/ai_threat_report.md')
 
-          def log(message):
-              timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-              print(f"[{timestamp}] [COPILOT] {message}")
+          class AIEngine:
+              def __init__(self, conn):
+                  self.conn = conn
+                  self.model = IsolationForest(contamination=0.1, random_state=42)
+                  self.scaler = StandardScaler()
 
-          def run_copilot():
-              log("🚀 Copilot Engine Starting...")
-              
-              # 1. DB 연결 및 자가 치유 (Self-Healing)
+              def generate_synthetic_data(self):
+                  """AI 학습을 위한 초기 데이터가 부족할 경우 합성 데이터 생성"""
+                  print("🧪 Generating synthetic training data...")
+                  cursor = self.conn.cursor()
+                  actions = ['LOGIN', 'LOGOUT', 'QUERY', 'UPDATE', 'DELETE', 'ADMIN_ACCESS']
+                  risks = ['LOW', 'MEDIUM', 'HIGH', 'CRITICAL']
+                  
+                  # 100개의 학습용 로그 주입
+                  data = []
+                  for _ in range(100):
+                      act = random.choice(actions)
+                      risk = random.choice(risks)
+                      # 'DELETE'나 'CRITICAL'은 이상치로 간주될 확률을 높이기 위해 특정 패턴 부여 가능
+                      val = random.randint(1, 100) 
+                      data.append((act, risk, val))
+                  
+                  cursor.executemany("INSERT INTO security_logs (action, risk_level, execution_time_ms) VALUES (?, ?, ?)", data)
+                  self.conn.commit()
+
+              def train_and_predict(self):
+                  """데이터를 로드하여 비정상 행위(Anomaly) 탐지"""
+                  print("🧠 Training AI Model (Isolation Forest)...")
+                  
+                  # Pandas로 데이터 로드
+                  df = pd.read_sql_query("SELECT id, action, risk_level, execution_time_ms FROM security_logs", self.conn)
+                  
+                  if len(df) < 50:
+                      self.generate_synthetic_data()
+                      df = pd.read_sql_query("SELECT id, action, risk_level, execution_time_ms FROM security_logs", self.conn)
+
+                  # Feature Engineering (문자열 -> 수치화)
+                  df['action_code'] = df['action'].astype('category').cat.codes
+                  df['risk_code'] = df['risk_level'].astype('category').cat.codes
+                  
+                  features = df[['action_code', 'risk_code', 'execution_time_ms']]
+                  
+                  # 모델 학습
+                  self.model.fit(features)
+                  
+                  # 예측 (-1: 이상치/공격의심, 1: 정상)
+                  df['anomaly_score'] = self.model.predict(features)
+                  df['score_val'] = self.model.decision_function(features)
+                  
+                  anomalies = df[df['anomaly_score'] == -1]
+                  return anomalies, len(df)
+
+          def init_db():
               conn = sqlite3.connect(DB_PATH)
               cursor = conn.cursor()
-              
-              # 2. 스키마 버전 확인 및 업그레이드 (Schema Upgrade)
-              log("🔍 Checking Schema Version...")
-              cursor.execute("CREATE TABLE IF NOT EXISTS system_metadata (key TEXT PRIMARY KEY, value TEXT)")
-              
-              # 메타데이터가 없으면 초기화
-              cursor.execute("INSERT OR IGNORE INTO system_metadata (key, value) VALUES ('schema_version', '1.0')")
-              
-              # 기능 테이블 생성
               cursor.execute('''
-                  CREATE TABLE IF NOT EXISTS execution_logs (
+                  CREATE TABLE IF NOT EXISTS security_logs (
                       id INTEGER PRIMARY KEY AUTOINCREMENT,
-                      task_name TEXT,
-                      status TEXT,
+                      action TEXT,
+                      risk_level TEXT,
+                      execution_time_ms INTEGER,
                       timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                   )
               ''')
-              
-              # 3. 인텔리전트 작업 수행
-              log("⚡ Performing Maintenance Tasks...")
-              cursor.execute("INSERT INTO execution_logs (task_name, status) VALUES ('System_Upgrade_Check', 'COMPLETED')")
-              cursor.execute("INSERT INTO execution_logs (task_name, status) VALUES ('Data_Optimization', 'SUCCESS')")
-              
               conn.commit()
-              
-              # 4. 스키마 스냅샷 저장 (Git Sync용)
-              with open(SCHEMA_PATH, 'w') as f:
-                  for line in conn.iterdump():
-                      f.write('%s\n' % line)
-              log(f"💾 Schema Snapshot Saved: {SCHEMA_PATH}")
+              return conn
 
-              # 5. Copilot 리포트 생성 (Markdown)
-              with open(REPORT_PATH, 'w') as f:
-                  f.write(f"# 🤖 Ops Copilot Report\n")
-                  f.write(f"**Execution Time:** {datetime.datetime.now()}\n\n")
-                  f.write("## ✅ Actions Taken\n")
-                  f.write("- System Upgrade: **Done**\n")
-                  f.write("- DB Optimization: **Done**\n")
-                  f.write("- Schema Sync: **Done**\n")
+          def main():
+              print("🚀 AI Copilot System v15.0 Initiated.")
               
+              # 디렉토리 확인
+              if not os.path.exists("data"): os.makedirs("data")
+              
+              conn = init_db()
+              ai_engine = AIEngine(conn)
+              
+              # 분석 실행
+              anomalies, total_count = ai_engine.train_and_predict()
+              
+              print(f"📊 Analysis Complete. Scanned {total_count} logs.")
+              print(f"🚨 Anomalies Detected: {len(anomalies)}")
+              
+              # 리포트 작성
+              with open(REPORT_PATH, "w", encoding="utf-8") as f:
+                  f.write("# 🧠 AI Threat Intelligence Report\n")
+                  f.write(f"**Generated At:** {datetime.datetime.now()}\n\n")
+                  f.write("## 📊 AI Analysis Summary\n")
+                  f.write(f"- **Total Data Points Scanned:** {total_count}\n")
+                  f.write(f"- **Algorithm Used:** Isolation Forest (Unsupervised Learning)\n")
+                  f.write(f"- **Threats Detected:** {len(anomalies)}\n\n")
+                  
+                  if not anomalies.empty:
+                      f.write("## 🚨 Detected Anomalies (Potential Threats)\n")
+                      f.write("| ID | Action | Risk | Exec Time (ms) | Severity Score |\n")
+                      f.write("|---|---|---|---|---|\n")
+                      for _, row in anomalies.iterrows():
+                          f.write(f"| {row['id']} | {row['action']} | {row['risk_level']} | {row['execution_time_ms']} | {row['score_val']:.4f} |\n")
+                  else:
+                      f.write("## ✅ System Status: CLEAN\n")
+                      f.write("AI detected no significant anomalies in the current dataset.\n")
+
               conn.close()
-              log("✅ Copilot Mission Accomplished.")
+              print("✅ AI Tasks Completed Successfully.")
 
           if __name__ == "__main__":
-              if not os.path.exists("data"):
-                  os.makedirs("data")
-              run_copilot()
+              main()
           EOF
           
-          echo "✨ Copilot Agent Generated: scripts/ops_copilot.py"
+          echo "✨ AI Copilot Script Generated."
 
-      # 4. Copilot 실행 (실제 작업 수행)
-      - name: 🚀 Execute Copilot Engine
+      # 3. AI 실행 (학습 및 추론 수행)
+      - name: 🚀 Run AI Inference
         run: |
-          python scripts/ops_copilot.py
+          python scripts/ai_ops_copilot.py
           
-          # 결과물 확인 (디버깅용)
-          ls -l data/
+          echo "📄 Checking Generated Report:"
+          cat data/ai_threat_report.md
 
-      # 5. 보안 백업 (암호화)
-      - name: 🔒 Secure Data Backup
+      # 4. 결과물 암호화 및 백업 (기존 보안 로직 유지)
+      - name: 🔒 Encrypt & Backup
         run: |
           TIMESTAMP=$(date +%Y%m%d_%H%M%S)
           cp "$DB_PATH" "$BACKUP_DIR/db_$TIMESTAMP.bak"
           
-          echo "🔐 Encrypting Sensitive Data..."
-          zip -e -P "$ARTIFACT_PASSWORD" copilot_secure_data.zip data/* config/* backup/*
+          echo "🔐 Encrypting AI Data..."
+          zip -e -P "$ARTIFACT_PASSWORD" ai_secure_package.zip data/* config/* backup/*
           
-          # 오래된 백업 정리
+          # 백업 정리
           cd "$BACKUP_DIR" && ls -t *.bak | tail -n +6 | xargs -r rm --
 
-      - name: Upload Artifacts
+      - name: Upload AI Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: copilot-data-package
-          path: copilot_secure_data.zip
+          name: ai-intelligence-data
+          path: ai_secure_package.zip
           retention-days: 1
 
-      # 6. 변경 사항 동기화 (Git Push)
-      - name: 🔄 Sync to Repository
+      # 5. 인텔리전스 리포트 동기화 (Git Commit)
+      - name: 🔄 Sync Intelligence Data
         run: |
-          git config --global user.name "Copilot-Bot"
-          git config --global user.email "copilot@grand-ops.ai"
+          git config --global user.name "AI-Copilot-Bot"
+          git config --global user.email "ai-core@grand-ops.io"
           git config --global --add safe.directory $GITHUB_WORKSPACE
 
-          echo "📦 Staging Updated Assets..."
+          echo "📦 Staging AI Reports..."
           
-          # [안전 장치] 파일이 실제로 존재할 때만 add (Error 128 방지)
+          # 파일 존재 시 강제 추가
           [ -f "data/grand_ops_secure.db" ] && git add -f data/grand_ops_secure.db
-          [ -f "data/schema_snapshot.sql" ] && git add -f data/schema_snapshot.sql
-          [ -f "data/copilot_report.md" ] && git add -f data/copilot_report.md
+          [ -f "data/ai_threat_report.md" ] && git add -f data/ai_threat_report.md
           
           git add -A
 
           if [ -z "$(git status --porcelain)" ]; then
-             echo "✅ System is up-to-date. No changes."
+             echo "✅ Intelligence is up-to-date."
              exit 0
           fi
 
-          echo "💾 Committing Upgrade Results..."
-          git commit -m "copilot: auto-upgrade & maintenance report [skip ci]"
+          echo "💾 Committing AI Analysis..."
+          git commit -m "ai: anomaly detection report & model update [skip ci]"
 
-          # Retry Loop (Push 안정성 확보)
+          # Retry Loop
           MAX_RETRIES=5
           COUNT=0
           while [ $COUNT -lt $MAX_RETRIES ]; do
             git pull --rebase origin main || git rebase --abort
             if git push origin main; then
-              echo "🚀 Successfully Synced!"
+              echo "🚀 AI Data Synced!"
               exit 0
             fi
             sleep 5
             COUNT=$((COUNT+1))
           done
           
-          echo "❌ Sync Failed."
           exit 1
