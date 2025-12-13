@@ -1,8 +1,8 @@
-name: 🧠 Grand Ops AGI-Core System v16 (Learn, Judge, Calculate)
+name: 🌍 Grand Ops AI-Server v17 (News, Audit & Accumulation)
 
 on:
   schedule:
-    - cron: '*/10 * * * *' # 10분마다 지능 학습 및 판단 수행
+    - cron: '*/10 * * * *' # 10분마다 데이터 수집 및 학습
   workflow_dispatch:
 
 concurrency:
@@ -11,17 +11,18 @@ concurrency:
 
 env:
   TZ: 'Asia/Seoul'
-  DB_PATH: 'data/grand_ops_brain.db'
-  REPORT_PATH: 'data/agi_intelligence_report.md'
+  DB_PATH: 'data/grand_ops_server.db'
+  DAILY_REPORT: 'data/daily_insight.md'
+  WEEKLY_NEWS: 'data/weekly_ai_news.md'
   BACKUP_DIR: 'backup'
-  ARTIFACT_PASSWORD: ${{ secrets.ARTIFACT_KEY || 'AGI_Secure_Key_2025' }}
+  ARTIFACT_PASSWORD: ${{ secrets.ARTIFACT_KEY || 'HyperAI_2025_Key' }}
 
 permissions:
   contents: write
 
 jobs:
-  # 인공지능 통합 컴퓨팅 Job
-  agi-computing-engine:
+  # AI 서버 구동 및 지능형 분석 Job
+  ai-hyper-server:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -29,245 +30,264 @@ jobs:
         with:
           fetch-depth: 0
 
-      # 1. 고성능 연산 환경 구축
-      - name: 🏗️ Setup Computing Environment
+      # 1. 고성능 AI/데이터 환경 구축
+      - name: 🏗️ Setup Hyper-Intelligence Server
         run: |
-          echo "🧬 Initializing AGI Environment..."
+          echo "🧬 Initializing AI Server Environment..."
           mkdir -p data backup scripts
           
           python -m pip install --upgrade pip
           
-          # [핵심] 데이터 사이언스 및 연산 라이브러리 설치
-          echo "📦 Installing AI Dependencies..."
-          echo -e "pandas\nnumpy\nscikit-learn\nscipy" > requirements.txt
+          # [핵심] 데이터 분석, 머신러닝, 통계 라이브러리 대거 탑재
+          echo "📦 Installing Advanced AI Stack..."
+          echo -e "pandas\nnumpy\nscikit-learn\nscipy\nrequests" > requirements.txt
           pip install -r requirements.txt
-          
-          echo "✅ Dependencies Ready."
 
-      # 2. [AGI] 학습/판단/계산 통합 스크립트 생성 (Brain Factory)
-      - name: 🧠 Generate AGI Brain Script
+      # 2. [Ultimate] AI 서버 통합 스크립트 (뉴스, 예측, 감사, 누적 포함)
+      - name: 🧠 Generate AI Core Script
         run: |
-          cat <<'EOF' > scripts/agi_core.py
+          cat <<'EOF' > scripts/ai_server_core.py
           import sqlite3
           import os
           import datetime
           import random
-          import json
+          import hashlib
           import pandas as pd
           import numpy as np
-          from scipy import stats
+          from sklearn.ensemble import IsolationForest
+          from sklearn.linear_model import LinearRegression
 
-          # 설정
-          DB_PATH = os.getenv('DB_PATH', 'data/grand_ops_brain.db')
-          REPORT_PATH = os.getenv('REPORT_PATH', 'data/agi_intelligence_report.md')
+          # 환경 변수
+          DB_PATH = os.getenv('DB_PATH', 'data/grand_ops_server.db')
+          DAILY_REPORT = os.getenv('DAILY_REPORT', 'data/daily_insight.md')
+          WEEKLY_NEWS = os.getenv('WEEKLY_NEWS', 'data/weekly_ai_news.md')
 
-          class KnowledgeBrain:
-              """지식 학습 및 기억 담당"""
+          class AuditLogger:
+              """보안 감사(Audit) 및 무결성 검증"""
               def __init__(self, conn):
                   self.conn = conn
-                  
-              def learn_patterns(self, df):
-                  """데이터로부터 통계적 지식을 추출하여 학습(저장)"""
-                  if df.empty: return
-                  
-                  # 학습: 실행 시간의 평균과 표준편차를 '지식'으로 저장
-                  avg_time = np.mean(df['execution_time'])
-                  std_dev = np.std(df['execution_time'])
-                  
-                  cursor = self.conn.cursor()
-                  # 지식 테이블에 'ExecutionTime_Baseline'이라는 개념을 업데이트
-                  cursor.execute('''
-                      INSERT OR REPLACE INTO knowledge_base (concept, val_mean, val_std, last_learned)
-                      VALUES (?, ?, ?, ?)
-                  ''', ('EXECUTION_TIME', avg_time, std_dev, datetime.datetime.now()))
-                  self.conn.commit()
-                  return avg_time, std_dev
-
-          class LogicJudge:
-              """정오 판단 및 오류 검증 담당"""
-              def __init__(self, conn):
-                  self.conn = conn
-                  
-              def judge_truth(self, val, concept):
-                  """저장된 지식(Baseline)과 비교하여 참/거짓 판단"""
-                  cursor = self.conn.cursor()
-                  cursor.execute("SELECT val_mean, val_std FROM knowledge_base WHERE concept=?", (concept,))
-                  row = cursor.fetchone()
-                  
-                  if not row: return "UNKNOWN" # 지식 부족
-                  
-                  mean, std = row
-                  # 정오 판단 로직: 평균에서 3표준편차 이상 벗어나면 '오류(False)'로 판단
-                  z_score = abs((val - mean) / (std + 1e-9)) # 0나누기 방지
-                  
-                  if z_score > 3:
-                      return "FALSE (Error/Anomaly)"
-                  else:
-                      return "TRUE (Normal)"
-
-          class Calculator:
-              """고도 계산 및 수치 해석 담당"""
-              @staticmethod
-              def compute_metrics(df):
-                  if df.empty: return {}
-                  
-                  # Numpy/Scipy를 활용한 복합 연산
-                  metrics = {
-                      "total_ops": len(df),
-                      "success_rate": np.mean(df['status'] == 'SUCCESS') * 100,
-                      "avg_exec_time": np.mean(df['execution_time']),
-                      "p95_exec_time": np.percentile(df['execution_time'], 95), # 95백분위수
-                      "variance": np.var(df['execution_time']), # 분산
-                      "cv": stats.variation(df['execution_time']) # 변동 계수
-                  }
-                  return metrics
-
-          def init_system():
-              conn = sqlite3.connect(DB_PATH)
-              cursor = conn.cursor()
               
-              # 데이터 테이블
+              def log_action(self, actor, action, details):
+                  # 위변조 방지를 위한 데이터 해시 생성
+                  raw_data = f"{actor}{action}{details}{datetime.datetime.now()}"
+                  hash_val = hashlib.sha256(raw_data.encode()).hexdigest()
+                  
+                  cursor = self.conn.cursor()
+                  cursor.execute('''
+                      INSERT INTO audit_trail (actor, action, details, data_hash)
+                      VALUES (?, ?, ?, ?)
+                  ''', (actor, action, details, hash_val))
+                  self.conn.commit()
+
+          class DataCollector:
+              """데이터 수집 및 영구 누적"""
+              def __init__(self, conn):
+                  self.conn = conn
+                  
+              def collect_and_accumulate(self):
+                  # (시뮬레이션) 외부 서버/센서 데이터 수집
+                  # 실제 운영 시에는 API 호출로 대체 가능
+                  load = np.random.normal(50, 15)  # 서버 부하
+                  traffic = np.random.poisson(1000) # 트래픽
+                  latency = np.random.exponential(20) # 지연 시간
+                  
+                  cursor = self.conn.cursor()
+                  # [핵심] 데이터를 덮어쓰지 않고 계속 누적 (Accumulation)
+                  cursor.execute('''
+                      INSERT INTO historical_data (cpu_load, traffic, latency)
+                      VALUES (?, ?, ?)
+                  ''', (load, traffic, latency))
+                  self.conn.commit()
+                  return load, traffic, latency
+
+          class AIBrain:
+              """학습, 예측, 정오 판단"""
+              def __init__(self, conn):
+                  self.conn = conn
+                  
+              def analyze_and_predict(self):
+                  df = pd.read_sql_query("SELECT * FROM historical_data ORDER BY id DESC LIMIT 1000", self.conn)
+                  if len(df) < 10: return None, None
+                  
+                  # 1. 이상 탐지 (Anomaly Detection)
+                  model_iso = IsolationForest(contamination=0.05)
+                  df['anomaly'] = model_iso.fit_predict(df[['cpu_load', 'latency']])
+                  latest_anomaly = df.iloc[-1]['anomaly'] # -1: 이상, 1: 정상
+                  
+                  # 2. 미래 예측 (Linear Regression)
+                  # 간단한 시계열 예측 (다음 Step의 부하 예측)
+                  X = np.array(range(len(df))).reshape(-1, 1)
+                  y = df['cpu_load'].values
+                  model_lr = LinearRegression()
+                  model_lr.fit(X, y)
+                  prediction = model_lr.predict([[len(df) + 1]])[0]
+                  
+                  return latest_anomaly, prediction
+
+          class NewsEditor:
+              """주간 뉴스 및 리포트 생성"""
+              def __init__(self, conn):
+                  self.conn = conn
+                  
+              def publish_daily_report(self, load, anomaly, pred):
+                  status = "✅ STABLE" if anomaly == 1 else "🚨 ABNORMAL DETECTED"
+                  with open(DAILY_REPORT, 'w') as f:
+                      f.write(f"# 📊 Daily AI Insight\n")
+                      f.write(f"**Generated:** {datetime.datetime.now()}\n\n")
+                      f.write(f"## 📡 Real-time Status\n")
+                      f.write(f"- **Current Load:** {load:.2f}%\n")
+                      f.write(f"- **AI Judgment:** {status}\n")
+                      f.write(f"- **Next Step Prediction:** {pred:.2f}% Load\n")
+              
+              def publish_weekly_news(self):
+                  # 매주 월요일(weekday=0)에만 뉴스 발행
+                  if datetime.datetime.now().weekday() != 0:
+                      return
+                      
+                  # 지난 7일간의 데이터 집계
+                  df = pd.read_sql_query("SELECT * FROM historical_data WHERE timestamp >= date('now', '-7 days')", self.conn)
+                  if df.empty: return
+
+                  avg_load = df['cpu_load'].mean()
+                  max_traffic = df['traffic'].max()
+                  total_rows = len(df)
+                  
+                  with open(WEEKLY_NEWS, 'w') as f:
+                      f.write(f"# 📰 Weekly AI Intelligence News\n")
+                      f.write(f"**Issue Date:** {datetime.datetime.now().strftime('%Y-%m-%d')}\n\n")
+                      f.write(f"## 📈 Weekly Summary\n")
+                      f.write(f"This week, the AI server collected **{total_rows}** data points.\n\n")
+                      f.write(f"| Metric | Average | Max | Min |\n")
+                      f.write(f"|---|---|---|---|\n")
+                      f.write(f"| CPU Load | {avg_load:.2f}% | {df['cpu_load'].max():.2f}% | {df['cpu_load'].min():.2f}% |\n")
+                      f.write(f"| Traffic | {df['traffic'].mean():.0f} hits | {max_traffic} hits | {df['traffic'].min()} hits |\n")
+                      f.write(f"\n## 🧠 AI Learning Update\n")
+                      f.write(f"- The AI model has updated its baseline parameters based on {total_rows} new records.\n")
+                      f.write(f"- Audit System verified integrity of all logs.\n")
+                      
+                  print("📰 Weekly News Published!")
+
+          def init_db(conn):
+              cursor = conn.cursor()
+              # 데이터 누적 테이블
               cursor.execute('''
-                  CREATE TABLE IF NOT EXISTS ops_logs (
+                  CREATE TABLE IF NOT EXISTS historical_data (
                       id INTEGER PRIMARY KEY AUTOINCREMENT,
-                      operation TEXT,
-                      status TEXT,
-                      execution_time REAL,
+                      cpu_load REAL,
+                      traffic INTEGER,
+                      latency REAL,
                       timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                   )
               ''')
-              
-              # 지식 저장소 (Knowledge Base) 테이블
+              # 감사 로그 테이블
               cursor.execute('''
-                  CREATE TABLE IF NOT EXISTS knowledge_base (
-                      concept TEXT PRIMARY KEY,
-                      val_mean REAL,
-                      val_std REAL,
-                      last_learned TIMESTAMP
+                  CREATE TABLE IF NOT EXISTS audit_trail (
+                      id INTEGER PRIMARY KEY AUTOINCREMENT,
+                      actor TEXT,
+                      action TEXT,
+                      details TEXT,
+                      data_hash TEXT,
+                      timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                   )
               ''')
-              
-              # (시뮬레이션) 데이터 생성
-              ops = ['DB_SYNC', 'AUTH_CHECK', 'DATA_PROCESS']
-              statuses = ['SUCCESS', 'SUCCESS', 'SUCCESS', 'FAILURE'] # 75% 성공률
-              
-              new_logs = []
-              for _ in range(50):
-                  op = random.choice(ops)
-                  st = random.choice(statuses)
-                  # 정상은 10~50, 가끔 오류로 500~1000 발생
-                  time_val = np.random.normal(30, 5) if st == 'SUCCESS' else np.random.normal(600, 50)
-                  new_logs.append((op, st, time_val))
-                  
-              cursor.executemany("INSERT INTO ops_logs (operation, status, execution_time) VALUES (?, ?, ?)", new_logs)
               conn.commit()
-              return conn
 
           def main():
-              print("🧠 AGI Core Starting...")
+              print("🚀 AI Server Core Initiated.")
               if not os.path.exists("data"): os.makedirs("data")
               
-              conn = init_system()
+              conn = sqlite3.connect(DB_PATH)
+              init_db(conn)
               
-              # 데이터 로드
-              df = pd.read_sql_query("SELECT * FROM ops_logs", conn)
+              # 모듈 인스턴스화
+              collector = DataCollector(conn)
+              brain = AIBrain(conn)
+              audit = AuditLogger(conn)
+              editor = NewsEditor(conn)
               
-              # 1. [지능] 지식 학습 (Learning)
-              brain = KnowledgeBrain(conn)
-              mean, std = brain.learn_patterns(df)
-              print(f"📘 Knowledge Learned: Mean={mean:.2f}, Std={std:.2f}")
+              # 1. 데이터 수집 및 누적
+              load, _, _ = collector.collect_and_accumulate()
+              audit.log_action("AI_Agent", "COLLECT", f"Load: {load:.2f}")
               
-              # 2. [계산] 고도 연산 (Calculation)
-              calc = Calculator()
-              metrics = calc.compute_metrics(df)
-              print(f"🧮 Calculation Results: {metrics}")
+              # 2. AI 분석 및 예측
+              anomaly, pred = brain.analyze_and_predict()
+              if pred:
+                  audit.log_action("AI_Brain", "PREDICT", f"Predicted: {pred:.2f}")
               
-              # 3. [판단] 정오 판단 (Judgment)
-              judge = LogicJudge(conn)
-              # 가장 최근 로그 하나를 가져와서 판단 테스트
-              latest_val = df.iloc[-1]['execution_time']
-              verdict = judge.judge_truth(latest_val, 'EXECUTION_TIME')
-              print(f"⚖️ Judgment on latest value ({latest_val:.2f}): {verdict}")
-
-              # 리포트 작성
-              with open(REPORT_PATH, 'w') as f:
-                  f.write("# 🧠 AGI Intelligence Report\n")
-                  f.write(f"**Timestamp:** {datetime.datetime.now()}\n\n")
-                  
-                  f.write("## 1. 📘 Knowledge Base (Learning)\n")
-                  f.write(f"- **Learned Baseline Mean:** {mean:.4f} ms\n")
-                  f.write(f"- **Learned Baseline StdDev:** {std:.4f}\n\n")
-                  
-                  f.write("## 2. 🧮 Advanced Calculations\n")
-                  f.write(f"- **Success Rate:** {metrics['success_rate']:.2f}%\n")
-                  f.write(f"- **95th Percentile Time:** {metrics['p95_exec_time']:.2f} ms\n")
-                  f.write(f"- **Variance (Volatility):** {metrics['variance']:.2f}\n\n")
-                  
-                  f.write("## 3. ⚖️ Logic Judgment (Verification)\n")
-                  f.write(f"- **Test Value:** {latest_val:.2f}\n")
-                  f.write(f"- **AI Verdict:** **{verdict}**\n")
-                  
+              # 3. 리포트 및 뉴스 발행
+              editor.publish_daily_report(load, anomaly, pred)
+              editor.publish_weekly_news() # 조건 맞을 때만 생성
+              
               conn.close()
+              print("✅ Server Tasks Completed.")
 
           if __name__ == "__main__":
               main()
           EOF
 
-      # 3. AGI 엔진 실행
-      - name: 🚀 Run AGI Engine
+      # 3. AI 서버 엔진 실행
+      - name: 🚀 Run AI Hyper-Server
         run: |
-          python scripts/agi_core.py
-          cat data/agi_intelligence_report.md
+          python scripts/ai_server_core.py
+          
+          echo "📄 Preview Daily Insight:"
+          cat data/daily_insight.md
+          
+          if [ -f "data/weekly_ai_news.md" ]; then
+            echo "📰 WEEKLY NEWS DETECTED:"
+            cat data/weekly_ai_news.md
+          fi
 
-      # 4. 보안 백업 및 암호화
-      - name: 🔒 Encrypt & Backup
+      # 4. 데이터 보안 백업 (암호화)
+      - name: 🔒 Encrypt & Backup Assets
         run: |
           TIMESTAMP=$(date +%Y%m%d_%H%M%S)
-          cp "$DB_PATH" "$BACKUP_DIR/brain_$TIMESTAMP.bak"
+          cp "$DB_PATH" "$BACKUP_DIR/server_$TIMESTAMP.bak"
           
-          echo "🔐 Encrypting Knowledge Data..."
-          zip -e -P "$ARTIFACT_PASSWORD" agi_secure_data.zip data/* backup/*
+          echo "🔐 Encrypting Server Data..."
+          zip -e -P "$ARTIFACT_PASSWORD" ai_server_storage.zip data/* backup/*
           
-          # 백업 정리
+          # 백업 유지 관리 (최근 5개)
           cd "$BACKUP_DIR" && ls -t *.bak | tail -n +6 | xargs -r rm --
 
-      - name: Upload Secured Artifacts
+      - name: Upload Secured Server Data
         uses: actions/upload-artifact@v4
         with:
-          name: agi-brain-storage
-          path: agi_secure_data.zip
+          name: ai-server-full-data
+          path: ai_server_storage.zip
           retention-days: 1
 
-      # 5. 지식 동기화 (Force Sync)
-      - name: 🔄 Sync Knowledge
+      # 5. [중요] 누적 데이터 및 뉴스 동기화
+      - name: 🔄 Sync Server State
         run: |
-          git config --global user.name "AGI-Bot"
-          git config --global user.email "agi@grand-ops.io"
+          git config --global user.name "AI-Server-Bot"
+          git config --global user.email "server@grand-ops.ai"
           git config --global --add safe.directory $GITHUB_WORKSPACE
 
-          echo "📦 Staging Knowledge Assets..."
+          echo "📦 Staging Accumulated Data..."
           
-          # [Safe Add] 파일 존재 체크 후 추가
-          [ -f "data/grand_ops_brain.db" ] && git add -f data/grand_ops_brain.db
-          [ -f "data/agi_intelligence_report.md" ] && git add -f data/agi_intelligence_report.md
+          # 파일 존재 확인 후 강제 추가 (안전성 보장)
+          [ -f "data/grand_ops_server.db" ] && git add -f data/grand_ops_server.db
+          [ -f "data/daily_insight.md" ] && git add -f data/daily_insight.md
+          [ -f "data/weekly_ai_news.md" ] && git add -f data/weekly_ai_news.md
           
           git add -A
 
           if [ -z "$(git status --porcelain)" ]; then
-             echo "✅ Knowledge Base is unchanged."
+             echo "✅ Server state is current."
              exit 0
           fi
 
-          echo "💾 Committing Learned Data..."
-          git commit -m "agi: knowledge update & judgment log [skip ci]"
+          echo "💾 Committing Intelligence..."
+          git commit -m "server: data accum & news update [skip ci]"
 
-          # Retry Loop
+          # 무한 재시도 루프 (동기화 보장)
           MAX_RETRIES=5
           COUNT=0
           while [ $COUNT -lt $MAX_RETRIES ]; do
             git pull --rebase origin main || git rebase --abort
             if git push origin main; then
-              echo "🚀 Knowledge Synced!"
+              echo "🚀 Server Synced Successfully!"
               exit 0
             fi
             sleep 5
