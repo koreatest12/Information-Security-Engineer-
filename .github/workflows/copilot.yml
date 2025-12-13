@@ -1,14 +1,14 @@
-name: 🌌 Grand Ops Master-Universe v29 (All-in-One AI & News)
+name: 🏦 Grand Ops Finance-Master v30 (Shinhan & Hana Special)
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # 30분 주기 통합 실행
+    - cron: '*/30 * * * *' # 30분 주기 실행
   workflow_dispatch:
     inputs:
       copilot_query:
-        description: '💬 AI Copilot에게 질문 (예: "오늘의 보안 이슈와 시스템 상태는?")'
+        description: '💬 AI에게 질문 (예: "신한은행과 하나은행 최근 소식 알려줘")'
         required: false
-        default: '현재 시스템 상태와 주요 국내외 뉴스를 종합 브리핑해줘.'
+        default: '금융사(신한/하나) 주요 뉴스와 시스템 상태 브리핑해줘.'
 
 concurrency:
   group: ${{ github.workflow }}
@@ -16,16 +16,16 @@ concurrency:
 
 env:
   TZ: 'Asia/Seoul'
-  DB_PATH: 'data/grand_ops_master.db'
-  DASHBOARD_FILE: 'data/master_dashboard.md'
-  USER_QUERY: ${{ inputs.copilot_query || '종합 상황 브리핑 요청' }}
-  ARTIFACT_PASSWORD: ${{ secrets.ARTIFACT_KEY || 'Master_Universe_2025' }}
+  DB_PATH: 'data/grand_ops_finance.db'
+  DASHBOARD_FILE: 'data/finance_dashboard.md'
+  USER_QUERY: ${{ inputs.copilot_query || '금융 및 시스템 종합 브리핑' }}
+  ARTIFACT_PASSWORD: ${{ secrets.ARTIFACT_KEY || 'Finance_Master_2025' }}
 
 permissions:
   contents: write
 
 jobs:
-  master-universe-engine:
+  finance-master-engine:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -33,21 +33,20 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 🏗️ Initialize Master Environment
+      - name: 🏗️ Initialize Finance Stack
         run: |
-          echo "🌌 Booting Grand Ops Master-Universe..."
+          echo "🏦 Booting Finance-Master Engine..."
           mkdir -p data backup scripts dist
           python -m pip install --upgrade pip
           
           # [통합 의존성 설치]
-          # textblob: NLP, beautifulsoup4: 크롤링, scikit-learn: AI분석, feedparser: 뉴스
           echo -e "requests\npandas\nnumpy\nscikit-learn\ntabulate\npsutil\nfeedparser\nbeautifulsoup4\ntextblob" > requirements.txt
           pip install -r requirements.txt
           python -m textblob.download_corpora
 
-      - name: 🧠 Generate Master-Universe Script
+      - name: 🧠 Generate Finance-Master Script
         run: |
-          cat <<'EOF' > scripts/master_universe_core.py
+          cat <<'EOF' > scripts/master_finance_core.py
           import sqlite3
           import os
           import datetime
@@ -63,44 +62,46 @@ jobs:
           # ==========================================
           # ⚙️ CONFIGURATION
           # ==========================================
-          DB_PATH = os.getenv('DB_PATH', 'data/grand_ops_master.db')
-          DASH_PATH = os.getenv('DASHBOARD_FILE', 'data/master_dashboard.md')
+          DB_PATH = os.getenv('DB_PATH', 'data/grand_ops_finance.db')
+          DASH_PATH = os.getenv('DASHBOARD_FILE', 'data/finance_dashboard.md')
           USER_QUERY = os.getenv('USER_QUERY', '')
 
           # ==========================================
-          # 1. HYPERSCALE SYSTEM MONITOR
+          # 1. HYPERSCALE MONITOR (시스템 자원)
           # ==========================================
           class HyperscaleMonitor:
-              """가상화된 대용량 리소스 모니터링"""
               def __init__(self):
                   self.v_cores = 128
                   self.v_ram_gb = 512
-                  self.v_storage_tb = 1024
-
+              
               def get_metrics(self):
                   real_cpu = psutil.cpu_percent()
                   real_ram = psutil.virtual_memory().percent
-                  
                   return {
                       "cpu_load": real_cpu,
                       "ram_percent": real_ram,
                       "spec_cpu": f"{self.v_cores} vCores",
-                      "spec_ram": f"{(real_ram/100)*self.v_ram_gb:.1f}/{self.v_ram_gb} GB",
-                      "spec_disk": "1PB NVMe Pool"
+                      "spec_ram": f"{(real_ram/100)*self.v_ram_gb:.1f}/{self.v_ram_gb} GB"
                   }
 
           # ==========================================
-          # 2. GLOBAL & KOREAN NEWS AGGREGATOR
+          # 2. TARGETED NEWS ENGINE (금융 특화)
           # ==========================================
-          class GlobalNewsEngine:
-              """국내외 뉴스 통합 수집"""
+          class TargetedNewsEngine:
+              """금융사(신한/하나) 및 일반 뉴스 통합 수집"""
               def __init__(self):
+                  # Google News RSS를 이용해 특정 키워드 정밀 추적
                   self.feeds = {
+                      # 1. 금융사 특화 (요청사항 반영)
+                      "FIN_SHINHAN_BANK": "https://news.google.com/rss/search?q=신한은행&hl=ko&gl=KR&ceid=KR:ko",
+                      "FIN_HANA_BANK": "https://news.google.com/rss/search?q=하나은행&hl=ko&gl=KR&ceid=KR:ko",
+                      "FIN_SHINHAN_INV": "https://news.google.com/rss/search?q=신한투자증권+OR+신한금융투자&hl=ko&gl=KR&ceid=KR:ko",
+                      "FIN_HANA_INV": "https://news.google.com/rss/search?q=하나증권+OR+하나금융투자&hl=ko&gl=KR&ceid=KR:ko",
+                      
+                      # 2. 기존 뉴스 소스 (네이버 속보, 보안)
                       "KR_NAVER": "https://news.naver.com/main/rss/rss_flash.nhn",
                       "KR_SECURITY": "https://www.boannews.com/media/news_rss.xml",
-                      "KR_IT": "https://news.google.com/rss/search?q=IT+인공지능&hl=ko&gl=KR&ceid=KR:ko",
-                      "US_TECH": "https://techcrunch.com/category/artificial-intelligence/feed/",
-                      "US_SEC": "https://feeds.feedburner.com/TheHackersNews"
+                      "US_TECH": "https://techcrunch.com/category/artificial-intelligence/feed/"
                   }
                   self.headers = {'User-Agent': 'Mozilla/5.0 (GrandOpsBot/1.0)'}
 
@@ -112,71 +113,58 @@ jobs:
                       entries = []
                       try:
                           f = feedparser.parse(url)
-                          if not f.entries: # RSS 실패 시 requests 시도
+                          if not f.entries: 
                               r = requests.get(url, headers=self.headers, timeout=5)
                               f = feedparser.parse(r.content)
                               
-                          for e in f.entries[:3]: # 소스당 3개
+                          for e in f.entries[:3]: # 소스당 상위 3개
                               clean_title = e.title.replace("&quot;", "'").replace("<b>", "").replace("</b>", "")
                               entries.append({"title": clean_title, "link": e.link})
                               
-                              # AI 학습용 데이터 전처리
-                              tag = "국내뉴스" if "KR" in source else "GlobalNews"
-                              corpus.append(f"[{tag}] {clean_title}")
+                              # AI 학습용 태깅
+                              tag = "Finance" if "FIN" in source else "General"
+                              corpus.append(f"[{tag}/{source}] {clean_title}")
                       except: pass
                       news_data[source] = entries
                   
                   return news_data, corpus
 
           # ==========================================
-          # 3. AI COGNITIVE COPILOT (RAG)
+          # 3. AI COGNITIVE COPILOT
           # ==========================================
           class MasterCopilot:
-              """시스템 상태와 뉴스를 종합하여 답변 생성"""
               def __init__(self, news_corpus, sys_metrics):
                   self.knowledge_base = news_corpus
-                  
-                  # 시스템 상태를 자연어로 변환하여 지식에 추가
-                  sys_context = f"SYSTEM_METRICS: CPU Load {sys_metrics['cpu_load']}%, RAM Usage {sys_metrics['ram_percent']}%."
-                  if sys_metrics['cpu_load'] < 50:
-                      sys_context += " STATUS: Stable. Optimal for deployment."
-                  else:
-                      sys_context += " STATUS: Heavy Load. Auto-scaling recommended."
-                  self.knowledge_base.append(sys_context)
+                  # 시스템 상태 주입
+                  self.knowledge_base.append(f"SYSTEM: CPU {sys_metrics['cpu_load']}%, RAM {sys_metrics['ram_percent']}%. Status: Healthy.")
 
               def generate_response(self, query):
-                  if not self.knowledge_base: return "데이터 수집 중 오류가 발생했습니다."
+                  if not self.knowledge_base: return "뉴스 데이터를 수집하지 못했습니다."
                   
-                  # TF-IDF 벡터화 및 유사도 검색
                   vectorizer = TfidfVectorizer()
                   tfidf_matrix = vectorizer.fit_transform(self.knowledge_base)
                   query_vec = vectorizer.transform([query])
                   
                   sim_scores = cosine_similarity(query_vec, tfidf_matrix).flatten()
-                  top_indices = sim_scores.argsort()[:-4:-1] # 상위 3개
+                  top_indices = sim_scores.argsort()[:-5:-1] # 상위 4개
                   
-                  context_found = False
-                  response_lines = []
-                  
+                  context_lines = []
                   for idx in top_indices:
                       if sim_scores[idx] > 0.05:
-                          response_lines.append(f"- {self.knowledge_base[idx]}")
-                          context_found = True
+                          context_lines.append(f"- {self.knowledge_base[idx]}")
                   
                   timestamp = datetime.datetime.now().strftime("%H:%M")
-                  final_res = f"### 🤖 Master-Copilot Briefing ({timestamp})\n"
-                  final_res += f"> **Q:** \"{query}\"\n\n"
+                  res = f"### 🤖 Copilot Briefing ({timestamp})\n"
+                  res += f"> **Q:** \"{query}\"\n\n"
                   
-                  if context_found:
-                      final_res += "**✅ 분석된 인사이트:**\n" + "\n".join(response_lines)
-                      final_res += "\n\n*위 정보를 바탕으로 판단할 때, 현재 시스템 및 관련 이슈는 위와 같습니다.*"
+                  if context_lines:
+                      res += "**✅ AI 분석 결과 (관련성 높음):**\n" + "\n".join(context_lines)
                   else:
-                      final_res += "❌ 죄송합니다. 현재 수집된 데이터(뉴스/로그)에서 관련 정보를 찾지 못했습니다."
-                      
-                  return final_res
+                      res += "❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)"
+                  return res
 
           # ==========================================
-          # 4. DASHBOARD GENERATOR
+          # 4. DASHBOARD ENGINE
           # ==========================================
           class DashboardEngine:
               def draw_bar(self, val):
@@ -185,88 +173,88 @@ jobs:
 
               def create_dashboard(self, metrics, news, copilot_ans):
                   with open(DASH_PATH, 'w', encoding='utf-8') as f:
-                      f.write(f"# 🌌 Grand Ops Master-Universe Dashboard\n")
-                      f.write(f"> **System Time:** {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (KST)\n\n")
+                      f.write(f"# 🏦 Grand Ops Finance-Master Dashboard\n")
+                      f.write(f"> **Time:** {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (KST)\n\n")
 
                       # Copilot
                       f.write(f"{copilot_ans}\n\n")
                       f.write("---\n")
 
-                      # Hyperscale Specs
-                      f.write(f"### ⚡ Hyperscale Resources (128-Core Cluster)\n")
-                      f.write(f"| Resource | Specification | Usage | Visual |\n|---|---|---|---|\n")
-                      f.write(f"| **vCPU** | `{metrics['spec_cpu']}` | {metrics['cpu_load']}% | `{self.draw_bar(metrics['cpu_load'])}` |\n")
-                      f.write(f"| **Memory** | `{metrics['spec_ram']}` | {metrics['ram_percent']}% | `{self.draw_bar(metrics['ram_percent'])}` |\n")
-                      f.write(f"| **Storage**| `{metrics['spec_disk']}` | Healthy | `{self.draw_bar(15)}` |\n\n")
+                      # 1. 금융 섹션 (핵심 추가)
+                      f.write(f"### 🏦 Major Financial News (Shinhan & Hana)\n")
+                      f.write("| Bank / Investment | Latest Headlines (Click to Read) |\n|---|---|\n")
+                      
+                      # 신한
+                      shinhan_news = news.get('FIN_SHINHAN_BANK', []) + news.get('FIN_SHINHAN_INV', [])
+                      if shinhan_news:
+                          f.write(f"| **🔵 신한금융 (은행/투자)** | ")
+                          for item in shinhan_news[:2]: f.write(f"• [{item['title']}]({item['link']})<br>")
+                          f.write(" |\n")
+                      
+                      # 하나
+                      hana_news = news.get('FIN_HANA_BANK', []) + news.get('FIN_HANA_INV', [])
+                      if hana_news:
+                          f.write(f"| **🟢 하나금융 (은행/투자)** | ")
+                          for item in hana_news[:2]: f.write(f"• [{item['title']}]({item['link']})<br>")
+                          f.write(" |\n")
 
-                      # News Section
-                      f.write(f"### 📰 Global & Korean Newsroom\n")
+                      f.write("\n")
+
+                      # 2. 일반 뉴스
+                      f.write(f"### 📰 General & Security News\n")
+                      if "KR_NAVER" in news:
+                          f.write(f"**🟢 네이버 속보:**\n")
+                          for item in news["KR_NAVER"]: f.write(f"- [{item['title']}]({item['link']})\n")
                       
-                      # 한국 뉴스
-                      f.write(f"#### 🇰🇷 국내 속보 (Naver/Boan)\n")
-                      for src in ["KR_NAVER", "KR_SECURITY"]:
-                          if src in news:
-                              for item in news[src]:
-                                  f.write(f"- [{item['title']}]({item['link']})\n")
+                      if "KR_SECURITY" in news:
+                          f.write(f"\n**🛡️ 보안뉴스 (Security):**\n")
+                          for item in news["KR_SECURITY"]: f.write(f"- [{item['title']}]({item['link']})\n")
+
+                      # 3. 시스템 리소스
+                      f.write(f"\n### ⚡ Hyperscale Resources\n")
+                      f.write(f"- **vCPU:** `{metrics['spec_cpu']}` (Load: {metrics['cpu_load']}%)\n")
+                      f.write(f"- **RAM:** `{metrics['spec_ram']}` (Used: {metrics['ram_percent']}%)\n")
                       
-                      # 글로벌 뉴스
-                      f.write(f"\n#### 🌍 Global Tech (TechCrunch/HackerNews)\n")
-                      for src in ["US_TECH", "US_SEC"]:
-                          if src in news:
-                              for item in news[src]:
-                                  f.write(f"- [{item['title']}]({item['link']})\n")
-                      
-                      f.write("\n---\n*Powered by Grand Ops Master Engine v29.0*")
+                      f.write("\n---\n*Powered by Grand Ops Finance-Master v30.0*")
 
           # ==========================================
-          # 🚀 MAIN EXECUTION
+          # 🚀 MAIN
           # ==========================================
           def main():
               if not os.path.exists("data"): os.makedirs("data")
               conn = sqlite3.connect(DB_PATH)
               
-              # 1. 모니터링
               monitor = HyperscaleMonitor()
               metrics = monitor.get_metrics()
               
-              # 2. 뉴스 수집
-              news_engine = GlobalNewsEngine()
+              news_engine = TargetedNewsEngine()
               news_data, corpus = news_engine.fetch_all()
               
-              # 3. 데이터 누적 (DB)
-              conn.execute("CREATE TABLE IF NOT EXISTS master_logs (id INTEGER PRIMARY KEY, cpu REAL, timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP)")
-              conn.execute("INSERT INTO master_logs (cpu) VALUES (?)", (metrics['cpu_load'],))
-              conn.commit()
-              
-              # 4. Copilot 분석
               copilot = MasterCopilot(corpus, metrics)
               answer = copilot.generate_response(USER_QUERY)
               
-              # 5. 대시보드 생성
               dash = DashboardEngine()
               dash.create_dashboard(metrics, news_data, answer)
               
               conn.close()
-              print("✅ Master-Universe All Tasks Completed.")
+              print("✅ Finance-Master Cycle Completed.")
 
           if __name__ == "__main__":
               main()
           EOF
 
-      - name: 🚀 Run Master Engine
-        run: python scripts/master_universe_core.py
+      - name: 🚀 Run Finance Engine
+        run: python scripts/master_finance_core.py
 
-      # 결과 화면 출력
-      - name: 📢 Publish Master Dashboard
+      - name: 📢 Publish Dashboard
         run: cat "$DASHBOARD_FILE" >> $GITHUB_STEP_SUMMARY
 
-      # 보안 백업 및 동기화
-      - name: 🔒 Encrypt & Sync Data
+      - name: 🔒 Encrypt & Sync
         run: |
-          zip -e -P "$ARTIFACT_PASSWORD" master_backup.zip data/*.md data/*.db
+          zip -e -P "$ARTIFACT_PASSWORD" finance_backup.zip data/*.md data/*.db
           
-          git config --global user.name "Master-AI"
-          git config --global user.email "master@grand-ops.ai"
+          git config --global user.name "Finance-Bot"
+          git config --global user.email "bot@grand-ops.ai"
           git config --global --add safe.directory $GITHUB_WORKSPACE
           
           [ -f "$DASHBOARD_FILE" ] && git add -f "$DASHBOARD_FILE"
@@ -274,5 +262,5 @@ jobs:
           git add -A
           
           if [ -z "$(git status --porcelain)" ]; then exit 0; fi
-          git commit -m "master: unified engine execution & news sync [skip ci]"
+          git commit -m "finance: shinhan/hana news sync [skip ci]"
           git push origin main || echo "Sync skipped"
