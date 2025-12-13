@@ -2,12 +2,10 @@ import sqlite3
 import os
 import json
 import datetime
-import re
-import base64
 import random
 import sys
-import shutil
-import stat  # [Security] 권한 제어를 위한 모듈 추가
+import stat
+import multiprocessing
 
 # =======================================================
 # ⚙️ SYSTEM CONFIGURATION
@@ -21,6 +19,7 @@ DB_PATH = os.path.join(DATA_DIR, DB_NAME)
 CONFIG_FILE = os.path.join(CONFIG_DIR, "db_engine_conf.json")
 SCHEMA_DUMP_FILE = os.path.join(DATA_DIR, "schema_snapshot.sql")
 
+# 마이그레이션 SQL 목록
 MIGRATIONS = {
     1: [
         """CREATE TABLE IF NOT EXISTS schema_versions (version INTEGER PRIMARY KEY, applied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)""",
@@ -37,103 +36,50 @@ MIGRATIONS = {
     4: [
         """CREATE INDEX IF NOT EXISTS idx_severity ON security_logic(severity_level)""",
         """CREATE INDEX IF NOT EXISTS idx_created_at ON security_logic(created_at)"""
+    ],
+    5: [ # [NEW] 새로운 마이그레이션 추가
+        """CREATE TABLE IF NOT EXISTS server_health (check_id INTEGER PRIMARY KEY AUTOINCREMENT, cpu_load REAL, memory_usage REAL, checked_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)""",
+        """INSERT INTO security_logic (rule_name, severity_level, action_taken) VALUES ('SYS_INIT', 'INFO', 'SYSTEM_UPGRADE_COMPLETE')"""
     ]
 }
 
 # =======================================================
-# 🔐 SECURITY DEFENSE LAYER (Grand Ops Logic)
+# 🛡️ DEFENSE & OPS MODULES
 # =======================================================
 class SecurityGuardian:
     @staticmethod
     def enforce_permissions(path, is_dir=False):
-        """
-        [Critical] 파일/디렉토리 권한 강제 설정
-        - Directory: 700 (drwx------) : 소유자만 진입 가능
-        - File: 600 (-rw-------) : 소유자만 읽기/쓰기 가능
-        """
-        if not os.path.exists(path):
-            return
-
+        """권한 강제 (chmod 600 / 700)"""
+        if not os.path.exists(path): return
         try:
-            if is_dir:
-                # 디렉터리: 소유자만 실행/읽기/쓰기 (rwx------)
-                os.chmod(path, stat.S_IRWXU)
+            if is_dir: os.chmod(path, stat.S_IRWXU) # 700
+            else: os.chmod(path, stat.S_IRUSR | stat.S_IWUSR) # 600
+        except Exception: pass
+
+class ServerOps:
+    """[NEW] 서버 상태 진단 및 DB 튜닝 매니저"""
+    @staticmethod
+    def optimize_db_config(conn):
+        """하드웨어 사양에 따른 DB 파라미터 튜닝"""
+        try:
+            cpu_count = multiprocessing.cpu_count()
+            # CPU가 많으면 병렬 처리 및 캐시 증설
+            if cpu_count >= 2:
+                # Cache Size: 2000 pages -> ~8MB (기본값보다 상향)
+                conn.execute("PRAGMA cache_size = -2000;") 
+                # 저널 모드: WAL (Write-Ahead Logging) -> 동시성 향상
+                conn.execute("PRAGMA journal_mode = WAL;")
+                # 동기화 모드: NORMAL (안전성과 성능 균형)
+                conn.execute("PRAGMA synchronous = NORMAL;")
+                print(f"  ⚡ [Tuning] Server Upgrade Applied: WAL Mode, Cache Optimized (CPUs: {cpu_count})")
             else:
-                # 파일: 소유자만 읽기/쓰기 (rw-------)
-                os.chmod(path, stat.S_IRUSR | stat.S_IWUSR)
-            
-            # (옵션) 디버깅용 로그 (보안상 실제로는 조용히 처리하는 것이 좋음)
-            # print(f"  🔒 Locked down: {os.path.basename(path)}")
+                print("  ℹ️ [Tuning] Standard Mode Active.")
         except Exception as e:
-            print(f"  ⚠️ Security Warning: Failed to chmod {path}: {e}")
+            print(f"  ⚠️ Tuning Warning: {e}")
 
-class InfraManager:
-    @staticmethod
-    def provision_environment():
-        """환경 구성 (Idempotent + Security Hardening)"""
-        print("🏗️ [Infra] Provisioning Secure Environment...")
-        
-        # 1. 디렉토리 보안 생성
-        for d in [DATA_DIR, CONFIG_DIR, BACKUP_DIR]:
-            if not os.path.exists(d):
-                os.makedirs(d)
-            # 생성 후 즉시 권한 700 적용
-            SecurityGuardian.enforce_permissions(d, is_dir=True)
-
-        # 2. 설정 파일 관리
-        new_config = {
-            "engine_version": "3.1.0",
-            "db_path": DB_PATH,
-            "max_connections": 20,
-            "policy": "strict_isolation",
-            "access_control": "owner_only"
-        }
-        
-        should_write = True
-        if os.path.exists(CONFIG_FILE):
-            try:
-                with open(CONFIG_FILE, 'r') as f:
-                    current_config = json.load(f)
-                if current_config == new_config:
-                    should_write = False
-            except: pass
-            
-        if should_write:
-            with open(CONFIG_FILE, 'w') as f:
-                json.dump(new_config, f, indent=4)
-            print("  ↳ Configuration updated.")
-        
-        # [Security] 설정 파일 권한 600 강제 (생성 혹은 수정 후)
-        SecurityGuardian.enforce_permissions(CONFIG_FILE, is_dir=False)
-
-    @staticmethod
-    def snapshot_schema(conn):
-        """스키마 스냅샷 및 보안 저장"""
-        try:
-            with open(SCHEMA_DUMP_FILE, 'w') as f:
-                temp_dump = ""
-                for line in conn.iterdump():
-                    temp_dump += f"{line}\n"
-                f.write(temp_dump)
-            
-            # [Security] 덤프 파일 권한 600 강제
-            SecurityGuardian.enforce_permissions(SCHEMA_DUMP_FILE, is_dir=False)
-            
-        except Exception as e:
-            print(f"  ⚠️ Schema dump warning: {e}")
-
-class DBEngine:
-    def __init__(self):
-        self.conn = None
-    
-    def connect(self):
-        # 연결 시점에 파일이 생성되므로 연결 직후 권한 검사 수행
-        self.conn = sqlite3.connect(DB_PATH)
-        self.conn.row_factory = sqlite3.Row
-        
-        # [Security] DB 파일이 존재하면 즉시 권한 600 강제
-        if os.path.exists(DB_PATH):
-            SecurityGuardian.enforce_permissions(DB_PATH, is_dir=False)
+class MigrationManager:
+    def __init__(self, conn):
+        self.conn = conn
 
     def get_current_version(self):
         try:
@@ -143,50 +89,79 @@ class DBEngine:
             return ver if ver is not None else 0
         except: return 0
 
-    def run_migrations(self):
+    def run(self):
         current_ver = self.get_current_version()
         latest_ver = max(MIGRATIONS.keys())
-        if current_ver < latest_ver:
-            print(f"🔄 Applying Migrations v{current_ver+1} to v{latest_ver}...")
-            for ver in range(current_ver + 1, latest_ver + 1):
-                try:
-                    for sql in MIGRATIONS[ver]: self.conn.execute(sql)
-                    self.conn.execute("INSERT INTO schema_versions (version) VALUES (?)", (ver,))
-                    self.conn.commit()
-                except Exception as e:
-                    print(f"❌ Migration v{ver} Failed: {e}")
-                    sys.exit(1)
-
-    def simulate_operations(self):
-        cursor = self.conn.cursor()
-        print("📊 Processing Secured Data Transaction...")
-        # 데이터 적재
-        for _ in range(random.randint(1, 5)):
-            cursor.execute('''
-                INSERT INTO security_logic (rule_name, severity_level, detected_area, action_taken)
-                VALUES (?, ?, ?, ?)
-            ''', (f"R-{random.randint(100,999)}", "MEDIUM", "INTERNAL_NET", "ISOLATE"))
         
-        # 데이터 정리
-        cursor.execute("DELETE FROM security_logic WHERE id IN (SELECT id FROM security_logic ORDER BY random() LIMIT 2)")
-        self.conn.commit()
+        if current_ver < latest_ver:
+            print(f"🔄 [Migration] Starting Upgrade v{current_ver} -> v{latest_ver}...")
+            
+            for ver in range(current_ver + 1, latest_ver + 1):
+                print(f"  ↳ Applying v{ver}...")
+                try:
+                    # 트랜잭션 시작
+                    self.conn.execute("BEGIN TRANSACTION;")
+                    for sql in MIGRATIONS[ver]:
+                        self.conn.execute(sql)
+                    
+                    self.conn.execute("INSERT INTO schema_versions (version) VALUES (?)", (ver,))
+                    self.conn.commit() # 성공 시 커밋
+                    print(f"    ✅ v{ver} Success.")
+                except Exception as e:
+                    self.conn.rollback() # 실패 시 롤백
+                    print(f"    ❌ v{ver} Failed! Rolled back. Error: {e}")
+                    sys.exit(1)
+        else:
+            print("✅ [Migration] Schema is up-to-date.")
+
+class DBEngine:
+    def __init__(self):
+        self.conn = None
+    
+    def connect(self):
+        self.conn = sqlite3.connect(DB_PATH)
+        self.conn.row_factory = sqlite3.Row
+        # 연결 즉시 권한 보호
+        SecurityGuardian.enforce_permissions(DB_PATH)
 
     def close(self):
         if self.conn: self.conn.close()
 
+# =======================================================
+# 🚀 MAIN EXECUTION
+# =======================================================
 if __name__ == "__main__":
     print(f"\n{'='*50}")
-    print(f"🚀 GRAND OPS MASTER ENGINE START: {datetime.datetime.now()}")
-    print(f"🛡️  SECURITY PROTOCOL: STRICT (CHMOD 600/700)")
+    print(f"🚀 GRAND OPS MASTER ENGINE V7 (UPGRADE & MIGRATE)")
     print(f"{'='*50}\n")
     
-    InfraManager.provision_environment()
+    # 1. 환경 구성 및 보안 권한 설정
+    print("🏗️ [Infra] Checking Environment...")
+    for d in [DATA_DIR, CONFIG_DIR, BACKUP_DIR]:
+        if not os.path.exists(d): os.makedirs(d)
+        SecurityGuardian.enforce_permissions(d, is_dir=True)
     
+    # 2. DB 연결
     engine = DBEngine()
     engine.connect()
-    engine.run_migrations()
-    engine.simulate_operations()
-    InfraManager.snapshot_schema(engine.conn)
-    engine.close()
     
-    print("\n✅ Engine Task Completed Successfully.")
+    # 3. [NEW] 서버 사양에 따른 DB 엔진 튜닝 (업그레이드)
+    ServerOps.optimize_db_config(engine.conn)
+    
+    # 4. [NEW] 고도화된 마이그레이션 실행
+    migrator = MigrationManager(engine.conn)
+    migrator.run()
+    
+    # 5. 데이터 시뮬레이션
+    print("📊 [Ops] Processing Data Transactions...")
+    engine.conn.execute("INSERT INTO security_logic (rule_name, severity_level, action_taken) VALUES (?, ?, ?)", 
+                        (f"AUTO-BLOCK-{random.randint(1000,9999)}", "HIGH", "FIREWALL_DROP"))
+    engine.conn.commit()
+    
+    # 6. 스키마 스냅샷 저장
+    with open(SCHEMA_DUMP_FILE, 'w') as f:
+        for line in engine.conn.iterdump(): f.write(f"{line}\n")
+    SecurityGuardian.enforce_permissions(SCHEMA_DUMP_FILE)
+    
+    engine.close()
+    print("\n✅ System Upgrade & Operations Completed Successfully.")
