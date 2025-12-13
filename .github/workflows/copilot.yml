@@ -1,8 +1,8 @@
-name: 👁️ Grand Ops AI-Dashboard v20 (UI Integrated)
+name: 🌐 Grand Ops Real-Intelligence v21 (Official APIs)
 
 on:
   schedule:
-    - cron: '*/10 * * * *' # 10분 주기
+    - cron: '*/15 * * * *' # API 호출 제한을 고려하여 15분 주기로 변경
   workflow_dispatch:
 
 concurrency:
@@ -11,19 +11,16 @@ concurrency:
 
 env:
   TZ: 'Asia/Seoul'
-  DB_PATH: 'data/grand_ops_server.db'
-  # 리포트 파일 경로
-  DAILY_REPORT: 'data/daily_insight.md'
-  WEEKLY_REPORT: 'data/weekly_analysis.md'
+  DB_PATH: 'data/grand_ops_real.db'
+  DAILY_REPORT: 'data/daily_real_insight.md'
   AUDIT_REPORT: 'data/security_audit.md'
-  BACKUP_DIR: 'backup'
-  ARTIFACT_PASSWORD: ${{ secrets.ARTIFACT_KEY || 'Dashboard_Secure_2025' }}
+  ARTIFACT_PASSWORD: ${{ secrets.ARTIFACT_KEY || 'RealData_2025!' }}
 
 permissions:
   contents: write
 
 jobs:
-  ai-visual-dashboard:
+  real-data-intelligence:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -31,163 +28,164 @@ jobs:
         with:
           fetch-depth: 0
 
-      # 1. 환경 설정
-      - name: 🏗️ Setup Visual Environment
+      - name: 🏗️ Setup Data Environment
         run: |
-          echo "🧬 Initializing Dashboard Stack..."
+          echo "📡 Connecting to External APIs..."
           mkdir -p data backup scripts
           python -m pip install --upgrade pip
-          echo -e "pandas\nnumpy\nscikit-learn\nscipy\ntabulate" > requirements.txt
+          # requests: API 통신용, pandas/scikit-learn: 분석용
+          echo -e "requests\npandas\nnumpy\nscikit-learn\ntabulate" > requirements.txt
           pip install -r requirements.txt
 
-      # 2. [Core] 리포팅 엔진 스크립트 (v20 - UI 최적화)
-      - name: 🧠 Generate Dashboard Script
+      # [Core] 실제 데이터를 수집하고 분석하는 통합 엔진
+      - name: 🧠 Generate Real-Data Engine
         run: |
-          cat <<'EOF' > scripts/ai_dashboard_core.py
+          cat <<'EOF' > scripts/real_data_core.py
           import sqlite3
           import os
           import datetime
           import hashlib
-          import sys
+          import requests
+          import json
           import pandas as pd
           import numpy as np
           from sklearn.ensemble import IsolationForest
-          from sklearn.linear_model import LinearRegression
 
-          # 경로 설정
-          DB_PATH = os.getenv('DB_PATH', 'data/grand_ops_server.db')
-          DAILY_PATH = os.getenv('DAILY_REPORT', 'data/daily_insight.md')
-          WEEKLY_PATH = os.getenv('WEEKLY_REPORT', 'data/weekly_analysis.md')
+          # 설정
+          DB_PATH = os.getenv('DB_PATH', 'data/grand_ops_real.db')
+          DAILY_PATH = os.getenv('DAILY_REPORT', 'data/daily_real_insight.md')
           AUDIT_PATH = os.getenv('AUDIT_REPORT', 'data/security_audit.md')
+          REPO_NAME = "${{ github.repository }}"
+
+          class RealDataFetcher:
+              """공식 API를 통해 실제 데이터를 수집하는 클래스"""
+              
+              @staticmethod
+              def get_crypto_price():
+                  """Source 1: CoinGecko (Bitcoin Price)"""
+                  try:
+                      url = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true"
+                      # API 호출 시 User-Agent 헤더 필수
+                      headers = {'User-Agent': 'GrandOpsBot/1.0'}
+                      resp = requests.get(url, headers=headers, timeout=10)
+                      data = resp.json()
+                      price = data['bitcoin']['usd']
+                      change = data['bitcoin']['usd_24h_change']
+                      return price, change
+                  except Exception as e:
+                      print(f"⚠️ Crypto API Fail: {e}")
+                      return 95000.0, 0.0 # Fallback (기본값)
+
+              @staticmethod
+              def get_weather_seoul():
+                  """Source 2: Open-Meteo (Seoul Weather)"""
+                  try:
+                      # 서울 좌표: 37.5665, 126.9780
+                      url = "https://api.open-meteo.com/v1/forecast?latitude=37.5665&longitude=126.9780&current_weather=true"
+                      resp = requests.get(url, timeout=10)
+                      data = resp.json()
+                      temp = data['current_weather']['temperature']
+                      wind = data['current_weather']['windspeed']
+                      return temp, wind
+                  except Exception as e:
+                      print(f"⚠️ Weather API Fail: {e}")
+                      return 20.0, 5.0 # Fallback
+
+              @staticmethod
+              def get_github_stats():
+                  """Source 3: GitHub API (Repo Info)"""
+                  try:
+                      url = f"https://api.github.com/repos/{REPO_NAME}"
+                      resp = requests.get(url, timeout=10)
+                      if resp.status_code == 200:
+                          data = resp.json()
+                          stars = data.get('stargazers_count', 0)
+                          forks = data.get('forks_count', 0)
+                          return stars, forks
+                  except Exception:
+                      pass
+                  return 0, 0
 
           class AuditSystem:
               def __init__(self, conn):
                   self.conn = conn
               
-              def log(self, actor, action, details):
-                  try:
-                      raw = f"{actor}{action}{details}{datetime.datetime.now()}"
-                      h_val = hashlib.sha256(raw.encode()).hexdigest()
-                      self.conn.execute(
-                          'INSERT INTO audit_trail (actor, action, details, data_hash) VALUES (?,?,?,?)', 
-                          (actor, action, details, h_val)
-                      )
-                      self.conn.commit()
-                  except Exception as e:
-                      print(f"⚠️ Audit Error: {e}")
-
-          class DataManager:
-              def __init__(self, conn):
-                  self.conn = conn
-
-              def seed_data(self):
-                  cursor = self.conn.cursor()
-                  cursor.execute("SELECT count(*) FROM historical_data")
-                  if cursor.fetchone()[0] < 10:
-                      print("🌱 Seeding initial data...")
-                      data = []
-                      for i in range(50):
-                          data.append((
-                              np.random.normal(45, 12), 
-                              np.random.randint(600, 1400), 
-                              np.random.normal(22, 6),
-                              (datetime.datetime.now() - datetime.timedelta(minutes=10*i))
-                          ))
-                      cursor.executemany('INSERT INTO historical_data (cpu_load, traffic, latency, timestamp) VALUES (?,?,?,?)', data)
-                      self.conn.commit()
-
-              def collect(self):
-                  load = max(0, np.random.normal(50, 15))
-                  traffic = max(0, int(np.random.poisson(1000)))
-                  latency = max(0, np.random.exponential(20))
-                  self.conn.execute('INSERT INTO historical_data (cpu_load, traffic, latency) VALUES (?,?,?)', (load, traffic, latency))
+              def log(self, source, data_point):
+                  # 데이터 위변조 방지 해시 기록
+                  raw = f"{source}{data_point}{datetime.datetime.now()}"
+                  h_val = hashlib.sha256(raw.encode()).hexdigest()
+                  self.conn.execute('INSERT INTO audit_trail (source, data_point, data_hash) VALUES (?,?,?)', (source, str(data_point), h_val))
                   self.conn.commit()
-                  return load, traffic
 
-          class AIAnalyzer:
+          class AIEngine:
               def __init__(self, conn):
                   self.conn = conn
               
-              def analyze(self):
-                  df = pd.read_sql_query("SELECT * FROM historical_data ORDER BY timestamp DESC LIMIT 300", self.conn)
-                  if len(df) < 10: return None, None, df
+              def analyze_market_anomaly(self):
+                  """비트코인 가격과 기온 데이터를 기반으로 이상 징후 탐지"""
+                  df = pd.read_sql_query("SELECT btc_price, temperature FROM real_data ORDER BY id DESC LIMIT 100", self.conn)
+                  if len(df) < 10: return "Not Enough Data"
                   
-                  iso = IsolationForest(contamination=0.05, random_state=42)
-                  df['anomaly'] = iso.fit_predict(df[['cpu_load', 'latency']].fillna(0))
+                  # 학습
+                  iso = IsolationForest(contamination=0.1, random_state=42)
+                  df['anomaly'] = iso.fit_predict(df[['btc_price', 'temperature']])
                   
-                  reg = LinearRegression()
-                  sub = df.head(50).iloc[::-1].reset_index(drop=True)
-                  reg.fit(np.array(sub.index).reshape(-1, 1), sub['cpu_load'].values)
-                  pred = reg.predict([[50]])[0]
-                  
-                  return df.iloc[0]['anomaly'], pred, df
+                  latest = df.iloc[-1]['anomaly']
+                  return "✅ STABLE" if latest == 1 else "🚨 VOLATILITY DETECTED"
 
           class DashboardGenerator:
-              """GitHub Summary용 최적화 리포트 생성"""
-              
               @staticmethod
-              def draw_bar(val, max_v=100):
-                  # GitHub UI에서 깔끔하게 보이도록 문자 변경
-                  l = int((val/max_v)*15)
-                  return "▓" * l + "░" * (15-l)
+              def draw_bar(val, max_val):
+                  # 음수 처리 및 시각화
+                  normalized = max(0, min(100, (val / max_val) * 100))
+                  l = int(normalized / 10)
+                  return "█" * l + "░" * (10-l)
 
-              def generate_daily(self, load, traffic, anomaly, pred, df):
-                  status_icon = "🟢" if anomaly == 1 else "🔴"
-                  status_text = "Stable" if anomaly == 1 else "Critical"
-                  
+              def generate(self, btc, btc_chg, temp, wind, stars, ai_status):
                   with open(DAILY_PATH, 'w', encoding='utf-8') as f:
-                      f.write(f"### 📡 Real-time Dashboard\n")
-                      f.write(f"**Status:** {status_icon} {status_text} | **Time:** {datetime.datetime.now().strftime('%H:%M:%S')}\n\n")
+                      f.write(f"### 🌍 Real-World Intelligence Dashboard\n")
+                      f.write(f"**Updated:** {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (KST)\n\n")
                       
-                      f.write(f"| Metric | Value | Visual |\n|---|---|---|\n")
-                      f.write(f"| **CPU Load** | {load:.1f}% | `{self.draw_bar(load)}` |\n")
-                      f.write(f"| **Traffic** | {traffic} | `{self.draw_bar(traffic, 2000)}` |\n")
-                      f.write(f"| **AI Prediction** | {pred:.1f}% | (Next 10m) |\n\n")
+                      f.write("#### 💰 Financial Market (Source: CoinGecko)\n")
+                      f.write(f"- **BTC Price:** ${btc:,.2f} ({btc_chg:+.2f}%)\n")
+                      f.write(f"- **Market Status:** {ai_status}\n\n")
                       
-                      f.write("#### 📉 Recent Traffic Logs\n")
-                      f.write(df.head(5)[['timestamp', 'cpu_load', 'traffic']].to_markdown(index=False))
-
-              def generate_weekly(self, conn):
-                  df = pd.read_sql_query("SELECT * FROM historical_data WHERE timestamp >= date('now', '-7 days')", conn)
-                  if df.empty: return
-                  
-                  with open(WEEKLY_PATH, 'w', encoding='utf-8') as f:
-                      f.write(f"### 📰 Weekly Intelligence\n")
-                      f.write(f"**Data Points:** {len(df)}\n\n")
-                      f.write(f"| Stat | Load | Traffic |\n|---|---|---|\n")
-                      f.write(f"| **Avg** | {df['cpu_load'].mean():.1f}% | {df['traffic'].mean():.0f} |\n")
-                      f.write(f"| **Max** | {df['cpu_load'].max():.1f}% | {df['traffic'].max()} |\n")
-
-              def generate_audit(self, conn):
-                  df = pd.read_sql_query("SELECT timestamp, actor, action, details FROM audit_trail ORDER BY id DESC LIMIT 5", conn)
-                  if df.empty: return
-                  
-                  with open(AUDIT_PATH, 'w', encoding='utf-8') as f:
-                      f.write(f"### 🛡️ Security Audit (Last 5)\n")
-                      f.write(df.to_markdown(index=False))
+                      f.write("#### 🌤️ Seoul Environment (Source: Open-Meteo)\n")
+                      f.write(f"- **Temperature:** {temp}°C\n")
+                      f.write(f"- **Wind Speed:** {wind} km/h\n\n")
+                      
+                      f.write("#### 💻 DevOps Metrics (Source: GitHub)\n")
+                      f.write(f"- **Stars:** {stars} ⭐\n")
 
           def main():
               if not os.path.exists("data"): os.makedirs("data")
-              
               conn = sqlite3.connect(DB_PATH)
-              conn.execute('CREATE TABLE IF NOT EXISTS historical_data (id INTEGER PRIMARY KEY, cpu_load REAL, traffic INTEGER, latency REAL, timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP)')
-              conn.execute('CREATE TABLE IF NOT EXISTS audit_trail (id INTEGER PRIMARY KEY, actor TEXT, action TEXT, details TEXT, data_hash TEXT, timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP)')
+              conn.execute('CREATE TABLE IF NOT EXISTS real_data (id INTEGER PRIMARY KEY, btc_price REAL, temperature REAL, timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP)')
+              conn.execute('CREATE TABLE IF NOT EXISTS audit_trail (id INTEGER PRIMARY KEY, source TEXT, data_point TEXT, data_hash TEXT, timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP)')
               
-              mgr = DataManager(conn)
+              # 1. 실제 데이터 수집 (Fetching)
+              fetcher = RealDataFetcher()
+              btc, btc_chg = fetcher.get_crypto_price()
+              temp, wind = fetcher.get_weather_seoul()
+              stars, forks = fetcher.get_github_stats()
+              
+              print(f"📡 Fetched: BTC=${btc}, Temp={temp}C")
+              
+              # 2. 데이터 저장 및 감사
+              conn.execute('INSERT INTO real_data (btc_price, temperature) VALUES (?,?)', (btc, temp))
+              conn.commit()
+              
               audit = AuditSystem(conn)
-              ai = AIAnalyzer(conn)
+              audit.log("CoinGecko", btc)
+              audit.log("OpenMeteo", temp)
+              
+              # 3. AI 분석
+              ai = AIEngine(conn)
+              status = ai.analyze_market_anomaly()
+              
+              # 4. 리포트 생성
               dash = DashboardGenerator()
-              
-              mgr.seed_data()
-              load, traffic = mgr.collect()
-              audit.log("System", "COLLECT", f"L:{load:.0f}")
-              
-              anom, pred, df = ai.analyze()
-              
-              # 리포트 생성
-              dash.generate_daily(load, traffic, anom, pred, df)
-              dash.generate_weekly(conn)
-              dash.generate_audit(conn)
+              dash.generate(btc, btc_chg, temp, wind, stars, status)
               
               conn.close()
 
@@ -195,63 +193,37 @@ jobs:
               main()
           EOF
 
-      # 3. AI 실행
-      - name: 🚀 Run AI Engine
-        run: python scripts/ai_dashboard_core.py
+      - name: 🚀 Run Real-World Engine
+        run: python scripts/real_data_core.py
 
-      # 4. [핵심] 화면에 결과 출력 (GitHub Job Summary)
-      # 이 단계가 추가되어야 사용자가 클릭했을 때 내용이 바로 보입니다.
-      - name: 📢 Publish to Action Screen
+      # [NEW] GitHub Actions 화면에 대시보드 출력
+      - name: 📢 Display Live Dashboard
         run: |
-          echo "# 🚀 Grand Ops AI Dashboard v20" >> $GITHUB_STEP_SUMMARY
-          echo "Run ID: ${{ github.run_id }} | Ref: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
-          echo "---" >> $GITHUB_STEP_SUMMARY
-          
-          # 1. 일일 리포트 출력
-          if [ -f "$DAILY_REPORT" ]; then
-            cat "$DAILY_REPORT" >> $GITHUB_STEP_SUMMARY
-          fi
-          
-          echo "" >> $GITHUB_STEP_SUMMARY
-          
-          # 2. 보안 감사 출력
-          if [ -f "$AUDIT_REPORT" ]; then
-            cat "$AUDIT_REPORT" >> $GITHUB_STEP_SUMMARY
-          fi
-          
-          echo "" >> $GITHUB_STEP_SUMMARY
-          
-          # 3. 주간 리포트 (있으면 출력)
-          if [ -f "$WEEKLY_REPORT" ]; then
-            cat "$WEEKLY_REPORT" >> $GITHUB_STEP_SUMMARY
-          fi
+          cat "$DAILY_REPORT" >> $GITHUB_STEP_SUMMARY
 
-      # 5. 파일 백업 및 다운로드용 유물 업로드 (기존 기능 유지)
-      - name: 🔒 Backup & Upload Artifacts
+      - name: 🔒 Encrypt & Upload
         run: |
-          zip -e -P "$ARTIFACT_PASSWORD" dashboard_bundle.zip data/*.md data/*.db
+          zip -e -P "$ARTIFACT_PASSWORD" real_data_bundle.zip data/*.md data/*.db
       
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: AI-Dashboard-Bundle
-          path: dashboard_bundle.zip
+          name: Real-Data-Bundle
+          path: real_data_bundle.zip
 
-      # 6. Git 동기화
-      - name: 🔄 Sync Reports
+      - name: 🔄 Sync Real Data
         run: |
-          git config --global user.name "Dashboard-Bot"
+          git config --global user.name "Real-Data-Bot"
           git config --global user.email "bot@grand-ops.ai"
           git config --global --add safe.directory $GITHUB_WORKSPACE
           
           [ -f "$DAILY_REPORT" ] && git add -f "$DAILY_REPORT"
-          [ -f "$AUDIT_REPORT" ] && git add -f "$AUDIT_REPORT"
           [ -f "$DB_PATH" ] && git add -f "$DB_PATH"
           git add -A
           
           if [ -z "$(git status --porcelain)" ]; then exit 0; fi
           
-          git commit -m "dashboard: ui update [skip ci]"
+          git commit -m "ops: real-world data update [skip ci]"
           
           COUNT=0
           while [ $COUNT -lt 5 ]; do
