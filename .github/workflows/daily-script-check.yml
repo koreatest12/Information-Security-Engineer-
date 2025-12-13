@@ -1,4 +1,4 @@
-name: 🛡️ Ultimate Ops Health Check (Fix: Locks & Dependencies)
+name: 🛡️ Ultimate Ops Health Check (Fix:Locks & Dependencies)
 run-name: 🚀 [Smart Fix] 의존성 자동 해결 및 OS 호환성 점검
 
 on:
