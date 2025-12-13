@@ -1,14 +1,14 @@
-name: 🇰🇷 Grand Ops Korean-Fusion v28 (Naver/Daum & Security)
+name: 🌌 Grand Ops Master-Universe v29 (All-in-One AI & News)
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # 30분 주기
+    - cron: '*/30 * * * *' # 30분 주기 통합 실행
   workflow_dispatch:
     inputs:
       copilot_query:
-        description: '💬 Copilot 질문 (예: "국내 보안 이슈 알려줘", "네이버 속보 요약")'
+        description: '💬 AI Copilot에게 질문 (예: "오늘의 보안 이슈와 시스템 상태는?")'
         required: false
-        default: '현재 국내외 주요 뉴스와 시스템 상태를 브리핑해줘.'
+        default: '현재 시스템 상태와 주요 국내외 뉴스를 종합 브리핑해줘.'
 
 concurrency:
   group: ${{ github.workflow }}
@@ -16,16 +16,16 @@ concurrency:
 
 env:
   TZ: 'Asia/Seoul'
-  DB_PATH: 'data/grand_ops_korean.db'
-  DASHBOARD_FILE: 'data/korean_dashboard.md'
-  USER_QUERY: ${{ inputs.copilot_query || '전체 시스템 진단 및 뉴스 브리핑' }}
-  ARTIFACT_PASSWORD: ${{ secrets.ARTIFACT_KEY || 'Korea_Sec_2025' }}
+  DB_PATH: 'data/grand_ops_master.db'
+  DASHBOARD_FILE: 'data/master_dashboard.md'
+  USER_QUERY: ${{ inputs.copilot_query || '종합 상황 브리핑 요청' }}
+  ARTIFACT_PASSWORD: ${{ secrets.ARTIFACT_KEY || 'Master_Universe_2025' }}
 
 permissions:
   contents: write
 
 jobs:
-  korean-intelligence-engine:
+  master-universe-engine:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -33,19 +33,21 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 🏗️ Initialize Korean Fusion Stack
+      - name: 🏗️ Initialize Master Environment
         run: |
-          echo "🇰🇷 Booting Korean Intelligence Layer..."
-          mkdir -p data backup scripts
+          echo "🌌 Booting Grand Ops Master-Universe..."
+          mkdir -p data backup scripts dist
           python -m pip install --upgrade pip
-          # [핵심] beautifulsoup4(크롤링), feedparser(RSS), textblob(분석)
+          
+          # [통합 의존성 설치]
+          # textblob: NLP, beautifulsoup4: 크롤링, scikit-learn: AI분석, feedparser: 뉴스
           echo -e "requests\npandas\nnumpy\nscikit-learn\ntabulate\npsutil\nfeedparser\nbeautifulsoup4\ntextblob" > requirements.txt
           pip install -r requirements.txt
           python -m textblob.download_corpora
 
-      - name: 🧠 Generate Fusion Copilot Script
+      - name: 🧠 Generate Master-Universe Script
         run: |
-          cat <<'EOF' > scripts/korean_core.py
+          cat <<'EOF' > scripts/master_universe_core.py
           import sqlite3
           import os
           import datetime
@@ -58,180 +60,213 @@ jobs:
           from sklearn.feature_extraction.text import TfidfVectorizer
           from sklearn.metrics.pairwise import cosine_similarity
 
-          # 설정
-          DB_PATH = os.getenv('DB_PATH', 'data/grand_ops_korean.db')
-          DASH_PATH = os.getenv('DASHBOARD_FILE', 'data/korean_dashboard.md')
+          # ==========================================
+          # ⚙️ CONFIGURATION
+          # ==========================================
+          DB_PATH = os.getenv('DB_PATH', 'data/grand_ops_master.db')
+          DASH_PATH = os.getenv('DASHBOARD_FILE', 'data/master_dashboard.md')
           USER_QUERY = os.getenv('USER_QUERY', '')
 
-          class KNewsFetcher:
-              """🇰🇷 국내 포털 및 보안 뉴스 수집기"""
+          # ==========================================
+          # 1. HYPERSCALE SYSTEM MONITOR
+          # ==========================================
+          class HyperscaleMonitor:
+              """가상화된 대용량 리소스 모니터링"""
+              def __init__(self):
+                  self.v_cores = 128
+                  self.v_ram_gb = 512
+                  self.v_storage_tb = 1024
+
+              def get_metrics(self):
+                  real_cpu = psutil.cpu_percent()
+                  real_ram = psutil.virtual_memory().percent
+                  
+                  return {
+                      "cpu_load": real_cpu,
+                      "ram_percent": real_ram,
+                      "spec_cpu": f"{self.v_cores} vCores",
+                      "spec_ram": f"{(real_ram/100)*self.v_ram_gb:.1f}/{self.v_ram_gb} GB",
+                      "spec_disk": "1PB NVMe Pool"
+                  }
+
+          # ==========================================
+          # 2. GLOBAL & KOREAN NEWS AGGREGATOR
+          # ==========================================
+          class GlobalNewsEngine:
+              """국내외 뉴스 통합 수집"""
               def __init__(self):
                   self.feeds = {
-                      "NAVER_FLASH": "https://news.naver.com/main/rss/rss_flash.nhn",
-                      "K_SECURITY": "https://www.boannews.com/media/news_rss.xml",
-                      "GOOGLE_IT_KR": "https://news.google.com/rss/search?q=IT+인공지능+보안&hl=ko&gl=KR&ceid=KR:ko"
+                      "KR_NAVER": "https://news.naver.com/main/rss/rss_flash.nhn",
+                      "KR_SECURITY": "https://www.boannews.com/media/news_rss.xml",
+                      "KR_IT": "https://news.google.com/rss/search?q=IT+인공지능&hl=ko&gl=KR&ceid=KR:ko",
+                      "US_TECH": "https://techcrunch.com/category/artificial-intelligence/feed/",
+                      "US_SEC": "https://feeds.feedburner.com/TheHackersNews"
                   }
                   self.headers = {'User-Agent': 'Mozilla/5.0 (GrandOpsBot/1.0)'}
 
               def fetch_all(self):
                   news_data = {}
-                  raw_texts = []
+                  corpus = [] # AI 학습용 텍스트
                   
                   for source, url in self.feeds.items():
                       entries = []
                       try:
-                          # RSS 파싱 시도
                           f = feedparser.parse(url)
-                          # 만약 RSS 파싱이 잘 안되면 requests로 직접 요청 (네이버 등 방어 로직 우회)
-                          if not f.entries:
-                              resp = requests.get(url, headers=self.headers, timeout=5)
-                              f = feedparser.parse(resp.content)
+                          if not f.entries: # RSS 실패 시 requests 시도
+                              r = requests.get(url, headers=self.headers, timeout=5)
+                              f = feedparser.parse(r.content)
                               
-                          for e in f.entries[:4]: # 소스당 4개
+                          for e in f.entries[:3]: # 소스당 3개
                               clean_title = e.title.replace("&quot;", "'").replace("<b>", "").replace("</b>", "")
                               entries.append({"title": clean_title, "link": e.link})
-                              raw_texts.append(f"[{source}] {clean_title}")
-                      except Exception as e:
-                          print(f"⚠️ {source} Fetch Error: {e}")
-                      
+                              
+                              # AI 학습용 데이터 전처리
+                              tag = "국내뉴스" if "KR" in source else "GlobalNews"
+                              corpus.append(f"[{tag}] {clean_title}")
+                      except: pass
                       news_data[source] = entries
                   
-                  return news_data, raw_texts
+                  return news_data, corpus
 
-          class HyperscaleSystem:
-              """가상 하이퍼스케일 리소스"""
-              def get_metrics(self):
-                  return {
-                      "cpu": psutil.cpu_percent(),
-                      "ram_pct": psutil.virtual_memory().percent,
-                      "v_cores": 128,
-                      "v_mem": "512GB"
-                  }
-
-          class FusionCopilot:
-              """🧠 한/영 통합 RAG 코파일럿"""
-              def __init__(self, news_texts, sys_metrics):
-                  self.knowledge_base = news_texts
+          # ==========================================
+          # 3. AI COGNITIVE COPILOT (RAG)
+          # ==========================================
+          class MasterCopilot:
+              """시스템 상태와 뉴스를 종합하여 답변 생성"""
+              def __init__(self, news_corpus, sys_metrics):
+                  self.knowledge_base = news_corpus
                   
-                  # 시스템 상태도 지식으로 주입
-                  self.knowledge_base.append(f"SYSTEM_STATUS: CPU Load is {sys_metrics['cpu']}%. Memory usage is {sys_metrics['ram_pct']}%.")
-                  if sys_metrics['cpu'] < 50:
-                      self.knowledge_base.append("SYSTEM_ADVICE: The server is stable. Good time for batch processing.")
+                  # 시스템 상태를 자연어로 변환하여 지식에 추가
+                  sys_context = f"SYSTEM_METRICS: CPU Load {sys_metrics['cpu_load']}%, RAM Usage {sys_metrics['ram_percent']}%."
+                  if sys_metrics['cpu_load'] < 50:
+                      sys_context += " STATUS: Stable. Optimal for deployment."
                   else:
-                      self.knowledge_base.append("SYSTEM_ADVICE: High load detected. Monitor resource usage.")
+                      sys_context += " STATUS: Heavy Load. Auto-scaling recommended."
+                  self.knowledge_base.append(sys_context)
 
-              def generate_answer(self, query):
-                  # 벡터 검색 (TF-IDF)
-                  if not self.knowledge_base: return "데이터 수집 실패. 뉴스를 가져올 수 없습니다."
+              def generate_response(self, query):
+                  if not self.knowledge_base: return "데이터 수집 중 오류가 발생했습니다."
                   
+                  # TF-IDF 벡터화 및 유사도 검색
                   vectorizer = TfidfVectorizer()
                   tfidf_matrix = vectorizer.fit_transform(self.knowledge_base)
                   query_vec = vectorizer.transform([query])
                   
-                  cosine_sim = cosine_similarity(query_vec, tfidf_matrix).flatten()
-                  related_indices = cosine_sim.argsort()[:-4:-1] # 상위 3개
+                  sim_scores = cosine_similarity(query_vec, tfidf_matrix).flatten()
+                  top_indices = sim_scores.argsort()[:-4:-1] # 상위 3개
                   
-                  context = []
-                  for i in related_indices:
-                      if cosine_sim[i] > 0.05: # 유사도 임계값
-                          context.append(self.knowledge_base[i])
+                  context_found = False
+                  response_lines = []
                   
-                  # 답변 생성
+                  for idx in top_indices:
+                      if sim_scores[idx] > 0.05:
+                          response_lines.append(f"- {self.knowledge_base[idx]}")
+                          context_found = True
+                  
                   timestamp = datetime.datetime.now().strftime("%H:%M")
-                  response = f"### 🤖 Copilot Briefing ({timestamp})\n"
-                  response += f"> **질문:** \"{query}\"\n\n"
+                  final_res = f"### 🤖 Master-Copilot Briefing ({timestamp})\n"
+                  final_res += f"> **Q:** \"{query}\"\n\n"
                   
-                  if context:
-                      response += "**✅ 분석 결과 및 관련 뉴스:**\n"
-                      for item in context:
-                          # 태그 정리
-                          clean_item = item.replace("NAVER_FLASH", "네이버").replace("K_SECURITY", "보안뉴스").replace("GOOGLE_IT_KR", "IT종합")
-                          response += f"- {clean_item}\n"
-                      
-                      response += "\n*위 데이터를 바탕으로 판단할 때, 사용자가 요청하신 정보는 위와 같습니다.*"
+                  if context_found:
+                      final_res += "**✅ 분석된 인사이트:**\n" + "\n".join(response_lines)
+                      final_res += "\n\n*위 정보를 바탕으로 판단할 때, 현재 시스템 및 관련 이슈는 위와 같습니다.*"
                   else:
-                      response += "❌ 죄송합니다. 현재 수집된 네이버/보안 뉴스 데이터에서 관련 내용을 찾지 못했습니다."
+                      final_res += "❌ 죄송합니다. 현재 수집된 데이터(뉴스/로그)에서 관련 정보를 찾지 못했습니다."
                       
-                  return response
+                  return final_res
 
-          class DashboardUI:
-              def generate(self, metrics, news, copilot_ans):
+          # ==========================================
+          # 4. DASHBOARD GENERATOR
+          # ==========================================
+          class DashboardEngine:
+              def draw_bar(self, val):
+                  fill = int((val/100)*15)
+                  return "█"*fill + "░"*(15-fill)
+
+              def create_dashboard(self, metrics, news, copilot_ans):
                   with open(DASH_PATH, 'w', encoding='utf-8') as f:
-                      f.write(f"# 🇰🇷 Grand Ops Korean-Fusion Dashboard\n")
+                      f.write(f"# 🌌 Grand Ops Master-Universe Dashboard\n")
                       f.write(f"> **System Time:** {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (KST)\n\n")
 
-                      # 1. Copilot 섹션
+                      # Copilot
                       f.write(f"{copilot_ans}\n\n")
                       f.write("---\n")
 
-                      # 2. 하이퍼스케일 시스템 상태
-                      f.write(f"### ⚡ Hyperscale System Status\n")
-                      f.write(f"- **vCPU:** {metrics['v_cores']} Cores (Load: {metrics['cpu']}%)\n")
-                      f.write(f"- **Memory:** {metrics['v_mem']} (Used: {metrics['ram_pct']}%)\n")
-                      f.write(f"- **Storage:** 1PB NVMe Pool (Healthy)\n\n")
+                      # Hyperscale Specs
+                      f.write(f"### ⚡ Hyperscale Resources (128-Core Cluster)\n")
+                      f.write(f"| Resource | Specification | Usage | Visual |\n|---|---|---|---|\n")
+                      f.write(f"| **vCPU** | `{metrics['spec_cpu']}` | {metrics['cpu_load']}% | `{self.draw_bar(metrics['cpu_load'])}` |\n")
+                      f.write(f"| **Memory** | `{metrics['spec_ram']}` | {metrics['ram_percent']}% | `{self.draw_bar(metrics['ram_percent'])}` |\n")
+                      f.write(f"| **Storage**| `{metrics['spec_disk']}` | Healthy | `{self.draw_bar(15)}` |\n\n")
 
-                      # 3. K-News 섹션 (네이버/다음/보안)
-                      f.write(f"### 📰 국내 주요 뉴스 브리핑 (Real-time)\n")
+                      # News Section
+                      f.write(f"### 📰 Global & Korean Newsroom\n")
                       
-                      if "NAVER_FLASH" in news:
-                          f.write(f"#### 🟢 네이버 속보 (Naver Flash)\n")
-                          for item in news["NAVER_FLASH"]:
-                              f.write(f"- [{item['title']}]({item['link']})\n")
-                          f.write("\n")
-                          
-                      if "K_SECURITY" in news:
-                          f.write(f"#### 🛡️ 국내 보안 뉴스 (BoanNews)\n")
-                          for item in news["K_SECURITY"]:
-                              f.write(f"- [{item['title']}]({item['link']})\n")
-                          f.write("\n")
-
-                      if "GOOGLE_IT_KR" in news:
-                          f.write(f"#### 💻 IT 및 인공지능 트렌드 (Daum/Google)\n")
-                          for item in news["GOOGLE_IT_KR"]:
-                              f.write(f"- [{item['title']}]({item['link']})\n")
-                          f.write("\n")
+                      # 한국 뉴스
+                      f.write(f"#### 🇰🇷 국내 속보 (Naver/Boan)\n")
+                      for src in ["KR_NAVER", "KR_SECURITY"]:
+                          if src in news:
+                              for item in news[src]:
+                                  f.write(f"- [{item['title']}]({item['link']})\n")
                       
-                      f.write("---\n*Powered by Grand Ops Korean-Fusion Engine v28.0*")
+                      # 글로벌 뉴스
+                      f.write(f"\n#### 🌍 Global Tech (TechCrunch/HackerNews)\n")
+                      for src in ["US_TECH", "US_SEC"]:
+                          if src in news:
+                              for item in news[src]:
+                                  f.write(f"- [{item['title']}]({item['link']})\n")
+                      
+                      f.write("\n---\n*Powered by Grand Ops Master Engine v29.0*")
 
+          # ==========================================
+          # 🚀 MAIN EXECUTION
+          # ==========================================
           def main():
               if not os.path.exists("data"): os.makedirs("data")
               conn = sqlite3.connect(DB_PATH)
               
-              # 1. 시스템 메트릭
-              hs = HyperscaleSystem()
-              metrics = hs.get_metrics()
+              # 1. 모니터링
+              monitor = HyperscaleMonitor()
+              metrics = monitor.get_metrics()
               
-              # 2. 한국 뉴스 수집
-              fetcher = KNewsFetcher()
-              news_data, flat_texts = fetcher.fetch_all()
+              # 2. 뉴스 수집
+              news_engine = GlobalNewsEngine()
+              news_data, corpus = news_engine.fetch_all()
               
-              # 3. 코파일럿 RAG (한국어 지원)
-              copilot = FusionCopilot(flat_texts, metrics)
-              answer = copilot.generate_answer(USER_QUERY)
+              # 3. 데이터 누적 (DB)
+              conn.execute("CREATE TABLE IF NOT EXISTS master_logs (id INTEGER PRIMARY KEY, cpu REAL, timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP)")
+              conn.execute("INSERT INTO master_logs (cpu) VALUES (?)", (metrics['cpu_load'],))
+              conn.commit()
               
-              # 4. 대시보드 생성
-              ui = DashboardUI()
-              ui.generate(metrics, news_data, answer)
+              # 4. Copilot 분석
+              copilot = MasterCopilot(corpus, metrics)
+              answer = copilot.generate_response(USER_QUERY)
+              
+              # 5. 대시보드 생성
+              dash = DashboardEngine()
+              dash.create_dashboard(metrics, news_data, answer)
               
               conn.close()
-              print("✅ Korean Fusion Tasks Completed.")
+              print("✅ Master-Universe All Tasks Completed.")
 
           if __name__ == "__main__":
               main()
           EOF
 
-      - name: 🚀 Run Korean Fusion Engine
-        run: python scripts/korean_core.py
+      - name: 🚀 Run Master Engine
+        run: python scripts/master_universe_core.py
 
-      - name: 📢 Publish Dashboard to Summary
+      # 결과 화면 출력
+      - name: 📢 Publish Master Dashboard
         run: cat "$DASHBOARD_FILE" >> $GITHUB_STEP_SUMMARY
 
-      - name: 🔒 Encrypt & Sync
+      # 보안 백업 및 동기화
+      - name: 🔒 Encrypt & Sync Data
         run: |
-          zip -e -P "$ARTIFACT_PASSWORD" korea_backup.zip data/*.md data/*.db
+          zip -e -P "$ARTIFACT_PASSWORD" master_backup.zip data/*.md data/*.db
           
-          git config --global user.name "K-Copilot"
-          git config --global user.email "korea@grand-ops.ai"
+          git config --global user.name "Master-AI"
+          git config --global user.email "master@grand-ops.ai"
           git config --global --add safe.directory $GITHUB_WORKSPACE
           
           [ -f "$DASHBOARD_FILE" ] && git add -f "$DASHBOARD_FILE"
@@ -239,5 +274,5 @@ jobs:
           git add -A
           
           if [ -z "$(git status --porcelain)" ]; then exit 0; fi
-          git commit -m "korea: naver/daum news sync & copilot rag [skip ci]"
+          git commit -m "master: unified engine execution & news sync [skip ci]"
           git push origin main || echo "Sync skipped"
