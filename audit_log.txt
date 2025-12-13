@@ -1,3 +1,4 @@
-=== 🛡️ DB Health Check (Sat Dec 13 10:21:31 KST 2025) ===
-✅ DB Integrity Check: OK
-📊 Total Security Logic Records: 9
+=== 🩺 DB Health Check Report ===
+ok
+📊 Table Stats:
+3
