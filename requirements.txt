@@ -1,5 +1,5 @@
+requests
 pandas
 numpy
 scikit-learn
-scipy
 tabulate
