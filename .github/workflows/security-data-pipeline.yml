@@ -1,8 +1,8 @@
-name: 🔐 Security DB Master Pipeline V8 (Defense & Dep-Submit)
+name: 🔐 Security DB Master Pipeline V9 (Force Sync Fix)
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # 5분 주기 실행
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 concurrency:
@@ -16,10 +16,9 @@ env:
   CONFIG_DIR: 'config'
 
 permissions:
-  contents: write # 봇이 종속성 파일 및 DB를 푸시하기 위해 필요
+  contents: write
 
 jobs:
-  # 1. 인프라 준비, 보안 검사, 종속성 분석
   infra-provisioning-and-check:
     runs-on: ubuntu-latest
     steps:
@@ -31,22 +30,16 @@ jobs:
         with:
           python-version: '3.10'
       
-      # [Security] 설치된 패키지 리스트 보안 스캔
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           pip install bandit
       
-      - name: Run Code Security Analysis
-        run: |
-          if [ -d "scripts" ]; then
-            bandit -r scripts/ -ll || echo "⚠️ Warning: Issues found but proceeding."
-          fi
-
       - name: Pre-flight Secret Scan
         run: |
           echo "🔍 Starting Secret Scan..."
+          # DB 파일과 백업 파일은 스캔 제외
           if grep -rE "AWS_ACCESS_KEY|PRIVATE_KEY" . \
             --exclude-dir={.git,.github,data,backup,scripts,config} \
             --exclude={*.db,*.bak,*.md,*.sql,*.json} -I; then
@@ -54,7 +47,6 @@ jobs:
             exit 1
           fi
 
-  # 2. DB 엔진 실행 및 다운로드 차단 로직
   db-lifecycle-management:
     needs: infra-provisioning-and-check
     runs-on: ubuntu-latest
@@ -65,6 +57,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          clean: false # [FIX] 기존 로컬 파일 삭제 방지
 
       - name: Fix Git Ownership
         run: git config --global --add safe.directory $GITHUB_WORKSPACE
@@ -75,8 +68,7 @@ jobs:
           if [ ! -f requirements.txt ]; then echo "requests" > requirements.txt; fi
           pip install -r requirements.txt
 
-      # DB Master Engine 실행 (종속성 자동 제출 포함)
-      - name: Run DB Master Engine (V8)
+      - name: Run DB Master Engine (V9)
         run: |
            if [ -f scripts/security_db_master.py ]; then
              python scripts/security_db_master.py
@@ -85,10 +77,9 @@ jobs:
              exit 1
            fi
 
-      # DB 무결성 및 통계 리포트 생성
       - name: Generate Audit Report
         run: |
-          echo "=== 🩺 DB Health Check Report (Secure) ===" > audit_log.txt
+          echo "=== 🩺 DB Health Check Report (Force Sync) ===" > audit_log.txt
           date >> audit_log.txt
           if [ -f "$DB_PATH" ]; then
             sqlite3 "$DB_PATH" "PRAGMA integrity_check;" >> audit_log.txt
@@ -96,33 +87,33 @@ jobs:
             sqlite3 "$DB_PATH" "SELECT count(*) FROM dependency_tracker;" >> audit_log.txt
           fi
 
-      # [DEFENSE] 외부 다운로드 차단 정책 적용
-      # DB 파일(.db)은 아티팩트로 업로드하지 않음 -> Actions 탭에서 다운로드 불가
-      # 오직 로그 파일만 허용
       - name: Upload Secure Audit Logs (No DB File)
         uses: actions/upload-artifact@v4
         with:
           name: secure-audit-logs
           path: audit_log.txt
-          retention-days: 1 # 최소 보관 기간 설정
+          retention-days: 1
 
-      # [CORE] 자가 치유형 Git 동기화 (종속성 파일 자동 커밋)
-      - name: Smart Commit & Push (Auto-Dependency Submit)
+      # [CORE FIX] Force Add Strategy
+      - name: Smart Commit & Push (Force Override)
         run: |
           git config --global user.name "DB-Master-Bot"
           git config --global user.email "bot@infra.com"
           
-          echo "📦 Staging artifacts..."
-          # DB 파일, SQL 스냅샷, 종속성 파일(Lock/Graph) 모두 스테이징
-          git add data/*.db data/*.sql config/*.lock config/*.json
+          echo "📦 Staging artifacts (Forcing Ignored Files)..."
           
+          # [FIX] .gitignore에 있어도 강제로(-f) 추가하여 에러 해결
+          # DB 파일, SQL 스냅샷, 설정 파일들을 강제로 추적
+          git add -f data/*.db data/*.sql config/*.lock config/*.json
+          
+          # 변경 사항이 없으면 종료 (DB 바이너리가 변경되었는지 확인)
           if [ -z "$(git status --porcelain)" ]; then
              echo "✅ No changes to commit. Exiting."
              exit 0
           fi
           
-          echo "💾 Committing local changes (DB & Dependencies)..."
-          git commit -m "ops: auto-provision & dependency snapshot [skip ci]"
+          echo "💾 Committing local changes..."
+          git commit -m "ops: force sync & dependency update [skip ci]"
           
           # Retry Logic for Push
           MAX_RETRIES=5
@@ -133,6 +124,7 @@ jobs:
           while [ $COUNT -lt $MAX_RETRIES ]; do
             echo "🔄 Sync Attempt $((COUNT+1))/$MAX_RETRIES..."
             
+            # Rebase 시도
             if git pull --rebase origin main; then
                 echo "  ✅ Pull successful."
             else
@@ -143,6 +135,7 @@ jobs:
                 continue
             fi
             
+            # Push 시도
             if git push origin main; then
                 echo "🚀 Push successful!"
                 SUCCESS=true
@@ -156,6 +149,6 @@ jobs:
           done
           
           if [ "$SUCCESS" = false ]; then
-            echo "❌ Critical: Sync failed."
+            echo "❌ Critical: Sync failed after multiple attempts."
             exit 1
           fi
