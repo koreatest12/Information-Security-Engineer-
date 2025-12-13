@@ -4,5 +4,4 @@ numpy
 scikit-learn
 tabulate
 psutil
-feedparser
 textblob
