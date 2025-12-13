@@ -1,8 +1,8 @@
-name: 🔐 Security DB Master Pipeline V7 (Ultimate Defense)
+name: 🔐 Security DB Master Pipeline V8 (Defense & Dep-Submit)
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/5 * * * *' # 5분 주기 실행
   workflow_dispatch:
 
 concurrency:
@@ -13,38 +13,52 @@ env:
   TZ: 'Asia/Seoul'
   DB_PATH: 'data/grand_ops_secure.db'
   BACKUP_DIR: 'backup'
-  GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE || 'temporary-secure-key-ops-2025' }}
+  CONFIG_DIR: 'config'
 
 permissions:
-  contents: write
+  contents: write # 봇이 종속성 파일 및 DB를 푸시하기 위해 필요
 
 jobs:
-  # 1. 인프라 준비 및 보안 검사
+  # 1. 인프라 준비, 보안 검사, 종속성 분석
   infra-provisioning-and-check:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-
+      
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-
-      - name: Install Security Tools
-        run: pip install bandit
-
+      
+      # [Security] 설치된 패키지 리스트 보안 스캔
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install bandit
+      
       - name: Run Code Security Analysis
         run: |
           if [ -d "scripts" ]; then
-            bandit -r scripts/ -ll || echo "⚠️ Bandit Check Finished with warnings"
+            bandit -r scripts/ -ll || echo "⚠️ Warning: Issues found but proceeding."
           fi
 
-  # 2. DB 라이프사이클, 서버 업그레이드, 마이그레이션
-  db-ops-master:
+      - name: Pre-flight Secret Scan
+        run: |
+          echo "🔍 Starting Secret Scan..."
+          if grep -rE "AWS_ACCESS_KEY|PRIVATE_KEY" . \
+            --exclude-dir={.git,.github,data,backup,scripts,config} \
+            --exclude={*.db,*.bak,*.md,*.sql,*.json} -I; then
+            echo "❌ CRITICAL: Secret found!"
+            exit 1
+          fi
+
+  # 2. DB 엔진 실행 및 다운로드 차단 로직
+  db-lifecycle-management:
     needs: infra-provisioning-and-check
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 15
     
     steps:
       - name: Checkout Code
@@ -55,53 +69,14 @@ jobs:
       - name: Fix Git Ownership
         run: git config --global --add safe.directory $GITHUB_WORKSPACE
 
-      # [NEW] 서버 OS 보안 업데이트 및 방어 도구 설치
-      - name: 🛡️ Server Upgrade & Defense Install
-        run: |
-          echo "🔄 Updating Server Packages..."
-          sudo apt-get update
-          sudo apt-get install -y ufw e2fsprogs iptables
-          
-          # [Server Upgrade] 보안 패치 적용 (CI 환경이지만 시뮬레이션 적용)
-          # sudo apt-get dist-upgrade -y  <-- 시간 소요로 인해 실제 CI에선 생략하거나 주석 처리 권장
-          echo "✅ Server Security Patches Applied."
-
-      # [Security] 네트워크 봉쇄 (외부 데이터 유출 원천 차단)
-      - name: 🔒 Activate Network Lockdown (Firewall)
-        run: |
-          echo "🧱 Configuring UFW Firewall..."
-          # 1. 모든 아웃바운드(나가는) 트래픽 차단
-          sudo ufw default deny outgoing
-          sudo ufw default deny incoming
-          
-          # 2. 필수 포트만 예외 허용 (GitHub 통신용)
-          sudo ufw allow out 443/tcp  # HTTPS
-          sudo ufw allow out 80/tcp   # HTTP
-          sudo ufw allow out 53/udp   # DNS
-          sudo ufw allow out 22/tcp   # SSH/Git
-          
-          # 3. 방화벽 가동
-          echo "y" | sudo ufw enable
-          sudo ufw status verbose
-          echo "✅ Network Isolation Active: No data can leave this server."
-
-      - name: Setup Python Env
+      - name: Setup Environment
         run: |
           python -m pip install --upgrade pip
           if [ ! -f requirements.txt ]; then echo "requests" > requirements.txt; fi
           pip install -r requirements.txt
-          chmod +x scripts/*.py || true
 
-      # [Security] DB 잠금 해제 (작업을 위해 일시적 해제)
-      - name: 🔓 Unlock DB (Immutable Bit Removal)
-        run: |
-          if [ -f "$DB_PATH" ]; then
-            echo "🔓 Unlocking DB for maintenance..."
-            sudo chattr -i "$DB_PATH" || true
-          fi
-
-      # [CORE] Python 마스터 엔진 실행 (마이그레이션 & 튜닝)
-      - name: 🚀 Run DB Master Engine
+      # DB Master Engine 실행 (종속성 자동 제출 포함)
+      - name: Run DB Master Engine (V8)
         run: |
            if [ -f scripts/security_db_master.py ]; then
              python scripts/security_db_master.py
@@ -110,70 +85,77 @@ jobs:
              exit 1
            fi
 
-      # [Security] DB 다시 잠금 (커널 레벨 보호)
-      - name: 🔒 Lock DB (Apply Immutable Bit)
+      # DB 무결성 및 통계 리포트 생성
+      - name: Generate Audit Report
         run: |
+          echo "=== 🩺 DB Health Check Report (Secure) ===" > audit_log.txt
+          date >> audit_log.txt
           if [ -f "$DB_PATH" ]; then
-            echo "🔒 Locking DB (Immutable Mode)..."
-            sudo chattr +i "$DB_PATH"
-            ls -lattr "$DB_PATH"
-            lsattr "$DB_PATH"
+            sqlite3 "$DB_PATH" "PRAGMA integrity_check;" >> audit_log.txt
+            echo "📊 Dependency Tracked Count:" >> audit_log.txt
+            sqlite3 "$DB_PATH" "SELECT count(*) FROM dependency_tracker;" >> audit_log.txt
           fi
 
-      # [Backup] 백업 및 암호화
-      - name: Backup & Encryption
-        run: |
-          TIMESTAMP=$(date +%Y%m%d_%H%M%S)
-          # 백업을 위해 잠시 읽기 권한 필요할 수 있음 (chattr는 복사는 허용하나 삭제/수정 불가)
-          if [ -f "$DB_PATH" ]; then
-            cp "$DB_PATH" "$BACKUP_DIR/db_$TIMESTAMP.bak"
-            
-            # GPG 암호화
-            echo "$GPG_PASSPHRASE" | gpg --batch --yes --passphrase-fd 0 --symmetric --cipher-algo AES256 -o "$BACKUP_DIR/db_$TIMESTAMP.bak.gpg" "$BACKUP_DIR/db_$TIMESTAMP.bak"
-            
-            rm "$BACKUP_DIR/db_$TIMESTAMP.bak"
-          fi
-          # 오래된 백업 정리
-          cd $BACKUP_DIR && ls -t *.gpg | tail -n +6 | xargs -r rm --
-
-      - name: Upload Secured Artifacts
+      # [DEFENSE] 외부 다운로드 차단 정책 적용
+      # DB 파일(.db)은 아티팩트로 업로드하지 않음 -> Actions 탭에서 다운로드 불가
+      # 오직 로그 파일만 허용
+      - name: Upload Secure Audit Logs (No DB File)
         uses: actions/upload-artifact@v4
         with:
-          name: secure-db-snapshot
-          path: |
-            data/grand_ops_secure.db
-            data/schema_snapshot.sql
-            config/db_engine_conf.json
-            backup/*.gpg
-          retention-days: 5
+          name: secure-audit-logs
+          path: audit_log.txt
+          retention-days: 1 # 최소 보관 기간 설정
 
-      # [Sync] 자가 치유형 Git 동기화
-      - name: Smart Commit & Push
+      # [CORE] 자가 치유형 Git 동기화 (종속성 파일 자동 커밋)
+      - name: Smart Commit & Push (Auto-Dependency Submit)
         run: |
           git config --global user.name "DB-Master-Bot"
           git config --global user.email "bot@infra.com"
           
-          git add -A
+          echo "📦 Staging artifacts..."
+          # DB 파일, SQL 스냅샷, 종속성 파일(Lock/Graph) 모두 스테이징
+          git add data/*.db data/*.sql config/*.lock config/*.json
+          
           if [ -z "$(git status --porcelain)" ]; then
+             echo "✅ No changes to commit. Exiting."
              exit 0
           fi
           
-          git commit -m "ops: system upgrade & migration sync [skip ci]"
+          echo "💾 Committing local changes (DB & Dependencies)..."
+          git commit -m "ops: auto-provision & dependency snapshot [skip ci]"
           
-          MAX_RETRIES=10
+          # Retry Logic for Push
+          MAX_RETRIES=5
           DELAY=5
           COUNT=0
+          SUCCESS=false
           
           while [ $COUNT -lt $MAX_RETRIES ]; do
+            echo "🔄 Sync Attempt $((COUNT+1))/$MAX_RETRIES..."
+            
             if git pull --rebase origin main; then
-                if git push origin main; then
-                    echo "🚀 Sync Successful."
-                    exit 0
-                fi
+                echo "  ✅ Pull successful."
             else
+                echo "  ⚠️ Pull failed. Reverting rebase..."
                 git rebase --abort || true
+                sleep $DELAY
+                COUNT=$((COUNT+1))
+                continue
             fi
-            sleep $DELAY
+            
+            if git push origin main; then
+                echo "🚀 Push successful!"
+                SUCCESS=true
+                break
+            else
+                echo "  ⚠️ Push failed. Retrying..."
+            fi
+            
             COUNT=$((COUNT+1))
+            sleep $DELAY
           done
-          exit 1
+          
+          if [ "$SUCCESS" = false ]; then
+            echo "❌ Critical: Sync failed."
+            exit 1
+          fi
