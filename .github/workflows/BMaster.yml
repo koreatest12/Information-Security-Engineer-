@@ -1,0 +1,225 @@
+name: 🛡️ Security DB Master V7 (Auto-Init & Massive Ops)
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+env:
+  TZ: 'Asia/Seoul'
+  # [핵심] 대규모 구조를 위한 기본 경로 정의
+  BASE_DATA_DIR: 'data'
+  BACKUP_ROOT: 'backup'
+  CONFIG_ROOT: 'config'
+  SCRIPTS_ROOT: 'scripts'
+  # [캐시] 커스텀 캐시 디렉토리 지정
+  APP_CACHE_DIR: '.app_core_cache'
+  # [보안] 암호화 키
+  SECURE_KEY: "SuperSecretKey!@#OpsMasterV7" 
+
+permissions:
+  contents: write
+
+jobs:
+  # 1. 인프라 초기화 및 환경 구성 (New Core Logic)
+  init-and-setup:
+    runs-on: ubuntu-latest
+    outputs:
+      cache-hit: ${{ steps.cache-restore.outputs.cache-hit }}
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      
+      # [NEW] 1. 동적 환경 변수 및 PATH 대량 주입
+      - name: 🌐 Inject Environment Paths & Variables
+        run: |
+          echo "Setting up Global Environment Paths..."
+          # 스크립트 폴더를 시스템 PATH에 추가 (어디서든 실행 가능하게)
+          echo "$GITHUB_WORKSPACE/$SCRIPTS_ROOT" >> $GITHUB_PATH
+          echo "$GITHUB_WORKSPACE/bin" >> $GITHUB_PATH
+          
+          # 런타임 변수 설정
+          echo "EXECUTION_ID=$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
+          echo "MAX_DB_CONNECTIONS=50" >> $GITHUB_ENV
+          
+          # Python 경로 최적화
+          echo "PYTHONPATH=$GITHUB_WORKSPACE" >> $GITHUB_ENV
+
+      # [NEW] 2. 대규모 디렉토리 계층 구조 자동 생성
+      - name: 📂 Initialize Massive Directory Hierarchy
+        run: |
+          echo "🏗️ Constructing Infrastructure Tree..."
+          
+          # 데이터 계층
+          mkdir -p $BASE_DATA_DIR/{live_db,archive,logs/audit,logs/error,temp}
+          
+          # 백업 계층 (계층화된 백업 구조)
+          mkdir -p $BACKUP_ROOT/{daily,weekly,monthly,encrypted_storage}
+          
+          # 설정 및 스크립트 계층
+          mkdir -p $CONFIG_ROOT/{engine,security,rules}
+          mkdir -p $SCRIPTS_ROOT/utils
+          mkdir -p bin
+          
+          # 캐시 디렉토리
+          mkdir -p $APP_CACHE_DIR
+          
+          echo "✅ Directory Tree Created Successfully."
+          tree . -d -L 3 || echo "⚠️ Tree command not found, skipping visualization."
+
+      # [NEW] 3. 초기 설정 파일 및 더미 데이터 대량 생성 (없는 경우)
+      - name: 📄 Generate Base Config & Files
+        run: |
+          # DB 설정 파일 생성
+          if [ ! -f "$CONFIG_ROOT/engine/db_conf.json" ]; then
+            echo '{"engine": "sqlite3", "mode": "wal", "timeout": 5000}' > "$CONFIG_ROOT/engine/db_conf.json"
+          fi
+          
+          # 보안 규칙 파일 생성
+          if [ ! -f "$CONFIG_ROOT/rules/firewall.rules" ]; then
+            echo "ALLOW 127.0.0.1" > "$CONFIG_ROOT/rules/firewall.rules"
+            echo "DENY ALL" >> "$CONFIG_ROOT/rules/firewall.rules"
+          fi
+          
+          # 로그 파일 초기화
+          touch $BASE_DATA_DIR/logs/audit/access.log
+          touch $BASE_DATA_DIR/logs/error/error.log
+
+      # [NEW] 4. 커스텀 캐시 시스템 적용 (속도 최적화)
+      - name: 💾 Restore Custom Application Cache
+        id: cache-restore
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ env.APP_CACHE_DIR }}
+            ~/.cache/pip
+          # config 폴더 내용이 바뀌면 캐시 갱신
+          key: ${{ runner.os }}-app-v7-${{ hashFiles('config/**') }}
+          restore-keys: |
+            ${{ runner.os }}-app-v7-
+
+  # 2. 메인 보안 로직 및 DB 운영
+  secure-ops-execution:
+    needs: init-and-setup
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 
+
+      # 초기화 단계에서 생성된 구조 다시 확인 (Git에 없어도 런타임 생성 보장)
+      - name: ♻️ Re-Verify Structure
+        run: |
+          mkdir -p data/{live_db,logs/audit} backup/encrypted_storage config/engine
+
+      - name: 🛡️ Install Security Tools & Upgrade System
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y sqlcipher libsqlite3-dev tree
+          
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      # [PATH 테스트] 위에서 추가한 PATH가 작동하는지 확인
+      - name: 🧪 Verify Environment Path
+        run: |
+          echo "Testing custom script execution from PATH..."
+          # 임시 실행 파일 생성
+          echo '#!/bin/bash' > scripts/test_cmd.sh
+          echo 'echo "✅ PATH works! Executed without full path."' >> scripts/test_cmd.sh
+          chmod +x scripts/test_cmd.sh
+          
+          # PATH에 scripts가 추가되었으므로 ./scripts/test_cmd.sh 없이 바로 실행 시도
+          # (GitHub Actions 환경 전파 제한으로 인해 export가 필요할 수 있음. 여기선 명시적 호출 병행)
+          export PATH=$PATH:$(pwd)/scripts
+          test_cmd.sh || ./scripts/test_cmd.sh
+
+      - name: 🔄 Auto-Upgrade Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then
+            pip install --upgrade -r requirements.txt
+            pip freeze > requirements.txt
+          else
+            echo "requests" > requirements.txt
+            pip install -r requirements.txt
+          fi
+
+      # DB 작업 (경로 변수 활용)
+      - name: 🚀 Run DB Engine
+        run: |
+          DB_FILE="$BASE_DATA_DIR/grand_ops_secure.db"
+          if [ -f scripts/security_db_master.py ]; then
+             python scripts/security_db_master.py
+          fi
+          
+          # DB 최적화 (Vacuum)
+          if [ -f "$DB_FILE" ]; then
+            sqlite3 "$DB_FILE" "VACUUM;"
+            sqlite3 "$DB_FILE" "PRAGMA integrity_check;"
+          fi
+
+      # [암호화] 대량 생성된 백업 폴더 활용
+      - name: 🔒 Encrypt & Move to Storage
+        run: |
+          DB_FILE="$BASE_DATA_DIR/grand_ops_secure.db"
+          TARGET_DIR="$BACKUP_ROOT/encrypted_storage"
+          
+          if [ -f "$DB_FILE" ]; then
+            gpg --batch --yes --passphrase "$SECURE_KEY" -c -o "$TARGET_DIR/secure_db_$(date +%s).gpg" "$DB_FILE"
+            echo "✅ DB Encrypted and stored in $TARGET_DIR"
+          fi
+
+      # [업로드] 암호화된 폴더 전체 업로드
+      - name: Upload Secured Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: secure-storage-v7
+          path: backup/encrypted_storage/
+          retention-days: 3
+
+      # [Git Sync] 변경된 구조 및 파일 동기화
+      - name: 🔄 Smart Git Sync (V7 Structure)
+        run: |
+          git config --global user.name "Infra-Master-Bot"
+          git config --global user.email "bot@infra-v7.com"
+          git config --global --add safe.directory $GITHUB_WORKSPACE
+
+          # 새로 생성된 디렉토리 구조 중 gitkeep이 필요한 부분 처리 (빈 폴더는 git에 안 올라가므로)
+          find . -type d -empty -not -path "./.git/*" -exec touch {}/.gitkeep \;
+
+          echo "📦 Staging Massive Changes..."
+          git add -A
+          
+          if [ -z "$(git status --porcelain)" ]; then
+             echo "✅ No changes needed."
+             exit 0
+          fi
+          
+          echo "💾 Committing Infrastructure Update..."
+          git commit -m "infra: v7 structure update & cache init [skip ci]"
+
+          # Retry Logic
+          MAX_RETRIES=10
+          COUNT=0
+          while [ $COUNT -lt $MAX_RETRIES ]; do
+            if git pull --rebase origin main; then
+                echo "  ✅ Pull successful."
+                if git push origin main; then
+                    echo "🚀 Push successful!"
+                    exit 0
+                fi
+            else
+                git rebase --abort || true
+            fi
+            sleep 5
+            COUNT=$((COUNT+1))
+          done
+          exit 1
