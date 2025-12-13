@@ -2,5 +2,6 @@
     "engine_version": "3.1.0",
     "db_path": "/home/runner/work/Information-Security-Engineer-/Information-Security-Engineer-/data/grand_ops_secure.db",
     "max_connections": 20,
-    "policy": "strict"
+    "policy": "strict_isolation",
+    "access_control": "owner_only"
 }
