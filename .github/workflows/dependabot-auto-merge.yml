@@ -5,17 +5,17 @@ on:
     types: [opened, synchronize, reopened]
   pull_request_target:
     types: [opened, synchronize, reopened]
-  workflow_dispatch: # 관리자 수동 실행 버튼
+  workflow_dispatch: # 관리자 수동 실행 (일괄 처리)
 
 permissions:
-  contents: write       # 코드 병합 권한
-  pull-requests: write  # PR 승인 및 코멘트 권한
-  checks: read          # CI 상태 확인 권한
+  contents: write       # 병합 권한
+  pull-requests: write  # 승인 및 코멘트 권한
+  checks: read          # CI 상태 확인
 
 jobs:
-  approve-and-merge:
+  dependabot-manager:
     runs-on: ubuntu-latest
-    # 조건: 봇이 만든 PR이거나, 관리자가 수동으로 실행했을 때만 작동
+    # 봇이 생성한 PR이거나, 관리자가 수동 실행한 경우만 작동
     if: ${{ github.actor == 'dependabot[bot]' || github.event_name == 'workflow_dispatch' }}
     
     steps:
@@ -23,10 +23,8 @@ jobs:
         uses: actions/checkout@v4
 
       # ========================================================
-      # [Case 1] 봇이 PR을 생성했을 때 (실시간 단일 처리)
+      # [Case 1] 실시간 단일 처리 (Auto Event)
       # ========================================================
-      
-      # 1-1. 메타데이터 추출 (Dependabot Action 사용)
       - name: Fetch Metadata (Auto Event)
         if: ${{ github.event_name != 'workflow_dispatch' }}
         id: metadata
@@ -34,65 +32,78 @@ jobs:
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
 
-      # 1-2. 승인 및 병합 (Major 버전 제외)
-      - name: Approve & Merge (Auto Event)
-        if: ${{ github.event_name != 'workflow_dispatch' && steps.metadata.outputs.update-type != 'version-update:semver-major' }}
+      - name: Approve & Merge (Single PR)
+        if: ${{ github.event_name != 'workflow_dispatch' }}
         run: |
-          echo "🤖 Processing PR: $PR_URL"
-          echo "📦 Update Type: ${{ steps.metadata.outputs.update-type }}"
+          PR_URL="${{ github.event.pull_request.html_url }}"
+          UPDATE_TYPE="${{ steps.metadata.outputs.update-type }}"
           
-          # 승인 (Approve)
+          echo "🤖 Processing Single PR: $PR_URL"
+          echo "📦 Update Type: $UPDATE_TYPE"
+
+          # [안전장치] Major 버전 업데이트는 자동 병합 제외
+          if [[ "$UPDATE_TYPE" == "version-update:semver-major" ]]; then
+            echo "⚠️ Major version update detected. Skipping auto-merge."
+            exit 0
+          fi
+
+          # 1. 승인 (Approve)
           gh pr review "$PR_URL" --approve --body "🤖 Dependabot Automation: Approved safe update."
-          
-          # 자동 병합 활성화 (Squash Merge)
-          gh pr merge --auto --squash "$PR_URL"
+
+          # 2. 병합 시도 (Auto Merge) -> 실패 시 경고만 출력하고 넘어감 (|| true)
+          echo "🚀 Attempting to enable auto-merge..."
+          gh pr merge --auto --squash "$PR_URL" || echo "⚠️ Auto-merge failed. Please check 'Allow auto-merge' in Repo Settings."
         env:
-          PR_URL: ${{ github.event.pull_request.html_url }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # ========================================================
-      # [Case 2] 수동 실행 버튼을 눌렀을 때 (일괄 처리)
+      # [Case 2] 일괄 처리 (Manual Batch)
       # ========================================================
-      
       - name: Manual Batch Process (Safe Mode)
         if: ${{ github.event_name == 'workflow_dispatch' }}
         run: |
           echo "🔍 Searching for open Dependabot PRs..."
           
-          # Dependabot PR 조회 (라벨 정보 포함)
+          # Dependabot PR 조회 (최대 50개)
           prs=$(gh pr list --state open --app dependabot --json number,url,title,labels --limit 50)
-          
+
           if [ -z "$prs" ] || [ "$prs" == "[]" ]; then
             echo "✅ No open Dependabot PRs found."
             exit 0
           fi
-          
-          echo "📋 Found PRs. Starting safety check and merge process..."
-          
-          # PR 하나씩 순회하며 처리
+
+          echo "📋 Found PRs. Starting processing loop..."
+
+          # jq를 사용하여 JSON 파싱 후 루프 처리
           echo "$prs" | jq -c '.[]' | while read -r pr; do
             pr_url=$(echo "$pr" | jq -r '.url')
             pr_title=$(echo "$pr" | jq -r '.title')
-            # 라벨 정보를 통해 버전 확인 (dependabot은 'semver:major', 'semver:minor' 등의 라벨을 붙임)
-            labels=$(echo "$pr" | jq -r '.labels[].name')
-            
+            # 라벨 배열을 문자열로 변환하여 검색 용이하게 함
+            labels=$(echo "$pr" | jq -r '.labels[].name' | tr '\n' ' ')
+
             echo "---------------------------------------------------"
             echo "Processing: $pr_title"
-            
-            # [안전장치] Major 버전 업데이트인지 확인 (라벨 분석)
-            if echo "$labels" | grep -q "semver:major"; then
-              echo "⚠️ SKIP: Major version update detected. Manual review required."
+            echo "Labels: $labels"
+
+            # [안전장치] Major 버전 라벨 확인
+            if [[ "$labels" == *"semver:major"* ]]; then
+              echo "⚠️ SKIP: Major version update detected ($pr_title)"
               continue
             fi
 
-            # 1. 승인 (Approve)
-            echo "✅ Safe update detected. Approving..."
-            gh pr review "$pr_url" --approve --body "🤖 Manual Dispatch: Batch Approved (Safe Update)." || echo "NOTE: Already approved."
-            
-            # 2. 자동 병합 (Merge)
+            # 1. 승인 (Approve) - 이미 승인된 경우 에러 무시
+            gh pr review "$pr_url" --approve --body "🤖 Manual Batch: Approved safe update." || echo "ℹ️ Review already submitted or failed."
+
+            # 2. 병합 (Merge) - 실패하더라도 스크립트가 중단되지 않도록 처리
             echo "🚀 Enabling auto-merge..."
-            gh pr merge --auto --squash "$pr_url" || echo "⚠️ Merge waiting for checks."
+            if gh pr merge --auto --squash "$pr_url"; then
+              echo "✅ Auto-merge enabled for $pr_title"
+            else
+              echo "❌ Failed to enable auto-merge for $pr_title. (Check Repo Settings or Branch Rules)"
+            fi
             
+            # API 속도 제한 방지를 위한 짧은 대기
+            sleep 2
           done
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
