@@ -1,105 +1,119 @@
 import os
+import json
 import feedparser
-from datetime import datetime
 import pytz
+from datetime import datetime
 
-# 한국 시간 설정
+# --- [Configuration] ---
 KST = pytz.timezone('Asia/Seoul')
 NOW = datetime.now(KST)
+DATE_TAG = NOW.strftime("%Y.%m.%d")
 CURRENT_TIME_STR = NOW.strftime("%Y-%m-%d %H:%M:%S (KST)")
 
-# 메인 대시보드 파일 (README.md로 설정하여 메인 화면에 노출)
-FILE_PATH = "README.md"
 RSS_URL = "https://pokemongolive.com/feeds/news.xml"
+DB_FILE = "data/daily_intel.json"
+README_FILE = "README.md"
 
 DATA_SOURCES = {
-    "📢 공식 채널 (Official)": [
-        {"name": "공식 트위터 (글로벌)", "url": "https://twitter.com/PokemonGoApp"},
-        {"name": "공식 트위터 (한국)", "url": "https://twitter.com/PokemonGOAppKR"},
-        {"name": "공식 블로그", "url": "https://pokemongolive.com/post/"},
+    "📢 Official": [
+        {"name": "Twitter (Global)", "url": "https://twitter.com/PokemonGoApp"},
+        {"name": "Twitter (Korea)", "url": "https://twitter.com/PokemonGOAppKR"},
+        {"name": "Blog News", "url": "https://pokemongolive.com/post/"},
     ],
-    "⚡ 속보 및 데이터 (Intel)": [
-        {"name": "LeekDuck (이벤트 일정)", "url": "https://leekduck.com/"},
+    "⚡ Intel & Data": [
+        {"name": "LeekDuck", "url": "https://leekduck.com/"},
         {"name": "The Silph Road", "url": "https://thesilphroad.com/"},
-        {"name": "Pokémon GO Hub", "url": "https://pokemongohub.net/"},
+        {"name": "GO Hub", "url": "https://pokemongohub.net/"},
     ],
-    "📚 도감 및 DB": [
-        {"name": "🇰🇷 한국 공식 도감", "url": "https://www.pokemonkorea.co.kr/pokedex"},
-        {"name": "📊 GO Hub 스탯 DB", "url": "https://db.pokemongohub.net/"},
-        {"name": "✨ 이로치 체크리스트", "url": "https://leekduck.com/shiny/"},
+    "📚 Pokedex DB": [
+        {"name": "Official Pokedex (KR)", "url": "https://www.pokemonkorea.co.kr/pokedex"},
+        {"name": "GO Hub Stats", "url": "https://db.pokemongohub.net/"},
+        {"name": "Shiny List", "url": "https://leekduck.com/shiny/"},
     ]
 }
 
-def fetch_latest_news():
+# --- [Module 1: Collector Server] ---
+def collect_data():
+    """RSS 피드 및 메타 데이터를 수집하여 JSON DB 구조로 반환"""
+    print("📡 [Server] Fetching external data...")
+    news_data = []
     try:
         feed = feedparser.parse(RSS_URL)
-        news_items = []
-        for entry in feed.entries[:3]: 
-            title = entry.title
-            link = entry.link
+        for entry in feed.entries[:5]:
             published = datetime(*entry.published_parsed[:6]).strftime('%Y-%m-%d')
-            news_items.append(f"- `[{published}]` [{title}]({link})")
-        return news_items
-    except:
-        return ["- 뉴스 정보를 가져오지 못했습니다."]
+            news_data.append({
+                "date": published,
+                "title": entry.title,
+                "link": entry.link
+            })
+    except Exception as e:
+        print(f"⚠️ Error fetching RSS: {e}")
 
-def get_existing_history():
-    """기존 파일에서 히스토리 섹션을 보존합니다."""
-    if not os.path.exists(FILE_PATH):
-        return ""
-    try:
-        with open(FILE_PATH, "r", encoding="utf-8") as f:
-            content = f.read()
-        if "## 🔄 업데이트 히스토리 (History)" in content:
-            return content.split("## 🔄 업데이트 히스토리 (History)")[1].strip()
-    except:
-        pass
-    return ""
+    # 데이터 패킷 생성
+    data_packet = {
+        "timestamp": CURRENT_TIME_STR,
+        "version": DATE_TAG,
+        "news": news_data,
+        "sources": DATA_SOURCES
+    }
+    return data_packet
 
-def generate_dashboard():
-    news_items = fetch_latest_news()
-    existing_history = get_existing_history()
+def save_database(data):
+    """수집된 데이터를 파일 시스템에 저장 (DB 역할)"""
+    os.makedirs(os.path.dirname(DB_FILE), exist_ok=True)
+    with open(DB_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
+    print(f"💾 [Server] Data saved to {DB_FILE}")
+
+# --- [Module 2: Dashboard Renderer] ---
+def render_dashboard(data):
+    """JSON 데이터를 기반으로 README.md 생성"""
+    print("🎨 [Renderer] Generating Dashboard...")
     
-    # [화면 구성]
-    md = f"# 📱 Pokémon GO Daily Ops Dashboard\n"
-    md += f"**Last Updated:** {CURRENT_TIME_STR} (Python 3.12 Engine)\n\n"
-    md += f"![Status](https://img.shields.io/badge/Status-Active-success) ![News](https://img.shields.io/badge/News-{len(news_items)}_Items-blue)\n\n"
+    md = f"# 📱 Pokémon GO Ops Center (v{data['version']})\n"
+    md += f"**Server Status:** 🟢 Online | **Last Sync:** {data['timestamp']}\n\n"
     
-    md += "## 🔥 오늘의 주요 소식 (Live Feed)\n"
-    for item in news_items:
-        md += f"{item}\n"
+    # 뱃지 추가 (릴리즈 다운로드 링크 등)
+    md += f"[![Release](https://img.shields.io/github/v/release/{os.environ.get('GITHUB_REPOSITORY', 'Grand-Ops/Pogo')}?label=Latest%20Release)](../../releases/latest) "
+    md += f"![Python](https://img.shields.io/badge/Python-3.12-blue)\n\n"
+
+    # 뉴스 섹션
+    md += "## 🔥 Live Intelligence (News)\n"
+    if data['news']:
+        for item in data['news']:
+            md += f"- `[{item['date']}]` [{item['title']}]({item['link']})\n"
+    else:
+        md += "- 수집된 뉴스가 없습니다.\n"
     md += "\n"
 
-    md += "## 🔗 주요 정보 소스\n"
-    md += "| 카테고리 | 소스 이름 | 바로가기 |\n"
+    # 링크 섹션
+    md += "## 🔗 Critical Links\n"
+    md += "| Category | Source | Access |\n"
     md += "| --- | --- | --- |\n"
-    for category, sites in DATA_SOURCES.items():
+    for category, sites in data['sources'].items():
         for site in sites:
-            md += f"| {category} | **{site['name']}** | [Link]({site['url']}) |\n"
-    md += "\n---\n\n"
-
-    # 히스토리 로그 생성
-    new_log = f"### ⏰ {CURRENT_TIME_STR} 리포트\n"
-    new_log += f"* **시스템 상태:** 정상\n"
-    new_log += f"* **수집된 뉴스:** {len(news_items)}건\n"
-    new_log += "<details><summary>상세 로그 접기/펼치기</summary>\n\n"
-    new_log += "Auto-generated via GitHub Actions.\n"
-    new_log += "</details>\n\n"
-
-    # 최종 컨텐츠 결합
-    final_content_for_file = md + "## 🔄 업데이트 히스토리 (History)\n" + new_log + existing_history
+            md += f"| {category} | {site['name']} | [Connect]({site['url']}) |\n"
     
-    # 1. README.md 파일 저장 (리포지토리 메인 화면용)
-    with open(FILE_PATH, "w", encoding="utf-8") as f:
-        f.write(final_content_for_file)
-        
-    # 2. GitHub Actions 요약 화면 출력 (작업 결과 화면용)
+    md += "\n---\n"
+    md += f"*Grand-Ops-Master Automated System (Engine: Python 3.12)*"
+
+    with open(README_FILE, "w", encoding="utf-8") as f:
+        f.write(md)
+    print("✅ [Renderer] README.md updated.")
+
+    # Actions 요약 화면 출력
     if "GITHUB_STEP_SUMMARY" in os.environ:
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
-            f.write(md) # 요약 화면에는 히스토리 제외하고 최신 정보만 깔끔하게 출력
-            f.write("\n\n> 🚀 **전체 히스토리는 [README](./README.md)에서 확인하세요.**")
-
-    print("✅ Dashboard generated on README and Action Summary.")
+            f.write(f"## 🚀 Ops Server Report (v{data['version']})\n")
+            f.write(f"- **Data Points:** {len(data['news'])} news items collected.\n")
+            f.write(f"- **Database:** [Download JSON](../../blob/main/{DB_FILE})\n")
 
 if __name__ == "__main__":
-    generate_dashboard()
+    # 1. 데이터 수집 (Server)
+    intel_data = collect_data()
+    
+    # 2. DB 저장 (Artifact)
+    save_database(intel_data)
+    
+    # 3. 화면 렌더링 (View)
+    render_dashboard(intel_data)
