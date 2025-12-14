@@ -1,8 +1,8 @@
-name: 🏛️ Grand Ops Titan-Infra v34 (Control Center)
+name: 🏛️ Grand Ops Titan-Infra v35 (Persistence Fixed)
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # 30분마다 자동 모니터링
+    - cron: '*/30 * * * *'
   workflow_dispatch:
     inputs:
       server_action:
@@ -26,12 +26,11 @@ concurrency:
 
 env:
   TZ: 'Asia/Seoul'
-  # 상태 저장을 위한 JSON 파일 경로
   STATE_FILE: 'data/titan_status.json' 
   DASHBOARD_FILE: 'data/titan_dashboard.md'
   SERVER_ACTION: ${{ inputs.server_action || 'monitor_only' }}
   USER_QUERY: ${{ inputs.copilot_query || '종합 상황 브리핑' }}
-  REPO_NAME: ${{ github.repository }} # 링크 생성을 위해 리포지토리 이름 필요
+  REPO_NAME: ${{ github.repository }}
   ARTIFACT_PASSWORD: ${{ secrets.ARTIFACT_KEY || 'Titan_Sec_2025' }}
 
 permissions:
@@ -66,7 +65,7 @@ jobs:
           echo -e "requests\npandas\nnumpy\nscikit-learn\npsutil\nfeedparser\nbeautifulsoup4" > requirements.txt
           pip install -r requirements.txt
 
-      - name: 🧠 Generate Titan-Core Script (v34 Control Center)
+      - name: 🧠 Generate Titan-Core Script
         run: |
           cat <<'EOF' > scripts/titan_core.py
           import json
@@ -96,12 +95,12 @@ jobs:
                   self.state = self.load_state()
                   
               def load_state(self):
-                  # 기존 상태 파일이 있으면 로드, 없으면 초기값 생성
                   if os.path.exists(STATE_PATH):
                       try:
                           with open(STATE_PATH, 'r') as f:
                               return json.load(f)
                       except: pass
+                  # 초기 상태 (Factory Default)
                   return {
                       "v_cores": 128,
                       "v_ram_gb": 512,
@@ -116,33 +115,26 @@ jobs:
                       json.dump(self.state, f, indent=4)
 
               def process_action(self, action_cmd):
-                  msg = "Monitoring..."
                   if action_cmd == 'scale_up_resources':
                       print("\n⚡ [ACTION] Scaling Up Resources...")
                       self.state['v_cores'] *= 2
                       self.state['v_ram_gb'] *= 2
                       self.state['status'] = "⚡ Scaled-Up"
                       self.state['generation'] += 1
-                      msg = "Resource Doubled successfully."
                       
                   elif action_cmd == 'system_reboot':
                       print("\n🔄 [ACTION] Rebooting System...")
                       self.state['last_boot'] = time.time()
                       self.state['status'] = "🔵 Fresh Boot"
-                      msg = "System Rebooted."
 
                   elif action_cmd == 'reset_factory':
                       if os.path.exists(STATE_PATH):
                           os.remove(STATE_PATH)
-                      # 재귀적으로 초기화된 상태 로드
-                      self.__init__()
-                      msg = "Factory Reset Complete."
+                      self.__init__() # Reload default
                   
                   self.save_state()
-                  return msg
 
               def get_metrics(self):
-                  # 가동 시간 계산
                   uptime_sec = time.time() - self.state['last_boot']
                   uptime_str = str(datetime.timedelta(seconds=int(uptime_sec)))
                   
@@ -210,7 +202,7 @@ jobs:
                   except: return "AI Engine Error"
 
           # ==========================================
-          # 4. DASHBOARD ENGINE (With Buttons)
+          # 4. DASHBOARD ENGINE (Control Center)
           # ==========================================
           class DashboardEngine:
               def draw_bar(self, val):
@@ -218,22 +210,18 @@ jobs:
                   return "█"*fill + "░"*(15-fill)
 
               def create(self, metrics, news, copilot):
-                  # Action URL 생성 (Github 워크플로우 탭으로 이동)
-                  action_url = f"https://github.com/{REPO}/actions/workflows/main.yml" 
-                  # (참고: 파일명이 main.yml이 아닐 경우 실제 파일명으로 수정 필요)
+                  action_url = f"https://github.com/{REPO}/actions/workflows/main.yml"
                   
                   with open(DASH_PATH, 'w', encoding='utf-8') as f:
                       f.write(f"# 🏛️ Grand Ops Titan-Infra Control Center\n")
                       f.write(f"> **Status:** {metrics['mode']} (Gen {metrics['gen']}) | **Uptime:** {metrics['uptime']}\n\n")
                       
-                      # --- 🎮 Control Center (Buttons) ---
+                      # 배지 버튼 영역
                       f.write("### 🎮 Operations Control Center\n")
                       f.write("시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.\n\n")
-                      
-                      # 배지 스타일 버튼 (링크는 Actions 탭으로 연결)
                       f.write(f"[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)]({action_url}) ")
                       f.write(f"[![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)]({action_url}) ")
-                      f.write(f"[![Refresh](https://img.shields.io/badge/VIEW-REFRESH__LOGS-green?style=for-the-badge&logo=githubactions&logoColor=white)]({action_url})\n\n")
+                      f.write(f"[![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)]({action_url})\n\n")
                       
                       f.write(f"{copilot}\n\n---\n")
 
@@ -246,17 +234,12 @@ jobs:
                       for k, v in news.items():
                           if v: f.write(f"- [{v[0]['title']}]({v[0]['link']})\n")
                       
-                      f.write("\n---\n*Titan-Infra v34.0 Automated Dashboard*")
+                      f.write("\n---\n*Titan-Infra v35.0 Automated Dashboard*")
 
-          # ==========================================
-          # 🚀 MAIN
-          # ==========================================
           def main():
               if not os.path.exists("data"): os.makedirs("data")
-              
               hw = TitanHardware()
-              # 액션 처리 및 상태 저장
-              hw.process_action(ACTION) 
+              hw.process_action(ACTION)
               metrics = hw.get_metrics()
 
               news_eng = FinanceNewsEngine()
@@ -267,7 +250,6 @@ jobs:
 
               dash = DashboardEngine()
               dash.create(metrics, news_data, ans)
-              
               print("✅ Operation Complete.")
 
           if __name__ == "__main__":
@@ -281,21 +263,27 @@ jobs:
         run: |
           [ -f "$DASHBOARD_FILE" ] && cat "$DASHBOARD_FILE" >> $GITHUB_STEP_SUMMARY
 
+      # [FIX] .gitignore로 무시된 파일 강제 커밋 옵션(-f) 추가
       - name: 🔒 Encrypt & Sync Data
         run: |
+          # 백업 생성
           zip -e -P "$ARTIFACT_PASSWORD" titan_backup.zip data/*.md data/*.json
           
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --global --add safe.directory $GITHUB_WORKSPACE
 
-          # JSON 상태 파일과 대시보드 커밋
-          git add data/titan_status.json data/titan_dashboard.md
+          # 중요: .gitignore에 의해 무시되는 status.json을 강제(-f)로 스테이징
+          git add -f data/titan_status.json
+          git add -f data/titan_dashboard.md
           
+          # 나머지 변경 사항도 추가 (이미 추가된 파일은 무시됨)
+          git add .
+
           if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "ops: update system state & dashboard [v34]"
+            git commit -m "ops: update system state (persistence fix) [v35]"
             git pull --rebase origin main
             git push origin main
           else
-            echo "ℹ️ No changes."
+            echo "ℹ️ No changes to commit."
           fi
