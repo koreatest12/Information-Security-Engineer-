@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 1:26:51
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 1:54:00
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.5% | `██████░░░░░░░░░` |
-| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 36.5% | `█████░░░░░░░░░░` |
+| **RAM** | `29.7/512 GB` | 5.8% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- ["증권이 곧 그룹 경쟁력"…신한투자, 본격 시험대 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE0xdm1qRE0wVDRYUlNSU0xMMHdBWnlKTTFiX0RwQmVFZ09sdzFHM3EzQjRrM3FET05ZREZIZXlpSi1SMHl0dS1IOWlzdllhM3BxbHI0?oc=5)
+- ["장애청년 사회 참여 확대"…신한금융의 21년 동행 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5sYllucGRidmQyM3RlSUJoLXpob0lMTGRGdU16U2xpei1STUxIUEtyZkJ0bmJORFQ2cS1kM3h0bzhSOTB5eEFlWm1Dd2I2am8?oc=5)
 - [대통령실, '책갈피 달러' 질책에 "고압적 아닌 정상적인 질답 과정" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9USXQyTklmTzZhN2d3cjdhd2hpN0VSR0VzOTRjQ1N2U0ZNeHVqVHZrZzZmeWgxRWEtT1hMcFJBVW5aU18tWmFybjdNUkZ2LUU?oc=5)
 
 ---
