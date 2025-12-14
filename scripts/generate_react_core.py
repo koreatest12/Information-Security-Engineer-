@@ -3,41 +3,46 @@ import json
 import sys
 
 # =======================================================
-# ⚛️ REACT CORE GENERATOR (Grand Ops Edition V2)
+# 🚀 GRAND OPS: ULTIMATE FULL-STACK GENERATOR (V9 Fixed)
 # =======================================================
-FRONTEND_DIR = "frontend"
-SRC_DIR = os.path.join(FRONTEND_DIR, "src")
-PUBLIC_DIR = os.path.join(FRONTEND_DIR, "public")
-ASSETS_DIR = os.path.join(SRC_DIR, "assets")
+BASE_DIR = os.getcwd()
+FRONTEND_DIR = os.path.join(BASE_DIR, "frontend")
+SERVER_DIR = os.path.join(BASE_DIR, "backend_server")
 
-def ensure_dir(directory):
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-        print(f"📁 Created directory: {directory}")
+def ensure_dir(path):
+    if not os.path.exists(path):
+        os.makedirs(path)
+        print(f"📁 Created: {path}")
 
 def create_file(path, content):
-    """파일 생성 (덮어쓰기 방지 로직 제거 - 강제 동기화 위함)"""
-    try:
-        ensure_dir(os.path.dirname(path))
-        with open(path, "w", encoding="utf-8") as f:
-            f.write(content.strip())
-        print(f"✅ Generated/Updated: {path}")
-    except Exception as e:
-        print(f"❌ Error generating {path}: {e}")
+    ensure_dir(os.path.dirname(path))
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(content.strip())
+    print(f"✅ Generated: {path}")
 
-def generate_react_ecosystem():
-    print("🚀 Initializing Grand Ops React Ecosystem V2...")
+def generate_root_gitignore():
+    # 루트 레벨 gitignore (DB 파일 허용 명시)
+    content = """
+node_modules
+dist
+.env
+.DS_Store
+coverage
+# Data 폴더는 무시하되, DB 파일은 강제로 허용 (!)
+data/*
+!data/*.db
+!data/*.sql
+"""
+    create_file(os.path.join(BASE_DIR, ".gitignore"), content)
+
+def generate_frontend():
+    print("\n[1/2] ⚛️ Generating Expert React Ecosystem...")
     
-    ensure_dir(FRONTEND_DIR)
-    ensure_dir(SRC_DIR)
-    ensure_dir(PUBLIC_DIR)
-    ensure_dir(ASSETS_DIR)
-
-    # 1. package.json (캐시 최적화를 위해 버전 명시)
-    package_json = {
-        "name": "grand-ops-frontend",
+    # 1. Package.json
+    pkg = {
+        "name": "grand-ops-client",
         "private": True,
-        "version": "1.0.0",
+        "version": "2.1.0",
         "type": "module",
         "scripts": {
             "dev": "vite",
@@ -48,10 +53,13 @@ def generate_react_ecosystem():
         "dependencies": {
             "react": "^18.2.0",
             "react-dom": "^18.2.0",
+            "react-router-dom": "^6.20.0",
             "axios": "^1.6.2",
+            "framer-motion": "^10.16.5",
             "lucide-react": "^0.294.0",
             "clsx": "^2.0.0",
-            "tailwind-merge": "^2.1.0"
+            "tailwind-merge": "^2.1.0",
+            "recharts": "^2.10.3"
         },
         "devDependencies": {
             "@types/react": "^18.2.43",
@@ -62,145 +70,207 @@ def generate_react_ecosystem():
             "tailwindcss": "^3.3.6",
             "eslint": "^8.55.0",
             "eslint-plugin-react": "^7.33.2",
-            "eslint-plugin-react-hooks": "^4.6.0",
-            "eslint-plugin-react-refresh": "^0.4.5",
             "vite": "^5.0.8"
         }
     }
-    create_file(os.path.join(FRONTEND_DIR, "package.json"), json.dumps(package_json, indent=2))
+    create_file(os.path.join(FRONTEND_DIR, "package.json"), json.dumps(pkg, indent=2))
 
     # 2. Vite Config
-    vite_config = """
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import path from 'path'
+    vite_conf = """
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
   resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
+    alias: { '@': path.resolve(__dirname, './src') },
+  },
+  server: {
+    proxy: { '/api': 'http://localhost:5000' }
   },
   build: {
     outDir: 'dist',
     emptyOutDir: true,
+    sourcemap: false
   }
-})
-    """
-    create_file(os.path.join(FRONTEND_DIR, "vite.config.js"), vite_config)
+});
+"""
+    create_file(os.path.join(FRONTEND_DIR, "vite.config.js"), vite_conf)
 
-    # 3. Tailwind Config (스타일링 대량 추가 대비)
-    tailwind_config = """
+    # 3. Tailwind & PostCSS
+    create_file(os.path.join(FRONTEND_DIR, "tailwind.config.js"), """
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: { ops: { 900: '#0f172a', 800: '#1e293b', 400: '#38bdf8', 500: '#0ea5e9' } }
+    },
   },
   plugins: [],
 }
-    """
-    create_file(os.path.join(FRONTEND_DIR, "tailwind.config.js"), tailwind_config)
-    
-    # 4. PostCSS Config
-    postcss_config = """
-export default {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-}
-    """
-    create_file(os.path.join(FRONTEND_DIR, "postcss.config.js"), postcss_config)
+""")
+    create_file(os.path.join(FRONTEND_DIR, "postcss.config.js"), "export default { plugins: { tailwindcss: {}, autoprefixer: {} } }")
 
-    # 5. Entry Files
-    index_html = """
+    # 4. Entry Point & Source
+    create_file(os.path.join(FRONTEND_DIR, "index.html"), """
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grand Ops Dashboard</title>
+    <title>Grand Ops Console</title>
   </head>
-  <body class="bg-slate-950 text-white">
+  <body class="bg-ops-900 text-slate-200">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
-    """
-    create_file(os.path.join(FRONTEND_DIR, "index.html"), index_html)
+""")
 
-    # 6. Source Files
-    main_jsx = """
+    create_file(os.path.join(FRONTEND_DIR, "src/main.jsx"), """
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
 )
-    """
-    create_file(os.path.join(SRC_DIR, "main.jsx"), main_jsx)
+""")
 
-    index_css = """
+    create_file(os.path.join(FRONTEND_DIR, "src/index.css"), """
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 body { font-family: 'Inter', sans-serif; }
-    """
-    create_file(os.path.join(SRC_DIR, "index.css"), index_css)
+""")
 
-    app_jsx = """
-import { useState, useEffect } from 'react'
+    # App.jsx
+    create_file(os.path.join(FRONTEND_DIR, "src/App.jsx"), """
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Layout from './components/Layout';
+import Dashboard from './pages/Dashboard';
 
-function App() {
-  const [systemTime, setSystemTime] = useState(new Date().toISOString());
-
-  useEffect(() => {
-    const timer = setInterval(() => setSystemTime(new Date().toISOString()), 1000);
-    return () => clearInterval(timer);
-  }, []);
-
+export default function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center p-4">
-      <div className="max-w-md w-full bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-2xl">
-        <h1 className="text-2xl font-bold text-blue-500 mb-4">🛡️ Grand Ops Security</h1>
-        <div className="space-y-4">
-          <div className="flex justify-between items-center p-3 bg-slate-800 rounded">
-            <span className="text-slate-400">System Status</span>
-            <span className="text-green-400 font-mono font-bold">OPERATIONAL</span>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Dashboard />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Route>
+    </Routes>
+  );
+}
+""")
+
+    # Components
+    create_file(os.path.join(FRONTEND_DIR, "src/components/Layout.jsx"), """
+import { Outlet, Link } from 'react-router-dom';
+import { Shield } from 'lucide-react';
+
+export default function Layout() {
+  return (
+    <div className="flex min-h-screen bg-ops-900">
+      <aside className="w-64 border-r border-ops-800 p-6">
+        <div className="flex items-center gap-2 mb-8 text-white font-bold text-xl">
+          <Shield className="text-ops-500" /> Grand Ops
+        </div>
+        <nav className="space-y-2">
+          <Link to="/" className="block px-4 py-2 bg-ops-800 rounded text-white">Dashboard</Link>
+        </nav>
+      </aside>
+      <main className="flex-1 p-8"><Outlet /></main>
+    </div>
+  );
+}
+""")
+
+    create_file(os.path.join(FRONTEND_DIR, "src/pages/Dashboard.jsx"), """
+import { Server, Activity } from 'lucide-react';
+
+export default function Dashboard() {
+  return (
+    <div>
+      <h1 className="text-3xl font-bold text-white mb-6">System Status</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="bg-ops-800 p-6 rounded-xl border border-slate-700">
+          <div className="flex items-center gap-4">
+            <div className="p-3 bg-blue-500/20 text-blue-400 rounded-lg"><Server /></div>
+            <div>
+              <p className="text-slate-400">Server Status</p>
+              <h3 className="text-2xl font-bold text-white">Online</h3>
+            </div>
           </div>
-          <div className="flex justify-between items-center p-3 bg-slate-800 rounded">
-             <span className="text-slate-400">Current Time</span>
-             <span className="text-xs text-slate-300 font-mono">{systemTime}</span>
+        </div>
+        <div className="bg-ops-800 p-6 rounded-xl border border-slate-700">
+          <div className="flex items-center gap-4">
+            <div className="p-3 bg-green-500/20 text-green-400 rounded-lg"><Activity /></div>
+            <div>
+              <p className="text-slate-400">Uptime</p>
+              <h3 className="text-2xl font-bold text-white">99.9%</h3>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
+""")
 
-export default App
-    """
-    create_file(os.path.join(SRC_DIR, "App.jsx"), app_jsx)
+def generate_backend_server():
+    print("\n[2/2] 🛡️ Generating Node.js Server...")
+    
+    server_pkg = {
+        "name": "grand-ops-server",
+        "version": "1.0.0",
+        "type": "module",
+        "scripts": { "start": "node server.js" },
+        "dependencies": {
+            "express": "^4.18.2",
+            "cors": "^2.8.5",
+            "helmet": "^7.1.0",
+            "compression": "^1.7.4"
+        }
+    }
+    create_file(os.path.join(SERVER_DIR, "package.json"), json.dumps(server_pkg, indent=2))
 
-    # 7. GitIgnore
-    gitignore = """
-node_modules
-dist
-.env
-.DS_Store
-coverage
-    """
-    create_file(os.path.join(FRONTEND_DIR, ".gitignore"), gitignore)
+    server_js = """
+import express from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import cors from 'cors';
+import helmet from 'helmet';
+import compression from 'compression';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const app = express();
+const PORT = process.env.PORT || 5000;
+
+app.use(helmet({ contentSecurityPolicy: false }));
+app.use(cors());
+app.use(compression());
+app.use(express.json());
+
+app.get('/api/health', (req, res) => res.json({ status: 'OK', system: 'Grand Ops' }));
+
+const distPath = path.join(__dirname, '../frontend/dist');
+app.use(express.static(distPath));
+app.get('*', (req, res) => res.sendFile(path.join(distPath, 'index.html')));
+
+app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+"""
+    create_file(os.path.join(SERVER_DIR, "server.js"), server_js)
 
 if __name__ == "__main__":
-    generate_react_ecosystem()
+    generate_root_gitignore()
+    generate_frontend()
+    generate_backend_server()
+    print("\n✅ Full-Stack Generation Complete.")
