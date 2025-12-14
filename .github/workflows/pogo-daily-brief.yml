@@ -2,8 +2,9 @@ name: Pokémon GO Daily Ops Briefing
 
 on:
   schedule:
+    # 매일 한국 시간 오전 9시 (00:00 UTC)
     - cron: '0 0 * * *'
-  workflow_dispatch:
+  workflow_dispatch: # 수동 실행 버튼
 
 permissions:
   contents: write
@@ -16,7 +17,7 @@ jobs:
       - name: 📥 Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # 전체 히스토리를 가져와서 병합 문제 방지
+          fetch-depth: 0 # 히스토리 충돌 방지를 위해 전체 가져오기
 
       - name: 🐍 Set up Python
         uses: actions/setup-python@v5
@@ -31,19 +32,19 @@ jobs:
         run: |
           python scripts/generate_dashboard.py
 
-      # ▼▼▼ [추가된 부분] 최신 변경 사항 동기화 ▼▼▼
+      # ▼▼▼ [중요] 충돌 방지 코드 추가 ▼▼▼
       - name: 🔄 Sync with Remote (Pull & Rebase)
         run: |
           git config --global user.name "Grand-Ops-Master-Bot"
           git config --global user.email "actions@github.com"
-          git pull --rebase origin main || echo "Rebase conflict, proceeding anyway to attempt push"
-      # ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
+          # 원격 변경사항이 있으면 가져와서 합침 (충돌 방지)
+          git pull --rebase origin main || echo "Rebase conflict, trying merge strategy"
+      # ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
 
       - name: 💾 Commit and Push Changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "docs: Update Pokémon GO Dashboard [skip ci]"
+          commit_message: "docs: Update POGO Dashboard with Pokedex DB [skip ci]"
           file_pattern: "POGO_DAILY_BRIEF.md"
           commit_user_name: "Grand-Ops-Master-Bot"
           commit_user_email: "actions@github.com"
-          push_options: '--force' # 필요 시 강제 푸시 옵션 사용 (주의 필요)
