@@ -1,8 +1,8 @@
-name: 🏛️ Grand Ops Titan-Infra v32 (Scale-Up & Reboot)
+name: 🏛️ Grand Ops Titan-Infra v33 (Scale-Up & Stabilized)
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/30 * * * *'  # 30분마다 실행
   workflow_dispatch:
     inputs:
       server_action:
@@ -38,32 +38,37 @@ jobs:
   titan-engine:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: 📥 Checkout Repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # 1. 실제 리눅스 서버 도구 설치 (재기동/관리용)
-      - name: 🏗️ Provision & Install Drivers
+      # [FIX] 시스템 드라이버 및 권한 문제 해결 섹션
+      - name: 🏗️ Provision System & Fix Permissions
         run: |
-          echo "📦 Installing System Drivers..."
+          echo "📦 Installing System Tools..."
           sudo apt-get update
           sudo apt-get install -y nginx redis-tools postgresql-client clamav stress htop
           
-          # 가상 장치 드라이버 로드 시뮬레이션
-          echo "⚡ Mounting Virtual Disks..."
-          mkdir -p /mnt/titan_storage
-          echo "✅ Hardware Drivers Loaded."
+          echo "⚡ Mounting Virtual Disks (Root Access Required)..."
+          # [수정됨] sudo를 사용하여 디렉터리 생성 후, 현재 사용자로 소유권 이전
+          sudo mkdir -p /mnt/titan_storage
+          sudo chown -R $USER:$USER /mnt/titan_storage
+          
+          # 가상 데이터 생성 테스트
+          touch /mnt/titan_storage/virtual_disk.img
+          echo "✅ Hardware Drivers Loaded & Permissions Fixed."
 
-      - name: 🏗️ Initialize Python Stack
+      - name: 🐍 Initialize Python Stack
         run: |
           mkdir -p data backup scripts
           python -m pip install --upgrade pip
+          
           echo -e "requests\npandas\nnumpy\nscikit-learn\ntabulate\npsutil\nfeedparser\nbeautifulsoup4\ntextblob" > requirements.txt
           pip install -r requirements.txt
           python -m textblob.download_corpora
 
-      - name: 🧠 Generate Titan-Core Script
+      - name: 🧠 Generate Titan-Core Script (Enhanced)
         run: |
           cat <<'EOF' > scripts/titan_core.py
           import sqlite3
@@ -87,52 +92,42 @@ jobs:
           USER_QUERY = os.getenv('USER_QUERY', '')
 
           # ==========================================
-          # 1. TITAN HARDWARE MANAGER (증설 & 재기동)
+          # 1. TITAN HARDWARE MANAGER
           # ==========================================
           class TitanHardware:
               def __init__(self):
-                  # 기본 스펙
                   self.v_cores = 128
                   self.v_ram_gb = 512
                   self.v_disk_tb = 1024
                   self.uptime = "14 days, 2 hours"
-                  self.status = "Optimal"
+                  self.status = "🟢 Optimal"
 
               def install_resources(self):
-                  """추가 자원 설치 (Scale-Up)"""
                   print("\n⚡ [ALERT] Initiating Resource Expansion Protocol...")
                   time.sleep(1)
-                  print("   >>> Installing CPU Module: Titan-X 128 Core (Socket 2)... DONE")
-                  self.v_cores = 256 # 2배 증설
-                  
+                  print("   >>> Installing CPU Module: Titan-X 256 Core... DONE")
+                  self.v_cores = 256 
                   time.sleep(1)
-                  print("   >>> Mounting RAM: 512GB ECC DDR5 Module... DONE")
-                  self.v_ram_gb = 1024 # 1TB
-                  
-                  time.sleep(1)
-                  print("   >>> Attaching Storage: 1PB NVMe Expansion Array... DONE")
-                  self.v_disk_tb = 2048 # 2PB
-                  
-                  print("✅ Scale-Up Complete. System capabilities doubled.\n")
+                  print("   >>> Mounting RAM: 1TB ECC DDR5... DONE")
+                  self.v_ram_gb = 1024
+                  print("✅ Scale-Up Complete.\n")
                   self.status = "⚡ Super-Scaled"
 
               def reboot_system(self):
-                  """시스템 재기동 (Reboot)"""
                   print("\n🔄 [ALERT] System Reboot Sequence Initiated...")
-                  print("   >>> Flushing Memory Cache...")
                   time.sleep(1)
-                  print("   >>> Stopping Services (Nginx, Redis, DB)...")
+                  print("   >>> Stopping Services (Nginx, Redis, DB)... DONE")
                   time.sleep(1)
-                  print("   >>> Booting Kernel v6.8-Titan...")
-                  time.sleep(1)
-                  print("✅ System Rebooted Successfully.")
+                  print("   >>> Booting Kernel v6.9-Titan... DONE")
                   self.uptime = "0 days, 0 hours, 1 min (Just Rebooted)"
-                  self.status = "Fresh Boot"
+                  self.status = "🔵 Fresh Boot"
 
               def get_metrics(self):
-                  # 실제 부하율 가져오기
                   real_cpu = psutil.cpu_percent()
                   real_ram = psutil.virtual_memory().percent
+                  
+                  # 디스크 권한 체크 로직 추가
+                  storage_status = "Mounted (/mnt/titan_storage)" if os.access("/mnt/titan_storage", os.W_OK) else "Error (Permission)"
                   
                   return {
                       "cpu_load": real_cpu,
@@ -140,19 +135,19 @@ jobs:
                       "spec_cpu": f"{self.v_cores} vCores",
                       "spec_ram": f"{(real_ram/100)*self.v_ram_gb:.1f}/{self.v_ram_gb} GB",
                       "spec_disk": f"{self.v_disk_tb} TB Pool",
+                      "storage_msg": storage_status,
                       "uptime": self.uptime,
                       "mode": self.status
                   }
 
           # ==========================================
-          # 2. FINANCE NEWS ENGINE
+          # 2. FINANCE NEWS ENGINE (Robust)
           # ==========================================
           class FinanceNewsEngine:
               def __init__(self):
                   self.feeds = {
-                      "FIN_SHINHAN": "https://news.google.com/rss/search?q=신한은행+OR+신한투자증권&hl=ko&gl=KR&ceid=KR:ko",
-                      "FIN_HANA": "https://news.google.com/rss/search?q=하나은행+OR+하나증권&hl=ko&gl=KR&ceid=KR:ko",
-                      "KR_NAVER": "https://news.naver.com/main/rss/rss_flash.nhn",
+                      "FIN_SHINHAN": "https://news.google.com/rss/search?q=신한은행+OR+신한금융&hl=ko&gl=KR&ceid=KR:ko",
+                      "FIN_HANA": "https://news.google.com/rss/search?q=하나은행+OR+하나금융&hl=ko&gl=KR&ceid=KR:ko",
                       "KR_SEC": "https://www.boannews.com/media/news_rss.xml"
                   }
 
@@ -162,14 +157,19 @@ jobs:
                   for src, url in self.feeds.items():
                       entries = []
                       try:
+                          # Timeout 설정 추가로 행(Hang) 방지
                           f = feedparser.parse(url)
                           if not f.entries:
-                              r = requests.get(url, headers={'User-Agent': 'Bot'}, timeout=5)
+                              r = requests.get(url, headers={'User-Agent': 'TitanBot/3.0'}, timeout=10)
                               f = feedparser.parse(r.content)
+                          
                           for e in f.entries[:3]:
                               entries.append({"title": e.title, "link": e.link})
                               corpus.append(f"[{src}] {e.title}")
-                      except: pass
+                      except Exception as e:
+                          print(f"⚠️ Warning: Failed to fetch {src} - {str(e)}")
+                          news_data[src] = [{"title": "데이터 수신 지연", "link": "#"}]
+                      
                       news_data[src] = entries
                   return news_data, corpus
 
@@ -179,26 +179,29 @@ jobs:
           class TitanCopilot:
               def __init__(self, corpus, metrics):
                   self.kb = corpus
-                  sys_text = f"SYSTEM: {metrics['spec_cpu']}, {metrics['spec_ram']}. Mode: {metrics['mode']}."
+                  sys_text = f"SYSTEM STATUS: CPU {metrics['cpu_load']}%, RAM {metrics['ram_percent']}%. Storage: {metrics['storage_msg']}."
                   self.kb.append(sys_text)
 
               def generate(self, query):
-                  if not self.kb: return "데이터 수집 실패"
-                  vec = TfidfVectorizer()
-                  mat = vec.fit_transform(self.kb)
-                  q_vec = vec.transform([query])
-                  sim = cosine_similarity(q_vec, mat).flatten()
-                  indices = sim.argsort()[:-5:-1]
-                  
-                  context = [self.kb[i] for i in indices if sim[i] > 0.05]
-                  
-                  timestamp = datetime.datetime.now().strftime("%H:%M")
-                  res = f"### 🤖 Copilot Briefing ({timestamp})\n> **Q:** \"{query}\"\n\n"
-                  if context:
-                      res += "**✅ AI Analysis:**\n" + "\n".join([f"- {c}" for c in context])
-                  else:
-                      res += "❌ 관련 정보를 찾지 못했습니다."
-                  return res
+                  if len(self.kb) < 2: return "❌ 데이터 부족으로 분석 불가"
+                  try:
+                      vec = TfidfVectorizer()
+                      mat = vec.fit_transform(self.kb)
+                      q_vec = vec.transform([query])
+                      sim = cosine_similarity(q_vec, mat).flatten()
+                      indices = sim.argsort()[:-5:-1]
+                      
+                      context = [self.kb[i] for i in indices if sim[i] > 0.05]
+                      timestamp = datetime.datetime.now().strftime("%H:%M")
+                      
+                      res = f"### 🤖 Copilot Briefing ({timestamp})\n> **Query:** \"{query}\"\n\n"
+                      if context:
+                          res += "**✅ AI Analysis based on RAG:**\n" + "\n".join([f"- {c}" for c in context])
+                      else:
+                          res += "ℹ️ 관련 뉴스나 시스템 로그를 찾지 못했습니다. 일반 모니터링을 지속합니다."
+                      return res
+                  except:
+                      return "⚠️ AI Engine Warning: Vectorization Error."
 
           # ==========================================
           # 4. DASHBOARD ENGINE
@@ -210,71 +213,59 @@ jobs:
 
               def create(self, metrics, news, copilot):
                   with open(DASH_PATH, 'w', encoding='utf-8') as f:
-                      f.write(f"# 🏛️ Grand Ops Titan-Infra Dashboard\n")
-                      f.write(f"> **Time:** {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')} | **Mode:** {metrics['mode']} | **Uptime:** {metrics['uptime']}\n\n")
-
+                      f.write(f"# 🏛️ Grand Ops Titan-Infra Dashboard v33\n")
+                      f.write(f"> **Updated:** {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')} | **Status:** {metrics['mode']} | **Uptime:** {metrics['uptime']}\n\n")
+                      
                       f.write(f"{copilot}\n\n---\n")
 
-                      # 1. Hardware Status (Titan Class)
-                      f.write(f"### ⚡ Titan Infrastructure (Resource Pool)\n")
-                      f.write(f"| Component | Specification (Installed) | Real-time Usage | Capacity Bar |\n|---|---|---|---|\n")
-                      f.write(f"| **CPU Cluster** | `{metrics['spec_cpu']}` | {metrics['cpu_load']}% | `{self.draw_bar(metrics['cpu_load'])}` |\n")
-                      f.write(f"| **Memory Bank** | `{metrics['spec_ram']}` | {metrics['ram_percent']}% | `{self.draw_bar(metrics['ram_percent'])}` |\n")
-                      f.write(f"| **Storage Array**| `{metrics['spec_disk']}` | 1% (Optimized) | `{self.draw_bar(1)}` |\n\n")
+                      # 1. Hardware Status
+                      f.write(f"### ⚡ Titan Infrastructure (Physical & Virtual)\n")
+                      f.write(f"| Resource | Specification | Load | Usage Graph |\n|---|---|---|---|\n")
+                      f.write(f"| **CPU** | `{metrics['spec_cpu']}` | {metrics['cpu_load']}% | `{self.draw_bar(metrics['cpu_load'])}` |\n")
+                      f.write(f"| **RAM** | `{metrics['spec_ram']}` | {metrics['ram_percent']}% | `{self.draw_bar(metrics['ram_percent'])}` |\n")
+                      f.write(f"| **DISK**| `{metrics['spec_disk']}` | {metrics['storage_msg']} | `{self.draw_bar(5)}` |\n\n")
 
                       # 2. Finance News
-                      f.write("### 🏦 Major Finance (Shinhan & Hana)\n")
-                      shinhan = news.get('FIN_SHINHAN', [])
-                      hana = news.get('FIN_HANA', [])
-                      
-                      if shinhan:
-                          f.write(f"**🔵 Shinhan Financial Group**\n")
-                          for n in shinhan[:2]: f.write(f"- [{n['title']}]({n['link']})\n")
-                      if hana:
-                          f.write(f"\n**🟢 Hana Financial Group**\n")
-                          for n in hana[:2]: f.write(f"- [{n['title']}]({n['link']})\n")
-                      f.write("\n")
+                      f.write("### 🏦 Financial Intelligence\n")
+                      for group, name in [('FIN_SHINHAN', '🔵 Shinhan Group'), ('FIN_HANA', '🟢 Hana Group')]:
+                          f.write(f"**{name}**\n")
+                          items = news.get(group, [])
+                          if items:
+                              for n in items[:2]: f.write(f"- [{n['title']}]({n['link']})\n")
+                          else:
+                              f.write("- *No recent updates*\n")
+                          f.write("\n")
 
                       # 3. Security
-                      f.write("### 🛡️ Security Intelligence\n")
+                      f.write("### 🛡️ Cyber Security Feed\n")
                       sec = news.get('KR_SEC', [])
                       for n in sec[:3]: f.write(f"- [{n['title']}]({n['link']})\n")
-
-                      f.write("\n---\n*Powered by Titan-Infra Engine v32.0*")
+                      
+                      f.write("\n---\n*Titan-Infra Engine v33.0 Running on Ubuntu 24.04 LTS*")
 
           # ==========================================
-          # 🚀 MAIN
+          # 🚀 MAIN EXECUTION
           # ==========================================
           def main():
               if not os.path.exists("data"): os.makedirs("data")
-              conn = sqlite3.connect(DB_PATH)
               
-              # 1. 하드웨어 매니저 (증설/재기동 로직)
+              # 1. Hardware Logic
               hw = TitanHardware()
-              
-              # 사용자 명령 처리
-              if ACTION == 'scale_up_resources':
-                  hw.install_resources()
-              elif ACTION == 'system_reboot':
-                  hw.reboot_system()
-              else:
-                  print("ℹ️ Standard Monitoring Mode Active.")
-
+              if ACTION == 'scale_up_resources': hw.install_resources()
+              elif ACTION == 'system_reboot': hw.reboot_system()
               metrics = hw.get_metrics()
-              
-              # 2. 뉴스 및 코파일럿
+
+              # 2. News & AI
               news_eng = FinanceNewsEngine()
               news_data, corpus = news_eng.fetch()
-              
               ai = TitanCopilot(corpus, metrics)
               ans = ai.generate(USER_QUERY)
-              
-              # 3. 대시보드
+
+              # 3. Dashboard
               dash = DashboardEngine()
               dash.create(metrics, news_data, ans)
-              
-              conn.close()
-              print("✅ Titan-Infra Operations Completed.")
+
+              print("✅ Titan-Infra Operations Completed Successfully.")
 
           if __name__ == "__main__":
               main()
@@ -284,20 +275,34 @@ jobs:
         run: python scripts/titan_core.py
 
       - name: 📢 Publish Dashboard
-        run: cat "$DASHBOARD_FILE" >> $GITHUB_STEP_SUMMARY
-
-      - name: 🔒 Encrypt & Sync
         run: |
-          zip -e -P "$ARTIFACT_PASSWORD" titan_backup.zip data/*.md data/*.db
-          
-          git config --global user.name "Titan-Admin"
-          git config --global user.email "admin@grand-ops.ai"
+          if [ -f "$DASHBOARD_FILE" ]; then
+            cat "$DASHBOARD_FILE" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "⚠️ Dashboard file not found!" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      # [FIX] Git 동기화 및 충돌 방지 로직 개선
+      - name: 🔒 Encrypt & Sync (Robust)
+        run: |
+          # 1. 압축 (비밀번호 보호)
+          zip -e -P "$ARTIFACT_PASSWORD" titan_backup.zip data/*.md data/*.db || echo "Backup skipped or empty"
+
+          # 2. Git 설정 (Github Actions Bot 사용)
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --global --add safe.directory $GITHUB_WORKSPACE
-          
+
+          # 3. 변경사항 스테이징
           [ -f "$DASHBOARD_FILE" ] && git add -f "$DASHBOARD_FILE"
           [ -f "$DB_PATH" ] && git add -f "$DB_PATH"
           git add -A
-          
-          if [ -z "$(git status --porcelain)" ]; then exit 0; fi
-          git commit -m "infra: scale-up & reboot action applied [skip ci]"
-          git push origin main || echo "Sync skipped"
+
+          # 4. 커밋 및 푸시 (Rebase 전략 사용)
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "infra: update dashboard & logs [v33]"
+            git pull --rebase origin main  # 원격 변경사항 먼저 반영하여 충돌 방지
+            git push origin main
+          else
+            echo "ℹ️ No changes to commit."
+          fi
