@@ -1,0 +1,103 @@
+name: Flutter CI/CD Complete Workflow
+
+# 트리거: 메인 브랜치 푸시 또는 풀 리퀘스트 시 실행
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  workflow_dispatch: # 수동 실행 옵션 추가
+
+jobs:
+  # 1. 품질 검사 (테스트 & 린트)
+  quality-check:
+    name: 🛡️ Quality Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+          
+      - name: Install Dependencies
+        run: flutter pub get
+
+      - name: Analyze Code (Lint)
+        run: flutter analyze
+
+      - name: Run Unit Tests
+        run: flutter test
+
+  # 2. Android 빌드 (APK & AppBundle)
+  build-android:
+    name: 🤖 Build Android
+    needs: quality-check # 테스트 통과 시에만 실행
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Java 설정 (Android 빌드 필수)
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'gradle' # Gradle 캐싱 자동화
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+
+      - name: Install Dependencies
+        run: flutter pub get
+
+      # APK 빌드 (사용자 테스트용)
+      - name: Build APK
+        run: flutter build apk --release
+
+      # AppBundle 빌드 (스토어 배포용)
+      - name: Build AppBundle
+        run: flutter build appbundle --release
+
+      # 결과물 업로드 (GitHub Actions 화면에서 다운로드 가능)
+      - name: Upload Android Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-release-builds
+          path: |
+            build/app/outputs/flutter-apk/app-release.apk
+            build/app/outputs/bundle/release/app-release.aab
+
+  # 3. iOS 빌드 (서명 없이 빌드 테스트)
+  build-ios:
+    name: 🍎 Build iOS (No-CodeSign)
+    needs: quality-check
+    runs-on: macos-latest # iOS는 반드시 macOS 필요
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+
+      - name: Install Dependencies
+        run: flutter pub get
+
+      # 중요: CI 환경에서 인증서 없이 빌드 성공 여부를 확인하기 위해 서명 제외 옵션 사용
+      # 실제 배포 시에는 인증서 세팅이 필요하지만, CI 통과 여부 확인용으로는 이 방법이 가장 정확합니다.
+      - name: Build iOS (Simulator Build)
+        run: flutter build ios --release --no-codesign
+
+      # 결과물 업로드
+      - name: Upload iOS Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-build
+          path: build/ios/iphoneos/Runner.app
