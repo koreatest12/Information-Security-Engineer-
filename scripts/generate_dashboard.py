@@ -2,16 +2,14 @@ import os
 import feedparser
 from datetime import datetime
 import pytz
-import re
 
 # 한국 시간 설정
 KST = pytz.timezone('Asia/Seoul')
 NOW = datetime.now(KST)
 CURRENT_TIME_STR = NOW.strftime("%Y-%m-%d %H:%M:%S (KST)")
-DATE_TAG = NOW.strftime("%Y-%m-%d")
 
-# 파일 경로
-FILE_PATH = "POGO_DAILY_BRIEF.md"
+# 메인 대시보드 파일 (README.md로 설정하여 메인 화면에 노출)
+FILE_PATH = "README.md"
 RSS_URL = "https://pokemongolive.com/feeds/news.xml"
 
 DATA_SOURCES = {
@@ -36,7 +34,7 @@ def fetch_latest_news():
     try:
         feed = feedparser.parse(RSS_URL)
         news_items = []
-        for entry in feed.entries[:3]: # 최신 3개만 요약
+        for entry in feed.entries[:3]: 
             title = entry.title
             link = entry.link
             published = datetime(*entry.published_parsed[:6]).strftime('%Y-%m-%d')
@@ -46,35 +44,32 @@ def fetch_latest_news():
         return ["- 뉴스 정보를 가져오지 못했습니다."]
 
 def get_existing_history():
-    """기존 파일에서 '🔄 업데이트 히스토리' 섹션 아래의 내용을 추출합니다."""
+    """기존 파일에서 히스토리 섹션을 보존합니다."""
     if not os.path.exists(FILE_PATH):
         return ""
-    
-    with open(FILE_PATH, "r", encoding="utf-8") as f:
-        content = f.read()
-    
-    # 히스토리 섹션이 있는지 확인
-    if "## 🔄 업데이트 히스토리 (History)" in content:
-        # 히스토리 뒷부분만 잘라냄
-        return content.split("## 🔄 업데이트 히스토리 (History)")[1].strip()
+    try:
+        with open(FILE_PATH, "r", encoding="utf-8") as f:
+            content = f.read()
+        if "## 🔄 업데이트 히스토리 (History)" in content:
+            return content.split("## 🔄 업데이트 히스토리 (History)")[1].strip()
+    except:
+        pass
     return ""
 
 def generate_dashboard():
     news_items = fetch_latest_news()
     existing_history = get_existing_history()
     
-    # 1. 상단: 최신 상태 (매번 갱신)
+    # [화면 구성]
     md = f"# 📱 Pokémon GO Daily Ops Dashboard\n"
-    md += f"**Last Updated:** {CURRENT_TIME_STR} (Engine: Python 3.12)\n\n"
-    md += "> Grand-Ops-Master님을 위한 실시간 브리핑 대시보드입니다.\n\n"
-
-    # 2. 실시간 뉴스 섹션
+    md += f"**Last Updated:** {CURRENT_TIME_STR} (Python 3.12 Engine)\n\n"
+    md += f"![Status](https://img.shields.io/badge/Status-Active-success) ![News](https://img.shields.io/badge/News-{len(news_items)}_Items-blue)\n\n"
+    
     md += "## 🔥 오늘의 주요 소식 (Live Feed)\n"
     for item in news_items:
         md += f"{item}\n"
     md += "\n"
 
-    # 3. 링크 모음
     md += "## 🔗 주요 정보 소스\n"
     md += "| 카테고리 | 소스 이름 | 바로가기 |\n"
     md += "| --- | --- | --- |\n"
@@ -83,24 +78,28 @@ def generate_dashboard():
             md += f"| {category} | **{site['name']}** | [Link]({site['url']}) |\n"
     md += "\n---\n\n"
 
-    # 4. 하단: 히스토리 누적 (새로운 로그 + 과거 로그)
-    md += "## 🔄 업데이트 히스토리 (History)\n"
-    
-    # 이번 실행에 대한 로그 생성
+    # 히스토리 로그 생성
     new_log = f"### ⏰ {CURRENT_TIME_STR} 리포트\n"
     new_log += f"* **시스템 상태:** 정상\n"
     new_log += f"* **수집된 뉴스:** {len(news_items)}건\n"
-    new_log += "<details><summary>상세 로그 보기</summary>\n\n"
+    new_log += "<details><summary>상세 로그 접기/펼치기</summary>\n\n"
     new_log += "Auto-generated via GitHub Actions.\n"
     new_log += "</details>\n\n"
 
-    # 최종 결합: 상단내용 + 헤더 + (최신로그 + 과거로그)
-    final_content = md + new_log + existing_history
+    # 최종 컨텐츠 결합
+    final_content_for_file = md + "## 🔄 업데이트 히스토리 (History)\n" + new_log + existing_history
     
-    return final_content
+    # 1. README.md 파일 저장 (리포지토리 메인 화면용)
+    with open(FILE_PATH, "w", encoding="utf-8") as f:
+        f.write(final_content_for_file)
+        
+    # 2. GitHub Actions 요약 화면 출력 (작업 결과 화면용)
+    if "GITHUB_STEP_SUMMARY" in os.environ:
+        with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
+            f.write(md) # 요약 화면에는 히스토리 제외하고 최신 정보만 깔끔하게 출력
+            f.write("\n\n> 🚀 **전체 히스토리는 [README](./README.md)에서 확인하세요.**")
+
+    print("✅ Dashboard generated on README and Action Summary.")
 
 if __name__ == "__main__":
-    report = generate_dashboard()
-    with open(FILE_PATH, "w", encoding="utf-8") as f:
-        f.write(report)
-    print("✅ Dashboard updated with cumulative history.")
+    generate_dashboard()
