@@ -1,103 +1,180 @@
-name: Flutter CI/CD Complete Workflow
+name: Flutter Build & Release System
 
-# 트리거: 메인 브랜치 푸시 또는 풀 리퀘스트 시 실행
 on:
   push:
     branches: [ "main", "master" ]
+    tags: [ "v*" ] # v1.0.0 같은 태그가 달리면 릴리스 모드 작동
   pull_request:
     branches: [ "main", "master" ]
-  workflow_dispatch: # 수동 실행 옵션 추가
+  workflow_dispatch:
+
+# ✅ [설정] 프로젝트 구조에 맞게 아래 경로를 수정하세요
+env:
+  FLUTTER_WORKDIR: '.'  # 예: 프로젝트가 최상위에 있으면 '.', 하위 폴더면 './app' 또는 './mobile'
+  JAVA_VERSION: '17'
+  FLUTTER_CHANNEL: 'stable'
 
 jobs:
-  # 1. 품질 검사 (테스트 & 린트)
+  # ---------------------------------------------------
+  # 1. 환경 설정 및 품질 검사 (에러 수정 반영)
+  # ---------------------------------------------------
   quality-check:
-    name: 🛡️ Quality Check
+    name: 🛡️ Setup & Test
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.FLUTTER_WORKDIR }} # ✅ 에러 수정 핵심: 작업 경로 지정
+
     steps:
-      - uses: actions/checkout@v4
-      
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          channel: 'stable'
-          cache: true
-          
-      - name: Install Dependencies
-        run: flutter pub get
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-      - name: Analyze Code (Lint)
-        run: flutter analyze
-
-      - name: Run Unit Tests
-        run: flutter test
-
-  # 2. Android 빌드 (APK & AppBundle)
-  build-android:
-    name: 🤖 Build Android
-    needs: quality-check # 테스트 통과 시에만 실행
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      # Java 설정 (Android 빌드 필수)
-      - name: Set up JDK 17
+      - name: Setup Java
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '17'
-          cache: 'gradle' # Gradle 캐싱 자동화
+          java-version: ${{ env.JAVA_VERSION }}
+          cache: 'gradle'
 
-      - name: Set up Flutter
+      - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          channel: 'stable'
+          channel: ${{ env.FLUTTER_CHANNEL }}
           cache: true
+
+      - name: Upgrade Flutter # ✅ 요청 반영: 플러터 업그레이드
+        run: flutter upgrade
 
       - name: Install Dependencies
         run: flutter pub get
 
-      # APK 빌드 (사용자 테스트용)
+      - name: Run Analyze
+        run: flutter analyze
+
+      - name: Run Tests
+        run: flutter test
+
+  # ---------------------------------------------------
+  # 2. Android 빌드 및 리소스 생성
+  # ---------------------------------------------------
+  build-android:
+    name: 🤖 Build Android
+    needs: quality-check
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.FLUTTER_WORKDIR }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: ${{ env.JAVA_VERSION }}
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: ${{ env.FLUTTER_CHANNEL }}
+          cache: true
+      
+      - run: flutter pub get
+      
+      # APK 빌드 (파일명에 버전/해시 추가)
       - name: Build APK
         run: flutter build apk --release
 
-      # AppBundle 빌드 (스토어 배포용)
+      # AppBundle 빌드
       - name: Build AppBundle
         run: flutter build appbundle --release
 
-      # 결과물 업로드 (GitHub Actions 화면에서 다운로드 가능)
-      - name: Upload Android Artifacts
+      # ✅ 결과물 이름 변경 (식별 용이)
+      - name: Rename Artifacts
+        run: |
+          mv build/app/outputs/flutter-apk/app-release.apk app-release.apk
+          mv build/app/outputs/bundle/release/app-release.aab app-release.aab
+
+      # 아티팩트 업로드 (Actions 탭 다운로드용)
+      - name: Upload Android Files
         uses: actions/upload-artifact@v4
         with:
-          name: android-release-builds
+          name: android-build-files
           path: |
-            build/app/outputs/flutter-apk/app-release.apk
-            build/app/outputs/bundle/release/app-release.aab
+            ${{ env.FLUTTER_WORKDIR }}/app-release.apk
+            ${{ env.FLUTTER_WORKDIR }}/app-release.aab
 
-  # 3. iOS 빌드 (서명 없이 빌드 테스트)
+  # ---------------------------------------------------
+  # 3. iOS 빌드 (리소스 압축 포함)
+  # ---------------------------------------------------
   build-ios:
-    name: 🍎 Build iOS (No-CodeSign)
+    name: 🍎 Build iOS
     needs: quality-check
-    runs-on: macos-latest # iOS는 반드시 macOS 필요
+    runs-on: macos-latest
+    defaults:
+      run:
+        working-directory: ${{ env.FLUTTER_WORKDIR }}
+
     steps:
       - uses: actions/checkout@v4
-
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
+      - uses: subosito/flutter-action@v2
         with:
-          channel: 'stable'
+          channel: ${{ env.FLUTTER_CHANNEL }}
           cache: true
+      
+      - run: flutter pub get
 
-      - name: Install Dependencies
-        run: flutter pub get
-
-      # 중요: CI 환경에서 인증서 없이 빌드 성공 여부를 확인하기 위해 서명 제외 옵션 사용
-      # 실제 배포 시에는 인증서 세팅이 필요하지만, CI 통과 여부 확인용으로는 이 방법이 가장 정확합니다.
-      - name: Build iOS (Simulator Build)
+      # 서명 없이 빌드 (CI 테스트용)
+      - name: Build iOS (No CodeSign)
         run: flutter build ios --release --no-codesign
 
-      # 결과물 업로드
-      - name: Upload iOS Artifacts
+      # ✅ iOS 결과물 압축 (단일 파일 다운로드를 위해 .app 폴더를 zip으로 압축)
+      - name: Compress iOS App
+        run: |
+          cd build/ios/iphoneos
+          zip -r ../../../ios-app-release.zip Runner.app
+
+      - name: Upload iOS Files
         uses: actions/upload-artifact@v4
         with:
-          name: ios-build
-          path: build/ios/iphoneos/Runner.app
+          name: ios-build-files
+          path: ${{ env.FLUTTER_WORKDIR }}/ios-app-release.zip
+
+  # ---------------------------------------------------
+  # 4. 정식 릴리스 생성 (다운로드 주소 제공)
+  # ---------------------------------------------------
+  create-release:
+    name: 🚀 Create Download Links
+    needs: [build-android, build-ios]
+    if: startsWith(github.ref, 'refs/tags/v') # ✅ 'v'로 시작하는 태그일 때만 실행
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Download Android Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: android-build-files
+          
+      - name: Download iOS Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: ios-build-files
+
+      # ✅ GitHub Release 생성 및 파일 업로드 (정식 주소 생성)
+      - name: Publish Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            app-release.apk
+            app-release.aab
+            ios-app-release.zip
+          body: |
+            ## 🚀 New Build Released!
+            
+            **Android Files:**
+            - APK (Direct Install): `app-release.apk`
+            - AAB (Store Upload): `app-release.aab`
+            
+            **iOS Files:**
+            - Simulator App: `ios-app-release.zip`
+            
+            *이 릴리스는 자동으로 생성되었습니다.*
