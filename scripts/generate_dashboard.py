@@ -6,7 +6,7 @@ import pytz
 KST = pytz.timezone('Asia/Seoul')
 CURRENT_TIME = datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S (KST)")
 
-# 통합 데이터 소스 (이전 대화 기반)
+# 통합 데이터 소스
 DATA_SOURCES = {
     "📢 공식 채널 (Official)": [
         {"name": "공식 트위터 (글로벌)", "url": "https://twitter.com/PokemonGoApp"},
@@ -26,18 +26,18 @@ DATA_SOURCES = {
         {"name": "BrandonTan91 (하드코어)", "url": "https://www.youtube.com/c/BrandonTan91"},
         {"name": "ZyoniK (PvP 전문)", "url": "https://www.youtube.com/c/ZyoniK"},
     ],
-    "📚 도감 및 DB (Database)": [
-        {"name": "포켓몬 코리아 공식 도감", "url": "https://www.pokemonkorea.co.kr/pokedex"},
-        {"name": "GO Hub 스탯 DB", "url": "https://db.pokemongohub.net/"},
-        {"name": "이로치(Shiny) 체크리스트", "url": "https://leekduck.com/shiny/"},
-        {"name": "나무위키 포켓몬고 도감", "url": "https://namu.wiki/w/Pokémon%20GO/%ED%8F%AC%EC%BC%93%EB%AA%AC%20%EB%8F%84%EA%B0%90"},
+    "📚 도감 및 DB (All Pokémon Database)": [
+        {"name": "🇰🇷 한국 공식 포켓몬 도감 (일러스트)", "url": "https://www.pokemonkorea.co.kr/pokedex"},
+        {"name": "📊 GO Hub 스탯 DB (CP/공격값)", "url": "https://db.pokemongohub.net/"},
+        {"name": "✨ 이로치(Shiny) 모습 체크리스트", "url": "https://leekduck.com/shiny/"},
+        {"name": "📖 나무위키 포켓몬고 도감 (실전 팁)", "url": "https://namu.wiki/w/Pokémon%20GO/%ED%8F%AC%EC%BC%93%EB%AA%AC%20%EB%8F%84%EA%B0%90"},
     ]
 }
 
 def generate_markdown():
     md_content = f"# 📱 Pokémon GO Daily Ops Dashboard\n"
     md_content += f"**Updated:** {CURRENT_TIME}\n\n"
-    md_content += "> 이 대시보드는 매일 자동으로 갱신되며, 주요 포켓몬고 정보 소스로 바로 연결됩니다.\n\n"
+    md_content += "> Grand-Ops-Master님을 위한 일일 포켓몬고 브리핑 대시보드입니다.\n\n"
 
     for category, sites in DATA_SOURCES.items():
         md_content += f"## {category}\n"
@@ -59,4 +59,4 @@ if __name__ == "__main__":
     with open("POGO_DAILY_BRIEF.md", "w", encoding="utf-8") as f:
         f.write(report)
     
-    print("✅ Dashboard generated successfully.")
+    print("✅ Dashboard generated successfully with Pokedex links.")
