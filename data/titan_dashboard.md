@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 11:02:27
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 11:24:08
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 40.6% | `██████░░░░░░░░░` |
-| **RAM** | `30.7/512 GB` | 6.0% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.4% | `█████░░░░░░░░░░` |
+| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - ["장애청년 사회 참여 확대"…신한금융의 21년 동행 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBiUUliMjEwa1dGcU1Za0lvWWlqWkYxSUdnMllFVWpmOE1lMTFOeTJ6VVZMR2pjcnRURUdUbnVJbF90Q2JOY3M0OTlLdENjcVRhcVhlbXQybmxuQQ?oc=5)
-- ["대박, 이게 '구내식당 급식'으로 나온다고?"…현대도 나섰다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE52djJTR2JoMUdNZVF2M2gxT1M3ZVJGMXlqZm82aEFoR3BwMDNaeU9oMHlua2RPWjR5WVZPTmV1U0VOVVRNc25zWGd0QUZGRzQ?oc=5)
+- ["아들, 군대 먼저 갔다 오면 안 될까?"…학부모들 '한숨' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5WV0Y2cGRuNFBON0xOUXRCWF9yX1V0WmtTTWZFcmtsY0RsUGJUX3hrNlFMVE5mYWZmWnhhTVZKdnRfQVVUcFlXTThpOG5UZEE?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
