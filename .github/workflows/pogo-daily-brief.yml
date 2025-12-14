@@ -1,0 +1,39 @@
+name: Pokémon GO Daily Ops Briefing
+
+on:
+  schedule:
+    # 매일 00:00 UTC 실행 (한국 시간 09:00 KST)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # 수동 실행 가능
+
+permissions:
+  contents: write
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: 📦 Install Dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: 🔄 Generate Dashboard
+        run: |
+          python scripts/generate_dashboard.py
+
+      - name: 💾 Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs: Update Pokémon GO Dashboard [skip ci]"
+          file_pattern: "POGO_DAILY_BRIEF.md"
+          commit_user_name: "Grand-Ops-Master-Bot"
+          commit_user_email: "actions@github.com"
