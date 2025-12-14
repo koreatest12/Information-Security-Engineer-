@@ -2,9 +2,8 @@ name: Pokémon GO Daily Ops Briefing
 
 on:
   schedule:
-    # 매일 00:00 UTC (한국 시간 09:00)
-    - cron: '0 0 * * *'
-  workflow_dispatch: # 수동 실행 가능
+    - cron: '0 0 * * *' # 매일 00:00 UTC
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -17,10 +16,10 @@ jobs:
       - name: 📥 Checkout Repository
         uses: actions/checkout@v4
         with:
-          ref: main  # 명시적으로 main 브랜치를 타겟팅
-          fetch-depth: 0 # 전체 히스토리 가져오기
+          ref: main
+          fetch-depth: 0
 
-      # ▼▼▼ [핵심 수정 1] 로컬 상태를 원격과 강제로 일치시킴 (충돌 원천 차단) ▼▼▼
+      # ▼▼▼ [강력한 에러 해결] 원격 상태로 강제 초기화 ▼▼▼
       - name: 🔄 Hard Reset to Remote
         run: |
           git fetch origin main
@@ -36,18 +35,17 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      # ▼▼▼ 스크립트 실행 (대시보드 갱신 및 데이터 누적) ▼▼▼
+      # ▼▼▼ 스크립트 실행 (README.md 갱신 + Actions 화면 출력) ▼▼▼
       - name: 🔄 Generate Dashboard
         run: |
           python scripts/generate_dashboard.py
 
-      # ▼▼▼ [핵심 수정 2] 강제 푸시 옵션 추가 (--force) ▼▼▼
+      # ▼▼▼ [강제 푸시] 에러 무시하고 덮어쓰기 ▼▼▼
       - name: 💾 Commit and Push Changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "docs: Update POGO Dashboard & History [skip ci]"
-          file_pattern: "POGO_DAILY_BRIEF.md"
+          commit_message: "docs: Update POGO Dashboard (Force Sync) [skip ci]"
+          file_pattern: "README.md"  # 메인 대시보드 파일
           commit_user_name: "Grand-Ops-Master-Bot"
           commit_user_email: "actions@github.com"
-          # 중요: 히스토리가 꼬여도 무조건 업데이트 반영
           push_options: '--force'
