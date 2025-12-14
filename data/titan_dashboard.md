@@ -1,7 +1,7 @@
 # 🏛️ Grand Ops Titan-Infra Dashboard v33
-> **Updated:** 2025-12-14 16:19:04 | **Status:** 🟢 Optimal | **Uptime:** 14 days, 2 hours
+> **Updated:** 2025-12-14 16:20:34 | **Status:** 🔵 Fresh Boot | **Uptime:** 0 days, 0 hours, 1 min (Just Rebooted)
 
-### 🤖 Copilot Briefing (16:19)
+### 🤖 Copilot Briefing (16:20)
 > **Query:** "현재 인프라 스펙과 금융 뉴스 브리핑해줘."
 
 **✅ AI Analysis based on RAG:**
@@ -13,8 +13,8 @@
 ### ⚡ Titan Infrastructure (Physical & Virtual)
 | Resource | Specification | Load | Usage Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 46.6% | `██████░░░░░░░░░` |
-| **RAM** | `30.7/512 GB` | 6.0% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 14.4% | `██░░░░░░░░░░░░░` |
+| **RAM** | `30.2/512 GB` | 5.9% | `░░░░░░░░░░░░░░░` |
 | **DISK**| `1024 TB Pool` | Mounted (/mnt/titan_storage) | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Intelligence
