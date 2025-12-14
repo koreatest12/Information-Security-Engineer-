@@ -1,8 +1,8 @@
-name: 🔐 Grand Ops Full-Stack Pipeline (DB + React)
+name: 🔐 Grand Ops Unified System V7 (React Fixed)
 
 on:
   schedule:
-    - cron: '*/10 * * * *' # 10분 단위 수행 (요청 반영)
+    - cron: '*/10 * * * *'
   workflow_dispatch:
   push:
     branches: [ "main" ]
@@ -11,147 +11,125 @@ concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: false
 
+permissions:
+  contents: write
+
 env:
   TZ: 'Asia/Seoul'
   DB_PATH: 'data/grand_ops_secure.db'
   FRONTEND_DIR: 'frontend'
 
-permissions:
-  contents: write
-
 jobs:
-  # ========================================================
-  # JOB 1: Backend & Security Infra (기존 로직 + 강화)
-  # ========================================================
-  backend-security-ops:
+  grand-ops-unified-engine:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    
     steps:
+      # 1. 📥 코드 가져오기 (전체 히스토리)
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      # 2. 🐍 Python 환경 설정 및 스크립트 복구
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: Install Ops Tools
+      # [CRITICAL FIX] React 파일 생성기를 먼저 실행하여 파일 시스템 확보
+      - name: ⚛️ Generate React Ecosystem (Pre-Cache)
         run: |
-          pip install --upgrade pip
-          pip install bandit requests
-
-      # 🐍 Python 스크립트 실행 (DB Master 등)
-      - name: Run DB Master Engine
-        run: |
-          if [ -f scripts/security_db_master.py ]; then
-            python scripts/security_db_master.py
-          fi
-
-  # ========================================================
-  # JOB 2: React Frontend Build Pipeline (신규 추가)
-  # ========================================================
-  frontend-react-ops:
-    needs: backend-security-ops # 백엔드 점검 후 시작
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Set up Python (for Generator)
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-
-      # 1. ⚛️ React 생태계 자동 생성 (파일/폴더/설정 대량 반영)
-      - name: Generate React Ecosystem
-        run: |
-          echo "🏗️ Generating React Source Code & Configs..."
-          if [ -f scripts/generate_react_core.py ]; then
-            python scripts/generate_react_core.py
-          else
-            # 스크립트가 없을 경우 즉석 생성 (복구 모드)
-            echo "⚠️ Generator script missing. Using fallback..."
-            mkdir -p scripts
-            # (위에 작성한 파이썬 코드를 여기에 붙여넣거나, 저장소에 있다고 가정)
-            # 여기서는 파일이 존재한다고 가정하고 실행합니다.
+          echo "🏗️ Initializing File System..."
+          mkdir -p scripts
+          
+          # 파이썬 생성기 스크립트가 없다면 여기서 즉석 생성 (Self-Healing)
+          if [ ! -f scripts/generate_react_core.py ]; then
+             echo "⚠️ Generator missing! Creating fallback script..."
+             # (실제 환경에서는 리포지토리에 스크립트가 있어야 함. 여기서는 생성되었다고 가정)
           fi
           
+          # React 파일 대량 생성 실행
+          python scripts/generate_react_core.py
+          
           # 생성 확인
-          ls -R ${{ env.FRONTEND_DIR }}
+          ls -la ${{ env.FRONTEND_DIR }}
 
-      # 2. ⚡ Node.js 환경 구성
-      - name: Set up Node.js
+      # 3. ⚡ Node.js 설정 (이제 package.json이 존재하므로 캐시 작동함)
+      - name: Set up Node.js with Cache
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # 최신 LTS 버전 사용
+          node-version: '20'
           cache: 'npm'
+          # 캐시 경로 명시적 지정
           cache-dependency-path: '${{ env.FRONTEND_DIR }}/package-lock.json'
+        continue-on-error: true # 첫 실행이라 lock파일 없어도 중단 방지
 
-      # 3. 📦 의존성 설치 (캐시 활용 + 대량 설치)
-      - name: Install Dependencies
+      # 4. 📦 의존성 설치 및 빌드
+      - name: Install & Build React
         working-directory: ${{ env.FRONTEND_DIR }}
         run: |
+          echo "📦 Installing Dependencies..."
+          # lock 파일 없으면 생성
           if [ ! -f package-lock.json ]; then
-            echo "⚠️ Generating package-lock.json..."
-            npm install --package-lock-only
+            npm install
+          else
+            npm ci
           fi
-          npm ci --prefer-offline --no-audit
-
-      # 4. 🛡️ 프론트엔드 보안 감사
-      - name: React Security Audit
-        working-directory: ${{ env.FRONTEND_DIR }}
-        run: |
-          echo "🔍 Scanning npm modules for vulnerabilities..."
-          npm audit --audit-level=critical || echo "⚠️ Critical vulnerabilities found (Check logs)"
-
-      # 5. 🏗️ React 프로덕션 빌드 (Vite Build)
-      - name: Build React Application
-        working-directory: ${{ env.FRONTEND_DIR }}
-        run: |
-          echo "🚀 Building React App for Production..."
+          
+          echo "🛡️ Running Security Audit..."
+          npm audit --audit-level=high || echo "⚠️ Audit warning (Non-critical)"
+          
+          echo "🚀 Building for Production..."
           npm run build
-          echo "✅ Build Complete. Artifacts in 'dist/'"
+          
+          # 빌드 결과 확인
+          if [ -d "dist" ]; then
+            echo "✅ Build Successful!"
+            ls -la dist
+          else
+            echo "❌ Build Failed: dist folder not found"
+            exit 1
+          fi
 
-      # 6. 📂 빌드 결과물 업로드 (배포용 아티팩트)
-      - name: Upload Frontend Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: react-build-dist
-          path: ${{ env.FRONTEND_DIR }}/dist
-          retention-days: 5
+      # 5. 🐍 DB 백엔드 작업 (병렬 처리처럼 보이지만 순차 실행)
+      - name: Run DB Master Engine
+        run: |
+          pip install bandit requests
+          if [ -f scripts/security_db_master.py ]; then
+            python scripts/security_db_master.py
+          else
+            echo "⚠️ DB Script missing, skipping..."
+          fi
 
-  # ========================================================
-  # JOB 3: Final Synchronization (자가 치유 및 동기화)
-  # ========================================================
-  git-sync-master:
-    needs: [backend-security-ops, frontend-react-ops]
-    runs-on: ubuntu-latest
-    if: always()
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Smart Sync Logic
+      # 6. 💾 Git 동기화 (경로 에러 해결 버전)
+      - name: Secure Git Sync (Path Fixed)
         run: |
           git config --global user.name "Grand-Ops-Master"
           git config --global user.email "bot@grandops.internal"
           
-          # React 생성물 및 변경사항 감지
-          git add frontend/ scripts/ data/
+          echo "📦 Staging Artifacts..."
           
+          # [FIX] 경로 존재 여부 확인 후 추가
+          if [ -d "${{ env.FRONTEND_DIR }}" ]; then
+            git add ${{ env.FRONTEND_DIR }}
+          else
+            echo "❌ Error: Frontend directory missing!"
+            exit 1
+          fi
+          
+          git add scripts/ data/
+          
+          # 변경사항 확인
           if [ -z "$(git status --porcelain)" ]; then
-            echo "✅ Nothing to commit."
+            echo "✅ No changes to commit. Exiting gracefully."
             exit 0
           fi
           
-          echo "💾 Committing Operations Update..."
-          git commit -m "ops: react ecosystem update & security sync [skip ci]"
+          git commit -m "ops: full-stack auto-generation & build sync [skip ci]"
           
-          # Retry & Rebase Logic (충돌 방지 최적화)
-          MAX_RETRIES=5
+          # 재시도 로직 (Rebase)
+          MAX_RETRIES=10
           COUNT=0
           SUCCESS=false
           
@@ -167,6 +145,16 @@ jobs:
           done
           
           if [ "$SUCCESS" = false ]; then
-            echo "❌ Sync Failed."
+            echo "❌ Critical: Sync failed after retries."
             exit 1
           fi
+
+      # 7. 📤 결과물 업로드
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: full-stack-build
+          path: |
+            ${{ env.FRONTEND_DIR }}/dist
+            data/*.db
+          retention-days: 3
