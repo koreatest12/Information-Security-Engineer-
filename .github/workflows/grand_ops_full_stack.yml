@@ -1,8 +1,14 @@
-name: 🚀 Grand Ops Genesis (Auto-Repair & Massive Build)
+name: 🚨 Grand Ops Atomic Sync (Final Fix)
+
+# 권한 설정: 이 부분이 없으면 Push가 403 에러로 거부될 수 있음
+permissions:
+  contents: write
+  actions: write
+  checks: write
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '*/20 * * * *' # 충돌 방지를 위해 20분 주기로 변경 권장
   workflow_dispatch:
   push:
     branches: [ "main" ]
@@ -11,44 +17,41 @@ concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: false
 
-permissions:
-  contents: write
-
 env:
   TZ: 'Asia/Seoul'
   FRONTEND_DIR: 'frontend'
   SERVER_DIR: 'backend_server'
 
 jobs:
-  genesis-engine:
+  atomic-genesis-engine:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     
     steps:
-      # 1. 체크아웃
+      # 1. 최신 코드 가져오기 (전체 히스토리 포함)
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      # 2. Python 환경
+      # 2. Python 환경 설정
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
       # =========================================================
-      # 🚨 [CRITICAL] 생성 스크립트 인라인 주입 (파일 누락 원천 차단)
+      # 3. [핵심] 생성 스크립트 인라인 주입 & 실행
       # =========================================================
-      - name: 💉 Inject & Execute Ultimate Generator
+      - name: 💉 Inject & Execute Generator
         run: |
           echo "🔥 Injecting Genesis Script..."
           mkdir -p scripts
           
-          # 파이썬 코드를 즉석에서 생성 (이 부분이 에러를 해결하는 핵심입니다)
+          # 파이썬 생성기 코드 작성
           cat << 'EOF' > scripts/generate_ultimate_stack.py
-          import os
-          import json
+          import os, json
           
           BASE = os.getcwd()
           FRONT = os.path.join(BASE, "frontend")
@@ -60,19 +63,30 @@ jobs:
               with open(path, "w", encoding="utf-8") as f: f.write(content.strip())
               print(f"✅ Created: {path}")
           
+          def gen_root_config():
+              # 루트 gitignore 최적화
+              gitignore = """
+          node_modules
+          dist
+          .env
+          .DS_Store
+          coverage
+          # 데이터 폴더는 무시하되 DB는 허용
+          data/*
+          !data/*.db
+          !data/*.sql
+          """
+              write(os.path.join(BASE, ".gitignore"), gitignore)
+          
           def gen_frontend():
-              # 1. Package.json (Expert Deps)
+              # Package.json
               pkg = {
-                  "name": "grand-ops-pro",
-                  "private": True,
-                  "version": "3.0.0",
-                  "type": "module",
+                  "name": "grand-ops-pro", "private": True, "version": "3.1.0", "type": "module",
                   "scripts": { "dev": "vite", "build": "vite build", "lint": "eslint ." },
                   "dependencies": {
                       "react": "^18.2.0", "react-dom": "^18.2.0", "react-router-dom": "^6.20.0",
                       "axios": "^1.6.2", "framer-motion": "^10.16.0", "recharts": "^2.10.0",
-                      "lucide-react": "^0.294.0", "clsx": "^2.0.0", "tailwind-merge": "^2.1.0",
-                      "zustand": "^4.4.7", "date-fns": "^2.30.0", "@tanstack/react-query": "^5.14.0"
+                      "lucide-react": "^0.294.0", "clsx": "^2.0.0", "tailwind-merge": "^2.1.0"
                   },
                   "devDependencies": {
                       "@types/react": "^18.2.43", "@vitejs/plugin-react": "^4.2.1",
@@ -81,216 +95,173 @@ jobs:
                   }
               }
               write(os.path.join(FRONT, "package.json"), json.dumps(pkg, indent=2))
-          
-              # 2. Configs
+              
+              # Configs
               write(os.path.join(FRONT, "vite.config.js"), "import { defineConfig } from 'vite'; import react from '@vitejs/plugin-react'; import path from 'path'; export default defineConfig({ plugins: [react()], resolve: { alias: { '@': path.resolve(__dirname, './src') } }, build: { outDir: 'dist', emptyOutDir: true } });")
               write(os.path.join(FRONT, "tailwind.config.js"), "export default { content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'], theme: { extend: { colors: { ops: { 900:'#0f172a', 800:'#1e293b', 500:'#0ea5e9' } } } }, plugins: [] }")
               write(os.path.join(FRONT, "postcss.config.js"), "export default { plugins: { tailwindcss: {}, autoprefixer: {} } }")
-          
-              # 3. Code Structure
-              write(os.path.join(FRONT, "index.html"), "<!doctype html><html lang='en'><head><meta charset='UTF-8' /><title>Grand Ops Pro</title></head><body class='bg-ops-900 text-white'><div id='root'></div><script type='module' src='/src/main.jsx'></script></body></html>")
               
-              # Main
+              # HTML & Main
+              write(os.path.join(FRONT, "index.html"), "<!doctype html><html lang='en'><head><meta charset='UTF-8'/><title>Grand Ops System</title></head><body class='bg-ops-900 text-white'><div id='root'></div><script type='module' src='/src/main.jsx'></script></body></html>")
               write(os.path.join(FRONT, "src/main.jsx"), "import React from 'react'; import ReactDOM from 'react-dom/client'; import { BrowserRouter } from 'react-router-dom'; import App from './App'; import './index.css'; ReactDOM.createRoot(document.getElementById('root')).render(<React.StrictMode><BrowserRouter><App /></BrowserRouter></React.StrictMode>);")
               write(os.path.join(FRONT, "src/index.css"), "@tailwind base; @tailwind components; @tailwind utilities;")
               
-              # App & Routing
+              # App & Components
               write(os.path.join(FRONT, "src/App.jsx"), """
-          import { Routes, Route, Navigate } from 'react-router-dom';
-          import Layout from './layout/Layout';
-          import Dashboard from './pages/Dashboard';
-          import Security from './pages/Security';
-          export default function App() {
-            return (
-              <Routes>
-                <Route path="/" element={<Layout />}>
-                  <Route index element={<Dashboard />} />
-                  <Route path="security" element={<Security />} />
-                  <Route path="*" element={<Navigate to="/" replace />} />
-                </Route>
-              </Routes>
-            );
-          }
+          import { Routes, Route } from 'react-router-dom';
+          import Layout from './Layout';
+          import Dashboard from './Dashboard';
+          export default function App() { return (<Routes><Route path="/" element={<Layout />}><Route index element={<Dashboard />} /></Route></Routes>); }
           """)
               
-              # Components (Layout)
-              write(os.path.join(FRONT, "src/layout/Layout.jsx"), """
-          import { Outlet, Link, useLocation } from 'react-router-dom';
-          import { Shield, Activity, Lock } from 'lucide-react';
-          import clsx from 'clsx';
-          const NavItem = ({ to, icon: Icon, label }) => {
-             const active = useLocation().pathname === to;
-             return <Link to={to} className={clsx('flex items-center gap-3 p-3 rounded transition', active ? 'bg-ops-500 text-white' : 'text-slate-400 hover:text-white')}><Icon size={18} /><span>{label}</span></Link>
-          }
+              write(os.path.join(FRONT, "src/Layout.jsx"), """
+          import { Outlet } from 'react-router-dom';
+          import { Shield } from 'lucide-react';
           export default function Layout() {
             return (
-              <div className="flex min-h-screen bg-ops-900 text-slate-200">
-                <aside className="w-64 border-r border-ops-800 p-4 flex flex-col gap-2">
-                  <div className="flex items-center gap-2 px-3 py-4 text-white font-bold text-lg mb-4"><Shield className="text-ops-500"/> GRAND OPS</div>
-                  <NavItem to="/" icon={Activity} label="Dashboard" />
-                  <NavItem to="/security" icon={Lock} label="Security Core" />
+              <div className="flex h-screen bg-ops-900 text-white">
+                <aside className="w-64 border-r border-ops-800 p-6">
+                  <h1 className="flex items-center gap-2 font-bold text-xl mb-8"><Shield className="text-ops-500"/> Grand Ops</h1>
+                  <div className="text-sm text-slate-500">System V3.1 Active</div>
                 </aside>
-                <main className="flex-1 p-8 overflow-auto"><Outlet /></main>
+                <main className="flex-1 p-8"><Outlet /></main>
               </div>
             )
           }
           """)
               
-              # Components (Dashboard)
-              write(os.path.join(FRONT, "src/pages/Dashboard.jsx"), """
-          import { AreaChart, Area, ResponsiveContainer, Tooltip } from 'recharts';
-          const data = [{n:1,v:40},{n:2,v:30},{n:3,v:60},{n:4,v:50},{n:5,v:80},{n:6,v:70}];
+              write(os.path.join(FRONT, "src/Dashboard.jsx"), """
+          import { AreaChart, Area, ResponsiveContainer } from 'recharts';
+          const data = [{v:40},{v:30},{v:60},{v:50},{v:80},{v:70}];
           export default function Dashboard() {
-            return (
-              <div className="space-y-6">
-                <h1 className="text-3xl font-bold text-white">System Overview</h1>
-                <div className="grid grid-cols-3 gap-6">
-                   <div className="bg-ops-800 p-6 rounded-xl border border-slate-700">
-                      <h3 className="text-slate-400 text-sm">Active Nodes</h3>
-                      <p className="text-3xl font-bold text-white mt-2">12 / 12</p>
-                   </div>
-                   <div className="bg-ops-800 p-6 rounded-xl border border-slate-700">
-                      <h3 className="text-slate-400 text-sm">Memory Usage</h3>
-                      <p className="text-3xl font-bold text-ops-500 mt-2">42%</p>
-                   </div>
-                   <div className="bg-ops-800 p-6 rounded-xl border border-slate-700">
-                      <h3 className="text-slate-400 text-sm">Security Level</h3>
-                      <p className="text-3xl font-bold text-green-500 mt-2">MAXIMUM</p>
-                   </div>
-                </div>
-                <div className="h-64 bg-ops-800 rounded-xl border border-slate-700 p-4">
-                  <ResponsiveContainer width="100%" height="100%">
-                    <AreaChart data={data}>
-                      <Tooltip contentStyle={{background:'#1e293b', border:'none'}}/>
-                      <Area type="monotone" dataKey="v" stroke="#0ea5e9" fill="#0ea5e9" fillOpacity={0.2} />
-                    </AreaChart>
-                  </ResponsiveContainer>
-                </div>
-              </div>
-            )
-          }
-          """)
-          
-              # Components (Security)
-              write(os.path.join(FRONT, "src/pages/Security.jsx"), """
-          import { ShieldCheck } from 'lucide-react';
-          export default function Security() {
-             return <div className="text-center p-20"><ShieldCheck size={64} className="mx-auto text-green-500 mb-4"/><h1 className="text-2xl text-white">All Systems Secure</h1></div>
+             return (
+               <div>
+                 <h2 className="text-2xl font-bold mb-6">System Status: <span className="text-green-500">OPTIMAL</span></h2>
+                 <div className="h-64 bg-ops-800 rounded border border-slate-700 p-4">
+                   <ResponsiveContainer width="100%" height="100%">
+                     <AreaChart data={data}><Area type="monotone" dataKey="v" stroke="#0ea5e9" fill="#0ea5e9" fillOpacity={0.2} /></AreaChart>
+                   </ResponsiveContainer>
+                 </div>
+               </div>
+             )
           }
           """)
           
           def gen_server():
-              # Server Pkg
-              pkg = {
-                  "name": "grand-ops-server", "version": "1.0.0", "type": "module",
-                  "scripts": { "start": "node server.js" },
-                  "dependencies": { "express": "^4.18.2", "cors": "^2.8.5", "helmet": "^7.1.0", "compression": "^1.7.4" }
-              }
+              pkg = { "name": "server", "version": "1.0.0", "type": "module", "scripts": { "start": "node server.js" }, "dependencies": { "express": "^4.18.2", "cors": "^2.8.5", "helmet": "^7.1.0" } }
               write(os.path.join(SERVER, "package.json"), json.dumps(pkg, indent=2))
-              
-              # Server JS
               write(os.path.join(SERVER, "server.js"), """
           import express from 'express'; import path from 'path'; import { fileURLToPath } from 'url';
-          import cors from 'cors'; import helmet from 'helmet'; import compression from 'compression';
           const app = express(); const PORT = process.env.PORT || 5000;
           const __dirname = path.dirname(fileURLToPath(import.meta.url));
-          app.use(helmet({ contentSecurityPolicy: false })); app.use(cors()); app.use(compression()); app.use(express.json());
-          app.get('/api/status', (req, res) => res.json({ status: 'OK', time: new Date() }));
           app.use(express.static(path.join(__dirname, '../frontend/dist')));
           app.get('*', (req, res) => res.sendFile(path.join(__dirname, '../frontend/dist/index.html')));
-          app.listen(PORT, () => console.log(`🚀 Server on ${PORT}`));
+          app.listen(PORT, () => console.log('Server Ready'));
           """)
           
           if __name__ == "__main__":
+              gen_root_config()
               gen_frontend()
               gen_server()
           EOF
           
-          # 생성기 실행 (이제 frontend 폴더가 무조건 생김)
+          # 생성기 실행
           python scripts/generate_ultimate_stack.py
-          
-          # 확인
           ls -F ${{ env.FRONTEND_DIR }}
 
-      # 3. Node.js 설정 (생성 후 실행되므로 경로 에러 없음)
+      # 4. Node.js 설정 (캐시 무시 및 재설정)
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: '${{ env.FRONTEND_DIR }}/package-lock.json'
-        # 첫 실행시 lock 파일 없어서 캐시 에러날 수 있음 -> 무시하고 진행
-        continue-on-error: true 
+          cache-dependency-path: 'frontend/package-lock.json'
+        continue-on-error: true
 
-      # 4. 프론트엔드 빌드 (초대량 설치)
+      # 5. 프론트엔드 빌드 (초대량)
       - name: 📦 Build Frontend
         working-directory: ${{ env.FRONTEND_DIR }}
         run: |
-          echo "📦 Installing Dependencies (Massive)..."
-          # lock 파일 없으면 install, 있으면 ci
           if [ ! -f package-lock.json ]; then npm install; else npm ci; fi
-          
-          echo "🚀 Building for Production..."
           npm run build
-          
-          # dist 확인
           if [ ! -d "dist" ]; then echo "❌ Build Failed"; exit 1; fi
 
-      # 5. 백엔드 설치
+      # 6. 백엔드 설치
       - name: 📦 Install Server
         working-directory: ${{ env.SERVER_DIR }}
         run: npm install
 
-      # 6. DB 보안 엔진 (기존 기능 유지)
-      - name: Run DB Security
+      # 7. 레거시 DB 엔진 실행
+      - name: Run DB Engine
         run: |
-          pip install bandit requests
-          # 기존 DB 스크립트가 있다면 실행
-          if [ -f scripts/security_db_master.py ]; then python scripts/security_db_master.py; fi
+           mkdir -p data
+           pip install bandit requests
+           if [ -f scripts/security_db_master.py ]; then python scripts/security_db_master.py; fi
 
       # =========================================================
-      # 🚨 [CRITICAL] Git Force Sync (강제 동기화)
+      # 🚨 [CRITICAL FIX] Atomic Force Sync Strategy
       # =========================================================
-      - name: 🚀 Force Git Sync
+      - name: 🚀 Atomic Git Sync (Conflict Auto-Resolve)
         run: |
-          git config --global user.name "Grand-Ops-Master"
+          # 1. 사용자 설정
+          git config --global user.name "Grand-Ops-Bot"
           git config --global user.email "bot@grandops.internal"
-          
-          # [핵심] 경고 메시지 끄기
           git config --global advice.addIgnoredFile false
           
-          echo "📦 Staging with FORCE..."
-          # 강제 추가 (-f)로 .gitignore 무시하고 업로드
-          git add -f ${{ env.FRONTEND_DIR }}
-          git add -f ${{ env.SERVER_DIR }}
-          git add -f scripts/
+          echo "🔄 Starting Atomic Sync..."
           
-          # Data 폴더가 있다면 강제 추가
-          if [ -d "data" ]; then git add -f data/; fi
+          # 2. 모든 변경사항 스테이징 (강제)
+          git add -A # 삭제된 파일까지 포함
+          git add -f frontend/ backend_server/ scripts/
           
-          if [ -z "$(git status --porcelain)" ]; then
-             echo "✅ Nothing to commit"; exit 0;
+          if [ -d "data" ]; then
+             echo "📂 Adding Data..."
+             git add -f data/
           fi
           
-          git commit -m "ops: massive genesis generation & fix [skip ci]"
+          # 3. 변경사항이 없으면 종료
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "✅ Clean state. No sync needed."
+            exit 0
+          fi
           
-          # Rebase & Push Loop
-          MAX=10
+          # 4. 커밋 생성
+          git commit -m "ops: auto-healing & sync [skip ci]"
+          
+          # 5. [핵심] 재시도 루프 (Pull-Rebase-Push)
+          # 원격에 변경이 생겼을 경우, '내 변경사항(theirs)'을 우선으로 하여 자동 병합
+          MAX_RETRIES=10
           COUNT=0
-          while [ $COUNT -lt $MAX ]; do
-            git pull --rebase origin main || git rebase --abort
-            if git push origin main; then break; fi
+          
+          while [ $COUNT -lt $MAX_RETRIES ]; do
+            echo "📡 Sync Attempt $((COUNT+1))..."
+            
+            # 원격 변경사항 가져오기
+            git fetch origin main
+            
+            # Rebase 시도 (충돌 시 내 로컬 변경사항 우선 적용)
+            git pull --rebase -Xtheirs origin main
+            
+            # Push 시도
+            if git push origin main; then
+              echo "🚀 SUCCESS: Atomic Sync Complete!"
+              exit 0
+            fi
+            
+            echo "⚠️ Push failed (likely race condition). Retrying in 5s..."
             sleep 5
             COUNT=$((COUNT+1))
           done
+          
+          echo "❌ CRITICAL: Sync Failed after all retries."
+          exit 1
 
-      # 7. 결과물 업로드
+      # 8. 아티팩트 보관
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: full-stack-package
+          name: grand-ops-final
           path: |
-            ${{ env.FRONTEND_DIR }}/dist
-            ${{ env.SERVER_DIR }}
+            frontend/dist
+            backend_server
             data/*.db
-          retention-days: 7
