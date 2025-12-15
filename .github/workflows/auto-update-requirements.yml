@@ -1,77 +1,126 @@
-name: Auto Generate Requirements and Push (Final Master)
+name: Grand Ops Master - Auto Sync, Release & Package
 
-# 권한 설정 (필수: 토큰 없이 푸시 가능하도록 설정)
+# 권한 설정: 코드 푸시 및 릴리즈 생성 권한 부여
 permissions:
   contents: write
 
 on:
+  # 1. 10분 단위 자동 실행 (UTC 기준)
+  schedule:
+    - cron: '*/10 * * * *'
+  # 2. 코드 푸시 시 실행
   push:
     branches: [ "main", "master" ]
     paths:
-      - '**.py'                    # 파이썬 파일 변경 시에만 작동
-  workflow_dispatch:               # 수동 실행 가능
+      - '**.py'
+  # 3. 수동 실행 버튼
+  workflow_dispatch:
 
 jobs:
-  force-update-job:
+  ops-system-upgrade:
     runs-on: ubuntu-latest
-    
+    env:
+      TZ: 'Asia/Seoul' # 한국 시간 설정
+
     steps:
-      # 1. 저장소 체크아웃 (모든 히스토리 포함)
-      - name: Checkout Repository
+      # ----------------------------------------------------------------
+      # 1. 시스템 초기화 및 동기화 (Conflict 방지)
+      # ----------------------------------------------------------------
+      - name: Checkout & Force Sync (Reset)
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # 2. [강제 동기화] 꼬인 Git 족보 해결 (Hard Reset)
-      # 로컬 상태를 원격 서버와 100% 일치시켜 'non-fast-forward' 오류를 원천 차단합니다.
-      - name: Reset Local History to Remote
+      - name: Initialize Grand-Ops Environment
         run: |
           git config --global user.name "Grand-Ops-Master"
           git config --global user.email "grand-ops-master@github.com"
           
-          echo "🔄 원격 저장소 최신 정보 가져오기..."
+          echo "🔄 [System] 원격 서버 상태와 강제 동기화 중..."
           git fetch origin
-          
-          echo "⚠️ 로컬 상태를 원격 브랜치(${{ github.ref_name }})로 강제 초기화..."
+          # 로컬 변경사항 무시하고 서버 상태로 리셋 (충돌 원천 차단)
           git reset --hard origin/${{ github.ref_name }}
 
-      # 3. Python 환경 설정
-      - name: Set up Python
+      # ----------------------------------------------------------------
+      # 2. 환경 업그레이드 및 경고 메시지 처리
+      # ----------------------------------------------------------------
+      - name: Upgrade System & Python Setup
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      # 4. requirements.txt 생성 (pipreqs)
-      # 로그에 나온 WARNING을 처리하고, 찾아낸 버전을 파일로 저장합니다.
-      - name: Generate requirements.txt
+      - name: Install Dependencies & Tools
         run: |
-          pip install --upgrade pip
-          pip install pipreqs
+          echo "🛠 [Upgrade] pip 및 패키지 관리 도구 최신화..."
+          python -m pip install --upgrade pip
+          pip install pipreqs setuptools wheel
           
-          echo "📦 의존성 파일 생성 시작..."
-          # .github 폴더 제외, 인코딩 utf-8 설정
+          # 경고 메시지 최소화를 위해 사전 필수 라이브러리 설치 시도
+          pip install pandas numpy beautifulsoup4 fastapi || true
+
+      # ----------------------------------------------------------------
+      # 3. Requirements 생성 및 대량 파일 스캔
+      # ----------------------------------------------------------------
+      - name: Generate Requirements (Mass Scan)
+        id: req_gen
+        run: |
+          echo "📦 [Package] 전체 디렉토리 스캔 및 의존성 추출..."
+          
+          # 경고 메시지는 유지하되, 실행이 멈추지 않도록 처리
           pipreqs . --force --encoding=utf-8 --ignore .github
           
-          echo "✅ requirements.txt 생성 완료. 내용 확인:"
+          echo "✅ requirements.txt 생성 완료"
           cat requirements.txt
 
-      # 5. [수동 푸시] 변경 사항 반영
-      # 외부 액션 없이 직접 Git 명령어로 안전하게 업로드합니다.
-      - name: Commit and Push Manually
+      # ----------------------------------------------------------------
+      # 4. 변경 사항 커밋 및 푸시
+      # ----------------------------------------------------------------
+      - name: Commit & Push Changes
+        id: auto_commit
         run: |
-          # 1. 변경된 모든 파일 스테이징
+          # 모든 파일(대량 수정 포함) 스테이징
           git add -A
           
-          # 2. 변경사항 유무 확인 (변경 없으면 종료)
+          # 변경 사항 확인
           if git diff --staged --quiet; then
-            echo "✋ 변경된 내용이 없습니다. 워크플로우를 종료합니다."
+            echo "✋ 변경된 내용이 없습니다. 릴리즈 프로세스를 건너뜁니다."
+            echo "changed=false" >> $GITHUB_OUTPUT
             exit 0
           fi
           
-          # 3. 커밋 생성
-          git commit -m "Update: requirements.txt generated by Grand-Ops-Master"
+          # 현재 시간 변수 생성
+          CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')
           
-          # 4. 푸시 전 한 번 더 동기화 (충돌 방지) 및 푸시
-          echo "🚀 원격 저장소로 업로드 중..."
+          git commit -m "Grand-Ops Update: $CURRENT_DATE (Auto-Generated)"
+          
+          echo "🚀 [Push] 원격 저장소로 업로드..."
           git pull origin ${{ github.ref_name }} --rebase
           git push origin HEAD:${{ github.ref_name }}
+          
+          echo "changed=true" >> $GITHUB_OUTPUT
+
+      # ----------------------------------------------------------------
+      # 5. 릴리즈 생성 및 패키지(Zip) 배포 (변경 사항이 있을 때만)
+      # ----------------------------------------------------------------
+      - name: Create Release & Package
+        if: steps.auto_commit.outputs.changed == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # 버전 태그 생성 (예: v2025.12.15-2030)
+          TAG_NAME="v$(date +'%Y.%m.%d-%H%M')"
+          RELEASE_TITLE="🚀 Grand-Ops Release $TAG_NAME"
+          
+          echo "📦 [Release] 새로운 릴리즈 태그 생성: $TAG_NAME"
+          
+          # 소스 코드 압축 (패키징)
+          zip -r "source-code-$TAG_NAME.zip" . -x ".git/*" ".github/*"
+          
+          # GitHub Release 생성 및 파일 업로드
+          gh release create "$TAG_NAME" \
+            --title "$RELEASE_TITLE" \
+            --notes "Auto-generated release by Grand-Ops-Master system. includes updated requirements.txt and project files." \
+            "source-code-$TAG_NAME.zip" \
+            requirements.txt
+
+          echo "🎉 [Success] 릴리즈 및 패키지 배포 완료!"
