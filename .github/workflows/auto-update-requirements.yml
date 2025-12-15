@@ -1,59 +1,63 @@
 name: Auto Generate Requirements and Push
 
-# 권한 설정: 별도의 토큰 없이 GITHUB_TOKEN으로 푸시하기 위해 필수
 permissions:
   contents: write
 
 on:
   push:
-    branches: [ "main", "master" ] # main 또는 master 브랜치 푸시 시 실행
+    branches: [ "main", "master" ]
     paths:
-      - '**.py'                    # 파이썬 파일이 변경될 때만 실행 (불필요한 실행 방지)
-  workflow_dispatch:               # 수동 실행 버튼 활성화
+      - '**.py'
+  workflow_dispatch:
 
 jobs:
   update-requirements:
     runs-on: ubuntu-latest
     
     steps:
-      # 1. 소스 코드 체크아웃
+      # 1. 소스 코드 체크아웃 (수정됨)
+      # Detached HEAD 상태를 방지하기 위해 브랜치 이름을 명시하고,
+      # 전체 히스토리를 가져와(fetch-depth: 0) 병합 오류를 예방합니다.
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref }}
-          
+          ref: ${{ github.ref_name }} # 현재 실행된 브랜치(main)를 직접 체크아웃
+          fetch-depth: 0              # 모든 커밋 이력을 가져옴
+
+      # [추가됨] 최신 원격 변경사항 동기화
+      # 작업 시작 전, 원격 저장소의 최신 상태를 당겨와 충돌을 방지합니다.
+      - name: Pull latest changes
+        run: |
+          git config --global user.name "Grand-Ops-Master"
+          git config --global user.email "grand-ops-master@github.com"
+          git pull origin ${{ github.ref_name }} --rebase
+
       # 2. Python 환경 설정
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      # 3. pipreqs 설치 및 requirements.txt 생성
-      # pipreqs는 실제 프로젝트에 사용된 라이브러리만 추출합니다.
+      # 3. requirements.txt 생성
       - name: Generate requirements.txt
         run: |
           pip install pipreqs
-          # .gitignore에 있는 폴더 등은 제외하고, 강제로(--force) 덮어쓰기
           pipreqs . --force --encoding=utf-8 --ignore .github
           
           echo "✅ requirements.txt 생성 완료"
           cat requirements.txt
 
-      # 4. 변경 사항 감지 및 자동 커밋/푸시 (토큰 설정 불필요)
-      # stefanzweifel/git-auto-commit-action을 사용하여 GITHUB_TOKEN으로 처리
+      # 4. 변경 사항 커밋 및 푸시
+      # 브랜치가 동기화된 상태이므로 push 오류가 해결됩니다.
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update: requirements.txt and project files by Grand-Ops-Master"
-          branch: ${{ github.ref }}
+          branch: ${{ github.ref_name }}
           
-          # 사용자 정보 설정 (요청하신 Grand-Ops-Master 반영)
           commit_user_name: "Grand-Ops-Master"
           commit_user_email: "grand-ops-master@github.com"
           commit_author: "Grand-Ops-Master <grand-ops-master@github.com>"
           
-          # 변경사항이 있을 때만 커밋하도록 설정
           skip_dirty_check: false    
-          
-          # 새로 생성된 파일들도 모두 포함
           add_options: '-A'
