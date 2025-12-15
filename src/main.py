@@ -1,12 +1,11 @@
 import sys
 import os
 
-# 버전 호환성 이슈 해결을 위한 설정
+# 라이브러리 로드 (에러 발생 시 시스템 에러 메시지 출력)
 try:
     from moviepy.editor import ColorClip, TextClip, CompositeVideoClip
-except ImportError:
-    # 만약 v2.0이 설치되었다면 경로가 다를 수 있음 (requirements.txt로 방지함)
-    print("CRITICAL ERROR: Please install moviepy==1.0.3 using requirements.txt")
+except ImportError as e:
+    print(f"::error::Library Import Failed: {e}")
     sys.exit(1)
 
 def render_video(vid_id, text, color_name, duration_sec):
@@ -26,37 +25,41 @@ def render_video(vid_id, text, color_name, duration_sec):
         # 1. 배경 생성
         bg_clip = ColorClip(size=(1280, 720), color=bg_color, duration=duration_sec)
 
-        # 2. 텍스트 생성 (ImageMagick 연동)
-        # method='caption'은 자동 줄바꿈을 지원합니다.
-        # stroke_color와 stroke_width로 가독성을 높입니다.
+        # 2. 폰트 파일 확인 (워크플로우에서 다운로드한 폰트 사용)
+        font_path = "NanumGothic.ttf" 
+        if not os.path.exists(font_path):
+            # 폰트가 없으면 기본값(None)으로 시도하지만 경고 출력
+            print("::warning::Font file not found. Using default font.")
+            font_path = None
+
+        # 3. 텍스트 생성
+        # method='caption' + size 지정 = 자동 줄바꿈
         txt_clip = TextClip(
             text, 
             fontsize=70, 
             color='white', 
+            font=font_path,
             size=(1000, None), 
-            method='caption',
-            stroke_color='black', 
-            stroke_width=2
+            method='caption'
         )
         txt_clip = txt_clip.set_position('center').set_duration(duration_sec)
         
-        # 3. 합성
+        # 4. 합성
         final_clip = CompositeVideoClip([bg_clip, txt_clip])
 
-        # 4. 저장
+        # 5. 저장
         output_dir = "output"
         os.makedirs(output_dir, exist_ok=True)
         output_path = os.path.join(output_dir, f"{vid_id}.mp4")
         
-        # codec='libx264'는 가장 호환성이 좋은 인코딩 방식입니다.
-        # audio=False: 오디오가 없으므로 렌더링 속도 향상
+        # fps=24, 코덱 libx264 (가장 안정적)
         final_clip.write_videofile(output_path, fps=24, codec='libx264', audio=False, logger=None)
         print(f"✅ Completed: {output_path}")
 
     except Exception as e:
-        print(f"❌ Error processing {vid_id}: {str(e)}")
-        # 에러가 나도 프로세스를 죽이지 않고 로그만 남길 경우:
-        # sys.exit(1) # 필요 시 주석 해제
+        print(f"::error::Error processing {vid_id}: {str(e)}")
+        # GitHub Actions에서 에러로 인식하도록 exit code 1 반환
+        sys.exit(1)
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
