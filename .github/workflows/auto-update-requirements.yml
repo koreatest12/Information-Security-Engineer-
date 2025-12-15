@@ -1,11 +1,11 @@
-name: Grand Ops Master - Auto Sync, Release & Package
+name: Grand Ops - Always Release & Package (No Skip)
 
-# 권한 설정: 코드 푸시 및 릴리즈 생성 권한 부여
+# 권한 설정: 코드 푸시 및 릴리즈 생성 권한 필수
 permissions:
   contents: write
 
 on:
-  # 1. 10분 단위 자동 실행 (UTC 기준)
+  # 1. 10분 단위 무조건 실행 (스케줄러)
   schedule:
     - cron: '*/10 * * * *'
   # 2. 코드 푸시 시 실행
@@ -13,114 +13,110 @@ on:
     branches: [ "main", "master" ]
     paths:
       - '**.py'
-  # 3. 수동 실행 버튼
+  # 3. 수동 실행 (즉시 배포)
   workflow_dispatch:
 
 jobs:
-  ops-system-upgrade:
+  grand-ops-executor:
     runs-on: ubuntu-latest
     env:
-      TZ: 'Asia/Seoul' # 한국 시간 설정
+      TZ: 'Asia/Seoul' # 한국 시간 기준
 
     steps:
       # ----------------------------------------------------------------
-      # 1. 시스템 초기화 및 동기화 (Conflict 방지)
+      # 1. [초기화] 저장소 강제 동기화 (충돌 방지)
       # ----------------------------------------------------------------
-      - name: Checkout & Force Sync (Reset)
+      - name: Checkout & Force Reset
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Initialize Grand-Ops Environment
+      - name: Initialize Git & Reset History
         run: |
           git config --global user.name "Grand-Ops-Master"
           git config --global user.email "grand-ops-master@github.com"
           
-          echo "🔄 [System] 원격 서버 상태와 강제 동기화 중..."
+          echo "🔄 [Init] 원격 서버 상태와 강제 동기화..."
           git fetch origin
-          # 로컬 변경사항 무시하고 서버 상태로 리셋 (충돌 원천 차단)
+          # 로컬 상태를 원격 서버와 100% 일치시킴 (Clean State)
           git reset --hard origin/${{ github.ref_name }}
 
       # ----------------------------------------------------------------
-      # 2. 환경 업그레이드 및 경고 메시지 처리
+      # 2. [업그레이드] 시스템 및 패키지 도구 최신화
       # ----------------------------------------------------------------
-      - name: Upgrade System & Python Setup
+      - name: System Upgrade & Python Setup
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: Install Dependencies & Tools
+      - name: Upgrade Build Tools
         run: |
-          echo "🛠 [Upgrade] pip 및 패키지 관리 도구 최신화..."
+          echo "🛠 [System] 빌드 도구 대량 업데이트 수행..."
           python -m pip install --upgrade pip
-          pip install pipreqs setuptools wheel
+          pip install --upgrade setuptools wheel build pipreqs
           
-          # 경고 메시지 최소화를 위해 사전 필수 라이브러리 설치 시도
+          # 경고 방지용 기본 라이브러리 설치
           pip install pandas numpy beautifulsoup4 fastapi || true
 
       # ----------------------------------------------------------------
-      # 3. Requirements 생성 및 대량 파일 스캔
+      # 3. [생성] Requirements 및 의존성 분석
       # ----------------------------------------------------------------
-      - name: Generate Requirements (Mass Scan)
-        id: req_gen
+      - name: Generate Requirements (Full Scan)
         run: |
-          echo "📦 [Package] 전체 디렉토리 스캔 및 의존성 추출..."
-          
-          # 경고 메시지는 유지하되, 실행이 멈추지 않도록 처리
+          echo "📦 [Scan] 전체 프로젝트 스캔 중..."
+          # 경고가 떠도 무시하고 강제 생성 (--force)
           pipreqs . --force --encoding=utf-8 --ignore .github
           
-          echo "✅ requirements.txt 생성 완료"
+          echo "✅ requirements.txt 상태:"
           cat requirements.txt
 
       # ----------------------------------------------------------------
-      # 4. 변경 사항 커밋 및 푸시
+      # 4. [커밋] 변경사항 반영 (변경 없으면 통과, 에러 없음)
       # ----------------------------------------------------------------
-      - name: Commit & Push Changes
-        id: auto_commit
+      - name: Commit & Push Changes (If any)
         run: |
-          # 모든 파일(대량 수정 포함) 스테이징
           git add -A
           
-          # 변경 사항 확인
+          # 변경사항이 있는지 확인
           if git diff --staged --quiet; then
-            echo "✋ 변경된 내용이 없습니다. 릴리즈 프로세스를 건너뜁니다."
-            echo "changed=false" >> $GITHUB_OUTPUT
-            exit 0
+            echo "✋ [Info] 코드 변경 사항이 없습니다."
+            echo "ℹ️ 하지만 릴리즈 배포는 스킵하지 않고 계속 진행합니다."
+          else
+            echo "📝 [Commit] 변경 사항 감지! 커밋 및 푸시 진행..."
+            git commit -m "Grand-Ops Update: $(date +'%Y-%m-%d %H:%M:%S')"
+            
+            git pull origin ${{ github.ref_name }} --rebase
+            git push origin HEAD:${{ github.ref_name }}
           fi
-          
-          # 현재 시간 변수 생성
-          CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')
-          
-          git commit -m "Grand-Ops Update: $CURRENT_DATE (Auto-Generated)"
-          
-          echo "🚀 [Push] 원격 저장소로 업로드..."
-          git pull origin ${{ github.ref_name }} --rebase
-          git push origin HEAD:${{ github.ref_name }}
-          
-          echo "changed=true" >> $GITHUB_OUTPUT
 
       # ----------------------------------------------------------------
-      # 5. 릴리즈 생성 및 패키지(Zip) 배포 (변경 사항이 있을 때만)
+      # 5. [배포] 무조건 릴리즈 및 패키지 출시 (SKIP 없음)
       # ----------------------------------------------------------------
-      - name: Create Release & Package
-        if: steps.auto_commit.outputs.changed == 'true'
+      - name: Force Release & Package Launch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # 버전 태그 생성 (예: v2025.12.15-2030)
-          TAG_NAME="v$(date +'%Y.%m.%d-%H%M')"
-          RELEASE_TITLE="🚀 Grand-Ops Release $TAG_NAME"
+          # 초 단위까지 포함하여 절대 중복되지 않는 버전 태그 생성
+          TAG_NAME="v$(date +'%Y.%m.%d-%H%M%S')"
+          RELEASE_TITLE="🚀 Grand-Ops Package $TAG_NAME"
+          ZIP_NAME="Grand-Ops-Package-$TAG_NAME.zip"
           
-          echo "📦 [Release] 새로운 릴리즈 태그 생성: $TAG_NAME"
+          echo "🚀 [Launch] 릴리즈 프로세스 시작 (Skip 없이 실행)"
+          echo "🏷  Version Tag: $TAG_NAME"
           
-          # 소스 코드 압축 (패키징)
-          zip -r "source-code-$TAG_NAME.zip" . -x ".git/*" ".github/*"
+          # 1. 전체 소스코드 패키징 (압축)
+          echo "📦 [Package] 소스코드 전체 압축 중..."
+          zip -r "$ZIP_NAME" . -x ".git/*" ".github/*"
           
-          # GitHub Release 생성 및 파일 업로드
+          # 2. GitHub Release 생성 및 파일 업로드
+          # 변경 사항이 없어도 현재 상태 그대로 스냅샷을 찍어 배포합니다.
           gh release create "$TAG_NAME" \
             --title "$RELEASE_TITLE" \
-            --notes "Auto-generated release by Grand-Ops-Master system. includes updated requirements.txt and project files." \
-            "source-code-$TAG_NAME.zip" \
+            --notes "## 📦 Grand-Ops Auto Release
+            - **Build Time**: $(date)
+            - **Status**: Force Deployed by Grand-Ops-Master
+            - **Mode**: No-Skip Execution" \
+            "$ZIP_NAME" \
             requirements.txt
 
-          echo "🎉 [Success] 릴리즈 및 패키지 배포 완료!"
+          echo "🎉 [Complete] $TAG_NAME 배포 완료!"
