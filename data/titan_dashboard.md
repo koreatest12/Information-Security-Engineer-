@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 19:09:04
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 20:15:44
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 41.2% | `██████░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 36.6% | `█████░░░░░░░░░░` |
+| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - ["장애청년 사회 참여 확대"…신한금융의 21년 동행 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBiUUliMjEwa1dGcU1Za0lvWWlqWkYxSUdnMllFVWpmOE1lMTFOeTJ6VVZMR2pjcnRURUdUbnVJbF90Q2JOY3M0OTlLdENjcVRhcVhlbXQybmxuQQ?oc=5)
-- [한국 경제 '대도약의 원년'으로 만들기 위해 - 카드/한컷 | 멀티미디어 - 대한민국 정책브리핑](https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNnU3cmVka1ZzcGs2cjFqcHZlQlhtNkpTYVVxaHAxbEg3SEt4SElvTzJWRnRVWklVY0hIcFIwSGcxYmw5U3FTWnkxM0hBTV9PZjkycWNTSjRqRHZlTFNoVzRYSzZEdTdSQmIxRWdGTXlVRzRZMWQ1Z0pyZTZzZVRWMlNaaV9QSFI3QW53?oc=5)
+- ["소득 상관없이 1인당 30만원씩"…내년 1월부터 지급 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5qM2UxSUZkd2J0N19ocWdkZFFGR0tVU0RhdmY0cXNfcnZ3WnlIV21YSjRobmRlNDllYU4xajgzbmF3TGllYTR4V1F5V3UtR1U?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
