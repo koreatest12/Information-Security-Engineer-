@@ -1,122 +1,134 @@
-name: Grand Ops - Always Release & Package (No Skip)
+name: Grand Ops - Dashboard & Auto Release
 
-# 권한 설정: 코드 푸시 및 릴리즈 생성 권한 필수
 permissions:
   contents: write
 
 on:
-  # 1. 10분 단위 무조건 실행 (스케줄러)
   schedule:
-    - cron: '*/10 * * * *'
-  # 2. 코드 푸시 시 실행
+    - cron: '*/10 * * * *'  # 10분마다 실행
   push:
     branches: [ "main", "master" ]
     paths:
       - '**.py'
-  # 3. 수동 실행 (즉시 배포)
   workflow_dispatch:
 
 jobs:
-  grand-ops-executor:
+  grand-ops-dashboard:
     runs-on: ubuntu-latest
     env:
-      TZ: 'Asia/Seoul' # 한국 시간 기준
+      TZ: 'Asia/Seoul'
 
     steps:
-      # ----------------------------------------------------------------
-      # 1. [초기화] 저장소 강제 동기화 (충돌 방지)
-      # ----------------------------------------------------------------
+      # 1. 초기화 및 강제 동기화
       - name: Checkout & Force Reset
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Initialize Git & Reset History
+      - name: Initialize Git
         run: |
           git config --global user.name "Grand-Ops-Master"
           git config --global user.email "grand-ops-master@github.com"
-          
-          echo "🔄 [Init] 원격 서버 상태와 강제 동기화..."
           git fetch origin
-          # 로컬 상태를 원격 서버와 100% 일치시킴 (Clean State)
           git reset --hard origin/${{ github.ref_name }}
 
-      # ----------------------------------------------------------------
-      # 2. [업그레이드] 시스템 및 패키지 도구 최신화
-      # ----------------------------------------------------------------
-      - name: System Upgrade & Python Setup
+      # 2. 시스템 환경 구성
+      - name: Setup Environment
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: Upgrade Build Tools
+      - name: Install Tools
         run: |
-          echo "🛠 [System] 빌드 도구 대량 업데이트 수행..."
           python -m pip install --upgrade pip
           pip install --upgrade setuptools wheel build pipreqs
-          
-          # 경고 방지용 기본 라이브러리 설치
           pip install pandas numpy beautifulsoup4 fastapi || true
 
-      # ----------------------------------------------------------------
-      # 3. [생성] Requirements 및 의존성 분석
-      # ----------------------------------------------------------------
-      - name: Generate Requirements (Full Scan)
+      # 3. Requirements 생성
+      - name: Generate Requirements
         run: |
-          echo "📦 [Scan] 전체 프로젝트 스캔 중..."
-          # 경고가 떠도 무시하고 강제 생성 (--force)
           pipreqs . --force --encoding=utf-8 --ignore .github
-          
-          echo "✅ requirements.txt 상태:"
-          cat requirements.txt
 
-      # ----------------------------------------------------------------
-      # 4. [커밋] 변경사항 반영 (변경 없으면 통과, 에러 없음)
-      # ----------------------------------------------------------------
-      - name: Commit & Push Changes (If any)
+      # 4. [NEW] 대시보드(README.md) 생성 및 업데이트
+      # 리포지토리 메인에 뱃지와 상태 테이블을 실시간으로 기록합니다.
+      - name: Update Dashboard (README.md)
         run: |
-          git add -A
+          # 현재 시간 및 정보 변수 설정
+          NOW=$(date +'%Y-%m-%d %H:%M:%S')
+          REPO="${{ github.repository }}"
+          WORKFLOW_NAME="Grand Ops - Dashboard & Auto Release"
           
-          # 변경사항이 있는지 확인
-          if git diff --staged --quiet; then
-            echo "✋ [Info] 코드 변경 사항이 없습니다."
-            echo "ℹ️ 하지만 릴리즈 배포는 스킵하지 않고 계속 진행합니다."
-          else
-            echo "📝 [Commit] 변경 사항 감지! 커밋 및 푸시 진행..."
-            git commit -m "Grand-Ops Update: $(date +'%Y-%m-%d %H:%M:%S')"
-            
-            git pull origin ${{ github.ref_name }} --rebase
-            git push origin HEAD:${{ github.ref_name }}
-          fi
+          # 뱃지 URL 설정 (Shields.io 사용)
+          BADGE_BUILD="![Build Status](https://github.com/$REPO/actions/workflows/grand-ops-master.yml/badge.svg)"
+          BADGE_LICENSE="![License](https://img.shields.io/github/license/$REPO)"
+          BADGE_RELEASE="![Latest Release](https://img.shields.io/github/v/release/$REPO?color=blueviolet)"
+          BADGE_PYTHON="![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)"
+          
+          echo "📊 [Dashboard] README.md 대시보드 갱신 중..."
 
-      # ----------------------------------------------------------------
-      # 5. [배포] 무조건 릴리즈 및 패키지 출시 (SKIP 없음)
-      # ----------------------------------------------------------------
-      - name: Force Release & Package Launch
+          # README.md 내용 작성 (덮어쓰기)
+          cat <<EOF > README.md
+          # 🛡️ Grand Ops Master: System Dashboard
+          
+          $BADGE_BUILD $BADGE_RELEASE $BADGE_PYTHON $BADGE_LICENSE
+          
+          ---
+          
+          ## 📡 Real-time Operation Status (실시간 운영 현황)
+          
+          이 시스템은 **Grand-Ops-Master** 자동화 엔진에 의해 10분 단위로 관리되고 있습니다.
+          
+          | Metric (지표) | Status (상태) |
+          | :--- | :--- |
+          | **Last Update** | 🕒 $NOW (KST) |
+          | **System Mode** | ✅ Always-On (No Skip) |
+          | **Dependency Sync** | ✅ synchronized |
+          | **Target Branch** | ${{ github.ref_name }} |
+          
+          ---
+          
+          ## 📦 Auto-Generated Dependencies
+          Current \`requirements.txt\` generated by \`pipreqs\`:
+          
+          \`\`\`text
+          $(cat requirements.txt)
+          \`\`\`
+          
+          > _Auto-generated by Grand Ops Automation System._
+          EOF
+
+      # 5. [릴리즈 & 패키징] 버전 생성
+      - name: Create Release & Package
+        id: create_release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # 초 단위까지 포함하여 절대 중복되지 않는 버전 태그 생성
           TAG_NAME="v$(date +'%Y.%m.%d-%H%M%S')"
-          RELEASE_TITLE="🚀 Grand-Ops Package $TAG_NAME"
-          ZIP_NAME="Grand-Ops-Package-$TAG_NAME.zip"
+          echo "TAG_NAME=$TAG_NAME" >> $GITHUB_ENV
           
-          echo "🚀 [Launch] 릴리즈 프로세스 시작 (Skip 없이 실행)"
-          echo "🏷  Version Tag: $TAG_NAME"
+          # 파일 압축
+          zip -r "Grand-Ops-$TAG_NAME.zip" . -x ".git/*" ".github/*"
           
-          # 1. 전체 소스코드 패키징 (압축)
-          echo "📦 [Package] 소스코드 전체 압축 중..."
-          zip -r "$ZIP_NAME" . -x ".git/*" ".github/*"
+          # 변경 사항 커밋 (README.md 포함)
+          git add -A
           
-          # 2. GitHub Release 생성 및 파일 업로드
-          # 변경 사항이 없어도 현재 상태 그대로 스냅샷을 찍어 배포합니다.
+          if git diff --staged --quiet; then
+             echo "ℹ️ (Content Unchanged) But proceeding with release..."
+          else
+             git commit -m "Update: Dashboard & Files ($TAG_NAME)"
+             git pull origin ${{ github.ref_name }} --rebase
+             git push origin HEAD:${{ github.ref_name }}
+          fi
+
+          # 릴리즈 배포
           gh release create "$TAG_NAME" \
-            --title "$RELEASE_TITLE" \
-            --notes "## 📦 Grand-Ops Auto Release
-            - **Build Time**: $(date)
-            - **Status**: Force Deployed by Grand-Ops-Master
-            - **Mode**: No-Skip Execution" \
-            "$ZIP_NAME" \
+            --title "🚀 Release $TAG_NAME" \
+            --notes "Auto-deployed release with updated Dashboard." \
+            "Grand-Ops-$TAG_NAME.zip" \
             requirements.txt
 
-          echo "🎉 [Complete] $TAG_NAME 배포 완료!"
+      # 6. [알림] 대시보드 업데이트 완료 로그
+      - name: Log Dashboard Update
+        run: |
+          echo "✅ 대시보드(README.md)가 성공적으로 갱신되었습니다."
+          echo "🔗 확인 링크: https://github.com/${{ github.repository }}"
