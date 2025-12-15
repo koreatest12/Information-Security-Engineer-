@@ -1,0 +1,65 @@
+name: Dynamic Bulk Video Factory
+
+on:
+  workflow_dispatch: # 수동 실행 버튼
+  push:
+    paths:
+      - 'data/video_list.json' # 데이터 파일이 바뀌면 자동 실행
+
+jobs:
+  # [JOB 1] 데이터 파일을 읽어 작업을 정의하는 단계
+  prepare-matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Parse JSON to Matrix
+        id: set-matrix
+        run: |
+          # JSON 파일을 한 줄로 압축하여 GitHub Output 변수에 저장
+          # jq 툴을 사용하여 JSON 파일 내용을 minified string으로 변환
+          JSON_DATA=$(jq -c . < data/video_list.json)
+          echo "matrix=$JSON_DATA" >> $GITHUB_OUTPUT
+          echo "Debug - Matrix Data: $JSON_DATA"
+
+  # [JOB 2] 동적으로 생성되는 비디오 렌더링 서비스
+  render-nodes:
+    needs: prepare-matrix
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # 위 job에서 만든 JSON 배열을 그대로 가져와서 병렬 실행
+        video: ${{ fromJson(needs.prepare-matrix.outputs.matrix) }}
+    
+    name: Render ${{ matrix.video.id }}
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg imagemagick
+          sudo sed -i 's/none/read,write/g' /etc/ImageMagick-6/policy.xml
+          pip install moviepy
+
+      - name: Generate Video
+        run: |
+          # Matrix의 각 객체 속성을 파이썬 인자로 전달
+          python src/main.py "${{ matrix.video.id }}" "${{ matrix.video.text }}" "${{ matrix.video.color }}" "${{ matrix.video.duration }}"
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-${{ matrix.video.id }}
+          path: output/*.mp4
+          retention-days: 1
