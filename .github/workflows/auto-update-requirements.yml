@@ -1,25 +1,31 @@
-name: Grand Ops - Dashboard & Auto Release
+name: Grand Ops - Deep Scan & Dashboard System
 
+# 권한 설정: 파일 수정 및 릴리즈 배포 권한
 permissions:
   contents: write
 
 on:
+  # 1. 10분 단위 자동 실행
   schedule:
-    - cron: '*/10 * * * *'  # 10분마다 실행
+    - cron: '*/10 * * * *'
+  # 2. 코드 변경 시 실행
   push:
     branches: [ "main", "master" ]
     paths:
       - '**.py'
+  # 3. 수동 실행
   workflow_dispatch:
 
 jobs:
-  grand-ops-dashboard:
+  grand-ops-master:
     runs-on: ubuntu-latest
     env:
       TZ: 'Asia/Seoul'
 
     steps:
-      # 1. 초기화 및 강제 동기화
+      # ----------------------------------------------------------------
+      # 1. [시스템 초기화] 강제 동기화 (충돌 방지)
+      # ----------------------------------------------------------------
       - name: Checkout & Force Reset
         uses: actions/checkout@v4
         with:
@@ -29,106 +35,129 @@ jobs:
         run: |
           git config --global user.name "Grand-Ops-Master"
           git config --global user.email "grand-ops-master@github.com"
+          
+          echo "🔄 [Init] 원격 저장소와 동기화 중..."
           git fetch origin
           git reset --hard origin/${{ github.ref_name }}
 
-      # 2. 시스템 환경 구성
-      - name: Setup Environment
+      # ----------------------------------------------------------------
+      # 2. [환경 설정] Python 및 도구 준비
+      # ----------------------------------------------------------------
+      - name: Setup Python Environment
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: Install Tools
+      - name: Install Analysis Tools
         run: |
           python -m pip install --upgrade pip
-          pip install --upgrade setuptools wheel build pipreqs
+          pip install --upgrade pipreqs setuptools wheel build
+          # 분석 중단 방지를 위한 필수 라이브러리 선탑재
           pip install pandas numpy beautifulsoup4 fastapi || true
 
-      # 3. Requirements 생성
-      - name: Generate Requirements
+      # ----------------------------------------------------------------
+      # 3. [핵심 기능] 모든 .py 파일 정밀 스캔 및 Requirements 생성
+      # ----------------------------------------------------------------
+      - name: Deep Scan .py Files & Generate Requirements
+        id: scanner
         run: |
+          echo "🔍 [Scan] 리포지토리 내 모든 .py 파일 검색 시작..."
+          
+          # 1. 모든 하위 폴더의 .py 파일 찾기 및 리스트 출력
+          PY_FILES=$(find . -type f -name "*.py" -not -path "./.git/*")
+          FILE_COUNT=$(echo "$PY_FILES" | grep -c ".py" || true)
+          
+          echo "------------------------------------------------"
+          echo "📄 Detected Python Files ($FILE_COUNT files):"
+          echo "$PY_FILES"
+          echo "------------------------------------------------"
+          
+          # 2. 찾은 파일들을 기반으로 requirements.txt 즉시 생성
+          # --force: 덮어쓰기, --savepath: 현재 위치에 저장
           pipreqs . --force --encoding=utf-8 --ignore .github
+          
+          echo "✅ requirements.txt 업데이트 완료"
+          
+          # 환경 변수로 파일 개수 저장 (대시보드 표기용)
+          echo "PY_COUNT=$FILE_COUNT" >> $GITHUB_ENV
 
-      # 4. [NEW] 대시보드(README.md) 생성 및 업데이트
-      # 리포지토리 메인에 뱃지와 상태 테이블을 실시간으로 기록합니다.
-      - name: Update Dashboard (README.md)
+      # ----------------------------------------------------------------
+      # 4. [시각화] 대시보드(README.md) 실시간 업데이트
+      # ----------------------------------------------------------------
+      - name: Update Live Dashboard (README.md)
         run: |
-          # 현재 시간 및 정보 변수 설정
           NOW=$(date +'%Y-%m-%d %H:%M:%S')
           REPO="${{ github.repository }}"
-          WORKFLOW_NAME="Grand Ops - Dashboard & Auto Release"
           
-          # 뱃지 URL 설정 (Shields.io 사용)
-          BADGE_BUILD="![Build Status](https://github.com/$REPO/actions/workflows/grand-ops-master.yml/badge.svg)"
-          BADGE_LICENSE="![License](https://img.shields.io/github/license/$REPO)"
-          BADGE_RELEASE="![Latest Release](https://img.shields.io/github/v/release/$REPO?color=blueviolet)"
-          BADGE_PYTHON="![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)"
+          # 뱃지 설정
+          BADGE_BUILD="![Status](https://github.com/$REPO/actions/workflows/grand-ops-master.yml/badge.svg)"
+          BADGE_RELEASE="![Release](https://img.shields.io/github/v/release/$REPO?color=blueviolet)"
+          BADGE_FILES="![Files](https://img.shields.io/badge/Scanned_Files-${{ env.PY_COUNT }}-success?logo=python)"
           
-          echo "📊 [Dashboard] README.md 대시보드 갱신 중..."
+          echo "📊 [Dashboard] README.md 현황판 갱신..."
 
-          # README.md 내용 작성 (덮어쓰기)
           cat <<EOF > README.md
-          # 🛡️ Grand Ops Master: System Dashboard
+          # 🛡️ Grand Ops Master: Security Engineer Dashboard
           
-          $BADGE_BUILD $BADGE_RELEASE $BADGE_PYTHON $BADGE_LICENSE
+          $BADGE_BUILD $BADGE_RELEASE $BADGE_FILES
           
           ---
           
-          ## 📡 Real-time Operation Status (실시간 운영 현황)
+          ## 📡 Real-time System Status
           
-          이 시스템은 **Grand-Ops-Master** 자동화 엔진에 의해 10분 단위로 관리되고 있습니다.
+          **Grand-Ops-Master** 엔진이 리포지토리의 모든 Python 코드를 실시간으로 감시하고 있습니다.
           
-          | Metric (지표) | Status (상태) |
+          | Metric (지표) | Value (값) |
           | :--- | :--- |
-          | **Last Update** | 🕒 $NOW (KST) |
-          | **System Mode** | ✅ Always-On (No Skip) |
-          | **Dependency Sync** | ✅ synchronized |
-          | **Target Branch** | ${{ github.ref_name }} |
+          | **Last Scan** | 🕒 $NOW (KST) |
+          | **Scanned Files** | 📂 **${{ env.PY_COUNT }}** Python files detected |
+          | **Sync Mode** | 🚀 Deep Scan & Auto-Push |
+          | **Branch** | ${{ github.ref_name }} |
           
           ---
           
-          ## 📦 Auto-Generated Dependencies
-          Current \`requirements.txt\` generated by \`pipreqs\`:
+          ## 📦 Active Dependencies (Requirements)
+          시스템이 소스코드를 분석하여 자동으로 추출한 라이브러리 목록입니다.
           
           \`\`\`text
           $(cat requirements.txt)
           \`\`\`
           
-          > _Auto-generated by Grand Ops Automation System._
+          > _Powered by Grand Ops Automation System v5.0_
           EOF
 
-      # 5. [릴리즈 & 패키징] 버전 생성
-      - name: Create Release & Package
-        id: create_release
+      # ----------------------------------------------------------------
+      # 5. [배포] 커밋, 푸시, 릴리즈 & 패키징 (All-in-One)
+      # ----------------------------------------------------------------
+      - name: Commit, Push & Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          TAG_NAME="v$(date +'%Y.%m.%d-%H%M%S')"
-          echo "TAG_NAME=$TAG_NAME" >> $GITHUB_ENV
-          
-          # 파일 압축
-          zip -r "Grand-Ops-$TAG_NAME.zip" . -x ".git/*" ".github/*"
-          
-          # 변경 사항 커밋 (README.md 포함)
+          # 1. 파일 스테이징 및 커밋
           git add -A
           
           if git diff --staged --quiet; then
-             echo "ℹ️ (Content Unchanged) But proceeding with release..."
+             echo "ℹ️ (No Changes) 파일 변경 없음. 하지만 릴리즈는 진행합니다."
           else
-             git commit -m "Update: Dashboard & Files ($TAG_NAME)"
+             git commit -m "Grand-Ops: Scanned ${{ env.PY_COUNT }} files & Updated Req ($NOW)"
              git pull origin ${{ github.ref_name }} --rebase
              git push origin HEAD:${{ github.ref_name }}
           fi
-
-          # 릴리즈 배포
+          
+          # 2. 버전 태그 및 패키지 생성
+          TAG_NAME="v$(date +'%Y.%m.%d-%H%M%S')"
+          ZIP_NAME="Grand-Ops-Source-$TAG_NAME.zip"
+          
+          zip -r "$ZIP_NAME" . -x ".git/*" ".github/*"
+          
+          # 3. 릴리즈 배포
+          echo "🚀 [Release] $TAG_NAME 배포 시작..."
           gh release create "$TAG_NAME" \
-            --title "🚀 Release $TAG_NAME" \
-            --notes "Auto-deployed release with updated Dashboard." \
-            "Grand-Ops-$TAG_NAME.zip" \
+            --title "🚀 Grand-Ops Release $TAG_NAME" \
+            --notes "## 🔍 Deep Scan Report
+            - **Scanned Python Files**: ${{ env.PY_COUNT }}
+            - **Status**: Requirements Updated & Synced" \
+            "$ZIP_NAME" \
             requirements.txt
 
-      # 6. [알림] 대시보드 업데이트 완료 로그
-      - name: Log Dashboard Update
-        run: |
-          echo "✅ 대시보드(README.md)가 성공적으로 갱신되었습니다."
-          echo "🔗 확인 링크: https://github.com/${{ github.repository }}"
+          echo "🎉 모든 작업 완료!"
