@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 2 days, 8:06:41
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 2 days, 8:14:58
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.1% | `██████░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 43.3% | `██████░░░░░░░░░` |
+| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융 나라사랑카드 '신나사카' 모델에 ITZY 유나, "신나는 입대 필수품" - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE1valJONW1md2l2U2c3bVNkeUZHbVUzb3N2THR3cTNDV25NRnVaS1RubDl3aHRiaVVlOUZDSjRiR1o2TzVwUGNUZ1hlN2VfRDlvdmszWG9jQ0lvTUNreEZKejF0b3V2MEszRjhFb2lrWHRac0k?oc=5)
