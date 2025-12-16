@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-16 13:52:49 (KST)
+> **Time:** 2025-12-16 14:15:12 (KST)
 
-### 🤖 Copilot Briefing (13:52)
+### 🤖 Copilot Briefing (14:15)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,19 +10,19 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [소상공인 이자 '2%P↓'…수원시, 경기신보·신한은행 '맞손' - 머니투데이](https://news.google.com/rss/articles/CBMiakFVX3lxTE5vNTdnczZqOTlEbHZCc1ByRVcyNk1lYkZSeWVfTUQ5Q1pzSUJMREZwbjNMYmg2Y1JaZndmXy1wUnNwaXRLWXRsN1Q5VmJ6TXlvNFpGLTFpNDJON0FTeVZYOW03STFqY25HSmc?oc=5)<br>• [현대차, 신한은행과 맞춤형 자동차 금융상품 개발 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTFB0RmlIUWpuY3RlRkhiRkprVzFnNEs2ZF9HR1lkUno3eUpTaGZWdW81VnE3UC1nUzQxWlJkSXVkQTdvcEhTc0daMFp5d3dpRjFxMXV0NHJqdGlSam1leno1eQ?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [먹깨비·인천소상공인연합회·하나은행, 인천 소상공인 부담 완화 위해 MOU - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBjMlJaanpkNXZsNFlNUFFvcVFibXFWaEJJNTNyS0E1T0Q3aTNFUlhCMzQ2LXRJRDl1S3RGYzdZX0pfbXVLWm5EVVJPU3RtX0U?oc=5)<br>• [[신탁명가 하나은행]② 선구안 통했다…초점은 '치매·자산관리' - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTE5kdXpWY3VHRnd6dm9ZSlcxOHBheHNkeFpOTmZ5eVFmWGJDcDEwMmtTWW5ucXRIazRxMlZYd1RxVjZiOXRxdzhFRlhkVFJoWkE2QXhna0xPOXBXZzRlNG80NnhwS3FvWS1O0gFsQVVfeXFMTU5qUXlaS0c2bFFJbHE2YTRURmtEVU9RbmJfXzdhb1Y5R1RaQVVmVTBoNmFMY3hwM0VlR1ZsTGFPU25XNUZ2VjJUMHFoeW9LaWZwYlBFY0d2b3E0bEgwSnh4TkJWOGlSV3gzVHd4?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [수원특례시, 신한은행·경기신용보증재단과 소상공인 금융지원 협약 - 인천일보](https://news.google.com/rss/articles/CBMicEFVX3lxTE41YnZsb1RNWUoxRzFzR3I1c212SUpqci00ODREbkk0anJ4WjZ0WFZEUjFJbEF6UFc2aEJJcURlUzdweEhFV1h0cWRTQ0ZHLTdzRzE4dWdhdWpXVHNKNUJaMTVOWTlEQTV6NWZhT1RtcV8?oc=5)<br>• [현대차, 신한은행과 맞춤형 자동차 금융상품 개발 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTFB0RmlIUWpuY3RlRkhiRkprVzFnNEs2ZF9HR1lkUno3eUpTaGZWdW81VnE3UC1nUzQxWlJkSXVkQTdvcEhTc0daMFp5d3dpRjFxMXV0NHJqdGlSam1leno1eQ?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [[신탁명가 하나은행]① 30년 PB 역사에 새 장 열다 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTE5BMXl3ajRFbzIyMHBjVG9KYWlsTVNqOG5ad3lsZHNjMW1SdG96eWI1RFc5SDE5QjZsQk8ydEpNUXVfdE9IOW81dXUxa192TXdCMl9ia3VQRl9lS0lUQW1NaGpOTm4wWXJy0gFsQVVfeXFMT3hHeFFpY3JDQmRhLW1zM2dybDQ2T3Z2X2duazRNZGRPVkExTnpQLVkwQWIydHJxM21BOHpBbS1CSy1YUVlaT1cwT2JqV1FwdG8td2VxUHhIZkp4TmpmdkxIT3BSUzY1OWdUaWJB?oc=5)<br>• [[영상] 꼴찌 하나은행 대역전 ‘이상범 매직’…2002년 히딩크 연상 - KBS 뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5pdUhkbGh5MW9lNzVIaUI2RWNFalNxMnk3cXY5clZLeGN2dXBnamRNU2xwWDRnWXZvT0I4N1FyZ2piTS1LMi1Sc2VtSVh1eHBhdThpdWtRdERPc3M?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [라온시큐어, 생체인증 4개사 맞손... 다중인증 플랫폼 생태계 확장](http://www.boannews.com/media/view.asp?idx=140984&kind=&sub_kind=)
+- [과기정통부, 국민안전 긴급대응 (ASAP) 챌린지 개최](http://www.boannews.com/media/view.asp?idx=140972&kind=&sub_kind=)
 - [마이크로소프트 “통제 안 된 AI 에이전트, 위험”... 2026년 7대 AI 트렌드 공개](http://www.boannews.com/media/view.asp?idx=140980&kind=&sub_kind=)
-- [프라이빗테크놀로지, 금융권 최초 ‘데이터 중심 제로 트러스트 오버레이’ 실증](http://www.boannews.com/media/view.asp?idx=140981&kind=&sub_kind=)
-- [아우토크립트, LS엠트론과 손잡고 유럽 ‘사이버복원력법(CRA)’ 뚫는다](http://www.boannews.com/media/view.asp?idx=140978&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.1%)
+- **vCPU:** `128 vCores` (Load: 39.5%)
 - **RAM:** `31.7/512 GB` (Used: 6.2%)
 
 ---
