@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-16 14:40:26 (KST)
+> **Time:** 2025-12-16 14:52:28 (KST)
 
-### 🤖 Copilot Briefing (14:40)
+### 🤖 Copilot Briefing (14:52)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [금보원, 수탁자 보안이 금융 신뢰… “내년 현장점검 확대 및 제3자 리스크 전담 조직 신설”](http://www.boannews.com/media/view.asp?idx=140986&kind=&sub_kind=)
-- [“AI 3대 강국 가속화”... ‘2025 데이터·클라우드 진흥주간’ 개막](http://www.boannews.com/media/view.asp?idx=140983&kind=&sub_kind=)
-- [SGA솔루션즈 3년 연속 주식배당 결정… “보안·투자 투트랙 성장, 주주환원 강화”](http://www.boannews.com/media/view.asp?idx=140985&kind=&sub_kind=)
+- [인텔리빅스, ‘방산혁신기업 100’ 선정... 악천후 뚫는 ‘AI 경계병’으로 국방 혁신 이끈다](http://www.boannews.com/media/view.asp?idx=140989&kind=&sub_kind=)
+- [영덕군, AI 드론으로 스마트 산불 감시·대응 눈앞](http://www.boannews.com/media/view.asp?idx=140988&kind=&sub_kind=)
+- [서울 종로구, 2회 연속 국토교통부 스마트도시 인증](http://www.boannews.com/media/view.asp?idx=140987&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
 - **vCPU:** `128 vCores` (Load: 40.0%)
-- **RAM:** `32.8/512 GB` (Used: 6.4%)
+- **RAM:** `33.8/512 GB` (Used: 6.6%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
