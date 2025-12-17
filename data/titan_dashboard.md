@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 2 days, 17:03:33
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 2 days, 18:44:59
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.3% | `██████░░░░░░░░░` |
-| **RAM** | `30.2/512 GB` | 5.9% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 43.9% | `██████░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 신보·기보와 4500억 규모 생산적 금융 공급 확대 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE1KZlFQVDQ4UUE4a2IzT1A2Q1ZCODNrQk1LTTNCQS1CRHEtVEN1WnBQUlF0R0dXR21aczJMZ3RIb2FPTDRhalFpNS01Z3FTX3hCaDBz?oc=5)
+- [신한금융, 대한육상연맹 공식 후원…3년간 국가대표팀 지원 - 아시아경제](https://news.google.com/rss/articles/CBMiX0FVX3lxTE5TNXlxSFM2RkVJZkRSRjZSS3l0MEtBcDBxMnN2bWxPN3oxZEhEMnlIcGFhRU40TEdoaDQ0S2IxSDd5QWg4WTM4amNaQjhJSUlzLVJLRVFYYUtIaGNwdmJr?oc=5)
 - [점진적 회복 경로 진입한 한국 경제 - 동아일보](https://news.google.com/rss/articles/CBMiZEFVX3lxTFBRZkVEU2ZTRWtSMy1KMDFib3lyR1lXWnF2eGdyeGJ6OUVabTZaVmV0SE1lZHI0NVFrVTdaUDZUZ3QtNzNHSGlleVMycU9MTEhyLUpjNm8xbTNNbTZyYlR6MXd3LXE?oc=5)
 
 ---
