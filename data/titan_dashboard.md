@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 3 days, 14:02:58
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 3 days, 14:09:39
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.5% | `██████░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 43.6% | `██████░░░░░░░░░` |
+| **RAM** | `30.2/512 GB` | 5.9% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 대한육상연맹 공식 후원…3년간 국가대표팀 지원 - 아시아경제](https://news.google.com/rss/articles/CBMiX0FVX3lxTE5TNXlxSFM2RkVJZkRSRjZSS3l0MEtBcDBxMnN2bWxPN3oxZEhEMnlIcGFhRU40TEdoaDQ0S2IxSDd5QWg4WTM4amNaQjhJSUlzLVJLRVFYYUtIaGNwdmJr?oc=5)
-- ['한강 벨트' 20억 단독주택, 보유세 103만원 오른다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE50NFJhUjhJMU9rUnNzT1RFVE9ubnA2MXVmY3lEeEhuZXBCeTNidnUyZFdMYTBWQi1WN1RUcHh1TFE5dkpQNjdLWFVDTm9nX2NXUlNKMTV5TlVNQdIBVEFVX3lxTE5oVkVXdy1xTHFlbVg2ZURCaXhFTUdxVlBmYU42d3h6N3l5ZlR5SU9oblRNZmZXNVdDRl82VmIzQU9UOTg0cTBUR2RwLUo5Zmp1ZVEyTg?oc=5)
+- ["2026년 더 좋다"...'반도체 풍향계' 마이크론 '어닝 서프라이즈' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9GQWZSMm5xTFN6c2NVeExRVUJRaDBfMXU3U3Z3c3VYaHJ5bXZIUTJMZTFWbUY0OUlZOEUtdFV1c2gwN3JOOXpDeFVoNC1LLUpfRXZqTmF5YnpzUdIBVEFVX3lxTFBvQnl3NTFhNWdrcURBdENiWTRTOTFwYVJKc1JIbUlFSnJqemFNX2JPMDBKbFlOakRudV9MTGg5MjljMGNfekc0bzhhb3g4U1BrSXBXNg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
