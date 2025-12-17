@@ -1,11 +1,11 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2025-12-17 18:37:58 | **Version:** `v2025.12.17`
+> **Updated:** 2025-12-17 18:52:55 | **Version:** `v2025.12.17`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 41.5% | ` ▂▄▃▂ ▃█▄▂▃ ▂▄▄▂▂  ▃` | Auto-Scaling Check |
-| **BTC Price** | $86,333.00 | `█▆▅▅▄▂▂   ▂▂▂▂▃▃▂   ` | Market Volatility |
+| **CPU Load** | 43.6% | `▂▃▂▂ ▂▆▃▂▃ ▂▃▃ ▂  ▂█` | Auto-Scaling Check |
+| **BTC Price** | $86,431.00 | `█▆▆▅▃▂   ▃▂▂▃▄▄▃    ` | Market Volatility |
 | **Global Mood** | 0.04 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
@@ -14,8 +14,8 @@
 
 ### 📰 Global News Omni-Channel
 #### 🛡️ Cyber Security
+- 😐 [GhostPoster Malware Found in 17 Firefox Add-ons with 50,000+ Downloads](https://thehackernews.com/2025/12/ghostposter-malware-found-in-17-firefox.html)
 - 🙂 [Compromised IAM Credentials Power a Large AWS Crypto Mining Campaign](https://thehackernews.com/2025/12/compromised-iam-credentials-power-large.html)
-- 😐 [Rogue NuGet Package Poses as Tracer.Fody, Steals Cryptocurrency Wallet Data](https://thehackernews.com/2025/12/rogue-nuget-package-poses-as-tracerfody.html)
 - 🙂 [Most Parked Domains Now Serving Malicious Content](https://krebsonsecurity.com/2025/12/most-parked-domains-now-serving-malicious-content/)
 - 😐 [Microsoft Patch Tuesday, December 2025 Edition](https://krebsonsecurity.com/2025/12/microsoft-patch-tuesday-december-2025-edition/)
 - 😐 [Afripol Focuses on Regional Cyber Challenges, Deepening Cooperation](https://www.darkreading.com/cybersecurity-operations/afripol-focuses-regional-cyber-challenges-deepening-cooperation)
