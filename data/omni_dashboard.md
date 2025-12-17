@@ -1,21 +1,21 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2025-12-18 00:43:36 | **Version:** `v2025.12.18`
+> **Updated:** 2025-12-18 00:58:39 | **Version:** `v2025.12.18`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 40.0% | `  ▃█▃▇▄▂▄ ▃▃▂▅ ▂ ▃▂ ` | Auto-Scaling Check |
-| **BTC Price** | $89,278.00 | `              ▂▂▂▆█▆` | Market Volatility |
+| **CPU Load** | 42.3% | ` ▃█▃▇▄▂▄ ▃▃▂▅ ▂ ▃▂ ▅` | Auto-Scaling Check |
+| **BTC Price** | $87,531.00 | `             ▂▂▂▆█▆▂` | Market Volatility |
 | **Global Mood** | -0.04 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
-- **RAM:** 6.1% Used
-- **Disk:** 76.8% Used
+- **RAM:** 6.2% Used
+- **Disk:** 76.5% Used
 
 ### 📰 Global News Omni-Channel
 #### 🛡️ Cyber Security
-- 😨 [Fix SOC Blind Spots: See Threats to Your Industry & Country in Real Time](https://thehackernews.com/2025/12/fix-soc-blind-spots-see-threats-to-your.html)
-- 😐 [China-Linked Ink Dragon Hacks Governments Using ShadowPad and FINALDRAFT Malware](https://thehackernews.com/2025/12/china-linked-ink-dragon-hacks.html)
+- 😐 [APT28 Targets Ukrainian UKR-net Users in Long-Running Credential Phishing Campaign](https://thehackernews.com/2025/12/apt28-targets-ukrainian-ukr-net-users.html)
+- 😨 [New ForumTroll Phishing Attacks Target Russian Scholars Using Fake eLibrary Emails](https://thehackernews.com/2025/12/new-forumtroll-phishing-attacks-target.html)
 - 🙂 [Most Parked Domains Now Serving Malicious Content](https://krebsonsecurity.com/2025/12/most-parked-domains-now-serving-malicious-content/)
 - 😐 [Microsoft Patch Tuesday, December 2025 Edition](https://krebsonsecurity.com/2025/12/microsoft-patch-tuesday-december-2025-edition/)
 - 😐 [Afripol Focuses on Regional Cyber Challenges, Deepening Cooperation](https://www.darkreading.com/cybersecurity-operations/afripol-focuses-regional-cyber-challenges-deepening-cooperation)
