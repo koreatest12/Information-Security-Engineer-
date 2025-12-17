@@ -1,21 +1,23 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2025-12-17 19:14:04 | **Version:** `v2025.12.17`
+> **Updated:** 2025-12-17 19:44:21 | **Version:** `v2025.12.17`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 41.8% | `▃▂▂ ▂▆▃▂▃ ▂▃▃ ▂  ▂█▃` | Auto-Scaling Check |
-| **BTC Price** | $86,531.00 | `█▇▆▄▃  ▂▄▃▃▄▅▅▃     ` | Market Volatility |
-| **Global Mood** | -0.00 | **Neutral 😐** | Based on 16 Articles |
+| **CPU Load** | 43.4% | `▂▂ ▂▆▃▂▃ ▂▃▃ ▂  ▂█▃▇` | Auto-Scaling Check |
+| **BTC Price** | $86,697.00 | `█▇▄▃  ▂▄▃▃▄▅▅▄     ▃` | Market Volatility |
+| **Global Mood** | 0.03 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
-- **RAM:** 6.1% Used
+- **RAM:** 6.4% Used
 - **Disk:** 76.5% Used
 
 ### 📰 Global News Omni-Channel
 #### 🛡️ Cyber Security
 - 😐 [GhostPoster Malware Found in 17 Firefox Add-ons with 50,000+ Downloads](https://thehackernews.com/2025/12/ghostposter-malware-found-in-17-firefox.html)
 - 🙂 [Compromised IAM Credentials Power a Large AWS Crypto Mining Campaign](https://thehackernews.com/2025/12/compromised-iam-credentials-power-large.html)
+- 🙂 [Most Parked Domains Now Serving Malicious Content](https://krebsonsecurity.com/2025/12/most-parked-domains-now-serving-malicious-content/)
+- 😐 [Microsoft Patch Tuesday, December 2025 Edition](https://krebsonsecurity.com/2025/12/microsoft-patch-tuesday-december-2025-edition/)
 - 😐 [Afripol Focuses on Regional Cyber Challenges, Deepening Cooperation](https://www.darkreading.com/cybersecurity-operations/afripol-focuses-regional-cyber-challenges-deepening-cooperation)
 - 😐 [Venezuelan Oil Company Downplays Alleged US Cyberattack](https://www.darkreading.com/cyber-risk/venezuela-oil-company-downplays-alleged-us-cyberattack)
 
@@ -27,7 +29,7 @@
 
 #### 🌍 World & Politics
 - 😐 [Alleged Bondi gunman charged with 15 counts of murder](https://www.bbc.com/news/articles/c98nm1ry38jo?at_medium=RSS&at_campaign=rss)
-- 😨 [Dashcam video shows couple trying to stop gunman before being killed in Bondi attack](https://www.bbc.com/news/articles/cx2341yx719o?at_medium=RSS&at_campaign=rss)
+- 😨 ['An unspeakable loss': Funeral takes place for rabbi killed in Bondi shooting](https://www.bbc.com/news/articles/cyvg17y24jmo?at_medium=RSS&at_campaign=rss)
 - 😐 [Sydney Gunmen Were Motivated by ISIS, Australia’s Leader Says](https://www.nytimes.com/live/2025/12/15/world/bondi-beach-shooting-gunmen-isis)
 - 😐 [As Israeli Settlements Get Bigger, Palestinian Hikes Grow Shorter](https://www.nytimes.com/2025/12/16/world/middleeast/west-bank-hiking-settlements.html)
 
