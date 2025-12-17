@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 3 days, 6:33:23
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 3 days, 7:00:16
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 42.6% | `██████░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 41.9% | `██████░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [‘일류 신한’ 성큼…연임 성공 진옥동 신한금융그룹 회장 [CEO 라운지] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1NaTB5SHNKSll2UC03MGIxRWlyQ3pOU19nV014QWdjS0J1ZDFSa0cxTWpkeEpRVnNsbjhFYnNXdm1qcnhDNmpRMTRxX09Pckk?oc=5)
+- [신한금융 나라사랑카드 '신나사카' 모델에 ITZY 유나, "신나는 입대 필수품" - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE1valJONW1md2l2U2c3bVNkeUZHbVUzb3N2THR3cTNDV25NRnVaS1RubDl3aHRiaVVlOUZDSjRiR1o2TzVwUGNUZ1hlN2VfRDlvdmszWG9jQ0lvTUNreEZKejF0b3V2MEszRjhFb2lrWHRac0k?oc=5)
 - [오세훈, 李대통령 직격…"모르면서 아는 척하지 맙시다" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBfN2VPYVA3RGd2WWFVUy1nWUpnYUZvSHlYWlgwQmtxVmpJTkVNbFhlVlp2YlNMLWUxUFVXRHBDai1MTG1KeTJpSW9LamlVZDQ?oc=5)
 
 ---
