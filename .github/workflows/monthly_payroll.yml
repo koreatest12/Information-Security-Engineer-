@@ -1,12 +1,12 @@
-name: Enterprise Payroll Simulation (Multi-Company & Ledger)
+name: Enterprise Vertica Batch System (Resident & BS/MIS)
 
 on:
   schedule:
-    - cron: '0 9 11,21 * *' # 매월 11일, 21일에 자동 실행 (시뮬레이션용)
+    - cron: '0 9 11,21 * *' # 매월 11일, 21일 (급여일)
   workflow_dispatch:        # 수동 실행
 
 jobs:
-  run-enterprise-payroll:
+  run-enterprise-system:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -25,256 +25,222 @@ jobs:
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pandas matplotlib reportlab openpyxl numpy cryptography tabulate
+        # vertica-python은 실제 연결 시 필요하지만, 여기선 시뮬레이션으로 대체
+        pip install pandas matplotlib reportlab openpyxl numpy cryptography tabulate schedule
 
-    - name: Generate Enterprise Simulation Script
+    - name: Generate Resident System Script
       run: |
-        cat << 'EOF' > payroll_enterprise.py
+        cat << 'EOF' > enterprise_system.py
         import sqlite3
         import pandas as pd
         import os
-        import urllib.request
+        import time
+        import schedule # 스케줄러 라이브러리
         import numpy as np
         import hashlib
-        from datetime import datetime, date
+        from datetime import datetime, timedelta
         from cryptography.fernet import Fernet
         from tabulate import tabulate
 
         # 시각화 & PDF
-        import matplotlib.pyplot as plt
-        import matplotlib.font_manager as fm
         from reportlab.pdfgen import canvas
         from reportlab.lib.pagesizes import A4
-        from reportlab.pdfbase import pdfmetrics
-        from reportlab.pdfbase.ttfonts import TTFont
         from reportlab.lib.pdfencrypt import StandardEncryption
 
-        # 상수 정의
-        MIN_WAGE_2025 = 10030  # 2025년 예상 최저시급
-        MIN_MONTHLY_PAY = MIN_WAGE_2025 * 209 # 약 2,096,270원
-
         # ==========================================
-        # 1. 보안 모듈 (AES-256 Encryption)
+        # 1. Security & Common Utils
         # ==========================================
         class SecurityManager:
             def __init__(self):
-                # 실무에선 키 관리 시스템(KMS) 사용 권장
                 self.key = Fernet.generate_key()
                 self.cipher = Fernet(self.key)
-
-            def encrypt(self, text):
-                return self.cipher.encrypt(str(text).encode()).decode()
-
-            def decrypt(self, text):
-                return self.cipher.decrypt(str(text).encode()).decode()
-            
-            def generate_hash(self, data_str):
-                """무결성 검증용 해시 생성"""
-                return hashlib.sha256(data_str.encode()).hexdigest()
+            def encrypt(self, text): return self.cipher.encrypt(str(text).encode()).decode()
+            def decrypt(self, text): return self.cipher.decrypt(str(text).encode()).decode()
+            def hash_tx(self, data): return hashlib.sha256(str(data).encode()).hexdigest()
 
         # ==========================================
-        # 2. ERP DB 매니저 (거래 원장 포함)
+        # 2. Vertica DW Manager (Simulation)
         # ==========================================
-        class ERPDatabase:
-            def __init__(self, sec_mgr, db_name="erp_system.db"):
-                self.sec = sec_mgr
+        class VerticaDWManager:
+            """
+            실제 Vertica DB 연결 대신, 로컬에서 Vertica의 
+            Fact/Dimension 구조를 모방한 SQLite DW를 구축합니다.
+            """
+            def __init__(self, db_name="vertica_dw.db"):
                 self.conn = sqlite3.connect(db_name)
                 self.cursor = self.conn.cursor()
+                self.sec = SecurityManager()
 
             def initialize_schema(self):
-                # 1) 기업 정보 (급여일 구분)
-                self.cursor.execute('''CREATE TABLE IF NOT EXISTS companies (
-                    comp_id INTEGER PRIMARY KEY,
-                    comp_name TEXT,
-                    pay_day INTEGER,  -- 11 or 21
-                    balance INTEGER
-                )''')
-
-                # 2) 사원 정보 (민감정보 암호화)
-                self.cursor.execute('''CREATE TABLE IF NOT EXISTS employees (
-                    emp_id TEXT PRIMARY KEY,
-                    comp_id INTEGER,
+                # [Dimension Table] 사원/조직 정보
+                self.cursor.execute('''CREATE TABLE IF NOT EXISTS dim_employees (
+                    emp_sk INTEGER PRIMARY KEY AUTOINCREMENT, -- Surrogate Key
+                    emp_id TEXT UNIQUE,
                     name TEXT,
-                    enc_birth TEXT,    -- 암호화
-                    base_pay INTEGER,
-                    enc_account TEXT,  -- 암호화
-                    FOREIGN KEY(comp_id) REFERENCES companies(comp_id)
+                    dept_name TEXT,
+                    enc_account TEXT
                 )''')
 
-                # 3) 거래 원장 (Transaction Ledger) - 핵심 기능
-                self.cursor.execute('''CREATE TABLE IF NOT EXISTS general_ledger (
+                # [Dimension Table] 계정과목 (BS용)
+                self.cursor.execute('''CREATE TABLE IF NOT EXISTS dim_account_codes (
+                    code TEXT PRIMARY KEY,
+                    category TEXT, -- ASSET, LIABILITY, EQUITY
+                    name TEXT
+                )''')
+
+                # [Fact Table] 거래 트랜잭션 (대용량 가정)
+                self.cursor.execute('''CREATE TABLE IF NOT EXISTS fact_transactions (
                     tx_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    tx_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                    comp_name TEXT,
-                    tx_type TEXT,      -- DEPOSIT(입금) / WITHDRAW(출금/급여지급)
-                    counterparty TEXT, -- 거래 대상 (사원명 등)
+                    tx_time TIMESTAMP,
+                    emp_sk INTEGER,
+                    tx_type TEXT,
                     amount INTEGER,
-                    balance_after INTEGER,
-                    tx_hash TEXT       -- 위변조 방지 해시
+                    tx_hash TEXT
                 )''')
 
-                # 초기 데이터 세팅 (회사)
-                companies = [
-                    (1, 'Tech Corp (대기업)', 11, 10000000000), # 100억, 11일 급여
-                    (2, 'Retail Inc (서비스)', 21, 2000000000)  # 20억, 21일 급여
-                ]
-                self.cursor.executemany('INSERT OR IGNORE INTO companies VALUES (?,?,?,?)', companies)
+                # [Fact Table] 배치 작업 로그
+                self.cursor.execute('''CREATE TABLE IF NOT EXISTS fact_batch_logs (
+                    log_id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    batch_type TEXT, -- TRANSACTION, BS, MIS
+                    run_time TIMESTAMP,
+                    status TEXT,
+                    details TEXT
+                )''')
+
+                # 기초 데이터 로드 (계정과목)
+                self.cursor.execute("INSERT OR IGNORE INTO dim_account_codes VALUES ('1001', 'ASSET', '법인예금')")
+                self.cursor.execute("INSERT OR IGNORE INTO dim_account_codes VALUES ('2001', 'LIABILITY', '미지급급여')")
+                self.cursor.execute("INSERT OR IGNORE INTO dim_account_codes VALUES ('5001', 'EXPENSE', '급여비용')")
                 
-                # 초기 데이터 세팅 (사원 - 암호화 적용)
-                # Tech Corp (고액연봉), Retail Inc (최저임금)
-                raw_employees = [
-                    # ID, CompID, Name, Birth, Pay, Account
-                    ('T001', 1, 'Kim Dev', '900101', 6500000, '111-222-333'),
-                    ('T002', 1, 'Lee Ops', '920505', 5800000, '444-555-666'),
-                    ('R001', 2, 'Park Staff', '000101', MIN_MONTHLY_PAY, '777-888-999'), # 최저임금
-                    ('R002', 2, 'Choi Part', '010303', MIN_MONTHLY_PAY, '123-456-789')   # 최저임금
-                ]
-                
-                for row in raw_employees:
-                    enc_birth = self.sec.encrypt(row[3])
-                    enc_acct = self.sec.encrypt(row[5])
-                    self.cursor.execute('INSERT OR IGNORE INTO employees VALUES (?,?,?,?,?,?)', 
-                        (row[0], row[1], row[2], enc_birth, row[4], enc_acct))
+                # 기초 데이터 로드 (사원)
+                emps = [('E01', 'Kim', 'Dev', 'ACC_ENC_1'), ('E02', 'Lee', 'HR', 'ACC_ENC_2')]
+                self.cursor.executemany("INSERT OR IGNORE INTO dim_employees (emp_id, name, dept_name, enc_account) VALUES (?,?,?,?)", emps)
                 
                 self.conn.commit()
-                print(">> [System] ERP DB 스키마 초기화 및 암호화 데이터 로드 완료.")
+                print(">> [Vertica] DW Schema (Fact/Dim) Initialized.")
 
-            def record_transaction(self, comp_id, comp_name, tx_type, counterparty, amount):
-                """원장 기록 및 잔액 업데이트 (트랜잭션)"""
-                # 현재 잔액 조회
-                self.cursor.execute("SELECT balance FROM companies WHERE comp_id=?", (comp_id,))
-                current_bal = self.cursor.fetchone()[0]
-                
-                if tx_type == 'WITHDRAW' and current_bal < amount:
-                    return False, "잔액 부족"
-                
-                # 잔액 변경
-                new_bal = current_bal - amount if tx_type == 'WITHDRAW' else current_bal + amount
-                self.cursor.execute("UPDATE companies SET balance=? WHERE comp_id=?", (new_bal, comp_id))
-                
-                # 원장 기록 (해시 포함)
-                raw_str = f"{comp_name}{tx_type}{counterparty}{amount}{datetime.now()}"
-                tx_hash = self.sec.generate_hash(raw_str)
-                
-                self.cursor.execute('''
-                    INSERT INTO general_ledger (comp_name, tx_type, counterparty, amount, balance_after, tx_hash)
-                    VALUES (?, ?, ?, ?, ?, ?)
-                ''', (comp_name, tx_type, counterparty, amount, new_bal, tx_hash))
-                
+            def insert_transaction(self, emp_id, amount, tx_type="SALARY_PAYMENT"):
+                # SK 조회
+                self.cursor.execute("SELECT emp_sk FROM dim_employees WHERE emp_id=?", (emp_id,))
+                res = self.cursor.fetchone()
+                if not res: return
+                emp_sk = res[0]
+
+                # 트랜잭션 기록
+                tx_hash = self.sec.hash_tx(f"{emp_sk}{amount}{time.time()}")
+                self.cursor.execute("""
+                    INSERT INTO fact_transactions (tx_time, emp_sk, tx_type, amount, tx_hash)
+                    VALUES (CURRENT_TIMESTAMP, ?, ?, ?, ?)
+                """, (emp_sk, tx_type, amount, tx_hash))
                 self.conn.commit()
-                return True, new_bal
 
-            def get_payday_employees(self, day):
-                """특정 급여일에 해당하는 회사와 사원 조회"""
-                query = '''
-                    SELECT e.emp_id, e.name, e.enc_birth, e.base_pay, c.comp_id, c.comp_name 
-                    FROM employees e
-                    JOIN companies c ON e.comp_id = c.comp_id
-                    WHERE c.pay_day = ?
-                '''
-                return pd.read_sql(query, self.conn, params=(day,))
+            def log_batch(self, b_type, status, details):
+                self.cursor.execute("INSERT INTO fact_batch_logs (batch_type, run_time, status, details) VALUES (?, CURRENT_TIMESTAMP, ?, ?)",
+                                    (b_type, status, details))
+                self.conn.commit()
 
         # ==========================================
-        # 3. 시뮬레이션 엔진
+        # 3. Batch Job Engine (BS / MIS)
         # ==========================================
-        class PayrollSimulator:
-            def __init__(self):
-                self.sec = SecurityManager()
-                self.db = ERPDatabase(self.sec)
-                self.db.initialize_schema()
-                
-                self.current_month = datetime.now().strftime('%Y-%m')
-                self.output_dir = f"Simulation_{self.current_month}"
+        class BatchJobEngine:
+            def __init__(self, dw_mgr):
+                self.dw = dw_mgr
+                self.output_dir = "Batch_Reports"
                 if not os.path.exists(self.output_dir): os.makedirs(self.output_dir)
-                self._setup_fonts()
 
-            def _setup_fonts(self):
-                self.font_name = 'NanumGothic'
-                font_file = 'NanumGothic.ttf'
-                if not os.path.exists(font_file):
-                    urllib.request.urlretrieve("https://github.com/google/fonts/raw/main/ofl/nanumgothic/NanumGothic-Regular.ttf", font_file)
-                try: pdfmetrics.registerFont(TTFont(self.font_name, font_file))
-                except: self.font_name = 'Helvetica'
-
-            def run_simulation(self):
-                # 시뮬레이션할 날짜: 11일(대기업)과 21일(중소기업) 모두 실행
-                target_days = [11, 21]
-                
-                print(f"[{datetime.now()}] 급여 입출금 시뮬레이션 시작...")
-                
-                all_results = []
-
-                for day in target_days:
-                    print(f"\n>> [Scenario] {day}일 급여 지급 시뮬레이션 가동")
-                    df = self.db.get_payday_employees(day)
+            def run_transaction_batch(self):
+                """20분마다 실행되는 트랜잭션 수행 배치"""
+                print(f"\n[Batch] 트랜잭션 배치 시작 ({datetime.now().strftime('%H:%M:%S')})")
+                try:
+                    # 시뮬레이션: 5건의 랜덤 급여 이체
+                    for i in range(5):
+                        amt = np.random.randint(300, 500) * 10000
+                        self.dw.insert_transaction("E01", amt)
                     
-                    if df.empty:
-                        print(f"   - {day}일에 지급할 대상이 없습니다.")
-                        continue
-                        
-                    for _, row in df.iterrows():
-                        # 급여 계산 (최저임금 체크)
-                        base_pay = row['base_pay']
-                        is_min_wage = base_pay <= MIN_MONTHLY_PAY + 1000 # 오차범위
-                        
-                        # 공제 계산
-                        deduct = int(base_pay * 0.15) # 약식 공제
-                        net_pay = base_pay - deduct
-                        
-                        # 법인 계좌 출금 시뮬레이션
-                        success, msg = self.db.record_transaction(
-                            row['comp_id'], row['comp_name'], 'WITHDRAW', 
-                            f"{row['name']} (Salary)", net_pay
-                        )
-                        
-                        status = "지급성공" if success else f"실패({msg})"
-                        note = "최저임금적용" if is_min_wage else "일반급여"
-                        
-                        all_results.append([
-                            day, row['comp_name'], row['name'], note, 
-                            f"{net_pay:,}", status
-                        ])
-                        
-                        if success:
-                            # 복호화 후 PDF 생성
-                            real_birth = self.sec.decrypt(row['enc_birth'])
-                            self.generate_secure_pdf(row, net_pay, real_birth, day)
+                    self.dw.log_batch("TRANSACTION", "SUCCESS", "5 tx generated")
+                    print("   - 트랜잭션 데이터 생성 및 Vertica 적재 완료")
+                except Exception as e:
+                    self.dw.log_batch("TRANSACTION", "ERROR", str(e))
 
-                # 최종 리포트 출력
-                print("\n>> [Final Report] 급여 지급 결과 원장")
-                headers = ["PayDay", "Company", "Employee", "Type", "Net Pay", "Status"]
-                print(tabulate(all_results, headers=headers, tablefmt="psql"))
+            def run_bs_batch(self):
+                """BS(재무상태표) 마감 배치"""
+                print(f"[Batch] BS(대차대조표) 생성 배치 가동")
+                # Fact 테이블 집계
+                df = pd.read_sql("SELECT tx_type, sum(amount) as total FROM fact_transactions GROUP BY tx_type", self.dw.conn)
                 
-                # 원장 엑셀 저장
-                ledger_df = pd.read_sql("SELECT * FROM general_ledger", self.db.conn)
-                ledger_df.to_excel(f"{self.output_dir}/Full_Transaction_Ledger.xlsx", index=False)
-                print(f">> 거래 원장 파일 저장 완료: {self.output_dir}/Full_Transaction_Ledger.xlsx")
-
-            def generate_secure_pdf(self, row, net_pay, password, day):
-                fname = f"{self.output_dir}/{day}th_{row['name']}_Slip.pdf"
-                enc = StandardEncryption(password, canPrint=1, canCopy=0)
-                c = canvas.Canvas(fname, pagesize=A4, encrypt=enc)
+                # BS 로직 시뮬레이션
+                total_salary = df[df['tx_type']=='SALARY_PAYMENT']['total'].sum() if not df.empty else 0
+                bs_data = [
+                    ['자산 (Asset)', '법인예금', f"{1000000000 - total_salary:,}"],
+                    ['부채 (Liability)', '미지급금', '0'],
+                    ['자본 (Equity)', '자본금', '1,000,000,000']
+                ]
                 
-                c.setFont(self.font_name, 16)
-                c.drawString(50, 800, f"[{row['comp_name']}] 급여 명세서")
-                c.setFont(self.font_name, 10)
-                c.drawString(50, 770, f"지급일: {self.current_month}-{day}")
-                c.drawString(50, 750, f"성명: {row['name']}")
-                c.drawString(50, 730, f"실수령액: {net_pay:,} 원")
-                c.drawString(50, 50, "※ 본 문서는 암호화 처리되었습니다.")
-                c.save()
+                # 리포트 저장
+                file_path = f"{self.output_dir}/BS_Report_{datetime.now().strftime('%H%M%S')}.xlsx"
+                pd.DataFrame(bs_data, columns=['구분', '계정', '금액']).to_excel(file_path)
+                self.dw.log_batch("BS_BATCH", "SUCCESS", f"Report saved: {file_path}")
+                print(f"   - BS 리포트 생성 완료: {file_path}")
 
+            def run_mis_batch(self):
+                """MIS(경영정보) 분석 배치"""
+                print(f"[Batch] MIS(경영분석) 리포팅 배치 가동")
+                query = """
+                    SELECT d.dept_name, count(f.tx_id) as tx_count, sum(f.amount) as total_amt
+                    FROM fact_transactions f
+                    JOIN dim_employees d ON f.emp_sk = d.emp_sk
+                    GROUP BY d.dept_name
+                """
+                df = pd.read_sql(query, self.dw.conn)
+                
+                print(tabulate(df, headers='keys', tablefmt='psql'))
+                self.dw.log_batch("MIS_BATCH", "SUCCESS", "MIS Query Executed")
+
+        # ==========================================
+        # 4. Resident Daemon (상주 프로세스)
+        # ==========================================
+        class ResidentDaemon:
+            def __init__(self):
+                self.dw = VerticaDWManager()
+                self.dw.initialize_schema()
+                self.engine = BatchJobEngine(self.dw)
+                
+                # 스케줄러 등록
+                # (GitHub Actions 테스트를 위해 간격 단축: 20분 -> 시뮬레이션상 3초)
+                # 실제 운영 시: schedule.every(20).minutes.do(...)
+                schedule.every(2).seconds.do(self.engine.run_transaction_batch)
+                schedule.every(5).seconds.do(self.engine.run_bs_batch)
+                schedule.every(5).seconds.do(self.engine.run_mis_batch)
+
+            def start_service(self):
+                print(">> [Daemon] Vertica 상주 배치 서비스가 시작되었습니다. (PID: {})".format(os.getpid()))
+                print(">> [Config] 트랜잭션 주기: 20분(Sim:2s) | BS/MIS 주기: 매시 정각(Sim:5s)")
+                
+                start_time = time.time()
+                # GitHub Actions 타임아웃 방지를 위해 약 30초만 시뮬레이션 수행
+                # 실제 서버에서는 while True: 사용
+                max_runtime = 30 
+                
+                while time.time() - start_time < max_runtime:
+                    schedule.run_pending()
+                    time.sleep(1)
+                
+                print(">> [Daemon] 서비스 안전 종료 (Simulation Finished).")
+
+        # ==========================================
+        # Main Execution
+        # ==========================================
         if __name__ == "__main__":
-            sim = PayrollSimulator()
-            sim.run_simulation()
+            daemon = ResidentDaemon()
+            daemon.start_service()
         EOF
 
-    - name: Run Simulation
-      run: python payroll_enterprise.py
+    - name: Run Resident Batch System
+      run: python enterprise_system.py
 
-    - name: Upload Artifacts
+    - name: Upload Batch Reports
       uses: actions/upload-artifact@v4
       with:
-        name: Enterprise-Payroll-Ledger-${{ github.run_id }}
-        path: Simulation_*/
+        name: Batch-Reports-${{ github.run_id }}
+        path: Batch_Reports/
         retention-days: 30
