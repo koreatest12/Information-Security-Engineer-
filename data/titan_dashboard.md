@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 4 days, 0:03:04
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 4 days, 0:09:15
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.5% | `██████░░░░░░░░░` |
-| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 43.8% | `██████░░░░░░░░░` |
+| **RAM** | `30.7/512 GB` | 6.0% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융그룹, 배우 장나라와 유기 동물 보호 기부 동행 - 한국일보](https://news.google.com/rss/articles/CBMiakFVX3lxTE9jZWhaeXlKaHRXX1dBVm5RMVZoR3J3WmUxQjUxc3RHalM0UlotSlY2Ukw5X3JEckxfUWZiSGpsbjRGMGNHZWRUSnAxRHowUFRmV1VUTDQ3M1lpQVhUbDRhS081OWFKaWlJeEE?oc=5)
