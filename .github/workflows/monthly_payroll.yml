@@ -1,12 +1,12 @@
-name: Enterprise Vertica Batch System (Resident & BS/MIS)
+name: Enterprise CTMFW & Vertica Batch System
 
 on:
   schedule:
-    - cron: '0 9 11,21 * *' # 매월 11일, 21일 (급여일)
-  workflow_dispatch:        # 수동 실행
+    - cron: '0 9 11,21 * *'
+  workflow_dispatch:
 
 jobs:
-  run-enterprise-system:
+  run-ctm-system:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -24,223 +24,228 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        python -m pip install --upgrade pip
-        # vertica-python은 실제 연결 시 필요하지만, 여기선 시뮬레이션으로 대체
         pip install pandas matplotlib reportlab openpyxl numpy cryptography tabulate schedule
 
-    - name: Generate Resident System Script
+    - name: Generate Enterprise CTMFW Script
       run: |
-        cat << 'EOF' > enterprise_system.py
+        cat << 'EOF' > enterprise_ctmfw.py
         import sqlite3
         import pandas as pd
         import os
         import time
-        import schedule # 스케줄러 라이브러리
+        import shutil
+        import schedule
         import numpy as np
         import hashlib
-        from datetime import datetime, timedelta
+        from datetime import datetime
         from cryptography.fernet import Fernet
         from tabulate import tabulate
 
-        # 시각화 & PDF
-        from reportlab.pdfgen import canvas
-        from reportlab.lib.pagesizes import A4
-        from reportlab.lib.pdfencrypt import StandardEncryption
+        # ==========================================
+        # 1. Configuration & Directories
+        # ==========================================
+        DIR_INBOUND = "DATA_INBOUND"   # 대외계 파일 수신 폴더
+        DIR_ARCHIVE = "DATA_ARCHIVE"   # 처리 완료 파일 보관
+        DIR_REPORTS = "BATCH_REPORTS"  # 결과 리포트
+
+        for d in [DIR_INBOUND, DIR_ARCHIVE, DIR_REPORTS]:
+            if not os.path.exists(d): os.makedirs(d)
 
         # ==========================================
-        # 1. Security & Common Utils
+        # 2. Security & Utils
         # ==========================================
         class SecurityManager:
             def __init__(self):
                 self.key = Fernet.generate_key()
                 self.cipher = Fernet(self.key)
-            def encrypt(self, text): return self.cipher.encrypt(str(text).encode()).decode()
-            def decrypt(self, text): return self.cipher.decrypt(str(text).encode()).decode()
-            def hash_tx(self, data): return hashlib.sha256(str(data).encode()).hexdigest()
+            def hash_data(self, data): return hashlib.sha256(str(data).encode()).hexdigest()
 
         # ==========================================
-        # 2. Vertica DW Manager (Simulation)
+        # 3. Vertica DW Manager (Mock)
         # ==========================================
         class VerticaDWManager:
-            """
-            실제 Vertica DB 연결 대신, 로컬에서 Vertica의 
-            Fact/Dimension 구조를 모방한 SQLite DW를 구축합니다.
-            """
             def __init__(self, db_name="vertica_dw.db"):
                 self.conn = sqlite3.connect(db_name)
                 self.cursor = self.conn.cursor()
                 self.sec = SecurityManager()
+                self._init_schema()
 
-            def initialize_schema(self):
-                # [Dimension Table] 사원/조직 정보
-                self.cursor.execute('''CREATE TABLE IF NOT EXISTS dim_employees (
-                    emp_sk INTEGER PRIMARY KEY AUTOINCREMENT, -- Surrogate Key
-                    emp_id TEXT UNIQUE,
-                    name TEXT,
-                    dept_name TEXT,
-                    enc_account TEXT
-                )''')
-
-                # [Dimension Table] 계정과목 (BS용)
-                self.cursor.execute('''CREATE TABLE IF NOT EXISTS dim_account_codes (
-                    code TEXT PRIMARY KEY,
-                    category TEXT, -- ASSET, LIABILITY, EQUITY
-                    name TEXT
-                )''')
-
-                # [Fact Table] 거래 트랜잭션 (대용량 가정)
+            def _init_schema(self):
+                # Fact Table (거래내역)
                 self.cursor.execute('''CREATE TABLE IF NOT EXISTS fact_transactions (
                     tx_id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    file_name TEXT,
                     tx_time TIMESTAMP,
-                    emp_sk INTEGER,
-                    tx_type TEXT,
+                    sender TEXT,
                     amount INTEGER,
                     tx_hash TEXT
                 )''')
-
-                # [Fact Table] 배치 작업 로그
-                self.cursor.execute('''CREATE TABLE IF NOT EXISTS fact_batch_logs (
-                    log_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    batch_type TEXT, -- TRANSACTION, BS, MIS
-                    run_time TIMESTAMP,
+                
+                # Batch Log (배치 수행 이력)
+                self.cursor.execute('''CREATE TABLE IF NOT EXISTS sys_batch_log (
+                    job_id TEXT,
+                    start_time TIMESTAMP,
                     status TEXT,
-                    details TEXT
+                    message TEXT
                 )''')
-
-                # 기초 데이터 로드 (계정과목)
-                self.cursor.execute("INSERT OR IGNORE INTO dim_account_codes VALUES ('1001', 'ASSET', '법인예금')")
-                self.cursor.execute("INSERT OR IGNORE INTO dim_account_codes VALUES ('2001', 'LIABILITY', '미지급급여')")
-                self.cursor.execute("INSERT OR IGNORE INTO dim_account_codes VALUES ('5001', 'EXPENSE', '급여비용')")
-                
-                # 기초 데이터 로드 (사원)
-                emps = [('E01', 'Kim', 'Dev', 'ACC_ENC_1'), ('E02', 'Lee', 'HR', 'ACC_ENC_2')]
-                self.cursor.executemany("INSERT OR IGNORE INTO dim_employees (emp_id, name, dept_name, enc_account) VALUES (?,?,?,?)", emps)
-                
-                self.conn.commit()
-                print(">> [Vertica] DW Schema (Fact/Dim) Initialized.")
-
-            def insert_transaction(self, emp_id, amount, tx_type="SALARY_PAYMENT"):
-                # SK 조회
-                self.cursor.execute("SELECT emp_sk FROM dim_employees WHERE emp_id=?", (emp_id,))
-                res = self.cursor.fetchone()
-                if not res: return
-                emp_sk = res[0]
-
-                # 트랜잭션 기록
-                tx_hash = self.sec.hash_tx(f"{emp_sk}{amount}{time.time()}")
-                self.cursor.execute("""
-                    INSERT INTO fact_transactions (tx_time, emp_sk, tx_type, amount, tx_hash)
-                    VALUES (CURRENT_TIMESTAMP, ?, ?, ?, ?)
-                """, (emp_sk, tx_type, amount, tx_hash))
                 self.conn.commit()
 
-            def log_batch(self, b_type, status, details):
-                self.cursor.execute("INSERT INTO fact_batch_logs (batch_type, run_time, status, details) VALUES (?, CURRENT_TIMESTAMP, ?, ?)",
-                                    (b_type, status, details))
+            def load_data_from_file(self, file_path):
+                """[Loader] 파일을 읽어 Bulk Insert 수행"""
+                filename = os.path.basename(file_path)
+                print(f"   >> [DB Load] Loading file: {filename}")
+                
+                # CSV 파일 파싱 시뮬레이션
+                try:
+                    df = pd.read_csv(file_path)
+                    data_to_insert = []
+                    for _, row in df.iterrows():
+                        tx_hash = self.sec.hash_data(f"{row['sender']}{row['amount']}")
+                        data_to_insert.append((filename, datetime.now(), row['sender'], row['amount'], tx_hash))
+                    
+                    self.cursor.executemany("""
+                        INSERT INTO fact_transactions (file_name, tx_time, sender, amount, tx_hash)
+                        VALUES (?, ?, ?, ?, ?)
+                    """, data_to_insert)
+                    self.conn.commit()
+                    return True
+                except Exception as e:
+                    print(f"   !! [DB Error] {e}")
+                    return False
+
+            def log_job(self, job_name, status, msg):
+                self.cursor.execute("INSERT INTO sys_batch_log VALUES (?, datetime('now'), ?, ?)", 
+                                    (job_name, status, msg))
                 self.conn.commit()
 
         # ==========================================
-        # 3. Batch Job Engine (BS / MIS)
+        # 4. External Interface (File Generator)
         # ==========================================
-        class BatchJobEngine:
+        class ExternalInterfaceSimulator:
+            """대외계 시스템: 랜덤하게 트랜잭션 파일을 생성하여 Inbound에 전송"""
+            def generate_transfer_file(self):
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                filename = f"TX_DATA_{timestamp}.csv"
+                filepath = os.path.join(DIR_INBOUND, filename)
+                
+                # 데이터 생성
+                cnt = np.random.randint(5, 15)
+                data = {
+                    'sender': [f"User_{np.random.randint(100,999)}" for _ in range(cnt)],
+                    'amount': np.random.randint(1000, 50000, size=cnt) * 10
+                }
+                pd.DataFrame(data).to_csv(filepath, index=False)
+                print(f"\n[Interface] 📡 외부 시스템에서 파일 전송됨: {filename} ({cnt} rows)")
+
+        # ==========================================
+        # 5. CTMFW (Control-M File Watcher)
+        # ==========================================
+        class CTMFW_Service:
+            """파일 감지 및 이벤트 트리거"""
             def __init__(self, dw_mgr):
                 self.dw = dw_mgr
-                self.output_dir = "Batch_Reports"
-                if not os.path.exists(self.output_dir): os.makedirs(self.output_dir)
 
-            def run_transaction_batch(self):
-                """20분마다 실행되는 트랜잭션 수행 배치"""
-                print(f"\n[Batch] 트랜잭션 배치 시작 ({datetime.now().strftime('%H:%M:%S')})")
-                try:
-                    # 시뮬레이션: 5건의 랜덤 급여 이체
-                    for i in range(5):
-                        amt = np.random.randint(300, 500) * 10000
-                        self.dw.insert_transaction("E01", amt)
+            def watch_and_trigger(self):
+                # Inbound 폴더 스캔
+                files = [f for f in os.listdir(DIR_INBOUND) if f.endswith('.csv')]
+                
+                if not files:
+                    return # 파일 없으면 대기
+                
+                print(f"[CTMFW] 👁️ 파일 감지됨: {len(files)}건. 배치 트리거 가동.")
+                
+                for f in files:
+                    src_path = os.path.join(DIR_INBOUND, f)
                     
-                    self.dw.log_batch("TRANSACTION", "SUCCESS", "5 tx generated")
-                    print("   - 트랜잭션 데이터 생성 및 Vertica 적재 완료")
-                except Exception as e:
-                    self.dw.log_batch("TRANSACTION", "ERROR", str(e))
+                    # 1. 파일 안정성 체크 (CTMFW 핵심 기능: 파일 사이즈 변동 확인 등)
+                    # 여기선 즉시 처리로 가정
+                    
+                    # 2. DB Loader 트리거
+                    success = self.dw.load_data_from_file(src_path)
+                    
+                    # 3. 후처리 (Archive 이동)
+                    if success:
+                        dst_path = os.path.join(DIR_ARCHIVE, f)
+                        shutil.move(src_path, dst_path)
+                        self.dw.log_job("CTMFW_JOB", "SUCCESS", f"Processed {f}")
+                        print(f"   >> [CTMFW] Job Triggered & File Archived: {f}")
+                    else:
+                        self.dw.log_job("CTMFW_JOB", "FAIL", f"Error {f}")
+
+        # ==========================================
+        # 6. BS & MIS Batch Engine
+        # ==========================================
+        class EnterpriseBatchEngine:
+            def __init__(self, dw_mgr):
+                self.dw = dw_mgr
 
             def run_bs_batch(self):
-                """BS(재무상태표) 마감 배치"""
-                print(f"[Batch] BS(대차대조표) 생성 배치 가동")
-                # Fact 테이블 집계
-                df = pd.read_sql("SELECT tx_type, sum(amount) as total FROM fact_transactions GROUP BY tx_type", self.dw.conn)
+                """대차대조표(BS) 생성"""
+                print("[Batch] 📊 BS(재무상태표) 결산 작업 수행...")
+                df = pd.read_sql("SELECT sum(amount) as total FROM fact_transactions", self.dw.conn)
+                total_assets = df.iloc[0]['total'] if df.iloc[0]['total'] else 0
                 
-                # BS 로직 시뮬레이션
-                total_salary = df[df['tx_type']=='SALARY_PAYMENT']['total'].sum() if not df.empty else 0
-                bs_data = [
-                    ['자산 (Asset)', '법인예금', f"{1000000000 - total_salary:,}"],
-                    ['부채 (Liability)', '미지급금', '0'],
-                    ['자본 (Equity)', '자본금', '1,000,000,000']
-                ]
+                report_file = os.path.join(DIR_REPORTS, f"BS_Report_{datetime.now().strftime('%H%M')}.txt")
+                with open(report_file, "w") as f:
+                    f.write(f"=== BALANCE SHEET ({datetime.now()}) ===\n")
+                    f.write(f"Total Assets (Cash In): {total_assets:,} KRW\n")
+                    f.write(f"Liabilities: 0\n")
+                    f.write(f"Equity: {total_assets:,}\n")
                 
-                # 리포트 저장
-                file_path = f"{self.output_dir}/BS_Report_{datetime.now().strftime('%H%M%S')}.xlsx"
-                pd.DataFrame(bs_data, columns=['구분', '계정', '금액']).to_excel(file_path)
-                self.dw.log_batch("BS_BATCH", "SUCCESS", f"Report saved: {file_path}")
-                print(f"   - BS 리포트 생성 완료: {file_path}")
+                self.dw.log_job("BS_BATCH", "SUCCESS", f"Total Asset: {total_assets}")
 
             def run_mis_batch(self):
-                """MIS(경영정보) 분석 배치"""
-                print(f"[Batch] MIS(경영분석) 리포팅 배치 가동")
+                """경영정보(MIS) 분석"""
+                print("[Batch] 📈 MIS(경영분석) 리포트 생성 중...")
                 query = """
-                    SELECT d.dept_name, count(f.tx_id) as tx_count, sum(f.amount) as total_amt
-                    FROM fact_transactions f
-                    JOIN dim_employees d ON f.emp_sk = d.emp_sk
-                    GROUP BY d.dept_name
+                    SELECT substr(tx_time, 1, 13) as hour, count(*) as cnt, sum(amount) as amt 
+                    FROM fact_transactions GROUP BY hour
                 """
                 df = pd.read_sql(query, self.dw.conn)
-                
-                print(tabulate(df, headers='keys', tablefmt='psql'))
-                self.dw.log_batch("MIS_BATCH", "SUCCESS", "MIS Query Executed")
+                if not df.empty:
+                    print(tabulate(df, headers=['Hour', 'Count', 'Amount'], tablefmt='psql'))
+                self.dw.log_job("MIS_BATCH", "SUCCESS", "MIS Reported")
 
         # ==========================================
-        # 4. Resident Daemon (상주 프로세스)
-        # ==========================================
-        class ResidentDaemon:
-            def __init__(self):
-                self.dw = VerticaDWManager()
-                self.dw.initialize_schema()
-                self.engine = BatchJobEngine(self.dw)
-                
-                # 스케줄러 등록
-                # (GitHub Actions 테스트를 위해 간격 단축: 20분 -> 시뮬레이션상 3초)
-                # 실제 운영 시: schedule.every(20).minutes.do(...)
-                schedule.every(2).seconds.do(self.engine.run_transaction_batch)
-                schedule.every(5).seconds.do(self.engine.run_bs_batch)
-                schedule.every(5).seconds.do(self.engine.run_mis_batch)
-
-            def start_service(self):
-                print(">> [Daemon] Vertica 상주 배치 서비스가 시작되었습니다. (PID: {})".format(os.getpid()))
-                print(">> [Config] 트랜잭션 주기: 20분(Sim:2s) | BS/MIS 주기: 매시 정각(Sim:5s)")
-                
-                start_time = time.time()
-                # GitHub Actions 타임아웃 방지를 위해 약 30초만 시뮬레이션 수행
-                # 실제 서버에서는 while True: 사용
-                max_runtime = 30 
-                
-                while time.time() - start_time < max_runtime:
-                    schedule.run_pending()
-                    time.sleep(1)
-                
-                print(">> [Daemon] 서비스 안전 종료 (Simulation Finished).")
-
-        # ==========================================
-        # Main Execution
+        # 7. Resident Daemon (Orchestrator)
         # ==========================================
         if __name__ == "__main__":
-            daemon = ResidentDaemon()
-            daemon.start_service()
+            print(">> [System] 엔터프라이즈 배치 시스템 가동 (Vertica + CTMFW)")
+            
+            # 인스턴스 초기화
+            dw = VerticaDWManager()
+            interface = ExternalInterfaceSimulator()
+            ctmfw = CTMFW_Service(dw)
+            batch = EnterpriseBatchEngine(dw)
+            
+            # 스케줄링 등록
+            # 1. 외부 인터페이스: 5초마다 파일 전송 (시뮬레이션)
+            schedule.every(5).seconds.do(interface.generate_transfer_file)
+            
+            # 2. CTMFW: 1초마다 폴더 감시 (Real-time Watcher)
+            schedule.every(1).seconds.do(ctmfw.watch_and_trigger)
+            
+            # 3. BS/MIS 배치: 10초마다 결산 (20분 간격 시뮬레이션)
+            schedule.every(10).seconds.do(batch.run_bs_batch)
+            schedule.every(10).seconds.do(batch.run_mis_batch)
+            
+            # 데몬 실행 루프 (GitHub Actions 타임아웃 방지: 40초 실행)
+            start = time.time()
+            while time.time() - start < 40:
+                schedule.run_pending()
+                time.sleep(1)
+            
+            print(">> [System] 배치 윈도우 종료. 시스템 오프라인.")
         EOF
 
-    - name: Run Resident Batch System
-      run: python enterprise_system.py
+    - name: Run Enterprise System
+      run: python enterprise_ctmfw.py
 
-    - name: Upload Batch Reports
+    - name: Upload Reports
       uses: actions/upload-artifact@v4
       with:
-        name: Batch-Reports-${{ github.run_id }}
-        path: Batch_Reports/
+        name: Enterprise-Reports-${{ github.run_id }}
+        path: |
+          BATCH_REPORTS/
+          DATA_ARCHIVE/
         retention-days: 30
