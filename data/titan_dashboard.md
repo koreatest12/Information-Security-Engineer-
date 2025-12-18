@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 3 days, 21:31:22
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 3 days, 21:56:16
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.0% | `██████░░░░░░░░░` |
-| **RAM** | `30.2/512 GB` | 5.9% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.1% | `██████░░░░░░░░░` |
+| **RAM** | `29.7/512 GB` | 5.8% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 장나라와 유기동물 보호 기부 활동 - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTFA2a19pZTNJSE9saXMwTUVLSUxPT1dWc3E2ekNKUG80RGlHS2dwZFZDRTVLYkFqQTFWaUc0eE5ULTJuZFR2U3loeU5ZcUZVbFZHNkYxaw?oc=5)
+- [신한금융, 장나라와 유기동물 보호 기부 활동 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE9BaHZQSW9IV25PSDlPQmZIMXN3dHFlQjlseFloTVdxRmNpM1NOZENXSVpCRHdqc19QU29yOTd0d0pDYnBES2VSSC14dmo1cG5PNVNR?oc=5)
 - [점진적 회복 경로 진입한 한국 경제 - 동아일보](https://news.google.com/rss/articles/CBMiVkFVX3lxTFB4YVRFeVduNkkzc3VoYThGejRRcEh4ZlExcC1yQXFHdGxidW5IVnd3aXh6eWtnWDZKcjEwSmU5eHN0cVlsOGZwLS1IYWNCODZMalVhLWtB?oc=5)
 
 ---
