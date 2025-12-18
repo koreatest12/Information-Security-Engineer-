@@ -1,12 +1,12 @@
-name: Enterprise CTMFW & Vertica Batch System
+name: Total Financial System (Loan/Card/Core + CTMFW & Backup)
 
 on:
   schedule:
-    - cron: '0 9 11,21 * *'
-  workflow_dispatch:
+    - cron: '0 9 11,21 * *' # 정기 실행
+  workflow_dispatch:        # 수동 실행
 
 jobs:
-  run-ctm-system:
+  run-financial-core:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -26,9 +26,9 @@ jobs:
       run: |
         pip install pandas matplotlib reportlab openpyxl numpy cryptography tabulate schedule
 
-    - name: Generate Enterprise CTMFW Script
+    - name: Generate Financial System Script
       run: |
-        cat << 'EOF' > enterprise_ctmfw.py
+        cat << 'EOF' > financial_core.py
         import sqlite3
         import pandas as pd
         import os
@@ -42,210 +42,286 @@ jobs:
         from tabulate import tabulate
 
         # ==========================================
-        # 1. Configuration & Directories
+        # 1. Directory Structure (Channel & System)
         # ==========================================
-        DIR_INBOUND = "DATA_INBOUND"   # 대외계 파일 수신 폴더
-        DIR_ARCHIVE = "DATA_ARCHIVE"   # 처리 완료 파일 보관
-        DIR_REPORTS = "BATCH_REPORTS"  # 결과 리포트
-
-        for d in [DIR_INBOUND, DIR_ARCHIVE, DIR_REPORTS]:
+        DIRS = {
+            'CARD': 'INBOUND/CARD',      # 카드 승인/대출
+            'LOAN': 'INBOUND/LOAN',      # 여신 실행/상환
+            'CORE': 'INBOUND/CORE',      # 수신 입출금
+            'ARCHIVE': 'DATA/ARCHIVE',   # 처리 완료 보관
+            'BACKUP': 'DATA/BACKUP',     # DB 백업 저장소
+            'REPORT': 'DATA/REPORT'      # 결과 리포트
+        }
+        for d in DIRS.values():
             if not os.path.exists(d): os.makedirs(d)
 
         # ==========================================
-        # 2. Security & Utils
+        # 2. Security Module (AES-256)
         # ==========================================
         class SecurityManager:
             def __init__(self):
                 self.key = Fernet.generate_key()
                 self.cipher = Fernet(self.key)
-            def hash_data(self, data): return hashlib.sha256(str(data).encode()).hexdigest()
+            
+            def encrypt(self, text): 
+                return self.cipher.encrypt(str(text).encode()).decode()
+            
+            def decrypt(self, text): 
+                return self.cipher.decrypt(str(text).encode()).decode()
+            
+            def get_file_hash(self, filepath):
+                sha = hashlib.sha256()
+                with open(filepath, 'rb') as f:
+                    sha.update(f.read())
+                return sha.hexdigest()
 
         # ==========================================
-        # 3. Vertica DW Manager (Mock)
+        # 3. Financial DW Manager (Vertica Sim)
         # ==========================================
-        class VerticaDWManager:
-            def __init__(self, db_name="vertica_dw.db"):
+        class FinancialDW:
+            def __init__(self, db_name="financial_dw.db"):
                 self.conn = sqlite3.connect(db_name)
                 self.cursor = self.conn.cursor()
                 self.sec = SecurityManager()
                 self._init_schema()
 
             def _init_schema(self):
-                # Fact Table (거래내역)
-                self.cursor.execute('''CREATE TABLE IF NOT EXISTS fact_transactions (
+                # 1) 카드 트랜잭션 (승인/카드론)
+                self.cursor.execute('''CREATE TABLE IF NOT EXISTS fact_card_tx (
                     tx_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    file_name TEXT,
-                    tx_time TIMESTAMP,
-                    sender TEXT,
+                    card_no_enc TEXT,
+                    tx_type TEXT, -- APPROVAL, CARD_LOAN, CANCEL
+                    merchant TEXT,
                     amount INTEGER,
-                    tx_hash TEXT
+                    approval_time TIMESTAMP
                 )''')
-                
-                # Batch Log (배치 수행 이력)
-                self.cursor.execute('''CREATE TABLE IF NOT EXISTS sys_batch_log (
+
+                # 2) 여신(대출) 트랜잭션 (실행/상환)
+                self.cursor.execute('''CREATE TABLE IF NOT EXISTS fact_loan_tx (
+                    loan_id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    cust_id_enc TEXT,
+                    loan_type TEXT, -- MORTGAGE(주택), CREDIT(신용)
+                    interest_rate REAL,
+                    amount INTEGER,
+                    tx_time TIMESTAMP
+                )''')
+
+                # 3) 수신(Core) 트랜잭션
+                self.cursor.execute('''CREATE TABLE IF NOT EXISTS fact_core_tx (
+                    core_id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    account_enc TEXT,
+                    tx_type TEXT, -- DEPOSIT, WITHDRAW
+                    amount INTEGER,
+                    balance_after INTEGER,
+                    tx_time TIMESTAMP
+                )''')
+
+                # 4) 배치 작업 로그 (Control-M Log)
+                self.cursor.execute('''CREATE TABLE IF NOT EXISTS sys_job_log (
                     job_id TEXT,
                     start_time TIMESTAMP,
+                    end_time TIMESTAMP,
                     status TEXT,
-                    message TEXT
+                    target_file TEXT
                 )''')
                 self.conn.commit()
 
-            def load_data_from_file(self, file_path):
-                """[Loader] 파일을 읽어 Bulk Insert 수행"""
-                filename = os.path.basename(file_path)
-                print(f"   >> [DB Load] Loading file: {filename}")
-                
-                # CSV 파일 파싱 시뮬레이션
+            def execute_backup(self):
+                """DB 백업 수행"""
+                backup_file = os.path.join(DIRS['BACKUP'], f"FULL_BACKUP_{datetime.now().strftime('%Y%m%d_%H%M%S')}.db")
                 try:
-                    df = pd.read_csv(file_path)
-                    data_to_insert = []
-                    for _, row in df.iterrows():
-                        tx_hash = self.sec.hash_data(f"{row['sender']}{row['amount']}")
-                        data_to_insert.append((filename, datetime.now(), row['sender'], row['amount'], tx_hash))
-                    
-                    self.cursor.executemany("""
-                        INSERT INTO fact_transactions (file_name, tx_time, sender, amount, tx_hash)
-                        VALUES (?, ?, ?, ?, ?)
-                    """, data_to_insert)
-                    self.conn.commit()
-                    return True
+                    # SQLite Online Backup API 사용
+                    bck = sqlite3.connect(backup_file)
+                    self.conn.backup(bck)
+                    bck.close()
+                    return True, backup_file
                 except Exception as e:
-                    print(f"   !! [DB Error] {e}")
-                    return False
-
-            def log_job(self, job_name, status, msg):
-                self.cursor.execute("INSERT INTO sys_batch_log VALUES (?, datetime('now'), ?, ?)", 
-                                    (job_name, status, msg))
-                self.conn.commit()
+                    return False, str(e)
 
         # ==========================================
-        # 4. External Interface (File Generator)
+        # 4. Interface Simulator (File Generator)
         # ==========================================
-        class ExternalInterfaceSimulator:
-            """대외계 시스템: 랜덤하게 트랜잭션 파일을 생성하여 Inbound에 전송"""
-            def generate_transfer_file(self):
-                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                filename = f"TX_DATA_{timestamp}.csv"
-                filepath = os.path.join(DIR_INBOUND, filename)
+        class InterfaceSimulator:
+            """각 금융 업무별 트랜잭션 파일 생성 시뮬레이터"""
+            def gen_card_file(self):
+                self._gen_file('CARD', 'CARD_TRX_', ['APPROVAL', 'CARD_LOAN'], 10)
+
+            def gen_loan_file(self):
+                self._gen_file('LOAN', 'LOAN_APP_', ['NEW_LOAN', 'REPAYMENT'], 5)
+
+            def gen_core_file(self):
+                self._gen_file('CORE', 'CORE_BANK_', ['DEPOSIT', 'WITHDRAW'], 20)
+
+            def _gen_file(self, system, prefix, types, count):
+                timestamp = datetime.now().strftime("%H%M%S")
+                filename = f"{prefix}{timestamp}.dat"
+                path = os.path.join(DIRS[system], filename)
                 
-                # 데이터 생성
-                cnt = np.random.randint(5, 15)
                 data = {
-                    'sender': [f"User_{np.random.randint(100,999)}" for _ in range(cnt)],
-                    'amount': np.random.randint(1000, 50000, size=cnt) * 10
+                    'type': [np.random.choice(types) for _ in range(count)],
+                    'user': [f"User_{np.random.randint(1000,9999)}" for _ in range(count)],
+                    'amount': np.random.randint(1, 100) * 10000
                 }
-                pd.DataFrame(data).to_csv(filepath, index=False)
-                print(f"\n[Interface] 📡 외부 시스템에서 파일 전송됨: {filename} ({cnt} rows)")
+                pd.DataFrame(data).to_csv(path, index=False)
+                print(f"📡 [Interface] {system} 시스템에서 파일 수신됨: {filename}")
 
         # ==========================================
-        # 5. CTMFW (Control-M File Watcher)
+        # 5. CTMFW & Batch Jobs
         # ==========================================
-        class CTMFW_Service:
-            """파일 감지 및 이벤트 트리거"""
-            def __init__(self, dw_mgr):
-                self.dw = dw_mgr
+        class BatchJobController:
+            def __init__(self, dw):
+                self.dw = dw
 
-            def watch_and_trigger(self):
-                # Inbound 폴더 스캔
-                files = [f for f in os.listdir(DIR_INBOUND) if f.endswith('.csv')]
+            def process_card_batch(self, filepath):
+                """카드 시스템 배치: 승인 및 단기대출 처리"""
+                df = pd.read_csv(filepath)
+                data = []
+                for _, row in df.iterrows():
+                    enc_card = self.dw.sec.encrypt(row['user'])
+                    data.append((enc_card, row['type'], 'Simulated_Merchant', row['amount'], datetime.now()))
                 
-                if not files:
-                    return # 파일 없으면 대기
+                self.dw.cursor.executemany("INSERT INTO fact_card_tx (card_no_enc, tx_type, merchant, amount, approval_time) VALUES (?,?,?,?,?)", data)
+                self.dw.conn.commit()
+                return len(data)
+
+            def process_loan_batch(self, filepath):
+                """여신 시스템 배치: 대출 실행 및 이자 계산"""
+                df = pd.read_csv(filepath)
+                data = []
+                for _, row in df.iterrows():
+                    enc_cust = self.dw.sec.encrypt(row['user'])
+                    rate = 5.5 if row['type'] == 'NEW_LOAN' else 0.0
+                    data.append((enc_cust, row['type'], rate, row['amount'], datetime.now()))
                 
-                print(f"[CTMFW] 👁️ 파일 감지됨: {len(files)}건. 배치 트리거 가동.")
+                self.dw.cursor.executemany("INSERT INTO fact_loan_tx (cust_id_enc, loan_type, interest_rate, amount, tx_time) VALUES (?,?,?,?,?)", data)
+                self.dw.conn.commit()
+                return len(data)
+
+            def process_core_batch(self, filepath):
+                """수신 시스템 배치: 입출금 원장 반영"""
+                df = pd.read_csv(filepath)
+                data = []
+                for _, row in df.iterrows():
+                    enc_acc = self.dw.sec.encrypt(row['user'])
+                    bal_after = 1000000 + row['amount'] # 시뮬레이션 잔액
+                    data.append((enc_acc, row['type'], row['amount'], bal_after, datetime.now()))
                 
-                for f in files:
-                    src_path = os.path.join(DIR_INBOUND, f)
+                self.dw.cursor.executemany("INSERT INTO fact_core_tx (account_enc, tx_type, amount, balance_after, tx_time) VALUES (?,?,?,?,?)", data)
+                self.dw.conn.commit()
+                return len(data)
+
+        class CTMFW_Engine:
+            def __init__(self, dw, batch_ctrl):
+                self.dw = dw
+                self.batch = batch_ctrl
+
+            def watch_files(self):
+                # 감시 대상 정의 (시스템: (폴더, 배치함수, JobID))
+                targets = [
+                    ('CARD', DIRS['CARD'], self.batch.process_card_batch, 'JOB_CARD_001'),
+                    ('LOAN', DIRS['LOAN'], self.batch.process_loan_batch, 'JOB_LOAN_001'),
+                    ('CORE', DIRS['CORE'], self.batch.process_core_batch, 'JOB_CORE_001')
+                ]
+
+                for sys_name, folder, func, job_id in targets:
+                    files = [f for f in os.listdir(folder) if f.endswith('.dat')]
                     
-                    # 1. 파일 안정성 체크 (CTMFW 핵심 기능: 파일 사이즈 변동 확인 등)
-                    # 여기선 즉시 처리로 가정
-                    
-                    # 2. DB Loader 트리거
-                    success = self.dw.load_data_from_file(src_path)
-                    
-                    # 3. 후처리 (Archive 이동)
-                    if success:
-                        dst_path = os.path.join(DIR_ARCHIVE, f)
-                        shutil.move(src_path, dst_path)
-                        self.dw.log_job("CTMFW_JOB", "SUCCESS", f"Processed {f}")
-                        print(f"   >> [CTMFW] Job Triggered & File Archived: {f}")
-                    else:
-                        self.dw.log_job("CTMFW_JOB", "FAIL", f"Error {f}")
+                    for f in files:
+                        src = os.path.join(folder, f)
+                        dst = os.path.join(DIRS['ARCHIVE'], f"{sys_name}_{f}")
+                        
+                        print(f"👁️ [CTMFW] {sys_name} 파일 감지: {f} -> 배치 트리거!")
+                        start_time = datetime.now()
+                        
+                        try:
+                            # 1. 배치 실행
+                            row_cnt = func(src)
+                            status = "SUCCESS"
+                            msg = f"Processed {row_cnt} rows"
+                            
+                            # 2. 파일 이동 (Archiving)
+                            shutil.move(src, dst)
+                            
+                        except Exception as e:
+                            status = "FAIL"
+                            msg = str(e)
+                            print(f"   !! Error: {e}")
+
+                        # 3. 로그 기록
+                        self.dw.cursor.execute("INSERT INTO sys_job_log VALUES (?,?,?,?,?)", 
+                            (job_id, start_time, datetime.now(), status, f))
+                        self.dw.conn.commit()
+                        
+                        # 4. 백업 트리거 (데이터 변경 발생 시 자동 백업)
+                        if status == "SUCCESS":
+                            self.trigger_backup()
+
+            def trigger_backup(self):
+                print("💾 [System] 데이터 변경 감지 -> DB 백업 배치 수행")
+                res, path = self.dw.execute_backup()
+                status = "SUCCESS" if res else "FAIL"
+                self.dw.cursor.execute("INSERT INTO sys_job_log VALUES (?,?,?,?,?)",
+                    ('JOB_DB_BACKUP', datetime.now(), datetime.now(), status, path))
+                self.dw.conn.commit()
+                if res: print(f"   >> 백업 완료: {os.path.basename(path)}")
 
         # ==========================================
-        # 6. BS & MIS Batch Engine
+        # 6. Main Orchestrator
         # ==========================================
-        class EnterpriseBatchEngine:
-            def __init__(self, dw_mgr):
-                self.dw = dw_mgr
-
-            def run_bs_batch(self):
-                """대차대조표(BS) 생성"""
-                print("[Batch] 📊 BS(재무상태표) 결산 작업 수행...")
-                df = pd.read_sql("SELECT sum(amount) as total FROM fact_transactions", self.dw.conn)
-                total_assets = df.iloc[0]['total'] if df.iloc[0]['total'] else 0
-                
-                report_file = os.path.join(DIR_REPORTS, f"BS_Report_{datetime.now().strftime('%H%M')}.txt")
-                with open(report_file, "w") as f:
-                    f.write(f"=== BALANCE SHEET ({datetime.now()}) ===\n")
-                    f.write(f"Total Assets (Cash In): {total_assets:,} KRW\n")
-                    f.write(f"Liabilities: 0\n")
-                    f.write(f"Equity: {total_assets:,}\n")
-                
-                self.dw.log_job("BS_BATCH", "SUCCESS", f"Total Asset: {total_assets}")
-
-            def run_mis_batch(self):
-                """경영정보(MIS) 분석"""
-                print("[Batch] 📈 MIS(경영분석) 리포트 생성 중...")
-                query = """
-                    SELECT substr(tx_time, 1, 13) as hour, count(*) as cnt, sum(amount) as amt 
-                    FROM fact_transactions GROUP BY hour
-                """
-                df = pd.read_sql(query, self.dw.conn)
-                if not df.empty:
-                    print(tabulate(df, headers=['Hour', 'Count', 'Amount'], tablefmt='psql'))
-                self.dw.log_job("MIS_BATCH", "SUCCESS", "MIS Reported")
-
-        # ==========================================
-        # 7. Resident Daemon (Orchestrator)
-        # ==========================================
-        if __name__ == "__main__":
-            print(">> [System] 엔터프라이즈 배치 시스템 가동 (Vertica + CTMFW)")
+        def print_dashboard(dw):
+            print("\n" + "="*50)
+            print(f"   FINANCIAL BATCH DASHBOARD ({datetime.now().strftime('%H:%M:%S')})")
+            print("="*50)
             
-            # 인스턴스 초기화
-            dw = VerticaDWManager()
-            interface = ExternalInterfaceSimulator()
-            ctmfw = CTMFW_Service(dw)
-            batch = EnterpriseBatchEngine(dw)
+            # Job 로그 조회
+            df = pd.read_sql("SELECT job_id, status, target_file, end_time FROM sys_job_log ORDER BY end_time DESC LIMIT 5", dw.conn)
+            if not df.empty:
+                print(tabulate(df, headers='keys', tablefmt='psql', showindex=False))
+            else:
+                print("   (No Batch History)")
+            print("\n")
+
+        if __name__ == "__main__":
+            print(">> [Init] 차세대 금융 시스템(Yeosin/Card/Core) 가동")
+            
+            dw = FinancialDW()
+            batch_ctrl = BatchJobController(dw)
+            ctmfw = CTMFW_Engine(dw, batch_ctrl)
+            sim = InterfaceSimulator()
             
             # 스케줄링 등록
-            # 1. 외부 인터페이스: 5초마다 파일 전송 (시뮬레이션)
-            schedule.every(5).seconds.do(interface.generate_transfer_file)
+            # 1. 인터페이스 시뮬레이션 (각기 다른 주기로 파일 전송)
+            schedule.every(3).seconds.do(sim.gen_core_file)  # 수신은 빈번함
+            schedule.every(7).seconds.do(sim.gen_card_file)  # 카드는 중간
+            schedule.every(12).seconds.do(sim.gen_loan_file) # 여신은 가끔 발생
             
-            # 2. CTMFW: 1초마다 폴더 감시 (Real-time Watcher)
-            schedule.every(1).seconds.do(ctmfw.watch_and_trigger)
+            # 2. CTMFW (1초마다 모든 폴더 감시)
+            schedule.every(1).seconds.do(ctmfw.watch_files)
             
-            # 3. BS/MIS 배치: 10초마다 결산 (20분 간격 시뮬레이션)
-            schedule.every(10).seconds.do(batch.run_bs_batch)
-            schedule.every(10).seconds.do(batch.run_mis_batch)
+            # 3. 대시보드 출력
+            schedule.every(5).seconds.do(lambda: print_dashboard(dw))
             
-            # 데몬 실행 루프 (GitHub Actions 타임아웃 방지: 40초 실행)
+            # 메인 루프 (GitHub Actions 타임아웃 고려 60초)
             start = time.time()
-            while time.time() - start < 40:
+            while time.time() - start < 60:
                 schedule.run_pending()
                 time.sleep(1)
             
-            print(">> [System] 배치 윈도우 종료. 시스템 오프라인.")
+            # 종료 전 최종 원장 엑셀 저장
+            print(">> [Shutdown] 시스템 종료. 최종 리포트 생성.")
+            for table in ['fact_card_tx', 'fact_loan_tx', 'fact_core_tx', 'sys_job_log']:
+                pd.read_sql(f"SELECT * FROM {table}", dw.conn).to_excel(f"{DIRS['REPORT']}/{table}.xlsx")
         EOF
 
-    - name: Run Enterprise System
-      run: python enterprise_ctmfw.py
+    - name: Run Financial System
+      run: python financial_core.py
 
-    - name: Upload Reports
+    - name: Upload Financial Artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: Enterprise-Reports-${{ github.run_id }}
+        name: Financial-System-Data-${{ github.run_id }}
         path: |
-          BATCH_REPORTS/
-          DATA_ARCHIVE/
+          DATA/REPORT/
+          DATA/BACKUP/
+          DATA/ARCHIVE/
         retention-days: 30
