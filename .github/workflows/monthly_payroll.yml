@@ -1,12 +1,12 @@
-name: Total Financial Control-M Batch System
+name: Hyper-Scale Financial Batch System
 
 on:
   schedule:
-    - cron: '0 9 11,21 * *' # 월급일 등 주요 일자
-  workflow_dispatch:        # 수동 실행
+    - cron: '0 9 11,21 * *'
+  workflow_dispatch:
 
 jobs:
-  run-enterprise-control-m:
+  run-hyperscale-system:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -24,13 +24,12 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        pip install pandas matplotlib reportlab openpyxl numpy cryptography tabulate schedule
+        pip install pandas matplotlib reportlab openpyxl numpy cryptography tabulate schedule psutil
 
-    # [핵심] scripts 폴더에 초대형 스크립트 생성
-    - name: Generate Control-M System Script
+    - name: Generate Hyper-Scale Script
       run: |
         mkdir -p scripts
-        cat << 'EOF' > scripts/financial_ctm_system.py
+        cat << 'EOF' > scripts/hyperscale_system.py
         import sqlite3
         import pandas as pd
         import os
@@ -39,12 +38,13 @@ jobs:
         import schedule
         import numpy as np
         import hashlib
+        import psutil # 시스템 리소스 모니터링
         from datetime import datetime
         from cryptography.fernet import Fernet
         from tabulate import tabulate
 
         # ==========================================
-        # 1. Environment & Paths (Root Based)
+        # 1. Configuration (Hyper-Scale)
         # ==========================================
         BASE_DIR = os.getcwd()
         DIRS = {
@@ -52,10 +52,14 @@ jobs:
             'ARCHIVE': os.path.join(BASE_DIR, 'DATA/ARCHIVE'),
             'BACKUP': os.path.join(BASE_DIR, 'DATA/BACKUP'),
             'REPORT': os.path.join(BASE_DIR, 'DATA/REPORT'),
-            'LOGS': os.path.join(BASE_DIR, 'DATA/LOGS')
+            'TEMP': os.path.join(BASE_DIR, 'DATA/TEMP')
         }
-        # 도메인별 폴더 정의
         DOMAINS = ['CORE', 'LOAN', 'CARD', 'STOCK', 'FOREX']
+        
+        # [튜닝] 배치 사이즈 설정
+        CHUNK_SIZE = 10000   # 한 번에 처리할 행 수 (메모리 최적화)
+        GEN_COUNT = 50000    # 한 번에 생성할 트랜잭션 수 (부하 테스트용)
+        
         for d in DIRS.values():
             if not os.path.exists(d): os.makedirs(d)
         for dom in DOMAINS:
@@ -63,63 +67,59 @@ jobs:
             if not os.path.exists(p): os.makedirs(p)
 
         # ==========================================
-        # 2. Security (AES-256)
+        # 2. High-Performance DB Manager
         # ==========================================
-        class SecurityManager:
-            def __init__(self):
-                self.key = Fernet.generate_key()
-                self.cipher = Fernet(self.key)
-            def encrypt(self, text): return self.cipher.encrypt(str(text).encode()).decode()
-            def decrypt(self, text): return self.cipher.decrypt(str(text).encode()).decode()
-            def get_hash(self, text): return hashlib.sha256(str(text).encode()).hexdigest()
-
-        # ==========================================
-        # 3. Enterprise DW & Ledger
-        # ==========================================
-        class EnterpriseDW:
-            def __init__(self, db_name="enterprise_dw.db"):
+        class HyperScaleDW:
+            def __init__(self, db_name="hyperscale_dw.db"):
                 self.db_path = os.path.join(BASE_DIR, 'DATA', db_name)
                 self.conn = sqlite3.connect(self.db_path)
                 self.cursor = self.conn.cursor()
-                self.sec = SecurityManager()
+                
+                # [핵심] 고성능 튜닝 (WAL 모드 & 동기화 해제)
+                self.conn.execute("PRAGMA journal_mode = WAL;") 
+                self.conn.execute("PRAGMA synchronous = OFF;")
+                self.conn.execute("PRAGMA cache_size = 10000;") # 메모리 캐시 증설
+                
                 self._init_schema()
 
             def _init_schema(self):
-                # 1. 통합 거래 원장 (General Ledger)
-                self.cursor.execute('''CREATE TABLE IF NOT EXISTS fact_general_ledger (
+                # 파티셔닝 개념을 도입하기엔 SQLite가 작지만, 인덱싱으로 최적화
+                self.cursor.execute('''CREATE TABLE IF NOT EXISTS fact_large_ledger (
                     tx_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    domain TEXT,       -- CORE, CARD, LOAN...
+                    domain TEXT,
                     tx_type TEXT,
-                    user_enc TEXT,
+                    user_id TEXT, -- 암호화된 ID
                     amount INTEGER,
                     tx_time TIMESTAMP,
-                    tx_hash TEXT
+                    batch_id TEXT
                 )''')
-
-                # 2. Control-M Job History (AJF Simulation)
-                self.cursor.execute('''CREATE TABLE IF NOT EXISTS ctm_job_history (
-                    order_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    job_name TEXT,
-                    job_type TEXT,    -- FW(FileWatcher), CMD, DUMMY
-                    start_time TIMESTAMP,
-                    end_time TIMESTAMP,
-                    status TEXT,      -- OK, NOTOK, EXECUTING
-                    log_output TEXT
+                
+                # 인덱스 생성 (조회 성능 향상)
+                self.cursor.execute("CREATE INDEX IF NOT EXISTS idx_domain ON fact_large_ledger(domain)")
+                self.cursor.execute("CREATE INDEX IF NOT EXISTS idx_time ON fact_large_ledger(tx_time)")
+                
+                self.cursor.execute('''CREATE TABLE IF NOT EXISTS sys_job_log (
+                    job_id TEXT, start_time TIMESTAMP, end_time TIMESTAMP, 
+                    status TEXT, processed_rows INTEGER, message TEXT
                 )''')
                 self.conn.commit()
 
-            def insert_ledger(self, domain, tx_type, user, amount):
-                enc_user = self.sec.encrypt(user)
-                tx_hash = self.sec.get_hash(f"{domain}{user}{amount}{time.time()}")
-                self.cursor.execute("""
-                    INSERT INTO fact_general_ledger (domain, tx_type, user_enc, amount, tx_time, tx_hash)
-                    VALUES (?, ?, ?, ?, datetime('now'), ?)
-                """, (domain, tx_type, enc_user, amount, tx_hash))
-                self.conn.commit()
+            def bulk_insert(self, data_tuples):
+                """ executemany를 사용한 초고속 적재 """
+                try:
+                    self.cursor.executemany("""
+                        INSERT INTO fact_large_ledger (domain, tx_type, user_id, amount, tx_time, batch_id)
+                        VALUES (?, ?, ?, ?, datetime('now'), ?)
+                    """, data_tuples)
+                    self.conn.commit()
+                    return True
+                except Exception as e:
+                    print(f"DB Error: {e}")
+                    return False
 
             def execute_backup(self):
                 ts = datetime.now().strftime('%Y%m%d_%H%M%S')
-                bk_path = os.path.join(DIRS['BACKUP'], f"FULL_BACKUP_{ts}.db")
+                bk_path = os.path.join(DIRS['BACKUP'], f"BACKUP_{ts}.db")
                 try:
                     bck = sqlite3.connect(bk_path)
                     self.conn.backup(bck)
@@ -129,182 +129,159 @@ jobs:
                     return False, str(e)
 
         # ==========================================
-        # 4. Interface Simulator (Multi-Domain)
+        # 3. Security (AES-256) - Performance Optimized
         # ==========================================
-        class InterfaceGen:
-            def gen_files(self):
-                # 각 도메인별 랜덤 파일 생성
-                for dom in DOMAINS:
-                    if np.random.random() > 0.7: # 30% 확률로 파일 생성 (비동기 시뮬레이션)
-                        self._create_file(dom)
+        class SecurityManager:
+            def __init__(self):
+                self.key = Fernet.generate_key()
+                self.cipher = Fernet(self.key)
+            
+            def encrypt_batch(self, text_list):
+                """리스트 형태 데이터를 일괄 암호화 (Function Call 오버헤드 감소)"""
+                return [self.cipher.encrypt(str(t).encode()).decode() for t in text_list]
 
-            def _create_file(self, domain):
+        # ==========================================
+        # 4. Big Data Generator (Numpy based)
+        # ==========================================
+        class BigDataGenerator:
+            def gen_massive_file(self, domain):
                 ts = datetime.now().strftime("%H%M%S")
-                fname = f"{domain}_TX_{ts}.dat"
+                fname = f"{domain}_BIGDATA_{ts}.csv"
                 fpath = os.path.join(DIRS['INBOUND'], domain, fname)
                 
-                cnt = np.random.randint(5, 20)
-                data = {
-                    'user': [f"User_{np.random.randint(100,999)}" for _ in range(cnt)],
-                    'type': ['TRX_NORM' for _ in range(cnt)],
-                    'amount': np.random.randint(10, 1000) * 1000
-                }
-                pd.DataFrame(data).to_csv(fpath, index=False)
-                # print(f"📡 [IF] {domain} File Arrived: {fname}")
+                # Numpy로 대량 데이터 고속 생성
+                ids = np.random.randint(1000000, 9999999, size=GEN_COUNT)
+                amounts = np.random.randint(1000, 10000000, size=GEN_COUNT)
+                types = np.random.choice(['PAYMENT', 'TRANSFER', 'DEPOSIT', 'WITHDRAW'], size=GEN_COUNT)
+                
+                df = pd.DataFrame({
+                    'user_id': ids,
+                    'type': types,
+                    'amount': amounts
+                })
+                
+                df.to_csv(fpath, index=False)
+                size_mb = os.path.getsize(fpath) / (1024 * 1024)
+                print(f"🚀 [GEN] {domain} 대용량 파일 생성: {fname} ({GEN_COUNT} rows, {size_mb:.2f} MB)")
 
         # ==========================================
-        # 5. Control-M Engine (The Core)
+        # 5. Control-M Engine (Chunk Processing)
         # ==========================================
         class ControlM_Engine:
-            """
-            Control-M의 Active Job File(AJF) 및 Condition 로직 시뮬레이션
-            """
             def __init__(self, dw):
                 self.dw = dw
-                self.conditions = set() # Condition-Pool (선후행 제어용)
-                self.active_jobs = []
+                self.sec = SecurityManager()
 
-            def set_condition(self, cond_name):
-                self.conditions.add(cond_name)
-                # print(f"   [CTM] Condition Added: {cond_name}")
-
-            def check_condition(self, cond_name):
-                return cond_name in self.conditions
-
-            def log_job(self, name, jtype, status, msg):
-                self.dw.cursor.execute("""
-                    INSERT INTO ctm_job_history (job_name, job_type, start_time, end_time, status, log_output)
-                    VALUES (?, ?, datetime('now'), datetime('now'), ?, ?)
-                """, (name, jtype, status, msg))
-                self.dw.conn.commit()
-                print(f"⚙️ [CTM] Job Ended: {name} | Status: {status}")
-
-            # --- Job Types ---
-            
-            def job_ctmfw(self, domain):
-                """File Watcher Job"""
-                job_name = f"FW_{domain}_WATCHER"
-                watch_dir = os.path.join(DIRS['INBOUND'], domain)
-                files = [f for f in os.listdir(watch_dir) if f.endswith('.dat')]
-                
-                if files:
-                    # 파일 감지 성공
+            def job_ctmfw(self):
+                """모든 도메인 폴더 감시"""
+                for dom in DOMAINS:
+                    watch_dir = os.path.join(DIRS['INBOUND'], dom)
+                    files = [f for f in os.listdir(watch_dir) if f.endswith('.csv')]
+                    
                     for f in files:
                         src = os.path.join(watch_dir, f)
-                        # 배치 작업 트리거 (Job Chain)
-                        self.job_process_batch(domain, src)
+                        job_id = f"JOB_LOAD_{dom}_{int(time.time())}"
                         
-                        # 처리 후 Archive 이동
-                        dst = os.path.join(DIRS['ARCHIVE'], f"{domain}_{f}")
+                        print(f"👁️ [CTMFW] 파일 감지: {f} -> 배치 로더 가동")
+                        self.run_chunk_loader(dom, src, job_id)
+                        
+                        # 처리 완료 후 이동
+                        dst = os.path.join(DIRS['ARCHIVE'], f"{dom}_{f}")
                         shutil.move(src, dst)
-                    
-                    self.set_condition(f"COND_{domain}_FILE_OK")
-                    self.log_job(job_name, "CTMFW", "OK", f"Detected {len(files)} files")
-                else:
-                    # 파일 없음 (Waiting)
-                    pass 
 
-            def job_process_batch(self, domain, filepath):
-                """Data Load & Ledger Process Job"""
-                job_name = f"BATCH_{domain}_LOADER"
+            def run_chunk_loader(self, domain, filepath, job_id):
+                """Chunk 단위로 파일을 읽어 메모리 과부하 없이 적재"""
+                start_time = datetime.now()
+                total_rows = 0
+                
                 try:
-                    df = pd.read_csv(filepath)
-                    for _, row in df.iterrows():
-                        self.dw.insert_ledger(domain, row['type'], row['user'], row['amount'])
+                    # [핵심] Pandas Chunksize 옵션 사용 (메모리 절약)
+                    for chunk in pd.read_csv(filepath, chunksize=CHUNK_SIZE):
+                        # 보안: 사용자 ID 일괄 암호화
+                        enc_ids = self.sec.encrypt_batch(chunk['user_id'].tolist())
+                        
+                        # 튜플 변환 (속도 최적화)
+                        data_tuples = list(zip(
+                            [domain] * len(chunk),
+                            chunk['type'],
+                            enc_ids,
+                            chunk['amount'],
+                            [job_id] * len(chunk)
+                        ))
+                        
+                        # DB 적재
+                        self.dw.bulk_insert(data_tuples)
+                        total_rows += len(chunk)
+                        print(f"   ↳ [Loader] {len(chunk)} rows processed... (Total: {total_rows})")
+
+                    self.dw.cursor.execute("INSERT INTO sys_job_log VALUES (?,?,?,?,?,?)",
+                        (job_id, start_time, datetime.now(), "SUCCESS", total_rows, "Bulk Load OK"))
+                    self.dw.conn.commit()
                     
-                    self.log_job(job_name, "CMD", "OK", f"Loaded {len(df)} rows")
-                    
-                    # 후행 백업 Job 트리거를 위한 조건 설정 (Trigger)
-                    self.set_condition("COND_DATA_CHANGED")
+                    # 백업 트리거
+                    self.dw.execute_backup()
                     
                 except Exception as e:
-                    self.log_job(job_name, "CMD", "NOTOK", str(e))
-
-            def job_backup_cyclic(self):
-                """DB Backup Job (Conditional)"""
-                job_name = "JOB_DB_BACKUP"
-                # 조건: 데이터 변경이 감지되었을 때만 수행
-                if self.check_condition("COND_DATA_CHANGED"):
-                    res, path = self.dw.execute_backup()
-                    status = "OK" if res else "NOTOK"
-                    self.log_job(job_name, "CMD", status, path)
-                    
-                    # 조건 초기화 (다음 변경 시까지 대기)
-                    self.conditions.remove("COND_DATA_CHANGED")
-
-            def job_day_close(self):
-                """Daily Closing Job (마감 배치)"""
-                job_name = "JOB_DAY_CLOSE"
-                # 모든 도메인의 파일 처리가 최소 1회 이상 발생했는지 체크
-                # (단순화를 위해 여기서는 Ledger 집계로 대체)
-                print("\n🏁 [CTM] Executing Day Close Batch...")
-                
-                df = pd.read_sql("SELECT domain, sum(amount) as total FROM fact_general_ledger GROUP BY domain", self.dw.conn)
-                if not df.empty:
-                    print(tabulate(df, headers='keys', tablefmt='psql'))
-                
-                self.log_job(job_name, "DUMMY", "OK", "Day Close Complete")
+                    print(f"   !! Error: {e}")
+                    self.dw.cursor.execute("INSERT INTO sys_job_log VALUES (?,?,?,?,?,?)",
+                        (job_id, start_time, datetime.now(), "FAIL", total_rows, str(e)))
+                    self.dw.conn.commit()
 
         # ==========================================
-        # 6. Main Flow (Scheduler)
+        # 6. Monitoring & Main
         # ==========================================
+        def show_status(dw):
+            # 시스템 리소스 확인
+            mem = psutil.virtual_memory()
+            print(f"\n[Monitor] CPU: {psutil.cpu_percent()}% | RAM: {mem.percent}% Used")
+            
+            # DB 통계
+            cnt = dw.cursor.execute("SELECT count(*) FROM fact_large_ledger").fetchone()[0]
+            print(f"[DB Stat] Total Transactions: {cnt:,} rows")
+            
+            # Job 로그
+            df = pd.read_sql("SELECT job_id, status, processed_rows, end_time FROM sys_job_log ORDER BY end_time DESC LIMIT 3", dw.conn)
+            if not df.empty:
+                print(tabulate(df, headers='keys', tablefmt='plain'))
+            print("-" * 50)
+
         if __name__ == "__main__":
-            print(">> [System] Financial Control-M Engine Started (PID: {})".format(os.getpid()))
-            
-            dw = EnterpriseDW()
+            print(">> [Init] Hyper-Scale Financial System Started")
+            dw = HyperScaleDW()
             ctm = ControlM_Engine(dw)
-            igen = InterfaceGen()
+            gen = BigDataGenerator()
             
-            # --- Schedule Definition (Job Flow) ---
+            # 스케줄링
+            # 1. 대용량 파일 생성 (각기 다른 주기)
+            schedule.every(5).seconds.do(lambda: gen.gen_massive_file('CORE'))
+            schedule.every(8).seconds.do(lambda: gen.gen_massive_file('CARD'))
             
-            # 1. Interface Simulator (외부 파일 수신 시뮬레이션)
-            schedule.every(2).seconds.do(igen.gen_files)
+            # 2. CTMFW (빠른 감시)
+            schedule.every(1).seconds.do(ctm.job_ctmfw)
             
-            # 2. File Watchers (5개 도메인 감시 - 병렬 수행)
-            for dom in DOMAINS:
-                schedule.every(1).seconds.do(ctm.job_ctmfw, domain=dom)
+            # 3. 모니터링
+            schedule.every(3).seconds.do(lambda: show_status(dw))
             
-            # 3. Backup Job (Cyclic - 조건부 수행)
-            schedule.every(5).seconds.do(ctm.job_backup_cyclic)
-            
-            # 4. Monitoring Dashboard
-            def show_dash():
-                print(f"\n--- CTM AJF View ({datetime.now().strftime('%H:%M:%S')}) ---")
-                df = pd.read_sql("SELECT job_name, status, end_time FROM ctm_job_history ORDER BY end_time DESC LIMIT 7", dw.conn)
-                if not df.empty: print(tabulate(df, headers='keys', tablefmt='plain'))
-            schedule.every(5).seconds.do(show_dash)
-
-            # --- Execution Loop ---
+            # 실행 루프 (90초간 수행하여 데이터 축적 확인)
             start_ts = time.time()
-            RUN_DURATION = 60 # 60초간 시뮬레이션
+            while time.time() - start_ts < 90:
+                schedule.run_pending()
+                time.sleep(1)
             
-            try:
-                while time.time() - start_ts < RUN_DURATION:
-                    schedule.run_pending()
-                    time.sleep(1)
-            except KeyboardInterrupt:
-                pass
-            
-            # --- Day Close ---
-            ctm.job_day_close()
-            
-            # Final Export
-            print(">> [System] Saving Final Reports...")
-            for t in ['fact_general_ledger', 'ctm_job_history']:
-                pd.read_sql(f"SELECT * FROM {t}", dw.conn).to_excel(f"{DIRS['REPORT']}/{t}.xlsx")
-            print(">> [System] Shutdown Gracefully.")
+            # 최종 리포트 (너무 크므로 요약만 저장)
+            print(">> [Shutdown] Exporting Summary Reports...")
+            query = "SELECT domain, tx_type, count(*) as cnt, sum(amount) as total FROM fact_large_ledger GROUP BY domain, tx_type"
+            pd.read_sql(query, dw.conn).to_excel(f"{DIRS['REPORT']}/Summary_Report.xlsx")
         EOF
 
-    # 생성된 scripts 폴더 내의 파일 실행
-    - name: Run Control-M Engine
-      run: python scripts/financial_ctm_system.py
+    - name: Run Hyper-Scale System
+      run: python scripts/hyperscale_system.py
 
-    - name: Upload Logs & Reports
+    - name: Upload Artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: ControlM-Financial-Data-${{ github.run_id }}
+        name: HyperScale-Data-${{ github.run_id }}
         path: |
           DATA/REPORT/
           DATA/BACKUP/
-          DATA/LOGS/
         retention-days: 30
