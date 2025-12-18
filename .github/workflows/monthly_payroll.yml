@@ -1,12 +1,12 @@
-name: Secure Payroll Automation (Pro)
+name: Enterprise Payroll Simulation (Multi-Company & Ledger)
 
 on:
   schedule:
-    - cron: '0 9 25 * *' # 매월 25일 자동 실행
-  workflow_dispatch:     # 수동 실행
+    - cron: '0 9 11,21 * *' # 매월 11일, 21일에 자동 실행 (시뮬레이션용)
+  workflow_dispatch:        # 수동 실행
 
 jobs:
-  run-secure-payroll:
+  run-enterprise-payroll:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -14,36 +14,33 @@ jobs:
       checks: write
 
     steps:
-    # 1. 저장소 체크아웃
     - name: Checkout Repository
       uses: actions/checkout@v4
 
-    # 2. Python 3.11 업그레이드
     - name: Set up Python 3.11
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
 
-    # 3. 필수 라이브러리 설치 (암호화 라이브러리 추가)
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
         pip install pandas matplotlib reportlab openpyxl numpy cryptography tabulate
 
-    # 4. [핵심] 보안 강화된 파이썬 스크립트 자동 생성
-    - name: Generate Secure Python Script
+    - name: Generate Enterprise Simulation Script
       run: |
-        cat << 'EOF' > payroll_pro.py
+        cat << 'EOF' > payroll_enterprise.py
         import sqlite3
         import pandas as pd
         import os
         import urllib.request
         import numpy as np
-        from datetime import datetime
-        from cryptography.fernet import Fernet # AES 암호화용
-        from tabulate import tabulate # 로그 출력용
+        import hashlib
+        from datetime import datetime, date
+        from cryptography.fernet import Fernet
+        from tabulate import tabulate
 
-        # 시각화 및 PDF
+        # 시각화 & PDF
         import matplotlib.pyplot as plt
         import matplotlib.font_manager as fm
         from reportlab.pdfgen import canvas
@@ -52,211 +49,232 @@ jobs:
         from reportlab.pdfbase.ttfonts import TTFont
         from reportlab.lib.pdfencrypt import StandardEncryption
 
+        # 상수 정의
+        MIN_WAGE_2025 = 10030  # 2025년 예상 최저시급
+        MIN_MONTHLY_PAY = MIN_WAGE_2025 * 209 # 약 2,096,270원
+
         # ==========================================
-        # 1. Security Manager (AES-256 암호화)
+        # 1. 보안 모듈 (AES-256 Encryption)
         # ==========================================
         class SecurityManager:
             def __init__(self):
-                # 실무에서는 이 키를 GitHub Secrets에 저장해야 합니다.
-                # 데모를 위해 실행 시마다 생성합니다.
+                # 실무에선 키 관리 시스템(KMS) 사용 권장
                 self.key = Fernet.generate_key()
                 self.cipher = Fernet(self.key)
 
-            def encrypt_data(self, plain_text):
-                return self.cipher.encrypt(str(plain_text).encode()).decode()
+            def encrypt(self, text):
+                return self.cipher.encrypt(str(text).encode()).decode()
 
-            def decrypt_data(self, cipher_text):
-                return self.cipher.decrypt(cipher_text.encode()).decode()
+            def decrypt(self, text):
+                return self.cipher.decrypt(str(text).encode()).decode()
+            
+            def generate_hash(self, data_str):
+                """무결성 검증용 해시 생성"""
+                return hashlib.sha256(data_str.encode()).hexdigest()
 
         # ==========================================
-        # 2. Secure DB & Banking Manager
+        # 2. ERP DB 매니저 (거래 원장 포함)
         # ==========================================
-        class BankingDBManager:
-            def __init__(self, security_mgr, db_name="secure_payroll.db"):
-                self.db_name = db_name
-                self.sec = security_mgr
-                self.conn = sqlite3.connect(self.db_name)
+        class ERPDatabase:
+            def __init__(self, sec_mgr, db_name="erp_system.db"):
+                self.sec = sec_mgr
+                self.conn = sqlite3.connect(db_name)
                 self.cursor = self.conn.cursor()
 
-            def initialize_system(self):
-                """테이블 생성 (사원정보, 회사계좌, 거래원장)"""
-                # 1) 사원 테이블 (민감정보 암호화 저장)
-                self.cursor.execute('''CREATE TABLE IF NOT EXISTS employees (
-                    emp_id TEXT PRIMARY KEY,
-                    name TEXT,
-                    dept TEXT,
-                    email TEXT,
-                    enc_birth_date TEXT,   -- 암호화된 생년월일
-                    base_pay INTEGER,
-                    bank_name TEXT,
-                    enc_account TEXT       -- 암호화된 계좌번호
-                )''')
-
-                # 2) 회사 법인 계좌 (자금 원천)
-                self.cursor.execute('''CREATE TABLE IF NOT EXISTS company_wallet (
-                    id INTEGER PRIMARY KEY,
+            def initialize_schema(self):
+                # 1) 기업 정보 (급여일 구분)
+                self.cursor.execute('''CREATE TABLE IF NOT EXISTS companies (
+                    comp_id INTEGER PRIMARY KEY,
+                    comp_name TEXT,
+                    pay_day INTEGER,  -- 11 or 21
                     balance INTEGER
                 )''')
-                # 초기 자금 10억 원 세팅
-                self.cursor.execute('INSERT OR IGNORE INTO company_wallet (id, balance) VALUES (1, 1000000000)')
 
-                # 3) 거래 원장 (Ledger) - 입출금 내역 기록
-                self.cursor.execute('''CREATE TABLE IF NOT EXISTS transaction_ledger (
+                # 2) 사원 정보 (민감정보 암호화)
+                self.cursor.execute('''CREATE TABLE IF NOT EXISTS employees (
+                    emp_id TEXT PRIMARY KEY,
+                    comp_id INTEGER,
+                    name TEXT,
+                    enc_birth TEXT,    -- 암호화
+                    base_pay INTEGER,
+                    enc_account TEXT,  -- 암호화
+                    FOREIGN KEY(comp_id) REFERENCES companies(comp_id)
+                )''')
+
+                # 3) 거래 원장 (Transaction Ledger) - 핵심 기능
+                self.cursor.execute('''CREATE TABLE IF NOT EXISTS general_ledger (
                     tx_id INTEGER PRIMARY KEY AUTOINCREMENT,
                     tx_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                    sender TEXT,
-                    receiver TEXT,
+                    comp_name TEXT,
+                    tx_type TEXT,      -- DEPOSIT(입금) / WITHDRAW(출금/급여지급)
+                    counterparty TEXT, -- 거래 대상 (사원명 등)
                     amount INTEGER,
-                    tx_type TEXT, -- 'SALARY', 'BONUS'
-                    status TEXT   -- 'SUCCESS', 'FAILED'
+                    balance_after INTEGER,
+                    tx_hash TEXT       -- 위변조 방지 해시
                 )''')
+
+                # 초기 데이터 세팅 (회사)
+                companies = [
+                    (1, 'Tech Corp (대기업)', 11, 10000000000), # 100억, 11일 급여
+                    (2, 'Retail Inc (서비스)', 21, 2000000000)  # 20억, 21일 급여
+                ]
+                self.cursor.executemany('INSERT OR IGNORE INTO companies VALUES (?,?,?,?)', companies)
                 
-                # 샘플 사원 데이터 주입 (암호화 적용)
-                raw_data = [
-                    ('2025001', 'Kim CEO', 'Executive', 'ceo@corp.com', '800101', 9000000, 'Citi', '111-999'),
-                    ('2025002', 'Lee Dev', 'Dev Team', 'lee@corp.com', '920505', 5000000, 'KB', '222-888'),
-                    ('2025003', 'Park HR', 'HR Team', 'park@corp.com', '950303', 4500000, 'Shinhan', '333-777')
+                # 초기 데이터 세팅 (사원 - 암호화 적용)
+                # Tech Corp (고액연봉), Retail Inc (최저임금)
+                raw_employees = [
+                    # ID, CompID, Name, Birth, Pay, Account
+                    ('T001', 1, 'Kim Dev', '900101', 6500000, '111-222-333'),
+                    ('T002', 1, 'Lee Ops', '920505', 5800000, '444-555-666'),
+                    ('R001', 2, 'Park Staff', '000101', MIN_MONTHLY_PAY, '777-888-999'), # 최저임금
+                    ('R002', 2, 'Choi Part', '010303', MIN_MONTHLY_PAY, '123-456-789')   # 최저임금
                 ]
                 
-                for row in raw_data:
-                    # 데이터 암호화 수행
-                    enc_birth = self.sec.encrypt_data(row[4])
-                    enc_account = self.sec.encrypt_data(row[7])
-                    
-                    self.cursor.execute('INSERT OR IGNORE INTO employees VALUES (?,?,?,?,?,?,?,?)', 
-                        (row[0], row[1], row[2], row[3], enc_birth, row[5], row[6], enc_account))
+                for row in raw_employees:
+                    enc_birth = self.sec.encrypt(row[3])
+                    enc_acct = self.sec.encrypt(row[5])
+                    self.cursor.execute('INSERT OR IGNORE INTO employees VALUES (?,?,?,?,?,?)', 
+                        (row[0], row[1], row[2], enc_birth, row[4], enc_acct))
                 
                 self.conn.commit()
-                print(f">> [System] 보안 DB 초기화 및 자금 세팅 완료.")
+                print(">> [System] ERP DB 스키마 초기화 및 암호화 데이터 로드 완료.")
 
-            def get_company_balance(self):
-                self.cursor.execute("SELECT balance FROM company_wallet WHERE id=1")
-                return self.cursor.fetchone()[0]
-
-            def execute_transfer(self, emp_name, amount):
-                """입출금 트랜잭션 시뮬레이션"""
-                current_balance = self.get_company_balance()
+            def record_transaction(self, comp_id, comp_name, tx_type, counterparty, amount):
+                """원장 기록 및 잔액 업데이트 (트랜잭션)"""
+                # 현재 잔액 조회
+                self.cursor.execute("SELECT balance FROM companies WHERE comp_id=?", (comp_id,))
+                current_bal = self.cursor.fetchone()[0]
                 
-                if current_balance >= amount:
-                    # 1. 회사 계좌 차감
-                    self.cursor.execute("UPDATE company_wallet SET balance = balance - ? WHERE id=1", (amount,))
-                    # 2. 거래 기록 (Ledger)
-                    self.cursor.execute('''INSERT INTO transaction_ledger (sender, receiver, amount, tx_type, status)
-                                           VALUES (?, ?, ?, ?, ?)''', ('Company_Main', emp_name, amount, 'SALARY', 'SUCCESS'))
-                    self.conn.commit()
-                    return True
-                else:
-                    # 잔액 부족 기록
-                    self.cursor.execute('''INSERT INTO transaction_ledger (sender, receiver, amount, tx_type, status)
-                                           VALUES (?, ?, ?, ?, ?)''', ('Company_Main', emp_name, amount, 'SALARY', 'FAILED'))
-                    self.conn.commit()
-                    return False
+                if tx_type == 'WITHDRAW' and current_bal < amount:
+                    return False, "잔액 부족"
+                
+                # 잔액 변경
+                new_bal = current_bal - amount if tx_type == 'WITHDRAW' else current_bal + amount
+                self.cursor.execute("UPDATE companies SET balance=? WHERE comp_id=?", (new_bal, comp_id))
+                
+                # 원장 기록 (해시 포함)
+                raw_str = f"{comp_name}{tx_type}{counterparty}{amount}{datetime.now()}"
+                tx_hash = self.sec.generate_hash(raw_str)
+                
+                self.cursor.execute('''
+                    INSERT INTO general_ledger (comp_name, tx_type, counterparty, amount, balance_after, tx_hash)
+                    VALUES (?, ?, ?, ?, ?, ?)
+                ''', (comp_name, tx_type, counterparty, amount, new_bal, tx_hash))
+                
+                self.conn.commit()
+                return True, new_bal
 
-            def get_employees_df(self):
-                return pd.read_sql("SELECT * FROM employees", self.conn)
-
-            def get_ledger_df(self):
-                return pd.read_sql("SELECT * FROM transaction_ledger", self.conn)
+            def get_payday_employees(self, day):
+                """특정 급여일에 해당하는 회사와 사원 조회"""
+                query = '''
+                    SELECT e.emp_id, e.name, e.enc_birth, e.base_pay, c.comp_id, c.comp_name 
+                    FROM employees e
+                    JOIN companies c ON e.comp_id = c.comp_id
+                    WHERE c.pay_day = ?
+                '''
+                return pd.read_sql(query, self.conn, params=(day,))
 
         # ==========================================
-        # 3. Master Workflow Engine
+        # 3. 시뮬레이션 엔진
         # ==========================================
-        class SecurePayrollWorkflow:
+        class PayrollSimulator:
             def __init__(self):
-                self.sec_mgr = SecurityManager()
-                self.db = BankingDBManager(self.sec_mgr)
-                self.db.initialize_system()
+                self.sec = SecurityManager()
+                self.db = ERPDatabase(self.sec)
+                self.db.initialize_schema()
                 
                 self.current_month = datetime.now().strftime('%Y-%m')
-                self.output_dir = f"Secure_Result_{self.current_month}"
+                self.output_dir = f"Simulation_{self.current_month}"
                 if not os.path.exists(self.output_dir): os.makedirs(self.output_dir)
                 self._setup_fonts()
 
             def _setup_fonts(self):
-                # 한글 폰트 자동 설정
                 self.font_name = 'NanumGothic'
                 font_file = 'NanumGothic.ttf'
                 if not os.path.exists(font_file):
-                    url = "https://github.com/google/fonts/raw/main/ofl/nanumgothic/NanumGothic-Regular.ttf"
-                    urllib.request.urlretrieve(url, font_file)
+                    urllib.request.urlretrieve("https://github.com/google/fonts/raw/main/ofl/nanumgothic/NanumGothic-Regular.ttf", font_file)
                 try: pdfmetrics.registerFont(TTFont(self.font_name, font_file))
                 except: self.font_name = 'Helvetica'
-                try:
-                    fe = fm.FontEntry(fname=font_file, name=self.font_name)
-                    fm.fontManager.ttflist.insert(0, fe)
-                    plt.rc('font', family=self.font_name)
-                except: pass
 
-            def run_payroll_process(self):
-                print(">> [Process] 1. 데이터 복호화 및 급여 계산 시작")
-                df = self.db.get_employees_df()
+            def run_simulation(self):
+                # 시뮬레이션할 날짜: 11일(대기업)과 21일(중소기업) 모두 실행
+                target_days = [11, 21]
                 
-                # 시뮬레이션: 야근 수당
-                np.random.seed(42)
-                df['overtime_pay'] = np.random.randint(0, 5, size=len(df)) * 150000
+                print(f"[{datetime.now()}] 급여 입출금 시뮬레이션 시작...")
                 
-                # 계산 로직
-                df['taxable'] = df['base_pay'] + df['overtime_pay'] - 200000
-                df['deductions'] = (df['taxable'] * 0.18).astype(int) # 약식 공제율
-                df['net_pay'] = (df['base_pay'] + df['overtime_pay']) - df['deductions']
-                
-                print(">> [Banking] 2. 급여 이체 시뮬레이션 시작 (Company -> Employee)")
-                results = []
-                for idx, row in df.iterrows():
-                    # 이체 실행
-                    is_success = self.db.execute_transfer(row['name'], int(row['net_pay']))
-                    status = "이체성공" if is_success else "잔액부족"
-                    results.append(status)
-                    
-                    # 보안: 복호화된 생년월일 가져오기 (비밀번호용)
-                    decrypted_birth = self.sec_mgr.decrypt_data(row['enc_birth_date'])
-                    
-                    # PDF 생성
-                    if is_success:
-                        self.generate_secure_pdf(row, decrypted_birth)
-                
-                df['status'] = results
-                
-                # 결과 리포트
-                print(">> [Report] 3. 최종 결과 생성")
-                df_display = df[['emp_id', 'name', 'net_pay', 'status']].copy()
-                print(tabulate(df_display, headers='keys', tablefmt='psql'))
-                
-                # 원장(Ledger) 저장
-                ledger = self.db.get_ledger_df()
-                ledger.to_excel(f"{self.output_dir}/Transaction_Ledger.xlsx", index=False)
-                df.to_excel(f"{self.output_dir}/Payroll_Final.xlsx", index=False)
-                
-                final_balance = self.db.get_company_balance()
-                print(f">> [System] 법인 계좌 잔액: {final_balance:,} KRW")
+                all_results = []
 
-            def generate_secure_pdf(self, row, password):
-                fname = f"{self.output_dir}/SecureSlip_{row['emp_id']}.pdf"
-                # PDF 암호화 설정
+                for day in target_days:
+                    print(f"\n>> [Scenario] {day}일 급여 지급 시뮬레이션 가동")
+                    df = self.db.get_payday_employees(day)
+                    
+                    if df.empty:
+                        print(f"   - {day}일에 지급할 대상이 없습니다.")
+                        continue
+                        
+                    for _, row in df.iterrows():
+                        # 급여 계산 (최저임금 체크)
+                        base_pay = row['base_pay']
+                        is_min_wage = base_pay <= MIN_MONTHLY_PAY + 1000 # 오차범위
+                        
+                        # 공제 계산
+                        deduct = int(base_pay * 0.15) # 약식 공제
+                        net_pay = base_pay - deduct
+                        
+                        # 법인 계좌 출금 시뮬레이션
+                        success, msg = self.db.record_transaction(
+                            row['comp_id'], row['comp_name'], 'WITHDRAW', 
+                            f"{row['name']} (Salary)", net_pay
+                        )
+                        
+                        status = "지급성공" if success else f"실패({msg})"
+                        note = "최저임금적용" if is_min_wage else "일반급여"
+                        
+                        all_results.append([
+                            day, row['comp_name'], row['name'], note, 
+                            f"{net_pay:,}", status
+                        ])
+                        
+                        if success:
+                            # 복호화 후 PDF 생성
+                            real_birth = self.sec.decrypt(row['enc_birth'])
+                            self.generate_secure_pdf(row, net_pay, real_birth, day)
+
+                # 최종 리포트 출력
+                print("\n>> [Final Report] 급여 지급 결과 원장")
+                headers = ["PayDay", "Company", "Employee", "Type", "Net Pay", "Status"]
+                print(tabulate(all_results, headers=headers, tablefmt="psql"))
+                
+                # 원장 엑셀 저장
+                ledger_df = pd.read_sql("SELECT * FROM general_ledger", self.db.conn)
+                ledger_df.to_excel(f"{self.output_dir}/Full_Transaction_Ledger.xlsx", index=False)
+                print(f">> 거래 원장 파일 저장 완료: {self.output_dir}/Full_Transaction_Ledger.xlsx")
+
+            def generate_secure_pdf(self, row, net_pay, password, day):
+                fname = f"{self.output_dir}/{day}th_{row['name']}_Slip.pdf"
                 enc = StandardEncryption(password, canPrint=1, canCopy=0)
                 c = canvas.Canvas(fname, pagesize=A4, encrypt=enc)
                 
-                c.setFont(self.font_name, 14)
-                c.drawString(50, 800, f"SECURE PAYROLL SLIP: {row['name']}")
+                c.setFont(self.font_name, 16)
+                c.drawString(50, 800, f"[{row['comp_name']}] 급여 명세서")
                 c.setFont(self.font_name, 10)
-                c.drawString(50, 770, f"Account: ****-**** (Encrypted)")
-                c.drawString(50, 750, f"Net Pay: {row['net_pay']:,} KRW")
-                c.drawString(50, 50, "Generated by Secure Payroll Automation System")
+                c.drawString(50, 770, f"지급일: {self.current_month}-{day}")
+                c.drawString(50, 750, f"성명: {row['name']}")
+                c.drawString(50, 730, f"실수령액: {net_pay:,} 원")
+                c.drawString(50, 50, "※ 본 문서는 암호화 처리되었습니다.")
                 c.save()
 
         if __name__ == "__main__":
-            system = SecurePayrollWorkflow()
-            system.run_payroll_process()
+            sim = PayrollSimulator()
+            sim.run_simulation()
         EOF
 
-    # 5. 스크립트 실행
-    - name: Run Secure Payroll
-      run: python payroll_pro.py
+    - name: Run Simulation
+      run: python payroll_enterprise.py
 
-    # 6. 결과물 업로드
     - name: Upload Artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: Secure-Payroll-Result-${{ github.run_id }}
-        path: Secure_Result_*/
+        name: Enterprise-Payroll-Ledger-${{ github.run_id }}
+        path: Simulation_*/
         retention-days: 30
