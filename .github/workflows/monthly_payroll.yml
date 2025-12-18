@@ -1,12 +1,12 @@
-name: Total Financial System (Scripts Folder Version)
+name: Total Financial Control-M Batch System
 
 on:
   schedule:
-    - cron: '0 9 11,21 * *'
-  workflow_dispatch:
+    - cron: '0 9 11,21 * *' # 월급일 등 주요 일자
+  workflow_dispatch:        # 수동 실행
 
 jobs:
-  run-financial-core:
+  run-enterprise-control-m:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -26,14 +26,11 @@ jobs:
       run: |
         pip install pandas matplotlib reportlab openpyxl numpy cryptography tabulate schedule
 
-    # [수정됨] scripts 폴더 생성 및 스크립트 파일 생성 위치 변경
-    - name: Generate Script in 'scripts' folder
+    # [핵심] scripts 폴더에 초대형 스크립트 생성
+    - name: Generate Control-M System Script
       run: |
-        # 1. scripts 디렉토리 생성
         mkdir -p scripts
-
-        # 2. 파이썬 스크립트를 scripts 폴더 안에 생성
-        cat << 'EOF' > scripts/financial_core.py
+        cat << 'EOF' > scripts/financial_ctm_system.py
         import sqlite3
         import pandas as pd
         import os
@@ -47,41 +44,40 @@ jobs:
         from tabulate import tabulate
 
         # ==========================================
-        # 1. Directory Structure (Root based)
+        # 1. Environment & Paths (Root Based)
         # ==========================================
-        # 스크립트는 scripts/ 안에 있지만, 데이터는 프로젝트 루트에 저장
-        BASE_DIR = os.getcwd() 
+        BASE_DIR = os.getcwd()
         DIRS = {
-            'CARD': os.path.join(BASE_DIR, 'INBOUND/CARD'),
-            'LOAN': os.path.join(BASE_DIR, 'INBOUND/LOAN'),
-            'CORE': os.path.join(BASE_DIR, 'INBOUND/CORE'),
+            'INBOUND': os.path.join(BASE_DIR, 'INBOUND'),
             'ARCHIVE': os.path.join(BASE_DIR, 'DATA/ARCHIVE'),
             'BACKUP': os.path.join(BASE_DIR, 'DATA/BACKUP'),
-            'REPORT': os.path.join(BASE_DIR, 'DATA/REPORT')
+            'REPORT': os.path.join(BASE_DIR, 'DATA/REPORT'),
+            'LOGS': os.path.join(BASE_DIR, 'DATA/LOGS')
         }
+        # 도메인별 폴더 정의
+        DOMAINS = ['CORE', 'LOAN', 'CARD', 'STOCK', 'FOREX']
         for d in DIRS.values():
             if not os.path.exists(d): os.makedirs(d)
+        for dom in DOMAINS:
+            p = os.path.join(DIRS['INBOUND'], dom)
+            if not os.path.exists(p): os.makedirs(p)
 
         # ==========================================
-        # 2. Security Module (AES-256)
+        # 2. Security (AES-256)
         # ==========================================
         class SecurityManager:
             def __init__(self):
                 self.key = Fernet.generate_key()
                 self.cipher = Fernet(self.key)
-            
-            def encrypt(self, text): 
-                return self.cipher.encrypt(str(text).encode()).decode()
-            
-            def decrypt(self, text): 
-                return self.cipher.decrypt(str(text).encode()).decode()
+            def encrypt(self, text): return self.cipher.encrypt(str(text).encode()).decode()
+            def decrypt(self, text): return self.cipher.decrypt(str(text).encode()).decode()
+            def get_hash(self, text): return hashlib.sha256(str(text).encode()).hexdigest()
 
         # ==========================================
-        # 3. Financial DW Manager
+        # 3. Enterprise DW & Ledger
         # ==========================================
-        class FinancialDW:
-            def __init__(self, db_name="financial_dw.db"):
-                # DB 파일도 루트의 DATA 폴더에 저장
+        class EnterpriseDW:
+            def __init__(self, db_name="enterprise_dw.db"):
                 self.db_path = os.path.join(BASE_DIR, 'DATA', db_name)
                 self.conn = sqlite3.connect(self.db_path)
                 self.cursor = self.conn.cursor()
@@ -89,157 +85,226 @@ jobs:
                 self._init_schema()
 
             def _init_schema(self):
-                self.cursor.execute('''CREATE TABLE IF NOT EXISTS fact_card_tx (
+                # 1. 통합 거래 원장 (General Ledger)
+                self.cursor.execute('''CREATE TABLE IF NOT EXISTS fact_general_ledger (
                     tx_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    card_no_enc TEXT, tx_type TEXT, merchant TEXT, amount INTEGER, approval_time TIMESTAMP)''')
-                
-                self.cursor.execute('''CREATE TABLE IF NOT EXISTS fact_loan_tx (
-                    loan_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    cust_id_enc TEXT, loan_type TEXT, interest_rate REAL, amount INTEGER, tx_time TIMESTAMP)''')
-                
-                self.cursor.execute('''CREATE TABLE IF NOT EXISTS fact_core_tx (
-                    core_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    account_enc TEXT, tx_type TEXT, amount INTEGER, balance_after INTEGER, tx_time TIMESTAMP)''')
-                
-                self.cursor.execute('''CREATE TABLE IF NOT EXISTS sys_job_log (
-                    job_id TEXT, start_time TIMESTAMP, end_time TIMESTAMP, status TEXT, target_file TEXT)''')
+                    domain TEXT,       -- CORE, CARD, LOAN...
+                    tx_type TEXT,
+                    user_enc TEXT,
+                    amount INTEGER,
+                    tx_time TIMESTAMP,
+                    tx_hash TEXT
+                )''')
+
+                # 2. Control-M Job History (AJF Simulation)
+                self.cursor.execute('''CREATE TABLE IF NOT EXISTS ctm_job_history (
+                    order_id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    job_name TEXT,
+                    job_type TEXT,    -- FW(FileWatcher), CMD, DUMMY
+                    start_time TIMESTAMP,
+                    end_time TIMESTAMP,
+                    status TEXT,      -- OK, NOTOK, EXECUTING
+                    log_output TEXT
+                )''')
+                self.conn.commit()
+
+            def insert_ledger(self, domain, tx_type, user, amount):
+                enc_user = self.sec.encrypt(user)
+                tx_hash = self.sec.get_hash(f"{domain}{user}{amount}{time.time()}")
+                self.cursor.execute("""
+                    INSERT INTO fact_general_ledger (domain, tx_type, user_enc, amount, tx_time, tx_hash)
+                    VALUES (?, ?, ?, ?, datetime('now'), ?)
+                """, (domain, tx_type, enc_user, amount, tx_hash))
                 self.conn.commit()
 
             def execute_backup(self):
-                backup_file = os.path.join(DIRS['BACKUP'], f"FULL_BACKUP_{datetime.now().strftime('%Y%m%d_%H%M%S')}.db")
+                ts = datetime.now().strftime('%Y%m%d_%H%M%S')
+                bk_path = os.path.join(DIRS['BACKUP'], f"FULL_BACKUP_{ts}.db")
                 try:
-                    bck = sqlite3.connect(backup_file)
+                    bck = sqlite3.connect(bk_path)
                     self.conn.backup(bck)
                     bck.close()
-                    return True, backup_file
+                    return True, bk_path
                 except Exception as e:
                     return False, str(e)
 
         # ==========================================
-        # 4. Interface Simulator
+        # 4. Interface Simulator (Multi-Domain)
         # ==========================================
-        class InterfaceSimulator:
-            def gen_card_file(self): self._gen_file('CARD', 'CARD_', ['APPROVAL', 'CARD_LOAN'], 8)
-            def gen_loan_file(self): self._gen_file('LOAN', 'LOAN_', ['NEW_LOAN', 'REPAYMENT'], 4)
-            def gen_core_file(self): self._gen_file('CORE', 'CORE_', ['DEPOSIT', 'WITHDRAW'], 15)
+        class InterfaceGen:
+            def gen_files(self):
+                # 각 도메인별 랜덤 파일 생성
+                for dom in DOMAINS:
+                    if np.random.random() > 0.7: # 30% 확률로 파일 생성 (비동기 시뮬레이션)
+                        self._create_file(dom)
 
-            def _gen_file(self, system, prefix, types, count):
-                timestamp = datetime.now().strftime("%H%M%S")
-                filename = f"{prefix}{timestamp}.dat"
-                path = os.path.join(DIRS[system], filename)
+            def _create_file(self, domain):
+                ts = datetime.now().strftime("%H%M%S")
+                fname = f"{domain}_TX_{ts}.dat"
+                fpath = os.path.join(DIRS['INBOUND'], domain, fname)
+                
+                cnt = np.random.randint(5, 20)
                 data = {
-                    'type': [np.random.choice(types) for _ in range(count)],
-                    'user': [f"User_{np.random.randint(1000,9999)}" for _ in range(count)],
-                    'amount': np.random.randint(1, 100) * 10000
+                    'user': [f"User_{np.random.randint(100,999)}" for _ in range(cnt)],
+                    'type': ['TRX_NORM' for _ in range(cnt)],
+                    'amount': np.random.randint(10, 1000) * 1000
                 }
-                pd.DataFrame(data).to_csv(path, index=False)
-                print(f"📡 [Interface] {system} File Generated: {filename}")
+                pd.DataFrame(data).to_csv(fpath, index=False)
+                # print(f"📡 [IF] {domain} File Arrived: {fname}")
 
         # ==========================================
-        # 5. Batch & CTMFW
+        # 5. Control-M Engine (The Core)
         # ==========================================
-        class BatchJobController:
-            def __init__(self, dw): self.dw = dw
-            
-            def process_common(self, filepath, table, col_map):
-                df = pd.read_csv(filepath)
-                data = []
-                for _, row in df.iterrows():
-                    enc_user = self.dw.sec.encrypt(row['user'])
-                    # 간단한 매핑 로직 시뮬레이션
-                    if table == 'fact_card_tx':
-                        data.append((enc_user, row['type'], 'Merchant_X', row['amount'], datetime.now()))
-                    elif table == 'fact_loan_tx':
-                        rate = 5.0
-                        data.append((enc_user, row['type'], rate, row['amount'], datetime.now()))
-                    elif table == 'fact_core_tx':
-                        bal = 1000000 + row['amount']
-                        data.append((enc_user, row['type'], row['amount'], bal, datetime.now()))
-                
-                placeholders = ','.join(['?'] * len(data[0]))
-                cols = ','.join(col_map)
-                self.dw.cursor.executemany(f"INSERT INTO {table} ({cols}) VALUES ({placeholders})", data)
-                self.dw.conn.commit()
-                return len(data)
-
-        class CTMFW_Engine:
-            def __init__(self, dw, batch):
+        class ControlM_Engine:
+            """
+            Control-M의 Active Job File(AJF) 및 Condition 로직 시뮬레이션
+            """
+            def __init__(self, dw):
                 self.dw = dw
-                self.batch = batch
+                self.conditions = set() # Condition-Pool (선후행 제어용)
+                self.active_jobs = []
+
+            def set_condition(self, cond_name):
+                self.conditions.add(cond_name)
+                # print(f"   [CTM] Condition Added: {cond_name}")
+
+            def check_condition(self, cond_name):
+                return cond_name in self.conditions
+
+            def log_job(self, name, jtype, status, msg):
+                self.dw.cursor.execute("""
+                    INSERT INTO ctm_job_history (job_name, job_type, start_time, end_time, status, log_output)
+                    VALUES (?, ?, datetime('now'), datetime('now'), ?, ?)
+                """, (name, jtype, status, msg))
+                self.dw.conn.commit()
+                print(f"⚙️ [CTM] Job Ended: {name} | Status: {status}")
+
+            # --- Job Types ---
             
-            def watch_files(self):
-                targets = [
-                    ('CARD', DIRS['CARD'], 'fact_card_tx', ['card_no_enc', 'tx_type', 'merchant', 'amount', 'approval_time'], 'JOB_CARD'),
-                    ('LOAN', DIRS['LOAN'], 'fact_loan_tx', ['cust_id_enc', 'loan_type', 'interest_rate', 'amount', 'tx_time'], 'JOB_LOAN'),
-                    ('CORE', DIRS['CORE'], 'fact_core_tx', ['account_enc', 'tx_type', 'amount', 'balance_after', 'tx_time'], 'JOB_CORE')
-                ]
+            def job_ctmfw(self, domain):
+                """File Watcher Job"""
+                job_name = f"FW_{domain}_WATCHER"
+                watch_dir = os.path.join(DIRS['INBOUND'], domain)
+                files = [f for f in os.listdir(watch_dir) if f.endswith('.dat')]
                 
-                for sys, folder, table, cols, job_id in targets:
-                    for f in [x for x in os.listdir(folder) if x.endswith('.dat')]:
-                        src = os.path.join(folder, f)
-                        dst = os.path.join(DIRS['ARCHIVE'], f"{sys}_{f}")
-                        print(f"👁️ [CTMFW] Detected {f} -> Trigger Batch")
+                if files:
+                    # 파일 감지 성공
+                    for f in files:
+                        src = os.path.join(watch_dir, f)
+                        # 배치 작업 트리거 (Job Chain)
+                        self.job_process_batch(domain, src)
                         
-                        try:
-                            cnt = self.batch.process_common(src, table, cols)
-                            status = "SUCCESS"
-                            shutil.move(src, dst)
-                            # 성공 시 백업 트리거
-                            self.dw.execute_backup()
-                        except Exception as e:
-                            status = "FAIL"
-                            print(f"Error: {e}")
-                        
-                        self.dw.cursor.execute("INSERT INTO sys_job_log VALUES (?,?,?,?,?)", 
-                            (job_id, datetime.now(), datetime.now(), status, f))
-                        self.dw.conn.commit()
+                        # 처리 후 Archive 이동
+                        dst = os.path.join(DIRS['ARCHIVE'], f"{domain}_{f}")
+                        shutil.move(src, dst)
+                    
+                    self.set_condition(f"COND_{domain}_FILE_OK")
+                    self.log_job(job_name, "CTMFW", "OK", f"Detected {len(files)} files")
+                else:
+                    # 파일 없음 (Waiting)
+                    pass 
+
+            def job_process_batch(self, domain, filepath):
+                """Data Load & Ledger Process Job"""
+                job_name = f"BATCH_{domain}_LOADER"
+                try:
+                    df = pd.read_csv(filepath)
+                    for _, row in df.iterrows():
+                        self.dw.insert_ledger(domain, row['type'], row['user'], row['amount'])
+                    
+                    self.log_job(job_name, "CMD", "OK", f"Loaded {len(df)} rows")
+                    
+                    # 후행 백업 Job 트리거를 위한 조건 설정 (Trigger)
+                    self.set_condition("COND_DATA_CHANGED")
+                    
+                except Exception as e:
+                    self.log_job(job_name, "CMD", "NOTOK", str(e))
+
+            def job_backup_cyclic(self):
+                """DB Backup Job (Conditional)"""
+                job_name = "JOB_DB_BACKUP"
+                # 조건: 데이터 변경이 감지되었을 때만 수행
+                if self.check_condition("COND_DATA_CHANGED"):
+                    res, path = self.dw.execute_backup()
+                    status = "OK" if res else "NOTOK"
+                    self.log_job(job_name, "CMD", status, path)
+                    
+                    # 조건 초기화 (다음 변경 시까지 대기)
+                    self.conditions.remove("COND_DATA_CHANGED")
+
+            def job_day_close(self):
+                """Daily Closing Job (마감 배치)"""
+                job_name = "JOB_DAY_CLOSE"
+                # 모든 도메인의 파일 처리가 최소 1회 이상 발생했는지 체크
+                # (단순화를 위해 여기서는 Ledger 집계로 대체)
+                print("\n🏁 [CTM] Executing Day Close Batch...")
+                
+                df = pd.read_sql("SELECT domain, sum(amount) as total FROM fact_general_ledger GROUP BY domain", self.dw.conn)
+                if not df.empty:
+                    print(tabulate(df, headers='keys', tablefmt='psql'))
+                
+                self.log_job(job_name, "DUMMY", "OK", "Day Close Complete")
 
         # ==========================================
-        # 6. Main Execution
+        # 6. Main Flow (Scheduler)
         # ==========================================
-        def print_dashboard(dw):
-            print("\n" + "="*60)
-            print(f"   FINANCIAL BATCH DASHBOARD ({datetime.now().strftime('%H:%M:%S')})")
-            print("="*60)
-            df = pd.read_sql("SELECT job_id, status, target_file, end_time FROM sys_job_log ORDER BY end_time DESC LIMIT 5", dw.conn)
-            if not df.empty: print(tabulate(df, headers='keys', tablefmt='psql', showindex=False))
-            else: print("   (No History)")
-            print("\n")
-
         if __name__ == "__main__":
-            print(">> [Init] Financial System Starting (Scripts in /scripts)...")
-            dw = FinancialDW()
-            batch = BatchJobController(dw)
-            ctmfw = CTMFW_Engine(dw, batch)
-            sim = InterfaceSimulator()
+            print(">> [System] Financial Control-M Engine Started (PID: {})".format(os.getpid()))
             
-            schedule.every(3).seconds.do(sim.gen_core_file)
-            schedule.every(6).seconds.do(sim.gen_card_file)
-            schedule.every(10).seconds.do(sim.gen_loan_file)
-            schedule.every(1).seconds.do(ctmfw.watch_files)
-            schedule.every(5).seconds.do(lambda: print_dashboard(dw))
+            dw = EnterpriseDW()
+            ctm = ControlM_Engine(dw)
+            igen = InterfaceGen()
             
-            # 실행 시간 (60초)
-            start = time.time()
-            while time.time() - start < 60:
-                schedule.run_pending()
-                time.sleep(1)
+            # --- Schedule Definition (Job Flow) ---
             
-            print(">> [Shutdown] Saving Final Reports...")
-            for t in ['fact_card_tx', 'fact_loan_tx', 'fact_core_tx', 'sys_job_log']:
+            # 1. Interface Simulator (외부 파일 수신 시뮬레이션)
+            schedule.every(2).seconds.do(igen.gen_files)
+            
+            # 2. File Watchers (5개 도메인 감시 - 병렬 수행)
+            for dom in DOMAINS:
+                schedule.every(1).seconds.do(ctm.job_ctmfw, domain=dom)
+            
+            # 3. Backup Job (Cyclic - 조건부 수행)
+            schedule.every(5).seconds.do(ctm.job_backup_cyclic)
+            
+            # 4. Monitoring Dashboard
+            def show_dash():
+                print(f"\n--- CTM AJF View ({datetime.now().strftime('%H:%M:%S')}) ---")
+                df = pd.read_sql("SELECT job_name, status, end_time FROM ctm_job_history ORDER BY end_time DESC LIMIT 7", dw.conn)
+                if not df.empty: print(tabulate(df, headers='keys', tablefmt='plain'))
+            schedule.every(5).seconds.do(show_dash)
+
+            # --- Execution Loop ---
+            start_ts = time.time()
+            RUN_DURATION = 60 # 60초간 시뮬레이션
+            
+            try:
+                while time.time() - start_ts < RUN_DURATION:
+                    schedule.run_pending()
+                    time.sleep(1)
+            except KeyboardInterrupt:
+                pass
+            
+            # --- Day Close ---
+            ctm.job_day_close()
+            
+            # Final Export
+            print(">> [System] Saving Final Reports...")
+            for t in ['fact_general_ledger', 'ctm_job_history']:
                 pd.read_sql(f"SELECT * FROM {t}", dw.conn).to_excel(f"{DIRS['REPORT']}/{t}.xlsx")
+            print(">> [System] Shutdown Gracefully.")
         EOF
 
-    # [수정됨] scripts 경로의 파일 실행
-    - name: Run Financial System
-      run: python scripts/financial_core.py
+    # 생성된 scripts 폴더 내의 파일 실행
+    - name: Run Control-M Engine
+      run: python scripts/financial_ctm_system.py
 
-    - name: Upload Artifacts
+    - name: Upload Logs & Reports
       uses: actions/upload-artifact@v4
       with:
-        name: Financial-Data-${{ github.run_id }}
+        name: ControlM-Financial-Data-${{ github.run_id }}
         path: |
           DATA/REPORT/
           DATA/BACKUP/
-          DATA/ARCHIVE/
+          DATA/LOGS/
         retention-days: 30
