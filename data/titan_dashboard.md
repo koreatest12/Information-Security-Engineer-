@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 3 days, 16:09:39
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 3 days, 17:02:02
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
 
-> **Q:** 
+> **Q:** 종합 상황 브리핑
 
 관련 정보 없음
 
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.7% | `██████░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 36.2% | `█████░░░░░░░░░░` |
+| **RAM** | `29.7/512 GB` | 5.8% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 대한육상연맹 공식 후원…3년간 국가대표팀 지원 - 아시아경제](https://news.google.com/rss/articles/CBMiX0FVX3lxTE5TNXlxSFM2RkVJZkRSRjZSS3l0MEtBcDBxMnN2bWxPN3oxZEhEMnlIcGFhRU40TEdoaDQ0S2IxSDd5QWg4WTM4amNaQjhJSUlzLVJLRVFYYUtIaGNwdmJr?oc=5)
-- ["2026년 더 좋다"…'반도체 풍향계' 마이크론 '어닝 서프라이즈' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9GQWZSMm5xTFN6c2NVeExRVUJRaDBfMXU3U3Z3c3VYaHJ5bXZIUTJMZTFWbUY0OUlZOEUtdFV1c2gwN3JOOXpDeFVoNC1LLUpfRXZqTmF5YnpzUdIBVEFVX3lxTFBvQnl3NTFhNWdrcURBdENiWTRTOTFwYVJKc1JIbUlFSnJqemFNX2JPMDBKbFlOakRudV9MTGg5MjljMGNfekc0bzhhb3g4U1BrSXBXNg?oc=5)
+- [Today's Pick : "한미약품, 돌고돌아 비만, 돌고돌아 한미" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBKdnZ0cjk3b1p3YmNzXzRwcXU0ZllBSDI2blZRMERiY1VtcEZhUUROVmZyazRtdGZWa3lab3U1V1V1YzBVTTJBMDNmYktvZUwyTnZ1VTBabjZEZ9IBVEFVX3lxTFBCakt6S01OeE5mejFDdXBCSVRjTEc1cm1ubEFiWkdfc2h5Z1VJVS1YaUthYXF2TWk1eHpYcVVfRFdpTExMSkpCTnNaUV9jSndHQ21HOQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
