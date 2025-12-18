@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 4 days, 1:33:12
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 4 days, 1:53:37
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
 
-> **Q:** 종합 상황 브리핑
+> **Q:** 
 
 관련 정보 없음
 
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.2% | `████░░░░░░░░░░░` |
-| **RAM** | `30.7/512 GB` | 6.0% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 43.6% | `██████░░░░░░░░░` |
+| **RAM** | `29.7/512 GB` | 5.8% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융그룹, 대한육상연맹 공식 후원계약 체결 - 지디넷코리아](https://news.google.com/rss/articles/CBMiVkFVX3lxTE1Tc0ctcmFlSlJGNXliVTd3RlBRclpPUmhkbEk0RFUtckNpNDhSUjRaX0N2cy14RE1xNExMRFpydGloNS10VFB5WmJmUTNRZi1oOHZTMmRn?oc=5)
-- [점진적 회복 경로 진입한 한국 경제 - 동아일보](https://news.google.com/rss/articles/CBMiVkFVX3lxTFB4YVRFeVduNkkzc3VoYThGejRRcEh4ZlExcC1yQXFHdGxidW5IVnd3aXh6eWtnWDZKcjEwSmU5eHN0cVlsOGZwLS1IYWNCODZMalVhLWtB?oc=5)
+- ["예금보다 IMA 상품이 낫다" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE40ZlFvNE5zanA1eWtEMUVPdnVzVEZxcndXMVRMSUVoSnVGX2xjN2wtUnF3OURhMU5lMDhwSmFBbGplRHZEMUtOM3FJOVhNOWdERDdmZ2ZGUWJpd9IBVEFVX3lxTE90NjlCcGwybHhCR3l2Tkc2T1RlS1p5RGhfVV90Z2xDT0I1VDJ5ZUJablA3aHZHZUNLdTUyRkFRUW5ueG5waE0yamtFYVBxQWF3MGVuYg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
