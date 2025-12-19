@@ -1,117 +1,107 @@
-name: 🔐 Security DB Master Pipeline V10 (Stash-Fix)
+name: 🚀 Grand Ops V12 (Veritas & Control-M)
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/5 * * * *' # 5분마다 배치 실행 (테스트용)
   workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: false
 
-env:
-  TZ: 'Asia/Seoul'
-  DB_PATH: 'data/grand_ops_secure.db'
-
-permissions:
-  contents: write
-
 jobs:
-  db-master-ops:
+  enterprise-batch-ops:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    permissions:
+      contents: write # Git Push 권한 필수
     
     steps:
-      - name: Checkout Code
+      - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
-          clean: false # 기존 파일 보존
+          fetch-depth: 0 # 전체 히스토리 가져오기 (Rebase용)
 
-      - name: Fix Git Ownership
-        run: git config --global --add safe.directory $GITHUB_WORKSPACE
-
-      - name: Setup Python
+      - name: Setup Enterprise Python Env
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: Run Ops Engine (V10)
+      - name: Install Dependencies
+        run: pip install cryptography
+
+      # [CONTROL-M] 배치 실행
+      - name: Run Control-M Agent (Batch Flow)
         run: |
-          if [ -f scripts/security_db_master.py ]; then
-            python scripts/security_db_master.py
+          if [ -f scripts/grand_master_ops_v12.py ]; then
+            python scripts/grand_master_ops_v12.py
           else
-            # 스크립트가 없을 경우 자동 생성 (복구 모드)
-            echo "⚠️ Script missing, creating dummy for continuity..."
-            mkdir -p data config
-            touch data/grand_ops_secure.db
+            echo "⚠️ Script not found! Check repository structure."
+            exit 1
           fi
 
-      # [DEFENSE] 외부 유출 방지: 로그만 업로드하고 DB는 제외
-      - name: Upload Secure Logs
+      # [VERITAS] 백업 아티팩트 업로드 (DB는 Git에 안올리고 Artifact로 보존)
+      - name: Upload Veritas Vault (Backups)
         uses: actions/upload-artifact@v4
         with:
-          name: execution-logs
-          path: config/*.sig # 서명 파일만 업로드 확인
-          retention-days: 1
+          name: veritas-snapshots
+          path: veritas_vault/*.gz
+          retention-days: 3
 
-      # [CORE FIX] Unstaged Changes Error Solution
-      - name: Smart Sync (Stash & Rebase Protocol)
+      # [CONTROL-M] 실행 로그 업로드
+      - name: Upload Control-M Sysouts
+        uses: actions/upload-artifact@v4
+        with:
+          name: control-m-logs
+          path: ctm_logs/*.log
+
+      # [GIT OPS] 충돌 방지 및 원장 동기화 (Smart Sync V2)
+      - name: Commit & Smart Sync (Stash Strategy)
         run: |
-          # 1. 봇 계정 설정
-          git config --global user.name "DB-Master-Bot"
-          git config --global user.email "bot@grand-ops.com"
+          git config --global user.name "Control-M-Bot"
+          git config --global user.email "bot@grand-ops.enterprise"
           
-          echo "📦 Staging Critical Assets..."
-          # 강제 추가 (-f)로 .gitignore 무시하고 핵심 자산 확보
-          git add -f data/*.db config/*.sig config/*.lock
+          # 1. DB 및 키 파일 강제 스테이징 (중요 데이터)
+          # veritas_vault는 용량이 크므로 gitignore 대상이지만, DB 파일 자체는 동기화
+          git add -f data/*.db config/*.key
           
           # 변경사항 체크
           if [ -z "$(git status --porcelain)" ]; then
-             echo "✅ No critical changes to sync."
+             echo "✅ No ledger updates to sync."
              exit 0
           fi
           
-          # 2. 커밋 (로컬 저장)
-          echo "💾 Committing changes..."
-          git commit -m "ops: auto-maintenance & integrity sign [skip ci]"
+          echo "💾 Committing Ledger Updates..."
+          git commit -m "batch: ledger update & integrity check [skip ci]"
           
-          # 3. [CRITICAL FIX] 잔여 파일 청소 (Stash)
-          # 커밋되지 않은 나머지 파일들(로그, 임시 파일 등)이 Rebase를 방해하지 않도록 치워버림
-          echo "🧹 Stashing leftover debris to allow Clean Rebase..."
+          # 2. [CORE] Stash로 잔여 파일(로그, 백업본 등) 치우기 -> 충돌 방지
+          echo "🧹 Stashing workspace debris..."
           git stash --include-untracked
           
-          # 4. 동기화 루프 (Rebase Loop)
-          MAX_RETRIES=5
-          DELAY=5
+          # 3. Rebase & Push Loop
+          MAX_RETRIES=10
           COUNT=0
           SUCCESS=false
           
           while [ $COUNT -lt $MAX_RETRIES ]; do
-            echo "🔄 Sync Attempt $((COUNT+1))/$MAX_RETRIES..."
+            echo "🔄 Sync Attempt $((COUNT+1))..."
             
-            # 깨끗한 상태에서 Rebase 시도
             if git pull --rebase origin main; then
-                echo "  ✅ Pull (Rebase) successful."
-                
-                # Push 시도
                 if git push origin main; then
-                    echo "🚀 Push successful!"
+                    echo "🚀 Sync Successful!"
                     SUCCESS=true
                     break
                 else
-                    echo "  ⚠️ Push failed (Remote moved). Retrying..."
+                    echo "⚠️ Push failed. Retrying..."
                 fi
             else
-                echo "  ⚠️ Rebase failed (Conflict?). Aborting and retrying..."
+                echo "⚠️ Pull(Rebase) failed. Aborting & Retrying..."
                 git rebase --abort || true
             fi
-            
-            sleep $DELAY
+            sleep 3
             COUNT=$((COUNT+1))
           done
           
           if [ "$SUCCESS" = false ]; then
-            echo "❌ Sync Failed. Forcing reset to protect local DB next run."
+            echo "❌ Sync Failed after retries."
             exit 1
           fi
