@@ -1,19 +1,20 @@
-name: Hyper-Scale DB Cluster & Omni-Backup
+name: Ultimate Korea Financial Platform
 
 on:
   schedule:
-    - cron: '0 2 * * *' # 매일 새벽 2시 대규모 백업
+    - cron: '0 17 * * *' # 한국 시간 02:00 (UTC 17:00) 통합 배치
   workflow_dispatch:
 
 jobs:
-  run-db-cluster-ops:
+  run-unified-financial-system:
     runs-on: ubuntu-latest
     permissions:
       contents: write
       actions: read
-    
+      checks: write
+
     steps:
-    - name: Checkout Code
+    - name: Checkout Repository
       uses: actions/checkout@v4
 
     - name: Set up Python 3.11
@@ -21,14 +22,14 @@ jobs:
       with:
         python-version: '3.11'
 
-    - name: Install Libraries
+    - name: Install Enterprise Dependencies
       run: |
-        pip install pandas numpy cryptography schedule tabulate psutil
+        pip install pandas numpy cryptography schedule tabulate psutil openpyxl networkx
 
-    - name: Generate DB Cluster Script
+    - name: Deploy Unified System Engine
       run: |
         mkdir -p scripts
-        cat << 'EOF' > scripts/db_cluster_ops.py
+        cat << 'EOF' > scripts/unified_fin_system.py
         import os
         import time
         import sqlite3
@@ -36,210 +37,303 @@ jobs:
         import schedule
         import pandas as pd
         import numpy as np
-        import zipfile
+        import networkx as nx
         import concurrent.futures
         from datetime import datetime
         from cryptography.fernet import Fernet
         from tabulate import tabulate
 
         # ==========================================
-        # 1. Infrastructure Configuration
+        # 1. Global Configuration (Infrastructure)
         # ==========================================
         BASE_DIR = os.getcwd()
-        CLUSTER_ROOT = os.path.join(BASE_DIR, 'DB_CLUSTER')
-        BACKUP_ROOT = os.path.join(BASE_DIR, 'BACKUP_CENTER')
         
+        # [디렉토리 통합 정의]
         DIRS = {
-            'INSTALL_LOG': os.path.join(BASE_DIR, 'LOGS/INSTALL'),
+            # 시스템 로그 및 설정
+            'LOGS_INSTALL': os.path.join(BASE_DIR, 'LOGS/INSTALL'),
+            'LOGS_CTM': os.path.join(BASE_DIR, 'LOGS/CTM'),
+            
+            # DB 클러스터 및 데이터
+            'DB_CLUSTER': os.path.join(BASE_DIR, 'INFRA/DB_CLUSTER'),
+            'DATA_CORE': os.path.join(BASE_DIR, 'DATA/CORE_BANK'),
+            'DATA_CARD': os.path.join(BASE_DIR, 'DATA/CARD_NET'),
+            'DATA_STOCK': os.path.join(BASE_DIR, 'DATA/CAPITAL'),
+            
+            # ETL 및 DW
             'ETL_SOURCE': os.path.join(BASE_DIR, 'DATA/SOURCE'),
-            'ETL_TARGET': os.path.join(BASE_DIR, 'DATA/WAREHOUSE'),
-            'SQL_DUMPS': os.path.join(BACKUP_ROOT, 'SQL_DUMPS'),
-            'SNAPSHOTS': os.path.join(BACKUP_ROOT, 'SNAPSHOTS'),
-            'TRANSACTION_LOGS': os.path.join(BACKUP_ROOT, 'T_LOGS')
+            'ETL_WAREHOUSE': os.path.join(BASE_DIR, 'DATA/WAREHOUSE'),
+            
+            # 백업 센터
+            'BACKUP_SQL': os.path.join(BASE_DIR, 'BACKUP/SQL_DUMPS'),
+            'BACKUP_SNAP': os.path.join(BASE_DIR, 'BACKUP/SNAPSHOTS'),
+            'BACKUP_TLOG': os.path.join(BASE_DIR, 'BACKUP/T_LOGS'),
+            
+            # 리포트
+            'REPORTS': os.path.join(BASE_DIR, 'REPORTS')
         }
 
-        # 시뮬레이션할 DB 벤더 목록
+        # 시뮬레이션 타겟 벤더
         TARGET_VENDORS = ['ORACLE_19c', 'MSSQL_2022', 'POSTGRES_15', 'MYSQL_8', 'MONGODB_6']
 
+        # 초기화
         for d in DIRS.values():
             os.makedirs(d, exist_ok=True)
-            
+
         # ==========================================
-        # 2. Parallel DB Mass Installer (Factory Pattern)
+        # 2. Control-M Orchestration Engine
+        # ==========================================
+        class ControlM_Enterprise:
+            def __init__(self):
+                self.job_status = {}
+                self.dag = nx.DiGraph()
+                
+            def define_job(self, job_name, func, depends_on=None):
+                self.job_status[job_name] = "WAITING"
+                self.dag.add_node(job_name, cmd=func)
+                if depends_on:
+                    for parent in depends_on:
+                        self.dag.add_edge(parent, job_name)
+            
+            def run_flow(self):
+                print(f"\n🎮 [Control-M] Starting Unified Batch Flow...")
+                try:
+                    order = list(nx.topological_sort(self.dag))
+                except:
+                    print("🚨 [Control-M] Cycle Detected! Aborting.")
+                    return
+
+                for job in order:
+                    # 종속성 체크
+                    parents = list(self.dag.predecessors(job))
+                    if not all(self.job_status[p] == "ENDED_OK" for p in parents):
+                        print(f"   ⛔ [Skip] {job} (Dependency Failed)")
+                        self.job_status[job] = "ENDED_NOTOK"
+                        continue
+
+                    # 실행
+                    print(f"   ▶️ [Start] {job} ...")
+                    self.job_status[job] = "RUNNING"
+                    start = time.time()
+                    try:
+                        res = self.dag.nodes[job]['cmd']()
+                        sec = time.time() - start
+                        self.job_status[job] = "ENDED_OK"
+                        print(f"      ✅ [OK] {job} ({sec:.2f}s) - {res}")
+                        
+                        # 감사 로그
+                        with open(f"{DIRS['LOGS_CTM']}/job_history.log", "a") as f:
+                            f.write(f"{datetime.now()}|{job}|ENDED_OK|{res}\n")
+                    except Exception as e:
+                        self.job_status[job] = "ENDED_NOTOK"
+                        print(f"      ❌ [FAIL] {job} - {e}")
+
+        # ==========================================
+        # 3. DB Cluster Manager (Mass Installer)
         # ==========================================
         class DBClusterManager:
             def __init__(self):
                 self.installed_dbs = []
 
-            def _install_simulation(self, vendor_name):
-                """개별 DB 설치 프로세스 시뮬레이션"""
-                install_dir = os.path.join(CLUSTER_ROOT, vendor_name)
-                os.makedirs(install_dir, exist_ok=True)
-                
-                # 로그 기록
-                log_file = os.path.join(DIRS['INSTALL_LOG'], f"{vendor_name}_install.log")
-                with open(log_file, "w") as f:
-                    f.write(f"[{datetime.now()}] Starting Installation for {vendor_name}...\n")
-                    time.sleep(np.random.uniform(0.5, 1.5)) # 설치 시간 시뮬레이션
-                    
-                    # 설정 파일 생성 (Mock)
-                    with open(os.path.join(install_dir, "config.ini"), "w") as cf:
-                        cf.write(f"DB_NAME={vendor_name}\nPORT={np.random.randint(1000,9999)}\nMAX_CONN=5000")
-                    
-                    f.write(f"[{datetime.now()}] Configuration generated.\n")
-                    f.write(f"[{datetime.now()}] Service Started Successfully.\n")
-                
-                return f"✅ {vendor_name} Installed & Started"
+            def _install_one(self, vendor):
+                p = os.path.join(DIRS['DB_CLUSTER'], vendor)
+                os.makedirs(p, exist_ok=True)
+                # Config Mock
+                with open(os.path.join(p, 'init.ora'), 'w') as f:
+                    f.write(f"DB_NAME={vendor}\nMEMORY=16G")
+                return f"{vendor} Ready"
 
-            def mass_install(self):
-                """[대량 설치] 멀티 스레딩을 이용한 병렬 설치 수행"""
-                print(f"\n🚀 [Installer] Starting Mass Deployment for {len(TARGET_VENDORS)} DB Clusters...")
-                
-                # 병렬 처리로 동시 설치 진행
-                with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
-                    futures = [executor.submit(self._install_simulation, vendor) for vendor in TARGET_VENDORS]
-                    
-                    for future in concurrent.futures.as_completed(futures):
-                        print(future.result())
-                        
+            def job_mass_install(self):
+                """[Infrastructure] 5대 DB 병렬 설치"""
+                with concurrent.futures.ThreadPoolExecutor(max_workers=5) as exc:
+                    futures = [exc.submit(self._install_one, v) for v in TARGET_VENDORS]
+                    for f in concurrent.futures.as_completed(futures):
+                        pass 
                 self.installed_dbs = TARGET_VENDORS
-                print(f"✨ [Installer] All Systems Operational.\n")
+                return f"Deployed {len(TARGET_VENDORS)} DB Clusters"
 
         # ==========================================
-        # 3. Secure ETL Pipeline
+        # 4. Korea Financial Business Logic
         # ==========================================
-        class HyperScaleETL:
+        class KoreaFinancialSystem:
             def __init__(self):
                 self.key = Fernet.generate_key()
                 self.cipher = Fernet(self.key)
-                self.dw_path = os.path.join(DIRS['ETL_TARGET'], 'master_dw.db')
-                self._init_dw()
+                self.ledger_path = os.path.join(BASE_DIR, 'korea_main_ledger.db')
+                self._init_db()
 
-            def _init_dw(self):
-                conn = sqlite3.connect(self.dw_path)
+            def _init_db(self):
+                conn = sqlite3.connect(self.ledger_path)
                 conn.execute("PRAGMA journal_mode=WAL")
-                conn.execute('''CREATE TABLE IF NOT EXISTS integrated_ledger (
-                    id INTEGER PRIMARY KEY, source_system TEXT, 
-                    enc_payload TEXT, amount REAL, created_at TIMESTAMP)''')
+                conn.execute('''CREATE TABLE IF NOT EXISTS tx_ledger (
+                    tx_id TEXT, domain TEXT, code TEXT, 
+                    enc_acc TEXT, amount INT, timestamp DATETIME)''')
                 conn.close()
 
-            def encrypt_transform_load(self):
-                """데이터 생성 -> 암호화(Transform) -> 적재(Load)"""
-                # 1. 가상 데이터 생성 (Source)
-                source_file = os.path.join(DIRS['ETL_SOURCE'], f"batch_{int(time.time())}.csv")
+            def _save(self, df):
+                conn = sqlite3.connect(self.ledger_path)
+                df.to_sql('tx_ledger', conn, if_exists='append', index=False)
+                conn.close()
+
+            def job_core_banking(self):
+                """[Biz] 수신/여신/이체 처리"""
+                cnt = 3000
                 df = pd.DataFrame({
-                    'sys': np.random.choice(TARGET_VENDORS, 100),
-                    'val': np.random.rand(100) * 10000
+                    'tx_id': [f"TX_CORE_{i}" for i in range(cnt)],
+                    'domain': 'CORE',
+                    'code': np.random.choice(['DEPOSIT', 'WITHDRAW', 'TRANSFER'], cnt),
+                    'enc_acc': [self.cipher.encrypt(f"ACC_{i}".encode()).decode() for i in range(cnt)],
+                    'amount': np.random.randint(1000, 1000000, cnt),
+                    'timestamp': datetime.now()
                 })
-                df.to_csv(source_file, index=False)
+                self._save(df)
+                return f"Processed {cnt} Core Tx"
 
-                # 2. ETL 수행
-                data_list = []
-                for _, row in df.iterrows():
-                    # 중요 데이터 암호화
-                    enc_val = self.cipher.encrypt(str(row['val']).encode()).decode()
-                    data_list.append((row['sys'], enc_val, row['val']))
+            def job_card_approval(self):
+                """[Biz] 카드 승인 및 매입"""
+                cnt = 5000
+                df = pd.DataFrame({
+                    'tx_id': [f"TX_CARD_{i}" for i in range(cnt)],
+                    'domain': 'CARD',
+                    'code': 'APPROVAL',
+                    'enc_acc': [self.cipher.encrypt(f"CARD_{i}".encode()).decode() for i in range(cnt)],
+                    'amount': np.random.randint(500, 50000, cnt),
+                    'timestamp': datetime.now()
+                })
+                self._save(df)
+                return f"Settled {cnt} Card Tx"
 
-                # 3. Load to DW
-                conn = sqlite3.connect(self.dw_path)
-                conn.executemany("INSERT INTO integrated_ledger (source_system, enc_payload, amount, created_at) VALUES (?, ?, ?, datetime('now'))", data_list)
-                conn.commit()
-                conn.close()
-                print(f"⚙️ [ETL] Processed 100 records into Master DW.")
+            def job_stock_trading(self):
+                """[Biz] 주식 체결"""
+                cnt = 2000
+                df = pd.DataFrame({
+                    'tx_id': [f"TX_STK_{i}" for i in range(cnt)],
+                    'domain': 'STOCK',
+                    'code': np.random.choice(['BUY', 'SELL'], cnt),
+                    'enc_acc': [self.cipher.encrypt(f"STK_{i}".encode()).decode() for i in range(cnt)],
+                    'amount': np.random.randint(10000, 2000000, cnt),
+                    'timestamp': datetime.now()
+                })
+                self._save(df)
+                return f"Executed {cnt} Trades"
 
         # ==========================================
-        # 4. Universal Backup System (Vendor Specific)
+        # 5. Secure ETL & Warehouse
+        # ==========================================
+        class HyperScaleETL:
+            def __init__(self, fin_sys):
+                self.fin = fin_sys
+                self.dw_path = os.path.join(DIRS['ETL_WAREHOUSE'], 'master_dw.db')
+                
+            def job_etl_pipeline(self):
+                """[ETL] 원장 데이터 추출 -> 변환 -> DW 적재"""
+                src_conn = sqlite3.connect(self.fin.ledger_path)
+                df = pd.read_sql("SELECT * FROM tx_ledger", src_conn)
+                src_conn.close()
+                
+                if df.empty: return "No Data to Load"
+                
+                # Transform (집계)
+                agg = df.groupby(['domain', 'code'])['amount'].sum().reset_index()
+                agg['batch_time'] = datetime.now()
+                
+                # Load
+                tgt_conn = sqlite3.connect(self.dw_path)
+                agg.to_sql('daily_summary', tgt_conn, if_exists='append', index=False)
+                tgt_conn.close()
+                
+                return f"Loaded {len(df)} rows into DW Summary"
+
+        # ==========================================
+        # 6. Universal Omni-Backup
         # ==========================================
         class UniversalBackupAgent:
-            def __init__(self, db_manager, etl_engine):
-                self.db_manager = db_manager
-                self.etl = etl_engine
-
-            def run_vendor_specific_backup(self):
-                """각 DB 특성에 맞는 백업 방식 자동 적용"""
-                print(f"\n🛡️ [Backup] Executing Multi-Vendor Backup Strategies...")
+            def __init__(self, db_mgr, fin_sys):
+                self.db_mgr = db_mgr
+                self.fin_sys = fin_sys
                 
-                for vendor in self.db_manager.installed_dbs:
-                    ts = datetime.now().strftime("%H%M%S")
-                    
-                    # 1. Oracle: RMAN 시뮬레이션 (증분 백업)
+            def job_backup_all(self):
+                """[Backup] 인프라 및 데이터 전체 백업"""
+                ts = datetime.now().strftime("%H%M%S")
+                results = []
+                
+                # 1. Vendor DB 백업 (Cluster)
+                for vendor in self.db_mgr.installed_dbs:
                     if 'ORACLE' in vendor:
-                        fname = f"RMAN_L0_{vendor}_{ts}.bkp"
-                        path = os.path.join(DIRS['SNAPSHOTS'], fname)
-                        with open(path, 'w') as f: f.write("ORACLE BLOCK DATA...")
-                        print(f"   ↳ [Oracle] RMAN Level-0 Backup: {fname}")
-
-                    # 2. MSSQL: Transaction Log Backup
+                        fname = f"RMAN_{vendor}_{ts}.bkp"
+                        path = os.path.join(DIRS['BACKUP_SNAP'], fname)
+                        with open(path, 'w') as f: f.write("ORACLE RMAN DATA")
+                        results.append(f"Oracle RMAN: {fname}")
                     elif 'MSSQL' in vendor:
-                        fname = f"{vendor}_TLOG_{ts}.trn"
-                        path = os.path.join(DIRS['TRANSACTION_LOGS'], fname)
-                        with open(path, 'w') as f: f.write("Transaction Logs...")
-                        print(f"   ↳ [MSSQL] Transaction Log Backup: {fname}")
-
-                    # 3. Open Source DB: Logical SQL Dump
-                    else:
-                        fname = f"DUMP_{vendor}_{ts}.sql"
-                        path = os.path.join(DIRS['SQL_DUMPS'], fname)
-                        with open(path, 'w') as f: 
-                            f.write(f"-- SQL DUMP FOR {vendor}\nINSERT INTO ...")
-                        print(f"   ↳ [{vendor.split('_')[0]}] SQL Export: {fname}")
-
-            def backup_etl_warehouse(self):
-                """ETL 완료된 마스터 DW 백업"""
-                src = self.etl.dw_path
-                dst = os.path.join(DIRS['SNAPSHOTS'], f"MASTER_DW_FULL_{int(time.time())}.db")
-                if os.path.exists(src):
-                    shutil.copy2(src, dst)
-                    print(f"📦 [DW] Master Warehouse Snapshot Created.")
+                        fname = f"TLOG_{vendor}_{ts}.trn"
+                        path = os.path.join(DIRS['BACKUP_TLOG'], fname)
+                        with open(path, 'w') as f: f.write("MSSQL T-LOG")
+                        results.append(f"MSSQL T-Log: {fname}")
+                
+                # 2. 금융 원장 DB 백업
+                ledger_bk = os.path.join(DIRS['BACKUP_SNAP'], f"LEDGER_FULL_{ts}.db")
+                shutil.copy2(self.fin_sys.ledger_path, ledger_bk)
+                results.append("Ledger DB Backed up")
+                
+                return " / ".join(results)
 
         # ==========================================
-        # 5. Main Execution Loop
+        # 7. Main Execution (Workflow Definition)
         # ==========================================
         if __name__ == "__main__":
-            print(">> [Init] Initializing Hyper-Scale DB Automation System...")
+            print(">> [System] Booting Ultimate Korea Financial Platform...")
             
-            # 1. 인스턴스 생성
-            cluster = DBClusterManager()
-            etl = HyperScaleETL()
-            backup_system = UniversalBackupAgent(cluster, etl)
-
-            # 2. 대량 DB 설치 수행 (최초 1회)
-            cluster.mass_install()
-
-            # 3. 스케줄러 등록
-            # - 2초마다 ETL 작업
-            schedule.every(2).seconds.do(etl.encrypt_transform_load)
+            # 인스턴스 초기화
+            ctm = ControlM_Enterprise()
+            db_cluster = DBClusterManager()
+            fin_sys = KoreaFinancialSystem()
+            etl = HyperScaleETL(fin_sys)
+            backup = UniversalBackupAgent(db_cluster, fin_sys)
             
-            # - 5초마다 벤더별 맞춤형 백업
-            schedule.every(5).seconds.do(backup_system.run_vendor_specific_backup)
+            # --- [Control-M Job Definition] ---
             
-            # - 8초마다 DW 전체 스냅샷
-            schedule.every(8).seconds.do(backup_system.backup_etl_warehouse)
-
-            # 4. 실행 (60초 시뮬레이션)
-            print(">> [Scheduler] Starting Operation Loop...")
-            start_time = time.time()
-            while time.time() - start_time < 60:
-                schedule.run_pending()
-                time.sleep(1)
-
-            # 5. 최종 리포트
-            print("\n>> [Report] Generating Final Status Report...")
-            conn = sqlite3.connect(etl.dw_path)
-            df_report = pd.read_sql("SELECT source_system, count(*) as tx_count, sum(amount) as total_amt FROM integrated_ledger GROUP BY source_system", conn)
-            print(tabulate(df_report, headers='keys', tablefmt='psql'))
-            conn.close()
-            print(">> System Shutdown.")
+            # 1. 인프라 준비 (가장 먼저 수행)
+            ctm.define_job("INFRA_DB_INSTALL", db_cluster.job_mass_install)
+            
+            # 2. 금융 거래 비즈니스 로직 (인프라 완료 후 병렬 실행)
+            ctm.define_job("BIZ_CORE_BANK", fin_sys.job_core_banking, depends_on=["INFRA_DB_INSTALL"])
+            ctm.define_job("BIZ_CARD_APPR", fin_sys.job_card_approval, depends_on=["INFRA_DB_INSTALL"])
+            ctm.define_job("BIZ_STOCK_TRD", fin_sys.job_stock_trading, depends_on=["INFRA_DB_INSTALL"])
+            
+            # 3. ETL (모든 거래 종료 후 실행)
+            ctm.define_job("DATA_ETL_LOAD", etl.job_etl_pipeline, 
+                           depends_on=["BIZ_CORE_BANK", "BIZ_CARD_APPR", "BIZ_STOCK_TRD"])
+            
+            # 4. 백업 (ETL 완료 후 실행)
+            ctm.define_job("SYS_FULL_BACKUP", backup.job_backup_all, depends_on=["DATA_ETL_LOAD"])
+            
+            # 5. 리포팅 (최종)
+            def job_final_report():
+                conn = sqlite3.connect(etl.dw_path)
+                df = pd.read_sql("SELECT * FROM daily_summary", conn)
+                path = f"{DIRS['REPORTS']}/Final_EOD_Report.xlsx"
+                df.to_excel(path)
+                conn.close()
+                return "Report Generated"
+                
+            ctm.define_job("RPT_EOD_GEN", job_final_report, depends_on=["SYS_FULL_BACKUP"])
+            
+            # --- [Execution Trigger] ---
+            # 실제 운영 환경에선 스케줄러가 트리거하지만, 여기선 즉시 실행
+            ctm.run_flow()
+            
+            print("\n>> [System] Unified Workflow Completed Successfully.")
         EOF
 
-    - name: Run DB Automation
-      run: python scripts/db_cluster_ops.py
+    - name: Run Unified Platform
+      run: python scripts/unified_fin_system.py
 
-    - name: Upload All Backup Artifacts
+    - name: Upload Enterprise Artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: DB-Backup-Set-${{ github.run_id }}
+        name: K-FinHub-Enterprise-Data-${{ github.run_id }}
         path: |
-          BACKUP_CENTER/
+          REPORTS/
           LOGS/
-        retention-days: 30
+          BACKUP/
+        retention-days: 90
