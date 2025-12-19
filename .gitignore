@@ -7,6 +7,3 @@ coverage
 data/*
 !data/*.db
 !data/*.sql
-!data/grand_ops_secure.db
-!config/*.sig
-!config/*.lock
