@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-19 17:16:40 (KST)
+> **Time:** 2025-12-19 17:46:45 (KST)
 
-### 🤖 Copilot Briefing (17:16)
+### 🤖 Copilot Briefing (17:46)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [유니온바이오메트릭스, ‘AI 서비스 개인정보보호 프레임워크 국가 표준 개발 참여](http://www.boannews.com/media/view.asp?idx=141083&kind=&sub_kind=)
-- [“폴더만 열어도 털린다” 북한, VS코드 개발환경 노려 암호화폐 탈취 공격](http://www.boannews.com/media/view.asp?idx=141078&kind=&sub_kind=)
-- [“보안도 성적표가 필요합니다”... 망분리 규제 해법, ‘70점’에서 찾다](http://www.boannews.com/media/view.asp?idx=141059&kind=&sub_kind=)
+- [[IP인사] 지식재산처](http://www.boannews.com/media/view.asp?idx=141089&kind=&sub_kind=)
+- [특허정보원, 데이터산업진흥원과 맞손...‘데이터 활용 지원’ 업무협약](http://www.boannews.com/media/view.asp?idx=141088&kind=&sub_kind=)
+- [지식재산처·KAIST·특허법원, 3자 MOU 체결...IP 경쟁력 강화 모색](http://www.boannews.com/media/view.asp?idx=141087&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.5%)
-- **RAM:** `31.7/512 GB` (Used: 6.2%)
+- **vCPU:** `128 vCores` (Load: 39.7%)
+- **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
