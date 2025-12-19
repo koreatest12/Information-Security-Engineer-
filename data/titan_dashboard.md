@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 4 days, 23:55:45
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 5 days, 0:02:28
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
 
-> **Q:** 종합 상황 브리핑
+> **Q:** 
 
 관련 정보 없음
 
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.2% | `█████░░░░░░░░░░` |
-| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 43.6% | `██████░░░░░░░░░` |
+| **RAM** | `30.2/512 GB` | 5.9% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 배우 장나라와 '유기동물 보호' 동참 - sedaily.com](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5KbjVPVWhCWHVHVzdJMU13dHNqR2RLSnpVUlV5SHlfS01uVkZROXhtaDY1Tm5XdG1JSGFsSzVmVXIweTZnamNkQk5HdDRqaGVFUjlPSkF30gFXQVVfeXFMT3k4WktXTkhNOElVajVwUW5DdTVtQk5vVG1kTWQ1VG11VWxwbmdNTG55YUNnUzNqb1BrQl9nZi1pQ0kxRDZrUFJSZG5rMThGVDdzMmtrQ0lj?oc=5)
-- [구윤철 “관세협상, 한국 경제 발전 기회 삼을 것” - 데일리안 미디어](https://news.google.com/rss/articles/CBMiV0FVX3lxTE92dm1YV3RsYm50NjVPUFc2Zi15RzZwWWpyMktibDZ0WVh0cEl5eGUtdjdNY21jQkw4dnVnX3hfeDZjZGhmLUUwTHBhNXVkeU02QUFNa3FNcw?oc=5)
+- ['제2의 스티브 유'…군대 안 가려고 마흔살까지 버틴 男 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5wcDNHVGc2XzY2YVkxMzJyak9OemNJVEJ3QWxQUl8weDZnaUl4T2c5WUc1N1ByRlFJdnYtQlUtSm0wRFlCU0xIX3lrdWtZdE0?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
