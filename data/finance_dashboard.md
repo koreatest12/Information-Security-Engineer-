@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-19 11:48:01 (KST)
+> **Time:** 2025-12-19 12:49:48 (KST)
 
-### 🤖 Copilot Briefing (11:48)
+### 🤖 Copilot Briefing (12:49)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -22,8 +22,8 @@
 - [포티게이트 노린 악성 SSO 로그인 탐지… 실제 침입 사례 다수](http://www.boannews.com/media/view.asp?idx=141062&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.1%)
-- **RAM:** `32.3/512 GB` (Used: 6.3%)
+- **vCPU:** `128 vCores` (Load: 39.9%)
+- **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
