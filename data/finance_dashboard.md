@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-19 13:51:50 (KST)
+> **Time:** 2025-12-19 14:14:48 (KST)
 
-### 🤖 Copilot Briefing (13:51)
+### 🤖 Copilot Briefing (14:14)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [트럼프, 美 사이버안보 새 사령탑에 조슈아 러드 중장 낙점](http://www.boannews.com/media/view.asp?idx=141075&kind=&sub_kind=)
+- [휴대폰 개통에 안면인증 도입... 시범사업 거쳐 내년 3월 정식 도입](http://www.boannews.com/media/view.asp?idx=141076&kind=&sub_kind=)
 - [[카드뉴스] 재난이 많아질수록 커지는 ‘재난 사이버 공격’, 우리는 준비돼 있을까?](http://www.boannews.com/media/view.asp?idx=141074&kind=&sub_kind=)
-- [영상분석 AI로 관제 혁신 이끈 인텔리빅스, 아시아AI대상 중기부 장관상 수상](http://www.boannews.com/media/view.asp?idx=141072&kind=&sub_kind=)
-- [트루엔 이글루 홈캠(S8), ‘PbD 인증’ 획득](http://www.boannews.com/media/view.asp?idx=141071&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.0%)
-- **RAM:** `32.3/512 GB` (Used: 6.3%)
+- **vCPU:** `128 vCores` (Load: 40.3%)
+- **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
