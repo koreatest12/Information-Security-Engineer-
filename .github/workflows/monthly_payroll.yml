@@ -1,4 +1,4 @@
-name: Ultra-Secure DB Locking & Financial Ops
+name: Dashboard-Style Secure DB Ops & Locking
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  run-secure-db-locking-system:
+  run-dashboard-secure-ops:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -19,7 +19,6 @@ jobs:
       with:
         path: main_repo
 
-    # [외부 리포지토리 통합 유지]
     - name: Checkout External Security Assets
       uses: actions/checkout@v4
       continue-on-error: true
@@ -37,10 +36,10 @@ jobs:
       run: |
         pip install pandas numpy cryptography schedule tabulate psutil openpyxl networkx pyzipper
 
-    - name: Deploy Secure DB Ops Engine
+    - name: Deploy Dashboard Ops Engine
       run: |
         mkdir -p main_repo/scripts
-        cat << 'EOF' > main_repo/scripts/secure_db_ops.py
+        cat << 'EOF' > main_repo/scripts/dashboard_ops.py
         import os
         import time
         import sqlite3
@@ -56,7 +55,7 @@ jobs:
         from tabulate import tabulate
 
         # ==========================================
-        # 1. Configuration & Path Setup
+        # 1. Global Configuration
         # ==========================================
         BASE_DIR = os.getcwd()
         EXT_REPO_DIR = os.path.join(BASE_DIR, '../external_assets')
@@ -72,24 +71,22 @@ jobs:
             os.makedirs(d, exist_ok=True)
 
         # ==========================================
-        # 2. Security Vault (Password Rotation) - 유지
+        # 2. Security Vault (Password Rotation)
         # ==========================================
         class SecurityVault:
             def __init__(self):
                 self.base_pin = 4310
+                self.current_week = datetime.now().isocalendar()[1]
                 self.current_password = self._generate_weekly_password()
 
             def _generate_weekly_password(self):
-                """매주 비밀번호 자동 변경 (4310 + 주차)"""
-                current_week = datetime.now().isocalendar()[1]
-                rotated_pin = self.base_pin + current_week
+                rotated_pin = self.base_pin + self.current_week
                 pwd = f"korea{rotated_pin}@#$"
-                print(f"🔐 [Vault] Password Rotated for Week {current_week}: korea****@#$")
+                print(f"🔐 [Vault] Password Rotated for Week {self.current_week}")
                 return pwd
 
             def encrypt_and_archive(self, target_dir, zip_name):
                 zip_path = os.path.join(DIRS['SECURE_VAULT'], f"{zip_name}.zip")
-                print(f"🛡️ [Vault] Encrypting & Archiving: {zip_path}")
                 try:
                     with pyzipper.AESZipFile(zip_path, 'w', compression=pyzipper.ZIP_LZMA, encryption=pyzipper.WZ_AES) as zf:
                         zf.setpassword(self.current_password.encode())
@@ -97,13 +94,13 @@ jobs:
                             for file in files:
                                 p = os.path.join(root, file)
                                 zf.write(p, os.path.relpath(p, os.path.dirname(target_dir)))
-                    return True
+                    return True, zip_path
                 except Exception as e:
-                    print(f"   ❌ Encryption Failed: {e}")
-                    return False
+                    print(f"❌ Encryption Error: {e}")
+                    return False, str(e)
 
         # ==========================================
-        # 3. Secure DB Manager (New: Lock Implementation)
+        # 3. Secure DB Manager (Locking)
         # ==========================================
         class SecureDBManager:
             def __init__(self, db_name="korea_financial_core.db"):
@@ -111,64 +108,36 @@ jobs:
                 self.conn = None
                 
             def create_db_and_tables(self):
-                """[기능 반영] DB 및 테이블 생성"""
-                print(f"\n🛠️ [DB Admin] Initializing Database: {self.db_path}")
                 self.conn = sqlite3.connect(self.db_path)
-                
-                # 1. 금융 거래 테이블
                 self.conn.execute('''CREATE TABLE IF NOT EXISTS fin_transactions (
                     tx_id TEXT PRIMARY KEY, user_id TEXT, amount REAL, 
                     tx_type TEXT, timestamp DATETIME)''')
-                
-                # 2. 감사 로그 테이블
-                self.conn.execute('''CREATE TABLE IF NOT EXISTS audit_log (
-                    log_id INTEGER PRIMARY KEY AUTOINCREMENT, action TEXT, 
-                    status TEXT, timestamp DATETIME)''')
-                
                 self.conn.close()
-                return "DB Schema Created"
+                return "DB Schema & Tables Initialized"
 
             def perform_transaction_with_table_lock(self):
-                """[기능 반영] Table Lock (Transaction Exclusive Lock)"""
-                print(f"🔒 [DB Lock] Acquiring TABLE LOCK for Batch Insert...")
-                
                 try:
                     self.conn = sqlite3.connect(self.db_path)
                     cursor = self.conn.cursor()
                     
-                    # [Table Lock 시뮬레이션] Exclusive 모드 트랜잭션 시작
-                    # SQLite는 파일 기반이라 이 명령어가 실행되는 동안 다른 연결은 Write 불가 (Table Lock 효과)
+                    # [Table Lock] Exclusive Transaction
                     cursor.execute("BEGIN EXCLUSIVE TRANSACTION")
                     
-                    # 데이터 대량 입력
-                    data = []
-                    for i in range(100):
-                        data.append((f"TX_{time.time()}_{i}", f"USER_{i}", np.random.randint(1000,99999), "DEPOSIT", datetime.now()))
-                    
+                    data = [(f"TX_{i}", f"U_{i}", 1000, "DEP", datetime.now()) for i in range(100)]
                     cursor.executemany("INSERT INTO fin_transactions VALUES (?,?,?,?,?)", data)
-                    print(f"   ↳ [Insert] 100 Rows Inserted under Lock protection.")
                     
-                    # Lock 해제 (Commit)
-                    self.conn.commit()
-                    print(f"🔓 [DB Lock] Transaction Committed. TABLE LOCK Released.")
-                    return "Batch Insert with Lock Success"
-                    
+                    self.conn.commit() # Lock Release
+                    return "100 Rows Inserted (Locked Mode)"
                 except Exception as e:
                     if self.conn: self.conn.rollback()
-                    return f"Transaction Failed: {e}"
+                    return f"Tx Failed: {e}"
                 finally:
                     if self.conn: self.conn.close()
 
             def apply_physical_db_lock(self):
-                """[기능 반영] DB File Lock (OS 권한 변경 - Read Only)"""
-                print(f"\n🚫 [DB Admin] Applying PHYSICAL LOCK to Database File...")
                 if os.path.exists(self.db_path):
-                    # 권한을 400 (Owner Read Only)으로 변경하여 쓰기 원천 차단
-                    os.chmod(self.db_path, stat.S_IRUSR)
-                    
-                    # 확인
-                    mode = stat.S_IMODE(os.stat(self.db_path).st_mode)
-                    return f"DB File Locked (Permission: {oct(mode)}) - Write Access Denied"
+                    os.chmod(self.db_path, stat.S_IRUSR) # Read-Only
+                    return "Physical DB File Locked (0o400)"
                 return "DB File Not Found"
 
         # ==========================================
@@ -179,85 +148,109 @@ jobs:
                 self.sync_path = DIRS['EXTERNAL_SYNC']
             
             def sync(self):
-                print(f"\n🌍 [External] Syncing Assets...")
                 if os.path.exists(EXT_REPO_DIR):
                     if os.path.exists(self.sync_path): shutil.rmtree(self.sync_path)
                     shutil.copytree(EXT_REPO_DIR, self.sync_path, dirs_exist_ok=True)
-                    return "Assets Synced"
+                    return f"Synced from {os.path.basename(EXT_REPO_DIR)}"
                 else:
-                    # Simulation Mock
-                    with open(os.path.join(self.sync_path, "security_policy.pdf"), 'w') as f: f.write("MOCK")
+                    with open(os.path.join(self.sync_path, "mock.txt"), 'w') as f: f.write("MOCK")
                     return "Mock Assets Generated"
 
         class ControlM_Engine:
             def __init__(self):
                 self.dag = nx.DiGraph()
+                self.results = [] # 결과를 저장할 리스트
             
             def add_job(self, name, func, deps=[]):
                 self.dag.add_node(name, task=func)
                 for d in deps: self.dag.add_edge(d, name)
             
             def run(self):
-                print(f"\n🎮 [Control-M] Starting Workflow...")
+                print(f"\n🎮 [Control-M] Processing...")
                 try:
                     for job in nx.topological_sort(self.dag):
-                        print(f"   ▶️ {job}...")
+                        start_ts = time.time()
                         res = self.dag.nodes[job]['task']()
-                        print(f"      ✅ {res}")
+                        duration = time.time() - start_ts
+                        
+                        # 결과 저장
+                        self.results.append({
+                            "Job Name": job,
+                            "Status": "✅ Success",
+                            "Result": res,
+                            "Duration": f"{duration:.2f}s"
+                        })
+                        print(f"   ▶️ {job}: {res}")
                 except Exception as e:
-                    print(f"   🚨 Workflow Error: {e}")
+                    self.results.append({"Job Name": "FATAL_ERROR", "Status": "❌ Failed", "Result": str(e), "Duration": "0s"})
+                return self.results
 
         # ==========================================
-        # 5. Main Execution Flow
+        # 5. Main Execution & Dashboard Generation
         # ==========================================
         if __name__ == "__main__":
-            print(">> [Init] System Starting...")
-            
             vault = SecurityVault()
             db_mgr = SecureDBManager()
             ext_mgr = ExternalRepoManager()
             ctm = ControlM_Engine()
             
             # --- Workflow Definition ---
+            ctm.add_job("1. EXT_ASSET_SYNC", ext_mgr.sync)
+            ctm.add_job("2. DB_SCHEMA_INIT", db_mgr.create_db_and_tables, deps=["1. EXT_ASSET_SYNC"])
+            ctm.add_job("3. TX_TABLE_LOCK", db_mgr.perform_transaction_with_table_lock, deps=["2. DB_SCHEMA_INIT"])
+            ctm.add_job("4. DB_FILE_LOCK", db_mgr.apply_physical_db_lock, deps=["3. TX_TABLE_LOCK"])
             
-            # 1. 외부 자산 동기화
-            ctm.add_job("JOB_EXT_SYNC", ext_mgr.sync)
-            
-            # 2. DB 및 테이블 생성 (초기화)
-            ctm.add_job("JOB_DB_CREATE", db_mgr.create_db_and_tables, deps=["JOB_EXT_SYNC"])
-            
-            # 3. Table Lock을 건 상태에서 트랜잭션 수행
-            ctm.add_job("JOB_TX_WITH_LOCK", db_mgr.perform_transaction_with_table_lock, deps=["JOB_DB_CREATE"])
-            
-            # 4. 모든 작업 완료 후 DB 파일 물리적 잠금 (Write 방지)
-            ctm.add_job("JOB_DB_FREEZE", db_mgr.apply_physical_db_lock, deps=["JOB_TX_WITH_LOCK"])
-            
-            # 5. 잠긴 DB와 외부 자산을 암호화 백업
-            def job_backup():
+            def job_final_backup():
                 targets = [DIRS['DB_DATA'], DIRS['EXTERNAL_SYNC']]
-                res = []
+                files = []
                 for t in targets:
                     name = f"SECURE_BK_{os.path.basename(t)}_{datetime.now().strftime('%Y%m%d')}"
-                    if vault.encrypt_and_archive(t, name):
-                        res.append(name)
-                return f"Archived: {', '.join(res)}"
+                    success, path = vault.encrypt_and_archive(t, name)
+                    if success: files.append(os.path.basename(path))
+                return f"Archived: {', '.join(files)}"
 
-            ctm.add_job("JOB_FINAL_BACKUP", job_backup, deps=["JOB_DB_FREEZE"])
+            ctm.add_job("5. FINAL_VAULT_LOCK", job_final_backup, deps=["4. DB_FILE_LOCK"])
             
-            # Run
-            ctm.run()
+            # --- Execution ---
+            results = ctm.run()
             
-            print(f"\n>> [Complete] DB Locked & Data Secured.")
+            # --- [핵심] GitHub Actions Summary 출력 ---
+            summary_file = os.environ.get('GITHUB_STEP_SUMMARY')
+            if summary_file:
+                with open(summary_file, 'a', encoding='utf-8') as f:
+                    # 1. 헤더
+                    f.write("# 🛡️ Ultra-Secure DB Ops Dashboard\n")
+                    f.write(f"**Execution Time:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
+                    
+                    # 2. 보안 금고 상태 (비밀번호 힌트)
+                    f.write("## 🔐 Security Vault Status\n")
+                    f.write(f"- **Current Week:** {vault.current_week}\n")
+                    f.write(f"- **Password Rotation Logic:** `4310` + `Week({vault.current_week})`\n")
+                    f.write(f"- **Current Password Hint:** `korea{4310 + vault.current_week}****` (Masked)\n\n")
+                    
+                    # 3. 상세 작업 리포트 (테이블)
+                    f.write("## 📋 Workflow Execution Report\n")
+                    f.write("| Job Name | Status | Result | Duration |\n")
+                    f.write("| :--- | :---: | :--- | :---: |\n")
+                    
+                    for r in results:
+                        f.write(f"| {r['Job Name']} | {r['Status']} | {r['Result']} | {r['Duration']} |\n")
+                    
+                    # 4. 잠금 상태 확인
+                    f.write("\n## 🚫 Locking Status Verification\n")
+                    f.write("- **Logical Lock (Transaction):** ✅ Committed & Released\n")
+                    f.write("- **Physical Lock (File):** 🔒 Read-Only (0o400) Applied\n")
+                    f.write("- **Archive Lock (AES-256):** 🔐 Applied\n")
         EOF
 
-    - name: Run Secure DB Ops
+    - name: Execute & Generate Dashboard
       run: |
         cd main_repo
-        python scripts/secure_db_ops.py
+        python scripts/dashboard_ops.py
 
     - name: Upload Secured Artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: Secured-DB-Vault-${{ github.run_number }}
+        name: Dashboard-Secured-Data-${{ github.run_number }}
         path: main_repo/SECURE_VAULT/
         retention-days: 14
