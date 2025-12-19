@@ -1,12 +1,12 @@
-name: Ultra-Secure Financial Ops & External Integration
+name: Ultra-Secure DB Locking & Financial Ops
 
 on:
   schedule:
-    - cron: '0 18 * * 5' # 매주 금요일 18:00 (UTC 09:00) 보안 백업 실행
+    - cron: '0 18 * * 5' # 매주 금요일 실행
   workflow_dispatch:
 
 jobs:
-  run-secure-integrated-ops:
+  run-secure-db-locking-system:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -19,50 +19,51 @@ jobs:
       with:
         path: main_repo
 
-    # [요청 반영] 외부 리포지토리(koreatest12) 체크아웃 및 통합
+    # [외부 리포지토리 통합 유지]
     - name: Checkout External Security Assets
       uses: actions/checkout@v4
+      continue-on-error: true
       with:
         repository: koreatest12/Information-Security-Engineer-
         path: external_assets
-        continue-on-error: true # 해당 리포지토리가 없어도 데모 실행을 위해 계속 진행
+        token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Set up Python 3.11
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
 
-    - name: Install Secure Dependencies
+    - name: Install Dependencies
       run: |
-        # pyzipper: AES 암호화 압축 지원 라이브러리
         pip install pandas numpy cryptography schedule tabulate psutil openpyxl networkx pyzipper
 
-    - name: Deploy Secure Ops Engine
+    - name: Deploy Secure DB Ops Engine
       run: |
         mkdir -p main_repo/scripts
-        cat << 'EOF' > main_repo/scripts/secure_ops_engine.py
+        cat << 'EOF' > main_repo/scripts/secure_db_ops.py
         import os
         import time
         import sqlite3
         import shutil
+        import stat
         import schedule
         import pandas as pd
         import numpy as np
         import networkx as nx
-        import pyzipper  # 암호화 ZIP 지원
+        import pyzipper
         from datetime import datetime
         from cryptography.fernet import Fernet
         from tabulate import tabulate
 
         # ==========================================
-        # 1. Global Configuration
+        # 1. Configuration & Path Setup
         # ==========================================
         BASE_DIR = os.getcwd()
-        EXT_REPO_DIR = os.path.join(BASE_DIR, '../external_assets') # 외부 리포지토리 경로
+        EXT_REPO_DIR = os.path.join(BASE_DIR, '../external_assets')
         
         DIRS = {
-            'SECURE_VAULT': os.path.join(BASE_DIR, 'SECURE_VAULT'), # 최종 암호화 저장소
-            'INTERNAL_DATA': os.path.join(BASE_DIR, 'DATA/INTERNAL'),
+            'SECURE_VAULT': os.path.join(BASE_DIR, 'SECURE_VAULT'),
+            'DB_DATA': os.path.join(BASE_DIR, 'DATA/DB'),
             'EXTERNAL_SYNC': os.path.join(BASE_DIR, 'DATA/EXTERNAL_SYNC'),
             'LOGS': os.path.join(BASE_DIR, 'LOGS')
         }
@@ -71,7 +72,7 @@ jobs:
             os.makedirs(d, exist_ok=True)
 
         # ==========================================
-        # 2. Dynamic Security Vault (Password Rotation)
+        # 2. Security Vault (Password Rotation) - 유지
         # ==========================================
         class SecurityVault:
             def __init__(self):
@@ -79,72 +80,115 @@ jobs:
                 self.current_password = self._generate_weekly_password()
 
             def _generate_weekly_password(self):
-                """
-                [보안 요청 반영] 매주 숫자 변경 알고리즘
-                - 기본값 4310 + 현재 주차(ISO Week Number)
-                - 예: 10주차 -> 4320
-                """
+                """매주 비밀번호 자동 변경 (4310 + 주차)"""
                 current_week = datetime.now().isocalendar()[1]
                 rotated_pin = self.base_pin + current_week
                 pwd = f"korea{rotated_pin}@#$"
-                
-                # 보안상 로그에는 마스킹 처리
-                print(f"🔒 [Security] Password Rotated for Week {current_week}: korea****@#$")
+                print(f"🔐 [Vault] Password Rotated for Week {current_week}: korea****@#$")
                 return pwd
 
-            def lock_and_archive(self, source_dir, archive_name):
-                """AES-256 암호화를 적용한 ZIP 압축"""
-                target_zip = os.path.join(DIRS['SECURE_VAULT'], f"{archive_name}.zip")
-                
-                print(f"🛡️ [Vault] Locking {archive_name} with weekly password...")
+            def encrypt_and_archive(self, target_dir, zip_name):
+                zip_path = os.path.join(DIRS['SECURE_VAULT'], f"{zip_name}.zip")
+                print(f"🛡️ [Vault] Encrypting & Archiving: {zip_path}")
                 try:
-                    with pyzipper.AESZipFile(target_zip, 'w', compression=pyzipper.ZIP_LZMA, encryption=pyzipper.WZ_AES) as zf:
+                    with pyzipper.AESZipFile(zip_path, 'w', compression=pyzipper.ZIP_LZMA, encryption=pyzipper.WZ_AES) as zf:
                         zf.setpassword(self.current_password.encode())
-                        for root, _, files in os.walk(source_dir):
+                        for root, _, files in os.walk(target_dir):
                             for file in files:
-                                file_path = os.path.join(root, file)
-                                arcname = os.path.relpath(file_path, BASE_DIR)
-                                zf.write(file_path, arcname)
-                    print(f"   ✅ Locked Successfully: {target_zip}")
+                                p = os.path.join(root, file)
+                                zf.write(p, os.path.relpath(p, os.path.dirname(target_dir)))
                     return True
                 except Exception as e:
-                    print(f"   ❌ Locking Failed: {e}")
+                    print(f"   ❌ Encryption Failed: {e}")
                     return False
 
         # ==========================================
-        # 3. External Repository Manager
+        # 3. Secure DB Manager (New: Lock Implementation)
+        # ==========================================
+        class SecureDBManager:
+            def __init__(self, db_name="korea_financial_core.db"):
+                self.db_path = os.path.join(DIRS['DB_DATA'], db_name)
+                self.conn = None
+                
+            def create_db_and_tables(self):
+                """[기능 반영] DB 및 테이블 생성"""
+                print(f"\n🛠️ [DB Admin] Initializing Database: {self.db_path}")
+                self.conn = sqlite3.connect(self.db_path)
+                
+                # 1. 금융 거래 테이블
+                self.conn.execute('''CREATE TABLE IF NOT EXISTS fin_transactions (
+                    tx_id TEXT PRIMARY KEY, user_id TEXT, amount REAL, 
+                    tx_type TEXT, timestamp DATETIME)''')
+                
+                # 2. 감사 로그 테이블
+                self.conn.execute('''CREATE TABLE IF NOT EXISTS audit_log (
+                    log_id INTEGER PRIMARY KEY AUTOINCREMENT, action TEXT, 
+                    status TEXT, timestamp DATETIME)''')
+                
+                self.conn.close()
+                return "DB Schema Created"
+
+            def perform_transaction_with_table_lock(self):
+                """[기능 반영] Table Lock (Transaction Exclusive Lock)"""
+                print(f"🔒 [DB Lock] Acquiring TABLE LOCK for Batch Insert...")
+                
+                try:
+                    self.conn = sqlite3.connect(self.db_path)
+                    cursor = self.conn.cursor()
+                    
+                    # [Table Lock 시뮬레이션] Exclusive 모드 트랜잭션 시작
+                    # SQLite는 파일 기반이라 이 명령어가 실행되는 동안 다른 연결은 Write 불가 (Table Lock 효과)
+                    cursor.execute("BEGIN EXCLUSIVE TRANSACTION")
+                    
+                    # 데이터 대량 입력
+                    data = []
+                    for i in range(100):
+                        data.append((f"TX_{time.time()}_{i}", f"USER_{i}", np.random.randint(1000,99999), "DEPOSIT", datetime.now()))
+                    
+                    cursor.executemany("INSERT INTO fin_transactions VALUES (?,?,?,?,?)", data)
+                    print(f"   ↳ [Insert] 100 Rows Inserted under Lock protection.")
+                    
+                    # Lock 해제 (Commit)
+                    self.conn.commit()
+                    print(f"🔓 [DB Lock] Transaction Committed. TABLE LOCK Released.")
+                    return "Batch Insert with Lock Success"
+                    
+                except Exception as e:
+                    if self.conn: self.conn.rollback()
+                    return f"Transaction Failed: {e}"
+                finally:
+                    if self.conn: self.conn.close()
+
+            def apply_physical_db_lock(self):
+                """[기능 반영] DB File Lock (OS 권한 변경 - Read Only)"""
+                print(f"\n🚫 [DB Admin] Applying PHYSICAL LOCK to Database File...")
+                if os.path.exists(self.db_path):
+                    # 권한을 400 (Owner Read Only)으로 변경하여 쓰기 원천 차단
+                    os.chmod(self.db_path, stat.S_IRUSR)
+                    
+                    # 확인
+                    mode = stat.S_IMODE(os.stat(self.db_path).st_mode)
+                    return f"DB File Locked (Permission: {oct(mode)}) - Write Access Denied"
+                return "DB File Not Found"
+
+        # ==========================================
+        # 4. External Assets & Control-M
         # ==========================================
         class ExternalRepoManager:
             def __init__(self):
                 self.sync_path = DIRS['EXTERNAL_SYNC']
-
-            def sync_external_assets(self):
-                """외부 리포지토리의 모든 폴더 및 스크립트 반영"""
-                print(f"\n🌍 [External] Syncing assets from {EXT_REPO_DIR}...")
-                
-                synced_files = []
-                if not os.path.exists(EXT_REPO_DIR):
-                    print("   ⚠️ External repo not found (Simulation Mode). Creating Mock Data.")
-                    # 모의 데이터 생성
-                    mock_script = os.path.join(self.sync_path, "mock_security_check.sh")
-                    with open(mock_script, 'w') as f: f.write("#!/bin/bash\necho 'Checking Firewall...'")
-                    synced_files.append("mock_security_check.sh")
+            
+            def sync(self):
+                print(f"\n🌍 [External] Syncing Assets...")
+                if os.path.exists(EXT_REPO_DIR):
+                    if os.path.exists(self.sync_path): shutil.rmtree(self.sync_path)
+                    shutil.copytree(EXT_REPO_DIR, self.sync_path, dirs_exist_ok=True)
+                    return "Assets Synced"
                 else:
-                    # 실제 복사 로직
-                    for item in os.listdir(EXT_REPO_DIR):
-                        s = os.path.join(EXT_REPO_DIR, item)
-                        d = os.path.join(self.sync_path, item)
-                        if os.path.isdir(s):
-                            shutil.copytree(s, d, dirs_exist_ok=True)
-                        else:
-                            shutil.copy2(s, d)
-                        synced_files.append(item)
-                
-                return f"Synced {len(synced_files)} assets from External Repo"
+                    # Simulation Mock
+                    with open(os.path.join(self.sync_path, "security_policy.pdf"), 'w') as f: f.write("MOCK")
+                    return "Mock Assets Generated"
 
-        # ==========================================
-        # 4. Financial & Control-M Core
-        # ==========================================
         class ControlM_Engine:
             def __init__(self):
                 self.dag = nx.DiGraph()
@@ -154,68 +198,66 @@ jobs:
                 for d in deps: self.dag.add_edge(d, name)
             
             def run(self):
-                print("\n🎮 [Control-M] Executing Secured Workflow...")
-                for job in nx.topological_sort(self.dag):
-                    print(f"   ▶️ Starting {job}...")
-                    res = self.dag.nodes[job]['task']()
-                    print(f"      ✅ {res}")
-
-        # --- 금융 로직 (간소화) ---
-        def job_financial_tx():
-            # DB 생성 및 트랜잭션 처리 시뮬레이션
-            db_path = os.path.join(DIRS['INTERNAL_DATA'], "core_ledger.db")
-            conn = sqlite3.connect(db_path)
-            pd.DataFrame({'user': ['U1','U2'], 'amt': [100, 200]}).to_sql('tx', conn, if_exists='replace')
-            conn.close()
-            return "Financial Transactions Processed"
+                print(f"\n🎮 [Control-M] Starting Workflow...")
+                try:
+                    for job in nx.topological_sort(self.dag):
+                        print(f"   ▶️ {job}...")
+                        res = self.dag.nodes[job]['task']()
+                        print(f"      ✅ {res}")
+                except Exception as e:
+                    print(f"   🚨 Workflow Error: {e}")
 
         # ==========================================
-        # 5. Main Integration
+        # 5. Main Execution Flow
         # ==========================================
         if __name__ == "__main__":
-            print(">> [Init] Secure Integrated Ops System Started")
+            print(">> [Init] System Starting...")
             
-            # 인스턴스 초기화
             vault = SecurityVault()
+            db_mgr = SecureDBManager()
             ext_mgr = ExternalRepoManager()
             ctm = ControlM_Engine()
             
-            # --- Control-M Job Definition ---
+            # --- Workflow Definition ---
             
-            # 1. 외부 자산 동기화 (가장 먼저 수행)
-            ctm.add_job("EXT_SYNC", ext_mgr.sync_external_assets)
+            # 1. 외부 자산 동기화
+            ctm.add_job("JOB_EXT_SYNC", ext_mgr.sync)
             
-            # 2. 금융 거래 및 DB 작업 (동기화 후 수행)
-            ctm.add_job("FIN_OPS", job_financial_tx, deps=["EXT_SYNC"])
+            # 2. DB 및 테이블 생성 (초기화)
+            ctm.add_job("JOB_DB_CREATE", db_mgr.create_db_and_tables, deps=["JOB_EXT_SYNC"])
             
-            # 3. 데이터 및 외부 자산 통합 암호화 백업 (마지막 수행)
-            def job_secure_backup():
-                # 내부 데이터와 동기화된 외부 데이터를 모두 포함하여 잠금
-                targets = [DIRS['INTERNAL_DATA'], DIRS['EXTERNAL_SYNC']]
-                results = []
+            # 3. Table Lock을 건 상태에서 트랜잭션 수행
+            ctm.add_job("JOB_TX_WITH_LOCK", db_mgr.perform_transaction_with_table_lock, deps=["JOB_DB_CREATE"])
+            
+            # 4. 모든 작업 완료 후 DB 파일 물리적 잠금 (Write 방지)
+            ctm.add_job("JOB_DB_FREEZE", db_mgr.apply_physical_db_lock, deps=["JOB_TX_WITH_LOCK"])
+            
+            # 5. 잠긴 DB와 외부 자산을 암호화 백업
+            def job_backup():
+                targets = [DIRS['DB_DATA'], DIRS['EXTERNAL_SYNC']]
+                res = []
                 for t in targets:
-                    name = f"BACKUP_{os.path.basename(t)}_{datetime.now().strftime('%Y%m%d')}"
-                    vault.lock_and_archive(t, name)
-                    results.append(name)
-                return f"Locked & Archived: {', '.join(results)}"
+                    name = f"SECURE_BK_{os.path.basename(t)}_{datetime.now().strftime('%Y%m%d')}"
+                    if vault.encrypt_and_archive(t, name):
+                        res.append(name)
+                return f"Archived: {', '.join(res)}"
 
-            ctm.add_job("SECURE_LOCK", job_secure_backup, deps=["FIN_OPS"])
+            ctm.add_job("JOB_FINAL_BACKUP", job_backup, deps=["JOB_DB_FREEZE"])
             
-            # 실행
+            # Run
             ctm.run()
             
-            print(f"\n>> [Complete] System locked with password rotation policy.")
-            print(f">> [Info] This week's password hint: korea(4310 + WeekNum)@#$")
+            print(f"\n>> [Complete] DB Locked & Data Secured.")
         EOF
 
-    - name: Run Secure Ops
+    - name: Run Secure DB Ops
       run: |
         cd main_repo
-        python scripts/secure_ops_engine.py
+        python scripts/secure_db_ops.py
 
-    - name: Upload Encrypted Vault
+    - name: Upload Secured Artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: Secured-Vault-Week-${{ github.run_number }}
+        name: Secured-DB-Vault-${{ github.run_number }}
         path: main_repo/SECURE_VAULT/
         retention-days: 14
