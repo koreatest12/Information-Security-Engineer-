@@ -1,12 +1,12 @@
-name: Ultimate Korea Financial Platform
+name: Ultra-Secure Financial Ops & External Integration
 
 on:
   schedule:
-    - cron: '0 17 * * *' # 한국 시간 02:00 (UTC 17:00) 통합 배치
+    - cron: '0 18 * * 5' # 매주 금요일 18:00 (UTC 09:00) 보안 백업 실행
   workflow_dispatch:
 
 jobs:
-  run-unified-financial-system:
+  run-secure-integrated-ops:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -14,22 +14,33 @@ jobs:
       checks: write
 
     steps:
-    - name: Checkout Repository
+    - name: Checkout Main Repository
       uses: actions/checkout@v4
+      with:
+        path: main_repo
+
+    # [요청 반영] 외부 리포지토리(koreatest12) 체크아웃 및 통합
+    - name: Checkout External Security Assets
+      uses: actions/checkout@v4
+      with:
+        repository: koreatest12/Information-Security-Engineer-
+        path: external_assets
+        continue-on-error: true # 해당 리포지토리가 없어도 데모 실행을 위해 계속 진행
 
     - name: Set up Python 3.11
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
 
-    - name: Install Enterprise Dependencies
+    - name: Install Secure Dependencies
       run: |
-        pip install pandas numpy cryptography schedule tabulate psutil openpyxl networkx
+        # pyzipper: AES 암호화 압축 지원 라이브러리
+        pip install pandas numpy cryptography schedule tabulate psutil openpyxl networkx pyzipper
 
-    - name: Deploy Unified System Engine
+    - name: Deploy Secure Ops Engine
       run: |
-        mkdir -p scripts
-        cat << 'EOF' > scripts/unified_fin_system.py
+        mkdir -p main_repo/scripts
+        cat << 'EOF' > main_repo/scripts/secure_ops_engine.py
         import os
         import time
         import sqlite3
@@ -38,302 +49,173 @@ jobs:
         import pandas as pd
         import numpy as np
         import networkx as nx
-        import concurrent.futures
+        import pyzipper  # 암호화 ZIP 지원
         from datetime import datetime
         from cryptography.fernet import Fernet
         from tabulate import tabulate
 
         # ==========================================
-        # 1. Global Configuration (Infrastructure)
+        # 1. Global Configuration
         # ==========================================
         BASE_DIR = os.getcwd()
+        EXT_REPO_DIR = os.path.join(BASE_DIR, '../external_assets') # 외부 리포지토리 경로
         
-        # [디렉토리 통합 정의]
         DIRS = {
-            # 시스템 로그 및 설정
-            'LOGS_INSTALL': os.path.join(BASE_DIR, 'LOGS/INSTALL'),
-            'LOGS_CTM': os.path.join(BASE_DIR, 'LOGS/CTM'),
-            
-            # DB 클러스터 및 데이터
-            'DB_CLUSTER': os.path.join(BASE_DIR, 'INFRA/DB_CLUSTER'),
-            'DATA_CORE': os.path.join(BASE_DIR, 'DATA/CORE_BANK'),
-            'DATA_CARD': os.path.join(BASE_DIR, 'DATA/CARD_NET'),
-            'DATA_STOCK': os.path.join(BASE_DIR, 'DATA/CAPITAL'),
-            
-            # ETL 및 DW
-            'ETL_SOURCE': os.path.join(BASE_DIR, 'DATA/SOURCE'),
-            'ETL_WAREHOUSE': os.path.join(BASE_DIR, 'DATA/WAREHOUSE'),
-            
-            # 백업 센터
-            'BACKUP_SQL': os.path.join(BASE_DIR, 'BACKUP/SQL_DUMPS'),
-            'BACKUP_SNAP': os.path.join(BASE_DIR, 'BACKUP/SNAPSHOTS'),
-            'BACKUP_TLOG': os.path.join(BASE_DIR, 'BACKUP/T_LOGS'),
-            
-            # 리포트
-            'REPORTS': os.path.join(BASE_DIR, 'REPORTS')
+            'SECURE_VAULT': os.path.join(BASE_DIR, 'SECURE_VAULT'), # 최종 암호화 저장소
+            'INTERNAL_DATA': os.path.join(BASE_DIR, 'DATA/INTERNAL'),
+            'EXTERNAL_SYNC': os.path.join(BASE_DIR, 'DATA/EXTERNAL_SYNC'),
+            'LOGS': os.path.join(BASE_DIR, 'LOGS')
         }
-
-        # 시뮬레이션 타겟 벤더
-        TARGET_VENDORS = ['ORACLE_19c', 'MSSQL_2022', 'POSTGRES_15', 'MYSQL_8', 'MONGODB_6']
-
-        # 초기화
+        
         for d in DIRS.values():
             os.makedirs(d, exist_ok=True)
 
         # ==========================================
-        # 2. Control-M Orchestration Engine
+        # 2. Dynamic Security Vault (Password Rotation)
         # ==========================================
-        class ControlM_Enterprise:
+        class SecurityVault:
             def __init__(self):
-                self.job_status = {}
-                self.dag = nx.DiGraph()
+                self.base_pin = 4310
+                self.current_password = self._generate_weekly_password()
+
+            def _generate_weekly_password(self):
+                """
+                [보안 요청 반영] 매주 숫자 변경 알고리즘
+                - 기본값 4310 + 현재 주차(ISO Week Number)
+                - 예: 10주차 -> 4320
+                """
+                current_week = datetime.now().isocalendar()[1]
+                rotated_pin = self.base_pin + current_week
+                pwd = f"korea{rotated_pin}@#$"
                 
-            def define_job(self, job_name, func, depends_on=None):
-                self.job_status[job_name] = "WAITING"
-                self.dag.add_node(job_name, cmd=func)
-                if depends_on:
-                    for parent in depends_on:
-                        self.dag.add_edge(parent, job_name)
-            
-            def run_flow(self):
-                print(f"\n🎮 [Control-M] Starting Unified Batch Flow...")
+                # 보안상 로그에는 마스킹 처리
+                print(f"🔒 [Security] Password Rotated for Week {current_week}: korea****@#$")
+                return pwd
+
+            def lock_and_archive(self, source_dir, archive_name):
+                """AES-256 암호화를 적용한 ZIP 압축"""
+                target_zip = os.path.join(DIRS['SECURE_VAULT'], f"{archive_name}.zip")
+                
+                print(f"🛡️ [Vault] Locking {archive_name} with weekly password...")
                 try:
-                    order = list(nx.topological_sort(self.dag))
-                except:
-                    print("🚨 [Control-M] Cycle Detected! Aborting.")
-                    return
-
-                for job in order:
-                    # 종속성 체크
-                    parents = list(self.dag.predecessors(job))
-                    if not all(self.job_status[p] == "ENDED_OK" for p in parents):
-                        print(f"   ⛔ [Skip] {job} (Dependency Failed)")
-                        self.job_status[job] = "ENDED_NOTOK"
-                        continue
-
-                    # 실행
-                    print(f"   ▶️ [Start] {job} ...")
-                    self.job_status[job] = "RUNNING"
-                    start = time.time()
-                    try:
-                        res = self.dag.nodes[job]['cmd']()
-                        sec = time.time() - start
-                        self.job_status[job] = "ENDED_OK"
-                        print(f"      ✅ [OK] {job} ({sec:.2f}s) - {res}")
-                        
-                        # 감사 로그
-                        with open(f"{DIRS['LOGS_CTM']}/job_history.log", "a") as f:
-                            f.write(f"{datetime.now()}|{job}|ENDED_OK|{res}\n")
-                    except Exception as e:
-                        self.job_status[job] = "ENDED_NOTOK"
-                        print(f"      ❌ [FAIL] {job} - {e}")
+                    with pyzipper.AESZipFile(target_zip, 'w', compression=pyzipper.ZIP_LZMA, encryption=pyzipper.WZ_AES) as zf:
+                        zf.setpassword(self.current_password.encode())
+                        for root, _, files in os.walk(source_dir):
+                            for file in files:
+                                file_path = os.path.join(root, file)
+                                arcname = os.path.relpath(file_path, BASE_DIR)
+                                zf.write(file_path, arcname)
+                    print(f"   ✅ Locked Successfully: {target_zip}")
+                    return True
+                except Exception as e:
+                    print(f"   ❌ Locking Failed: {e}")
+                    return False
 
         # ==========================================
-        # 3. DB Cluster Manager (Mass Installer)
+        # 3. External Repository Manager
         # ==========================================
-        class DBClusterManager:
+        class ExternalRepoManager:
             def __init__(self):
-                self.installed_dbs = []
+                self.sync_path = DIRS['EXTERNAL_SYNC']
 
-            def _install_one(self, vendor):
-                p = os.path.join(DIRS['DB_CLUSTER'], vendor)
-                os.makedirs(p, exist_ok=True)
-                # Config Mock
-                with open(os.path.join(p, 'init.ora'), 'w') as f:
-                    f.write(f"DB_NAME={vendor}\nMEMORY=16G")
-                return f"{vendor} Ready"
-
-            def job_mass_install(self):
-                """[Infrastructure] 5대 DB 병렬 설치"""
-                with concurrent.futures.ThreadPoolExecutor(max_workers=5) as exc:
-                    futures = [exc.submit(self._install_one, v) for v in TARGET_VENDORS]
-                    for f in concurrent.futures.as_completed(futures):
-                        pass 
-                self.installed_dbs = TARGET_VENDORS
-                return f"Deployed {len(TARGET_VENDORS)} DB Clusters"
+            def sync_external_assets(self):
+                """외부 리포지토리의 모든 폴더 및 스크립트 반영"""
+                print(f"\n🌍 [External] Syncing assets from {EXT_REPO_DIR}...")
+                
+                synced_files = []
+                if not os.path.exists(EXT_REPO_DIR):
+                    print("   ⚠️ External repo not found (Simulation Mode). Creating Mock Data.")
+                    # 모의 데이터 생성
+                    mock_script = os.path.join(self.sync_path, "mock_security_check.sh")
+                    with open(mock_script, 'w') as f: f.write("#!/bin/bash\necho 'Checking Firewall...'")
+                    synced_files.append("mock_security_check.sh")
+                else:
+                    # 실제 복사 로직
+                    for item in os.listdir(EXT_REPO_DIR):
+                        s = os.path.join(EXT_REPO_DIR, item)
+                        d = os.path.join(self.sync_path, item)
+                        if os.path.isdir(s):
+                            shutil.copytree(s, d, dirs_exist_ok=True)
+                        else:
+                            shutil.copy2(s, d)
+                        synced_files.append(item)
+                
+                return f"Synced {len(synced_files)} assets from External Repo"
 
         # ==========================================
-        # 4. Korea Financial Business Logic
+        # 4. Financial & Control-M Core
         # ==========================================
-        class KoreaFinancialSystem:
+        class ControlM_Engine:
             def __init__(self):
-                self.key = Fernet.generate_key()
-                self.cipher = Fernet(self.key)
-                self.ledger_path = os.path.join(BASE_DIR, 'korea_main_ledger.db')
-                self._init_db()
+                self.dag = nx.DiGraph()
+            
+            def add_job(self, name, func, deps=[]):
+                self.dag.add_node(name, task=func)
+                for d in deps: self.dag.add_edge(d, name)
+            
+            def run(self):
+                print("\n🎮 [Control-M] Executing Secured Workflow...")
+                for job in nx.topological_sort(self.dag):
+                    print(f"   ▶️ Starting {job}...")
+                    res = self.dag.nodes[job]['task']()
+                    print(f"      ✅ {res}")
 
-            def _init_db(self):
-                conn = sqlite3.connect(self.ledger_path)
-                conn.execute("PRAGMA journal_mode=WAL")
-                conn.execute('''CREATE TABLE IF NOT EXISTS tx_ledger (
-                    tx_id TEXT, domain TEXT, code TEXT, 
-                    enc_acc TEXT, amount INT, timestamp DATETIME)''')
-                conn.close()
-
-            def _save(self, df):
-                conn = sqlite3.connect(self.ledger_path)
-                df.to_sql('tx_ledger', conn, if_exists='append', index=False)
-                conn.close()
-
-            def job_core_banking(self):
-                """[Biz] 수신/여신/이체 처리"""
-                cnt = 3000
-                df = pd.DataFrame({
-                    'tx_id': [f"TX_CORE_{i}" for i in range(cnt)],
-                    'domain': 'CORE',
-                    'code': np.random.choice(['DEPOSIT', 'WITHDRAW', 'TRANSFER'], cnt),
-                    'enc_acc': [self.cipher.encrypt(f"ACC_{i}".encode()).decode() for i in range(cnt)],
-                    'amount': np.random.randint(1000, 1000000, cnt),
-                    'timestamp': datetime.now()
-                })
-                self._save(df)
-                return f"Processed {cnt} Core Tx"
-
-            def job_card_approval(self):
-                """[Biz] 카드 승인 및 매입"""
-                cnt = 5000
-                df = pd.DataFrame({
-                    'tx_id': [f"TX_CARD_{i}" for i in range(cnt)],
-                    'domain': 'CARD',
-                    'code': 'APPROVAL',
-                    'enc_acc': [self.cipher.encrypt(f"CARD_{i}".encode()).decode() for i in range(cnt)],
-                    'amount': np.random.randint(500, 50000, cnt),
-                    'timestamp': datetime.now()
-                })
-                self._save(df)
-                return f"Settled {cnt} Card Tx"
-
-            def job_stock_trading(self):
-                """[Biz] 주식 체결"""
-                cnt = 2000
-                df = pd.DataFrame({
-                    'tx_id': [f"TX_STK_{i}" for i in range(cnt)],
-                    'domain': 'STOCK',
-                    'code': np.random.choice(['BUY', 'SELL'], cnt),
-                    'enc_acc': [self.cipher.encrypt(f"STK_{i}".encode()).decode() for i in range(cnt)],
-                    'amount': np.random.randint(10000, 2000000, cnt),
-                    'timestamp': datetime.now()
-                })
-                self._save(df)
-                return f"Executed {cnt} Trades"
+        # --- 금융 로직 (간소화) ---
+        def job_financial_tx():
+            # DB 생성 및 트랜잭션 처리 시뮬레이션
+            db_path = os.path.join(DIRS['INTERNAL_DATA'], "core_ledger.db")
+            conn = sqlite3.connect(db_path)
+            pd.DataFrame({'user': ['U1','U2'], 'amt': [100, 200]}).to_sql('tx', conn, if_exists='replace')
+            conn.close()
+            return "Financial Transactions Processed"
 
         # ==========================================
-        # 5. Secure ETL & Warehouse
-        # ==========================================
-        class HyperScaleETL:
-            def __init__(self, fin_sys):
-                self.fin = fin_sys
-                self.dw_path = os.path.join(DIRS['ETL_WAREHOUSE'], 'master_dw.db')
-                
-            def job_etl_pipeline(self):
-                """[ETL] 원장 데이터 추출 -> 변환 -> DW 적재"""
-                src_conn = sqlite3.connect(self.fin.ledger_path)
-                df = pd.read_sql("SELECT * FROM tx_ledger", src_conn)
-                src_conn.close()
-                
-                if df.empty: return "No Data to Load"
-                
-                # Transform (집계)
-                agg = df.groupby(['domain', 'code'])['amount'].sum().reset_index()
-                agg['batch_time'] = datetime.now()
-                
-                # Load
-                tgt_conn = sqlite3.connect(self.dw_path)
-                agg.to_sql('daily_summary', tgt_conn, if_exists='append', index=False)
-                tgt_conn.close()
-                
-                return f"Loaded {len(df)} rows into DW Summary"
-
-        # ==========================================
-        # 6. Universal Omni-Backup
-        # ==========================================
-        class UniversalBackupAgent:
-            def __init__(self, db_mgr, fin_sys):
-                self.db_mgr = db_mgr
-                self.fin_sys = fin_sys
-                
-            def job_backup_all(self):
-                """[Backup] 인프라 및 데이터 전체 백업"""
-                ts = datetime.now().strftime("%H%M%S")
-                results = []
-                
-                # 1. Vendor DB 백업 (Cluster)
-                for vendor in self.db_mgr.installed_dbs:
-                    if 'ORACLE' in vendor:
-                        fname = f"RMAN_{vendor}_{ts}.bkp"
-                        path = os.path.join(DIRS['BACKUP_SNAP'], fname)
-                        with open(path, 'w') as f: f.write("ORACLE RMAN DATA")
-                        results.append(f"Oracle RMAN: {fname}")
-                    elif 'MSSQL' in vendor:
-                        fname = f"TLOG_{vendor}_{ts}.trn"
-                        path = os.path.join(DIRS['BACKUP_TLOG'], fname)
-                        with open(path, 'w') as f: f.write("MSSQL T-LOG")
-                        results.append(f"MSSQL T-Log: {fname}")
-                
-                # 2. 금융 원장 DB 백업
-                ledger_bk = os.path.join(DIRS['BACKUP_SNAP'], f"LEDGER_FULL_{ts}.db")
-                shutil.copy2(self.fin_sys.ledger_path, ledger_bk)
-                results.append("Ledger DB Backed up")
-                
-                return " / ".join(results)
-
-        # ==========================================
-        # 7. Main Execution (Workflow Definition)
+        # 5. Main Integration
         # ==========================================
         if __name__ == "__main__":
-            print(">> [System] Booting Ultimate Korea Financial Platform...")
+            print(">> [Init] Secure Integrated Ops System Started")
             
             # 인스턴스 초기화
-            ctm = ControlM_Enterprise()
-            db_cluster = DBClusterManager()
-            fin_sys = KoreaFinancialSystem()
-            etl = HyperScaleETL(fin_sys)
-            backup = UniversalBackupAgent(db_cluster, fin_sys)
+            vault = SecurityVault()
+            ext_mgr = ExternalRepoManager()
+            ctm = ControlM_Engine()
             
-            # --- [Control-M Job Definition] ---
+            # --- Control-M Job Definition ---
             
-            # 1. 인프라 준비 (가장 먼저 수행)
-            ctm.define_job("INFRA_DB_INSTALL", db_cluster.job_mass_install)
+            # 1. 외부 자산 동기화 (가장 먼저 수행)
+            ctm.add_job("EXT_SYNC", ext_mgr.sync_external_assets)
             
-            # 2. 금융 거래 비즈니스 로직 (인프라 완료 후 병렬 실행)
-            ctm.define_job("BIZ_CORE_BANK", fin_sys.job_core_banking, depends_on=["INFRA_DB_INSTALL"])
-            ctm.define_job("BIZ_CARD_APPR", fin_sys.job_card_approval, depends_on=["INFRA_DB_INSTALL"])
-            ctm.define_job("BIZ_STOCK_TRD", fin_sys.job_stock_trading, depends_on=["INFRA_DB_INSTALL"])
+            # 2. 금융 거래 및 DB 작업 (동기화 후 수행)
+            ctm.add_job("FIN_OPS", job_financial_tx, deps=["EXT_SYNC"])
             
-            # 3. ETL (모든 거래 종료 후 실행)
-            ctm.define_job("DATA_ETL_LOAD", etl.job_etl_pipeline, 
-                           depends_on=["BIZ_CORE_BANK", "BIZ_CARD_APPR", "BIZ_STOCK_TRD"])
+            # 3. 데이터 및 외부 자산 통합 암호화 백업 (마지막 수행)
+            def job_secure_backup():
+                # 내부 데이터와 동기화된 외부 데이터를 모두 포함하여 잠금
+                targets = [DIRS['INTERNAL_DATA'], DIRS['EXTERNAL_SYNC']]
+                results = []
+                for t in targets:
+                    name = f"BACKUP_{os.path.basename(t)}_{datetime.now().strftime('%Y%m%d')}"
+                    vault.lock_and_archive(t, name)
+                    results.append(name)
+                return f"Locked & Archived: {', '.join(results)}"
+
+            ctm.add_job("SECURE_LOCK", job_secure_backup, deps=["FIN_OPS"])
             
-            # 4. 백업 (ETL 완료 후 실행)
-            ctm.define_job("SYS_FULL_BACKUP", backup.job_backup_all, depends_on=["DATA_ETL_LOAD"])
+            # 실행
+            ctm.run()
             
-            # 5. 리포팅 (최종)
-            def job_final_report():
-                conn = sqlite3.connect(etl.dw_path)
-                df = pd.read_sql("SELECT * FROM daily_summary", conn)
-                path = f"{DIRS['REPORTS']}/Final_EOD_Report.xlsx"
-                df.to_excel(path)
-                conn.close()
-                return "Report Generated"
-                
-            ctm.define_job("RPT_EOD_GEN", job_final_report, depends_on=["SYS_FULL_BACKUP"])
-            
-            # --- [Execution Trigger] ---
-            # 실제 운영 환경에선 스케줄러가 트리거하지만, 여기선 즉시 실행
-            ctm.run_flow()
-            
-            print("\n>> [System] Unified Workflow Completed Successfully.")
+            print(f"\n>> [Complete] System locked with password rotation policy.")
+            print(f">> [Info] This week's password hint: korea(4310 + WeekNum)@#$")
         EOF
 
-    - name: Run Unified Platform
-      run: python scripts/unified_fin_system.py
+    - name: Run Secure Ops
+      run: |
+        cd main_repo
+        python scripts/secure_ops_engine.py
 
-    - name: Upload Enterprise Artifacts
+    - name: Upload Encrypted Vault
       uses: actions/upload-artifact@v4
       with:
-        name: K-FinHub-Enterprise-Data-${{ github.run_id }}
-        path: |
-          REPORTS/
-          LOGS/
-          BACKUP/
-        retention-days: 90
+        name: Secured-Vault-Week-${{ github.run_number }}
+        path: main_repo/SECURE_VAULT/
+        retention-days: 14
