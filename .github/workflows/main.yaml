@@ -1,4 +1,4 @@
-name: Flutter Enterprise CI/CD
+name: Flutter Auto-Detect CI/CD
 
 on:
   push:
@@ -7,31 +7,39 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build_deploy:
+  build_and_deploy:
     runs-on: ubuntu-latest
 
-    # [!!!중요 수정 포인트!!!]
-    # 본인의 Flutter 프로젝트가 있는 '폴더 이름'을 아래 ./ 뒤에 적어주세요.
-    # 예: 저장소 안에 'my_app' 폴더가 있다면 -> './my_app'
-    # 예: 최상위에 있다면 -> './' 그대로 두세요.
-    defaults:
-      run:
-        working-directory: ./YOUR_PROJECT_FOLDER_NAME
-
     steps:
-      # 1. 소스 코드 체크아웃 (v4 최신)
+      # 1. 소스 코드 체크아웃
       - name: Checkout Source
         uses: actions/checkout@v4
 
-      # 2. Java 세팅 (Android 빌드용)
+      # 2. [핵심 기능] 프로젝트 위치 자동 감지
+      # YOUR_PROJECT_FOLDER_NAME을 수정할 필요 없이, 컴퓨터가 pubspec.yaml 위치를 찾아냅니다.
+      - name: Detect Flutter Project Directory
+        id: detect_path
+        run: |
+          # .git 폴더나 숨김 폴더를 제외하고 pubspec.yaml을 찾습니다.
+          TARGET_DIR=$(find . -type f -name "pubspec.yaml" -not -path '*/.*' | head -n 1 | xargs dirname)
+          
+          if [ -z "$TARGET_DIR" ]; then
+            echo "::error::Could not find pubspec.yaml in the repository!"
+            exit 1
+          fi
+
+          echo "Detected project path: $TARGET_DIR"
+          # 찾은 경로를 환경 변수로 등록하여 이후 단계에서 사용합니다.
+          echo "FLUTTER_PROJECT_PATH=$TARGET_DIR" >> $GITHUB_ENV
+
+      # 3. Java 설정 (안드로이드 빌드용)
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
           java-version: '17'
 
-      # 3. Flutter 세팅 및 [속도 향상] 캐시 적용
-      # cache: true 옵션이 켜져 있어 2번째 빌드부터 속도가 매우 빨라집니다.
+      # 4. Flutter 설정 및 [속도 향상] 캐시 적용
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
@@ -39,39 +47,69 @@ jobs:
           channel: 'stable'
           cache: true
 
-      # 4. 의존성 설치 (위에서 설정한 폴더에서 실행됨)
+      # 5. 의존성 설치 (자동 감지된 경로로 이동하여 실행)
       - name: Install Dependencies
-        run: flutter pub get
-
-      # 5. [업데이트 기능] 자동 버전 넘버링 빌드
-      # github.run_number를 사용하여 빌드할 때마다 앱 버전 코드가 1씩 자동 증가합니다.
-      - name: Build Android APK (Auto Versioning)
-        run: flutter build apk --release --build-number=${{ github.run_number }}
-
-      # 6. [정보 수집 서버] 빌드 상태 전송 (Webhook)
-      # 빌드 성공/실패 여부를 외부 서버로 전송합니다.
-      # Github Settings > Secrets에 'INFO_SERVER_URL'을 등록하지 않으면 로그만 출력하고 넘어갑니다.
-      - name: Report Status to Info Server
-        if: always() # 실패해도 실행됨
         run: |
-          echo "Sending build report..."
+          cd ${{ env.FLUTTER_PROJECT_PATH }}
+          flutter pub get
+
+      # 6. 코드 분석
+      - name: Analyze Code
+        run: |
+          cd ${{ env.FLUTTER_PROJECT_PATH }}
+          flutter analyze
+
+      # 7. 테스트 실행
+      - name: Run Tests
+        run: |
+          cd ${{ env.FLUTTER_PROJECT_PATH }}
+          flutter test
+
+      # 8. [업데이트 기능] 자동 버전 넘버링 빌드
+      # github.run_number를 이용해 빌드 번호를 1, 2, 3... 자동으로 증가시킵니다.
+      - name: Build Android APK (Auto Versioning)
+        run: |
+          cd ${{ env.FLUTTER_PROJECT_PATH }}
+          flutter build apk --release --build-number=${{ github.run_number }}
+
+      # 9. [정보 수집 서버] 빌드 결과 전송 (Webhook)
+      # Settings > Secrets에 'INFO_SERVER_URL'이 있으면 전송, 없으면 로그만 출력
+      - name: Report Status to Info Server
+        if: always()
+        run: |
+          echo "Preparing build report..."
           STATUS="${{ job.status }}"
           BUILD_NUM="${{ github.run_number }}"
+          PROJECT_PATH="${{ env.FLUTTER_PROJECT_PATH }}"
           
-          # 실제 전송 로직 (URL이 설정된 경우에만 작동)
+          # 전송할 데이터 (JSON)
+          JSON_DATA=$(cat <<EOF
+          {
+            "status": "$STATUS",
+            "build_number": "$BUILD_NUM",
+            "repo": "${{ github.repository }}",
+            "path": "$PROJECT_PATH",
+            "timestamp": "$(date -u)"
+          }
+          EOF
+          )
+
+          # 서버 URL이 설정되어 있을 때만 전송
           if [ -n "${{ secrets.INFO_SERVER_URL }}" ]; then
+            echo "Sending data to server..."
             curl -X POST -H "Content-Type: application/json" \
-            -d "{\"status\": \"$STATUS\", \"build_number\": \"$BUILD_NUM\", \"repo\": \"${{ github.repository }}\"}" \
+            -d "$JSON_DATA" \
             ${{ secrets.INFO_SERVER_URL }}
           else
-            echo "No INFO_SERVER_URL secret found. Skipping webhook."
+            echo "INFO: No INFO_SERVER_URL secret found. Webhook skipped."
+            echo "Payload would be: $JSON_DATA"
           fi
 
-      # 7. 결과물 업로드 (v4 최신)
+      # 10. 결과물 업로드 (경로 자동 보정)
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: release-apk-v${{ github.run_number }}
-          path: |
-            **/build/app/outputs/flutter-apk/app-release.apk
-          compression-level: 9 # 전송 속도 최적화
+          # 빌드 결과물은 항상 프로젝트 폴더 하위의 build/ 폴더에 생성됩니다.
+          path: ${{ env.FLUTTER_PROJECT_PATH }}/build/app/outputs/flutter-apk/app-release.apk
+          compression-level: 9
