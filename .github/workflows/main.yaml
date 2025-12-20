@@ -1,4 +1,4 @@
-name: Flutter Enterprise Generator & Build
+name: Fixed Enterprise Generator & Build
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  generate_and_build:
+  build_process:
     runs-on: ubuntu-latest
     
     steps:
@@ -15,15 +15,31 @@ jobs:
       - name: Checkout Source
         uses: actions/checkout@v4
 
-      # 2. Java 환경 설정 (Android 빌드 필수)
+      # 2. 프로젝트 존재 여부 판단 (쉘 로직 단순화)
+      - name: Check Project Status
+        id: check
+        run: |
+          # pubspec.yaml 파일 찾기
+          FOUND_PATH=$(find . -type f -name "pubspec.yaml" -not -path '*/.*' | head -n 1)
+          
+          if [ -z "$FOUND_PATH" ]; then
+            echo "⚠️ No project found."
+            echo "SHOULD_GENERATE=true" >> $GITHUB_ENV
+            echo "FLUTTER_PROJECT_PATH=$GITHUB_WORKSPACE/auto_generated_app" >> $GITHUB_ENV
+          else
+            echo "✅ Project found at $FOUND_PATH"
+            echo "SHOULD_GENERATE=false" >> $GITHUB_ENV
+            echo "FLUTTER_PROJECT_PATH=$(dirname "$FOUND_PATH")" >> $GITHUB_ENV
+          fi
+
+      # 3. Java 설정
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
           java-version: '17'
 
-      # 3. Flutter 환경 설정 (공식 구글 스토리지 사용 & 캐싱)
-      # 스크립트의 수동 다운로드 대신, 더 빠르고 안정적인 공식 액션을 사용합니다.
+      # 4. Flutter 설정
       - name: Setup Flutter SDK
         uses: subosito/flutter-action@v2
         with:
@@ -31,157 +47,131 @@ jobs:
           channel: 'stable'
           cache: true
 
-      # 4. [핵심] 프로젝트 생성 스크립트 실행 (User Script Integration)
-      # 저장소에 pubspec.yaml이 없으면 스크립트를 실행하여 프로젝트를 즉석에서 만들어냅니다.
-      - name: Execute Project Generator Script
-        id: generator
+      # 5. [수정 완료] 프로젝트 자동 생성 (독립된 단계로 분리하여 EOF 에러 해결)
+      - name: Generate Project Structure
+        if: env.SHOULD_GENERATE == 'true'
         run: |
-          # 1. 기존 프로젝트 존재 여부 확인
-          EXISTING_PUBSPEC=$(find . -type f -name "pubspec.yaml" -not -path '*/.*' | head -n 1)
+          echo "🚀 Starting Project Generation..."
+          PROJECT_NAME="auto_generated_app"
+          
+          # 프로젝트 생성
+          flutter create $PROJECT_NAME
+          
+          cd $PROJECT_NAME
+          
+          # 패키지 추가
+          flutter pub add flutter_secure_storage
+          flutter pub add dio
+          flutter pub add provider
+          flutter pub add get_it
 
-          if [ -n "$EXISTING_PUBSPEC" ]; then
-            echo "✅ 기존 프로젝트가 감지되었습니다: $EXISTING_PUBSPEC"
-            PROJECT_DIR=$(dirname "$EXISTING_PUBSPEC")
-            echo "FLUTTER_PROJECT_PATH=$PROJECT_DIR" >> $GITHUB_ENV
-            echo "MODE=EXISTING" >> $GITHUB_ENV
-          else
-            echo "⚠️ 프로젝트가 없습니다. '스크립트'를 실행하여 생성 모드로 진입합니다."
-            
-            # --- [User Script Start] ---
-            PROJECT_NAME="my_enterprise_app"
-            echo "🛠️ [Step 1] '$PROJECT_NAME' 프로젝트 생성 중..."
-            flutter create $PROJECT_NAME
-            
-            echo "📂 작업 디렉토리 이동..."
-            cd $PROJECT_NAME
-            
-            echo "📦 [Step 2] 엔터프라이즈급 의존성 패키지 추가..."
-            flutter pub add flutter_secure_storage # 암호화
-            flutter pub add dio # 네트워크
-            flutter pub add provider # 상태 관리
-            flutter pub add get_it # 의존성 주입
+          # 폴더 구조 생성
+          mkdir -p lib/core/network
+          mkdir -p lib/core/security
+          mkdir -p lib/features/auth/data
+          mkdir -p lib/features/auth/presentation
+          mkdir -p lib/shared
 
-            echo "📂 [Step 3] 폴더 구조 재편 (Clean Architecture)..."
-            mkdir -p lib/core/network
-            mkdir -p lib/core/security
-            mkdir -p lib/features/auth/data
-            mkdir -p lib/features/auth/presentation
-            mkdir -p lib/shared
+          echo "📝 Writing Security Module..."
+          
+          # [EOF 에러 수정 포인트] 
+          # 들여쓰기를 무시하도록 <<-EOF를 사용하고, EOF 위치를 정확히 맞춤
+          cat > lib/core/security/security_service.dart <<-'EOF'
+          import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
-            echo "📝 [Step 4] 핵심 파일 및 암호화 모듈 자동 생성..."
-            
-            # (A) 보안 저장소 유틸리티
-            cat <<EOF > lib/core/security/secure_storage.dart
-            import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+          class SecurityService {
+            final _storage = const FlutterSecureStorage();
 
-            class SecurityService {
-              final _storage = const FlutterSecureStorage();
-
-              Future<void> saveToken(String key, String value) async {
-                await _storage.write(key: key, value: value);
-              }
-
-              Future<String?> getToken(String key) async {
-                return await _storage.read(key: key);
-              }
-            }
-            EOF
-
-            # (B) 메인 앱 진입점
-            cat <<EOF > lib/main.dart
-            import 'package:flutter/material.dart';
-
-            void main() {
-              WidgetsFlutterBinding.ensureInitialized();
-              runApp(const MyApp());
+            Future<void> saveToken(String key, String value) async {
+              await _storage.write(key: key, value: value);
             }
 
-            class MyApp extends StatelessWidget {
-              const MyApp({super.key});
-
-              @override
-              Widget build(BuildContext context) {
-                return MaterialApp(
-                  title: 'Enterprise App',
-                  theme: ThemeData(primarySwatch: Colors.blue, useMaterial3: true),
-                  home: const Scaffold(
-                    body: Center(child: Text("Security & Server Setup Complete")),
-                  ),
-                );
-              }
+            Future<String?> getToken(String key) async {
+              return await _storage.read(key: key);
             }
-            EOF
-            
-            echo "✨ 프로젝트 생성 완료!"
-            # --- [User Script End] ---
+          }
+          EOF
 
-            # 생성된 경로를 환경변수에 등록하여 다음 단계들이 인식하게 함
-            # $GITHUB_WORKSPACE는 깃허브 액션의 루트 경로입니다.
-            echo "FLUTTER_PROJECT_PATH=$GITHUB_WORKSPACE/$PROJECT_NAME" >> $GITHUB_ENV
-            echo "MODE=GENERATED" >> $GITHUB_ENV
-          fi
+          echo "📝 Writing Main Entry Point..."
+          cat > lib/main.dart <<-'EOF'
+          import 'package:flutter/material.dart';
 
-      # 5. 의존성 설치 (자동 감지된 경로 사용)
+          void main() {
+            WidgetsFlutterBinding.ensureInitialized();
+            runApp(const MyApp());
+          }
+
+          class MyApp extends StatelessWidget {
+            const MyApp({super.key});
+
+            @override
+            Widget build(BuildContext context) {
+              return MaterialApp(
+                title: 'Enterprise App',
+                theme: ThemeData(primarySwatch: Colors.blue, useMaterial3: true),
+                home: const Scaffold(
+                  body: Center(child: Text("Security Setup Complete")),
+                ),
+              );
+            }
+          }
+          EOF
+          
+          echo "✅ Generation Complete."
+
+      # 6. 의존성 설치
       - name: Install Dependencies
         run: |
-          echo "Current Path: ${{ env.FLUTTER_PROJECT_PATH }}"
           cd ${{ env.FLUTTER_PROJECT_PATH }}
           flutter pub get
 
-      # 6. 코드 분석
+      # 7. 코드 분석
       - name: Analyze Code
         run: |
           cd ${{ env.FLUTTER_PROJECT_PATH }}
           flutter analyze
 
-      # 7. 테스트 실행
+      # 8. 테스트 실행
       - name: Run Tests
         run: |
           cd ${{ env.FLUTTER_PROJECT_PATH }}
           flutter test
 
-      # 8. [업데이트 기능] 자동 버전 증가 빌드
+      # 9. 빌드 (자동 버전 증가)
       - name: Build Android APK
         run: |
           cd ${{ env.FLUTTER_PROJECT_PATH }}
           flutter build apk --release --build-number=${{ github.run_number }}
 
-      # 9. [정보 수집 서버] 빌드 결과 전송 (Webhook)
-      - name: Report Status to Info Server
+      # 10. 정보 수집 서버 전송 (Webhook)
+      - name: Report Status
         if: always()
         run: |
           STATUS="${{ job.status }}"
-          BUILD_NUM="${{ github.run_number }}"
-          MODE="${{ env.MODE }}"
+          VERSION="${{ github.run_number }}"
           
-          echo "📡 Reporting to server..."
-          
-          # JSON 데이터 구성
-          JSON_PAYLOAD=$(cat <<EOF
+          JSON_DATA=$(cat <<EOF
           {
-            "build_id": "${{ github.run_id }}",
             "status": "$STATUS",
-            "version": "$BUILD_NUM",
-            "mode": "$MODE",
+            "version": "$VERSION",
             "repo": "${{ github.repository }}"
           }
           EOF
           )
           
-          # 서버 URL이 Secrets에 설정되어 있다면 전송
           if [ -n "${{ secrets.INFO_SERVER_URL }}" ]; then
+            echo "Sending webhook..."
             curl -X POST -H "Content-Type: application/json" \
-            -d "$JSON_PAYLOAD" \
+            -d "$JSON_DATA" \
             ${{ secrets.INFO_SERVER_URL }}
-            echo "✅ Data sent."
           else
-            echo "ℹ️ INFO_SERVER_URL 시크릿이 없어 전송을 건너뜁니다."
+            echo "Skipping webhook (No Secret)."
           fi
 
-      # 10. 결과물 업로드 (생성된 APK)
-      - name: Upload APK Artifact
+      # 11. 결과물 업로드
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: enterprise-app-v${{ github.run_number }}
+          name: release-apk-v${{ github.run_number }}
           path: ${{ env.FLUTTER_PROJECT_PATH }}/build/app/outputs/flutter-apk/app-release.apk
           compression-level: 9
