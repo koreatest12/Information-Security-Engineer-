@@ -11,7 +11,7 @@
 | 항목 (Metric) | 상태 (Status) |
 | :--- | :--- |
 | **시스템 버전** | 🐍 **Python 3.12** (Tabulate Support) |
-| **마지막 실행** | 🕒 2025-12-21 01:13:06 (KST) |
+| **마지막 실행** | 🕒 2025-12-21 01:39:19 (KST) |
 | **스크립트 실행** | 🏃‍♂️ **20** 개 수행 |
 | **데이터베이스** | 💾 Auto-Sync & Conflict Resolved |
 
@@ -29,11 +29,11 @@
 ```text
 beautifulsoup4==4.14.3
 cryptography==46.0.3
-fastapi==0.125.0
+fastapi==0.126.0
 feedparser==6.0.12
 matplotlib==3.10.8
 moviepy==2.2.1
-numpy==2.3.5
+numpy==2.4.0
 packaging==25.0
 pandas==2.3.3
 psutil==7.1.3
@@ -51,7 +51,7 @@ beautifulsoup4==4.14.3
 cryptography==46.0.3
 feedparser==6.0.12
 matplotlib==3.10.8
-numpy==2.3.5
+numpy==2.4.0
 packaging==25.0
 pandas==2.3.3
 psutil==7.1.3
