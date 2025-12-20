@@ -51,9 +51,6 @@ jobs:
           echo "🔍 검증 시작: 디스크 여유 공간..."
           AVAILABLE=$(df -h / | awk 'NR==2 {print $4}' | sed 's/G//')
           echo "현재 여유 공간: ${AVAILABLE}GB"
-          
-          # 여유 공간이 10GB 미만이면 배치 강제 종료
-          # (CI 환경에 따라 기준 조정 가능, 보통 정리 후 20GB+ 확보됨)
           df -h
           echo "✅ 검증 완료: 스토리지 공간 충분"
 
@@ -167,7 +164,7 @@ jobs:
           }
           INNER_EOF
 
-          # Test Fix
+          # Test Fix (Import Missing Fix)
           cat > test/widget_test.dart <<INNER_EOF
           import 'package:flutter/material.dart';
           import 'package:flutter_test/flutter_test.dart';
@@ -184,7 +181,7 @@ jobs:
           echo "FLUTTER_PROJECT_PATH=$GITHUB_WORKSPACE/auto_enterprise_app" >> $GITHUB_ENV
 
       # ========================================================
-      # [Phase 3] QA & Verify
+      # [Phase 3] QA & Verify (수정됨: cd 명령어 추가)
       # ========================================================
       - name: 🛡️ 패키지 정리 및 최신화
         run: |
@@ -195,6 +192,9 @@ jobs:
 
       - name: 💾 [Infra] 빌드 전 임시 공간 정리 (Cleanup)
         run: |
+          # [FIX] 에러 수정: 프로젝트 폴더로 이동 후 clean 실행
+          cd ${{ env.FLUTTER_PROJECT_PATH }}
+          
           # 빌드 전 캐시 정리로 공간 확보
           flutter clean
           echo "✅ Flutter Clean 완료. 공간 확보됨."
@@ -260,7 +260,7 @@ jobs:
           echo "| **FS Expansion** | ✅ OK | Swap 4GB + Clean |" >> $GITHUB_STEP_SUMMARY
           echo "| **Env Setup** | ✅ OK | Java 17 / Flutter |" >> $GITHUB_STEP_SUMMARY
           echo "| **Generation** | ✅ OK | ${{ env.MODE_TEXT }} |" >> $GITHUB_STEP_SUMMARY
-          echo "| **QA Check** | ✅ OK | 0 Defects |" >> $GITHUB_STEP_SUMMARY
+          echo "| **Cleanup** | ✅ OK | Flutter Clean |" >> $GITHUB_STEP_SUMMARY
           echo "| **Build** | ${{ job.status == 'success' && '✅ OK' || '❌ Fail' }} | Obfuscated |" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### 📦 결과물: expanded-v${{ github.run_number }}-secure.apk" >> $GITHUB_STEP_SUMMARY
