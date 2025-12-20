@@ -1,13 +1,14 @@
 name: Python Dependency Submission
+
 on:
   push:
     branches: [ "main", "master" ]
   pull_request:
     branches: [ "main", "master" ]
-  workflow_dispatch: # 수동 실행 가능
+  workflow_dispatch:
 
 permissions:
-  contents: write # 의존성 그래프 제출을 위해 필수적인 권한
+  contents: write
 
 jobs:
   dependency-submission:
@@ -16,30 +17,20 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # [해결 1] 명시적인 Python 버전 설정
-      # 'python-version 입력값이 설정되지 않았습니다' 경고를 해결합니다.
+      # [단계 1] Python 설정
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11' # 프로젝트에 맞는 버전으로 변경 (3.9, 3.10 등)
-          cache: 'pip' # pip 캐싱을 통해 설치 속도 향상 및 네트워크 오류 감소
+          python-version: '3.11'
+          cache: 'pip'
 
-      # [해결 2] 의존성 파일 설치 및 생성
-      # 정확한 탐지를 위해 패키지를 먼저 설치합니다.
+      # [단계 2] 의존성 설치 (정확도를 위해 필요)
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          # setup.py나 pyproject.toml을 사용하는 경우 아래 명령어로 requirements.txt를 생성해주면 탐지 정확도가 높아집니다.
-          # pip freeze > requirements.txt 
 
-      # [해결 3] Python 전용 의존성 제출 액션 사용 (가장 중요)
-      # 기존의 'component-detection' 액션은 무거운 바이너리를 다운로드하다가 'socket hang up'이 자주 발생합니다.
-      # 아래 액션은 Python 환경을 직접 분석하므로 다운로드 오류가 없고 훨씬 안정적입니다.
+      # [단계 3] 의존성 제출 (수정됨: with 섹션 제거)
+      # with 섹션 없이 사용하면 자동으로 루트 디렉토리의 requirements.txt 등을 탐지합니다.
       - name: Submit Dependency Snapshot
         uses: advanced-security/python-dependency-submission-action@v3
-        with:
-          # requirements.txt, pyproject.toml 등을 자동으로 탐지합니다.
-          # 특정 파일만 지정하고 싶다면 아래 주석을 해제하고 경로를 입력하세요.
-          # token: ${{ secrets.GITHUB_TOKEN }} # 기본적으로 내장 토큰 사용
-          # dependency-files: "requirements.txt"
