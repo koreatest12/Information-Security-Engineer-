@@ -1,4 +1,4 @@
-name: Fixed Syntax Auto-Gen Ops Pipeline
+name: Conflict Fix & Auto-Gen Ops Pipeline
 
 on:
   push:
@@ -9,19 +9,19 @@ on:
 
 jobs:
   # ====================================================
-  # JOB 1: 스크립트 확보 (원격 확인 OR 자동 생성)
+  # JOB 1: Script Preparation (Remote Check OR Auto-Gen)
   # ====================================================
   prepare-scripts:
-    name: 🛠️ 스크립트 확보 및 생성
+    name: 🛠️ Script Preparation
     runs-on: ubuntu-latest
     outputs:
       source: ${{ steps.check_source.outputs.source }}
     steps:
-      - name: 📥 원격 리포지토리 확인 (SSL Fix 적용)
+      - name: 📥 Check Remote Repository (SSL Fix Applied)
         id: checkout
         continue-on-error: true
         run: |
-          # Checkout 액션 대신 직접 git 명령어로 시도 (SSL 에러 회피 및 유연성 확보)
+          # Use raw git commands to bypass Action SSL strictness
           git config --global http.sslVerify false
           git clone --depth 1 --filter=blob:none --sparse https://github.com/koreatest12/Information-Security-Engineer-.git target_repo || echo "Git clone failed, proceeding to auto-gen."
           
@@ -31,47 +31,46 @@ jobs:
             cd ..
           fi
 
-      - name: 🔍 스크립트 유무 판별 및 자동 생성
+      - name: 🔍 Determine Source & Auto-Generate
         id: check_source
         run: |
           mkdir -p final_scripts
           
-          # 1. 원격 리포지토리 확인
+          # 1. Check if remote scripts exist
           if [ -d "target_repo/scripts" ] && [ "$(ls -A target_repo/scripts)" ]; then
-            echo "✅ 원격 리포지토리에서 스크립트 발견."
+            echo "✅ Found scripts in remote repository."
             cp target_repo/scripts/*.sh final_scripts/
             echo "source=remote" >> $GITHUB_OUTPUT
           else
-            # 2. [비상] 스크립트 부재 시 자동 생성 (EOF 에러 방지를 위해 printf 사용)
-            echo "⚠️ 스크립트 없음! [자동 생성 프로토콜] 가동."
+            # 2. Auto-Generate Scripts (Using printf to avoid Heredoc errors)
+            echo "⚠️ No scripts found! Activating [Auto-Gen Protocol]."
             
-            # (A) 시스템 리소스 점검 (Here-doc 대신 printf 사용으로 문법 에러 방지)
+            # (A) System Info
             printf '#!/bin/bash\n' > final_scripts/01_sys_info.sh
             printf 'echo "📊 [Auto-Gen] System Info Check"\n' >> final_scripts/01_sys_info.sh
             printf 'echo "Hostname: $(hostname)"\n' >> final_scripts/01_sys_info.sh
             printf 'echo "Kernel: $(uname -r)"\n' >> final_scripts/01_sys_info.sh
             printf 'df -h /\n' >> final_scripts/01_sys_info.sh
 
-            # (B) 네트워크/보안 점검
+            # (B) Security Audit
             printf '#!/bin/bash\n' > final_scripts/02_security_audit.sh
             printf 'echo "🛡️ [Auto-Gen] Security Audit"\n' >> final_scripts/02_security_audit.sh
-            printf 'if command -v ss &> /dev/null; then ss -tuln; else echo "No ss command"; fi\n' >> final_scripts/02_security_audit.sh
+            printf 'if command -v ss &> /dev/null; then ss -tuln; else echo "ss command not found"; fi\n' >> final_scripts/02_security_audit.sh
             printf 'echo "Root Check:"\n' >> final_scripts/02_security_audit.sh
             printf "grep 'x:0:' /etc/passwd\n" >> final_scripts/02_security_audit.sh
 
-            # (C) 로그 정리 시뮬레이션
+            # (C) Cleanup Simulation
             printf '#!/bin/bash\n' > final_scripts/03_cleanup.sh
             printf 'echo "🧹 [Auto-Gen] Log Cleanup Simulation"\n' >> final_scripts/03_cleanup.sh
             printf 'find /var/log -type f -name "*.log" -exec echo "Would compress: {}" \\;\n' >> final_scripts/03_cleanup.sh
             
-            echo "✅ 3개의 비상용 스크립트 생성 완료."
+            echo "✅ 3 Emergency Scripts Generated."
             echo "source=generated" >> $GITHUB_OUTPUT
           fi
           
           chmod +x final_scripts/*.sh
-          ls -l final_scripts/
 
-      - name: 📤 스크립트 아티팩트 저장
+      - name: 📤 Upload Script Artifact
         uses: actions/upload-artifact@v4
         with:
           name: raw-scripts-bundle
@@ -79,14 +78,14 @@ jobs:
           retention-days: 1
 
   # ====================================================
-  # JOB 2: 매트릭스 기반 보안 패치 및 실행
+  # JOB 2: Matrix Security Ops (Conflict Fixed)
   # ====================================================
   execute-security-ops:
-    name: 매트릭스:보안 운영 실행
-    needs: prepare-scripts # Job 1이 성공해야 실행됨
+    name: Matrix:Security Ops Execution
+    needs: prepare-scripts
     runs-on: ubuntu-latest
     
-    timeout-minutes: 999
+    timeout-minutes: 360
     
     strategy:
       fail-fast: false
@@ -94,21 +93,21 @@ jobs:
         include:
           - os: ubuntu
             image: ubuntu:latest
-            # Ubuntu: ca-certificates 설치 및 Git 설치
+            # Ubuntu uses apt-get (No --allowerasing needed)
             pre_req: "apt-get update && apt-get install -y ca-certificates git curl openssl sudo"
             update_cmd: "apt-get dist-upgrade -y -o Dpkg::Options::='--force-confdef' -o Dpkg::Options::='--force-confold'"
             
           - os: centos
             image: quay.io/centos/centos:stream9
-            # CentOS: 인증서 업데이트
-            pre_req: "dnf install -y ca-certificates git curl openssl sudo && update-ca-trust force-enable"
-            update_cmd: "dnf update -y --security || dnf update -y"
+            # CentOS: Added --allowerasing to fix curl-minimal conflict
+            pre_req: "dnf install -y --allowerasing ca-certificates git curl openssl sudo && update-ca-trust force-enable"
+            update_cmd: "dnf update -y --security --allowerasing || dnf update -y --allowerasing"
             
           - os: amzn
             image: amazonlinux:2023
-            # Amazon Linux: 인증서 업데이트
-            pre_req: "yum install -y ca-certificates git curl openssl sudo && update-ca-trust force-enable"
-            update_cmd: "yum update -y --security || yum update -y"
+            # Amazon Linux: Added --allowerasing to fix curl-minimal conflict
+            pre_req: "yum install -y --allowerasing ca-certificates git curl openssl sudo && update-ca-trust force-enable"
+            update_cmd: "yum update -y --security --allowerasing || yum update -y --allowerasing"
 
     container:
       image: ${{ matrix.image }}
@@ -117,34 +116,44 @@ jobs:
         GIT_SSL_NO_VERIFY: "true"
 
     steps:
-      # 1. SSL 인증서 및 필수 도구 설치 (가장 먼저 실행)
-      - name: 🔒 Pre-Flight:SSL 인증서 및 도구 설치
+      # 1. Install Prerequisites (Crucial Fix for Git/Curl)
+      - name: 🔒 Pre-Flight:Install Certs & Tools (Conflict Fix)
         run: |
-          echo "Installing prerequisites..."
+          echo "=========================================="
+          echo "🚑 Installing Prerequisites on ${{ matrix.os }}..."
+          echo "   * Applying '--allowerasing' to fix curl conflicts"
+          echo "=========================================="
+          
+          # Execute the command defined in the matrix
           ${{ matrix.pre_req }}
+          
+          # Verify Git installation
+          git --version || echo "❌ Git install failed"
+          
+          # Disable strict SSL for git
           git config --global http.sslVerify false
           git config --global --add safe.directory '*'
 
-      # 2. 하트비트 시작
+      # 2. Heartbeat Monitor
       - name: 💓 Start Heartbeat
         run: (while true; do echo "💓 [Alive] System running... $(date)"; sleep 60; done) &
 
-      # 3. 아티팩트 다운로드 (Job 1에서 생성된 스크립트)
-      - name: 📥 실행할 스크립트 아티팩트 다운로드
+      # 3. Download Scripts from Job 1
+      - name: 📥 Download Executable Scripts
         uses: actions/download-artifact@v4
         with:
           name: raw-scripts-bundle
           path: exec_scripts
 
-      # 4. 보안 패치 적용
-      - name: 🛡️ 시스템 보안 패치 적용
+      # 4. Apply System Security Patches
+      - name: 🛡️ Apply System Security Patches
         run: |
           echo "Applying Security Patches on ${{ matrix.os }}..."
           ${{ matrix.update_cmd }}
           echo "✅ System Secured."
 
-      # 5. 스크립트 실행
-      - name: ▶️ 보안 스크립트 실행
+      # 5. Execute Scripts
+      - name: ▶️ Execute Security Scripts
         run: |
           chmod +x exec_scripts/*.sh
           echo "Executing scripts..."
@@ -164,28 +173,28 @@ jobs:
           fi
 
   # ====================================================
-  # JOB 3: 결과 패키징 및 업로드
+  # JOB 3: Packaging & Upload
   # ====================================================
   package-artifacts:
-    name: 패키지 아티팩트
+    name: Package Artifacts
     needs: [prepare-scripts, execute-security-ops]
     runs-on: ubuntu-latest
     if: always()
     
     steps:
-      - name: 📥 원본 스크립트 다운로드
+      - name: 📥 Download Original Scripts
         uses: actions/download-artifact@v4
         with:
           name: raw-scripts-bundle
           path: deployment_pack/scripts
 
-      - name: 📦 아티팩트 패키징
+      - name: 📦 Bundle Artifacts
         run: |
           echo "# Ops Report" > deployment_pack/README.md
           echo "Date: $(date)" >> deployment_pack/README.md
           tar -czvf ops_result.tar.gz deployment_pack/
 
-      - name: 📤 패키지 업로드
+      - name: 📤 Upload Final Package
         uses: actions/upload-artifact@v4
         with:
           name: ops-scripts-package
