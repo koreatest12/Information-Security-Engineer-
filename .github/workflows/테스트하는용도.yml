@@ -1,18 +1,23 @@
-name: Remote Scripts Execution & Security Patch Ops
+name: Long-Run Security Ops & Artifact Pipeline
 
 on:
   push:
     branches: [ "main" ]
   schedule:
-    - cron: '0 18 * * 0' # 매주 일요일 18:00 UTC 실행
+    - cron: '0 18 * * 0' # 매주 일요일 18:00 UTC
   workflow_dispatch:
 
 jobs:
   # ====================================================
-  # JOB: 보안 패치 및 외부 리포지토리 스크립트 실행
+  # JOB 1: 매트릭스 기반 보안 운영 (장시간 수행 보장)
   # ====================================================
   execute-security-ops:
+    name: 매트릭스: 보안 운영 실행
     runs-on: ubuntu-latest
+    
+    # [핵심] 장시간 수행을 위한 타임아웃 6시간 설정 (기본값 방지)
+    timeout-minutes: 360
+    
     strategy:
       fail-fast: false
       matrix:
@@ -20,39 +25,68 @@ jobs:
           - os: ubuntu
             image: ubuntu:latest
             pkg_cmd: "apt-get install -y"
-            # [보안 강화] dist-upgrade로 커널 및 의존성 변경 보안 패치까지 모두 적용
-            update_cmd: "apt-get update -y && apt-get dist-upgrade -y"
-            extra_flags: ""
+            # [보안+무인] 사용자 입력 대기 방지 옵션 추가
+            update_cmd: "apt-get update -y && apt-get dist-upgrade -y -o Dpkg::Options::='--force-confdef' -o Dpkg::Options::='--force-confold'"
+            extra_flags: "--no-install-recommends"
             
           - os: centos
             image: quay.io/centos/centos:stream9
             pkg_cmd: "dnf install -y"
-            # [보안 강화] 최신 보안 패치를 포함한 전체 업데이트 수행
             update_cmd: "dnf update -y --security || dnf update -y"
             extra_flags: "--allowerasing"
             
           - os: amzn
             image: amazonlinux:2023
             pkg_cmd: "yum install -y"
-            # [보안 강화] Amazon Linux 보안 업데이트 적용
             update_cmd: "yum update -y --security || yum update -y"
             extra_flags: "--allowerasing"
 
     container:
       image: ${{ matrix.image }}
+      # [핵심] Ubuntu에서 대화형 프롬프트(멈춤 현상) 방지
+      env:
+        DEBIAN_FRONTEND: noninteractive
 
     steps:
-      # 1. [시스템 준비] Checkout 및 기본 도구 설치
-      - name: Pre-flight:Install Git & Tar
+      # 1. 하트비트 시작 (출력 없음으로 인한 타임아웃 방지)
+      - name: 💓 Start Heartbeat Monitor
         run: |
-          echo "🚀 Starting Pre-flight checks on ${{ matrix.os }}..."
-          # 패키지 매니저 업데이트
-          ${{ matrix.update_cmd }}
-          ${{ matrix.pkg_cmd }} ${{ matrix.extra_flags }} git tar
+          echo "Starting Heartbeat to prevent idle timeout..."
+          # 백그라운드에서 60초마다 생존 로그 출력
+          (while true; do echo "💓 [System Alive] Job is running... $(date)"; sleep 60; done) &
+          echo "✅ Heartbeat started."
+
+      # 2. 시스템 기본 도구 설치 (재시도 로직 적용)
+      - name: 🚀 Pre-flight: 시스템 도구 설치 (Retry applied)
+        run: |
+          echo "Installing basic tools on ${{ matrix.os }}..."
+          
+          # 네트워크 불안정 대비 재시도 함수
+          retry_cmd() {
+            local n=1
+            local max=5
+            local delay=10
+            while true; do
+              "$@" && break || {
+                if [[ $n -lt $max ]]; then
+                  ((n++))
+                  echo "⚠️ Command failed. Attempt $n/$max. Retrying in ${delay}s..."
+                  sleep $delay;
+                else
+                  echo "❌ The command has failed after $n attempts."
+                  return 1
+                fi
+              }
+            done
+          }
+          
+          retry_cmd ${{ matrix.update_cmd }}
+          retry_cmd ${{ matrix.pkg_cmd }} ${{ matrix.extra_flags }} git tar sudo curl wget which findutils
+          
           echo "✅ Basic tools installed."
 
-      # 2. [타겟 리포지토리] scripts 폴더만 가져오기 (Sparse Checkout)
-      - name: Checkout Remote Repository Scripts
+      # 3. 원격 리포지토리 스크립트 다운로드
+      - name: 📥 원격 스크립트 다운로드
         uses: actions/checkout@v4
         with:
           repository: koreatest12/Information-Security-Engineer-
@@ -61,85 +95,78 @@ jobs:
           sparse-checkout: |
             scripts
 
-      # 3. [경로 정리] 실행 환경 구성
-      - name: Setup Script Directory
+      # 4. 실행 환경 구성
+      - name: 📂 스크립트 실행 준비
         run: |
           mkdir -p local_scripts
           if [ -d "target_repo/scripts" ]; then
             cp -r target_repo/scripts/* local_scripts/
-            echo "✅ Scripts fetched from remote repository."
-            ls -al local_scripts/
+            echo "✅ Scripts loaded."
           else
-            echo "⚠️ Warning: 'scripts' directory not found."
+            echo "⚠️ Scripts not found. Creating placeholder."
             echo '#!/bin/bash' > local_scripts/placeholder.sh
-            echo 'echo "No remote scripts found. Skipping."' >> local_scripts/placeholder.sh
+            echo 'echo "Placeholder script running."' >> local_scripts/placeholder.sh
           fi
           chmod +x local_scripts/*.sh
 
-      # 4. [의존성 설치] 필수 시스템 패키지 설치
-      - name: Install System Dependencies
-        run: |
-          echo "📦 Installing system dependencies..."
-          ${{ matrix.pkg_cmd }} ${{ matrix.extra_flags }} sudo curl wget which findutils
-          echo "✅ Dependencies installed successfully."
-
-      # 5. [기능 추가] 보안 패치 및 시스템 강화 작업 (Security Patching)
-      - name: 🛡️ Apply System Security Patches & Upgrade
+      # 5. [핵심] 대규모 보안 패치 (장시간 소요 예상)
+      - name: 🛡️ 시스템 보안 패치 적용 (Long-Running Patch)
         run: |
           echo "=========================================="
-          echo "🛡️ Starting Security Patching Process on ${{ matrix.os }}..."
+          echo "🛡️ ${{ matrix.os }} 대규모 보안 패치 시작"
+          echo "   (This process may take a while...)"
           echo "=========================================="
           
-          # OS별 보안 패치 명령어 실행 (Matrix에서 정의됨)
+          start_time=$(date +%s)
+          
+          # 업데이트 명령어 실행 (Matrix 정의)
           ${{ matrix.update_cmd }}
           
-          echo "✅ Security Patches Applied."
-          echo "   - OS Kernel & Packages are up-to-date."
-          echo "   - Vulnerability fixes applied."
-          echo "=========================================="
-
-      # 6. [시스템 정보] 패치 후 상태 확인
-      - name: Report System Information
-        run: |
-          echo "========================================"
-          echo "Target OS: ${{ matrix.os }}"
-          if [ -f /etc/os-release ]; then
-            cat /etc/os-release | grep PRETTY_NAME
-          fi
-          echo "Kernel: $(uname -r)"
-          echo "Date: $(date)"
-          echo "========================================"
-
-      # 7. [일괄 실행] 가져온 스크립트 실행
-      - name: Execute All Fetched Scripts
-        run: |
-          echo "▶️ Starting execution of remote scripts..."
+          end_time=$(date +%s)
+          duration=$((end_time - start_time))
           
+          echo "✅ Security Patches Applied."
+          echo "⏱️ Total Patch Time: ${duration} seconds"
+
+      # 6. 스크립트 일괄 실행 (오류 무시 및 지속 수행)
+      - name: ▶️ 보안 스크립트 실행
+        run: |
+          echo "Running scripts..."
           count=$(ls -1 local_scripts/*.sh 2>/dev/null | wc -l)
+          
           if [ "$count" != "0" ]; then
             for script in local_scripts/*.sh; do
               echo "----------------------------------------"
               echo "📜 Executing: $(basename "$script")"
-              echo "----------------------------------------"
               
-              # 스크립트 실행 (보안 패치 완료된 환경에서 수행됨)
-              sudo "$script" && echo "✅ Success: $(basename "$script")" || echo "❌ Failed: $(basename "$script")"
+              # 스크립트 하나가 실패해도 전체 Job은 계속 수행되도록 설정
+              # set +e (에러 발생 시 종료 방지)
+              set +e
+              sudo "$script"
+              exit_code=$?
+              set -e
+              
+              if [ $exit_code -eq 0 ]; then
+                echo "✅ Success: $(basename "$script")"
+              else
+                echo "⚠️ Warning: $(basename "$script") failed with exit code $exit_code (Continuing...)"
+              fi
+              echo "----------------------------------------"
             done
-          else
-            echo "⚠️ No .sh files found to execute."
           fi
-          echo "----------------------------------------"
-          echo "🏁 All operations finished."
 
   # ====================================================
-  # JOB 2: 실행 결과물 아카이빙
+  # JOB 2: 실행 결과물 패키징
   # ====================================================
   package-artifacts:
+    name: 패키지 아티팩트
     needs: execute-security-ops
     runs-on: ubuntu-latest
     if: always()
+    timeout-minutes: 60 # 아티팩트 업로드도 넉넉하게 설정
+    
     steps:
-      - name: Checkout Remote Repository for Archiving
+      - name: 📥 아티팩트용 소스 다운로드
         uses: actions/checkout@v4
         with:
           repository: koreatest12/Information-Security-Engineer-
@@ -147,17 +174,17 @@ jobs:
           path: archived_repo
           sparse-checkout: scripts
 
-      - name: Archive Scripts
+      - name: 📦 스크립트 번들링
         run: |
           mkdir -p deployment_pack
           if [ -d "archived_repo/scripts" ]; then
             cp -r archived_repo/scripts deployment_pack/
           else
-            echo "No scripts found." > deployment_pack/README.txt
+            echo "No scripts." > deployment_pack/README.txt
           fi
           tar -czvf scripts_bundle.tar.gz deployment_pack/
 
-      - name: Upload Artifact
+      - name: 📤 아티팩트 업로드
         uses: actions/upload-artifact@v4
         with:
           name: executed-scripts-bundle
