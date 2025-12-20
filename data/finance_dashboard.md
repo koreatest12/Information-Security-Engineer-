@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-20 14:56:47 (KST)
+> **Time:** 2025-12-20 15:18:10 (KST)
 
-### 🤖 Copilot Briefing (14:56)
+### 🤖 Copilot Briefing (15:18)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -11,7 +11,7 @@
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
 | **🔵 신한금융 (은행/투자)** | • [신한은행, 인하대에 전동휠체어 기증…장애 학생 이동 지원 - 기호일보](https://news.google.com/rss/articles/CBMib0FVX3lxTE13N0NQTElOTUZXUXdUSzcycTJFdjRnTXJuWEh0UHpvdk41YXlIRlZDengybW9WVXZIT3ZldHNVT0pCbm5tNldMMWVtV1VPaGdzTmxrWkpnNDJTY3hSS3R4VEZfWi00WFhBSzdhbHFyRQ?oc=5)<br>• [신한은행, 트래블 체크카드 '환율우대 100%'…내년까지 연장 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFA2ZHp1ZEtrX2d0WWRqVl9OZ3VGSFpickh2X3MzcGJzMkdSS0RvME03LU9oRERzeFJRZ3JPRVZJWlB1aWtnd3VDbEFsM2FobGFxTTNJNTVnWXdNZElyYkIyLdIBeEFVX3lxTE94Uk9FM0NkMktrU1ZybGl5LVZQaC14YWhsMkV1QXBuRE5WV0w1TkVlUEM4bGQ4X1Nxd2p2dmdFV0FvcWRMZVFmcl9HZERiV0NWOTBsWTB2R3c0UE5XakxBdExxZGt1OFdyOUxua182MUxlVUtjTzBYUg?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [하나은행, 주담대 영업 재개 - 매거진한경](https://news.google.com/rss/articles/CBMibEFVX3lxTE9fdU12dEtQSGVmUVg3UUJCOFd4UHlTcFVEYi1zUWZTN2pMQUdWWjhlZVA1SmM2alNHbkc1eVVydVVTc2p1bW92NXhleWxJVWNIS3RwQmdDeGFySFNaTl8xR0tueWp3ZmhrSjlxNA?oc=5)<br>• [IRP·DC 가입 고객에 커피 쿠폰…하나은행 퇴직연금 이벤트 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFBrQzRWUTQzSDFfQUJ2NkNmclpLcGVVWGVPMmh6QVRXUVdwY1lYNEZvRWo0RTBncGdIU2RGLUNvdmx6NTJ1MnJTeHZQZE1FaG9SYzdBcGJEUGwzTXhQdjI4b2dPQi0xamp6cVpV?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [하나은행, 3년 연속 퇴직연금 우수사업자 선정…기념 이벤트 실시 - 디지털데일리](https://news.google.com/rss/articles/CBMiZEFVX3lxTE11d0lzaVFUZmtEb3ZORmlDZ0Z5SlBQRWtKRDlJSXFBY1dadGw5bzJXT1pES2N3QWUzbFRDYXlyZk1GU2lDNTdESVN6cFJiaDlXd250Ml85aUFfS0lMZThmbGNyRmc?oc=5)<br>• [하나은행, 주담대 영업 재개 - 매거진한경](https://news.google.com/rss/articles/CBMibEFVX3lxTE9fdU12dEtQSGVmUVg3UUJCOFd4UHlTcFVEYi1zUWZTN2pMQUdWWjhlZVA1SmM2alNHbkc1eVVydVVTc2p1bW92NXhleWxJVWNIS3RwQmdDeGFySFNaTl8xR0tueWp3ZmhrSjlxNA?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
@@ -22,7 +22,7 @@
 - [티빙, 크리덴셜 스터핑 공격 탐지 후 조치... “유출 無, 비번 바꿔달라” 공지](http://www.boannews.com/media/view.asp?idx=141091&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.9%)
+- **vCPU:** `128 vCores` (Load: 39.7%)
 - **RAM:** `31.7/512 GB` (Used: 6.2%)
 
 ---
