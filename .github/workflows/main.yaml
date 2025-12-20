@@ -9,15 +9,14 @@ on:
 
 jobs:
   build:
-    # 실행 환경: 최신 우분투
     runs-on: ubuntu-latest
 
     steps:
-      # 1. 소스 코드 체크아웃
-      - uses: actions/checkout@v3
+      # 1. 소스 코드 체크아웃 (v3 -> v4 업데이트)
+      - uses: actions/checkout@v4
 
-      # 2. Java 환경 설정 (Android 빌드용)
-      - uses: actions/setup-java@v3
+      # 2. Java 환경 설정 (v3 -> v4 업데이트)
+      - uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
           java-version: '17'
@@ -25,20 +24,19 @@ jobs:
       # 3. Flutter 환경 설정
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.16.x' # 사용하는 버전에 맞춰 수정
+          flutter-version: '3.24.x' # 최신 안정화 버전 대역으로 수정 권장
           channel: 'stable'
-          cache: true # SDK 캐싱으로 속도 향상
+          cache: true
 
       # 4. 의존성 패키지 설치
       - name: Install Dependencies
         run: flutter pub get
 
-      # 5. 코드 스타일 분석 (Lint)
-      # analysis_options.yaml 규칙에 위배되면 실패 처리
+      # 5. 코드 스타일 분석
       - name: Analyze Code
         run: flutter analyze
 
-      # 6. 단위/위젯 테스트 실행
+      # 6. 테스트 실행
       - name: Run Tests
         run: flutter test
 
@@ -46,14 +44,11 @@ jobs:
       - name: Build Android APK
         run: flutter build apk --release
 
-      # 8. Web 빌드 (선택 사항)
-      - name: Build Web
-        run: flutter build web --release
-
-      # 9. 빌드 결과물(Artifact) 저장
-      # GitHub Actions 실행 화면에서 다운로드 가능하도록 업로드
+      # [중요] 8. 빌드 결과물 업로드 (v3 -> v4 수정됨)
+      # v4에서는 name이 필수이며, 동일한 이름으로 여러 번 업로드 시 덮어쓰기 동작이 변경됨
       - name: Upload APK
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: release-apk
           path: build/app/outputs/flutter-apk/app-release.apk
+          compression-level: 9 # (선택) 압축률 최대 설정
