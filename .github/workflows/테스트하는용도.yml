@@ -57,7 +57,7 @@ jobs:
           echo "✅ Heartbeat started."
 
       # 2. 시스템 기본 도구 설치 (재시도 로직 적용)
-      - name: 🚀 Pre-flight: 시스템 도구 설치 (Retry applied)
+      - name: 🚀 Pre-flight:시스템 도구 설치 (Retry applied)
         run: |
           echo "Installing basic tools on ${{ matrix.os }}..."
           
