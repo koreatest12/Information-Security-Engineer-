@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-21 00:54:04 (KST)
+> **Time:** 2025-12-21 01:12:52 (KST)
 
-### 🤖 Copilot Briefing (00:54)
+### 🤖 Copilot Briefing (01:12)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -22,8 +22,8 @@
 - [티빙, 크리덴셜 스터핑 공격 탐지 후 조치... “유출 無, 비번 바꿔달라” 공지](http://www.boannews.com/media/view.asp?idx=141091&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.0%)
-- **RAM:** `33.8/512 GB` (Used: 6.6%)
+- **vCPU:** `128 vCores` (Load: 41.7%)
+- **RAM:** `33.3/512 GB` (Used: 6.5%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
