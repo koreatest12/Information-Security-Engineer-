@@ -1,18 +1,17 @@
-name: Advanced System Ops & Execution
+name: Remote Scripts Execution & Security Patch Ops
 
 on:
   push:
     branches: [ "main" ]
-    paths: [ "scripts/**" ]
   schedule:
-    - cron: '0 18 * * 0'
+    - cron: '0 18 * * 0' # 매주 일요일 18:00 UTC 실행
   workflow_dispatch:
 
 jobs:
   # ====================================================
-  # JOB: 다중 OS 환경 구축, 의존성 해결, 스크립트 일괄 실행
+  # JOB: 보안 패치 및 외부 리포지토리 스크립트 실행
   # ====================================================
-  execute-scripts:
+  execute-security-ops:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -21,120 +20,145 @@ jobs:
           - os: ubuntu
             image: ubuntu:latest
             pkg_cmd: "apt-get install -y"
-            update_cmd: "apt-get update -y"
-            # Ubuntu는 충돌이 적으므로 기본 옵션
+            # [보안 강화] dist-upgrade로 커널 및 의존성 변경 보안 패치까지 모두 적용
+            update_cmd: "apt-get update -y && apt-get dist-upgrade -y"
             extra_flags: ""
             
           - os: centos
             image: quay.io/centos/centos:stream9
             pkg_cmd: "dnf install -y"
-            update_cmd: "dnf update -y"
-            # [핵심 수정] curl-minimal 충돌 해결을 위해 패키지 교체 허용
+            # [보안 강화] 최신 보안 패치를 포함한 전체 업데이트 수행
+            update_cmd: "dnf update -y --security || dnf update -y"
             extra_flags: "--allowerasing"
             
           - os: amzn
             image: amazonlinux:2023
             pkg_cmd: "yum install -y"
-            update_cmd: "yum update -y"
-            # [핵심 수정] Amazon Linux 충돌 해결
+            # [보안 강화] Amazon Linux 보안 업데이트 적용
+            update_cmd: "yum update -y --security || yum update -y"
             extra_flags: "--allowerasing"
 
     container:
       image: ${{ matrix.image }}
 
     steps:
-      # 1. [시스템 준비] Checkout을 위한 최소 도구 설치 (Git, Tar)
-      - name: Pre-flight:Install Git & Tar
+      # 1. [시스템 준비] Checkout 및 기본 도구 설치
+      - name: Pre-flight: Install Git & Tar
         run: |
           echo "🚀 Starting Pre-flight checks on ${{ matrix.os }}..."
+          # 패키지 매니저 업데이트
           ${{ matrix.update_cmd }}
-          
-          # 패키지 매니저별 옵션 적용하여 설치
           ${{ matrix.pkg_cmd }} ${{ matrix.extra_flags }} git tar
-          
           echo "✅ Basic tools installed."
 
-      # 2. 소스 코드 다운로드
-      - uses: actions/checkout@v4
+      # 2. [타겟 리포지토리] scripts 폴더만 가져오기 (Sparse Checkout)
+      - name: Checkout Remote Repository Scripts
+        uses: actions/checkout@v4
+        with:
+          repository: koreatest12/Information-Security-Engineer-
+          ref: main
+          path: target_repo
+          sparse-checkout: |
+            scripts
 
-      # 3. [의존성 설치] 테스트 및 실행에 필요한 도구 설치 (Sudo, Curl, Wget 등)
-      - name: Install System Dependencies (Fixing Conflicts)
+      # 3. [경로 정리] 실행 환경 구성
+      - name: Setup Script Directory
+        run: |
+          mkdir -p local_scripts
+          if [ -d "target_repo/scripts" ]; then
+            cp -r target_repo/scripts/* local_scripts/
+            echo "✅ Scripts fetched from remote repository."
+            ls -al local_scripts/
+          else
+            echo "⚠️ Warning: 'scripts' directory not found."
+            echo '#!/bin/bash' > local_scripts/placeholder.sh
+            echo 'echo "No remote scripts found. Skipping."' >> local_scripts/placeholder.sh
+          fi
+          chmod +x local_scripts/*.sh
+
+      # 4. [의존성 설치] 필수 시스템 패키지 설치
+      - name: Install System Dependencies
         run: |
           echo "📦 Installing system dependencies..."
-          
-          # 충돌 해결 플래그(--allowerasing)가 여기서 작동함
           ${{ matrix.pkg_cmd }} ${{ matrix.extra_flags }} sudo curl wget which findutils
-          
           echo "✅ Dependencies installed successfully."
 
-      # 4. [시스템 정보] 디버깅을 위한 환경 정보 출력
+      # 5. [기능 추가] 보안 패치 및 시스템 강화 작업 (Security Patching)
+      - name: 🛡️ Apply System Security Patches & Upgrade
+        run: |
+          echo "=========================================="
+          echo "🛡️ Starting Security Patching Process on ${{ matrix.os }}..."
+          echo "=========================================="
+          
+          # OS별 보안 패치 명령어 실행 (Matrix에서 정의됨)
+          ${{ matrix.update_cmd }}
+          
+          echo "✅ Security Patches Applied."
+          echo "   - OS Kernel & Packages are up-to-date."
+          echo "   - Vulnerability fixes applied."
+          echo "=========================================="
+
+      # 6. [시스템 정보] 패치 후 상태 확인
       - name: Report System Information
         run: |
           echo "========================================"
-          echo "OS Info:"
-          cat /etc/os-release | grep PRETTY_NAME
-          echo "Kernel:"
-          uname -r
-          echo "User:"
-          whoami
+          echo "Target OS: ${{ matrix.os }}"
+          if [ -f /etc/os-release ]; then
+            cat /etc/os-release | grep PRETTY_NAME
+          fi
+          echo "Kernel: $(uname -r)"
+          echo "Date: $(date)"
           echo "========================================"
 
-      # 5. [파일 검증] 스크립트 파일 유무 확인 및 권한 부여
-      - name: Prepare Script Directory
+      # 7. [일괄 실행] 가져온 스크립트 실행
+      - name: Execute All Fetched Scripts
         run: |
-          mkdir -p scripts
+          echo "▶️ Starting execution of remote scripts..."
           
-          # 스크립트 파일이 하나도 없으면 더미 파일 생성 (에러 방지)
-          if [ -z "$(ls -A scripts/*.sh 2>/dev/null)" ]; then
-             echo "⚠️ No .sh files found. Creating a placeholder."
-             echo '#!/bin/bash' > scripts/example_setup.sh
-             echo 'echo "🎉 This is a placeholder script running on $(hostname)"' >> scripts/example_setup.sh
+          count=$(ls -1 local_scripts/*.sh 2>/dev/null | wc -l)
+          if [ "$count" != "0" ]; then
+            for script in local_scripts/*.sh; do
+              echo "----------------------------------------"
+              echo "📜 Executing: $(basename "$script")"
+              echo "----------------------------------------"
+              
+              # 스크립트 실행 (보안 패치 완료된 환경에서 수행됨)
+              sudo "$script" && echo "✅ Success: $(basename "$script")" || echo "❌ Failed: $(basename "$script")"
+            done
+          else
+            echo "⚠️ No .sh files found to execute."
           fi
-          
-          # 모든 쉘 스크립트에 실행 권한 부여
-          chmod +x scripts/*.sh
-          echo "✅ Permissions granted to scripts."
-
-      # 6. [대량 실행] scripts 폴더 내의 모든 .sh 파일 순차 실행
-      - name: Execute All Scripts in Directory
-        run: |
-          echo "▶️ Starting execution of scripts..."
-          
-          # scripts 폴더 내의 모든 .sh 파일을 찾아서 실행
-          for script in scripts/*.sh; do
-            if [ -f "$script" ]; then
-              echo "----------------------------------------"
-              echo "📜 Running: $script"
-              echo "----------------------------------------"
-              
-              # 스크립트 실행 (오류가 나도 다음 스크립트로 진행하려면 || true 추가)
-              # sudo를 사용하여 실제 루트 권한 실행 시뮬레이션
-              sudo "$script" && echo "✅ Success: $script" || echo "❌ Failed: $script"
-              
-            fi
-          done
           echo "----------------------------------------"
-          echo "🏁 All scripts execution attempted."
+          echo "🏁 All operations finished."
 
   # ====================================================
-  # JOB 2: 실행 결과물(스크립트들) 패키징 및 업로드
+  # JOB 2: 실행 결과물 아카이빙
   # ====================================================
   package-artifacts:
-    needs: execute-scripts
+    needs: execute-security-ops
     runs-on: ubuntu-latest
-    if: always() # 테스트가 실패해도 아티팩트는 남기도록 설정
+    if: always()
     steps:
-      - uses: actions/checkout@v4
-      
+      - name: Checkout Remote Repository for Archiving
+        uses: actions/checkout@v4
+        with:
+          repository: koreatest12/Information-Security-Engineer-
+          ref: main
+          path: archived_repo
+          sparse-checkout: scripts
+
       - name: Archive Scripts
         run: |
           mkdir -p deployment_pack
-          cp -r scripts deployment_pack/
+          if [ -d "archived_repo/scripts" ]; then
+            cp -r archived_repo/scripts deployment_pack/
+          else
+            echo "No scripts found." > deployment_pack/README.txt
+          fi
           tar -czvf scripts_bundle.tar.gz deployment_pack/
-          
+
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: deployment-scripts
+          name: executed-scripts-bundle
           path: scripts_bundle.tar.gz
-          retention-days: 5
