@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write # 의존성 제출을 위해 필수
+  contents: write
 
 jobs:
   dependency-submission:
@@ -17,32 +17,25 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # 1. Python 환경 설정 (3.11 버전 사용)
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
 
-      # 2. 의존성 파일 생성 (requirements.txt가 없는 경우를 대비)
-      - name: Generate requirements.txt
+      # 의존성 파일 생성 (필요한 경우)
+      - name: Generate requirements
         run: |
           python -m pip install --upgrade pip
-          # 만약 이미 requirements.txt가 있다면 설치만 진행
-          if [ -f requirements.txt ]; then 
-            pip install -r requirements.txt
-          else
-            # 없다면 현재 환경 기준으로 생성 (필요시 주석 해제하여 사용)
-            # pip freeze > requirements.txt
-            echo "requirements.txt not found, skipping generation."
-          fi
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          # 동적 생성이 필요한 경우 아래 주석 해제
+          # pip freeze > requirements.txt
 
-      # 3. Microsoft 공식 컴포넌트 탐지 액션 실행
-      # 주의: 이 액션은 실행 시 도구를 다운로드하므로 간혹 네트워크 에러가 발생할 수 있습니다.
-      # 하지만 이것이 현재 유일한 공식 Python 제출 액션입니다.
-      - name: Component Detection
-        uses: microsoft/component-detection-dependency-submission-action@v1
+      # [수정됨] 유효한 액션명으로 복구 및 에러 방어 설정
+      # 주의: 이 액션은 대용량 파일 다운로드로 인해 'socket hang up'이 간헐적으로 발생할 수 있습니다.
+      # continue-on-error: true를 설정하여 제출 실패가 전체 파이프라인을 망치지 않게 합니다.
+      - name: Submit Dependency Snapshot
+        uses: actions/component-detection-dependency-submission-action@v1
         with:
-          # 명령어 인자 설정 (필요시)
-          # dockerfile-path: "Dockerfile" 
-          fail-on-action-error: true
+          fail-on-action-error: false # 에러가 나도 무시하고 진행 (선택 사항)
+        continue-on-error: true
