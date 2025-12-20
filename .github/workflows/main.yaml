@@ -1,4 +1,4 @@
-name: Flutter Ultimate CI/CD (Debug Mode)
+name: Flutter Enterprise Generator & Build
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  diagnostic_build:
+  generate_and_build:
     runs-on: ubuntu-latest
     
     steps:
@@ -15,114 +15,173 @@ jobs:
       - name: Checkout Source
         uses: actions/checkout@v4
 
-      # 2. [9999% 강력한 기능] 파일 시스템 진단 및 경로 자동 확정
-      # 파일이 없으면 전체 파일 리스트를 출력하여 원인을 밝혀냅니다.
-      - name: Diagnostic & Auto-Detect Path
-        id: detect
-        run: |
-          echo "🔍 Searching for pubspec.yaml..."
-          
-          # pubspec.yaml 파일 찾기 (숨김 폴더 제외)
-          FOUND_PATH=$(find . -type f -name "pubspec.yaml" -not -path '*/.*' | head -n 1)
-
-          if [ -z "$FOUND_PATH" ]; then
-            echo "❌ ERROR: pubspec.yaml 파일을 찾을 수 없습니다!"
-            echo "📂 [현재 저장소 파일 목록 전체 출력]"
-            ls -R
-            echo "--------------------------------------"
-            echo "⚠️ 해결책: pubspec.yaml 파일이 Git에 커밋되었는지 확인하세요."
-            exit 1
-          fi
-
-          # 경로 추출
-          PROJECT_DIR=$(dirname "$FOUND_PATH")
-          echo "✅ Project found at: $PROJECT_DIR"
-          
-          # 환경 변수 저장 (이후 단계에서 사용)
-          echo "FLUTTER_PROJECT_PATH=$PROJECT_DIR" >> $GITHUB_ENV
-
-      # 3. [권한 설정] 실행 파일 권한 강제 부여 (보안/권한 문제 해결)
-      - name: Fix Permissions
-        run: |
-          echo "🔧 Fixing permissions in ${{ env.FLUTTER_PROJECT_PATH }}..."
-          cd ${{ env.FLUTTER_PROJECT_PATH }}
-          if [ -d "android" ]; then
-            chmod +x android/gradlew
-            echo "✅ android/gradlew permissions set."
-          fi
-
-      # 4. Java 설치 (서버 준비 사항)
+      # 2. Java 환경 설정 (Android 빌드 필수)
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
           java-version: '17'
 
-      # 5. Flutter 설치 및 [속도 증가] 캐시 적용
-      - name: Setup Flutter
+      # 3. Flutter 환경 설정 (공식 구글 스토리지 사용 & 캐싱)
+      # 스크립트의 수동 다운로드 대신, 더 빠르고 안정적인 공식 액션을 사용합니다.
+      - name: Setup Flutter SDK
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.24.x'
           channel: 'stable'
           cache: true
 
-      # 6. 의존성 설치
+      # 4. [핵심] 프로젝트 생성 스크립트 실행 (User Script Integration)
+      # 저장소에 pubspec.yaml이 없으면 스크립트를 실행하여 프로젝트를 즉석에서 만들어냅니다.
+      - name: Execute Project Generator Script
+        id: generator
+        run: |
+          # 1. 기존 프로젝트 존재 여부 확인
+          EXISTING_PUBSPEC=$(find . -type f -name "pubspec.yaml" -not -path '*/.*' | head -n 1)
+
+          if [ -n "$EXISTING_PUBSPEC" ]; then
+            echo "✅ 기존 프로젝트가 감지되었습니다: $EXISTING_PUBSPEC"
+            PROJECT_DIR=$(dirname "$EXISTING_PUBSPEC")
+            echo "FLUTTER_PROJECT_PATH=$PROJECT_DIR" >> $GITHUB_ENV
+            echo "MODE=EXISTING" >> $GITHUB_ENV
+          else
+            echo "⚠️ 프로젝트가 없습니다. '스크립트'를 실행하여 생성 모드로 진입합니다."
+            
+            # --- [User Script Start] ---
+            PROJECT_NAME="my_enterprise_app"
+            echo "🛠️ [Step 1] '$PROJECT_NAME' 프로젝트 생성 중..."
+            flutter create $PROJECT_NAME
+            
+            echo "📂 작업 디렉토리 이동..."
+            cd $PROJECT_NAME
+            
+            echo "📦 [Step 2] 엔터프라이즈급 의존성 패키지 추가..."
+            flutter pub add flutter_secure_storage # 암호화
+            flutter pub add dio # 네트워크
+            flutter pub add provider # 상태 관리
+            flutter pub add get_it # 의존성 주입
+
+            echo "📂 [Step 3] 폴더 구조 재편 (Clean Architecture)..."
+            mkdir -p lib/core/network
+            mkdir -p lib/core/security
+            mkdir -p lib/features/auth/data
+            mkdir -p lib/features/auth/presentation
+            mkdir -p lib/shared
+
+            echo "📝 [Step 4] 핵심 파일 및 암호화 모듈 자동 생성..."
+            
+            # (A) 보안 저장소 유틸리티
+            cat <<EOF > lib/core/security/secure_storage.dart
+            import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+
+            class SecurityService {
+              final _storage = const FlutterSecureStorage();
+
+              Future<void> saveToken(String key, String value) async {
+                await _storage.write(key: key, value: value);
+              }
+
+              Future<String?> getToken(String key) async {
+                return await _storage.read(key: key);
+              }
+            }
+            EOF
+
+            # (B) 메인 앱 진입점
+            cat <<EOF > lib/main.dart
+            import 'package:flutter/material.dart';
+
+            void main() {
+              WidgetsFlutterBinding.ensureInitialized();
+              runApp(const MyApp());
+            }
+
+            class MyApp extends StatelessWidget {
+              const MyApp({super.key});
+
+              @override
+              Widget build(BuildContext context) {
+                return MaterialApp(
+                  title: 'Enterprise App',
+                  theme: ThemeData(primarySwatch: Colors.blue, useMaterial3: true),
+                  home: const Scaffold(
+                    body: Center(child: Text("Security & Server Setup Complete")),
+                  ),
+                );
+              }
+            }
+            EOF
+            
+            echo "✨ 프로젝트 생성 완료!"
+            # --- [User Script End] ---
+
+            # 생성된 경로를 환경변수에 등록하여 다음 단계들이 인식하게 함
+            # $GITHUB_WORKSPACE는 깃허브 액션의 루트 경로입니다.
+            echo "FLUTTER_PROJECT_PATH=$GITHUB_WORKSPACE/$PROJECT_NAME" >> $GITHUB_ENV
+            echo "MODE=GENERATED" >> $GITHUB_ENV
+          fi
+
+      # 5. 의존성 설치 (자동 감지된 경로 사용)
       - name: Install Dependencies
         run: |
+          echo "Current Path: ${{ env.FLUTTER_PROJECT_PATH }}"
           cd ${{ env.FLUTTER_PROJECT_PATH }}
           flutter pub get
 
-      # 7. 코드 분석
+      # 6. 코드 분석
       - name: Analyze Code
         run: |
           cd ${{ env.FLUTTER_PROJECT_PATH }}
           flutter analyze
 
-      # 8. 테스트 실행
+      # 7. 테스트 실행
       - name: Run Tests
         run: |
           cd ${{ env.FLUTTER_PROJECT_PATH }}
           flutter test
 
-      # 9. [업데이트 기능] 자동 버전 넘버링 빌드
-      # github.run_number를 이용해 빌드 번호를 1, 2, 3... 자동으로 증가
-      - name: Build Android APK (Auto Versioning)
+      # 8. [업데이트 기능] 자동 버전 증가 빌드
+      - name: Build Android APK
         run: |
           cd ${{ env.FLUTTER_PROJECT_PATH }}
           flutter build apk --release --build-number=${{ github.run_number }}
 
-      # 10. [정보 수집 서버] 결과 전송 (암호화/보안 고려)
+      # 9. [정보 수집 서버] 빌드 결과 전송 (Webhook)
       - name: Report Status to Info Server
         if: always()
         run: |
           STATUS="${{ job.status }}"
           BUILD_NUM="${{ github.run_number }}"
-          PROJECT_PATH="${{ env.FLUTTER_PROJECT_PATH }}"
+          MODE="${{ env.MODE }}"
+          
+          echo "📡 Reporting to server..."
           
           # JSON 데이터 구성
-          JSON_DATA=$(cat <<EOF
+          JSON_PAYLOAD=$(cat <<EOF
           {
+            "build_id": "${{ github.run_id }}",
             "status": "$STATUS",
-            "build_number": "$BUILD_NUM",
-            "repo": "${{ github.repository }}",
-            "path": "$PROJECT_PATH"
+            "version": "$BUILD_NUM",
+            "mode": "$MODE",
+            "repo": "${{ github.repository }}"
           }
           EOF
           )
-
+          
+          # 서버 URL이 Secrets에 설정되어 있다면 전송
           if [ -n "${{ secrets.INFO_SERVER_URL }}" ]; then
-            echo "📡 Sending secure data to server..."
             curl -X POST -H "Content-Type: application/json" \
-            -d "$JSON_DATA" \
+            -d "$JSON_PAYLOAD" \
             ${{ secrets.INFO_SERVER_URL }}
+            echo "✅ Data sent."
           else
-            echo "ℹ️ INFO_SERVER_URL Secret이 설정되지 않아 전송을 건너뜁니다."
+            echo "ℹ️ INFO_SERVER_URL 시크릿이 없어 전송을 건너뜁니다."
           fi
 
-      # 11. 결과물 업로드
-      - name: Upload APK
+      # 10. 결과물 업로드 (생성된 APK)
+      - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: release-apk-v${{ github.run_number }}
+          name: enterprise-app-v${{ github.run_number }}
           path: ${{ env.FLUTTER_PROJECT_PATH }}/build/app/outputs/flutter-apk/app-release.apk
           compression-level: 9
