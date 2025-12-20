@@ -1,4 +1,4 @@
-name: Fixed Enterprise Generator & Build
+name: Perfect Enterprise Generator & Build
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build_process:
+  auto_generate_build:
     runs-on: ubuntu-latest
     
     steps:
@@ -15,31 +15,30 @@ jobs:
       - name: Checkout Source
         uses: actions/checkout@v4
 
-      # 2. 프로젝트 존재 여부 판단 (쉘 로직 단순화)
-      - name: Check Project Status
+      # 2. 프로젝트 존재 여부 감지
+      - name: Detect Project Status
         id: check
         run: |
-          # pubspec.yaml 파일 찾기
+          # pubspec.yaml 찾기
           FOUND_PATH=$(find . -type f -name "pubspec.yaml" -not -path '*/.*' | head -n 1)
           
           if [ -z "$FOUND_PATH" ]; then
-            echo "⚠️ No project found."
-            echo "SHOULD_GENERATE=true" >> $GITHUB_ENV
-            echo "FLUTTER_PROJECT_PATH=$GITHUB_WORKSPACE/auto_generated_app" >> $GITHUB_ENV
+            echo "⚠️ No project found. Scripts generation mode activated."
+            echo "NEED_GENERATION=true" >> $GITHUB_ENV
           else
             echo "✅ Project found at $FOUND_PATH"
-            echo "SHOULD_GENERATE=false" >> $GITHUB_ENV
+            echo "NEED_GENERATION=false" >> $GITHUB_ENV
             echo "FLUTTER_PROJECT_PATH=$(dirname "$FOUND_PATH")" >> $GITHUB_ENV
           fi
 
-      # 3. Java 설정
+      # 3. Java 환경 설정
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
           java-version: '17'
 
-      # 4. Flutter 설정
+      # 4. Flutter 환경 설정
       - name: Setup Flutter SDK
         uses: subosito/flutter-action@v2
         with:
@@ -47,16 +46,23 @@ jobs:
           channel: 'stable'
           cache: true
 
-      # 5. [수정 완료] 프로젝트 자동 생성 (독립된 단계로 분리하여 EOF 에러 해결)
-      - name: Generate Project Structure
-        if: env.SHOULD_GENERATE == 'true'
+      # 5. [대량 수정] 스크립트 생성 및 테스트 코드(Test) 동기화
+      - name: Create and Run Generation Script
+        if: env.NEED_GENERATION == 'true'
         run: |
-          echo "🚀 Starting Project Generation..."
-          PROJECT_NAME="auto_generated_app"
+          echo "📂 Creating 'scripts' directory..."
+          mkdir -p scripts
+          
+          # scripts/init_project.sh 작성
+          cat > scripts/init_project.sh <<-'EOF'
+          #!/bin/bash
+          set -e
+          
+          PROJECT_NAME="auto_enterprise_app"
+          echo "🚀 Generating project: $PROJECT_NAME"
           
           # 프로젝트 생성
           flutter create $PROJECT_NAME
-          
           cd $PROJECT_NAME
           
           # 패키지 추가
@@ -65,59 +71,60 @@ jobs:
           flutter pub add provider
           flutter pub add get_it
 
-          # 폴더 구조 생성
-          mkdir -p lib/core/network
-          mkdir -p lib/core/security
-          mkdir -p lib/features/auth/data
-          mkdir -p lib/features/auth/presentation
-          mkdir -p lib/shared
-
-          echo "📝 Writing Security Module..."
+          # 구조 생성
+          mkdir -p lib/core/security lib/core/network lib/features/auth/data lib/features/auth/presentation
           
-          # [EOF 에러 수정 포인트] 
-          # 들여쓰기를 무시하도록 <<-EOF를 사용하고, EOF 위치를 정확히 맞춤
-          cat > lib/core/security/security_service.dart <<-'EOF'
+          # [1] 보안 파일 생성
+          cat > lib/core/security/security_service.dart <<INNER_EOF
           import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-
           class SecurityService {
             final _storage = const FlutterSecureStorage();
-
-            Future<void> saveToken(String key, String value) async {
-              await _storage.write(key: key, value: value);
-            }
-
-            Future<String?> getToken(String key) async {
-              return await _storage.read(key: key);
-            }
+            Future<void> save(String k, String v) async => await _storage.write(key: k, value: v);
           }
-          EOF
-
-          echo "📝 Writing Main Entry Point..."
-          cat > lib/main.dart <<-'EOF'
+          INNER_EOF
+          
+          # [2] 메인 파일 생성 (화면 내용: "Auto Generated")
+          cat > lib/main.dart <<INNER_EOF
           import 'package:flutter/material.dart';
-
-          void main() {
-            WidgetsFlutterBinding.ensureInitialized();
-            runApp(const MyApp());
-          }
-
+          void main() { runApp(const MyApp()); }
+          
           class MyApp extends StatelessWidget {
             const MyApp({super.key});
-
             @override
             Widget build(BuildContext context) {
-              return MaterialApp(
-                title: 'Enterprise App',
-                theme: ThemeData(primarySwatch: Colors.blue, useMaterial3: true),
-                home: const Scaffold(
-                  body: Center(child: Text("Security Setup Complete")),
-                ),
+              return const MaterialApp(
+                home: Scaffold(body: Center(child: Text("Auto Generated"))),
               );
             }
           }
-          EOF
+          INNER_EOF
+
+          # [3] 테스트 파일 수정 (중요: 에러 해결 포인트)
+          # 기본 테스트는 카운터 앱을 찾으므로 삭제하고, 현재 UI("Auto Generated")를 찾는 테스트로 교체
+          cat > test/widget_test.dart <<INNER_EOF
+          import 'package:flutter_test/flutter_test.dart';
+          import 'package:auto_enterprise_app/main.dart';
+
+          void main() {
+            testWidgets('App launch smoke test', (WidgetTester tester) async {
+              // 앱 실행
+              await tester.pumpWidget(const MyApp());
+
+              // "Auto Generated"라는 텍스트가 화면에 있는지 검사
+              expect(find.text('Auto Generated'), findsOneWidget);
+            });
+          }
+          INNER_EOF
           
-          echo "✅ Generation Complete."
+          echo "✅ Script execution finished & Test file updated."
+          EOF
+
+          # 실행 권한 부여 및 실행
+          chmod +x scripts/init_project.sh
+          ./scripts/init_project.sh
+          
+          # 경로 환경변수 등록
+          echo "FLUTTER_PROJECT_PATH=$GITHUB_WORKSPACE/auto_enterprise_app" >> $GITHUB_ENV
 
       # 6. 의존성 설치
       - name: Install Dependencies
@@ -131,39 +138,26 @@ jobs:
           cd ${{ env.FLUTTER_PROJECT_PATH }}
           flutter analyze
 
-      # 8. 테스트 실행
+      # 8. 테스트 (이제 성공함)
       - name: Run Tests
         run: |
           cd ${{ env.FLUTTER_PROJECT_PATH }}
           flutter test
 
-      # 9. 빌드 (자동 버전 증가)
+      # 9. 빌드 (자동 버전 업)
       - name: Build Android APK
         run: |
           cd ${{ env.FLUTTER_PROJECT_PATH }}
           flutter build apk --release --build-number=${{ github.run_number }}
 
-      # 10. 정보 수집 서버 전송 (Webhook)
+      # 10. 정보 수집 서버 전송
       - name: Report Status
         if: always()
         run: |
-          STATUS="${{ job.status }}"
-          VERSION="${{ github.run_number }}"
-          
-          JSON_DATA=$(cat <<EOF
-          {
-            "status": "$STATUS",
-            "version": "$VERSION",
-            "repo": "${{ github.repository }}"
-          }
-          EOF
-          )
+          JSON_DATA='{"status": "'"${{ job.status }}"'", "version": "'"${{ github.run_number }}"'"}'
           
           if [ -n "${{ secrets.INFO_SERVER_URL }}" ]; then
-            echo "Sending webhook..."
-            curl -X POST -H "Content-Type: application/json" \
-            -d "$JSON_DATA" \
-            ${{ secrets.INFO_SERVER_URL }}
+            curl -X POST -H "Content-Type: application/json" -d "$JSON_DATA" ${{ secrets.INFO_SERVER_URL }}
           else
             echo "Skipping webhook (No Secret)."
           fi
@@ -172,6 +166,6 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: release-apk-v${{ github.run_number }}
+          name: generated-app-v${{ github.run_number }}
           path: ${{ env.FLUTTER_PROJECT_PATH }}/build/app/outputs/flutter-apk/app-release.apk
           compression-level: 9
