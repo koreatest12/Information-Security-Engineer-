@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 6 days, 22:04:21
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 6 days, 22:10:46
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 42.8% | `██████░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 43.5% | `██████░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 장나라와 유기동물 보호 기부 활동 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTFB6QnNvVGh1RmdpRHduSmJBLW03b2FtN1ZuaTY2N0FyNFBZejVoLXh0VHFlbjAzaDFuR0NseEZpY2hQMzhLSTRGeGh6VVdGUjE3RTJN?oc=5)
+- [연봉킹 안석철, 신한에서 KB로 전격 이적 - 딜사이트](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5UeWU0UV8yUjE3dXllcHJxU1diVzhXUVpZSDd5LWpFSUpxM05JT2gyV0ppcVNrMVJJcmd5ejZJd1YtZFg0M0RPRG05YVFkdW8?oc=5)
 - [연봉 7000만원 넘으세요?…12월 31일 지나면 '땅 치고 후회' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1vUS14R3ZLWWYyX3c1MVZLU1NTM3IwSENzd3JwV3d1LXhSQ25GQ3FKXzR0M04xcHhPc1B3U2VfU01UTmVEZFpvXzdxMUpPVkk?oc=5)
 
 ---
