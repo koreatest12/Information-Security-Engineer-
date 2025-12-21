@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-21 13:55:36 (KST)
+> **Time:** 2025-12-21 14:13:45 (KST)
 
-### 🤖 Copilot Briefing (13:55)
+### 🤖 Copilot Briefing (14:13)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,7 +10,7 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • ["서류 부담 줄였다"…신한은행, '신속한 전문직 사업자대출' 출시 - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1rMGlXdmt2UjV1eDY2OVRqZmhRSF9QMmlReHEwczhOaTh0dTR4ZVY5ODVvN21uWm10SmdYUG1XVVl2ZHpsRXc3NnJ2a0hLS2d2N1NrYw?oc=5)<br>• [신한은행, 인하대에 전동휠체어 기증…장애 학생 이동 지원 - 기호일보](https://news.google.com/rss/articles/CBMib0FVX3lxTE13N0NQTElOTUZXUXdUSzcycTJFdjRnTXJuWEh0UHpvdk41YXlIRlZDengybW9WVXZIT3ZldHNVT0pCbm5tNldMMWVtV1VPaGdzTmxrWkpnNDJTY3hSS3R4VEZfWi00WFhBSzdhbHFyRQ?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행, 인하대에 전동휠체어 기증 - 경기일보](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1JX0dSaW9ETGI4MDREajB1LXpUSDJLN2s5SWstVGRVRnhfbWlISGJvQWdiOEJkbHk4LXdGX3pnRkxhVllVRzVMaHNfaE1GY08xaUtlYVJOMFVRV0E?oc=5)<br>• [서류없이 1억까지…신한은행, 새 전문직 사업자대출 출시 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE03Y0ZtaUZERWJfdVlpcm03QjZOZzZPNkhuSzY4QlVNbWJjbWU2dkNiOGY5TW1aUUxmLTkzQ2tEMnpiMS1xbWFGUHYyb0sxcnp3ZXJqNkdrd19aQdIBVEFVX3lxTE9KXzEyaG80U1hiQW9DZVR4aGI0a21XOGpJV3AxS3QxLXlKNGJHLXBBWlJYTmQ2ZG9WLUV2WTNXcG1WTnQwWHQzY2NiWkVqblhCNkNEcg?oc=5)<br> |
 | **🟢 하나금융 (은행/투자)** | • [여자농구 국민은행, '선두' 하나은행에 연패 안기고 2연승 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE0yT1EtTFdad1FWRFpKblFQUVZabDRWYTliV2ZzbFp0VUIyTHU1QjdYV3RGOF9TVE5XTnZodnNtVGJqeFN3RDRiREdldTdjZ1BCRGsxa0hrYTJ5aDh3b1JyVQ?oc=5)<br>• [[한번에쓱]'하나은행의 매직을 기대해!' 하지원&이호은 - 네이트 스포츠](https://news.google.com/rss/articles/CBMiXEFVX3lxTE5oY2V4WHd6aE9vUFdyWjdDOWItVjJUM253NkkxMGtIV3RMQkh0cGd5U3pJS0xOLVdSQm1ocmF0eXg0ZFBpQTR2TmlLYS1MZkVfTUhUOFRtQ2o3MllF?oc=5)<br> |
 
 ### 📰 General & Security News
@@ -22,7 +22,7 @@
 - [신인식 카이스트 교수, 한국인 최초 RTSS 최고 논문상](http://www.boannews.com/media/view.asp?idx=141094&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.0%)
+- **vCPU:** `128 vCores` (Load: 40.5%)
 - **RAM:** `30.7/512 GB` (Used: 6.0%)
 
 ---
