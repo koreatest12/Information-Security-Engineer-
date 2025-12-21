@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 7 days, 3:11:00
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 7 days, 3:25:34
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 42.7% | `██████░░░░░░░░░` |
-| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.5% | `██████░░░░░░░░░` |
+| **RAM** | `30.7/512 GB` | 6.0% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [연봉킹 안석철, 신한에서 KB로 전격 이적 - 딜사이트](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5UeWU0UV8yUjE3dXllcHJxU1diVzhXUVpZSDd5LWpFSUpxM05JT2gyV0ppcVNrMVJJcmd5ejZJd1YtZFg0M0RPRG05YVFkdW8?oc=5)
