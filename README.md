@@ -11,7 +11,7 @@
 | 항목 (Metric) | 상태 (Status) |
 | :--- | :--- |
 | **시스템 버전** | 🐍 **Python 3.12** (Tabulate Support) |
-| **마지막 실행** | 🕒 2025-12-21 20:44:17 (KST) |
+| **마지막 실행** | 🕒 2025-12-21 20:52:44 (KST) |
 | **스크립트 실행** | 🏃‍♂️ **20** 개 수행 |
 | **데이터베이스** | 💾 Auto-Sync & Conflict Resolved |
 
@@ -38,7 +38,7 @@ packaging==25.0
 pandas==2.3.3
 psutil==7.1.3
 pytz==2025.2
-reportlab==4.4.6
+reportlab==4.4.7
 Requests==2.32.5
 scikit_learn==1.8.0
 scipy==1.16.3
@@ -56,7 +56,7 @@ packaging==25.0
 pandas==2.3.3
 psutil==7.1.3
 pytz==2025.2
-reportlab==4.4.6
+reportlab==4.4.7
 Requests==2.32.5
 scikit_learn==1.8.0
 scipy==1.16.3
