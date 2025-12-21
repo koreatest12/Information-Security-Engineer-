@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-21 14:54:43 (KST)
+> **Time:** 2025-12-21 15:16:59 (KST)
 
-### 🤖 Copilot Briefing (14:54)
+### 🤖 Copilot Briefing (15:16)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,7 +10,7 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [신한은행, 인하대에 전동휠체어 기증 - 경기일보](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1JX0dSaW9ETGI4MDREajB1LXpUSDJLN2s5SWstVGRVRnhfbWlISGJvQWdiOEJkbHk4LXdGX3pnRkxhVllVRzVMaHNfaE1GY08xaUtlYVJOMFVRV0E?oc=5)<br>• ["서류 부담 줄였다"…신한은행, '신속한 전문직 사업자대출' 출시 - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1rMGlXdmt2UjV1eDY2OVRqZmhRSF9QMmlReHEwczhOaTh0dTR4ZVY5ODVvN21uWm10SmdYUG1XVVl2ZHpsRXc3NnJ2a0hLS2d2N1NrYw?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행, 인하대에 전동휠체어 기증 - 경기일보](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1JX0dSaW9ETGI4MDREajB1LXpUSDJLN2s5SWstVGRVRnhfbWlISGJvQWdiOEJkbHk4LXdGX3pnRkxhVllVRzVMaHNfaE1GY08xaUtlYVJOMFVRV0E?oc=5)<br>• [신한은행, '신속한 전문직 사업자대출' 출시…최대 한도 1억 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9mYlRsalZfSUtJVVFLWFI0UzdsNW5FSzhiQkZlRUlmM1VPODhEVTY5SndHMHpXUFBneFpFcGtrcjhtWDZJN3ZGRlZ0RnBKS2JuU0xKQjRlbjlwQjZtSkdGctIBeEFVX3lxTE1GOThFR3F1ckhncmhZb0hmQ2F4ZUc5WEFfRFJIMk12WUFLcHZhODZRTFZBcV9HcDE3R1ZodlZYT3BQemx0RGJDbWRJZGZFMTlJaVJuOVM3aFBRX2FBQVZjel9WS1RUNjJTRklUMFJHQ21OZm1jajlPbQ?oc=5)<br> |
 | **🟢 하나금융 (은행/투자)** | • [여자농구 국민은행, '선두' 하나은행에 연패 안기고 2연승 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE0yT1EtTFdad1FWRFpKblFQUVZabDRWYTliV2ZzbFp0VUIyTHU1QjdYV3RGOF9TVE5XTnZodnNtVGJqeFN3RDRiREdldTdjZ1BCRGsxa0hrYTJ5aDh3b1JyVQ?oc=5)<br>• [[한번에쓱]'하나은행의 매직을 기대해!' 하지원&이호은 - 네이트 스포츠](https://news.google.com/rss/articles/CBMiXEFVX3lxTE5oY2V4WHd6aE9vUFdyWjdDOWItVjJUM253NkkxMGtIV3RMQkh0cGd5U3pJS0xOLVdSQm1ocmF0eXg0ZFBpQTR2TmlLYS1MZkVfTUhUOFRtQ2o3MllF?oc=5)<br> |
 
 ### 📰 General & Security News
@@ -22,8 +22,8 @@
 - [신인식 카이스트 교수, 한국인 최초 RTSS 최고 논문상](http://www.boannews.com/media/view.asp?idx=141094&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.1%)
-- **RAM:** `31.2/512 GB` (Used: 6.1%)
+- **vCPU:** `128 vCores` (Load: 39.4%)
+- **RAM:** `31.7/512 GB` (Used: 6.2%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
