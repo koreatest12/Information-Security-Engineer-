@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-21 09:56:30 (KST)
+> **Time:** 2025-12-21 11:54:39 (KST)
 
-### 🤖 Copilot Briefing (09:56)
+### 🤖 Copilot Briefing (11:54)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,20 +10,20 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [신한은행, 인하대에 전동휠체어 기증…장애 학생 이동 지원 - 기호일보](https://news.google.com/rss/articles/CBMib0FVX3lxTE13N0NQTElOTUZXUXdUSzcycTJFdjRnTXJuWEh0UHpvdk41YXlIRlZDengybW9WVXZIT3ZldHNVT0pCbm5tNldMMWVtV1VPaGdzTmxrWkpnNDJTY3hSS3R4VEZfWi00WFhBSzdhbHFyRQ?oc=5)<br>• [신한은행, 트래블 체크카드 '환율우대 100%'…내년까지 연장 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFA2ZHp1ZEtrX2d0WWRqVl9OZ3VGSFpickh2X3MzcGJzMkdSS0RvME03LU9oRERzeFJRZ3JPRVZJWlB1aWtnd3VDbEFsM2FobGFxTTNJNTVnWXdNZElyYkIyLdIBeEFVX3lxTE94Uk9FM0NkMktrU1ZybGl5LVZQaC14YWhsMkV1QXBuRE5WV0w1TkVlUEM4bGQ4X1Nxd2p2dmdFV0FvcWRMZVFmcl9HZERiV0NWOTBsWTB2R3c0UE5XakxBdExxZGt1OFdyOUxua182MUxlVUtjTzBYUg?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [하나은행, 주담대 영업 재개 - 매거진한경](https://news.google.com/rss/articles/CBMibEFVX3lxTE9fdU12dEtQSGVmUVg3UUJCOFd4UHlTcFVEYi1zUWZTN2pMQUdWWjhlZVA1SmM2alNHbkc1eVVydVVTc2p1bW92NXhleWxJVWNIS3RwQmdDeGFySFNaTl8xR0tueWp3ZmhrSjlxNA?oc=5)<br>• [여자농구 국민은행, '선두' 하나은행에 연패 안기고 2연승 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE0yT1EtTFdad1FWRFpKblFQUVZabDRWYTliV2ZzbFp0VUIyTHU1QjdYV3RGOF9TVE5XTnZodnNtVGJqeFN3RDRiREdldTdjZ1BCRGsxa0hrYTJ5aDh3b1JyVQ?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • ["서류 부담 줄였다"…신한은행, '신속한 전문직 사업자대출' 출시 - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1rMGlXdmt2UjV1eDY2OVRqZmhRSF9QMmlReHEwczhOaTh0dTR4ZVY5ODVvN21uWm10SmdYUG1XVVl2ZHpsRXc3NnJ2a0hLS2d2N1NrYw?oc=5)<br>• [신한은행, 인하대에 전동휠체어 기증…장애 학생 이동 지원 - 기호일보](https://news.google.com/rss/articles/CBMib0FVX3lxTE13N0NQTElOTUZXUXdUSzcycTJFdjRnTXJuWEh0UHpvdk41YXlIRlZDengybW9WVXZIT3ZldHNVT0pCbm5tNldMMWVtV1VPaGdzTmxrWkpnNDJTY3hSS3R4VEZfWi00WFhBSzdhbHFyRQ?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [여자농구 국민은행, '선두' 하나은행에 연패 안기고 2연승 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE0yT1EtTFdad1FWRFpKblFQUVZabDRWYTliV2ZzbFp0VUIyTHU1QjdYV3RGOF9TVE5XTnZodnNtVGJqeFN3RDRiREdldTdjZ1BCRGsxa0hrYTJ5aDh3b1JyVQ?oc=5)<br>• [[한번에쓱]'하나은행의 매직을 기대해!' 하지원&이호은 - 네이트 스포츠](https://news.google.com/rss/articles/CBMiXEFVX3lxTE5oY2V4WHd6aE9vUFdyWjdDOWItVjJUM253NkkxMGtIV3RMQkh0cGd5U3pJS0xOLVdSQm1ocmF0eXg0ZFBpQTR2TmlLYS1MZkVfTUhUOFRtQ2o3MllF?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [“거실의 침입자” 킴울프, 안드로이드 TV 180만 대 장악 후 디도스 공격 악용](http://www.boannews.com/media/view.asp?idx=141082&kind=&sub_kind=)
+- [[쿠팡 해킹] “미국선 법 위반 아니”라더니... 쿠팡 주주들, 미 법원에 집단소송 제기](http://www.boannews.com/media/view.asp?idx=141093&kind=&sub_kind=)
 - [‘제로데이 클라우드 대회’ 성료... 11개 취약점 발굴에 상금 32만 달러 지급](http://www.boannews.com/media/view.asp?idx=141081&kind=&sub_kind=)
-- [구글, 클라우드 보안 위해 팔로알토와 14조원 규모 파트너십](http://www.boannews.com/media/view.asp?idx=141092&kind=&sub_kind=)
-- [티빙, 크리덴셜 스터핑 공격 탐지 후 조치... “유출 無, 비번 바꿔달라” 공지](http://www.boannews.com/media/view.asp?idx=141091&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
 - **vCPU:** `128 vCores` (Load: 40.2%)
-- **RAM:** `31.2/512 GB` (Used: 6.1%)
+- **RAM:** `30.7/512 GB` (Used: 6.0%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
