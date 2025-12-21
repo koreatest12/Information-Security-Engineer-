@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-21 11:54:39 (KST)
+> **Time:** 2025-12-21 12:57:15 (KST)
 
-### 🤖 Copilot Briefing (11:54)
+### 🤖 Copilot Briefing (12:57)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [“거실의 침입자” 킴울프, 안드로이드 TV 180만 대 장악 후 디도스 공격 악용](http://www.boannews.com/media/view.asp?idx=141082&kind=&sub_kind=)
-- [[쿠팡 해킹] “미국선 법 위반 아니”라더니... 쿠팡 주주들, 미 법원에 집단소송 제기](http://www.boannews.com/media/view.asp?idx=141093&kind=&sub_kind=)
-- [‘제로데이 클라우드 대회’ 성료... 11개 취약점 발굴에 상금 32만 달러 지급](http://www.boannews.com/media/view.asp?idx=141081&kind=&sub_kind=)
+- [“SKT 해킹피해자에 10만원씩 보상하라” 소비자위 결정... 총 2조3천억원](http://www.boannews.com/media/view.asp?idx=141096&kind=&sub_kind=)
+- [국민이 바로잡는 생성형 AI... 과기정통부, ‘정보 오류 없는 찐 AI 챌린지’ 실시](http://www.boannews.com/media/view.asp?idx=141095&kind=&sub_kind=)
+- [신인식 카이스트 교수, 한국인 최초 RTSS 최고 논문상](http://www.boannews.com/media/view.asp?idx=141094&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.2%)
-- **RAM:** `30.7/512 GB` (Used: 6.0%)
+- **vCPU:** `128 vCores` (Load: 39.6%)
+- **RAM:** `35.8/512 GB` (Used: 7.0%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
