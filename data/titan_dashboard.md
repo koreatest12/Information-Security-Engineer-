@@ -18,7 +18,7 @@
 | **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [연봉킹 안석철, 신한에서 KB로 전격 이적 - 딜사이트](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5UeWU0UV8yUjE3dXllcHJxU1diVzhXUVpZSDd5LWpFSUpxM05JT2gyV0ppcVNrMVJJcmd5ejZJd1YtZFg0M0RPRG05YVFkdW8?oc=5)
+- [신한금융, 배우 장나라와 '유기동물 보호' 동참 - sedaily.com](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5KbjVPVWhCWHVHVzdJMU13dHNqR2RLSnpVUlV5SHlfS01uVkZROXhtaDY1Tm5XdG1JSGFsSzVmVXIweTZnamNkQk5HdDRqaGVFUjlPSkF30gFXQVVfeXFMT3k4WktXTkhNOElVajVwUW5DdTVtQk5vVG1kTWQ1VG11VWxwbmdNTG55YUNnUzNqb1BrQl9nZi1pQ0kxRDZrUFJSZG5rMThGVDdzMmtrQ0lj?oc=5)
 - [연봉 7000만원 넘으세요?…12월 31일 지나면 '땅 치고 후회' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1vUS14R3ZLWWYyX3c1MVZLU1NTM3IwSENzd3JwV3d1LXhSQ25GQ3FKXzR0M04xcHhPc1B3U2VfU01UTmVEZFpvXzdxMUpPVkk?oc=5)
 
 ---
