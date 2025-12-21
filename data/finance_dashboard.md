@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-22 06:12:27 (KST)
+> **Time:** 2025-12-22 06:28:20 (KST)
 
-### 🤖 Copilot Briefing (06:12)
+### 🤖 Copilot Briefing (06:28)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,10 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [[2025 보안 사고·이슈 결산-7] 범부처 정보보호 종합대책, 2026년 산업 활성화 ‘기대’](http://www.boannews.com/media/view.asp?idx=140932&kind=&sub_kind=)
+- [“SKT 해킹피해자에 10만원씩 보상하라” 소비자위 결정... 총 2조3천억원](http://www.boannews.com/media/view.asp?idx=141096&kind=&sub_kind=)
+- [국민이 바로잡는 생성형 AI... 과기정통부, ‘정보 오류 없는 찐 AI 챌린지’ 실시](http://www.boannews.com/media/view.asp?idx=141095&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.9%)
-- **RAM:** `31.2/512 GB` (Used: 6.1%)
+- **vCPU:** `128 vCores` (Load: 39.8%)
+- **RAM:** `33.8/512 GB` (Used: 6.6%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
