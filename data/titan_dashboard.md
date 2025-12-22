@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 8 days, 8:05:01
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 8 days, 8:15:08
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.4% | `██████░░░░░░░░░` |
-| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 43.0% | `██████░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [말보다 숫자, 약속보다 실행…진옥동 연임의 이유[2025 올해의 CEO] - 매거진한경](https://news.google.com/rss/articles/CBMibEFVX3lxTE1KQXB0R281OVNVeWwtZEdNeTJqbEdsRF9WaTFTUmJjcGVsMTk2VW1EX1hUNUd2ZkpHT0pabm1tZzFkTXZVV2VRSUNqV0xHNlQ3eC1xZmU4QURjdGdvUVpQUDhEaExiTFFobGRMUw?oc=5)
-- [내년 미국 주식시장 5대 이슈 미리보기 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1QNzdBWk5TSzBNR250ZTRNRXVia3ZKUnNQejZfcTA1NjU3VU5fMF9sbzhsaUQydzdPR3I5RDlDSGdNandFYUdKa2JKeFF1SEpndWlkcjNvYWppUdIBVEFVX3lxTE5uVHFtZk9YOTg5QXFJYi1sLUFzc2NET1R1c0hIN1ZiN095NWE1SHdDVHlZMEVHOE9wZHNoNFprU09uRDVOcHl4RzJCUjdlUGxXd0Y3eA?oc=5)
+- [[사설] 백약이 무효 원화 폭락, 한국 경제 미래 있는지 묻는 것 - 조선일보](https://news.google.com/rss/articles/CBMihgFBVV95cUxOOG1wM3JtdHlLWndMYkpxMTdWTWJkVkc5dUdIdkp3Z0hWLUdqZWVxN3F5aWlrY09RNUhoNTFFM09ybmhGMVMzR2FpYWF2X29nZWFOQnc5VXJMMm1fMndqeE9RY25CQnFTaFo2M3F2WnltcDBadExSanh1eVVIM2Z2bUhCeU5vQdIBmgFBVV95cUxPYmN0RjlBZjhkZkZueHc3dWR0T25WV0xZTl94eFJ5cS1uSU82WmNlbkNKdllDS2JWRGVuTXBtaF93dlF0Uzd1TllOaGdmcUVSOFlfcGMyNUU1ejhIMzRSUERGS2pJQTB2cW5qWTVMakswV25aMjVxb3hXTjN3eHRfbTVrbndEbUphOEM1YV9laE52RDljUDI5bC1n?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
