@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-22 16:55:02 (KST)
+> **Time:** 2025-12-22 17:18:06 (KST)
 
-### 🤖 Copilot Briefing (16:55)
+### 🤖 Copilot Briefing (17:18)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,7 +10,7 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [신한은행, 인하대에 전동휠체어 기증 - 경기일보](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1JX0dSaW9ETGI4MDREajB1LXpUSDJLN2s5SWstVGRVRnhfbWlISGJvQWdiOEJkbHk4LXdGX3pnRkxhVllVRzVMaHNfaE1GY08xaUtlYVJOMFVRV0E?oc=5)<br>• [신한은행, 범국가 탄소중립 프로젝트 2026 넷제로 챌린지X 참여 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE9DTzZJRklEOGk2Q0xIR3BqNThKcWwtWTRCc3EwQlJZazlSS21DUlZMOUlveXVrRU15Y1k1T01Jc2RkTjc4X18xRTNZUWcydw?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행, 범국가 탄소중립 프로젝트 '넷제로 챌린지X' 참여 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBqWThLSDA5M3ZISS0xNjNLWGN0dlpRUHlKT0NrajVUZ2FUdEY3RXF4YnYyNy00Qy1lYzhhdEhIZU5uZEQwZ01IZTBjMExtMHVpUnVSRU9HejgwNFV4VXFPMA?oc=5)<br>• [신한은행, 전문직 사업자대출 출시…최대 1억 한도 - 네이트](https://news.google.com/rss/articles/CBMibkFVX3lxTFBfYmdGR3B3NUFETjVNemkzR2x3SXNvV2YwU1NIZTF4S1p1OHJrS2ozcm5rU2lTZjBZcFU3ME40YTA4MlZzaHpDTjNDaW1TYnpOV1YzbGIza1REUTBzVGY0cmp0ZEJ4b1hsQkpzQ2V3?oc=5)<br> |
 | **🟢 하나금융 (은행/투자)** | • [신용보증기금-하나은행, 유망 신산업 분야 금융 지원 협약 체결 - 에너지경제신문 모바일](https://news.google.com/rss/articles/CBMiW0FVX3lxTFB6bVZqY0o5ejJlYVNNZ093WTROUE01cE1YZ1hVVkhmdVNINUJPNkFPa3FXVmY4MFJxN0dxQS1VMWVWQ0xDRFRSZjFkNzJVaGZhd1p3VnJMeFN2ODg?oc=5)<br>• [[신탁명가 하나은행]④ 100억 자산 VVIP의 집사, '패밀리오피스' 사업 루트 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTE9JTzgxUnh6b3Q2Y3o5TTBHNWJsUVA4MF9icl9EU01ud01CcXczMDdYTkJKbXJBNlZHWEpaYk4zVE1iYjJyT1VWOUNFX2hVcHU5SHpNNEk0TjBJYkFaV2VvMXBkNEhWMVFy0gFsQVVfeXFMT2hSMExTSmhfVklXNEZMNVRkbGVtN3Rvd1BwWTNuMFQtanpPRDFzSjE5NF9tcERDX0Y1b3JPN3RObHZwM21xVHZCd3dVR25zbHllQzdfbjlLaWJwVk15MnZsQU9wTDdEcVhYWXRo?oc=5)<br> |
 
 ### 📰 General & Security News
@@ -22,8 +22,8 @@
 - [[한국정보공학기술사 보안을 論하다-30] 안전한 제로트러스트 적용을 위한 지름길](http://www.boannews.com/media/view.asp?idx=141118&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.0%)
-- **RAM:** `30.7/512 GB` (Used: 6.0%)
+- **vCPU:** `128 vCores` (Load: 40.4%)
+- **RAM:** `33.8/512 GB` (Used: 6.6%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
