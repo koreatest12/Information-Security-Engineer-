@@ -1,21 +1,21 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2025-12-22 15:22:58 | **Version:** `v2025.12.22`
+> **Updated:** 2025-12-22 15:55:24 | **Version:** `v2025.12.22`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 40.7% | `▆▇▃ ▂▂▂ ▃▃▂  ▃█ ▃▇  ` | Auto-Scaling Check |
-| **BTC Price** | $88,846.00 | `   ▂▂▂▄▃▃▃▄▇▃▆▇▇▆█▇▇` | Market Volatility |
+| **CPU Load** | 40.7% | `▇▃ ▂▂▂ ▃▃▂  ▃█ ▃▇   ` | Auto-Scaling Check |
+| **BTC Price** | $88,858.00 | `  ▂▂▂▄▃▃▃▄▇▃▆▇▇▆█▇▇▇` | Market Volatility |
 | **Global Mood** | 0.04 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
-- **RAM:** 6.0% Used
+- **RAM:** 5.9% Used
 - **Disk:** 77.1% Used
 
 ### 📰 Global News Omni-Channel
 #### 🛡️ Cyber Security
+- 😐 [Android Malware Operations Merge Droppers, SMS Theft, and RAT Capabilities at Scale](https://thehackernews.com/2025/12/android-malware-operations-merge.html)
 - 🙂 [Iranian Infy APT Resurfaces with New Malware Activity After Years of Silence](https://thehackernews.com/2025/12/iranian-infy-apt-resurfaces-with-new.html)
-- 😐 [U.S. DOJ Charges 54 in ATM Jackpotting Scheme Using Ploutus Malware](https://thehackernews.com/2025/12/us-doj-charges-54-in-atm-jackpotting.html)
 - 😐 [Dismantling Defenses: Trump 2.0 Cyber Year in Review](https://krebsonsecurity.com/2025/12/dismantling-defenses-trump-2-0-cyber-year-in-review/)
 - 🙂 [Most Parked Domains Now Serving Malicious Content](https://krebsonsecurity.com/2025/12/most-parked-domains-now-serving-malicious-content/)
 - 😐 [Cisco VPNs, Email Services Hit in Separate Threat Campaigns](https://www.darkreading.com/endpoint-security/cisco-vpns-email-services-threat-campaigns)
@@ -28,7 +28,7 @@
 - 😨 [Trump’s Agriculture Bailout Is Alienating His MAHA Base](https://www.wired.com/story/trumps-agriculture-bailout-is-alienating-his-maha-base/)
 
 #### 🌍 World & Politics
-- 😐 [Alleged Bondi gunmen threw 'tennis ball bomb', new documents say](https://www.bbc.com/news/articles/ce86l95gx5po?at_medium=RSS&at_campaign=rss)
+- 😐 [Bondi gunmen threw explosives at start of attack and practised shooting weeks before, police allege](https://www.bbc.com/news/articles/ce86l95gx5po?at_medium=RSS&at_campaign=rss)
 - 😐 [US and Ukraine call Miami talks productive despite no breakthrough](https://www.bbc.com/news/articles/cn5lnzlvqg2o?at_medium=RSS&at_campaign=rss)
 - 😐 [At Bondi Beach, Australians Mourn Shooting Victims](https://www.nytimes.com/2025/12/21/world/asia/australia-mourns-bondi-beach-shooting-victims.html)
 - 😐 [U.S. Coast Guard Pursues Oil Tanker Linked to Venezuela](https://www.nytimes.com/2025/12/21/us/politics/us-coast-guard-venezuela-oil-tankers.html)
