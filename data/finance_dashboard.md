@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-22 13:42:39 (KST)
+> **Time:** 2025-12-22 14:03:25 (KST)
 
-### 🤖 Copilot Briefing (13:42)
+### 🤖 Copilot Briefing (14:03)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [“AI가 공격 전면에 나선다” 이스트시큐리티, 2026년 보안 위협 전망 발표](http://www.boannews.com/media/view.asp?idx=141109&kind=&sub_kind=)
+- [아이씨티케이, 72억 규모 제3자배정 유증 완료...BTQ와 글로벌 양자보안 공략](http://www.boannews.com/media/view.asp?idx=141108&kind=&sub_kind=)
 - [AI 시대 비즈니스 전략, 출발점은 ‘상표 빅데이터’...지재처, 관련 컨퍼런스 개최](http://www.boannews.com/media/view.asp?idx=141113&kind=&sub_kind=)
-- [양자컴 상용기술 급성장...산업적용 본격화 신호](http://www.boannews.com/media/view.asp?idx=141112&kind=&sub_kind=)
-- [OT용 제로트러스트 지침서 나왔다... KISA, 국내 최초 발간](http://www.boannews.com/media/view.asp?idx=141111&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.8%)
-- **RAM:** `31.2/512 GB` (Used: 6.1%)
+- **vCPU:** `128 vCores` (Load: 39.0%)
+- **RAM:** `33.8/512 GB` (Used: 6.6%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
