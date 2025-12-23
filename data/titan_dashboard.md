@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 9 days, 2:07:23
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 9 days, 2:14:55
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,10 +15,10 @@
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
 | **CPU** | `128 vCores` | 43.5% | `██████░░░░░░░░░` |
-| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
+| **RAM** | `30.7/512 GB` | 6.0% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [진옥동 신한금융 회장 연임 앞두고 신한카드 19만여건 정보유출 - 지디넷코리아](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5hSFl6R0dvamRGSjM5LU8yUktyWFJ4YWlfbXBxWFhET0hqRDZfMGNyZ0hzcUt1QXJEUDVMTE5XaXctQ2pRSVM3LXg0LUhKVlk1VmVjWXlR?oc=5)
+- [[인사]신한금융지주·신한캐피탈 - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1rRTMyUEJwaE4yVTdMOVVpQTQ2TkZrcDU2ZTFmYnZ3eDV1N0twV2FNT2g0SDJ0aC01aTJraHBSMlNnZjdVbzdXNHdCMERsdk1MQU1Rdg?oc=5)
 - [재계 유망주에서 한국 경제 구원투수로 우뚝 서다 [2025 올해의 경제 인물] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE95b1djNHFwXzhFeDVIUVRYYkcyZlJFNUpkcTFTc3lhS3pWczNCUGtURHplOVVWOHB2d0NBYWNfMmt0RE1EcWlYeS12NFhXU3c?oc=5)
 
 ---
