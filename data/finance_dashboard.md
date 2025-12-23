@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-24 08:30:28 (KST)
+> **Time:** 2025-12-24 08:41:08 (KST)
 
-### 🤖 Copilot Briefing (08:30)
+### 🤖 Copilot Briefing (08:41)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -22,7 +22,7 @@
 - [과기정통부, ‘지자체 CCTV 원본 데이터 AI 학습 허용’ 등 ICT 규제특례 6건 지정](http://www.boannews.com/media/view.asp?idx=141144&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.0%)
+- **vCPU:** `128 vCores` (Load: 39.8%)
 - **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
