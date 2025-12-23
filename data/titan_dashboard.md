@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 8 days, 20:14:49
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 8 days, 20:46:49
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 42.9% | `██████░░░░░░░░░` |
-| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 44.9% | `██████░░░░░░░░░` |
+| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [진옥동 2기 신한금융, 손보 어쩌나…체질개선에도 흑자전환은 요원 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxORTQ4Yzd4bnRsaGV2WFpTdzd3NG04UERZQnBVVGU3OGlUWDNaX0l4REJZQkhOMkJGYzhHM0ZUdG8zSmVsb0FhMFZHbVMwck41Nl9iWjlpU2MzdEg2dUUxZDRkbTNGeXF1azg5a2VjR19qeHFTTTdsckt0dmVEbS0zOUlTdw?oc=5)
+- [[인사]신한금융지주·신한캐피탈 - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1rRTMyUEJwaE4yVTdMOVVpQTQ2TkZrcDU2ZTFmYnZ3eDV1N0twV2FNT2g0SDJ0aC01aTJraHBSMlNnZjdVbzdXNHdCMERsdk1MQU1Rdg?oc=5)
 - [재계 유망주에서 한국 경제 구원투수로 우뚝 서다 [2025 올해의 경제 인물] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE95b1djNHFwXzhFeDVIUVRYYkcyZlJFNUpkcTFTc3lhS3pWczNCUGtURHplOVVWOHB2d0NBYWNfMmt0RE1EcWlYeS12NFhXU3c?oc=5)
 
 ---
