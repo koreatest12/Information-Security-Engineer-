@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 9 days, 4:38:11
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 9 days, 5:26:00
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
 
-> **Q:** 종합 상황 브리핑
+> **Q:** 
 
 관련 정보 없음
 
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.5% | `██████░░░░░░░░░` |
-| **RAM** | `30.7/512 GB` | 6.0% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 44.0% | `██████░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[인사]신한금융지주·신한캐피탈 - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1rRTMyUEJwaE4yVTdMOVVpQTQ2TkZrcDU2ZTFmYnZ3eDV1N0twV2FNT2g0SDJ0aC01aTJraHBSMlNnZjdVbzdXNHdCMERsdk1MQU1Rdg?oc=5)
-- [재계 유망주에서 한국 경제 구원투수로 우뚝 서다 [2025 올해의 경제 인물] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE95b1djNHFwXzhFeDVIUVRYYkcyZlJFNUpkcTFTc3lhS3pWczNCUGtURHplOVVWOHB2d0NBYWNfMmt0RE1EcWlYeS12NFhXU3c?oc=5)
+- [[사설] 백약이 무효 원화 폭락, 한국 경제 미래 있는지 묻는 것 - 조선일보](https://news.google.com/rss/articles/CBMihgFBVV95cUxOOG1wM3JtdHlLWndMYkpxMTdWTWJkVkc5dUdIdkp3Z0hWLUdqZWVxN3F5aWlrY09RNUhoNTFFM09ybmhGMVMzR2FpYWF2X29nZWFOQnc5VXJMMm1fMndqeE9RY25CQnFTaFo2M3F2WnltcDBadExSanh1eVVIM2Z2bUhCeU5vQdIBmgFBVV95cUxPYmN0RjlBZjhkZkZueHc3dWR0T25WV0xZTl94eFJ5cS1uSU82WmNlbkNKdllDS2JWRGVuTXBtaF93dlF0Uzd1TllOaGdmcUVSOFlfcGMyNUU1ejhIMzRSUERGS2pJQTB2cW5qWTVMakswV25aMjVxb3hXTjN3eHRfbTVrbndEbUphOEM1YV9laE52RDljUDI5bC1n?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
