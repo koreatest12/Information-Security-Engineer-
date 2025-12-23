@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-23 17:47:26 (KST)
+> **Time:** 2025-12-23 18:01:56 (KST)
 
-### 🤖 Copilot Briefing (17:47)
+### 🤖 Copilot Briefing (18:01)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [과기정통부, ‘지자체 CCTV 원본 데이터 AI 학습 허용’ 등 ICT 규제특례 6건 지정](http://www.boannews.com/media/view.asp?idx=141144&kind=&sub_kind=)
 - [펜타시큐리티, ‘대한민국브랜드대상’에... 사이버보안 기업 유일 수상](http://www.boannews.com/media/view.asp?idx=141143&kind=&sub_kind=)
 - [디자인 특허심사에 ‘AI 검색 시스템’  제공...지재처, 시스템 고도화 추진](http://www.boannews.com/media/view.asp?idx=141142&kind=&sub_kind=)
-- [[쿠팡 해킹] 류제명 차관 “쿠팡 대응 심히 우려, 엄정 조치할 것”](http://www.boannews.com/media/view.asp?idx=141140&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.6%)
-- **RAM:** `31.2/512 GB` (Used: 6.1%)
+- **vCPU:** `128 vCores` (Load: 39.4%)
+- **RAM:** `35.3/512 GB` (Used: 6.9%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
