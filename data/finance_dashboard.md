@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-24 04:02:20 (KST)
+> **Time:** 2025-12-24 04:26:31 (KST)
 
-### 🤖 Copilot Briefing (04:02)
+### 🤖 Copilot Briefing (04:26)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -11,7 +11,7 @@
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
 | **🔵 신한금융 (은행/투자)** | • [[단독] 신한은행, 20년간 유지 '특별퇴직위로금' 폐지…직원들은 "몰랐다" - 중앙이코노미뉴스](https://news.google.com/rss/articles/CBMickFVX3lxTE5KcmdQbzlfc0JoTFhrUUg5Z21xYTFZQjRmQkFiOXVZN0h6dVhIRFhicE1DNkg0amoxUWZhSDc4RHlpN2JENWdYRFo3c3ZoaHN1U1VnSEF0NTRwMnN3cUluT1pVMXJnTk93MDRQOVNIajJJdw?oc=5)<br>• [신한은행, 경영진 7명 대거 교체…미래혁신그룹 신설 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1ORGVIMmxEalE0Z013dGNGdGZhamstekktSDI4N2xJVEtrWDN5Wm1iSUtYdGNOS3hWdnhDQXhxUHAyb3pwTmY0OHRqc19qWmN4azJYa0tBRElFeFNJcE5HYw?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [[인사] 하나금융지주·하나은행 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFAxUDlpOHkyOVFpZkhsdU1pVHBha0xudG1vVUFQNzZxOVhZN04zY2owYzhfT3JZQ01WRXR6TGVEemxKTzhHb3JSOEl2clRkdEFTRWh1dG5wdVVGaTjSAWBBVV95cUxQYzhwZU0tMWdXbGZaWG41MFdma3VzV2w2Zk1FR1RtQThaM1lCRmJJN283M1NPcnlLazFCemxBU1BDeUw1cWFVYm04bk9GUl9qRjNabkZqMkh1dVhZVlRDcGg?oc=5)<br>• [하나금융, 생산적 금융·소비자보호 강화…조직개편·임원인사 단행 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE9lTTQwQWE0dU0zR1NPVWFnNDZyQ2hlQ2kzSVZkaGVzMFJTWXpUNjdTSHdWcHpyZzA3dGVBSVVGVzMxN2FnNUFBMl9uNVBXMWp1My00?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [[인사] 하나금융지주·하나은행 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFAxUDlpOHkyOVFpZkhsdU1pVHBha0xudG1vVUFQNzZxOVhZN04zY2owYzhfT3JZQ01WRXR6TGVEemxKTzhHb3JSOEl2clRkdEFTRWh1dG5wdVVGaTjSAWBBVV95cUxQYzhwZU0tMWdXbGZaWG41MFdma3VzV2w2Zk1FR1RtQThaM1lCRmJJN283M1NPcnlLazFCemxBU1BDeUw1cWFVYm04bk9GUl9qRjNabkZqMkh1dVhZVlRDcGg?oc=5)<br>• [[인사] 하나금융지주·하나은행 - econovill.com](https://news.google.com/rss/articles/CBMibEFVX3lxTE1sV2h5ZGpJNDFBVWpkWUNxR0Fsc0drZjZxbFk5Z25GbV9tcHg5bXNiV3gxOW43Zm1ENUwtc1kwZnd2bzNwa2dTRWFYN3Y3OERjRTlCZVBob1d1V1hIMWFYeG12Zm1ndUhCalAtcw?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
@@ -22,8 +22,8 @@
 - [펜타시큐리티, ‘대한민국브랜드대상’에... 사이버보안 기업 유일 수상](http://www.boannews.com/media/view.asp?idx=141143&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.5%)
-- **RAM:** `33.3/512 GB` (Used: 6.5%)
+- **vCPU:** `128 vCores` (Load: 40.0%)
+- **RAM:** `33.8/512 GB` (Used: 6.6%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
