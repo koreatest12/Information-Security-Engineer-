@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-23 22:59:07 (KST)
+> **Time:** 2025-12-23 23:17:52 (KST)
 
-### 🤖 Copilot Briefing (22:59)
+### 🤖 Copilot Briefing (23:17)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,7 +10,7 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [[단독] 신한은행, 20년간 유지 '특별퇴직위로금' 폐지…직원들은 "몰랐다" - 중앙이코노미뉴스](https://news.google.com/rss/articles/CBMickFVX3lxTE5KcmdQbzlfc0JoTFhrUUg5Z21xYTFZQjRmQkFiOXVZN0h6dVhIRFhicE1DNkg0amoxUWZhSDc4RHlpN2JENWdYRFo3c3ZoaHN1U1VnSEF0NTRwMnN3cUluT1pVMXJnTk93MDRQOVNIajJJdw?oc=5)<br>• [[프로필] 박현주 신한은행 부행장 - 서울파이낸스](https://news.google.com/rss/articles/CBMiakFVX3lxTFBTX2ZnZUh0T3RieUNMMWptZ28xN3lYRG1HRVNVVzRta1FQTktISHlMOVFXX0lKLUpjZ2tIaUVWYlJNN29yRHRFSGt1bnBJT1VRMjJhdl8zUkFNcHZtc1BFdkVtRmxLZXhZdFE?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [[단독] 신한은행, 20년간 유지 '특별퇴직위로금' 폐지…직원들은 "몰랐다" - 중앙이코노미뉴스](https://news.google.com/rss/articles/CBMickFVX3lxTE5KcmdQbzlfc0JoTFhrUUg5Z21xYTFZQjRmQkFiOXVZN0h6dVhIRFhicE1DNkg0amoxUWZhSDc4RHlpN2JENWdYRFo3c3ZoaHN1U1VnSEF0NTRwMnN3cUluT1pVMXJnTk93MDRQOVNIajJJdw?oc=5)<br>• [[인사]신한은행 - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTE83ZXdsZ1BTZFZJVE9NS3pFQnJkY1BkMkpFQnZJUzQ4RVE4M3N5UFFPaHZ3Nk5velBpQ1FXVV9NbVVjNUt3NU9MMU1UblZFSk1pMENuUQ?oc=5)<br> |
 | **🟢 하나금융 (은행/투자)** | • [[인사] 하나금융지주·하나은행 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFAxUDlpOHkyOVFpZkhsdU1pVHBha0xudG1vVUFQNzZxOVhZN04zY2owYzhfT3JZQ01WRXR6TGVEemxKTzhHb3JSOEl2clRkdEFTRWh1dG5wdVVGaTjSAWBBVV95cUxQYzhwZU0tMWdXbGZaWG41MFdma3VzV2w2Zk1FR1RtQThaM1lCRmJJN283M1NPcnlLazFCemxBU1BDeUw1cWFVYm04bk9GUl9qRjNabkZqMkh1dVhZVlRDcGg?oc=5)<br>• [하나금융, 생산적 금융·소비자보호 강화…조직개편·임원인사 단행 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9zN2lIOFA4azZGcGtsbEJUMm9ZOGM5VlpnZW5NdktuVHBlY1RnS01PSFV5UzJZSkVSVnZJY20tV040bm1uZkEzMHktajNEc0ZkSk4taXpvVkZqbTdCTDhPSdIBeEFVX3lxTE4zRXpfamhhbjdxdGVSeWZIM3pTRGNYeWtOSVR6SjUxNmRGSVRtdE1acW9YeWZ3UDlVS01EUGhwWGJjTHhKOGJEN3ZKUUlzSmQwaWhJVUJXX1ExdGFPbGV5NHMtclpCWHY2dk5qN3kzcm9vblJRWHdVaA?oc=5)<br> |
 
 ### 📰 General & Security News
@@ -22,8 +22,8 @@
 - [펜타시큐리티, ‘대한민국브랜드대상’에... 사이버보안 기업 유일 수상](http://www.boannews.com/media/view.asp?idx=141143&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.8%)
-- **RAM:** `33.8/512 GB` (Used: 6.6%)
+- **vCPU:** `128 vCores` (Load: 40.0%)
+- **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
