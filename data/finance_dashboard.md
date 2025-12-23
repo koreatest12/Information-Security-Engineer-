@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-23 20:53:13 (KST)
+> **Time:** 2025-12-23 21:22:07 (KST)
 
-### 🤖 Copilot Briefing (20:53)
+### 🤖 Copilot Briefing (21:22)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,8 +10,8 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [[단독] 신한은행, 20년간 유지 '특별퇴직위로금' 폐지…직원들은 "몰랐다" - 중앙이코노미뉴스](https://news.google.com/rss/articles/CBMickFVX3lxTE5KcmdQbzlfc0JoTFhrUUg5Z21xYTFZQjRmQkFiOXVZN0h6dVhIRFhicE1DNkg0amoxUWZhSDc4RHlpN2JENWdYRFo3c3ZoaHN1U1VnSEF0NTRwMnN3cUluT1pVMXJnTk93MDRQOVNIajJJdw?oc=5)<br>• [[프로필] 이종구 신한은행 부행장 - 서울파이낸스](https://news.google.com/rss/articles/CBMiakFVX3lxTE56Q1FhNjVjSzJPdWlJMUFsRTdaQmEyWjduUEh2eHc5d1BRTVdNZkpvdzRXX2pvRXh6YjZpUmE5Y2EtckxvWVJfZkhXQzdsUVlBelRwSmpuU2NkWDAtekJHcXk3Um1ZUDlCT1E?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [[인사] 하나금융지주·하나은행 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFAxUDlpOHkyOVFpZkhsdU1pVHBha0xudG1vVUFQNzZxOVhZN04zY2owYzhfT3JZQ01WRXR6TGVEemxKTzhHb3JSOEl2clRkdEFTRWh1dG5wdVVGaTjSAWBBVV95cUxQYzhwZU0tMWdXbGZaWG41MFdma3VzV2w2Zk1FR1RtQThaM1lCRmJJN283M1NPcnlLazFCemxBU1BDeUw1cWFVYm04bk9GUl9qRjNabkZqMkh1dVhZVlRDcGg?oc=5)<br>• [[인사]하나금융 - 동아일보](https://news.google.com/rss/articles/CBMidEFVX3lxTE1wd1RzMlVrdHRjYVFBOHZOeUJva0JVVEVOQ09FazhkcDNpX3VpMUo0Tnh4S0dYZ3VJOXpGcXpmNEJ3VnlPWG9fT2ZrZkZKY1dhcDItZm9ZLXBLd2pQcmJTdVRCd2RyYnlnek1TaXYzTEEyelZi0gFmQVVfeXFMUEJWQmFvbU5INzFiQjRWOVQwVVdlQ1RfWEROelVpVy1rYzgzRU9ud0lhenhrM050NEFfVUpBZTRVZ0tudXdNMWwzblFENEkzVmpiM183RG1EUjZzb2ExX24tVTNWMUN3?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [[단독] 신한은행, 20년간 유지 '특별퇴직위로금' 폐지…직원들은 "몰랐다" - 중앙이코노미뉴스](https://news.google.com/rss/articles/CBMickFVX3lxTE5KcmdQbzlfc0JoTFhrUUg5Z21xYTFZQjRmQkFiOXVZN0h6dVhIRFhicE1DNkg0amoxUWZhSDc4RHlpN2JENWdYRFo3c3ZoaHN1U1VnSEF0NTRwMnN3cUluT1pVMXJnTk93MDRQOVNIajJJdw?oc=5)<br>• [신한은행, 경영진 7명 대거 교체…미래혁신그룹 신설 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1ORGVIMmxEalE0Z013dGNGdGZhamstekktSDI4N2xJVEtrWDN5Wm1iSUtYdGNOS3hWdnhDQXhxUHAyb3pwTmY0OHRqc19qWmN4azJYa0tBRElFeFNJcE5HYw?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [[인사] 하나금융지주·하나은행 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFAxUDlpOHkyOVFpZkhsdU1pVHBha0xudG1vVUFQNzZxOVhZN04zY2owYzhfT3JZQ01WRXR6TGVEemxKTzhHb3JSOEl2clRkdEFTRWh1dG5wdVVGaTjSAWBBVV95cUxQYzhwZU0tMWdXbGZaWG41MFdma3VzV2w2Zk1FR1RtQThaM1lCRmJJN283M1NPcnlLazFCemxBU1BDeUw1cWFVYm04bk9GUl9qRjNabkZqMkh1dVhZVlRDcGg?oc=5)<br>• [하나금융, 생산적 금융·소비자보호 강화…조직개편·임원인사 단행 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9zN2lIOFA4azZGcGtsbEJUMm9ZOGM5VlpnZW5NdktuVHBlY1RnS01PSFV5UzJZSkVSVnZJY20tV040bm1uZkEzMHktajNEc0ZkSk4taXpvVkZqbTdCTDhPSdIBeEFVX3lxTE4zRXpfamhhbjdxdGVSeWZIM3pTRGNYeWtOSVR6SjUxNmRGSVRtdE1acW9YeWZ3UDlVS01EUGhwWGJjTHhKOGJEN3ZKUUlzSmQwaWhJVUJXX1ExdGFPbGV5NHMtclpCWHY2dk5qN3kzcm9vblJRWHdVaA?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
@@ -22,7 +22,7 @@
 - [펜타시큐리티, ‘대한민국브랜드대상’에... 사이버보안 기업 유일 수상](http://www.boannews.com/media/view.asp?idx=141143&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.0%)
+- **vCPU:** `128 vCores` (Load: 40.2%)
 - **RAM:** `32.3/512 GB` (Used: 6.3%)
 
 ---
