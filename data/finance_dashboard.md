@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-24 19:52:26 (KST)
+> **Time:** 2025-12-24 20:11:14 (KST)
 
-### 🤖 Copilot Briefing (19:52)
+### 🤖 Copilot Briefing (20:11)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -11,7 +11,7 @@
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
 | **🔵 신한금융 (은행/투자)** | • [신한은행, 경영진 7명 신규 선임…'미래혁신그룹' 신설 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1PcER1bE9lQkIzM0FpUUswM2E4VzhZZjJhRmJtVjhmRGttMFNVSl96dzQxX2NVR19sVjdrUVRwVF9uM3lPd2ZUWkx0dmhhMHU5Q01mbjFXR0QxbFB6RldlZtIBeEFVX3lxTFBtSlZMMmhHTTQ2aXlBTWw0RXNYTjB6dWVyM05WSmJjdmpCVWFBTC1IcnRReU4zWTdPU3JLZU9ZNzR4NGpxVVRTMWt6WGxnQUdBRVlObzd3a25WUm9lNHVqTkJnZ0theDZnaTJNV0JIZ093TEctU0VzYQ?oc=5)<br>• [[인사]신한은행 - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTE83ZXdsZ1BTZFZJVE9NS3pFQnJkY1BkMkpFQnZJUzQ4RVE4M3N5UFFPaHZ3Nk5velBpQ1FXVV9NbVVjNUt3NU9MMU1UblZFSk1pMENuUQ?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [[인사] 하나금융지주·하나은행 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFAxUDlpOHkyOVFpZkhsdU1pVHBha0xudG1vVUFQNzZxOVhZN04zY2owYzhfT3JZQ01WRXR6TGVEemxKTzhHb3JSOEl2clRkdEFTRWh1dG5wdVVGaTjSAWBBVV95cUxQYzhwZU0tMWdXbGZaWG41MFdma3VzV2w2Zk1FR1RtQThaM1lCRmJJN283M1NPcnlLazFCemxBU1BDeUw1cWFVYm04bk9GUl9qRjNabkZqMkh1dVhZVlRDcGg?oc=5)<br>• [[프로필] 강정한 하나은행 HR지원그룹장 부행장, 조직문화 개선 선봉장 - 한국금융신문](https://news.google.com/rss/articles/CBMifEFVX3lxTE9VbGd2Z2E0UFk0bjM1bExBRUMyazZHbHFZM180OFItb1RnRE5VVVVQWExEOW10aG5talQ4Z2hsOTVZWks4bDBIcFVsa3RWbHNob3B2eVcwdlpXTmVGcTdJd2NaX0JFN0Q0UFM2VTR4UVZiZDc3SUdhX3hPN2g?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [[인사] 하나금융지주·하나은행 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFAxUDlpOHkyOVFpZkhsdU1pVHBha0xudG1vVUFQNzZxOVhZN04zY2owYzhfT3JZQ01WRXR6TGVEemxKTzhHb3JSOEl2clRkdEFTRWh1dG5wdVVGaTjSAWBBVV95cUxQYzhwZU0tMWdXbGZaWG41MFdma3VzV2w2Zk1FR1RtQThaM1lCRmJJN283M1NPcnlLazFCemxBU1BDeUw1cWFVYm04bk9GUl9qRjNabkZqMkh1dVhZVlRDcGg?oc=5)<br>• [[인사] 하나금융지주·하나은행 - econovill.com](https://news.google.com/rss/articles/CBMibEFVX3lxTE1sV2h5ZGpJNDFBVWpkWUNxR0Fsc0drZjZxbFk5Z25GbV9tcHg5bXNiV3gxOW43Zm1ENUwtc1kwZnd2bzNwa2dTRWFYN3Y3OERjRTlCZVBob1d1V1hIMWFYeG12Zm1ndUhCalAtcw?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
@@ -22,8 +22,8 @@
 - [“텔레그렘 차단 강화에 사이버 범죄자 이탈 가속”... 카스퍼스키 보고서](http://www.boannews.com/media/view.asp?idx=141163&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.7%)
-- **RAM:** `34.8/512 GB` (Used: 6.8%)
+- **vCPU:** `128 vCores` (Load: 39.8%)
+- **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
