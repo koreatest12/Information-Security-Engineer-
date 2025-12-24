@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 10 days, 1:43:29
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 10 days, 1:58:24
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
 
-> **Q:** 
+> **Q:** 종합 상황 브리핑
 
 관련 정보 없음
 
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 42.0% | `██████░░░░░░░░░` |
-| **RAM** | `29.7/512 GB` | 5.8% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.5% | `█████░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[금융지주 임원 인사 시나리오] [신한금융] 상무 전원 1970년대생 재편…정상혁式 세대교체 가속 - 딜사이트](https://news.google.com/rss/articles/CBMiT0FVX3lxTFAySzlZbFNkRHhnRHktZ2dZTGxMV1BSZ3k1dGRnMzc5cUZBZkEycDltWmJlc3pYOWM0ME5rOUhyTzc3cHctOXhuWlF3cTR5dVk?oc=5)
+- [신한금융, 은행은 '세대교체'·지주는 '안정'…진옥동 2기 본게임 시작 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxONEp0OXFRS2s2MWttTFZKeGFlZ3NWWUlMeDJWUjZ0RFY2RFNISkFlMm5CRG1IZjJ4NTFLMi1qSVBkLXdfSFBpaXFnUGN5cm0yWHFCS3pTTnlaOEx5dEkzYnRoTGw0VU80VWp2WndkOWs2S0VteXlibnBoZTVzUkRkcDM3RQ?oc=5)
 - [인천시 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE95RjhjdzhDRVFfTC1XRVdSWEtjdkVaSVk1Q1k5SEY0NV9DdWtkclBUQnJoTUJNeFpqU0ZZZ2hrUDFtRGdvblo0LVN3R19BZmhPWFJjN1Bpem9vZ9IBVEFVX3lxTE50ajhkODBYZlZsWTZyZFMybFFCNTRtU0NjdzdaRlJDUU9wd01jZDZja1FuLUlTUm5jTjAwNG12UEN0OXNydFFaajRPOHBxYjdFZVpZQg?oc=5)
 
 ---
