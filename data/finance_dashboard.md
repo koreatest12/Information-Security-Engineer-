@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-24 13:53:21 (KST)
+> **Time:** 2025-12-24 14:16:57 (KST)
 
-### 🤖 Copilot Briefing (13:53)
+### 🤖 Copilot Briefing (14:16)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [개인정보 유출 중대 위반에 징벌적 과징금... 총리 주재 국가정책조정회의](http://www.boannews.com/media/view.asp?idx=141164&kind=&sub_kind=)
+- [“텔레그렘 차단 강화에 사이버 범죄자 이탈 가속”... 카스퍼스키 보고서](http://www.boannews.com/media/view.asp?idx=141163&kind=&sub_kind=)
 - [신한카드 19만 유출, 알고 보니 직원 12명 ‘합작품’](http://www.boannews.com/media/view.asp?idx=141162&kind=&sub_kind=)
-- [‘빨간색 표시된 이름은 모두 해고’... 연말 인사 평가 위장 악성코드 주의보](http://www.boannews.com/media/view.asp?idx=141160&kind=&sub_kind=)
+- [개인정보 유출 중대 위반에 징벌적 과징금... 총리 주재 국가정책조정회의](http://www.boannews.com/media/view.asp?idx=141164&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
 - **vCPU:** `128 vCores` (Load: 39.8%)
-- **RAM:** `33.8/512 GB` (Used: 6.6%)
+- **RAM:** `33.3/512 GB` (Used: 6.5%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
