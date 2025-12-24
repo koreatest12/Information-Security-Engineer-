@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-24 12:49:39 (KST)
+> **Time:** 2025-12-24 13:24:35 (KST)
 
-### 🤖 Copilot Briefing (12:49)
+### 🤖 Copilot Briefing (13:24)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [[2025 보안 사고·이슈 결산-10] 더욱 강화되는 국내 보안 인증, 경쟁력 키울 수 있나](http://www.boannews.com/media/view.asp?idx=140822&kind=&sub_kind=)
-- [S2W, 인도네시아 RS그룹과 전략적 파트너십...“AI·빅데이터 협력”](http://www.boannews.com/media/view.asp?idx=141154&kind=&sub_kind=)
-- [서비스나우, 아미스 10조원에 인수 합의... ‘AI 시대 보안 관제탑’ 구축](http://www.boannews.com/media/view.asp?idx=141153&kind=&sub_kind=)
+- [‘빨간색 표시된 이름은 모두 해고’... 연말 인사 평가 위장 악성코드 주의보](http://www.boannews.com/media/view.asp?idx=141160&kind=&sub_kind=)
+- [한국정보통신자격협회-전국 8개 특성화고, 실무형 인재 양성 협약 체결](http://www.boannews.com/media/view.asp?idx=141155&kind=&sub_kind=)
+- [인텔리빅스, 창사 이래 최대 실적 달성하며 ‘상장사로 대도약’ 선언](http://www.boannews.com/media/view.asp?idx=141156&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.1%)
-- **RAM:** `31.7/512 GB` (Used: 6.2%)
+- **vCPU:** `128 vCores` (Load: 41.0%)
+- **RAM:** `30.7/512 GB` (Used: 6.0%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
