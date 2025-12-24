@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 10 days, 10:08:49
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 10 days, 10:32:56
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 44.0% | `██████░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.6% | `██████░░░░░░░░░` |
+| **RAM** | `29.7/512 GB` | 5.8% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 은행은 '세대교체'·지주는 '안정'…진옥동 2기 본게임 시작 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxONEp0OXFRS2s2MWttTFZKeGFlZ3NWWUlMeDJWUjZ0RFY2RFNISkFlMm5CRG1IZjJ4NTFLMi1qSVBkLXdfSFBpaXFnUGN5cm0yWHFCS3pTTnlaOEx5dEkzYnRoTGw0VU80VWp2WndkOWs2S0VteXlibnBoZTVzUkRkcDM3RQ?oc=5)
+- [신한금융, 경영진 인사 실시...70년대생 전면 배치 - 녹색경제신문](https://news.google.com/rss/articles/CBMiaEFVX3lxTFBldkN5WHVxUUxKcEIya1dYdmtQZ0RqY0VRLTFTMWdxRHByN0ZzWXdnVjA5a3dEaFp1U29obW82ZVZKcWxLU051ZmlPMk5XQjYxSFhNdnlhNF95dGhyeVF0bzdBWDFid1JF?oc=5)
 - [美 증시, S&P500 또 다시 사상 최고치 기록 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBkNVBMNXloclhpWUZQLUVlejdGNFQ0TlFUMHJSX01MN3ViS2pLYmQtRWd6M0VsbVBXcXBUcV9QaXJnenJrQ2xlVlk1S0F1bnVMUjVsNEFvU09EQdIBVEFVX3lxTFBGTWRmNmxLYTRhb3hJdzItMi10bEtGZG9OWU90OERJNmJVMDRWQ3RubTdVb0FNcVdmQ2FfcXVxMk52QUVwajJ1MDNrWk80Wlg3WGNtcw?oc=5)
 
 ---
