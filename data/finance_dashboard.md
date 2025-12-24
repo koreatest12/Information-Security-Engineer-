@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-25 03:59:19 (KST)
+> **Time:** 2025-12-25 04:15:05 (KST)
 
-### 🤖 Copilot Briefing (03:59)
+### 🤖 Copilot Briefing (04:15)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,7 +10,7 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [신한은행, 경영진 7명 신규 선임…'미래혁신그룹' 신설 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1PcER1bE9lQkIzM0FpUUswM2E4VzhZZjJhRmJtVjhmRGttMFNVSl96dzQxX2NVR19sVjdrUVRwVF9uM3lPd2ZUWkx0dmhhMHU5Q01mbjFXR0QxbFB6RldlZtIBeEFVX3lxTFBtSlZMMmhHTTQ2aXlBTWw0RXNYTjB6dWVyM05WSmJjdmpCVWFBTC1IcnRReU4zWTdPU3JLZU9ZNzR4NGpxVVRTMWt6WGxnQUdBRVlObzd3a25WUm9lNHVqTkJnZ0theDZnaTJNV0JIZ093TEctU0VzYQ?oc=5)<br>• [세계대회 중 최고상금 4억원…신한은행 세계기선전 개막 - 사이버오로](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9vRXlBRU9qU01HUjhWeVJzYnRyOUJGaXRpX1YtMWJPUDNCZUFrMFYybi1ROWtJZGRLNmVtUEZRejZTdTFHX3VPMmdobW1GNlVwZ1VtczRkRFFPYzdWN2JLSFp6X214cXM?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행, 경영진 7명 신규 선임…'미래혁신그룹' 신설 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1PcER1bE9lQkIzM0FpUUswM2E4VzhZZjJhRmJtVjhmRGttMFNVSl96dzQxX2NVR19sVjdrUVRwVF9uM3lPd2ZUWkx0dmhhMHU5Q01mbjFXR0QxbFB6RldlZtIBeEFVX3lxTFBtSlZMMmhHTTQ2aXlBTWw0RXNYTjB6dWVyM05WSmJjdmpCVWFBTC1IcnRReU4zWTdPU3JLZU9ZNzR4NGpxVVRTMWt6WGxnQUdBRVlObzd3a25WUm9lNHVqTkJnZ0theDZnaTJNV0JIZ093TEctU0VzYQ?oc=5)<br>• [세계대회 중 최고상금 4억원…신한은행 세계기선전 개막 - 사이버오로](https://news.google.com/rss/articles/CBMiZEFVX3lxTE91VHlJYlFGTkQzcWFfR0hLVm1EdFJLMEp3MEpuZTRidGdPeWJveTVNVjVBWE42RExxWHRXX2lVblFuUzNFZ0xfaUdBeW1FS0VWVkxBam5zbWNHcDNfWnJRbWR2WTM?oc=5)<br> |
 | **🟢 하나금융 (은행/투자)** | • [[인사] 하나금융지주·하나은행 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFAxUDlpOHkyOVFpZkhsdU1pVHBha0xudG1vVUFQNzZxOVhZN04zY2owYzhfT3JZQ01WRXR6TGVEemxKTzhHb3JSOEl2clRkdEFTRWh1dG5wdVVGaTjSAWBBVV95cUxQYzhwZU0tMWdXbGZaWG41MFdma3VzV2w2Zk1FR1RtQThaM1lCRmJJN283M1NPcnlLazFCemxBU1BDeUw1cWFVYm04bk9GUl9qRjNabkZqMkh1dVhZVlRDcGg?oc=5)<br>• [[인사] 하나금융지주·하나은행 - 아주경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFB4SVZkaDZ4U3laQl93NklkbTQyWXJlU05sSFFFWE9WdjJsSy1zVEhPWHpuOWhkV3VScnZuaTZxUHFhTE4zbzZUT3RhVUZPWkl1WFVfa1FCOG1yUdIBWEFVX3lxTE1sT3FLS3BqbGcxRDJDcm16RjV0LUxVMFc1aHF1VUlaM0NBaXI2OVVLaWo5ajExTnotUF93d0VsOExXbU93d2U5SjliZE1XazdqekZBSm5aX04?oc=5)<br> |
 
 ### 📰 General & Security News
@@ -22,8 +22,8 @@
 - [“텔레그렘 차단 강화에 사이버 범죄자 이탈 가속”... 카스퍼스키 보고서](http://www.boannews.com/media/view.asp?idx=141163&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.3%)
-- **RAM:** `35.3/512 GB` (Used: 6.9%)
+- **vCPU:** `128 vCores` (Load: 39.2%)
+- **RAM:** `34.3/512 GB` (Used: 6.7%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
