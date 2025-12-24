@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 10 days, 6:09:03
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 10 days, 6:28:00
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.2% | `██████░░░░░░░░░` |
-| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 43.5% | `██████░░░░░░░░░` |
+| **RAM** | `30.2/512 GB` | 5.9% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 은행은 '세대교체'·지주는 '안정'…진옥동 2기 본게임 시작 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxONEp0OXFRS2s2MWttTFZKeGFlZ3NWWUlMeDJWUjZ0RFY2RFNISkFlMm5CRG1IZjJ4NTFLMi1qSVBkLXdfSFBpaXFnUGN5cm0yWHFCS3pTTnlaOEx5dEkzYnRoTGw0VU80VWp2WndkOWs2S0VteXlibnBoZTVzUkRkcDM3RQ?oc=5)
-- [MC몽·차가원 회장, 불륜설 '부인'…"조작된 카톡, 법적 대응" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1QWHZDM25mV0xDY1FHbWhKSHJ4bXJ6cEpEbF9wNENTNVJPU1NoTHBnWnViTnJjSURLNVNLamllNkpORm0xRWhBeDJsTUxwMDQ?oc=5)
+- [고액 자산가들, 국내주식 늘리고 채권은 줄였다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2OGJ1RmpSYlFPeTUwYVBLa1N0SnIzMXdWQnhBSWlUeEp0RUNTcnFEQXZKOHc0MFFneldtMnhyZXNMT1ByZ29yX3o1Y1lYamNLY2ZzVGdORkl0d9IBVEFVX3lxTE1USEVUTkdBYkQ4ZE9DWWYzcFd4c0xWekptMERYeTNsclVma2Z2N2VONUZHdmozR2I0NTNaWmlRMmhxNGxMb1ZrYmNXeERMM1d3OE1KNQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
