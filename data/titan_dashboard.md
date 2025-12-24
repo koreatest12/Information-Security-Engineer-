@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 10 days, 6:57:25
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 10 days, 7:05:31
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
 
-> **Q:** 종합 상황 브리핑
+> **Q:** 
 
 관련 정보 없음
 
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.8% | `█████░░░░░░░░░░` |
-| **RAM** | `30.2/512 GB` | 5.9% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.9% | `██████░░░░░░░░░` |
+| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 은행은 '세대교체'·지주는 '안정'…진옥동 2기 본게임 시작 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxONEp0OXFRS2s2MWttTFZKeGFlZ3NWWUlMeDJWUjZ0RFY2RFNISkFlMm5CRG1IZjJ4NTFLMi1qSVBkLXdfSFBpaXFnUGN5cm0yWHFCS3pTTnlaOEx5dEkzYnRoTGw0VU80VWp2WndkOWs2S0VteXlibnBoZTVzUkRkcDM3RQ?oc=5)
-- [고액 자산가들, 국내주식 늘리고 채권은 줄였다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2OGJ1RmpSYlFPeTUwYVBLa1N0SnIzMXdWQnhBSWlUeEp0RUNTcnFEQXZKOHc0MFFneldtMnhyZXNMT1ByZ29yX3o1Y1lYamNLY2ZzVGdORkl0d9IBVEFVX3lxTE1USEVUTkdBYkQ4ZE9DWWYzcFd4c0xWekptMERYeTNsclVma2Z2N2VONUZHdmozR2I0NTNaWmlRMmhxNGxMb1ZrYmNXeERMM1d3OE1KNQ?oc=5)
+- [경남도 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Tc2c0djNKRUJ0b3FYRGk0LVNYc1dDZ3ZNZW5jcm1XSm1oeTROV18xYkc1WXFXZkRBRTZRZDhlNXpVMENPMjFlS0JrNVB1bFA3MWpBZlp2bzUtUdIBVEFVX3lxTFAxRTBqWjJuLUNPZE9LbkhwUFFPSXFSWEhCckdSRnpCUVY4b0FDQ1MybTFOSW96TVoxdzRwam5ZUHZFek1QUmk5LXhVQU1TRUpqdVhoOA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
