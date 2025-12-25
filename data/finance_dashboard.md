@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-25 18:54:06 (KST)
+> **Time:** 2025-12-25 19:13:11 (KST)
 
-### 🤖 Copilot Briefing (18:54)
+### 🤖 Copilot Briefing (19:13)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [[쿠팡 해킹] “유출자 특정, 실제 저장은 3000여개”... 정부, “확인된 사항 아냐”](http://www.boannews.com/media/view.asp?idx=141167&kind=&sub_kind=)
-- [美 에너지부 감찰관실, “부처 내 AI·사이버 보안 관리할 전사적 프레임워크 부족” 지적](http://www.boannews.com/media/view.asp?idx=141158&kind=&sub_kind=)
-- [[2025 보안 사고·이슈 결산-11] 225조 공공 조달 시장, 보안산업 확대 ‘디딤돌’](http://www.boannews.com/media/view.asp?idx=140826&kind=&sub_kind=)
+- [남미 위협 그룹 ‘블라인드이글’, 콜롬비아 정부망 침투](http://www.boannews.com/media/view.asp?idx=141159&kind=&sub_kind=)
+- [[부고] 어승룡 인더스트리뉴스 광고국장 부친상](http://www.boannews.com/media/view.asp?idx=141168&kind=&sub_kind=)
+- [스틸리언, 롯데건설에 ‘앱수트’ 공급... 모바일 앱 보안 강화](http://www.boannews.com/media/view.asp?idx=141161&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 41.4%)
-- **RAM:** `31.2/512 GB` (Used: 6.1%)
+- **vCPU:** `128 vCores` (Load: 42.1%)
+- **RAM:** `30.7/512 GB` (Used: 6.0%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
