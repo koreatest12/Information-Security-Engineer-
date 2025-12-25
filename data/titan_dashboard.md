@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 11 days, 5:21:34
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 11 days, 5:56:30
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.3% | `██████░░░░░░░░░` |
-| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 43.2% | `██████░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 은행은 '세대교체'·지주는 '안정'…진옥동 2기 본게임 시작 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxONEp0OXFRS2s2MWttTFZKeGFlZ3NWWUlMeDJWUjZ0RFY2RFNISkFlMm5CRG1IZjJ4NTFLMi1qSVBkLXdfSFBpaXFnUGN5cm0yWHFCS3pTTnlaOEx5dEkzYnRoTGw0VU80VWp2WndkOWs2S0VteXlibnBoZTVzUkRkcDM3RQ?oc=5)
-- [장기 트렌드로 성장하는 'K컬처'에 투자해야 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5mbExhc000UnRUaHgzT2s5cUVtUm5YUzl5akJXMExRaGxIZzR3NDZiUmRXa2FMLWVGMU13Rkk1MkRITnRvSmEwUjFsUlJsemFRM2J1QXk3R3dNZ9IBVEFVX3lxTE5jeWZkaFowVWhIekF1QkFkUWl2QkdLWGVhVXdGWHJIc2JSVnEtSVNmLUJLaEZVMWp3QVY4Q3pWVGlpSndWMUpTYjdxczdFSC1BTVFKdw?oc=5)
+- ["상속세 때문에 골머리"…매출 1조 기업 일군 회장님의 탄식 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5CM2U0M28wZUQ5cGZRRmJJTFRNclhicU51VkJHNWY5RVdNem9LbWl5UHIwVWlOMTBLaDF3SktPREszUkhIemRDcVQxR3JaWndiU1BRT2ZqbTNNd9IBVEFVX3lxTE9JdjRkQ0lNNVFWdU5QOHM0QjRFcjEtWGtnNVEwM2hIcEwzWkhUY0lrOTMxZDltOFVCODlUd2pCZzllRW1jUzRNNEtNOFRjNzgxWVJ1RA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
