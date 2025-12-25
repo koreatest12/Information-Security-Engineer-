@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 10 days, 21:33:55
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 10 days, 21:58:49
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 42.1% | `██████░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.2% | `██████░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, '풀뿌리' AI 기업도 지원…전용펀드 조성 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5TMzA5d2Q3WkJhamwwdGlMbC00THowdEZwZEdvTzZLZGlXeGprMEUzM2ZGNlBWY3RfcWE1YWp6ZHA0aDdabFVKZDVGakEyVkdCV3lvZm5HM05sQdIBVEFVX3lxTE1sRTF3eFlXVEJYclJNS1ZXZldKNkdOV2JfNno5MjZ4NXctbjEyNGl1Z3kwZEQ2RWZOa3V3VEcwRlBTUmt0RlBZRkFxTjgyOEw5cHVsLQ?oc=5)
-- [서학개미 '유턴 계좌' RIA, 어떻게 써야 이득일까 [박주연의 여의도 나침반] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9zVlJHcWZLUGFwNUNSc0FSaGRRdkNEeTdjZzZnVzAxVG0tN1pDRXRLcEtaV2J5ZXczU0RHVVZCQWJsMWp2NGgta2xQNFB3TzlpeDAyTFNHd1Zad9IBVEFVX3lxTFAya1hjNS1GWU9CMmkxdVJ4TmpBdEdUTUUwNENqeElIVmRza05nb3JTWGFOUFNUcnRjbEN0V2ZBc3lqYkQybERYd2FYUXVDTjNwalFiWA?oc=5)
+- [순풍은 우연히 불지 않는다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE0yLU9HcjJOYTZfU2U4V2ZHaElzU0VWNE4yYTZVSlZzVU5SZTI2YWFxbHBIbGZ5S19jVDdyOTVMT2NRYjRKYWEzRDJXTEdzcDhabmd1ZWNvLW1KZ9IBVEFVX3lxTE0xYUc4R0M5ejFZeDAyNUl3cXhJRXMtYUhJMWpjRnBmOXktX2xUMi1MNGFESE03Y1N1YVZrWng2SjYyR3lfTDRZeHBCVFU1V01USXJBZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*

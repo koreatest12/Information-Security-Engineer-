@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-25 14:17:50 (KST)
+> **Time:** 2025-12-25 14:42:43 (KST)
 
-### 🤖 Copilot Briefing (14:17)
+### 🤖 Copilot Briefing (14:42)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,8 +10,8 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [신한은행, AX·디지털자산 대응 '미래혁신그룹' 신설 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE0wNmwtN1JGM2ZtZTFvQzdXRTZkOGZwU2IweG5aMG5LUTFKOWFoR1ZOelJxUnh2SDgwMVVud09JWmcyTFE0Zkw0NFlnOEI5MDdWS21N?oc=5)<br>• [세계대회 중 최고상금 4억원…신한은행 세계기선전 개막 - 사이버오로](https://news.google.com/rss/articles/CBMiZEFVX3lxTE91VHlJYlFGTkQzcWFfR0hLVm1EdFJLMEp3MEpuZTRidGdPeWJveTVNVjVBWE42RExxWHRXX2lVblFuUzNFZ0xfaUdBeW1FS0VWVkxBam5zbWNHcDNfWnJRbWR2WTM?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [[인사] 하나금융지주·하나은행 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFAxUDlpOHkyOVFpZkhsdU1pVHBha0xudG1vVUFQNzZxOVhZN04zY2owYzhfT3JZQ01WRXR6TGVEemxKTzhHb3JSOEl2clRkdEFTRWh1dG5wdVVGaTjSAWBBVV95cUxQYzhwZU0tMWdXbGZaWG41MFdma3VzV2w2Zk1FR1RtQThaM1lCRmJJN283M1NPcnlLazFCemxBU1BDeUw1cWFVYm04bk9GUl9qRjNabkZqMkh1dVhZVlRDcGg?oc=5)<br>• [[은행X시니어 현장] 하나더넥스트, 금융·비금융 통합 정보 제공 강화 - 이투데이](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1tdDhzQ0hLR1ZPaHhHWmx6SjlPbEtCZ3N1dnFTOThXaGhEcTlkYjVDY29DTTg1Ukw0M2JsR21FTzYwRDYyU0ZzcnRfcklBZ1NyQ3Nab29CVGF2dw?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신진서 9단, 신한은행 기선전 32강전 통과 - 한겨레](https://news.google.com/rss/articles/CBMiY0FVX3lxTE5fSlphRURpWkc4bUJIcmNMYS0xYWFPM2hnR3pCREhSaG5QVThyaGM0elQ0OXhNVjF3TzZKOUkxWHBQY1ppekFHbWc2T2RsbGZWcVhBMVA0QU9VdzlyYnVaZDFONA?oc=5)<br>• [신한은행, AX·디지털자산 대응 '미래혁신그룹' 신설 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE0wNmwtN1JGM2ZtZTFvQzdXRTZkOGZwU2IweG5aMG5LUTFKOWFoR1ZOelJxUnh2SDgwMVVud09JWmcyTFE0Zkw0NFlnOEI5MDdWS21N?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [하나은행, 한일코인 송금실험 합류…5대銀 전원 참여 - sedaily.com](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5mODJVWjZ3ekh6cmoyVWVoX19zbXpVX1hOenJTY0JaY2ZfWm5aYlFXd21ESkFDQURYYUl0S0h6Zm9iN2JfWmswdVVHVXJJa2dXX1h6bHRR?oc=5)<br>• [[인사] 하나금융지주·하나은행 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFAxUDlpOHkyOVFpZkhsdU1pVHBha0xudG1vVUFQNzZxOVhZN04zY2owYzhfT3JZQ01WRXR6TGVEemxKTzhHb3JSOEl2clRkdEFTRWh1dG5wdVVGaTjSAWBBVV95cUxQYzhwZU0tMWdXbGZaWG41MFdma3VzV2w2Zk1FR1RtQThaM1lCRmJJN283M1NPcnlLazFCemxBU1BDeUw1cWFVYm04bk9GUl9qRjNabkZqMkh1dVhZVlRDcGg?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
@@ -22,8 +22,8 @@
 - [시큐리티플랫폼, IP 카메라 액시오캠 ‘보안기능 확인서’ 취득](http://www.boannews.com/media/view.asp?idx=141166&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.6%)
-- **RAM:** `34.8/512 GB` (Used: 6.8%)
+- **vCPU:** `128 vCores` (Load: 40.0%)
+- **RAM:** `30.7/512 GB` (Used: 6.0%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
