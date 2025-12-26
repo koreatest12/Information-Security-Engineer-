@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 12 days, 2:09:56
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 12 days, 2:29:24
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.1% | `██████░░░░░░░░░` |
-| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.1% | `██████░░░░░░░░░` |
+| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행서 29.6억 규모 금융사고 발생 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE1EeC1JNktnTDBtLXVWVnZCUjVENHFPRG5kSGlOZEdTOUZPUXFGU0pHcm5NbjNXZFZPMUxES3VrMER0aUxsSGEycFQ0dDBJU25IMjNDLVNXbzNfc0JuWVFDbUhXVndZUDZlVVJGYk1hb2pqVWs?oc=5)
+- [신한은행, 29억원 규모 금융사고…"외부인에 의한 사기" - 디지털데일리](https://news.google.com/rss/articles/CBMiZEFVX3lxTE5ROGlKalhqN04wNERVWWU2YWF0UGRYUVB1aVdWaEd2T1BMMUtZWExzQklEdkprLWN6aktuT3BFVXRQakFPZzFYdS05V1NGUEtJNk9KZG1HUlJHN0xRQ1pYZ2E0MUk?oc=5)
 - [한국경제TV ; 서울시 ; 경찰청 등 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1QejVFaHlqVGl3alB1Z2YwaHp0LUFJTzdQRjZRdWVFd1IwMk1GUk01TkY3ZVZwMmhZeVhSM2NFcEgzbFdYeWtwNGFIbGpxREtoR3FuS0FWaTBsQdIBVEFVX3lxTE1DWkZHcmk2RjlsOGVDdF84TnRZdWttb1hkVkc1dEpzUU9UMHNsLXJTMVViRW53Ym5QTklVUXJWLVNTMXktYi0xNG5qb05uYzNoTkp0Mw?oc=5)
 
 ---
