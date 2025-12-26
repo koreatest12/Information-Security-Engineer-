@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-27 00:35:13 (KST)
+> **Time:** 2025-12-27 00:47:45 (KST)
 
-### 🤖 Copilot Briefing (00:35)
+### 🤖 Copilot Briefing (00:47)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,7 +10,7 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [여자농구 하나은행, 신한은행에 5연패 안기고 ‘2연승’ - 동아일보](https://news.google.com/rss/articles/CBMidEFVX3lxTE9zVEdEaGdTdlBtM3ZNQzVYVEpGZlJ1dnJ5anFabTk1bC1qY0lNalBCa3Y2b1pLalFZdW5UZlNlM0JkQmxiVkllM1Z5TDRYY0NQRnIyNlB1Y0lyZUJPOEUxeFRQQUktTDlWcUZOTThxd3N3WEhR0gFmQVVfeXFMUDVrdWRKMTAxQTVWbENuNnpXZGZXcFo1RHF3ZVN4YnBFT0pHOVM0am01cjFzbzctRXhfdGJQeTRjQUt6T3NhdGY0M0VLdjRjeXhjYTl5T1FSOGY4S2ZTNUxrb21Oa0ln?oc=5)<br>• [[여자농구 부천전적] 하나은행 64-62 신한은행 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1lUFhCVlBoSjcwYzRhNkVDbG8wdHVlZ3BvTHREMm1naUh6MkNRc0RjbFlOVmNZdlVqcU9EdEZGeEZ4Vk1BTjQ3cG4xVjlBMFREY01kUU5nNzg1bUnSAWBBVV95cUxNLUdhLVNVdFRUdFpJMXZfV1RBSF9tQTVvNFhoeU9NYnI4cjdrRVc3NFR0UnotM2h6N3FFNHdIRjJGeVhxbXlkb180X3VocktMaVVwV2VxTUVjQ1oyWEI5d1g?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [여자농구 하나은행, 신한은행에 5연패 안기고 ‘2연승’ - 동아일보](https://news.google.com/rss/articles/CBMidEFVX3lxTE9zVEdEaGdTdlBtM3ZNQzVYVEpGZlJ1dnJ5anFabTk1bC1qY0lNalBCa3Y2b1pLalFZdW5UZlNlM0JkQmxiVkllM1Z5TDRYY0NQRnIyNlB1Y0lyZUJPOEUxeFRQQUktTDlWcUZOTThxd3N3WEhR0gFmQVVfeXFMUDVrdWRKMTAxQTVWbENuNnpXZGZXcFo1RHF3ZVN4YnBFT0pHOVM0am01cjFzbzctRXhfdGJQeTRjQUt6T3NhdGY0M0VLdjRjeXhjYTl5T1FSOGY4S2ZTNUxrb21Oa0ln?oc=5)<br>• [[인사]신한은행 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1ZZ3BuV0hUQ2VxRzZoMGhKeEg2alM1ZzZiSXR0LXBxa003MTVmay1DV1JkYmNFdTRqMEZCMlUwcnVlenhweTFrVXk3YlN0cGxtaFhBcTAzY1FKR2VXakVGWg?oc=5)<br> |
 | **🟢 하나금융 (은행/투자)** | • [[인사] 하나금융지주·하나은행 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFAxUDlpOHkyOVFpZkhsdU1pVHBha0xudG1vVUFQNzZxOVhZN04zY2owYzhfT3JZQ01WRXR6TGVEemxKTzhHb3JSOEl2clRkdEFTRWh1dG5wdVVGaTjSAWBBVV95cUxQYzhwZU0tMWdXbGZaWG41MFdma3VzV2w2Zk1FR1RtQThaM1lCRmJJN283M1NPcnlLazFCemxBU1BDeUw1cWFVYm04bk9GUl9qRjNabkZqMkh1dVhZVlRDcGg?oc=5)<br>• [하나은행 이이지마의 종료 3초 전 스틸…신한은행 5연패 수렁 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFBXYTBCSS1hUW5HcFd2STNnMFhZa25BSWQxMV9fOFdVSkpIcHY2LXU4Mk53UXluNnBPbnRTOFBNaEZvQjBmWUJhTTBpMkRwQ2hxWFFqRnBJN0s1d03SAWBBVV95cUxOQnJRYUJKMDVPNjY5NV96bV9HdjUzU1V6VFZzeTNWRkJxMVROVzN5aHk0bmRMZnk4eGxKZFFKdFJBVzAtN2JSc0NzMWVqa252QVFHdkdMdHZCVHdZekFrb3c?oc=5)<br> |
 
 ### 📰 General & Security News
@@ -22,8 +22,8 @@
 - [유니온바이오메트릭스, 생체인식 기반 통합 보안인증 기술 확보](http://www.boannews.com/media/view.asp?idx=141182&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.2%)
-- **RAM:** `30.7/512 GB` (Used: 6.0%)
+- **vCPU:** `128 vCores` (Load: 40.1%)
+- **RAM:** `32.3/512 GB` (Used: 6.3%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
