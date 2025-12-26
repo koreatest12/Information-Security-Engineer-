@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 12 days, 0:09:15
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 12 days, 0:32:18
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.5% | `██████░░░░░░░░░` |
-| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.2% | `██████░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 은행은 '세대교체'·지주는 '안정'…진옥동 2기 본게임 시작 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxONEp0OXFRS2s2MWttTFZKeGFlZ3NWWUlMeDJWUjZ0RFY2RFNISkFlMm5CRG1IZjJ4NTFLMi1qSVBkLXdfSFBpaXFnUGN5cm0yWHFCS3pTTnlaOEx5dEkzYnRoTGw0VU80VWp2WndkOWs2S0VteXlibnBoZTVzUkRkcDM3RQ?oc=5)
-- [절대 사면 안되는 부동산 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE03cVdtSXBzTFRoblpNVkplQzZ6WXd2VzJNLWU3MjEyd0VYc1hfVTZtR0dUQnUxdUloaXNPWk5fUUJad196c09BVk1ZR1RGNldpYVFIRHF1dVdOZ9IBVEFVX3lxTE1iUnMxcFRvdWZSMS1uX3NGWVg1amRvQ2Y2YjlPblR1QVFVbC1BWTFfczdWQmNET1dlT0l4ZE1rYUt6aF9RZGJ6NHNwNk1LTkRsTlBVZQ?oc=5)
+- [한국경제TV ; 서울시 ; 경찰청 등 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1QejVFaHlqVGl3alB1Z2YwaHp0LUFJTzdQRjZRdWVFd1IwMk1GUk01TkY3ZVZwMmhZeVhSM2NFcEgzbFdYeWtwNGFIbGpxREtoR3FuS0FWaTBsQdIBVEFVX3lxTE1DWkZHcmk2RjlsOGVDdF84TnRZdWttb1hkVkc1dEpzUU9UMHNsLXJTMVViRW53Ym5QTklVUXJWLVNTMXktYi0xNG5qb05uYzNoTkp0Mw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
