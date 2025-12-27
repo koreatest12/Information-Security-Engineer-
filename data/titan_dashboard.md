@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 13 days, 2:02:51
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 13 days, 2:09:14
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.1% | `██████░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 43.5% | `██████░░░░░░░░░` |
+| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융 잇달아 대형사고…진옥동 2기 내부통제 묘책 나올까 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9lUEpsR29uWk1wNmxVM3Z2ZFFZX3ZOUmt3djFCT0pRZDRYaVR1RjRoWFRWZU9IZjRXeXFsSzM0bFpncTZHVXlVdkNfb2FjdUw4QWRPNG9pSzl3OTh5c0hPQ9IBeEFVX3lxTE9kaGhha0tSN3NrazdDc0hJbXZzYVNHUWNlREp4OEd1YWU4MVF2M3hDRjZUMTAwc0lGMjRnRlpJVGlPck9od3JmdE0zaVgwSnliMUFSbVNGTFpvZkxpUkpreHhueGlySk0yZTZYRTZ2eDlQQ2Npc0FCRw?oc=5)
+- [신한은행 새 부행장 7명 면면 살펴보니…"전문성 발탁 기조" - 중앙이코노미뉴스](https://news.google.com/rss/articles/CBMickFVX3lxTE15cUZGdDgzSGtYVlhjeGdZTm1DNkozZGVsNFk3RXBFNXZVWVVXV1pGVkFfa05XenBVSkJMZFJxRVBNVlVtSVFOdlJWaTVTb2w3akc4SlQ5QXA5YVgyQjJ0SVNwNWRwYVp1NS1Ybi1NaGZ0dw?oc=5)
 - [특검, 주가조작 의혹 양남희 웰바이오텍 회장 불구속 기소 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QTE1SODdEdzBsRlpxOEw4czJWcU5oU0w4bnJ2WGdNZUktQnZqS1lfS1VTUVBHd2t4V196ckpxTHNCMWxzdGhoN2pIaWVzdkltZzgxY1c4cjVlUdIBVEFVX3lxTE5uMW4wSHVPWGJyN0djUUJrN2lkTzhwN0RQUEhzcEFmd1VESU41Q1daVGJibzlMc0p5ekJOY2p1WmpTTnpNOUFYOGxtcElsLWZlbVdJVA?oc=5)
 
 ---
