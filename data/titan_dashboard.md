@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 13 days, 0:00:56
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 13 days, 0:08:46
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 42.1% | `██████░░░░░░░░░` |
-| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 43.5% | `██████░░░░░░░░░` |
+| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행 새 부행장 7명 면면 살펴보니…"전문성 발탁 기조" - 중앙이코노미뉴스](https://news.google.com/rss/articles/CBMickFVX3lxTE15cUZGdDgzSGtYVlhjeGdZTm1DNkozZGVsNFk3RXBFNXZVWVVXV1pGVkFfa05XenBVSkJMZFJxRVBNVlVtSVFOdlJWaTVTb2w3akc4SlQ5QXA5YVgyQjJ0SVNwNWRwYVp1NS1Ybi1NaGZ0dw?oc=5)
+- [신한금융 잇달아 대형사고…진옥동 2기 내부통제 묘책 나올까 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9lUEpsR29uWk1wNmxVM3Z2ZFFZX3ZOUmt3djFCT0pRZDRYaVR1RjRoWFRWZU9IZjRXeXFsSzM0bFpncTZHVXlVdkNfb2FjdUw4QWRPNG9pSzl3OTh5c0hPQ9IBeEFVX3lxTE9kaGhha0tSN3NrazdDc0hJbXZzYVNHUWNlREp4OEd1YWU4MVF2M3hDRjZUMTAwc0lGMjRnRlpJVGlPck9od3JmdE0zaVgwSnliMUFSbVNGTFpvZkxpUkpreHhueGlySk0yZTZYRTZ2eDlQQ2Npc0FCRw?oc=5)
 - [2025년을 빛낸 아파트 | 백家사전 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9kY0xsRE9HLUh1Tm00dC1aaWpFN2RzbUtEVmRDaU5rS3hZc0J6MHRfNEloZ21hWTVvV3gtYkJIVnQxZV8zQlYyOXBGVkZoOVJyU05IVEJSYmhJUdIBVEFVX3lxTE1HTFdfMnVzOFdrX0Z6NFdfM3d3WlFneFU0TllPWXNETjhNSzlyc3dPWVYzaFJNTjBzN3phMnZMMzQycUY0NkxHSm9KQjM0bTJLRC1xRA?oc=5)
 
 ---
