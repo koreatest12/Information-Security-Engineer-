@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-27 22:01:53 (KST)
+> **Time:** 2025-12-27 22:36:31 (KST)
 
-### 🤖 Copilot Briefing (22:01)
+### 🤖 Copilot Briefing (22:36)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -11,7 +11,7 @@
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
 | **🔵 신한금융 (은행/투자)** | • [신한은행, 29억 규모 금융사고…외부인에 의한 사기 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBmOFAxVjhpQ2sxU3p1bFpiTVZoU3FCekhVQVMzYzJzV1NXLWVER3lpdHdBc1pFSWFNZ3M0b1V1M2VEQ3Bvc29vckRYTkVvQmtqcm96NF8tTzM4aEhVek9NedIBeEFVX3lxTE9jeVRMV1cxZU80b05UbjM2MUNfcW1md3NQWnVlUEh1RWVmYkp0QjBNRXpiSWdSNVJSdmNVbDJGcW5id3FBZDFlRjhWSlpLTE9SNmxKSjZ5TkxnNWlQTWN6WHB0VGxVaTRXS3pISWFkd21sLU1rbmE5RA?oc=5)<br>• [신한은행 새 부행장 7명 면면 살펴보니…"전문성 발탁 기조" - 중앙이코노미뉴스](https://news.google.com/rss/articles/CBMickFVX3lxTE15cUZGdDgzSGtYVlhjeGdZTm1DNkozZGVsNFk3RXBFNXZVWVVXV1pGVkFfa05XenBVSkJMZFJxRVBNVlVtSVFOdlJWaTVTb2w3akc4SlQ5QXA5YVgyQjJ0SVNwNWRwYVp1NS1Ybi1NaGZ0dw?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [‘사키-진안 펄펄’ 하나은행, 신한은행 제압하고 2연승...단독 선두 유지 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9RWmVLaU1Mc19INGhkZ0xpb2hUUUlUV3lOYkU5U2lLSVZwWTFNbzlHMnExTnRPOWdrR1NjM1lMYzN3Y2xPaFMzc2pkV201eGM?oc=5)<br>• [‘득점부터 궂은일까지’ 해결사 사키 앞세운 하나은행, 난타전 끝 신승 - 스포츠월드](https://news.google.com/rss/articles/CBMiYkFVX3lxTE5SX2x1M3hsMXNuaTVOOS1xV284X25GbHRRRmh4Y3Zsd0pod2g0TUs1bHlkbEU5MnJKb3dmZ18yeEZjREJFMTZXVDBVZ1l5eXlxSlpOeDloejFzNnRjY29IcWRR?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [[여자농구 부천전적] 하나은행 64-62 신한은행 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1lUFhCVlBoSjcwYzRhNkVDbG8wdHVlZ3BvTHREMm1naUh6MkNRc0RjbFlOVmNZdlVqcU9EdEZGeEZ4Vk1BTjQ3cG4xVjlBMFREY01kUU5nNzg1bUnSAWBBVV95cUxNLUdhLVNVdFRUdFpJMXZfV1RBSF9tQTVvNFhoeU9NYnI4cjdrRVc3NFR0UnotM2h6N3FFNHdIRjJGeVhxbXlkb180X3VocktMaVVwV2VxTUVjQ1oyWEI5d1g?oc=5)<br>• [적금 들면 기부도…하나은행 ‘행운기부런 적금’ 출시 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5LM3hITjZfYmZ6Mk5WNVZILTQ4Y1JyaHVIc09zekZNUHJITml4eXBhcWJoS0FKS1RBdlcyMnlPb21naUtNMERtc0lhSURnWFozRlM1OQ?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
@@ -22,8 +22,8 @@
 - [명지대 방산안보연구소, 국방우주안보 ‘정보·보안·AI’ 협력체계 구축](http://www.boannews.com/media/view.asp?idx=141184&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.5%)
-- **RAM:** `31.2/512 GB` (Used: 6.1%)
+- **vCPU:** `128 vCores` (Load: 38.9%)
+- **RAM:** `33.8/512 GB` (Used: 6.6%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
