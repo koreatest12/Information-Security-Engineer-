@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-28 08:10:49 (KST)
+> **Time:** 2025-12-28 08:30:03 (KST)
 
-### 🤖 Copilot Briefing (08:10)
+### 🤖 Copilot Briefing (08:30)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -22,8 +22,8 @@
 - [명지대 방산안보연구소, 국방우주안보 ‘정보·보안·AI’ 협력체계 구축](http://www.boannews.com/media/view.asp?idx=141184&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.5%)
-- **RAM:** `34.3/512 GB` (Used: 6.7%)
+- **vCPU:** `128 vCores` (Load: 39.9%)
+- **RAM:** `34.8/512 GB` (Used: 6.8%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
