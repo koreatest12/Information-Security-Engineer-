@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 13 days, 13:11:00
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 13 days, 13:26:17
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 42.7% | `██████░░░░░░░░░` |
+| **CPU** | `128 vCores` | 43.4% | `██████░░░░░░░░░` |
 | **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융 잇달아 대형사고…진옥동 2기 내부통제 묘책 나올까 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9lUEpsR29uWk1wNmxVM3Z2ZFFZX3ZOUmt3djFCT0pRZDRYaVR1RjRoWFRWZU9IZjRXeXFsSzM0bFpncTZHVXlVdkNfb2FjdUw4QWRPNG9pSzl3OTh5c0hPQ9IBeEFVX3lxTE9kaGhha0tSN3NrazdDc0hJbXZzYVNHUWNlREp4OEd1YWU4MVF2M3hDRjZUMTAwc0lGMjRnRlpJVGlPck9od3JmdE0zaVgwSnliMUFSbVNGTFpvZkxpUkpreHhueGlySk0yZTZYRTZ2eDlQQ2Npc0FCRw?oc=5)
-- ["자산 '5억' 찍는 시점은…" 세대별 '생존 전략' 이렇게 달랐다 ['영포티' 세대전쟁] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1HZ0FySWdxbW96cUZtWkd3eW1VN3BxMFlYcks0UFhqV0JGd0FpMTQxcGFCdEQ3TG5KV2FmdjVneVVaLTRjUkhKN0tCSUxUdVE?oc=5)
+- [3년 연속 2% 이하 저성장 늪 빠진 한국 경제...반등할 수 있을까 - 조선일보](https://news.google.com/rss/articles/CBMiigFBVV95cUxPTDhtT3lxRWw5dFNHU09LWWt3N3VHdmJuUDhOM0ExUWFCSVhIdmlpWkRFTGl2QzRlaFk3ME5IMjcydHV5U2pNeUsxZldVb2hiQWs3NVpQUzNwQnI0enpOR3RQOWpxSTVfMGJESFYyMXZGbURDbmt1ay1jWTdqOF82UkhSb3FyWHNrUHfSAZ4BQVVfeXFMTWFtSklSak9CMVlMYUo5Yms0Mm9OcjNHODgxMktsbmpySHZmb1dEa3RFbDFzSFJNVFpwX20xcHpGRDdnQmVUcXFZS25TUGpzWEdFMlNsS2h5NFotTUFyT1ZCQVhlQ2dLOEdPYW1vRXJaanBXNi1jNEttTlBxbFdwWjh3ZXZOQkliYTZCeFIxeDgwRGM4S2xlaVljNW5zZ1E?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
