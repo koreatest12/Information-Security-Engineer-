@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 14 days, 10:08:34
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 14 days, 10:32:15
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.4% | `██████░░░░░░░░░` |
-| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 41.7% | `██████░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, '생산적 금융 추진단' 발족…자회사별 전담조직 신설 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5NQlBCS3M5cDVCRnBhSHpVVl9MRFlJc0FCbEptcUJXMnRnYWxVQkdMR1U3Zkt5WmFSWlJtYk5vMUhpSl91OXljd0tGSURiRjVybGloN1o0bWo0aURCV2tlOdIBeEFVX3lxTFBOQUQ3OEg3aHRvcnRLelAwdlV1bk5hRXhBZlhQb3hYVVZHSHVISFFNRlRzTkpCTmV5MldONERTLWVMd2M4SnlHcEpxSDBYblVxSEwzRVA5YTJMYXBHUmFtX0t4bmFnMU1VN3UyWlFnM2pURFZ6YXhjag?oc=5)
-- [3년 연속 2% 이하 저성장 늪 빠진 한국 경제...반등할 수 있을까 - 조선일보](https://news.google.com/rss/articles/CBMiigFBVV95cUxPTDhtT3lxRWw5dFNHU09LWWt3N3VHdmJuUDhOM0ExUWFCSVhIdmlpWkRFTGl2QzRlaFk3ME5IMjcydHV5U2pNeUsxZldVb2hiQWs3NVpQUzNwQnI0enpOR3RQOWpxSTVfMGJESFYyMXZGbURDbmt1ay1jWTdqOF82UkhSb3FyWHNrUHfSAZ4BQVVfeXFMTWFtSklSak9CMVlMYUo5Yms0Mm9OcjNHODgxMktsbmpySHZmb1dEa3RFbDFzSFJNVFpwX20xcHpGRDdnQmVUcXFZS25TUGpzWEdFMlNsS2h5NFotTUFyT1ZCQVhlQ2dLOEdPYW1vRXJaanBXNi1jNEttTlBxbFdwWjh3ZXZOQkliYTZCeFIxeDgwRGM4S2xlaVljNW5zZ1E?oc=5)
+- [월급도 제때 못주는 홈플러스…3000억 DIP 자금조달 추진 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5uX1U0SFIyMG5YSl9UaWtmOTIwTlRvYm13cV9qWHZXTFExZEVjVFNiemhmZmdEeFRJOTlOckFsa3hFUXVNeU05ZnlXQjB2MlIyMGpNMU5DMUtCUdIBVEFVX3lxTFBlRzlZVXEyZzh4Y3loQjAydElyUGZpOHhTelYwN0FVRUVqSk50T3o4MEY1V3FCNFlJbEhZVzBmWXE2MEc0aW5uZVJTRDRqUHMzOG9vZg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
