@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-28 13:14:39 (KST)
+> **Time:** 2025-12-28 13:55:53 (KST)
 
-### 🤖 Copilot Briefing (13:14)
+### 🤖 Copilot Briefing (13:55)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [비싼 데이터센터 GPU 의존 줄였다... KAIST, LLM 서빙 ‘스펙엣지’ 공개](http://www.boannews.com/media/view.asp?idx=141185&kind=&sub_kind=)
-- [[쿠팡 해킹] 국정원, 쿠팡 ‘정부 지시’ 주장 반박... “지시한 바 없다”](http://www.boannews.com/media/view.asp?idx=141187&kind=&sub_kind=)
-- [신세계 임직원 정보 유출... 사번 8만건 포함](http://www.boannews.com/media/view.asp?idx=141186&kind=&sub_kind=)
+- [[2025 보안 사고·이슈 결산-12] 물리보안 장비도 이제는 ‘정보보안 인증’ 시대](http://www.boannews.com/media/view.asp?idx=140827&kind=&sub_kind=)
+- [파주시, 시민 중심 방범 CCTV 264대 설치로 안전 체감도 높여](http://www.boannews.com/media/view.asp?idx=141129&kind=&sub_kind=)
+- [[카드뉴스] 전 국민 위치 데이터 국가화 시대, 우리는 얼마나 추적당하고 있나](http://www.boannews.com/media/view.asp?idx=141150&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.0%)
-- **RAM:** `32.3/512 GB` (Used: 6.3%)
+- **vCPU:** `128 vCores` (Load: 39.5%)
+- **RAM:** `34.8/512 GB` (Used: 6.8%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
