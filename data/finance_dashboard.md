@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-28 16:22:08 (KST)
+> **Time:** 2025-12-28 16:39:10 (KST)
 
-### 🤖 Copilot Briefing (16:22)
+### 🤖 Copilot Briefing (16:39)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -11,7 +11,7 @@
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
 | **🔵 신한금융 (은행/투자)** | • [신한은행, 29억 규모 금융사고…외부인에 의한 사기 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBmOFAxVjhpQ2sxU3p1bFpiTVZoU3FCekhVQVMzYzJzV1NXLWVER3lpdHdBc1pFSWFNZ3M0b1V1M2VEQ3Bvc29vckRYTkVvQmtqcm96NF8tTzM4aEhVek9NedIBeEFVX3lxTE9jeVRMV1cxZU80b05UbjM2MUNfcW1md3NQWnVlUEh1RWVmYkp0QjBNRXpiSWdSNVJSdmNVbDJGcW5id3FBZDFlRjhWSlpLTE9SNmxKSjZ5TkxnNWlQTWN6WHB0VGxVaTRXS3pISWFkd21sLU1rbmE5RA?oc=5)<br>• [신한은행 새 부행장 7명 면면 살펴보니…"전문성 발탁 기조" - 중앙이코노미뉴스](https://news.google.com/rss/articles/CBMickFVX3lxTE15cUZGdDgzSGtYVlhjeGdZTm1DNkozZGVsNFk3RXBFNXZVWVVXV1pGVkFfa05XenBVSkJMZFJxRVBNVlVtSVFOdlJWaTVTb2w3akc4SlQ5QXA5YVgyQjJ0SVNwNWRwYVp1NS1Ybi1NaGZ0dw?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [KB·신한·하나은행, '생산적 금융·소비자 보호' 조직 DNA 바꾼다 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTFBySnhTNVBNMWxWVEp6dGh2RVpkMXB6VW1VSWMzcHhRby16UWtxdTZMSkRqZy1sOFQ5aWJoVkVwSWVORzFyS2ZrYkZqWWZkb2h3N0RF?oc=5)<br>• [충남 당진시, 한국동서발전·하나은행과 손잡고 소상공인 특례보증 확대 - 충청매일](https://news.google.com/rss/articles/CBMiakFVX3lxTE56OXIwR1BMTElENlJmaWlyT1NvWjhzdDh3TXdmcGs0SXYwNEtpSVRiSC1PWXY2cTU2a0VMVlNYZ0R2WmFiTlp3M01JeU1UMWRfMTAyckdOQjNlZ25wNkk5UDZiUWptNW9HTkE?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [하나은행 영남영업그룹 후원, 부산적십자 ‘사랑의 김장나눔’ 행사 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9Hazl2UWk0RTNVUGhVSC0tel9CZ1VDZVJiZUt2X2sxUWlLbDBhX3VIQk1UV1FtMzVsMFlRbGJtaTJPTVlXbmFUSzN0WWlkTE0?oc=5)<br>• [KB·신한·하나은행, '생산적 금융·소비자 보호' 조직 DNA 바꾼다 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTFBySnhTNVBNMWxWVEp6dGh2RVpkMXB6VW1VSWMzcHhRby16UWtxdTZMSkRqZy1sOFQ5aWJoVkVwSWVORzFyS2ZrYkZqWWZkb2h3N0RF?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
@@ -22,8 +22,8 @@
 - [개인정보위, 가명처리한 사망환자정보 활용 국제 공동연구에 비조치의견](http://www.boannews.com/media/view.asp?idx=141189&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 41.5%)
-- **RAM:** `33.8/512 GB` (Used: 6.6%)
+- **vCPU:** `128 vCores` (Load: 40.2%)
+- **RAM:** `34.3/512 GB` (Used: 6.7%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
