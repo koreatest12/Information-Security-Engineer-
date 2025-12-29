@@ -5,7 +5,7 @@ matplotlib==3.10.8
 numpy==2.4.0
 packaging==25.0
 pandas==2.3.3
-psutil==7.2.0
+psutil==7.2.1
 pytz==2025.2
 reportlab==4.4.7
 Requests==2.32.5
