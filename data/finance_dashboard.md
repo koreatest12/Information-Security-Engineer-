@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-29 18:41:16 (KST)
+> **Time:** 2025-12-29 18:56:30 (KST)
 
-### 🤖 Copilot Briefing (18:41)
+### 🤖 Copilot Briefing (18:56)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,7 +10,7 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [신한은행, 29억 규모 금융사고…외부인에 의한 사기 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBmOFAxVjhpQ2sxU3p1bFpiTVZoU3FCekhVQVMzYzJzV1NXLWVER3lpdHdBc1pFSWFNZ3M0b1V1M2VEQ3Bvc29vckRYTkVvQmtqcm96NF8tTzM4aEhVek9NedIBeEFVX3lxTE9jeVRMV1cxZU80b05UbjM2MUNfcW1md3NQWnVlUEh1RWVmYkp0QjBNRXpiSWdSNVJSdmNVbDJGcW5id3FBZDFlRjhWSlpLTE9SNmxKSjZ5TkxnNWlQTWN6WHB0VGxVaTRXS3pISWFkd21sLU1rbmE5RA?oc=5)<br>• [신한은행 '선순환 포용금융 프로그램' 시행, 이자 일부 대출원금 상환에 활용 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE1JNjd6WDA3MXZVRlJmWEJuc1c2MFhib21aQWhwNHdITWdBRkh1SVdRSkU5SHlYd1I1MHoxLUJoN1R1UWVNc2RkRmlfeHR4OTFIMzhMZnVKbHJPd2dzaTNaYnVnNkRfWDBydW1nM2FIcmQwUFk?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행 '선순환 포용금융 프로그램' 시행, 이자 일부 대출원금 상환에 활용 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE1JNjd6WDA3MXZVRlJmWEJuc1c2MFhib21aQWhwNHdITWdBRkh1SVdRSkU5SHlYd1I1MHoxLUJoN1R1UWVNc2RkRmlfeHR4OTFIMzhMZnVKbHJPd2dzaTNaYnVnNkRfWDBydW1nM2FIcmQwUFk?oc=5)<br>• [신한은행·iH·인천사회복지협, 인천 노후 공공임대주택 민관 협력으로 새단장 - 기호일보](https://news.google.com/rss/articles/CBMib0FVX3lxTFA4VTdGTnVkdnN6QjEzR3YyUzBtOTNkclMyYWdIZzRreDFCR1NjZFVUUlF4YmV4aGNoZTRaNklFVHZsQzFYaHJnaUt2Y0h3a3ZoRlNCN2V5N2xiRXBwVGk2NG9xYk1iSGZMT3RQN0tUaw?oc=5)<br> |
 | **🟢 하나금융 (은행/투자)** | • [하나은행, 서울아산청라병원과 함께 첨단의료복합단지 구축…금융 주선사로 참여 - 디지털데일리](https://news.google.com/rss/articles/CBMiYkFVX3lxTFBBNGtGOTc2UTdIbFF2aVh1SEVVaS03R2NfWl9Hdm5PbDJ0d3FCT2dtTmVPWjFuSUI4MWhycjJHb3RybV9oc3NEbjdmZ21FbWpTbnlDU0d6a1FIQzdublVENnln?oc=5)<br>• [하나은행-서울아산청라병원, 글로벌 최고 수준 첨단의료복합단지 구축 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE4yVm0tWTJKV0dwTG9HRjViX0NpOS1jLVVVYmZpa3NTS25DVHg3MGRoaUQ0dzhkaFdyQWkwTnFIQ21oZFhhQTZ0MmxvUDc1dw?oc=5)<br> |
 
 ### 📰 General & Security News
@@ -22,8 +22,8 @@
 - [“이용자 통화 탈취 위험 노출”... KT, 전체 이용자 위약금 면제 적용 가능](http://www.boannews.com/media/view.asp?idx=141219&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.4%)
-- **RAM:** `31.2/512 GB` (Used: 6.1%)
+- **vCPU:** `128 vCores` (Load: 40.5%)
+- **RAM:** `31.7/512 GB` (Used: 6.2%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
