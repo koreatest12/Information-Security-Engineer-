@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-30 00:52:12 (KST)
+> **Time:** 2025-12-30 00:57:45 (KST)
 
-### 🤖 Copilot Briefing (00:52)
+### 🤖 Copilot Briefing (00:57)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,10 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [[2025 보안 사고·이슈 결산-13] 쿠팡 민낯 드러낸 3370만명 개인정보 유출](http://www.boannews.com/media/view.asp?idx=141221&kind=&sub_kind=)
+- [“개인정보 대규모 유출하면 ISMS·ISMS-P 인증 취소” 정부, 정보보호 기준 대폭 강화](http://www.boannews.com/media/view.asp?idx=141218&kind=&sub_kind=)
+- [“이용자 통화 탈취 위험 노출”... KT, 전체 이용자 위약금 면제 적용 가능](http://www.boannews.com/media/view.asp?idx=141219&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.6%)
-- **RAM:** `32.8/512 GB` (Used: 6.4%)
+- **vCPU:** `128 vCores` (Load: 40.0%)
+- **RAM:** `31.7/512 GB` (Used: 6.2%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
