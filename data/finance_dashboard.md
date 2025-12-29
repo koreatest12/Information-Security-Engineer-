@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-29 19:57:27 (KST)
+> **Time:** 2025-12-29 20:13:38 (KST)
 
-### 🤖 Copilot Briefing (19:57)
+### 🤖 Copilot Briefing (20:13)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,8 +10,8 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [신한은행, 자영업자 대출이자 5% 초과분 원금 상환에 쓴다 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9RNW1MTkwxSDFLRlZ2aWFBQnVkSFQ3OFhEWmlhbkpZRTNlMnZLV05fbXdLdkRWZWJEcDNlWFREMmVNTUVJcXVfdHNpZ01TYmNVLXRWTjVhUTNiRnU1NjByZtIBeEFVX3lxTFBuSlY1azRONnVGOGMzUmdpYWJ1b2VoaFRYWFNpSlp4RkFSazdWNHhNUWtvZWkzMEt2NkF6LUJ4bEpXWkVya0lZeng4RVVtT1R2RlB2aHFiNDgydUMwZXFHa0xGbTZzQktTbVhTQWZObW1LUERjYktGZg?oc=5)<br>• [신한은행, 본부장 인사 - 내외뉴스통신](https://news.google.com/rss/articles/CBMibEFVX3lxTFBpdG5hWXRqeGxCSzluTE5VdjQ5WVBrU3BkanNjYkdYcmo2MkI2LUhDY1A0YjY2WWxiZG1GVk5ZMERJLWI5cG13TlpDcXMxdDQtYnU4VzFtc3hmV0xfcmRuTWhEVHd0M0tYeV9wMNIBcEFVX3lxTE5ERzJpRDJuRlBPeUtNUnM0eDlnY1R5STVXdUFUaXlHSjRYUmZ4emdseDNuZzRoaF84eXJFYTRVTm1venZRQXEtRmNfVFM3cFBtNkhLNGxqVFM2YWw2NHlTQnpFS29FX2tJeWFNTEhqYnE?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [하나은행, 서울아산청라병원과 함께 첨단의료복합단지 구축…금융 주선사로 참여 - 디지털데일리](https://news.google.com/rss/articles/CBMiYkFVX3lxTFBBNGtGOTc2UTdIbFF2aVh1SEVVaS03R2NfWl9Hdm5PbDJ0d3FCT2dtTmVPWjFuSUI4MWhycjJHb3RybV9oc3NEbjdmZ21FbWpTbnlDU0d6a1FIQzdublVENnln?oc=5)<br>• [하나은행-서울아산청라병원, 글로벌 최고 수준 첨단의료복합단지 구축 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE4yVm0tWTJKV0dwTG9HRjViX0NpOS1jLVVVYmZpa3NTS25DVHg3MGRoaUQ0dzhkaFdyQWkwTnFIQ21oZFhhQTZ0MmxvUDc1dw?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [인천 공공임대주택 6가구 리모델링 지원한 신한은행 - 경인일보](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5HWm1vVXh2bmpKZnlVUV9SeGJ4RGhYQUNUa3VZNk02QU83YXNPUUhVb09Jdl9qbnI3LVZPVnBwUHZlLWdKVGRlcmd5Z19nT1p2LWc?oc=5)<br>• [신한은행, 자영업자 대출이자 5% 초과분 원금 상환에 쓴다 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9RNW1MTkwxSDFLRlZ2aWFBQnVkSFQ3OFhEWmlhbkpZRTNlMnZLV05fbXdLdkRWZWJEcDNlWFREMmVNTUVJcXVfdHNpZ01TYmNVLXRWTjVhUTNiRnU1NjByZtIBeEFVX3lxTFBuSlY1azRONnVGOGMzUmdpYWJ1b2VoaFRYWFNpSlp4RkFSazdWNHhNUWtvZWkzMEt2NkF6LUJ4bEpXWkVya0lZeng4RVVtT1R2RlB2aHFiNDgydUMwZXFHa0xGbTZzQktTbVhTQWZObW1LUERjYktGZg?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [하나은행, 서울아산청라병원과 함께 첨단의료복합단지 구축…금융 주선사로 참여 - 디지털데일리](https://news.google.com/rss/articles/CBMiYkFVX3lxTFBBNGtGOTc2UTdIbFF2aVh1SEVVaS03R2NfWl9Hdm5PbDJ0d3FCT2dtTmVPWjFuSUI4MWhycjJHb3RybV9oc3NEbjdmZ21FbWpTbnlDU0d6a1FIQzdublVENnln?oc=5)<br>• [하나은행, 서울아산청라병원 금융 주간사 참여…2029년 준공 목표 - 이투데이](https://news.google.com/rss/articles/CBMidEFVX3lxTE9yZzVvTFB2SzJJOS1GNDNHVE9zOXFFcUprT0lyU1FsWWVNUGFNM1ZJa283U01iRkp5R2xqUmZnczd4VE1IWDVNSWR2ZkhCVU5pUWJjTFZ6VWNiSGctLU1hRkMxVFRmWWFwVElBTWxzQUJjd1o0?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
@@ -22,7 +22,7 @@
 - [“이용자 통화 탈취 위험 노출”... KT, 전체 이용자 위약금 면제 적용 가능](http://www.boannews.com/media/view.asp?idx=141219&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 41.2%)
+- **vCPU:** `128 vCores` (Load: 39.9%)
 - **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
