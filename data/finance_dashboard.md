@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-29 14:00:32 (KST)
+> **Time:** 2025-12-29 14:29:18 (KST)
 
-### 🤖 Copilot Briefing (14:00)
+### 🤖 Copilot Briefing (14:29)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [삼성, 러시아 재진출 시동…러 상표권 2건 등록](http://www.boannews.com/media/view.asp?idx=141209&kind=&sub_kind=)
-- [사이버리즌, 마이터 어택 평가서 100% 탐지율 달성](http://www.boannews.com/media/view.asp?idx=141204&kind=&sub_kind=)
-- [카스퍼스키, 성능·보호력 모두 잡았다…AV컴패러티브 ‘ADVANCED+’ 수상](http://www.boannews.com/media/view.asp?idx=141201&kind=&sub_kind=)
+- [SGA솔루션즈, 크레온유니티 인수로 ‘보안·운영 융합’ 새 성장 축 마련](http://www.boannews.com/media/view.asp?idx=141211&kind=&sub_kind=)
+- [한국후지쯔, 메디앙스 통합 공급망 구축 사업 착수](http://www.boannews.com/media/view.asp?idx=141208&kind=&sub_kind=)
+- [금융보안원, 모의해킹·위협정보 조직 신설... 2026년 조직 개편](http://www.boannews.com/media/view.asp?idx=141206&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.2%)
-- **RAM:** `33.8/512 GB` (Used: 6.6%)
+- **vCPU:** `128 vCores` (Load: 40.0%)
+- **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
