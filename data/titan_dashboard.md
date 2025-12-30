@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 15 days, 19:07:52
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 15 days, 20:12:29
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.1% | `██████░░░░░░░░░` |
-| **RAM** | `30.7/512 GB` | 6.0% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.3% | `█████░░░░░░░░░░` |
+| **RAM** | `30.2/512 GB` | 5.9% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행 땡겨요, QR주문 운영 휴게소 100호점 달성 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE5Yc3l6VU9ST09fQTROUWFSelJYSlZObVZTMmFRU0NLMFV0ZlJwX0p0Tnh3UWRrWDV3MG44SnlPMGJqQnBWWXZkOUktMFN0NmJYeE1jckR1YmQzcDlQeFFrOWdMR3BrZGVVSEE1RUd2Sk11bE0?oc=5)
-- [경제학자 한목소리 “고환율·고물가, 내년 한국경제 위협” - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTFAtS0h4RWVzM2ZRZVdnWE5FZ0F1SDNkbEJGQTZlcVNQakhhREtzMnhOV3JOTHVacGRmbmdGMnBwME5qcnhkVi1qWnBIdmYzZjFkalB0Sg?oc=5)
+- [‘잃어버린 5년’ 예약한 한국 경제 - 중앙일보](https://news.google.com/rss/articles/CBMiVkFVX3lxTFBLblVXaFptMXMtcWtuOTNnN3Nsc2Q2dTM5RXJNRXdlQmhZakpFWEVwd3gzekExX2RRZGdlVHpTQjQzYWphTnFvVTExNmcwcGhUR25UQ1d3?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
