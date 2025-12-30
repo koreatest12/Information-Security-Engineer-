@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-30 17:17:05 (KST)
+> **Time:** 2025-12-30 17:47:25 (KST)
 
-### 🤖 Copilot Briefing (17:17)
+### 🤖 Copilot Briefing (17:47)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [[인사] 과학기술정보통신부](http://www.boannews.com/media/view.asp?idx=141251&kind=&sub_kind=)
+- [[쿠팡 해킹] 쿠팡, “정부 지시” vs 정부, “지시 없어” 평행선 달린 청문회](http://www.boannews.com/media/view.asp?idx=141250&kind=&sub_kind=)
 - [[양자와 보안] LG유플러스 양자내성 기술, 표준 됐다](http://www.boannews.com/media/view.asp?idx=141245&kind=&sub_kind=)
-- [항공화물보안 위협 고도화 속 이론·실무 총정리, ‘항공화물보안론’ 발간](http://www.boannews.com/media/view.asp?idx=141240&kind=&sub_kind=)
-- [[쿠팡 해킹] 배경훈 부총리 “정보유출 3300만건 이상”...쿠팡 주장 정면 반박](http://www.boannews.com/media/view.asp?idx=141242&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.8%)
-- **RAM:** `33.8/512 GB` (Used: 6.6%)
+- **vCPU:** `128 vCores` (Load: 41.4%)
+- **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
