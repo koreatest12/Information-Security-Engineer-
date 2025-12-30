@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 15 days, 22:11:18
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 15 days, 22:34:43
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 42.9% | `██████░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 43.6% | `██████░░░░░░░░░` |
+| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행 땡겨요, QR주문 운영 휴게소 100호점 달성 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE5Yc3l6VU9ST09fQTROUWFSelJYSlZObVZTMmFRU0NLMFV0ZlJwX0p0Tnh3UWRrWDV3MG44SnlPMGJqQnBWWXZkOUktMFN0NmJYeE1jckR1YmQzcDlQeFFrOWdMR3BrZGVVSEE1RUd2Sk11bE0?oc=5)
+- [신한금융, 생산적 금융 본격화한다…그룹 조직개편 실시 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1UYUZvLXdlY0g1NnhhcURoUEZTYmR6RGtmckZVMEhSOTE4c0xBM1NWd0ZIQ2xoRG1ZUGlQTHhqc0ZVc1VfUTJOODF0eWJmRjJhMl9TZEpCdjUzUQ?oc=5)
 - [‘잃어버린 5년’ 예약한 한국 경제 - 중앙일보](https://news.google.com/rss/articles/CBMiVkFVX3lxTFBLblVXaFptMXMtcWtuOTNnN3Nsc2Q2dTM5RXJNRXdlQmhZakpFWEVwd3gzekExX2RRZGdlVHpTQjQzYWphTnFvVTExNmcwcGhUR25UQ1d3?oc=5)
 
 ---
