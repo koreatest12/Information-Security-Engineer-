@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-30 23:56:22 (KST)
+> **Time:** 2025-12-31 00:12:48 (KST)
 
-### 🤖 Copilot Briefing (23:56)
+### 🤖 Copilot Briefing (00:12)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,7 +10,7 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [신한은행, 자영업자 대출이자 5% 초과분 원금 상환에 쓴다 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9RNW1MTkwxSDFLRlZ2aWFBQnVkSFQ3OFhEWmlhbkpZRTNlMnZLV05fbXdLdkRWZWJEcDNlWFREMmVNTUVJcXVfdHNpZ01TYmNVLXRWTjVhUTNiRnU1NjByZtIBeEFVX3lxTFBuSlY1azRONnVGOGMzUmdpYWJ1b2VoaFRYWFNpSlp4RkFSazdWNHhNUWtvZWkzMEt2NkF6LUJ4bEpXWkVya0lZeng4RVVtT1R2RlB2aHFiNDgydUMwZXFHa0xGbTZzQktTbVhTQWZObW1LUERjYktGZg?oc=5)<br>• [신한은행, 본부장 인사 - 내외뉴스통신](https://news.google.com/rss/articles/CBMibEFVX3lxTFBpdG5hWXRqeGxCSzluTE5VdjQ5WVBrU3BkanNjYkdYcmo2MkI2LUhDY1A0YjY2WWxiZG1GVk5ZMERJLWI5cG13TlpDcXMxdDQtYnU4VzFtc3hmV0xfcmRuTWhEVHd0M0tYeV9wMNIBcEFVX3lxTE5ERzJpRDJuRlBPeUtNUnM0eDlnY1R5STVXdUFUaXlHSjRYUmZ4emdseDNuZzRoaF84eXJFYTRVTm1venZRQXEtRmNfVFM3cFBtNkhLNGxqVFM2YWw2NHlTQnpFS29FX2tJeWFNTEhqYnE?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행, 저신용자 가계대출 年 6.9%로 낮춘다 - 동아일보](https://news.google.com/rss/articles/CBMidkFVX3lxTE82VmV6VmZETXNlQnp4eElra3IzaDhBcFM0Y2FabDlPbWFLQXQ3MUdOOGlqSW56SVdzQU9xOThYYzl2eDh1c2trT1NHVVVndkJJVnlqdDVEZXdVYS1VNDVlMENsUUF4dDQwZHB0ZWVTZmFKRTJMV2fSAWZBVV95cUxQVHNRekVNVE1QQ2I2OF9XM0k3Q3J5NmZtNTFyaXpOM2g1MmZEaXYtUXdaUndkR2piVnZsTHZmZ25Ta0FoSW9hVEc4OVg4VnhidndvMng0Sm5FaDhvS1d2eDNNQ0NkQ2c?oc=5)<br>• [신한은행, 본부장 인사 - 내외뉴스통신](https://news.google.com/rss/articles/CBMibEFVX3lxTFBpdG5hWXRqeGxCSzluTE5VdjQ5WVBrU3BkanNjYkdYcmo2MkI2LUhDY1A0YjY2WWxiZG1GVk5ZMERJLWI5cG13TlpDcXMxdDQtYnU4VzFtc3hmV0xfcmRuTWhEVHd0M0tYeV9wMNIBcEFVX3lxTE5ERzJpRDJuRlBPeUtNUnM0eDlnY1R5STVXdUFUaXlHSjRYUmZ4emdseDNuZzRoaF84eXJFYTRVTm1venZRQXEtRmNfVFM3cFBtNkhLNGxqVFM2YWw2NHlTQnpFS29FX2tJeWFNTEhqYnE?oc=5)<br> |
 | **🟢 하나금융 (은행/투자)** | • [“PX 최대 30% 할인”…하나은행 나라사랑카드 출시 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE54NzFUYUNQaGFsQVVYNmFuUS1KYkNOQnBrR1VDQUU4andSejFtSFpIMXJ3cmIzZUZwRzRRYTVBX2FyOHFnbUgyczlkVXZzMnQ4M2FiZQ?oc=5)<br>• [하나은행, 서울아산청라병원과 함께 첨단의료복합단지 구축…금융 주선사로 참여 - 디지털데일리](https://news.google.com/rss/articles/CBMiZEFVX3lxTE5oMGVvU2lBME1zaHJiRnItS00tTFIxZFJhS1Rvb0h0SElqTmVJZUI5WDVjMENYN250MXNpYkJ5LUJmSFRIMlVmeTVrMjdyRGNIaXFmSjFva2l6OTQ4MWNWNnNac18?oc=5)<br> |
 
 ### 📰 General & Security News
@@ -22,8 +22,8 @@
 - [서귀포시, 2026년 ‘스마트 안전도시’ 도약 위해 1928억원 투입](http://www.boannews.com/media/view.asp?idx=141246&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.0%)
-- **RAM:** `33.8/512 GB` (Used: 6.6%)
+- **vCPU:** `128 vCores` (Load: 40.1%)
+- **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
