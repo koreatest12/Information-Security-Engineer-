@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-30 18:36:12 (KST)
+> **Time:** 2025-12-30 18:51:16 (KST)
 
-### 🤖 Copilot Briefing (18:36)
+### 🤖 Copilot Briefing (18:51)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -22,8 +22,8 @@
 - [[쿠팡 해킹] 쿠팡, “정부 지시” vs 정부, “지시 없어” 평행선 달린 청문회](http://www.boannews.com/media/view.asp?idx=141250&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.0%)
-- **RAM:** `33.8/512 GB` (Used: 6.6%)
+- **vCPU:** `128 vCores` (Load: 40.1%)
+- **RAM:** `35.3/512 GB` (Used: 6.9%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
