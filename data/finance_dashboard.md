@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-31 05:37:46 (KST)
+> **Time:** 2025-12-31 05:49:39 (KST)
 
-### 🤖 Copilot Briefing (05:37)
+### 🤖 Copilot Briefing (05:49)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,7 +10,7 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [신한은행, 자영업자 대출이자 5% 초과분 원금 상환에 쓴다 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9RNW1MTkwxSDFLRlZ2aWFBQnVkSFQ3OFhEWmlhbkpZRTNlMnZLV05fbXdLdkRWZWJEcDNlWFREMmVNTUVJcXVfdHNpZ01TYmNVLXRWTjVhUTNiRnU1NjByZtIBeEFVX3lxTFBuSlY1azRONnVGOGMzUmdpYWJ1b2VoaFRYWFNpSlp4RkFSazdWNHhNUWtvZWkzMEt2NkF6LUJ4bEpXWkVya0lZeng4RVVtT1R2RlB2aHFiNDgydUMwZXFHa0xGbTZzQktTbVhTQWZObW1LUERjYktGZg?oc=5)<br>• [신한은행 땡겨요, QR주문 매장 식사서비스 운영 휴게소 100호점 달성 - 디지털데일리](https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Jckg2NG16alllaEdGNWpNVzVTMFZXcUh6SHFOcks3Q1Iwdy1rSWw5eUZKTUZ1WGJ6YWU2SjEtYklJNlhaZGFrcDVvblNCNFNtdDFldWpqMFhOZmRRb3AxN2dPZ2Y?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행, 본부장 인사 - 내외뉴스통신](https://news.google.com/rss/articles/CBMibEFVX3lxTFBpdG5hWXRqeGxCSzluTE5VdjQ5WVBrU3BkanNjYkdYcmo2MkI2LUhDY1A0YjY2WWxiZG1GVk5ZMERJLWI5cG13TlpDcXMxdDQtYnU4VzFtc3hmV0xfcmRuTWhEVHd0M0tYeV9wMNIBcEFVX3lxTE5ERzJpRDJuRlBPeUtNUnM0eDlnY1R5STVXdUFUaXlHSjRYUmZ4emdseDNuZzRoaF84eXJFYTRVTm1venZRQXEtRmNfVFM3cFBtNkhLNGxqVFM2YWw2NHlTQnpFS29FX2tJeWFNTEhqYnE?oc=5)<br>• [신한은행, 저신용 개인사업자 대출 연 5% 초과 이자는 원금 상환으로 - 네이트](https://news.google.com/rss/articles/CBMibkFVX3lxTE1ORVJ2aXJmVTRyTzlsOV9pWWFmWHZ4b2g5dGFPUl9uU0lnTWwxTnRlZS1SN0RLNmJnblVzM1JlbjJCbmJyb3hUdkFOdkhrTDdHZnRneW01TkhvSmxZYzQyZmsxb2ZGVzNFNGVOb21B?oc=5)<br> |
 | **🟢 하나금융 (은행/투자)** | • [“PX 최대 30% 할인”…하나은행 나라사랑카드 출시 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE54NzFUYUNQaGFsQVVYNmFuUS1KYkNOQnBrR1VDQUU4andSejFtSFpIMXJ3cmIzZUZwRzRRYTVBX2FyOHFnbUgyczlkVXZzMnQ4M2FiZQ?oc=5)<br>• [LGD, 베트남 하이퐁 법인 채무보증 채권자에 하나은행 추가 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTE8xN1NlUEpveV9hR2dncjdrVnF4YWNNVEpPV1NMVHlYUDZCcnRyLXJzNGpOU1ZHeUNUWG5fWjZmcEt4dFlqeVlTS00xTDlhUHVvOG5OX3FxcWdTS3hlQ3lSSmJtSHJBRnFM0gFsQVVfeXFMTVoyeEU1dlJCRVpVNjJhYzNraEVZcTctcFA4N1dIcGhDOUd4MF9xUk9faG9Db0Z4RGR4OVdJYWxtWmgyMy10UlZuZHdEWG81Q3l5SGxPSWdkbC15NG5iSWZuY1hCR1g1ZzFhT0Rl?oc=5)<br> |
 
 ### 📰 General & Security News
@@ -22,8 +22,8 @@
 - [서귀포시, 2026년 ‘스마트 안전도시’ 도약 위해 1928억원 투입](http://www.boannews.com/media/view.asp?idx=141246&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 41.2%)
-- **RAM:** `33.3/512 GB` (Used: 6.5%)
+- **vCPU:** `128 vCores` (Load: 40.0%)
+- **RAM:** `34.3/512 GB` (Used: 6.7%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
