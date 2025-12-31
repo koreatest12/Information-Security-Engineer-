@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 16 days, 22:36:32
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 16 days, 23:09:14
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 41.6% | `██████░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.7% | `██████░░░░░░░░░` |
+| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[금융권 인사 분석②] '전문성' 힘준 신한금융…'통합' 강조 우리금융 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE4yd2wwYU1WSGZSa3RmREFIMC1jVFIxTklPaFQxNGNmbHV1T3dKLWRRZFlGRmt6cXRmUmVYNnZDcm5ZNlNxRlN1WkdHYnpYVVNHUTFYc18zT21qWVAybVRuSXhndjNTRjVpcDl1dUtTUks?oc=5)
-- [환율 역대 최고에도 ‘한국 경제 폭망론’엔 선 긋는 이유 - 조선일보](https://news.google.com/rss/articles/CBMijgFBVV95cUxPdEt1LWhoZXE5MEpvNUtURnNKdGdKRnhOTXZBUXBlYTlwa2hqRXlTZGx1ZGxMekNLWnBFaGJGbmR5am96bEtXcU00QWM0QmYyUHRQdTBwUlZ2SlZ6aTJIdVR3enNpbnJOQjZOZE0wdXB6VFJwWTYzYjF3bDdoaVRsdzhOZFl3Zy0tNzdSYTF30gGiAUFVX3lxTFBvY1lLRDRkVDUxWFdPSnJyc2tPajF0OUN4dTdnS01mSGVHeXJyZTdneVh0OWdDalM2S19ySEt1VmhjWnE1OGRvM2dudktqeFU1VGMydTVlSlRwNExra295ZkQ4RU1HbjVGNjdBem1uQ2RDUlpLY25hNHJMbGgzLW1feWFoRUxtMFZ1WXdPMHZZRklYOVEteDJSbWkzSkFJV1B1QQ?oc=5)
+- [‘연임은 통과, 이젠 검증’...금융지주 회장, 달라진 시선 속 2기 출발 - 에너지경제신문 모바일](https://news.google.com/rss/articles/CBMiW0FVX3lxTFBueFB1Q3Z6cUJXd0xZdFBTN1lORnliOFF1b3c2YnlyWWE1bXNJYzRZd1FRZUl0d3g5YkZXOGM5cjc0NTRZdDZHUmJSdVRzczF4czM1emtKQlRNczA?oc=5)
+- [‘잃어버린 5년’ 예약한 한국 경제 - 중앙일보](https://news.google.com/rss/articles/CBMiVkFVX3lxTFBLblVXaFptMXMtcWtuOTNnN3Nsc2Q2dTM5RXJNRXdlQmhZakpFWEVwd3gzekExX2RRZGdlVHpTQjQzYWphTnFvVTExNmcwcGhUR25UQ1d3?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
