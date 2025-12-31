@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-31 16:55:06 (KST)
+> **Time:** 2025-12-31 17:16:58 (KST)
 
-### 🤖 Copilot Briefing (16:55)
+### 🤖 Copilot Briefing (17:16)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -22,8 +22,8 @@
 - [[쿠팡 해킹] 로저스 쿠팡 대표, “용의자, 퇴사 앙심 품고 한 짓”](http://www.boannews.com/media/view.asp?idx=141263&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.1%)
-- **RAM:** `34.8/512 GB` (Used: 6.8%)
+- **vCPU:** `128 vCores` (Load: 40.0%)
+- **RAM:** `32.8/512 GB` (Used: 6.4%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
