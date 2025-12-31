@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2025-12-31 08:54:55 (KST)
+> **Time:** 2025-12-31 09:54:48 (KST)
 
-### 🤖 Copilot Briefing (08:54)
+### 🤖 Copilot Briefing (09:54)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [[단독] 지재처, 차장에 정연우 국장 내정…신임 보호원장·정보원장도 인선 가닥](http://www.boannews.com/media/view.asp?idx=141253&kind=&sub_kind=)
+- [[인사] 개인정보보호위원회](http://www.boannews.com/media/view.asp?idx=141255&kind=&sub_kind=)
+- [[IP인사] 지식재산처](http://www.boannews.com/media/view.asp?idx=141254&kind=&sub_kind=)
 - [조달청 2026년 조직개편 통해 ‘공공조달 혁신’](http://www.boannews.com/media/view.asp?idx=141248&kind=&sub_kind=)
-- [중구, 범죄예방디자인 사업 통해 주민 74% “마음 놓여”](http://www.boannews.com/media/view.asp?idx=141247&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 38.8%)
-- **RAM:** `33.8/512 GB` (Used: 6.6%)
+- **vCPU:** `128 vCores` (Load: 39.1%)
+- **RAM:** `34.8/512 GB` (Used: 6.8%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
