@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 18 days, 15:27:52
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 18 days, 15:49:50
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
 
-> **Q:** 종합 상황 브리핑
+> **Q:** 
 
 관련 정보 없음
 
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 42.7% | `██████░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 43.2% | `██████░░░░░░░░░` |
+| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신년 전략회의 모이는 5대 금융지주 회장…화두는 변화·혁신·동반성장 - 아주경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE94cEJiSHZlX3Jzbkx0YVhqMFo3MkF1a19nMjVuWHA0VzlMZ1BiajdXWkpUb0pGT256elNvcTB3cno3ZGt5SU11VVhqZm9sLWRwSDRlbnhQZTdQUdIBWEFVX3lxTE5vYlF3b2ktd1M5RjYtRUNWQ0NjV3BKMzNqaFdwN3ZzWmc0VlRMUXlqZzBTT3JxSFZtUk5QTGJERjF5VHVrQ2ZFckNtb3NrMzNlVUFTRkFMdzI?oc=5)
-- [환율 역대 최고에도 ‘한국 경제 폭망론’엔 선 긋는 이유 - 조선일보](https://news.google.com/rss/articles/CBMijgFBVV95cUxPdEt1LWhoZXE5MEpvNUtURnNKdGdKRnhOTXZBUXBlYTlwa2hqRXlTZGx1ZGxMekNLWnBFaGJGbmR5am96bEtXcU00QWM0QmYyUHRQdTBwUlZ2SlZ6aTJIdVR3enNpbnJOQjZOZE0wdXB6VFJwWTYzYjF3bDdoaVRsdzhOZFl3Zy0tNzdSYTF30gGiAUFVX3lxTFBvY1lLRDRkVDUxWFdPSnJyc2tPajF0OUN4dTdnS01mSGVHeXJyZTdneVh0OWdDalM2S19ySEt1VmhjWnE1OGRvM2dudktqeFU1VGMydTVlSlRwNExra295ZkQ4RU1HbjVGNjdBem1uQ2RDUlpLY25hNHJMbGgzLW1feWFoRUxtMFZ1WXdPMHZZRklYOVEteDJSbWkzSkFJV1B1QQ?oc=5)
+- [李 대통령 中 순방에 주요 금융사 CEO 총출동… 진옥동 신한금융 회장 포함 - ZUM 뉴스](https://news.google.com/rss/articles/CBMirwNBVV95cUxNTko4MDJ1VmJYSHpZN1UyOTBnYUhQb1Y0V0F0MWFkcjIxMTVRdU5fb3NWZU16Nlpja3VsOFpDUDJXYlFlZ0NvZTRMUmhtOEpJb2dsWjJ6aE9HbEZERFNOY1doMWVFU2NXa2t2UGlMRi1teHcxQXhBU1ppQ09yX2NRTG93d1Y2VjhkT0tWN1owanAzOEU1UE53Ymw0UW9VLVROZ2phRHp5S1E3RDhxanZGOWYwdDhaRkZaZzVSRmFLc0xxVzY2WFdpelhLRlZzZW5pUnFHUlBzZUlDamVFcFFoMXczLXAxRnE0UnhMNTFodUtnUkRjZkZFTjJoS1dhR0IzRDR0c2Nxb1VpWlBLN2wwZGpITE00TnYydmtXZExzdVdiYTJ1WVdqcG1nZkhmQlZHVFZ4bDJTbDJYNllQSWVzbkd1ZE5VTWg5MjZsd3RHSFFqdk0wdWNsVHEwZnlRaHR3LWtYSTBEaDF5SlFVdHg4VVJlaGl3XzliUVltMVVfYXNyeWtyTUNYaklZS3hzUmFzZzV2eHZlWlFMWU5YNE0tLU1wS0IxZVhqN2NwUzNjZw?oc=5)
+- [댄 나일스가 점찍은 2026년 5대 핵심 종목 [ 한경, 월가리포트 ] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBRVlNtS1pGSVZLalJtN2E0Q282SUdtcEJSTTlkRWRNRi1lc2kwbjdzT29VdEM2ZnRpT1hYNi1sWW1qbnVQY3JwMldqZnM5RzA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
