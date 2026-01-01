@@ -1,21 +1,23 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-01-02 01:44:48 | **Version:** `v2026.01.02`
+> **Updated:** 2026-01-02 01:59:38 | **Version:** `v2026.01.02`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 40.4% | `▃ ▃▃▂ ▃▃▅▃▃ ▂▄▂█ ▂▃ ` | Auto-Scaling Check |
-| **BTC Price** | $87,843.00 | `  ▃ ▃▄▅▃▅▃▄ ▃▅▄▆█▇▅▅` | Market Volatility |
-| **Global Mood** | 0.02 | **Neutral 😐** | Based on 16 Articles |
+| **CPU Load** | 40.4% | ` ▃▃▂ ▃▃▅▃▃ ▂▄▂█ ▂▃  ` | Auto-Scaling Check |
+| **BTC Price** | $87,860.00 | ` ▂ ▂▄▅▃▅▂▃ ▂▅▄▆█▇▅▅▅` | Market Volatility |
+| **Global Mood** | 0.07 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
-- **RAM:** 6.5% Used
+- **RAM:** 6.1% Used
 - **Disk:** 77.4% Used
 
 ### 📰 Global News Omni-Channel
 #### 🛡️ Cyber Security
 - 😐 [ThreatsDay Bulletin: GhostAd Drain, macOS Attacks, Proxy Botnets, Cloud Exploits, and 12+ Stories](https://thehackernews.com/2026/01/threatsday-bulletin-ghostad-drain-macos.html)
 - 😐 [RondoDox Botnet Exploits Critical React2Shell Flaw to Hijack IoT Devices and Web Servers](https://thehackernews.com/2026/01/rondodox-botnet-exploits-critical.html)
+- 🙂 [Happy 16th Birthday, KrebsOnSecurity.com!](https://krebsonsecurity.com/2025/12/happy-16th-birthday-krebsonsecurity-com/)
+- 😐 [Dismantling Defenses: Trump 2.0 Cyber Year in Review](https://krebsonsecurity.com/2025/12/dismantling-defenses-trump-2-0-cyber-year-in-review/)
 - 😐 [Sunken Ships: Will Orgs Learn From Ivanti EPMM Attacks?](https://www.darkreading.com/cyber-risk/sunken-ships-ivanti-epmm-attacks)
 - 😨 [When the Cloud Rains on Everyone's IoT Parade](https://www.darkreading.com/iot/when-cloud-rains-on-everyone-iot-parade)
 
@@ -26,9 +28,9 @@
 - 🙂 [The Great Big Power Play](https://www.wired.com/story/expired-tired-wired-nuclear-plants/)
 
 #### 🌍 World & Politics
-- 😐 [Several dozen feared dead in Swiss ski resort bar fire](https://www.bbc.com/news/articles/cx2pmyyeg78o?at_medium=RSS&at_campaign=rss)
+- 😨 [Around 40 dead in Swiss ski resort bar fire](https://www.bbc.com/news/articles/cx2pmyyeg78o?at_medium=RSS&at_campaign=rss)
 - 😐 [BBC reports from the scene of Swiss resort bar fire](https://www.bbc.com/news/videos/cq84xxxk840o?at_medium=RSS&at_campaign=rss)
-- 😐 [Live Updates: Dozens Believed Dead After Fire at New Year’s Party in Switzerland, Police Say](https://www.nytimes.com/live/2026/01/01/world/switzerland-explosion-fire)
+- 🙂 [Live Updates: Dozens Confirmed Dead in Fire at New Year’s Party in Swiss Alps](https://www.nytimes.com/live/2026/01/01/world/switzerland-explosion-fire)
 - 😐 [Another New Year at War: Ukraine’s Troops Doubt It Will Be the Last](https://www.nytimes.com/2026/01/01/world/europe/ukraine-russia-new-years-day-donetsk.html)
 
 #### 💰 Business & Economy
