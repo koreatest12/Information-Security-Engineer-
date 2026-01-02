@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 19 days, 0:11:33
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 19 days, 0:32:56
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 42.2% | `██████░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.6% | `██████░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[인사] 신한지주·신한은행 - 조선비즈 - Chosunbiz](https://news.google.com/rss/articles/CBMigAFBVV95cUxOWTRWckZxMFRCWHlqdTh4UElaVjdpLVcweWl4Y3VqZl9iQ1VQaENSWnlSUUlzVkY3VF9pc1B3TmZ1V25fQWlrOEZXRC1Fd2o3V2RGeWgzNXZnTDNvaF9Wb0o0NmFfVG45TTZpdDNfLUhrZ1lWb19rT1V2MGQycUVFWtIBlAFBVV95cUxQNGxNWUF2SjRETkkwQVZHVWhfT0dfdHFoVnAydUl5Wll0M0F6NFc1Z3dITmxYU3R2QVk2QTYtN1lxNS12d2RiVGJWdC1OSVlidHhTSEFnZWUzeUlrZlBmeUVQcDZNUThCWS0wNjZpVkRfVVQyY2dsclRmVmJaNWI4MzZNSUhuZE1teDdKZDZLcERDQVZV?oc=5)
+- [[인사]신한금융지주회사 - ceodaily.co.kr](https://news.google.com/rss/articles/CBMibEFVX3lxTE5UXzVKNnVYQWQxWFNuT1djc3RaOUdGZ2dCR0pFSG5ITU4xWVlyN2JtVS1ENjZidGw3NW4wVWd4eWNJMXVxdzJvbWUyWnNUVVVfajhrRU1Ld0VTSWhwVjRWeVFSZGttTWRMUEt0M9IBcEFVX3lxTE44QjF2Z0FRVDItQ2k5M2NvSm96Ml9HUUpoNDlaaTlUb2hJbVlXYWZkZXJaOGRlVHZpbzVTLXBnMmVGeWZNY0ZYOUVCU19hX08zaHJTZUgwV3RwNGgxa0p1UXJCVEp1TER6clZFNzlpQjU?oc=5)
 - [주요 그룹 신년사로 본 올해 한국 경제 핵심 키워드 - 비즈한국](https://news.google.com/rss/articles/CBMiVkFVX3lxTE1SSmtjcHZFZlZyV2p5WVFMUXJlaEJJUjFpV1B6UHpmeWRiNlNqc0JaUHI0bUlZMHRrSmJXQjl2QjE1N2ZaZzQ3enNxUVpvZDNhYWZlZTRR?oc=5)
 
 ---
