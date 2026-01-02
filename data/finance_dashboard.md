@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-02 23:38:14 (KST)
+> **Time:** 2026-01-02 23:54:09 (KST)
 
-### 🤖 Copilot Briefing (23:38)
+### 🤖 Copilot Briefing (23:54)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,9 +17,6 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [[전문] 김용선 지식재산처장 신년사](http://www.boannews.com/media/view.asp?idx=141278&kind=&sub_kind=)
-- [지재처, “발명王 찾아요”...발명유공 포상 신청도 받아](http://www.boannews.com/media/view.asp?idx=141277&kind=&sub_kind=)
-- [안랩, 2026년 시무식 개최 및 승진인사 단행](http://www.boannews.com/media/view.asp?idx=141276&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
 - **vCPU:** `128 vCores` (Load: 40.0%)
