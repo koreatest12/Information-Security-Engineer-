@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 18 days, 21:33:43
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 18 days, 21:53:41
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
 
-> **Q:** 종합 상황 브리핑
+> **Q:** 
 
 관련 정보 없음
 
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 41.7% | `██████░░░░░░░░░` |
-| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 43.3% | `██████░░░░░░░░░` |
+| **RAM** | `29.7/512 GB` | 5.8% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[인사] 신한지주·은행 - 더팩트](https://news.google.com/rss/articles/CBMiWkFVX3lxTE4ybHhNZTFReVRacURFN05iaHp6YktZR1dPcXpMQnotck84eGd0SGxTUS1Fak82WGxHSUQ0QmhEdDZXTGFpTVhibVgzRmdqVTRsdmxLS3ZEcnIxd9IBVEFVX3lxTFBTWmpOS2lYeTRnSmF2RUhQbjhGNE04ZW5aZk5lZDBxZzJkTzNkQ3pYS0djSEFTMVFMN1pydWZvdnFDdTdWTVJOUFNRdnk5T0hnVC1oVw?oc=5)
-- [[오늘의 브릿지경제 1면] [2026 신년기획] 한국경제 ‘초격차 DNA’를 되살리자 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9WMHdTZDJyaUxNcjc1SVNIc0dtZnRWa0RXM0czT1dZbFJoWk1Qa0dfYzhlWndJT1l0Mm9EX3FnWTdRYVdIUk9FcG1lMUpGUnkwM2VJUUJ3S2Vjdw?oc=5)
+- [[인사] 신한지주·신한은행 - 조선비즈 - Chosunbiz](https://news.google.com/rss/articles/CBMigAFBVV95cUxOWTRWckZxMFRCWHlqdTh4UElaVjdpLVcweWl4Y3VqZl9iQ1VQaENSWnlSUUlzVkY3VF9pc1B3TmZ1V25fQWlrOEZXRC1Fd2o3V2RGeWgzNXZnTDNvaF9Wb0o0NmFfVG45TTZpdDNfLUhrZ1lWb19rT1V2MGQycUVFWtIBlAFBVV95cUxQNGxNWUF2SjRETkkwQVZHVWhfT0dfdHFoVnAydUl5Wll0M0F6NFc1Z3dITmxYU3R2QVk2QTYtN1lxNS12d2RiVGJWdC1OSVlidHhTSEFnZWUzeUlrZlBmeUVQcDZNUThCWS0wNjZpVkRfVVQyY2dsclRmVmJaNWI4MzZNSUhuZE1teDdKZDZLcERDQVZV?oc=5)
+- [환율 역대 최고에도 ‘한국 경제 폭망론’엔 선 긋는 이유 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5lX0dpNFBPNVY3dFE0U3lFNmEzY3UyWmUyU1VxM0lNTm52X2VtUmFGZXlPWmE1SWJxQkt3N3NpQnNwWW5yQ0JhNUZ4eUFHSTA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
