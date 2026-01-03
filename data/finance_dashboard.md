@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-03 22:02:31 (KST)
+> **Time:** 2026-01-03 22:37:18 (KST)
 
-### 🤖 Copilot Briefing (22:02)
+### 🤖 Copilot Briefing (22:37)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,7 +10,7 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [[인사] 신한은행 - 중부매일](https://news.google.com/rss/articles/CBMiakFVX3lxTFBtVXNqSFlIRkUwQS1SaHdydkphSVp5aXdwNlR4alVFRW51LVZLTmxyc1ZuY1R2ejR6T2lpWXhNMWdIWnEyaVd3SUNOcGFldGloZlBlMjJ1NzNwdDI4dFdCY1RmR0dPMFVhN2fSAW5BVV95cUxNY1lzZ2xRc2xGUkRnMVZ5TjhFWGVIbnhzNW9FMjFQX3E3UzF5MWluWkNmeGFfOFlRRkJ1ajBqTHB6YkRzU282QU5aT0FXcVA5bjQ1YmVjNHo2MkduOTJ4SEt3bjYwaWtyVDNtNGxxQQ?oc=5)<br>• [신한은행, 이달말부터 ‘선순환 포용금융 프로그램’ 시행 - 스마트경제](https://news.google.com/rss/articles/CBMib0FVX3lxTFBmbHhhTC1USjdQSXdtRkowWUtydGhXcklWUko0dXpHaXdGcG9DblJ5aFNWOU44Y0czeVlyb2J6RmlTZEF6Y19nUW1fRndzcEZ6YXAxUGVJRVJ0QVM4d0VPYWNrRFNkbm9rQWw0QWJkNA?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행, 이달말부터 ‘선순환 포용금융 프로그램’ 시행 - 스마트경제](https://news.google.com/rss/articles/CBMib0FVX3lxTFBmbHhhTC1USjdQSXdtRkowWUtydGhXcklWUko0dXpHaXdGcG9DblJ5aFNWOU44Y0czeVlyb2J6RmlTZEF6Y19nUW1fRndzcEZ6YXAxUGVJRVJ0QVM4d0VPYWNrRFNkbm9rQWw0QWJkNA?oc=5)<br>• [신한은행-현대차, '1호' 자동차 적금 내놓는다 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTFBJVHpDOXJ5U0NVb0xCV3JLUGUtWnQ0akpxV1JuNFlKcHE2MmQxdlRUdVJkcE1vdzlyLTB4Wng5VjZoOFlGcVJqTTdrLXhDdw?oc=5)<br> |
 | **🟢 하나금융 (은행/투자)** | • [하나은행 희망퇴직 받는다…만 40세 직원부터 대상 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBKQ3JFa0JsQ2lCUjZiZHJXREd5TFRVOWtHTEYzQU81QXZPQ0tua0Q1ZDVBQUkzNTBDTWt4V1pYV2k5eFYtZG9EZE1xaUo3Y2c?oc=5)<br>• [하나은행 신입 행원들 '희망'을 외친다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBINnFMYkNvcTdHNjhBZTBuWjdFSlZ5dkF1bEs5M0puSnB1R2pLNVlzZ0VXT2ZRQkZSbk05UDhpYTdtQW9aOGNxcGhVeDNueDVXQUN5QjdPbkN6UdIBVEFVX3lxTE9TZ2tlclJCSnA2NDE0STRTSEJkY1pWY1NjYlFadWF4NWx5aFhxaTZPdTNWcVozTkdrRFBhcWwyeS05eDlRWTBUTTY4T2tmcmltZV9vSQ?oc=5)<br> |
 
 ### 📰 General & Security News
@@ -22,7 +22,7 @@
 - [맥 사용자 노리는 악성코드 ‘글래스웜’ 비상... VS Code 확장 기능 무기화](http://www.boannews.com/media/view.asp?idx=141280&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.2%)
+- **vCPU:** `128 vCores` (Load: 39.7%)
 - **RAM:** `35.3/512 GB` (Used: 6.9%)
 
 ---
