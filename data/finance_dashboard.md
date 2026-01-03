@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-03 14:54:53 (KST)
+> **Time:** 2026-01-03 15:17:55 (KST)
 
-### 🤖 Copilot Briefing (14:54)
+### 🤖 Copilot Briefing (15:17)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -11,7 +11,7 @@
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
 | **🔵 신한금융 (은행/투자)** | • [[인사] 신한지주·신한은행 - 조선비즈 - Chosunbiz](https://news.google.com/rss/articles/CBMigAFBVV95cUxOWTRWckZxMFRCWHlqdTh4UElaVjdpLVcweWl4Y3VqZl9iQ1VQaENSWnlSUUlzVkY3VF9pc1B3TmZ1V25fQWlrOEZXRC1Fd2o3V2RGeWgzNXZnTDNvaF9Wb0o0NmFfVG45TTZpdDNfLUhrZ1lWb19rT1V2MGQycUVFWtIBlAFBVV95cUxQNGxNWUF2SjRETkkwQVZHVWhfT0dfdHFoVnAydUl5Wll0M0F6NFc1Z3dITmxYU3R2QVk2QTYtN1lxNS12d2RiVGJWdC1OSVlidHhTSEFnZWUzeUlrZlBmeUVQcDZNUThCWS0wNjZpVkRfVVQyY2dsclRmVmJaNWI4MzZNSUhuZE1teDdKZDZLcERDQVZV?oc=5)<br>• [신한은행 시무식 개최…정상혁 "생산적부문 자금 공급 확대, 경제 선순환 지원" - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE5neXRudmZtalRXd2lmeHo4VHd3ZTZiblpIZnI3OWV0Mjh5d0JfUS1DbC1oY2F1Mmx5UV9yS05WQV9iS3FZekFvVERndU85Uk1hQjVR?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [하나은행 희망퇴직 받는다…만 40세 직원부터 대상 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBKQ3JFa0JsQ2lCUjZiZHJXREd5TFRVOWtHTEYzQU81QXZPQ0tua0Q1ZDVBQUkzNTBDTWt4V1pYV2k5eFYtZG9EZE1xaUo3Y2c?oc=5)<br>• [하나은행 신입 행원들 '희망'을 외친다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBINnFMYkNvcTdHNjhBZTBuWjdFSlZ5dkF1bEs5M0puSnB1R2pLNVlzZ0VXT2ZRQkZSbk05UDhpYTdtQW9aOGNxcGhVeDNueDVXQUN5QjdPbkN6UdIBVEFVX3lxTE9TZ2tlclJCSnA2NDE0STRTSEJkY1pWY1NjYlFadWF4NWx5aFhxaTZPdTNWcVozTkdrRFBhcWwyeS05eDlRWTBUTTY4T2tmcmltZV9vSQ?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [하나은행, 희망퇴직 실시…만 40세 직원부터 대상 - 동아일보](https://news.google.com/rss/articles/CBMidkFVX3lxTE1WMkJmVGNYTUc5Wm1qSl9uSWhwOG1xQUJLR0RVZmlFekMxeDNPZ3pseTdwckpGTVByOTIxekVrU1VuTG0xX0FVa2ZZS3Y0VjNnY2lfcGhmVTY5NF9qQWZrZTBxMlRBeUhkaHQtVFlnSURqM3J1MGfSAWZBVV95cUxPRnVHWEJfeDl2MjR5UG1hRFNTTzQ0Y1pOT2VqVjV3dzFoZXQ4ZU9nVUZWTDVoYWNNcjR2Nkg4NWhCcVNaWUo1YVpJUDFfLVloYVZXR25CYkNHajk4aUhUWnk2cnJESFE?oc=5)<br>• [하나은행 신입 행원들 '희망'을 외친다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBINnFMYkNvcTdHNjhBZTBuWjdFSlZ5dkF1bEs5M0puSnB1R2pLNVlzZ0VXT2ZRQkZSbk05UDhpYTdtQW9aOGNxcGhVeDNueDVXQUN5QjdPbkN6UdIBVEFVX3lxTE9TZ2tlclJCSnA2NDE0STRTSEJkY1pWY1NjYlFadWF4NWx5aFhxaTZPdTNWcVozTkdrRFBhcWwyeS05eDlRWTBUTTY4T2tmcmltZV9vSQ?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
@@ -22,8 +22,8 @@
 - [[신년사] 송경희 개인정보위 위원장 “2026년, 개인정보 보호 체계 대전환의 원년”](http://www.boannews.com/media/view.asp?idx=141279&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 42.5%)
-- **RAM:** `30.7/512 GB` (Used: 6.0%)
+- **vCPU:** `128 vCores` (Load: 39.3%)
+- **RAM:** `34.3/512 GB` (Used: 6.7%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
