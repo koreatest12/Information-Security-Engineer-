@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 20 days, 22:37:37
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 20 days, 23:07:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 42.7% | `██████░░░░░░░░░` |
-| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 43.2% | `██████░░░░░░░░░` |
+| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[인사] 신한지주·은행 - 더팩트](https://news.google.com/rss/articles/CBMiWkFVX3lxTE4ybHhNZTFReVRacURFN05iaHp6YktZR1dPcXpMQnotck84eGd0SGxTUS1Fak82WGxHSUQ0QmhEdDZXTGFpTVhibVgzRmdqVTRsdmxLS3ZEcnIxd9IBVEFVX3lxTFBTWmpOS2lYeTRnSmF2RUhQbjhGNE04ZW5aZk5lZDBxZzJkTzNkQ3pYS0djSEFTMVFMN1pydWZvdnFDdTdWTVJOUFNRdnk5T0hnVC1oVw?oc=5)
-- ["한국 경제 3％대 성장 당분간 힘들어...소비 회복 기대" - YTN](https://news.google.com/rss/articles/CBMiXkFVX3lxTE56bUlkcnlsSVdBNGdQZW5icmozenRZTFRKY2NtTUJiQ0NvckxwVmEzd2dHVHhYQmNYVDRyTlhodWlURVltejRXOWlhVzM0LWE4S2oxZXpPdV9RUDJ5OXfSAYMBQVVfeXFMTm9QTng1SjJLYlVIT2diejBkVWktNFBqem9lX3hDOVRJU0FsV2Rlc19JNGtuS2Z2TXRNNVcxdV9DS3N0b2FxaWRoSGJ3WXlvd21kc0QyeGJrREFCdURJLWpRWmJvQjczcW1JaUsxYVFsVGNjTGhYNjNrR3ZkQ1NDVWIySFE?oc=5)
+- [환율 1500원 넘보는 한국 경제…‘고환율 뉴노멀’ 속 책임 공방만 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE51ZmFiSFNNNXJyX2swMGRramtYd2NSTWFhRXd6eHZWdmx2dW03N1pabi1adV9kUzFfekhkMjJlcXE4dVVGbzZmMWtDMlc2SkU?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
