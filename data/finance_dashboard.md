@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-05 21:23:39 (KST)
+> **Time:** 2026-01-05 22:15:53 (KST)
 
-### 🤖 Copilot Briefing (21:23)
+### 🤖 Copilot Briefing (22:15)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,10 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [“2026년 새해부터 달라지는 제도는?” 정부, 국민안전에 더 힘쓴다](http://www.boannews.com/media/view.asp?idx=141301&kind=&sub_kind=)
-- [‘2026년 상반기 재난안전제품 인증’ 접수 시작... 우수 재난안전제품 찾는다](http://www.boannews.com/media/view.asp?idx=141302&kind=&sub_kind=)
-- [고양시, CCTV 9671대·관제 3576대로 예측 중심의 스마트시티 박차](http://www.boannews.com/media/view.asp?idx=141315&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.7%)
-- **RAM:** `30.7/512 GB` (Used: 6.0%)
+- **vCPU:** `128 vCores` (Load: 40.0%)
+- **RAM:** `33.3/512 GB` (Used: 6.5%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
