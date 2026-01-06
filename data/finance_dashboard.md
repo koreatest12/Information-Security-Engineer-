@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-06 08:53:51 (KST)
+> **Time:** 2026-01-06 09:54:23 (KST)
 
-### 🤖 Copilot Briefing (08:53)
+### 🤖 Copilot Briefing (09:54)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [“2026년 새해부터 달라지는 제도는?” 정부, 국민안전에 더 힘쓴다](http://www.boannews.com/media/view.asp?idx=141301&kind=&sub_kind=)
-- [‘2026년 상반기 재난안전제품 인증’ 접수 시작... 우수 재난안전제품 찾는다](http://www.boannews.com/media/view.asp?idx=141302&kind=&sub_kind=)
-- [고양시, CCTV 9671대·관제 3576대로 예측 중심의 스마트시티 박차](http://www.boannews.com/media/view.asp?idx=141315&kind=&sub_kind=)
+- [왓츠앱 메타데이터 유출 비상... 안드로이드·iOS 식별 맞춤 해킹 가능해져](http://www.boannews.com/media/view.asp?idx=141316&kind=&sub_kind=)
+- [조달청, 전자조달법 개정으로 자체조달 입찰 불법사항에 대한 시정요구권 도입](http://www.boannews.com/media/view.asp?idx=141321&kind=&sub_kind=)
+- [이스트시큐리티-엑세스랩, AI 시대 클라우드 보안 기술 공동 개발 MOU](http://www.boannews.com/media/view.asp?idx=141317&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.4%)
-- **RAM:** `33.8/512 GB` (Used: 6.6%)
+- **vCPU:** `128 vCores` (Load: 40.1%)
+- **RAM:** `32.3/512 GB` (Used: 6.3%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
