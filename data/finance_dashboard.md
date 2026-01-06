@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-06 16:55:42 (KST)
+> **Time:** 2026-01-06 17:18:03 (KST)
 
-### 🤖 Copilot Briefing (16:55)
+### 🤖 Copilot Briefing (17:18)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [송파 CCTV 관제센터, 흉기 난동범 검거 등 구민안전 기여 ‘장관 표창’](http://www.boannews.com/media/view.asp?idx=141354&kind=&sub_kind=)
 - [이노티움, 김종필 전 시선AI 부사장 신임 공동대표 선임](http://www.boannews.com/media/view.asp?idx=141353&kind=&sub_kind=)
 - [“짝퉁 중국, 그만!”...韓中, IP보호 협력 강화](http://www.boannews.com/media/view.asp?idx=141351&kind=&sub_kind=)
-- [CISA ‘알려진 취약점’ KEV, 1년 새 20% 증가... 랜섬웨어 악용 취약점만 24개](http://www.boannews.com/media/view.asp?idx=141349&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.2%)
-- **RAM:** `31.7/512 GB` (Used: 6.2%)
+- **vCPU:** `128 vCores` (Load: 40.1%)
+- **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*

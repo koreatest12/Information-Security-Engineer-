@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 23 days, 0:11:48
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 23 days, 0:34:06
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.0% | `██████░░░░░░░░░` |
-| **RAM** | `30.2/512 GB` | 5.9% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.3% | `██████░░░░░░░░░` |
+| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융 회장 진옥동 대통령 행사 '단골손님', 생산적금융 정책 기조 중심 잡는다 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE5wNDRQUjFXQzF4bGJqSVNUM3k0OUxqZ0lZeFVSZlVENTZpcmhMUzA1OG52S3ZQQ3F0LThqRHMyZ21GQm80ZGdRQ3luVDB4WGNYaElLSGZyOTV2S3lmR1NoQUM2WktJVFlrSXk3U2llYmF3NjA?oc=5)
+- [신한금융·경찰청, ‘서민경제 수호 영웅상’ 시상…고객 자산 보호 앞장 - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ZaWFsU3c2bHVfcDZtTUtzYUlZek5ZSUhTOW9fb2lSZ3I3Wi1Ba0tQZ0JjQlVaVEVoMnVZT3dfb2dHUExBN3kxZU81c2w4MmpWRlNldg?oc=5)
 - [코스피도 오르고 집값도 오르고?…올해 한국 경제 전망 [이슈콘서트] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5VczJWdnNZS1VMUXVxbW1LWDR0VjBLM2J1OV9vcVFUQ3FhLWMyT3VONzBZYVVYRFB0MDdhdVBqYXQtdVE4Y1gzZF9aM19DMjg?oc=5)
 
 ---
