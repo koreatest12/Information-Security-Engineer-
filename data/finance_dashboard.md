@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-07 08:52:36 (KST)
+> **Time:** 2026-01-07 09:54:56 (KST)
 
-### 🤖 Copilot Briefing (08:52)
+### 🤖 Copilot Briefing (09:54)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [“PC가 멈췄나요?” 가짜 블루스크린 띄워 해킹 도구 심는 신종 수법](http://www.boannews.com/media/view.asp?idx=141358&kind=&sub_kind=)
+- [[카드뉴스] 인증 `이후`가 더 위험하다…포스트 인증 위협 막는 `지속적 검증` 기술의 부상](http://www.boannews.com/media/view.asp?idx=141360&kind=&sub_kind=)
 - [[쿠팡 해킹] 美 있고 韓 없는 ‘디스커버리’ 제도 무엇?... 국내 도입 필요할까](http://www.boannews.com/media/view.asp?idx=141357&kind=&sub_kind=)
-- [프랑스 법원, 브리짓 마크롱 영부인 ‘사이버 괴롭힘’ 혐의 10명에 유죄 선고](http://www.boannews.com/media/view.asp?idx=141356&kind=&sub_kind=)
-- [다크웹에 쌓인 ‘K-데이터 인질’... 성형외과부터 대학까지 다 털렸다](http://www.boannews.com/media/view.asp?idx=141355&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.7%)
-- **RAM:** `31.2/512 GB` (Used: 6.1%)
+- **vCPU:** `128 vCores` (Load: 41.7%)
+- **RAM:** `30.7/512 GB` (Used: 6.0%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
