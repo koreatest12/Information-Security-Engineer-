@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-07 13:38:21 (KST)
+> **Time:** 2026-01-07 14:03:01 (KST)
 
-### 🤖 Copilot Briefing (13:38)
+### 🤖 Copilot Briefing (14:03)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [‘6억명 시대’ 가상자산 시장, 사기·해킹도 함께 진화... 피해액 30억달러 돌파](http://www.boannews.com/media/view.asp?idx=141370&kind=&sub_kind=)
-- [아우토크립트, 차량 보안 인프라 글로벌 표준 ‘오토모티브-CIS’ 공개](http://www.boannews.com/media/view.asp?idx=141362&kind=&sub_kind=)
-- [케이스마텍, CES 2026서 ‘KEY4C 시큐어폴더’ 공개... 글로벌 진출 시동](http://www.boannews.com/media/view.asp?idx=141368&kind=&sub_kind=)
+- [서틱, 이지랩스와 전략적 협력... 100만달러 규모 보안 지원금 조성](http://www.boannews.com/media/view.asp?idx=141372&kind=&sub_kind=)
+- [표절 경고 이메일로 해킹... 연구자 표적 APT 조직 ‘포럼트롤’ 활동 포착](http://www.boannews.com/media/view.asp?idx=141369&kind=&sub_kind=)
+- [옥타코·굿모닝아이텍·네오아이앤이, 제로트러스트 인증 사업 MOU 체결](http://www.boannews.com/media/view.asp?idx=141371&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.0%)
-- **RAM:** `31.2/512 GB` (Used: 6.1%)
+- **vCPU:** `128 vCores` (Load: 39.3%)
+- **RAM:** `31.7/512 GB` (Used: 6.2%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
