@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 24 days, 2:10:39
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 24 days, 2:30:58
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.3% | `██████░░░░░░░░░` |
-| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.8% | `██████░░░░░░░░░` |
+| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융·경찰청, ‘서민경제 수호 영웅상’ 시상…고객 자산 보호 앞장 - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ZaWFsU3c2bHVfcDZtTUtzYUlZek5ZSUhTOW9fb2lSZ3I3Wi1Ba0tQZ0JjQlVaVEVoMnVZT3dfb2dHUExBN3kxZU81c2w4MmpWRlNldg?oc=5)
-- ['1년에 1700억 번다'…BTS·블랙핑크도 제친 한국인 남매 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE50eU1RY01HTFpzMUFWak52ODRTc3RkRmpaTG5fTTF6TW9kNnlMU1Z6TkpKMmFsbXQ5bjB1SkdKOXRPLUpaZG5HYi1fNlBvbkk?oc=5)
+- [장예원 "하이닉스 수익률 323.53%"…대박에도 한숨, 왜? - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE93dTB4cUhaeW9Ea01jcFJsOW54NndSM3dFMC0ySXo1UkpHNDdZRTlkTFgzOTUxV3NUWS1vRFAxQUstSElGOWhlRVNwQkNoVzQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
