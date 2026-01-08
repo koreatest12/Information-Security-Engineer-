@@ -1,21 +1,21 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-01-09 00:01:18 | **Version:** `v2026.01.09`
+> **Updated:** 2026-01-09 00:28:19 | **Version:** `v2026.01.09`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 41.3% | `▂▅▄ ▂    ▂ ▂▂▂█ ▂▂ ▂` | Auto-Scaling Check |
-| **BTC Price** | $89,907.00 | `▇▇█▆▅▄▄▃▄▆▅▄▄▅▃▃▂▂ ▃` | Market Volatility |
+| **CPU Load** | 42.0% | `▅▄ ▂    ▂ ▂▂▂█ ▂▂ ▂▄` | Auto-Scaling Check |
+| **BTC Price** | $90,411.00 | `▇█▆▅▄▄▃▄▆▅▄▄▅▃▃▂▂ ▃▇` | Market Volatility |
 | **Global Mood** | 0.08 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
-- **RAM:** 6.0% Used
+- **RAM:** 6.3% Used
 - **Disk:** 76.3% Used
 
 ### 📰 Global News Omni-Channel
 #### 🛡️ Cyber Security
+- 😐 [China-Linked UAT-7290 Targets Telecoms with Linux Malware and ORB Nodes](https://thehackernews.com/2026/01/china-linked-uat-7290-targets-telecoms.html)
 - 🙂 [ThreatsDay Bulletin: RustFS Flaw, Iranian Ops, WebUI RCE, Cloud Leaks, and 12 More Stories](https://thehackernews.com/2026/01/threatsday-bulletin-rustfs-flaw-iranian.html)
-- 😐 [The State of Trusted Open Source](https://thehackernews.com/2026/01/the-state-of-trusted-open-source.html)
 - 😐 [The Kimwolf Botnet is Stalking Your Local Network](https://krebsonsecurity.com/2026/01/the-kimwolf-botnet-is-stalking-your-local-network/)
 - 🙂 [Happy 16th Birthday, KrebsOnSecurity.com!](https://krebsonsecurity.com/2025/12/happy-16th-birthday-krebsonsecurity-com/)
 - 😐 [Attackers Exploit Zero-Day in End-of-Life D-Link Routers](https://www.darkreading.com/cyberattacks-data-breaches/attackers-exploit-zero-day-end-of-life-d-link-routers)
@@ -30,7 +30,7 @@
 #### 🌍 World & Politics
 - 😐 [US immigration agent fatally shoots woman in Minneapolis](https://www.bbc.com/news/articles/c0jvnl4j1n4o?at_medium=RSS&at_campaign=rss)
 - 😨 [Footage shows violent clashes as Iran protests spread to more areas](https://www.bbc.com/news/articles/cgm4y0ewe93o?at_medium=RSS&at_campaign=rss)
-- 🙂 [Live Updates: Trump Says U.S. Will ‘Rebuild’ Venezuela and Suggests He Won’t Act in Colombia](https://www.nytimes.com/live/2026/01/08/world/us-venezuela-trump)
+- 🙂 [Live Updates: Colombia’s President Says Call With Trump Was a Breakthrough](https://www.nytimes.com/live/2026/01/08/world/us-venezuela-trump)
 - 😐 [Why Russian Tourists Are Flocking to Southern China’s Beaches](https://www.nytimes.com/2026/01/08/world/asia/china-hainan-russian-tourists.html)
 
 #### 💰 Business & Economy
