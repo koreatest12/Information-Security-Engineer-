@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 25 days, 2:11:35
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 25 days, 2:31:08
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.4% | `██████░░░░░░░░░` |
-| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.5% | `██████░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융 진옥동 중국공상은행 회장 만나, 민간 통화스왑 확대 등 협력 모색 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTFBwUFJrMnFsMWxGclctUzBnTm53czBMS3BoNllWeW0xbUxHUXVaMkhqT2tBSTZRQW82Z0NyWGFhdUhEYVZyR09PZUh0YzB6VmFOQ2Q2Y1YyMTNacTg4TldJRXgxUC1zUjVkeTZyb1ZEZ28zZm8?oc=5)
-- [장예원 "하이닉스 수익률 323.53%"…대박에도 한숨, 왜? - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE93dTB4cUhaeW9Ea01jcFJsOW54NndSM3dFMC0ySXo1UkpHNDdZRTlkTFgzOTUxV3NUWS1vRFAxQUstSElGOWhlRVNwQkNoVzQ?oc=5)
+- [코스피도 오르고 집값도 오르고?…올해 한국 경제 전망 [이슈콘서트] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5VczJWdnNZS1VMUXVxbW1LWDR0VjBLM2J1OV9vcVFUQ3FhLWMyT3VONzBZYVVYRFB0MDdhdVBqYXQtdVE4Y1gzZF9aM19DMjg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
