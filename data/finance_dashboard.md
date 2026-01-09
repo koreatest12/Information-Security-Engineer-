@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-09 20:16:36 (KST)
+> **Time:** 2026-01-09 20:33:52 (KST)
 
-### 🤖 Copilot Briefing (20:16)
+### 🤖 Copilot Briefing (20:33)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -11,7 +11,7 @@
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
 | **🔵 신한금융 (은행/투자)** | • [관봉권특검, 신한은행 강남별관 수색검증영장 집행 - 뉴스1](https://news.google.com/rss/articles/CBMiS0FVX3lxTE9MVU1jM043LVZ2WkVlbzhIV0lESkJqS0ZoWl9VNVhFSGNnZHBVbXZUXzBjZWtBNE5hMjdMemIzUVZfMld5MGZBZjAyUQ?oc=5)<br>• [신한은행, 최고 연 8.8% '현대차 적금' 출시 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9KMEk4RTFnMFZCZkdkYzVQSUJ3NGFWeXFwY0F2RUpMdFhnaWxxTmthUlNJLVRpWFRUTTd1TmZQdkE1emNGcERjeE1UMWxJblhUcF9QNXlZbDNjcDZDbGNjbQ?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [금감원, 하나은행 과태료 3.7억원…은행법·전자금융거래법 위반 - 노컷뉴스](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5GcEV3cm96RmVyREhib0Y4dmJpZ3EyUDFPNm5nRU1BeEFOVUlsdUhYRWxGSlJHMmlJVGF4c3JQNGhlc2hGOHRsOENaRnBlS0k5emc?oc=5)<br>• [하나은행 여자농구 선두 독주, 후반기에도 지속되나 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1BaDlLbWlFY2xpNkxDUWxLTXdIVFl0QXp3cTI2Sng3NnhXRjBLU1JBVXdfMEpiXzByR1pLTkx1U1pMVDlINWZ1ckhMTzNQYzg?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [금감원, 하나은행 과태료 3.7억원…은행법·전자금융거래법 위반 - 노컷뉴스](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5GcEV3cm96RmVyREhib0Y4dmJpZ3EyUDFPNm5nRU1BeEFOVUlsdUhYRWxGSlJHMmlJVGF4c3JQNGhlc2hGOHRsOENaRnBlS0k5emc?oc=5)<br>• [이디야커피, 하나은행과 제휴…나라사랑카드로 군 장병 멤버십 혜택 확대 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE0tY3BHOVl0VXVKTzBPcU52NjdydWxMSWY2S0o2NHFrMWRSejZIR29qdUxIbXVVZXlZeVl1QTF5eVA4US15TGI3SVVqanZKcXlPMHZxbUM1TkVsUQ?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
@@ -22,8 +22,8 @@
 - [데이타스 ‘유디마스터(UDmaster)’, 조달청 디지털서비스몰 등록](http://www.boannews.com/media/view.asp?idx=141417&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.4%)
-- **RAM:** `33.3/512 GB` (Used: 6.5%)
+- **vCPU:** `128 vCores` (Load: 41.3%)
+- **RAM:** `30.7/512 GB` (Used: 6.0%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
