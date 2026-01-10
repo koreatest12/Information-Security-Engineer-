@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-10 16:33:53 (KST)
+> **Time:** 2026-01-10 16:45:13 (KST)
 
-### 🤖 Copilot Briefing (16:33)
+### 🤖 Copilot Briefing (16:45)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,7 +10,7 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [신한은행, 현대차와 '최고 연 8.8%' 제휴 적금 출시 - 뉴스1](https://news.google.com/rss/articles/CBMiYkFVX3lxTFBHZXh0RE1vMHVlUDl4RW5ReXhPRlJTWDRkWTRLZ29vZ1VOcWpJQ21GbjNsYzR5UEhlaXJxMG1WdWo5czdVSk1QZ2hzd3pwQmdKVHNIV3J6Y1ZKcnc2WDRhb2JR?oc=5)<br>• [상설특검, '관봉권' 관련 신한은행 강남별관 수색·검증 - 노컷뉴스](https://news.google.com/rss/articles/CBMiUkFVX3lxTE1JbDBna2RDVU5zSkVJY2F6aTFGMmJubXVTYVp3Vy1HTFNna18zWjVfWHVSeFhYWWdzR1piV2ZLbXJqZ3hua0hvWVk3c2s2Wm81Nnc?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행, 최고 연 8.8% '현대차 적금' 출시 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9KMEk4RTFnMFZCZkdkYzVQSUJ3NGFWeXFwY0F2RUpMdFhnaWxxTmthUlNJLVRpWFRUTTd1TmZQdkE1emNGcERjeE1UMWxJblhUcF9QNXlZbDNjcDZDbGNjbQ?oc=5)<br>• [관봉권특검, 신한은행 강남별관 수색검증영장 집행 - 뉴스1](https://news.google.com/rss/articles/CBMiS0FVX3lxTE9MVU1jM043LVZ2WkVlbzhIV0lESkJqS0ZoWl9VNVhFSGNnZHBVbXZUXzBjZWtBNE5hMjdMemIzUVZfMld5MGZBZjAyUQ?oc=5)<br> |
 | **🟢 하나금융 (은행/투자)** | • ["해상풍력이 새 먹거리"…하나은행, 인프라 금융 영토 확장 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wSW9XdTFhSFNPckhUdXZ4MUlXZzlJaGVmbDdKRWhZeUJyNnRwVlRxR2NNY252QnNlZ180a2t0OFphekY4SEdCeWRKZjZoQlBNSnlTNUZudWJlQdIBVEFVX3lxTE9NMDhoWUxva3cySWxtdFVJa08yelZVSXBTSnFraVFlcnRBei1wQTdfeU9MZzd2MHBXS2JVdlpxOEtOdHRhWjdSN1ZCR0h1LUtlSWZaTQ?oc=5)<br>• ['3점슛 11개' 여자농구 선두 하나은행, 삼성생명 꺾고 4연승 - 뉴스1](https://news.google.com/rss/articles/CBMiWkFVX3lxTE11N1dra0tGTnRrOGg1ZHRXRktORGdzRjMycFhfT3lPZHNyWjZRaVZjcEhleXlYUnZHUDU4anlFT0JOM0JoZkZNbkUxX1RWQlE3SzM2c212TlNDUQ?oc=5)<br> |
 
 ### 📰 General & Security News
@@ -22,8 +22,8 @@
 - [경찰, 국정원 압수수색... ‘선관위 보안 점검’ 급 발표로 선거 개입 의혹](http://www.boannews.com/media/view.asp?idx=141420&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.0%)
-- **RAM:** `33.8/512 GB` (Used: 6.6%)
+- **vCPU:** `128 vCores` (Load: 39.3%)
+- **RAM:** `33.3/512 GB` (Used: 6.5%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
