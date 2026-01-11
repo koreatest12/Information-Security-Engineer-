@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-11 15:17:49 (KST)
+> **Time:** 2026-01-11 15:50:36 (KST)
 
-### 🤖 Copilot Briefing (15:17)
+### 🤖 Copilot Briefing (15:50)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -22,8 +22,8 @@
 - [‘미국 우선주의’ 트럼프, 국제 사이버 보안 공조 기구서 ‘탈퇴 명령’](http://www.boannews.com/media/view.asp?idx=141427&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.7%)
-- **RAM:** `33.3/512 GB` (Used: 6.5%)
+- **vCPU:** `128 vCores` (Load: 37.2%)
+- **RAM:** `30.7/512 GB` (Used: 6.0%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
