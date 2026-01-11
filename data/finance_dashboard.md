@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-12 02:36:01 (KST)
+> **Time:** 2026-01-12 02:46:42 (KST)
 
-### 🤖 Copilot Briefing (02:36)
+### 🤖 Copilot Briefing (02:46)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,10 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [인스타그램, 1750만명 개인정보 유출 의혹](http://www.boannews.com/media/view.asp?idx=141429&kind=&sub_kind=)
+- [금감원, 쿠팡페이 결제 정보 유출 여부 정식 검사 돌입](http://www.boannews.com/media/view.asp?idx=141428&kind=&sub_kind=)
+- [‘미국 우선주의’ 트럼프, 국제 사이버 보안 공조 기구서 ‘탈퇴 명령’](http://www.boannews.com/media/view.asp?idx=141427&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 38.5%)
-- **RAM:** `30.7/512 GB` (Used: 6.0%)
+- **vCPU:** `128 vCores` (Load: 37.6%)
+- **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
