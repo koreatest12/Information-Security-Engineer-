@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 27 days, 21:38:50
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 27 days, 22:02:59
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.3% | `█████░░░░░░░░░░` |
-| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.0% | `█████░░░░░░░░░░` |
+| **RAM** | `30.2/512 GB` | 5.9% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [경영진 한데 모은 금융지주... KB “AI 전환”, 신한 “경영 혁신” - 조선일보](https://news.google.com/rss/articles/CBMijgFBVV95cUxNOWZNdGRTRV84c01ObWlUU3czT3FweTBKN2ZzYlBOZHVKOGN6VTFnRTVDM2lCODZ0WGJUQl9LSkJfT2F4Y1VXbXpqSU13MVg4czZNc2ZkS05oNmNFblJhNEc4QmJHYzVXbkx1ckRZZDJWN1lxM2tTdVg4eXpJZ0hOS25MZXJ4c0lmaGdGMnp30gGiAUFVX3lxTFBIbkhRNDl1MHkzcnlTMzhZSHdWeXM5ZE5iNHFZNmhMSkVON3NPSkVUSzNVOTA0cVdWaHNfcEdkckkxME5weW9EVjcyMm5wbWI5eDl3ay04b1VXMXRDTmtVMUlDMUpvdTNRLVlKQWhtdFozLVVxU3k2R2dDci15ODJSZEtCeEduVE94VHo1eUx2TWtkcjc1SmU2U1BsM0xnS0dEdw?oc=5)
