@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-12 13:17:38 (KST)
+> **Time:** 2026-01-12 14:02:37 (KST)
 
-### 🤖 Copilot Briefing (13:17)
+### 🤖 Copilot Briefing (14:02)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,20 +10,20 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [신한은행·기보, 북미 진출 기업에 보증비율 100%·보증료 0.7%p 지원 - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5Hek5sSmNBY3h6bk9GODZtX1JUa0ZKTkY0eUFMTjhYdTc3VGdxRnhRU1h3X0dreWZSYmplQXZyRnlqSG1VMEZDeXQ4M1kteXNSVF91Zg?oc=5)<br>• [신한은행, 기보 손잡고 북미진출 국내기업에 500억 금융지원 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTFAxeXlaVHNQNDZxTHZleFZ2OWxjNS1LZVZXS1pVUWZnSWhnTVZQaENtNE1veXVxcW5CM2Q0dWFkWlRZaWVIaF9GdzQzdWM4R2dLa0RMTQ?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [[인사] 하나은행 - 더팩트](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9BNXRsbmd0b0dGeVFwMnZRNkVZYmhRcjZGTVYxa1NFLU9nUmNRSkNCRG1wdlRNRUNxc05tc1NIQVJhVmtvRFoyWC1XUTR2TzFmc2cyMi1mLVJ0UdIBVEFVX3lxTFBUZEw2bkVkaVZzaWMyYkVyOFlNbmJoVHlBSUNURmRjLWFJZkVmVl91OTNzcHNEV2M3ZVNLVkZqU3FiUFUwc2JQWWhSaWszeWNxMlFsUQ?oc=5)<br>• [하나은행, '하나 나라사랑카드' 압도적인 혜택으로 판을 바꾸다 - 아시아경제](https://news.google.com/rss/articles/CBMiX0FVX3lxTE1qMFZrRExtWjJrY1RtQkpPajFlX1pYbDhvWmtOX2dmZnpra0FpVVhEX2NkbDFJU1c1dDYzS0dVTTd5clg2RVZzYXl1S0xVN2JzOEtMWDRRNEFhWHR2NVln?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행, 기보와 북미 진출 韓기업 금융지원 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1jLWJ4TjVldE14VkpES2ZLOW54WmtNdFV1VW9JdG1aWEN1TVZOSlB5OG8xeC1VXzRIWl9adzlTcTZKMWphSEFsTHk1eWVUblBVaDAySll3M291NUs5U04tUNIBeEFVX3lxTE1KZ3FFbDlaMTNJZ1p5M3NmSjJub2lJMEprVFdmYWNlZG03VXRoRm5JWlJYVm85UnRObjRvUXNuaHdjWDJGUWVGMnRXQkx3cVZIVzFtcF93OUp0Qy1IUFVWYXR1OW5NUjRvUlNDR3cyNjYxZ0VOZ0VVcQ?oc=5)<br>• [신한은행, 현대자동차와 최고 연 8.8% 제휴 적금 출시 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5ieUFLZFppeUNPYkpETlhWdWg0WlM2QUx6NVRTcTB2Y3ExWXhaOGpuRnl6NWZuejE2RTF3NVAySHpyYzFReURzTk0wZ1JwNGs?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [하나은행, '하나 나라사랑카드' 압도적인 혜택으로 판을 바꾸다 - 아시아경제](https://news.google.com/rss/articles/CBMiX0FVX3lxTE1qMFZrRExtWjJrY1RtQkpPajFlX1pYbDhvWmtOX2dmZnpra0FpVVhEX2NkbDFJU1c1dDYzS0dVTTd5clg2RVZzYXl1S0xVN2JzOEtMWDRRNEFhWHR2NVln?oc=5)<br>• [[인사] 하나은행 - 조선비즈 - Chosunbiz](https://news.google.com/rss/articles/CBMigAFBVV95cUxNWFQ1TnBVNkYwQ0laZUJ3VV95YWlxcFlLZFhMTTdVRXNRZFItSWpKTTRNUW5JQVBXekp2dmQtRkJESWhiTzVFNEtUOGZRUVlPWjB5ZGtEU1ozQzNJc1ZQNjRHYllpekZhcXNYSjV6S0pXMmFjbk9JbHF4Y2hqU3pEddIBlAFBVV95cUxOOWJEQkJxU25wbk1jZ1hoLS1KZG5JaXZtVVdJUk9qSDFpcFFiQUozNnA3clp5cmxURndaZ2dGVGRRMFUzdWg5eXM4eWRwTHNCX3djZG1NX21vOVNBSmcxV0NyYUZfZldUcGdLUl96OElJMkljRjVvQ0dHa3dyUGhsWmcydG15ejY4TkZTemRrdVF2c19a?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [관악구, 어두운 골목길 ‘스마트 보안등’으로 안심 밝힌다](http://www.boannews.com/media/view.asp?idx=141437&kind=&sub_kind=)
+- [‘빨간펜·구몬’ 교원그룹, 랜섬웨어 추정 사이버 공격 받아 서비스 차질](http://www.boannews.com/media/view.asp?idx=141438&kind=&sub_kind=)
 - [체크포인트 “한국 겨냥 사이버 공격 93%는 이메일”... 정보 유출 비상](http://www.boannews.com/media/view.asp?idx=141432&kind=&sub_kind=)
-- [SGA솔루션즈, 2026년 보안 키워드는 ‘진화한 위협’과 ‘내부 통제’](http://www.boannews.com/media/view.asp?idx=141431&kind=&sub_kind=)
-- [[2026 보안 핫 키워드-5] AI와 보안 솔루션의 만남, XAI와 능동형 AI](http://www.boannews.com/media/view.asp?idx=141430&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 38.9%)
-- **RAM:** `31.7/512 GB` (Used: 6.2%)
+- **vCPU:** `128 vCores` (Load: 38.4%)
+- **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
