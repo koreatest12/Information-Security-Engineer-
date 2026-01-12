@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 29 days, 4:03:52
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 29 days, 4:11:05
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.2% | `█████░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.7% | `█████░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [진옥동 신한금융 회장 "진짜 혁신, 리더 의무 다해야"…2박3일 끝장토론 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFA2aWl0RVpmWnk2X0ZZWWRaeWFoak5fdWhITHVQeXNTYnh6cm9lYTBwbVYxSDVKeFlKSndDbThMaUV6c3pYYk1nRGpxZEpSbFJSWVlBS1BXa041ZXpLYUFtQdIBeEFVX3lxTE9CdDlFNlJweHhBYXZYNmRqVC1TbndqUlNfX2NaNk8tSTVVR29NWVp0NU5NRFJnTEpfUG1obmJmS0dZTEYtcVNsM0M3SmxQRDFIelR6Wmd2RWgzckJJa1RGX285VlRkbTFkTDVLOWxfYmtJNlo2V1h3Wg?oc=5)
-- ["한국 경제 대도약의 원년"…정부 ‘올해 2% 성장’ 목표 - JTBC](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5feER0ZlpzWG9WWDNWNHVFNDd3NkhIMzdSWTZXRW05cHVhT3JlY2plczVUbGMyaFRoUUl3OXdQZEpMWVJNb3RsT0VfbklKQ0tELTVUSw?oc=5)
+- ['K' 함정에 빠진 한국 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE9tZDBBX216T0xlVTgwaWpGRWYya0dkSUM1dEw2Q01LdFQwTVpvUVFZZ19sN1NPRVpuM1p3SThrSC13ZVQwaW9rRnhDeENLanZwLWhJZQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
