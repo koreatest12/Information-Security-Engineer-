@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 29 days, 15:53:52
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 29 days, 16:02:46
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.6% | `█████░░░░░░░░░░` |
-| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.9% | `█████░░░░░░░░░░` |
+| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [진옥동 신한금융 회장 “리더가 혁신의 불씨 돼야” - 헤럴드경제](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5VbkNQc1p6Z0FoMnNwTHc5ZFNBU2QtSTc0bHVkY25aelJ0Ykg0Yk4yZnVrbF9rckpvdHhqTU8tOFVuSFZVcXdUVFdpeUxRbU95OTNuTHVB?oc=5)
-- ['K' 함정에 빠진 한국 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE9tZDBBX216T0xlVTgwaWpGRWYya0dkSUM1dEw2Q01LdFQwTVpvUVFZZ19sN1NPRVpuM1p3SThrSC13ZVQwaW9rRnhDeENLanZwLWhJZQ?oc=5)
+- [싸게 팔던 '중국산' 마법 사라진다…한국 기업 환호한 까닭 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFAwMXl2RzFoVldER04tSktha1ZRRi1lZjQ0N3ZiS3djT25zblFPZDByTzdkd3pscklRZkR1cnV0dEdGcGlKVW1HQklfSVE3MUE?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
