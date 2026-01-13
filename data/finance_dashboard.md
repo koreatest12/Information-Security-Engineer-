@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-13 12:56:18 (KST)
+> **Time:** 2026-01-13 13:32:41 (KST)
 
-### 🤖 Copilot Briefing (12:56)
+### 🤖 Copilot Briefing (13:32)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [이스라엘 토크, 1억4800만달러 투자 유치… 보안 유니콘 탄생](http://www.boannews.com/media/view.asp?idx=141465&kind=&sub_kind=)
+- [에스투더블유, ‘사람 중심’ 기업철학 담은 브랜드북 ‘다르게 발명하는 일’ 출간](http://www.boannews.com/media/view.asp?idx=141464&kind=&sub_kind=)
 - [CJ온스타일, ‘팬덤IP’로 영역 넓힌다... ‘헬로키티X지수’ 협업 판매](http://www.boannews.com/media/view.asp?idx=141461&kind=&sub_kind=)
-- [엠클라우독, 공공·교육 행정 혁신 가속... “문서중앙화로 업무 공백 없앤다”](http://www.boannews.com/media/view.asp?idx=141459&kind=&sub_kind=)
-- [대법, “해외 등록 특허권도 국내서 사용했다면, ‘과세’ 대상”](http://www.boannews.com/media/view.asp?idx=141462&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.5%)
-- **RAM:** `31.2/512 GB` (Used: 6.1%)
+- **vCPU:** `128 vCores` (Load: 36.8%)
+- **RAM:** `33.8/512 GB` (Used: 6.6%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
