@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 30 days, 2:34:39
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 30 days, 3:02:41
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.5% | `█████░░░░░░░░░░` |
-| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.4% | `█████░░░░░░░░░░` |
+| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [“땡겨요는 플랫폼 독과점의 메기”…신한은행 포용금융 눈길 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBtdXZzMnlpdWZkX04xNGZWeWIzYmVZY2FDQXdCS2lMVkk5RldwejJEN1pKOEdWV3RPT0hlajlwUXdvRkpIUTN4cGJsNnRHY2NDUHA1TzNzbXNzZw?oc=5)
+- [진옥동 신한금융 회장 “리더가 혁신의 불씨 돼야” - 헤럴드경제](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5VbkNQc1p6Z0FoMnNwTHc5ZFNBU2QtSTc0bHVkY25aelJ0Ykg0Yk4yZnVrbF9rckpvdHhqTU8tOFVuSFZVcXdUVFdpeUxRbU95OTNuTHVB?oc=5)
 - ['K' 함정에 빠진 한국 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE9tZDBBX216T0xlVTgwaWpGRWYya0dkSUM1dEw2Q01LdFQwTVpvUVFZZ19sN1NPRVpuM1p3SThrSC13ZVQwaW9rRnhDeENLanZwLWhJZQ?oc=5)
 
 ---
