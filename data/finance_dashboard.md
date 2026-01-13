@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-13 14:37:34 (KST)
+> **Time:** 2026-01-13 14:52:42 (KST)
 
-### 🤖 Copilot Briefing (14:37)
+### 🤖 Copilot Briefing (14:52)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [‘사이버 범죄 성지’ 털렸다... 브리치포럼 운영진 및 회원 정보 전량 유출](http://www.boannews.com/media/view.asp?idx=141468&kind=&sub_kind=)
 - [블록체인 플랫폼 트루비트, 스마트 계약 취약점으로 2600만 달러 손실](http://www.boannews.com/media/view.asp?idx=141467&kind=&sub_kind=)
 - [“가상 감옥을 부수다”… 중국계 해커, VM웨어 제로데이 악용해 가상 머신 격리 무력화](http://www.boannews.com/media/view.asp?idx=141466&kind=&sub_kind=)
-- [이스라엘 토크, 1억4800만달러 투자 유치… 보안 유니콘 탄생](http://www.boannews.com/media/view.asp?idx=141465&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.1%)
-- **RAM:** `30.2/512 GB` (Used: 5.9%)
+- **vCPU:** `128 vCores` (Load: 36.9%)
+- **RAM:** `33.3/512 GB` (Used: 6.5%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
