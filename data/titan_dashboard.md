@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 30 days, 0:36:23
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 30 days, 1:07:14
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,11 +15,11 @@
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
 | **CPU** | `128 vCores` | 39.0% | `█████░░░░░░░░░░` |
-| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
+| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [“땡겨요는 플랫폼 독과점의 메기”…신한은행 포용금융 눈길 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBtdXZzMnlpdWZkX04xNGZWeWIzYmVZY2FDQXdCS2lMVkk5RldwejJEN1pKOEdWV3RPT0hlajlwUXdvRkpIUTN4cGJsNnRHY2NDUHA1TzNzbXNzZw?oc=5)
-- [중소기업계 “2026년, 한국 경제 역동적 도약해야…中企가 주역될 것” - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5HVVRPTWJ4QkV0YXZoRjVqcXl4NU56UGkwSWM4RzB0RFZ6VkREa2xZZDRxcXVUSmJJdjc0TVdKQ0JubjVlV2JPSmVmWGhkVXB6dV9jaA?oc=5)
+- ['K' 함정에 빠진 한국 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE9tZDBBX216T0xlVTgwaWpGRWYya0dkSUM1dEw2Q01LdFQwTVpvUVFZZ19sN1NPRVpuM1p3SThrSC13ZVQwaW9rRnhDeENLanZwLWhJZQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
