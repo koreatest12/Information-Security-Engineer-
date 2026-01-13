@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 30 days, 0:13:39
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 30 days, 0:33:05
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
 
-> **Q:** 
+> **Q:** 종합 상황 브리핑
 
 관련 정보 없음
 
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.2% | `█████░░░░░░░░░░` |
-| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.3% | `█████░░░░░░░░░░` |
+| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [“땡겨요는 플랫폼 독과점의 메기”…신한은행 포용금융 눈길 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBtdXZzMnlpdWZkX04xNGZWeWIzYmVZY2FDQXdCS2lMVkk5RldwejJEN1pKOEdWV3RPT0hlajlwUXdvRkpIUTN4cGJsNnRHY2NDUHA1TzNzbXNzZw?oc=5)
-- [이란이 '이곳'만 막아도 한국 경제는 멈춥니다 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE96c282LUFQeExOdFdKYVlYd0ZCb2x0LVljZFpsMEE2YU9faDEzTk0tckU5cENtM3dzWU9ydjhFZURGd2xHcjJUU0JWVnZ6d2VuVl9XQ0t0ZkpJam5yc3FXZFhjWTZ3dXlJX005bldHNWLSAXRBVV95cUxPR2xLdlBOQkZWcWFfbGV5TVpFV1FCRk9QNzBYOHZtSFdwUTI5SkNVNnZDcW5hZDNGQUsyWFlZal9KRHVxLWY3OTM5bmdxY1VTMVRteGJmQVRyLVZSY1VhZUVnOF9GeEJweHNZUEFqaDl6dHh4Qg?oc=5)
+- [중소기업계 “2026년, 한국 경제 역동적 도약해야…中企가 주역될 것” - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5HVVRPTWJ4QkV0YXZoRjVqcXl4NU56UGkwSWM4RzB0RFZ6VkREa2xZZDRxcXVUSmJJdjc0TVdKQ0JubjVlV2JPSmVmWGhkVXB6dV9jaA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
