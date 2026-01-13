@@ -1,12 +1,12 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-01-13 11:49:19 | **Version:** `v2026.01.13`
+> **Updated:** 2026-01-13 12:56:22 | **Version:** `v2026.01.13`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 38.6% | `▅▃▅ ▂  ▄▂ ▂▃█▂ ▃▄▂▂▂` | Auto-Scaling Check |
-| **BTC Price** | $91,035.00 | `▇▇█▅▄▄▃  ▂▂▂▂ ▂ ▂▂▂ ` | Market Volatility |
-| **Global Mood** | -0.00 | **Neutral 😐** | Based on 16 Articles |
+| **CPU Load** | 38.4% | `▃▅ ▂  ▄▂ ▂▃█▂ ▃▄▂▂▂▂` | Auto-Scaling Check |
+| **BTC Price** | $91,205.00 | `▇█▅▄▄▃  ▂▂▂▂ ▂ ▂▂▂ ▂` | Market Volatility |
+| **Global Mood** | 0.01 | **Neutral 😐** | Based on 16 Articles |
 
 ### 🖥️ System Status
 - **RAM:** 6.1% Used
@@ -16,8 +16,8 @@
 #### 🛡️ Cyber Security
 - 😐 [n8n Supply Chain Attack Abuses Community Nodes to Steal OAuth Tokens](https://thehackernews.com/2026/01/n8n-supply-chain-attack-abuses.html)
 - 🙂 [⚡ Weekly Recap: AI Automation Exploits, Telecom Espionage, Prompt Poaching & More](https://thehackernews.com/2026/01/weekly-recap-ai-automation-exploits.html)
-- 😐 [Who Benefited from the Aisuru and Kimwolf Botnets?](https://krebsonsecurity.com/2026/01/who-benefited-from-the-aisuru-and-kimwolf-botnets/)
-- 😐 [The Kimwolf Botnet is Stalking Your Local Network](https://krebsonsecurity.com/2026/01/the-kimwolf-botnet-is-stalking-your-local-network/)
+- 😐 [BreachForums Breached, Exposing 324K Cybercriminals](https://www.darkreading.com/threat-intelligence/breachforums-breached-exposing-324k-cybercriminals)
+- 😐 [GoBruteforcer Botnet Targets 50K-plus Linux Servers](https://www.darkreading.com/threat-intelligence/gobruteforcer-botnet-targets-50k-plus-linux-servers)
 
 #### 🤖 AI & Tech
 - 🙂 [Hands-on with Bee, Amazon’s latest AI wearable](https://techcrunch.com/2026/01/12/hands-on-with-bee-amazons-latest-ai-wearable/)
@@ -27,7 +27,7 @@
 
 #### 🌍 World & Politics
 - 😨 ['They just kept killing': Eyewitnesses describe deadly crackdown in Iran](https://www.bbc.com/news/articles/cvgp70ynx1po?at_medium=RSS&at_campaign=rss)
-- 😨 [Referee and student among hundreds killed in Iran protests](https://www.bbc.com/news/articles/cd0yldn0n7eo?at_medium=RSS&at_campaign=rss)
+- 😐 [Trump announces 25% tariff on countries doing business with Iran](https://www.bbc.com/news/articles/clyev0kpk77o?at_medium=RSS&at_campaign=rss)
 - 🙂 [Iran Says It Is Prepared for War but Ready to Negotiate After Trump’s Warnings](https://www.nytimes.com/2026/01/12/world/middleeast/iran-protests-trump-us.html)
 - 😨 [Russian Missiles Failed in Venezuela During U.S. Attack](https://www.nytimes.com/2026/01/12/world/americas/venezuela-russian-weapons-fail.html)
 
