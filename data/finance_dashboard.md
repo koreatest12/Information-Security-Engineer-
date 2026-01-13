@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-13 21:24:06 (KST)
+> **Time:** 2026-01-13 22:14:24 (KST)
 
-### 🤖 Copilot Briefing (21:24)
+### 🤖 Copilot Briefing (22:14)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -11,7 +11,7 @@
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
 | **🔵 신한금융 (은행/투자)** | • [제일기획 제작 '신한은행 나라사랑카드 캠페인' 1000만뷰 돌파 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE51MkZLd2dmRVcyVHZsQWZXVW1ueU1yT0xfb3VST2F0YVBVNGxNT0p4cnZKYXRUeGdGcHdFRkw4SDZnVURpejUtNEh0NE5rZw?oc=5)<br>• [신한은행, 금감원에게 ‘IB 여신 사후관리 개선’ 요구받아 - 천지일보](https://news.google.com/rss/articles/CBMiakFVX3lxTFBkbWpYOHM4NXo0WFpxVUJGdDJuNTUtLVpISFVKTi1yY1ZwcVJxM0R1THB5ZENCOWxNQ2ZCUWpPRC04VXM3UWFXeE5rakN3RDk5QS1mbEtmcDU1QzdjczR0UGlIeVU5aFVpekE?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [[게시판] 하나은행, 가수 안유진 사진 담은 나라사랑카드 출시 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5nMThFVDZnUW5WbWFMX0xFWkRHZ1RPRGFGc2VWSTRNcnY3OFVIT0tZakQ2Z1JrZVlxTGtQS3d6Z2llc1MxYTVfRlBXXzNYNS1JSzB5b0d2QlRWYzDSAWBBVV95cUxOT2RGa3VFcTNLU3Q5SDI1ZjdQRTNaNEVXNW1yZEV0eFJKZXRINU9mTnJNcW84ZTdneXY1MTNCR01VS0V1b0dvQ1FrOURvQ0swUmlCX3RNeEs2ZndKcUpfcUg?oc=5)<br>• [하나은행, '하나 나라사랑카드' 압도적인 혜택으로 판을 바꾸다 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9adXVyRUN3NG13RlJCSFNFV2QzTU1IanlUV2h5U09XUXJsSFVKbmlucmEtbkh3Z0dBS3F4eVQxaG96SjAwWE82Z3ZXWktZd091UGJrNG1mWGlxZHVpWDdpZA?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [하나은행 나라사랑카드, 안유진이 지갑 속에 - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTE8wMDRiY2FUSEpuWjdadmFTOGJjSlFoMUFKNHFjM2lzalZ3ZndMTXRqeGY0NTN1bFcyMGpITF83dHN5VkFBekNGWkJ4ZWFlTkFBeXBtVFRzMXo2X1RTcHV1dm1lbWZWNjJGbHhHWWVpLWc1TGvSAXdBVV95cUxNMmRIdzZ2d0NvS01aT3NSbVdHSHg4VWpTeWFlMk5OY2otdkVrTU9WWXc1TmpWQWcybGZqY2twYzVoVEo1dGc5V3FCNUN5VVprTWtxeDl3NFdzQUh0UXVZVUkteDdkZlN6MzQ2aTRWR3VvaWdUUDZHQQ?oc=5)<br>• [오늘의 인사-해수부, 관세청, 하나은행 외 - 경향신문](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1nNTA2SlZCN2xyMWRsbWFackdVdlFiYjg2MC1KT0FucmJsMFVMN0M3eHBUd0I3Y2pKWnJuWnZVWTR2OVJXQms3d2JweDZwb2Y3b1VSVGRoYU9SQdIBX0FVX3lxTE1WTzJ2TXl3dDk0MDZjX3RnN3RtZFk0NTBHSnZzUk5OVEFDRkpqcEJ4MW1nbFRyTGFUVmVHaHlaaUVENFR3NFY4Q2J1VUZPMnVGNUR0M0NDSUliZHdiOTBB?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
@@ -22,7 +22,7 @@
 - [[중동 in K-Security] 한화비전, AI 기반 ‘엔드-투-엔드’ 보안 솔루션으로 글로벌 시장 선도](http://www.boannews.com/media/view.asp?idx=141473&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 36.5%)
+- **vCPU:** `128 vCores` (Load: 37.9%)
 - **RAM:** `33.3/512 GB` (Used: 6.5%)
 
 ---
