@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 31 days, 4:39:38
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 31 days, 5:29:09
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.8% | `█████░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.1% | `█████░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [진옥동 “전 직원 AI 활용해야”…‘AX 혁신리더’로 신한금융 변화 이끈다 - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1Na29paFNTcEhRZFpZYlJVLUJsRUtGcWlfUEktMmNhU1BEbEpuclgyWWlzc3Rfa1owdk8tNkJnUFI4RE9OamtaWDcyRjdKMkdBb01kLQ?oc=5)
-- ["계좌가 녹고 있어요"…주가 20% 급락하자 비명 쏟아진 종목 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9iWHJNcWF3dnlESDFhOVlucXo5a1dUUDl3QnlBWHBSenZBS3lBeUpaWGNia1BkaU92RnZDeEk4dXdZRmU5d21qdDBTcjE2RDA?oc=5)
+- [신한금융, 현업 실무자 'AX 혁신리더' 100명 선발 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE8wbU5FTHQ4Zi12NFRSbVpHV3RtR0RldUlyXzNWNmFoS1poanljUVRWZVJRRUd5cWVJWnlQWlRzOXhSM0Z6WTlXdV9aMU5kTGlkQXFn?oc=5)
+- ["한국경제 최대 대외 리스크는 '글로벌 통상 패러다임 변화'" - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9BN3pLSUdySm1MWElSRGVBUXFma09nN3ZiMXF1Sy1rOHBzbE81NnBMdzJlczhjektNR0dERzdHcUJFeTNMVDJNT1c0Q0NqVDdhY3ozTTROU2JmQ1XSAWBBVV95cUxNMkRWNWdYZnpGRzV0QVBaV2lpaHRzOVdSTDBQbzRLdE04dWI1RVJnLTBmLWU1X2YxZFhnQmlRZmdvUFI4anhhOFVBUEpJTHlqRWU3SzRKeUFSd2ZDSGU2U2I?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
