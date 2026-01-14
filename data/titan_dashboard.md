@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 30 days, 17:12:48
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 30 days, 19:16:07
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.5% | `█████░░░░░░░░░░` |
-| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.2% | `█████░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[2026 경영전략] 진옥동 2기 신한금융, AI 중심 경영·생산적금융 '진짜 혁신' 직접 챙긴다 - 글로벌이코노믹](https://news.google.com/rss/articles/CBMigwFBVV95cUxQUV9fbV9YUTdiYVF6VU1xbmpEU3VzYUVQZ0I3TVdUb2ZOOUxreHFWSnlWWU51ZUJ1N2VrR1pydW5MV3YwczdfQ3VwSGd2dEtiM3N3SzQxS0NXT2cteHFyY3drNlpOYUlBandvWU5SZFZocHdxV0NGS0hlejZjRlpnZ3pjMA?oc=5)
-- [이란이 '이곳'만 막아도 한국 경제는 멈춥니다 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE96c282LUFQeExOdFdKYVlYd0ZCb2x0LVljZFpsMEE2YU9faDEzTk0tckU5cENtM3dzWU9ydjhFZURGd2xHcjJUU0JWVnZ6d2VuVl9XQ0t0ZkpJam5yc3FXZFhjWTZ3dXlJX005bldHNWLSAXRBVV95cUxPR2xLdlBOQkZWcWFfbGV5TVpFV1FCRk9QNzBYOHZtSFdwUTI5SkNVNnZDcW5hZDNGQUsyWFlZal9KRHVxLWY3OTM5bmdxY1VTMVRteGJmQVRyLVZSY1VhZUVnOF9GeEJweHNZUEFqaDl6dHh4Qg?oc=5)
+- [신한금융, ‘AX 혁신리더’ 출범 “3년간 AX전문가 1000명 육성” - 헤럴드경제](https://news.google.com/rss/articles/CBMiVkFVX3lxTE1aMXRpNjI5UXZrZ0VBdFZQajBIODBvLVk2UWI3Vm80S1haMnQ5SEYwMnJTRUVQV2xjaWlHT2NteFdUeDZJR3R2QmxkQUZZY1YwbFQ2Zzl3?oc=5)
+- ["한국경제 최대 대외 리스크는 '글로벌 통상 패러다임 변화'" - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9BN3pLSUdySm1MWElSRGVBUXFma09nN3ZiMXF1Sy1rOHBzbE81NnBMdzJlczhjektNR0dERzdHcUJFeTNMVDJNT1c0Q0NqVDdhY3ozTTROU2JmQ1XSAWBBVV95cUxNMkRWNWdYZnpGRzV0QVBaV2lpaHRzOVdSTDBQbzRLdE04dWI1RVJnLTBmLWU1X2YxZFhnQmlRZmdvUFI4anhhOFVBUEpJTHlqRWU3SzRKeUFSd2ZDSGU2U2I?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
