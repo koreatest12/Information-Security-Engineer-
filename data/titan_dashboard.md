@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 31 days, 5:30:02
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 31 days, 6:10:14
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.3% | `█████░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 40.3% | `██████░░░░░░░░░` |
+| **RAM** | `29.7/512 GB` | 5.8% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 현업 실무자 'AX 혁신리더' 100명 선발 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE8wbU5FTHQ4Zi12NFRSbVpHV3RtR0RldUlyXzNWNmFoS1poanljUVRWZVJRRUd5cWVJWnlQWlRzOXhSM0Z6WTlXdV9aMU5kTGlkQXFn?oc=5)
-- ["한국경제 최대 대외 리스크는 '글로벌 통상 패러다임 변화'" - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9BN3pLSUdySm1MWElSRGVBUXFma09nN3ZiMXF1Sy1rOHBzbE81NnBMdzJlczhjektNR0dERzdHcUJFeTNMVDJNT1c0Q0NqVDdhY3ozTTROU2JmQ1XSAWBBVV95cUxNMkRWNWdYZnpGRzV0QVBaV2lpaHRzOVdSTDBQbzRLdE04dWI1RVJnLTBmLWU1X2YxZFhnQmlRZmdvUFI4anhhOFVBUEpJTHlqRWU3SzRKeUFSd2ZDSGU2U2I?oc=5)
+- [폐점 소식에 '인산인해'…1천명 대기 진풍경 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5FVDc5TDhLRVlVbndxNGtEUWJLNWg4RXBXdXA4UWR1SnNoSk83ZEVJcUpIOWFtWEFucDZKODMzYkNZNHJWMGJxeUFxRDlnNGs?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
