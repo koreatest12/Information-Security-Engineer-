@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 30 days, 23:12:16
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 30 days, 23:33:22
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.6% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.1% | `█████░░░░░░░░░░` |
 | **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융 'AX 혁신리더' 100명 선발, 진옥동 "인공지능 현장 실제 활용 단계" - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE51RXdjSUZTYUdZSkZya3B4RndGSko4cWcycVNYMGRKeHNReXRMOFVWOFFEMDR0OVZiOW5fMzVjYmZKYXRoVmtxOV95dG9Cb1FfNVpmeXo1cm4tRWZoQktrY3pWblc3LUtXdzJUaFRYeFVlNk0?oc=5)
+- [진옥동 “전 직원 AI 활용해야”…‘AX 혁신리더’로 신한금융 변화 이끈다 - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1Na29paFNTcEhRZFpZYlJVLUJsRUtGcWlfUEktMmNhU1BEbEpuclgyWWlzc3Rfa1owdk8tNkJnUFI4RE9OamtaWDcyRjdKMkdBb01kLQ?oc=5)
 - [[카드뉴스] 주요 경제단체 “병오년(丙午年)을 한국 경제 재도약의 원년으로” 한 목소리 - 산업일보](https://news.google.com/rss/articles/CBMiREFVX3lxTFAyWE5kc1ZONm9MTFg4S0ZzQmpZYjQ4Y3Vib0ZHQ2VneFpMaGhfejFLdHFIcXBGdVlLbzNWV2JVQkJDdWNS?oc=5)
 
 ---
