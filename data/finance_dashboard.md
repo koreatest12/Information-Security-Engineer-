@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-15 01:00:03 (KST)
+> **Time:** 2026-01-15 01:21:03 (KST)
 
-### 🤖 Copilot Briefing (01:00)
+### 🤖 Copilot Briefing (01:21)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,9 +17,12 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [앤스로픽, 파이썬소프트웨어재단에 150만 달러 투자... “공급망 보안 강화”](http://www.boannews.com/media/view.asp?idx=141506&kind=&sub_kind=)
+- [KISA “상반기 특사경 도입”... ISMS 개편·침해 대응에 AI 활용 확대](http://www.boannews.com/media/view.asp?idx=141504&kind=&sub_kind=)
+- [교원그룹, 서버 600대·960만명 해킹사고  영향권... 개인정보 유출 여부 미정](http://www.boannews.com/media/view.asp?idx=141505&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.4%)
+- **vCPU:** `128 vCores` (Load: 39.3%)
 - **RAM:** `31.7/512 GB` (Used: 6.2%)
 
 ---
