@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-14 17:19:16 (KST)
+> **Time:** 2026-01-14 17:57:48 (KST)
 
-### 🤖 Copilot Briefing (17:19)
+### 🤖 Copilot Briefing (17:57)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [KISA “상반기 특사경 도입”... ISMS 개편·침해 대응에 AI 활용 확대](http://www.boannews.com/media/view.asp?idx=141504&kind=&sub_kind=)
+- [교원그룹, 서버 600대·960만명 해킹사고  영향권... 개인정보 유출 여부 미정](http://www.boannews.com/media/view.asp?idx=141505&kind=&sub_kind=)
 - [[중동 in K-Security] 트루엔, 독보적 엣지 AI 기술력으로 중동 보안 시장 정조준](http://www.boannews.com/media/view.asp?idx=141489&kind=&sub_kind=)
-- [조달청, 다누시스 등 63개 기업 혁신제품 지정](http://www.boannews.com/media/view.asp?idx=141503&kind=&sub_kind=)
-- [Omada, ‘Wi-Fi 7 확산 대응’ 10G 지원 멀티기가 애자일 2.5G 스위치 시리즈 출시](http://www.boannews.com/media/view.asp?idx=141500&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 36.8%)
-- **RAM:** `31.2/512 GB` (Used: 6.1%)
+- **vCPU:** `128 vCores` (Load: 40.6%)
+- **RAM:** `34.3/512 GB` (Used: 6.7%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
