@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-15 17:49:47 (KST)
+> **Time:** 2026-01-15 18:04:31 (KST)
 
-### 🤖 Copilot Briefing (17:49)
+### 🤖 Copilot Briefing (18:04)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -22,7 +22,7 @@
 - [과기정통부 ‘독자 AI 모델 프로젝트’ LG·SKT·업스테이지 생존... 네이버 탈락 ‘이변’](http://www.boannews.com/media/view.asp?idx=141524&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 38.4%)
+- **vCPU:** `128 vCores` (Load: 38.9%)
 - **RAM:** `30.7/512 GB` (Used: 6.0%)
 
 ---
