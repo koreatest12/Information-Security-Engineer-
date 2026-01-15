@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-16 06:36:24 (KST)
+> **Time:** 2026-01-16 06:51:22 (KST)
 
-### 🤖 Copilot Briefing (06:36)
+### 🤖 Copilot Briefing (06:51)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,10 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [“도어락·CCTV 통제권 뺏긴다”... 루커스 IoT 컨트롤러, ‘만능키’ 노출 비상](http://www.boannews.com/media/view.asp?idx=141527&kind=&sub_kind=)
-- [지재처, ‘2026 WIPO 글로벌 어워즈’ 접수 시작](http://www.boannews.com/media/view.asp?idx=141526&kind=&sub_kind=)
-- [‘AI특허 심사실무 가이드’ 나왔다...지재처, 개정·배포](http://www.boannews.com/media/view.asp?idx=141525&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 36.1%)
-- **RAM:** `31.7/512 GB` (Used: 6.2%)
+- **vCPU:** `128 vCores` (Load: 39.4%)
+- **RAM:** `32.3/512 GB` (Used: 6.3%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
