@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-15 15:19:45 (KST)
+> **Time:** 2026-01-15 15:54:08 (KST)
 
-### 🤖 Copilot Briefing (15:19)
+### 🤖 Copilot Briefing (15:54)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [모빌린트, MLX-A1·MLA100 조달청 혁신제품 등록](http://www.boannews.com/media/view.asp?idx=141519&kind=&sub_kind=)
-- [여의시스템, Moxa NPort G2 솔루션으로 산업 네트워크 보안 강화](http://www.boannews.com/media/view.asp?idx=141518&kind=&sub_kind=)
-- [중국, ‘국가 안보’ 이유로 미국·이스라엘 보안 제품 사용 중단 전격 지시](http://www.boannews.com/media/view.asp?idx=141517&kind=&sub_kind=)
+- [전 세계 기업 50%, 보안 강화 위해 SOC 구축... 핵심은 ‘사람’](http://www.boannews.com/media/view.asp?idx=141523&kind=&sub_kind=)
+- [[개인정보 다이어트 ①] “비번 돌려막다 다 털린다”... 새해 첫 보안 미션](http://www.boannews.com/media/view.asp?idx=141435&kind=&sub_kind=)
+- [새로운 ‘보이드링크’ 멀웨어 프레임워크 출현... 리눅스 클라우드 인프라 정조준](http://www.boannews.com/media/view.asp?idx=141521&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.1%)
-- **RAM:** `31.2/512 GB` (Used: 6.1%)
+- **vCPU:** `128 vCores` (Load: 38.1%)
+- **RAM:** `30.7/512 GB` (Used: 6.0%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
