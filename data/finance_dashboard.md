@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-15 14:05:12 (KST)
+> **Time:** 2026-01-15 14:38:01 (KST)
 
-### 🤖 Copilot Briefing (14:05)
+### 🤖 Copilot Briefing (14:38)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [여의시스템, Moxa NPort G2 솔루션으로 산업 네트워크 보안 강화](http://www.boannews.com/media/view.asp?idx=141518&kind=&sub_kind=)
 - [중국, ‘국가 안보’ 이유로 미국·이스라엘 보안 제품 사용 중단 전격 지시](http://www.boannews.com/media/view.asp?idx=141517&kind=&sub_kind=)
 - [에스에스알, SK텔레콤 수주로 통신 3사 ‘그랜드 슬램’ 달성](http://www.boannews.com/media/view.asp?idx=141515&kind=&sub_kind=)
-- [개인정보위, 올해 ‘증거보전명령’ 도입한다... 조사강제력 강화 추진](http://www.boannews.com/media/view.asp?idx=141516&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.6%)
-- **RAM:** `30.2/512 GB` (Used: 5.9%)
+- **vCPU:** `128 vCores` (Load: 39.8%)
+- **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
