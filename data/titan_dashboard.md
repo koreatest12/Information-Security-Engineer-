@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 34 days, 15:11:30
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 34 days, 15:28:01
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.4% | `█████░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.3% | `█████░░░░░░░░░░` |
+| **RAM** | `30.2/512 GB` | 5.9% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 하남 미사에 첫 프리미엄 요양원 ‘쏠라체’ 개소 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE1YZUdZbkJKbTZoVkxsRk52NE9yUUEtdmd1b3A5M1p6UVZjUTZYZVpFcjBHemVNQ19VS0M3cTlhb0pVd1RPb3NIaTZZUDlaSDRodzhmNmVyU3NwSDJlX0FkU21wd0EyNzZKVWJpcEd4VFRIWms?oc=5)
