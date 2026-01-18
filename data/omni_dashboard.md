@@ -1,11 +1,11 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-01-18 16:52:55 | **Version:** `v2026.01.18`
+> **Updated:** 2026-01-18 17:16:10 | **Version:** `v2026.01.18`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 39.1% | `▃▇▅▇▄▄█▄▄▂▄▄▄▃▄▄ ▆▄▅` | Auto-Scaling Check |
-| **BTC Price** | $95,036.00 | `▂▄█▅▄▅▃ ▄▃▂▃▇▆▆▆▂   ` | Market Volatility |
+| **CPU Load** | 38.8% | `▇▅▇▄▄█▄▄▂▄▄▄▃▄▄ ▆▄▅▄` | Auto-Scaling Check |
+| **BTC Price** | $95,006.00 | `▄█▅▄▅▃ ▄▃▂▃▇▆▆▆▂    ` | Market Volatility |
 | **Global Mood** | 0.08 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
@@ -30,8 +30,8 @@
 #### 🌍 World & Politics
 - 😐 [Trump tariff threat over Greenland 'unacceptable', European leaders say](https://www.bbc.com/news/articles/cy4qjwk9n2no?at_medium=RSS&at_campaign=rss)
 - 😐 [Nasa's mega Moon rocket arrives at launch pad for Artemis II mission](https://www.bbc.com/news/articles/cly148lvyevo?at_medium=RSS&at_campaign=rss)
-- 😐 [Greenlanders Protest Trump’s Takeover Plans](https://www.nytimes.com/2026/01/17/world/europe/greenland-denmark-protest-trump-takeover.html)
-- 😐 [Syria Advance on Kurdish-Held Areas as Washington Urges Restraint](https://www.nytimes.com/2026/01/17/world/europe/syrian-kurds-raqqa.html)
+- 😐 [France’s Embassy in Iraq Is a Spoil of Antisemitism, Jewish Family Charges](https://www.nytimes.com/2026/01/18/world/middleeast/jewish-family-iraq-embassy-.html)
+- 😐 [Chimney Sweeps Are Making a Comeback in the U.K. as Energy Costs Climb](https://www.nytimes.com/2026/01/18/world/europe/london-chimney-sweeps-energy-prices.html)
 
 #### 💰 Business & Economy
 - 😐 [Trump threatens to sue JPMorgan Chase for 'debanking' him](https://www.cnbc.com/2026/01/17/trump-jpmorgan-chase-debanking.html)
