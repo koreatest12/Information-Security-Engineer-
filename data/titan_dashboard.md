@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 35 days, 15:12:02
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 35 days, 15:28:10
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.2% | `█████░░░░░░░░░░` |
-| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.1% | `█████░░░░░░░░░░` |
+| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [정상혁 신한은행장 “금융 본업 준수...고객에 선택받는 은행돼야” - 에너지경제신문 모바일](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5mVzlZN1JFbUpaQzFSaFdXOW93ZDNhb0ZFUUxsMjQ0dGw0YUpGR0xCMGVmRFQ1NlpNSjRmNmQ4N2hSam9nOTdWRHp5R1lrSmI0ZHFmN2FNVmx6SVU?oc=5)
-- [月 4만원 넘어도 한국서 대박…"곧 쿠팡 제친다" 파격 전망 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9XM0lfVjZCcWJsaFFBRUJDVk0wLVI4QWpKMkxPM19raTMxUHhuRjBXY1AwZTFVVVRqdkZLT3lpTnF2ZFJVUjdwRXBmakpxNmc?oc=5)
+- ["한화엔진, 내연기관이 밀고 전기 추진체가 끈다…목표가↑"-한국 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE43V3pxa1ZpVm4wX2k4ZnA5NDl3anlpWEFNaFltbGlOaVdfSnpyLXJORFhWeUdKc29LZ1lsYkVTOFlMZ3dBakJOd0poa0hYbDg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
