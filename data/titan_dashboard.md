@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 35 days, 4:09:18
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 35 days, 4:35:36
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
 
-> **Q:** 
+> **Q:** 종합 상황 브리핑
 
 관련 정보 없음
 
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.6% | `█████░░░░░░░░░░` |
-| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.4% | `█████░░░░░░░░░░` |
+| **RAM** | `30.7/512 GB` | 6.0% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [정상혁 신한은행장 “금융 본업 준수...고객에 선택받는 은행돼야” - 에너지경제신문 모바일](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5mVzlZN1JFbUpaQzFSaFdXOW93ZDNhb0ZFUUxsMjQ0dGw0YUpGR0xCMGVmRFQ1NlpNSjRmNmQ4N2hSam9nOTdWRHp5R1lrSmI0ZHFmN2FNVmx6SVU?oc=5)
-- ['K로봇팔'로 선각 공장 통째 자동화…"美와 팩토리 수출까지 협력" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1laEpqY3EycENyQnNJSFZzdlBFdE9tdDg0SmRmRkZtYlM3emVZcVpCTC1BcmZsODdSTDBFV2gwbkR3NGhiaUxlMnZjVlpiLUk?oc=5)
+- ["더는 못 버틴다" 영끌족 결국 백기…'역대급 불장' 경고 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5yc1M1b29LOTlQNUlwc3d4ZmhhU2ZRRTh6X2t4LXJEN1FqTXhlVlFsMFpRV19WdHJrOFB5cTFWczNHODdrS2x3ZDFvdS1hbnM?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
