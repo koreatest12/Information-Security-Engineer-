@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 35 days, 6:06:34
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 35 days, 6:13:16
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,7 +15,7 @@
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
 | **CPU** | `128 vCores` | 38.8% | `█████░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **RAM** | `30.2/512 GB` | 5.9% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [정상혁 신한은행장 “금융 본업 준수...고객에 선택받는 은행돼야” - 에너지경제신문 모바일](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5mVzlZN1JFbUpaQzFSaFdXOW93ZDNhb0ZFUUxsMjQ0dGw0YUpGR0xCMGVmRFQ1NlpNSjRmNmQ4N2hSam9nOTdWRHp5R1lrSmI0ZHFmN2FNVmx6SVU?oc=5)
