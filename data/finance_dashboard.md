@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-18 13:54:05 (KST)
+> **Time:** 2026-01-18 14:17:05 (KST)
 
-### 🤖 Copilot Briefing (13:54)
+### 🤖 Copilot Briefing (14:17)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -22,8 +22,8 @@
 - [“20년 된 낡은 자물쇠 여전해”... 韓 NTLM 노출 자산 6.3만개 ‘빨간불’](http://www.boannews.com/media/view.asp?idx=141546&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 38.3%)
-- **RAM:** `30.7/512 GB` (Used: 6.0%)
+- **vCPU:** `128 vCores` (Load: 37.0%)
+- **RAM:** `33.8/512 GB` (Used: 6.6%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
