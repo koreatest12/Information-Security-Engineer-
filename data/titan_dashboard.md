@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 35 days, 0:02:51
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 35 days, 0:08:54
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.5% | `█████░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.1% | `█████░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [정상혁 “전문역량 차별화로 고객 선택 받아야” - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5TTjZEYUVxNXEwM3hOcm1SelJQTFlHX05LR09RblhFdFZhSkFQQk1vN2hyemFndjF0MUxQWU9HQ0tGVG1SaDlmMjYtQWg0dXNqQWJ0WWpZMnZYZw?oc=5)
+- [정상혁 신한은행장 “금융 본업 준수...고객에 선택받는 은행돼야” - 에너지경제신문 모바일](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5mVzlZN1JFbUpaQzFSaFdXOW93ZDNhb0ZFUUxsMjQ0dGw0YUpGR0xCMGVmRFQ1NlpNSjRmNmQ4N2hSam9nOTdWRHp5R1lrSmI0ZHFmN2FNVmx6SVU?oc=5)
 - [5일 만에 '730억' 사들였다…한국 자산가 '뭉칫돈' 몰린 종목 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5lejZnOEliUGZINmxHTUhBQ1QyVHhVNWlJMkVvcXlkU19MTVAwSzNEaUJYVUU2LU9fd0RCeVBoSzQ0c2Y1OC1wa0ljR2xVb2s?oc=5)
 
 ---
