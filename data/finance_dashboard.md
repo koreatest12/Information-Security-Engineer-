@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-19 17:20:47 (KST)
+> **Time:** 2026-01-19 17:52:51 (KST)
 
-### 🤖 Copilot Briefing (17:20)
+### 🤖 Copilot Briefing (17:52)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [카스퍼스키, 글로벌 보안 기업 평가서 ‘투명성·책임성’ 선도 기업 선정](http://www.boannews.com/media/view.asp?idx=141556&kind=&sub_kind=)
+- [하이크비전, 한국형 전자칠판 ‘WonderHub G2’ 출시](http://www.boannews.com/media/view.asp?idx=141566&kind=&sub_kind=)
 - [시스코 탈로스가 분석한 중국 배후 UAT-8837의 정교한 침투 전술](http://www.boannews.com/media/view.asp?idx=141565&kind=&sub_kind=)
-- [[중동 in K-Security] 아이리스아이디, 글로벌 홍채·얼굴인식 전문업체의 저력 뽐내다](http://www.boannews.com/media/view.asp?idx=141564&kind=&sub_kind=)
-- [HS효성인포메이션시스템, ‘AI 데이터 레이크 고도화’로 스트라드비젼 데이터 학습·검증 효율 개선](http://www.boannews.com/media/view.asp?idx=141561&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.3%)
-- **RAM:** `31.7/512 GB` (Used: 6.2%)
+- **vCPU:** `128 vCores` (Load: 36.9%)
+- **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
