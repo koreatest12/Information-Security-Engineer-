@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 35 days, 17:14:55
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 35 days, 19:18:14
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
 
-> **Q:** 
+> **Q:** 종합 상황 브리핑
 
 관련 정보 없음
 
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.9% | `█████░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.4% | `█████░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한카드, 작년 순익 5천억 못 넘겨…창립 이래 '최악의 해'되나 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE56cWxGT01QYnYxOUl5YmRqN0hVTHR3ZGNuQ3M3OVV5alpocVByMHBLR2w4VS1mbHNqMjlxdE1iVkc3eWdrdmRFdGwydTI3ZGh5c216aTJJa1plQUl0Ylh2cnFKaFlSdUJ0WnBTTG03TXfSAXRBVV95cUxPR005ZXJZaWMxZFZtQkxBZXVCaDBKdXFTcmlYYXNabUJmWnhSb0lNbWh0VzlyYkhxVmstSGU4UXN1Mkl6ZzlqbVZNbDYzVFdFc095QlV3ZFhMWF9PQkYxN1RENmZaXzY5SHJpdkVOZnFadUMxZQ?oc=5)
-- [송파·성동·분당·과천 다 뛰어 넘었다…집값 들썩이는 '이곳' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5YWndWVlZWaUQ4S3lkTUNJa1ZyMS1tb0VEell1MlJJTHFPMlo2NGhLZEUtSHJZckp6SlBJVUp1b2RMZjJlOGs1b0lmU0RmbWM?oc=5)
+- [신한은행, 설 명절 맞아 중소기업에 15조원 자금 공급 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE9xeVFVUF9qVjNNYWRTRlRqWmJCbHR3MXpCWlZWdUt6aF9tbFJDcUhZM0JjTzNTa0xrWmM2TVUxcGktclFfaTBSV0J5Q2NVUk1rRDhvYmlaMlVIWkdIazZRZmVmam42bEQwN3B4UFF6d0hvbWM?oc=5)
+- ["방산업종 내 실적·수주 상대적 우위" 한국항공우주 52주 신고가 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE52cmRGNlJMV1YzVXVNN0luZ1V1MWVneDYwVC10M0gxR2dWbldzR2pTTHdNaFh4YVRIbnNyeHM1ZDlhaWZpemxzeHMxdVhYSDQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
