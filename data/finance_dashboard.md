@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-19 09:58:49 (KST)
+> **Time:** 2026-01-19 12:04:28 (KST)
 
-### 🤖 Copilot Briefing (09:58)
+### 🤖 Copilot Briefing (12:04)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,20 +10,20 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • ['미마 36점' 신한은행, 2차 연장 끝에 BNK 잡고 9연패 탈출 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE94SkFLVWZhZlk0ZGVIN3d1dGFNbXNLMEVQVThDaWwwYTVLNmtoeC10S0ZsOG16RklUelQ0ODBDWEhMU3pKVjJnYkZSUmdYLUZvYXhPNjNLZlg0emPSAWBBVV95cUxOaDFleUIwRFh6NElQWFVVQmxxdGFoS2FicEprcDVtaVhjVHBXU2JyQTRMSjIwQjJVTU9EaHViQTRqRG8tOWJHc25ZdmRMc0tOMnVfd29WUjkzRlhqTk1ZTVo?oc=5)<br>• [정상혁 신한은행장 “금융 본업 준수...고객에 선택받는 은행돼야” - 에너지경제신문 모바일](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5mVzlZN1JFbUpaQzFSaFdXOW93ZDNhb0ZFUUxsMjQ0dGw0YUpGR0xCMGVmRFQ1NlpNSjRmNmQ4N2hSam9nOTdWRHp5R1lrSmI0ZHFmN2FNVmx6SVU?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [[은행권 풍향계] 하나은행 지난해 은행권 퇴직연금 적립금 증가 ‘1위’ 外 - 에너지경제신문 모바일](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5mb2pidFUzNWQ3eVY2NEh1TDAxdndYNk94OWNpeHFMUW9VdXpGZnNxdFhjYk0zcEVRa2NSQnZZelhZcjVlODVRU2JISVpVX3JiOGlzNlVGLUxTMU0?oc=5)<br>• [‘6연승 질주’ 하나은행, 원정서 우리은행 제압...팀 역대 최고 승률 시즌 예약 - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE0yNG9ueldwNzRRVVhaU2QxMk1WX0JGcmhwMm91V2dIa005TlptTEZUS3hDcW9JenlDR2hkSXJKdms5SWxHT3c?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행, 설 맞아 中企 대상 '15.1조원' 포용금융 지원 시행 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFBrclozVldNdGMyX01qQUh6eHVDTm1ZaDdOZ0VWc3JlT1lac3lCeVdjUUU1UWZSbTN2YkxrckZLUjRxLTZ6WHFHakJ3anVVTmM1REg0aE42ZXJBYXVYODV4SWdoVlN4SnNaei1R?oc=5)<br>• [신한은행, 설 명절 맞아 중소기업에 15조 자금 공급 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFByeXlQM21XY08tcmpQLTUtSEt1UnFJUV90ekNjMHZ0WXg0ZTl6MFBWUkpVTjF6X1RiSzFyV1hfSTQyNGRzeUI1WVVuNXBScnc?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [3라운드는 하나은행 천하…MVP는 진안, MIP는 박소희 - 노컷뉴스](https://news.google.com/rss/articles/CBMiUkFVX3lxTFBBTnIzZ3RMUHU0TElRS0YyWDM4NUN1eVZPVFhPbHp0U3ZrOEJiYVVtSUpMRTlFdTMwVXJKdnh5SnlRdU9qSlhsbU84YVdJVGxRVVE?oc=5)<br>• [부천 하나은행 진안, WKBL 3라운드 MVP 선정 - 인천일보](https://news.google.com/rss/articles/CBMib0FVX3lxTE1JQ2x0NnRlYzFfM1pCS21Ua3NPbGpKU19zQUVfeEp5RWM2U05yZXQwWk1kN1lVNDVPOXdIVDdwUFBRVmplX1RqdTR2cHFxbnFWQzJZalcxME8xbTM0T2pRaUJ4dHpMMDRHNTBleENWcw?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [[개인정보 다이어트 ②] 기억 안 나는 가입 내역, ‘개인정보 포털’에서 한눈에 찾자](http://www.boannews.com/media/view.asp?idx=141537&kind=&sub_kind=)
-- [[시큐리티 어워드 코리아] 정삼용 시큐아이 대표, “BLUEMAX와 TARP로  통합 보안 서비스 기업 완성”](http://www.boannews.com/media/view.asp?idx=141339&kind=&sub_kind=)
-- [“AI 디지털 안전 골든타임 지킨다”...KISA 118상담센터 대대적 개편](http://www.boannews.com/media/view.asp?idx=141548&kind=&sub_kind=)
+- [KISIA “SBOM 도구 실증으로 의료기기 글로벌 규제 대비 전략 수립”](http://www.boannews.com/media/view.asp?idx=141555&kind=&sub_kind=)
+- [의무화된 ‘모의해킹’, 기업 보안 새 기준 부상... “뚫려봐야 막는다”](http://www.boannews.com/media/view.asp?idx=141552&kind=&sub_kind=)
+- [美, 대중국 사이버 전략, “방어만으론 한계”... 사이버군 창설 등 공세적 작전 강화 논의](http://www.boannews.com/media/view.asp?idx=141553&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.1%)
-- **RAM:** `33.8/512 GB` (Used: 6.6%)
+- **vCPU:** `128 vCores` (Load: 38.5%)
+- **RAM:** `32.3/512 GB` (Used: 6.3%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
