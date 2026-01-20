@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 36 days, 19:12:42
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 36 days, 20:18:47
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.4% | `█████░░░░░░░░░░` |
-| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.0% | `█████░░░░░░░░░░` |
+| **RAM** | `30.2/512 GB` | 5.9% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한라이프 자회사 신한금융플러스, ‘2026 전략컨벤션’ 개최 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1LcTlxd0JiRkxyT0dUWkpuaWhpUl81Q2tUU2dXSTlqeUtxVEVBU2hmMUxISVQtWUNGczd3bUV4QjgtQlpES2VwUlVVMWo3Zk9TbDhlUkFEak4xdw?oc=5)
+- [신한라이프 자회사형 법인보험대리점 신한금융플러스, 내부통제 고도화 다짐 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTFBadm43Y3pXb0lKZFVaOGJZU3VYVHAzYnpsZFFuSGZmaWM3bTNyb3JqVHBlSTRabzlWclpKWDdXVE9KYTk3UW9JR1VNYnJtbFMwX0gyR0ZzSWxqWDJIekxYV0xWenIzUV9qXzRXZVZCQlZWOGM?oc=5)
 - [IMF, "올해 한국경제1.9% 성장"…선진국 평균보다 높아 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxWFE4YjVVUndzcmExcERjLVZ2RkdnbERVUDZ3b2NDWkZ3RFFLVVVRSUZCWE53N3piQ0p1ekJLaWdoWEFLRVZJN1dHR0NJVmc?oc=5)
 
 ---
