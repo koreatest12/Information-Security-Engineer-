@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 37 days, 13:32:34
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 37 days, 13:53:07
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.4% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.3% | `█████░░░░░░░░░░` |
 | **RAM** | `30.2/512 GB` | 5.9% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융플러스, '2026 전략컨벤션' 개최 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTFBRX1YyQURPNndxTmZIakJLY29QazJWTHhGWHVhdFp5MmlrRjIzdFp5Rmo4cl90T24tYzlxa1I5U2hhNmZrUldza3BQcU55c1ZkWlJN?oc=5)
-- [IMF, "올해 한국경제1.9% 성장"…선진국 평균보다 높아 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxWFE4YjVVUndzcmExcERjLVZ2RkdnbERVUDZ3b2NDWkZ3RFFLVVVRSUZCWE53N3piQ0p1ekJLaWdoWEFLRVZJN1dHR0NJVmc?oc=5)
+- [IMF, "올해 한국경제1.9% 성장"…선진국 평균보다 높아 - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE1uT01FOExmZ09waVJobGdxNjBfZWZfcWdIa1Vyd2RFTExxelhPVEF5d0R5Q2dsZmo3YlRlZkRXUzVfU05UbGc?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
