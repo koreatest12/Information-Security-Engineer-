@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-21 08:36:58 (KST)
+> **Time:** 2026-01-21 08:52:10 (KST)
 
-### 🤖 Copilot Briefing (08:36)
+### 🤖 Copilot Briefing (08:52)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,10 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [오현주 국가안보실 3차장 “보안 투자 인센티브 마련하겠다”... 한국CISO협의회 제17차 정기총회](http://www.boannews.com/media/view.asp?idx=141590&kind=&sub_kind=)
-- [캐나다 투자금융 규제 기관 CIRO, 투자자 75만 명 정보 유출](http://www.boannews.com/media/view.asp?idx=141588&kind=&sub_kind=)
-- [보안 연구원이 해커 안방 점령... DNS 설정 오류 틈타 공격 인프라 역추적](http://www.boannews.com/media/view.asp?idx=141587&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 38.1%)
-- **RAM:** `30.7/512 GB` (Used: 6.0%)
+- **vCPU:** `128 vCores` (Load: 37.4%)
+- **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
