@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-20 13:55:08 (KST)
+> **Time:** 2026-01-20 14:22:37 (KST)
 
-### 🤖 Copilot Briefing (13:55)
+### 🤖 Copilot Briefing (14:22)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [F5, 구글 클라우드용 ‘NGINXaaS’ 출시... 클라우드 네이티브 앱 전송·보안 강화](http://www.boannews.com/media/view.asp?idx=141584&kind=&sub_kind=)
+- [부산시, 어린이 교통안전 강화에 118억원 투자한다](http://www.boannews.com/media/view.asp?idx=141578&kind=&sub_kind=)
 - [‘IP경영분과’로 명칭 변경...KAIPS, 회원사 사업영역 확장 지원](http://www.boannews.com/media/view.asp?idx=141583&kind=&sub_kind=)
-- [이엘피케이뉴, IP 스마트 전송장치 출시](http://www.boannews.com/media/view.asp?idx=141582&kind=&sub_kind=)
-- [[중동 in K-Security] 엣지디엑스, AI 기반 ‘엣지 컴퓨팅 영상 분석’으로 관제 패러다임 전환](http://www.boannews.com/media/view.asp?idx=141579&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 40.4%)
-- **RAM:** `31.2/512 GB` (Used: 6.1%)
+- **vCPU:** `128 vCores` (Load: 37.8%)
+- **RAM:** `34.8/512 GB` (Used: 6.8%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
