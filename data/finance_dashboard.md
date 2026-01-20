@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-20 23:03:17 (KST)
+> **Time:** 2026-01-20 23:45:29 (KST)
 
-### 🤖 Copilot Briefing (23:03)
+### 🤖 Copilot Briefing (23:45)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -11,7 +11,7 @@
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
 | **🔵 신한금융 (은행/투자)** | • [신한은행, 2025년 종합업적평가대회 개최 - 내외뉴스통신](https://news.google.com/rss/articles/CBMibEFVX3lxTE1ac2JKdGZyTG11SFcwWFppenA4ZFpQdFZpX1QzdW9UbXFOT1ZVVWtKRS1tUVBNdjVYZ0FHeXhEeVFkV3kwOFdrZDZNWC1JZXViYXVjTzVNUmdOYjZKeTRBSUpnQjB2dGNKRENJNNIBcEFVX3lxTE1hWnVJZDRpbVpQYWpaT05aM3B4d2JsR3U5OVB5blFyTEJIM0NpQlI2eVlidGUwaUdVbUhzVjd5UnVYVEppVVR1N1ZGWkZnZ20yNWswTEFIVGxTM2JjcnI2UjZ5dU4zMUJlVWZXdHlNekE?oc=5)<br>• [신한은행, 달러→원화 환전 '90% 우대'…외환시장 안정 지원 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE0wYUcweUFFRGltdVpWU1Fnd3hkVXRnWUZ4NGdnaTB4NEtMNjdZcUFrbzNncElHNXNYYWo3WEZ6YzVOanQ2Vl81TnVuNWs5ZDRJaFBn?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [하나은행, '은퇴준비 신호등·은퇴 MBTI' 서비스 출시 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE8zRDI2ZHNwRWJkVHEyS0lLUFpUZm1hM2o0dHlzSHFlUEdsRTdBX3hPZFl3TWNMNGoyUEVQSzA4VVViV2I2eVd5cThqbzd5ZXQ2QlVUdU5GaGNDTWtnWHhuVg?oc=5)<br>• [하나은행, 고객 유형별 ‘은퇴관리 서비스’ 오픈 - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTE1QVFBZOVFuX0FCaGlPQ21PNlNaYmRHWHZPSWlXckxNQWY5OVVLOVZjVDdZX2huR2VUeWhkLWd0dC03a0w0a0sxTTBweVB5TEg2UDlLNThVLU91VmM5NWExQnV1bEZVb09nQzAyYXY3X3YtNDg?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [하나은행, '은퇴준비 신호등·은퇴 MBTI' 서비스 출시 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE8zRDI2ZHNwRWJkVHEyS0lLUFpUZm1hM2o0dHlzSHFlUEdsRTdBX3hPZFl3TWNMNGoyUEVQSzA4VVViV2I2eVd5cThqbzd5ZXQ2QlVUdU5GaGNDTWtnWHhuVg?oc=5)<br>• [하나은행, 고객 유형별 ‘은퇴관리 서비스’ 오픈 - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTE1QVFBZOVFuX0FCaGlPQ21PNlNaYmRHWHZPSWlXckxNQWY5OVVLOVZjVDdZX2huR2VUeWhkLWd0dC03a0w0a0sxTTBweVB5TEg2UDlLNThVLU91VmM5NWExQnV1bEZVb09nQzAyYXY3X3YtNDjSAXdBVV95cUxOTGtFb19YamlrR2R5UndxcFYteExUTi05U3d1TEt6SDlmdXN0UU84VWp2clVhdUJkQzUtRExmR2hTS1ZOdGlpTjdkS1Y1RUNkYy1TMFRHYVhvUnNiRjBqT1h4cEUwc3NDUHFVVWNkVFY3amNYS1pHMA?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
@@ -22,7 +22,7 @@
 - [보안 연구원이 해커 안방 점령... DNS 설정 오류 틈타 공격 인프라 역추적](http://www.boannews.com/media/view.asp?idx=141587&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.0%)
+- **vCPU:** `128 vCores` (Load: 37.2%)
 - **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
