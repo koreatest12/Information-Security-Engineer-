@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-20 20:50:36 (KST)
+> **Time:** 2026-01-20 20:58:50 (KST)
 
-### 🤖 Copilot Briefing (20:50)
+### 🤖 Copilot Briefing (20:58)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -11,7 +11,7 @@
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
 | **🔵 신한금융 (은행/투자)** | • [신한은행, 2025년 종합업적평가대회 개최 - 내외뉴스통신](https://news.google.com/rss/articles/CBMibEFVX3lxTE1ac2JKdGZyTG11SFcwWFppenA4ZFpQdFZpX1QzdW9UbXFOT1ZVVWtKRS1tUVBNdjVYZ0FHeXhEeVFkV3kwOFdrZDZNWC1JZXViYXVjTzVNUmdOYjZKeTRBSUpnQjB2dGNKRENJNNIBcEFVX3lxTE1hWnVJZDRpbVpQYWpaT05aM3B4d2JsR3U5OVB5blFyTEJIM0NpQlI2eVlidGUwaUdVbUhzVjd5UnVYVEppVVR1N1ZGWkZnZ20yNWswTEFIVGxTM2JjcnI2UjZ5dU4zMUJlVWZXdHlNekE?oc=5)<br>• [신한은행, 달러→원화 환전 '90% 우대'…외환시장 안정 지원 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE0wYUcweUFFRGltdVpWU1Fnd3hkVXRnWUZ4NGdnaTB4NEtMNjdZcUFrbzNncElHNXNYYWo3WEZ6YzVOanQ2Vl81TnVuNWs5ZDRJaFBn?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [하나은행, 고객 유형별 ‘은퇴관리 서비스’ 오픈 - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTE1QVFBZOVFuX0FCaGlPQ21PNlNaYmRHWHZPSWlXckxNQWY5OVVLOVZjVDdZX2huR2VUeWhkLWd0dC03a0w0a0sxTTBweVB5TEg2UDlLNThVLU91VmM5NWExQnV1bEZVb09nQzAyYXY3X3YtNDg?oc=5)<br>• [하나은행, ‘은퇴준비 신호등·은퇴 MBTI’ 서비스 출시 - 부산일보](https://news.google.com/rss/articles/CBMidEFVX3lxTE81emtjbkZiZTRrOHM0WDN4WjkxOHJkczM3cVpONXMxWHBDT0tRREI1QTdjVFZBVDVSR1ppT016TjB1R0VvVzNLNmdhbENZSjFyaXVwMm43VkpxRmxaMUotNkVYZ0UyWVRPZGJYSEJRUFhycDFP?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [하나은행, 고객 유형별 ‘은퇴관리 서비스’ 오픈 - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTE1QVFBZOVFuX0FCaGlPQ21PNlNaYmRHWHZPSWlXckxNQWY5OVVLOVZjVDdZX2huR2VUeWhkLWd0dC03a0w0a0sxTTBweVB5TEg2UDlLNThVLU91VmM5NWExQnV1bEZVb09nQzAyYXY3X3YtNDg?oc=5)<br>• [AI 열등생 우리·하나은행 리스크 대응 체계 보완 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9neGZrR25wM2M5LVZZZzllbDRqT3pweXJoaGU2ZFJobXVyMzRIRVQ2NVhJVU5JX2tvSlV2N3NYbXpBX25pMGN4b0NSUndqZFk?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
@@ -22,8 +22,8 @@
 - [보안 연구원이 해커 안방 점령... DNS 설정 오류 틈타 공격 인프라 역추적](http://www.boannews.com/media/view.asp?idx=141587&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.9%)
-- **RAM:** `30.7/512 GB` (Used: 6.0%)
+- **vCPU:** `128 vCores` (Load: 37.6%)
+- **RAM:** `33.8/512 GB` (Used: 6.6%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
