@@ -3,7 +3,7 @@ cryptography==46.0.3
 feedparser==6.0.12
 matplotlib==3.10.8
 numpy==2.4.1
-packaging==25.0
+packaging==26.0
 pandas==3.0.0
 psutil==7.2.1
 pytz==2025.2
