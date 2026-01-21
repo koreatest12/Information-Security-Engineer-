@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-21 14:22:19 (KST)
+> **Time:** 2026-01-21 14:51:03 (KST)
 
-### 🤖 Copilot Briefing (14:22)
+### 🤖 Copilot Briefing (14:51)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [딥페이크 아닌 AI는 안보이는 워터마크 허용... “AI기본법, 진흥 기반 조성”](http://www.boannews.com/media/view.asp?idx=141598&kind=&sub_kind=)
 - [유니온바이오메트릭스, 은행 창구서 ‘도장·돋보기’ 사라진다... AI가 1초 만에 위조 판별](http://www.boannews.com/media/view.asp?idx=141596&kind=&sub_kind=)
 - [타포,  타공 없이 설치 가능한 미니 스마트 도어벨 ‘Tapo D205’ 출시](http://www.boannews.com/media/view.asp?idx=141589&kind=&sub_kind=)
-- [내 블루투스 이어폰이 도청기로? 구글 블루투스 연결 기능 취약점 발견](http://www.boannews.com/media/view.asp?idx=141597&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.6%)
-- **RAM:** `34.8/512 GB` (Used: 6.8%)
+- **vCPU:** `128 vCores` (Load: 37.9%)
+- **RAM:** `33.3/512 GB` (Used: 6.5%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
