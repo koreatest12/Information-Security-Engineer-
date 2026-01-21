@@ -1,11 +1,11 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-01-22 08:01:46 | **Version:** `v2026.01.22`
+> **Updated:** 2026-01-22 08:30:11 | **Version:** `v2026.01.22`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 39.0% | ` █               ▂  ` | Auto-Scaling Check |
-| **BTC Price** | $89,721.00 | `▂▃▃▆▇▇▇  ▂▂▇▇▇▇▇▇█▇▆` | Market Volatility |
+| **CPU Load** | 38.9% | `█               ▂   ` | Auto-Scaling Check |
+| **BTC Price** | $89,919.00 | `▃▃▆▇▇▇  ▂▂▇▇▇▇▇▇█▇▆▇` | Market Volatility |
 | **Global Mood** | -0.01 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
@@ -22,13 +22,13 @@
 - 😐 [Phishing Campaign Zeroes in on LastPass Customers](https://www.darkreading.com/application-security/phishing-campaign-zeroes-lastpass-customers)
 
 #### 🤖 AI & Tech
+- 😐 [Sources: project SGLang spins out as RadixArk with $400M valuation as inference market explodes](https://techcrunch.com/2026/01/21/sources-project-sglang-spins-out-as-radixark-with-400m-valuation-as-inference-market-explodes/)
 - 😐 [A timeline of the US semiconductor market in 2025](https://techcrunch.com/2026/01/21/a-timeline-of-the-u-s-semiconductor-market-in-2025/)
-- 😐 [Todoist’s app now lets you add tasks to your to-do list by speaking to its AI](https://techcrunch.com/2026/01/21/todoists-app-now-lets-you-add-tasks-to-your-to-do-list-by-speaking-to-its-ai/)
 - 😐 [What We Know About the Winter Storm About to Hit the US—and What We Don’t](https://www.wired.com/story/winter-storm-about-to-hit-the-us-snow-freezing-rain/)
 - 😐 [The AI Boom Will Increase US Carbon Emissions—but It Doesn’t Have To](https://www.wired.com/story/the-ai-boom-will-increase-us-carbon-emissions-but-it-doesnt-have-to/)
 
 #### 🌍 World & Politics
-- 😐 [Trump drops tariffs threat over Greenland after Nato talks](https://www.bbc.com/news/articles/cgezx40r7d7o?at_medium=RSS&at_campaign=rss)
+- 😐 [Trump says he has 'framework' of a Greenland deal as he drops Europe tariffs threat](https://www.bbc.com/news/articles/cgezx40r7d7o?at_medium=RSS&at_campaign=rss)
 - 😐 [Faisal Islam: What it was like inside the room with Donald Trump at Davos](https://www.bbc.com/news/articles/cm24vjvy3n1o?at_medium=RSS&at_campaign=rss)
 - 😐 [Majority of Latin Americans Endorsed Trump’s Intervention In Venezuela, Polls Show](https://www.nytimes.com/2026/01/21/world/americas/latin-america-venezuela-us-raid-maduro-polls.html)
 - 🙂 [Live Updates: Trump Drops Tariff Threat Over Greenland After Assailing Europe](https://www.nytimes.com/live/2026/01/21/us/trump-davos-greenland-news)
