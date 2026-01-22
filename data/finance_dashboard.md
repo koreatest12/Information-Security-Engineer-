@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-22 12:17:15 (KST)
+> **Time:** 2026-01-22 13:19:45 (KST)
 
-### 🤖 Copilot Briefing (12:17)
+### 🤖 Copilot Briefing (13:19)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [영국, 사이버 범죄와의 전쟁 선포... 국가 사이버 범죄 신고 서비스 출범](http://www.boannews.com/media/view.asp?idx=141625&kind=&sub_kind=)
+- [특허 기반 R&D 지원한다...지재처, 올해 ‘IP-R&D 사업’ 신청 접수](http://www.boannews.com/media/view.asp?idx=141624&kind=&sub_kind=)
 - [美 병원, ‘디지털 쌍둥이’가 해킹 막는다... 복지부 1900만 달러 투자](http://www.boannews.com/media/view.asp?idx=141622&kind=&sub_kind=)
-- [SKT, CPO가 AI 거버넌스 총괄... “AI기본법 발맞춰 안전·신뢰 확보”](http://www.boannews.com/media/view.asp?idx=141620&kind=&sub_kind=)
-- [LG U플러스, 부산신항에 ‘1cm’ 초정밀 관제... AI로 항만 안전 잡는다](http://www.boannews.com/media/view.asp?idx=141619&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
 - **vCPU:** `128 vCores` (Load: 37.8%)
-- **RAM:** `32.8/512 GB` (Used: 6.4%)
+- **RAM:** `33.3/512 GB` (Used: 6.5%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
