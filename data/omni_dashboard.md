@@ -1,21 +1,21 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-01-22 20:34:08 | **Version:** `v2026.01.22`
+> **Updated:** 2026-01-22 20:50:37 | **Version:** `v2026.01.22`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 38.6% | `▃     █    ▃▃       ` | Auto-Scaling Check |
-| **BTC Price** | $89,910.00 | ` ▅▆▄▆▆▆▆█▆▅▄▅▅▆▇▆▆▆▆` | Market Volatility |
-| **Global Mood** | -0.02 | **Neutral 😐** | Based on 18 Articles |
+| **CPU Load** | 40.0% | `     █    ▃▃       ▃` | Auto-Scaling Check |
+| **BTC Price** | $89,971.00 | `▂▅ ▃▃▄▄█▃▂   ▃▅▄▅▅▃▅` | Market Volatility |
+| **Global Mood** | -0.01 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
-- **RAM:** 6.2% Used
+- **RAM:** 6.1% Used
 - **Disk:** 70.9% Used
 
 ### 📰 Global News Omni-Channel
 #### 🛡️ Cyber Security
+- 😐 [Filling the Most Common Gaps in Google Workspace Security](https://thehackernews.com/2026/01/filling-most-common-gaps-in-google.html)
 - 😐 [Malicious PyPI Package Impersonates SymPy, Deploys XMRig Miner on Linux Hosts](https://thehackernews.com/2026/01/malicious-pypi-package-impersonates.html)
-- 😐 [SmarterMail Auth Bypass Exploited in the Wild Two Days After Patch Release](https://thehackernews.com/2026/01/smartermail-auth-bypass-exploited-in.html)
 - 😐 [Patch Tuesday, January 2026 Edition](https://krebsonsecurity.com/2026/01/patch-tuesday-january-2026-edition/)
 - 😐 [Who Benefited from the Aisuru and Kimwolf Botnets?](https://krebsonsecurity.com/2026/01/who-benefited-from-the-aisuru-and-kimwolf-botnets/)
 - 😐 ['Contagious Interview' Attack Now Delivers Backdoor Via VS Code](https://www.darkreading.com/cyber-risk/contagious-interview-attack-delivers-backdoor)
@@ -28,8 +28,8 @@
 - 😐 [What We Know About the Winter Storm About to Hit the US—and What We Don’t](https://www.wired.com/story/winter-storm-about-to-hit-the-us-snow-freezing-rain/)
 
 #### 🌍 World & Politics
+- 😐 [What we know about Trump's  'framework of future deal' over Greenland](https://www.bbc.com/news/articles/c86vvjxe9z7o?at_medium=RSS&at_campaign=rss)
 - 😐 [Two dead and several missing in New Zealand landslides](https://www.bbc.com/news/articles/cje11x527n4o?at_medium=RSS&at_campaign=rss)
-- 😨 [Trump ratcheted up the Greenland rhetoric - but has he been talked down?](https://www.bbc.com/news/articles/cj3vv1kv1rdo?at_medium=RSS&at_campaign=rss)
 - 🙂 [Live Updates: Trump Hosts ‘Board of Peace’ Signing Ceremony in Davos](https://www.nytimes.com/live/2026/01/22/us/trump-davos-news)
 - 😐 [Trump’s Rift With Europe Is Clear. Europe Must Decide What to Do About It.](https://www.nytimes.com/2026/01/21/world/europe/trump-rift-europe.html)
 
