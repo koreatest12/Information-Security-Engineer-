@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-22 16:45:20 (KST)
+> **Time:** 2026-01-22 16:57:05 (KST)
 
-### 🤖 Copilot Briefing (16:45)
+### 🤖 Copilot Briefing (16:57)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,10 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [과기정통부, ‘AI기본법 지원데스크’서 중소·스타트업 밀착 자문](http://www.boannews.com/media/view.asp?idx=141626&kind=&sub_kind=)
-- [카스퍼스키, e러닝 표준 지원하는 맞춤형 보안 교육 플랫폼 ASAP 공개](http://www.boannews.com/media/view.asp?idx=141630&kind=&sub_kind=)
-- [S2W, ‘온톨로지’로 산업 난제 푼다... 29일 기술 웨비나 개최](http://www.boannews.com/media/view.asp?idx=141631&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 38.3%)
-- **RAM:** `32.3/512 GB` (Used: 6.3%)
+- **vCPU:** `128 vCores` (Load: 38.1%)
+- **RAM:** `34.8/512 GB` (Used: 6.8%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
