@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-23 14:55:36 (KST)
+> **Time:** 2026-01-23 15:20:12 (KST)
 
-### 🤖 Copilot Briefing (14:55)
+### 🤖 Copilot Briefing (15:20)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -11,19 +11,19 @@
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
 | **🔵 신한금융 (은행/투자)** | • ['차은우마저…' 신한은행의 광고모델 잔혹사 - 대한데일리](https://news.google.com/rss/articles/CBMia0FVX3lxTE9NUU1wbjc3TW5LZkZCd2lna0k4R2lfZVlPQWI0RnhvZklTb3dheFlOVUhxSEFWSVBjYlVNNlU2eHplU1AzdUJCeHVZSHFRMzZvSGVQbGdjcDJaZkpBMGJxeVpaQVVOWE1vX1pn?oc=5)<br>• [신한은행, 기업여신 속도전…현장 체감도 높인다 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTE9iYlhwTE5ka1cya0pxWVZaYy1TX25xUGRLdzdNUVloeHlJakp4ai0zSF9kendlbWdKcDlfZVFBNXB2Zlc2ODA4STd1SndIX1pDRk5WY05VNmR2UHFJbUc3WkpWdVNTSWVn0gFsQVVfeXFMTmdXUlBqcERfLTlRMS1uOXk3emlYWDNQbnFZUmFiOExmTmdlOW1nRjB5TmZvQlY2UW9OMFNMeTVMQmRZeUd5dm94NmZNOEQ2dzYwdnQ2d1g2cUtkSkM0NDZFZlI1S2JrSEttcy11?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [하나은행, 현대중공업·무역보험공사와 4000억원 규모 금융지원 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5KN1JYNHZBV3UyYko0R2EzSnk1VF9yQ0JEbFpKN0I0Z2lnTFVyVFpQMnBQZFBicjZjT0xoRml3TmRkWmVCclktd1lWWFkyT1EyT3hZQlpjcC11UdIBVEFVX3lxTE9kNW9JbzFvTVoxVmc3X1Jud3ljdGlwSmR2S2hVdkhsRTYtd2lnM2wyVkhBbGRidnEzdzg2TWdtLUxIY0RTbVBUYnp0bGdVYTVIWjcyNQ?oc=5)<br>• [하나은행, HD현중·무보 손잡았다…'K조선'에 4000억 금융지원 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTE50c3RKY3dScjROWWx1U185MndtaGFDUTRRRWx5bmpLQlZCeDlDdDRZNUtmeHZvWHdtbmpJMjVBdDNob3VvUG5JUzl4bWJHVTdPUFp5M2RHMWw4ZC1uOVVYclZoLTQ2QUVyTi13?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [하나은행, 치고 나가는 기업여신…100조 투입 설계안 보니 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTE9EWDVwUXFIMGtVR1A4bkd4eHpYQmtiNmotS25ILU9XQ29rTzdSSGRmbDNxR3dFQ09zUjdBSUFKY1dKZ1djM0dIb0Q4YXpSQXNkZU4tUUZCMVVkMWVyd0REaVdyMDdYTW1o0gFsQVVfeXFMUDFkcGg2SmtzN2RaU1Fxb1h1dTJXWnZ3Yk5ZMXJnU21GSHc5UmxGVl90OWRNU3g5YWR2NFgyOHY5MUcyX0hUUDF6ZlVPX0hob05VcjBubkd1RHJ0T3VaSmpoSDduNlFoY2VBcUNM?oc=5)<br>• [하나은행, 현대중공업·무역보험공사와 4000억원 규모 금융지원 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5KN1JYNHZBV3UyYko0R2EzSnk1VF9yQ0JEbFpKN0I0Z2lnTFVyVFpQMnBQZFBicjZjT0xoRml3TmRkWmVCclktd1lWWFkyT1EyT3hZQlpjcC11UdIBVEFVX3lxTE9kNW9JbzFvTVoxVmc3X1Jud3ljdGlwSmR2S2hVdkhsRTYtd2lnM2wyVkhBbGRidnEzdzg2TWdtLUxIY0RTbVBUYnp0bGdVYTVIWjcyNQ?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [[Intersec 2026 결산] ‘경계 없는 보안’ 시대, 자율형 AI와 중동발 보안 질서의 재편](http://www.boannews.com/media/view.asp?idx=141645&kind=&sub_kind=)
-- [영상 픽셀 속 악성코드 숨기는 ‘픽셀코드’ 공격 주의보... 탐지 어려워](http://www.boannews.com/media/view.asp?idx=141644&kind=&sub_kind=)
-- [네이버 “AI 시대, 프라이버시가 최우선”... 2025 개인정보보호 리포트 공개](http://www.boannews.com/media/view.asp?idx=141643&kind=&sub_kind=)
+- [진명아이앤씨, 조달청 품질보증조달물품 심사서 2개 품목 최고 A등급 획득](http://www.boannews.com/media/view.asp?idx=141638&kind=&sub_kind=)
+- [AI 헷갈리게 해 딥페이크 생성 막는다](http://www.boannews.com/media/view.asp?idx=141647&kind=&sub_kind=)
+- [[카드뉴스] 무용지물 된 전통 방화벽... AI 트래픽 폭증 시대, ‘AI 식별(Identity)’이 생존 열쇠](http://www.boannews.com/media/view.asp?idx=141646&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 38.0%)
-- **RAM:** `34.3/512 GB` (Used: 6.7%)
+- **vCPU:** `128 vCores` (Load: 37.7%)
+- **RAM:** `33.3/512 GB` (Used: 6.5%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
