@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 39 days, 19:12:35
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 39 days, 20:17:01
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.8% | `█████░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.1% | `███░░░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - ['차은우마저…' 신한은행의 광고모델 잔혹사 - 대한데일리](https://news.google.com/rss/articles/CBMiakFVX3lxTE50TUdZUFI4NTk3aDB5anNmcGdDQURSNk56SUg2WVBVRlJ5Z0JCSlhSUWxzbjFwRFJYRURaNjhOZnU0blM3MEFVRTVscDJ0eTFBNTRKWlJpNVpzTTJPekFyb0otbGVVV2FKc3c?oc=5)
-- [한국경제 4분기 역성장…건설투자 부진·순수출 감소가 원인 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE10YmVTYXFNWVp2dmZTVXg3RU92eFRNbnV1OEZyeFhyUE1SWV84Uk03d1RjTExmUVpvYTlpX0o5ck1faW5nLWxnTjF5VEVQaVU?oc=5)
+- [코스피 5000·4분기 역성장…한국경제 '명암' - 뉴스토마토](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Sa0hUVjdjOEpXbDlqUEQxN2ZDTm5aMURobGFyQUgtY0NnbGc5dk1VSXFJQW9QbTVhQWx6N1lSa2FSRHAzelc5c0lkMlJIYVBjSFF4ZEpHcUJSbENkY0ZrNA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
