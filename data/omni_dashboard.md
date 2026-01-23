@@ -1,21 +1,21 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-01-23 17:18:03 | **Version:** `v2026.01.23`
+> **Updated:** 2026-01-23 17:49:44 | **Version:** `v2026.01.23`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 38.9% | `█▄ ▇ ▇█▃▇▅▆▃ ▆██▇▆▅▆` | Auto-Scaling Check |
-| **BTC Price** | $89,430.00 | `    ▃▂▃▃▄▇█▆▄▂▅▂▃▃▂▂` | Market Volatility |
-| **Global Mood** | 0.04 | **Neutral 😐** | Based on 18 Articles |
+| **CPU Load** | 38.4% | `▄ ▇ ▇█▃▇▅▆▃ ▆██▇▆▅▆▄` | Auto-Scaling Check |
+| **BTC Price** | $89,229.00 | `   ▃▂▃▃▄▇█▆▄▂▅▂▃▃▂▂ ` | Market Volatility |
+| **Global Mood** | 0.05 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
-- **RAM:** 6.0% Used
+- **RAM:** 6.1% Used
 - **Disk:** 71.2% Used
 
 ### 📰 Global News Omni-Channel
 #### 🛡️ Cyber Security
+- 😐 [Microsoft Flags Multi-Stage AitM Phishing and BEC Attacks Targeting Energy Firms](https://thehackernews.com/2026/01/microsoft-flags-multi-stage-aitm.html)
 - 🙂 [New Osiris Ransomware Emerges as New Strain Using POORTRY Driver in BYOVD Attack](https://thehackernews.com/2026/01/new-osiris-ransomware-emerges-as-new.html)
-- 😐 [Critical GNU InetUtils telnetd Flaw Lets Attackers Bypass Login and Gain Root Access](https://thehackernews.com/2026/01/critical-gnu-inetutils-telnetd-flaw.html)
 - 😐 [Kimwolf Botnet Lurking in Corporate, Govt. Networks](https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/)
 - 😐 [Patch Tuesday, January 2026 Edition](https://krebsonsecurity.com/2026/01/patch-tuesday-january-2026-edition/)
 - 😐 [Risky Chinese Electric Buses Spark Aussie Gov't Review](https://www.darkreading.com/cyber-risk/chinese-electric-buses-aussie-govt)
@@ -28,7 +28,7 @@
 - 😐 [What We Know About the Winter Storm About to Hit the US—and What We Don’t](https://www.wired.com/story/winter-storm-about-to-hit-the-us-snow-freezing-rain/)
 
 #### 🌍 World & Politics
-- 😐 [Could Trump's bid to become peacemaker-in-chief sideline the struggling UN?](https://www.bbc.com/news/articles/cn8jj228g2vo?at_medium=RSS&at_campaign=rss)
+- 🙂 [Could Trump's new Board of Peace sideline the struggling UN?](https://www.bbc.com/news/articles/cn8jj228g2vo?at_medium=RSS&at_campaign=rss)
 - 😐 [Eight surprise takeaways from the Oscar nominations](https://www.bbc.com/news/articles/cp3zzv40422o?at_medium=RSS&at_campaign=rss)
 - 🙂 [Trump Says Canada Is No Longer Welcome on Peace Board](https://www.nytimes.com/live/2026/01/22/us/trump-davos-news)
 - 😐 [No Beer for You: How British Pubs Fought a Tax Increase](https://www.nytimes.com/2026/01/23/world/europe/uk-pubs-rates-u-turn.html)
