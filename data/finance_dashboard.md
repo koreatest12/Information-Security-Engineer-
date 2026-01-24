@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-24 09:54:00 (KST)
+> **Time:** 2026-01-24 11:50:42 (KST)
 
-### 🤖 Copilot Briefing (09:54)
+### 🤖 Copilot Briefing (11:50)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,8 +10,8 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [이선훈 신한투자증권 대표 “올해도 변하지 않은 원칙은 내부통제” - 한국금융신문](https://news.google.com/rss/articles/CBMifEFVX3lxTE04UlBMa1ZEQjdmQ3NPdlJPQ0FwemJWbi1MVUtPUC1hQy1za2o2VThJR0tqN3JxY1hJUzF0RWY1RC1uNEVONks1VXVneG9FaEpvcV8zd0RreUhBSWdOVUdtbmo2U0NkR2x1V1NiR0laU0J5RXdoWDM2MnlGTHY?oc=5)<br>• [신한투자증권, 2026 대비 임부점장 워크숍 개최…'내부통제는 조직의 습관' - 글로벌이코노믹](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVjhLVUNwYzk1MnpQVVkzem1FY0xBMjJSMjJQU096ZmRMMWlpR3hEdHppQWNLREo4Ykx3MHREc3lBMk53clJCU3JnbnV2NEJqM2xfOGlEajhXLVU4cG1vY0I0NnJXU1AxWFcwTW5qVmdvUWRCOHplWS1KT29hVUVONXFkWTVUWmU5?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [하나은행, 치고 나가는 기업여신…100조 투입 설계안 보니 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTE9EWDVwUXFIMGtVR1A4bkd4eHpYQmtiNmotS25ILU9XQ29rTzdSSGRmbDNxR3dFQ09zUjdBSUFKY1dKZ1djM0dIb0Q4YXpSQXNkZU4tUUZCMVVkMWVyd0REaVdyMDdYTW1o0gFsQVVfeXFMUDFkcGg2SmtzN2RaU1Fxb1h1dTJXWnZ3Yk5ZMXJnU21GSHc5UmxGVl90OWRNU3g5YWR2NFgyOHY5MUcyX0hUUDF6ZlVPX0hob05VcjBubkd1RHJ0T3VaSmpoSDduNlFoY2VBcUNM?oc=5)<br>• [하나은행, K-조선 금융지원...수출 공급망 강화 - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTFA1NUxhMFF6Z3RjZmhYVE5VbHFNVHc4bnV4ZVNLYzhBdjg5QnBzeDZQNFlINDBGMHFYb3NNUm1VZkpWN1JKLVV2YlA5aHpkOG42T3VNYXItODU4ckw4Q3M3V2o5MWR4WktKTUlfT3ZPNURibWvSAXdBVV95cUxOc01LcjFRdWZsNER0NHVGMmtNeEdtM1habTJjQkFkRm8xQ3JzWlQxMGlfMFE4WWFEZDBWVEFBQk9MbFFQaGZnZU92REZOS1lHanJXU3FDT29ubWRoNThFTVNVZUlic2pVZlF1bC1jRkpUa1N5Q1Vodw?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • ['차은우마저…' 신한은행의 광고모델 잔혹사 - 대한데일리](https://news.google.com/rss/articles/CBMia0FVX3lxTE9NUU1wbjc3TW5LZkZCd2lna0k4R2lfZVlPQWI0RnhvZklTb3dheFlOVUhxSEFWSVBjYlVNNlU2eHplU1AzdUJCeHVZSHFRMzZvSGVQbGdjcDJaZkpBMGJxeVpaQVVOWE1vX1pn?oc=5)<br>• [“신한 모델 징크스냐”... 김수현→뉴진스→차은우로 잇단 구설 - 조선일보](https://news.google.com/rss/articles/CBMigwFBVV95cUxOUkQtbHVKOWt5OEd2NnlMUktkUWVfMlJvaFNjUmJNckRIbWdaMXFUMVRoQS1wa3BKSk1JMXJ4cFNsb2pRbTdZQ3psWXpQN1Rmd3lSaHF6QW1BQ09fZzNpMDgxVTB0SWxiVThEUVg0b3J5YllZWUppUWRIT0dxVnhiRldXd9IBlwFBVV95cUxOSjYtQTV1Ylh1NlhJci1UN2lJYTVXOUNseU5iLXlmMmlRTTJkTENqSjhZNWo1WFJiUzNocHdsM2NkaTh5eWllOGJLOFNzMXB6QjRtOEZtT0RzbUxlN0F3NWNCa2pXNEwtQUp3ZHRVckk1UXRYU1RGWjFYWnNZbzVCdG9wREZ3SVNKUXdiamlqdWdrQkdYOGlB?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [하나은행, 치고 나가는 기업여신…100조 투입 설계안 보니 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTE9EWDVwUXFIMGtVR1A4bkd4eHpYQmtiNmotS25ILU9XQ29rTzdSSGRmbDNxR3dFQ09zUjdBSUFKY1dKZ1djM0dIb0Q4YXpSQXNkZU4tUUZCMVVkMWVyd0REaVdyMDdYTW1o0gFsQVVfeXFMUDFkcGg2SmtzN2RaU1Fxb1h1dTJXWnZ3Yk5ZMXJnU21GSHc5UmxGVl90OWRNU3g5YWR2NFgyOHY5MUcyX0hUUDF6ZlVPX0hob05VcjBubkd1RHJ0T3VaSmpoSDduNlFoY2VBcUNM?oc=5)<br>• [하나은행, 금융권 최초 『은퇴준비 신호등·은퇴 MBTI』 서비스 출시! - 내외뉴스통신](https://news.google.com/rss/articles/CBMibEFVX3lxTE1Fa2dLellEcW9tX2M0OFpQTl9BV3l1Unh1WF9PMnlGTldQRF9FTUpBQ19TU0ZqQUJLRGdpV3B0Y200NG9rS3Jqb0x0MlFmdm1Qb2dmX2lralgtMU1LN0NzQktHTEZTYTU4ck5lb9IBcEFVX3lxTE1aMVpiQzIzRHAzdFFXbjRWd1hHRDNQVXV3eG1JVWVEbjFHMW4wYUFKdTY1ZVZya2VucDlhcmtMd3RIclhvZFVfOTJVMVlUVklxcnBRV1hCTkgzQU5sUDhTSnVWb0FKaXhFWmxldGlrNUs?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
@@ -22,7 +22,7 @@
 - [개인정보위, 자율주행 AI 데이터 규제 푼다](http://www.boannews.com/media/view.asp?idx=141651&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.4%)
+- **vCPU:** `128 vCores` (Load: 37.9%)
 - **RAM:** `34.3/512 GB` (Used: 6.7%)
 
 ---
