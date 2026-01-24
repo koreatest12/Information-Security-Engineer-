@@ -1,15 +1,15 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-01-25 00:47:40 | **Version:** `v2026.01.25`
+> **Updated:** 2026-01-25 00:54:45 | **Version:** `v2026.01.25`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 39.0% | `█▂ ▃▃▆▃▃▃▂▃▃ ▂▂ ▃▃▃▃` | Auto-Scaling Check |
-| **BTC Price** | $89,205.00 | `▇▇▇▇▇▇▇█▇▅▄▄▅▃▃▃▂▂  ` | Market Volatility |
+| **CPU Load** | 38.8% | `▃ ▃▃█▃▄▄▂▄▃▂▃▃ ▃▃▄▄▃` | Auto-Scaling Check |
+| **BTC Price** | $89,181.00 | `▇▇▇▇▇▇█▇▅▅▅▅▃▃▃▃▃▂  ` | Market Volatility |
 | **Global Mood** | -0.03 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
-- **RAM:** 6.4% Used
+- **RAM:** 6.3% Used
 - **Disk:** 71.2% Used
 
 ### 📰 Global News Omni-Channel
@@ -28,8 +28,8 @@
 - 😐 [What We Know About the Winter Storm About to Hit the US—and What We Don’t](https://www.wired.com/story/winter-storm-about-to-hit-the-us-snow-freezing-rain/)
 
 #### 🌍 World & Politics
+- 😐 [Trump threatens Canada with 100% tariffs over China trade deal](https://www.bbc.com/news/articles/cy4qww3w72lo?at_medium=RSS&at_campaign=rss)
 - 😐 [Two days of peace talks end as Russia continues Ukraine attacks](https://www.bbc.com/news/articles/cwyr6p30054o?at_medium=RSS&at_campaign=rss)
-- 😐 [How Soviet urban planning is helping Russia freeze Ukraine](https://www.bbc.com/news/articles/c338jpk8r1vo?at_medium=RSS&at_campaign=rss)
 - 😐 [How a Year of Trump Changed Britain](https://www.nytimes.com/2026/01/24/world/europe/trump-uk-changes.html)
 - 😐 [Ukraine Expects Answers From Russia as Peace Talks Continue, Zelensky Says](https://www.nytimes.com/2026/01/24/world/europe/ukraine-us-russia-peace-talks.html)
 
