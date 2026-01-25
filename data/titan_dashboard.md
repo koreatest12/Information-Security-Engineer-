@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 42 days, 13:26:29
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 42 days, 13:31:58
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
 
-> **Q:** 종합 상황 브리핑
+> **Q:** 
 
 관련 정보 없음
 
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.7% | `████░░░░░░░░░░░` |
-| **RAM** | `29.7/512 GB` | 5.8% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.7% | `█████░░░░░░░░░░` |
+| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [“신한 모델 징크스냐”... 김수현→뉴진스→차은우로 잇단 구설 - 조선일보](https://news.google.com/rss/articles/CBMigwFBVV95cUxOUkQtbHVKOWt5OEd2NnlMUktkUWVfMlJvaFNjUmJNckRIbWdaMXFUMVRoQS1wa3BKSk1JMXJ4cFNsb2pRbTdZQ3psWXpQN1Rmd3lSaHF6QW1BQ09fZzNpMDgxVTB0SWxiVThEUVg0b3J5YllZWUppUWRIT0dxVnhiRldXd9IBlwFBVV95cUxOSjYtQTV1Ylh1NlhJci1UN2lJYTVXOUNseU5iLXlmMmlRTTJkTENqSjhZNWo1WFJiUzNocHdsM2NkaTh5eWllOGJLOFNzMXB6QjRtOEZtT0RzbUxlN0F3NWNCa2pXNEwtQUp3ZHRVckk1UXRYU1RGWjFYWnNZbzVCdG9wREZ3SVNKUXdiamlqdWdrQkdYOGlB?oc=5)
-- [경제학자 과반 “한국 경제 당분간 1%대 저성장 지속” - 동아일보](https://news.google.com/rss/articles/CBMidkFVX3lxTFBMMXNzcWlQbGxwUXl1bURYdFA1dkdCNXEyeDFtTnptcVpLOUszMVpwNEpIb0pTMzFXYjg3TVZkME9mQnUzbzNFWVdEd01GcVZKYU8tRlVzZk1PSFJQLXd1am0zUXRIZ1FJQllWdW9IQXV4dzEyUlHSAWZBVV95cUxQdWdVYXEtTnoyejRnVVhWeHlfVUc4a2Vkb1dDY0t2OFFXc2RCbTRsdXpKOU11R0dUZ21uempNWVBMMFA5bG9qYlNuMmhpY0VSTVR1YWxiaS1Cblc0V3hoQmhwaFlDR1E?oc=5)
+- ["7억 싸게 팝니다" 급매물까지…버티던 집주인도 '발 동동' - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE1aNWpUUkpJNG5GelVZVnJCT0pHZ0c0MFRkVnphOXVlU0p0aGxQME1lNlFRa1pPVUg3dXVaaWM1Y1RnMk1tX2c?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
