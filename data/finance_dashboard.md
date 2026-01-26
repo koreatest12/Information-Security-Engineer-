@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-26 19:18:14 (KST)
+> **Time:** 2026-01-26 19:49:01 (KST)
 
-### 🤖 Copilot Briefing (19:18)
+### 🤖 Copilot Briefing (19:49)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -11,7 +11,7 @@
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
 | **🔵 신한금융 (은행/투자)** | • [신한은행, 시니어 전용 '최고 年 3.1%' 예금 출시 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBQYjkwVVRBZ2hMbHQtWHFBcmdSOVQ0R3M0S0xmSVhZYndBYlpQRWdnOTlIVDdZbWdOMnUwZ3h5a0ZsRDJKMTY4NXpLWFRZNkxveTNjM1dXc3gzUdIBVEFVX3lxTFBxTzIzR2o5ZTJUVm5ZZlpWaFIzS21rNWw2V2x4S196OXlzUUFTWndBdkZsWXpPQ2x2c1BpcE9EU0dhRlRIRGZhZzZrdlowNE1pa1M2eA?oc=5)<br>• [신한은행, 퇴직연금 '머니무브' 방어…AI·ETF 앞세워 50조 적립 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTE5JMkVwc1EyeFA0bUhOR0psODBUSUhZc2xEdGNheHBVeFJrSE5Qem53UFVfQVdTaEU4aGZVMGhiZElFcXl5bXc4eUM5LURVRWhMR2pudEhkc1NsLXdLU2tnZWtKRE5Dcjda0gFsQVVfeXFMT3lVWUhSMWR0c0NFU0laLVRJdlRSLW5zNFp6RFZ1RERRLUNsZ3NlTjNZY25FTDczUUhnbnBxeU5acU9RYWdSZDh2V0kzbHJhNV9tb3R4dWtadU9FS0tmTDNaWGtWRFlwMXVmVElJ?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [메가존클라우드·하나은행 'AI·클라우드 결합 금융 혁신' 맞손 - 뉴스1](https://news.google.com/rss/articles/CBMiX0FVX3lxTFB5MUVXQ29qNjJ1c1VReGhQalJXRzl4dGlHLVNQMkVUaWFZRU5nUjYzV0RzT2lfUnRPTnJId05wdTNheE95RVJPbWQ0R1dsYWRYMUpoUVBwckt5Y1pxN09R?oc=5)<br>• [경기신보·하나은행, 2250억 원 규모 포용금융 지원 - 서울와이어](https://news.google.com/rss/articles/CBMia0FVX3lxTFAtMERUX0RfWW1sTEREdkN0UjVOUjJyVXBkNHNFSVNGVjNyUG1aajRmZ0JIb2tHajhoZlFNbUNpUjViVlkyak9TQXRuVkJZQnFMVTNDM3BvdXBfWXJhS3pDSkJBT0kxREhsaHJv?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [메가존클라우드·하나은행 'AI·클라우드 결합 금융 혁신' 맞손 - 뉴스1](https://news.google.com/rss/articles/CBMiX0FVX3lxTFB5MUVXQ29qNjJ1c1VReGhQalJXRzl4dGlHLVNQMkVUaWFZRU5nUjYzV0RzT2lfUnRPTnJId05wdTNheE95RVJPbWQ0R1dsYWRYMUpoUVBwckt5Y1pxN09R?oc=5)<br>• [경기신보-하나은행, 포용금융 실천을 위한 ‘150억 특별출연’ - go.seoul.co.kr](https://news.google.com/rss/articles/CBMiakFVX3lxTE4xeEpGcTB0QzBWVXZyWEJoZlExOF83cDg5bFNBN0FOZENxWXFCYldBbHowTjQ0SGZ2Y1hwU0trbFBTaXZoZk5zUmkwbk9MdncyTU1tckVUeDVUaE8xeS1vTUhVU0dFamhfeEE?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
@@ -22,8 +22,8 @@
 - [[국방보안 칼럼] 정적 검증의 토대 위에 ‘실전적 레드팀’의 날개를 달아라](http://www.boannews.com/media/view.asp?idx=141669&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.1%)
-- **RAM:** `31.7/512 GB` (Used: 6.2%)
+- **vCPU:** `128 vCores` (Load: 38.7%)
+- **RAM:** `33.8/512 GB` (Used: 6.6%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
