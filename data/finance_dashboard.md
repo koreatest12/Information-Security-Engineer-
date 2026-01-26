@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-26 10:00:13 (KST)
+> **Time:** 2026-01-26 12:12:38 (KST)
 
-### 🤖 Copilot Briefing (10:00)
+### 🤖 Copilot Briefing (12:12)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,20 +10,20 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [“신한 모델 징크스냐”... 김수현→뉴진스→차은우로 잇단 구설 - 조선일보](https://news.google.com/rss/articles/CBMigwFBVV95cUxOUkQtbHVKOWt5OEd2NnlMUktkUWVfMlJvaFNjUmJNckRIbWdaMXFUMVRoQS1wa3BKSk1JMXJ4cFNsb2pRbTdZQ3psWXpQN1Rmd3lSaHF6QW1BQ09fZzNpMDgxVTB0SWxiVThEUVg0b3J5YllZWUppUWRIT0dxVnhiRldXd9IBlwFBVV95cUxOSjYtQTV1Ylh1NlhJci1UN2lJYTVXOUNseU5iLXlmMmlRTTJkTENqSjhZNWo1WFJiUzNocHdsM2NkaTh5eWllOGJLOFNzMXB6QjRtOEZtT0RzbUxlN0F3NWNCa2pXNEwtQUp3ZHRVckk1UXRYU1RGWjFYWnNZbzVCdG9wREZ3SVNKUXdiamlqdWdrQkdYOGlB?oc=5)<br>• [쏠퀴즈 정답 1월 26일 - bntnews.co.kr](https://news.google.com/rss/articles/CBMiZEFVX3lxTE5uSFZQVm8wMmxNRWN6SUZlLUlsT3lFVkprdFhUR0JNTmJfZzlNS1JHeFl3UGFNbWN2LWNKZm1iMjhuU05Md2JJVnRIVUZseHo4eFVhUjROR2VwYWpGRnhRaWMweGw?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [하나은행, 메가존클라우드와 생산적 금융 지원 맞손 … "글로벌 AI 3강 도약 가속화" - 뉴데일리 경제](https://news.google.com/rss/articles/CBMie0FVX3lxTE5BQkNKaF85RzJOVFFkU3VwbVI3NzQzbjRFM1Nibm5IbEtYM1c3Sy1uaHhEWEEtaUR1aEZzQnpIaE1yVDh0a0ZUSnZpUVNqcmdJYW9zamZjeEZ2dXJxcHQ5cXM4R3NuQUJBTXVyVFI0cFVtZlV6WEdpYW90UQ?oc=5)<br>• [경기신보-하나은행,포용금융 실천위한 ‘150억 특별출연’ - 헤럴드경제](https://news.google.com/rss/articles/CBMiVkFVX3lxTE1XcHZDalNuSGRUVzViZVFhWFZPVC1FNzMydndQSWNBZFpOcUJmMk1nZ1U0STFrdnVuZVdKRWhMZWNaQVpNbVVodTJfX1pZT0ZOOUxHMUJR?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행, 일본환경금융연구소 ‘2025 지속가능금융상’ 글로벌 부문 수상 - 서울와이어](https://news.google.com/rss/articles/CBMibEFVX3lxTE15MFRsTUxTRURoTUlVdG1UX3BjOUlaSTVONWVBTUt0dDhTSnpSSVFlRlNlNzg2eXU3YjF0MV9PMEE3a2dDUm9qejNiS01jTlJlSlBtaS1QSU5ITFlGbTZUT1V2Tml4U2lhRm9icQ?oc=5)<br>• [차은우까지 겹쳤다…신한은행, 모델 구설수에 곤혹 - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE5vQm5kQ0FMekp1cG9jTW5EeVpTMkRCNlQtYTh4amtiaEVPNVo5LU8zR2VNanNNQzhTV1pzNTBKZncxWVB4Unc?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [메가존클라우드·하나은행 'AI·클라우드 결합 금융 혁신' 맞손 - 뉴스1](https://news.google.com/rss/articles/CBMiX0FVX3lxTFB5MUVXQ29qNjJ1c1VReGhQalJXRzl4dGlHLVNQMkVUaWFZRU5nUjYzV0RzT2lfUnRPTnJId05wdTNheE95RVJPbWQ0R1dsYWRYMUpoUVBwckt5Y1pxN09R?oc=5)<br>• [경기신보-하나은행,포용금융 실천위한 ‘150억 특별출연’ - 헤럴드경제](https://news.google.com/rss/articles/CBMiVkFVX3lxTE1XcHZDalNuSGRUVzViZVFhWFZPVC1FNzMydndQSWNBZFpOcUJmMk1nZ1U0STFrdnVuZVdKRWhMZWNaQVpNbVVodTJfX1pZT0ZOOUxHMUJR?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [권위주의 국가 옹호하는 이스라엘 보안 기술? 가자 전쟁 비판 인권 활동가 디지털 포렌식에 쓰여](http://www.boannews.com/media/view.asp?idx=141657&kind=&sub_kind=)
-- [지재처, ‘CEO·연구자용 특허출원 전략’ 발간·배포](http://www.boannews.com/media/view.asp?idx=141656&kind=&sub_kind=)
-- [‘위조 화장품’ 꼼짝 마!...지재처, 식약처·관세청 등과 ‘어벤저스팀’ 공조](http://www.boannews.com/media/view.asp?idx=141655&kind=&sub_kind=)
+- [피싱, 양 줄고 질 높아져... 개인정보 탈취 악성앱 공격 급등](http://www.boannews.com/media/view.asp?idx=141665&kind=&sub_kind=)
+- [SK쉴더스, 글로벌 해킹 대회서 전기차 충전기 보안 취약점 뚫었다](http://www.boannews.com/media/view.asp?idx=141659&kind=&sub_kind=)
+- [펜타시큐리티, 런던 ‘사이버 시큐리티 & 클라우드 엑스포’ 참가](http://www.boannews.com/media/view.asp?idx=141662&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 36.9%)
-- **RAM:** `31.2/512 GB` (Used: 6.1%)
+- **vCPU:** `128 vCores` (Load: 37.1%)
+- **RAM:** `33.3/512 GB` (Used: 6.5%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
