@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-26 20:50:59 (KST)
+> **Time:** 2026-01-26 20:56:07 (KST)
 
-### 🤖 Copilot Briefing (20:50)
+### 🤖 Copilot Briefing (20:56)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,10 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [코닉글로리, 사이버 시큐리티 전문가 김진수 대표 전격 영입](http://www.boannews.com/media/view.asp?idx=141679&kind=&sub_kind=)
+- [[한국정보공학기술사 보안을 論하다-32] 공공·금융 마이데이터 보안과 신뢰 기반 데이터 이동 생태계](http://www.boannews.com/media/view.asp?idx=141676&kind=&sub_kind=)
+- [[국방보안 칼럼] 정적 검증의 토대 위에 ‘실전적 레드팀’의 날개를 달아라](http://www.boannews.com/media/view.asp?idx=141669&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.8%)
-- **RAM:** `30.7/512 GB` (Used: 6.0%)
+- **vCPU:** `128 vCores` (Load: 37.5%)
+- **RAM:** `31.7/512 GB` (Used: 6.2%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
