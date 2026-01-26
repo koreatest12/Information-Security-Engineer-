@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 43 days, 13:02:15
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 43 days, 13:16:32
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.1% | `█████░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.6% | `█████░░░░░░░░░░` |
+| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[2026 금융패러다임 대전환] "新비즈니스 기회 창출"…신한금융, '생산적 금융' 속도 높인다 - econovill.com](https://news.google.com/rss/articles/CBMibEFVX3lxTE1fSEhMNVRqLWZmQjJDQ01iS0s5RlRkUVVCU19xZVhSeS1zU0poV2tQMGpVS3poQkwzSG8wVHhRSS15WlVTMGVaWlhHR3B1cHgyUkUtQ05HaXBHVXkzclE0OVV1ejVGNFhKc1hlWQ?oc=5)
-- ["코스닥 리서치 늘린다더니"…1월 리포트 23% '뚝' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1hN0NWSTdKSkxXVW9TY0x6Ml9XQ2phOFNlc3Jsdll2cDlxTTlsVmdhN2pvaXd2S2N1S2E2RkFwLVRiVHo5RXZ3RFgwei1SR2cyclJzRFFOR1pnd9IBVEFVX3lxTFBXYThydzkzRWhmU0ktZktTVTNmVXE0VUJsM3pyWF9UNngzZjlvXzdLVGt3NUVaZk5aMFVXYkVhRmkwei1FZjllMTV4d3JOTHBNR0FPWQ?oc=5)
+- ['칭찬해, 내 손가락'…'5만전자'에도 끝까지 버텼더니 초대박 [종목+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1NZTkyRVJWNWNQRXMwVkdnQ0tTcHVTSmlUWDhPTHd1NzczdnhsYTIyODl5RDdyUDNIT3B0RXNCa0ZKd2dtQzNsUjM3UnBzNVhpMHdjWjhDa3JrQdIBVEFVX3lxTFA1NTJoeWtkQ1R6d3VuWkhOYjd5RTN2aWRzLWhIM3RsaFY4dnBFOVNxS0NScVJvQ2p4d2kxVDBHTkp6OHVPZHBaTkdVWTNiNU04SUVtRQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
