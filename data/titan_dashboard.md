@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 43 days, 15:32:27
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 43 days, 15:53:46
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.3% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.8% | `█████░░░░░░░░░░` |
 | **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[2026 금융패러다임 대전환] "新비즈니스 기회 창출"…신한금융, '생산적 금융' 속도 높인다 - econovill.com](https://news.google.com/rss/articles/CBMibEFVX3lxTE1fSEhMNVRqLWZmQjJDQ01iS0s5RlRkUVVCU19xZVhSeS1zU0poV2tQMGpVS3poQkwzSG8wVHhRSS15WlVTMGVaWlhHR3B1cHgyUkUtQ05HaXBHVXkzclE0OVV1ejVGNFhKc1hlWQ?oc=5)
-- ['칭찬해, 내 손가락'…'5만전자'에도 끝까지 버텼더니 초대박 [종목+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1NZTkyRVJWNWNQRXMwVkdnQ0tTcHVTSmlUWDhPTHd1NzczdnhsYTIyODl5RDdyUDNIT3B0RXNCa0ZKd2dtQzNsUjM3UnBzNVhpMHdjWjhDa3JrQdIBVEFVX3lxTFA1NTJoeWtkQ1R6d3VuWkhOYjd5RTN2aWRzLWhIM3RsaFY4dnBFOVNxS0NScVJvQ2p4d2kxVDBHTkp6OHVPZHBaTkdVWTNiNU04SUVtRQ?oc=5)
+- [“한국 경제 절친, 일본 아니라 여기라고?”…베트남, 美·中 이어 ‘3대 교역국’ - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1ZnNoR05hS0FuVm9yRzJsb2RqREZiZEc5TFVzdXUya2FjMVcxWDVNajRMam93b3lhd3Jxb0hKcmVGeGJkb1p3enF2VUtTLXpQaVNGQw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
