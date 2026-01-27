@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-27 14:25:09 (KST)
+> **Time:** 2026-01-27 14:49:56 (KST)
 
-### 🤖 Copilot Briefing (14:25)
+### 🤖 Copilot Briefing (14:49)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [이글루코퍼레이션, AI+X 톱 100 선정... “통합 보안 전략 가속”](http://www.boannews.com/media/view.asp?idx=141685&kind=&sub_kind=)
-- [트루엔, 안재천 대표이사 1만2700주 장내매수 “책임경영 실천”](http://www.boannews.com/media/view.asp?idx=141686&kind=&sub_kind=)
-- [2026년, ‘AI 악용한 사이버 위협’과 ‘AI 서비스 노린 공격’ 늘어난다](http://www.boannews.com/media/view.asp?idx=141687&kind=&sub_kind=)
+- [KISA, 자동차 사이버보안 ‘테스트·검증 매뉴얼’ 발간](http://www.boannews.com/media/view.asp?idx=141688&kind=&sub_kind=)
+- [에스에스알 ‘솔리드스텝 CCE’, 공공조달 매출 10년 연속 1위](http://www.boannews.com/media/view.asp?idx=141690&kind=&sub_kind=)
+- [“AIoT의 미래는?” 하이크비전, 2026 AIoT 분야 5대 트렌드 발표](http://www.boannews.com/media/view.asp?idx=141683&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 38.8%)
-- **RAM:** `31.2/512 GB` (Used: 6.1%)
+- **vCPU:** `128 vCores` (Load: 38.6%)
+- **RAM:** `30.2/512 GB` (Used: 5.9%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
