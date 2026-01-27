@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-28 05:54:27 (KST)
+> **Time:** 2026-01-28 06:11:17 (KST)
 
-### 🤖 Copilot Briefing (05:54)
+### 🤖 Copilot Briefing (06:11)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,7 +10,7 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [신한은행, 만 50세 이상 대상 ‘SOL메이트 정기예금’ 출시 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9PNEVlQkRDeHNDWkJscXBVdnhKRTZIMVV5eUNGSU40THpTVUdKRDZ6bWpCU0VLVVFLRTRUbVNrRXJBV2RJWFBHdkMtclRfTjI3Rk5xQnlvTGF1eTYyUGFBRA?oc=5)<br>• ['가와무라 결승점' 삼성생명, 최하위 신한은행 잡고 3연승 - 파이낸셜뉴스](https://news.google.com/rss/articles/CBMiWkFVX3lxTE03Qkx0N2NwNG40MjBjaGF5R2c3Z3BrY181WEdaU2doYW1ZcjA0b3ZjeXB6ak5CTm5DYVNESExpNHRQR0FZUkRmT0dXLWZFSDJlVGVOSFFrS0NLUdIBXkFVX3lxTE5VaEx5MVZ1RUV1ei1NOGhGWEtNRkF6d0FLT0Jlc3FJRHRTTmRZRlhDOVktM2p5aEhEdy1QVTlqQXFKS0tlU0lnUXdPUEY2SnpuOUtXQzU5NFUzeVZvdWc?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행, 만 50세 이상 대상 ‘SOL메이트 정기예금’ 출시 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9PNEVlQkRDeHNDWkJscXBVdnhKRTZIMVV5eUNGSU40THpTVUdKRDZ6bWpCU0VLVVFLRTRUbVNrRXJBV2RJWFBHdkMtclRfTjI3Rk5xQnlvTGF1eTYyUGFBRA?oc=5)<br>• [신한은행, 퇴직연금 '머니무브' 방어…AI·ETF 앞세워 50조 적립 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTE5JMkVwc1EyeFA0bUhOR0psODBUSUhZc2xEdGNheHBVeFJrSE5Qem53UFVfQVdTaEU4aGZVMGhiZElFcXl5bXc4eUM5LURVRWhMR2pudEhkc1NsLXdLU2tnZWtKRE5Dcjda0gFsQVVfeXFMT3lVWUhSMWR0c0NFU0laLVRJdlRSLW5zNFp6RFZ1RERRLUNsZ3NlTjNZY25FTDczUUhnbnBxeU5acU9RYWdSZDh2V0kzbHJhNV9tb3R4dWtadU9FS0tmTDNaWGtWRFlwMXVmVElJ?oc=5)<br> |
 | **🟢 하나금융 (은행/투자)** | • [하나은행, 지역신보와 소상공인 대상 6000억 금융지원 - 뉴스1](https://news.google.com/rss/articles/CBMiU0FVX3lxTE9lNDhpRXZ2SE9Qd09QcFhEemloVHc3aEl1RE9GN2Rpc3ZpcWdWUHdybGRPdVM2MklKeENfU0dkUnhsd28xX3JHaWRlZzRrYUV1NHBj?oc=5)<br>• [[은행권 풍향계] 하나은행, 지역신용보증재단 특별출연...6천억 규모 금융지원 外 - 에너지경제신문 모바일](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Odk5ocmNOQjROVURDTTJ3YXNlc2FFOVJIajFHTllBM01Ud2hfVXVIRjBNTHFsNnNUbGY1c2tLSWJvNUhaVVZ3d0xWcFpPMjUtd3NYd2ZGd2VzRlU?oc=5)<br> |
 
 ### 📰 General & Security News
@@ -22,8 +22,8 @@
 - [‘rmicrosoft’... 눈치채기 힘든 글자 속임수로 마이크로소프트 사칭](http://www.boannews.com/media/view.asp?idx=141692&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 38.0%)
-- **RAM:** `31.2/512 GB` (Used: 6.1%)
+- **vCPU:** `128 vCores` (Load: 37.7%)
+- **RAM:** `30.7/512 GB` (Used: 6.0%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
