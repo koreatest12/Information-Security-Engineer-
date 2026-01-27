@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-27 20:51:09 (KST)
+> **Time:** 2026-01-27 20:59:52 (KST)
 
-### 🤖 Copilot Briefing (20:51)
+### 🤖 Copilot Briefing (20:59)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -22,7 +22,7 @@
 - [‘rmicrosoft’... 눈치채기 힘든 글자 속임수로 마이크로소프트 사칭](http://www.boannews.com/media/view.asp?idx=141692&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.8%)
+- **vCPU:** `128 vCores` (Load: 37.4%)
 - **RAM:** `33.3/512 GB` (Used: 6.5%)
 
 ---
