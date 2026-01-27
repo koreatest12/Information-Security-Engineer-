@@ -1,37 +1,37 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-01-27 18:54:15 | **Version:** `v2026.01.27`
+> **Updated:** 2026-01-27 19:18:01 | **Version:** `v2026.01.27`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 38.4% | `▂  ▅▅▇   ▂▂▂▂▄ ▂█▂  ` | Auto-Scaling Check |
-| **BTC Price** | $87,854.00 | ` ▂▅▅▄▃▇█▅▄▅▄▃▃▅▃▃   ` | Market Volatility |
-| **Global Mood** | 0.00 | **Neutral 😐** | Based on 18 Articles |
+| **CPU Load** | 39.0% | `  ▅▅▇   ▂▂▂▂▄ ▂█▂  ▂` | Auto-Scaling Check |
+| **BTC Price** | $87,901.00 | `▂▅▅▄▃▇█▅▄▅▄▃▃▅▃▃    ` | Market Volatility |
+| **Global Mood** | -0.05 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
-- **RAM:** 6.1% Used
+- **RAM:** 6.0% Used
 - **Disk:** 71.3% Used
 
 ### 📰 Global News Omni-Channel
 #### 🛡️ Cyber Security
 - 😨 [Microsoft Office Zero-Day (CVE-2026-21509) - Emergency Patch Issued for Active Exploitation](https://thehackernews.com/2026/01/microsoft-issues-emergency-patch-for.html)
 - 😐 [Indian Users Targeted in Tax Phishing Campaign Delivering Blackmoon Malware](https://thehackernews.com/2026/01/indian-users-targeted-in-tax-phishing.html)
+- 😐 [Who Operates the Badbox 2.0 Botnet?](https://krebsonsecurity.com/2026/01/who-operates-the-badbox-2-0-botnet/)
 - 😐 [Kimwolf Botnet Lurking in Corporate, Govt. Networks](https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/)
-- 😐 [Patch Tuesday, January 2026 Edition](https://krebsonsecurity.com/2026/01/patch-tuesday-january-2026-edition/)
 - 😐 [Sandworm Blamed for Wiper Attack on Poland Power Grid](https://www.darkreading.com/threat-intelligence/sandworm-wiper-attack-poland-power-grid)
 - 😐 [DPRK's Konni Targets Blockchain Developers With AI-Generated Backdoor](https://www.darkreading.com/cyberattacks-data-breaches/dprks-konni-targets-blockchain-developers-ai-generated-backdoor)
 
 #### 🤖 AI & Tech
+- 😨 [‘Among the worst we’ve seen’: report slams xAI’s Grok over child safety failures](https://techcrunch.com/2026/01/27/among-the-worst-weve-seen-report-slams-xais-grok-over-child-safety-failures/)
 - 😐 [Qualcomm backs SpotDraft to scale on-device contract AI with valuation doubling toward $400M](https://techcrunch.com/2026/01/26/qualcomm-backs-spotdraft-to-scale-on-device-contract-ai-with-valuation-doubling-toward-400m/)
-- 😐 [YouTubers sue Snap for alleged copyright infringement in training its AI models](https://techcrunch.com/2026/01/26/youtubers-sue-snap-for-alleged-copyright-infringement-in-training-its-ai-models/)
 - 🙂 [No One Is Quite Sure Why Ice Is Slippery](https://www.wired.com/story/no-one-is-quite-sure-why-ice-is-slippery/)
 - 😨 [The US Is In For Another Bad Year of Measles Cases](https://www.wired.com/story/the-us-is-in-for-another-bad-year-of-measles-cases/)
 
 #### 🌍 World & Politics
 - 😐 [Immigration chief at centre of Trump's crackdown set to leave Minneapolis](https://www.bbc.com/news/articles/cgrdlr70qg4o?at_medium=RSS&at_campaign=rss)
 - 😐 ['We're all terrified', Minnesotan tells the BBC in tears](https://www.bbc.com/news/videos/crkr1g5vnveo?at_medium=RSS&at_campaign=rss)
+- 🙂 [How Trump’s Threats to Greenland Made Him a Liability for Europe’s Far Right](https://www.nytimes.com/2026/01/27/world/europe/trump-liability-europe-far-right-populists.html)
 - 😐 [All-Night Concerts in War-Ravaged Myanmar](https://www.nytimes.com/2026/01/27/world/asia/myanmar-concert-zat-pwe-war.html)
-- 🙂 [Trump Vows Higher Tariffs for South Korea Months After Trade Deal](https://www.nytimes.com/2026/01/27/world/asia/korea-trump-higher-tariff.html)
 
 #### 💰 Business & Economy
 - 🙂 [China didn’t grab many headlines at Davos, but it's the elephant in the room](https://www.cnbc.com/2026/01/26/china-isnt-grabbing-headlines-at-davos-but-its-the-elephant-in-the-room.html)
