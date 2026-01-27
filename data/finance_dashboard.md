@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-27 16:53:44 (KST)
+> **Time:** 2026-01-27 17:19:15 (KST)
 
-### 🤖 Copilot Briefing (16:53)
+### 🤖 Copilot Briefing (17:19)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -22,7 +22,7 @@
 - [“폴란드 전력망 노린 대규모 공격”... 러시아 샌드웜, 신종 멀웨어 ‘다이노와이퍼’ 투입](http://www.boannews.com/media/view.asp?idx=141689&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.2%)
+- **vCPU:** `128 vCores` (Load: 37.5%)
 - **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
