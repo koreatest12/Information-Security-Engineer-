@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-27 08:59:03 (KST)
+> **Time:** 2026-01-27 10:19:26 (KST)
 
-### 🤖 Copilot Briefing (08:59)
+### 🤖 Copilot Briefing (10:19)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,20 +10,20 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [신한은행, 시니어 전용 '최고 年 3.1%' 예금 출시 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBQYjkwVVRBZ2hMbHQtWHFBcmdSOVQ0R3M0S0xmSVhZYndBYlpQRWdnOTlIVDdZbWdOMnUwZ3h5a0ZsRDJKMTY4NXpLWFRZNkxveTNjM1dXc3gzUdIBVEFVX3lxTFBxTzIzR2o5ZTJUVm5ZZlpWaFIzS21rNWw2V2x4S196OXlzUUFTWndBdkZsWXpPQ2x2c1BpcE9EU0dhRlRIRGZhZzZrdlowNE1pa1M2eA?oc=5)<br>• [신한은행, 퇴직연금 '머니무브' 방어…AI·ETF 앞세워 50조 적립 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTE5JMkVwc1EyeFA0bUhOR0psODBUSUhZc2xEdGNheHBVeFJrSE5Qem53UFVfQVdTaEU4aGZVMGhiZElFcXl5bXc4eUM5LURVRWhMR2pudEhkc1NsLXdLU2tnZWtKRE5Dcjda0gFsQVVfeXFMT3lVWUhSMWR0c0NFU0laLVRJdlRSLW5zNFp6RFZ1RERRLUNsZ3NlTjNZY25FTDczUUhnbnBxeU5acU9RYWdSZDh2V0kzbHJhNV9tb3R4dWtadU9FS0tmTDNaWGtWRFlwMXVmVElJ?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [메가존클라우드, 하나은행과 디지털 혁신 금융 서비스 발굴 '맞손' - 지디넷코리아](https://news.google.com/rss/articles/CBMiVkFVX3lxTE1JNEctSk1kU0FwRU1IbW82dG1BY0R4LVhxS1NSZnBXN0lWSWtfTl8wUDlVMy1qZzRadVVOU3hGY0lOTE50MEpmdWZKSjhUbmdLeWFEU3dR?oc=5)<br>• [하나은행 메가존클라우드에 생산적금융 공급, GPU 구입 지원하고 지분투자 추진 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTFBVTHJ5Rmx2QXUtVm5mZXNLRzRyZC04dzFJaXd3SnExWjlSOXBJS01WN1lic01iT2hNWHR0ZENVUWg4WEFqc2xyMXBIRmc5RkZnWnJJQkRGQmRoaXVJN09aWXNHT2VDNHpxVDRndGwzVmdsbHc?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • ['가와무라 결승점' 삼성생명, 최하위 신한은행 잡고 3연승 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE05R2pWWmNsZ1QxUTNKZWRTeGlBMmo2ZVk2N3Rwc2pOVkJwdTcxSlBWNnZxcllGUFBTQTY4VDJUQldYY3hJMVdZeW5TV2ZWZG8zTGhmZ2NvQ0R3cXfSAWBBVV95cUxOWUhraDQydXFIb2VWWVR3OVNhS3RQSTVvRXE3Z005OEF2VUNHVjQtdFhIVl9DNmFaR3MyNDZ6ZEN2LW5mZTdybldKckM5OGM4YTlndld2aXFPVU1nRU01R0k?oc=5)<br>• [신한은행, 만 50세 이상 대상 'SOL메이트 정기예금' 출시 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTFAxOXcwNWNaOUJXRkozcXhlaEpiZGlNa3JBWTh1X1loUnVVTF9FWVZjOHVQZjhoYW5GSTAwMFNEWXdtdUhySG5EY3RpdHp4M3VVNS1B?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [하나은행, 지역신보와 소상공인 대상 6000억 금융지원 - 뉴스1](https://news.google.com/rss/articles/CBMiU0FVX3lxTE9lNDhpRXZ2SE9Qd09QcFhEemloVHc3aEl1RE9GN2Rpc3ZpcWdWUHdybGRPdVM2MklKeENfU0dkUnhsd28xX3JHaWRlZzRrYUV1NHBj?oc=5)<br>• [하나은행, 지역신용보증재단 특별출연 통해 지역 소상공인 대상 6,000억원 규모 금융지원 실시 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1UZHRiU1JZZUQycWlPRWVxbXFDUEtxUFgxM24wWEtndTFsTXFjYXlOQllkbGFtcGFKMmFqdk9iN0dIVVFYQ3VQVk12YVZsY1BrVGp1NjdFcGFUQdIBVEFVX3lxTE54RHltWlpfMmFHZHNNd25uV0pRZDlWbXdkRnEyYnhMTEhRM21CUHJSRzZPNmJ3VlpQV0VjU0g0NTN5eEtOYy1Xa3U5cFZlSGJqRUhkYg?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [코닉글로리, 사이버 시큐리티 전문가 김진수 대표 전격 영입](http://www.boannews.com/media/view.asp?idx=141679&kind=&sub_kind=)
-- [[한국정보공학기술사 보안을 論하다-32] 공공·금융 마이데이터 보안과 신뢰 기반 데이터 이동 생태계](http://www.boannews.com/media/view.asp?idx=141676&kind=&sub_kind=)
-- [[국방보안 칼럼] 정적 검증의 토대 위에 ‘실전적 레드팀’의 날개를 달아라](http://www.boannews.com/media/view.asp?idx=141669&kind=&sub_kind=)
+- [¡®K-IPÇàÁ¤½Ã½ºÅÛ¡¯, ¿ìÁî“É °£´Ù...ODA 134¾ï ÅõÀÔ](http://www.boannews.com/media/view.asp?idx=141684&kind=&sub_kind=)
+- [[IPÀÎ»ç] Áö½ÄÀç»êÃ³](http://www.boannews.com/media/view.asp?idx=141682&kind=&sub_kind=)
+- [¼ö¼ú´ë ¿À¸¥ °ø°ø Å¬¶ó¿ìµå º¸¾È ÀÎÁõ... ¡°ÁøÈïº¸´Ù º¸¾È Áß½É Æ¯È­ °ËÁõ ÇÊ¿ä¡±](http://www.boannews.com/media/view.asp?idx=141678&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.6%)
-- **RAM:** `33.8/512 GB` (Used: 6.6%)
+- **vCPU:** `128 vCores` (Load: 37.9%)
+- **RAM:** `30.7/512 GB` (Used: 6.0%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
