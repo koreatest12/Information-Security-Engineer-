@@ -1,35 +1,35 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-01-29 02:25:50 | **Version:** `v2026.01.29`
+> **Updated:** 2026-01-29 02:55:05 | **Version:** `v2026.01.29`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 38.3% | ` ▄ ▂ ▂ ▃▂  ▂▃▂ ▂ █  ` | Auto-Scaling Check |
-| **BTC Price** | $89,493.00 | `    ▂▂▃▂▂▄▇▅▇█▄▅▃▂▃▄` | Market Volatility |
-| **Global Mood** | 0.07 | **Neutral 😐** | Based on 18 Articles |
+| **CPU Load** | 39.1% | `▄ ▂ ▂ ▃▂  ▂▃▂ ▂ █  ▂` | Auto-Scaling Check |
+| **BTC Price** | $90,162.00 | `   ▂▂▃▂▂▄▆▅▇▇▄▄▃▂▃▃█` | Market Volatility |
+| **Global Mood** | 0.01 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
-- **RAM:** 6.1% Used
-- **Disk:** 71.3% Used
+- **RAM:** 5.9% Used
+- **Disk:** 37.5% Used
 
 ### 📰 Global News Omni-Channel
 #### 🛡️ Cyber Security
+- 😐 [Russian ELECTRUM Tied to December 2025 Cyber Attack on Polish Power Grid](https://thehackernews.com/2026/01/russian-electrum-tied-to-december-2025.html)
 - 😐 [Critical vm2 Node.js Flaw Allows Sandbox Escape and Arbitrary Code Execution](https://thehackernews.com/2026/01/critical-vm2-nodejs-flaw-allows-sandbox.html)
-- 😐 [Two High-Severity n8n Flaws Allow Authenticated Remote Code Execution](https://thehackernews.com/2026/01/two-high-severity-n8n-flaws-allow.html)
+- 😐 [Who Operates the Badbox 2.0 Botnet?](https://krebsonsecurity.com/2026/01/who-operates-the-badbox-2-0-botnet/)
 - 😐 [Kimwolf Botnet Lurking in Corporate, Govt. Networks](https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/)
-- 😐 [Patch Tuesday, January 2026 Edition](https://krebsonsecurity.com/2026/01/patch-tuesday-january-2026-edition/)
 - 😐 [China-Backed 'PeckBirdy' Takes Flight for Cross-Platform Attacks](https://www.darkreading.com/threat-intelligence/china-backed-peckbirdy-cross-platform-attacks)
 - 😐 [Surging Cyberattacks Boost Latin America to Riskiest Region](https://www.darkreading.com/cyber-risk/surging-cyberattacks-latin-america-riskiest-region)
 
 #### 🤖 AI & Tech
+- 🙂 [Tiny startup Arcee AI built a 400B open source LLM from scratch to best Meta’s Llama](https://techcrunch.com/2026/01/28/tiny-startup-arcee-ai-built-a-400b-open-source-llm-from-scratch-to-best-metas-llama/)
 - 🙂 [With Apple’s new Creator Studio Pro, AI is a tool to aid creation, not replace it](https://techcrunch.com/2026/01/28/with-apples-new-creator-studio-pro-ai-is-a-tool-to-aid-creation-not-replace-it/)
-- 😐 [TechCrunch Disrupt 2026: Plus-one passes are almost gone and only 3 days remain](https://techcrunch.com/2026/01/28/techcrunch-disrupt-2026-plus-one-passes-are-almost-gone-and-only-3-days-remain/)
 - 🙂 [A North Atlantic Right Whale Baby Boom Is On—but the Species Remains at Risk](https://www.wired.com/story/a-north-atlantic-right-whale-baby-boom-is-on-but-the-species-remains-at-risk/)
 - 🙂 [No One Is Quite Sure Why Ice Is Slippery](https://www.wired.com/story/no-one-is-quite-sure-why-ice-is-slippery/)
 
 #### 🌍 World & Politics
 - 😐 [Trump warns Iran 'time is running out' for nuclear deal as US military builds up in Gulf](https://www.bbc.com/news/articles/cly5pd459gko?at_medium=RSS&at_campaign=rss)
-- 😐 [China trip will bring benefits to UK, Starmer insists, ahead of Xi meeting](https://www.bbc.com/news/articles/c4gw47prew7o?at_medium=RSS&at_campaign=rss)
+- 😨 ['Don't take us to a hospital': Iran protesters treated in secret to avoid arrest](https://www.bbc.com/news/articles/c5yx015nkplo?at_medium=RSS&at_campaign=rss)
 - 😨 [Iran Killed Thousands of Protesters. Here Are Five of Their Stories.](https://www.nytimes.com/2026/01/28/world/middleeast/iran-protester-deaths.html)
 - 😐 [In Kherson, Ukraine, Every Step Outside Risks Death by Drone](https://www.nytimes.com/2026/01/28/world/europe/kherson-ukraine-drones-russia.html)
 
@@ -38,8 +38,8 @@
 - 😐 [Airbus, AstraZeneca and HSBC executives join UK's Starmer on high-stakes China trip](https://www.cnbc.com/2026/01/28/keir-starmer-china-visit-business-delegation-2026.html)
 
 #### 🎬 Entertainment & Culture
-- 😐 [CBS News Seeks Buyouts at ‘Evening News’](https://variety.com/2026/tv/news/cbs-evening-news-buyouts-bari-weiss-tony-dokoupil-1236643552/)
-- 🙂 [Bruce Springsteen Releases Protest Song About ICE and ‘State Terror,’ ‘Streets of Minneapolis,’ ‘in Memory of Alex Pretti and Renee Good’](https://variety.com/2026/music/news/bruce-springsteen-streets-of-minneapolis-ice-protest-song-1236643538/)
+- 😨 [Duffer Brothers-Produced Netflix Series ‘Something Very Bad Is Going To Happen’ Sets Release Date (TV News Roundup)](https://variety.com/2026/tv/news/tv-news-roundup-week-of-january-26-1236642437/)
+- 🙂 [Noah Kahan Announces Fourth Album ‘The Great Divide’](https://variety.com/2026/music/news/noah-kahan-announces-new-album-the-great-divide-1236643577/)
 
 ---
 *Generated by Grand Ops Omni-Universe v25.0*
