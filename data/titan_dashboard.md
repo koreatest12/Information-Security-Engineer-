@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 45 days, 2:10:42
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 45 days, 2:34:20
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.2% | `█████░░░░░░░░░░` |
-| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.1% | `████░░░░░░░░░░░` |
+| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한알파리츠, 그룹 시너지로 몸집 키운다…배당 여력도 확대 - 마켓인](https://news.google.com/rss/articles/CBMickFVX3lxTE9peWNUYXlrRlE3TTRFRUhpcDZlc0MwbDNSbGdra3V1cHhIck5DSnVJTUlDOXRuQ1hKa2ZWaUR5TG1TamwyemNDblZNVkxsM0gyVGpWLW1BTGZUSkNmZ09Cc2tiU0ZtUzFSZDRMWGh1UVRvUQ?oc=5)
-- [KB금융, 올해도 박물관·미술관 무료 관람 지원 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBOMGdXX1NmQ2lfZFJNUHJRSmpwaDB4eG1UbF9qZldsVDB0VENMcGRuUWVKaHNWUGFsWHRBUU4xZ2VHdEw0U2ZCS1pYMXFHUVFNdnZ6OHdJY0ZKd9IBVEFVX3lxTE1LOG5ZSi1BVGVZSExadFI2V05vX1luYjJIcmozXzhNNTBIY1dyanVJdUJHMHpWNE9WZXY5RzRodC1UcWlhODFOVDlSNEFUUjQ0dnQ0Xw?oc=5)
+- [트럼프 '약달러' 용인…환율 1420원대 '뚝' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1MX3oydWdRSnpJcU1PZWh2Tk5uVXZSVkExWmhQa01EbV9yMWZRbnk3blVGQWJPWG1lZU5QQ1J0YjhOcVhxNkxsTmEtMTRoMmxMcHp3MlFEZ3VwQdIBVEFVX3lxTE9YdnlpTWU2OU0xQUlDNXo0dHhxT1lFeTd6T0tYQjFtT0tIUjhsemVyaVZEeTgwTk5GMGt3VEN6UDhzT3JjZlVGMk9QUzBXdmNTSldSbA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
