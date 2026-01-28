@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-28 08:58:16 (KST)
+> **Time:** 2026-01-28 10:07:47 (KST)
 
-### 🤖 Copilot Briefing (08:58)
+### 🤖 Copilot Briefing (10:07)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,20 +10,20 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [신한은행, 만 50세 이상 대상 ‘SOL메이트 정기예금’ 출시 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9PNEVlQkRDeHNDWkJscXBVdnhKRTZIMVV5eUNGSU40THpTVUdKRDZ6bWpCU0VLVVFLRTRUbVNrRXJBV2RJWFBHdkMtclRfTjI3Rk5xQnlvTGF1eTYyUGFBRA?oc=5)<br>• [신한은행, 퇴직연금 '머니무브' 방어…AI·ETF 앞세워 50조 적립 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTE5JMkVwc1EyeFA0bUhOR0psODBUSUhZc2xEdGNheHBVeFJrSE5Qem53UFVfQVdTaEU4aGZVMGhiZElFcXl5bXc4eUM5LURVRWhMR2pudEhkc1NsLXdLU2tnZWtKRE5Dcjda0gFsQVVfeXFMT3lVWUhSMWR0c0NFU0laLVRJdlRSLW5zNFp6RFZ1RERRLUNsZ3NlTjNZY25FTDczUUhnbnBxeU5acU9RYWdSZDh2V0kzbHJhNV9tb3R4dWtadU9FS0tmTDNaWGtWRFlwMXVmVElJ?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행, 만 50세 이상 대상 ‘SOL메이트 정기예금’ 출시 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9PNEVlQkRDeHNDWkJscXBVdnhKRTZIMVV5eUNGSU40THpTVUdKRDZ6bWpCU0VLVVFLRTRUbVNrRXJBV2RJWFBHdkMtclRfTjI3Rk5xQnlvTGF1eTYyUGFBRA?oc=5)<br>• [신한은행, 소멸시효 포기 특수채권 2694억원 감면…서민·취약계층 재기 지원 - 서울와이어](https://news.google.com/rss/articles/CBMibEFVX3lxTFAtNEtFQl9VWXFHLTdDa285dTExRFN4RmZjRlhvZ2pwMEgtVEYtV3FITms2VmUwNXY4V0UtTVNSU3M5RkNDYTM1S3N2ZFRSNktTYXRCajItMUx6UmI5cW0yVVdjZEFYZW9xcldUdQ?oc=5)<br> |
 | **🟢 하나금융 (은행/투자)** | • [하나은행, 지역신보와 소상공인 대상 6000억 금융지원 - 뉴스1](https://news.google.com/rss/articles/CBMiU0FVX3lxTE9lNDhpRXZ2SE9Qd09QcFhEemloVHc3aEl1RE9GN2Rpc3ZpcWdWUHdybGRPdVM2MklKeENfU0dkUnhsd28xX3JHaWRlZzRrYUV1NHBj?oc=5)<br>• [[은행권 풍향계] 하나은행, 지역신용보증재단 특별출연...6천억 규모 금융지원 外 - 에너지경제신문 모바일](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Odk5ocmNOQjROVURDTTJ3YXNlc2FFOVJIajFHTllBM01Ud2hfVXVIRjBNTHFsNnNUbGY1c2tLSWJvNUhaVVZ3d0xWcFpPMjUtd3NYd2ZGd2VzRlU?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [상표경찰, 外人 관광객 대상 ‘짝퉁 판매’ 일망타진](http://www.boannews.com/media/view.asp?idx=141710&kind=&sub_kind=)
 - [[배종찬의 보안 빅데이터] 유출 책임보다 미국 로비에 더 혈안이 된 쿠팡](http://www.boannews.com/media/view.asp?idx=141709&kind=&sub_kind=)
 - [“양자 컴퓨팅으로 보안 혁신”... 광자 기반 기술로 양자 기술 상용화 앞당긴다](http://www.boannews.com/media/view.asp?idx=141708&kind=&sub_kind=)
-- [‘rmicrosoft’... 눈치채기 힘든 글자 속임수로 마이크로소프트 사칭](http://www.boannews.com/media/view.asp?idx=141692&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 38.7%)
-- **RAM:** `32.3/512 GB` (Used: 6.3%)
+- **vCPU:** `128 vCores` (Load: 39.3%)
+- **RAM:** `30.7/512 GB` (Used: 6.0%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
