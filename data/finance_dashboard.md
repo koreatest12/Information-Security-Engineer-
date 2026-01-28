@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-29 06:59:40 (KST)
+> **Time:** 2026-01-29 07:18:12 (KST)
 
-### 🤖 Copilot Briefing (06:59)
+### 🤖 Copilot Briefing (07:18)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,10 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [자동화 도구가 아무나 해킹하는 시대... 취약점 악용자 86%가 ‘정체불명’](http://www.boannews.com/media/view.asp?idx=141734&kind=&sub_kind=)
+- [개인정보위, 글로벌 CBPR 인증 수수료 유료화... 심사·인증 체계도 분리](http://www.boannews.com/media/view.asp?idx=141735&kind=&sub_kind=)
+- [케이사인, 파트너 대상 ‘암호화·키 관리’ 기술 웨비나 개최](http://www.boannews.com/media/view.asp?idx=141728&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.3%)
-- **RAM:** `35.3/512 GB` (Used: 6.9%)
+- **vCPU:** `128 vCores` (Load: 37.7%)
+- **RAM:** `32.8/512 GB` (Used: 6.4%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
