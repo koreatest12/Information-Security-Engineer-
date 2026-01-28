@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 44 days, 23:20:11
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 44 days, 23:38:39
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
 
-> **Q:** 
+> **Q:** 종합 상황 브리핑
 
 관련 정보 없음
 
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.5% | `█████░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.7% | `█████░░░░░░░░░░` |
+| **RAM** | `29.7/512 GB` | 5.8% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - ['AI 고속도로' 놓는 신한금융, 3500억 전략펀드 조성 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5ZX1VKNV80ZzhLcXYxYl9HcWtna0FDa3E2TXF0TGhQVXA2NUxoMDZNb3plSndXd19NXzVMZDdsLWFtMGNPYzFRNVZwdm5iZFFRcldad3AtbzJuY3NKdjk2QtIBeEFVX3lxTE10dmYxb0hiOGNITy1HeVhkLU84dGpVZ2IyWUJOeGRlNm1NY19FemZEaEUtR215amJLVHQ4TEl1ZTlyRWRINFduZXRwWGRmaEJycmFqYmFkcXFnaktMWFZiRzRwQUtlYmQtZm4yUTAyZXpLNlFkUjZCYw?oc=5)
-- [GH, 올해 4193억원 발주…"3기 신도시 속도 낸다" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE91cS1mbGo2Vi1GVkIwNjVBcDhoODRQSlZkVURmNmFEbFRVVFJBT3NBTUtLZzU2NGxuOGh2X2Jlcnd6R1p4VjRpRnVkeXo3eE5rQUFyclBteFFWQdIBVEFVX3lxTE14N1FQN2ZnTldpbDcyTXdtMzk3Uzhuem1zbERLLWFRN3dPSUVXdUVrZVEtZjNkdUlhN2ZaUWI4bC1ueXl3bjFOX2lFYWY2dWRvdXN2YQ?oc=5)
+- [노랑풍선, 일본법인 '재정비'… 강원우 신임 대표 선임 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBmalhXWVJZSEZYTDN0VjM5Q3BFaU1CaUlNX3NfLTJXQ0l5REVxckJwUzhhYkFpUmwxOG5mSG1neV9FS2dsX0tETjM0eEQ1VjFFWGMyQW9SMmFSQdIBVEFVX3lxTE5CMzRVOHBxaERIWWxKaklYYnpKZmFkZUZGcVBYSFREVWNxM2cza0wwc1NJVlk4NTFJTzNWczBPSE9kR1hJM0c0bG1JY0xGcWh0cTg2Ug?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
