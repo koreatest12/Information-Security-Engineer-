@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 46 days, 7:10:50
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 46 days, 7:42:04
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.9% | `█████░░░░░░░░░░` |
-| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.8% | `█████░░░░░░░░░░` |
+| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 전북에 자본시장 허브 만든다 - 파이낸셜뉴스](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9oMjI1REtMQjFwOU5Ccld0eFF2dWZqSnZqbmtONnliMEhCemtEOGJFdXpkMWJvMGk2QUZDaS1JcTBMUy0zWmFyazF4aDJZNGJqRW1SaDBTMzB6Z9IBXkFVX3lxTE5reVJjcHlhbXlIaU5DUXZTS2ppMkFYdXhrd0NBLXg2SU5PZ3RqMXBEendoLU1TOUFNZVh3d1I5VUtzRThBanNoRllGaDJiaXJjR3N2LXVjOHZhM2NyblE?oc=5)
-- [5000억어치 사들였는데…"살려달라" 개미들 '비명' 터졌다 - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE00Szd2Unp3MlZFNVF0c29KSXlCYnZnQU04ejF5YWNDaEUxeFRYQzd5YXdLY1BiUHhGLWE1QnpnOWd6RWRYaXc?oc=5)
+- [진옥동의 결단…신한금융, 전주에 '자본시장 허브' 구축 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE1yWjJRa1NjUlhkZnowLURtcllEai1vVk1GQ3BGLXRHRGFUN0NRaWgwWDlGRXJRbl9YVHVDSmx3S2ZtY1UyTjdGdjd1dThNbUFLWmZZ?oc=5)
+- ["덫에 걸렸다" 경고…경제 갉아먹는 '1경2700조 폭탄' 공포 [글로벌 머니 X파일] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9qSG5KSGMtNUpvVTRJa3A5S1NqQzBVRGV4c1B0WXc2NlFmaldFNXlTQnIzRFhCOUxXTlFfV2RhSHhOTGl6MjJUV0FvTzk3am8?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
