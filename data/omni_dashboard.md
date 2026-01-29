@@ -1,21 +1,21 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-01-29 16:05:38 | **Version:** `v2026.01.29`
+> **Updated:** 2026-01-29 16:51:05 | **Version:** `v2026.01.29`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 40.7% | `▂▄▄ ▃▂ ▃  ▃▂▂ ▂▃▃  █` | Auto-Scaling Check |
-| **BTC Price** | $88,212.00 | `█▆▆▅▅▆▃▄▅▅▅▅▅▅▄     ` | Market Volatility |
-| **Global Mood** | -0.05 | **Neutral 😐** | Based on 18 Articles |
+| **CPU Load** | 38.0% | `▄▄ ▃▂ ▃  ▃▂▂ ▂▃▃  █ ` | Auto-Scaling Check |
+| **BTC Price** | $88,241.00 | `▇█▆▇▇▄▆▇▆▆▇▆▆▅      ` | Market Volatility |
+| **Global Mood** | -0.03 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
-- **RAM:** 6.1% Used
-- **Disk:** 71.3% Used
+- **RAM:** 6.2% Used
+- **Disk:** 37.6% Used
 
 ### 📰 Global News Omni-Channel
 #### 🛡️ Cyber Security
+- 😐 [Google Disrupts IPIDEA — One of the World’s Largest Residential Proxy Networks](https://thehackernews.com/2026/01/google-disrupts-ipidea-one-of-worlds.html)
 - 😨 [Fake Moltbot AI Coding Assistant on VS Code Marketplace Drops Malware](https://thehackernews.com/2026/01/fake-moltbot-ai-coding-assistant-on-vs.html)
-- 😐 [Russian ELECTRUM Tied to December 2025 Cyber Attack on Polish Power Grid](https://thehackernews.com/2026/01/russian-electrum-tied-to-december-2025.html)
 - 😐 [Kimwolf Botnet Lurking in Corporate, Govt. Networks](https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/)
 - 😐 [Patch Tuesday, January 2026 Edition](https://krebsonsecurity.com/2026/01/patch-tuesday-january-2026-edition/)
 - 😐 [Months After Patch, WinRAR Bug Poised to Hit SMBs Hardest](https://www.darkreading.com/application-security/months-after-patch-winrar-bug-poised-smbs-hardest)
@@ -28,8 +28,8 @@
 - 😐 [The Doomsday Clock Is Now 85 Seconds to Midnight. Here’s What That Means](https://www.wired.com/story/the-doomsday-clock-is-now-85-seconds-to-midnight-heres-what-that-means/)
 
 #### 🌍 World & Politics
-- 😐 [Trump warns Iran 'time is running out' for nuclear deal as US military builds up in Gulf](https://www.bbc.com/news/articles/cly5pd459gko?at_medium=RSS&at_campaign=rss)
-- 😨 ['Don't take us to a hospital': Iran protesters treated in secret to avoid arrest](https://www.bbc.com/news/articles/c5yx015nkplo?at_medium=RSS&at_campaign=rss)
+- 😐 [What could happen if the US strikes Iran? Here are seven scenarios](https://www.bbc.com/news/articles/ce3kenge1k9o?at_medium=RSS&at_campaign=rss)
+- 😐 [Heavy gunfire and blasts heard near airport in Niger's capital](https://www.bbc.com/news/articles/cvgp47neze4o?at_medium=RSS&at_campaign=rss)
 - 😨 [Iran Killed Thousands of Protesters. Here Are Five of Their Stories.](https://www.nytimes.com/2026/01/28/world/middleeast/iran-protester-deaths.html)
 - 😐 [In Kherson, Ukraine, Every Step Outside Risks Death by Drone](https://www.nytimes.com/2026/01/28/world/europe/kherson-ukraine-drones-russia.html)
 
