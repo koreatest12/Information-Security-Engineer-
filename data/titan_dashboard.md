@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 46 days, 15:33:57
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 46 days, 16:00:30
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
 
-> **Q:** 종합 상황 브리핑
+> **Q:** 
 
 관련 정보 없음
 
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.5% | `█████░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.6% | `█████░░░░░░░░░░` |
+| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 전북에 자본시장 허브 만든다 - 파이낸셜뉴스](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9oMjI1REtMQjFwOU5Ccld0eFF2dWZqSnZqbmtONnliMEhCemtEOGJFdXpkMWJvMGk2QUZDaS1JcTBMUy0zWmFyazF4aDJZNGJqRW1SaDBTMzB6Z9IBXkFVX3lxTE5reVJjcHlhbXlIaU5DUXZTS2ppMkFYdXhrd0NBLXg2SU5PZ3RqMXBEendoLU1TOUFNZVh3d1I5VUtzRThBanNoRllGaDJiaXJjR3N2LXVjOHZhM2NyblE?oc=5)
-- [한경협, 성장전략실·일자리 TF 신설…"한국 경제 체질개선 원년" - 아시아경제](https://news.google.com/rss/articles/CBMiX0FVX3lxTFBoVk51a0Z0MnIwWXBYQjlSRmt3SVAybWVoR3Ita1lYN0lqNEo2a2x1Z1VZQ0lWQTFRQzFPeWlpYzVrcVFrMm1kcGRfVkhpLWlZdG93NnYzN2ZYQ1NBR1o0?oc=5)
+- [진옥동의 결단…신한금융, 전주에 '자본시장 허브' 구축 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE1yWjJRa1NjUlhkZnowLURtcllEai1vVk1GQ3BGLXRHRGFUN0NRaWgwWDlGRXJRbl9YVHVDSmx3S2ZtY1UyTjdGdjd1dThNbUFLWmZZ?oc=5)
+- [靑 "美, 최근 원화 약세 한국 경제 펀더멘털 부합하지 않는다 재확인" - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE5WLU15SWR1YW52aU41bTc2LXVranhLOG5QY2g2OGkwTjlPTkVTaDdFRWNBd055SEZEVWNlVVlFWV9veDRhemhkYlprakNQb3NLWi1FMDNtQkJneWZkeG00eWJILXhOc3VuS3h6X2dlRXnSAXRBVV95cUxOMW0yMEZXd0NnZlNBSmc4elZseGI4MVJQZ25Wd1ZXU0hVNndGbEwybEJiOGFueXFiMUxSeEtSYkYtbFlwbzBnVktyaV9hemVCU092eWxVeUpaNHR4cGZRNjMyQlpmbEpXZ05Lb0FHN0p2dDRYZQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
