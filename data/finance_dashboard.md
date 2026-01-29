@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-30 05:35:12 (KST)
+> **Time:** 2026-01-30 05:58:02 (KST)
 
-### 🤖 Copilot Briefing (05:35)
+### 🤖 Copilot Briefing (05:58)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -22,8 +22,8 @@
 - [국가 연구개발 과제 발목 ‘예타’ 제도 폐지](http://www.boannews.com/media/view.asp?idx=141760&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.5%)
-- **RAM:** `31.7/512 GB` (Used: 6.2%)
+- **vCPU:** `128 vCores` (Load: 37.7%)
+- **RAM:** `34.8/512 GB` (Used: 6.8%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
