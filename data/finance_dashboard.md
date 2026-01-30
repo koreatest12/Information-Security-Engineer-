@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-30 17:33:21 (KST)
+> **Time:** 2026-01-30 18:33:36 (KST)
 
-### 🤖 Copilot Briefing (17:33)
+### 🤖 Copilot Briefing (18:33)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [[인사] 과학기술정보통신부](http://www.boannews.com/media/view.asp?idx=141776&kind=&sub_kind=)
-- [450만 따릉이 사용자 개인정보 유출됐다](http://www.boannews.com/media/view.asp?idx=141775&kind=&sub_kind=)
-- [용인대 RISE 사업단, ‘첨단기술 보호 전략 콘퍼런스’ 성료...“보안은 생존 전략”](http://www.boannews.com/media/view.asp?idx=141757&kind=&sub_kind=)
+- [李대통령, “특허 심사, 초고속으로” 지시](http://www.boannews.com/media/view.asp?idx=141779&kind=&sub_kind=)
+- [韓 특허출원 26만건 첫 돌파…해외 특허출원도 17.6%↑](http://www.boannews.com/media/view.asp?idx=141778&kind=&sub_kind=)
+- [변리사회, “변리사 자격·의무가입 조항 ‘합헌’ 환영”](http://www.boannews.com/media/view.asp?idx=141777&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
 - **vCPU:** `128 vCores` (Load: 37.5%)
-- **RAM:** `31.2/512 GB` (Used: 6.1%)
+- **RAM:** `32.8/512 GB` (Used: 6.4%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
