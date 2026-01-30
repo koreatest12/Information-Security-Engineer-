@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 47 days, 7:40:06
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 47 days, 7:54:07
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
 
-> **Q:** 
+> **Q:** 종합 상황 브리핑
 
 관련 정보 없음
 
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 40.1% | `██████░░░░░░░░░` |
-| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 19.4% | `██░░░░░░░░░░░░░` |
+| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [전북도의원들 "신한금융 등 자산운용 허브 조성 환영" - 노컷뉴스](https://news.google.com/rss/articles/CBMiUkFVX3lxTE1OWW11bXlFNXlONzdjNUNHaHRyVmxUQmFXYmlaUUlBdVJCZnJ3OHlmV3NqNmJIT0hNMmFnallzV05aOTBQVFVRRlVBa3pjV2pyT1E?oc=5)
+- [[속보]신한금융그룹, 전북혁신도시에 ‘비즈니스 전체 밸류체인’ 조성 - jjan.kr](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBuUURIM0FCY2ZRYUF6cGtRaUNCbnFORXEyX0x3SGJIRWtoSWFQOElkdWJSSzYxd3BldDVhVjhUbVp1SUVlRDZmRFNkQUk0WEdsS01VcdIBWEFVX3lxTE9hRHYya1RpZnFaYjFNYmg1UllFMk5MLTlQbi0xNFlzdTIzaFhTejFYUFNQQy1tTnY3eFNReHEyNGtGY1ktb1l0M0FreWlXV2NZQUd6SXFnMEE?oc=5)
 - ['코스피 5000' 시대 맞아 국내 주식 투자서 인기 - 한국경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE9JWVVTNEJYR09IWVlMdWUxMXYzaXU5Q2ZHNktRTnJyRTJHQlZuR1gyUU53OHNRd3FtbFZwcEV4Q3NzZnBUa282SzdBU3E4Y3UwNzBFTNIBVEFVX3lxTE9JWVVTNEJYR09IWVlMdWUxMXYzaXU5Q2ZHNktRTnJyRTJHQlZuR1gyUU53OHNRd3FtbFZwcEV4Q3NzZnBUa282SzdBU3E4Y3UwNzBFTA?oc=5)
 
 ---
