@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-31 13:47:42 (KST)
+> **Time:** 2026-01-31 14:29:05 (KST)
 
-### 🤖 Copilot Briefing (13:47)
+### 🤖 Copilot Briefing (14:29)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
