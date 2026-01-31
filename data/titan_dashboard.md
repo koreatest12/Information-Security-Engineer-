@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 48 days, 6:32:14
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 48 days, 7:01:22
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.5% | `█████░░░░░░░░░░` |
-| **RAM** | `29.7/512 GB` | 5.8% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.3% | `█████░░░░░░░░░░` |
+| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 전북혁신도시에 '자본운용 허브' 구축 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBUZjNhdkdEbFFwN0lLakN6cGoxdUVFejY3ZTkyeDZZQXpWQmNCLW1wWGluTU00YjNEcU5KcDFaZGtSYmdlWWpOQXlIM0JUNHVJNjFXd1VWYXZieC1VeGxTZA?oc=5)
+- [[속보]신한금융그룹, 전북혁신도시에 ‘비즈니스 전체 밸류체인’ 조성 - 전북일보 인터넷신문](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBuUURIM0FCY2ZRYUF6cGtRaUNCbnFORXEyX0x3SGJIRWtoSWFQOElkdWJSSzYxd3BldDVhVjhUbVp1SUVlRDZmRFNkQUk0WEdsS01VcdIBWEFVX3lxTE9hRHYya1RpZnFaYjFNYmg1UllFMk5MLTlQbi0xNFlzdTIzaFhTejFYUFNQQy1tTnY3eFNReHEyNGtGY1ktb1l0M0FreWlXV2NZQUd6SXFnMEE?oc=5)
 - [엔비디아, 오픈AI 145조 투자 보류…"내부 회의론 커져" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qSGVPLVdSUUxIdDc2dmgtZloyU1FKYl9Db0tKcmNTeDU3dDI5bHdNT3ppQV81ZTZIM08zMHFGUlhZbGVMYzk5SVFoSnJtZzQ3eGFvcldPWWt5UdIBVEFVX3lxTE9OWFo5TFZEOHJBTlg0T25Uc1RPSS1EWVQwOVN6MFZQb2txeENjT3NIZHpWR2c3cjdOSXRKSFhqNTRzRGZZbEREaEl6aUpiZVUxRHd4cg?oc=5)
 
 ---
