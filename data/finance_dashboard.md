@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-01-31 19:14:52 (KST)
+> **Time:** 2026-01-31 19:46:35 (KST)
 
-### 🤖 Copilot Briefing (19:14)
+### 🤖 Copilot Briefing (19:46)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,7 +10,7 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [[여자농구 인천전적] KB 76-66 신한은행 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1PZ3hkWXVveWtWNHN1cjlRYVVnUWs4WkRxTlppcE5qemN2WlB6WXFhcTZzRzd1Zlk3eFlIRk1jMmFhQkJQUDFXTUJWaVE5Skc3Q1F5T3RUNFBTelXSAWBBVV95cUxQS2c3dU9yeWktMWQ5ZHNiVEJZTndjcWRQT21rX2s3UU9QTmhYZ1BhWnNTdXVXQXEyNFFfNnM2QmkydHNWdmlXdHBUR0cwYkVFN0ttOU1xMXhrOVoxSmQ2MGc?oc=5)<br>• [여자농구 KB, 신한은행 76-66 제압…박지수·강이슬 40점 합작 - 뉴스1](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBBRjh4VVhHR09jTFlkbUVVSUZwSHlLbndyeGtKbEF1UDBsd1k0YThsRTZWX1I2dWU5azN5R3d2eGdIRk45bmJfYUMxYjV6elhjSnpNbGNrbzVSdw?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행, '청년금융패키지'·'땡겨요'로 상생 우수기관 선정 - 아시아경제](https://news.google.com/rss/articles/CBMiX0FVX3lxTE53Sm5WbG5zYTVzenJqSWtVTkxLcUJnQ1BJQThYdHRsODlwTlpoaVFrODBmMVh2TXFncFAyX044U1pxZG9LV0dSZmxRbWdHQnJYOTVHTkdDRHZFdkVhdlUw?oc=5)<br>• [신한은행, SOL트래블 체크 2주년 이벤트 - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTFB4UUtlX1otQXhaQXFtcTUtLUN1N2RlRXFKV0NTT2J6ZWpuYWNzbExfRnFPTVF3aE9NY1JPdTBMT1JOR21tQkZoM29tMXJIeFRjTVhQLTVVUzhIOUpBVkdMYjk0UElUUmdVc0xVVTVQX0tUdmfSAXdBVV95cUxQajhOU0l1NjJKeVZNNUZpZzhCbGR1cWVkSHhlWEdoZHlLOXl6dGdLSkh1b1FIbko4OHQxZ1lRRXFGX2xPVVE3ZENDS2c3WmY3ODNVby1zMEpzSmhrY3h5U1d1ai1KMFNkaVEyaExxMGtTTFNYVDhZdw?oc=5)<br> |
 | **🟢 하나금융 (은행/투자)** | • [하나은행, 설 명절 맞이 15조원 규모 소상공인·중소기업 특별자금 지원 - 네이트](https://news.google.com/rss/articles/CBMibkFVX3lxTE9PY2cybFZfcnI5UzEtd3JEWmlkdzFRX3E4QkI0ekdMQWxIcGZVaXl0aVVrMkI0WVpHcEJ3RXZSVy1jZEttUnVBeGxtclJhYm1iOFN4MklCd1llajdSZXNfbnJqRnFxZ19oS2JwQmRn?oc=5)<br>• [[Biz&Law] 하나은행 인니 법인장 겨냥한 손배소 각하…法 “청구 부적법” - 서울와이어](https://news.google.com/rss/articles/CBMibEFVX3lxTE02ckN0b0VoWGRLRHZ0WGxoMUpSTHRlVVNya3oyMm1BRndZRnhCNXR4cHVoSUNQNm5KTDc4WHd2MFBVTzJKVHJJTGc1QUQ5SzRISFZaQ0ljZHRGa3NvNEFxTFhtallPTlBJZFhoLQ?oc=5)<br> |
 
 ### 📰 General & Security News
@@ -22,8 +22,8 @@
 - [최다니엘 해킹으로 유튜브 삭제... 유명인 유튜브 탈취해 코인 홍보](http://www.boannews.com/media/view.asp?idx=141782&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.4%)
-- **RAM:** `30.2/512 GB` (Used: 5.9%)
+- **vCPU:** `128 vCores` (Load: 37.8%)
+- **RAM:** `33.3/512 GB` (Used: 6.5%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
