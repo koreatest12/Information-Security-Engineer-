@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-01 19:24:42 (KST)
+> **Time:** 2026-02-01 19:51:50 (KST)
 
-### 🤖 Copilot Briefing (19:24)
+### 🤖 Copilot Briefing (19:51)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,7 +10,7 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [여자농구 선두 하나은행, 최하위 신한은행에 ‘33점 차’ 대승 - 뉴스1](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1yMExyX0l1Y19OTVgzQjVxaWpWbmpXdE13bVlDc19KeGV4ZWpuNUdFOU4yTzFoVEUzVnctdi05R2hGUGlfdVZOaGdJeVFKdUEtQ1pUeURZa0RCZw?oc=5)<br>• [여자농구 선두 하나은행, 신한은행에 33점 차 완승…2위와 2경기 차 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE82RG1DclkzN2FMUjlQYUoycno2VzB1bngxVC1ZejFvSWVxYWpPb3F1amJMN01DN2k1UVFPbUVHVVpJSWlzMHpJNzhkekNrajNiMVVYVF90Q3lpN0Njdnp1NdIBeEFVX3lxTE5SdFU5MTc3bjdDeExzUG1XX2ZPNUg4bWwtVW9TdmROczhwOEhYN0gyaHpvOUpuZlBSbUNQX3IzdTFmd3ByZDAtcHRkbksxeEtaNGZBX1lUekJKOGJsbWRtcGFvcnk1S3BNMUZ5bXh6WDNHRjVzTWFXNA?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [여자농구 선두 하나은행, 최하위 신한은행에 ‘33점 차’ 대승 - 뉴스1](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1yMExyX0l1Y19OTVgzQjVxaWpWbmpXdE13bVlDc19KeGV4ZWpuNUdFOU4yTzFoVEUzVnctdi05R2hGUGlfdVZOaGdJeVFKdUEtQ1pUeURZa0RCZw?oc=5)<br>• [신한은행, 'SOL트래블 체크카드' 2주년 기념 이벤트 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE84NVJTTHBVMWpYN3F0ZzBCWVRXUnNwSWJjOHlGMVdVaEsyd3ZyejNjaGFNQ24wYjJyTUpDLWoyQTlWTnlHSUhyemtnaGJoN09qUzBldVMwZk1xN1N3UUNSONIBeEFVX3lxTE5KWDNvZ2NHejh4Ti1wNE5hWDM1N1RkSzZuLVZ2aTBJMFZoVFRXTFd1RVIxbHB3Y1dBY3Nkb0tmRFN3MnNZNEdjb2hvMkcyd21feXZPbWxLMXFpU05NMkdmd21wT3hERENTc2E0SDZGdm5BOS04c0hPVQ?oc=5)<br> |
 | **🟢 하나금융 (은행/투자)** | • [여자농구 선두 하나은행, 최하위 신한은행에 ‘33점 차’ 대승 - 뉴스1](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1yMExyX0l1Y19OTVgzQjVxaWpWbmpXdE13bVlDc19KeGV4ZWpuNUdFOU4yTzFoVEUzVnctdi05R2hGUGlfdVZOaGdJeVFKdUEtQ1pUeURZa0RCZw?oc=5)<br>• [뛰는 하나은행, 증권·캐피탈은 뒷걸음…함영주 "올해 본격 정상화" - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTE94VElqaWJ6Y2FudVVNQTB1a3pwSUxKUUlxdEt6ellyS0pBcFQ1ZVBFVHJLeE5yVy1XUmtRd01fRFJuSmx0VVQ0MDhDYnZROWplTGh2XzJNSVJ3LXZUaWgtLWlsOWRlY2JlekZJ?oc=5)<br> |
 
 ### 📰 General & Security News
