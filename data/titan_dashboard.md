@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 49 days, 7:04:42
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 49 days, 7:17:52
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,7 +15,7 @@
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
 | **CPU** | `128 vCores` | 39.3% | `█████░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [국민연금 "신한금융 전북혁신도시 자산운용 구축 환영" - 뉴스1](https://news.google.com/rss/articles/CBMiX0FVX3lxTFBzU2x1aWluSVl1VGFpMl9nZU5JTTU1OWFYcWZlQzh6U0pmdF9YQzJ5R0k4X0dwdEx1d3VzWEVvZEhKVGxkT3J4Z1J2bDNpeHBaMC1nMXFDSmhIbkxRYkFJ?oc=5)
