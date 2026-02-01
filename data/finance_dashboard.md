@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-01 16:11:49 (KST)
+> **Time:** 2026-02-01 16:48:44 (KST)
 
-### 🤖 Copilot Briefing (16:11)
+### 🤖 Copilot Briefing (16:48)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [[IP인사] 지식재산처](http://www.boannews.com/media/view.asp?idx=141788&kind=&sub_kind=)
 - [유튜브와 인스타그램 위장한 ‘Arsink’ 스파이웨어, 143개국 공격](http://www.boannews.com/media/view.asp?idx=141786&kind=&sub_kind=)
 - [머스탱 판다의 ‘쿨클라이언트’ 전방위 확산... 아시아 정부 기관 겨냥 ‘스파이 작전’](http://www.boannews.com/media/view.asp?idx=141785&kind=&sub_kind=)
-- [AI 가속화로 주간 사이버 공격 70% 급증... 역대 최고치 기록](http://www.boannews.com/media/view.asp?idx=141784&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
 - **vCPU:** `128 vCores` (Load: 37.8%)
-- **RAM:** `33.3/512 GB` (Used: 6.5%)
+- **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
