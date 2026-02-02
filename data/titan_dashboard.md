@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 49 days, 22:59:37
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 49 days, 23:56:18
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.2% | `█████░░░░░░░░░░` |
-| **RAM** | `30.7/512 GB` | 6.0% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.8% | `█████░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [진옥동 신한금융 회장, 씨티그룹과 디지털 자산·투자금융 협력 논의 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1ERGlPUmhVVUZEUjVZWGNqSmxSZVNIYnRiYWxpSGpPWmotaWZZVHY4ME9RWVBCbWNoUTA4SnVnRzZnTG1YanVMMjU1TEJMWDRGUGwyUHdkbGt3S3pkSkFlTA?oc=5)
-- [녹색의 조건 - 한국경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5uX2t1TlFsTHdjalBMT3lWWHk4b215ZUkwMVdkLWoxLUF1Z2RheTlYbDM4Um5JeXNtMVJ3eE1kS1dZZzRRSGZGY3EyLURKei1lM2JrR9IBVEFVX3lxTE5uX2t1TlFsTHdjalBMT3lWWHk4b215ZUkwMVdkLWoxLUF1Z2RheTlYbDM4Um5JeXNtMVJ3eE1kS1dZZzRRSGZGY3EyLURKei1lM2JrRw?oc=5)
+- [거래소, '코스피 5000 이후 과제' 세미나 개최 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1HSHZhS25taVBOa19nNHRoMTNMa3dVQWY3YjcwY093NDI3VVFUMEMzQklwRXdySnpnN2NoNEhrUnBPdWV0RDFfeUNwV01mSHFZVEZCREM0STdKUdIBVEFVX3lxTE1sNlEyMVp4Z3AxdEFUR05xUUQxVFpXVDhvZUo1b3djOXBKczhaQW9zZ2R2am9JNk1JS0o2UkxjUXZObVVlZFZtd1FRSm9zUWhfRk1kYg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
