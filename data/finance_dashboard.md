@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-03 02:53:52 (KST)
+> **Time:** 2026-02-03 03:29:13 (KST)
 
-### 🤖 Copilot Briefing (02:53)
+### 🤖 Copilot Briefing (03:29)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -22,8 +22,8 @@
 - [국토교통부, ‘스마트도시 규제샌드박스’ 추진... 규제 낮추고 국민 삶의 질 높인다](http://www.boannews.com/media/view.asp?idx=141815&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 38.0%)
-- **RAM:** `30.7/512 GB` (Used: 6.0%)
+- **vCPU:** `128 vCores` (Load: 37.8%)
+- **RAM:** `32.8/512 GB` (Used: 6.4%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
