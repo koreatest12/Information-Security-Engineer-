@@ -1,23 +1,23 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-02-02 17:06:38 | **Version:** `v2026.02.02`
+> **Updated:** 2026-02-02 18:00:06 | **Version:** `v2026.02.02`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 40.7% | `▅▃▃▂ ▂▂▆  █▂▄ ▂▂▂▄ █` | Auto-Scaling Check |
-| **BTC Price** | $76,706.00 | `▇▇▇▇▇▇▇ █▇▇▇▇▇▇▇▇▇▇▇` | Market Volatility |
+| **CPU Load** | 38.9% | `▃▃▂ ▂▂▆  █▂▄ ▂▂▂▄ █▂` | Auto-Scaling Check |
+| **BTC Price** | $76,961.00 | `▇▇▇▇▇▇ █▇▇▇▇▇▇▇▇▇▇▇▇` | Market Volatility |
 | **Global Mood** | -0.02 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
-- **RAM:** 5.8% Used
+- **RAM:** 5.9% Used
 - **Disk:** 37.6% Used
 
 ### 📰 Global News Omni-Channel
 #### 🛡️ Cyber Security
 - 😐 [eScan Antivirus Update Servers Compromised to Deliver Multi-Stage Malware](https://thehackernews.com/2026/02/escan-antivirus-update-servers.html)
 - 😐 [Open VSX Supply Chain Attack Used Compromised Dev Account to Spread GlassWorm](https://thehackernews.com/2026/02/open-vsx-supply-chain-attack-used.html)
-- 😐 [Who Operates the Badbox 2.0 Botnet?](https://krebsonsecurity.com/2026/01/who-operates-the-badbox-2-0-botnet/)
 - 😐 [Kimwolf Botnet Lurking in Corporate, Govt. Networks](https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/)
+- 😐 [Patch Tuesday, January 2026 Edition](https://krebsonsecurity.com/2026/01/patch-tuesday-january-2026-edition/)
 - 😐 [Torq Moves SOCs Beyond SOAR With AI-Powered Hyper Automation](https://www.darkreading.com/remote-workforce/torq-moves-socs-soar-ai-powered-hyper-automation)
 - 😐 [2026: The Year Agentic AI Becomes the Attack-Surface Poster Child](https://www.darkreading.com/threat-intelligence/2026-agentic-ai-attack-surface-poster-child)
 
@@ -30,8 +30,8 @@
 #### 🌍 World & Politics
 - 😨 [Norway's PM agrees crown princess had 'poor judgement' over Epstein links](https://www.bbc.com/news/articles/c1508llzw4qo?at_medium=RSS&at_campaign=rss)
 - 🙂 ['Do you think you're the devil himself?' Epstein questioned in newly released interview](https://www.bbc.com/news/videos/cx20zqw7v9ko?at_medium=RSS&at_campaign=rss)
-- 😐 [What to Know About the Rafah Border Crossing in Gaza](https://www.nytimes.com/2026/02/01/world/middleeast/rafah-crossing-gaza-egypt-israel.html)
-- 😐 [Ukraine Peace Talks Delayed After Russia and U.S. Meet](https://www.nytimes.com/2026/02/01/world/europe/ukraine-russia-us-peace-talks.html)
+- 😐 [Rafah Crossing in Gaza Reopens, Another Step for Fragile Cease-Fire](https://www.nytimes.com/2026/02/02/world/middleeast/gaza-rafah-border-crossing.html)
+- 😐 [How a Village in Italy Became a Slice of Caracas](https://www.nytimes.com/2026/02/02/world/americas/italy-marina-di-camerota-venezuela-migrants.html)
 
 #### 💰 Business & Economy
 - 🙂 [American Express, credit card provider to the wealthy, wants even more high spenders](https://www.cnbc.com/2026/01/30/american-express-credit-card-high-spenders.html)
