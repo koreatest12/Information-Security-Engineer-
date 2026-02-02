@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-02 10:51:02 (KST)
+> **Time:** 2026-02-02 13:11:39 (KST)
 
-### 🤖 Copilot Briefing (10:51)
+### 🤖 Copilot Briefing (13:11)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,20 +10,20 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [신한은행, 'SOL트래블 체크카드' 2주년 기념 이벤트 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE84NVJTTHBVMWpYN3F0ZzBCWVRXUnNwSWJjOHlGMVdVaEsyd3ZyejNjaGFNQ24wYjJyTUpDLWoyQTlWTnlHSUhyemtnaGJoN09qUzBldVMwZk1xN1N3UUNSONIBeEFVX3lxTE5KWDNvZ2NHejh4Ti1wNE5hWDM1N1RkSzZuLVZ2aTBJMFZoVFRXTFd1RVIxbHB3Y1dBY3Nkb0tmRFN3MnNZNEdjb2hvMkcyd21feXZPbWxLMXFpU05NMkdmd21wT3hERENTc2E0SDZGdm5BOS04c0hPVQ?oc=5)<br>• [신한은행, 친환경차 부품 기업 현장 방문…생산적 금융 실행력 강화 - 서울와이어](https://news.google.com/rss/articles/CBMibEFVX3lxTE9TbWxSNHNBWi14OHA2YjBzV01ta3RnV1NLdkMyOXNwdVA4YlVtcldyclJSX045X1otMGRkSWc5NUVDQkRUTm02LWY3NF91ZmtZaWZ6b3p2ZnR0b28yTFRZbnNIdHRoWnVGSmtxQQ?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [하나은행, 생활자금 보호 '생계비계좌' 출시 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBKVXdSQzhlVjVhbjR0WnI1U21xdUNZOEJrQm1XSW1xVEp6UEl0bWZCSVNmcHc1TkJtTzMxUmd5YWpjTjIxX3haSU9tRDNmR1JWRUlQN2lGWlZvUkxmUzJOSdIBeEFVX3lxTE81T2FQRWN3ZTd1R3B0eERMUUJNWnpTMjY2ZzhDbFk5V0RaTmp2M19lY0gtQWhsVHpmaXU2ZTV4TXRBSFVqdkZIYnlna2t3RUNIU1I5LWxWRlQxdkpLTGgxSkEzYkJsR1RHRWpSc0ZDR0F5MG1lLWR1Nw?oc=5)<br>• [하나은행, 250만원 한도 생계비 보호 계좌 출시 - 헤럴드경제](https://news.google.com/rss/articles/CBMiVkFVX3lxTE9FaWE5b2dNeDZYeWdzdXNydkpuemloaEN3azdPQlFoMDlfSGxYVVV2ZWhuVXFidU16UG5ETkwzZ0NnMGxTeEtFRk5hR0NNQU4wYTVPZy13?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행, 친환경차 부품 중견기업 찾아 지원 논의 - 문화일보](https://news.google.com/rss/articles/CBMiUEFVX3lxTFBEWHdROU1wWGZ2eDlZWTFuR2JDd2xUenZpcnNNa1ZqQkk1TDIzZXNRWXZZODdpUlNoWGZpS0M5SjNxUGNfY0N3TVh2Zk9KSnEw?oc=5)<br>• [강원관광재단-신한은행 강원영서본부, '2025-2026 강원 방문의 해' 성공 위해 맞손 - gukjenews.com](https://news.google.com/rss/articles/CBMibkFVX3lxTE9rSUdTcGxVU3NkUU9BdjNzTGZwTERwZkx2WFdFSVh6RjljX0xmSEpJNG10cDJGR29XRW5pcTJUb2ZIMWs0R1g1a3BzWm1zaFpxQzlWTzIxUVhuUkRJQUg4RHFXeDA2NzZoZTNZRWx3?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [하나은행, 250만원 한도 생계비 보호 계좌 출시 - 헤럴드경제](https://news.google.com/rss/articles/CBMiVkFVX3lxTE9FaWE5b2dNeDZYeWdzdXNydkpuemloaEN3azdPQlFoMDlfSGxYVVV2ZWhuVXFidU16UG5ETkwzZ0NnMGxTeEtFRk5hR0NNQU4wYTVPZy13?oc=5)<br>• ['선두' 하나은행, '꼴지' 신한 잡고 신바람 연승 - 조선비즈 - Chosunbiz](https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTUlGUnA4RkQtaDZFWkRuOWh2WnlpRUtHbjdWSTE3NVJ5UW02OEwtem1HOFBNbEo0X25KazlPb2xDbE1qeGVKWi1JRVVyUW1oeXZLN0hxVTROcGlNYnJoQjJzd1ZmdktybDE1ZGtNcGx5bU1SemxmdEs2b25nVnBwUjR3TzZLeGNuTHdN0gGfAUFVX3lxTFB3SlRwc0EyY0E1UDRmNjNPTHFaeWZpTldJRWZVdk13M2FSSzZmX0Y3bEJ3NlBWZHZhM2NKRjhtcXE5VDVXaDRUS0hMS3dGZHBHQTJqQ2ZkZEhZWHhDSnNYRkdnR2FsWW16TGdjTUtUaGNHcERwRVc0Rzh6Qy1qRTFXdTJpMEM0eG5SM3dSRFZYaWg1M2JOMFlyVXZldzBYTQ?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [안랩클라우드메이트, 디지털서비스 이용지원시스템에 생성형 AI 보안 솔루션 등록](http://www.boannews.com/media/view.asp?idx=141797&kind=&sub_kind=)
-- [지재처, 피지컬 AI 등 특허 우선심사 분야 확대](http://www.boannews.com/media/view.asp?idx=141796&kind=&sub_kind=)
-- [SKT “보안대응 매뉴얼 실전형 개편”](http://www.boannews.com/media/view.asp?idx=141793&kind=&sub_kind=)
+- [[인사] 지니언스](http://www.boannews.com/media/view.asp?idx=141803&kind=&sub_kind=)
+- [국정원 ‘AI 대전환’ 인재 확보... 15개 분야 전문 경력직 상시 채용](http://www.boannews.com/media/view.asp?idx=141801&kind=&sub_kind=)
+- [윕스·워트 등 IP정보서비스 기업, 주고객은 中企...AI도입은 번역·검색·분석 순](http://www.boannews.com/media/view.asp?idx=141800&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.5%)
-- **RAM:** `31.7/512 GB` (Used: 6.2%)
+- **vCPU:** `128 vCores` (Load: 40.0%)
+- **RAM:** `30.7/512 GB` (Used: 6.0%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
