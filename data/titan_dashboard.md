@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 51 days, 3:25:26
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 51 days, 4:05:01
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.2% | `█████░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.8% | `█████░░░░░░░░░░` |
+| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융 청년·지방 창업 지원 체계 강화, 진옥동 "지속가능한 생태계 구축" - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE56VFFLT2huRlJwaFdtQXJpY3k1MVk2VDE5Q3IwUUJ0U2UyYjVYaVhnbUs4RjhHZGRDR1A4S1hIbVlQZFFmYkpVNldUODRpc3kyQWxldnBFRjlhaFA1OUd4MTlJSi1wb0ExYjY0eDFiWnR2QVU?oc=5)
