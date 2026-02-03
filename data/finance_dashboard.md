@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-03 19:31:30 (KST)
+> **Time:** 2026-02-03 20:09:20 (KST)
 
-### 🤖 Copilot Briefing (19:31)
+### 🤖 Copilot Briefing (20:09)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,8 +10,8 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [신한은행, 새희망홀씨 선순환 포용금융 프로그램 시행 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5PYWFoMFJSc1NMTjIzR3J0RFNvdG44V1JTU3lxT3VWRkJKNzlXNjREUy13YWhtMWJrRXFkQ1ZmNXBKMzVHb1dVNkdhUDVyM1dBNEpoeHZ4VUp0Zw?oc=5)<br>• [신한은행ㆍ울산신용보증재단, 소상공인에 165억 보증·대출 지원 - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBHVl9GZklpTk9FcUhRSnVHSzQ2aGhxM2k1Qkg3VWRBemRUZ1dnMHc2d2ljU0J4NWhqWEk5SDM2U0taOG95Rk5fbXVzUjFmaTdKb01INg?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [하나은행, 서울시 소상공인 3750억 포용금융 지원 - 헤럴드경제](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5pNGd6ajJWVmlvV2w4TUpsaUR0OGRmcFlBTzU5SEJMZ0sxdWJXekFQajVfWVNELVRSSjhjeGRSd2k5aE1Uc0FiNVl1U0laMXlhRXlyR193?oc=5)<br>• [하나은행, 비이자이익 60% 늘어난 배경…핵심은 '신탁 수수료' - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTE95TlZoWjFlNi1WN3lPc1JPdVY1RXFLX2treWpjcEdpZ09iMG1zV2NDYzdkQm9BdS1pcGdTZW9rMUsxdnBKeE9BcnlPazZUNjBjVzd5M2x6aVEycTFBeVIwcjQyTzdabm100gFsQVVfeXFMTllqMDV0dlF0N3BZQVVxRW5Fa2I2QUZBRE9Pb1p3a1BHZE13cHotd3BxVFJfbGhZX0ZwZmNITE5UTEhqU0ZkMlRYQjhyVUF3SFBWUV9oanc2TXl5ZTJ5NGNQM3ExM3d3SFNDcEs3?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행, ‘새희망홀씨’ 선순환 포용 본격화 - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTE9JTFJmLWRzOVZCYnYzbkVDSnJEcnBxMDdZTzZVXzBINmRBWFRRTEVTWUNJblgyeEtJMDBMZW5CVnJOLUt5Ulh3bkZNLW5mR3pWVUtKVnVHYUdYNlJNdFNWWmJyaVY1VXZIVi15c1p0elVZZ1XSAXdBVV95cUxPRXp0aEVOcm42dkozdDIwaWZLZ3V1clMtdGk5QkFSQVF2T0VzMUN1MEhvMTlCaTFFbzd2bDg0QmhQSUxLT0hNS3NZaTFpZmh0aUgzY19rZnhXczRaeDBsM2hHdTEwcUw0eGhmT1lad2pQeW5MRjV2QQ?oc=5)<br>• [신한은행ㆍ울산신용보증재단, 소상공인에 165억 보증·대출 지원 - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBHVl9GZklpTk9FcUhRSnVHSzQ2aGhxM2k1Qkg3VWRBemRUZ1dnMHc2d2ljU0J4NWhqWEk5SDM2U0taOG95Rk5fbXVzUjFmaTdKb01INg?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [하나은행, 서울 소상공인에 3750억 금융지원…서울신보와 MOU - 아시아경제](https://news.google.com/rss/articles/CBMiX0FVX3lxTE53OG4zWnVjT0hVY2M4Mlo4T1NyTTB1eXlSYTdGTEdYMXZiQ2JPUGZoTHJab0dRQTRfVTN1aWJOaER6eHdTdWFVUjBObkFqdjBfTHVfb3JweGZxNXFPYXY0?oc=5)<br>• [하나은행, 비이자이익 60% 늘어난 배경…핵심은 '신탁 수수료' - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTE95TlZoWjFlNi1WN3lPc1JPdVY1RXFLX2treWpjcEdpZ09iMG1zV2NDYzdkQm9BdS1pcGdTZW9rMUsxdnBKeE9BcnlPazZUNjBjVzd5M2x6aVEycTFBeVIwcjQyTzdabm100gFsQVVfeXFMTllqMDV0dlF0N3BZQVVxRW5Fa2I2QUZBRE9Pb1p3a1BHZE13cHotd3BxVFJfbGhZX0ZwZmNITE5UTEhqU0ZkMlRYQjhyVUF3SFBWUV9oanc2TXl5ZTJ5NGNQM3ExM3d3SFNDcEs3?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
@@ -22,8 +22,8 @@
 - [LG유플러스, 경찰청 손잡고 피싱범 목소리 찾는다... ‘보이스 원티드’ 동참](http://www.boannews.com/media/view.asp?idx=141836&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.9%)
-- **RAM:** `32.3/512 GB` (Used: 6.3%)
+- **vCPU:** `128 vCores` (Load: 37.4%)
+- **RAM:** `32.8/512 GB` (Used: 6.4%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
