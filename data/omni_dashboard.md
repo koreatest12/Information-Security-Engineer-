@@ -1,12 +1,12 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-02-03 18:04:17 | **Version:** `v2026.02.03`
+> **Updated:** 2026-02-03 18:57:47 | **Version:** `v2026.02.03`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 38.0% | `▄▂▃   ▂▂ █▂▂   ▃    ` | Auto-Scaling Check |
-| **BTC Price** | $78,685.00 | `    ▇█▆▆▄▅▆▅▆▅▃ ▅▅▆▅` | Market Volatility |
-| **Global Mood** | -0.00 | **Neutral 😐** | Based on 18 Articles |
+| **CPU Load** | 38.6% | `▂▃   ▂▂ █▂▂   ▃     ` | Auto-Scaling Check |
+| **BTC Price** | $78,353.00 | `   ▇█▆▆▄▅▆▅▆▅▃ ▅▅▆▅▃` | Market Volatility |
+| **Global Mood** | -0.05 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
 - **RAM:** 6.1% Used
@@ -14,10 +14,10 @@
 
 ### 📰 Global News Omni-Channel
 #### 🛡️ Cyber Security
+- 😐 [APT28 Uses Microsoft Office CVE-2026-21509 in Espionage-Focused Malware Attacks](https://thehackernews.com/2026/02/apt28-uses-microsoft-office-cve-2026.html)
 - 😐 [Mozilla Adds One-Click Option to Disable Generative AI Features in Firefox](https://thehackernews.com/2026/02/mozilla-adds-one-click-option-to.html)
-- 😐 [Notepad++ Hosting Breach Attributed to China-Linked Lotus Blossom Hacking Group](https://thehackernews.com/2026/02/notepad-hosting-breach-attributed-to.html)
-- 😐 [Please Don’t Feed the Scattered Lapsus ShinyHunters](https://krebsonsecurity.com/2026/02/please-dont-feed-the-scattered-lapsus-shiny-hunters/)
-- 😐 [Who Operates the Badbox 2.0 Botnet?](https://krebsonsecurity.com/2026/01/who-operates-the-badbox-2-0-botnet/)
+- 😐 [Kimwolf Botnet Lurking in Corporate, Govt. Networks](https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/)
+- 😐 [Patch Tuesday, January 2026 Edition](https://krebsonsecurity.com/2026/01/patch-tuesday-january-2026-edition/)
 - 😨 [Attackers Harvest Dropbox Logins Via Fake PDF Lures](https://www.darkreading.com/cloud-security/attackers-harvest-dropbox-logins-fake-pdf-lures)
 - 😐 [County Pays $600K to Wrongfully Jailed Pen Testers](https://www.darkreading.com/cybersecurity-operations/county-pays-600k-wrongfully-jailed-pen-testers)
 
@@ -30,7 +30,7 @@
 #### 🌍 World & Politics
 - 😐 [Clintons agree to testify on Epstein as vote looms to hold them in contempt of Congress](https://www.bbc.com/news/articles/c14r685mne4o?at_medium=RSS&at_campaign=rss)
 - 😨 [Rape trial begins for son of Norway's crown princess in tense moment for royal family](https://www.bbc.com/news/articles/ckgn8dnxjgwo?at_medium=RSS&at_campaign=rss)
-- 😐 [Russia Resumes Attacks on Ukraine’s Energy System Ahead of Peace Talks](https://www.nytimes.com/2026/02/03/world/europe/ukraine-missiles-attack.html)
+- 😨 [On Eve of Peace Talks, Russia Hits Power Plants in Frigid Ukraine](https://www.nytimes.com/2026/02/03/world/europe/ukraine-missiles-attack.html)
 - 😐 [Trump and India Call Off Their Trade War, but the Terms of Peace Are Murky](https://www.nytimes.com/2026/02/03/business/us-india-trade-tariffs.html)
 
 #### 💰 Business & Economy
