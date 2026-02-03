@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 50 days, 21:36:52
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 50 days, 22:25:29
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.8% | `█████░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 40.1% | `██████░░░░░░░░░` |
+| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- ["아이디어부터 글로벌까지"…신한금융, 청년·지방 창업 복합지원 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFBBUzNuUTg0M3RuVFBtRTBXSmE0R3JnNllvbERLWG1CcHBtU25QVVdrRXMzdk9xaVpkTFVZcW10V3doU1lRZHVBeVFEM2RVcmxianVkMzAyZnpmSFJXRndWTFFVQzZ2ZEIxbGlZ?oc=5)
-- [롯데건설, 7000억원 규모 자본 확충…재무안정성 강화 - 한국경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBlRk1zeGkwcGxIaXFRdjM4OWdJNUFtRUlVcktnaldRVmFQNHh4b3A4ZTNOMy1zX3lfZ3I1d2VRQ1hCV29hUzRLM2VEcFJGdFpwUzVXbNIBVEFVX3lxTFBlRk1zeGkwcGxIaXFRdjM4OWdJNUFtRUlVcktnaldRVmFQNHh4b3A4ZTNOMy1zX3lfZ3I1d2VRQ1hCV29hUzRLM2VEcFJGdFpwUzVXbA?oc=5)
+- [신한금융, 청년·지방 창업 전 주기 지원 나선다 - 서울와이어](https://news.google.com/rss/articles/CBMibEFVX3lxTE1rMUx1RnU5LUJCcXpIby1teG1TRzZ3S3ktTVAzcGJtUWhnTHFrSkxhUzBDQTRZdFA1RWtYWXJNYkVxZGRKc0NMZjFNcl96bmwyMERtbXRlUDB6akx1Y0h4U3FnSFNkMGhJeXpVdA?oc=5)
+- [[설명] 한국경제(2.3.) "공정위 결정에 떨고 있는 국산 안경렌즈" 기사 관련 - 대한민국 정책브리핑](https://news.google.com/rss/articles/CBMijAFBVV95cUxNSmNvbDRDU1pTV0xxS1ZhejZ1Zm95Q3ptUXFZYnl1WFQ3eWVXWVgwbGpkX0xzbzg1RExWcjAyTDdXaWhmc2R2Wl9FbnIwdHptS1BvejBSZUwxTWdHa3J3b1NUb29KQ1B1NzlVS3NkdloxTG1jeVE4RTNjUkt4RW50SWE5czhMNUFscDJGdQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
