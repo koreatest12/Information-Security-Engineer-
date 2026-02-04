@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 52 days, 1:52:32
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 52 days, 2:40:01
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.9% | `█████░░░░░░░░░░` |
-| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.3% | `█████░░░░░░░░░░` |
+| **RAM** | `29.7/512 GB` | 5.8% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [‘그냥드림’ 사업에 45억 지원한 신한금융… 李대통령 “고마운 일” - 조선비즈 - Chosunbiz](https://news.google.com/rss/articles/CBMigAFBVV95cUxOQ0tVdWNONlNtZFZFNEtjaXpHaEtqczhrTFh1LUZqcWIycGd4N1hERkxnbEtSQmp3Rk5QOUs1MDRaNHdzaWpQOExhN21Kb2lOSEs5Tmo1bkoxUE0yTjI1SVQyZUtYOVREa1pKeTVBZG1zS3FBNEFHVWdTX25hRlVMTNIBlAFBVV95cUxOZV9fRUZWb2RtN3Vmd2Q5YlVRRnI5NWRreDJwczZwZ1cyU0hfaDljcThkMmp1dWdycnoxdjVaSDJieW1pckVSdkFkQlJ4M0l3bHlNbGxMNENoODkxX215VTJlbk5QcGoxUFp0eC0yNk8yQU5kTXlfNmd0dW1mVWlHeG5ManhsWkNyTmRzTEpZZEhJLXB4?oc=5)
-- [또 역대급 실적?…서학개미, 알파벳 쓸어담아 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wR1VEbkUtdFhrdi01N0x3MXVkSmYxTG5jaVZMTEdobWpVN2dqNjBSRVdNUGw1QkxaajdERXJqZVhtWDlKZjVIMHVXNnNIalF1SmMtc1oyR0NlQdIBVEFVX3lxTE9GR0FSV1NMYlBTNWhMUkJBZVlnQXBzWEQyQlJhUW5NRDJaRGZXZTlHOXhaUGJKZk55dHFWdVVlRlQyTEN6ZkNBcHVoSGJxYV9ldnFZcQ?oc=5)
+- [미국 시장: 아쉬운 지수, 개별 종목의 기회 - 한국경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE82MTZUMlNES3p1RTRFeG13enZqelVTR3N6elBRV3F0NUlELUo5bDVrd1NXb1JRVC03aERZUHZiamRzQXFHajdHemV2UTdYS0lZNzVBdtIBVEFVX3lxTE82MTZUMlNES3p1RTRFeG13enZqelVTR3N6elBRV3F0NUlELUo5bDVrd1NXb1JRVC03aERZUHZiamRzQXFHajdHemV2UTdYS0lZNzVBdg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
