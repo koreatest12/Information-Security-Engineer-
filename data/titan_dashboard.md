@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 52 days, 2:44:59
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 52 days, 3:22:50
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,7 +14,7 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.4% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.1% | `████░░░░░░░░░░░` |
 | **RAM** | `29.2/512 GB` | 5.7% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
