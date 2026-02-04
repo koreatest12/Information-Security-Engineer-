@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-05 04:06:32 (KST)
+> **Time:** 2026-02-05 04:46:47 (KST)
 
-### 🤖 Copilot Briefing (04:06)
+### 🤖 Copilot Briefing (04:46)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -22,8 +22,8 @@
 - [[2026 N2SF 대응 솔루션 리포트] 국가 망 보안체계, 공공 데이터 보안 강화 넘어 보안 산업 성장 이끈다](http://www.boannews.com/media/view.asp?idx=141870&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.3%)
-- **RAM:** `35.8/512 GB` (Used: 7.0%)
+- **vCPU:** `128 vCores` (Load: 39.6%)
+- **RAM:** `30.7/512 GB` (Used: 6.0%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*

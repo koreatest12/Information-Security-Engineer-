@@ -1,23 +1,23 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-02-05 04:06:39 | **Version:** `v2026.02.05`
+> **Updated:** 2026-02-05 04:46:54 | **Version:** `v2026.02.05`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 39.5% | `▂▅▄▄▃▂▃▂▄ ▆▃▂▂ ▄▃▂█▅` | Auto-Scaling Check |
-| **BTC Price** | $73,654.00 | `█▇▇▇▇▇▇▆▆▆▆▆▆▄▃▃   ▂` | Market Volatility |
-| **Global Mood** | 0.03 | **Neutral 😐** | Based on 18 Articles |
+| **CPU Load** | 40.0% | `▅▄▄▃▂▃▂▄ ▆▃▂▂ ▄▃▂█▅▆` | Auto-Scaling Check |
+| **BTC Price** | $73,479.00 | `▇▇█▇▇▇▇▇▆▆▇▆▅▃▃   ▂▂` | Market Volatility |
+| **Global Mood** | 0.04 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
-- **RAM:** 6.1% Used
+- **RAM:** 5.9% Used
 - **Disk:** 37.7% Used
 
 ### 📰 Global News Omni-Channel
 #### 🛡️ Cyber Security
 - 🙂 [Microsoft Develops Scanner to Detect Backdoors in Open-Weight Large Language Models](https://thehackernews.com/2026/02/microsoft-develops-scanner-to-detect.html)
 - 😐 [DEAD#VAX Malware Campaign Deploys AsyncRAT via IPFS-Hosted VHD Phishing Files](https://thehackernews.com/2026/02/deadvax-malware-campaign-deploys.html)
-- 😐 [Kimwolf Botnet Lurking in Corporate, Govt. Networks](https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/)
-- 😐 [Patch Tuesday, January 2026 Edition](https://krebsonsecurity.com/2026/01/patch-tuesday-january-2026-edition/)
+- 😐 [Please Don’t Feed the Scattered Lapsus ShinyHunters](https://krebsonsecurity.com/2026/02/please-dont-feed-the-scattered-lapsus-shiny-hunters/)
+- 😐 [Who Operates the Badbox 2.0 Botnet?](https://krebsonsecurity.com/2026/01/who-operates-the-badbox-2-0-botnet/)
 - 😐 [Extra Extra! Announcing DR Global Latin America](https://www.darkreading.com/cybersecurity-operations/announcing-dr-global-latin-america)
 - 🙂 [Big Breach or Smooth Sailing? Mexican Gov't Faces Leak Allegations](https://www.darkreading.com/cyberattacks-data-breaches/big-breach-or-nada-de-nada-mexican-govt-faces-leak-allegations)
 
@@ -34,8 +34,8 @@
 - 😨 [In Afghanistan, a Trail of Hunger and Death Behind U.S. Aid Cuts](https://www.nytimes.com/2026/02/04/world/asia/afghanistan-us-aid-cuts.html)
 
 #### 💰 Business & Economy
+- 🙂 [Bitcoin bleeds for second straight day, nearly grazes $72,000](https://www.cnbc.com/2026/02/04/bitcoin-bleeds-for-second-straight-day-nearly-grazes-72000.html)
 - 😐 [Bitcoin briefly breaks below $73,000 to lowest since November 2024 as heavy selling resumes](https://www.cnbc.com/2026/02/03/bitcoin-price-today.html)
-- 😐 [Rocket Companies shares jump 6% after CEO says mortgage loan volume is surging](https://www.cnbc.com/2026/02/03/rocket-companies-shares-jump-6percent-after-ceo-says-mortgage-loan-volume-is-surging.html)
 
 #### 🎬 Entertainment & Culture
 - 🙂 [Don Lemon Confirmed to Speak at On Air Fest Podcast Conference After His Recent Arrest](https://variety.com/2026/digital/news/don-lemon-on-air-fest-podcast-conference-arrest-1236652178/)
