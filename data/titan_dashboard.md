@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 51 days, 22:50:50
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 51 days, 23:31:00
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
 
-> **Q:** 
+> **Q:** 종합 상황 브리핑
 
 관련 정보 없음
 
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.6% | `█████░░░░░░░░░░` |
-| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.6% | `████░░░░░░░░░░░` |
+| **RAM** | `30.2/512 GB` | 5.9% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 청년·지방 창업 전 과정 지원한다 - 경향신문](https://news.google.com/rss/articles/CBMiWkFVX3lxTE01T3JSWkFoWEk2cWo0UGlXT3pydkRaYU5nSkJtdFpYaDBGT2lZaHQxUGdWTVFDZzlFUWNmdFlxRVM1ZUVZU2JpVUFoU0VOeEN4OXJ1U2dWbXlXd9IBX0FVX3lxTE9jNzVoUUE5WnFCRVlnX0lyTERMbUJNejF5MUlQUXNrcVBLRWI0Mk9uMXJxemJVR2xiVlJyaGF6Y3ZQWUV4cXM4MTlkOVhCQ0RWb2FTM2NBVnMyN2pZY0pB?oc=5)
-- [신한금융, 청년·지방 취약계층 위해 1000억원 투입 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5saHp5Yk9PLWhKeld1b2IzSjJfM1d6QjBwRVhVdEh6Sk9OOU1ZajM1cHVRbDRQUWp4RHFFQUJtbk5xLWN1TFFoczI0WHFaZW8xVWhRRTBmU1lsd9IBVEFVX3lxTE9xVTdIbWxnYUtFWWZoUmJ0Ul9UbGM1VzRST1FhNHEzd2l6VG9qZktsYzZNNFd4NWIxR0FLbjV1VDdKV0RoVE9nbzBlX3pSbktDVVlubA?oc=5)
+- [신한금융, 그룹 미소금융재단에 1000억 추가 출연 - 조선일보](https://news.google.com/rss/articles/CBMijgFBVV95cUxPY0ZuWlhSaG04bkh3cnRpWUpyQUVVN2NheFZDZGo0LXBaUGtmYU9pRWxqX09FYWV5V2h1MFpHeG9HVXdDSjVNWlB5c0xVZ012Nmx3d1FmNkVuUXV5eURsU19fbjk1S2lvUlR1cDBlME5tZ1MxM3QzU2ozeTQyQ2xMM3BkbGRTdUJUajQ4emln0gGiAUFVX3lxTE1aZXFvalFCN3pHREVBeWlPbjhwTFJVbHo0Z1lQczgwN0hId3YtbXFPX01CYTJBdm1tS3FWbExJOXBtX1hWbzVuNS1saGIyanZ1bC1IUExOQVBGOU56WUd3ZEZyeFVjei1ZeWowdXVoRkwwa1NtTXZtQnpYQUc3NjRFbnZYb082N0ZLZENYRnp6MmlXYXc0MDMySm9ES2ZETmpFdw?oc=5)
+- [또 역대급 실적?…서학개미, 알파벳 쓸어담아 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wR1VEbkUtdFhrdi01N0x3MXVkSmYxTG5jaVZMTEdobWpVN2dqNjBSRVdNUGw1QkxaajdERXJqZVhtWDlKZjVIMHVXNnNIalF1SmMtc1oyR0NlQdIBVEFVX3lxTE9GR0FSV1NMYlBTNWhMUkJBZVlnQXBzWEQyQlJhUW5NRDJaRGZXZTlHOXhaUGJKZk55dHFWdVVlRlQyTEN6ZkNBcHVoSGJxYV9ldnFZcQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
