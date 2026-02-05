@@ -1,11 +1,11 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-02-05 08:45:57 | **Version:** `v2026.02.05`
+> **Updated:** 2026-02-05 09:01:28 | **Version:** `v2026.02.05`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 40.5% | `▆▃▂▂ ▄▃▂█▅▆ ▃▄▃▂▃ ▂▇` | Auto-Scaling Check |
-| **BTC Price** | $73,221.00 | `▇█▇▆▄▄▂  ▃▂▃▂▂  ▂  ▂` | Market Volatility |
+| **CPU Load** | 39.1% | `▃▂▂ ▄▃▂█▅▆ ▃▄▃▂▃ ▂▇▄` | Auto-Scaling Check |
+| **BTC Price** | $73,023.00 | `█▇▆▄▄▂  ▃▂▃▂▂  ▂  ▂ ` | Market Volatility |
 | **Global Mood** | 0.02 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
@@ -16,8 +16,8 @@
 #### 🛡️ Cyber Security
 - 🙂 [Microsoft Develops Scanner to Detect Backdoors in Open-Weight Large Language Models](https://thehackernews.com/2026/02/microsoft-develops-scanner-to-detect.html)
 - 😐 [DEAD#VAX Malware Campaign Deploys AsyncRAT via IPFS-Hosted VHD Phishing Files](https://thehackernews.com/2026/02/deadvax-malware-campaign-deploys.html)
-- 😐 [Kimwolf Botnet Lurking in Corporate, Govt. Networks](https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/)
-- 😐 [Patch Tuesday, January 2026 Edition](https://krebsonsecurity.com/2026/01/patch-tuesday-january-2026-edition/)
+- 😐 [Please Don’t Feed the Scattered Lapsus ShinyHunters](https://krebsonsecurity.com/2026/02/please-dont-feed-the-scattered-lapsus-shiny-hunters/)
+- 😐 [Who Operates the Badbox 2.0 Botnet?](https://krebsonsecurity.com/2026/01/who-operates-the-badbox-2-0-botnet/)
 - 🙂 [Ransomware Gang Goes Full 'Godfather' With Cartel](https://www.darkreading.com/cyber-risk/ransomware-gang-full-godfather-cartel)
 - 😐 [CISA Makes Unpublicized Ransomware Updates to KEV Catalog](https://www.darkreading.com/threat-intelligence/cisa-hidden-ransomware-updates-kev-catalog)
 
