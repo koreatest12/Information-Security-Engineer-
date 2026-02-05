@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-05 17:07:07 (KST)
+> **Time:** 2026-02-05 18:00:03 (KST)
 
-### 🤖 Copilot Briefing (17:07)
+### 🤖 Copilot Briefing (18:00)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,8 +10,8 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [신한은행 "공정위·금감원 과징금 1846억원 결산에 반영…잘 마무리될 것" - 지디넷코리아](https://news.google.com/rss/articles/CBMiVkFVX3lxTE9wVU5NRzJYeFI1eHVxbTdkVlFjdnhiTWEzbGs5U05IWDNZekZKVHo5WVYxVy10NkxKajF2OUo4MnI1cDJGazVsYVRrQ01wSEZ6QTRISTlB?oc=5)<br>• [신한금융, 지난해 순이익 4조9716억…전년比 11.7%↑'역대 최대' - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ZOGlTVUVGZDhMQUVwSkRCRzN4V25JLTJnalhkby1PVDVCenQycFJRdHo4Um94R2phSGJJZ1AwTjhnQy1DYUZkQnFTaHlkUHZYUWQ0RVlzSXBQYVNkODQ2ZQ?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [하나은행, '라임사태' 손배소 1심 일부 승소…364억원 배상 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTE9MTVlvTU42MVNjSW1zczBtS3hrVllTQy14MTZiY0JBdnRBd1JnWFdBd1BvQ3BYTWtxd0M3UW9PYVFtT1MwU2hsQm81TWJuNmh3aldQY18wZVRrLXhUaXRnRWo0RWdxaG1ydE13?oc=5)<br>• [하나은행, ‘라임 사태’ 손해배상소송 일부 승소···364억원 배상 - 경향신문](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1QZk9ObF9VWEYxMnNKZlZKY3JhWnB0RHp6NTczWHFJRU9welRhZjBiVXhidjhKOHFQQ21xM3BDcElUU3ljZjFXOVEtczR3bDB5Z183QWNyMUs0UdIBX0FVX3lxTE1kaHRQdkhtV210WTJ6MXN0d3NXMFlnaTdlcmg5RTRMX2xWVFBRa1FIMGdWWERKUm11U2N5SDhtYkVhSXJlRmtKQkRxcWxPcXBPZGxES05nbFAyRFI2bko4?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한금융, 지난해 순이익 4조9716억…전년比 11.7%↑'역대 최대' - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ZOGlTVUVGZDhMQUVwSkRCRzN4V25JLTJnalhkby1PVDVCenQycFJRdHo4Um94R2phSGJJZ1AwTjhnQy1DYUZkQnFTaHlkUHZYUWQ0RVlzSXBQYVNkODQ2ZQ?oc=5)<br>• [신한은행, 지난해 순이익 3조7748억원…전년 대비 2.1%↑ - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9hUzZ1UFgtWUc2eDIya1Q1VW4zU0VHRHVaQXNLdnU4M1JxbUZpX1ZsOFVwSmJiQmtEVGdydjhLUmxrejQ2Znd3d1NSRG5ENXRqb3p0R2F6c1pFQQ?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [하나은행, '라임사태' 손배소 1심 일부 승소…364억원 배상 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTE9MTVlvTU42MVNjSW1zczBtS3hrVllTQy14MTZiY0JBdnRBd1JnWFdBd1BvQ3BYTWtxd0M3UW9PYVFtT1MwU2hsQm81TWJuNmh3aldQY18wZVRrLXhUaXRnRWo0RWdxaG1ydE13?oc=5)<br>• [하나은행, 네이버페이·서울신용보증재단과 '소상공인 상생협력' 업무협약 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE5zNjJMcWhKby1GZXFnQmQzc2JpcldaanVJcHlrMzRsRnRrSTVDWmswT29GUG9XZW1XWjdVMzMyT3AtVGF0bzVLaHg2OVpaOS03LXhDRnd0YkpxWS1FcXVzUGhfV1R6M0FNUXNLRUpUcXhOWTQ?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
@@ -22,8 +22,8 @@
 - [앤앤에스피-엔플러스랩, 공공 N2SF 사업 ‘맞손’...“컨설팅부터 구축까지 원스톱”](http://www.boannews.com/media/view.asp?idx=141905&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.4%)
-- **RAM:** `30.7/512 GB` (Used: 6.0%)
+- **vCPU:** `128 vCores` (Load: 37.9%)
+- **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
