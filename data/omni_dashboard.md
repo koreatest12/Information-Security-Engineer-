@@ -1,35 +1,35 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-02-05 09:01:28 | **Version:** `v2026.02.05`
+> **Updated:** 2026-02-05 11:07:44 | **Version:** `v2026.02.05`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 39.1% | `▃▂▂ ▄▃▂█▅▆ ▃▄▃▂▃ ▂▇▄` | Auto-Scaling Check |
-| **BTC Price** | $73,023.00 | `█▇▆▄▄▂  ▃▂▃▂▂  ▂  ▂ ` | Market Volatility |
-| **Global Mood** | 0.02 | **Neutral 😐** | Based on 18 Articles |
+| **CPU Load** | 38.7% | `▂▂ ▄▃▂█▅▆ ▃▄▃▂▃ ▂▇▄▃` | Auto-Scaling Check |
+| **BTC Price** | $71,981.00 | `█▆▄▄▃  ▃▃▄▃▂  ▂  ▂▂ ` | Market Volatility |
+| **Global Mood** | 0.06 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
-- **RAM:** 6.0% Used
+- **RAM:** 6.1% Used
 - **Disk:** 37.7% Used
 
 ### 📰 Global News Omni-Channel
 #### 🛡️ Cyber Security
 - 🙂 [Microsoft Develops Scanner to Detect Backdoors in Open-Weight Large Language Models](https://thehackernews.com/2026/02/microsoft-develops-scanner-to-detect.html)
 - 😐 [DEAD#VAX Malware Campaign Deploys AsyncRAT via IPFS-Hosted VHD Phishing Files](https://thehackernews.com/2026/02/deadvax-malware-campaign-deploys.html)
-- 😐 [Please Don’t Feed the Scattered Lapsus ShinyHunters](https://krebsonsecurity.com/2026/02/please-dont-feed-the-scattered-lapsus-shiny-hunters/)
-- 😐 [Who Operates the Badbox 2.0 Botnet?](https://krebsonsecurity.com/2026/01/who-operates-the-badbox-2-0-botnet/)
+- 😐 [Kimwolf Botnet Lurking in Corporate, Govt. Networks](https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/)
+- 😐 [Patch Tuesday, January 2026 Edition](https://krebsonsecurity.com/2026/01/patch-tuesday-january-2026-edition/)
 - 🙂 [Ransomware Gang Goes Full 'Godfather' With Cartel](https://www.darkreading.com/cyber-risk/ransomware-gang-full-godfather-cartel)
 - 😐 [CISA Makes Unpublicized Ransomware Updates to KEV Catalog](https://www.darkreading.com/threat-intelligence/cisa-hidden-ransomware-updates-kev-catalog)
 
 #### 🤖 AI & Tech
+- 🙂 [Sam Altman got exceptionally testy over Claude Super Bowl ads](https://techcrunch.com/2026/02/04/sam-altman-got-exceptionally-testy-over-claude-super-bowl-ads/)
 - 😐 [Alphabet won’t talk about the Google-Apple AI deal, even to investors](https://techcrunch.com/2026/02/04/alphabet-wont-talk-about-the-google-apple-ai-deal-even-to-investors/)
-- 😨 [Google’s Gemini app has surpassed 750M monthly active users](https://techcrunch.com/2026/02/04/googles-gemini-app-has-surpassed-750m-monthly-active-users/)
 - 😐 [Measles Is Causing Brain Swelling in Children in South Carolina](https://www.wired.com/story/measles-is-causing-brain-swelling-in-children-in-south-carolina/)
 - 😐 [Why Are Some Women Training for Pregnancy Like It’s a Marathon?](https://www.wired.com/story/pregnancy-zero-trimester-influencers/)
 
 #### 🌍 World & Politics
 - 😐 [Fearing Russia will seize her town, war widow moves husband's grave to Kyiv](https://www.bbc.com/news/articles/cvgr25e2lj5o?at_medium=RSS&at_campaign=rss)
-- 😐 [Melinda French Gates says ex-husband Bill has questions to answer over Epstein](https://www.bbc.com/news/articles/cr4kyk9nv5lo?at_medium=RSS&at_campaign=rss)
+- 😐 [US must be prudent when supplying arms to Taiwan, Xi tells Trump](https://www.bbc.com/news/articles/c62wpjd3j1zo?at_medium=RSS&at_campaign=rss)
 - 🙂 [Russia and Ukraine Resume Talks After a Huge Attack by Moscow](https://www.nytimes.com/2026/02/04/world/europe/ukraine-russia-us-peace-talks.html)
 - 😨 [In Afghanistan, a Trail of Hunger and Death Behind U.S. Aid Cuts](https://www.nytimes.com/2026/02/04/world/asia/afghanistan-us-aid-cuts.html)
 
@@ -38,8 +38,8 @@
 - 😐 [Bitcoin briefly breaks below $73,000 to lowest since November 2024 as heavy selling resumes](https://www.cnbc.com/2026/02/03/bitcoin-price-today.html)
 
 #### 🎬 Entertainment & Culture
-- 😐 [‘The Daily Show’ Skewers Gavin Newsom for Sex Scandal and Failure to Solve Homelessness and High-Speed Rail in New Segment (EXCLUSIVE)](https://variety.com/2026/tv/news/the-daily-show-roasts-gavin-newsom-1236652186/)
-- 😐 [‘Hunger Games’ Star Sam Claflin Says Shirtless Scenes Led to Body Dysmorphia: ‘There’s This Hollywood Assumption That Men With Six Packs Sell Movies’](https://variety.com/2026/film/news/sam-claflin-body-dysmorphia-shirtless-scenes-hunger-games-1236652036/)
+- 😐 [‘Chicago P.D.’ Stars Jesse Lee Soffer and Tracy Spiridakos Set to Return for Crossover](https://variety.com/2026/tv/news/tracy-spiridakos-jesse-lee-soffer-chicago-p-d-return-crossover-1236651397/)
+- 😐 [‘The Masked Singer’ Reveals the Identity of Calla Lily: Here Is the Celebrity Under the Costume](https://variety.com/2026/tv/news/the-masked-singer-season-14-episode-5-recap-calla-lily-1236652556/)
 
 ---
 *Generated by Grand Ops Omni-Universe v25.0*
