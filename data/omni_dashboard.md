@@ -1,11 +1,11 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-02-06 06:47:47 | **Version:** `v2026.02.06`
+> **Updated:** 2026-02-06 07:01:58 | **Version:** `v2026.02.06`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 39.1% | ` ▃▃ ▅▂▂  ▂▆ █▂▃▃  ▂▃` | Auto-Scaling Check |
-| **BTC Price** | $63,673.00 | `▇▇▇█▇▆▆▅▆▅▄▄▃▂▂▂    ` | Market Volatility |
+| **CPU Load** | 39.6% | `▃▃ ▅▂▂  ▂▆ █▂▃▃  ▂▃▄` | Auto-Scaling Check |
+| **BTC Price** | $63,151.00 | `▇▇█▇▆▆▅▆▅▄▄▃▂▂▂     ` | Market Volatility |
 | **Global Mood** | 0.04 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
@@ -16,8 +16,8 @@
 #### 🛡️ Cyber Security
 - 😐 [AISURU/Kimwolf Botnet Launches Record-Setting 31.4 Tbps DDoS Attack](https://thehackernews.com/2026/02/aisurukimwolf-botnet-launches-record.html)
 - 😐 [ThreatsDay Bulletin: Codespaces RCE, AsyncRAT C2, BYOVD Abuse, AI Cloud Intrusions & 15+ Stories](https://thehackernews.com/2026/02/threatsday-bulletin-codespaces-rce.html)
-- 😐 [Kimwolf Botnet Lurking in Corporate, Govt. Networks](https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/)
-- 😐 [Patch Tuesday, January 2026 Edition](https://krebsonsecurity.com/2026/01/patch-tuesday-january-2026-edition/)
+- 😐 [Please Don’t Feed the Scattered Lapsus ShinyHunters](https://krebsonsecurity.com/2026/02/please-dont-feed-the-scattered-lapsus-shiny-hunters/)
+- 😐 [Who Operates the Badbox 2.0 Botnet?](https://krebsonsecurity.com/2026/01/who-operates-the-badbox-2-0-botnet/)
 - 🙂 [Cyber Success Trifecta: Education, Certifications &amp; Experience](https://www.darkreading.com/cybersecurity-operations/the-trifecta-of-cyber-success-education-certifications-and-experience)
 - 😐 [Protests Don't Impede Iranian Spying on Expats, Syrians, Israelis](https://www.darkreading.com/cyberattacks-data-breaches/iran-spies-expats-syrians-israelis)
 
@@ -38,7 +38,7 @@
 - 😐 [Fixed-income ETF provider BondBloxx questions private credit meltdown fears, sees space as sensible way to generate income](https://www.cnbc.com/2026/02/05/private-credit-meltdown-fears-why-bondbloxx-isnt-worried-.html)
 
 #### 🎬 Entertainment & Culture
-- 😐 [Lionsgate Losses Widen to $46.2 Million, But ‘The Housemaid,’ ‘Now You See Me 3’ Help Revive Studio’s Movie Business](https://variety.com/2026/film/news/housemaid-now-you-see-me-now-you-dont-lionsgate-earnings-1236653940/)
+- 😐 [Lionsgate Losses Widen to $46.2 Million, but ‘The Housemaid,’ ‘Now You See Me 3’ Help Revive Studio’s Movie Business](https://variety.com/2026/film/news/housemaid-now-you-see-me-now-you-dont-lionsgate-earnings-1236653940/)
 - 🙂 [Lionsgate Hires First Chief AI Officer](https://variety.com/2026/film/news/lionsgate-hires-chief-ai-officer-1236653786/)
 
 ---
