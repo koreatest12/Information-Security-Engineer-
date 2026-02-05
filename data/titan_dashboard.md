@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 53 days, 2:43:00
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 53 days, 3:23:59
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.7% | `█████░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.5% | `█████░░░░░░░░░░` |
+| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [KB·신한금융, 나란히 5조 안팎 순익…또 사상 최대 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5UOUF0TUItTkEwWjhDaEZyRnZDNU9USV9zbHNPNGpkVk9LQnd4a2l2UUcweXZXTHd0ekJOWC1fSjA1NmgwZWdSOXp2QTFOdFFNYVFoWXg5YllBZ9IBVEFVX3lxTE9PUGZLYTlPLS04TWNKVjEtdnZqdEZPYUFOOV9LMENYMjhrME8zVW0tY3VRVlU1Uk1KMUhsZnJDb2pHeXdlWE1fT0hhZ25ObEFPd0IzcA?oc=5)
-- [주가조작 합동대응단, '기자 선행매매 혐의' 한국경제신문 압수수색 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE00V004UTZCZVZWRGFpcDV5bm1kRkVtYTlIUzlHSmxoUXJhQUNWQ2d0Z1cyUGJaT0cybnotRFVJdWFRZ2hDQlZnRjhhMXVuUGZEQjU3N2NDTnFaLXBSelB1Sg?oc=5)
+- [KB·신한금융 '역대 최대' 실적… 주주환원 '통큰 화답' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE03ZTdFbVVxTjhKMktrcGg1Y3ZHa19BM09QUjJoUWJDTnZrSE96Q2h4STNQandyLUlIdUFBN1lWY3Y1U25YN3VoM1Y2cmVTWm8?oc=5)
+- [한국경제신문, ‘선행매매’ 혐의로 압수수색 “독자께 진심으로 사과” - 미디어오늘](https://news.google.com/rss/articles/CBMicEFVX3lxTE5LeHh0VGJ4VGZXX3NZU3pmQXB3eG9rZndoQXNtbDBvVUdqTGtoTVpoVlZpeEtaWDZvSEw4c2t2c0VjTUNjSXctLUZxMklDdWpvcVMtU0FCQU5Db09XT3Y1bmw0a0hvcUIyOWprMG94RFo?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
