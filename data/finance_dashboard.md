@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-07 07:19:59 (KST)
+> **Time:** 2026-02-07 07:47:07 (KST)
 
-### 🤖 Copilot Briefing (07:19)
+### 🤖 Copilot Briefing (07:47)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -22,7 +22,7 @@
 - [[쿠팡 해킹] 최형두 의원, 美 향해 “아마존 中에 유출됐다면?”... 정부엔 신속 조사 촉구](http://www.boannews.com/media/view.asp?idx=141947&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.4%)
+- **vCPU:** `128 vCores` (Load: 37.8%)
 - **RAM:** `31.2/512 GB` (Used: 6.1%)
 
 ---
