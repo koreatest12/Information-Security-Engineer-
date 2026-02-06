@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 54 days, 4:20:46
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 54 days, 4:48:05
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
 
-> **Q:** 
+> **Q:** 종합 상황 브리핑
 
 관련 정보 없음
 
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.7% | `█████░░░░░░░░░░` |
-| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.2% | `████░░░░░░░░░░░` |
+| **RAM** | `30.2/512 GB` | 5.9% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [KB·신한금융, 나란히 5조 안팎 순익…또 사상 최대 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5UOUF0TUItTkEwWjhDaEZyRnZDNU9USV9zbHNPNGpkVk9LQnd4a2l2UUcweXZXTHd0ekJOWC1fSjA1NmgwZWdSOXp2QTFOdFFNYVFoWXg5YllBZ9IBVEFVX3lxTE9PUGZLYTlPLS04TWNKVjEtdnZqdEZPYUFOOV9LMENYMjhrME8zVW0tY3VRVlU1Uk1KMUhsZnJDb2pHeXdlWE1fT0hhZ25ObEFPd0IzcA?oc=5)
-- [한국경제신문 압수수색… 기자 선행매매 혐의 - 조선일보](https://news.google.com/rss/articles/CBMijgFBVV95cUxNX2loZjNYa0R0ZUlzdHdfSjY5UXVpY3dkcUN1QXlGWTBPT2NTV1ZVN3VZMjRXVFE1eTJ0V3ljejZ3Q0JWSV9tVnF5TUo2RURSeG5YMlpBZDZzc1BYMTlMdFN1UE5Td0pUN3dRUGtyOW1KOUEyZTdaWWYtOVdlakkyZlVoeWo3bHg0T0VJOTBB0gGiAUFVX3lxTE9yUVptM0MxdkZmUW5NTkZXOEFMLXdfM1VGeDVpYkllR1ctRWtWU2hkVXZBc3dzdld0VXpCSXR4bjNPWkhocU8zbkotWjFVSE1LbzJ6UWJfSktrQkx4eGFGZHNmZ1J6ZkhlRkNQSGpJcl8xa3lSb0wtZElIZTQ4MGtUNGY2R0dTQ1h1TnA4NUota3BabkRqcjFlWm9mSW9BYmtGUQ?oc=5)
+- [이 대통령, 한국경제 압수수색 기사 공유하며 “주가조작 패가망신” - 한겨레](https://news.google.com/rss/articles/CBMia0FVX3lxTE0zeVRKTjA5a29NT2RuZFVzOXJjeElxQ3lKU1RidVRMempwUEhSamExZGlwXzQwQ25YV2k1NXdPenZRWTdiejRVZDZCeXM0Si1tWU9ISTEwT25KUnloRTlKWmZxLXc4c1hlMHVJ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
