@@ -1,21 +1,21 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-02-06 17:32:44 | **Version:** `v2026.02.06`
+> **Updated:** 2026-02-06 18:09:31 | **Version:** `v2026.02.06`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 38.8% | `▂▄▅▂ ▂▄▆▂  ▄▂▃  █ ▂▂` | Auto-Scaling Check |
-| **BTC Price** | $64,569.00 | `▇▇▆▅    ▂▂▃  ▂▂▅█▄▄▃` | Market Volatility |
-| **Global Mood** | 0.05 | **Neutral 😐** | Based on 18 Articles |
+| **CPU Load** | 40.6% | `▃▃   ▃▄   ▃ ▂  ▆ ▂▂█` | Auto-Scaling Check |
+| **BTC Price** | $64,835.00 | `▇▆▅    ▂▂▃  ▂▂▅█▄▄▃▄` | Market Volatility |
+| **Global Mood** | 0.07 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
-- **RAM:** 6.1% Used
+- **RAM:** 5.8% Used
 - **Disk:** 37.7% Used
 
 ### 📰 Global News Omni-Channel
 #### 🛡️ Cyber Security
+- 😐 [Compromised dYdX npm and PyPI Packages Deliver Wallet Stealers and RAT Malware](https://thehackernews.com/2026/02/compromised-dydx-npm-and-pypi-packages.html)
 - 😐 [Claude Opus 4.6 Finds 500+ High-Severity Flaws Across Major Open-Source Libraries](https://thehackernews.com/2026/02/claude-opus-46-finds-500-high-severity.html)
-- 😐 [AISURU/Kimwolf Botnet Launches Record-Setting 31.4 Tbps DDoS Attack](https://thehackernews.com/2026/02/aisurukimwolf-botnet-launches-record.html)
 - 😐 [Please Don’t Feed the Scattered Lapsus ShinyHunters](https://krebsonsecurity.com/2026/02/please-dont-feed-the-scattered-lapsus-shiny-hunters/)
 - 😐 [Who Operates the Badbox 2.0 Botnet?](https://krebsonsecurity.com/2026/01/who-operates-the-badbox-2-0-botnet/)
 - 😐 [EnCase Driver Weaponized as EDR Killers Persist](https://www.darkreading.com/threat-intelligence/encase-driver-weaponized-edr-killers-persist)
@@ -30,8 +30,8 @@
 #### 🌍 World & Politics
 - 😐 [US and Iran talks to begin as fears of direct conflict continue](https://www.bbc.com/news/articles/cr57g1y8286o?at_medium=RSS&at_campaign=rss)
 - 😐 [We had sex in a Chinese hotel, then found we had been broadcast to thousands](https://www.bbc.com/news/articles/c62rexy9y3no?at_medium=RSS&at_campaign=rss)
-- 😨 [‘It’s Collective Punishment’: Iran Exacts Heavy Price on Protest Supporters](https://www.nytimes.com/2026/02/05/world/middleeast/iran-protests-crackdown.html)
-- 😐 [Starmer Apologizes for Ex-Ambassador Mandelson’s Epstein Ties](https://www.nytimes.com/2026/02/05/world/europe/epstein-files-mandelson-starmer-uk.html)
+- 😐 [The Olympics Are a Show Of Global Harmony. The World is Anything But.](https://www.nytimes.com/2026/02/06/world/europe/olympics-world-order-war.html)
+- 🙂 [She’s Upending Japanese Politics With Two Words: ‘I’m Pregnant’](https://www.nytimes.com/2026/02/06/world/asia/japan-election-pregnant-candidate.html)
 
 #### 💰 Business & Economy
 - 🙂 [Kalshi expands surveillance, enforcement efforts ahead of Super Bowl 60](https://www.cnbc.com/2026/02/05/kalshi-expands-surveillance-enforcement-efforts.html)
