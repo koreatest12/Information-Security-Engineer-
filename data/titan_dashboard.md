@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 55 days, 1:12:41
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 55 days, 1:37:59
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.4% | `█████░░░░░░░░░░` |
-| **RAM** | `30.7/512 GB` | 6.0% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.8% | `█████░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [‘그냥드림’ 사업에 45억 지원한 신한금융… 李대통령 “고마운 일” - 조선비즈 - Chosunbiz](https://news.google.com/rss/articles/CBMigAFBVV95cUxOQ0tVdWNONlNtZFZFNEtjaXpHaEtqczhrTFh1LUZqcWIycGd4N1hERkxnbEtSQmp3Rk5QOUs1MDRaNHdzaWpQOExhN21Kb2lOSEs5Tmo1bkoxUE0yTjI1SVQyZUtYOVREa1pKeTVBZG1zS3FBNEFHVWdTX25hRlVMTNIBlAFBVV95cUxOZV9fRUZWb2RtN3Vmd2Q5YlVRRnI5NWRreDJwczZwZ1cyU0hfaDljcThkMmp1dWdycnoxdjVaSDJieW1pckVSdkFkQlJ4M0l3bHlNbGxMNENoODkxX215VTJlbk5QcGoxUFp0eC0yNk8yQU5kTXlfNmd0dW1mVWlHeG5ManhsWkNyTmRzTEpZZEhJLXB4?oc=5)
+- [신한금융, 지난해 순이익 4조9716억…전년比 11.7%↑'역대 최대' - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ZOGlTVUVGZDhMQUVwSkRCRzN4V25JLTJnalhkby1PVDVCenQycFJRdHo4Um94R2phSGJJZ1AwTjhnQy1DYUZkQnFTaHlkUHZYUWQ0RVlzSXBQYVNkODQ2ZdIBeEFVX3lxTE1BVmJJZkxwX0JRa1p3OGRlVFZZWlkxWGhDNUJyMGJldXlHaTR5X0tOUm54VERINnktQXRUV1hqUldyNHRMbmc0blNOeFc2ZXBMZ2tHeTFZTkdwLTFrUmJZbmk4R09XNFpvV2tDSWdlT0M2WW9ERlMxSg?oc=5)
 - [한국경제신문 “공정한 정보 전달 사명인 언론사로서 책임 통감” 공식사과 - 미디어오늘](https://news.google.com/rss/articles/CBMicEFVX3lxTE5FS3hBWEs5blc2cFZWeTBlV1JBRmlrTkYwNGZVSnlIY18xNnJiZjczaU5fYUctdjNrMUxiQlhWbHh2cUxXaUZsbERONkNOOGp2bDRzVWItTDZNNHhGLXJrNUhCRV93cHB6eHVFTTBwN2Q?oc=5)
 
 ---
