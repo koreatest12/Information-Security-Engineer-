@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-09 23:42:28 (KST)
+> **Time:** 2026-02-10 00:39:25 (KST)
 
-### 🤖 Copilot Briefing (23:42)
+### 🤖 Copilot Briefing (00:39)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,7 +10,7 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [신한은행 본점 현황판 사진 - 내외뉴스통신](https://news.google.com/rss/articles/CBMibEFVX3lxTE5NNm10YUxSdFhKQXREb3doQV9WRExSeGpoeFJrNml0Z0pyaDlKVzdpNWJUR0d3alRKcXhoMGQtbmlTSEw5a0VQYkhZV0ZNSDcyaWFfbmxweWhPaDlxNHowNEstNkVqd0VYQklkatIBcEFVX3lxTFAyOWlrLXFRa05GeThlajR3emc5V0x5YUtlRU5SQ3Z3WFNoV2ZKLW9DTjNSek0zWjJZdDRQX2VCSlZ1ajRSajdPLVVkQlNYQk1PUW85S3lUam90bnBfbTFROHlwUFMwNzI2M2JWRGlDRVk?oc=5)<br>• [신한은행, 서울시와 함께 '서울배달+ 상생 할인 프로모션' 진행 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE16aHh4WmRzUHY2LTlmWmZuVkpmY0pfU2ZwM1BudkJ5V21JLWVEblJQSVpYSEVZS1BQbHFiZVdIMTgwNmpablh5M3kzSlNMUQ?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행 본점 현황판 사진 - 내외뉴스통신](https://news.google.com/rss/articles/CBMibEFVX3lxTE5NNm10YUxSdFhKQXREb3doQV9WRExSeGpoeFJrNml0Z0pyaDlKVzdpNWJUR0d3alRKcXhoMGQtbmlTSEw5a0VQYkhZV0ZNSDcyaWFfbmxweWhPaDlxNHowNEstNkVqd0VYQklkatIBcEFVX3lxTFAyOWlrLXFRa05GeThlajR3emc5V0x5YUtlRU5SQ3Z3WFNoV2ZKLW9DTjNSek0zWjJZdDRQX2VCSlZ1ajRSajdPLVVkQlNYQk1PUW85S3lUam90bnBfbTFROHlwUFMwNzI2M2JWRGlDRVk?oc=5)<br>• [인재 키워서 쓴다는 신한은행…금감원 출신 등 멘토 영입 - 아주경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5RcjZVbXJKaWR0ZW9SeUlzRDRzTjJHdnpxbTBxMUUwNTJOY2pJMHNFcGNJbjBhRk91MlBBM3hPOTZyVkcxRnNJV25RRUIwc3NuS2hwcDVZOG11UdIBWEFVX3lxTFBlVmdfVExvV1pTb29BVmdUNG04aGdYQUJUUHZHbGdhM2V3U1JmRUZpTU5nVGwyelBCZWo4UHhHOWV4ZU1YMXVYR1NEQ3BCbEp3YUY4VW1YMkg?oc=5)<br> |
 | **🟢 하나금융 (은행/투자)** | • [KB, 하나은행 잡고 7연승...공동 선두로 올라서 - 조선일보](https://news.google.com/rss/articles/CBMihgFBVV95cUxNM0w3Y2NkUTFsN1N4QktfbUNHUUxZMldoRVFLZ0lSb2tTMkdnRXN5NEF1aUtHTS1QRGEwMDFkRlNjQlFqVlhXNElXUVZGSlU4bnVYYS1XNE5qajBodzhzQThiZEpkWmpCVGxfdTEtYzZjWWVlT1dOcGpKelV1ZlhhLU5RS19aUdIBmgFBVV95cUxPTzRQLS1qVXQyc3o1QlA1dUFVYXktaWR3RDRfdGIteWs0eVdjUmZyWXpIbTZUeFJUUzhfZ0pNSXByN0hlcktXZW9QWmg5b0F4MTNLQXF5MTZsX1FUQktqZ28zNGZWeXNtZTVHTkQ4WjhEMC1fT0VDdFBMZUU4UzVSV1NXZDEzbFFMLWQzcG9MUE5XbzlYemkxZm9B?oc=5)<br>• [여자농구 KB, 하나은행 잡고 공동 선두로…7연승 질주 - yna.co.kr](https://news.google.com/rss/articles/CBMiW0FVX3lxTE4zdmxnVWsyRGdrcF9oLWdBLWNDR2tDbmNpc1F0Q21VSGZtYXZTOWZ0bUx1UGNUbFgzT0NjSkhxT0lmWnhpRTdGbV9tVkJMRk51Z2hTdndwUlZKMlXSAWBBVV95cUxQaGRoV1NMWkZtc05UMG5URmE0VGNhZl9Kb2I0bVQ3ZndQUXMzd1JXUW9jOTdfZk9iLVJucEM4c1RtTDRHelpvb2F3QUR4NkxpT3dXT0R0UWYtSUJ4NGd5ZEQ?oc=5)<br> |
 
 ### 📰 General & Security News
@@ -22,8 +22,8 @@
 - [삼정KPMG, CMMC 전담팀 가동 “美 방산 수출 ‘필수 관문’ 뚫는다”](http://www.boannews.com/media/view.asp?idx=142025&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.7%)
-- **RAM:** `31.7/512 GB` (Used: 6.2%)
+- **vCPU:** `128 vCores` (Load: 37.6%)
+- **RAM:** `30.7/512 GB` (Used: 6.0%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
