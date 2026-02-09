@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-09 15:54:58 (KST)
+> **Time:** 2026-02-09 16:48:37 (KST)
 
-### 🤖 Copilot Briefing (15:54)
+### 🤖 Copilot Briefing (16:48)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [[보안 최전선 ①] 문광석 코리안리 파트장 “보안은 비용 아닌 보험, 멈추면 ‘기술 파산’ 온다”](http://www.boannews.com/media/view.asp?idx=141813&kind=&sub_kind=)
-- [엔피코어, SOC 프라임 국내 독점 공급 개시](http://www.boannews.com/media/view.asp?idx=142021&kind=&sub_kind=)
-- [[한국정보공학기술사 보안을 論하다-33] AI 시대, 개인정보보호 담당자의 새로운 역할](http://www.boannews.com/media/view.asp?idx=142020&kind=&sub_kind=)
+- [[SECON 2026] 네오와인, 복제 방지칩(ALPU)으로 글로벌 시장 공략](http://www.boannews.com/media/view.asp?idx=141876&kind=&sub_kind=)
+- [[SECON 2026] 경인씨엔에스, 무인 주차장 장애 관리 시스템](http://www.boannews.com/media/view.asp?idx=141862&kind=&sub_kind=)
+- [생각보다 복잡했던 노트패드++ 해킹의 ‘공급망 공격’ 전황 드러나다](http://www.boannews.com/media/view.asp?idx=142022&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.3%)
-- **RAM:** `32.8/512 GB` (Used: 6.4%)
+- **vCPU:** `128 vCores` (Load: 37.9%)
+- **RAM:** `33.8/512 GB` (Used: 6.6%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
