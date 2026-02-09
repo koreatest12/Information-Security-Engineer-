@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-09 18:40:02 (KST)
+> **Time:** 2026-02-09 19:40:24 (KST)
 
-### 🤖 Copilot Briefing (18:40)
+### 🤖 Copilot Briefing (19:40)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,12 +17,12 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [국민대 이옥연 교수팀, 유·무선 통합 ‘하이브리드 양자 보안 VPN’ 개발 성공](http://www.boannews.com/media/view.asp?idx=142026&kind=&sub_kind=)
-- [Omada, 라이프타임 워런티로 기업용 네트워크 신뢰도 강화](http://www.boannews.com/media/view.asp?idx=142029&kind=&sub_kind=)
-- [[eGISEC 2026] 네오드림스, 모바일 완전 삭제 솔루션 선봬](http://www.boannews.com/media/view.asp?idx=141908&kind=&sub_kind=)
+- [국가AI전략위, 12일 세미나서 ‘AI 기본사회’ 청사진 그린다](http://www.boannews.com/media/view.asp?idx=142023&kind=&sub_kind=)
+- [개인정보위, 보건의료 데이터 ‘규제 족쇄’ 푼다... 현장서 해법 모색](http://www.boannews.com/media/view.asp?idx=142024&kind=&sub_kind=)
+- [삼정KPMG, CMMC 전담팀 가동 “美 방산 수출 ‘필수 관문’ 뚫는다”](http://www.boannews.com/media/view.asp?idx=142025&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.8%)
+- **vCPU:** `128 vCores` (Load: 37.6%)
 - **RAM:** `31.7/512 GB` (Used: 6.2%)
 
 ---
