@@ -11,7 +11,7 @@
 | 항목 (Metric) | 상태 (Status) |
 | :--- | :--- |
 | **시스템 버전** | 🐍 **Python 3.12** (Tabulate Support) |
-| **마지막 실행** | 🕒 2026-02-11 03:44:27 (KST) |
+| **마지막 실행** | 🕒 2026-02-11 04:48:48 (KST) |
 | **스크립트 실행** | 🏃‍♂️ **20** 개 수행 |
 | **데이터베이스** | 💾 Auto-Sync & Conflict Resolved |
 
@@ -28,7 +28,7 @@
 ### Root
 ```text
 beautifulsoup4==4.14.3
-cryptography==46.0.4
+cryptography==46.0.5
 fastapi==0.128.7
 feedparser==6.0.12
 matplotlib==3.10.8
@@ -48,7 +48,7 @@ textblob==0.19.0
 ### Scripts
 ```text
 beautifulsoup4==4.14.3
-cryptography==46.0.4
+cryptography==46.0.5
 feedparser==6.0.12
 matplotlib==3.10.8
 numpy==2.4.2
