@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-12 05:41:00 (KST)
+> **Time:** 2026-02-12 06:11:03 (KST)
 
-### 🤖 Copilot Briefing (05:41)
+### 🤖 Copilot Briefing (06:11)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,7 +10,7 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [신한은행, 국립암센터발전기금에 3억 후원 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE04MDFUbHJmWnpFa2llYzAtX2puSFBEQkJfUzY0c2YtSUhkbU5TS2NQU3hjMDlsV2dpYV9OeVExQ1hpZzNNM3I4dGpSY2w2RmkxMDIzNTFOQ0NtNnIweWE0NQ?oc=5)<br>• [신한은행 비이자이익 2배 가까이 늘었다, 정상혁 자산관리 특화로 '리딩뱅크' 재조준 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE1zOG4xS0xWQXBSUUhCWVNxczQxQURFU19vcDlNOVpfUkE2SktCa3VBc1VwSElwYkhJLVc5ZFpIV3BXZXFJZHRUdjBHdXdIQmpTVjU3ZWhhWTRHaTVRdndLR29OMTE2UzB6TFcxVlhlSmRjSlE?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행, 국립암센터발전기금에 3년간 3억 후원 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBnZFpnWEZ1Nk1sc2E3bS0yNUtHbEdHTDBMWU0xMURZU1JXeE1UeGI5SlJDMlZzZDVuc0pETEdycnpzbjBRenNOU2JkTklxTzBvaU1GeEVNQk4yTlBzSzk0MdIBeEFVX3lxTFBiZWsxa3hhcUNETWlRbGN3TGF6aWttbXVsaTVzT09MWFRtWWtOd2RoRGhFSllGMV9iclE5ZGk2TUtJcGEwbVd3dkI4OGNhcENRdDl3cms1b0ZocGl2NGZzcC1PQi1hTnVGU2RIVGN4Q2NCY2xGR3VqVQ?oc=5)<br>• [신한은행 비이자이익 2배 가까이 늘었다, 정상혁 자산관리 특화로 '리딩뱅크' 재조준 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE1zOG4xS0xWQXBSUUhCWVNxczQxQURFU19vcDlNOVpfUkE2SktCa3VBc1VwSElwYkhJLVc5ZFpIV3BXZXFJZHRUdjBHdXdIQmpTVjU3ZWhhWTRHaTVRdndLR29OMTE2UzB6TFcxVlhlSmRjSlE?oc=5)<br> |
 | **🟢 하나금융 (은행/투자)** | • [하나은행, KOSA와 맞손…'AI·SW기업 ESG' 인증 시 2%대 대출 - 뉴스1](https://news.google.com/rss/articles/CBMiYkFVX3lxTE5qMERlMlhuMjlEWmw5WlJydWRmZ2twSE1wUURBZzA5RHliV2p1bjhnMEJoNGdnT1JfZVBiRFJMa2dKdXN6cjZ1NGd2WnNNNzVORzZXeVhmZ2ZWbEx3NkUtVGtB?oc=5)<br>• [은행 2위 싸움 더 치열해진다···하나은행, 무서운 추격 - 뉴스웨이](https://news.google.com/rss/articles/CBMiakFVX3lxTE4yNEt3ajZSTnVpTVNMY0lRamUyUkNsS2tyZ2c4cUZZWVEzcENLc0o0dHNEVU9OcXloM1J4OGdIRzJHejNLS3NVcnBmbDNvNEp3WXFFNUhFYlQwMXZLMUt2eDZWM1dQanZhTFE?oc=5)<br> |
 
 ### 📰 General & Security News
@@ -22,8 +22,8 @@
 - [[SECON 2026] 디플리, ‘Listen AI Safety’](http://www.boannews.com/media/view.asp?idx=141882&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.6%)
-- **RAM:** `31.7/512 GB` (Used: 6.2%)
+- **vCPU:** `128 vCores` (Load: 37.5%)
+- **RAM:** `33.3/512 GB` (Used: 6.5%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
