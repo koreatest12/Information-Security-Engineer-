@@ -1,23 +1,23 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-02-11 20:57:52 | **Version:** `v2026.02.11`
+> **Updated:** 2026-02-11 21:43:23 | **Version:** `v2026.02.11`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 37.7% | ` ▇▄ ▃█▄▂▄▃▃▄█▆▄▂ ▂▃ ` | Auto-Scaling Check |
-| **BTC Price** | $67,014.00 | `▇█▅▆▅▅▄▄▄▅▆▃▂       ` | Market Volatility |
+| **CPU Load** | 38.7% | `▇▄ ▃█▄▂▄▃▃▄█▆▄▂ ▂▃ ▂` | Auto-Scaling Check |
+| **BTC Price** | $67,035.00 | `█▅▆▅▅▄▄▄▅▆▃▂        ` | Market Volatility |
 | **Global Mood** | 0.01 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
-- **RAM:** 6.4% Used
+- **RAM:** 6.2% Used
 - **Disk:** 71.8% Used
 
 ### 📰 Global News Omni-Channel
 #### 🛡️ Cyber Security
+- 😐 [Exposed Training Open the Door for Crypto-Mining in Fortune 500 Cloud Environments](https://thehackernews.com/2026/02/exposed-training-open-door-for-crypto.html)
 - 😨 [Microsoft Patches 59 Vulnerabilities Including Six Actively Exploited Zero-Days](https://thehackernews.com/2026/02/microsoft-patches-59-vulnerabilities.html)
-- 😐 [SSHStalker Botnet Uses IRC C2 to Control Linux Systems via Legacy Kernel Exploits](https://thehackernews.com/2026/02/sshstalker-botnet-uses-irc-c2-to.html)
-- 😐 [Patch Tuesday, February 2026 Edition](https://krebsonsecurity.com/2026/02/patch-tuesday-february-2026-edition/)
-- 😐 [Please Don’t Feed the Scattered Lapsus ShinyHunters](https://krebsonsecurity.com/2026/02/please-dont-feed-the-scattered-lapsus-shiny-hunters/)
+- 😐 [Kimwolf Botnet Lurking in Corporate, Govt. Networks](https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/)
+- 😐 [Patch Tuesday, January 2026 Edition](https://krebsonsecurity.com/2026/01/patch-tuesday-january-2026-edition/)
 - 😐 [Asia Fumbles With Throttling Back Telnet Traffic in Region](https://www.darkreading.com/threat-intelligence/asia-fumbles-telnet-threat-traffic)
 - 😐 [SolarWinds WHD Attacks Highlight Risks of Exposed Apps](https://www.darkreading.com/vulnerabilities-threats/solarwinds-whd-attacks-exposed-apps)
 
