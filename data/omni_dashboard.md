@@ -1,21 +1,21 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-02-11 20:12:19 | **Version:** `v2026.02.11`
+> **Updated:** 2026-02-11 20:57:52 | **Version:** `v2026.02.11`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 39.0% | `  ▇▄ ▃█▄▂▄▃▃▄█▆▄  ▂▃` | Auto-Scaling Check |
-| **BTC Price** | $66,644.00 | `▆▇█▅▆▅▅▄▄▄▅▆▃▂      ` | Market Volatility |
+| **CPU Load** | 37.7% | ` ▇▄ ▃█▄▂▄▃▃▄█▆▄▂ ▂▃ ` | Auto-Scaling Check |
+| **BTC Price** | $67,014.00 | `▇█▅▆▅▅▄▄▄▅▆▃▂       ` | Market Volatility |
 | **Global Mood** | 0.01 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
-- **RAM:** 6.0% Used
+- **RAM:** 6.4% Used
 - **Disk:** 71.8% Used
 
 ### 📰 Global News Omni-Channel
 #### 🛡️ Cyber Security
-- 😐 [North Korea-Linked UNC1069 Uses AI Lures to Attack Cryptocurrency Organizations](https://thehackernews.com/2026/02/north-korea-linked-unc1069-uses-ai.html)
-- 😐 [DPRK Operatives Impersonate Professionals on LinkedIn to Infiltrate Companies](https://thehackernews.com/2026/02/dprk-operatives-impersonate.html)
+- 😨 [Microsoft Patches 59 Vulnerabilities Including Six Actively Exploited Zero-Days](https://thehackernews.com/2026/02/microsoft-patches-59-vulnerabilities.html)
+- 😐 [SSHStalker Botnet Uses IRC C2 to Control Linux Systems via Legacy Kernel Exploits](https://thehackernews.com/2026/02/sshstalker-botnet-uses-irc-c2-to.html)
 - 😐 [Patch Tuesday, February 2026 Edition](https://krebsonsecurity.com/2026/02/patch-tuesday-february-2026-edition/)
 - 😐 [Please Don’t Feed the Scattered Lapsus ShinyHunters](https://krebsonsecurity.com/2026/02/please-dont-feed-the-scattered-lapsus-shiny-hunters/)
 - 😐 [Asia Fumbles With Throttling Back Telnet Traffic in Region](https://www.darkreading.com/threat-intelligence/asia-fumbles-telnet-threat-traffic)
@@ -28,8 +28,8 @@
 - 😨 [The Physics Behind the Quadruple Axel, the Most Difficult Jump in Figure Skating](https://www.wired.com/story/2026-winter-olympics-figure-skating-quadruple-axel-science/)
 
 #### 🌍 World & Politics
+- 😐 [Tumbler Ridge mass shooting: What we know so far](https://www.bbc.com/news/articles/c1e98w35qyjo?at_medium=RSS&at_campaign=rss)
 - 😐 [Police release man detained in connection to Nancy Guthrie disappearance](https://www.bbc.com/news/articles/cr5l4yy3ezmo?at_medium=RSS&at_campaign=rss)
-- 😐 [US lawmakers tell BBC Andrew should testify over Epstein files](https://www.bbc.com/news/articles/cx2gmde0vjlo?at_medium=RSS&at_campaign=rss)
 - 😐 [Russia Nears Capture of Key Ukrainian Towns After Year of Grinding Assaults](https://www.nytimes.com/2026/02/10/world/europe/russia-ukraine-battlefield-huliaipole-pokrovsk.html)
 - 😐 [Trump’s Threats to Cuba’s Oil Suppliers Put Mexico in a Bind](https://www.nytimes.com/2026/02/10/world/americas/mexico-cuba-oil.html)
 
