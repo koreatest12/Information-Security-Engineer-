@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-12 19:04:03 (KST)
+> **Time:** 2026-02-12 20:02:09 (KST)
 
-### 🤖 Copilot Briefing (19:04)
+### 🤖 Copilot Briefing (20:02)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,8 +10,8 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [신한은행, 인천 '초기 한부모 가족' 위해 1억원 후원 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBDb0R2WVhyYVZYWnlianVGbnBhWG5jR2xfZTVoZ0lZbGlpcWppbFBWbk54czRvUmhGekhSbUJOV2pxMU5FVjBKNUhmcV9ZeUJZalgzUEJGaGYwSlNBUnJUMNIBeEFVX3lxTE8tOER6b1V5TFNfOWZyQ0xMamg0ZlNneHFFR0d5X182MWVlbE1IanZmZUxPa205bndKRkZYUmhjZ1FYbDM3ZWZFUGY3UmlxbEVFTVVHOF85MmFGSkhRejc1QUZvZnVmVzVUcVlWV1lFbDBFd3dtNVB0Ng?oc=5)<br>• [신한은행, 시니어 대상 'SOL메이트' 정기예금 2차 판매 실시 - 뉴스1](https://news.google.com/rss/articles/CBMiYkFVX3lxTE5Jd1dvOVIzdTFfM1JjclFrQmVEX1IwWVpNeEstZWhlTTRYTXhmcmlVb2tXVFd4cjdESjJxWkhlUGxVSDlTbEdKZ2I0dkJ2SUMzcFhnYzdzUkRBWDJoYTRpT0tR?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [KOSA, 하나은행과 손잡고 ESG 경영진단 기업에 금리우대 대출상품 출시 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTFB0RUFoNGcxdy1OUExIcXlxWEp5OHItdGdWek9iRG9XTzd5Y05hQ1d1SzdXZldEcmZfNFh2eTlZZVVWNTFlVTIwZXlxRFlBdw?oc=5)<br>• [비이자 키운 이호성…하나은행 실적에 녹아든 '카드 DNA' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9ycTc5Y1lfNWxLSGtuR084aXU5MjRWR3RINV93WUpSWWNQaGJFR0ljd2FLWF9UdXA5Q24wWm1fV0FoNDhaNjFRcnI2VWlYNGM?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행, 시니어 대상 'SOL메이트' 정기예금 2차 판매 실시 - 뉴스1](https://news.google.com/rss/articles/CBMiYkFVX3lxTE5Jd1dvOVIzdTFfM1JjclFrQmVEX1IwWVpNeEstZWhlTTRYTXhmcmlVb2tXVFd4cjdESjJxWkhlUGxVSDlTbEdKZ2I0dkJ2SUMzcFhnYzdzUkRBWDJoYTRpT0tR?oc=5)<br>• [신한은행, 국립암센터발전기금에 3억 후원 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE04MDFUbHJmWnpFa2llYzAtX2puSFBEQkJfUzY0c2YtSUhkbU5TS2NQU3hjMDlsV2dpYV9OeVExQ1hpZzNNM3I4dGpSY2w2RmkxMDIzNTFOQ0NtNnIweWE0NQ?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [KOSA, 하나은행과 손잡고 ESG 경영진단 기업에 금리우대 대출상품 출시 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTFB0RUFoNGcxdy1OUExIcXlxWEp5OHItdGdWek9iRG9XTzd5Y05hQ1d1SzdXZldEcmZfNFh2eTlZZVVWNTFlVTIwZXlxRFlBdw?oc=5)<br>• [KOSA-하나은행, AI·SW기업 ESG경영진단 금리우대 대출상품 출시 - dt.co.kr](https://news.google.com/rss/articles/CBMiTkFVX3lxTE00YW9lbG52d013T1NBUlFZUFhpMnZmUi1LVjUySGZxMkFQWTU3cHE4NEloWkxaZ0Q0MWQtbWVEai16cnBqbllMdmlMUE96QQ?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
@@ -22,8 +22,8 @@
 - [조달청, 2026년 공공조달 발주계획 집계·발표... 역대 최대 규모 85.6조원](http://www.boannews.com/media/view.asp?idx=142154&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.8%)
-- **RAM:** `30.7/512 GB` (Used: 6.0%)
+- **vCPU:** `128 vCores` (Load: 37.6%)
+- **RAM:** `34.3/512 GB` (Used: 6.7%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
