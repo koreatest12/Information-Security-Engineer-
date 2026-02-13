@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-13 15:42:05 (KST)
+> **Time:** 2026-02-13 16:37:36 (KST)
 
-### 🤖 Copilot Briefing (15:42)
+### 🤖 Copilot Briefing (16:37)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,16 +10,16 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [[게시판] 신한은행, 펀드어워즈 최우수상 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE1fSHh3QXlxaUdaMHBuenhtaWRmOHAzWHJ5RWRrWmduUUJINlY3bGVCSjc2bnNuWlNFaE1VbFNELV9SU01LSU9sdGtzVmlsV19YZ280?oc=5)<br>• [신한은행, '펀드어워즈' 소비자보호 부문 2년 연속 최우수상 수상 - 한국아이닷컴](https://news.google.com/rss/articles/CBMia0FVX3lxTE9OdUZUQngzVkhzSDN2ckhXNC1FNllfZmFiNldmNm51a1pGb0EwRjBvQmx6SjFVWGhNcmdFNEMxWmZhUzBWUWlnLXVUMG5HX2tEcDVmOUlxdUJIc1hxTlJIMXhFVFR5VV9OOFMw0gFvQVVfeXFMTnY3OVdoenZ4dGd1X0h3WlRLR2lSQ3Bqd05PWmZHdDRWRldVVG1ZdFFPVE95WHZyU2RLazV0c3B1U2FnVEFEaUQ4Z1lQX3RnVkd3NndJMkduNl94WHBoWnZoRF84TW9xcFZZZV9LN19v?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행, 설 명절 맞이 ‘골드바 이벤트’ 진행 - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTE8zRHd4eWF0VHNFVXR6TGxDR3pmNUMwM01qWXlYMXdTV0pkcGRrOXJLaUE0bGw5RmxaZ2FtSlV3R0FsbDNWN2p0Y2Y3bF85NEpHRG9EbXdCandiLUJ1QURCa3I1UlMxSlFqOHJTdHFnT0wyeFXSAXdBVV95cUxQYjIxVk40X1ItdnJ5N3NZR3VkeW01VjNxS0VBZkVnOHMwYURlb1Fpel93RlNjN0h6U0pZRElHbms5Q3NwUzNpOHd2RkVsaXVhY1RjVWxOWUZpX2hxdEl5YThtYzkwbzVUWmNBcTJIbV9SeUJQRm9HMA?oc=5)<br>• [신한은행, ‘대한민국 펀드어워즈’ 금융소비자보호 부문 2년 연속 최우수상 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5iSWQ1cWtiUWtGTWpsSFgwSExLc214dnpwR0VGWnFGSTRkMktqeGZoQWJEY2N1X3JhdFlhZ2YyUDNJSjNKOGk1OTVDanI3R3BxdXZqZTFCdW5qUQ?oc=5)<br> |
 | **🟢 하나금융 (은행/투자)** | • [하나은행, ‘부동산 솔루션 역량’ 글로벌 공인 - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTE9VeFNma3plRUIxbW9FUTJhRTdXaDJqMFlSVzZTZ1lYcUZsTV8tZHV4eUh0d1RrTjQwWXp2bFdldGNkRG53RDUyT3ZUVXFVQ2dWNkRiRmd3dllBcVB1UUkzMlhjSGxrQXprV2VZRnl5SkVQcEnSAXdBVV95cUxOZEROaXU3WFhZLTdaUENCNTV0OFM0Rm9GZVhyOUtxbnFDSlJsS2RWRmpYcmd0Q1ZMVE8zOUw5X05Sb1ZfTFVxdEhGbnpMVERjOHpvUHhVZzl3T21ybG5uVnFzR1RjYXJNc0dCZHZPblY4SDNrNmZlQQ?oc=5)<br>• [비이자 키운 이호성…하나은행 실적에 녹아든 '카드 DNA' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9ycTc5Y1lfNWxLSGtuR084aXU5MjRWR3RINV93WUpSWWNQaGJFR0ljd2FLWF9UdXA5Q24wWm1fV0FoNDhaNjFRcnI2VWlYNGM?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [[단독] 금융권, 디도스 주의보 발령...무슬림 해킹그룹, 신한은행·하나금융 공격](http://www.boannews.com/media/view.asp?idx=142172&kind=&sub_kind=)
-- [보안 훈련용 앱이 부른 화근... 포춘 500대 기업 클라우드 내 암호화폐 채굴 ‘뒷문’ 돼](http://www.boannews.com/media/view.asp?idx=142171&kind=&sub_kind=)
-- [‘CVE-2026-25881’ 취약점, 샌드박스JS 보호막 무력화](http://www.boannews.com/media/view.asp?idx=142170&kind=&sub_kind=)
+- [금융보안원, 설 연휴 사이버위협대응 태세 ‘주의’로 격상](http://www.boannews.com/media/view.asp?idx=142179&kind=&sub_kind=)
+- [류제명 과기정통부 차관, 설 명절 대비 사이버 보안 최전선 점검](http://www.boannews.com/media/view.asp?idx=142173&kind=&sub_kind=)
+- [[AI와 보안] “생성형 AI 추론 능력 원리 뜯어보자”... AI 모델 겨냥 공격 증가](http://www.boannews.com/media/view.asp?idx=142178&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
 - **vCPU:** `128 vCores` (Load: 37.5%)
