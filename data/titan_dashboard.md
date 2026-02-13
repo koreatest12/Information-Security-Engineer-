@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 61 days, 12:38:07
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 61 days, 12:55:08
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.6% | `█████░░░░░░░░░░` |
-| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.1% | `█████░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, '그냥드림' 100억원으로 확대…"먹거리 기본 보장" - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE55TE9vb1hFMllhenBfaEhRX0pobVJTSDA5bk1zc28zSHQtWWp1RzVQUXVTWUkzSnV6ZDR6blhIVUNUcEJKaDRoZjhna1V5QXYxajlIUDI3cFk1a1JXM1g3a9IBeEFVX3lxTFBobUtIZzl4dlBRRW92VjF4cFZKekg2UHVwU0tJME00akd4eUtJcjhJbzVYZU1MeEtkTjZCUmdhc2hENE5pZXI3ak1GR0dwblF5bGZQa0VQUDBQWkQwVE9qOURUUThCSmVvbUwtVTk0NHlKcXY2Rm4xcQ?oc=5)
-- [설 연휴 한경 로그인하세요 - 한국경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBqVzhEV2xMVm5YdTlobFdTY3ZlVkVjYVo1UmI0TWF0MEg5UzV2TmFWVzZubFNhb2F0QW1YbUxVN3dtWlFnN0QyX2ZhZGItTmtJX3BWSNIBVEFVX3lxTFBqVzhEV2xMVm5YdTlobFdTY3ZlVkVjYVo1UmI0TWF0MEg5UzV2TmFWVzZubFNhb2F0QW1YbUxVN3dtWlFnN0QyX2ZhZGItTmtJX3BWSA?oc=5)
+- [한국 경제, 회복세 지속…“반도체 수출 호조·내수 개선이 회복 견인” - 산업일보](https://news.google.com/rss/articles/CBMiREFVX3lxTE9uVmJuLUhqSVhncGUzTGFhbG9mVGYxX2dyTWNQOFFLVHZQNWtCUURfUUwtODQxYnJ4VWZTRWFQaGtCRFRQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
