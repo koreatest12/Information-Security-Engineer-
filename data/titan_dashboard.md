@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 62 days, 7:34:19
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 62 days, 7:47:59
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.3% | `█████░░░░░░░░░░` |
-| **RAM** | `30.7/512 GB` | 6.0% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.7% | `█████░░░░░░░░░░` |
+| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [李 칭찬에…신한금융 그냥드림 사업에 45억→100억 지원 확대 - 뉴스1](https://news.google.com/rss/articles/CBMiYkFVX3lxTE81VmlKQzcySngwNGZjT1daWWVtbGhqa0thYUUwVC1WQTN5ZTgyZEVZelgwNXJuV2Q1UUZ3OE1ELS1VOTM5eTh1MzhNVlI4cm9zUlAwdUpSMDBaRm9PNkJMUnFB?oc=5)
-- [한국경제 1면 “주식 단기매매 않겠다” 결의… 언론계 확산될까 - 미디어오늘](https://news.google.com/rss/articles/CBMicEFVX3lxTE8yLTBVQzFkZXV2cDUxTjR1cVlWSFUwbHJYVks4VTB1VDE0OEJYdnJobG5rNk9uMERpd0xKUWVrQjNXdUFFVG9LTmdBdlJ1WkdUT2prMjJySnpEUTZ4V0JNZ2ZoSHVaTU5fZ3REMjM1SlA?oc=5)
+- [[금융 AI 대전환②] 신한, 1부서 1에이전트로 AX 전면화…거버넌스도 정비 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1MTEtlTFdBWlJZVUpRaXEtWHVhUGNHRnZLa08zcldrbFdTRFVYVV9KSVBxQ3dJZTktTl9HZkNzOWVrcVR2RUU0YjA4bTZtNms?oc=5)
+- ["전쟁 터지면 한국 경제 23% 날아간다"…대만 변수에 세계 '초비상' - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE44UUtPNGg2UWdiMzh0YWFQbHRIX20tUVlaWW5GbFJCNklTdXpxSWRlUW4tajJPdVBKQU45eWFnbkd6SElZMml4N2kxY3BqaHI3MkEyS19VLWdxdjI3Zm54WA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
