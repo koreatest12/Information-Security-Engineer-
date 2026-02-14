@@ -1,23 +1,23 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-02-14 17:52:20 | **Version:** `v2026.02.14`
+> **Updated:** 2026-02-14 18:04:19 | **Version:** `v2026.02.14`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 38.4% | `  █   ▅  ▂▂ ▂   ▂ ▄ ` | Auto-Scaling Check |
-| **BTC Price** | $69,730.00 | ` ▂             ▃▄▆▅█` | Market Volatility |
+| **CPU Load** | 38.6% | ` █   ▅  ▂▂ ▂   ▂ ▄  ` | Auto-Scaling Check |
+| **BTC Price** | $69,804.00 | `              ▃▄▅▅▇█` | Market Volatility |
 | **Global Mood** | -0.05 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
-- **RAM:** 6.3% Used
+- **RAM:** 6.2% Used
 - **Disk:** 38.0% Used
 
 ### 📰 Global News Omni-Channel
 #### 🛡️ Cyber Security
 - 😐 [Google Ties Suspected Russian Actor to CANFAIL Malware Attacks on Ukrainian Orgs](https://thehackernews.com/2026/02/google-ties-suspected-russian-actor-to.html)
 - 😐 [Google Links China, Iran, Russia, North Korea to Coordinated Defense Sector Cyber Operations](https://thehackernews.com/2026/02/google-links-china-iran-russia-north.html)
-- 😐 [Kimwolf Botnet Swamps Anonymity Network I2P](https://krebsonsecurity.com/2026/02/kimwolf-botnet-swamps-anonymity-network-i2p/)
-- 😐 [Patch Tuesday, February 2026 Edition](https://krebsonsecurity.com/2026/02/patch-tuesday-february-2026-edition/)
+- 😐 [Kimwolf Botnet Lurking in Corporate, Govt. Networks](https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/)
+- 😐 [Patch Tuesday, January 2026 Edition](https://krebsonsecurity.com/2026/01/patch-tuesday-january-2026-edition/)
 - 😐 [Microsoft Under Pressure to Bolster Defenses for BYOVD Attacks](https://www.darkreading.com/application-security/microsoft-under-pressure-defenses-byovd-attacks)
 - 😨 [Nation-State Hackers Put Defense Industrial Base Under Siege](https://www.darkreading.com/cyber-risk/nation-state-hackers-defense-industrial-base-under-siege)
 
@@ -28,8 +28,8 @@
 - 😐 [The Fight Over US Climate Rules Is Just Beginning](https://www.wired.com/story/the-fight-over-us-climate-rules-is-just-beginning/)
 
 #### 🌍 World & Politics
-- 😐 [World's rules-based order 'no longer exists', Germany's Merz warns](https://www.bbc.com/news/articles/cy4wpv0wx43o?at_medium=RSS&at_campaign=rss)
-- 😨 [US homeland security shutdown could mean airport delays, travel groups say](https://www.bbc.com/news/articles/cwy8dw5zk7yo?at_medium=RSS&at_campaign=rss)
+- 😨 [Gisèle Pelicot tells BBC: I felt crushed by horror - but I don't feel anger](https://www.bbc.com/news/articles/c9q5l22ryy4o?at_medium=RSS&at_campaign=rss)
+- 😐 [Police activity under way near Nancy Guthrie's home](https://www.bbc.com/news/articles/cly8j19rql7o?at_medium=RSS&at_campaign=rss)
 - 🙂 [Live Updates: Rubio Emphasizes Shared History With Europe at Munich Security Conference](https://www.nytimes.com/live/2026/02/14/world/munich-security-conference-rubio)
 - 😐 [Japan Releases Chinese Boat Captain After Detaining Him for 30 Hours](https://www.nytimes.com/2026/02/14/world/asia/japan-china-boat-captain-release.html)
 
