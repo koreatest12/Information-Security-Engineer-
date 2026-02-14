@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-14 16:07:21 (KST)
+> **Time:** 2026-02-14 16:24:48 (KST)
 
-### 🤖 Copilot Briefing (16:07)
+### 🤖 Copilot Briefing (16:24)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [[SECON 2026] Verkada, 비디오 보안 카메라](http://www.boannews.com/media/view.asp?idx=141937&kind=&sub_kind=)
+- [MS 아웃룩 추가 기능 악용한 최초의 사례... 4000개 MS 계정 탈취](http://www.boannews.com/media/view.asp?idx=142224&kind=&sub_kind=)
 - [[eGISEC 2026] 벨로크, 방화벽 정책 통합 관리 시스템 ‘FOCS’](http://www.boannews.com/media/view.asp?idx=141968&kind=&sub_kind=)
-- [[SECON 2026] 슈프리마, 바이오스타 X](http://www.boannews.com/media/view.asp?idx=141953&kind=&sub_kind=)
-- [[SECON 2026] 미래시그널, NK-SIPG804M](http://www.boannews.com/media/view.asp?idx=141936&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.9%)
-- **RAM:** `34.8/512 GB` (Used: 6.8%)
+- **vCPU:** `128 vCores` (Load: 36.9%)
+- **RAM:** `32.8/512 GB` (Used: 6.4%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
