@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 62 days, 2:26:37
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 62 days, 2:38:28
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.2% | `█████░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.1% | `█████░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신유빈도 함께한 나눔…신한금융, 자립준비청년 독립 지원 나서 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFB4NjRoSUp6RmJYbjlxcUVDbDRDekxEdHZkYjFFVWxfMDFlREl1dS1pbVJwLVNXN2FudWxBejQ3c1NxSDJVdGhVMmNqbkhTTGx2c1lFV1Q2anZKNFhUMjFJTTkwNmFaSEtWUnNj?oc=5)
+- [李 대통령 칭찬한…신한금융 ‘그냥드림’ 지원 100억으로 확대 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE04OHF4Qk1QcHJyVTM2NmIxVzNoY0xDVmUxZ25UZ0hkSkhDR0Q2dWlxRHNmT09YR29KS0NjUFBIYnAwYy1MNGV0Y2tjX2o0SXFRMUZCczBQNW9YZWhWSzNFaU1jdkhLVmtQSWl4RU5WY3B2bWs?oc=5)
 - ["전쟁 터지면 한국 경제 23% 날아간다"…대만 변수에 세계 '초비상' - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE44UUtPNGg2UWdiMzh0YWFQbHRIX20tUVlaWW5GbFJCNklTdXpxSWRlUW4tajJPdVBKQU45eWFnbkd6SElZMml4N2kxY3BqaHI3MkEyS19VLWdxdjI3Zm54WA?oc=5)
 
 ---
