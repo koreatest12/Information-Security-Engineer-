@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 62 days, 7:23:21
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 62 days, 7:34:19
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.2% | `█████░░░░░░░░░░` |
-| **RAM** | `31.2/512 GB` | 6.1% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.3% | `█████░░░░░░░░░░` |
+| **RAM** | `30.7/512 GB` | 6.0% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 취약계층 먹거리 '그냥드림' 45억→100억 증액 지원 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTE1INU9RLWZCaXNkRUhPSkFhVjRfeGpRb0JNdVRWV0p0cno0NDdWN25MZlJxMXdJZThQdHMyRkZLeHVBdGVRWFBsLVJYaU5VLXlmNFFFYWRGV2g4UG5ob1hMRktDanMyR3Bya2dR?oc=5)
+- [李 칭찬에…신한금융 그냥드림 사업에 45억→100억 지원 확대 - 뉴스1](https://news.google.com/rss/articles/CBMiYkFVX3lxTE81VmlKQzcySngwNGZjT1daWWVtbGhqa0thYUUwVC1WQTN5ZTgyZEVZelgwNXJuV2Q1UUZ3OE1ELS1VOTM5eTh1MzhNVlI4cm9zUlAwdUpSMDBaRm9PNkJMUnFB?oc=5)
 - [한국경제 1면 “주식 단기매매 않겠다” 결의… 언론계 확산될까 - 미디어오늘](https://news.google.com/rss/articles/CBMicEFVX3lxTE8yLTBVQzFkZXV2cDUxTjR1cVlWSFUwbHJYVks4VTB1VDE0OEJYdnJobG5rNk9uMERpd0xKUWVrQjNXdUFFVG9LTmdBdlJ1WkdUT2prMjJySnpEUTZ4V0JNZ2ZoSHVaTU5fZ3REMjM1SlA?oc=5)
 
 ---
