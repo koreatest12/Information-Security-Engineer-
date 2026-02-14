@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 61 days, 22:42:36
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 61 days, 23:02:29
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.2% | `█████░░░░░░░░░░` |
-| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.4% | `█████░░░░░░░░░░` |
+| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, '그냥드림' 100억원으로 확대…"먹거리 기본 보장" - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE55TE9vb1hFMllhenBfaEhRX0pobVJTSDA5bk1zc28zSHQtWWp1RzVQUXVTWUkzSnV6ZDR6blhIVUNUcEJKaDRoZjhna1V5QXYxajlIUDI3cFk1a1JXM1g3a9IBeEFVX3lxTFBobUtIZzl4dlBRRW92VjF4cFZKekg2UHVwU0tJME00akd4eUtJcjhJbzVYZU1MeEtkTjZCUmdhc2hENE5pZXI3ak1GR0dwblF5bGZQa0VQUDBQWkQwVE9qOURUUThCSmVvbUwtVTk0NHlKcXY2Rm4xcQ?oc=5)
-- [금값·부동산 전망…'설 밥상'처럼 푸짐한 한경 콘텐츠 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5aVG8xRFJfWDBON184QnZxMTVndDJ2VWJ4OXZwSGVFUk50ZG0zc3dXLWJSSEdKUlBDdVdxY2hTeFJxVlNuYXRIRTBwbEhlWmNTa0FidjhINk1PZ9IBVEFVX3lxTE5oOEsyV05mbDNFeVl1WDhrc2QxMzJtc2Y4MXpXeG9vanN5eXNxd2xhRDc1eXc4d3I0ekFtNzZ1Zy1ZV2hjdi1TYnNva1RhLWJSaFlNVA?oc=5)
+- [신유빈도 함께한 나눔…신한금융, 자립준비청년 독립 지원 나서 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFB4NjRoSUp6RmJYbjlxcUVDbDRDekxEdHZkYjFFVWxfMDFlREl1dS1pbVJwLVNXN2FudWxBejQ3c1NxSDJVdGhVMmNqbkhTTGx2c1lFV1Q2anZKNFhUMjFJTTkwNmFaSEtWUnNj?oc=5)
+- [[자막뉴스] 출발하자마자 넘어진 한국경제...트럼프 압박에 '속수무책' - YTN](https://news.google.com/rss/articles/CBMiXkFVX3lxTE5oMzc0WUduN2xFTDdyblBDWTZTS25DbXZHV0YteGxPckFBbEl5bExOYU5MVnU5cHBOTlMwMG1GZnhqMHlScndFaGxwY2RGUTNKOFVVem83LWx2cDNJdEHSAYMBQVVfeXFMTkgzZHJYZ05oT3h1eXJ1REZIY21pakFUMG56dkJQR3ItUExRU0tCRk5fd0V2ODdsakk4RTFDM2ZITVgxamJNNk1wdVVFcHlVaThlT3MtdHNfckpreWpWZVQ3NThJbGg3ai1WVVVxbHhxMmE4TFBaeTREdXZ6RFBOQVB6Qnc?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
