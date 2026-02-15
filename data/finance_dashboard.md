@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-15 11:30:54 (KST)
+> **Time:** 2026-02-15 12:34:13 (KST)
 
-### 🤖 Copilot Briefing (11:30)
+### 🤖 Copilot Briefing (12:34)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [[SECON 2026] 비스카, COMBI 정션박스](http://www.boannews.com/media/view.asp?idx=141939&kind=&sub_kind=)
-- [[eGISEC 2026] 모니터랩, AIONCLOUD SSE](http://www.boannews.com/media/view.asp?idx=141967&kind=&sub_kind=)
-- [[SECON 2026] 신화시스템, RM08/20](http://www.boannews.com/media/view.asp?idx=141955&kind=&sub_kind=)
+- [러시아 연계 ‘Prometei’ 봇넷, 윈도우 서버 노려 파상공격 재개](http://www.boannews.com/media/view.asp?idx=142236&kind=&sub_kind=)
+- [[eGISEC 2026] 삼오씨엔에스, 파르고스 v3.0](http://www.boannews.com/media/view.asp?idx=141994&kind=&sub_kind=)
+- [[SECON 2026] 실리콘브릿지, 아이박스 v4](http://www.boannews.com/media/view.asp?idx=141956&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.7%)
-- **RAM:** `32.3/512 GB` (Used: 6.3%)
+- **vCPU:** `128 vCores` (Load: 37.6%)
+- **RAM:** `33.8/512 GB` (Used: 6.6%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
