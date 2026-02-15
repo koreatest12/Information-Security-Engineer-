@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 63 days, 12:03:25
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 63 days, 12:11:30
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,10 +15,10 @@
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
 | **CPU** | `128 vCores` | 39.2% | `█████░░░░░░░░░░` |
-| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
+| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[금융 AI 대전환②] 신한, 1부서 1에이전트로 AX 전면화…거버넌스도 정비 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1MTEtlTFdBWlJZVUpRaXEtWHVhUGNHRnZLa08zcldrbFdTRFVYVV9KSVBxQ3dJZTktTl9HZkNzOWVrcVR2RUU0YjA4bTZtNms?oc=5)
+- [신한금융, '그냥드림'사업에 100억원 지원 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE96RmRjQ1NteE9NTk9PTzV1MXBnSWNtdTFRcUF4LUo5dVJVei1NTnU4d1A2VGwzZmw0bGNjMlBQeXhDdUZxQURvZnQ1akpCcjJOZUZr?oc=5)
 - ["한국 경제 23% 초토화 가능성"...세계 초비상 걸리게 한 '타이완 변수' [지금이뉴스] - YTN](https://news.google.com/rss/articles/CBMiXkFVX3lxTE9Ja09oa3RWaTN3SmRNbDJrLUVSejJCMEd0TjdYR1NSMVRZVkFUVE9oMUs2bTItY01Md2xWcHhuamRFM1RvUW1TZlV2T0lNaGRiT25tVXREb2dnUk5MVHfSAYMBQVVfeXFMTk1DNWgtenFETjhyX2dhLUxPTktnMmx6SHp0V25vS2Nmak5kSzhTZTFRVGRIc0tlOU82ajcwSGJhRHRfWU1BTjVvMjh1Um9ncDNaYTBHX29WNTkxVVk5N2RDaGJvVlpIdk85SFNrZF95YkFkYktlT3FxWHQweHZqZllENW8?oc=5)
 
 ---
