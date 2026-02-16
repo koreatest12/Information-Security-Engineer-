@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 64 days, 16:02:07
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 64 days, 16:14:21
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.1% | `█████░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.2% | `█████░░░░░░░░░░` |
+| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한銀 “웹3 시대 준비하지 않는 은행은 사라질 것” - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1sd1h6OWh4ZTNGaFctc1MwQThWMlNFeVJEOEh5SUdaZnVtNFpEMmhMaFNJQVV2blh0WHZKVlVRV3RjWDBidmNOX0NYbGlzUmc?oc=5)
+- [신한·하나, ELS 과징금 2000억대 확정에도 CET1 13%대 방어 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTE9MdXJxbF9hRmVpRVRNRXpVam9xUG9LSGIxS3QzUUVVR1BrbDlJblQ3X2dKcU9TdVFEWW5zbUpFZDdIWjlVZXZSZldrS2FYNzJXNzBsQ0NsRWJ1dlFEZGdYMzZBalYxUlNE0gFsQVVfeXFMT05TXzF5SkxnWVo1TEkwQ1dCQWdZOUxNNERjanhTRzJ5VjhLNUhwVFVsWFdaUW5mUnVQXzdOQ1k3alFYZ3dheURtWTdsbGpObE5Ja0NVbnlRM3VjbzJwaGVGY1kyeWt6c2NkREhN?oc=5)
 - ["연휴 끝나면 '이 종목'부터"...증권사 '픽' 봤더니 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBrUEF5MUV5QlQxM3ZMcU9TM2ZCYUZ0Qk9NOVh2SDFCb3ZMTENQQWpCZElTUXowcmd5SGlyam9kb1lCeGR0MlJ0SVlxWlRtNnM?oc=5)
 
 ---

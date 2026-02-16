@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-17 08:46:00 (KST)
+> **Time:** 2026-02-17 08:58:18 (KST)
 
-### 🤖 Copilot Briefing (08:46)
+### 🤖 Copilot Briefing (08:58)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,12 +17,12 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [[SECON 2026] 엑시스커뮤니케이션즈, AXIS D4200-VE](http://www.boannews.com/media/view.asp?idx=142192&kind=&sub_kind=)
+- [[eGISEC 2026] 안랩, AhnLab XTG](http://www.boannews.com/media/view.asp?idx=142182&kind=&sub_kind=)
 - [연휴에 뭐 보나... 한국 톱 해커가 추천하는 해킹 영화·드라마는?](http://www.boannews.com/media/view.asp?idx=142212&kind=&sub_kind=)
-- [[eGISEC 2026] 세이퍼존, AI-DLP v10](http://www.boannews.com/media/view.asp?idx=141997&kind=&sub_kind=)
-- [[SECON 2026] 아이원코리아, 무루프(Loop-free)](http://www.boannews.com/media/view.asp?idx=141986&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 39.1%)
+- **vCPU:** `128 vCores` (Load: 36.6%)
 - **RAM:** `32.8/512 GB` (Used: 6.4%)
 
 ---
