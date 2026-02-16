@@ -1,11 +1,11 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-02-17 00:27:30 | **Version:** `v2026.02.17`
+> **Updated:** 2026-02-17 00:46:10 | **Version:** `v2026.02.17`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 38.2% | `▃▃▃▄▂▅▇█▂ ▃▇▃ ▆▃▂▂  ` | Auto-Scaling Check |
-| **BTC Price** | $68,279.00 | `▂▂▃▃▄▂▂▃  ▃▃▆█      ` | Market Volatility |
+| **CPU Load** | 38.2% | `▃▃▄▂▅▇█▂ ▃▇▃ ▆▃▂▂   ` | Auto-Scaling Check |
+| **BTC Price** | $67,406.00 | `▄▅▅▅▄▄▅▃▄▅▅▇█▃▃▃▄▃▃ ` | Market Volatility |
 | **Global Mood** | 0.06 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
@@ -16,8 +16,8 @@
 #### 🛡️ Cyber Security
 - 😐 [Weekly Recap: Outlook Add-Ins Hijack, 0-Day Patches, Wormable Botnet & AI Malware](https://thehackernews.com/2026/02/weekly-recap-outlook-add-ins-hijack-0.html)
 - 🙂 [Safe and Inclusive E‑Society: How Lithuania Is Bracing for AI‑Driven Cyber Fraud](https://thehackernews.com/2026/02/safe-and-inclusive-esociety-how.html)
-- 😐 [Kimwolf Botnet Lurking in Corporate, Govt. Networks](https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/)
-- 😐 [Patch Tuesday, January 2026 Edition](https://krebsonsecurity.com/2026/01/patch-tuesday-january-2026-edition/)
+- 😐 [Kimwolf Botnet Swamps Anonymity Network I2P](https://krebsonsecurity.com/2026/02/kimwolf-botnet-swamps-anonymity-network-i2p/)
+- 😐 [Patch Tuesday, February 2026 Edition](https://krebsonsecurity.com/2026/02/patch-tuesday-february-2026-edition/)
 - 😨 [260K+ Chrome Users Duped by Fake AI Browser Extensions](https://www.darkreading.com/cyber-risk/chrome-fake-ai-browser-extensions)
 - 🙂 [Zscaler-SquareX Deal Boosts Zero Trust, Secure Browsing Capabilities](https://www.darkreading.com/remote-workforce/zscaler-squarex-deal-boosts-zero-trust-secure-browsing-capabilities)
 
