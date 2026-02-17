@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-17 11:30:50 (KST)
+> **Time:** 2026-02-17 12:29:57 (KST)
 
-### 🤖 Copilot Briefing (11:30)
+### 🤖 Copilot Briefing (12:29)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -11,7 +11,7 @@
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
 | **🔵 신한금융 (은행/투자)** | • [여자농구 BNK, 신한은행 잡고 공동 4위로…안혜지 3점 버저비터 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFB3VVZVTkM5dkJ5ekFYWW9ZYW9sSGl6VWsyVGd6VzgtZmE1RXlaM2RkZjFvelBCSVFCaENQNDFnemJudUhvc1pxMkphUGZNa3B1YkNvMjdMWmJERG_SAWBBVV95cUxPRTdHT3RqTFpWQi1FejAxTUk2Sk5sNU1CMWtQeWZvUzRfaGlPUFZfN3RqNzg4ckhnYklYMjR2THFYVEJHTzFOY0I4cWZCNmpZOXl2SlRmeld2eDQtaktLa1Q?oc=5)<br>• ['안혜지 버저비터' BNK, 우리은행과 공동 4위...신한은행 홈 12연패 수렁 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9xV0ExaHljaWt5SjU2RjBaWkRVYmswcTZ2RnZmQW5sQWRYM3lHRzd2dkhTb2RSX0xjN3RCXzNYRmo1U3Y0NGx4OXBuTGtPbWc?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [요즘 누가 예금하나…증시 초호황에 은행들 "10% 이자 드려요" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9HYXo4NEZyZTRrTXFiOTMtNUlZaGp1NEotV211d1ZKaVFnNHVxbllaczFSNFFvbkk4NmJXSjRFV3RWcEFER3V6YlYyYjMxQzg?oc=5)<br>• [하나은행, 충청권 미래전략산업 육성 위해 기술보증기금과 생산적 금융 지원 - 나눔경제뉴스](https://news.google.com/rss/articles/CBMibEFVX3lxTE50NHhTcUlvdkFUUW8wLTU0VzVRQmNmZHI1SVVPV2YxbTJkZG5zMEZwQ3R1QjBTdzFkWlplckhJbDUyNC1mOWR2UUxqRzN6aExUNVRaNFlWcF84dE1JaUFCSkIyUGxGenpfOF9WaA?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [요즘 누가 예금하나…증시 초호황에 은행들 "10% 이자 드려요" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9HYXo4NEZyZTRrTXFiOTMtNUlZaGp1NEotV211d1ZKaVFnNHVxbllaczFSNFFvbkk4NmJXSjRFV3RWcEFER3V6YlYyYjMxQzg?oc=5)<br>• [평택시국제교류재단-하나은행 평택금융센터지점 업무협약 체결 - pinenews.co.kr](https://news.google.com/rss/articles/CBMiR0FVX3lxTE1YeC01dmRHdkExZUZNUU56NDZsU3p5Tkh3a2xyQ0hBSWpYeDBVZmVWeG5ZVVNUa1pVOTBtdHdfT294anF0eElF?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
@@ -22,7 +22,7 @@
 - [화이트해커 처벌 걱정 없이 활동할 수 있게 된다](http://www.boannews.com/media/view.asp?idx=142257&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.6%)
+- **vCPU:** `128 vCores` (Load: 37.7%)
 - **RAM:** `32.8/512 GB` (Used: 6.4%)
 
 ---
