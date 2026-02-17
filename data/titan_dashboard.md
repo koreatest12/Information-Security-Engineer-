@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 64 days, 16:34:41
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 64 days, 17:10:44
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.1% | `█████░░░░░░░░░░` |
-| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.9% | `█████░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한·하나, ELS 과징금 2000억대 확정에도 CET1 13%대 방어 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTE9MdXJxbF9hRmVpRVRNRXpVam9xUG9LSGIxS3QzUUVVR1BrbDlJblQ3X2dKcU9TdVFEWW5zbUpFZDdIWjlVZXZSZldrS2FYNzJXNzBsQ0NsRWJ1dlFEZGdYMzZBalYxUlNE0gFsQVVfeXFMT05TXzF5SkxnWVo1TEkwQ1dCQWdZOUxNNERjanhTRzJ5VjhLNUhwVFVsWFdaUW5mUnVQXzdOQ1k3alFYZ3dheURtWTdsbGpObE5Ja0NVbnlRM3VjbzJwaGVGY1kyeWt6c2NkREhN?oc=5)
+- [신한투자증권, 한국형 BDC의 ABC 리포트 발간 - 핀포인트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTE9vZElkSmpvVldyWWRwdU12YVdNV19ZUzBJNHhrOWIwSDZUZWxJeFF0LU1ubGh2NlJuVjl1TmNSVDNqTHdiSTRyODdPaXp0QWpoUnNYOFk3SzVyOE5UZmRmVWJQWWxLNFpsTjlXbzFpYkVaVm_SAXdBVV95cUxQMU1JX1MxSnRPWWxDbTFkcnpMZEFZU0J1Z3pkdGo3SlpreDBzclpYRHA0dDdDOHBWelFLelRNRl9jUV9VeGNCa1g5bko4bXR1U0Vvc0RqazZfbFVZV0xvOTdzVlJIZ1dicnFRMjh6MUtqWjc2NmZRQQ?oc=5)
 - ["연휴 끝나면 '이 종목'부터"...증권사 '픽' 봤더니 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBrUEF5MUV5QlQxM3ZMcU9TM2ZCYUZ0Qk9NOVh2SDFCb3ZMTENQQWpCZElTUXowcmd5SGlyam9kb1lCeGR0MlJ0SVlxWlRtNnM?oc=5)
 
 ---
