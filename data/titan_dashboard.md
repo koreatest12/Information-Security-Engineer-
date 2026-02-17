@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 65 days, 14:27:26
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 65 days, 14:40:29
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.1% | `█████░░░░░░░░░░` |
-| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.4% | `█████░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [주주환원이 끌어올린 4대 금융 주가, 비과세 '우리금융' 눈에 띄네 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE1BRWRBMnlfWlpweHdSc0hNOWRwNmE4MDNodGNRQjNiLWpWVnFLOEtuRmVGS0VOcXpWbkZoa3lVSFdWQU9oNGloZGxfU0V3UkUzWkJYbEdscmNjeEdVU2RMbWIxeFFLbHJvdlBmZVQwNGloRkU?oc=5)
-- [2% 문턱에 선 한국경제…회복 기대 속 하방 변수 여전 - 신아일보](https://news.google.com/rss/articles/CBMib0FVX3lxTFA0WmVSTnR2VlJySXVlelpGbl8zbWZlazU4S0Z0TDNCRW0wWlM2VFdFdFNxZVh2c0pKc3I0aW5YS3RjcUdBSEpLV2VPbkNMTjlIZ0VoVVpURkhKZWdENVNIZklxdGRtUm01Z1d5S0Riaw?oc=5)
+- [지주·은행 CEO, 올해 대거 임기 만료…실적은 합격점, 관건은 지배구조 - CEO스코어데일리](https://news.google.com/rss/articles/CBMiaEFVX3lxTE4wRXJfX0FzMW11N1R2LUhHbk9lTUhob2N5eFJqV1JUSkQ3UXpUT2ZsRVpGaWJBS04tSVpqa01BWGgtLVRoWkxUWjZrcjd3TFRmYUJNN3Fwek96VmpaSWxnbzF1aTJnSl9M?oc=5)
+- ["한국 경제 23% 초토화 가능성"...세계 초비상 걸리게 한 '타이완 변수' [지금이뉴스] - YTN](https://news.google.com/rss/articles/CBMiXkFVX3lxTE9Ja09oa3RWaTN3SmRNbDJrLUVSejJCMEd0TjdYR1NSMVRZVkFUVE9oMUs2bTItY01Md2xWcHhuamRFM1RvUW1TZlV2T0lNaGRiT25tVXREb2dnUk5MVHfSAYMBQVVfeXFMTk1DNWgtenFETjhyX2dhLUxPTktnMmx6SHp0V25vS2Nmak5kSzhTZTFRVGRIc0tlOU82ajcwSGJhRHRfWU1BTjVvMjh1Um9ncDNaYTBHX29WNTkxVVk5N2RDaGJvVlpIdk85SFNrZF95YkFkYktlT3FxWHQweHZqZllENW8?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
