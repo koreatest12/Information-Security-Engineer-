@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-18 05:56:03 (KST)
+> **Time:** 2026-02-18 06:11:10 (KST)
 
-### 🤖 Copilot Briefing (05:56)
+### 🤖 Copilot Briefing (06:11)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -22,8 +22,8 @@
 - [[eGISEC 2026] 스콥정보통신, 아이피스캔 NAC](http://www.boannews.com/media/view.asp?idx=142083&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.5%)
-- **RAM:** `32.3/512 GB` (Used: 6.3%)
+- **vCPU:** `128 vCores` (Load: 37.1%)
+- **RAM:** `35.8/512 GB` (Used: 7.0%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
