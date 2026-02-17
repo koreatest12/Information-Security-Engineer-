@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-17 15:33:40 (KST)
+> **Time:** 2026-02-17 16:03:26 (KST)
 
-### 🤖 Copilot Briefing (15:33)
+### 🤖 Copilot Briefing (16:03)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [[SECON 2026] 아이닉스, EN683](http://www.boannews.com/media/view.asp?idx=142101&kind=&sub_kind=)
 - [[eGISEC 2026] 스냅태그, 랩가드 M(App 화면 보안)·랩가드 W(Web 화면 보안)](http://www.boannews.com/media/view.asp?idx=142082&kind=&sub_kind=)
 - [[SECON 2026] 오토엘, G32 라이다](http://www.boannews.com/media/view.asp?idx=142072&kind=&sub_kind=)
-- [“민감한 업무 지시 복붙 안 돼”... 삼성 임직원 메신저에 ‘안심 대화’ 기능 도입](http://www.boannews.com/media/view.asp?idx=142258&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.7%)
-- **RAM:** `32.8/512 GB` (Used: 6.4%)
+- **vCPU:** `128 vCores` (Load: 37.6%)
+- **RAM:** `33.3/512 GB` (Used: 6.5%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
