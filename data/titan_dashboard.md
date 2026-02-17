@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 65 days, 13:27:14
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 65 days, 13:40:43
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
 
-> **Q:** 종합 상황 브리핑
+> **Q:** 
 
 관련 정보 없음
 
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.0% | `█████░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.6% | `█████░░░░░░░░░░` |
+| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- ['리딩' 깃발 내린 신한금융…주력 계열사 1위 다 내줬다 - 서울경제TV](https://news.google.com/rss/articles/CBMiZEFVX3lxTE9ickc0TEUwcFRRWm5nWFBQTWN5ZHl2ZFBMaUJfeHRvX1NjcmMxNzV0VnFKU1g0akFsUVZoUFBrMmVRTENqc3VNTHdBUVctVFhYZEtHVzhoYkJzLTJTbUJLaERHYmg?oc=5)
-- ["한국 경제 23% 초토화 가능성"...세계 초비상 걸리게 한 '타이완 변수' [지금이뉴스] - YTN](https://news.google.com/rss/articles/CBMiXkFVX3lxTE9Ja09oa3RWaTN3SmRNbDJrLUVSejJCMEd0TjdYR1NSMVRZVkFUVE9oMUs2bTItY01Md2xWcHhuamRFM1RvUW1TZlV2T0lNaGRiT25tVXREb2dnUk5MVHfSAYMBQVVfeXFMTk1DNWgtenFETjhyX2dhLUxPTktnMmx6SHp0V25vS2Nmak5kSzhTZTFRVGRIc0tlOU82ajcwSGJhRHRfWU1BTjVvMjh1Um9ncDNaYTBHX29WNTkxVVk5N2RDaGJvVlpIdk85SFNrZF95YkFkYktlT3FxWHQweHZqZllENW8?oc=5)
+- [주주환원이 끌어올린 4대 금융 주가, 비과세 '우리금융' 눈에 띄네 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE1BRWRBMnlfWlpweHdSc0hNOWRwNmE4MDNodGNRQjNiLWpWVnFLOEtuRmVGS0VOcXpWbkZoa3lVSFdWQU9oNGloZGxfU0V3UkUzWkJYbEdscmNjeEdVU2RMbWIxeFFLbHJvdlBmZVQwNGloRkU?oc=5)
+- [2% 문턱에 선 한국경제…회복 기대 속 하방 변수 여전 - 신아일보](https://news.google.com/rss/articles/CBMib0FVX3lxTFA0WmVSTnR2VlJySXVlelpGbl8zbWZlazU4S0Z0TDNCRW0wWlM2VFdFdFNxZVh2c0pKc3I0aW5YS3RjcUdBSEpLV2VPbkNMTjlIZ0VoVVpURkhKZWdENVNIZklxdGRtUm01Z1d5S0Riaw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
