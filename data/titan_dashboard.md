@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 66 days, 15:06:26
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 66 days, 15:20:44
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.1% | `█████░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.5% | `█████░░░░░░░░░░` |
+| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한·하나·우리금융 신종증권 발행 준비…KB는 줄줄이 콜옵션 행사 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTFBkTUplR0RwZFJmeTNQUU9yOXdDM0VmNDZnTk5UT1ZLWDkzZU9IaGdOeUlLeUhWWUJtdGgzS1ZUVlE0UW9FM2VRV0p1cWx1eV8tamlBbW1jNGxDcGMzSGxfWkZsTG9sUldaaU5WNGd3Z1I?oc=5)
-- [비닐봉지서 꺼내 '툭'…나주 '낚싯바늘 빵' 용의자 영상 확보 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5BOUJkRU1wYjZHT3BjNVFLWlNUZ284Z19kajV6V2x5U3RUcmtoMm51R3REeElIV1NZdDBoMlhDYW9qVXQwalVrN1VtRDdxRVU?oc=5)
+- [뉴욕증시 옥석 가리기의 결론은 '보안과 인프라' [한경, 미증시 특징주] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9PQnNLaUdsQjhNc0VYSGtFVGJqNVJ2UndVUUlQUzRkdlpQWXhzMGtBeGlBOWNOWVNqVkxSWmVOU1Zuek14UWlheVN0VEMyMEU?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
