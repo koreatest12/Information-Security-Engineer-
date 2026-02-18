@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-18 12:31:32 (KST)
+> **Time:** 2026-02-18 13:23:02 (KST)
 
-### 🤖 Copilot Briefing (12:31)
+### 🤖 Copilot Briefing (13:23)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [[설날기획] 설 연휴 화제작 ‘휴민트’가 던진 보안 경고장...“가장 약한 고리는 사람”](http://www.boannews.com/media/view.asp?idx=142223&kind=&sub_kind=)
-- [[SECON 2026] 아이디스, 다이렉트 IP 카메라](http://www.boannews.com/media/view.asp?idx=142102&kind=&sub_kind=)
-- [[eGISEC 2026] 스콥정보통신, 아이피스캔 NAC](http://www.boannews.com/media/view.asp?idx=142083&kind=&sub_kind=)
+- [[SECON 2026] 에펠, 비상벨 기능 장착한 IP 기반 네트워크 스피커](http://www.boannews.com/media/view.asp?idx=141989&kind=&sub_kind=)
+- [[SECON 2026] 에이앤티글로벌, CPTED 안전표지판](http://www.boannews.com/media/view.asp?idx=141988&kind=&sub_kind=)
+- [[SECON 2026] 누리콘, AI 영상인식 주차유도 시스템](http://www.boannews.com/media/view.asp?idx=142058&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.3%)
-- **RAM:** `33.3/512 GB` (Used: 6.5%)
+- **vCPU:** `128 vCores` (Load: 37.1%)
+- **RAM:** `32.8/512 GB` (Used: 6.4%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
