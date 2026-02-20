@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-20 11:47:43 (KST)
+> **Time:** 2026-02-20 12:42:08 (KST)
 
-### 🤖 Copilot Briefing (11:47)
+### 🤖 Copilot Briefing (12:42)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -10,8 +10,8 @@
 ### 🏦 Major Financial News (Shinhan & Hana)
 | Bank / Investment | Latest Headlines (Click to Read) |
 |---|---|
-| **🔵 신한금융 (은행/투자)** | • [[게시판] 신한은행, 방카슈랑스 모바일 가입 경품행사 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5GdUtJb2w2R25lbk00RVNZNEV3MVdHOF8zVlRtbUFwcVBUT1pMZlR6SHEwNG1FdHlTX0R5MGNMZENwZXgyTk5QTWpJbUtSUllfZWwyRGNPSWpoamvSAWBBVV95cUxNQkJDU1U0aS1mdV9xMU9DSndGeThocEhxZFFGSGVoTGctdTZaQVdoU2NJZTVwcUotYnFKWFN3bi04MXpyZVI1T1QyM3BIQk5Sb2VqS3FkWjFTS3p1UDR1NWM?oc=5)<br>• [신한은행, ‘신한 SOL뱅크’ 방카슈랑스 가입 이벤트 실시 - 서울와이어](https://news.google.com/rss/articles/CBMibEFVX3lxTE1LX0M4ZUpWRU4yc2hsOTFLSlRTYUkwQWU2RGZDLThmNnk2cHNmekJYMFd6M1lKSG83dTFHZWdPVGpQcW9CbnFrZEtiaHM2TFlUcTRWZ05VX2dCZjNYWUt4WU5xbnp0QWZFOEZjSg?oc=5)<br> |
-| **🟢 하나금융 (은행/투자)** | • [하나은행, 차세대 디지털 플랫폼 구축 완료로 막강 경쟁력 확보 - 기호일보](https://news.google.com/rss/articles/CBMib0FVX3lxTE9yUVRxYl8wSi1aTkw4ak1DZjVkRVNSaWRqN25LdDVTTk9wRG01Mk0xaFlZRmhGQ3FzZlFiV2dOOFM1Q2MzOU1kRkxRZFk2SGF4X21ZdHd3Skx2d2hMSWY1LXBuVzB5OEVVWnZnVGhCVQ?oc=5)<br>• [신한·하나, 은행보다 낮은 지주 ROE…비은행 수익성 과제 - MTN 머니투데이방송](https://news.google.com/rss/articles/CBMiZEFVX3lxTE5DeGIwaC14UmFiMEdiWUVZQ3JmNDJ3bmg0cDJoTF9PQktxQ3ROcktSczJ1R3JBVTB1WUVRTzRMd2QtZmdkYVVvY0hoMHFqN0xQRTNtMzVyNXJwcGpxbWJvUTBtZTk?oc=5)<br> |
+| **🔵 신한금융 (은행/투자)** | • [신한은행 ‘신한 20+ 뛰어요’ 리뉴얼 오픈 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE01Q1VQd0dyMzhzYlMtM0puR2xwV3Zsckx6YlpNREF2YkRXdGpvVFAwU19TVmlPMXNpVFV0ZVNkX0FpUG9IOG1mazZtN2lTVXNaZjZMS3Zuc2tPdkFFR0ItQ3ZWbC1QVktLRFJjYU1jNEZnSE0?oc=5)<br>• [[게시판] 신한은행, 방카슈랑스 모바일 가입 경품행사 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5GdUtJb2w2R25lbk00RVNZNEV3MVdHOF8zVlRtbUFwcVBUT1pMZlR6SHEwNG1FdHlTX0R5MGNMZENwZXgyTk5QTWpJbUtSUllfZWwyRGNPSWpoamvSAWBBVV95cUxNQkJDU1U0aS1mdV9xMU9DSndGeThocEhxZFFGSGVoTGctdTZaQVdoU2NJZTVwcUotYnFKWFN3bi04MXpyZVI1T1QyM3BIQk5Sb2VqS3FkWjFTS3p1UDR1NWM?oc=5)<br> |
+| **🟢 하나금융 (은행/투자)** | • [하나은행, 차세대 디지털 플랫폼 구축 완료 - 지디넷코리아](https://news.google.com/rss/articles/CBMiVkFVX3lxTE9CdTNuZzVfSi1fWGRfS2tJSEtKUGh5aDBJbG92SDJ1bmRCY2R2MlB6RTFkTUNyYkhyUU9LeG9STDM3SE5EbFQ2RXpHczg3ckE0aHViVml3?oc=5)<br>• [신한·하나, 은행보다 낮은 지주 ROE…비은행 수익성 과제 - MTN 머니투데이방송](https://news.google.com/rss/articles/CBMiZEFVX3lxTE5DeGIwaC14UmFiMEdiWUVZQ3JmNDJ3bmg0cDJoTF9PQktxQ3ROcktSczJ1R3JBVTB1WUVRTzRMd2QtZmdkYVVvY0hoMHFqN0xQRTNtMzVyNXJwcGpxbWJvUTBtZTk?oc=5)<br> |
 
 ### 📰 General & Security News
 **🟢 네이버 속보:**
@@ -22,7 +22,7 @@
 - [[eGISEC 2026] 시스원, SECUI BLUEMAX NGF PRO](http://www.boannews.com/media/view.asp?idx=142085&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 38.2%)
+- **vCPU:** `128 vCores` (Load: 37.7%)
 - **RAM:** `33.3/512 GB` (Used: 6.5%)
 
 ---
