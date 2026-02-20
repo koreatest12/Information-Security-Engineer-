@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 68 days, 11:44:47
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 68 days, 12:00:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.5% | `█████░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.6% | `█████░░░░░░░░░░` |
+| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[단독] ‘170조 치매머니 구하기’ 나선 시중은행…신한은행 첫 TF 신설 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5YaGhMRGN3ODRkbUpuREN1ZFhLb0Y1NFFTTEo2YWg0dUNwMTJJMGhSOENkYWJ1dDRfY1VORjJWTUgtX2tjODFvR3YwQXc4NFlGZUNNXw?oc=5)
-- [매일 역사 쓰는 코스피…"글로벌 수익률 압도적 1위" - 한국경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE84ZXBiejM2RUk1ZGFvQ0ZhVzAzdGh6bklBd3podnZxblN3aHh0R21hODM3MFZhZmZYVnpwZmRnY3ZzTC0wSUpQLVRIZWZycU9KNC1DX9IBVEFVX3lxTE84ZXBiejM2RUk1ZGFvQ0ZhVzAzdGh6bklBd3podnZxblN3aHh0R21hODM3MFZhZmZYVnpwZmRnY3ZzTC0wSUpQLVRIZWZycU9KNC1DXw?oc=5)
+- [수천만원 쏟아부었는데, 내 거 아니라고?…"죽어서도 못 준다" [글로벌 머니 X파일] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE14VFloX3VfVGVDeTl1d3NORTdVb005N0h5bHlzTndXbGVTUUhoc05aMFE0QjdFd0g0VDNXbmhFNjh2XzhkcFE1U0pZUTZoVEE?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
