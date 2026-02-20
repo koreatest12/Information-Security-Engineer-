@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 67 days, 18:05:24
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 67 days, 19:03:47
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.4% | `█████░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.0% | `█████░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, “생산적 금융에 박차 가한다” - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqRmx2SmtFQ1BzRl9nVVlPUmNzNl82SWxrV09KRExSaEZ4a3NmblBaWklxUEc5X1hkbFR3VnVIUGxuT2hacEVjbkJvODdIdmVBLXlTRl90Z29RQdIBVEFVX3lxTE5XUk1LVjZTbS0xbS1SVU1RSEdENFZZWHRQWDlFZnNXMlNxTjM2bkVCOTVNVlRtY25zRUI0WnFoRDAta1hGR2k1NzNCTFoyckJ3aGkxNg?oc=5)
-- [이명한 스패너 대표 "건설현장 인력난, ‘피지컬 AI’로 뚫는다" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWZ0xsX0JYdkNXVzBqTEY0b1d4amRCTHFmTGRrb3p0ZGl2QzNHcEtnY0Q4T0xjRGdRbTF3REZSWnE2RkxGOHR2eTZvY0hueUxKRlFveEszRDZTd9IBVEFVX3lxTE5mZnFGMDlFbHlsMFhyZjFVM2JrbUhEa29oLTlGdEIwZG1OV09OMzdIOTY2R2ZvOGRQSm1EZDZKaGJXdnNMbTdQTnNTYlo3dG9hcmtpUQ?oc=5)
+- [[단독] ‘170조 치매머니 구하기’ 나선 시중은행…신한은행 첫 TF 신설 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5YaGhMRGN3ODRkbUpuREN1ZFhLb0Y1NFFTTEo2YWg0dUNwMTJJMGhSOENkYWJ1dDRfY1VORjJWTUgtX2tjODFvR3YwQXc4NFlGZUNNXw?oc=5)
+- [‘버핏의 마지막 선택’ 믿어볼까…서학개미, NYT 매수 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1xQlRoTnJpSTQ4emViUXNLVmxLUmVJU2NHZ3BZSUpvQW9QUktyblRnRHR5d01fOXp1Q1BzTzFPYmFwSlFJUFFZeFFzZXhzLVN2bkxJWk1aQVdYZ9IBVEFVX3lxTE1rUnhUdC1uQmR1NGhaODRnZlpJekpZemtHaTdjeDMtOXJnSWZTME9EZGhfVGpHU29waWRaYXprVG9HWm1CVzNzYk12dWxOMkxQSWdvTg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
