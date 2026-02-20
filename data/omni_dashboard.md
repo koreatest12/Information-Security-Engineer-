@@ -1,11 +1,11 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-02-20 19:48:07 | **Version:** `v2026.02.20`
+> **Updated:** 2026-02-20 20:03:47 | **Version:** `v2026.02.20`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 39.9% | ` ▃▂  ▆ ▇▄█  ▂  ▂   ▅` | Auto-Scaling Check |
-| **BTC Price** | $68,140.00 | `    ▄▄▄▄▄▅▄▅▅▄▅▇▇▇█▇` | Market Volatility |
+| **CPU Load** | 39.8% | `▃▂  ▆ ▇▄█  ▂  ▂   ▅▄` | Auto-Scaling Check |
+| **BTC Price** | $67,912.00 | `   ▄▄▄▄▄▅▄▅▅▄▅▇▇▇█▇▅` | Market Volatility |
 | **Global Mood** | -0.03 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
@@ -16,8 +16,8 @@
 #### 🛡️ Cyber Security
 - 😐 [FBI Reports 1,900 ATM Jackpotting Incidents Since 2020, $20M Lost in 2025](https://thehackernews.com/2026/02/fbi-reports-1900-atm-jackpotting.html)
 - 😨 [Former Google Engineers Indicted Over Trade Secret Transfers to Iran](https://thehackernews.com/2026/02/three-former-google-engineers-indicted.html)
-- 😐 [Kimwolf Botnet Lurking in Corporate, Govt. Networks](https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/)
-- 😐 [Patch Tuesday, January 2026 Edition](https://krebsonsecurity.com/2026/01/patch-tuesday-january-2026-edition/)
+- 😐 [Kimwolf Botnet Swamps Anonymity Network I2P](https://krebsonsecurity.com/2026/02/kimwolf-botnet-swamps-anonymity-network-i2p/)
+- 😐 [Patch Tuesday, February 2026 Edition](https://krebsonsecurity.com/2026/02/patch-tuesday-february-2026-edition/)
 - 😨 [Supply Chain Attack Secretly Installs OpenClaw for Cline Users](https://www.darkreading.com/application-security/supply-chain-attack-openclaw-cline-users)
 - 😐 [Best-in-Class 'Starkiller' Phishing Kit Bypasses MFA](https://www.darkreading.com/threat-intelligence/starkiller-phishing-kit-mfa)
 
@@ -38,7 +38,7 @@
 - 😐 [Berkshire Hathaway trims Apple stake, buys NYTimes stock in Buffett's last moves as CEO](https://www.cnbc.com/2026/02/17/berkshire-hathaway-trims-apple-stake-buys-nytimes-stock-in-buffetts-last-moves-as-ceo.html)
 
 #### 🎬 Entertainment & Culture
-- 🙂 [David Harewood on Landing First Lead in 40-Year Career in ‘Pierre’ – and Finally Being Number One on the Call Sheet: ‘Exciting Place to Be’](https://variety.com/2026/tv/global/david-harewood-lead-pierre-channel-4-1236667479/)
+- 🙂 [David Harewood on Landing First Lead in 40-Year Career in ‘Pierre’ – and Finally Being Number One on the Call Sheet: ‘Exciting Place to Be’ (EXCLUSIVE)](https://variety.com/2026/tv/global/david-harewood-lead-pierre-channel-4-1236667479/)
 - 😐 [‘I’m Still Here’ Star Selton Mello to Follow Hollywood Bow in ‘Anaconda’ With João Paulo Miranda Maria’s ‘I Don’t Even Know Who I Was’ for Les Valseurs (EXCLUSIVE)](https://variety.com/2026/film/global/selton-mello-joao-paulo-miranda-maria-les-valseurs-1236667550/)
 
 ---
