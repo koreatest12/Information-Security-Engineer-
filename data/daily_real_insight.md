@@ -1,8 +1,8 @@
 ### 🌍 Real-World Intelligence Dashboard
-**Updated:** 2026-02-21 07:09:02 (KST)
+**Updated:** 2026-02-21 07:20:11 (KST)
 
 #### 💰 Financial Market (Source: CoinGecko)
-- **BTC Price:** $67,723.00 (+1.42%)
+- **BTC Price:** $67,653.00 (+1.23%)
 - **Market Status:** ✅ STABLE
 
 #### 🌤️ Seoul Environment (Source: Open-Meteo)
