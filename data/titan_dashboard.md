@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 68 days, 11:02:04
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 68 days, 11:07:50
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
 
-> **Q:** 종합 상황 브리핑
+> **Q:** 
 
 관련 정보 없음
 
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.5% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.8% | `█████░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[단독] ‘170조 치매머니 구하기’ 나선 시중은행…신한은행 첫 TF 신설 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5YaGhMRGN3ODRkbUpuREN1ZFhLb0Y1NFFTTEo2YWg0dUNwMTJJMGhSOENkYWJ1dDRfY1VORjJWTUgtX2tjODFvR3YwQXc4NFlGZUNNXw?oc=5)
+- [[4대금융 주주환원 경쟁] [신한금융] '환원율 50%' 조기 돌파…ROE 중심 환원 전략 - 네이트](https://news.google.com/rss/articles/CBMieEFVX3lxTE40V3A1TlpGMFBnVnNWSXhBR3U1NVJ0dkVLZTZKX0hyLU5FNmhHX2tjSi1DUWc0ZWZzc1ljTnV5MnhqWURJUW56NUd4UHFJQm5QbkxFQk1LYkpEd0NlOHNRVU5rV0ZwWFA0N2ZHSWRya2RqREhDMmhYdw?oc=5)
 - [한경 '구멍 뚫린 자본시장'…이달의 기자상 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9JVEpLamRwR0lzUEoxdFZpZGZsUTM3Rlh6b2dYQmZuXzFBT2ZKUll5Q0JCbHhNMDZnTmlvblNkdmQ3NmdyeG11ZWpxS25kRnhUdXJvVU5pc1dNZ9IBVEFVX3lxTE0zUUJLbmtkU2FMaU5FYzd4VkVUdk96WjFFcTBuNjQtOTMwMjdFVkViT0VIRkJoM1QxT0NRdTNsOHdYakUxVXRTbGZJY0tlQmVxSDhETw?oc=5)
 
 ---
