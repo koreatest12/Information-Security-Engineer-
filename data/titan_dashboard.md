@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 68 days, 4:22:38
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 68 days, 4:40:07
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
 
-> **Q:** 종합 상황 브리핑
+> **Q:** 
 
 관련 정보 없음
 
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.0% | `████░░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.4% | `█████░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, “생산적 금융에 박차 가한다” - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqRmx2SmtFQ1BzRl9nVVlPUmNzNl82SWxrV09KRExSaEZ4a3NmblBaWklxUEc5X1hkbFR3VnVIUGxuT2hacEVjbkJvODdIdmVBLXlTRl90Z29RQdIBVEFVX3lxTE5XUk1LVjZTbS0xbS1SVU1RSEdENFZZWHRQWDlFZnNXMlNxTjM2bkVCOTVNVlRtY25zRUI0WnFoRDAta1hGR2k1NzNCTFoyckJ3aGkxNg?oc=5)
+- [[Who Is ?] 조용병 은행연합회 회장 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE1rdGYzM3UwdzZEM29YYXg5S19GLUloR0VJWEVpZzFlVUx4YzdobVJqUWV0ZkFKT2w2S2RzcmNNY3FQZHctNlZzX2ZoMml3bEpuVi1WTy1wRGxEbHFHemdyTkQyRGxiZzZUaUlNS1ZJTDZHZG8?oc=5)
 - [한경 '구멍 뚫린 자본시장'…이달의 기자상 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9JVEpLamRwR0lzUEoxdFZpZGZsUTM3Rlh6b2dYQmZuXzFBT2ZKUll5Q0JCbHhNMDZnTmlvblNkdmQ3NmdyeG11ZWpxS25kRnhUdXJvVU5pc1dNZ9IBVEFVX3lxTE0zUUJLbmtkU2FMaU5FYzd4VkVUdk96WjFFcTBuNjQtOTMwMjdFVkViT0VIRkJoM1QxT0NRdTNsOHdYakUxVXRTbGZJY0tlQmVxSDhETw?oc=5)
 
 ---
