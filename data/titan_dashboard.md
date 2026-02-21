@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 69 days, 4:36:38
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 69 days, 4:53:14
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,11 +15,11 @@
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
 | **CPU** | `128 vCores` | 39.5% | `█████░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, “생산적 금융에 박차 가한다” - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqRmx2SmtFQ1BzRl9nVVlPUmNzNl82SWxrV09KRExSaEZ4a3NmblBaWklxUEc5X1hkbFR3VnVIUGxuT2hacEVjbkJvODdIdmVBLXlTRl90Z29RQdIBVEFVX3lxTE5XUk1LVjZTbS0xbS1SVU1RSEdENFZZWHRQWDlFZnNXMlNxTjM2bkVCOTVNVlRtY25zRUI0WnFoRDAta1hGR2k1NzNCTFoyckJ3aGkxNg?oc=5)
-- ['車 ·반도체' 어쩌나…'상호관세 위법' 판결에도 웃지 못하는 한국 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9NZGR6dEZXNkV0MDAtNkp0V1FrOTFveGFmZzFJeklFQ3VOYTgtaUx5MVBzWWdPOW81UjJHR09RbWVNNzM1eF91R0tIeUd0X1U?oc=5)
+- ['7200원→19만원' 주가 폭등의 기억…요즘 '뭉칫돈' 몰린 곳 [한경우의 케이스스터디] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9rWVBmSFhyZzB6WmUwcjNQWkxmcFBqMjBYU1Bad2lLNDc5X3N0eEo4MkdZN0Y3Z0lFVHB4T214Vi1FdUVWd1BfWjhMV1dOUUU?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
