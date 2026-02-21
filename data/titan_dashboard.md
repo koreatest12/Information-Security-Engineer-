@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 69 days, 3:34:01
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 69 days, 3:46:56
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.3% | `█████░░░░░░░░░░` |
-| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.7% | `█████░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, “생산적 금융에 박차 가한다” - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqRmx2SmtFQ1BzRl9nVVlPUmNzNl82SWxrV09KRExSaEZ4a3NmblBaWklxUEc5X1hkbFR3VnVIUGxuT2hacEVjbkJvODdIdmVBLXlTRl90Z29RQdIBVEFVX3lxTE5XUk1LVjZTbS0xbS1SVU1RSEdENFZZWHRQWDlFZnNXMlNxTjM2bkVCOTVNVlRtY25zRUI0WnFoRDAta1hGR2k1NzNCTFoyckJ3aGkxNg?oc=5)
-- [로봇·반도체 '패낳괴' 될까…초과수익형 ETF 쓸어담은 종목은? [한경우의 케이스스터디] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9rWVBmSFhyZzB6WmUwcjNQWkxmcFBqMjBYU1Bad2lLNDc5X3N0eEo4MkdZN0Y3Z0lFVHB4T214Vi1FdUVWd1BfWjhMV1dOUUU?oc=5)
+- [[단독] ‘170조 치매머니 구하기’ 나선 시중은행…신한은행 첫 TF 신설 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5YaGhMRGN3ODRkbUpuREN1ZFhLb0Y1NFFTTEo2YWg0dUNwMTJJMGhSOENkYWJ1dDRfY1VORjJWTUgtX2tjODFvR3YwQXc4NFlGZUNNXw?oc=5)
+- [‘위법 판결’로 제동 결린 美상호관세…한국 경제엔 ‘또다른 불확실성’ - 부산일보사](https://news.google.com/rss/articles/CBMidEFVX3lxTE1NczZTYmNKLXdXaUZsXzBMYS1vbW12ZjVmNmNUNm1OS0pNdW1zMmpRSkZteG1BYmpOVU16NDIzamxoSG01OU00WU5vWVVGdXBaM1hQOXlod24yR1pHOWNnajdfaHlPZDl2aFFvYVoxOUdWYWls?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
