@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 69 days, 3:03:34
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 69 days, 3:14:21
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.5% | `█████░░░░░░░░░░` |
-| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.6% | `█████░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, “생산적 금융에 박차 가한다” - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqRmx2SmtFQ1BzRl9nVVlPUmNzNl82SWxrV09KRExSaEZ4a3NmblBaWklxUEc5X1hkbFR3VnVIUGxuT2hacEVjbkJvODdIdmVBLXlTRl90Z29RQdIBVEFVX3lxTE5XUk1LVjZTbS0xbS1SVU1RSEdENFZZWHRQWDlFZnNXMlNxTjM2bkVCOTVNVlRtY25zRUI0WnFoRDAta1hGR2k1NzNCTFoyckJ3aGkxNg?oc=5)
-- ["정비사업, 다 되는 시절 지났다…'옥석 가리기' 해야" [이송렬의 우주인] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBsWENzZnZ4elVmY2ZEV3prU2dnb0J1SG14amtOdktzV0JjU2tNUE9uZlk2ZWZVeVV6QTNpMmhnV081b1FwOEJ0NExXNFBqeUpUSlUyMzhWT2U0d9IBVEFVX3lxTE9yQ3dqamZYTnJJU2gybm9SaGxVT0ZzdnU3bm1FNHAzSGJ3c3hXYXNUSWFDUVZ6dDk0YkRKZGw2UWl3T0owd09rTkFNMk5uWUFSQmV1Wg?oc=5)
+- [로봇·반도체 '패낳괴' 될까…초과수익형 ETF 쓸어담은 종목은? [한경우의 케이스스터디] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9rWVBmSFhyZzB6WmUwcjNQWkxmcFBqMjBYU1Bad2lLNDc5X3N0eEo4MkdZN0Y3Z0lFVHB4T214Vi1FdUVWd1BfWjhMV1dOUUU?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
