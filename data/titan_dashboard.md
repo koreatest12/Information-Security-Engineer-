@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 69 days, 4:21:10
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 69 days, 4:36:38
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
 
-> **Q:** 종합 상황 브리핑
+> **Q:** 
 
 관련 정보 없음
 
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.3% | `█████░░░░░░░░░░` |
-| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.5% | `█████░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, “생산적 금융에 박차 가한다” - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqRmx2SmtFQ1BzRl9nVVlPUmNzNl82SWxrV09KRExSaEZ4a3NmblBaWklxUEc5X1hkbFR3VnVIUGxuT2hacEVjbkJvODdIdmVBLXlTRl90Z29RQdIBVEFVX3lxTE5XUk1LVjZTbS0xbS1SVU1RSEdENFZZWHRQWDlFZnNXMlNxTjM2bkVCOTVNVlRtY25zRUI0WnFoRDAta1hGR2k1NzNCTFoyckJ3aGkxNg?oc=5)
-- [한국 여학생 성희롱하고 '낄낄' 인니 男…회사 "엄중 조치" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9NUTdubHNPODBORVpRREVuaUx1VG90VnB2akJTWUtDUXRRSC01T0dUTnAza01EMFVaTUktUV8yTDlDUzBZajRBMkNoX0U2R2s?oc=5)
+- ['車 ·반도체' 어쩌나…'상호관세 위법' 판결에도 웃지 못하는 한국 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9NZGR6dEZXNkV0MDAtNkp0V1FrOTFveGFmZzFJeklFQ3VOYTgtaUx5MVBzWWdPOW81UjJHR09RbWVNNzM1eF91R0tIeUd0X1U?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
