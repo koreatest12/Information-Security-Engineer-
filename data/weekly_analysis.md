@@ -4,8 +4,8 @@
 ## 📊 Key Statistics
 | Metric | Mean | Max | Min | StdDev |
 |---|---|---|---|---|
-| CPU Load | 51.6% | 105.1% | 0.0% | 13.7 |
+| CPU Load | 51.6% | 105.1% | 0.0% | 13.6 |
 | Traffic | 1034 | 1197 | 902 | 56 |
 
 ## 📈 Growth Trend
-Total data points processed: **1646**
+Total data points processed: **1649**
