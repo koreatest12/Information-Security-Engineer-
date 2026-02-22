@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 70 days, 1:36:05
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 70 days, 1:50:32
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.7% | `█████░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.6% | `█████░░░░░░░░░░` |
+| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- ['환원율 50%' 조기 돌파...ROE 중심 환원 전략 - DealSite경제TV](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Ed1N2bk9DeWpwMDVyWlBtUE1uWVJVTHlIZTVXRGM0eW5rUHIzRUZOc3ozYTktWDVaSlI0eFY4QmUyazRscksweEo1NVZHbURHczNka0dR?oc=5)
+- [신한금융, “생산적 금융에 박차 가한다” - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqRmx2SmtFQ1BzRl9nVVlPUmNzNl82SWxrV09KRExSaEZ4a3NmblBaWklxUEc5X1hkbFR3VnVIUGxuT2hacEVjbkJvODdIdmVBLXlTRl90Z29RQdIBVEFVX3lxTE5XUk1LVjZTbS0xbS1SVU1RSEdENFZZWHRQWDlFZnNXMlNxTjM2bkVCOTVNVlRtY25zRUI0WnFoRDAta1hGR2k1NzNCTFoyckJ3aGkxNg?oc=5)
 - [[美관세 위법판결] 불확실성 장기화…한국 경제엔 '양날의 칼' - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5mNHpySnExclpnaURlTS1ST2NBZ1J5dnNZZWJBR1pGMGprS3BaOV95aHVCVHZWWFZNV0diWlI1aGtEVnJDSFlwQ2FjRGJDemVZWU15anpoMFdndkHSAWBBVV95cUxQR0JMdEp3UWRnWXdSRFhBXzRPTkwwNnAxSnVDVlRXVk4ySVpkYVBjS292SjllNmNBdlRYTUZ0czBFV2tlcEJaVTlLZVhxYzdyX2doX1RsejZFMTN6N1BvMDY?oc=5)
 
 ---
