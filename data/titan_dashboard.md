@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 70 days, 12:20:10
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 70 days, 12:34:14
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
 
-> **Q:** 종합 상황 브리핑
+> **Q:** 
 
 관련 정보 없음
 
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.2% | `█████░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.6% | `█████░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - ['비은행' 지각변동…우리금융에 밀린 함영주號 하나금융 [금융사 2025 리그테이블] - 한국금융신문](https://news.google.com/rss/articles/CBMifEFVX3lxTE56ejRYN3I1NmsxTWRVNHhORldjamVYc0h6Z051Z3Z0bHhiYUp1V2ZqbFpLZUVrRkpTbG05Z2dDNnYwMWwxVGR3cDJlcnZPY1B2LW1tQ25xa3FIUFdtSmx1MEQwR2Y2RHBFRmdZRkJxbFc5eWtFRm4tR0ZEQzU?oc=5)
