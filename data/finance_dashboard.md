@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-22 13:20:30 (KST)
+> **Time:** 2026-02-22 14:00:33 (KST)
 
-### 🤖 Copilot Briefing (13:20)
+### 🤖 Copilot Briefing (14:00)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,13 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [“방패가 창으로 변하다”... 방화벽 허점, 랜섬웨어 공격 주요 통로](http://www.boannews.com/media/view.asp?idx=142326&kind=&sub_kind=)
-- [[eGISEC 2026]] 아이티스테이션, TA-PRS](http://www.boannews.com/media/view.asp?idx=142091&kind=&sub_kind=)
-- [[SECON 2026] 주미오, 생체 인증 및 신원 확인 솔루션](http://www.boannews.com/media/view.asp?idx=142079&kind=&sub_kind=)
+- [[eGISEC 2026] 안랩클라우드메이트, 시큐어브리지](http://www.boannews.com/media/view.asp?idx=142183&kind=&sub_kind=)
+- [[SECON 2026] Johnson Controls, C·CURE IQ](http://www.boannews.com/media/view.asp?idx=142080&kind=&sub_kind=)
+- [[부고] 최철호 스콥정보통신 부사장 빙모상](http://www.boannews.com/media/view.asp?idx=142327&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.3%)
-- **RAM:** `34.3/512 GB` (Used: 6.7%)
+- **vCPU:** `128 vCores` (Load: 40.2%)
+- **RAM:** `32.8/512 GB` (Used: 6.4%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*
