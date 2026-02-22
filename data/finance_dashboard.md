@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-22 09:55:35 (KST)
+> **Time:** 2026-02-22 10:33:20 (KST)
 
-### 🤖 Copilot Briefing (09:55)
+### 🤖 Copilot Briefing (10:33)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,10 +17,13 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [“방패가 창으로 변하다”... 방화벽 허점, 랜섬웨어 공격 주요 통로](http://www.boannews.com/media/view.asp?idx=142326&kind=&sub_kind=)
+- [[eGISEC 2026]] 아이티스테이션, TA-PRS](http://www.boannews.com/media/view.asp?idx=142091&kind=&sub_kind=)
+- [[SECON 2026] 주미오, 생체 인증 및 신원 확인 솔루션](http://www.boannews.com/media/view.asp?idx=142079&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 36.9%)
-- **RAM:** `34.3/512 GB` (Used: 6.7%)
+- **vCPU:** `128 vCores` (Load: 36.4%)
+- **RAM:** `33.8/512 GB` (Used: 6.6%)
 
 ---
 *Powered by Grand Ops Finance-Master v30.0*

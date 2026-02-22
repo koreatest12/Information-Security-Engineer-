@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 69 days, 17:11:40
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 69 days, 17:49:26
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.5% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.3% | `█████░░░░░░░░░░` |
 | **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[단독] ‘170조 치매머니 구하기’ 나선 시중은행…신한은행 첫 TF 신설 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5YaGhMRGN3ODRkbUpuREN1ZFhLb0Y1NFFTTEo2YWg0dUNwMTJJMGhSOENkYWJ1dDRfY1VORjJWTUgtX2tjODFvR3YwQXc4NFlGZUNNXw?oc=5)
-- [[美관세 위법판결] 불확실성 장기화…한국 경제엔 '양날의 칼' - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5mNHpySnExclpnaURlTS1ST2NBZ1J5dnNZZWJBR1pGMGprS3BaOV95aHVCVHZWWFZNV0diWlI1aGtEVnJDSFlwQ2FjRGJDemVZWU15anpoMFdndkHSAWBBVV95cUxQR0JMdEp3UWRnWXdSRFhBXzRPTkwwNnAxSnVDVlRXVk4ySVpkYVBjS292SjllNmNBdlRYTUZ0czBFV2tlcEJaVTlLZVhxYzdyX2doX1RsejZFMTN6N1BvMDY?oc=5)
+- [신한금융, “생산적 금융에 박차 가한다” - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqRmx2SmtFQ1BzRl9nVVlPUmNzNl82SWxrV09KRExSaEZ4a3NmblBaWklxUEc5X1hkbFR3VnVIUGxuT2hacEVjbkJvODdIdmVBLXlTRl90Z29RQdIBVEFVX3lxTE5XUk1LVjZTbS0xbS1SVU1RSEdENFZZWHRQWDlFZnNXMlNxTjM2bkVCOTVNVlRtY25zRUI0WnFoRDAta1hGR2k1NzNCTFoyckJ3aGkxNg?oc=5)
+- ['패낳괴' 다시 나타날까…'360조' 몰리더니 관심 폭발한 종목 [한경우의 케이스스터디] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9rWVBmSFhyZzB6WmUwcjNQWkxmcFBqMjBYU1Bad2lLNDc5X3N0eEo4MkdZN0Y3Z0lFVHB4T214Vi1FdUVWd1BfWjhMV1dOUUU?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
