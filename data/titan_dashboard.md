@@ -1,12 +1,12 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 70 days, 0:20:45
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 70 days, 0:26:17
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
 
-> **Q:** 종합 상황 브리핑
+> **Q:** 
 
 관련 정보 없음
 
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.0% | `████░░░░░░░░░░░` |
-| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.8% | `█████░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, “생산적 금융에 박차 가한다” - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqRmx2SmtFQ1BzRl9nVVlPUmNzNl82SWxrV09KRExSaEZ4a3NmblBaWklxUEc5X1hkbFR3VnVIUGxuT2hacEVjbkJvODdIdmVBLXlTRl90Z29RQdIBVEFVX3lxTE5XUk1LVjZTbS0xbS1SVU1RSEdENFZZWHRQWDlFZnNXMlNxTjM2bkVCOTVNVlRtY25zRUI0WnFoRDAta1hGR2k1NzNCTFoyckJ3aGkxNg?oc=5)
+- ['환원율 50%' 조기 돌파...ROE 중심 환원 전략 - DealSite경제TV](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Ed1N2bk9DeWpwMDVyWlBtUE1uWVJVTHlIZTVXRGM0eW5rUHIzRUZOc3ozYTktWDVaSlI0eFY4QmUyazRscksweEo1NVZHbURHczNka0dR?oc=5)
 - [[美관세 위법판결] 불확실성 장기화…한국 경제엔 '양날의 칼' - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5mNHpySnExclpnaURlTS1ST2NBZ1J5dnNZZWJBR1pGMGprS3BaOV95aHVCVHZWWFZNV0diWlI1aGtEVnJDSFlwQ2FjRGJDemVZWU15anpoMFdndkHSAWBBVV95cUxQR0JMdEp3UWRnWXdSRFhBXzRPTkwwNnAxSnVDVlRXVk4ySVpkYVBjS292SjllNmNBdlRYTUZ0czBFV2tlcEJaVTlLZVhxYzdyX2doX1RsejZFMTN6N1BvMDY?oc=5)
 
 ---
