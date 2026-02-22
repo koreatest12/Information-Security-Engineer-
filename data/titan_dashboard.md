@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 70 days, 16:03:09
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 70 days, 16:13:32
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.6% | `█████░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.3% | `█████░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행 '땡겨요' 5년차...'탈팡족' 잡으려면? - 데일리브리프](https://news.google.com/rss/articles/CBMibkFVX3lxTE9XYUhsSGQ5RlpQRjZHRlQtbmhiblc4YUJEXzVUNW5kak1KMkxhS1JiOHVCVWI5RTVHT1lLdnpuakY5WExkaHZyVERQTWtGYjZOS3lTbFJnWVhQcFhIWTBnbm4yOHdpVG5SRXgzWHJ3?oc=5)
-- [무역법 122조부터 301조까지…한국경제 '전방위 압박' - 뉴스토마토](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBWd0o2bUxsMFMzU1o5R2NKR3pPcWFOR0l5a0ZwUEk1T0Q1MFRab3FCSkJrNXZnVGFBSUtBdzNFMjJnbEdLWks0eEZSVnNiWFlGd3JHM3JkN3h0TnNkV0VWUA?oc=5)
+- [에이비엘바이오, 리가켐바이오, 펩트론 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE8taXNBcDJXUVZRZldLWkxKVlZvWExMc0tRQVdJRWplOTR0NUNGY01lVlI0VmkxaGM3V0ZmOHBHYVhZUk5iODNnSjZNd1dId19jaXoyRFptMTVTZ9IBVEFVX3lxTE5QMngybktwRFBka01pZlE5QkgyNWhBOWVMTkhBdkZEY0txYTBiVDlSQVU3Z3NidGgwNXZVSzVxVHNiX2hjZnBad1NsOXFZTHY2SFB6dg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
