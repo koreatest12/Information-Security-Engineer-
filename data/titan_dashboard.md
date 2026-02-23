@@ -1,10 +1,10 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 70 days, 17:49:20
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 70 days, 18:47:19
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
-[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
+[![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com//actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com//actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com//actions/workflows/main.yml)
 
 > **Q:** 
 
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.7% | `█████░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.5% | `█████░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한·하나금융, 디지털 자산 속도전…결제 인프라 선점 경쟁 - 이코노믹데일리](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9UaGJickg1LUdQbUUxUWxObDVwNVRtWGllR3FpWGZ1SEROaFV0N1JxQ2pFQVNXN0pNYnZfVFI0NlBzZ19mLTFUcndGSTZyc1QtYmZDSkJDT2hxRVFxRl9KSNIBXEFVX3lxTFBrZGpVRWx5RktKRzJwV2JtZlpweHNJcVJkWUQ2NXFLTnBWS25rSWNLUjJXdWNZTVdBY0dKZFdNaXR4RVp0UFRsWmc1aUlCc0Q4YTM5aklYUlloQmJp?oc=5)
