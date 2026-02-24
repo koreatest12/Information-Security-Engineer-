@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 72 days, 0:08:19
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 72 days, 0:24:11
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.5% | `█████░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.0% | `█████░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 신한금융허브 전북혁신도시 출범…인력 300명으로 확대 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBjM09mR0JfU2pQdzVyQ21CNWtxWjkwb1hiTUNOaTBQcTdWbFpoblVydjlNSWlscFJ3bkVERko2Q1A0WGV4a3VHcnFYWmJyZHlCcjg2eHJvSTlpMmxqOGU2Tg?oc=5)
-- ['초격차' 환상 깨졌다…이미 한국 넘어선 중국 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5PUFA3SzV2VW5OdDJzT3pQNl9YRHltTld2dk8yby1Ca1BaemRVMHh3WnhnWFNpSHlCdnNXN2owNGtUSzA2NG9QU24xRkRvRjlYczJZZzZsUlkwQdIBVEFVX3lxTE14ejU2dUllS0tQTWJQMjYyMmxsVmRwSm9TN3djbVEwNWtack45NmVFajNzLUxRdW1MU2N3MnJIVno2dldCQUt1ODZ5eDlIb2lTZVhTeA?oc=5)
+- [﻿한국 반도체, CAPEX 경쟁의 시대는 끝났는가 [인사이트 칼럼] - 한국경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBsVHBlNmNYNURqeXNMVDNkMzFtWE5JWmxPTWh1bWxnQ0IyYUgwMi15R1BQd0ZpZGwxQjJiTW5zVDlKUFVpaEJ1bTlUZFZhSXNNVTdtNtIBVEFVX3lxTFBsVHBlNmNYNURqeXNMVDNkMzFtWE5JWmxPTWh1bWxnQ0IyYUgwMi15R1BQd0ZpZGwxQjJiTW5zVDlKUFVpaEJ1bTlUZFZhSXNNVTdtNg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
