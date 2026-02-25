@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-25 14:04:26 (KST)
+> **Time:** 2026-02-25 14:40:11 (KST)
 
-### 🤖 Copilot Briefing (14:04)
+### 🤖 Copilot Briefing (14:40)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,9 +17,9 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
-- [파이오링크, 지난해 영업이익 전년대비 108%↑... 주당 360원 배당](http://www.boannews.com/media/view.asp?idx=142375&kind=&sub_kind=)
-- [中 AI 기업의 조직적 데이터 탈취...앤트로픽 ‘클로드’ 표적](http://www.boannews.com/media/view.asp?idx=142373&kind=&sub_kind=)
-- [과기정통부, 데이터안심구역 신규 지정 공모... 고품질 미개방데이터 보유사 5개 선정](http://www.boannews.com/media/view.asp?idx=142368&kind=&sub_kind=)
+- [화이트해커가 기업 취약점 상시 찾아 신고하는 제도 의결... 공공은 의무화 추진](http://www.boannews.com/media/view.asp?idx=142376&kind=&sub_kind=)
+- [[eGISEC 2026] 엔피코어, APT 이중 방어 솔루션 좀비제로 APT](http://www.boannews.com/media/view.asp?idx=142191&kind=&sub_kind=)
+- [[SECON 2026] FEITIAN Technologies, FEITIAN OTP Token](http://www.boannews.com/media/view.asp?idx=142119&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
 - **vCPU:** `128 vCores` (Load: 37.7%)
