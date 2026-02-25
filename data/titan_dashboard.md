@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 73 days, 8:09:29
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 73 days, 8:43:00
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,10 +15,10 @@
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
 | **CPU** | `128 vCores` | 39.1% | `█████░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한투자증권, ‘신한Premier 청주금융센터’ 통합 이전 오픈 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE8ySFNYZ3o4VkpQNFJIMGdMcW5KZUdhdmQ1VFk1cnhXTUlBa3lHa1NvSFlkNzZWMWVOdUZ4Szh4T1JyV285dnZ4RFdRejFjcENuVktxY21DeFhuZw?oc=5)
+- [신한금융그룹 전주 ‘상륙’… 전북 금융시대 연다 - 전북일보 인터넷신문](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1INGcxUjNjdm8ta0hEeDVLV3ViMEJpWTRBdGhTdkhtdEFuNEhfalBfeE03Y29rOVZ4UUVueHB4dTF3UWRWQmpySHhSRVYxZkxWbUYwddIBWEFVX3lxTE50REpwdHROOFhXV21nZ3g5a3NrUHQxb3RGclBIY3IxTHFvOEpJQmd2TGtTMXNJWkkxNzZ1YnE2OTlqd1h2YV9rX1JRNkJTc0pwMm1mNHpqSi0?oc=5)
 - [美 클래리티 액트가 당길 거대한 방아쇠 [한경 코알라] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE8xV0dpZlN5RWRFTlJQbUlzcTlGR3N4SVRUTktkRnlxMFgtakZ2MFdvV0IwNS1WSEd0R19ySHdvZHpSc3kzYWNxTkNzR0hNZ0lPeGluVGVSenUyZ9IBVEFVX3lxTFBFeXNKTmpLdmduM0g0SFpONFEyWlJ0NjdFc3BValNPd0w1ckRySl9vRFdpeGRteG9NQU0yV0wteFNtNDR4RVRXV0NIZlNSY084aHY4Qw?oc=5)
 
 ---
