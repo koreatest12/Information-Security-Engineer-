@@ -1,21 +1,21 @@
 # 🌌 Grand Ops Omni-Universe Dashboard
-> **Updated:** 2026-02-25 17:48:48 | **Version:** `v2026.02.25`
+> **Updated:** 2026-02-25 18:10:30 | **Version:** `v2026.02.25`
 
 ### 🧠 AI & Data Insights (Accumulated History)
 | Metric | Current | Trend (Past 10h) | AI Analysis |
 |---|---|---|---|
-| **CPU Load** | 38.5% | `  ▂  █▄▂   ▂▂▂ ▄    ` | Auto-Scaling Check |
-| **BTC Price** | $65,400.00 | `      ▇█▅▅▅▃▃▃▃▃▃▃▄▅` | Market Volatility |
+| **CPU Load** | 38.3% | ` ▂  █▄▂   ▂▂▂ ▄     ` | Auto-Scaling Check |
+| **BTC Price** | $65,498.00 | `     ▇█▅▅▅▃▃▃▃▃▃▃▄▅▅` | Market Volatility |
 | **Global Mood** | 0.05 | **Neutral 😐** | Based on 18 Articles |
 
 ### 🖥️ System Status
-- **RAM:** 6.4% Used
+- **RAM:** 6.5% Used
 - **Disk:** 37.9% Used
 
 ### 📰 Global News Omni-Channel
 #### 🛡️ Cyber Security
+- 😐 [Defense Contractor Employee Jailed for Selling 8 Zero-Days to Russian Broker](https://thehackernews.com/2026/02/defense-contractor-employee-jailed-for.html)
 - 😐 [SolarWinds Patches 4 Critical Serv-U 15.5 Flaws Allowing Root Code Execution](https://thehackernews.com/2026/02/solarwinds-patches-4-critical-serv-u.html)
-- 😨 [CISA Confirms Active Exploitation of FileZen CVE-2026-25108 Vulnerability](https://thehackernews.com/2026/02/cisa-confirms-active-exploitation-of.html)
 - 🙂 [‘Starkiller’ Phishing Service Proxies Real Login Pages, MFA](https://krebsonsecurity.com/2026/02/starkiller-phishing-service-proxies-real-login-pages-mfa/)
 - 😐 [Kimwolf Botnet Swamps Anonymity Network I2P](https://krebsonsecurity.com/2026/02/kimwolf-botnet-swamps-anonymity-network-i2p/)
 - 😐 [Operation Red Card 2.0 Leads to 651 Arrests in Africa](https://www.darkreading.com/cybersecurity-operations/operation-red-card-2-0-leads-to-651-arrests-in-africa)
@@ -29,13 +29,13 @@
 
 #### 🌍 World & Politics
 - 😐 [Analysis: Trump issues patriotic rallying cry with eye on crucial elections](https://www.bbc.com/news/articles/cx2d7x6zrwro?at_medium=RSS&at_campaign=rss)
-- 😨 [Ukraine remembers its dead as war enters a fifth year](https://www.bbc.com/news/articles/clyg7r3nd3ko?at_medium=RSS&at_campaign=rss)
+- 😐 [Japan to deploy missiles on island near Taiwan by 2031](https://www.bbc.com/news/articles/cd9gj1w2kn1o?at_medium=RSS&at_campaign=rss)
 - 😐 [These Ukrainians Don’t Want to Be Traded to Russia for Peace](https://www.nytimes.com/2026/02/24/world/europe/ukraine-war-donetsk.html)
 - 😐 [Mexico Is Caught Between Trump and the Cartels](https://www.nytimes.com/2026/02/24/world/americas/trump-sheinbaum-us-mexico-cartel.html)
 
 #### 💰 Business & Economy
+- 😨 [Trump makes little mention of China in the longest State of the Union speech](https://www.cnbc.com/2026/02/25/trump-china-state-of-the-union-speech.html)
 - 😐 [The global M&A boom is rolling into 2026 as AI sparks deal frenzy — but cash is getting tight](https://www.cnbc.com/2026/02/25/global-ma-boom-surges-2026-ai-mega-deals-capital-squeeze-merger-and-acquisition.html)
-- 🙂 [Register now: Applications open for the World's Top Fintech Companies 2026](https://www.cnbc.com/2026/02/25/cnbc-worlds-top-fintech-companies-2026-apply-now.html)
 
 #### 🎬 Entertainment & Culture
 - 😐 [‘Gone,’ From ‘Hijack’ and ‘Lupin’ Creator George Kay, Pre-Sold to BritBox for North America by All3Media International (EXCLUSIVE)](https://variety.com/2026/tv/global/gone-george-kay-britbox-bbc-stan-all3media-international-1236672242/)
