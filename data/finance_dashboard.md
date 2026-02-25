@@ -1,7 +1,7 @@
 # 🏦 Grand Ops Finance-Master Dashboard
-> **Time:** 2026-02-25 09:53:24 (KST)
+> **Time:** 2026-02-25 10:33:29 (KST)
 
-### 🤖 Copilot Briefing (09:53)
+### 🤖 Copilot Briefing (10:33)
 > **Q:** ""
 
 ❌ 질문과 직접적으로 관련된 최신 뉴스를 찾지 못했습니다. (일반 뉴스 브리핑 참고)
@@ -17,12 +17,12 @@
 **🟢 네이버 속보:**
 
 **🛡️ 보안뉴스 (Security):**
+- [[쿠팡 해킹] 쿠팡, 대만서도 개인정보 유출... 3367만개 중 20만개 대만 소재](http://www.boannews.com/media/view.asp?idx=142370&kind=&sub_kind=)
+- [[카드뉴스] “데이터 유출이 디지털 성범죄로” 구매 이력 약점 잡는 ‘인격 해킹’ 비상](http://www.boannews.com/media/view.asp?idx=142369&kind=&sub_kind=)
 - [[eGISEC 2026] 엔시큐어, 전사 IT 인프라 서비스 실시간 모니터링 AUNES for Service](http://www.boannews.com/media/view.asp?idx=142190&kind=&sub_kind=)
-- [[SECON 2026] 티에스솔루션, 차량번호 인식 엔진 TS-ANPR](http://www.boannews.com/media/view.asp?idx=142118&kind=&sub_kind=)
-- [[SECON 2026] 아이알켄, Boson 열화상 카메라 모듈](http://www.boannews.com/media/view.asp?idx=142104&kind=&sub_kind=)
 
 ### ⚡ Hyperscale Resources
-- **vCPU:** `128 vCores` (Load: 37.9%)
+- **vCPU:** `128 vCores` (Load: 37.0%)
 - **RAM:** `35.3/512 GB` (Used: 6.9%)
 
 ---
