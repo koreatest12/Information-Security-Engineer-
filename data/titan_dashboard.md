@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 74 days, 5:07:20
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 74 days, 5:37:00
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.7% | `█████░░░░░░░░░░` |
-| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.3% | `█████░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 연체채권 2694억 선제 감면 - 헤럴드경제](https://news.google.com/rss/articles/CBMiVkFVX3lxTFBUNUszTDBRQmdaTGZkalhtTzVRbWJleFNrWEM5TVNrVUxXaUVUZUZZdldLbGNGUHl1YXNJSTNNMUFsR2lINXcwUEwxRVNUUWZxRHRUY0tR?oc=5)
-- ["또 호재 나왔다" 외국인들 쓸어담더니…꿈틀대는 이 종목 [종목+] - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE9rTjU1VjUtX1V1bHRWU2VXcDBwWVdORGZnMXlZUXFXZi1OclhudnVaWHdYenhFQVhXRkpnakNDZjdMSUpwemc?oc=5)
+- ["尹 존경하고 사랑해" 말하던 '女승무원'…알고보니 [이슈+] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1uWHRXcFRzRUxJd1RDdGQ4U1dRTldsLTF5UTFZRnIzYlZOdFpsX3Rsb240YXlwNnV5NVowQkRoQW9vZ2syZFBlS1ZlOXdXdUE?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
