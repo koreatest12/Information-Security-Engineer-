@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 75 days, 12:08:06
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 75 days, 12:17:33
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.9% | `█████░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.8% | `█████░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - ["신한·하나금융+삼성카드+네이버 등 스테이블코인 컨소시엄 확장 기대” - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE14aHpDZXJESmtvRVR3MjV4TnVtRnpDYV9zb3pkaW5sdFRuM0IzRmVmVkh3eVlMS3dPd19Ha1NrVDVqYUFER0tKd2VETEViQXVPZFFuUEJUcTlJbHV1Uk1hdm1zOHJMZXJFWF9TMTRfN3FXc0k?oc=5)
-- [한국경제에 정규재 복귀? 기자들 “‘정치의 덫’ 빠질 것, 반대” - 미디어오늘](https://news.google.com/rss/articles/CBMicEFVX3lxTE9DeTRsQ05DZ05NRUZyaW5rbVBMRnRJWFFHeTRWd0R2NUtOSjFsWVBSVmNISHFDdlRNUTcxTVRWU193OGVXUUxpYmVMWkE5Q3lHdklkSFgzdGZlYldrM2toN01ONzExWFhZbndLN21pdWs?oc=5)
+- [한국경제신문 차기 사장에 조일훈 편집인 선임 - 중앙일보](https://news.google.com/rss/articles/CBMiVkFVX3lxTE1uOGVaY2pzcFpIU0U4M1p3a0VFbGQxaHVjYTJBck9icHh2dVpQSWh6UlV4Q1lpeHI1QmZlLTNRcGdrZlRQcmgwTFcwMDhpc3ZhRVpGZTZB?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
