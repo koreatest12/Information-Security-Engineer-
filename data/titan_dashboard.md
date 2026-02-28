@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 76 days, 10:05:13
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 76 days, 10:12:40
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 41.3% | `██████░░░░░░░░░` |
-| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.5% | `█████░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[미리보는 이사회] 진옥동 신한지주 회장, ‘11% 반대’ 이번엔 넘나 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5YZkpWYzNFTkt4dnF4MU9IaUVybzc5bkpwdXJPM04zLW0yR0lsSlhGLTc0WFhydlFrTHFwMmY0MG5sLXJFVklRUk91S3F3bE5VWWJDSmtsZmJrZVE?oc=5)
+- [신한금융, 연체채권 2694억 선제 감면 - 헤럴드경제](https://news.google.com/rss/articles/CBMiVkFVX3lxTFBUNUszTDBRQmdaTGZkalhtTzVRbWJleFNrWEM5TVNrVUxXaUVUZUZZdldLbGNGUHl1YXNJSTNNMUFsR2lINXcwUEwxRVNUUWZxRHRUY0tR?oc=5)
 - [한국경제에 정규재 복귀? 기자들 “‘정치의 덫’ 빠질 것, 반대” - 미디어오늘](https://news.google.com/rss/articles/CBMicEFVX3lxTE9DeTRsQ05DZ05NRUZyaW5rbVBMRnRJWFFHeTRWd0R2NUtOSjFsWVBSVmNISHFDdlRNUTcxTVRWU193OGVXUUxpYmVMWkE5Q3lHdklkSFgzdGZlYldrM2toN01ONzExWFhZbndLN21pdWs?oc=5)
 
 ---
