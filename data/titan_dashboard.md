@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 76 days, 2:34:12
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 76 days, 2:49:35
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.2% | `█████░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.3% | `█████░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 연체채권 2694억 선제 감면 - 헤럴드경제](https://news.google.com/rss/articles/CBMiVkFVX3lxTFBUNUszTDBRQmdaTGZkalhtTzVRbWJleFNrWEM5TVNrVUxXaUVUZUZZdldLbGNGUHl1YXNJSTNNMUFsR2lINXcwUEwxRVNUUWZxRHRUY0tR?oc=5)
-- [[속보] 이란 관리 "보복 준비 중…압도적인 대응 있을 것" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE8tY2xyZXRnUER6aHpTc1NLNGRGcW1ZTlQtT04tbTdxVHVrVVhiVllNZzRlWGtVYW5Qa2FwS29xOWFVRUh4SjlWVGNTVHhEWk0?oc=5)
+- [[속보] "사우디 수도 리야드에서 큰 폭발음 보고" -AFP - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE8wM0owSkUxVTh6aXlFYktMNy16NnNJWE5qUHVsTDdpWjNtelkxRk14LVRlNU93V2l3ZlUzbU9sNWsxcTJiVHlZdXhWTGNvS0U?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
