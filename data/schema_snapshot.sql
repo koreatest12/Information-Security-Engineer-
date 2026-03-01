@@ -24157,4 +24157,6 @@ INSERT INTO "sqlite_sequence" VALUES('service_health',9212);
 INSERT INTO "sqlite_sequence" VALUES('access_log',4606);
 INSERT INTO "sqlite_sequence" VALUES('execution_logs',9212);
 INSERT INTO "sqlite_sequence" VALUES('security_logs',100);
+CREATE TABLE system_metadata (key TEXT PRIMARY KEY, value TEXT);
+INSERT INTO "system_metadata" VALUES('schema_version','1.0');
 COMMIT;
