@@ -57,15 +57,19 @@ jobs:
       # [GIT OPS] 충돌 방지 및 원장 동기화 (Smart Sync V2)
       - name: Commit & Smart Sync (Stash Strategy)
         run: |
+          shopt -s nullglob
           git config --global user.name "Control-M-Bot"
           git config --global user.email "bot@grand-ops.enterprise"
           
           # 1. DB 및 키 파일 강제 스테이징 (중요 데이터)
           # veritas_vault는 용량이 크므로 gitignore 대상이지만, DB 파일 자체는 동기화
-          git add -f data/*.db config/*.key
+          LEDGER_FILES=(data/*.db config/*.key)
+          if [ ${#LEDGER_FILES[@]} -gt 0 ]; then
+            git add -f "${LEDGER_FILES[@]}"
+          fi
           
-          # 변경사항 체크
-          if [ -z "$(git status --porcelain)" ]; then
+          # 스테이징된 변경사항 체크 (로그/아티팩트 등 Untracked 파일은 무시)
+          if git diff --cached --quiet; then
              echo "✅ No ledger updates to sync."
              exit 0
           fi
