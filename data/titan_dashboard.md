@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 77 days, 2:22:35
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 77 days, 2:34:48
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 40.2% | `██████░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.7% | `█████░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [하나 함영주 12억원, 신한 진옥동 10억원…1년 새 두 배 불어난 주가에 평가이익 뛴 ‘회장님’들 - 조선일보](https://news.google.com/rss/articles/CBMijgFBVV95cUxPcFFHWXlIa3MtdDRURlZFa0k1SWUxaHlFUDl6c2xQR01adTNyd0RoVlNSc0tCZGR4RmlaS0JTcHB1YmhmOTZxQmx6NGx6MHo2MTBfMkpnTDVvaVR0WlEzcVVQX3RybTZVeDlUS0VNWWx5NW1pNk5iR2F1OV9hWXZLbm5VYmstMU9ZbUdRazVB0gGiAUFVX3lxTE9kWmlNMllTeFVtTmhWYlowT3JqanNvV3ZWSkRmSGJ1dnN3TlFLR3ZUb0hmeXdqdHF4cjNFNDE4YzlwWkMtZVlPQnFoQVV1SVd4Qk5qWHJWNzc3WEVhVDJtMkR0Y0F4SndkRjBkaVFpUm16R2JwdmM5eVdJRks0Y2wyODVXV1JMTld0UkNQU1c2R2RsVnc2QTJtMkw1S1VWVy1XQQ?oc=5)
