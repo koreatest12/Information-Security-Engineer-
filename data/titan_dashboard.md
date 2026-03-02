@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 78 days, 13:24:59
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 78 days, 14:01:25
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.0% | `█████░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 35.1% | `█████░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, '중동 불안'에 비상 대응…피해기업 금융지원 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5kYXU5d05SQ2U4RWpVdkZXdGpTRmJLWUp1d3ltcEdpZ1RweW5JSnNONWhOcFV0b1REaEo4d3BXUERtN0RKRVhoejR5bHBaMXlzQWRwcHdOaEg3dmJQaDU2NdIBeEFVX3lxTE0zc240ZGZDSnFHenA5RHM0c29nNEdpVFF3QzhnN3pXTnJrejFrV3VxclhZcHFuSEdVQXd6ZTBtVzEzRXlQWG1mUk1FejZVOWw4d3VMcmtoMEJsbXJZU2c3eVY1aGJac3hzOUJVRWtsQVhZZkI2dkFRRA?oc=5)
-- [[단독] "저도 남편 몰래 투자했어요"…상담원 믿었다 '날벼락' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5WVkdqd25YMUdCNjgxOWlNWlFPMF9DcVR1SEt0cGhXQ2tkTnNBSW9NWGt4aEl2NHlfQzdzZjI1V0JxWFRIZjR4RDk5UTc0bmM?oc=5)
+- [[편집장 레터] 코스피 5000 이후 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5zR3dGNll3Nlp6N0RCRTU1VmVSSjNIVXRrMHNQT0hycTJRZ0JNQXV6NC01em1UbkJZN3VaUndQWFJOZ0FsVkw4cHd4dHpBN1U?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
