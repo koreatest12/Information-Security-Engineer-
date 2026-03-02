@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 77 days, 22:03:30
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 77 days, 22:31:13
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.0% | `████░░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.8% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, ‘비상대응체계’ 가동…중동 불안 영향 - 에너지경제신문](https://news.google.com/rss/articles/CBMiY0FVX3lxTE1LcC1aOEVDVzJuMkRzSW5iTHYyQm5YZnBHenlPZDUyUTlmWGsxQWlrcXRHSkN0TGtQVGNHTXRaVTBWZlpmRXBlcHhjeE51WjlvYl9yVU5fU2R4MGpkY3JzQ2wtQQ?oc=5)
-- ["한국 경제 심각한 타격 입을 것"…美전문가 '경고' 나왔다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5IbGw4eHVpYW1QcnNfQ3ltdkE0MVNfVkFLY1pKTXV0OUZEeW5pYzVrS0I2UlFJdnF3RW1xMHg5a1AtX2FZM2M4SUhBeWJnTEU?oc=5)
+- [신한금융, '중동 불안'에 비상 대응…피해기업 금융지원 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5kYXU5d05SQ2U4RWpVdkZXdGpTRmJLWUp1d3ltcEdpZ1RweW5JSnNONWhOcFV0b1REaEo4d3BXUERtN0RKRVhoejR5bHBaMXlzQWRwcHdOaEg3dmJQaDU2NdIBeEFVX3lxTE0zc240ZGZDSnFHenA5RHM0c29nNEdpVFF3QzhnN3pXTnJrejFrV3VxclhZcHFuSEdVQXd6ZTBtVzEzRXlQWG1mUk1FejZVOWw4d3VMcmtoMEJsbXJZU2c3eVY1aGJac3hzOUJVRWtsQVhZZkI2dkFRRA?oc=5)
+- [한국경제에 정규재 복귀? 기자들 “‘정치의 덫’ 빠질 것, 반대” - 미디어오늘](https://news.google.com/rss/articles/CBMicEFVX3lxTE9DeTRsQ05DZ05NRUZyaW5rbVBMRnRJWFFHeTRWd0R2NUtOSjFsWVBSVmNISHFDdlRNUTcxTVRWU193OGVXUUxpYmVMWkE5Q3lHdklkSFgzdGZlYldrM2toN01ONzExWFhZbndLN21pdWs?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
