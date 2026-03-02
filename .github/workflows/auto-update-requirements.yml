@@ -1,224 +1,146 @@
-name: 자동 업데이트 및 요구사항 관리 (Grand Ops Master)
-
-run-name: 🚀 그랜드 오퍼레이션 마스터:충돌 해결 및 실행 - ${{ github.ref_name }}
+name: 초정밀 자동 업데이트 및 다중 언어 배포 (Grand Ops Master v10)
+run-name: 🚀 운영 마스터:하이브리드 실행 및 배포 - ${{ github.ref_name }}
 
 permissions:
   contents: write
+  packages: write
+  releases: write
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '*/15 * * * *' # 효율성을 위해 15분 간격 조정
   push:
     branches: [ "main", "master" ]
     paths:
       - '**.py'
+      - '**.java'
+      - '**.sh'
+      - 'scripts/**'
   workflow_dispatch:
 
 jobs:
   grand-ops-execution:
-    name: 그랜드 오퍼레이션 마스터
+    name: 하이브리드 오퍼레이션 실행
     runs-on: ubuntu-latest
     env:
       TZ: 'Asia/Seoul'
 
     steps:
-      # ----------------------------------------------------------------
-      # 1. 시스템 초기화 (클린 부팅)
-      # ----------------------------------------------------------------
-      - name: 소스코드 체크아웃 및 리셋
+      # 1. 시스템 초기화 및 클린 부팅
+      - name: 소스코드 체크아웃
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: 깃(Git) 환경 초기화
+      - name: 깃(Git) 환경 최적화
         run: |
-          git config --global user.name "Grand-Ops-Master"
-          git config --global user.email "grand-ops-master@github.com"
-          
-          # 바이너리 파일(.db, .sig) 충돌 시 현재(Local) 버전을 우선시하도록 설정
-          echo "*.db binary" >> .gitattributes
-          echo "*.sig binary" >> .gitattributes
+          git config --global user.name "Grand-Ops-Master-v10"
+          git config --global user.email "ops-v10@github.com"
+          # 대용량 및 바이너리 파일 충돌 방지 전략 설정
+          echo "*.db binary" > .gitattributes
           echo "*.sqlite binary" >> .gitattributes
-          
-          echo "🔄 [Init] 원격 저장소 상태로 리셋..."
+          echo "*.jar binary" >> .gitattributes
           git fetch origin
           git reset --hard origin/${{ github.ref_name }}
 
-      # ----------------------------------------------------------------
-      # 2. 파이썬 3.12 환경 및 필수 도구 설치
-      # ----------------------------------------------------------------
-      - name: 파이썬(Python) 3.12 환경 설정
+      # 2. 다중 언어 환경 구축 (Python & Java)
+      - name: 파이썬(Python) 3.12 설정
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: 필수 도구 설치 (Tabulate 추가됨)
+      - name: 자바(Java) JDK 21 설정
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: 'gradle'
+
+      - name: 필수 런타임 및 서비스 도구 설치
         run: |
           python -m pip install --upgrade pip
-          pip install --upgrade pipreqs setuptools wheel build
-          
-          # [중요] 로그에서 발견된 누락 라이브러리(tabulate) 및 공용 라이브러리 추가
-          pip install pandas numpy beautifulsoup4 fastapi requests tabulate || true
+          pip install pandas numpy beautifulsoup4 fastapi requests tabulate pipreqs
+          sudo apt-get update && sudo apt-get install -y jq zip curl
 
-      # ----------------------------------------------------------------
-      # 3. Scripts 폴더 스마트 분석 및 실행
-      # ----------------------------------------------------------------
-      - name: Scripts 폴더 분석 및 자동 실행
-        id: script_runner
+      # 3. [핵심] 하이브리드 스크립트 엔진 (Python + Java + Shell)
+      - name: 통합 서비스 분석 및 실행
+        id: engine
         run: |
-          echo "🏃‍♂️ [Exec] 'scripts' 디렉토리 작업 시작..."
-          
+          echo "🏃‍♂️ [Engine] 다중 언어 서비스 실행 시작..."
           SCRIPT_DIR="./scripts"
-          SCRIPT_LOG=""
-          EXEC_COUNT=0
+          LOG_CONTENT=""
+          SUCCESS_COUNT=0
           
           if [ -d "$SCRIPT_DIR" ]; then
+            cd "$SCRIPT_DIR"
             
-            # 1. 의존성 추출
-            pipreqs "$SCRIPT_DIR" --force --encoding=utf-8 --savepath "$SCRIPT_DIR/requirements.txt"
-            
-            # 2. 스마트 설치 (호환성 문제 자동 해결)
-            if [ -f "$SCRIPT_DIR/requirements.txt" ]; then
-                echo "⬇️ 스크립트 의존성 설치 시도..."
-                if pip install -r "$SCRIPT_DIR/requirements.txt"; then
-                    echo "✅ 의존성 설치 성공"
-                else
-                    echo "⚠️ [Fix] 호환성 에러 감지! 버전 제한 해제 후 재시도..."
-                    sed 's/==.*$//' "$SCRIPT_DIR/requirements.txt" > "$SCRIPT_DIR/requirements.loose.txt"
-                    pip install -r "$SCRIPT_DIR/requirements.loose.txt" || true
-                fi
+            # A. Python 실행 및 의존성 관리
+            if ls *.py >/dev/null 2>&1; then
+              pipreqs . --force --encoding=utf-8 || true
+              pip install -r requirements.txt || pip install pandas requests tabulate
+              for f in *.py; do
+                echo "Executing Python: $f"
+                python "$f" && { LOG_CONTENT+="| Python | $f | ✅ Success |<br>"; SUCCESS_COUNT=$((SUCCESS_COUNT+1)); } || LOG_CONTENT+="| Python | $f | ❌ Failed |<br>"
+              done
             fi
-            
-            # 3. 스크립트 실행
-            echo "▶️ 스크립트 파일 일괄 실행..."
-            for script in "$SCRIPT_DIR"/*.py; do
-                if [ -f "$script" ]; then
-                    echo "   Running: $script"
-                    # 실행 결과 캡처
-                    if python "$script"; then
-                        STATUS="✅ Success"
-                    else
-                        STATUS="❌ Failed"
-                    fi
-                    SCRIPT_LOG+="- $script : $STATUS<br>"
-                    EXEC_COUNT=$((EXEC_COUNT+1))
-                fi
-            done
-          else
-            SCRIPT_LOG="(scripts 폴더 없음)"
+
+            # B. Java 실행 (단일 .java 파일 컴파일 및 실행)
+            if ls *.java >/dev/null 2>&1; then
+              for f in *.java; do
+                echo "Compiling Java: $f"
+                javac "$f" && java "${f%.*}" && { LOG_CONTENT+="| Java | $f | ✅ Success |<br>"; SUCCESS_COUNT=$((SUCCESS_COUNT+1)); } || LOG_CONTENT+="| Java | $f | ❌ Compile Error |<br>"
+              done
+            fi
+            cd ..
           fi
           
-          echo "EXEC_COUNT=$EXEC_COUNT" >> $GITHUB_ENV
-          echo "SCRIPT_LOG<<EOF" >> $GITHUB_ENV
-          echo "$SCRIPT_LOG" >> $GITHUB_ENV
-          echo "EOF" >> $GITHUB_ENV
+          echo "SUCCESS_COUNT=$SUCCESS_COUNT" >> $GITHUB_ENV
+          echo "LOG_CONTENT=$LOG_CONTENT" >> $GITHUB_ENV
 
-      # ----------------------------------------------------------------
-      # 4. 전체 프로젝트 스캔
-      # ----------------------------------------------------------------
-      - name: 전체 프로젝트 Requirements 동기화
-        run: |
-          echo "🔍 [Scan] 전체 프로젝트 스캔..."
-          pipreqs . --force --encoding=utf-8 --ignore .github
-          
-          PY_FILES=$(find . -type f -name "*.py" -not -path "./.git/*")
-          FILE_COUNT=$(echo "$PY_FILES" | grep -c ".py" || true)
-          echo "PY_COUNT=$FILE_COUNT" >> $GITHUB_ENV
-
-      # ----------------------------------------------------------------
-      # 5. 대시보드(README) 업데이트
-      # ----------------------------------------------------------------
-      - name: 대시보드(README) 업데이트
+      # 4. 데이터 대시보드 및 서비스 상태 업데이트
+      - name: README 대시보드 고도화
         run: |
           NOW=$(date +'%Y-%m-%d %H:%M:%S')
-          REPO="${{ github.repository }}"
-          
-          BADGE_STATUS="![상태](https://github.com/$REPO/actions/workflows/grand-ops-master.yml/badge.svg)"
-          BADGE_SCRIPTS="![스크립트](https://img.shields.io/badge/Scripts_Run-${{ env.EXEC_COUNT }}-orange?logo=python)"
-          
           cat <<EOF > README.md
-          # 🛡️ 그랜드 오퍼레이션 마스터: 통합 관제 센터
+          # 🛡️ 정보보안 기사: 통합 운영 관제 (v10.0)
           
-          $BADGE_STATUS $BADGE_SCRIPTS
+          ![System Status](https://github.com/${{ github.repository }}/actions/workflows/grand-ops-master.yml/badge.svg)
+          ![Total Success](https://img.shields.io/badge/Executed_Tasks-${{ env.SUCCESS_COUNT }}-blueviolet)
           
           ---
-          
-          ## 📡 자동화 운영 현황 (System Status)
-          
-          **그랜드 오퍼레이션 마스터**가 DB 충돌을 자동 해결하고 스크립트를 관리합니다.
-          
-          | 항목 (Metric) | 상태 (Status) |
+          ## 📊 시스템 가동 현황
+          | 구분 | 상세 내용 |
           | :--- | :--- |
-          | **시스템 버전** | 🐍 **Python 3.12** (Tabulate Support) |
-          | **마지막 실행** | 🕒 $NOW (KST) |
-          | **스크립트 실행** | 🏃‍♂️ **${{ env.EXEC_COUNT }}** 개 수행 |
-          | **데이터베이스** | 💾 Auto-Sync & Conflict Resolved |
+          | **운영체제** | Ubuntu Latest (Hybrid Runtime) |
+          | **엔진 버전** | Python 3.12 / JDK 21 |
+          | **업데이트 시각** | $NOW (KST) |
+          | **충돌 해결** | 자동 병합 (Merge Strategy: Ours) |
+          
+          ## 🛠️ 최근 실행 로그 (Execution Log)
+          | Language | File Name | Result |
+          | :--- | :--- | :--- |
+          ${{ env.LOG_CONTENT }}
           
           ---
-          
-          ## 🏃‍♂️ Scripts Execution Log
-          
-          ${{ env.SCRIPT_LOG }}
-          
-          ---
-          
-          ## 📦 Auto-Generated Dependencies
-          
-          ### Root
-          \`\`\`text
-          $(cat requirements.txt)
-          \`\`\`
-          
-          ### Scripts
-          \`\`\`text
-          $(if [ -f "./scripts/requirements.txt" ]; then cat ./scripts/requirements.txt; else echo "N/A"; fi)
-          \`\`\`
-          
-          > _System v9.0 by Grand Ops Master_
+          > _본 리포지토리는 보안 분석 및 데이터 수집을 위해 자동으로 관리됩니다._
           EOF
 
-      # ----------------------------------------------------------------
-      # 6. [핵심] 충돌 해결 및 강제 병합 커밋 (Conflict Auto-Resolver)
-      # ----------------------------------------------------------------
-      - name: 충돌 해결 및 결과 반영
+      # 5. 충돌 방지 자동 병합 및 데이터 배포
+      - name: 데이터 동기화 및 릴리즈
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # 1. 모든 변경사항 스테이징 (DB 파일 포함)
           git add -A
-          
-          # 2. 변경사항 확인
           if git diff --staged --quiet; then
-             echo "ℹ️ (변경 없음) 릴리즈 프로세스로 이동"
+            echo "변경사항 없음"
           else
-             echo "📝 커밋 생성 중..."
-             git commit -m "Grand-Ops: Resolve Conflicts & Update Data ($NOW)"
-             
-             # 3. [핵심] 병합 전략 수정 (Merge Strategy: Ours)
-             # 리베이스(Rebase) 대신 병합(Merge)을 사용하며, 
-             # 충돌 시 '현재 워크플로우의 파일(Ours)'을 무조건 채택하여 바이너리 오류 해결
-             echo "⚔️ 원격 저장소와 병합 시도 (전략: Ours)..."
-             git fetch origin
-             git merge -X ours origin/${{ github.ref_name }} --no-edit
-             
-             # 4. 푸시
-             echo "🚀 푸시 진행..."
-             git push origin HEAD:${{ github.ref_name }}
+            git commit -m "Auto-Update: Systems & Services ($NOW)"
+            git fetch origin
+            git merge -X ours origin/${{ github.ref_name }} --no-edit
+            git push origin HEAD:${{ github.ref_name }}
+            
+            # 최신 상태 패키징 및 릴리즈
+            TAG="release-$(date +'%Y%m%d-%H%M%S')"
+            zip -r "Full-Service-Package.zip" . -x "*.git*"
+            gh release create "$TAG" "Full-Service-Package.zip" --title "🚀 Service Build $TAG" --notes "자동 생성된 통합 서비스 패키지입니다."
           fi
-          
-          # 7. 릴리즈 배포
-          TAG_NAME="v$(date +'%Y.%m.%d-%H%M%S')"
-          ZIP_NAME="Grand-Ops-System-$TAG_NAME.zip"
-          
-          zip -r "$ZIP_NAME" . -x ".git/*" ".github/*"
-          
-          gh release create "$TAG_NAME" \
-            --title "🚀 Grand-Ops System $TAG_NAME" \
-            --notes "## ⚔️ Conflict Resolution Report
-            - **Binary Files**: Auto-merged using 'Ours' strategy
-            - **Executed Scripts**: ${{ env.EXEC_COUNT }}
-            - **Status**: Operational" \
-            "$ZIP_NAME" \
-            requirements.txt
-
-          echo "🎉 모든 충돌 해결 및 배포 완료!"
