@@ -1,3 +1,3 @@
 *.db binary
-*.sig binary
 *.sqlite binary
+*.jar binary

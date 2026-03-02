@@ -1,0 +1,9 @@
+node_modules
+dist
+.env
+.DS_Store
+coverage
+# 데이터 폴더는 무시하되 DB는 허용
+data/*
+!data/*.db
+!data/*.sql
