@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 77 days, 17:11:55
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 77 days, 17:48:32
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.3% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.0% | `█████░░░░░░░░░░` |
 | **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 중동 불안에 ‘비상대응체계’ 가동...피해기업 금융지원 - 디지털데일리](https://news.google.com/rss/articles/CBMiZEFVX3lxTFBELUtNRlMyUUFtQlZQRWNxZFAzd1FBX2c3bjdPeExoUHVJX2JFQkY1M0dpLWd1dmZGcUZndnBHNkRsODltbTJteHUzbTg2YndyRm9mUVNfSjBlczk3LXFtcjh3Tm4?oc=5)
+- [신한금융, '중동 불안'에 비상 대응…피해기업 금융지원 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5kYXU5d05SQ2U4RWpVdkZXdGpTRmJLWUp1d3ltcEdpZ1RweW5JSnNONWhOcFV0b1REaEo4d3BXUERtN0RKRVhoejR5bHBaMXlzQWRwcHdOaEg3dmJQaDU2NdIBeEFVX3lxTE0zc240ZGZDSnFHenA5RHM0c29nNEdpVFF3QzhnN3pXTnJrejFrV3VxclhZcHFuSEdVQXd6ZTBtVzEzRXlQWG1mUk1FejZVOWw4d3VMcmtoMEJsbXJZU2c3eVY1aGJac3hzOUJVRWtsQVhZZkI2dkFRRA?oc=5)
 - [한국경제에 정규재 복귀? 기자들 “‘정치의 덫’ 빠질 것, 반대” - 미디어오늘](https://news.google.com/rss/articles/CBMicEFVX3lxTE9DeTRsQ05DZ05NRUZyaW5rbVBMRnRJWFFHeTRWd0R2NUtOSjFsWVBSVmNISHFDdlRNUTcxTVRWU193OGVXUUxpYmVMWkE5Q3lHdklkSFgzdGZlYldrM2toN01ONzExWFhZbndLN21pdWs?oc=5)
 
 ---
