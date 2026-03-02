@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 78 days, 15:20:41
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 78 days, 15:57:16
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.4% | `████░░░░░░░░░░░` |
-| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 24.2% | `███░░░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, '중동 불안'에 비상 대응…피해기업 금융지원 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5kYXU5d05SQ2U4RWpVdkZXdGpTRmJLWUp1d3ltcEdpZ1RweW5JSnNONWhOcFV0b1REaEo4d3BXUERtN0RKRVhoejR5bHBaMXlzQWRwcHdOaEg3dmJQaDU2NdIBeEFVX3lxTE0zc240ZGZDSnFHenA5RHM0c29nNEdpVFF3QzhnN3pXTnJrejFrV3VxclhZcHFuSEdVQXd6ZTBtVzEzRXlQWG1mUk1FejZVOWw4d3VMcmtoMEJsbXJZU2c3eVY1aGJac3hzOUJVRWtsQVhZZkI2dkFRRA?oc=5)
-- [[편집장 레터] 코스피 5000 이후 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5zR3dGNll3Nlp6N0RCRTU1VmVSSjNIVXRrMHNQT0hycTJRZ0JNQXV6NC01em1UbkJZN3VaUndQWFJOZ0FsVkw4cHd4dHpBN1U?oc=5)
+- [[마켓PRO] Today's Pick : "메모리 사이클에...130만닉스, 26만전자 간다" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9LcklPYm1fYXVQUUFUMEZXMWEyOWJJM2lzT1ZjUEh1T3l2bndCS2N6ZzJLMkdNRUFzS0wtY21teVJLODNqTkVLbHlVcS1fcVE?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
