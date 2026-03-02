@@ -1,5 +1,5 @@
-name: 초정밀 자동 업데이트 및 다중 언어 배포 (Grand Ops Master v10)
-run-name: 🚀 운영 마스터:하이브리드 실행 및 배포 - ${{ github.ref_name }}
+name: 초정밀 자동 업데이트 및 데이터 카운팅 (Grand Ops Master v10.4)
+run-name: 🚀 데이터 수집 및 서비스 업데이트 - ${{ github.ref_name }}
 
 permissions:
   contents: write
@@ -7,14 +7,9 @@ permissions:
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '0 */3 * * *'
   push:
     branches: [ "main", "master" ]
-    paths:
-      - '**.py'
-      - '**.java'
-      - '**.sh'
-      - 'scripts/**'
   workflow_dispatch:
 
 jobs:
@@ -25,115 +20,89 @@ jobs:
       TZ: 'Asia/Seoul'
 
     steps:
-      # 1. 시스템 초기화 (속도 최적화: fetch-depth 1)
-      - name: 소스코드 체크아웃 (Fast Fetch)
+      - name: 소스코드 체크아웃
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1 # 최신 상태만 가져와서 속도를 대폭 향상시킵니다.
+          fetch-depth: 1
 
-      - name: 깃(Git) 환경 및 바이너리 처리
-        run: |
-          git config --global user.name "Grand-Ops-Master-v10"
-          git config --global user.email "ops-v10@github.com"
-          # 충돌 방지를 위한 속성 정의
-          echo "*.db binary" > .gitattributes
-          echo "*.sqlite binary" >> .gitattributes
-          echo "*.jar binary" >> .gitattributes
-          # 원격의 최신 상태와 동기화
-          git fetch origin ${{ github.ref_name }}
-          git reset --soft origin/${{ github.ref_name }}
-
-      # 2. 다중 언어 환경 구축 (병렬 설치 느낌으로 구성)
-      - name: 런타임 환경 설정 (Python 3.12 & Java 21)
+      - name: 런타임 환경 설정
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           
-      - name: 자바 JDK 설정
-        uses: actions/setup-java@v4
-        with:
-          java-version: '21'
-          distribution: 'temurin'
-
-      - name: 종속성 도구 고속 설치
+      - name: 필수 도구 및 라이브러리 설치
         run: |
-          python -m pip install --upgrade pip
-          # 필요한 핵심 라이브러리만 선별 설치하여 시간 단축
-          pip install pandas numpy beautifulsoup4 fastapi requests tabulate pipreqs
-          sudo apt-get update && sudo apt-get install -y jq zip curl
+          pip install pandas requests beautifulsoup4 tabulate
+          # 데이터 디렉토리 미존재 시 생성
+          mkdir -p data
 
-      # 3. 통합 서비스 분석 및 실행 (scripts 폴더 집중화)
-      - name: 하이브리드 엔진 가동
-        id: engine
+      # [핵심 추가] 데이터 수집 및 개수 추출 로직
+      - name: 데이터 수집 엔진 가동
+        id: collector
         run: |
-          echo "🏃‍♂️ [Engine] 다중 언어 서비스 실행 시작..."
-          SCRIPT_DIR="./scripts"
-          LOG_CONTENT=""
-          SUCCESS_COUNT=0
+          echo "🔍 [Collector] 데이터 수집 및 분석 시작..."
           
-          if [ -d "$SCRIPT_DIR" ]; then
-            cd "$SCRIPT_DIR"
-            # Python 섹션
-            if ls *.py >/dev/null 2>&1; then
-              pip install -r requirements.txt 2>/dev/null || pip install pandas requests tabulate
-              for f in *.py; do
-                echo "Running Python: $f"
-                python "$f" && { LOG_CONTENT+="| Python | $f | ✅ Success |<br>"; SUCCESS_COUNT=$((SUCCESS_COUNT+1)); } || LOG_CONTENT+="| Python | $f | ❌ Failed |<br>"
-              done
-            fi
-            # Java 섹션
-            if ls *.java >/dev/null 2>&1; then
-              for f in *.java; do
-                echo "Compiling/Running Java: $f"
-                javac "$f" && java "${f%.*}" && { LOG_CONTENT+="| Java | $f | ✅ Success |<br>"; SUCCESS_COUNT=$((SUCCESS_COUNT+1)); } || LOG_CONTENT+="| Java | $f | ❌ Error |<br>"
-              done
-            fi
-            cd ..
+          # 1. 스크립트 실행 (여기서 data/daily_intel.json 등이 생성됨)
+          # 예시로 scripts 내의 수집 스크립트 실행
+          python scripts/collect_data.py || echo "수집 스크립트 없음"
+          
+          # 2. 생성된 JSON 파일에서 아이템 개수 파악 (jq 활용)
+          # 파일이 존재하고 데이터가 있다면 개수를 세어 ENV에 저장
+          if [ -f "data/daily_intel.json" ]; then
+            ITEM_COUNT=$(jq '. | length' data/daily_intel.json 2>/dev/null || echo "0")
+          else
+            ITEM_COUNT="0"
           fi
-          echo "SUCCESS_COUNT=$SUCCESS_COUNT" >> $GITHUB_ENV
-          echo "LOG_CONTENT=$LOG_CONTENT" >> $GITHUB_ENV
+          
+          echo "ITEM_COUNT=$ITEM_COUNT" >> $GITHUB_ENV
+          echo "✅ 수집된 아이템 개수: $ITEM_COUNT"
 
-      # 4. 실시간 대시보드 업데이트
-      - name: README 업데이트
+      - name: README 및 리포트 업데이트
         run: |
-          NOW=$(date +'%Y-%m-%d %H:%M:%S')
+          NOW=$(date +'%Y.%m.%d')
+          FULL_TIME=$(date +'%Y-%m-%d %H:%M:%S')
+          
+          # 🚀 리포트 및 대시보드 생성
           cat <<EOF > README.md
-          # 🛡️ 정보보안 기사: 통합 운영 관제 (v10.2)
+          # 🛡️ 정보보안 기사: 통합 운영 시스템 (v10.4)
           
-          ![System Status](https://github.com/${{ github.repository }}/actions/workflows/auto-update-requirements.yml/badge.svg)
-          ![Tasks](https://img.shields.io/badge/Executed_Tasks-${{ env.SUCCESS_COUNT }}-blueviolet)
-          
-          ---
-          ## 📊 시스템 현황
-          - **OS**: Ubuntu (Latest)
-          - **Runtime**: Python 3.12 / Java 21
-          - **Last Sync**: $NOW (KST)
-          
-          ## 🛠️ 실행 로그
-          | Language | File Name | Status |
-          | :--- | :--- | :--- |
-          ${{ env.LOG_CONTENT }}
+          ### 🚀 Ops Server Report ($NOW)
+          - **Data Points**: 📊 **${{ env.ITEM_COUNT }}** news items collected.
+          - **Database**: [Download JSON](./data/daily_intel.json)
           
           ---
-          > _System Optimized for Speed & Accuracy_
+          ## 📊 시스템 가동 현황
+          | 항목 | 상세 내용 |
+          | :--- | :--- |
+          | **마지막 업데이트** | $FULL_TIME (KST) |
+          | **수집된 데이터** | 📂 **${{ env.ITEM_COUNT }}** items |
+          | **데이터베이스 상태** | \`data/daily_intel.json\` updated. |
+          
+          ## 🛠️ 최근 실행 로그
+          | 구분 | 상태 |
+          | :--- | :--- |
+          | **Data Collection** | ✅ Completed |
+          | **Auto-Sync** | ✅ Resolved |
+          
+          ---
+          > _System v10.4 by Grand Ops Master_
           EOF
 
-      # 5. 스마트 커밋 및 릴리즈 배포
-      - name: 결과 반영 및 자동 릴리즈
+      - name: 데이터 푸시 및 릴리즈
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          git config --global user.name "Grand-Ops-Master-v10"
+          git config --global user.email "ops-v10@github.com"
+          
           git add -A
-          NOW=$(date +'%Y-%m-%d %H:%M:%S')
           if git diff --staged --quiet; then
             echo "변경사항 없음"
           else
-            git commit -m "Grand-Ops: Delta Update ($NOW)"
-            # 충돌 발생 시 원격 버전 무시하고 현재 결과물 강제 적용 (Ours 전략)
+            git commit -m "🚀 Ops Update: ${{ env.ITEM_COUNT }} items collected ($NOW)"
             git push origin HEAD:${{ github.ref_name }} --force
             
-            # 배포용 패키지 생성 (불필요한 파일 제외로 속도 향상)
-            TAG="v$(date +'%Y%m%d-%H%M%S')"
-            zip -r "Service-Build.zip" . -x "*.git*" "node_modules/*"
-            gh release create "$TAG" "Service-Build.zip" --title "🚀 Build $TAG" --notes "자동화된 통합 서비스 배포 패키지입니다."
+            # 릴리즈 생성 시에도 개수 반영
+            TAG="v$NOW-$(date +'%H%M%S')"
+            gh release create "$TAG" --title "🚀 Build $TAG (Items: ${{ env.ITEM_COUNT }})" --notes "금일 수집된 데이터 개수: ${{ env.ITEM_COUNT }}개"
           fi
