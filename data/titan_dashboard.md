@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 78 days, 1:30:25
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 78 days, 2:02:29
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.0% | `████░░░░░░░░░░░` |
-| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.3% | `████░░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, ‘비상대응체계’ 가동…중동 불안 영향 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1WWHlBVFlHX0RwNXpBeFZ1eTRkVDVTVENwdHZDbjhNWmdmN3piMThJeHlIOFVLSzdnb3hHT1FXSjU1TXQ0MHpQRVdqVzlmUzU3d2tWbGFFZ1J1bms?oc=5)
+- [신한투자증권, 증권사가 직접 발행하고 원리금 지급 책임지는 구조 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE81RzdoMFhGQnQyMUdQNXJoSE5BVmJUN2VES0JSaVg0QWNyMExRRDVlbjNOdG5DZU5hT2ZOMDllZDRNdHlVTUNOdVVjUlJpRGs?oc=5)
 - [한국경제에 정규재 복귀? 기자들 “‘정치의 덫’ 빠질 것, 반대” - 미디어오늘](https://news.google.com/rss/articles/CBMicEFVX3lxTE9DeTRsQ05DZ05NRUZyaW5rbVBMRnRJWFFHeTRWd0R2NUtOSjFsWVBSVmNISHFDdlRNUTcxTVRWU193OGVXUUxpYmVMWkE5Q3lHdklkSFgzdGZlYldrM2toN01ONzExWFhZbndLN21pdWs?oc=5)
 
 ---
