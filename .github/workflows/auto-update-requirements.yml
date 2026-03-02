@@ -4,11 +4,10 @@ run-name: 🚀 운영 마스터:하이브리드 실행 및 배포 - ${{ github.r
 permissions:
   contents: write
   packages: write
-  releases: write
 
 on:
   schedule:
-    - cron: '*/15 * * * *' # 효율성을 위해 15분 간격 조정
+    - cron: '*/15 * * * *'
   push:
     branches: [ "main", "master" ]
     paths:
@@ -36,7 +35,6 @@ jobs:
         run: |
           git config --global user.name "Grand-Ops-Master-v10"
           git config --global user.email "ops-v10@github.com"
-          # 대용량 및 바이너리 파일 충돌 방지 전략 설정
           echo "*.db binary" > .gitattributes
           echo "*.sqlite binary" >> .gitattributes
           echo "*.jar binary" >> .gitattributes
@@ -62,7 +60,7 @@ jobs:
           pip install pandas numpy beautifulsoup4 fastapi requests tabulate pipreqs
           sudo apt-get update && sudo apt-get install -y jq zip curl
 
-      # 3. [핵심] 하이브리드 스크립트 엔진 (Python + Java + Shell)
+      # 3. 통합 서비스 분석 및 실행
       - name: 통합 서비스 분석 및 실행
         id: engine
         run: |
@@ -73,8 +71,7 @@ jobs:
           
           if [ -d "$SCRIPT_DIR" ]; then
             cd "$SCRIPT_DIR"
-            
-            # A. Python 실행 및 의존성 관리
+            # A. Python 실행
             if ls *.py >/dev/null 2>&1; then
               pipreqs . --force --encoding=utf-8 || true
               pip install -r requirements.txt || pip install pandas requests tabulate
@@ -83,8 +80,7 @@ jobs:
                 python "$f" && { LOG_CONTENT+="| Python | $f | ✅ Success |<br>"; SUCCESS_COUNT=$((SUCCESS_COUNT+1)); } || LOG_CONTENT+="| Python | $f | ❌ Failed |<br>"
               done
             fi
-
-            # B. Java 실행 (단일 .java 파일 컴파일 및 실행)
+            # B. Java 실행
             if ls *.java >/dev/null 2>&1; then
               for f in *.java; do
                 echo "Compiling Java: $f"
@@ -93,18 +89,17 @@ jobs:
             fi
             cd ..
           fi
-          
           echo "SUCCESS_COUNT=$SUCCESS_COUNT" >> $GITHUB_ENV
           echo "LOG_CONTENT=$LOG_CONTENT" >> $GITHUB_ENV
 
-      # 4. 데이터 대시보드 및 서비스 상태 업데이트
+      # 4. 데이터 대시보드 업데이트
       - name: README 대시보드 고도화
         run: |
           NOW=$(date +'%Y-%m-%d %H:%M:%S')
           cat <<EOF > README.md
-          # 🛡️ 정보보안 기사: 통합 운영 관제 (v10.0)
+          # 🛡️ 정보보안 기사: 통합 운영 관제 (v10.1)
           
-          ![System Status](https://github.com/${{ github.repository }}/actions/workflows/grand-ops-master.yml/badge.svg)
+          ![System Status](https://github.com/${{ github.repository }}/actions/workflows/auto-update-requirements.yml/badge.svg)
           ![Total Success](https://img.shields.io/badge/Executed_Tasks-${{ env.SUCCESS_COUNT }}-blueviolet)
           
           ---
@@ -114,23 +109,23 @@ jobs:
           | **운영체제** | Ubuntu Latest (Hybrid Runtime) |
           | **엔진 버전** | Python 3.12 / JDK 21 |
           | **업데이트 시각** | $NOW (KST) |
-          | **충돌 해결** | 자동 병합 (Merge Strategy: Ours) |
           
-          ## 🛠️ 최근 실행 로그 (Execution Log)
+          ## 🛠️ 최근 실행 로그
           | Language | File Name | Result |
           | :--- | :--- | :--- |
           ${{ env.LOG_CONTENT }}
           
           ---
-          > _본 리포지토리는 보안 분석 및 데이터 수집을 위해 자동으로 관리됩니다._
+          > _System v10.1 by Grand Ops Master_
           EOF
 
-      # 5. 충돌 방지 자동 병합 및 데이터 배포
+      # 5. 충돌 방지 및 배포 (Releases)
       - name: 데이터 동기화 및 릴리즈
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git add -A
+          NOW=$(date +'%Y-%m-%d %H:%M:%S')
           if git diff --staged --quiet; then
             echo "변경사항 없음"
           else
@@ -139,7 +134,6 @@ jobs:
             git merge -X ours origin/${{ github.ref_name }} --no-edit
             git push origin HEAD:${{ github.ref_name }}
             
-            # 최신 상태 패키징 및 릴리즈
             TAG="release-$(date +'%Y%m%d-%H%M%S')"
             zip -r "Full-Service-Package.zip" . -x "*.git*"
             gh release create "$TAG" "Full-Service-Package.zip" --title "🚀 Service Build $TAG" --notes "자동 생성된 통합 서비스 패키지입니다."
