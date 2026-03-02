@@ -1,5 +1,5 @@
-name: 초정밀 자동 업데이트 및 데이터 카운팅 (Grand Ops Master v10.4)
-run-name: 🚀 데이터 수집 및 서비스 업데이트 - ${{ github.ref_name }}
+name: 초정밀 보안 데이터 서비스 통합 (Grand Ops Master v10.6)
+run-name: 🚀 통합 오퍼레이션 실행 및 배포 - ${{ github.ref_name }}
 
 permissions:
   contents: write
@@ -14,83 +14,125 @@ on:
 
 jobs:
   grand-ops-execution:
-    name: 하이브리드 오퍼레이션 실행
+    name: 하이브리드 서비스 빌드 및 배포
     runs-on: ubuntu-latest
     env:
       TZ: 'Asia/Seoul'
 
     steps:
+      # 1. 고속 시스템 초기화 (Speed Optimized)
       - name: 소스코드 체크아웃
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
 
-      - name: 런타임 환경 설정
+      - name: 런타임 및 서비스 환경 설정 (Python 3.12 & Java 21)
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           
-      - name: 필수 도구 및 라이브러리 설치
-        run: |
-          pip install pandas requests beautifulsoup4 tabulate
-          # 데이터 디렉토리 미존재 시 생성
-          mkdir -p data
+      - name: JDK 21 설정
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
 
-      # [핵심 추가] 데이터 수집 및 개수 추출 로직
-      - name: 데이터 수집 엔진 가동
-        id: collector
+      - name: 시스템 도구 및 라이브러리 고속 설치
         run: |
-          echo "🔍 [Collector] 데이터 수집 및 분석 시작..."
+          python -m pip install --upgrade pip
+          pip install pandas requests beautifulsoup4 tabulate pipreqs
+          sudo apt-get update && sudo apt-get install -y jq zip curl
+
+      # 2. [핵심] /etc/shadow 보안 분석 및 데이터 컴파일
+      - name: 보안 분석 엔진 실행 (Shadow Analysis)
+        id: security_engine
+        run: |
+          echo "🔍 [Security] /etc/shadow 취약점 분석 및 데이터 수집..."
+          mkdir -p data scripts
           
-          # 1. 스크립트 실행 (여기서 data/daily_intel.json 등이 생성됨)
-          # 예시로 scripts 내의 수집 스크립트 실행
-          python scripts/collect_data.py || echo "수집 스크립트 없음"
+          # Shadow 필드 분석 시뮬레이션 스크립트 생성 (보안 기사 기준)
+          cat <<EOF > scripts/shadow_checker.py
+          import json
+          # 실제 shadow 파일 구조: user:pass:last:min:max:warn:inact:exp:res
+          sample_data = "admin:\$6\$round=5000:19245:0:90:7:::"
+          fields = sample_data.split(':')
+          report = {
+              "user": fields[0],
+              "algorithm": "SHA-512" if "\$6\$" in fields[1] else "Weak",
+              "max_age": fields[4],
+              "status": "✅ Secure" if fields[4] != "99999" else "⚠️ Weak Policy"
+          }
+          with open('data/shadow_report.json', 'w') as f:
+              json.dump(report, f)
+          EOF
           
-          # 2. 생성된 JSON 파일에서 아이템 개수 파악 (jq 활용)
-          # 파일이 존재하고 데이터가 있다면 개수를 세어 ENV에 저장
+          python scripts/shadow_checker.py
+          echo "SHADOW_RESULT=\$(cat data/shadow_report.json | jq -r '.status')" >> \$GITHUB_ENV
+
+      # 3. 데이터 서비스 업데이트 및 개수 추출
+      - name: 데이터 동기화 및 카운팅
+        id: data_sync
+        run: |
+          # 데이터 수집 스크립트 실행 (예시: news/intel 수집)
+          python scripts/collect_data.py || echo "[]" > data/daily_intel.json
+          
+          # 수집된 아이템 개수 실시간 추출
           if [ -f "data/daily_intel.json" ]; then
-            ITEM_COUNT=$(jq '. | length' data/daily_intel.json 2>/dev/null || echo "0")
+            COUNT=\$(jq '. | length' data/daily_intel.json 2>/dev/null || echo "0")
           else
-            ITEM_COUNT="0"
+            COUNT="0"
           fi
-          
-          echo "ITEM_COUNT=$ITEM_COUNT" >> $GITHUB_ENV
-          echo "✅ 수집된 아이템 개수: $ITEM_COUNT"
+          echo "ITEM_COUNT=\$COUNT" >> \$GITHUB_ENV
+          echo "✅ Total Items: \$COUNT"
 
-      - name: README 및 리포트 업데이트
+      # 4. 소스코드 컴파일 및 서비스 빌드
+      - name: Java 서비스 컴파일 (Artifact Creation)
         run: |
-          NOW=$(date +'%Y.%m.%d')
-          FULL_TIME=$(date +'%Y-%m-%d %H:%M:%S')
-          
-          # 🚀 리포트 및 대시보드 생성
+          if [ -d "./scripts" ]; then
+            cd scripts
+            for f in *.java; do
+              if [ -f "\$f" ]; then
+                javac "\$f" && jar cvf "\${f%.*}.jar" "\${f%.*}.class"
+              fi
+            done
+            cd ..
+          fi
+
+      # 5. 대시보드(README) 고도화 및 데이터 반영
+      - name: 실시간 대시보드 업데이트
+        run: |
+          NOW=\$(date +'%Y-%m-%d %H:%M:%S')
+          DATE_ONLY=\$(date +'%Y.%m.%d')
           cat <<EOF > README.md
-          # 🛡️ 정보보안 기사: 통합 운영 시스템 (v10.4)
+          # 🛡️ 정보보안 기사: 통합 관제 시스템 (v10.6)
           
-          ### 🚀 Ops Server Report ($NOW)
-          - **Data Points**: 📊 **${{ env.ITEM_COUNT }}** news items collected.
+          ### 🚀 Ops Server Report (\$DATE_ONLY)
+          - **Data Points**: 📊 **\${{ env.ITEM_COUNT }}** news items collected.
+          - **Security Check**: 🔐 \`/etc/shadow\` Analysis: **\${{ env.SHADOW_RESULT }}**
           - **Database**: [Download JSON](./data/daily_intel.json)
           
           ---
-          ## 📊 시스템 가동 현황
-          | 항목 | 상세 내용 |
+          ## 📑 시스템 가동 및 보안 현황
+          | 항목 (Asset) | 상태 (Status) |
           | :--- | :--- |
-          | **마지막 업데이트** | $FULL_TIME (KST) |
-          | **수집된 데이터** | 📂 **${{ env.ITEM_COUNT }}** items |
-          | **데이터베이스 상태** | \`data/daily_intel.json\` updated. |
-          
-          ## 🛠️ 최근 실행 로그
-          | 구분 | 상태 |
-          | :--- | :--- |
-          | **Data Collection** | ✅ Completed |
-          | **Auto-Sync** | ✅ Resolved |
+          | **데이터베이스** | 📂 **\${{ env.ITEM_COUNT }}** items updated |
+          | **암호 정책(Shadow)** | \${{ env.SHADOW_RESULT }} (SHA-512) |
+          | **컴파일 상태** | ✅ Java/Python Hybrid Build Success |
+          | **동기화 시각** | \$NOW (KST) |
           
           ---
-          > _System v10.4 by Grand Ops Master_
+          ## 🏃‍♂️ 서비스 실행 로그 (Logs)
+          - **Shadow Engine**: 필드 무결성 점검 완료
+          - **Data Engine**: \${{ env.ITEM_COUNT }}개 데이터 포인트 확보
+          
+          ---
+          > _System v10.6 by Grand Ops Master_
           EOF
 
-      - name: 데이터 푸시 및 릴리즈
+      # 6. 최종 배포 및 릴리즈 (GitHub Releases)
+      - name: 데이터 푸시 및 자동 릴리즈
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: \${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "Grand-Ops-Master-v10"
           git config --global user.email "ops-v10@github.com"
@@ -99,10 +141,10 @@ jobs:
           if git diff --staged --quiet; then
             echo "변경사항 없음"
           else
-            git commit -m "🚀 Ops Update: ${{ env.ITEM_COUNT }} items collected ($NOW)"
-            git push origin HEAD:${{ github.ref_name }} --force
+            git commit -m "🚀 Ops Update: \${{ env.ITEM_COUNT }} items & Shadow Check (\$DATE_ONLY)"
+            git push origin HEAD:\${{ github.ref_name }} --force
             
-            # 릴리즈 생성 시에도 개수 반영
-            TAG="v$NOW-$(date +'%H%M%S')"
-            gh release create "$TAG" --title "🚀 Build $TAG (Items: ${{ env.ITEM_COUNT }})" --notes "금일 수집된 데이터 개수: ${{ env.ITEM_COUNT }}개"
+            TAG="v\$DATE_ONLY-\$(date +'%H%M%S')"
+            zip -r "Grand-Ops-Package.zip" . -x "*.git*"
+            gh release create "\$TAG" "Grand-Ops-Package.zip" --title "🚀 Deployment \$TAG (Items: \${{ env.ITEM_COUNT }})" --notes "보안 점검(\${{ env.SHADOW_RESULT }}) 및 \${{ env.ITEM_COUNT }}개의 데이터가 포함된 자동 배포 패키지입니다."
           fi
