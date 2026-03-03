@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 78 days, 22:29:42
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 78 days, 23:02:50
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 19.4% | `██░░░░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [중동 화약고 흔들리자…신한은행, 글로벌 네트워크 리스크 시험대 - 녹색경제신문](https://news.google.com/rss/articles/CBMiaEFVX3lxTE5qUGdvTkNwbG9FeklsTjd5QVpiR3M1T1VYMUxRRFlIUnY0NXBDXzd0LTd6UHZJY2FNRnJVMVU5c2ZLRmhCUlJzX01ScG5oX3RsVUZveThLSzFoNVpYZmZsc2Q5WUlwT211?oc=5)
+- [신한금융, '중동사태' 대응 그룹위기관리협의회 개최 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBWQlo1RnprTmJCa29oVGlMdXlZcVVoLXNIRDg1ZHJOdTVvV2xaMWNiMWlXYzZEMlFFell6c1dRVm9qR2IxcGRmSC1zNVFURzQ0MFRnbmxPZXpBcmJjRFpJUA?oc=5)
 - ['아들아 미안'…60대 주부, 14억 아파트 물려주려다 '화들짝' [고정삼의 절세GPT] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1VbDI2aXZidk5PMWhsXzB1QjI0VDZFbHB4cTRaaE1ORm15em9qVXZRbHU4NnFIbk16SFJTMWNiaXpmNVRGRnRIaGpEUERIcUk?oc=5)
 
 ---
