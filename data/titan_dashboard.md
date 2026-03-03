@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 79 days, 15:21:01
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 79 days, 15:56:47
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.3% | `█████░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 18.7% | `██░░░░░░░░░░░░░` |
+| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 신임 사외이사에 박종복·임승연 2명 추천 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9JTUh2VU10UGg5N2FTUmhwYjAweU9ibWdlampRWVIzV2dQRWhlZV83TmVCZnd4dWI0MHYzM0U4dnZTc0h2Q2pfR18talZqLUFNSVVBcWRCc1NoZWhFNWpKX9IBeEFVX3lxTE5Ka2dYNExXOXhEZjR6Y1lDWmRPRVNvdnVZdGlFODRqcWhjSUdyNHY1cG44T09qS0dSM0ZXdFBfR29sWFMyQlZrYUNtUnlPUzNqdUltNzlJemxVU21KMW9zcjBicWtxQ2R4TjhmZExtLU5tRWdKSjEtNA?oc=5)
+- [신한금융 이사회, 박종복·임승연 신임 사외이사 후보 추천 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE1hblVndEEtOUVaTGNvUG1yQ3U1bE5NZ2RvZEJUNWpFQk05aFRZQkkyaUtUWC1nUFNnOTZ2UXV3Z3dpRGFOdkhycm14bWVNaVRzMXRJOTZnaXhpQVJVM1FHZ0xDOEhRdnpkRF9RTVRhYkVSdmM?oc=5)
 - [한국 경제 3월 호성적 기대했는데…받아든 건 3대 악재 - 중앙일보](https://news.google.com/rss/articles/CBMiVkFVX3lxTE1uUFJYMGNJRXJYQkJHQXpwNTJlSWZlRExtUW8wZDY3aEkxREFTUDdzU2FLa0tJWk91dDdpSWhTOW42MXUxNGZWR2ltelNhcVNMQVUtWGdn?oc=5)
 
 ---
