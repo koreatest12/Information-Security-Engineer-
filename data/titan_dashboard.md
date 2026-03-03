@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 79 days, 3:59:17
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 79 days, 4:22:43
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.5% | `████░░░░░░░░░░░` |
-| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.1% | `████░░░░░░░░░░░` |
+| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 박종복 전 SC은행장 등 신임 사외이사 2명 추천 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBfQ0NLTE9YMy01WDhiUC1FcmhEcndfWVIzM0RfcV9kZVZlc3V6cHI2ZHlORklQamw0djRRUVhyR2twZE5XeUZ4UkJISG1qbk0?oc=5)
+- [신한지주, 새 사외이사 후보에 ‘파격’ 박종복 전 SC제일은행장 추천 - 에너지경제신문](https://news.google.com/rss/articles/CBMiY0FVX3lxTFBzWENROFRBV0pnMnZRaS1SclIyOVJLUkJXR0ZpWFZCYVdTdUx1a0g1NnJnOFBRck9MQ3lTUUZCcHQwUjFremNERV9QM0x0SFhfdURMQ3ozMGRlakRuWTNaRGNkOA?oc=5)
 - ['아들아 미안'…60대 주부, 14억 아파트 물려주려다 '화들짝' [고정삼의 절세GPT] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1VbDI2aXZidk5PMWhsXzB1QjI0VDZFbHB4cTRaaE1ORm15em9qVXZRbHU4NnFIbk16SFJTMWNiaXpmNVRGRnRIaGpEUERIcUk?oc=5)
 
 ---
