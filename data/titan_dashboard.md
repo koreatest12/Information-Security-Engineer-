@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 79 days, 11:03:32
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 79 days, 11:33:05
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.2% | `████░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.8% | `████░░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융지주, 신임 사외이사 후보로 박종복·임승연 추천 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9hR1BtS29UYVN0Nl9Na1J6WGRyb21RQ3pSRmFuZ3phR2VySlRxVzhibXpBa1NUWHRnejBScXlaV19LUDFzSFJrWWE0czlyUjRLVzlHR2xZU2xodUHSAWBBVV95cUxNVC0yVzlGUHM4WHhscng2SUF5N2Q5VmNnQzR3Z3dLTU1wd1NTa3J1SlVYVGp3cXkxNFBMM2V6dzBsdmp6c1ZfMVVZYUlfVUtRVlo1Tm1TZGxxS0ZMUkNFLTc?oc=5)
