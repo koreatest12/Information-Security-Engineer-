@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 80 days, 2:25:59
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 80 days, 3:00:53
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.5% | `███░░░░░░░░░░░░` |
-| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [“학계→업계 사외이사 급선회”…KB·신한·우리, AI·지배구조 전문가 영입 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5VWWlIamVEa1dZSmduWWdnSXhnMFRkNi1lZFh0YUl0MWRYbW1WQTRaMG5fOTFveUV6NWpZR203cjFHaG9OUDM1dzlMQVFOSEpFOWZTcEh0MnY2UQ?oc=5)
-- [경제학자 홍종학이 본 한국경제의 방향 ‘대한민국 금융위기’ - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBmUGVhc3FXNFBjaG9HRy1NVjlFVnRLY3ZLN2pSckhwWG5QRnRwRTlNbmxydVUzZmJKN1hENWVJSkx0Tk5LZExrREptOEcwNk0?oc=5)
+- [신한은행, 차세대 외환 플랫폼 ‘신한 eFX’ 출시 - smarttoday.co.kr](https://news.google.com/rss/articles/CBMiX0FVX3lxTE5zcGllUE5PX3AwSXNLelgwOGQ3dUx5N2tDeV83VC1BbEtjTEJkSGVSUGFmZEFxTnlKNVM0YmR5Xzl1TW5QejBrRjVJWWEyMDNBODlLbG8tYmtkdWM3NExJ?oc=5)
+- [[이 시각 세계] 모건스탠리 "이란 전쟁, 한국 경제에 직격탄" 경고 - MBC 뉴스](https://news.google.com/rss/articles/CBMiekFVX3lxTE9RWEJUNEdDLXJjRHJjWndMM29qZUtoN2JyeUZXYXhNeEVjMVEwSnNFQ2hWNXlUMV9wU3ZDa0oxczllRTZtcnI2YzB2MU5wVlFJbjczQ3VmQktMeXFfcmd6TmQ3S3YtWEl4WHlLdGRjMENHbXNDeXJzVFBR0gF6QVVfeXFMUDF2anlvZEJJYTBFVkxhZmlBUURxV3A0MExSYld5bzZ0cHlubEYtUXNvQ0JuV1h3OFZQaDRYNVNfVGh4R01XVWNhek1IM3lRUW1tSGhTaGJiQVlDWlpORXNCeHBPcnJjLWc2OWctUmxHYjRvMlJadUtHUXc?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
