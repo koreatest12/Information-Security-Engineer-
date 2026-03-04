@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 80 days, 12:59:51
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 80 days, 13:23:52
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.7% | `████░░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 'PF 정상화'로 공덕역 주상복합 개발사업 재개 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Hd2tkNGNJSU5HTEphazBrWm9lZHpmRkJzemx0NTFXam1ZRXZRbHlCakxRX0cta3g4dUw1UUtUaWRjSXhqT0xHanhaYnBXTkdWOUp2dHBUWS05S3lDX09CTNIBeEFVX3lxTE9LUEV0UEh3UTltNmZFTWxEdWdXZ1VzamVPTVp4aGt4OEN1TnZLRWs5alhIWTBBeFJjNGdnUjNDQ1dyOVVnWkZFLWdaaXFydUYtSWlCS3E5cTl6VVRDWlNyLWFqcXVaQ0RnaHhEdkx1T0NsbUsxOHZ2UA?oc=5)
