@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 79 days, 16:39:34
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 79 days, 17:09:40
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.4% | `█████░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.4% | `████░░░░░░░░░░░` |
+| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융 이사회, 박종복·임승연 신임 사외이사 후보 추천 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE1hblVndEEtOUVaTGNvUG1yQ3U1bE5NZ2RvZEJUNWpFQk05aFRZQkkyaUtUWC1nUFNnOTZ2UXV3Z3dpRGFOdkhycm14bWVNaVRzMXRJOTZnaXhpQVJVM1FHZ0xDOEhRdnpkRF9RTVRhYkVSdmM?oc=5)
+- [멈췄던 공덕역 개발 재개…신한금융, PF 1400억 주선 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFB5SXRjWW5fbjNfVjA3SE9yblJicjFuM05vTUNYNFhaajRzdEtMemVSbXBhX0EwaGxrNGk2WlFkb1VBZUdiclhTa0hPT0dJOUU?oc=5)
 - [한국 경제 3월 호성적 기대했는데…받아든 건 3대 악재 - 중앙일보](https://news.google.com/rss/articles/CBMiVkFVX3lxTE1uUFJYMGNJRXJYQkJHQXpwNTJlSWZlRExtUW8wZDY3aEkxREFTUDdzU2FLa0tJWk91dDdpSWhTOW42MXUxNGZWR2ltelNhcVNMQVUtWGdn?oc=5)
 
 ---
