@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 80 days, 1:27:35
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 80 days, 2:01:51
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.5% | `████░░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.4% | `████░░░░░░░░░░░` |
+| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 신임 사외이사에 박종복·임승연 2명 추천 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9JTUh2VU10UGg5N2FTUmhwYjAweU9ibWdlampRWVIzV2dQRWhlZV83TmVCZnd4dWI0MHYzM0U4dnZTc0h2Q2pfR18talZqLUFNSVVBcWRCc1NoZWhFNWpKX9IBeEFVX3lxTE5Ka2dYNExXOXhEZjR6Y1lDWmRPRVNvdnVZdGlFODRqcWhjSUdyNHY1cG44T09qS0dSM0ZXdFBfR29sWFMyQlZrYUNtUnlPUzNqdUltNzlJemxVU21KMW9zcjBicWtxQ2R4TjhmZExtLU5tRWdKSjEtNA?oc=5)
+- [“학계→업계 사외이사 급선회”…KB·신한·우리, AI·지배구조 전문가 영입 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5VWWlIamVEa1dZSmduWWdnSXhnMFRkNi1lZFh0YUl0MWRYbW1WQTRaMG5fOTFveUV6NWpZR203cjFHaG9OUDM1dzlMQVFOSEpFOWZTcEh0MnY2UQ?oc=5)
 - [경제학자 홍종학이 본 한국경제의 방향 ‘대한민국 금융위기’ - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBmUGVhc3FXNFBjaG9HRy1NVjlFVnRLY3ZLN2pSckhwWG5QRnRwRTlNbmxydVUzZmJKN1hENWVJSkx0Tk5LZExrREptOEcwNk0?oc=5)
 
 ---
