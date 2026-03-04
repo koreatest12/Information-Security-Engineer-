@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 80 days, 3:00:53
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 80 days, 3:25:37
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 23.6% | `███░░░░░░░░░░░░` |
+| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행, 차세대 외환 플랫폼 ‘신한 eFX’ 출시 - smarttoday.co.kr](https://news.google.com/rss/articles/CBMiX0FVX3lxTE5zcGllUE5PX3AwSXNLelgwOGQ3dUx5N2tDeV83VC1BbEtjTEJkSGVSUGFmZEFxTnlKNVM0YmR5Xzl1TW5QejBrRjVJWWEyMDNBODlLbG8tYmtkdWM3NExJ?oc=5)
-- [[이 시각 세계] 모건스탠리 "이란 전쟁, 한국 경제에 직격탄" 경고 - MBC 뉴스](https://news.google.com/rss/articles/CBMiekFVX3lxTE9RWEJUNEdDLXJjRHJjWndMM29qZUtoN2JyeUZXYXhNeEVjMVEwSnNFQ2hWNXlUMV9wU3ZDa0oxczllRTZtcnI2YzB2MU5wVlFJbjczQ3VmQktMeXFfcmd6TmQ3S3YtWEl4WHlLdGRjMENHbXNDeXJzVFBR0gF6QVVfeXFMUDF2anlvZEJJYTBFVkxhZmlBUURxV3A0MExSYld5bzZ0cHlubEYtUXNvQ0JuV1h3OFZQaDRYNVNfVGh4R01XVWNhek1IM3lRUW1tSGhTaGJiQVlDWlpORXNCeHBPcnJjLWc2OWctUmxHYjRvMlJadUtHUXc?oc=5)
+- [일본 가면 조심해야겠네…횡단보도 건너던 모녀에 '날벼락' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFAyWjV6aGIxTDQtcUhES3FteUtMRWI5OHVjeFZocWY3a09RWmZHc3ZzbG1XeW45RkgxN05NVVhVRTRSZmNzZ3cwcWpxa0ZvX1E?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
