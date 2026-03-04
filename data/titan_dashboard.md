@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 80 days, 12:23:31
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 80 days, 12:59:51
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.3% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.7% | `████░░░░░░░░░░░` |
 | **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 'PF 정상화'로 공덕역 주상복합 개발사업 재개 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Hd2tkNGNJSU5HTEphazBrWm9lZHpmRkJzemx0NTFXam1ZRXZRbHlCakxRX0cta3g4dUw1UUtUaWRjSXhqT0xHanhaYnBXTkdWOUp2dHBUWS05S3lDX09CTNIBeEFVX3lxTE9LUEV0UEh3UTltNmZFTWxEdWdXZ1VzamVPTVp4aGt4OEN1TnZLRWs5alhIWTBBeFJjNGdnUjNDQ1dyOVVnWkZFLWdaaXFydUYtSWlCS3E5cTl6VVRDWlNyLWFqcXVaQ0RnaHhEdkx1T0NsbUsxOHZ2UA?oc=5)
-- [[이 시각 세계] 모건스탠리 "이란 전쟁, 한국 경제에 직격탄" 경고 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5qMkw1Mk00bmx4ZjR4clpuSjZyRTRGcVJQNWpKUkEyUnJqQ0NId212eDlRRE9DcVl1MnY4SjdwaXJLbWxCTVdKZkplQWM5X1E?oc=5)
+- [[이 시각 세계] 모건스탠리 "이란 전쟁, 한국 경제에 직격탄" 경고 - MBC 뉴스](https://news.google.com/rss/articles/CBMiekFVX3lxTE9RWEJUNEdDLXJjRHJjWndMM29qZUtoN2JyeUZXYXhNeEVjMVEwSnNFQ2hWNXlUMV9wU3ZDa0oxczllRTZtcnI2YzB2MU5wVlFJbjczQ3VmQktMeXFfcmd6TmQ3S3YtWEl4WHlLdGRjMENHbXNDeXJzVFBR0gF6QVVfeXFMUDF2anlvZEJJYTBFVkxhZmlBUURxV3A0MExSYld5bzZ0cHlubEYtUXNvQ0JuV1h3OFZQaDRYNVNfVGh4R01XVWNhek1IM3lRUW1tSGhTaGJiQVlDWlpORXNCeHBPcnJjLWc2OWctUmxHYjRvMlJadUtHUXc?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
