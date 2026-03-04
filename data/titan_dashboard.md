@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 80 days, 11:59:52
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 80 days, 12:23:31
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.2% | `████░░░░░░░░░░░` |
-| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.3% | `████░░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [현장 목소리 듣는 임직원… 제조업부터 서민까지 ‘따뜻한 금융’ 확산 - 조선일보](https://news.google.com/rss/articles/CBMijgFBVV95cUxPMGpSZmtBR3ptcFo4UnhVUk5ZQ0c3TlJXOVVMNTNYb3N1bklWUDdRaGQtZG5oNWV2OTRWZmw4RkZZNWM3MVRGLWtYT3pBTmxJbWlnWEhqOHNVWTRFdVh4SWM1RDFha2h2WVNEME40MDU2ZW1HM0R3cmh2SV9vNkdCcERlckp6MEtROVJaQzFB0gGiAUFVX3lxTE1vQWp6Rk5MTlNDbmdNVEg0NWY3NURHdklOOGwyNkpZTnQwU3JqOXJjV1dMMWlrcGV1cEpmbEpjUFlRTmlNRG1hU05iMF9fUzM0YWpnWkJuMXhocE5sMDVmOUpKT25EYmdYQTRFaFdndFRwRy1SaGJiRTVWcU5ITTFRV3NsTUplMnduOFR1Zi14RlNYRmF6bUlSUXR4NEZOLVBtZw?oc=5)
+- [신한금융, 'PF 정상화'로 공덕역 주상복합 개발사업 재개 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Hd2tkNGNJSU5HTEphazBrWm9lZHpmRkJzemx0NTFXam1ZRXZRbHlCakxRX0cta3g4dUw1UUtUaWRjSXhqT0xHanhaYnBXTkdWOUp2dHBUWS05S3lDX09CTNIBeEFVX3lxTE9LUEV0UEh3UTltNmZFTWxEdWdXZ1VzamVPTVp4aGt4OEN1TnZLRWs5alhIWTBBeFJjNGdnUjNDQ1dyOVVnWkZFLWdaaXFydUYtSWlCS3E5cTl6VVRDWlNyLWFqcXVaQ0RnaHhEdkx1T0NsbUsxOHZ2UA?oc=5)
 - [[이 시각 세계] 모건스탠리 "이란 전쟁, 한국 경제에 직격탄" 경고 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5qMkw1Mk00bmx4ZjR4clpuSjZyRTRGcVJQNWpKUkEyUnJqQ0NId212eDlRRE9DcVl1MnY4SjdwaXJLbWxCTVdKZkplQWM5X1E?oc=5)
 
 ---
