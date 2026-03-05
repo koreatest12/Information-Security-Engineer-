@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 80 days, 16:24:25
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 80 days, 17:11:31
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.0% | `████░░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.1% | `████░░░░░░░░░░░` |
+| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 'PF 정상화'로 공덕역 주상복합 개발사업 재개 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Hd2tkNGNJSU5HTEphazBrWm9lZHpmRkJzemx0NTFXam1ZRXZRbHlCakxRX0cta3g4dUw1UUtUaWRjSXhqT0xHanhaYnBXTkdWOUp2dHBUWS05S3lDX09CTNIBeEFVX3lxTE9LUEV0UEh3UTltNmZFTWxEdWdXZ1VzamVPTVp4aGt4OEN1TnZLRWs5alhIWTBBeFJjNGdnUjNDQ1dyOVVnWkZFLWdaaXFydUYtSWlCS3E5cTl6VVRDWlNyLWFqcXVaQ0RnaHhEdkx1T0NsbUsxOHZ2UA?oc=5)
-- ["지금 팔지 마라"…전쟁 충격에 코스피 폭락했는데 반전 전망 [분석+] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE83ajNBLVZHOE9zOXJYbXdiZTN6SXlLaktnZERieTVKUzhhb0VvcUtyNk5ZdXNOYWVuUnV2RUU1QXVFTWFiaFZBNDRhQVJqWHM?oc=5)
+- [경칩 맞아 오후에 '봄비'...밤부터 전국 확대 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1zU0x6QmRMMDJiMV9sdHhwUVJJZDEyaGUyZE92NFRYYlRETGpnTlZZNGJpazV5YWlMWmpMQjNoc0o5T29uYnR1TEc5Z3VLWEk?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
