@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 81 days, 4:23:07
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 81 days, 5:03:18
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.8% | `████░░░░░░░░░░░` |
-| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.1% | `████░░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [현장 목소리 듣는 임직원… 제조업부터 서민까지 ‘따뜻한 금융’ 확산 - 조선일보](https://news.google.com/rss/articles/CBMijgFBVV95cUxPMGpSZmtBR3ptcFo4UnhVUk5ZQ0c3TlJXOVVMNTNYb3N1bklWUDdRaGQtZG5oNWV2OTRWZmw4RkZZNWM3MVRGLWtYT3pBTmxJbWlnWEhqOHNVWTRFdVh4SWM1RDFha2h2WVNEME40MDU2ZW1HM0R3cmh2SV9vNkdCcERlckp6MEtROVJaQzFB0gGiAUFVX3lxTE1vQWp6Rk5MTlNDbmdNVEg0NWY3NURHdklOOGwyNkpZTnQwU3JqOXJjV1dMMWlrcGV1cEpmbEpjUFlRTmlNRG1hU05iMF9fUzM0YWpnWkJuMXhocE5sMDVmOUpKT25EYmdYQTRFaFdndFRwRy1SaGJiRTVWcU5ITTFRV3NsTUplMnduOFR1Zi14RlNYRmF6bUlSUXR4NEZOLVBtZw?oc=5)
+- [신한금융, 역대급 9.9조 '비과세배당' 재원…주주 권익에 꽂혔다 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTFA0RUNNSWZsenFDb3hEd0FHUkxNQ0d4eGZHLW1OeEZfckp0NGxOeHlLTEFZcFpLMk03WUx2WUhmZHFUaFNHejZiYzJJMDIweWc2RHhwUnBiNmMtOUdNWWRPSWkzODZKQTVO0gFsQVVfeXFMTmNXVUZvd2VxaUdleElnY0lXUjN3cUsyVW9URTdNbE9haUl4NWVMNGxhamJvTGt0R3ZHMG4xcDl6NGRZcmdubEdfU21QSGgwWW94bllvNEhNU1Q1Tjl4cEhkY250T1N6OHRCSHhN?oc=5)
 - [휘발유 값 폭등에…김상욱 "주유소, 본인 이익만 추구" 저격 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxUlRVYWxCVzVveFpJOFd1X2syekFaMl9MZ1AwaVlzVE9ORjBVOFdQZTByeC0wcHFQemJDTWd2Sm02V05Jd0JTckhDNTFzWXc?oc=5)
 
 ---
