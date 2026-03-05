@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 81 days, 5:03:18
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 81 days, 5:42:25
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.1% | `████░░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
+| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 역대급 9.9조 '비과세배당' 재원…주주 권익에 꽂혔다 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTFA0RUNNSWZsenFDb3hEd0FHUkxNQ0d4eGZHLW1OeEZfckp0NGxOeHlLTEFZcFpLMk03WUx2WUhmZHFUaFNHejZiYzJJMDIweWc2RHhwUnBiNmMtOUdNWWRPSWkzODZKQTVO0gFsQVVfeXFMTmNXVUZvd2VxaUdleElnY0lXUjN3cUsyVW9URTdNbE9haUl4NWVMNGxhamJvTGt0R3ZHMG4xcDl6NGRZcmdubEdfU21QSGgwWW94bllvNEhNU1Q1Tjl4cEhkY250T1N6OHRCSHhN?oc=5)
-- [휘발유 값 폭등에…김상욱 "주유소, 본인 이익만 추구" 저격 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxUlRVYWxCVzVveFpJOFd1X2syekFaMl9MZ1AwaVlzVE9ORjBVOFdQZTByeC0wcHFQemJDTWd2Sm02V05Jd0JTckhDNTFzWXc?oc=5)
+- ["지금 팔지 마라"…전쟁 충격에 코스피 폭락했는데 반전 전망 [분석+] - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE5Ua1d1bzA2VDNkaEh5TC1MQVZRbnE0WHNNd2tHWDVtbUVYbzBFQ1hyc21hNWpQUEFiUVZmRDJIMllqNDlmOEE?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
