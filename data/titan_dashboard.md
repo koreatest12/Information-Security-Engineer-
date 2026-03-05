@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 81 days, 3:01:35
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 81 days, 3:28:22
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.5% | `█████░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 25.4% | `███░░░░░░░░░░░░` |
+| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [현장 목소리 듣는 임직원… 제조업부터 서민까지 ‘따뜻한 금융’ 확산 - 조선일보](https://news.google.com/rss/articles/CBMijgFBVV95cUxPMGpSZmtBR3ptcFo4UnhVUk5ZQ0c3TlJXOVVMNTNYb3N1bklWUDdRaGQtZG5oNWV2OTRWZmw4RkZZNWM3MVRGLWtYT3pBTmxJbWlnWEhqOHNVWTRFdVh4SWM1RDFha2h2WVNEME40MDU2ZW1HM0R3cmh2SV9vNkdCcERlckp6MEtROVJaQzFB0gGiAUFVX3lxTE1vQWp6Rk5MTlNDbmdNVEg0NWY3NURHdklOOGwyNkpZTnQwU3JqOXJjV1dMMWlrcGV1cEpmbEpjUFlRTmlNRG1hU05iMF9fUzM0YWpnWkJuMXhocE5sMDVmOUpKT25EYmdYQTRFaFdndFRwRy1SaGJiRTVWcU5ITTFRV3NsTUplMnduOFR1Zi14RlNYRmF6bUlSUXR4NEZOLVBtZw?oc=5)
-- ["지금 팔지 마라"…전쟁 충격에 코스피 폭락했는데 반전 전망 [분석+] - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE5Ua1d1bzA2VDNkaEh5TC1MQVZRbnE0WHNNd2tHWDVtbUVYbzBFQ1hyc21hNWpQUEFiUVZmRDJIMllqNDlmOEE?oc=5)
+- [신한은행, 'Shinhan SOL America' iF 디자인 어워드 본상 수상 - 파이낸셜신문](https://news.google.com/rss/articles/CBMia0FVX3lxTE5QSGhZeUtMYkx5cWV2NExBRjNUUEltQnZGMkhScUd5QjJGVGlBbmcxVVVnb1BicE5TaU1YeWR1ZzczbmRIeWktY1pfRFVxY2xaMVhtRTNTV3JxWXItMU9WaVR1RFBsYWVXN1Jj?oc=5)
+- ['어제 던진 개미들 피눈물'…개장 15분 만에 줄줄이 멈췄다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5heGx6MmpBOUdfa3dKY24wMmFLZVd6eG96UW1ZU3I0dmJZaWJxWGhOdC0wQ19yR3NldEpQeUxrLU5rb0JzYWM2SDB2ekhGSTg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
