@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 82 days, 6:03:50
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 82 days, 6:27:48
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.4% | `███░░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.9% | `████░░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 역대급 9.9조 '비과세배당' 재원…주주 권익에 꽂혔다 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTFA0RUNNSWZsenFDb3hEd0FHUkxNQ0d4eGZHLW1OeEZfckp0NGxOeHlLTEFZcFpLMk03WUx2WUhmZHFUaFNHejZiYzJJMDIweWc2RHhwUnBiNmMtOUdNWWRPSWkzODZKQTVO0gFsQVVfeXFMTmNXVUZvd2VxaUdleElnY0lXUjN3cUsyVW9URTdNbE9haUl4NWVMNGxhamJvTGt0R3ZHMG4xcDl6NGRZcmdubEdfU21QSGgwWW94bllvNEhNU1Q1Tjl4cEhkY250T1N6OHRCSHhN?oc=5)
-- [[단독] "군복에 중국산 쓰지 말자"…섬유업계, 국방섬유 국산화 추진 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFByVkV4ZjhMa3VBTUV0R09FbUI5X2gwMC1CQ1lTcmQxWTdvT3JEM085VWJOMW1kT0tNMVZkVmFEMFVReTRkdlBLLWU0NGE2cms?oc=5)
+- [중동의 포성에 한국 경제 출렁…다시 고개 드는 ‘3高 리스크’ - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTFBwWC1nalAxNUw1ZTh0U2gxb0JfZkxBRGZMWFBZTkw4LXRWSGR0MEk4bmlfZ0Z1eEQtR21Ial94MjBsY1ZpaFE?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
