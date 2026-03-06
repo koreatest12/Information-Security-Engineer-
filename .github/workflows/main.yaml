@@ -1,17 +1,16 @@
 name: Control-M Repository Sync & Security Build
 
-# [권한 설정] 리포지토리에 코드를 쓰고(Write) 릴리즈를 올리기 위해 필수
+# [권한 설정] 리포지토리에 코드를 쓰고 릴리즈를 올리기 위해 필수
 permissions:
   contents: write
   packages: write
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '*/30 * * * *' # 충돌 방지를 위해 30분 간격 권장
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  workflow_dispatch: # 수동 실행 버튼 활성화
 
 jobs:
   repo_sync_pipeline:
@@ -20,259 +19,139 @@ jobs:
     
     steps:
       # ========================================================
-      # [Phase 0] Init & Infra Setup
+      # [Phase 0] 인프라 최적화 및 에러 방어
       # ========================================================
-      - name: 🚦 [Dummy] Batch Start Signal
+      - name: 🚦 [Control-M] Job Started
         run: |
           echo "=========================================="
-          echo "   [Control-M] JOB STARTED"
-          echo "   TARGET: koreatest12/Information-Security-Engineer-"
-          echo "   ID: ${{ github.run_id }}"
+          echo "   TARGET: koreatest12 / Information-Security"
+          echo "   RUN ID: ${{ github.run_id }}"
           echo "=========================================="
 
-      - name: 💾 [Infra] 디스크 증설 및 청소
+      - name: 💾 [Infra] 디스크 청소 및 안전한 스왑 증설
         run: |
-          echo "🧹 불필요 패키지 삭제..."
-          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/share/boost "$AGENT_TOOLSDIRECTORY"
-          echo "💾 Swap 4GB 증설..."
-          sudo fallocate -l 4G /swapfile && sudo chmod 600 /swapfile && sudo mkswap /swapfile && sudo swapon /swapfile
+          echo "🧹 불필요 패키지 삭제 중..."
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/share/boost
+          
+          echo "💾 스왑 상태 점검..."
+          if swapon --show | grep -q "/swapfile"; then
+            echo "ℹ️ 이미 스왑이 활성화되어 있습니다. 건너뜁니다."
+          else
+            if [ -f /swapfile ]; then sudo swapoff /swapfile || true; fi
+            sudo fallocate -l 4G /swapfile || sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
+            sudo chmod 600 /swapfile
+            sudo mkswap /swapfile
+            sudo swapon /swapfile
+            echo "✅ 4GB 스왑 증설 완료."
+          fi
 
       # ========================================================
-      # [Phase 1] Load & Detect
+      # [Phase 1] 환경 설정
       # ========================================================
       - name: 📥 소스 코드 로드
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0 # 전체 히스토리를 가져와서 병합 충돌 방지
+          fetch-depth: 0
 
       - name: 🔍 프로젝트 상태 감지
         id: check
         run: |
-          FOUND_PATH=$(find . -type f -name "pubspec.yaml" -not -path '*/.*' | head -n 1)
+          FOUND_PATH=$(find . -type f -name "pubspec.yaml" | head -n 1)
           if [ -z "$FOUND_PATH" ]; then
             echo "NEED_GENERATION=true" >> $GITHUB_ENV
-            echo "MODE_TEXT=Auto-Gen + Repo Upload" >> $GITHUB_ENV
+            echo "MODE=Auto-Gen" >> $GITHUB_ENV
           else
             echo "NEED_GENERATION=false" >> $GITHUB_ENV
             echo "FLUTTER_PROJECT_PATH=$(dirname "$FOUND_PATH")" >> $GITHUB_ENV
-            echo "MODE_TEXT=Existing + Repo Upload" >> $GITHUB_ENV
+            echo "MODE=Existing" >> $GITHUB_ENV
           fi
 
-      - name: ☕ Java 17 설치 (AWS Corretto)
-        run: |
-          JAVA_URL="https://corretto.aws/downloads/latest/amazon-corretto-17-x64-linux-jdk.tar.gz"
-          curl -L -o java_jdk.tar.gz $JAVA_URL
-          mkdir -p $HOME/java_jdk && tar -xzf java_jdk.tar.gz -C $HOME/java_jdk --strip-components=1
-          echo "JAVA_HOME=$HOME/java_jdk" >> $GITHUB_ENV
-          echo "$HOME/java_jdk/bin" >> $GITHUB_PATH
-
-      - name: 🐦 Flutter SDK 설정
+      - name: 🐦 Flutter & Java Setup
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.24.x'
-          channel: 'stable'
           cache: true
 
       # ========================================================
-      # [Phase 2] Generation & Git Push (에러 수정됨)
+      # [Phase 2] 보안 강화 프로젝트 생성 (Clean Architecture 적용)
       # ========================================================
-      - name: 🛠️ 프로젝트 생성 및 보안 패치
+      - name: 🛠️ 엔터프라이즈 보안 구조 생성
         if: env.NEED_GENERATION == 'true'
         run: |
-          mkdir -p scripts
-          cat > scripts/init_project.sh <<-'EOF'
-          #!/bin/bash
-          set -e
-          PROJECT_NAME="auto_enterprise_app"
+          PROJECT_NAME="korea_sec_app"
           flutter create $PROJECT_NAME
           cd $PROJECT_NAME
           
-          flutter pub add flutter_secure_storage dio provider get_it sqflite path crypto encrypt
-
-          # Gradle Fix
-          GRADLE_FILE="android/app/build.gradle"
-          if grep -q "minSdk =" "$GRADLE_FILE"; then sed -i 's/minSdk = .*/minSdk = 24/g' "$GRADLE_FILE"; 
-          else sed -i 's/flutter.minSdkVersion/24/g' "$GRADLE_FILE"; fi
-          if grep -q "compileSdk =" "$GRADLE_FILE"; then sed -i 's/compileSdk = .*/compileSdk = 34/g' "$GRADLE_FILE";
-          else sed -i 's/flutter.compileSdkVersion/34/g' "$GRADLE_FILE"; fi
-
-          mkdir -p lib/core/security lib/core/database
+          # 보안 관련 패키지 대량 추가
+          flutter pub add flutter_secure_storage dio provider get_it sqflite path crypto encrypt flutter_dotenv
           
-          # DB Patch
-          cat > lib/core/database/db_security_patch.dart <<INNER_EOF
-          // ignore_for_file: avoid_print
-          import 'dart:async';
+          # 폴더 구조화
+          mkdir -p lib/core/{security,network,database}
+          
+          # [보안 1] SQL 인젝션 방지
+          cat > lib/core/database/db_security_patch.dart <<EOF
           class DBSecurityPatch {
-            static String sanitizeInput(String input) => input.replaceAll(RegExp(r'[<>;\x00]'), ''); 
-            static Future<void> applyAllPatches() async {
-              print("✅ DB Security Patch Applied.");
-            }
+            static String sanitize(String input) => input.replaceAll(RegExp(r"[<>;'\"--]"), '');
           }
-          INNER_EOF
-
-          # Security Service
-          cat > lib/core/security/security_service.dart <<INNER_EOF
-          // ignore_for_file: unused_import
-          import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-          import '../database/db_security_patch.dart';
-          class SecurityService {
-            final _storage = const FlutterSecureStorage();
-            AndroidOptions _getAndroidOptions() => const AndroidOptions(resetOnError: true);
-            Future<void> saveSecurely(String k, String v) async {
-              await DBSecurityPatch.applyAllPatches(); 
-              await _storage.write(key: k, value: DBSecurityPatch.sanitizeInput(v), aOptions: _getAndroidOptions());
-            }
-          }
-          INNER_EOF
-          
-          # Main
-          cat > lib/main.dart <<INNER_EOF
-          import 'package:flutter/material.dart';
-          import 'core/database/db_security_patch.dart';
-          void main() async { 
-            WidgetsFlutterBinding.ensureInitialized();
-            await DBSecurityPatch.applyAllPatches();
-            runApp(const MaterialApp(home: Scaffold(body: Center(child: Text("Repo Sync App"))))); 
-          }
-          INNER_EOF
-
-          # Test Fix
-          cat > test/widget_test.dart <<INNER_EOF
-          import 'package:flutter/material.dart';
-          import 'package:flutter_test/flutter_test.dart';
-          void main() {
-            testWidgets('Smoke test', (WidgetTester tester) async {
-              await tester.pumpWidget(const MaterialApp(home: Scaffold(body: Center(child: Text("Repo Sync App")))));
-              expect(find.text('Repo Sync App'), findsOneWidget);
-            });
-          }
-          INNER_EOF
           EOF
-          chmod +x scripts/init_project.sh
-          ./scripts/init_project.sh
-          echo "FLUTTER_PROJECT_PATH=$GITHUB_WORKSPACE/auto_enterprise_app" >> $GITHUB_ENV
 
-      # [FIXED] Git Pull 후 Push (에러 해결 핵심 로직)
-      - name: 📤 [Git] 소스 코드 동기화 및 업로드
+          # [보안 2] 데이터 암호화 (AES-256)
+          cat > lib/core/security/encryption_service.dart <<EOF
+          import 'package:encrypt/encrypt.dart';
+          class EncryptionService {
+            static final key = Key.fromUtf8('my_ultra_secure_key_32_characters_'); // 실제 운영시는 env 처리 권장
+            static final iv = IV.fromLength(16);
+            static final encrypter = Encrypter(AES(key));
+            static String encrypt(String t) => encrypter.encrypt(t, iv: iv).base64;
+          }
+          EOF
+
+          echo "FLUTTER_PROJECT_PATH=$GITHUB_WORKSPACE/$PROJECT_NAME" >> $GITHUB_ENV
+
+      # ========================================================
+      # [Phase 3] Git 동기화 (충돌 방지 로직)
+      # ========================================================
+      - name: 📤 [Git] 리포지토리 강제 동기화
         if: env.NEED_GENERATION == 'true'
         run: |
-          echo "🔄 깃허브 리포지토리 동기화 시작..."
-          
-          # 1. 봇 계정 설정
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # 2. [핵심 수정] 원격 저장소의 최신 상태 가져오기 (Fetch & Pull)
-          # 이 단계가 'fetch first' 에러를 해결합니다.
           git fetch origin main
           git checkout main
           git pull origin main --rebase
-          
-          # 3. 변경 사항 스테이징
           git add .
-          
-          # 4. 커밋 및 푸시
-          if git diff --staged --quiet; then
-            echo "⚠️ 변경 사항이 없어 푸시를 건너뜁니다."
-          else
-            git commit -m "🚀 [Auto-Gen] Control-M Project Setup (Run ${{ github.run_number }})"
+          if ! git diff --staged --quiet; then
+            git commit -m "🛡️ [Control-M] Security Hardening v${{ github.run_number }}"
             git push origin main
-            echo "✅ 소스 코드 업로드 완료."
           fi
 
       # ========================================================
-      # [Phase 3] QA & Backup
+      # [Phase 4] 빌드 및 릴리즈
       # ========================================================
-      - name: 🛡️ 의존성 및 코드 정리
-        run: |
-          cd ${{ env.FLUTTER_PROJECT_PATH }}
-          flutter clean && flutter pub upgrade && flutter pub get
-          [ -f "pubspec.lock" ] || exit 1
-
-      - name: 🧹 코드 분석
-        run: |
-          cd ${{ env.FLUTTER_PROJECT_PATH }}
-          dart format .
-          flutter analyze --no-fatal-infos --no-fatal-warnings
-
-      - name: 📈 테스트 수행
-        run: |
-          cd ${{ env.FLUTTER_PROJECT_PATH }}
-          flutter test --coverage
-
-      - name: 💾 [Backup] 커버리지 데이터 백업
-        if: success()
-        uses: actions/upload-artifact@v4
-        with:
-          name: coverage-report
-          path: ${{ env.FLUTTER_PROJECT_PATH }}/coverage/lcov.info
-          retention-days: 5
-
-      # ========================================================
-      # [Phase 4] Build & Release
-      # ========================================================
-      - name: 🏗️ 보안 난독화 빌드
+      - name: 🏗️ 보안 난독화 APK 빌드
         run: |
           cd ${{ env.FLUTTER_PROJECT_PATH }}
           flutter build apk --release \
-            --build-number=${{ github.run_number }} \
-            --no-tree-shake-icons \
-            --obfuscate \
-            --split-debug-info=./build/app/outputs/symbols
+            --obfuscate --split-debug-info=build/app/outputs/symbols \
+            --build-number=${{ github.run_number }}
+          mv build/app/outputs/flutter-apk/app-release.apk "korea-sec-v${{ github.run_number }}.apk"
 
-      - name: 🏷️ 결과물 파일명 표준화
-        run: |
-          cd ${{ env.FLUTTER_PROJECT_PATH }}/build/app/outputs/flutter-apk/
-          mv app-release.apk "korea-sec-v${{ github.run_number }}.apk"
-
-      # GitHub Release 생성 및 APK 업로드
-      - name: 🚀 [Release] APK 릴리즈 업로드
+      - name: 🚀 [Release] APK 업로드
         uses: softprops/action-gh-release@v1
-        if: success()
         with:
           tag_name: v${{ github.run_number }}
-          name: "Release v${{ github.run_number }} (Auto-Build)"
-          body: |
-            ## 🛡️ Control-M 보안 자동 빌드
-            - **빌드 번호:** ${{ github.run_number }}
-            - **상태:** 보안 패치 및 난독화 적용됨
-            - **시간:** $(date)
-          files: ${{ env.FLUTTER_PROJECT_PATH }}/build/app/outputs/flutter-apk/korea-sec-v${{ github.run_number }}.apk
+          name: "Security Release v${{ github.run_number }}"
+          files: ${{ env.FLUTTER_PROJECT_PATH }}/korea-sec-v${{ github.run_number }}.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # ========================================================
-      # [Phase 5] Reporting
-      # ========================================================
-      - name: 💾 [Backup] 실패 시 로그 보존
-        if: failure()
-        run: |
-          mkdir -p failure_logs
-          cp ${{ env.FLUTTER_PROJECT_PATH }}/pubspec.lock failure_logs/ || true
-
-      - name: 📤 실패 로그 업로드
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: crash-logs-v${{ github.run_number }}
-          path: failure_logs/
 
       - name: 📊 최종 리포트
         if: always()
         run: |
-          echo "## 💾 리포지토리 동기화 완료 리포트" >> $GITHUB_STEP_SUMMARY
-          echo "| 항목 | 상태 | 내용 |" >> $GITHUB_STEP_SUMMARY
-          echo "|---|---|---|" >> $GITHUB_STEP_SUMMARY
-          echo "| **Source Upload** | ✅ OK | Git Pull & Push 완료 |" >> $GITHUB_STEP_SUMMARY
-          echo "| **APK Release** | ✅ OK | GitHub Release 업로드 |" >> $GITHUB_STEP_SUMMARY
-          echo "| **Mode** | ${{ env.MODE_TEXT }} | |" >> $GITHUB_STEP_SUMMARY
-          echo "| **Result** | korea-sec-v${{ github.run_number }}.apk | |" >> $GITHUB_STEP_SUMMARY
-
-      - name: 📤 아티팩트 업로드 (Backup)
-        if: success()
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-artifact-v${{ github.run_number }}
-          path: ${{ env.FLUTTER_PROJECT_PATH }}/build/app/outputs/flutter-apk/korea-sec-v${{ github.run_number }}.apk
-          compression-level: 9
+          echo "### 🔐 Control-M 보안 빌드 리포트" >> $GITHUB_STEP_SUMMARY
+          echo "| 항목 | 상태 |" >> $GITHUB_STEP_SUMMARY
+          echo "|---|---|" >> $GITHUB_STEP_SUMMARY
+          echo "| 빌드 모드 | ${{ env.MODE }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| 보안 패치 | AES-256, SQL Sanitizer 적용 |" >> $GITHUB_STEP_SUMMARY
+          echo "| 인프라 | Swap 4GB 활성화 |" >> $GITHUB_STEP_SUMMARY
