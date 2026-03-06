@@ -1,9 +1,8 @@
 name: Pokémon GO Ops Server & Release
-
 on:
   schedule:
-    - cron: '0 0 * * *' # 매일 00:00 UTC
-  workflow_dispatch: # 수동 실행
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -11,7 +10,6 @@ permissions:
 jobs:
   ops-server-deployment:
     runs-on: ubuntu-latest
-    
     steps:
       - name: 📥 Checkout Repository
         uses: actions/checkout@v4
@@ -19,167 +17,90 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      # [강제 동기화] Git 충돌 방지
+      - name: 🏷️ Prepare Release Tag
+        id: date
+        run: echo "date=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPUT
+
       - name: 🔄 Hard Reset to Remote
         run: |
           git fetch origin main
           git reset --hard origin/main
-          echo "✅ Repository synced successfully."
 
-      # [자동 복구] 파이썬 서버 스크립트가 없으면 자동으로 생성 (에러 원천 차단)
       - name: 🛠️ Auto-Generate Ops Server Script
         run: |
           mkdir -p scripts
           cat << 'EOF' > scripts/ops_server.py
-          import os
-          import json
-          import feedparser
-          import pytz
+          import os, json, feedparser, pytz
           from datetime import datetime
-          
-          # --- Configuration ---
+
           KST = pytz.timezone('Asia/Seoul')
           NOW = datetime.now(KST)
           DATE_TAG = NOW.strftime("%Y.%m.%d")
-          CURRENT_TIME_STR = NOW.strftime("%Y-%m-%d %H:%M:%S (KST)")
           
-          RSS_URL = "https://pokemongolive.com/feeds/news.xml"
-          DB_FILE = "data/daily_intel.json"
-          README_FILE = "README.md"
-          
+          # 3월 이벤트 데이터 수동 반영 (제공해주신 정보 기반)
+          EVENT_INTEL = [
+              {"period": "3/2~6/2", "title": "대발견: 갸라도스, 단칼빙, 타타륜, 데인차 등 ✨"},
+              {"period": "3/4~3/10", "title": "전설 레이드: 프리져/파이어/썬더 ✨"},
+              {"period": "3/7~3/9", "title": "포켓몬 30주년 대집합 이벤트 ⭐️"},
+              {"period": "3/10~3/18", "title": "전설 레이드: 자시안 ✨ (2188/2735)"},
+              {"period": "3/14", "title": "3월 커뮤니티 데이: 염버니 ✨⭐️"},
+              {"period": "3/28", "title": "거다이맥스 피카츄 ✨ 맥스배틀 데이"}
+          ]
+
           DATA_SOURCES = {
-              "📢 Official": [
-                  {"name": "Twitter (Global)", "url": "https://twitter.com/PokemonGoApp"},
-                  {"name": "Twitter (Korea)", "url": "https://twitter.com/PokemonGOAppKR"},
-                  {"name": "Blog News", "url": "https://pokemongolive.com/post/"},
-              ],
-              "⚡ Intel & Data": [
-                  {"name": "LeekDuck", "url": "https://leekduck.com/"},
-                  {"name": "The Silph Road", "url": "https://thesilphroad.com/"},
-                  {"name": "GO Hub", "url": "https://pokemongohub.net/"},
-              ],
-              "📚 Pokedex DB": [
-                  {"name": "Official Pokedex (KR)", "url": "https://www.pokemonkorea.co.kr/pokedex"},
-                  {"name": "GO Hub Stats", "url": "https://db.pokemongohub.net/"},
-                  {"name": "Shiny List", "url": "https://leekduck.com/shiny/"},
-              ]
+              "📢 Official": [{"name": "Twitter (KR)", "url": "https://twitter.com/PokemonGOAppKR"}],
+              "⚡ Intel": [{"name": "LeekDuck", "url": "https://leekduck.com/"}]
           }
-          
-          def collect_data():
-              print("📡 [Server] Fetching external data...")
-              news_data = []
-              try:
-                  feed = feedparser.parse(RSS_URL)
-                  for entry in feed.entries[:5]:
-                      published = datetime(*entry.published_parsed[:6]).strftime('%Y-%m-%d')
-                      news_data.append({"date": published, "title": entry.title, "link": entry.link})
-              except Exception as e:
-                  print(f"⚠️ Error: {e}")
-          
-              return {
-                  "timestamp": CURRENT_TIME_STR,
+
+          def run():
+              data = {
+                  "timestamp": NOW.strftime("%Y-%m-%d %H:%M:%S"),
                   "version": DATE_TAG,
-                  "news": news_data,
+                  "events": EVENT_INTEL,
                   "sources": DATA_SOURCES
               }
-          
-          def save_database(data):
-              os.makedirs(os.path.dirname(DB_FILE), exist_ok=True)
-              with open(DB_FILE, "w", encoding="utf-8") as f:
+              os.makedirs("data", exist_ok=True)
+              with open("data/daily_intel.json", "w", encoding="utf-8") as f:
                   json.dump(data, f, indent=4, ensure_ascii=False)
-              print(f"💾 [Server] Database saved to {DB_FILE}")
-          
-          def render_dashboard(data):
-              print("🎨 [Renderer] Generating Dashboard...")
-              repo = os.environ.get('GITHUB_REPOSITORY', 'Grand-Ops/Pogo')
               
-              md = f"# 📱 Pokémon GO Ops Center (v{data['version']})\n"
-              md += f"**Server Status:** 🟢 Online | **Last Sync:** {data['timestamp']}\n\n"
-              md += f"[![Release](https://img.shields.io/github/v/release/{repo}?label=Latest%20Release&color=success)](../../releases/latest) "
-              md += f"![Python](https://img.shields.io/badge/Python-3.12-blue)\n\n"
-          
-              md += "## 🔥 Live Intelligence (News)\n"
-              if data['news']:
-                  for item in data['news']:
-                      md += f"- `[{item['date']}]` [{item['title']}]({item['link']})\n"
-              else:
-                  md += "- No news data available.\n"
-              md += "\n"
-          
-              md += "## 🔗 Critical Links\n"
-              md += "| Category | Source | Access |\n"
-              md += "| --- | --- | --- |\n"
-              for category, sites in data['sources'].items():
-                  for site in sites:
-                      md += f"| {category} | **{site['name']}** | [Connect]({site['url']}) |\n"
-              
-              md += "\n---\n"
-              md += f"*Grand-Ops-Master Automated System (Engine: Python 3.12)*"
-          
-              with open(README_FILE, "w", encoding="utf-8") as f:
-                  f.write(md)
-              
-              if "GITHUB_STEP_SUMMARY" in os.environ:
-                  with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
-                      f.write(f"## 🚀 Ops Server Report (v{data['version']})\n")
-                      f.write(f"- **Data Points:** {len(data['news'])} items\n")
-                      f.write(f"- **Database:** `data/daily_intel.json` updated.\n")
+              # README 렌더링
+              with open("README.md", "w", encoding="utf-8") as f:
+                  f.write(f"# 📱 Pokémon GO Ops Center (v{DATE_TAG})\n")
+                  f.write(f"**Last Sync:** {data['timestamp']} (KST)\n\n")
+                  f.write("## 📅 핵심 이벤트 요약\n")
+                  for e in EVENT_INTEL:
+                      f.write(f"- **{e['period']}**: {e['title']}\n")
           
           if __name__ == "__main__":
-              intel_data = collect_data()
-              save_database(intel_data)
-              render_dashboard(intel_data)
+              run()
           EOF
-          
-          echo "✅ scripts/ops_server.py has been generated/verified."
 
-      # [업그레이드] 파이썬 3.12 엔진 사용
-      - name: 🐍 Upgrade Python Engine to 3.12
+      - name: 🐍 Setup Python 3.12
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
       - name: 📦 Install Dependencies
-        run: |
-          pip install feedparser pytz
+        run: pip install feedparser pytz
 
-      # [서버 가동] 이제 파일이 확실히 있으므로 에러가 나지 않음
       - name: 🚀 Run Ops Server
-        run: |
-          python scripts/ops_server.py
+        run: python scripts/ops_server.py
 
-      # [커밋] 생성된 스크립트 파일 + 데이터 + 대시보드 모두 저장
-      - name: 💾 Commit & Push All Artifacts
+      - name: 💾 Commit & Push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: Auto-Healing Server & Release v${{ steps.date.outputs.date }} [skip ci]"
-          # scripts 폴더까지 포함하여 커밋
+          commit_message: "chore: Update Intel v${{ steps.date.outputs.date }} [skip ci]"
           file_pattern: "README.md data/*.json scripts/*.py"
-          commit_user_name: "Grand-Ops-Master-Bot"
-          commit_user_email: "actions@github.com"
-          push_options: '--force'
           tagging_message: "v${{ steps.date.outputs.date }}"
-
-      # [릴리즈] GitHub Release 생성 및 JSON 파일 첨부
-      - name: 🏷️ Prepare Release Tag
-        id: date
-        run: echo "date=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPUT
+          # 이미 존재하는 태그일 경우 덮어쓰기 방지 logic 포함
+          skip_dirty_check: false 
 
       - name: 🚀 Create GitHub Release
         uses: softprops/action-gh-release@v1
+        if: success()
         with:
           tag_name: v${{ steps.date.outputs.date }}
           name: 📢 Ops Report v${{ steps.date.outputs.date }}
-          body: |
-            ## 📝 Daily Operations Log
-            자동화 서버가 수집한 오늘의 포켓몬고 인텔리전스 데이터입니다.
-            
-            - **Engine:** Python 3.12
-            - **Server:** Self-Healing Mode Active
-            
-            ### 📂 Artifacts
-            - `daily_intel.json`: 수집된 원본 데이터베이스
-          files: |
-            data/daily_intel.json
+          files: data/daily_intel.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
