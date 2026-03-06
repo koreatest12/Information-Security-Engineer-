@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 82 days, 0:22:37
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 82 days, 1:01:26
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,11 +15,11 @@
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
 | **CPU** | `128 vCores` | 29.3% | `████░░░░░░░░░░░` |
-| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 역대급 9.9조 '비과세배당' 재원…주주 권익에 꽂혔다 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTFA0RUNNSWZsenFDb3hEd0FHUkxNQ0d4eGZHLW1OeEZfckp0NGxOeHlLTEFZcFpLMk03WUx2WUhmZHFUaFNHejZiYzJJMDIweWc2RHhwUnBiNmMtOUdNWWRPSWkzODZKQTVO0gFsQVVfeXFMTmNXVUZvd2VxaUdleElnY0lXUjN3cUsyVW9URTdNbE9haUl4NWVMNGxhamJvTGt0R3ZHMG4xcDl6NGRZcmdubEdfU21QSGgwWW94bllvNEhNU1Q1Tjl4cEhkY250T1N6OHRCSHhN?oc=5)
-- [세브란스 불합격 뒤 울릉도 갔던 박단…경북대병원 응급실로 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE8ydURuQmNRckFib0Jxb3o1Szhrb1hNUTV1NU1FeWsyVlVqUG5nTV9qMFVKOUxIS2FoRHJrZ0pGY1RhdUw3cEJFVGd0WThzVW8?oc=5)
+- [중동의 포성에 한국 경제 출렁…다시 고개 드는 ‘3高 리스크’ - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTFBwWC1nalAxNUw1ZTh0U2gxb0JfZkxBRGZMWFBZTkw4LXRWSGR0MEk4bmlfZ0Z1eEQtR21Ial94MjBsY1ZpaFE?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
