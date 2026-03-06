@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 81 days, 16:29:24
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 81 days, 17:13:55
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.2% | `█████░░░░░░░░░░` |
 | **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 역대급 9.9조 '비과세배당' 재원…주주 권익에 꽂혔다 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTFA0RUNNSWZsenFDb3hEd0FHUkxNQ0d4eGZHLW1OeEZfckp0NGxOeHlLTEFZcFpLMk03WUx2WUhmZHFUaFNHejZiYzJJMDIweWc2RHhwUnBiNmMtOUdNWWRPSWkzODZKQTVO0gFsQVVfeXFMTmNXVUZvd2VxaUdleElnY0lXUjN3cUsyVW9URTdNbE9haUl4NWVMNGxhamJvTGt0R3ZHMG4xcDl6NGRZcmdubEdfU21QSGgwWW94bllvNEhNU1Q1Tjl4cEhkY250T1N6OHRCSHhN?oc=5)
-- [반도체 수출 103% 증가…1월 경상수지 133억달러 흑자 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE0xd3Q2OExiT0Z3dFFlWTQxRDk5a2xTdmFfQ05lLU9kdlBBS2ktZ2hVWHpqUzRERlV2Zm9IdzBSSnRmZVc3UUZvQUgxNTliNlk?oc=5)
+- ['어제 던진 개미들 피눈물'…개장 15분 만에 줄줄이 멈췄다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5heGx6MmpBOUdfa3dKY24wMmFLZVd6eG96UW1ZU3I0dmJZaWJxWGhOdC0wQ19yR3NldEpQeUxrLU5rb0JzYWM2SDB2ekhGSTg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
