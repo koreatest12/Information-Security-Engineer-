@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 83 days, 3:52:33
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 83 days, 4:19:48
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.1% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.0% | `████░░░░░░░░░░░` |
 | **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 역대급 9.9조 '비과세배당' 재원…주주 권익에 꽂혔다 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTFA0RUNNSWZsenFDb3hEd0FHUkxNQ0d4eGZHLW1OeEZfckp0NGxOeHlLTEFZcFpLMk03WUx2WUhmZHFUaFNHejZiYzJJMDIweWc2RHhwUnBiNmMtOUdNWWRPSWkzODZKQTVO0gFsQVVfeXFMTmNXVUZvd2VxaUdleElnY0lXUjN3cUsyVW9URTdNbE9haUl4NWVMNGxhamJvTGt0R3ZHMG4xcDl6NGRZcmdubEdfU21QSGgwWW94bllvNEhNU1Q1Tjl4cEhkY250T1N6OHRCSHhN?oc=5)
-- ["한국에서도 이제 쓸 수 있어요?"…외국인들 반색한 이유는 [구글맵이 온다] - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTFBRYWtyNEpobWI5RG1udWZPeUUxRnV0aTN2ZTJ4VlNsUHh2bnRuQnhpZVVjWUxIdDVCRkRfZEFHMlNsYzkwMVE?oc=5)
+- ["일본 여행 이제 못 가겠네"…항공권 싸길래 갔다가 '당혹' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE14bGR3RFVqZ1d2bDJibGhzSjcyS1NYckpOV3d0bF9vNi11RWxBbTAwclVZLXFiX3A5OVNtYXlFcjZ5Y25xWC12ejlqel9wZkU?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
