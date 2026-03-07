@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 83 days, 14:19:17
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 83 days, 14:55:55
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.8% | `████░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.3% | `████░░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 역대급 9.9조 '비과세배당' 재원…주주 권익에 꽂혔다 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTFA0RUNNSWZsenFDb3hEd0FHUkxNQ0d4eGZHLW1OeEZfckp0NGxOeHlLTEFZcFpLMk03WUx2WUhmZHFUaFNHejZiYzJJMDIweWc2RHhwUnBiNmMtOUdNWWRPSWkzODZKQTVO0gFsQVVfeXFMTmNXVUZvd2VxaUdleElnY0lXUjN3cUsyVW9URTdNbE9haUl4NWVMNGxhamJvTGt0R3ZHMG4xcDl6NGRZcmdubEdfU21QSGgwWW94bllvNEhNU1Q1Tjl4cEhkY250T1N6OHRCSHhN?oc=5)
-- [중동의 포성에 한국 경제 출렁…다시 고개 드는 ‘3高 리스크’ - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTFBwWC1nalAxNUw1ZTh0U2gxb0JfZkxBRGZMWFBZTkw4LXRWSGR0MEk4bmlfZ0Z1eEQtR21Ial94MjBsY1ZpaFE?oc=5)
+- ["개미들 지금 주식 섣불리 담지 마라"…'유가 쇼크' 경고 [노정동의 어쩌다 투자자] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBfOWlXa0VIX3l4N1RjcmhxbE4tbzE5Q1hZcWNkZEFnVllvc3huc3NybDZqWFFSYWtTQVFMcVFKdmNrTTR3Um42VjI0WXg0TTA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
