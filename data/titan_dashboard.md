@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 84 days, 22:04:59
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 84 days, 22:34:19
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.8% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.1% | `████░░░░░░░░░░░` |
+| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 신종자본증권 수요예측 2배 몰려…4000억 발행 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5KeC1qUnQxalZVWXlBR05ad3lrNWZLQjFpaTdyNlE4OXBXRjQtUEp0M00xeW9NSjZlb2hTSDdxSzlkLUFtQU9SVGhpWDZHamNPRzZCQVpoS3ZhZ0dOUEdDNNIBeEFVX3lxTE81ckpnR0ZoZFUyN2xqQXJtVVVnVzJMaGJ3dWVlazJ0NjlCSVdLWVVFNVlJd1ZtOGkwX1pwQ05OMmsyRnlldTNlb2ZpR3h6UXp5b2w4U2ExUWc4X09PT1p0OXZ6Rm0tajZPQ05MU1FwMUZKUzFPVnpubA?oc=5)
-- [[유가 100달러] 물가·환율·금리 '3高'…한국경제 'S 불안' 고개 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5TaTRZTFdDWUkwd0FtT0FIWUtGNDg0LU9NQWZHdWFPWklNbTUxOWJ2VjFkZkd2anBZcmtDemxvRWlmZTZEU0RrV3JROUFsSmZmT0ZGWnlWTjYyWUnSAWBBVV95cUxOU0tfSzVvMGpVcC10aTVieXhXQXFCREhmZDVwVk9VNDBrUlZsR0ZuQUNwaDA3Y2Qza29CamFzQVBTcVdNWGk1RkozdF9QNzJycGd3MFlVNUtFQWNkOHp4bWs?oc=5)
+- ['기름 한 방울도 못 줘'…中 석유 수출 중단 '초강수' [차이나 워치] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBFVGdfOXlablVNTENCUzRZRFRENUVoc1ktbnRUYXpCaXVBWTNCYVBfeXZ5M21XZTU2U1lqN2RHVVdaMVJ3YmxQZFdhdy1LTjg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
