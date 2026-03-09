@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 85 days, 4:23:00
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 85 days, 5:03:14
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.4% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.3% | `████░░░░░░░░░░░` |
 | **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융지주 신종자본증권 수요예측 흥행, "단단한 투자 수요 확인" - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE5qV25BZWlveXVubzI5QUlyc1M0a3VtOXVTLVl0bzNwQzlPWTUzUDIyRUV1ZXpxNFctejJpNkt0c3lmVmYtb1lDRTBpdXFpN01xU2tJMDhGbFpWaTFIUzFrbVZLTkVJNHIxRmJORDd2eWk1eWc?oc=5)
-- [中 78일뿐인데…'208일 쟁여둔' 한국 초비상 걸린 이유 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBMaTVTclVYNEFhNUZqd0V4VlV4UHQ0czI1VmhFc1hEUnpmYWFsQ1d3bVFSZ1dKQVY1cFA0Vkx2b2t1REZ0d0xpbDFQZnJtdTg?oc=5)
+- [환율·유가·증시 3중 충격...이란發 쇼크, 한국 경제 버틸 수 있나 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9QMk9WU0JRaUFpT2FxQWVJcnpnaFo3UUEwc2lGVzNPZjNXQUNTSFEzblBxVURVMXhITTJTV1F3MG44NlVZLVQtWk9fQmk1d3c?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
