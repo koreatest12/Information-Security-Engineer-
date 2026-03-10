@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 86 days, 1:01:50
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 86 days, 1:29:22
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.4% | `████░░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.4% | `████░░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, K-뷰티에 힘 싣는다…생산적 금융 지원 강화 - 지디넷코리아](https://news.google.com/rss/articles/CBMiVkFVX3lxTE9xS0d3cTB5cmlxdjlET2RtbVZVUnJDQmJXY0xxOXRyMG52YkZMT1drOWMzbmE0cU5xSVpMQUQ3UWNqcTRNcHdYaWR0MUx4S3VqNjBvSTRn?oc=5)
-- [지지율과 유가에 돌아선 트럼프..."유가 하락" 강조하며 민심잡기[이상은의 워싱턴나우] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5iNG9WTnhEeW1pNE1IcFR1YTNFWXh0a2hEaWl2U3hYZVhGam0zM3BuZHo3WV9qVGZ6cGY0NHczR1lRZndkMGxkbWN6M0tjb2M?oc=5)
+- [신한은행, 'K-뷰티' 선도기업 방문…금융지원 논의 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9LS1RTYXVJRmpYbjlDdjJoQ2FUY01YbWlkdXVLOGhLLW1KeEFDZEtnNnpoRGpCdDR0WjIzNWZrajJlaVNVWVNsUzdqV2ZiOEc0b0ZpOFc5OXlQenNjVlR4MA?oc=5)
+- [중동발 쇼크…한국경제 어디로? - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Fa0ZBVnpkdkxnY09kSzBEc0haSGRZWHVYMVpHVkZENEdZWk9nLVhoc01nTGdmaENMUmQ3NGpfb3NJa1ExaFVOcXotOGdfOTgxYkExSzl6eVhtdG9WcEtiS9IBeEFVX3lxTE41Wk0wUjdjSGZTY0ZSQlNSb0Y3Ry1NemtZTEtHOW9MSkRIS0xZMmV0ZmJmclNJQlB1NTFLekVYRi1hck0xY2lqQ0RKbHhPLTFmd0lGd3NLMDJHY3VZd1hsLTJnNXl4aVJJWnVWM3hBOHJGR3ZMbHQzSw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
