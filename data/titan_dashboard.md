@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 85 days, 21:18:47
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 85 days, 22:02:20
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 25.9% | `███░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.1% | `████░░░░░░░░░░░` |
 | **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [양대 금융 KB·신한, ’25년 CDP 기후변화 대응 ‘굿’ - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTFBFSXJhbWJZWEduR3o5NmtLSHlISEgzX3ptN3Q0bW84Y0FjMHY0M3dpZEZMLWVyOGxvREZiaFQtMFUyU3hqV1JBV0lkOE1JaVdfTTNoeWRhNlp0QmExbFdCblFjNVpNTFgyU2kyZUk2a3hNQjDSAXdBVV95cUxNb2x4djYxTWhocklaem1oSmdfOFpSMzlPR0J1TWY0Mk9XdGt1QVZfenN0SHNSeVhDR21SLW5xMmswc2ZXdFlkRkJza1pHTXRHWHJJUW8zZUNac3RQMWNTeFRsZzdkY3dfMV9fX1c5cDV4NGpKSlM3Yw?oc=5)
-- [석유, 산업용 64%·수송용 26%… 한국 경제 유가따라 ‘요동’ - 문화일보](https://news.google.com/rss/articles/CBMiUEFVX3lxTE85MF9MaVhPNTVfT0h2QXFwdGRGb0RlQThiQko5UVU5WGNUSDczREZIcXBZN2k1RWE5OEdIc3hLXzluMVFkV3B6aW82ZzN5WW85?oc=5)
+- [신한금융, CDP 기후변화 대응 ‘플래티넘 클럽’ 5년 연속 선정 - 서울와이어](https://news.google.com/rss/articles/CBMibEFVX3lxTE1WVU4wMFlCa3Z3dzBYdGZieTVqSV9hOW9WUVk5YjNJWFh4c2NfOUVpWlduSm9LRjdNMFVCX0dSMjlYakhTU1MxZElUXy1qMUJ5Nm1obFU4N1RucVJaYjJTX2RZQzRENEdfMTlpOA?oc=5)
+- ["우리 쓸 기름도 없다"…中 초강수에 '에너지 대란' 위기 [차이나 워치] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBFVGdfOXlablVNTENCUzRZRFRENUVoc1ktbnRUYXpCaXVBWTNCYVBfeXZ5M21XZTU2U1lqN2RHVVdaMVJ3YmxQZFdhdy1LTjg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
