@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 86 days, 6:08:06
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 86 days, 6:32:00
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.3% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.2% | `████░░░░░░░░░░░` |
 | **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [발언하는 진옥동 신한금융지주 회장 - 뉴시스](https://news.google.com/rss/articles/CBMiZkFVX3lxTE0zODZ6N2w2eGR6SjJ6d043eXl6YWlKd0Jsa1p3eWpoQkV3dGVuX0VidnlLWTBMV080RXBBaFhmTE9rZ0F6YlhxV0lGZndkWTIwS3U5cm5NT1VBTmVYQlJERkhfXy1EQQ?oc=5)
-- [중동발 쇼크…한국경제 어디로? - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Fa0ZBVnpkdkxnY09kSzBEc0haSGRZWHVYMVpHVkZENEdZWk9nLVhoc01nTGdmaENMUmQ3NGpfb3NJa1ExaFVOcXotOGdfOTgxYkExSzl6eVhtdG9WcEtiS9IBeEFVX3lxTE41Wk0wUjdjSGZTY0ZSQlNSb0Y3Ry1NemtZTEtHOW9MSkRIS0xZMmV0ZmJmclNJQlB1NTFLekVYRi1hck0xY2lqQ0RKbHhPLTFmd0lGd3NLMDJHY3VZd1hsLTJnNXl4aVJJWnVWM3hBOHJGR3ZMbHQzSw?oc=5)
+- [정규재 전 주필, 내부 반대에도 한국경제 상임고문으로 ‘복귀’ - 미디어오늘](https://news.google.com/rss/articles/CBMicEFVX3lxTE8tVTFocE0xYy1ndExoMlZhTk1OVEhwcnpaQ1BPZlNFMUZVVWpCc2pxN0Z6WXVTeWNZMldIWEhtZ3g0WkNiYWdsNXp6cVlkX3Nha2lmYmd5bXA3bXJERWZEVjNva2Qwd1lWcW96dGQ4bFU?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
