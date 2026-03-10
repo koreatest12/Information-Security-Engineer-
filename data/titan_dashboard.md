@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 85 days, 20:48:13
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 85 days, 21:18:47
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.7% | `████░░░░░░░░░░░` |
-| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 25.9% | `███░░░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [양대 금융 KB·신한, ’25년 CDP 기후변화 대응 ‘굿’ - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTFBFSXJhbWJZWEduR3o5NmtLSHlISEgzX3ptN3Q0bW84Y0FjMHY0M3dpZEZMLWVyOGxvREZiaFQtMFUyU3hqV1JBV0lkOE1JaVdfTTNoeWRhNlp0QmExbFdCblFjNVpNTFgyU2kyZUk2a3hNQjDSAXdBVV95cUxNb2x4djYxTWhocklaem1oSmdfOFpSMzlPR0J1TWY0Mk9XdGt1QVZfenN0SHNSeVhDR21SLW5xMmswc2ZXdFlkRkJza1pHTXRHWHJJUW8zZUNac3RQMWNTeFRsZzdkY3dfMV9fX1c5cDV4NGpKSlM3Yw?oc=5)
-- [AMRO “올해 한국 경제 1.9% 성장…물가상승률 1.9% 전망” - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE11azlFSTNpcUVzT0xwUmcwdDhOU1RJVi1TMjdjVnhJaFdHemdGVnVDbUJvMm1veU5hZjN3d3F6RkpEOTR4NGJBdHRZd2VfNDQ?oc=5)
+- [석유, 산업용 64%·수송용 26%… 한국 경제 유가따라 ‘요동’ - 문화일보](https://news.google.com/rss/articles/CBMiUEFVX3lxTE85MF9MaVhPNTVfT0h2QXFwdGRGb0RlQThiQko5UVU5WGNUSDczREZIcXBZN2k1RWE5OEdIc3hLXzluMVFkV3B6aW82ZzN5WW85?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
