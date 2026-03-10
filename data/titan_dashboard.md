@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 85 days, 22:02:20
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 85 days, 22:27:44
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.1% | `████░░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.8% | `████░░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, CDP 기후변화 대응 ‘플래티넘 클럽’ 5년 연속 선정 - 서울와이어](https://news.google.com/rss/articles/CBMibEFVX3lxTE1WVU4wMFlCa3Z3dzBYdGZieTVqSV9hOW9WUVk5YjNJWFh4c2NfOUVpWlduSm9LRjdNMFVCX0dSMjlYakhTU1MxZElUXy1qMUJ5Nm1obFU4N1RucVJaYjJTX2RZQzRENEdfMTlpOA?oc=5)
-- ["우리 쓸 기름도 없다"…中 초강수에 '에너지 대란' 위기 [차이나 워치] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBFVGdfOXlablVNTENCUzRZRFRENUVoc1ktbnRUYXpCaXVBWTNCYVBfeXZ5M21XZTU2U1lqN2RHVVdaMVJ3YmxQZFdhdy1LTjg?oc=5)
+- [신한은행, K-뷰티 기업 현장 방문…생산적 금융 지원 강화 - 서울와이어](https://news.google.com/rss/articles/CBMibEFVX3lxTFB5X2cyaWV0U3ZINUpEUnJKV0Z4aVE0SE1oYkFYTHg3anJXTlVUMFJOUlI1WnpRNjlVSUpKY3dZUGZvVjBjazhvanU3TFlkR0VyWjNOWlNhcjRoeGdiODZVLXlHSUZ4Q0JnSVo2eQ?oc=5)
+- [김세직 KDI 원장 “한국경제, 2030년엔 마이너스 성장... 총수요 부양 신중해야" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9KYlk4eXJDNEFwQXV0ZVFkMl9zVHhfQmxwT2JDLTBIRGRmZFM4eFllUTMxVFNWZnY0Mnl3UVRIYWZBazFsVGRiWWZqUjNXeVU?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
