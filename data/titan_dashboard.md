@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 85 days, 23:02:28
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 85 days, 23:32:09
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.9% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.7% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 'K-뷰티' 선도기업 방문…금융지원 논의 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9LS1RTYXVJRmpYbjlDdjJoQ2FUY01YbWlkdXVLOGhLLW1KeEFDZEtnNnpoRGpCdDR0WjIzNWZrajJlaVNVWVNsUzdqV2ZiOEc0b0ZpOFc5OXlQenNjVlR4MA?oc=5)
+- [신한은행, K-뷰티에 힘 싣는다…생산적 금융 지원 강화 - 지디넷코리아](https://news.google.com/rss/articles/CBMiVkFVX3lxTE9xS0d3cTB5cmlxdjlET2RtbVZVUnJDQmJXY0xxOXRyMG52YkZMT1drOWMzbmE0cU5xSVpMQUQ3UWNqcTRNcHdYaWR0MUx4S3VqNjBvSTRn?oc=5)
 - ["우리 쓸 기름도 없다"…中 초강수에 '에너지 대란' 위기 [차이나 워치] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBFVGdfOXlablVNTENCUzRZRFRENUVoc1ktbnRUYXpCaXVBWTNCYVBfeXZ5M21XZTU2U1lqN2RHVVdaMVJ3YmxQZFdhdy1LTjg?oc=5)
 
 ---
