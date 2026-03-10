@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 86 days, 1:29:22
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 86 days, 2:04:14
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.4% | `████░░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.0% | `████░░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행, 'K-뷰티' 선도기업 방문…금융지원 논의 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9LS1RTYXVJRmpYbjlDdjJoQ2FUY01YbWlkdXVLOGhLLW1KeEFDZEtnNnpoRGpCdDR0WjIzNWZrajJlaVNVWVNsUzdqV2ZiOEc0b0ZpOFc5OXlQenNjVlR4MA?oc=5)
-- [중동발 쇼크…한국경제 어디로? - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Fa0ZBVnpkdkxnY09kSzBEc0haSGRZWHVYMVpHVkZENEdZWk9nLVhoc01nTGdmaENMUmQ3NGpfb3NJa1ExaFVOcXotOGdfOTgxYkExSzl6eVhtdG9WcEtiS9IBeEFVX3lxTE41Wk0wUjdjSGZTY0ZSQlNSb0Y3Ry1NemtZTEtHOW9MSkRIS0xZMmV0ZmJmclNJQlB1NTFLekVYRi1hck0xY2lqQ0RKbHhPLTFmd0lGd3NLMDJHY3VZd1hsLTJnNXl4aVJJWnVWM3hBOHJGR3ZMbHQzSw?oc=5)
+- [[유가 100달러] 물가·환율·금리 '3高'…한국경제 'S 불안' 고개 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5TaTRZTFdDWUkwd0FtT0FIWUtGNDg0LU9NQWZHdWFPWklNbTUxOWJ2VjFkZkd2anBZcmtDemxvRWlmZTZEU0RrV3JROUFsSmZmT0ZGWnlWTjYyWUnSAWBBVV95cUxOU0tfSzVvMGpVcC10aTVieXhXQXFCREhmZDVwVk9VNDBrUlZsR0ZuQUNwaDA3Y2Qza29CamFzQVBTcVdNWGk1RkozdF9QNzJycGd3MFlVNUtFQWNkOHp4bWs?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
