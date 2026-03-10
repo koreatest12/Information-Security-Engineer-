@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 86 days, 15:25:25
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 86 days, 15:56:48
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 23.6% | `███░░░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.6% | `███░░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융 "LTV 공정위 제재, 소송시 이길 가능성 높아" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE53RDJrUU05RkVjWktWR1p3Y3JoNHNPU1NxNDd6Z05qenFCQzl4bC12OWNUU3JEa3pvbEdmUEQ4QmR5Z0RXT3d3TndOM0dDZlk?oc=5)
