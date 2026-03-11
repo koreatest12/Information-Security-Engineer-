@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 86 days, 21:37:00
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 86 days, 22:02:51
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.9% | `████░░░░░░░░░░░` |
-| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.0% | `████░░░░░░░░░░░` |
+| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[단독] ISS도 인정했다 “진옥동, 지배구조 개선 기여…연임 찬성” - sedaily.com](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBQc3ZBWTZnYjM1bzBQNDZHbWZDMUhqd3BITXF4TUlpaHRzOWFBUkNwTHIzTkZtc05xNk9HTVlmeHBYQWRZUFBqNHNNcERKRGc?oc=5)
+- [의결권자문사 ISS·글래스루이스 "진옥동 신한 회장 선임 찬성" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBhSjZFVGhFN3pzQk1OQnZFYUc5cDFKWTV4SVpPek9lekxybHZ0Ym5rRHpNT0hIZW00V0Jvb2l0dXJ2cVVwbWVjQjVEWXRoc0k?oc=5)
 - [정규재 전 주필, 내부 반대에도 한국경제 상임고문으로 ‘복귀’ - 미디어오늘](https://news.google.com/rss/articles/CBMicEFVX3lxTE8tVTFocE0xYy1ndExoMlZhTk1OVEhwcnpaQ1BPZlNFMUZVVWpCc2pxN0Z6WXVTeWNZMldIWEhtZ3g0WkNiYWdsNXp6cVlkX3Nha2lmYmd5bXA3bXJERWZEVjNva2Qwd1lWcW96dGQ4bFU?oc=5)
 
 ---
