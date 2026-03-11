@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 87 days, 11:03:40
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 87 days, 11:33:15
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.9% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.0% | `████░░░░░░░░░░░` |
+| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [진옥동 신한금융 회장, 연임 청신호… ISS·글래스루이스 찬성 권고 - 글로벌이코노믹](https://news.google.com/rss/articles/CBMihAFBVV95cUxQX0dzSTZEbVdpZWFQUFR1RjNWTkVTeWE0WW9fZ3BrN0tTTVFyQ19sTUlTT2N3a1V2NGxHb2U5NG5aTWhpMld4UEVwa2xiUkZnSElaZmtYQnhDNzFEdkpaOFBIX3hYbHFrOE1jRTJ4NVRaLXA0MGdoUXpHMjJqdGVmWDMwcDk?oc=5)
+- [ISS·글래스루이스 "진옥동 신한금융회장 연임 찬성" - 파이낸셜뉴스](https://news.google.com/rss/articles/CBMiWkFVX3lxTFB3dXVmckZvNlo5LWVqd21janRJdTlaNWJETVhOeTFySEJXYXNMZW5KRWZTNGg0OHRuT3hab2YzUDRtSjVzczU1SUcxeHU2bjN4Y21sYWprVDNRUdIBXkFVX3lxTE1tT3F2RmNkTzZ4YzBqZWFJaXJVa2NnQU14MHdicHNLS290S1NZRTUzU3JKa0ZMRVF0X3dreXV1WWtPZlZIblBvQ1hlbHJkU2gweXdncFJ2Sng0cW5zQ1E?oc=5)
 - [정규재 전 주필, 내부 반대에도 한국경제 상임고문으로 ‘복귀’ - 미디어오늘](https://news.google.com/rss/articles/CBMicEFVX3lxTE8tVTFocE0xYy1ndExoMlZhTk1OVEhwcnpaQ1BPZlNFMUZVVWpCc2pxN0Z6WXVTeWNZMldIWEhtZ3g0WkNiYWdsNXp6cVlkX3Nha2lmYmd5bXA3bXJERWZEVjNva2Qwd1lWcW96dGQ4bFU?oc=5)
 
 ---
