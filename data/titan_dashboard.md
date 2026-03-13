@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 89 days, 8:26:06
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 89 days, 9:01:29
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.3% | `████░░░░░░░░░░░` |
-| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.4% | `████░░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [작년 금융지주 회장 연봉은…KB 양종희 19억·신한 진옥동 13억 - yna.co.kr](https://news.google.com/rss/articles/CBMiW0FVX3lxTE10ckRIRndLVUI1WUpnZFBPRE53R1h0QnhmbGRpZWJGSWhoU09kWjRHOUYwTlFhbWhEd0NyRVJabC1LTmhTWkdJX2ZoZ19TYWJ5YXcwQjF1dnZBcm_SAWBBVV95cUxOSjdMTjc5VHBJQ3lpSUl5QVlrUWpiY2d3MDI0T1U1RjZMXzVSUzZwNl9hQjgzOTdjVlFfRG1XbG5UQ2ROQlhqcnlCVnFOMUFlV2JpTlVuOW1vZ0Q0RE9ENi0?oc=5)
+- [작년 금융지주 회장 연봉은…KB 양종희 19억·신한 진옥동 13억 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE10ckRIRndLVUI1WUpnZFBPRE53R1h0QnhmbGRpZWJGSWhoU09kWjRHOUYwTlFhbWhEd0NyRVJabC1LTmhTWkdJX2ZoZ19TYWJ5YXcwQjF1dnZBcm_SAWBBVV95cUxOSjdMTjc5VHBJQ3lpSUl5QVlrUWpiY2d3MDI0T1U1RjZMXzVSUzZwNl9hQjgzOTdjVlFfRG1XbG5UQ2ROQlhqcnlCVnFOMUFlV2JpTlVuOW1vZ0Q0RE9ENi0?oc=5)
 - [정규재 전 주필, 내부 반대에도 한국경제 상임고문으로 ‘복귀’ - 미디어오늘](https://news.google.com/rss/articles/CBMicEFVX3lxTE8tVTFocE0xYy1ndExoMlZhTk1OVEhwcnpaQ1BPZlNFMUZVVWpCc2pxN0Z6WXVTeWNZMldIWEhtZ3g0WkNiYWdsNXp6cVlkX3Nha2lmYmd5bXA3bXJERWZEVjNva2Qwd1lWcW96dGQ4bFU?oc=5)
 
 ---
