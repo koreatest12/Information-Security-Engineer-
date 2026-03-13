@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 89 days, 4:24:15
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 89 days, 5:02:59
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.9% | `████░░░░░░░░░░░` |
-| **RAM** | `31.7/512 GB` | 6.2% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.8% | `████░░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한투자증권·브릿지코드 '맞손'…승계형 SME M&A 자문 강화 - 이투데이](https://news.google.com/rss/articles/CBMidEFVX3lxTE1Mak1Mc2gwazAwUlBZQWJCYXEzQzNrVzV1MmV0ZmM2d21WUVFleG9LUGVtc1hnOHl4VUZwZXE5cTR2Qk9TdWF1WlQ2LUt6bFNGVEdwLWc5M1cyMVVfelIyZGdtODRlM2R4b194LS1SNDdMMkV0?oc=5)
+- [작년 금융지주 회장 연봉은…KB 양종희 19억·신한 진옥동 13억 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE10ckRIRndLVUI1WUpnZFBPRE53R1h0QnhmbGRpZWJGSWhoU09kWjRHOUYwTlFhbWhEd0NyRVJabC1LTmhTWkdJX2ZoZ19TYWJ5YXcwQjF1dnZBcm_SAWBBVV95cUxOSjdMTjc5VHBJQ3lpSUl5QVlrUWpiY2d3MDI0T1U1RjZMXzVSUzZwNl9hQjgzOTdjVlFfRG1XbG5UQ2ROQlhqcnlCVnFOMUFlV2JpTlVuOW1vZ0Q0RE9ENi0?oc=5)
 - [정규재 전 주필, 내부 반대에도 한국경제 상임고문으로 ‘복귀’ - 미디어오늘](https://news.google.com/rss/articles/CBMicEFVX3lxTE8tVTFocE0xYy1ndExoMlZhTk1OVEhwcnpaQ1BPZlNFMUZVVWpCc2pxN0Z6WXVTeWNZMldIWEhtZ3g0WkNiYWdsNXp6cVlkX3Nha2lmYmd5bXA3bXJERWZEVjNva2Qwd1lWcW96dGQ4bFU?oc=5)
 
 ---
