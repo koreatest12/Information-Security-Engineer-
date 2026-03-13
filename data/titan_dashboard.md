@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 88 days, 15:57:01
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 88 days, 16:29:45
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.1% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.4% | `████░░░░░░░░░░░` |
 | **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [ISS, 신한금융 6년 반대 기조 접었다…26일 주총서 진옥동 연임 첫 고비 넘겨 - 녹색경제신문](https://news.google.com/rss/articles/CBMiaEFVX3lxTE5RWE5oWUV1UHR3aXk1SFRZRTliMmVrQm9mZUdYWXhQMENMUzh2YWtBc2p6VlJFQnUwb253YnprekVZX29tZFBXNF9feWpJNW93aEFyMkxxbDVPRUhxMVBwdVZfSXZvTC02?oc=5)
+- [K-금융의 그늘…진옥동 피소된 신한 美 내부고발 소송 항소전 - 더트래커](https://news.google.com/rss/articles/CBMiWEFVX3lxTFA5cm5RUXFQbXFjbGtkZzNPbHZpRlNrQ2tNeURtQi1fdG5pRVNHWWFyNG1seFlNX1FjaUdLdWpoNU1TZ19XY1p3a0hFaWp0VUZYN2QxYmpLQmc?oc=5)
 - [정규재 전 주필, 내부 반대에도 한국경제 상임고문으로 ‘복귀’ - 미디어오늘](https://news.google.com/rss/articles/CBMicEFVX3lxTE8tVTFocE0xYy1ndExoMlZhTk1OVEhwcnpaQ1BPZlNFMUZVVWpCc2pxN0Z6WXVTeWNZMldIWEhtZ3g0WkNiYWdsNXp6cVlkX3Nha2lmYmd5bXA3bXJERWZEVjNva2Qwd1lWcW96dGQ4bFU?oc=5)
 
 ---
