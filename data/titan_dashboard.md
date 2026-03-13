@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 88 days, 17:10:24
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 88 days, 17:48:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 23.9% | `███░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.2% | `████░░░░░░░░░░░` |
 | **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [K-금융의 그늘…진옥동 피소된 신한 美 내부고발 소송 항소전 - 더트래커](https://news.google.com/rss/articles/CBMiWEFVX3lxTFA5cm5RUXFQbXFjbGtkZzNPbHZpRlNrQ2tNeURtQi1fdG5pRVNHWWFyNG1seFlNX1FjaUdLdWpoNU1TZ19XY1p3a0hFaWp0VUZYN2QxYmpLQmc?oc=5)
+- [신한투자증권, 브릿지코드와 맞손…승계형 SME M&A 자문 강화 - 헤럴드경제](https://news.google.com/rss/articles/CBMiVkFVX3lxTE1Hb25oRWZyZHJ6OFYtbTlNX2hLYlpSMWZXWFlDMmFmOE9SRVpsMzhiMGY1RmZQeHNGeGRaQVpTOFhkYWNuTW55ME5VQklydEdPczRjeVNB?oc=5)
 - [정규재 전 주필, 내부 반대에도 한국경제 상임고문으로 ‘복귀’ - 미디어오늘](https://news.google.com/rss/articles/CBMicEFVX3lxTE8tVTFocE0xYy1ndExoMlZhTk1OVEhwcnpaQ1BPZlNFMUZVVWpCc2pxN0Z6WXVTeWNZMldIWEhtZ3g0WkNiYWdsNXp6cVlkX3Nha2lmYmd5bXA3bXJERWZEVjNva2Qwd1lWcW96dGQ4bFU?oc=5)
 
 ---
