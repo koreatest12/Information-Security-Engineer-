@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 89 days, 16:24:32
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 89 days, 17:08:23
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.1% | `████░░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.0% | `████░░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [금융지주 회장 작년 연봉 공개…신한 진옥동 13억 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5OWFQ5VHJ1bENMVlZOTDVYc25QZ1RxeW13VzdsTlNKOE9pNHFtRDEwUE9iUDF3RjRpU1d2QlVQYm5pcmd4YWJucEh1NF9SNWs?oc=5)
+- [작년 금융지주 회장 연봉은…KB 양종희 19억·신한 진옥동 13억 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE10ckRIRndLVUI1WUpnZFBPRE53R1h0QnhmbGRpZWJGSWhoU09kWjRHOUYwTlFhbWhEd0NyRVJabC1LTmhTWkdJX2ZoZ19TYWJ5YXcwQjF1dnZBcm_SAWBBVV95cUxOSjdMTjc5VHBJQ3lpSUl5QVlrUWpiY2d3MDI0T1U1RjZMXzVSUzZwNl9hQjgzOTdjVlFfRG1XbG5UQ2ROQlhqcnlCVnFOMUFlV2JpTlVuOW1vZ0Q0RE9ENi0?oc=5)
 - [구윤철 "한국 경제 주목할 시점"…日 도쿄서 투자 설명회 - 노컷뉴스](https://news.google.com/rss/articles/CBMiUkFVX3lxTE1RVE1yZjdWcjlHbFZhVlV4RExCaXlxWXJsRF81VW5tS3BPOE93V050RkZ3OGxrZFpTM0RqajRJT25hbFdKaEpvVDFuV3Z5QmlVNkE?oc=5)
 
 ---
