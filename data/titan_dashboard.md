@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 91 days, 12:59:24
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 91 days, 13:22:37
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.9% | `████░░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.2% | `████░░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [금융지주 회장 연봉은?…KB 양종희 19억·신한 진옥동 13억 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE1sZlFqcnl2b1M4TUFoR1BDR2Q1aE9YVThHanlhdF9wLXRsREdOYWxNSVllUmNacWpKS2xlUVRDRlZBd215M0NRUms4UTZ5ajU0ZFNZ?oc=5)
+- [신한은행, ‘5극 3특 국가균형성장’ 발 맞춘다 - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTE5PMmhwU0RpMGx3WllPM3RDSmREckdlQjBSZmpWUjIzeFBNWnNOVkkxamVGQW5zOHJVWURKbUxlQ3lWb0tKWnVsQ1pZOU81cTcxTVFoZHZUbS1EWmQyb1FuMHN0Rms0dDk3QWFUOVNNLThsQzDSAXdBVV95cUxQMEk4R0NZZHU0Z2NOejFxWFVnTTBrMFdXX0NaVVpLVjI0YXVQWko4V3k5SVo0QTdGQWRyY0FiNXg4LUVDRVBVaHdiVC1LWUJ6Z0xaNWtFOUN3UzhDc3BtU1hGbFB1MVNBamNwNEM1Y0RpR0VUcnpnaw?oc=5)
 - ["이번엔 트럼프 뜻대로 안 된다"…이란전에 쏟아진 '경고' - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE1jbFFlb0Y1MVloc0RHRmgzaWQ3bXNCZTd0b241Z3pVcndDQnNrTTg5dFBCQjQ5YlU3elp1XzdIYXRXTFJseVE?oc=5)
 
 ---
