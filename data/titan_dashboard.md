@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 90 days, 22:14:45
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 90 days, 22:40:50
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.7% | `█████░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.3% | `████░░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행, 서남권·동남권 특화거점 구축 - 스마트투데이](https://news.google.com/rss/articles/CBMiX0FVX3lxTFBTa19HNFhlbEV3LU5neFNxczVoWkZDWVhRSkNpaHdvNWN2YkxjLWhtQzl3Q2htN3ZjZWlySFhXdkdkM0JwdjhjaWFELVdFVjh1c25jMXZrbl9JeXc3RmJr?oc=5)
-- ['지금이 가장 싸다'…'큰손' 개미들 440억 쓸어담은 종목 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9mb1ExWWJRcjNSNFNtQll5REhsd0U2OWEtdnZydmozaGZ0dUR4Vy1XTk5GV0Q4NzNhTXhoUG01OUJCdlNjc1hzcXVwcjRFRE0?oc=5)
+- [삼성에 반도체 맡겼던 테슬라 '파격 선언'…"직접 만들겠다" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9RR2JRM3Rxc3BvVjZLOHpjVWlWUWVpLTZFazFNcVp1UFF6SElrOTg0Ry1tS2xWcjkwZWpvLUhDajdyelVWUl8wZVliRHhucTQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
