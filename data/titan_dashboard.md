@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 90 days, 17:18:57
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 90 days, 18:32:16
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.4% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.5% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행, ‘5극 3특 국가균형성장’ 발 맞춘다 - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTE5PMmhwU0RpMGx3WllPM3RDSmREckdlQjBSZmpWUjIzeFBNWnNOVkkxamVGQW5zOHJVWURKbUxlQ3lWb0tKWnVsQ1pZOU81cTcxTVFoZHZUbS1EWmQyb1FuMHN0Rms0dDk3QWFUOVNNLThsQzDSAXdBVV95cUxQMEk4R0NZZHU0Z2NOejFxWFVnTTBrMFdXX0NaVVpLVjI0YXVQWko4V3k5SVo0QTdGQWRyY0FiNXg4LUVDRVBVaHdiVC1LWUJ6Z0xaNWtFOUN3UzhDc3BtU1hGbFB1MVNBamNwNEM1Y0RpR0VUcnpnaw?oc=5)
-- ["아들 돌부터 모은 '금 50돈' 있는데 어쩌죠"…40대 부부 고민 [돈 버는 법 아끼는 법] - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE9OZTdmYUIxaGg5b3c2RUYwd0ttaHZKeG9LSDhMVEZBWGVjTnI1VUJVWFFpU0JmdDhPQ0xONDJSelo5dXZEOUE?oc=5)
+- [오늘이 제일 싸다…"10만원 이상 오를 수도" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBhUHU5UlBSclZENVBLeC1GTVV2QkJwYzZIaW9WYkNTQ0x2NThnR3JtZ2cxOGxYajloRzNzeS1UZkJ1N1FWUWE2VklaRE14Sjg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
