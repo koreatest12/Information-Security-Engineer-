@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 92 days, 13:01:56
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 92 days, 13:29:03
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.8% | `████░░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.5% | `█████░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 신종자본증권 4천억 발행으로 자본비율 소폭 개선 전망 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1KcXhES3pwcUo0Vnh6MmJxRUpJLXczYjhMTVktSkUwM0ZXLUp5OU9VZnh0Tm9hWlBXbEJtSm56amdRaHJDdGlWeVhWZ0ppZWc?oc=5)
-- ['중국, 이 정도였나' 전세계 충격받은 이유가…'무서운 경고' [더 머니이스트-조평규의 중국 본색] - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTFBJTDZKamFPcDJwU05mcWt2M25xZjg0RXM5Sm1rbElWT2xpbnFES3hYVWFpQVJIblpwR0t4VGxjX1hqcFVHeXc?oc=5)
+- [이란 전쟁 금방 끝난다더니 '초유의 사태'…개미들 '공포' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5xREtQMkFhUVZRZE80eGFTQklPd01ZWDc4MzVPbGhIQ3BhQlNhQlZQd0k4S25KQTNnbzY3X0xYb2hBc25JSGJISjdJVnBPZVU?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
