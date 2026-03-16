@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 92 days, 11:04:04
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 92 days, 11:39:22
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.8% | `████░░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 40.0% | `██████░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 신종자본증권 4천억 발행으로 자본비율 소폭 개선 전망 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1KcXhES3pwcUo0Vnh6MmJxRUpJLXczYjhMTVktSkUwM0ZXLUp5OU9VZnh0Tm9hWlBXbEJtSm56amdRaHJDdGlWeVhWZ0ppZWc?oc=5)
-- ['중국, 이 정도였나' 전세계 충격받은 이유가…'무서운 경고' [더 머니이스트-조평규의 중국 본색] - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTFBJTDZKamFPcDJwU05mcWt2M25xZjg0RXM5Sm1rbElWT2xpbnFES3hYVWFpQVJIblpwR0t4VGxjX1hqcFVHeXc?oc=5)
+- [산업연구원 “중동 리스크, 한국 경제에 고유가·물류마비 이중고” - 한겨레](https://news.google.com/rss/articles/CBMickFVX3lxTE1EUVkxSFJfS2Z4Y0RxaWtuNFIxQ291a21GTzJGVzl5M3FLWGw0QWMzWFBPby05UnA3dmthQmEwSDhLeHc5eGZSakNESUZrMUdiWld1ME1MdzVzdjFXdnFTRmZfSmQ0QWRrSXRIZ1Jsa1RvUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
