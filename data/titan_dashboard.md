@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 93 days, 2:04:01
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 93 days, 2:32:00
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.5% | `█████░░░░░░░░░░` |
-| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.7% | `████░░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한투자증권, '생산적 금융' 블루북 발간 - 서울와이어](https://news.google.com/rss/articles/CBMia0FVX3lxTE44QmhhS2hPRU5udTlsbDUxenRDWVVrNTZJNjdlMXAzS0xBcmk1TUZLeFM0bG9kUWoteEYwWUl2Rkp0NmVQRE4yTmpqQ1NKOW1aY1VLdHVIWnJ4aWJhajVmZmx0OWVIOUp1cHo0?oc=5)
-- ["인도 지고 브라질 떴다"…올해 글로벌 펀드 수익률 어떤가 보니 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9Pb0IweGNyYl9POXhDM3NPZG5HdDc4Qnd6SjVIZGs2c0NWemRFRG5SdkYyRHNWM3Z5Y2ZVc08xbjE2aXQxWFdscmpZZ2NqYm8?oc=5)
+- [산업연구원 “중동 리스크, 한국 경제에 고유가·물류마비 이중고” - 한겨레](https://news.google.com/rss/articles/CBMickFVX3lxTE1EUVkxSFJfS2Z4Y0RxaWtuNFIxQ291a21GTzJGVzl5M3FLWGw0QWMzWFBPby05UnA3dmthQmEwSDhLeHc5eGZSakNESUZrMUdiWld1ME1MdzVzdjFXdnFTRmZfSmQ0QWRrSXRIZ1Jsa1RvUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
