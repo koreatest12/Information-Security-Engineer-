@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 92 days, 20:04:01
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 92 days, 20:51:02
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.0% | `████░░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.8% | `████░░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한투자증권, ‘생산적 금융I : 자본 재배치의 시대’ 블루북 발간 - 이투데이](https://news.google.com/rss/articles/CBMidEFVX3lxTE5lUkp4ODBFZzBuRmIzdVJXSFdhaDR1UEItUndBRmxzSjFXbG9aSWlaVUQ4V3VYcEtneC1ycWFQazQ5LXBlM0ZRWWxDOU5EOVRzaFdNM3B3UUtmMDNYQi1Yd0I1Q20xSnpxY2ZXRjE5LWk4eXRG?oc=5)
-- ['중국, 이 정도였나' 전세계 충격받은 이유가…'무서운 경고' [더 머니이스트-조평규의 중국 본색] - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTFBJTDZKamFPcDJwU05mcWt2M25xZjg0RXM5Sm1rbElWT2xpbnFES3hYVWFpQVJIblpwR0t4VGxjX1hqcFVHeXc?oc=5)
+- [신한금융, 신종자본증권 4천억 발행으로 자본비율 소폭 개선 전망 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1KcXhES3pwcUo0Vnh6MmJxRUpJLXczYjhMTVktSkUwM0ZXLUp5OU9VZnh0Tm9hWlBXbEJtSm56amdRaHJDdGlWeVhWZ0ppZWc?oc=5)
+- [2배수 "전쟁 여파 길지 않아…증시 우상향 추세 지속 전망" [한경스타워즈 출사표⑩] - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE5qVlFWSUtBaVUxdXJGbnJXeVI0TmdhRGVDV3NpZUdFUVhzRmZUUDZxZFpRZExaS1ZEVlVwdnFfdlViNUNNZnc?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
