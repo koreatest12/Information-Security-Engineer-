@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 93 days, 14:01:05
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 93 days, 14:25:52
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,19 +8,18 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [KR_ECON] 어쩐지 한국男·일본女 커플 많이 보이더라…'역대급 상황' - v.daum.net
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 22.1% | `███░░░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.4% | `████░░░░░░░░░░░` |
+| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한투자증권, ‘생산적 금융 I : 자본 재배치의 시대’ 블루북 발간 - 조선비즈 - Chosunbiz](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPM3pUVC1XalU5eGl2aGVra2lJcFZmRm1mVkhoYWR3Z3ZnY2Q4RC1LdU1kOFFZaV9hN185UEVpN1VlRkJJcldsR0JYR2k0NkN3TEQ4QVNfdll2bGxTZkJ6OTQzZEhRbUM2WWZjUDBjMGtuTDhGWjg2Sm5XdVl2WnJybzBYUjg0MW9J0gGcAUFVX3lxTE53RlRXUlRJeHNwbXdfYVRoMDNidG91SjRMTm1qM1RTLUtHUkg1TmNGdS1lSjhXdHpXRG1Gd09aN25aaXdNMEtkS0l6N2NaOXBpYWdvN3pZVjB0V25tSFdsN1YtM2k0eGVqUDlJU2RJcmRTcWc1MkxCanZwektHYzhxcUtCdXk0RTRFdkpYdExPMVpfVDB0V2VJVFBfWg?oc=5)
-- [어쩐지 한국男·일본女 커플 많이 보이더라…'역대급 상황' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE80ZWw0OVBsSHZCZHpaTk1hZXNrdUdMY2h5UWh6VHlER3RnR2IyYkQzMy1LS0I5T3R1aG9EUGFVdE5LMmp6R2V6cEo1WVYySWc?oc=5)
+- ["택배 시킨 게 죄인가요"…상자 20개로 현관문 막아버렸다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBYUUFZbEdIclJtSHNGTmlZNHA4NG1JekxqbVZCbE92OFFLaFl3YkwtTS1jLTVjOXZYVExwN2Y5RUJ6cl9GQ3hNYVJkRUFCS0k?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
