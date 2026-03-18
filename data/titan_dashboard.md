@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 94 days, 4:28:35
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 94 days, 5:03:58
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.6% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.2% | `████░░░░░░░░░░░` |
 | **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [금융지주 회장 연봉 1위 함영주 22억원…은행장은 신한 15억원 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9vYVN5NE9IVFNIemR5d1NZaFp1ZDdTbEJOemFXaW9EZTNXSW12cTF4SzN1Wk1meDZGYnlZQWpSeWpVZG93WEFIVEdvZ0Q1VFJyTlNwMnFUMzRVRVHSAWBBVV95cUxNV29FTXZ4VEM1cHJ6VTZqdEl4RzByVjdLU3lvUXlPdzh6aG1hYWZybmNlajJiaFA5TEkzaTFtUnlNWmZhSk5IU0FqX0xtd2VuempoTGZXMzNMaDdQNEo5X0M?oc=5)
-- [전쟁 덕분에 '신의 한 수' 되나…애물단지 '놀라운 변신' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5uMlNFTjVJQy1reExPaXhUMXkwbjNOUEl4TUpJcEdFQy1feDZ1QzZFWHktYnpKYlo4Y204bTVvbkZTTjVjY2hfejM4ajdDbm8?oc=5)
+- [[속보] 한국경제신문 내일(19일)부터 기자 ‘개별 주식 매매’ 원천 금지 - KBS 뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFBEQndiQlRhc3JTTW55QW9tTThySEdURzdwb2hiek1CZ3JQZ1NnTDJUaDZ4ZU9ld3U2UzE4UkEybzA5bUFYQXRCZlZCb1RyWk9HNHhwYmNvMkEyLTQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
