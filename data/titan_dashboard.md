@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 94 days, 3:32:35
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 94 days, 4:02:21
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,19 +8,18 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [KR_ECON] 어쩐지 한국男·일본女 커플 많이 보이더라…'역대급 상황' - v.daum.net
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.8% | `████░░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.2% | `████░░░░░░░░░░░` |
+| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [금융지주 회장 연봉 1위 함영주 22억원…은행장은 신한 15억원 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9vYVN5NE9IVFNIemR5d1NZaFp1ZDdTbEJOemFXaW9EZTNXSW12cTF4SzN1Wk1meDZGYnlZQWpSeWpVZG93WEFIVEdvZ0Q1VFJyTlNwMnFUMzRVRVHSAWBBVV95cUxNV29FTXZ4VEM1cHJ6VTZqdEl4RzByVjdLU3lvUXlPdzh6aG1hYWZybmNlajJiaFA5TEkzaTFtUnlNWmZhSk5IU0FqX0xtd2VuempoTGZXMzNMaDdQNEo5X0M?oc=5)
-- [어쩐지 한국男·일본女 커플 많이 보이더라…'역대급 상황' - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE4xdFRNemRNbzV5ektNd3RlM0xGNUxhNFZ1aExUWEZyN1NyaEY5UmVRSi1JWThwRjlkcVhrUDhyT0cxZ092Wnc?oc=5)
+- [전쟁 덕분에 '신의 한 수' 되나…애물단지 '놀라운 변신' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5uMlNFTjVJQy1reExPaXhUMXkwbjNOUEl4TUpJcEdFQy1feDZ1QzZFWHktYnpKYlo4Y204bTVvbkZTTjVjY2hfejM4ajdDbm8?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
