@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 94 days, 0:03:43
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 94 days, 0:27:31
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,11 +15,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.8% | `████░░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.1% | `████░░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [KB는 굳히기·신한은 재편…금융지주 '비은행 2.0 시대' 경쟁 - 뉴스포스트](https://news.google.com/rss/articles/CBMiakFVX3lxTE1LVmtsZEtOQnZpMTdMT1BvM3NVYjRUcjM2dTd4dE0xSjJGLTlaMmp0bnlTU2hJcE01MURjbk1pRXlTSkp1MV9QbVNKRW5RNnptQ0JTVXljdVdDbUYxSTlYMndEQ2xJLTV3Nnc?oc=5)
+- [신한투자증권, '생산적 금융' 블루북 발간…자본 재배치 방향 제시 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE9jdlNvaGR5dFFmOXJEc3JzQXlrbVc1a25QQ21GQVpCUDBNLTM1QkQ5dUVuMXBST1NhUTlYaVhqMi1fTTIxMzFDdk5fNmhfQQ?oc=5)
 - [어쩐지 한국男·일본女 커플 많이 보이더라…'역대급 상황' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE80ZWw0OVBsSHZCZHpaTk1hZXNrdUdMY2h5UWh6VHlER3RnR2IyYkQzMy1LS0I5T3R1aG9EUGFVdE5LMmp6R2V6cEo1WVYySWc?oc=5)
 
 ---
