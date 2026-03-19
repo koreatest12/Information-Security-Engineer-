@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 94 days, 17:49:56
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 94 days, 19:16:02
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.0% | `████░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.0% | `████░░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [금융지주 회장 연봉 1위 함영주 22억원…은행장은 신한 15억원 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9vYVN5NE9IVFNIemR5d1NZaFp1ZDdTbEJOemFXaW9EZTNXSW12cTF4SzN1Wk1meDZGYnlZQWpSeWpVZG93WEFIVEdvZ0Q1VFJyTlNwMnFUMzRVRVHSAWBBVV95cUxNV29FTXZ4VEM1cHJ6VTZqdEl4RzByVjdLU3lvUXlPdzh6aG1hYWZybmNlajJiaFA5TEkzaTFtUnlNWmZhSk5IU0FqX0xtd2VuempoTGZXMzNMaDdQNEo5X0M?oc=5)
+- [신한투자증권, 신한 프리미어 패스파인더 특화 솔루션 출시 - 스마트투데이](https://news.google.com/rss/articles/CBMiX0FVX3lxTE5faUptaTBTeGtXUFJaVFlWUGRvSHZnUkdUeXRLMFV3RHZQaG96VFFRVWxIN1AtaXBjaFBLUGxDZkRJX0o2cmdSRkVkek1YdG9VS3loYnBHUUJ4LVhoeHgw?oc=5)
 - [한국경제신문, 오늘부터 임직원 ‘주식 단기매매 금지’ 시행 - 미디어오늘](https://news.google.com/rss/articles/CBMicEFVX3lxTE5UY0hQcjFSWjFrN1dMZ1RHVEVIUk9wVjJBMjlLcC12WkF1UkxKWE5MTHRTUnRTYmdwSUVCaV9qRlZQX1hRbjNaRnBpZ3B6anQ2OWQ3eWM0ZmhNdlJjV1BwR2lURW8wclNQQTR6bmwwc2k?oc=5)
 
 ---
