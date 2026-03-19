@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 94 days, 15:57:57
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 94 days, 16:24:56
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,8 +15,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.1% | `████░░░░░░░░░░░` |
+| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [금융지주 회장 연봉 1위 함영주 22억원…은행장은 신한 15억원 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9vYVN5NE9IVFNIemR5d1NZaFp1ZDdTbEJOemFXaW9EZTNXSW12cTF4SzN1Wk1meDZGYnlZQWpSeWpVZG93WEFIVEdvZ0Q1VFJyTlNwMnFUMzRVRVHSAWBBVV95cUxNV29FTXZ4VEM1cHJ6VTZqdEl4RzByVjdLU3lvUXlPdzh6aG1hYWZybmNlajJiaFA5TEkzaTFtUnlNWmZhSk5IU0FqX0xtd2VuempoTGZXMzNMaDdQNEo5X0M?oc=5)
