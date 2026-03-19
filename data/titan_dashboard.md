@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 94 days, 22:34:26
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 94 days, 23:03:39
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.8% | `████░░░░░░░░░░░` |
-| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.3% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한투자증권, 신한 프리미어 패스파인더 특화 솔루션 출시 - 스마트투데이](https://news.google.com/rss/articles/CBMiX0FVX3lxTE5faUptaTBTeGtXUFJaVFlWUGRvSHZnUkdUeXRLMFV3RHZQaG96VFFRVWxIN1AtaXBjaFBLUGxDZkRJX0o2cmdSRkVkek1YdG9VS3loYnBHUUJ4LVhoeHgw?oc=5)
+- [금융지주 회장 연봉 1위 함영주 22억원…은행장은 신한 15억원 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9vYVN5NE9IVFNIemR5d1NZaFp1ZDdTbEJOemFXaW9EZTNXSW12cTF4SzN1Wk1meDZGYnlZQWpSeWpVZG93WEFIVEdvZ0Q1VFJyTlNwMnFUMzRVRVHSAWBBVV95cUxNV29FTXZ4VEM1cHJ6VTZqdEl4RzByVjdLU3lvUXlPdzh6aG1hYWZybmNlajJiaFA5TEkzaTFtUnlNWmZhSk5IU0FqX0xtd2VuempoTGZXMzNMaDdQNEo5X0M?oc=5)
 - ["주민등록만 있으면 누구나"…1인당 10만원 푼다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBUQm95RXhQeTJ3UzdPQmZQWm1qMENnVFIxcTNNekxUVHFXYkREYUdDQXB0OWVyOGRqX0U2RlpGU2hOZGkwSTlrS1BWeWN4eUU?oc=5)
 
 ---
