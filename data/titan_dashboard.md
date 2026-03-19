@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 95 days, 0:26:23
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 95 days, 1:01:39
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.5% | `████░░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.3% | `████░░░░░░░░░░░` |
+| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한, 호주 BESS 사업에 PF…해외 생산적금융 속도 - 서울경제신문](https://news.google.com/rss/articles/CBMiUkFVX3lxTE16cDVmU3lVZjBXQVdrb2gydVRtSG12WnF0V3Mxd0ZPQWxUWmNXUU9uZjQyejVKSWtpaFR5TWJQVXdreVhoQU9iUk9uTkZwMmVIR1HSAVNBVV95cUxQeTB0OWtQUGxoNU5FbEgyaTF5bzcyRXZUS0xsUENyY3c5dWpER1RWNnd2OXdQWUpJeUtkaDNtb2hjanRGVzNRRWRvU3YyY1dYLUw0WQ?oc=5)
+- [금융지주 회장 연봉 1위 함영주 22억원…은행장은 신한 15억원 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9vYVN5NE9IVFNIemR5d1NZaFp1ZDdTbEJOemFXaW9EZTNXSW12cTF4SzN1Wk1meDZGYnlZQWpSeWpVZG93WEFIVEdvZ0Q1VFJyTlNwMnFUMzRVRVHSAWBBVV95cUxNV29FTXZ4VEM1cHJ6VTZqdEl4RzByVjdLU3lvUXlPdzh6aG1hYWZybmNlajJiaFA5TEkzaTFtUnlNWmZhSk5IU0FqX0xtd2VuempoTGZXMzNMaDdQNEo5X0M?oc=5)
 - ["주민등록만 있으면 누구나"…1인당 10만원 푼다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBUQm95RXhQeTJ3UzdPQmZQWm1qMENnVFIxcTNNekxUVHFXYkREYUdDQXB0OWVyOGRqX0U2RlpGU2hOZGkwSTlrS1BWeWN4eUU?oc=5)
 
 ---
