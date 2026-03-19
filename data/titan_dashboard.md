@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 95 days, 5:45:57
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 95 days, 6:14:21
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.3% | `████░░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.1% | `████░░░░░░░░░░░` |
+| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [금융지주 회장 연봉 1위 함영주 22억원…은행장은 신한 15억원 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE9fNzNzMXhFLUJpcVl0ZnBfVGtUQ0t2NUxBdDBtd1ZNcFZmR2JCSnA0T0JKa0hfWkd6UDNZSDN6MFJiNWlraE9RX09XakIxd1ZYUEV3?oc=5)
+- [은행장이 금융지주 회장보다 연봉 많은 까닭은 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE05VVkwNHJ2MS1QN2lkSE9OZktfbVFUZWx6d2RpTzlPRUpuNDljdXZBeG9jMkl3ZldTOWJKTU1ncDFyVHNNVnhqQk82dWxhUXM?oc=5)
 - ["주민등록만 있으면 누구나"…1인당 10만원 푼다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBUQm95RXhQeTJ3UzdPQmZQWm1qMENnVFIxcTNNekxUVHFXYkREYUdDQXB0OWVyOGRqX0U2RlpGU2hOZGkwSTlrS1BWeWN4eUU?oc=5)
 
 ---
