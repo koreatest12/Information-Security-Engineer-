@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 96 days, 7:01:33
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 96 days, 7:31:31
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.3% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.9% | `████░░░░░░░░░░░` |
 | **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [국민연금, 4대 금융지주 의결권 행사… 신한 진옥동 선임 ‘노’, KB 임원 보수 ‘과다’ - 동아일보](https://news.google.com/rss/articles/CBMidkFVX3lxTFBpdHBfSlIySVpGSW00VFRmNGJJRmxfZHBhRnF4OWhIX0hCNTRGQjJya1czOUs3dUxUbmlPcExVU1ROQkJJTk02OU84aUZKbVlQa1l3dGVRNVItUDJpcDJxelpxRl8xZjZEbkxrSWI5UUt1bWZGakHSAWZBVV95cUxOUExEUXg4QVlLNTQ1R25UVlBfcGVkNE9mSkh2SU5oS1RsODQzZFhKQlNGbHpVWWJ5clQ1b094YkROZFpORHBpaW9iOHpOblFQWUdwNkl3ZXloRjh2bUpwNVQ0WHhWbnc?oc=5)
-- ["안 팔길 잘했네"…에너지난 공포에 '신고가' 쓴 종목 [종목+] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9NdUNKWldfcVljamZHM3hEWEQzellOTTdUMHA0OVVDUkhSdkNvaFpuZm4xLTdLN09zemhnaU9iSXpZRUpzdnZtcWE5Vl9GTHM?oc=5)
+- [李 대통령 '언급'에…한국거래소, '50년 룰' 바꾸는 까닭은 - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE1EbGZhdlZtdTVHYl9KcFU4bzZwSHVSVFptejl3MHRiZEVPUEhDaEVQUWF1dFVHUnROVjNxaXRWMlRFaElVOEE?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
