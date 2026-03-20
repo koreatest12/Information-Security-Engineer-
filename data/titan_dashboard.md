@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 96 days, 1:01:44
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 96 days, 1:28:24
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.3% | `█████░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
+| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [국민연금 신한금융 진옥동 사내이사 선임 반대, 우리금융 임종룡 선임은 찬성 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE5mX3dSbnNxRnJZNjdmWWhyUjJXaXRfZVJxdGtpai1Rcm9PeUFUZkpsazRvMG9MeFNaeHhtVVpud2RYMExleWhjdVdGUWF4VldOdV9sSTdzSXNFa2hvbXF1ckJ3WXpKMFpaVFBGcG8xWDVCVWM?oc=5)
+- [신한은행, ‘저축은행 대환전용 대출’로 중·저신용자 돕는다 - 재외동포신문](https://news.google.com/rss/articles/CBMibEFVX3lxTE54Y0JwQjVldTcxeEZHbV82eHdldi1ja2F0c1VwZWJrc3B0b2otR05EY1kwX3BWZ0hlZVNjZ1dEd2lQU0VWVWN3dTJleE13WW54djJHNkg2LTFrN21WbzVNaWtMVHdfWkxSQmUtWg?oc=5)
 - [美 한복판서 난리친 中 로봇…"3명 달라붙어도 통제불능" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9XQzdXdFdfM1VJUjIybjY1akRVMkM2VENDU2MyTTBhNTdRckRvYlIwbW5YWllkWkxUMkhfWi1LYzJnYXF0THlpNmxlWEE1NTA?oc=5)
 
 ---
