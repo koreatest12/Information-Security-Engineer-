@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 96 days, 3:01:00
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 96 days, 3:26:33
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,11 +15,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.1% | `████░░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.2% | `████░░░░░░░░░░░` |
+| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [국민연금 신한금융 진옥동 사내이사 선임 반대, 우리금융 임종룡 선임은 찬성 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE5mX3dSbnNxRnJZNjdmWWhyUjJXaXRfZVJxdGtpai1Rcm9PeUFUZkpsazRvMG9MeFNaeHhtVVpud2RYMExleWhjdVdGUWF4VldOdV9sSTdzSXNFa2hvbXF1ckJ3WXpKMFpaVFBGcG8xWDVCVWM?oc=5)
+- [국민연금, 4대 금융지주 의결권 행사… 신한 진옥동 선임 ‘노’, KB 임원 보수 ‘과다’ - 동아일보](https://news.google.com/rss/articles/CBMidkFVX3lxTFBpdHBfSlIySVpGSW00VFRmNGJJRmxfZHBhRnF4OWhIX0hCNTRGQjJya1czOUs3dUxUbmlPcExVU1ROQkJJTk02OU84aUZKbVlQa1l3dGVRNVItUDJpcDJxelpxRl8xZjZEbkxrSWI5UUt1bWZGakHSAWZBVV95cUxOUExEUXg4QVlLNTQ1R25UVlBfcGVkNE9mSkh2SU5oS1RsODQzZFhKQlNGbHpVWWJ5clQ1b094YkROZFpORHBpaW9iOHpOblFQWUdwNkl3ZXloRjh2bUpwNVQ0WHhWbnc?oc=5)
 - [어쩐지 한국男·일본女 커플 많이 보이더라…'역대급 상황' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE80ZWw0OVBsSHZCZHpaTk1hZXNrdUdMY2h5UWh6VHlER3RnR2IyYkQzMy1LS0I5T3R1aG9EUGFVdE5LMmp6R2V6cEo1WVYySWc?oc=5)
 
 ---
