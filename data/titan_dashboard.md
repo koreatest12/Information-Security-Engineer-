@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 96 days, 4:22:28
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 96 days, 5:03:22
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,8 +15,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.1% | `█████░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.0% | `████░░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [국민연금, 4대 금융지주 의결권 행사… 신한 진옥동 선임 ‘노’, KB 임원 보수 ‘과다’ - 동아일보](https://news.google.com/rss/articles/CBMidkFVX3lxTFBpdHBfSlIySVpGSW00VFRmNGJJRmxfZHBhRnF4OWhIX0hCNTRGQjJya1czOUs3dUxUbmlPcExVU1ROQkJJTk02OU84aUZKbVlQa1l3dGVRNVItUDJpcDJxelpxRl8xZjZEbkxrSWI5UUt1bWZGakHSAWZBVV95cUxOUExEUXg4QVlLNTQ1R25UVlBfcGVkNE9mSkh2SU5oS1RsODQzZFhKQlNGbHpVWWJ5clQ1b094YkROZFpORHBpaW9iOHpOblFQWUdwNkl3ZXloRjh2bUpwNVQ0WHhWbnc?oc=5)
