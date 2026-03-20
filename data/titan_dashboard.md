@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 95 days, 20:49:25
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 95 days, 21:39:30
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.9% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 35.8% | `█████░░░░░░░░░░` |
+| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, '최대 1억' 저축은행 신용대출 대환대출 출시 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9fVjNiT3U2SkpnSVVXUnJ0aXRPU29zel9QeEI1WmI4ZDgwSnN3SVo4QUk2MENwdGxLZEhSanFTUEU5azQwWjNNLVVMeWFZbGFVZUNDUHhtLVkyZ2lQTUVocNIBeEFVX3lxTE5WdWxNWHZSVS1GT1RQSWhMNUNJWjdxWWMzTDJlbkQ3Y2Fmc0FqVU1KcGdZQWE1YXFSUjZYc0xvNzlfdWQySWdsVUdOU2dWaTNEdjk5SHFJbklzUVotM1NVamtkVEx6am1HMWR0eENreHBETXN2VEt5dg?oc=5)
+- [국민연금 신한금융 진옥동 사내이사 선임 반대, 우리금융 임종룡 선임은 찬성 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE5mX3dSbnNxRnJZNjdmWWhyUjJXaXRfZVJxdGtpai1Rcm9PeUFUZkpsazRvMG9MeFNaeHhtVVpud2RYMExleWhjdVdGUWF4VldOdV9sSTdzSXNFa2hvbXF1ckJ3WXpKMFpaVFBGcG8xWDVCVWM?oc=5)
 - ["주민등록만 있으면 누구나"…1인당 10만원 푼다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBUQm95RXhQeTJ3UzdPQmZQWm1qMENnVFIxcTNNekxUVHFXYkREYUdDQXB0OWVyOGRqX0U2RlpGU2hOZGkwSTlrS1BWeWN4eUU?oc=5)
 
 ---
