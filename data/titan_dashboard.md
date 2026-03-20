@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 95 days, 22:03:31
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 95 days, 22:31:33
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.6% | `█████░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.2% | `████░░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [국민연금 신한금융 진옥동 사내이사 선임 반대, 우리금융 임종룡 선임은 찬성 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE5mX3dSbnNxRnJZNjdmWWhyUjJXaXRfZVJxdGtpai1Rcm9PeUFUZkpsazRvMG9MeFNaeHhtVVpud2RYMExleWhjdVdGUWF4VldOdV9sSTdzSXNFa2hvbXF1ckJ3WXpKMFpaVFBGcG8xWDVCVWM?oc=5)
