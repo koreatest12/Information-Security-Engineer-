@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 98 days, 15:21:46
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 98 days, 15:57:45
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.2% | `█████░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.4% | `████░░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [110조 포용금융에 ‘솔선수범’ 더했다 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5hZ2piU25VRkFULV93MjhTVXZjZkxvLUMtSVFmUVRNdFdYbExsM2l2ZVNYczR4dUNsSUx2V2dQYlloaFFIUHpiS3pSWW1jc2c1ajUwcw?oc=5)
-- [[연합뉴스TV 스페셜] 419회: 고환율 비상 한국 경제 향방은? - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBfOFR4REl4LVlzX1BnTC1Yam5wYzNrUHF5OWs2Mm1SOXBuYjY4Vk82ZnVnNGk0SWhaalFtMzJVVmJjbE9qM0hsWkltWHUxZWM?oc=5)
+- [진옥동 신한금융 회장 "뜨거운 증시 속 필요한 건 신뢰" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBpa2NNR0RiX0JYVVA3OG1MbzBLTFlUdVZNdDVJMHZwZFF2cG1xbjZHa3FGSXBLZWloZ3NlNGFtQ3R5VklPRVlXVTJRc1oxZnM?oc=5)
+- [美·이란 전쟁발 대인플레이션(GI) 우려…한국 경제와 증시는 어떻게 되나?[국제경제읽기 한상춘] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9CeXhZWTZwZUtJcjZacnRxSDA0azUzU0dhay1IbVVSVzM5NHg0LWt3Z1dMYVJvNVNxXzIwTUQ1MXNDMnpNbFVVZWthY3NyeU0?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
