@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 98 days, 2:21:13
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 98 days, 2:58:49
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.3% | `████░░░░░░░░░░░` |
-| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.4% | `████░░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[단독]신한, 삼성전자 외화대출 1조 늘렸다 - 서울경제신문](https://news.google.com/rss/articles/CBMiUkFVX3lxTFBwVDZUUXBnbXJzMnU5T1VfVVp0U25abDJOT0M4SXpZQ0hESXJyWG5TTm12cEplV2VkNEUzNEhQdW84SHdPUHFmZFQ4d3ZsTkxDWXfSAVNBVV95cUxNOVhuVTFwTUJWYjNHMUpFdUVVZGpPWk5XYUdhLWJtdHI0Sm11aF9YR2ZjUE9Pb2F2WDRhZkhlSGVmYWlTSHRUaUxVdjc5MF9qZGoxSQ?oc=5)
-- [재경부, 신현송 한은 총재 지명에 '환영' …"韓경제 위상 높일 것" - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1zMG1jMHRJZTJLa0FmdDYxOVZWNk8wUUo1cDZEcmpYNGw2dVB5OTNGRzJyMGcyZGlCRTdVS0VDN0pQUEpnamRadVJoT0NQelJBcHYzMUI1Tl9waEwtN1o3UXYwaUM0NUtvSGlQbTRiZXk?oc=5)
+- ["주가 방치하면 2군 강등"…살생부 뜨자 상한가 뚫은 종목 [노정동의 어쩌다 투자자] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBXZWF4Mlp1Yk5vYjlUWWtJREVlNkF2UC0zRDdzdUprdmJVdjJvbUs1OGZNazBJMllkaDN0dTlGajkxV2xuaV82bF9oeUxISDA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
