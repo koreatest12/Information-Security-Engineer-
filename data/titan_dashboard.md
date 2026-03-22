@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 98 days, 1:24:05
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 98 days, 2:00:16
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.6% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.5% | `████░░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[단독]신한, 삼성전자 외화대출 1조 늘렸다 - 서울경제신문](https://news.google.com/rss/articles/CBMiUkFVX3lxTFBwVDZUUXBnbXJzMnU5T1VfVVp0U25abDJOT0M4SXpZQ0hESXJyWG5TTm12cEplV2VkNEUzNEhQdW84SHdPUHFmZFQ4d3ZsTkxDWXfSAVNBVV95cUxNOVhuVTFwTUJWYjNHMUpFdUVVZGpPWk5XYUdhLWJtdHI0Sm11aF9YR2ZjUE9Pb2F2WDRhZkhlSGVmYWlTSHRUaUxVdjc5MF9qZGoxSQ?oc=5)
-- [[경제 프리즘] 한국경제의 취약성 '가격의 울퉁불퉁함' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBodWtfcXU0bjNpbC1pVDBLbmRCTHBzLWUtQ2FQWWZEUjdlZ3NfN1lEN1FJTC1kZHQ1Vm9RYklURzNGTVFRdW92WDJzYXJtemM?oc=5)
+- [재경부, 신현송 한은 총재 지명에 '환영' …"韓경제 위상 높일 것" - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1zMG1jMHRJZTJLa0FmdDYxOVZWNk8wUUo1cDZEcmpYNGw2dVB5OTNGRzJyMGcyZGlCRTdVS0VDN0pQUEpnamRadVJoT0NQelJBcHYzMUI1Tl9waEwtN1o3UXYwaUM0NUtvSGlQbTRiZXk?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
