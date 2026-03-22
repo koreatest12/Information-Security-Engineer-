@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 97 days, 20:53:22
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 97 days, 21:42:17
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.2% | `████░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.4% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [국민연금, 4대 금융지주 의결권 행사… 신한 진옥동 선임 ‘노’, KB 임원 보수 ‘과다’ - 동아일보](https://news.google.com/rss/articles/CBMidkFVX3lxTFBpdHBfSlIySVpGSW00VFRmNGJJRmxfZHBhRnF4OWhIX0hCNTRGQjJya1czOUs3dUxUbmlPcExVU1ROQkJJTk02OU84aUZKbVlQa1l3dGVRNVItUDJpcDJxelpxRl8xZjZEbkxrSWI5UUt1bWZGakHSAWZBVV95cUxOUExEUXg4QVlLNTQ1R25UVlBfcGVkNE9mSkh2SU5oS1RsODQzZFhKQlNGbHpVWWJ5clQ1b094YkROZFpORHBpaW9iOHpOblFQWUdwNkl3ZXloRjh2bUpwNVQ0WHhWbnc?oc=5)
+- [신한금융, ‘전문성’ 중심 내실 경영 가속화… 특화 설루션 출시 및 이사회 재편 - 데일리스포츠한국](https://news.google.com/rss/articles/CBMie0FVX3lxTE5qeEJfb2xzTGdxYjc4djNtSzVoUnY0MTZ2VUJBM0tvdmpzWXB5bkdaNldLdEdBTkZzaHRMQkJCUklHM1o1bVdyUHRwaUxtcnh0Smp0TmwwVVpzNlplaFJLbGhobUkxQnVER1FqUlljeHFOellNNHJoSnpnNNIBf0FVX3lxTE9ZTENnTEVCd3pzUXhBMThPVFJuekNGSTZoUlFIU3BuUXRBR0NpWHNCdTcta2c2d0tQd1hyclhuczFNcTBUNnRkZ2NoQ0pDZDNBNElxN0NpR1BJWmhuempqMTc0d3NMTGlpY2d0aFV5aTJBaGVRVVk3dkdSTHhwRzg?oc=5)
 - [한국, 일본 제치고 '경제 미래 걱정' 전세계 1위 등극 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9EZGlGODlDVlg4OWt4NmRNcHJPT21IclBkX2FNdk9Lakc5dXdPOHBKdEFfM0s3cEhPczVyUTRUSkFQdnZzRG5xcW4yME5ybHc?oc=5)
 
 ---
