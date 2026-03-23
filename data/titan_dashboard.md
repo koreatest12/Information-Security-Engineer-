@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 99 days, 7:37:06
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 99 days, 8:05:05
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.0% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.2% | `████░░░░░░░░░░░` |
 | **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 데이터센터·에너지·인프라 투자 … 전북 '자본시장 허브' 구축사업도 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBaU1lfblRzaEdSYzRnaFBPYTdSRk1rYkFlZFUwNUtmVlVUOEZ1OGNseXRwMjh3aGdXLXA2UldOckl4ZU94SFpyQnY3M21obzg?oc=5)
-- ['호르무즈 개방' 트럼프 압박에…나토 총장 "한국 포함 22개국 결집" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBYc09yVkM4LXBLQTZERlR1bXhEZHdPbm10TVJvNUtrVmtmQU1Ia2lCNzFzalBOY05IZkNoZk1lcXhOc0xmVkJCVzNzUHp6THM?oc=5)
+- [연료비는 급등하는데 '동결'…한전 '전기료 딜레마' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1ldXQxbUV3TmlOLVMtNGZZOENOZjBKMWJMc1J1YWUzdHYxQS1selpIVUYzYko5QWtmNGwyYnhaTVY5SmRJWWt6ZUs4cTZBVDQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
