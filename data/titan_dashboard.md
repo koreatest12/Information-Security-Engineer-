@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 99 days, 15:24:19
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 99 days, 15:59:37
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.3% | `████░░░░░░░░░░░` |
 | **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 데이터센터·에너지·인프라 투자 … 전북 '자본시장 허브' 구축사업도 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBaU1lfblRzaEdSYzRnaFBPYTdSRk1rYkFlZFUwNUtmVlVUOEZ1OGNseXRwMjh3aGdXLXA2UldOckl4ZU94SFpyQnY3M21obzg?oc=5)
-- ['호르무즈 개방' 트럼프 압박에…나토 총장 "한국 포함 22개국 결집" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBYc09yVkM4LXBLQTZERlR1bXhEZHdPbm10TVJvNUtrVmtmQU1Ia2lCNzFzalBOY05IZkNoZk1lcXhOc0xmVkJCVzNzUHp6THM?oc=5)
+- [공장 줄줄이 '셧다운' 올 수도...이란 전쟁에 걸린 한국 경제 운명 [굿모닝경제] - YTN](https://news.google.com/rss/articles/CBMiXkFVX3lxTE1yM21HWE5JOEJtQWZyeWVKc0JuSmNuU3NqZnpXMDBFVDE1OERMY2gtenlpd3NreklBNUg3dnBhZmZuTkI4dktqd1NsY2NYNTdfeDRuVDBMX1ppdE1YaGc?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
