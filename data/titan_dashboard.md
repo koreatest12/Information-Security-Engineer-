@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 99 days, 2:05:47
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 99 days, 2:36:02
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.8% | `█████░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행, 화목보일러 산불 화재 예방 지원사업 추진 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE9VNUNvd000UVNGZFVrbkN6d1BmVjFsQllhVDhBaVN3T05keVF3eUMtZ0d2RWRyMkRuVjliaTNvQzFBQzFzSmdfMWpZOExCZXdtRkhTOUhfWDBNX1IwNTFlbXlubW9lTG5lUDI5RnhObmxtaWc?oc=5)
