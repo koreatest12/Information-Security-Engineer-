@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 99 days, 12:27:21
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 99 days, 13:00:43
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.6% | `███░░░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 35.4% | `█████░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 데이터센터·에너지·인프라 투자 … 전북 '자본시장 허브' 구축사업도 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBaU1lfblRzaEdSYzRnaFBPYTdSRk1rYkFlZFUwNUtmVlVUOEZ1OGNseXRwMjh3aGdXLXA2UldOckl4ZU94SFpyQnY3M21obzg?oc=5)
-- [한국 경제도 ‘K자형’ 지나 ‘E자형’ 으로 분화 우려 - 문화일보](https://news.google.com/rss/articles/CBMiUEFVX3lxTE12a2hsS1RYYjNrc055S05IZ2N4bU5XRnpsOXVMaHhta1lnc205RGtHcVY0WEZ4S3lmQ1BISC1OMGllTmNpWmpnZnZaWjR3WmYw?oc=5)
+- ['호르무즈 개방' 트럼프 압박에…나토 총장 "한국 포함 22개국 결집" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBYc09yVkM4LXBLQTZERlR1bXhEZHdPbm10TVJvNUtrVmtmQU1Ia2lCNzFzalBOY05IZkNoZk1lcXhOc0xmVkJCVzNzUHp6THM?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
