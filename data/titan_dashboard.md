@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 99 days, 9:04:22
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 99 days, 9:32:54
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.8% | `████░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.0% | `█████░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 데이터센터·에너지·인프라 투자 … 전북 '자본시장 허브' 구축사업도 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBaU1lfblRzaEdSYzRnaFBPYTdSRk1rYkFlZFUwNUtmVlVUOEZ1OGNseXRwMjh3aGdXLXA2UldOckl4ZU94SFpyQnY3M21obzg?oc=5)
-- [3.22.(일) 한국경제(온라인) "미-이란전쟁 장기화에 추경 대폭 확대, '청년일자리 사업' 포함" 기사 등 관련 설명 - 대한민국 정책브리핑](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQWZYelFvT1hOSTljX3FRbkZfdTVzX3V4U0EtZ2xmRVh3Q3c3blkzV0k1eU10STZUX3JnYUxYUkFpQTAySXozbnlDZktJSURQWG1MU3V3SG8wMWJBT1Etd0U3SGhTaTZoQVdYZVBQREJaQ3ExbkJBc1NiU2RkcE9MdVpweGh0ck96?oc=5)
+- ['호르무즈 개방' 트럼프 압박에…나토 총장 "한국 포함 22개국 결집" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBYc09yVkM4LXBLQTZERlR1bXhEZHdPbm10TVJvNUtrVmtmQU1Ia2lCNzFzalBOY05IZkNoZk1lcXhOc0xmVkJCVzNzUHp6THM?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
