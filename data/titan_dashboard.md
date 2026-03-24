@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 100 days, 6:53:18
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 100 days, 7:40:01
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.2% | `████░░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.6% | `████░░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [복지부-신한금융, '그냥드림' 확대…위기가정 지원협력 강화 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE13cnJtYTZPWnJFTHpsTUNnZktNRExUZVM2ZVNPUlZId0V4V1M5NVQzdzJQamQySy01MGNTX3dBeGlRY3QxX0ZneTdvNlU1N2VvRmJOLTVmcjd4Ymg1NW5UNdIBeEFVX3lxTE1rLU5aU3ZPVC02VEtsbE1PUHNMeTRjcnczajRQcWZDZ1RZem8tVmdVNDFyR2VpSVZZeFZaZHBWcHdNemItYTF1NTBrRmRSenM2UVpTZlpGTWh6SUxTM1BkQWFCVUVxWUhvLTJFS2RLVncyc21ZX3hqRg?oc=5)
-- [유로존 3월 PMI 둔화속 물가압박…스태그플레이션 경고음 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9DaXZqVUNRNExULXZtMFo5WEVSZVREN0pyZ1ZLWWFYT3BSd2Q2cmV3NjI4eE9TMGFhTnBUODN6ZzcwRy1ocnVuXzRqeUVrMFU?oc=5)
+- [金총리 “韓 경제 잘 나갔는데 중동 전쟁으로 위기” - 조선일보](https://news.google.com/rss/articles/CBMihwFBVV95cUxQNU03ZnZMQnYzQktqbVZ0ajNJbW1neVF3cXBLcVJyUmV1VXhkeG9LU1dXMlloeVd4RUFQUmNpajU0bGN0ZDFoN3l1U1VJUnF2V29DcU1iUkdLbURLODdHQm1zRUszUDJpWlUxYzRSLS0wV1psWUNrb3BMTXI5R0JPQnNkMnJoNVHSAZsBQVVfeXFMTTJZb3JDMWF0NlUwMlFVOVl0cDlwb3FGUFFNWkFkMUk4d1JpN3hjMVRVSWhySnZpbEpENkdmUlJ5U25SMkpHX2xTNmVaSXU2c2JnaVFUcHJzVFVyYlVHZmNMeWNESjJERHJlZDRvRGhyLUFvb2ZBNGNfYmZDTDJGWXJ6M1YzU190bDd1cVBwdTltLTNkbzJwd09abDA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
