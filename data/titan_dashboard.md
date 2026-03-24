@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 100 days, 0:04:05
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 100 days, 0:28:48
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.1% | `█████░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.0% | `████░░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 데이터센터·에너지·인프라 투자 … 전북 '자본시장 허브' 구축사업도 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBaU1lfblRzaEdSYzRnaFBPYTdSRk1rYkFlZFUwNUtmVlVUOEZ1OGNseXRwMjh3aGdXLXA2UldOckl4ZU94SFpyQnY3M21obzg?oc=5)
+- [복지부-신한금융, '그냥드림' 확대…위기가정 지원협력 강화 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE13cnJtYTZPWnJFTHpsTUNnZktNRExUZVM2ZVNPUlZId0V4V1M5NVQzdzJQamQySy01MGNTX3dBeGlRY3QxX0ZneTdvNlU1N2VvRmJOLTVmcjd4Ymg1NW5UNdIBeEFVX3lxTE1rLU5aU3ZPVC02VEtsbE1PUHNMeTRjcnczajRQcWZDZ1RZem8tVmdVNDFyR2VpSVZZeFZaZHBWcHdNemItYTF1NTBrRmRSenM2UVpTZlpGTWh6SUxTM1BkQWFCVUVxWUhvLTJFS2RLVncyc21ZX3hqRg?oc=5)
 - [살아는 있는데 '얌전한 활어'…상인들 따라갔더니 '경악' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1oWktwaHlXUGNRYjFQRWdaNUFjZ01GY3hRMDBIUThsUks1MFhMM2FOSl80VzhKeEpFOF84UmlaVkdlTkl0Q1NFbzh0d2ttMms?oc=5)
 
 ---
