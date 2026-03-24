@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 99 days, 20:03:57
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 99 days, 20:52:13
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.6% | `████░░░░░░░░░░░` |
-| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.8% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 데이터센터·에너지·인프라 투자 … 전북 '자본시장 허브' 구축사업도 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBaU1lfblRzaEdSYzRnaFBPYTdSRk1rYkFlZFUwNUtmVlVUOEZ1OGNseXRwMjh3aGdXLXA2UldOckl4ZU94SFpyQnY3M21obzg?oc=5)
-- [중동발 공포에 환율·금리 치솟고 주가 급락…한국경제 먹구름 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFBtTGRxekxSLXZacllQRmNDVzBCdHVoQmlSSlNFZV9JOGFBYzY4eUkwM3JRSHFRbXFmbDFzZU5sN2xQUmFTNjgwVmJqWlZtdUY2X1pCbXRES2g5OFnSAWBBVV95cUxOeVBZdTVLcVhtWXRvdWVERXNoeDFzLVN5VVhRYndaRTZReTZiTzdMSUwzT2xGSVIzM1dLREpjODVJVEFOVDVqQ0xkY3VmUzdNRHVCeFVidmVRT1lfMTJBR0s?oc=5)
+- [살아는 있는데 '얌전한 활어'…상인들 따라갔더니 '경악' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1oWktwaHlXUGNRYjFQRWdaNUFjZ01GY3hRMDBIUThsUks1MFhMM2FOSl80VzhKeEpFOF84UmlaVkdlTkl0Q1NFbzh0d2ttMms?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
