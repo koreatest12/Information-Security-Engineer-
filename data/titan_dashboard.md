@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 101 days, 14:01:31
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 101 days, 14:26:00
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.4% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.5% | `████░░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [NC AI, 금융권에도 피지컬 AI 적용…신한금융과 전략적 업무협약 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1GOGZFVHJpTEppdmdWdWVkMTZJNkREOU1YMlRFLTVlY2RDVDNVc3p1VFB3ckRpRFdqdHp2WE5lSWxqQlBTam0wcjJWaVVtalk?oc=5)
+- [NC AI, 신한금융 영업 현장에 피지컬 AI 기술 심는다 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9FUTNUWDZKSENlVkc2UGk3d2tXeHM4Z2JkVUVhRGFiMzduUXEtWTdtTzBLY3FMNlRZZmE5YTFIVnl6ZjVoeVEwMG9rZHFNeUowYWJGaU8xa19QVEk2Z2FtaNIBeEFVX3lxTE9HRTlqSWNlaUc1N3Z5QU1mN1J4NG9rMDhOVzlLcEx6SFJJZW41TlFPb1JxRExianVaUnZFZF9GaldQOHdNV19SYWd6OV9RalQ1U0RuVlhRT1RjSVBNOEJKR0xoNlVXU09qdUlNdDJzZHVaMU9POXIzXw?oc=5)
 - [4대 그룹 사례로 본 한국 경제 '위기극복 DNA' - 아이뉴스24](https://news.google.com/rss/articles/CBMiTEFVX3lxTE5DcHlOTGN1NW5BUnhOa1ZpcXNFMVByVkZJRW5sVmVkYXhPQVktTmhoT2JXa01PTlBJZnBOaW9kRXVCQVVWSGVhZlM4Um8?oc=5)
 
 ---
