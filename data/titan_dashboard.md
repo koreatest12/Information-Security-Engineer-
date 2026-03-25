@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 101 days, 13:01:27
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 101 days, 13:26:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.0% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.4% | `████░░░░░░░░░░░` |
+| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [NC AI, 신한금융 영업 현장에 피지컬 AI 기술 심는다 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9FUTNUWDZKSENlVkc2UGk3d2tXeHM4Z2JkVUVhRGFiMzduUXEtWTdtTzBLY3FMNlRZZmE5YTFIVnl6ZjVoeVEwMG9rZHFNeUowYWJGaU8xa19QVEk2Z2FtaNIBeEFVX3lxTE9HRTlqSWNlaUc1N3Z5QU1mN1J4NG9rMDhOVzlLcEx6SFJJZW41TlFPb1JxRExianVaUnZFZF9GaldQOHdNV19SYWd6OV9RalQ1U0RuVlhRT1RjSVBNOEJKR0xoNlVXU09qdUlNdDJzZHVaMU9POXIzXw?oc=5)
