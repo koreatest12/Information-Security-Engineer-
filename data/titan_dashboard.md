@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 101 days, 3:02:33
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 101 days, 3:31:46
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
-| **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.9% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, '육아휴직 대체인력' 고용 중소기업에 35억 지원 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFB1UWVBM1hCVE84YW55QjdrRldxZlROYmxRTUJTUnpOSmdaVjJPS0dwNlZDR3poUUg1OGcxZTJfV0NRbTBHWWFsRGFRRUZ0dG1KcTJTcWl3dkJiSnBFc0g5NtIBeEFVX3lxTE9lMXM3S2tUM2VUbVk0UEx5eTNTOEZLU254eTZCZWtEQ2RCMDVvcGxpWTMxVGZQeGs0R3ZxRHlmQ3pGY3dyc2JVZFJkQmJXeW1FSVNVTEVxYnh1aGY4bU5aLVhUb2VWeV9TRWhZV09Ta25LUTg4OU41VQ?oc=5)
