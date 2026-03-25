@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 100 days, 20:53:43
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 100 days, 21:45:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.7% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
 | **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, NC AI 손잡고 '피지컬 AI' 도입…영업점 혁신 나선다 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1PMUlZa0RHRmEyV2JpdG5pRDB5blRiVmQ4VzBHUkN2S1Z5NUJpNTNRQm1oQTdWVzdHUmlrVk02T0VrTm5US3g0MEkzMkVlNUExa3o4YXF3SnY3LTkyOFdNZtIBeEFVX3lxTE9nbW5MR0hEUl9NcF9JbndTWDdtQ0Vkbm1od19NZm96RUswT2RtRjVhMUx5VktZa3FGekExOVpWbVJ6VDhIWjJjbVM2alVNV1BXSWlOYy1uU3JiSEdXNGw1MUlxT0plSUhQbm4xV1lKWXRLVHUwakhJbA?oc=5)
+- [신한금융, ‘대체인력 문화확산지원금’으로 중소기업 육아휴직 부담 낮춘다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFB5N1hnUGh5Unk3cWxZTDZ4Tm5FU3lZUDlqUmpWRXY2OG4yaF9PSlBqNU9xTm8tbWtTWWs4T3d2VDc2dlRCWFVndE9janprcTg?oc=5)
 - [靑행사서 사라진 경제단체…연구소는 보고서도 안낸다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5mUTVCWHdaTUpua05YdUhNSng3T2pqWHFxMHA4MmpORDdUcE04RmRRRXIxZEZqSlZ4Q1E1Y3BBUEptd2FaYW1iZFBuSkhub2c?oc=5)
 
 ---
