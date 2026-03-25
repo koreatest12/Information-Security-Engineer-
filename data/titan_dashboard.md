@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 100 days, 23:38:10
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 101 days, 0:04:23
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.0% | `████░░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.6% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, ‘대체인력 문화확산지원금’으로 중소기업 육아휴직 부담 낮춘다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFB5N1hnUGh5Unk3cWxZTDZ4Tm5FU3lZUDlqUmpWRXY2OG4yaF9PSlBqNU9xTm8tbWtTWWs4T3d2VDc2dlRCWFVndE9janprcTg?oc=5)
+- [신한금융, '육아휴직 대체인력' 고용 중소기업에 35억 지원 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFB1UWVBM1hCVE84YW55QjdrRldxZlROYmxRTUJTUnpOSmdaVjJPS0dwNlZDR3poUUg1OGcxZTJfV0NRbTBHWWFsRGFRRUZ0dG1KcTJTcWl3dkJiSnBFc0g5NtIBeEFVX3lxTE9lMXM3S2tUM2VUbVk0UEx5eTNTOEZLU254eTZCZWtEQ2RCMDVvcGxpWTMxVGZQeGs0R3ZxRHlmQ3pGY3dyc2JVZFJkQmJXeW1FSVNVTEVxYnh1aGY4bU5aLVhUb2VWeV9TRWhZV09Ta25LUTg4OU41VQ?oc=5)
 - [4대 그룹 사례로 본 한국 경제 '위기극복 DNA' - 아이뉴스24](https://news.google.com/rss/articles/CBMiTEFVX3lxTE5DcHlOTGN1NW5BUnhOa1ZpcXNFMVByVkZJRW5sVmVkYXhPQVktTmhoT2JXa01PTlBJZnBOaW9kRXVCQVVWSGVhZlM4Um8?oc=5)
 
 ---
