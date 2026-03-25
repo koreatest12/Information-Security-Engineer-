@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 100 days, 16:25:10
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 100 days, 17:13:11
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.8% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.8% | `█████░░░░░░░░░░` |
 | **RAM** | `32.8/512 GB` | 6.4% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [복지부-신한금융, '그냥드림' 확대…위기가정 지원협력 강화 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE13cnJtYTZPWnJFTHpsTUNnZktNRExUZVM2ZVNPUlZId0V4V1M5NVQzdzJQamQySy01MGNTX3dBeGlRY3QxX0ZneTdvNlU1N2VvRmJOLTVmcjd4Ymg1NW5UNdIBeEFVX3lxTE1rLU5aU3ZPVC02VEtsbE1PUHNMeTRjcnczajRQcWZDZ1RZem8tVmdVNDFyR2VpSVZZeFZaZHBWcHdNemItYTF1NTBrRmRSenM2UVpTZlpGTWh6SUxTM1BkQWFCVUVxWUhvLTJFS2RLVncyc21ZX3hqRg?oc=5)
-- ["다시 체질 개선에 나서야"...한국 경제 위기 극복 DNA - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE53VWp0eDVpeUZlSVppMEhsVks4dm92QjBaMUlNN3ZQT3VLWG9nZ0UtT0pmcFdMWWNzeVRqNTFXc1p6QnhUbmZjY3loZ1dFX3c?oc=5)
+- [[금융가 이모저모] "안건 자료만 100페이지"…금융지주의 달라진 주주소통법 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE5WeUxvTVUxYWNtaERVb2pEaVZUeEhnUGxQQktzaFlHVjRTUjZJYWRGaUVEUGRIbi1rT0hYUXQ2WGt1dncxM284bWItUi01dmU5MHE0eFFJdTR3bWQ1TktiSFBpX1FkZUFGcDBXakQ0NW8?oc=5)
+- ['한국서 터졌다'…무명이던 美 위스키, 주류대상 거머쥔 비결 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1oQ3ZRcFpIbWNLMjZvOEt3ZE5NTVpma3Q4ZTE1b0M0c1lZUFBVMFNFakMxZWhGVEZNQ3lqQkl3T1lycUJoVmFmWlQtTGktM2M?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
