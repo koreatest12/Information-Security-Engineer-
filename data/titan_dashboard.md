@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 100 days, 22:09:12
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 100 days, 22:36:19
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.7% | `████░░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.6% | `████░░░░░░░░░░░` |
+| **RAM** | `32.3/512 GB` | 6.3% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, ‘대체인력 문화확산지원금’으로 중소기업 육아휴직 부담 낮춘다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFB5N1hnUGh5Unk3cWxZTDZ4Tm5FU3lZUDlqUmpWRXY2OG4yaF9PSlBqNU9xTm8tbWtTWWs4T3d2VDc2dlRCWFVndE9janprcTg?oc=5)
-- [靑행사서 사라진 경제단체…연구소는 보고서도 안낸다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5mUTVCWHdaTUpua05YdUhNSng3T2pqWHFxMHA4MmpORDdUcE04RmRRRXIxZEZqSlZ4Q1E1Y3BBUEptd2FaYW1iZFBuSkhub2c?oc=5)
+- [4대 그룹 사례로 본 한국 경제 '위기극복 DNA' - 아이뉴스24](https://news.google.com/rss/articles/CBMiTEFVX3lxTE5DcHlOTGN1NW5BUnhOa1ZpcXNFMVByVkZJRW5sVmVkYXhPQVktTmhoT2JXa01PTlBJZnBOaW9kRXVCQVVWSGVhZlM4Um8?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
