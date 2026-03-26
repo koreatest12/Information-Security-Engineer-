@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 102 days, 2:05:25
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 102 days, 2:35:16
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,11 +15,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.8% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 17.3% | `██░░░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한·BNK 수장 연임 안착… 생산적 금융·주주환원 속도 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBjal9fX0RfamwtNHRZN0N5MFJ0Z2NVRkZpWTNlQWJJYmxsbjAxSjdxcUZpNkRDRmRJdFhHd1pkOXJHMUFoQ3VrUjc4LUNZYUU?oc=5)
+- [진옥동 신한금융 회장 연임 확정…"생산적금융, AX·DX 가속"(종합) - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE91aWpEUjFvMXlhckFKdU5BYmh0YkFmTG9TS3JyMDdBZnloX3U1NER1UDlUNjBwSGF5NDRNejZHRGR1VnB4RUd6c2dyTDZtdThxUkhtbDJhUzB1eGtueUI1SNIBeEFVX3lxTE5yai1ncVRkbG8xTGdoMUJwRldxM1h6SjdQOVJtbzJYUkkzZ0FMUmVhQm9qc0NvRHI3clNVZERPbjZNd2t5cERJSmNNM3N0WGhlbkQ0MUhhcGx1RlBIVVozWUczWmJTSW5OZWR5WHBab2FyLW1iRFpNUw?oc=5)
 - [李대통령 말 맞았다…하천·계곡 불법 점용 재조사 깜짝 결과 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5XZzhOd0gwd09hZWx6bU5XWEtWMGd0N0NveWUzc0RUZENtWTYybnVmTndRREFHWXFPRFhaelVINi1TWDQwYnNOTGp6b0wtWXM?oc=5)
 
 ---
