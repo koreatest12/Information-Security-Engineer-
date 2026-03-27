@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 102 days, 23:41:51
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 103 days, 0:06:19
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.4% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.2% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [주주들 압도적 찬성 속 '진옥동號' 2기 출범…"일류(一流) 신한 완성" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1aTFhLY21oY29wUlpFVGRNX3pHU0NJclNyOUI5c1I3dmtQYllFMGZIbHc2b1BCaFkzai0zMmIyNjdEMk9aeVpsYkxiVnprVkk?oc=5)
-- [한국도 '70조' 쏟아붓는다…전세계 '패권 전쟁' 벌어진 곳 - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE9sRktmYlppMHl2SkdMRjRUbnBhTEpkQ3ZiUlNDN3dxVHQ5RFV1T0tlX1NUX0dMN3VBWTBmUUVCeVh0eUlmdVE?oc=5)
+- [진옥동 신한 회장 연임 확정…3년 더 이끈다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBkMlFrcVJzM3FzZUVud0tmaE1ERF9ZQ18yUUZNMHNhcGhYbWIyY200d0pUYXZ3NXpJZE0zajNDLUppS1hhTVFtQnlua0k4eVU?oc=5)
+- ["한국 경제가 복합위기를 건널 키워드는 AI와 초협업" - 아이뉴스24](https://news.google.com/rss/articles/CBMiTEFVX3lxTE1jN1JWeE03QjhWRDJQY2dXSzUxVGpEUzZDcldoNU13S2cxTS1CQ1hudXBLdzM5clZMMFhJY1RLaU54Vm5qckhXV0lNa1Y?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
