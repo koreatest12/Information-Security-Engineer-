@@ -1,18 +1,10 @@
-# 🛡️ 정보보안 기사: 통합 관제 시스템 (v10.7)
+# 📱 Pokémon GO Ops Center (v2026.03.27)
+**Last Sync:** 2026-03-27 09:46:17 (KST)
 
-### 🚀 Ops Server Report (2026.03.27)
-- **Data Points**: 📊 **2** news items collected.
-- **Security Check**: 🔐 `/etc/shadow` Status: **✅ Secure (SHA-512)**
-- **Database**: [Download JSON](./data/daily_intel.json)
-
----
-## 📑 시스템 가동 현황
-| 구분 | 상세 내용 |
-| :--- | :--- |
-| **데이터 수집** | 📂 **2** items |
-| **보안 점검** | ✅ Secure (SHA-512) (Field Analysis) |
-| **빌드 상태** | ✅ Hybrid (Py/Java) Compiled |
-| **동기화** | 2026-03-27 09:05:34 (KST) |
-
----
-> _System v10.7: Automated Security Intelligence_
+## 📅 핵심 이벤트 요약
+- **3/2~6/2**: 대발견: 갸라도스, 단칼빙, 타타륜, 데인차 등 ✨
+- **3/4~3/10**: 전설 레이드: 프리져/파이어/썬더 ✨
+- **3/7~3/9**: 포켓몬 30주년 대집합 이벤트 ⭐️
+- **3/10~3/18**: 전설 레이드: 자시안 ✨ (2188/2735)
+- **3/14**: 3월 커뮤니티 데이: 염버니 ✨⭐️
+- **3/28**: 거다이맥스 피카츄 ✨ 맥스배틀 데이
