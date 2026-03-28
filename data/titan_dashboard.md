@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 104 days, 15:23:11
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 104 days, 15:59:25
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,11 +15,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.4% | `████░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.6% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[금융 CEO] 110조 포용금융에 '솔선수범' 더했다…진옥동 신한금융지주 회장 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vcngzb3B6OV9hbDh6dTZYQ0xmSkpaSjFtUjlLbEplek9iajVWazZQaEMzOUtJN0dfNmJMQ05wUDk4cFpnamtTWERua1Fyd1ZiV0Rr?oc=5)
+- [[금융 CEO] 110조 포용금융에 '솔선수범' 더했다…진옥동 신한금융지주 회장 - news.nate.com](https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vcngzb3B6OV9hbDh6dTZYQ0xmSkpaSjFtUjlLbEplek9iajVWazZQaEMzOUtJN0dfNmJMQ05wUDk4cFpnamtTWERua1Fyd1ZiV0Rr?oc=5)
 - ["한국 경제가 복합위기를 건널 키워드는 AI와 초협업" - 아이뉴스24](https://news.google.com/rss/articles/CBMiTEFVX3lxTE1jN1JWeE03QjhWRDJQY2dXSzUxVGpEUzZDcldoNU13S2cxTS1CQ1hudXBLdzM5clZMMFhJY1RLaU54Vm5qckhXV0lNa1Y?oc=5)
 
 ---
