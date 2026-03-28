@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 103 days, 22:05:11
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 103 days, 22:33:56
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.5% | `█████░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.2% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, '진옥동 2기' 막 올라…비은행 강화·디지털 전환 속도 - newsis.com](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5mZFc4d1Q1NnVNRVVqWjRaNzBBZThMZ3FkOHkzZ1VzV0hQdkNTbGhxZ2ZiOVFnbXFCdExBbHZ4YllmUnZhdHZ2ZG5sN2ZjcXRpQ1ZadzNDSUJyNnFyRVZlOdIBeEFVX3lxTE1kZGJyT1d6TERFbGNNdk82aWJsRzJ2MW1iNUI1OVhDamJyN0xIaC1tcGpnSmFtWllNV2Z6d1ppVEYzRFNidjAtWDViRmlnSHVUUHJDMFh2ZnNYcXhhNlNvLVppaW1DeFZDTzQwNTQxd1ByYXRhdzBJWQ?oc=5)
+- [신한금융, '진옥동 2기' 막 올라…비은행 강화·디지털 전환 속도 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5mZFc4d1Q1NnVNRVVqWjRaNzBBZThMZ3FkOHkzZ1VzV0hQdkNTbGhxZ2ZiOVFnbXFCdExBbHZ4YllmUnZhdHZ2ZG5sN2ZjcXRpQ1ZadzNDSUJyNnFyRVZlOdIBeEFVX3lxTE1kZGJyT1d6TERFbGNNdk82aWJsRzJ2MW1iNUI1OVhDamJyN0xIaC1tcGpnSmFtWllNV2Z6d1ppVEYzRFNidjAtWDViRmlnSHVUUHJDMFh2ZnNYcXhhNlNvLVppaW1DeFZDTzQwNTQxd1ByYXRhdzBJWQ?oc=5)
 - ["한국 경제가 복합위기를 건널 키워드는 AI와 초협업" - 아이뉴스24](https://news.google.com/rss/articles/CBMiTEFVX3lxTE1jN1JWeE03QjhWRDJQY2dXSzUxVGpEUzZDcldoNU13S2cxTS1CQ1hudXBLdzM5clZMMFhJY1RLaU54Vm5qckhXV0lNa1Y?oc=5)
 
 ---
