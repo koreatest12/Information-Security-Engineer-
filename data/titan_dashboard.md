@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 104 days, 15:59:25
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 104 days, 16:26:07
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,18 +8,17 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [FIN_SHINHAN] [이코노 브리핑] 신한금융지주 진옥동 회장 연임 확정 외 - v.daum.net
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.6% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.8% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[금융 CEO] 110조 포용금융에 '솔선수범' 더했다…진옥동 신한금융지주 회장 - news.nate.com](https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vcngzb3B6OV9hbDh6dTZYQ0xmSkpaSjFtUjlLbEplek9iajVWazZQaEMzOUtJN0dfNmJMQ05wUDk4cFpnamtTWERua1Fyd1ZiV0Rr?oc=5)
+- [신한금융, 미소금융재단에 1천억원 추가 출연 - yna.co.kr](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1wTDVnSWRBS05QTmdXT05XN0M4eVJMLVp3RGx3U0g5djZKREVHT2xLUEJnSXE2WUNOdWVOWDZpTHVHN25tbkY0MWJnYnNZR0JnbEF0MHJVa291Z2vSAWBBVV95cUxQQUxtemJtaWRfZk1vd3cxSlUtMEVNQU5uRnk4UlE4dFBhVWpDQ2tzQTl3ZkVxUTcwQ3dMVF9wY0EzMkMtbHo0b3VRQzZTZWNidkNoeld6LTlUN0NSbllNVm4?oc=5)
 - ["한국 경제가 복합위기를 건널 키워드는 AI와 초협업" - 아이뉴스24](https://news.google.com/rss/articles/CBMiTEFVX3lxTE1jN1JWeE03QjhWRDJQY2dXSzUxVGpEUzZDcldoNU13S2cxTS1CQ1hudXBLdzM5clZMMFhJY1RLaU54Vm5qckhXV0lNa1Y?oc=5)
 
 ---
