@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 105 days, 14:22:21
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 105 days, 14:59:58
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.7% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.0% | `█████░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융 ‘진옥동 2기’ 첫 행보⋯미소금융재단 1000억 출연 - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTE9Wc08xQloxREI5ZTBsVlhIa183b1JGQ3duNTZJVmFpaXZCcnBUSkV2UnFzeUhiSlNLYjhfOXZmOHZ3WEtOYnF0WnVLOWdfdmI3MVFSQw?oc=5)
+- [신한금융 '진옥동 2기' 첫 행보…미소금융재단 1000억 출연 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBfSV93WHJfTVU0WEtXcUptelZYblVMQWU4NG8zY3JONG9DRmVuYXdwOFV2aWxvOXFyOERRNEFSYkQ2VnV6SzRSNkU2UXhLeE0wQTQwVXJBVHROVnM4bldPUNIBeEFVX3lxTE1JY3ZGTWVENW16T2N4Q25Qd0drNWFpUWFoWTcxcUdSUUc2ZTVFVzktR09zdEVUZTBNX2Z1ZlQ0TjNwZFNMMjJMeExiQmlJbXFnWF9JdjQ3c2xjTGJWMlhUUkNzVzRVTVJJTWxIMDdCQmlud094VzZ2SA?oc=5)
 - ["한국 경제가 복합위기를 건널 키워드는 AI와 초협업" - 아이뉴스24](https://news.google.com/rss/articles/CBMiTEFVX3lxTE1jN1JWeE03QjhWRDJQY2dXSzUxVGpEUzZDcldoNU13S2cxTS1CQ1hudXBLdzM5clZMMFhJY1RLaU54Vm5qckhXV0lNa1Y?oc=5)
 
 ---
