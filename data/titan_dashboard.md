@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 106 days, 9:03:54
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 106 days, 9:34:46
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.9% | `████░░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.6% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행, 광주에 AI·디지털 교육센터 '학이재' 개관 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFAweHB6RlVIVnFpQnlyZW5zT2pXYV9POGNwVXRJdEpTcHhPY3hkeWhwY1hYSy15bUhZOFlqa1JndTFtVlRRbGlVcUZ4QTRZVFBPUWNZM3Z5Qndud2o5TTJUOdIBeEFVX3lxTFBLQ2d4M1hrV0QyTGZ5eTBtV0pQTmVIYU83MU5jX0xfcHJyYWk4VXF1cEdkQk9hRzJnYjliNUZmU3ltbFhubGJJWFdwaXhCTk5ibUwtOGstclZsVE1CMnQwZnJBVFVMS0dTdTVrQnZsSG9pQXU2clk4UQ?oc=5)
-- [[한경에세이] 우주 산업도 '빨리빨리'가 통할까 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBTRlRNQUNudGN5RHZ5YThEQ2ZWSFh3NWdSdEJRREJ6QVItbkUzajItODlVSFQ4YWp1MDYwMUM3M1k4RkdiZUJMVE9XcUFYMlk?oc=5)
+- [[잇슈 머니] OECD, 한국경제 충격 전망…“중동 사태 직격탄” - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5zS3g1VU9WMExhRU91QVZDZjhuQTNfSEJEOUxIVEppMTU3TlM4NW1kWWhJRlBvOE1JSG1OSzN5TXBSbzJ3Sk5RLWV1MXdZZ2M?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
