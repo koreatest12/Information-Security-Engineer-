@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 106 days, 3:08:23
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 106 days, 3:38:32
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.1% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.5% | `█████░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [자수성가로 꽃피운 ‘금융보국’ 진심… "고국에 희망 전할 것" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE93SjVNOUVEejBjLWIwME1NSWU3azFHVGJscS1veU5vbkFONGlndExuNDRacWp2UHoxSTdBRHd0Rks2cV9FTWt1TFIweHdsNVU?oc=5)
-- [전쟁 장기화에 기름값 '2000원 시대'…한국경제 직격탄 - 뉴스토마토](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9KU3JWMlJzbk5OYWlwVEotbGhGekdWdU00NlVSZFk4ZHJSVXdaa2w3YjF1bVZ3Wms0eWVCVVQ2MDJ1UVlmdGd3LWgtYnM0RTIxTXgwcG1sOW9WdjVOZkVMVA?oc=5)
+- [삼성전자·하이닉스 던진 고수들…"지금은 이걸 사라" 뭉칫돈 [마켓PRO] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9ONlZSSG9JLUhrNHdiVFlXMEtYakE2cGJCSGQ5eURZaHoyMU11cVBPS0lrOXkwWDAwWnY1cl8xXzZwbVZVM0FURDZWZGgtdzg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
