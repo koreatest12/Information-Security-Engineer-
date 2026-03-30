@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 105 days, 22:49:00
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 105 days, 23:47:19
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.9% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.6% | `████░░░░░░░░░░░` |
 | **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, ‘학이재 광주’ 열고 지역 금융교육 강화 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTFAzdWN4eWVGN19Jd2llX2V4eTB2THlVX05FWVQtM29fRlJiNzZYbDRJY3hLNm55NDU5V2E2R3ZfRFdKdjlGTzhhTlNVSTk2TVlNYnMzd0hBVHdUc1BkUXhmSW1FeWUyTk5FSjBHZ1lnbGpGaUU?oc=5)
+- [신한은행, 광주에 금융 복합 교육센터 '신한 학이재' 개관 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE1uZmZpekNjakJ4UnVNMnVUa0VNWVVfRG5uQWxkQlhqNVE5QlpndzZJZWlDNFQ0TUg2bG5lX1U1d2pnN2tDMWgwcjRfX1RiQQ?oc=5)
 - ["한국 경제가 복합위기를 건널 키워드는 AI와 초협업" - 아이뉴스24](https://news.google.com/rss/articles/CBMiTEFVX3lxTE1jN1JWeE03QjhWRDJQY2dXSzUxVGpEUzZDcldoNU13S2cxTS1CQ1hudXBLdzM5clZMMFhJY1RLaU54Vm5qckhXV0lNa1Y?oc=5)
 
 ---
