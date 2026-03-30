@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 105 days, 21:58:54
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 105 days, 22:49:00
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 20.3% | `███░░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.9% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [진옥동 신한금융 회장 "산업 미래 보고 길 열어야"…'선구안 팀' 신설 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1LbUdQUHJ6eGZqU1lNSUUyVmFldnJNY0tJcnJYT0pGZ3FwZmloV2x5SHQ4SHpDWVdWd1dGYWdzbzhtZHJOc2tpSHNsVnpIVEk2cXVYcTFMZGNjbVNDV1ZxQ9IBeEFVX3lxTE45T0VFcnpkZHZSdTZ6SlhfUDlNQ1YwUzNxZ0VjVGItV3pvUFRJNmhsTUpta2Y1WThWYmxfQ1RJTklPNVBaQ3hTTFNNUzUzNEtfaEM4LS05cnBVclJ4bnFhc21RT0NhMmZfZ1RjNFAtbEFMSXdscTlJMw?oc=5)
+- [신한은행, ‘학이재 광주’ 열고 지역 금융교육 강화 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTFAzdWN4eWVGN19Jd2llX2V4eTB2THlVX05FWVQtM29fRlJiNzZYbDRJY3hLNm55NDU5V2E2R3ZfRFdKdjlGTzhhTlNVSTk2TVlNYnMzd0hBVHdUc1BkUXhmSW1FeWUyTk5FSjBHZ1lnbGpGaUU?oc=5)
 - ["한국 경제가 복합위기를 건널 키워드는 AI와 초협업" - 아이뉴스24](https://news.google.com/rss/articles/CBMiTEFVX3lxTE1jN1JWeE03QjhWRDJQY2dXSzUxVGpEUzZDcldoNU13S2cxTS1CQ1hudXBLdzM5clZMMFhJY1RLaU54Vm5qckhXV0lNa1Y?oc=5)
 
 ---
