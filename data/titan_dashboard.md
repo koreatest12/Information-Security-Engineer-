@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 106 days, 1:14:52
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 106 days, 1:49:23
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.8% | `████░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.3% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 광주에 ‘신한 학이재’로 AI·디지털 정보격차 해소 추진 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9KMW42VXMzcDFyTExkb18tR2tRMUVPeVZJTEZmSTNlR183MlQwWVRuUFN1WERua0ZVVS1wT2drRUJKRll4U0NkRzlnX3U2Nk0?oc=5)
+- [신한은행, 지역 금융교육 강화…AI·디지털 '학이재 광주' 개관 - 뉴스1](https://news.google.com/rss/articles/CBMiYkFVX3lxTE5FRlFpcGdXWWJtUVU1Z1E1aW91ZWVNQUZUNUtQdEE3V1U0X0VEQWIwa3o4a09KZHZneEVLSlVOX0d4U3ZRMEJ1WW1VdGp3T0QyLTRjc1NNdWN6eGQ3VURrM2hR?oc=5)
 - [[잇슈 머니] OECD, 한국경제 충격 전망…“중동 사태 직격탄” - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5zS3g1VU9WMExhRU91QVZDZjhuQTNfSEJEOUxIVEppMTU3TlM4NW1kWWhJRlBvOE1JSG1OSzN5TXBSbzJ3Sk5RLWV1MXdZZ2M?oc=5)
 
 ---
