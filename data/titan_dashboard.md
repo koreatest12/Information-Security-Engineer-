@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 106 days, 19:17:02
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 106 days, 20:20:37
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.3% | `█████░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.8% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 동계올림픽 메달 쾌거 격려 - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTFBUN3Etdi1YU0NwakNZSHd0YWdaY1l6R2t1bDZJTkowdE5TQmZRY2I3Tzd1ckFUNmVDQzhsV09FR1dCM1dBSFAxQUg1cnFOQ2gtS1ZMV0tORjRneHcwVElRTEZRb3hSUFJtdGRQekZfQTVXSjTSAXdBVV95cUxNSHFuWjZfZXVadFNvdEJLZVhLY2lYa1EyMXJMeUl3aEVyd01qSjFQX2pnVUkxbkRMLXMzTmZaV3BVUVZCaVpWMmZtVmJKVmxuTXR5bVNyblpVOWpRWkVlMExtQVRMNWE2NWU2NGN1aldRcFhnN3dfTQ?oc=5)
-- [[경제][현장영상+] "한국 경제 가장 큰 리스크, 단기적으로 중동 사태" - YTN](https://news.google.com/rss/articles/CBMib0FVX3lxTE9qN2lzMElSWEpMMVg1S1ppV1hvb3dVemxTYnVDVURIcFJPbnlrejh6QmZJRVlmOHItc0hsZTExTTBMQ3NBN3d4Vk1QLVJUS092Z0dqa1hsZXd2U3lmbUxCdXJZWVBjVWxPbHFDTHFPbw?oc=5)
+- [신한금융, 동계올림픽 메달리스트 초청행사 - 문화일보](https://news.google.com/rss/articles/CBMiUEFVX3lxTE42eE5CZDF6di1fenlnN2FmcUpVd21RcVY5LXIzTmRTOE55ek1WcFRqOGFUUEFVbERiTUt6bWl4eGVQUzRyLU1DTFYwUlRtalRy?oc=5)
+- [신현송 한은 총재 후보자 “한국 경제 가장 큰 리스크는 중동 사태” - 조선일보](https://news.google.com/rss/articles/CBMijgFBVV95cUxNZUE4cGFVU1ZTSWtwN2pSSk54SlB6ZWlCNTZCeFBnV290M0gwdlNzUEJzV25kYjE3TW92bTBCbnB4SlE5V1c0RGZlTFY0TDJlZTBEa05KRnJnUTRuQ292U3ItVnZzalRIV3hNNlB3S0stNElkeUs2UWRiOXk4QUR4SWhObnRFUm9WRlNNc3FR0gGiAUFVX3lxTFBEdmhyRm02NzRxZ2dHbTlWQzN6QmRCZlZBMXUyY1lQTFU0WFVvSGtLSVlMOUFIbHA0eUVzUGtJYk9CSW5zWHhhUzZ1S3hIRjc5dWZtN2VIUHQ2eXdxV28zbE1KNHByT3kyd2p6MFM4WmVMQW54Mzl0MU9IRXhBclFIelBoTnMyS3NwM0UxZHU5LUZUUGFfTDk2dHNUbXZGYmJndw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
