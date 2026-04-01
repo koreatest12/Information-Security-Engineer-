@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 107 days, 23:20:17
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 108 days, 0:18:06
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.7% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.1% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 한은과 예금토큰 활성화 맞손…토큰으로 ‘땡겨요’ 배달시킨다 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE1rLXlEY1N0YXA1NTdZOUQ3SFA4ZFFYd1JiM0dmWGhLN0lHU3JndE1qbTJtcU16Y1pmNlVOZGVZUFhya1dEZXJFME9FNnFtN0dJSHR2aDhBeG8wZ0hzdnV3OU1lSXJYQnlvc1BfMmlma2V4dGs?oc=5)
+- [[크립토Now] 신한금융·한은, '예금토큰' 협약…땡겨요·보험 등 활용 실험 - 매일경제TV](https://news.google.com/rss/articles/CBMiaEFVX3lxTE5weEhMY2xtUDJER0xMM3dqTDQ3NDg4dk1VYVRDV3RQSVA5RnFrWXpjZ3FOQ1FmdGo0bXIwSmxiNmlzQ3JZQXJEdkpVNHZiWTlva012Y1hWbVVEZVZHeUc5SjlsMDU3eGF6?oc=5)
 - ['세계 최대' 노르웨이 '큰손' 쓸어담은 한국 주식 뭐길래 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5mSWVqTWg0cW1BYW83WkVvbXhjaWVOVWY0NkZ3eFhha05iZmJtdlFwZ3ZnN0VNeU1RNTZvcmN0eDFfT3VOQ19POFdoSDZKeDA?oc=5)
 
 ---
