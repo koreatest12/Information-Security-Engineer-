@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 108 days, 4:30:03
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 108 days, 5:04:49
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.8% | `████░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 23.8% | `███░░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[크립토Now] 신한금융·한은, '예금토큰' 협약…땡겨요·보험 등 활용 실험 - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE96YzlTR2U3OW42NTY0OGlPU29ZVVdyTTR2RTFrcmtoRHFCRE1OMFBXV1NYUEVZWDAyMHptTGg4M2NnZE9YZEtnWi1lY2pnRDZzWEE?oc=5)
-- ['세계 최대' 노르웨이 '큰손' 쓸어담은 한국 주식 뭐길래 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5mSWVqTWg0cW1BYW83WkVvbXhjaWVOVWY0NkZ3eFhha05iZmJtdlFwZ3ZnN0VNeU1RNTZvcmN0eDFfT3VOQ19POFdoSDZKeDA?oc=5)
+- [그리스 선박, 네 번째 호르무즈 통과…한국 선박은 언제쯤? - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9WbzhXSzM3a2ljMm1MZGhBbmVWVjcyRDUya2FVczVQWk5Jb1NXdEh2UXJNZHVsWUJ2WXhQR2hWQ2pqcEhsS0kycVZUWVJVNWs?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
