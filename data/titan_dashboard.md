@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 108 days, 6:26:27
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 108 days, 7:10:17
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.2% | `█████░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 10.2% | `█░░░░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융희망재단, 인천 서구에 공동육아나눔터 ‘신한꿈도담터’ 225호점 오픈 - 경기일보](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5xWGN4ZjNVVXFXQmkxbTNhcWJOaVVWeF9rMlVpcUxGUklkUFBhNzBjeGZuQ0g0aTYta2lZUjBsMHlUQmpOTi1DcEJZU3VoSzJ4dkdUOHluTGtCYTA?oc=5)
-- [그리스 선박, 네 번째 호르무즈 통과…한국 선박은 언제쯤? - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9WbzhXSzM3a2ljMm1MZGhBbmVWVjcyRDUya2FVczVQWk5Jb1NXdEh2UXJNZHVsWUJ2WXhQR2hWQ2pqcEhsS0kycVZUWVJVNWs?oc=5)
+- [신한금융 "탄소중립 실천 확산"…의류 기부 캠페인 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9SUUJsSlA3eGp0aWtTdGpoS2RaY0h3dUJGelNWTXJGVlJ4Y3dKdVF0MUtXZ2tKR3dPRzdYLVNyUlZ5RHJ0ZlJVNU94LU5PZHZNUWZNUW05VXUyeXdld0dQdNIBeEFVX3lxTFAzd2FKZEFVdVFpVG55X2FDNERyUVBoWDdKeFZHTjQ2VTlYNDRkRjMzWEZzMWlyWW9pOWtWSXh3N1hIZ2dNU0M1a2RWNjc5Q2FJU0FCNmpSSDhrSlIyU1NfX1hfYVh2RlVONjJpSGp1UU1ZWUVnTndfSw?oc=5)
+- [1.5L짜리 초대형 '양동이 커피' 선보여… 대용량 공식 깨지나 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFAzWTc5N1g2NThvR2VrTUJvaEZZZnpKR3hnNWhDWXFSSWxGR0ZBR0cwMVlDR3lnLXROejF2OHFnQTVnb2tqTmw3MXN0ZXNET0U?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
