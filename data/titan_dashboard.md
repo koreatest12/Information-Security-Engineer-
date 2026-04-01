@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 108 days, 2:08:35
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 108 days, 2:37:12
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.4% | `█████░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.4% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[크립토Now] 신한금융·한은, '예금토큰' 협약…땡겨요·보험 등 활용 실험 - 매일경제TV](https://news.google.com/rss/articles/CBMiaEFVX3lxTE5weEhMY2xtUDJER0xMM3dqTDQ3NDg4dk1VYVRDV3RQSVA5RnFrWXpjZ3FOQ1FmdGo0bXIwSmxiNmlzQ3JZQXJEdkpVNHZiWTlva012Y1hWbVVEZVZHeUc5SjlsMDU3eGF6?oc=5)
-- [삼전·닉스도 안심 못한다…"한국이 가장 취약" 직격탄 경고 [테크로그] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9maDJRVExFd1Vqamh1MUdvN3ZERldXTFg3em5uakxOWnRkZ3ZJM3dJQ2Roc3o1LUl4MVJRZVdsR1d5QWt2VXpyeG5OVVctNkk?oc=5)
+- [신한금융희망재단, 인천 서구에 ‘꿈도담터’ 225호점 개소 - 기호일보](https://news.google.com/rss/articles/CBMib0FVX3lxTFBBd0xzMjFIX2wxMTR6M01CbnlubmdKTlBjdnVrYTFUTjkwY3NEejQ2ZG13QnlVN0xmS1J6Tl9hMHJxY185NHFBUVNybzgxZkhzal9LZzZsWlZnekFWQ18yRDFpUDU5TnJhRF91Ujl4MA?oc=5)
+- ['세계 최대' 노르웨이 '큰손' 쓸어담은 한국 주식 뭐길래 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5mSWVqTWg0cW1BYW83WkVvbXhjaWVOVWY0NkZ3eFhha05iZmJtdlFwZ3ZnN0VNeU1RNTZvcmN0eDFfT3VOQ19POFdoSDZKeDA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
