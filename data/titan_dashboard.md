@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 108 days, 5:04:49
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 108 days, 5:47:16
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 23.8% | `███░░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.7% | `████░░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[크립토Now] 신한금융·한은, '예금토큰' 협약…땡겨요·보험 등 활용 실험 - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE96YzlTR2U3OW42NTY0OGlPU29ZVVdyTTR2RTFrcmtoRHFCRE1OMFBXV1NYUEVZWDAyMHptTGg4M2NnZE9YZEtnWi1lY2pnRDZzWEE?oc=5)
+- [신한금융 "탄소중립 실천 확산"…의류 기부 캠페인 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9SUUJsSlA3eGp0aWtTdGpoS2RaY0h3dUJGelNWTXJGVlJ4Y3dKdVF0MUtXZ2tKR3dPRzdYLVNyUlZ5RHJ0ZlJVNU94LU5PZHZNUWZNUW05VXUyeXdld0dQdNIBeEFVX3lxTFAzd2FKZEFVdVFpVG55X2FDNERyUVBoWDdKeFZHTjQ2VTlYNDRkRjMzWEZzMWlyWW9pOWtWSXh3N1hIZ2dNU0M1a2RWNjc5Q2FJU0FCNmpSSDhrSlIyU1NfX1hfYVh2RlVONjJpSGp1UU1ZWUVnTndfSw?oc=5)
 - [그리스 선박, 네 번째 호르무즈 통과…한국 선박은 언제쯤? - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9WbzhXSzM3a2ljMm1MZGhBbmVWVjcyRDUya2FVczVQWk5Jb1NXdEh2UXJNZHVsWUJ2WXhQR2hWQ2pqcEhsS0kycVZUWVJVNWs?oc=5)
 
 ---
