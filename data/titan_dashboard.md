@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 109 days, 4:29:48
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 109 days, 5:04:10
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,11 +15,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.4% | `████░░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.9% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[현장] 신한금융 '기업ERP와 은행 결합' 큰 첫걸음, 진옥동 "기업금융 한계 넘는다" - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE9OaUp6LWJ3emNuc2gxTGE1MTd6RHhfVUFsU1JVVktEZjM2OXA4em9Bdk5yWUtIREo5Qk5qV2dMY3pLWks4WWNNT2toMVFHNllybWc4TjU0dWVha2RrdGFzck9BbWFmV1l4Zk5EOXUyWGtiZDQ?oc=5)
+- [더존비즈온 안은 EQT파트너스 연다예, 신한금융과 돈돈한 관계 이어간다 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE9DbzJtb0ZHeGZLSWNXSUZXUUdZM2ZDZnVoTGtSVTQyYTZyY2FVdFczM3FRQnY3LUJ3OEYzdTFyQXB1bGx4UHQ3SnRrOXRLZjhOcGtsNXV6eTFHWURsSGROWnpIOTJEY3lpck5obFRRSWZDaFU?oc=5)
 - [한국, 전쟁 뚫고 '130조 잭팟' 터진 비결은…'초유의 상황' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5EUkJiUHRRSU93UG8tU0w4a09rRTYza3NZSVN1eE1iTGx3VHhYOVFNUXY4TDdkWlhtMmxFbDl4b2N3TlBDNW5veEpNeE5NaFk?oc=5)
 
 ---
