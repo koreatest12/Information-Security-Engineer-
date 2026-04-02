@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 109 days, 8:34:44
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 109 days, 9:03:53
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,19 +8,18 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [KR_ECON] 한국, 전쟁 뚫고 '130조 잭팟' 터진 비결은…'초유의 상황' - v.daum.net
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.4% | `█████░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.9% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[현장] 신한금융 '기업ERP와 은행 결합' 큰 첫걸음, 진옥동 "기업금융 한계 넘는 ERP뱅킹" - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE9OaUp6LWJ3emNuc2gxTGE1MTd6RHhfVUFsU1JVVktEZjM2OXA4em9Bdk5yWUtIREo5Qk5qV2dMY3pLWks4WWNNT2toMVFHNllybWc4TjU0dWVha2RrdGFzck9BbWFmV1l4Zk5EOXUyWGtiZDQ?oc=5)
-- [한국, 전쟁 뚫고 '130조 잭팟' 터진 비결은…'초유의 상황' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5EUkJiUHRRSU93UG8tU0w4a09rRTYza3NZSVN1eE1iTGx3VHhYOVFNUXY4TDdkWlhtMmxFbDl4b2N3TlBDNW5veEpNeE5NaFk?oc=5)
+- ["무료배송 접어야 할 판"…중동 전쟁에 '밥상물가' 난리난 이유 [중동발 나비효과③] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5XenhBbjBiN2R0aks3R1ZCcWlrdmJFd1FpdDNUV3pxQWk0cDdkS0tOa3NuNjZ3T2JUZm04OUJRVjFjRmZGTUtoYl9PbXQxeFU?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
