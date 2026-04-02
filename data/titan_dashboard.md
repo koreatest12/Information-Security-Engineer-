@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 109 days, 0:10:32
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 109 days, 0:35:08
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,11 +15,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.9% | `█████░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.5% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융 "탄소중립 실천 확산"…의류 기부 캠페인 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9SUUJsSlA3eGp0aWtTdGpoS2RaY0h3dUJGelNWTXJGVlJ4Y3dKdVF0MUtXZ2tKR3dPRzdYLVNyUlZ5RHJ0ZlJVNU94LU5PZHZNUWZNUW05VXUyeXdld0dQdNIBeEFVX3lxTFAzd2FKZEFVdVFpVG55X2FDNERyUVBoWDdKeFZHTjQ2VTlYNDRkRjMzWEZzMWlyWW9pOWtWSXh3N1hIZ2dNU0M1a2RWNjc5Q2FJU0FCNmpSSDhrSlIyU1NfX1hfYVh2RlVONjJpSGp1UU1ZWUVnTndfSw?oc=5)
+- [[현장] 신한금융 '기업ERP와 은행 결합' 큰 첫걸음, 진옥동 "기업금융 한계 넘는다" - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE9OaUp6LWJ3emNuc2gxTGE1MTd6RHhfVUFsU1JVVktEZjM2OXA4em9Bdk5yWUtIREo5Qk5qV2dMY3pLWks4WWNNT2toMVFHNllybWc4TjU0dWVha2RrdGFzck9BbWFmV1l4Zk5EOXUyWGtiZDQ?oc=5)
 - [한국, 전쟁 뚫고 '130조 잭팟' 터진 비결은…'초유의 상황' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5EUkJiUHRRSU93UG8tU0w4a09rRTYza3NZSVN1eE1iTGx3VHhYOVFNUXY4TDdkWlhtMmxFbDl4b2N3TlBDNW5veEpNeE5NaFk?oc=5)
 
 ---
