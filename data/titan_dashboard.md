@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 109 days, 12:26:13
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 109 days, 13:00:42
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.5% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 36.9% | `█████░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[현장] 신한금융 '기업ERP와 은행 결합' 큰 첫걸음, 진옥동 "기업금융 한계 넘는 ERP뱅킹" - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE9OaUp6LWJ3emNuc2gxTGE1MTd6RHhfVUFsU1JVVktEZjM2OXA4em9Bdk5yWUtIREo5Qk5qV2dMY3pLWks4WWNNT2toMVFHNllybWc4TjU0dWVha2RrdGFzck9BbWFmV1l4Zk5EOXUyWGtiZDQ?oc=5)
+- [“디지털자산·AI 주도”...인재 ‘폭풍 영입’ 나선 신한 - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE83SUdqdzRXMFp2eTNaRU5zcmx5UTFuUGx5S0ZuT1RmanJFVFpKeGFvUEZvUmFTMXNfOTJySmVpTFFKUmFLU1FlWE9SS1k5X0N6UUHSAVNBVV95cUxNNUlJcUNZWVdxWXVGMk9iV3pLc2lUU3RPZzQtcDdacE1uNlJsdkpvaDMzRFhHU1F2cG9XYndFQlgwdUlpM1VDYld3TlFIWjlFYmEtNA?oc=5)
 - ["무료배송 접어야 할 판"…중동 전쟁에 '밥상물가' 난리난 이유 [중동발 나비효과③] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5XenhBbjBiN2R0aks3R1ZCcWlrdmJFd1FpdDNUV3pxQWk0cDdkS0tOa3NuNjZ3T2JUZm04OUJRVjFjRmZGTUtoYl9PbXQxeFU?oc=5)
 
 ---
