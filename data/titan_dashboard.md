@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 109 days, 22:38:29
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 109 days, 23:08:46
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.5% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.2% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, Visa와 AI·디지털자산 등 미래금융 맞손 - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBycGdVZFhpejhhQU1ybVBYNkF0dTZmQ0ZKempVUDN5bFRTTkdiWTI0Y0pDWS10cHNnRHlrY0s2NW5QWi1zU1ZFSGpoM1lOWWN6UjRmcg?oc=5)
-- [졸지에 '안전자산' 된 中 국채…美·日 제치고 '몸값' 뛰었다 [차이나 워치] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE4zTkhMdW9mR29GZmtXTmJ1ZDhNNGRTUW9QcGZMV0hIQUZHUHVWWU1DV2VvUjVUZkRIcDZxUmpZazk5Mk1PSU41RldyOTZMeXc?oc=5)
+- [신한금융, 안동 산불 피해지에 3만8000평 규모 '복원 숲' 조성 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE9ia3dpTDFnQUczZkpQdTF5QWNOSFlUZ1lmT0c5Rnk4Z1gxeHZHUk1XMmhNWXlTdGx1NDFCNlVnWkFaNnVDbGlDN1FyeTFPZw?oc=5)
+- ["반세기 만의 최악 물가 재현 가능성"...한국 경제 치명타 [이슈톺] - YTN](https://news.google.com/rss/articles/CBMiXkFVX3lxTFBrR3BuTFFiUUxFa29DQkNkN3RPOEZMQ0p0RHVGeGJZRmhwVmRDdGVUX09BOXBieGFWT3JjVGh0aDlJYXIxamdDY1JXMWtUQlZEdlEwclBrRGNZd0hmTmc?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
