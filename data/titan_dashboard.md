@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 110 days, 3:02:14
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 110 days, 3:30:54
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,10 +15,10 @@
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
 | **CPU** | `128 vCores` | 29.3% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 안동 산불 피해지에 3만8000평 규모 '복원 숲' 조성 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE9ia3dpTDFnQUczZkpQdTF5QWNOSFlUZ1lmT0c5Rnk4Z1gxeHZHUk1XMmhNWXlTdGx1NDFCNlVnWkFaNnVDbGlDN1FyeTFPZw?oc=5)
+- [진옥동 신한금융 회장, 비자그룹 경영진과 AX 협업 논의 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFAteVQ0VXJTaUpEbVlMbkUtQ2gzRUF3SGRJYlpvTDNjejZ6UDdnNVg4UU5QVFNsWlNlLWVxUm5PMC13WWh6anFCdnczNDRDVGtvWTU0b1dVRXBtcFlMTTNia9IBeEFVX3lxTE90NlVhZ1RybW43Y2JlQWsyQUFoRm51SzIzMDB2VGdBczQtWElZTm9CM2hJWTJNVXFwZkRFYjVLU0FmUVE4V1BrbFZRRFpCRl9qWVRnYjZUWXU0ZV9sQ2dZUFdJVUhzcUM3TVFsa0huTmd2UUpTV2hBRQ?oc=5)
 - [[단독] "이제 박스값도 올라요"…전쟁 쇼크에 '초비상' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9qcHN0ZjhqUTFKOG5na0tVZHJHd1BJcDQ5azhfNU53N3BwUE9uSXQzY0hXcmdPNmpoYlY1M2xUYzBVeC1VMEQ4U0lJVE9MVzA?oc=5)
 
 ---
