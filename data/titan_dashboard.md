@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 110 days, 8:01:00
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 110 days, 8:26:18
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.2% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.3% | `█████░░░░░░░░░░` |
 | **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [진옥동 신한금융 회장, 비자그룹 경영진과 AX 협업 논의 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFAteVQ0VXJTaUpEbVlMbkUtQ2gzRUF3SGRJYlpvTDNjejZ6UDdnNVg4UU5QVFNsWlNlLWVxUm5PMC13WWh6anFCdnczNDRDVGtvWTU0b1dVRXBtcFlMTTNia9IBeEFVX3lxTE90NlVhZ1RybW43Y2JlQWsyQUFoRm51SzIzMDB2VGdBczQtWElZTm9CM2hJWTJNVXFwZkRFYjVLU0FmUVE4V1BrbFZRRFpCRl9qWVRnYjZUWXU0ZV9sQ2dZUFdJVUhzcUM3TVFsa0huTmd2UUpTV2hBRQ?oc=5)
-- ['공매도 지긋지긋하다' 눈뜨고 당했는데…속 터지는 개미들 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1yNXJ2VHpTQjJjVXJlSmdscExRVTB4UUdKWlBDalhtQzdnTUxfZVFGY1paMlRSMHNreTJEV1luLXh3S2VSZTBBV3pWNE1SemM?oc=5)
+- [진옥동 신한금융 회장, 비자그룹 경영진과 AX 협업 논의 - newsis.com](https://news.google.com/rss/articles/CBMiYEFVX3lxTFAteVQ0VXJTaUpEbVlMbkUtQ2gzRUF3SGRJYlpvTDNjejZ6UDdnNVg4UU5QVFNsWlNlLWVxUm5PMC13WWh6anFCdnczNDRDVGtvWTU0b1dVRXBtcFlMTTNia9IBeEFVX3lxTE90NlVhZ1RybW43Y2JlQWsyQUFoRm51SzIzMDB2VGdBczQtWElZTm9CM2hJWTJNVXFwZkRFYjVLU0FmUVE4V1BrbFZRRFpCRl9qWVRnYjZUWXU0ZV9sQ2dZUFdJVUhzcUM3TVFsa0huTmd2UUpTV2hBRQ?oc=5)
+- [전쟁 터지자…"삼전, 지금 팔아도 이득" 1억주 매도한 외국인 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9hWVUzWjUzZklsbVBaRlNWYzBscUdPdWxhVENOV3RrMC1rMjIxekpOODBnZDl0bVZ0ZUtrUl82ekFzeHNqM3ZlUHJfTmFmc00?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
