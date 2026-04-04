@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 111 days, 5:02:56
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 111 days, 5:39:23
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.4% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.4% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [진옥동 신한금융 회장, 비자그룹 경영진과 AX 협업 논의 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFAteVQ0VXJTaUpEbVlMbkUtQ2gzRUF3SGRJYlpvTDNjejZ6UDdnNVg4UU5QVFNsWlNlLWVxUm5PMC13WWh6anFCdnczNDRDVGtvWTU0b1dVRXBtcFlMTTNia9IBeEFVX3lxTE90NlVhZ1RybW43Y2JlQWsyQUFoRm51SzIzMDB2VGdBczQtWElZTm9CM2hJWTJNVXFwZkRFYjVLU0FmUVE4V1BrbFZRRFpCRl9qWVRnYjZUWXU0ZV9sQ2dZUFdJVUhzcUM3TVFsa0huTmd2UUpTV2hBRQ?oc=5)
-- ['엔비디아가 찜했다'…15조 벌어들인 글로벌 냉각 1위 회사 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9fdWh5WUF4UjlCM0owTXJYUlA2bGJMaUZXM2FMZWpjWTJ4MkxBbHR5T2NoV2hKcDR3T0VYUS1lRXBfck53N1AyUFZ6Y1Y0NUU?oc=5)
+- [신한금융, 안동 산불 피해지에 3만8000평 규모 '복원 숲' 조성 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE9ia3dpTDFnQUczZkpQdTF5QWNOSFlUZ1lmT0c5Rnk4Z1gxeHZHUk1XMmhNWXlTdGx1NDFCNlVnWkFaNnVDbGlDN1FyeTFPZw?oc=5)
+- ["모르면 돈 날릴 뻔"…꼼꼼한 주주들 '세폭 폭탄' 피하는 법 [세테크] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1mTVlURms4MXhaWndLX2RCNDd4NFVpdDV1MGVWQVZqZDZwWTAwLTdlZVFpZ0lEZnVZbHZaY2lBUExlMGpnX1VScWpNLVlZQm8?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
