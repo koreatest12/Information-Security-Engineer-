@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 111 days, 17:20:24
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 111 days, 18:32:59
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.2% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.0% | `████░░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융-Visa, AX·디지털 자산 협력 강화 - etnews.com](https://news.google.com/rss/articles/CBMiTkFVX3lxTE5DejdSQmVtMEswUWdOUnNYY1Qwc3NSemwzN3g1NXV3TUNZRTZwVnFrZjBSV05SWEhrbFlZeUxGOW8xR2tTWjMxcVVXTnl0QQ?oc=5)
+- [신한금융-Visa, AX·디지털 자산 협력 강화 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE5DejdSQmVtMEswUWdOUnNYY1Qwc3NSemwzN3g1NXV3TUNZRTZwVnFrZjBSV05SWEhrbFlZeUxGOW8xR2tTWjMxcVVXTnl0QQ?oc=5)
 - [비행기 타면 통로 자리 선호했는데…전문가 충격 경고 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9PYUpORW4wRFNCR0ZJbHo5T0dhVnU3NUJyRGJaTjFkdE5DYUwyQWZaam1ld0hhaERzODdHQ2VYSnBkdHp5bDE1TkhaOE95aGM?oc=5)
 
 ---
