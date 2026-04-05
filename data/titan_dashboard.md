@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 112 days, 1:02:07
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 112 days, 1:29:55
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.0% | `█████░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.6% | `█████░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [비자 그룹 경영진 만난 진옥동 회장…"AX·디지털 자산 협력 확대" - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE1jOGRxeE9CZmtMOW5qcTJmb0l2NWM5djhWb2xudG52bGFtdndDeUxIcXY1VGJUczNtNkhhTVA1UW4wWE1mbTFqZDFxbjR1TFRpWERj?oc=5)
+- [신한금융 비자와 미래 금융 협력 논의, 진옥동 "금융 환경 변화 선제적 대응" - businesspost.co.kr](https://news.google.com/rss/articles/CBMic0FVX3lxTE5JZEMxT29aOVJxV0ZSNkN1ZFAzSjRmdDN4ODZHMUtGY0wzNm5MMGpjRkRvQ3E5djlGWGV6M0JrTGloZU1hemFKd2ctQzlNZDF0QlY4VmJhTHZLcnBJS0NmRW12MlpzeWJDdk14LUhfaUo1Tmc?oc=5)
 - ["한국이 최우선, 제일 먼저 주겠다"…중동 6개국 '깜짝 선언' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE80bzdfV1JUcVZERkVKRGx3WUtUVnZLUlJtZmFDTm94Tm5OS0VRdnhkWGNUcktxOTJla1I3WFZhSDBKcHVRSFBxLWhHYnBPSDg?oc=5)
 
 ---
