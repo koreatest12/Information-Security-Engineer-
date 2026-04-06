@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 112 days, 21:58:48
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 112 days, 22:48:59
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.3% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.9% | `████░░░░░░░░░░░` |
 | **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 금융권 최초 자율보안 관리체계 도입 - marketin.edaily.co.kr](https://news.google.com/rss/articles/CBMic0FVX3lxTFBwSHNYVVdjQW1sZ0cyekZoTFhVb0tmSExIT2Q1OHg1ZVU1eE5Fc0tOR0dsd2MzM2VfVjRfNF9sSko0cjU5ZENUZnpXa1dTaWVBdGV2YUNHXzYyRmZ0QkxHRUtXR0lnSmVfQ0VXbURuZTFmclk?oc=5)
+- [신한금융, 금융권 첫 '자율보안 관리 체계' 도입 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1lTml1azN5YnZEQl9FR0FTNU9vMXI4NHJlTlZlM0xiZHFGVHVrVkxndzY0YkR1SGljV2lleWZjRXhLVlVQVFhlSGQ0YVQ4bG9DZnRXZTl3U1l6X3FpWkdDRtIBeEFVX3lxTFBUa0tfSGhta2F0WUhyMGwzakJzVmJwMHcydmhSQV9QSzFJTFlxZXZ3U09EeVJiM0JpN2xqRkk5M25ZbzI0bEZ5eU5JNmF1ZnlCTE41RkQ1cURLVWdqZVVLcWpCSDNvRjZpZzRQc1RaVzN4LXNHQWJvTA?oc=5)
 - ["한국에 최우선 공급하겠다"…중동 6개국 '깜짝 선언' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE80bzdfV1JUcVZERkVKRGx3WUtUVnZLUlJtZmFDTm94Tm5OS0VRdnhkWGNUcktxOTJla1I3WFZhSDBKcHVRSFBxLWhHYnBPSDg?oc=5)
 
 ---
