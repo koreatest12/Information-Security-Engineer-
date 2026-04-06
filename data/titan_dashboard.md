@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 112 days, 21:11:13
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 112 days, 21:58:48
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,18 +8,17 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [FIN_SHINHAN] [더밸류 브리핑] 신한 소식…신한투자증권· 신한자산운용 - 더밸류뉴스
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.9% | `████░░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.3% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 금융권 최초 '금융보안 수준진단 프레임워크' 현장 적용 - 뉴스1](https://news.google.com/rss/articles/CBMiYkFVX3lxTE4xWGx3TnduTmlMSjdIb25ZSFBrYXptcHZ2NWxqMjB4eXNkVlNTRVdDQmZENFVEaVo3aHB1UnVZR2NtNmdtVEhuNWI4Ulh1UmV2Z3hPdlRnZ0lOOWV4b1NBbTRR?oc=5)
+- [신한금융, 금융권 최초 자율보안 관리체계 도입 - marketin.edaily.co.kr](https://news.google.com/rss/articles/CBMic0FVX3lxTFBwSHNYVVdjQW1sZ0cyekZoTFhVb0tmSExIT2Q1OHg1ZVU1eE5Fc0tOR0dsd2MzM2VfVjRfNF9sSko0cjU5ZENUZnpXa1dTaWVBdGV2YUNHXzYyRmZ0QkxHRUtXR0lnSmVfQ0VXbURuZTFmclk?oc=5)
 - ["한국에 최우선 공급하겠다"…중동 6개국 '깜짝 선언' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE80bzdfV1JUcVZERkVKRGx3WUtUVnZLUlJtZmFDTm94Tm5OS0VRdnhkWGNUcktxOTJla1I3WFZhSDBKcHVRSFBxLWhHYnBPSDg?oc=5)
 
 ---
