@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 115 days, 15:01:18
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 115 days, 15:29:28
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.1% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.3% | `█████░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 주요 자회사 이사회에 '소비자보호위원회' 신설 - newsis.com](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9QajY3dHliQW11Z003R3M2bTRmWlA4YUxYTU5rRGlRQnQtbFY4d00zU2JzTndDaDZST2JQRlFubDJMWTZubXo5Zlg4dG0zT3dJRlI3TEVSSFBwdThhX012QdIBeEFVX3lxTE9EbVVsS0J0ZnoxXzlDOEtCYndLMWNaR0FhN2t5YjlESjFObEV4RE1OX1NiNVRLb0RfUkNZRFVLZUpWQVB5Vlp3VE53SVhLOEFQOEI0TU5nbDhKMnZ4dmhxM3BlTnphOTNSeXk0ZWx4cmc2ZnBKNnZVLQ?oc=5)
-- ["이쯤에서 하차"…'상위 1%' 고수들, SK하이닉스 팔고 향한 곳 [마켓PRO] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1wR1NtNFkyYUd5VWI4ZlpsV3Zza0hyOWpjSUJoUmwwYjhqbTRCaVNkMEVnTVJRMTQyTV9FOHNDemh2NURRbUhDUXhzR0Q4bmc?oc=5)
+- [신한금융, 주요 자회사 이사회에 '소비자보호위원회' 신설 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9QajY3dHliQW11Z003R3M2bTRmWlA4YUxYTU5rRGlRQnQtbFY4d00zU2JzTndDaDZST2JQRlFubDJMWTZubXo5Zlg4dG0zT3dJRlI3TEVSSFBwdThhX012QdIBeEFVX3lxTE9EbVVsS0J0ZnoxXzlDOEtCYndLMWNaR0FhN2t5YjlESjFObEV4RE1OX1NiNVRLb0RfUkNZRFVLZUpWQVB5Vlp3VE53SVhLOEFQOEI0TU5nbDhKMnZ4dmhxM3BlTnphOTNSeXk0ZWx4cmc2ZnBKNnZVLQ?oc=5)
+- ['불안한 휴전' 우려 속 6000피 넘보는 코스피 [오늘장 미리보기] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5uY3hnbXdkcF9kU1FfalZUWGg2WUgtWHhpbHB6aHItcWxTTU1ObWRCR2ZMTGF0TXFWWmJ4di1QeWx4UmJEbTRYaXVhRElwVDA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
