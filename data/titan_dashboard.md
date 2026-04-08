@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 114 days, 23:53:29
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 115 days, 0:39:20
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.1% | `████░░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.1% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 주요 자회사 이사회에 '소비자보호위원회' 신설 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9QajY3dHliQW11Z003R3M2bTRmWlA4YUxYTU5rRGlRQnQtbFY4d00zU2JzTndDaDZST2JQRlFubDJMWTZubXo5Zlg4dG0zT3dJRlI3TEVSSFBwdThhX012QdIBeEFVX3lxTE9EbVVsS0J0ZnoxXzlDOEtCYndLMWNaR0FhN2t5YjlESjFObEV4RE1OX1NiNVRLb0RfUkNZRFVLZUpWQVB5Vlp3VE53SVhLOEFQOEI0TU5nbDhKMnZ4dmhxM3BlTnphOTNSeXk0ZWx4cmc2ZnBKNnZVLQ?oc=5)
+- [[단독] "AML 힘 빼고 영업 올인"…신한은행 영업압박에 'ELS 악몽' 재현 우려 - 네이트](https://news.google.com/rss/articles/CBMieEFVX3lxTE1EYXNjcjBlY0RweVlLMkt1R0wtbF82SDZ1ZS1rWWRURHFoUkNwUkVlaUxaQzFSMjk5RmFpN3ZQSlpWbXcxSnpCLUN3aVRVeTFNRmJRUzJoTkVSQVNlS21Zb3hQMG1zS3ZMQk9sX01aVnJkQ2NESjRIbQ?oc=5)
 - ["한국에 최우선 공급하겠다"…중동 6개국 '깜짝 선언' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE80bzdfV1JUcVZERkVKRGx3WUtUVnZLUlJtZmFDTm94Tm5OS0VRdnhkWGNUcktxOTJla1I3WFZhSDBKcHVRSFBxLWhHYnBPSDg?oc=5)
 
 ---
