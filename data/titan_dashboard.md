@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 115 days, 9:39:47
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 115 days, 10:07:43
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.3% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 25.9% | `███░░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행 '땡겨요'에 하나은행 '먹깨비' 손잡고 도전장 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE5NWDFxWlc2T3ZyUm9oWVZDRUxmYUJ4dUo1Tnh2MDIyLUJJYW52N1NJRUhUUjhBX3JOVC1wbjQ4NFNLeFFXUEJUU3p4RGJNOU8xSmxv?oc=5)
+- [신한금융, 주요 자회사 이사회에 '소비자보호위원회' 신설 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9QajY3dHliQW11Z003R3M2bTRmWlA4YUxYTU5rRGlRQnQtbFY4d00zU2JzTndDaDZST2JQRlFubDJMWTZubXo5Zlg4dG0zT3dJRlI3TEVSSFBwdThhX012QdIBeEFVX3lxTE9EbVVsS0J0ZnoxXzlDOEtCYndLMWNaR0FhN2t5YjlESjFObEV4RE1OX1NiNVRLb0RfUkNZRFVLZUpWQVB5Vlp3VE53SVhLOEFQOEI0TU5nbDhKMnZ4dmhxM3BlTnphOTNSeXk0ZWx4cmc2ZnBKNnZVLQ?oc=5)
 - ["한국에 최우선 공급하겠다"…중동 6개국 '깜짝 선언' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE80bzdfV1JUcVZERkVKRGx3WUtUVnZLUlJtZmFDTm94Tm5OS0VRdnhkWGNUcktxOTJla1I3WFZhSDBKcHVRSFBxLWhHYnBPSDg?oc=5)
 
 ---
