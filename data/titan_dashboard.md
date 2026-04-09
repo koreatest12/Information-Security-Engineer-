@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 115 days, 17:09:47
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 115 days, 17:49:15
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.8% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 35.5% | `█████░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [진옥동 "ROE 해법은 생산적 금융"…주주서한서 '기업대출 전환' 강조 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1Nb243aEdhMlpOQlFYc1IzRjZPcUF5djZXU0Rld1h4cHZIYklNalV4QUg0cU9UXzVoay12SHVXSjVYeTNYN3J4T3FoNVVJRmV3UE1JeDZieTR0RTIwVkU5YUxHNm8xS0o1cEpITUg3a24?oc=5)
+- [진옥동 신한금융 회장 "생산적 금융으로 ROE 제고…'지속 가능한 서사' 쓸 것" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1vTTl0RzVodi1ZbGhxOWJmeFM2MGhsQjRsbkNoWDBoc0s0b3FDT3BOTEM4Y3VPWkM2RlJ1eGVUMlhQdXE3MEhGakdVWk1zMGs?oc=5)
 - ["이쯤에서 하차"…'상위 1%' 고수들, SK하이닉스 팔고 향한 곳 [마켓PRO] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1wR1NtNFkyYUd5VWI4ZlpsV3Zza0hyOWpjSUJoUmwwYjhqbTRCaVNkMEVnTVJRMTQyTV9FOHNDemh2NURRbUhDUXhzR0Q4bmc?oc=5)
 
 ---
