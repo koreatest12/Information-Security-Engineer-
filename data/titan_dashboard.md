@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 116 days, 13:02:40
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 116 days, 13:31:02
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.5% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.7% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [진옥동 신한금융 회장 "생산적금융으로 경제 활력...ROE 개선 기회" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFByemY2V05NVHMybWF2RXBJZmRCR2RaUnFmcU1FMG13VXNkVzd4TWd0VXdBdmdIX1dNejQ2RU4tRWxPWE9qdTVTYWU1NHd6Z28?oc=5)
-- [홍라희, 삼성전자 1500만주 판다…5년 걸친 상속세 납부 마침표 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBnSDJmUmswcEhlemRWdFg0VzlzZ1kzVVRWWGtKZlFHXzY3eW16YzR1RUdRdHJKMnBQeWx1UHdERkNWalFjdE12ZDlycjBBeDQ?oc=5)
+- [마약 집행유예 중 음주운전으로 시속 182km 밟은 아이돌 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE51akxmMEJYeWJlTFRMZFg5T0lIem9PbmNDbzhVbmIwb1ktdFlvMm1qVmxQZGctM3Z3NTV4UlBCRWYyTUhubWh2NFJjelcyR2c?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
