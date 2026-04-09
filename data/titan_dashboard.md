@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 115 days, 17:49:15
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 115 days, 19:16:38
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.5% | `█████░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.4% | `████░░░░░░░░░░░` |
+| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [진옥동 신한금융 회장 "생산적 금융으로 ROE 제고…'지속 가능한 서사' 쓸 것" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1vTTl0RzVodi1ZbGhxOWJmeFM2MGhsQjRsbkNoWDBoc0s0b3FDT3BOTEM4Y3VPWkM2RlJ1eGVUMlhQdXE3MEhGakdVWk1zMGs?oc=5)
-- ["이쯤에서 하차"…'상위 1%' 고수들, SK하이닉스 팔고 향한 곳 [마켓PRO] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1wR1NtNFkyYUd5VWI4ZlpsV3Zza0hyOWpjSUJoUmwwYjhqbTRCaVNkMEVnTVJRMTQyTV9FOHNDemh2NURRbUhDUXhzR0Q4bmc?oc=5)
+- [진옥동 신한금융 회장 "밸류업 2.0·생산적 금융 적극 추진" - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE01MGdtM0xtd2tUcXJ2LVo5ZF9QRW1GNzJkVEQ0b25yTkZGczd1djkwTmRLb1VPd0J1b2FqU2lZOVowbnFJTUI0SHk0OERjTXFrREJyRVEwUi10TkR5OE1fVw?oc=5)
+- [곽튜브 아내 공무원인데…'2500만원' 조리원 협찬 논란 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE83WDRKZlBLMnA0LUhCblF4ZGtuUXpXTWRwVXpOQmQ4dXh0QkYwYURrQU9nZ0VIcXBndHdKSWNzX3YyamExRVFxUWF3SXJmaEU?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
