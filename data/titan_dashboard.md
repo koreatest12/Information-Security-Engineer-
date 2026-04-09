@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 116 days, 5:07:10
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 116 days, 5:47:58
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.4% | `█████░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.2% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한증권, 전주 국민연금공단사무소 개소 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9tVWRaM2tZQ1MtNi1pV2M5NjExa3c3RU1oWWtzX2J2Y1MzWmthbGZaZWJQNG1NSURxa1lKT3dkNUhpcW5zRWJfSmVaMFhkZ0xxX0hBSlplOXRlZExwN25ERtIBeEFVX3lxTE1EdlpIamNlZVpSb2xSMTB6MkxLQ0x5Y0Fsc1dsa2FydEVqWVRyc0RhNmRNTkVjWTVIQjd0UkhNTUp3OXVIeUpQdTdyLUZSQTVfal9PNHpHNnZJdTQxb3FZdk5HeXhtRWNWNF9WRHNZdl9GVThlSzR3VQ?oc=5)
+- [신한은행-현대건설, 압구정 재건축에 '주거 결합형 자산관리' 도입 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE8taTVaM1NvbklocnJEbllJZGJ5MDlBcU05YVJuTUV5bUZ2NHhqVE5RTC1WbnQzZTdUYnJVekVjQVc5Q1ZZQnNnYUVDdS10dw?oc=5)
 - [곽튜브 아내 공무원인데…'2500만원' 조리원 협찬 논란 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE83WDRKZlBLMnA0LUhCblF4ZGtuUXpXTWRwVXpOQmQ4dXh0QkYwYURrQU9nZ0VIcXBndHdKSWNzX3YyamExRVFxUWF3SXJmaEU?oc=5)
 
 ---
