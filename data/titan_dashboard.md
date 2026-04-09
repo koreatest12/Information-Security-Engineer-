@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 116 days, 0:44:40
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 116 days, 1:11:11
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.8% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행-현대건설, 압구정 재건축에 '주거 결합형 자산관리' 도입 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE8taTVaM1NvbklocnJEbllJZGJ5MDlBcU05YVJuTUV5bUZ2NHhqVE5RTC1WbnQzZTdUYnJVekVjQVc5Q1ZZQnNnYUVDdS10dw?oc=5)
-- [홍라희, 삼성전자 1500만주 판다…5년 걸친 상속세 납부 마침표 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBnSDJmUmswcEhlemRWdFg0VzlzZ1kzVVRWWGtKZlFHXzY3eW16YzR1RUdRdHJKMnBQeWx1UHdERkNWalFjdE12ZDlycjBBeDQ?oc=5)
+- ["이쯤에서 하차"…'상위 1%' 고수들, SK하이닉스 팔고 향한 곳 [마켓PRO] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1wR1NtNFkyYUd5VWI4ZlpsV3Zza0hyOWpjSUJoUmwwYjhqbTRCaVNkMEVnTVJRMTQyTV9FOHNDemh2NURRbUhDUXhzR0Q4bmc?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
