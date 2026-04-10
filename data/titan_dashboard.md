@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 116 days, 16:28:57
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 116 days, 17:18:55
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 41.0% | `██████░░░░░░░░░` |
+| **CPU** | `128 vCores` | 25.6% | `███░░░░░░░░░░░░` |
 | **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [진옥동 신한금융 회장, ‘주주가치 제고’ 주주서한 발송 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9kNDVuOGZacXNta0VHU051N2FSZFdEei10eFFaYWo0TXFVbmZTZ0o3Mmh4M0U5TTJWUXlHc01LRzFfX3VkdUR3bS1TZ21HRm1YN0hfMnpDRVA5Zw?oc=5)
-- [마약 집행유예 중 음주운전으로 시속 182km 밟은 아이돌 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE51akxmMEJYeWJlTFRMZFg5T0lIem9PbmNDbzhVbmIwb1ktdFlvMm1qVmxQZGctM3Z3NTV4UlBCRWYyTUhubWh2NFJjelcyR2c?oc=5)
+- [신한은행, 현대건설과 주거 결합형 자산관리 모델 선봬 - 부산일보](https://news.google.com/rss/articles/CBMidEFVX3lxTE5zTjJOVkRXSU5Ia1ZTc25uTVlmak1sekRsbENwUGp2Q3lDOEJhbGp4T3VqNXkzNlFyTXVFUnpEekJBOU1zLU1iMWs1LTNKckhiSHliNDNHRmF4MTJ1SHZvYy0zNkVrRUZMckRpSS02SGlKb1ZF?oc=5)
+- [[그래픽] 주요 기관 2026년 한국 경제성장률 전망 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5uT2FNS0FGaHBnTXg3LUZHbXItSkR1azktTV9EeHNkV0hqNkNMazNWbkJObFRLRmVYZ0JVY3g0LTlSY0o4SkhaRER6X2RVZVU?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
