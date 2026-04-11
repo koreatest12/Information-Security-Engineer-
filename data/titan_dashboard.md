@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 117 days, 17:15:36
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 117 days, 17:55:02
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.9% | `█████░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.6% | `█████░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [진옥동 신한금융 회장, ‘주주가치 제고’ 주주서한 발송 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9kNDVuOGZacXNta0VHU051N2FSZFdEei10eFFaYWo0TXFVbmZTZ0o3Mmh4M0U5TTJWUXlHc01LRzFfX3VkdUR3bS1TZ21HRm1YN0hfMnpDRVA5Zw?oc=5)
+- ['진옥동號' 신한금융, 'ROE 10%' 정조준…자본시장서 '해답' 찾는다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9IVldhZk1Oc2d3dUFwT19La2prYTNBVFFqSWRBMmRReHM0UklxU0VWNl9YUmlEQTJJaUxHNFRIYXNka1FUV29kN3M2dnJDc1U?oc=5)
 - [중국보다 20% 싼데…"한국 안 가면 손해" 소리까지 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE4tSWY2V0ZBNjROZHZBT1BJSlkxM0FpMW9YMm9QZGZkM3ZLN1RscWw2WjVGTWxmcmQ4dEtrMzgxOE5hVDNSRVp0QmNIX1A1Vlk?oc=5)
 
 ---
