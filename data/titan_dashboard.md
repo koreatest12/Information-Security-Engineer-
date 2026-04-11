@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 118 days, 1:02:34
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 118 days, 1:30:12
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.2% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 35.5% | `█████░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- ['진옥동號' 신한금융, 'ROE 10%' 정조준…자본시장서 '해답' 찾는다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9IVldhZk1Oc2d3dUFwT19La2prYTNBVFFqSWRBMmRReHM0UklxU0VWNl9YUmlEQTJJaUxHNFRIYXNka1FUV29kN3M2dnJDc1U?oc=5)
+- [신한증권, 전주 국민연금공단사무소 개소 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9tVWRaM2tZQ1MtNi1pV2M5NjExa3c3RU1oWWtzX2J2Y1MzWmthbGZaZWJQNG1NSURxa1lKT3dkNUhpcW5zRWJfSmVaMFhkZ0xxX0hBSlplOXRlZExwN25ERtIBeEFVX3lxTE1EdlpIamNlZVpSb2xSMTB6MkxLQ0x5Y0Fsc1dsa2FydEVqWVRyc0RhNmRNTkVjWTVIQjd0UkhNTUp3OXVIeUpQdTdyLUZSQTVfal9PNHpHNnZJdTQxb3FZdk5HeXhtRWNWNF9WRHNZdl9GVThlSzR3VQ?oc=5)
 - [중국보다 20% 싼데…"한국 안 가면 손해" 소리까지 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE4tSWY2V0ZBNjROZHZBT1BJSlkxM0FpMW9YMm9QZGZkM3ZLN1RscWw2WjVGTWxmcmQ4dEtrMzgxOE5hVDNSRVp0QmNIX1A1Vlk?oc=5)
 
 ---
