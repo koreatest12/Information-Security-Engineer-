@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 119 days, 5:42:08
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 119 days, 6:07:15
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.7% | `█████░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.9% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융 “3000피 회귀 가능성 낮아...장기투자 필요” - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5LLW1hQ01GWWhsQS1nSHM4SThWQ0ZSX1VFMHZOck9hVHR6R0luWVNlVXk5dVh2ZEhYTmlXUVpHZXhmVkFZZDMtVFdkbTl2VDVvRHfSAVNBVV95cUxPcG01WVlyLXJkRVd4eVRqcEJKMTVkRVdvaFdtN1pabktaMDRQZ1F6Vng3amh2RXRPc2JaWHlJb2VRd2NWMExWeEtlWnVELUI5UUZzWQ?oc=5)
-- [주주 행동주의 대응법 알려드립니다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ORlNhcVNEOE1TeE9fWEZCTjMxQWdZOFhIdUNoMmg4TlZfMEJjTE43b0Nld3ZBRmRITm5xWENESE5BT2dqLWdLYzM1cVd6RElNYlc2cVM0NFNBUdIBVEFVX3lxTFBBcjNnek56VnRtdy0tY0phQ3N2ZnNYOEd6VkR2ZWM1cVU5S1NvRnZRaGpSODlDOG1MZnRCRzZIVUpubU0xd19VeHFKWkI1eERDam5ORQ?oc=5)
+- [소득 하위 70% 1인당 10~60만원…건보료 커트라인은 '아직' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFAwU2RwRTRWMUtvcDlCT0pJOV9fZXFPY3hCSktNQUZ4aW5Cb2V5NDU1cXE0Tk4zWGVmb1lzdGZkSF9CckhBOVdOR3JaU2dhVTQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
