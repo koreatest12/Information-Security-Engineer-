@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 119 days, 0:31:17
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 119 days, 1:02:28
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.9% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.8% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융 “3000피 회귀 가능성 낮아...장기투자 필요” - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5LLW1hQ01GWWhsQS1nSHM4SThWQ0ZSX1VFMHZOck9hVHR6R0luWVNlVXk5dVh2ZEhYTmlXUVpHZXhmVkFZZDMtVFdkbTl2VDVvRHfSAVNBVV95cUxPcG01WVlyLXJkRVd4eVRqcEJKMTVkRVdvaFdtN1pabktaMDRQZ1F6Vng3amh2RXRPc2JaWHlJb2VRd2NWMExWeEtlWnVELUI5UUZzWQ?oc=5)
-- ['칩플레이션' 때문에…노트북 100만원↑, 게임기까지 '도미노 인상' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UX2ZacWRVSkl5Nkl6QXRwWWlNX184YlN5d0lPa1F5MVFic1g4WWFWQW9yU1RWSlBBVFNMaDdlaG9mTmpmR1hPOFdOZXZaRmNCbkV4c08xZGptd9IBVEFVX3lxTE9ReUs0ZlhyZEJ0RWRqcHBnYzdLVVNwM0ZROElLNDNsTlM5cHIyV2tJczYxaVZKeFg5dEF2dDZOTXJWMkNMNS12TnVOalpJMkszVG9WRA?oc=5)
+- ["1만원은 비싸요" 절레절레…2030 빠진 '생존 필수템' 뭐길래 [권용훈의 장바구니 물가] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBaSVZRN21UOUpVS2NMQUtZc0hMMzVKVGZfRE5Dakh4ZXpLdksyVmlEZ1BXNXV3TkRQQTVYSllwdTcyYUlJZFRZcFBxUDJ3eEk?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
