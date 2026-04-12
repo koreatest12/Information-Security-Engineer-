@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 119 days, 7:01:20
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 119 days, 7:28:36
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.4% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.9% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융 “3000피 회귀 가능성 낮아...장기투자 필요” - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5LLW1hQ01GWWhsQS1nSHM4SThWQ0ZSX1VFMHZOck9hVHR6R0luWVNlVXk5dVh2ZEhYTmlXUVpHZXhmVkFZZDMtVFdkbTl2VDVvRHfSAVNBVV95cUxPcG01WVlyLXJkRVd4eVRqcEJKMTVkRVdvaFdtN1pabktaMDRQZ1F6Vng3amh2RXRPc2JaWHlJb2VRd2NWMExWeEtlWnVELUI5UUZzWQ?oc=5)
-- [삼성전자, 中사업 구조조정 시작하나…"반도체 분야 집중" 전망 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE42T1MybWtWMV8xUlc2cmgwLS1vTjhHMGFuUWRoSWFMbXZJR25GWkh4eFFrdFpWX1I3SkhLYUF2dTZpOEdGVUhJRUJTcTdURzg?oc=5)
+- [[한경에세이] 미래의 국가경쟁력은 에너지다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5CSmN5MmV6TVowLTQ5dXIwQ2RVZEtpWXZodmp1UER4TnBjUkVTbXgtbXF6NHJpa3VPNlptME53X1NVZE9GZjNZeU1hdzFDSjQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
