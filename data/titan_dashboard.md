@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 118 days, 19:58:36
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 118 days, 21:12:16
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.6% | `█████░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 24.9% | `███░░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융 "코스피 6천 이후 더 가려면"…이익·수급·신성장 3가지 조건 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE9aSlNfV1poZTBiWFVwRlQ1MWFxZWNCTHBPWUZHajlSN19ycmtTNU5aaHk5ZkFVamdLaDd4bUV5ejlvWFkxQU9RbTBDZ210T05ra2pGQ3J1YTlLNVg2QXhzME52QWhvdWJhZTFDcUM2RUzSAXRBVV95cUxOVjYtcGd0d3NZWHkteVlsc0d2RkVhekEtWU85U2Frc0NFcWVyX1dvd3lVdS1VdGZEeDNCbFFLWjhEMmF3NW1JUE5fWGg4RTVHRXJUOHhDdWlxY01YWWZtZFJVVDRPRklzU3JiNEN5RnBXelptOQ?oc=5)
-- ['공짜' 바다시대 끝났다…이란발 '해상 톨게이트'에 발칵 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1lNjZCRk5MUnNWdUdfZk1XVFAwRlBsbERFWXNrM2ZLZlA0V2pGWEZUelUwMWZCNm5fa3V0akM5dTZuZE9VOXY1UGozQzJZUkhPcW5fMy1pTzBQZ9IBVEFVX3lxTE1rYXYwN0Z2ZmtkaVZnQlJsbGd0clYzZEZkMzgwU0U3NnpfM2Z2N1N1YWVMNTNKZWRvTUU5RklZZC1RNXVxSGl1eU4tcWt5Rk1PVWt3Yw?oc=5)
+- [신한금융 “3000피 회귀 가능성 낮아...장기투자 필요” - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5LLW1hQ01GWWhsQS1nSHM4SThWQ0ZSX1VFMHZOck9hVHR6R0luWVNlVXk5dVh2ZEhYTmlXUVpHZXhmVkFZZDMtVFdkbTl2VDVvRHfSAVNBVV95cUxPcG01WVlyLXJkRVd4eVRqcEJKMTVkRVdvaFdtN1pabktaMDRQZ1F6Vng3amh2RXRPc2JaWHlJb2VRd2NWMExWeEtlWnVELUI5UUZzWQ?oc=5)
+- ['칩플레이션' 때문에…노트북 100만원↑, 게임기까지 '도미노 인상' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UX2ZacWRVSkl5Nkl6QXRwWWlNX184YlN5d0lPa1F5MVFic1g4WWFWQW9yU1RWSlBBVFNMaDdlaG9mTmpmR1hPOFdOZXZaRmNCbkV4c08xZGptd9IBVEFVX3lxTE9ReUs0ZlhyZEJ0RWRqcHBnYzdLVVNwM0ZROElLNDNsTlM5cHIyV2tJczYxaVZKeFg5dEF2dDZOTXJWMkNMNS12TnVOalpJMkszVG9WRA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
