@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 119 days, 9:26:47
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 119 days, 10:00:48
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.5% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.0% | `█████░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [“정부 밸류업 정책, 코스피 1000P 끌어올려” - 동아일보](https://news.google.com/rss/articles/CBMidkFVX3lxTE1pRm0xR2UzWTlwNk9xV1RELVNkWnNlUE1uQ2F1QnhKLUNtNlF2eVpYQlgtc2p2emotWWxmcEk2UnhhNzhVSDJVTjVYYWo1T2hDZGVoNjl3VWtDLUt4R2o5eElWTW9wNXlRaEJiLUZFQk1wMzNSdXfSAWZBVV95cUxOTXhTeEVjSmZ6RUNpWnlELVRia0RTVVhscUY3QU9UT3RUaUdRajM5T2IwTW1pOUJhOGJmYUlzcEN0NlVoZmk3UUxudGdtUGNGVnVKMTFKMW5sZ19nQ1JDWVVWdTlSc0E?oc=5)
+- [신한금융 “3000피 회귀 가능성 낮아...장기투자 필요” - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5LLW1hQ01GWWhsQS1nSHM4SThWQ0ZSX1VFMHZOck9hVHR6R0luWVNlVXk5dVh2ZEhYTmlXUVpHZXhmVkFZZDMtVFdkbTl2VDVvRHfSAVNBVV95cUxPcG01WVlyLXJkRVd4eVRqcEJKMTVkRVdvaFdtN1pabktaMDRQZ1F6Vng3amh2RXRPc2JaWHlJb2VRd2NWMExWeEtlWnVELUI5UUZzWQ?oc=5)
 - ['월요일 두렵다' 협상 결렬에 코스피 '날벼락'?…전망 들어보니 - 네이트](https://news.google.com/rss/articles/CBMiakFVX3lxTFBaM2xMM28tUkdGb215N3NvMEJnV2xrWVJwREN3ckdYLWRBRnRNV3BSY2t0RlgwRGk3cWFTdjVDWHV2Tkg1ME9XVUhra0w4QXl3aVZmOW9Dbjg1WC1uRDk1SkhQWW00QlhYNGc?oc=5)
 
 ---
