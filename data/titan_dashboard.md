@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 119 days, 9:01:40
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 119 days, 9:26:47
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,7 +15,7 @@
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
 | **CPU** | `128 vCores` | 30.5% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [“정부 밸류업 정책, 코스피 1000P 끌어올려” - 동아일보](https://news.google.com/rss/articles/CBMidkFVX3lxTE1pRm0xR2UzWTlwNk9xV1RELVNkWnNlUE1uQ2F1QnhKLUNtNlF2eVpYQlgtc2p2emotWWxmcEk2UnhhNzhVSDJVTjVYYWo1T2hDZGVoNjl3VWtDLUt4R2o5eElWTW9wNXlRaEJiLUZFQk1wMzNSdXfSAWZBVV95cUxOTXhTeEVjSmZ6RUNpWnlELVRia0RTVVhscUY3QU9UT3RUaUdRajM5T2IwTW1pOUJhOGJmYUlzcEN0NlVoZmk3UUxudGdtUGNGVnVKMTFKMW5sZ19nQ1JDWVVWdTlSc0E?oc=5)
