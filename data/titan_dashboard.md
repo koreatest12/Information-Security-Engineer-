@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 119 days, 4:24:11
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 119 days, 5:03:18
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.2% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.9% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융 “3000피 회귀 가능성 낮아...장기투자 필요” - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5LLW1hQ01GWWhsQS1nSHM4SThWQ0ZSX1VFMHZOck9hVHR6R0luWVNlVXk5dVh2ZEhYTmlXUVpHZXhmVkFZZDMtVFdkbTl2VDVvRHfSAVNBVV95cUxPcG01WVlyLXJkRVd4eVRqcEJKMTVkRVdvaFdtN1pabktaMDRQZ1F6Vng3amh2RXRPc2JaWHlJb2VRd2NWMExWeEtlWnVELUI5UUZzWQ?oc=5)
-- ["6조 더 쏜다"…일본, '반도체 부활' 총력전 나섰다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5xOWxoQjhHam5zQnNKTkNOMG9iVU1xNi1ueDB2ZzdycEptb2c4cC1qb1d1a0VHcUVLZ0lOSjNrbHY3b1lpTmdzWUlscHA3YXM?oc=5)
+- [주주 행동주의 대응법 알려드립니다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ORlNhcVNEOE1TeE9fWEZCTjMxQWdZOFhIdUNoMmg4TlZfMEJjTE43b0Nld3ZBRmRITm5xWENESE5BT2dqLWdLYzM1cVd6RElNYlc2cVM0NFNBUdIBVEFVX3lxTFBBcjNnek56VnRtdy0tY0phQ3N2ZnNYOEd6VkR2ZWM1cVU5S1NvRnZRaGpSODlDOG1MZnRCRzZIVUpubU0xd19VeHFKWkI1eERDam5ORQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
