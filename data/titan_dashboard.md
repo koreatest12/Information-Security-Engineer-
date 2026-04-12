@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 118 days, 23:47:43
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 119 days, 0:12:21
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.9% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융 “3000피 회귀 가능성 낮아...장기투자 필요” - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5LLW1hQ01GWWhsQS1nSHM4SThWQ0ZSX1VFMHZOck9hVHR6R0luWVNlVXk5dVh2ZEhYTmlXUVpHZXhmVkFZZDMtVFdkbTl2VDVvRHfSAVNBVV95cUxPcG01WVlyLXJkRVd4eVRqcEJKMTVkRVdvaFdtN1pabktaMDRQZ1F6Vng3amh2RXRPc2JaWHlJb2VRd2NWMExWeEtlWnVELUI5UUZzWQ?oc=5)
-- ["2억으로 23억 벌었다" 변정민의 한남동 빌딩 투자, 핵심은 '레버리지 설계' [한경부동산밸류업센터] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBKTjg0MVFkaTZ5cXRmaXE3MEYtdDgtdjhHYkRNMU1xd3NJTjE3QlFzRXkxZzM5dXFrcUx1X0tZRmtoTWl4YUZJcERZSHFpc2M?oc=5)
+- ['칩플레이션' 때문에…노트북 100만원↑, 게임기까지 '도미노 인상' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UX2ZacWRVSkl5Nkl6QXRwWWlNX184YlN5d0lPa1F5MVFic1g4WWFWQW9yU1RWSlBBVFNMaDdlaG9mTmpmR1hPOFdOZXZaRmNCbkV4c08xZGptd9IBVEFVX3lxTE9ReUs0ZlhyZEJ0RWRqcHBnYzdLVVNwM0ZROElLNDNsTlM5cHIyV2tJczYxaVZKeFg5dEF2dDZOTXJWMkNMNS12TnVOalpJMkszVG9WRA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
