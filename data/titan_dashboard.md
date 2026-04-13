@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 120 days, 10:38:11
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 120 days, 11:08:53
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.1% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.8% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [6000 찍은 코스피, 다시 3000선 가나…신한 “밸류업 이후 회귀 가능성 낮아” - 조선비즈 - Chosunbiz](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbDAtSVVzdFhuTGNCSjlYRFFEbTdKa3RBcF9OeV9ocDJPQUwxelZ4UnFJZ1pMQVRPVkJZeEVieVZVMnFZVTNiOHdQOXFleG9HcC1VQ3ZNRFg0cG5iLVZacGFSbEZ2bkNZNjhTYlJlWkFvd1JXT0E2cEZIRGY2SXZhSHNGVnpaa0ho0gGcAUFVX3lxTE5GamVabUR5TWtWMENEazlrQk9UYTNJMFpMV3R1VHlBVmZUaWxZZXpGWHRMMGQzeVJmOEhXV3BCYmVYSDdFTmJDRjJRWU1DNDNadmpseTRlNy1ZMG9uMjFXRUZpT0VBZEltVXFWbkFEdnNQTGo3Y3I3ajNoNTVOcDkwZzB5djRJTDJod01RaUNWOUJiZkhKdUctU1dheA?oc=5)
