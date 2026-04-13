@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 119 days, 16:00:57
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 119 days, 16:28:30
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.1% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.0% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융 “3000피 회귀 가능성 낮아...장기투자 필요” - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5LLW1hQ01GWWhsQS1nSHM4SThWQ0ZSX1VFMHZOck9hVHR6R0luWVNlVXk5dVh2ZEhYTmlXUVpHZXhmVkFZZDMtVFdkbTl2VDVvRHfSAVNBVV95cUxPcG01WVlyLXJkRVd4eVRqcEJKMTVkRVdvaFdtN1pabktaMDRQZ1F6Vng3amh2RXRPc2JaWHlJb2VRd2NWMExWeEtlWnVELUI5UUZzWQ?oc=5)
-- ['월요일 두렵다' 협상 결렬에 코스피 '날벼락'?…전망 들어보니 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFAyTkxDTF9iVWlsQ0FPcE8xZGVaX21pQWNkdUF3TVdaR294S0ZYT2JzUmd6MXY2TWZXSWdSWXd5VHFid3QtVGNubUVQdmozVVE?oc=5)
+- [신현송 한은 총재 후보자 "중동 리스크·양극화·가계부채…한국경제 3대 현안" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9KdU4wa216WURHeDVueWlTdjVRZnM4N09XVDJnN3QwV09RMUdoeTk1QVVaVjZTVUdxb1d3S0VmTHQzdFFyTFhaM2QxUmxEWmM?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
