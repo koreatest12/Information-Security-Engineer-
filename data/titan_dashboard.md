@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 120 days, 9:39:02
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 120 days, 10:04:56
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.7% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.1% | `████░░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행장 정상혁 'SOL메이트 신탁' 가입 서약, 경영진 20명도 함께 참여 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE8wcko3bmN6LUVCUmYycm10VjBGNFB4dDJrNllleHdrNHppbko5aXlrMlZyX1d0cUI0cVA1aDR5OUxYWFpQVmZVY051OWVzN0lMaFNEQWlsaUt1OE4xb3pPcXl1aEp4YnBCMnZPMjBwOVNGQlk?oc=5)
+- [6000 찍은 코스피, 다시 3000선 가나…신한 “밸류업 이후 회귀 가능성 낮아” - 조선비즈 - Chosunbiz](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbDAtSVVzdFhuTGNCSjlYRFFEbTdKa3RBcF9OeV9ocDJPQUwxelZ4UnFJZ1pMQVRPVkJZeEVieVZVMnFZVTNiOHdQOXFleG9HcC1VQ3ZNRFg0cG5iLVZacGFSbEZ2bkNZNjhTYlJlWkFvd1JXT0E2cEZIRGY2SXZhSHNGVnpaa0ho0gGcAUFVX3lxTE5GamVabUR5TWtWMENEazlrQk9UYTNJMFpMV3R1VHlBVmZUaWxZZXpGWHRMMGQzeVJmOEhXV3BCYmVYSDdFTmJDRjJRWU1DNDNadmpseTRlNy1ZMG9uMjFXRUZpT0VBZEltVXFWbkFEdnNQTGo3Y3I3ajNoNTVOcDkwZzB5djRJTDJod01RaUNWOUJiZkhKdUctU1dheA?oc=5)
 - ["한국 기술자 쓸모 없으면 버려"…대만 '국산 잠수함'의 민낯 [조철오의 방산노트] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFA3VG1HVDVydWVFNXE2QlFfOE1zb2xXOF9XNzhKTDl2Vk9UWDlMbzE2SFIxdGx2Y3pHQU96VFh6ZVhyRDBlaEV0TUZLSHJqS0k?oc=5)
 
 ---
