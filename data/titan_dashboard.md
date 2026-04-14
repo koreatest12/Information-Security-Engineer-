@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 120 days, 18:32:58
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 120 days, 19:56:35
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,7 +15,7 @@
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
 | **CPU** | `128 vCores` | 31.7% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행장 정상혁 'SOL메이트 신탁' 가입 서약, 경영진 20명도 함께 참여 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE8wcko3bmN6LUVCUmYycm10VjBGNFB4dDJrNllleHdrNHppbko5aXlrMlZyX1d0cUI0cVA1aDR5OUxYWFpQVmZVY051OWVzN0lMaFNEQWlsaUt1OE4xb3pPcXl1aEp4YnBCMnZPMjBwOVNGQlk?oc=5)
