@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 121 days, 1:18:53
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 121 days, 1:59:42
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.9% | `█████░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.9% | `█████░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행장 정상혁 'SOL메이트 신탁' 가입 서약, 경영진 20명도 함께 참여 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE8wcko3bmN6LUVCUmYycm10VjBGNFB4dDJrNllleHdrNHppbko5aXlrMlZyX1d0cUI0cVA1aDR5OUxYWFpQVmZVY051OWVzN0lMaFNEQWlsaUt1OE4xb3pPcXl1aEp4YnBCMnZPMjBwOVNGQlk?oc=5)
-- [상한가 찍더니 순식간에 패대기…농락당한 개미들 '피눈물' - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE1MTGVsVjh6amZfejN4UDRjeC1MME85RGppYW1SeWduaWJoanhYWW1kVmkwOGJZMGdKczFoVFN6VnU4OUY3Unc?oc=5)
+- ["한국 비축기지 쓰겠다"…중동 산유국들, 러브콜 '쇄도' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE0xT0JYTHNpRWR5ZzlaN2g1V0l2aTBJZ2hEQlBOc29EbzJFM0NCaTJkczRpSVpTOFowSWNoem5wWUQ3QUJEWENaRUZyTVU4b3c?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
