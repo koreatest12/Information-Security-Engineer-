@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 121 days, 13:03:16
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 121 days, 13:32:23
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.6% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.5% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한지주, 계열사 ‘보이스피싱 정보 공유’ 시스템 본격 가동 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1BX3lpV3FpSlB2RTJJX3NWQ1l0dXJBZlFjLVVFV2VnbDYyb0lVY0NZd3R6T1VFMTVaWkV1aFkybmxBNmk3eEVNM2Q0em12ai1jOHR0RE5KczNYNGM?oc=5)
-- [SNS 먹방도 '인기 폭발'…한국 온 외국인 싹쓸이한 '디저트' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5GVDR2dFVYbVFTeHk0UE1MZEVJemN2QnFqaWxRXzE1X3FzVUducmgtaVR1VExXSnY2ZVdibkVwRDNReExHVXlZdjhPSjN6U0k?oc=5)
+- [신한라이프, 금융지주 2위 굳은 신한 ‘반격 열쇠’ - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1lekZXWERuV3ZyTjBySFdLZzE2Y2FUUERGb2VmVnJkN1MwT090N016OEd3RGtLX1NjVFJYRzg4cmJEZ3YwM01hVDdjSG5QQVFUMHhGV1NXSWdKWFU?oc=5)
+- [상한가 찍더니 순식간에 패대기…농락당한 개미들 '피눈물' - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE1MTGVsVjh6amZfejN4UDRjeC1MME85RGppYW1SeWduaWJoanhYWW1kVmkwOGJZMGdKczFoVFN6VnU4OUY3Unc?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
