@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 120 days, 23:48:02
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 121 days, 0:26:46
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 22.6% | `███░░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.8% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행장 정상혁 'SOL메이트 신탁' 가입 서약, 경영진 20명도 함께 참여 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE8wcko3bmN6LUVCUmYycm10VjBGNFB4dDJrNllleHdrNHppbko5aXlrMlZyX1d0cUI0cVA1aDR5OUxYWFpQVmZVY051OWVzN0lMaFNEQWlsaUt1OE4xb3pPcXl1aEp4YnBCMnZPMjBwOVNGQlk?oc=5)
-- ["한국 비축기지 쓰겠다"…중동 산유국들, 러브콜 '쇄도' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE0xT0JYTHNpRWR5ZzlaN2g1V0l2aTBJZ2hEQlBOc29EbzJFM0NCaTJkczRpSVpTOFowSWNoem5wWUQ3QUJEWENaRUZyTVU4b3c?oc=5)
+- [한국 AI 경쟁력 '특허 1위·모델 3위'…미·중 양강 속 존재감 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5mNXgwZEFfRk56dElBTFd5OGNLQzZhYi1nQzJrSm1YREQ0dEkxR0s4WmthdF9tVVZtYkFHek9aOHZZTE5LWVV5MnVNWENsZmM?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
