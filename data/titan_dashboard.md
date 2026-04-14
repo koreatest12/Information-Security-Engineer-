@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 121 days, 15:02:07
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 121 days, 15:32:02
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.1% | `████░░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.4% | `█████░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한라이프, 금융지주 2위 굳은 신한 ‘반격 열쇠’ - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1lekZXWERuV3ZyTjBySFdLZzE2Y2FUUERGb2VmVnJkN1MwT090N016OEd3RGtLX1NjVFJYRzg4cmJEZ3YwM01hVDdjSG5QQVFUMHhGV1NXSWdKWFU?oc=5)
-- [[노트북 너머] '중동 식단'에 길든 한국 경제 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE13MzAxX1d1TVVsdXZCVC1ycFZpRmRsU3hoRFAtTkdWQUIwUTJxZklURFJYY2xfQm5aRC1WRkFjUy1xOWhOMjM3S216eXNtMjA?oc=5)
+- [[그래픽] IMF 한국 경제성장률 전망 변화 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9iZUtmMWFJWTIxbW0wN1NhbVNja29hc0Zfa2l0WVpwbzM0T0FJbVZpMng2OXNsUEp1ODlsT3E1TzlmSUFqeURSOV9ZTW1xbE0?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
