@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 122 days, 9:05:07
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 122 days, 9:39:42
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,18 +8,19 @@
 
 > **Q:** 종합 상황 브리핑
 
-관련 정보 없음
+**🤖 AI Analysis:**
+- [KR_ECON] 신현송 "신상 문제 제 불찰, 송구…한국 경제에 헌신"(종합) - v.daum.net
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 37.0% | `█████░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한라이프, 금융지주 2위 굳은 신한 ‘반격 열쇠’ - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1lekZXWERuV3ZyTjBySFdLZzE2Y2FUUERGb2VmVnJkN1MwT090N016OEd3RGtLX1NjVFJYRzg4cmJEZ3YwM01hVDdjSG5QQVFUMHhGV1NXSWdKWFU?oc=5)
-- [신현송 한은 총재 후보 “외화 자산 처분…한국 경제 헌신할 것” - 한겨레](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9Ubkx2WF9aQ2UzUXBMYU5kYUVQNElwUnk0R0ZNaTB0MWo1d1RWV1otcWYySktOVHYwSjFOeEhFRXFLNVZzOU5zVmpydkdoWFVNMGpiWGV3LWJva2o3OFNWdXc0b1lGYk0?oc=5)
+- [신현송 "신상 문제 제 불찰, 송구…한국 경제에 헌신"(종합) - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE8yYkRkS1RQMVpuLUZ4dVJqT1BoQW1LNnpiaFViUHg3WXRodFZDNEEzZ3ZIYW0yT1I4RkdWM1ZWckRDaUEtc1E?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
