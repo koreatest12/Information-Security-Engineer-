@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 122 days, 12:12:29
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 122 days, 12:32:55
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,11 +15,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.0% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
 | **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [‘신한 리더십’은 현역…신한금융 전직 CEO, 진옥동 회장과 배식 봉사 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5sZVVVNW5LbDdvcFBfNmdOSVZPNE9JV21qSThiQXlyb3pvZ01Odk1QTDZKOTJWRndEcF9zSUpFTWNYM2xpOWZldnBjT1paTjg?oc=5)
+- [신한금융 전직 CEO들이 뭉쳤다…지역사회 봉사활동 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QRVRELWpPRzhpc1BPN2dmYXlpNXZaanVJV1JnVVpNVm55X0x1cF9ycm5YMTlDWjM2YzVUVGtva0p3dFl6ZmEyNlMzdEtoTUhtX2ZDNUFlQ0M4UQ?oc=5)
 - [신현송 "신상 문제 제 불찰, 송구…한국 경제에 헌신"(종합) - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE8yYkRkS1RQMVpuLUZ4dVJqT1BoQW1LNnpiaFViUHg3WXRodFZDNEEzZ3ZIYW0yT1I4RkdWM1ZWckRDaUEtc1E?oc=5)
 
 ---
