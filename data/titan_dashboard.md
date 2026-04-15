@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 122 days, 8:09:49
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 122 days, 8:36:53
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.2% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 24.4% | `███░░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한라이프, 금융지주 2위 굳은 신한 ‘반격 열쇠’ - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1lekZXWERuV3ZyTjBySFdLZzE2Y2FUUERGb2VmVnJkN1MwT090N016OEd3RGtLX1NjVFJYRzg4cmJEZ3YwM01hVDdjSG5QQVFUMHhGV1NXSWdKWFU?oc=5)
-- [[시론] '기대'가 사라진 시대 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBMTS1NcWdlY0xIc19oNDNzSDZwQXVvcG5OcXY1c19IcEZNVGE3OTFwUktLSlF4SE9YWFFpU1FBbFZfSXVueHZPdEJwazZfeEE?oc=5)
+- [신현송 한은 총재 후보 “외화 자산 처분…한국 경제 헌신할 것” - 한겨레](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9Ubkx2WF9aQ2UzUXBMYU5kYUVQNElwUnk0R0ZNaTB0MWo1d1RWV1otcWYySktOVHYwSjFOeEhFRXFLNVZzOU5zVmpydkdoWFVNMGpiWGV3LWJva2o3OFNWdXc0b1lGYk0?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
