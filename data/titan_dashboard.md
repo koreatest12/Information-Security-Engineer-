@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 122 days, 23:47:48
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 123 days, 0:26:37
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.0% | `█████░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.4% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [진옥동 찜한 갤럭시…1조 상장에 지드래곤 선봉 - 딜사이트](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1NQ1pyOVpTWXlnbUtkajZDQ2dTSFAxSlJIS0lHOU9GU19MaDZwazA3Qmw2eGgwbnJfMkhZN2F3OW9ldjgwR3BsOHUxWFloXzA?oc=5)
-- [3333조 잭팟 터진 중국…"우리가 원조인데" 한국 기업들 탄식 [김리안의 에네르기파WAR] - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTFB0cmdkTFAwQ1p5cVdHUmlMbHlfQ2FGTUNMei1Sb1pfU3hQM2lDc1FFWUJSbGVzSnRrTUQxSExwUWk3NlVVaEE?oc=5)
+- ["심상찮은 한국, 이대로 가다간 5년 뒤에"…IMF 폭탄 경고 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFB1UDg1RU5waU5DZWJlZTh0MEVrUTdvQlJ0Ylppa1RBc2YyalJtTmFaYzdkQzhrM1pNUjBqRktnTHY5aEl3cndfdkpiWmh6MVU?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
