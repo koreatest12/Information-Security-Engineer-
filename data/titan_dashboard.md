@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 123 days, 1:18:48
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 123 days, 2:16:14
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.9% | `████░░░░░░░░░░░` |
-| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.4% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융 전직 CEO들이 뭉쳤다…지역사회 봉사활동 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QRVRELWpPRzhpc1BPN2dmYXlpNXZaanVJV1JnVVpNVm55X0x1cF9ycm5YMTlDWjM2YzVUVGtva0p3dFl6ZmEyNlMzdEtoTUhtX2ZDNUFlQ0M4UQ?oc=5)
-- ["심상찮은 한국, 이대로 가다간 5년 뒤에"…IMF 폭탄 경고 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFB1UDg1RU5waU5DZWJlZTh0MEVrUTdvQlJ0Ylppa1RBc2YyalJtTmFaYzdkQzhrM1pNUjBqRktnTHY5aEl3cndfdkpiWmh6MVU?oc=5)
+- [진옥동 찜한 갤럭시…1조 상장에 지드래곤 선봉 - 딜사이트](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1NQ1pyOVpTWXlnbUtkajZDQ2dTSFAxSlJIS0lHOU9GU19MaDZwazA3Qmw2eGgwbnJfMkhZN2F3OW9ldjgwR3BsOHUxWFloXzA?oc=5)
+- [日·英 빚 줄이는데…'재정 우등생' 韓은 역주행 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE82T2xITFFtbVNZRXNtNWJNMDlFaUR5SHYxbXhtYUt1QmVGQmVSZlp3SW0wWnNmN1V1VDNwM2MyeTZoZzlKQVNBRVFqTmhpdWM?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
