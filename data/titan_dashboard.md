@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 126 days, 5:42:43
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 126 days, 6:06:45
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.3% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행, K컬처 여신 심사 전문가 뽑는다 - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTFBzTTZOTTZKTEROR0tULTVrZVVOWFNhTkZzRU5OUkVuN0YzcTR3NXBncXN4cnZ1Ty04dTRIb0hnaExJa0lBOUZIY2hiRUNobExGVnfSAVNBVV95cUxNV251SjVOOGdNeE1lSkU0eG14M2Y3dld2bV85V3daa0pvbUJDT21QU2pwLUNxb3ZBWnVmSU5RUkstZklfSmpGeEJsWFdYWjB5dTE4cw?oc=5)
-- ['YTN-뉴스1, 채널A-한경, 동아-중앙, 국민-KBS' 8강 격돌 - 한국기자협회](https://news.google.com/rss/articles/CBMiYkFVX3lxTFBmb0M0R1lJQUoybEhac3Vaa1ZuUURmR212QVF5VDAzSmk0emgyMHF0dlhka1BNWVdBR245cnBldHFRX2EtOG52bEg4TDU1RkR4S2VlUEdRSGR2N2dRak9PZ3NR?oc=5)
+- ["사두면 오를 일만 남았다"…개미들 빚까지 끌어서 '몰빵' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9hNU5Zc3ByX09VelNvZnIxbXh4Y09nSFNQSEE3ejdfR2NxZzFMRWRDUTNKMW5QbWQ5RXFSMDYtdXBIMzRmaGNHUnp6T19lSjQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
