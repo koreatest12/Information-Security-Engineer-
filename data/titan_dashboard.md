@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 126 days, 12:25:13
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 126 days, 13:01:21
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.3% | `█████░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.2% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 점포 43곳 줄여…‘디지털·학이재ʼ로 보완 [은행 접근성 보완 전략] - 한국금융신문](https://news.google.com/rss/articles/CBMifEFVX3lxTE1PbmdvR2dCeEVKbnczTnA4WTRnLWEzdlJCWHQ3bXBHOFpyQnpVbXIwck1hMkVLRk1sZTV5TExGQlVKN0djR2VNSmtGYTZoZFE3QURyTXNRYVpvOTdtZEU0RGR4NUU0ZGx4dzNVSlM3dnZDNjdJcks5N3JOSlM?oc=5)
+- [[함께하는 길] 장애인 자립·사회참여 돕는 '포용금융' 문화예술까지 확대 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE9VMTRzb08tbDZ5MTRKbjNuVlJvelZWSVkyQ1pja2VlTWFWSlNUYVVmQ2wweWM0M1ZGNzRXVUNvN1NnbTlXUEEzRjJVSVRXYU1NaV9F?oc=5)
 - ["사두면 오를 일만 남았다"…개미들 빚까지 끌어서 '몰빵' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9hNU5Zc3ByX09VelNvZnIxbXh4Y09nSFNQSEE3ejdfR2NxZzFMRWRDUTNKMW5QbWQ5RXFSMDYtdXBIMzRmaGNHUnp6T19lSjQ?oc=5)
 
 ---
