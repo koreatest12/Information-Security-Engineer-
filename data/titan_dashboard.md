@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 126 days, 1:32:10
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 126 days, 2:02:29
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.0% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.7% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [4대 금융지주 사옥 재편…모여서 시너지 내고 실탄도 챙긴다 - 네이트](https://news.google.com/rss/articles/CBMieEFVX3lxTE83cWRzb1N6RjV4MzRxQTdvaWh4NlBlc2l4TGVCLTU2dWJ6UWZMaUZfWnh2bWZ5TFJKR2xpaWlBekliQVdDdTZ4TTFLbDFRM3RCa2NzRU9zUnVEeFJJZmxNRXRyY0k2ZU9zQXZQdjRmTHFabEVsUWxGYg?oc=5)
+- [신한은행, K컬처 여신 심사 전문가 뽑는다 - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTFBzTTZOTTZKTEROR0tULTVrZVVOWFNhTkZzRU5OUkVuN0YzcTR3NXBncXN4cnZ1Ty04dTRIb0hnaExJa0lBOUZIY2hiRUNobExGVnfSAVNBVV95cUxNV251SjVOOGdNeE1lSkU0eG14M2Y3dld2bV85V3daa0pvbUJDT21QU2pwLUNxb3ZBWnVmSU5RUkstZklfSmpGeEJsWFdYWjB5dTE4cw?oc=5)
 - ["사두면 오를 일만 남았다"…개미들 빚까지 끌어서 '몰빵' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9hNU5Zc3ByX09VelNvZnIxbXh4Y09nSFNQSEE3ejdfR2NxZzFMRWRDUTNKMW5QbWQ5RXFSMDYtdXBIMzRmaGNHUnp6T19lSjQ?oc=5)
 
 ---
