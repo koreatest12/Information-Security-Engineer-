@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 126 days, 3:29:20
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 126 days, 4:00:45
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.1% | `█████░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.1% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행, K컬처 여신 심사 전문가 뽑는다 - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTFBzTTZOTTZKTEROR0tULTVrZVVOWFNhTkZzRU5OUkVuN0YzcTR3NXBncXN4cnZ1Ty04dTRIb0hnaExJa0lBOUZIY2hiRUNobExGVnfSAVNBVV95cUxNV251SjVOOGdNeE1lSkU0eG14M2Y3dld2bV85V3daa0pvbUJDT21QU2pwLUNxb3ZBWnVmSU5RUkstZklfSmpGeEJsWFdYWjB5dTE4cw?oc=5)
-- ["220곳 날아간다"…동전주 27배 폭증에 개미들 '패닉' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1JTWpwUmhKZ0lrXzJwX2gwOWFaa0llWF9IVlZFeUVuQWhtV1M2X2s4YmoxbUJwbHh6QzYtSHp4bV8wQ185S2VlMHVadHpJa2s?oc=5)
+- ["사두면 오를 일만 남았다"…개미들 빚까지 끌어서 '몰빵' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9hNU5Zc3ByX09VelNvZnIxbXh4Y09nSFNQSEE3ejdfR2NxZzFMRWRDUTNKMW5QbWQ5RXFSMDYtdXBIMzRmaGNHUnp6T19lSjQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
