@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 126 days, 13:26:58
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 126 days, 14:00:59
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.9% | `█████░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 점포 43곳 줄여…‘디지털·학이재ʼ로 보완 [은행 접근성 보완 전략] - 한국금융신문](https://news.google.com/rss/articles/CBMifEFVX3lxTE1PbmdvR2dCeEVKbnczTnA4WTRnLWEzdlJCWHQ3bXBHOFpyQnpVbXIwck1hMkVLRk1sZTV5TExGQlVKN0djR2VNSmtGYTZoZFE3QURyTXNRYVpvOTdtZEU0RGR4NUU0ZGx4dzNVSlM3dnZDNjdJcks5N3JOSlM?oc=5)
-- ["사두면 오를 일만 남았다"…개미들 빚까지 끌어서 '몰빵' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9hNU5Zc3ByX09VelNvZnIxbXh4Y09nSFNQSEE3ejdfR2NxZzFMRWRDUTNKMW5QbWQ5RXFSMDYtdXBIMzRmaGNHUnp6T19lSjQ?oc=5)
+- [[함께하는 길] 장애인 자립·사회참여 돕는 ‘포용금융’ 문화예술까지 확대 - 중앙일보](https://news.google.com/rss/articles/CBMiVkFVX3lxTE9wc0lGdlFrdnNIUFJ5Ulp3OW4wUzV1VzRiaWRzcjJVU0xCMk1PN0NueGxPMW9lUTNzcUlyQkN5Uy1XdmdHbEV3dmlvYnd3bk1vcEFWclJB?oc=5)
+- [한국 경제가, 반도체 때문에, 대만에 ‘이만큼’ 밀린다고요? - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE0xRXgtTXpQM3lqOC16LTNYNC1sUEZYcllIZjNZMGdYTHJKYktKUkdNT2dOUkFxckl2TW94eFliZmFGR3FGMWJ4T2otWkhIbHM?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
