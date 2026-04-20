@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 127 days, 3:45:46
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 127 days, 4:14:09
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.1% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.5% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [부동산보다 기업금융…신한銀, 토지보상예금 안 판다 - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5sSnoxclZOOC1sY29mdkRZd2JRZkpGMThjY3ZpOGU3WWpobDJIMXU1RjFzVVB1TzBEMjdLci1zSDJHUy1NOGp3a1pIOF9JMFNOUkHSAVNBVV95cUxOUnFhOURGemNkSEZRLWtEZTYteTdjUlExZ3VJM3BaMWxuc2xLdlF4TE10ZmxlWGFST3JFVGtzWkNiMnhXUWotdW5UOEZmd1pXeEx6aw?oc=5)
-- ["사두면 오를 일만 남았다"…개미들 빚까지 끌어서 '몰빵' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9hNU5Zc3ByX09VelNvZnIxbXh4Y09nSFNQSEE3ejdfR2NxZzFMRWRDUTNKMW5QbWQ5RXFSMDYtdXBIMzRmaGNHUnp6T19lSjQ?oc=5)
+- [[여기는 논설실] 한국은 왜 대만에 밀리기 시작했나 - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE50TVotS0RESTFVS1lYamI5eTJLbkhSZ3E2U2xocExZcVRBbzVURXladi1xa1I0TlVyclJDM1gxb2ZCNjhFVXc?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
