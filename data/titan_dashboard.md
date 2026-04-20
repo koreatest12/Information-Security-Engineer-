@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 127 days, 2:49:49
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 127 days, 3:45:46
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.8% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.1% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한투자증권, '생산적 금융 대해부' 블루북 발간 - newsis.com](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9qY2txa3BEZ2VGUU93a0JxcVhXZUpqSTAzVFhhUDFXUmF2Wms5Wi0yU2xCQWNsTDJ0ai1xdXdrUGZfbkJMVFhRWlR1bjZCay1Qc29WMklaZk9YOUlvLXFWYdIBeEFVX3lxTE11SmhJcFhXbWw1Y0k5cUR5MHFib00xVDFUODdVNWh3djZaWEk2QmIzd2Fuc0RlMWlQdV9ocHNsREZZbEdCVzlYOHdIT1Q3MHRRUG5kNmNLc0Nab0MwamM2Y1A0ZUlPYmhlMnlXU0M1U3RLa3NFb1F3Tg?oc=5)
+- [부동산보다 기업금융…신한銀, 토지보상예금 안 판다 - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5sSnoxclZOOC1sY29mdkRZd2JRZkpGMThjY3ZpOGU3WWpobDJIMXU1RjFzVVB1TzBEMjdLci1zSDJHUy1NOGp3a1pIOF9JMFNOUkHSAVNBVV95cUxOUnFhOURGemNkSEZRLWtEZTYteTdjUlExZ3VJM3BaMWxuc2xLdlF4TE10ZmxlWGFST3JFVGtzWkNiMnhXUWotdW5UOEZmd1pXeEx6aw?oc=5)
 - ["사두면 오를 일만 남았다"…개미들 빚까지 끌어서 '몰빵' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9hNU5Zc3ByX09VelNvZnIxbXh4Y09nSFNQSEE3ejdfR2NxZzFMRWRDUTNKMW5QbWQ5RXFSMDYtdXBIMzRmaGNHUnp6T19lSjQ?oc=5)
 
 ---
