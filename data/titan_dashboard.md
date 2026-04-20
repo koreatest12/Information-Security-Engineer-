@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 126 days, 20:00:55
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 126 days, 21:17:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.0% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.1% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한투자증권, 생산적 금융 지원을 위한 '블루북' 발간 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFB3QURzV0d3QkVpdE05ZXQ3QUNDYnBka0pCaFpyMVpNMEVkd0VmeEZOQ2ZpQlpDMnhKTzBGcEhEQlFDVGFfYzhvLUhPMVpxUFU?oc=5)
-- ["사두면 오를 일만 남았다"…개미들 빚까지 끌어서 '몰빵' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9hNU5Zc3ByX09VelNvZnIxbXh4Y09nSFNQSEE3ejdfR2NxZzFMRWRDUTNKMW5QbWQ5RXFSMDYtdXBIMzRmaGNHUnp6T19lSjQ?oc=5)
+- [한국 경제가, 반도체 때문에, 대만에 ‘이만큼’ 밀린다고요? - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE0xRXgtTXpQM3lqOC16LTNYNC1sUEZYcllIZjNZMGdYTHJKYktKUkdNT2dOUkFxckl2TW94eFliZmFGR3FGMWJ4T2otWkhIbHM?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
