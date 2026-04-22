@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 128 days, 23:48:19
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 129 days, 0:28:36
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,19 +8,17 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [FIN_SHINHAN] [더밸류 브리핑] 오늘의 신한금융그룹 소식...신한금융· 신한카드 - 더밸류뉴스
-- [KR_ECON] 코스피, 종전 협상 불발에도 또 최고치 경신…6410선 마감 [종합] - v.daum.net
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.2% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.8% | `████░░░░░░░░░░░` |
 | **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[더밸류 브리핑] 오늘의 신한금융그룹 소식...신한금융· 신한카드 - 더밸류뉴스](https://news.google.com/rss/articles/CBMiU0FVX3lxTE00R3VTUGxnVG1hbzRrNjhKek1JanhlUmlBQ1k4Z25nTnZZQ1JmcXFYVkIxUTJacmVMUzMzcDNCWXZuaGpkcHRvdWRFWURXRnRYNy1r?oc=5)
+- [신한금융, 지구의 날 맞아 임직원 에너지 절감 실천 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE5LV1hBNTlXM1hkVTZxVVZlVVkwVjVSNmNKYzR1REpSNmJQRlVaUnhPVjVmVXBQTkRzNFdDU1JFejcyNjZjVHpQREF6b2Jsa25ndzNvTlh3SmNhN2JGYlZVV2x1Q0xLdjNzaHhTbjB2a01pYXM?oc=5)
 - [대만에 추월당한 한국 경제, 재역전 어렵다…IMF의 경고 - mbn.co.kr](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBxYUJJUnlwdExpbUNxNXFHMW0wdk5SX2NKclc3S1UzdVd1aEI1b1M2YkUxSUhtcGZJMVpBc3k0TFI0cTdyVHgxeWxtSld1N1ljZTBJVNIBTEFVX3lxTFBqYk9qVHEzY0wybERQTHBXaHY2ckdVX0FZQllIVThGbVpFSWhWZG9CQzRCZGdxYXYwdV9XVE1EVGpVb3lHY1FSdEpEbF8?oc=5)
 
 ---
