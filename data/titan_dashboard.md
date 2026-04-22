@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 128 days, 22:49:58
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 128 days, 23:48:19
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -10,13 +10,14 @@
 
 **🤖 AI Analysis:**
 - [FIN_SHINHAN] [더밸류 브리핑] 오늘의 신한금융그룹 소식...신한금융· 신한카드 - 더밸류뉴스
+- [KR_ECON] 코스피, 종전 협상 불발에도 또 최고치 경신…6410선 마감 [종합] - v.daum.net
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.5% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.2% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[더밸류 브리핑] 오늘의 신한금융그룹 소식...신한금융· 신한카드 - 더밸류뉴스](https://news.google.com/rss/articles/CBMiU0FVX3lxTE00R3VTUGxnVG1hbzRrNjhKek1JanhlUmlBQ1k4Z25nTnZZQ1JmcXFYVkIxUTJacmVMUzMzcDNCWXZuaGpkcHRvdWRFWURXRnRYNy1r?oc=5)
