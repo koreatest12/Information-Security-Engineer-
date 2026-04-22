@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 129 days, 7:54:32
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 129 days, 8:38:43
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.7% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.0% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융 '지구의 날' 맞아 에너지 절약 실천, 진옥동 회장도 대중교통 출퇴근 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE5aMGZ3SzdlenBDWXZTSXdmRmtacm5kcW53djhvR1JOblpmcUlwaFloVlQwSHlrMFNEOTVYSFNtSUZaeWhneGxQR25vVWhSNnkwMGowWlR6QnBNVTFLOUdyZ0ZPdWJXMHhMNl9NTlhQd3FKS3M?oc=5)
+- [신한금융, 지구의 날 맞아 임직원 에너지 절감 실천 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE5LV1hBNTlXM1hkVTZxVVZlVVkwVjVSNmNKYzR1REpSNmJQRlVaUnhPVjVmVXBQTkRzNFdDU1JFejcyNjZjVHpQREF6b2Jsa25ndzNvTlh3SmNhN2JGYlZVV2x1Q0xLdjNzaHhTbjB2a01pYXM?oc=5)
 - [[한국경제 방향타 삼성③] 삼성전자, AI 시대 ‘글로벌 공급망 키’ 잡았다 - 시사저널e](https://news.google.com/rss/articles/CBMickFVX3lxTFB1U3dPa3FHdlV3SDVwWVVrb1k5bUoxSElnS0s5LVJCbmx4Y0ZkUTNnaUM1dDlxb0ZEOTVhck9YdUlWOTRid2Y1ZEZXOHRzaWhUMXBjZWw0c0kwTkVLbmtvNF9DR05vOFdvZGlHV0stcnZDd9IBdkFVX3lxTE50S3lJcThBY0Q4Q0dNQklKZDN4cTNOc2JaX1R5bl9ZVnFZWEtfdERENlBMbS1xOUhxcEVJY082TkMwdU9pbGxGLUZOQy1ydElWbXNtNHdmaVRTWXlvVGRUeThVY1BpUzJwRjRKUldqNW5FaktsLUE?oc=5)
 
 ---
