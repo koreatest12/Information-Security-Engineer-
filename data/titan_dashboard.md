@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 129 days, 15:02:26
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 129 days, 15:33:05
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.9% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.8% | `████░░░░░░░░░░░` |
 | **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [KB·신한금융, 오늘 1분기 실적발표…역대급 순이익 예고 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBNNHp0ajBLcFFIR29tM0RMaDN3MXB3NUtFSm9RcjEwT0NqSUxjdmdUVlA2a0tja2tqQkxEU3ZQNWJkb1Jsd3B6c3VFai05V29MZUVtTDYzVDZHOURJZm9fZ9IBeEFVX3lxTE9SODlHS2R3bzJmX1FzYm9LbUI5dk1OUUZuLUFZbm8tbEhrV0dBRDg2ZEozZHZkQ183RG5CakVyMGIwWkR5TE5JeE5BNEJIeE1JazNnaVREbC1BT21Demp0TzF2cU1TV2h2VWF4YnotbE02V3NUcV9kMg?oc=5)
-- [대만에 추월당한 한국 경제, 재역전 어렵다…IMF의 경고 - mbn.co.kr](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBxYUJJUnlwdExpbUNxNXFHMW0wdk5SX2NKclc3S1UzdVd1aEI1b1M2YkUxSUhtcGZJMVpBc3k0TFI0cTdyVHgxeWxtSld1N1ljZTBJVNIBTEFVX3lxTFBqYk9qVHEzY0wybERQTHBXaHY2ckdVX0FZQllIVThGbVpFSWhWZG9CQzRCZGdxYXYwdV9XVE1EVGpVb3lHY1FSdEpEbF8?oc=5)
+- [1분기 한국경제, 중동발 악재에도 큰폭 성장 - 국제신문](https://news.google.com/rss/articles/CBMijgFBVV95cUxOeWxLOVlBaEVzLTNwR2VkeGZid3JCRFg2Q1BHVEIyZFhOaXNjaEhDSnVuS1NZQ0JndG1PeG8tR0JRMXB6UzFpTThOWXRnOEZ6MGtlN21Ndkx1RkZzelBJcUszMTRZdV9INi1jY05BNUFpSGVMbFBTcDRMZ0JFRHdGejB2czk1aGc2ZWU1TUVR?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
