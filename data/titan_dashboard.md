@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 130 days, 13:03:30
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 130 days, 13:32:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,15 +8,14 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [FIN_SHINHAN] 신한금융, 1분기 순이익 1조6226억…전년比 9%↑'사상 최대'(종합) - 뉴시스
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.2% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.4% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [1분기 역대급 실적 KB·신한, 주주환원도 ‘파격’ - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTFBZYmltN0w5T25wMVFfVnUyc25mLVhpWWxoc3NzaDJIRmI4Yko0U2oxTFA4V0lCQURxN2JlcnlpZ21XdGp4YzN0RjZwbGhJOGJsTkHSAVNBVV95cUxQVGdJNkdfRW1US2k1TUtzTWtFdkwwbDg3NE9rODR4TjNzMGpXMFNkNGFGQzBONHJyM2trRUt6Z1ZZOXM5SmM2UmxybW1zWTQ0ejB3OA?oc=5)
