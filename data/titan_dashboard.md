@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 129 days, 19:58:43
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 129 days, 21:14:55
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.4% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 25.1% | `███░░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, ‘신한 밸류업 2.0’ 발표…‘상한 없는 주주환원율’ 제시 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE5iZkJLRV9TUWVKeHkwcEFjdUFqamo3czduRjdhd3ZwT2xVX3E5cmZXMEl2eUhTMWpUTFktYVVwUXV3cjlVaVlNQU1EdzdyUFFlN19KXzdFU3JuQWN1c3F0NVBqZ0hIUUQ3T1BlVlNpekhOaHc?oc=5)
-- [1분기 한국 경제 1.7% 급반등…반도체가 중동 악재 눌렀다 - 한겨레](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE54Y2xDcThmd2hnam80SHQ3VlIzNjQ3Rmw3N29CSmx3SUQ4SnlrbklqYmNMUk1peUNZdUN0LVVPdU9IM0xZU01rNVNBeFc2bjJGc2FHZlNZQUlseE9tMkUwR0FyOWxqcjA?oc=5)
+- [[속보]신한금융, 1분기 순이익 1조6226억…전년比 9%↑'사상 최대' - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1sYWhVZ3VBaXBXeTlnZXNCZkZUSm9VS3c3SEwyTDk2S0I4eTNldmJRaWIwTXI1S05HNXZxaWtTQTh3bkljTkU2TDBEZlhLOHU3TGh5OTBHclNqMUFSSjM5SdIBeEFVX3lxTE5kX1JuNDBrTEJIdXZ3ZnQwclFObk00aHNZUTN5WUhKN3l2S3lOY1VNbXhHeHN4LUxKM09pZGdUZUpnaGw2bV9ZeURNc0llS2xxLWxfVlpreURSb21Ic2RPZGZ5RS1pLXpuZnBMdjVTbGpOT1owRU5BMg?oc=5)
+- [중동 전쟁에도 한국 경제 1분기 1.7% 성장‥반도체 호조에 예상 상회 - MBC 뉴스](https://news.google.com/rss/articles/CBMidEFVX3lxTFBtWlBzUEZpZnFOdU5NM2plWEk4X1RhNGRNYkx6cThwVHprQ3NKYlFEcjhnbnhRQk9wVjJrUkV0T2NWN1BoN1RRVzRNcmxrRG4tZzJXaVd3azVsZzZDZm4xdHlWTkM3R0hmdGRpMkZKbzA4dFZj0gF0QVVfeXFMTXgtdHFKNnF5ZFZQbjZUcnpfOWZmRThRdFJaRmNFRGp5RU5jcHRJZ1B0ei11Z0FialRaX2YtNkg2M0g3Ry10azVJeWwtcFh6VE9YU3lYZTkwTk1vYTd6bjZmallTNnIzSFhuWDVVdWZqTWxkX0Q?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
