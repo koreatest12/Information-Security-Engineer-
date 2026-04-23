@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 130 days, 14:30:27
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 130 days, 15:02:35
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,11 +15,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.4% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.8% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- ['리딩금융' 지킨 KB…신한 '최대 실적'에도 非은행서 승부 갈려 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFA1ak5LbVFJdzhkWl8xdkJwMmU4LUtzNjNpMVVEVzRUVTdPdGJMeXp0S1l3RXR0YjFuWlRTVlFpQUY1c0RJWllVdm9UbGU4SFFyMW5STGF4R01zbnQ3UWdVZdIBeEFVX3lxTE13dXllamwzRlVodVI5OUpRQ0JlQnhCSmJ0ME9DYVZzWjhiSm4yZV9QUlMxTHRFTnkwTTdDaUUxLUZaMk1zQ3JvaGNLWVZENTFjNkNUZHJJMjFxNzZrUVUwYmtEdmhvZ3dicVZFc2R6anNDYmg2dmZGMQ?oc=5)
+- [불장에 증권사가 다 벌어왔다…KB·신한금융, 1분기 사상최대 실적 - 매일경제TV](https://news.google.com/rss/articles/CBMiaEFVX3lxTE4yMk1XVHNES2dMcG94MTRFdUdIVk1aMTRNWHNrWVpZUmNQaWpCWm13d2Vtbkx0T2xaNmZQeWNvYVdGR1AyODBrU3RLT2oxUmNydm1sbDRNTUROR2s0c1BXd1R0enFBY0pX?oc=5)
 - [1분기 한국경제, 전기 대비 1.7% 성장…5년 6개월 만에 최고 - 대한민국 정책브리핑](https://news.google.com/rss/articles/CBMibEFVX3lxTFBxTUwwUEh4TmJaNFZWXzFNU1ZlSFVSWEVjOVFyQ3dWYl9aS0lZMVFiWmdTb1FJOXJILVVBdGdCNFpmanU1Z1ZhVjZQWHVrVWcweEtNMk5YZjEzazdib1ZpTDRBaWdXclh5WUpaeg?oc=5)
 
 ---
