@@ -6,16 +6,13 @@
 - **Database**: [Download JSON](./data/daily_intel.json)
 
 ---
-### 🧑‍💼 채용/취업 정보 확장
-- SK하이닉스 SKCT 대량 생성 가이드: [data/sk_hynix_skct_massive_guide.md](./data/sk_hynix_skct_massive_guide.md)
-
 ## 📑 시스템 가동 현황
 | 구분 | 상세 내용 |
 | :--- | :--- |
 | **데이터 수집** | 📂 **2** items |
 | **보안 점검** | ✅ Secure (SHA-512) (Field Analysis) |
 | **빌드 상태** | ✅ Hybrid (Py/Java) Compiled |
-| **동기화** | 2026-04-24 21:14:05 (KST) |
+| **동기화** | 2026-04-24 21:40:59 (KST) |
 
 ---
 > _System v10.7: Automated Security Intelligence_
