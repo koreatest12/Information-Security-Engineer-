@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 133 days, 16:01:19
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 133 days, 16:31:37
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.8% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.9% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [금융시장, KB금융·신한금융 밸류업 정책 및 1분기 실적에 '호평' - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTE5YaEo0OU5tS09VLUxqdW9iZWozcWY4eWp0WWRCUnhfTlFLaTloZDlzVFlWZ2NwZWxyTzcybGlRQngzMUg2N29JTm42aDlHN29EUFln?oc=5)
+- [[증권사 지분투자]⑩ 신한, 든든한 그룹 시너지 '원 신한' - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTFB3ejBmNUNZSGhFeHdOMno2OXA3aGR0c1NKUmd6bGtmclhOU1BrSDlGZ3E0RTBHclhOZzVwbjBla0tOdjJ0R2xZR3hvdzIxakNkLXB6LXNuSElzMmlseEdYWU1aV2dqSzZ60gFsQVVfeXFMTlloR2F5MTUyeFY3blVPa2JNRVE0a2syWnVPQy1wZkdpQnppQ1ozdWlmRFZ2cGV1TE50cjBxTFIwMDA4YTZydTlDNDVNMlZreE5YZVlkZ0xjZHM4b1pHcDlST3FWUFNRY1M4ekQ3?oc=5)
 - [李 지지율 다소 '주춤'...7주째 60%대 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5YeTlKUGQyTndCSkhrVXFyUDF0RnRiSFE0WjRYNzdCNThWRWhxV0kxeXlSczVLYmxWTUJmVDNHS0VzdWJ3M2FXTWVTR1dCR0k?oc=5)
 
 ---
