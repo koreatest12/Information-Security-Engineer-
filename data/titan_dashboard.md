@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 134 days, 0:33:02
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 134 days, 1:36:54
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 23.9% | `███░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.0% | `████░░░░░░░░░░░` |
 | **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융희망재단, 글로벌 청년 봉사단 발대…몽골·베트남 파견 - 기호일보](https://news.google.com/rss/articles/CBMib0FVX3lxTFBTUUNKMjZUTWZMUlFIYnJzWkhhbEYxbUc2ZWtpS2JsVy1rYU5ETWNTdE94T29qVHhaQkd1Nzc4Q2RnWm4xd1J4WmRZTTRYQ3VQRTZuTHdWTklHSTEwUjFzQ0RpMlJmV3VEN1BjZW1ETQ?oc=5)
-- ['K상생'…한국 경제 지속가능한 성장판 열쇠 아세요 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5MN3BrRVdYdkw3YkhXT1JGblBZOTRtZWNDSGNzZWdXUkM3UUdiVHptZ3E2bzNWbjlUdjNBc3hLM2JwRGRoOXFVNnc1Y3Q5Vzg?oc=5)
+- ["돈 아끼려고 알바 대신 로봇 썼더니"…식당 사장님 '한숨' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFAtekxBeXlmbWtXMHhJSlRIZnlqaldjazZhOXpHcFlsQzhBUDFBMC1YdXRseS1XMjZEWDFuWENuSTZvdmktQkZJYnJjc0VWalk?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
