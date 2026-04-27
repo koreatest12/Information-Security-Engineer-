@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 134 days, 2:32:35
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 134 days, 3:29:29
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.2% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.7% | `████░░░░░░░░░░░` |
 | **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [FPT-신한은행, MOU 체결…디지털 금융·차세대 기술 협력 확대 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5JdTJBNV9iZThZZ2pCWTE4aTJjTVhBOHAyR1BQQWVsQVNmSWptbjhVZVJwSjhHby1qUDM4NGp3STlMOGl2WlNGNmNvSndRcHc?oc=5)
+- [대학생 ‘몽골 문화교류’ 신한금융희망재단 발대 - 경인일보](https://news.google.com/rss/articles/CBMiUkFVX3lxTFBTR2lsNnVkcWhWRWRXUGlMQzFoc1ptQ3VlSmNybVF3bmFvS3FfTmpnTWROcnpwVmtfZVNjMEYzakl6X2hoLWJsYlRoVkc1SlNWYUE?oc=5)
 - ["돈 아끼려고 알바 대신 로봇 썼더니"…식당 사장님 '한숨' - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE92Y3dkWjNzQWlFOGRYd1JuNGZmOFA3UWNHTVMzRmhKRlJHelU1S3ljZ01kRWVhbWtBU3FETTUzUGVWcnZnUEE?oc=5)
 
 ---
