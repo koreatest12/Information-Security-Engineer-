@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 134 days, 12:17:08
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 134 days, 12:46:40
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.6% | `█████░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.5% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [대학생 ‘몽골 문화교류’ 신한금융희망재단 발대 - 경인일보](https://news.google.com/rss/articles/CBMiUkFVX3lxTFBTR2lsNnVkcWhWRWRXUGlMQzFoc1ptQ3VlSmNybVF3bmFvS3FfTmpnTWROcnpwVmtfZVNjMEYzakl6X2hoLWJsYlRoVkc1SlNWYUE?oc=5)
-- ["바이오주 옥석가리기 끝나…화장품도 주목할 만" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1Vb1FpMjQxWmwxVEg3TFRkZkpRZm9uTzlSWGVXZXYxQjR3eWhleW5LcjRBTTh6bTlTZG9ZbEc2YnFCNHNPeVZEeFJBRllFU28?oc=5)
+- ["이렇게 가다간 다 뺏길 판"…삼전닉스 호황에도 '경고' - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTFBJSVFVX0JMQVVrMUJYMTY5cGVub0dTbWNEZFJ1cjdFMm1uT1E3RE5RSF9fWFh3Smg2YWlpb3VQQlo1a0V1bkE?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
