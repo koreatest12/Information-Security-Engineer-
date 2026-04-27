@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 133 days, 18:33:55
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 133 days, 20:01:13
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.1% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.1% | `█████░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 베트남서 생산적금융 확장…베트남 중앙은행·비엣콤뱅크와 협력 강화 - 헤럴드경제](https://news.google.com/rss/articles/CBMiVkFVX3lxTFBFcVQxV09VZmRfRXlyaVppQnJJVVh6TVp1RjhBZThrcFdGOTFmb0JCNV9IcjlYSmUwZzJka3I1UFEya3dGVFN5M0J4WTg2Slh1NnphTEJn?oc=5)
-- ["이렇게 가다간 다 뺏길 판"…삼전닉스 호황에도 '경고' - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTFBJSVFVX0JMQVVrMUJYMTY5cGVub0dTbWNEZFJ1cjdFMm1uT1E3RE5RSF9fWFh3Smg2YWlpb3VQQlo1a0V1bkE?oc=5)
+- [FPT-신한은행, MOU 체결…디지털 금융·차세대 기술 협력 확대 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5JdTJBNV9iZThZZ2pCWTE4aTJjTVhBOHAyR1BQQWVsQVNmSWptbjhVZVJwSjhHby1qUDM4NGp3STlMOGl2WlNGNmNvSndRcHc?oc=5)
+- ["돈 아끼려고 알바 대신 로봇 썼더니"…식당 사장님 '한숨' - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE92Y3dkWjNzQWlFOGRYd1JuNGZmOFA3UWNHTVMzRmhKRlJHelU1S3ljZ01kRWVhbWtBU3FETTUzUGVWcnZnUEE?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
