@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 135 days, 3:28:25
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 135 days, 4:22:03
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.8% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.0% | `████░░░░░░░░░░░` |
 | **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [금융권 주주환원 '지붕' 뚫나…신한금융이 쏜 밸류업 경쟁 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE55SHAxUG1uQTdPVjBPYW1JRHN0MkxSdVlDSU9FcDVRZDlXRHoxZGxJTGV0ZjZ5S0tNZ1VaSmw3WHJUS2RtMjBpRnluY2JGUEk?oc=5)
+- [진옥동 신한금융 회장, 생산적 금융, AI 앞세워 '일류 신한 완성'[2026 파워금융인30] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9yT0Z4SjV3SzhMMDNFZEpEMTk0SGJOT25pUXZ3VjFkcFh1Zjh3bnQwekw0ZW05eVdEdHN1bzB0MzNDRTRmRUFJSHJwR0hXQ2M?oc=5)
 - [사상 첫 '버핏지수' 200% 뚫었다…한국 증시 폭주에 '환호' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1ubThQNGxVdU5idUdGQ1dfallSQl8zQjVyVGljeVM1Y0NtcUdTR2ZwWUk5WTRZcG5jSFNCVmFYdElMVGtxRTc5TWt6dTdJYVU?oc=5)
 
 ---
