@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 135 days, 6:32:03
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 135 days, 8:30:36
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.7% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.7% | `████░░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [진옥동 신한금융 회장, 생산적 금융, AI 앞세워 '일류 신한 완성'[2026 파워금융인30] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9yT0Z4SjV3SzhMMDNFZEpEMTk0SGJOT25pUXZ3VjFkcFh1Zjh3bnQwekw0ZW05eVdEdHN1bzB0MzNDRTRmRUFJSHJwR0hXQ2M?oc=5)
-- [한경 글로벌마켓 - 한국경제TV](https://news.google.com/rss/articles/CBMiowFBVV95cUxPdXZQUXdCOXV4aTJlamR5emlVVkhaSGM5dFQ5M1JrOWdId3FRYklmNWJYM2FzU2I4SDV1akFPZWJaN0QxV1B4OEdmU2tpVlVQazFvNzFPcVlWSFkzdjA2WldXMDRHVEwzQTZtM3NfUnR3T05PX0JNTVVyd3VVaXdWYjV4ME9oaUJqMU9lSUlhc1laVzF4MWtWNXRsejRIVTZ0TTBz?oc=5)
+- [신한금융, 주담대 5천억 줄였다…상한 없는 주주환원 정책 도입 - 땅집고](https://news.google.com/rss/articles/CBMif0FVX3lxTFA5c3prc2RQQUhHaG1BQlFhT2Z1blBGYlVGTndNWlZITmFpMzVxWXlhSjZtSUtpQ1h5dEVMcl8waGZzMUZxX0NMT2NBMjl1dDdnbmVHZTI3bkg1ZnFKazBpM1RhZDBpRXVKZ1VvUm1qOFBYS1FpcVBYZFhoeDBPVzjSAXNBVV95cUxNVWJ5bDFJaV94SkpsNHc3R1FHQnFXdmU2TG9sNTFPRlBqdlVFMDhTbHBjVTV6R2sxUWQ0RFRkWm1PS2pXVUtpNEtHRzFMUTU0czN0SnVmYjhMX01UNDRleU93bjkzdkt2cThpS2wxNG9ObzM4?oc=5)
+- [[시론] 산유국 아닌 산전국의 꿈 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9tVl9mT1FBLWtDSUo0QWZKaVpuRGRBS0lYQmN4M2VVbjJVeGh2UDI5Y1hhaWxoNjdHM2J5eGEwVTA1eHp1bk1ESWVlelA4TDA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
