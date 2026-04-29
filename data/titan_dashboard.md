@@ -1,25 +1,21 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 135 days, 23:34:05
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 136 days, 0:32:46
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
 [![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
 
-> **Q:** 종합 상황 브리핑
-
-관련 정보 없음
+데이터 부족
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.3% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.4% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 기부 물품 모아 아름다운가게와 ‘아름다운하루’ 개최 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE5QZGJUZVhVUTBwRjNnemJ4eEpISWtuaEpkYXJPZk5EeU1Ec24zQ0FNU29MVU5lb1R6R2JDZzF1OWxQRFk3V21fUzdtZUJ6NHpxZTV0NnBkaUZPRlF4ek1hR3BOTVBRYWtwMkdZcVYxam95UjQ?oc=5)
-- ["5월에 주식 팔아야" 공포의 격언…'코스피 최고치' 올해는 어떨까 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE14el9uMzd5bTlnRlNWdjFXUlRXVllXSDFqTWhoZzRqSk1qWDNaTF9GOHVBeFltVEZrM2s3dTlOS0FuVmpMaHhGd2tkTWoxMjA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
