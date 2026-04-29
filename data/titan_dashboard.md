@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 136 days, 15:34:42
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 136 days, 16:04:14
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 24.9% | `███░░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - ["사고치지 말라"던 신한證, 이제는 수익 압박…그룹 'ROE' 기조 전환 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxQS0JXNDhSY2JDZkZRR1ZHbmJUM1BQX1Z2TC03NktPckZITVMzT3ZlSm1qODJ5d25JVzdSSGRXbzU1OUcyT3M4T1hUYnBOeVZWRjdrQ2xSVFBCenNTbmsyR280T1Y1UFdpX2hONlMzQWRlOEZjVC0xa3NGR2dWWkdHUE5BSQ?oc=5)
-- [주말 아침부터 '바글바글'…"수요일에 올 걸" 40대도 '열광' [트렌드+] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9VUlh1SEtUdEp4SDFYLW54QWRybEVILTRhdXMwQzV5dmVJT2xzeUFwWXJaUHlsMmhTYTFMUzZUTmQ1Mm4xaWY4czFUdzBtQWs?oc=5)
+- [美 금리동결·빅테크 실적 호조…국내 증시 6700대 넘볼까[오늘의 투자포인트] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9zNEMtMl9TcVRhZlZoakV1dUlLaXpTMTI1ZmdUQk12WEo1UENSWVc2dnFzemlWOUFuYTN6M2FkMzdhU05lWldtVDVqWG04SEE?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
