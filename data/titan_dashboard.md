@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 135 days, 17:31:09
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 135 days, 18:33:51
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,11 +15,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.7% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.8% | `████░░░░░░░░░░░` |
 | **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 주담대 5천억 줄였다…상한 없는 주주환원 정책 도입 - 땅집고](https://news.google.com/rss/articles/CBMif0FVX3lxTFA5c3prc2RQQUhHaG1BQlFhT2Z1blBGYlVGTndNWlZITmFpMzVxWXlhSjZtSUtpQ1h5dEVMcl8waGZzMUZxX0NMT2NBMjl1dDdnbmVHZTI3bkg1ZnFKazBpM1RhZDBpRXVKZ1VvUm1qOFBYS1FpcVBYZFhoeDBPVzjSAXNBVV95cUxNVWJ5bDFJaV94SkpsNHc3R1FHQnFXdmU2TG9sNTFPRlBqdlVFMDhTbHBjVTV6R2sxUWQ0RFRkWm1PS2pXVUtpNEtHRzFMUTU0czN0SnVmYjhMX01UNDRleU93bjkzdkt2cThpS2wxNG9ObzM4?oc=5)
+- ['새 밸류업' 발표 신한금융 vs 라이벌 KB…주주환원 '승부수' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBTUm9HcEozSktmVDVUZ2RpVnlQb1ZkTzlsUjdENWVkdUhlQ3RJdEVmVlZ0NGJFWGh1WnRqUl9TdV95Wk1zSVJBZ2ZSUWJyeXM?oc=5)
 - [[단독] "이대로는 안된다" 초유의 상황…삼성 '대수술' 나섰다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9YX2ZTMDFkTXh6Q1hTRGZkRHNNak55S1BoWnU5d0pLamI5UHNncGFGeFM0aHRtTU1nRW13VzFIclRYVlNwcU1jcmtTZWktRUU?oc=5)
 
 ---
