@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 136 days, 2:31:36
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 136 days, 3:23:36
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,11 +15,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.0% | `████░░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.6% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [디지털 1위 지킨 'KB' 뒤쫓는 '신한', 이창권 최혁재 모바일앱 경쟁 치열해진다 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE1LUGFTczRKS0VJNTV0TkVCMmp1Tl9DYldTWkdHVVh3WGtnVHdYdVFTWE1xN2hvMFVGRzZfeXpPeVVwczdPVHZEWlJLNFU3S3BPcFBVdkhkc0ZjLTdYMjYzenFBdmQ0VHRuOHhQWE5KeDcybUk?oc=5)
+- [신한금융, 임직원 물품 5000여 점 모아 '아름다운하루' 개최 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1aQi1QbVdjZWx3a0NVdkRHQ01TaXJ6OUptdi01QzBxTWpsU2lIdDBIb1ltdUxUcG1BSkR2Qmx5dDFIa0h3SkFCLWx2U3hpbE5fcDhhY2FIeXU2d0lkVDZMWdIBeEFVX3lxTE9BeWxoS2wwc2tXMTJoVjROclVpaUdzU0tMelo4SUlBODNrR05oOFg3N0poa0pNRThXWjlsNDhxXzBscWYySUJiWTcxVmctZXJvY3pOTGNvWkwyRkIwN2hGMmYyOUpYX0ItcV9jSkl1djJ6dm1ad1UtTA?oc=5)
 - [[단독] "이대로는 안된다" 초유의 상황…삼성 '대수술' 나섰다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9YX2ZTMDFkTXh6Q1hTRGZkRHNNak55S1BoWnU5d0pLamI5UHNncGFGeFM0aHRtTU1nRW13VzFIclRYVlNwcU1jcmtTZWktRUU?oc=5)
 
 ---
