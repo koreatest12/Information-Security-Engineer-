@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 136 days, 3:23:36
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 136 days, 4:17:52
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,19 +8,18 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [KR_ECON] [단독] "이대로는 안된다" 초유의 상황…삼성 '대수술' 나섰다 - v.daum.net
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.6% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 25.9% | `███░░░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 임직원 물품 5000여 점 모아 '아름다운하루' 개최 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1aQi1QbVdjZWx3a0NVdkRHQ01TaXJ6OUptdi01QzBxTWpsU2lIdDBIb1ltdUxUcG1BSkR2Qmx5dDFIa0h3SkFCLWx2U3hpbE5fcDhhY2FIeXU2d0lkVDZMWdIBeEFVX3lxTE9BeWxoS2wwc2tXMTJoVjROclVpaUdzU0tMelo4SUlBODNrR05oOFg3N0poa0pNRThXWjlsNDhxXzBscWYySUJiWTcxVmctZXJvY3pOTGNvWkwyRkIwN2hGMmYyOUpYX0ItcV9jSkl1djJ6dm1ad1UtTA?oc=5)
-- [[단독] "이대로는 안된다" 초유의 상황…삼성 '대수술' 나섰다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9YX2ZTMDFkTXh6Q1hTRGZkRHNNak55S1BoWnU5d0pLamI5UHNncGFGeFM0aHRtTU1nRW13VzFIclRYVlNwcU1jcmtTZWktRUU?oc=5)
+- [한국경제 - video.daum.net](https://news.google.com/rss/articles/CBMiakFVX3lxTE1xQ0ZYWEVXYUhkLVVhVmwwSFRpcExEZGJRWnN0V0xvb1dvakhGWGJVN2hNRmJkMEFyZG9sVWp0UFRSYU50SXZOZm1sMy1PYmFDMU04dnpwNnc2WWZhTW5BVUowOGRTdGxvN1E?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
