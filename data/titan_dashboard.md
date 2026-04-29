@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 135 days, 22:35:54
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 135 days, 23:34:05
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,19 +8,18 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [KR_ECON] [단독] "이대로는 안된다" 초유의 상황…삼성 '대수술' 나섰다 - v.daum.net
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.2% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.3% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 기부 물품 모아 아름다운가게와 ‘아름다운하루’ 개최 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE5QZGJUZVhVUTBwRjNnemJ4eEpISWtuaEpkYXJPZk5EeU1Ec24zQ0FNU29MVU5lb1R6R2JDZzF1OWxQRFk3V21fUzdtZUJ6NHpxZTV0NnBkaUZPRlF4ek1hR3BOTVBRYWtwMkdZcVYxam95UjQ?oc=5)
-- [[단독] "이대로는 안된다" 초유의 상황…삼성 '대수술' 나섰다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9YX2ZTMDFkTXh6Q1hTRGZkRHNNak55S1BoWnU5d0pLamI5UHNncGFGeFM0aHRtTU1nRW13VzFIclRYVlNwcU1jcmtTZWktRUU?oc=5)
+- ["5월에 주식 팔아야" 공포의 격언…'코스피 최고치' 올해는 어떨까 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE14el9uMzd5bTlnRlNWdjFXUlRXVllXSDFqTWhoZzRqSk1qWDNaTF9GOHVBeFltVEZrM2s3dTlOS0FuVmpMaHhGd2tkTWoxMjA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
