@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 136 days, 11:47:03
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 136 days, 12:19:37
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.4% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.1% | `████░░░░░░░░░░░` |
 | **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 임직원 물품 5000여 점 모아 '아름다운하루' 개최 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1aQi1QbVdjZWx3a0NVdkRHQ01TaXJ6OUptdi01QzBxTWpsU2lIdDBIb1ltdUxUcG1BSkR2Qmx5dDFIa0h3SkFCLWx2U3hpbE5fcDhhY2FIeXU2d0lkVDZMWdIBeEFVX3lxTE9BeWxoS2wwc2tXMTJoVjROclVpaUdzU0tMelo4SUlBODNrR05oOFg3N0poa0pNRThXWjlsNDhxXzBscWYySUJiWTcxVmctZXJvY3pOTGNvWkwyRkIwN2hGMmYyOUpYX0ItcV9jSkl1djJ6dm1ad1UtTA?oc=5)
-- ['660조 잭팟' 터졌다…한달새 '40% 급증' 개미들 환호 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1OR2lqaUptd3hPdEMxSTdqaGhFa3I5NjVuUHVjVXk5R0NndWx5cEJ5Um1ncUI0MVM1dFdNV1pDcUZaOExjS01lWEh2WWFJWHc?oc=5)
+- [한국경제 - video.daum.net](https://news.google.com/rss/articles/CBMid0FVX3lxTE9PWkMtTHlhdVlZd096OUVGNHRKYjd4QV9aR1paYlZKbmZFeWZtbUZBR3VMTVdtOGFOSWtlZkg1T3FQTHZrWGNaTTFlUGU3ODNQUWtjR3FxTkt1VDQ0LWRqekVYbGVyQUFia3M5QUxlcFhTN0stZkpV?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
