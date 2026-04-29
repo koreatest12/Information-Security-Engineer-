@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 136 days, 10:16:46
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 136 days, 10:55:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 25.7% | `███░░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.2% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[대한민국 100대 CEO] 진옥동 신한금융그룹 회장 | 생산적 금융 실천 선봉…5년 110조 공급 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE4ydEhCTjNmQWtMaVMyWmhvWmtuNDZGN3pyTzEwYTVtWEctTHlIQVN6dlJzTS1Eb0hCRFJodHVhRGFYb3habzNSSUdQQlBpX1k?oc=5)
+- [신한금융, 임직원 물품 5000여 점 모아 '아름다운하루' 개최 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1aQi1QbVdjZWx3a0NVdkRHQ01TaXJ6OUptdi01QzBxTWpsU2lIdDBIb1ltdUxUcG1BSkR2Qmx5dDFIa0h3SkFCLWx2U3hpbE5fcDhhY2FIeXU2d0lkVDZMWdIBeEFVX3lxTE9BeWxoS2wwc2tXMTJoVjROclVpaUdzU0tMelo4SUlBODNrR05oOFg3N0poa0pNRThXWjlsNDhxXzBscWYySUJiWTcxVmctZXJvY3pOTGNvWkwyRkIwN2hGMmYyOUpYX0ItcV9jSkl1djJ6dm1ad1UtTA?oc=5)
 - [한국경제 - video.daum.net](https://news.google.com/rss/articles/CBMid0FVX3lxTE9PWkMtTHlhdVlZd096OUVGNHRKYjd4QV9aR1paYlZKbmZFeWZtbUZBR3VMTVdtOGFOSWtlZkg1T3FQTHZrWGNaTTFlUGU3ODNQUWtjR3FxTkt1VDQ0LWRqekVYbGVyQUFia3M5QUxlcFhTN0stZkpV?oc=5)
 
 ---
