@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 136 days, 15:04:08
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 136 days, 15:34:42
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.0% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
 | **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 임직원 물품 5000여 점 모아 '아름다운하루' 개최 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1aQi1QbVdjZWx3a0NVdkRHQ01TaXJ6OUptdi01QzBxTWpsU2lIdDBIb1ltdUxUcG1BSkR2Qmx5dDFIa0h3SkFCLWx2U3hpbE5fcDhhY2FIeXU2d0lkVDZMWdIBeEFVX3lxTE9BeWxoS2wwc2tXMTJoVjROclVpaUdzU0tMelo4SUlBODNrR05oOFg3N0poa0pNRThXWjlsNDhxXzBscWYySUJiWTcxVmctZXJvY3pOTGNvWkwyRkIwN2hGMmYyOUpYX0ItcV9jSkl1djJ6dm1ad1UtTA?oc=5)
+- ["사고치지 말라"던 신한證, 이제는 수익 압박…그룹 'ROE' 기조 전환 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxQS0JXNDhSY2JDZkZRR1ZHbmJUM1BQX1Z2TC03NktPckZITVMzT3ZlSm1qODJ5d25JVzdSSGRXbzU1OUcyT3M4T1hUYnBOeVZWRjdrQ2xSVFBCenNTbmsyR280T1Y1UFdpX2hONlMzQWRlOEZjVC0xa3NGR2dWWkdHUE5BSQ?oc=5)
 - [주말 아침부터 '바글바글'…"수요일에 올 걸" 40대도 '열광' [트렌드+] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9VUlh1SEtUdEp4SDFYLW54QWRybEVILTRhdXMwQzV5dmVJT2xzeUFwWXJaUHlsMmhTYTFMUzZUTmQ1Mm4xaWY4czFUdzBtQWs?oc=5)
 
 ---
