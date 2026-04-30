@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 137 days, 0:33:04
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 137 days, 1:31:57
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.2% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.0% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 정기예금 고객에 유언대용신탁 ‘빠른 가입’ 서비스 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE1SN1lHMi1yM0tqbXJjZ2RxRjB2SWVDY1JVT2FqNkYtQlE0NmgxZ3IxbFVFNUpuejF5dXhTMGp5YTd2THhGWE9XYTQyYVR5STJvaE1HMkZqTDVsZV96cDI1WVV2QVNuNUN5RUxFSEpMb3pTR28?oc=5)
-- ["증시 운명 좌우할 80초"…내일 새벽 4대 빅테크 실적 발표 - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE9icnpvX0NZTGVrS3BJLUxyRkYyN3VnMVFJR3NtN04zV2VZSXhZbDRsRlB1TDZOb3RGZ2NCRW1aMF9iazRuNWc?oc=5)
+- [신한금융, 1천억 민간벤처모펀드로 청년·지방기업 자금공백 해소 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE5vN0t6VV93eW5zcDB0VmtyWTJOV0tuTWxZQTFFcUhBVG83YTJFNDNkcHo4ZURFdWhnNkxuTnN3dTVkS1EyTTExWW51Yk5aMjhuTllBNDJ1Sk9OT1Atdmk0TEFSeUhtSnRMR3VPaF9iOWd6WWc?oc=5)
+- ['660조 잭팟' 터졌다…한달새 '40% 급증' 개미들 환호 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1OR2lqaUptd3hPdEMxSTdqaGhFa3I5NjVuUHVjVXk5R0NndWx5cEJ5Um1ncUI0MVM1dFdNV1pDcUZaOExjS01lWEh2WWFJWHc?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
