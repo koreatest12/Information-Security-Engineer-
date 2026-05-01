@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 137 days, 17:35:48
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 137 days, 18:33:49
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,11 +15,11 @@
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
 | **CPU** | `128 vCores` | 34.5% | `█████░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - ["사고치지 말라"던 신한證, 이제는 수익 압박…그룹 'ROE' 기조 전환 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxQS0JXNDhSY2JDZkZRR1ZHbmJUM1BQX1Z2TC03NktPckZITVMzT3ZlSm1qODJ5d25JVzdSSGRXbzU1OUcyT3M4T1hUYnBOeVZWRjdrQ2xSVFBCenNTbmsyR280T1Y1UFdpX2hONlMzQWRlOEZjVC0xa3NGR2dWWkdHUE5BSQ?oc=5)
-- ["증시 운명 좌우할 80초"…내일 새벽 4대 빅테크 실적 발표 - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE9icnpvX0NZTGVrS3BJLUxyRkYyN3VnMVFJR3NtN04zV2VZSXhZbDRsRlB1TDZOb3RGZ2NCRW1aMF9iazRuNWc?oc=5)
+- [1분기 한국경제, 험난한 파고 뚫고 ‘순항’ - 애플경제](https://news.google.com/rss/articles/CBMib0FVX3lxTE9QWHB1MG8wUHJ3bVMzMnlwTFp2aHlUTTRMRzJMUWdqcVVrRHRNdlYwYTRnakV1VmRkWW9ybVRvMkxmVDVSM3Q4WEVHd2JWM1J1TFJ1SlFyQmZCd3lmWnBjdHpQSmFDSjRNNnlEVW5jUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
