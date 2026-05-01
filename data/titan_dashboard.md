@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 138 days, 8:35:20
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 138 days, 9:03:44
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.2% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.7% | `████░░░░░░░░░░░` |
 | **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - ["사고치지 말라"던 신한證, 이제는 수익 압박…그룹 'ROE' 기조 전환 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxQS0JXNDhSY2JDZkZRR1ZHbmJUM1BQX1Z2TC03NktPckZITVMzT3ZlSm1qODJ5d25JVzdSSGRXbzU1OUcyT3M4T1hUYnBOeVZWRjdrQ2xSVFBCenNTbmsyR280T1Y1UFdpX2hONlMzQWRlOEZjVC0xa3NGR2dWWkdHUE5BSQ?oc=5)
-- ["제발 팔아달라"…쏟아진 러브콜에 韓 역대급 '잭팟' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5rTGFYWG1sREFBbjVRQkJWNHlKLTFhTk54RUp2ZUZRaF9xYklWMHFYUnJQWUtiQmJBcXBBcHFZQk8ya0dPQWlrQkdvZFZESDA?oc=5)
+- ["놀아도 내 월급 3배 받는데"…신입도 상사처럼 '시간 때우기' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1rZHFJRFRYYkd1QjRlRVVaRU90TU9qQlM2X0psVFk3Ti1VREpDMU9MRGZFbm9mYzVvZFd2Q1ZmU2E3ZkdQSTVtRGZzajNHYVE?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
