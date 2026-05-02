@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 139 days, 6:40:07
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 139 days, 7:02:39
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.7% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.5% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [“스타트업 성장 지원” 신한은행·고려대 기술지주 ‘맞손’ - 주간한국](https://news.google.com/rss/articles/CBMicEFVX3lxTFByU201RFZLZnh4bmtaSHg1YkxlWGdJTjQzcmVDU29hQXctTmltNGZlZ1BoaVhBM2p1S2JBQnlVdDlGSFVhY19vYi1Jd2owZHdCbWs1anBQZzBIbGJ2d0tHTGdIeDdkVUtDSzB3MjdzX2bSAXRBVV95cUxPQmJUYVg3RXdFNllvVURFMHhDcy1GOGJGQlhzUlpFUWtOOGFjc1I2eUJiRHVSUGw0RENvVzhERVVldUEzQXI3MnlmNS0yNGQ2TEhzdGpWZ21idjZSMmN1R3JCaktJMEttRmVWTk5ZN0RFdFJVZQ?oc=5)
+- ["사고치지 말라"던 신한證, 이제는 수익 압박…그룹 'ROE' 기조 전환 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxQS0JXNDhSY2JDZkZRR1ZHbmJUM1BQX1Z2TC03NktPckZITVMzT3ZlSm1qODJ5d25JVzdSSGRXbzU1OUcyT3M4T1hUYnBOeVZWRjdrQ2xSVFBCenNTbmsyR280T1Y1UFdpX2hONlMzQWRlOEZjVC0xa3NGR2dWWkdHUE5BSQ?oc=5)
 - ["늙으면 여기 살겁니다"…부동산 교수가 '내 집' 대신 찜한 곳 [이송렬의 우주인] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBfLUlVZUhjdmd2WnJDV2FDX1NqTHlGTFR1eWlXNm9ZRjNiVXp3aUJzRDhxZkFwVlFrbXF5b1hsUnZkZ25paGxsMFE5czFKaUk?oc=5)
 
 ---
