@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 138 days, 17:27:34
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 138 days, 18:33:33
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.8% | `█████░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.8% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - ["사고치지 말라"던 신한證, 이제는 수익 압박…그룹 'ROE' 기조 전환 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxQS0JXNDhSY2JDZkZRR1ZHbmJUM1BQX1Z2TC03NktPckZITVMzT3ZlSm1qODJ5d25JVzdSSGRXbzU1OUcyT3M4T1hUYnBOeVZWRjdrQ2xSVFBCenNTbmsyR280T1Y1UFdpX2hONlMzQWRlOEZjVC0xa3NGR2dWWkdHUE5BSQ?oc=5)
-- [‘30만전자·200닉스’가 끝이 아니다?… 바통 이어받을 ‘종목’은? - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE11VWtoSUFWLXVqbEhNTV8xblRCSDFZUHhyYWVLZTM1S0xQbHhPZjRyNnBEaU1LZUZ5SnprTmpqNDRYVThUeW9ER2h2OUxQR0U?oc=5)
+- [구로다 “엔저 지나치다”…한국 경제까지 흔드는 ‘약한 엔화’ - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1JVWcwXzhnS1FISUJIQmpwaHkyaFNvcVBkNDNXUENCRDRUd2ZQN255X0hMU3FhWFhieUZONkhLNE1MTUlHSFFOMmh4R0djMmM?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
