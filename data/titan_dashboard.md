@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 138 days, 22:51:51
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 138 days, 23:48:34
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.3% | `████░░░░░░░░░░░` |
-| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.8% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - ["사고치지 말라"던 신한證, 이제는 수익 압박…그룹 'ROE' 기조 전환 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxQS0JXNDhSY2JDZkZRR1ZHbmJUM1BQX1Z2TC03NktPckZITVMzT3ZlSm1qODJ5d25JVzdSSGRXbzU1OUcyT3M4T1hUYnBOeVZWRjdrQ2xSVFBCenNTbmsyR280T1Y1UFdpX2hONlMzQWRlOEZjVC0xa3NGR2dWWkdHUE5BSQ?oc=5)
-- [러우 전쟁, 1차 대전 기간 넘나…세계 10대 장기전 눈앞 [신현보의 딥데이터] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5sMGM1YVVVQTdEWGpkRUZYdU81Z1ZJUFFLb3ZDcjVndnRBZWYyU2UwTzBVQ3BsdDEtRENScDNsN1NqTEpWRmRueXphR2NWNXM?oc=5)
+- ["90년생이랑 일 못하겠어요"…팀장 멘붕 빠트린 신입 [리멤버 오피스워] - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTFBoZndKZU91M0tXcGxVWmJiUTdrMGtYZGZ0QWdaX294SW5BMmd0NkJlQk5KN3ZSN2sxbEI5RWk0czg3NlV3ZUE?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
