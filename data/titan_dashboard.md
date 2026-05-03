@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 139 days, 16:33:58
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 139 days, 17:33:32
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.5% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.1% | `████░░░░░░░░░░░` |
 | **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[리딩뱅크 신한은행] 밸류업 전초기지, RWA 약세에 흔들린 자본적정성 - 네이트](https://news.google.com/rss/articles/CBMieEFVX3lxTE4zbDBVYjJnYkRTWHJubHZ2OFQzYlBzOWxXOXJ0Rk91MVA4b0Ytb214eXBxSExDcUl4R1NqVW55OUZnV2pfNVIzX2VaUmhqd1UzQkRXcHNWSWlqSnJqZndKbVJyeXRjT2lGbThla2h6Rk54TzkxcHR3cg?oc=5)
-- [드라마 속 한국은 멋진데…"여행은 별로네요" 실망한 이유 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9GdlM4Y3FlVGFFaTlKQm5KTFpocl94cktXOEZMdnJQUlRXbmNkbWZ6Ml9vWExDU25rQlh3VFVyMEtHSVFnTzBSdE1YNm4tSms?oc=5)
+- [드라마 속 한국은 멋진데…"여행은 별로네요" 실망한 이유 - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTFBDX3lMeGM3Mnd6NGhSTUI2YnJpMzVYaGpubnlsQzZqWFZzakJ1UFo4SW10NHhGZS1URFc0bFI1REJIR2Y1RHc?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
