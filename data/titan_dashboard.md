@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 139 days, 21:23:00
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 139 days, 22:36:17
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.5% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.8% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[리딩뱅크 신한은행] 밸류업 전초기지, RWA 약세에 흔들린 자본적정성 - 네이트](https://news.google.com/rss/articles/CBMieEFVX3lxTE4zbDBVYjJnYkRTWHJubHZ2OFQzYlBzOWxXOXJ0Rk91MVA4b0Ytb214eXBxSExDcUl4R1NqVW55OUZnV2pfNVIzX2VaUmhqd1UzQkRXcHNWSWlqSnJqZndKbVJyeXRjT2lGbThla2h6Rk54TzkxcHR3cg?oc=5)
-- [전쟁 51개월째 안 끝났다…러시아 충격에 한국도 '직격탄' [신현보의 딥데이터] - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE5NU2FJRk8tcV9xdjI1VHQ5NWxIVVdzYks5Wi1RNk5ZUk9PSVNKTmRlVDZNMXBQTWswUnhYYjJjaUQyeDU3Smc?oc=5)
+- [신한금융, 1분기 부실자산 공격적 처분…'회수포기 대출' 유일하게 감소 - ER 이코노믹리뷰](https://news.google.com/rss/articles/CBMibEFVX3lxTE80eUstTmRWV3Z4ZlBwR2JoUDJVcndQYkwzd256TDA3TVl2RW1JcmZSVHZ1dmp4RkJnRFAwMC1xRW55eGNIM3h1MUhnMmVuN2VkSGdldHhROHJFYXVsY2E5dmdSekF4bVkycTk5ag?oc=5)
+- [현대경제연구원, 韓 성장률 2.7%로 상향…반도체·추경 효과 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1YN0E4REx3NGRqNGNoSzkyckRIYllQQll0aUlkeGVqdy04X2RUenlGaXlsYThOS3NwbUZPcGdxRFZta01CWlVvWkRVRTF5elk?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
