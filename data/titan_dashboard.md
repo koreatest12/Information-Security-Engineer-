@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 140 days, 13:30:45
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 140 days, 14:01:55
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 25.9% | `███░░░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.9% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 여신심사 등 ‘현장형 AX’ 본격화 [금융권 AI 人포그래픽] - 한국금융신문](https://news.google.com/rss/articles/CBMie0FVX3lxTE53QmdNUm5vZFdWazQwWnJsMkdsMHd4RE5xYXBNcFl5TVg4WmJNUTVyQjBLcnJ6ZXVhdlJNM01FN1hXcE5SNGJvbm1aMkRWQVozNzZOQXR4dHRKaHYzRENRODBqYU5kcmlIU0dVMjVheGw2SjNtU0hGaUROMA?oc=5)
