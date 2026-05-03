@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 140 days, 7:03:10
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 140 days, 7:30:48
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.7% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.7% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 1분기 부실 덜고 건전성 개선…회수포기 대출 감소 '유일' - ER 이코노믹리뷰](https://news.google.com/rss/articles/CBMibEFVX3lxTE80eUstTmRWV3Z4ZlBwR2JoUDJVcndQYkwzd256TDA3TVl2RW1JcmZSVHZ1dmp4RkJnRFAwMC1xRW55eGNIM3h1MUhnMmVuN2VkSGdldHhROHJFYXVsY2E5dmdSekF4bVkycTk5ag?oc=5)
+- [신한금융, 여신심사 등 ‘현장형 AX’ 본격화 [금융권 AI 人포그래픽] - 한국금융신문](https://news.google.com/rss/articles/CBMie0FVX3lxTE53QmdNUm5vZFdWazQwWnJsMkdsMHd4RE5xYXBNcFl5TVg4WmJNUTVyQjBLcnJ6ZXVhdlJNM01FN1hXcE5SNGJvbm1aMkRWQVozNzZOQXR4dHRKaHYzRENRODBqYU5kcmlIU0dVMjVheGw2SjNtU0hGaUROMA?oc=5)
 - [국민연금 '월 318만원' 받는 수급자 보니…'놀라운 현실' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE0ySHlTZmlZNkZJTWt2TkxqeDRlazlzYThaTmJQcmRMMEQ1RXFtWXF0WERXSjhaY081R1QxNU1SRkMwY0Q1UHdWMDhoRVZ2QVE?oc=5)
 
 ---
