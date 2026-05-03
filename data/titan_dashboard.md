@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 140 days, 11:03:40
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 140 days, 11:38:55
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.4% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.0% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 여신심사 등 ‘현장형 AX’ 본격화 [금융권 AI 人포그래픽] - 한국금융신문](https://news.google.com/rss/articles/CBMie0FVX3lxTE53QmdNUm5vZFdWazQwWnJsMkdsMHd4RE5xYXBNcFl5TVg4WmJNUTVyQjBLcnJ6ZXVhdlJNM01FN1hXcE5SNGJvbm1aMkRWQVozNzZOQXR4dHRKaHYzRENRODBqYU5kcmlIU0dVMjVheGw2SjNtU0hGaUROMA?oc=5)
-- [[주末머니]고유가에 물가 부담까지…한국 경제 괜찮을까 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1veEQxTDdDcHh5NGVzM0Z6X1JjbzI0UFY4ZlRSWnhmV2RjVW9WMDlxREZuV2dXQkdzSVZXaE0yRXRZWWwxdk04UVdkdjJCdzg?oc=5)
+- [보조금 떼면 여전히 ‘적자’…K배터리, 주가 100만원의 역설 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBKU3BxMUNVVHowVlg1MmxVVVhURWVSa2R5d2YtTDBkaThsUGhsSlZDREZUVVZzT2RZbU85dGc5azhNcjlrX005WFUwY3l3TEU?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
