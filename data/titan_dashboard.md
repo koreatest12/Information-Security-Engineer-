@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 140 days, 10:32:02
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 140 days, 11:03:40
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.2% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.4% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 여신심사 등 ‘현장형 AX’ 본격화 [금융권 AI 人포그래픽] - 한국금융신문](https://news.google.com/rss/articles/CBMie0FVX3lxTE53QmdNUm5vZFdWazQwWnJsMkdsMHd4RE5xYXBNcFl5TVg4WmJNUTVyQjBLcnJ6ZXVhdlJNM01FN1hXcE5SNGJvbm1aMkRWQVozNzZOQXR4dHRKaHYzRENRODBqYU5kcmlIU0dVMjVheGw2SjNtU0hGaUROMA?oc=5)
-- [구윤철 “중동전, 한국경제 위험요인”…역내 경제·금융협력 강화 촉구 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1sRGM4U3lGQ1RFRnN1R0xCdnZVRlM0eUR5QmhyeVVMZ2hvSDJXTDFCWkRRM1BCbzl4dzNnNkFjLVUzaDFReEJHXzNMVmdXem8?oc=5)
+- [[주末머니]고유가에 물가 부담까지…한국 경제 괜찮을까 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1veEQxTDdDcHh5NGVzM0Z6X1JjbzI0UFY4ZlRSWnhmV2RjVW9WMDlxREZuV2dXQkdzSVZXaE0yRXRZWWwxdk04UVdkdjJCdzg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
