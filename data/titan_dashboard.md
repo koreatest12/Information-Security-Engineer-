@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 141 days, 3:50:04
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 141 days, 4:44:20
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.4% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.6% | `█████░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행 '2025 지속가능경영보고서' 발간, 금융과 ESG 전략 연계성 강화 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTFBiemEwNDlRM2JGNDJoUzhpaXNtdENNUHVXeWlSdWdrMkJFdkN3Zk8xaXg5MGpRUVJSd1VyNGZtN0k1VVk2N3hHU2d0V0U3U3huOFhqT3hRS0EwVWhtS1FXbFozaXVtaG9hUzgzeXEtcjd6eVk?oc=5)
-- [다들 삼전·하이닉스 살 때…전문가가 콕 찍은 '알짜주' [한경우의 케이스스터디] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE4yNUtZVnlETDJUT2dadkUydm5SOVR1SFczR1JJcGpwUjEtdUZDeExoTU9MdWFTMHBHUnJPV2tnUnQtLU5jaV9YeE03aWhfMFU?oc=5)
+- [신한금융, 초기 스타트업도 육성…'신한 퓨처스랩' 청년 창업가 신설 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1UdmVtZlpoTmQzUTRwX3dFTW1jUWdZYXpEbTk5U19LSHp2bUZZTjF6UFBTY1ZrcVhuQ3Bqdi1Ybkphd0RtZm44bjVpQTFjeFpTWWx2ckYzZHg5cy1xSVZTNA?oc=5)
+- [한국서 ‘떼돈’ 벌었다...결국 승자는 ‘외국인’ - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBHOGVmVzZ1ZklIUkw0SU1SRlNBSzkxNi1XVXZDM3FDdkhDZnJaY01lOWpIaG1BSGJuOGpuMzJLeDhKQ2NzQ1BpR3JOTUNKY3M?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
