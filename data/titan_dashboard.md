@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 140 days, 21:23:38
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 140 days, 22:45:30
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.5% | `████░░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.7% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 초기 스타트업도 육성…'신한 퓨처스랩' 청년 창업가 신설 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1UdmVtZlpoTmQzUTRwX3dFTW1jUWdZYXpEbTk5U19LSHp2bUZZTjF6UFBTY1ZrcVhuQ3Bqdi1Ybkphd0RtZm44bjVpQTFjeFpTWWx2ckYzZHg5cy1xSVZTNA?oc=5)
-- [국민연금 '월 318만원' 받는 수급자 보니…'놀라운 현실' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE0ySHlTZmlZNkZJTWt2TkxqeDRlazlzYThaTmJQcmRMMEQ1RXFtWXF0WERXSjhaY081R1QxNU1SRkMwY0Q1UHdWMDhoRVZ2QVE?oc=5)
+- [신한금융, 1119명 소방가족에 ‘스포츠 휴식’ 쏜다 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5IUU15OFI0WTdhT1hEMDZCZGFBUVJtQzR6QkdKNmZ4NWxiTUNfNk9vNXh4Z1A3UV9VYmJjUkJuY0RXZkdjenZFeXlwNlNEVUtaX3BjNkl5emJ0QQ?oc=5)
+- [한국서 ‘떼돈’ 벌었다...결국 승자는 ‘외국인’ - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBHOGVmVzZ1ZklIUkw0SU1SRlNBSzkxNi1XVXZDM3FDdkhDZnJaY01lOWpIaG1BSGJuOGpuMzJLeDhKQ2NzQ1BpR3JOTUNKY3M?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
