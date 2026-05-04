@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 140 days, 16:35:06
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 140 days, 17:31:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.5% | `████░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.7% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융그룹, ‘2026 신한 소방 가족의 날’ 개최 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5FWHMxV21nelBxQWZoY2hVMnNaVTZjMXF3d2tzTDBYUGZ4LWdSZGhBaWpjMVVkSzFyZmJyQUFuTFkwWkh3bTJLMDNTWnJfbE5mRFZ1VldvODJqd9IBVEFVX3lxTE5HMnR3VzlxcUJ3em9oeWxfOEh6WXJ5UHBLbHBSUWE1ZDdFcExlM1RiOUlNMzk1OHk3RTJxQUV0bTdqSHMxVVppTXpwZ1JUOXo0VkRuaA?oc=5)
-- [성장률ㆍ물가 동반상승…반도체 끌고 유가가 흔드는 한국 경제 - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTE41STJIYjV6S3VFbVJWUGRYcXZ3WDB1QVNTbWViXzFTRmtfYWNhd19ielhXdEQ4Z0ozTjloa2FmZkNMVmpUQ01sejVCWWV5d2tiTDAxamYzbkFCbGV1Y3drNjBHTWpYZkJURUhnVHRaVWdLc0HSAXdBVV95cUxQNW9Wd0xyT2xVM285TzNwQUtFWTVoNV9PdVZ3TzMzX0hjSDFqREphYkZzb0doQU5BNDBCeWx3cHluZTJXSXVScjFUZTB2RjJKVTE1NHVOU05aQ1JvU1NSbkFEajFyb04tYmp2eG5jM0lITjNyNkpPMA?oc=5)
+- [다들 삼전·하이닉스 살 때…전문가가 콕 찍은 '알짜주' [한경우의 케이스스터디] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE4yNUtZVnlETDJUT2dadkUydm5SOVR1SFczR1JJcGpwUjEtdUZDeExoTU9MdWFTMHBHUnJPV2tnUnQtLU5jaV9YeE03aWhfMFU?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
