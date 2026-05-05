@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 142 days, 4:36:37
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 142 days, 5:12:04
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.9% | `████░░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [계열사 AI 경진대회...신한금융 AX 속도 - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Jb0ZnTFNRWGtyYTdkYlpvMXNaa1ZvSzdvbTUtMkplMkZQd2JhNGVDdkNxNjB3TW5rY2xtZ2o1YkFuLWx0RDRVNUNwZlVzazhJZGfSAVNBVV95cUxNTlFBdlFlSTQ2U2Rpa0gwd2hGSWNXYlNnVWVoWHZCTi1KYUJxcG1NSEZBclFoZUc5TVBzN0pwbnRpR0I4VTJ4ZmRSbGNmU09HMmRsSQ?oc=5)
+- [신한금융, '퓨처스랩' 스타트업 46곳 선발…'청년 창업가' 신설 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE8weFhHcGx1MTByUWQwTGt1SDZ2T1VtZmFyMERjelpIRXItaThXX1padWVpWTFJS1M3ZXVGX0FxZEg4ZUE4QnJ2ZDRJUUVWLURxM3VoTjNnWjJtc1V5bDFONtIBeEFVX3lxTE5CQlpLMlA0ZTFUeExhVVJYYWhnM0stY1VUaGFzUFhjYXBVSTRBaFFaYW1qUlJUd0ktZENzTkhWZGk2UDExREgzc3NwTXBLNl9HTjBHalFONTQ4a1J6cWRLb2h6YlU5QjMwaEVrbHdDaFlnRnFKSkZsLQ?oc=5)
 - [일본 제치고 '수출 5강' 등극?…"반도체 빼면 암울" 한국 경제 명과 암 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFA0NTIwZkVXb2lNMDdHU1BUV05ZSjJSZUIzN01SSVpYZVpCSFpZanBDX3F1YmpLWUU5ZWVXUEo4RXhfU2R1eF9kYUJ1dzFMSktsNzdCd01NalhfQXhFdDJra1drb3NLSGZCTVZn0gFwQVVfeXFMTWNwMmtzYk5HbzVDRE9FVGtsdWtvMHpFSjktSy0tQU5pTlN5WUZUVUZCY3Byak5XSDJReUtna3Z1bjFGNDVqWllQRTBoa2lHWGc1OXQwQzFvVzRtUzlxRjlIamgzaXRUa3V5cGNMdVo1SA?oc=5)
 
 ---
