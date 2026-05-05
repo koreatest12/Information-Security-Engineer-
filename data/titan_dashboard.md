@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 141 days, 23:13:20
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 141 days, 23:53:52
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.9% | `█████░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.1% | `████░░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, '퓨처스랩' 스타트업 46곳 선발…'청년 창업가' 신설 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE8weFhHcGx1MTByUWQwTGt1SDZ2T1VtZmFyMERjelpIRXItaThXX1padWVpWTFJS1M3ZXVGX0FxZEg4ZUE4QnJ2ZDRJUUVWLURxM3VoTjNnWjJtc1V5bDFONtIBeEFVX3lxTE5CQlpLMlA0ZTFUeExhVVJYYWhnM0stY1VUaGFzUFhjYXBVSTRBaFFaYW1qUlJUd0ktZENzTkhWZGk2UDExREgzc3NwTXBLNl9HTjBHalFONTQ4a1J6cWRLb2h6YlU5QjMwaEVrbHdDaFlnRnFKSkZsLQ?oc=5)
-- ["한국 주식 여전히 싸다"…외인 1.8조 폭식에 '1000조' 찍었다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5seGhJWF9mZm00QUVvaUZuZi16V0RyTkpudUxyQnAzV2staHFURVE4aVM1ckJtNjV1VzQtdDhhVHo4MGpLcFY2d2lnQUpDWVE?oc=5)
+- ["韓 중소·중견기업 잠재력 커…헬스·뷰티·AI 눈여겨볼 만" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE0yWXZwelRVdldnNDEwSFZQd1NhcnRseGtaWWdYazBnREtHdVotMDRQX0k0NlVtdEZoQkZaY0MyWlJULU51ZFZUczBxUmp1T2s?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
