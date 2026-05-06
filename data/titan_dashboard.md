@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 142 days, 17:26:51
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 142 days, 18:33:36
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.4% | `█████░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.1% | `███░░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [이선훈 신한투자증권 대표, 신뢰 회복하고 초대형 IB로 재도약[2026 파워금융인30] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFA1QUpsTVFRN0xXRUVnWG0zQ0RpZEJEMkRjN2kwbjdDUXU5cC1qN2l1OUQ5Wm5Ob3N2azRSaUMwSnZNaGh4czlkWk8zMkVjZVU?oc=5)
+- [신한금융, 그룹사 보이스피싱 연계 탐지 “2주만에 8억원 피해 막아” - 한겨레](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5EOXpGTFAxQW5vbjM1TS1LSEVqaXMyM1hCMlpvRzZrQUwxOFN6ZzZxMjc0anF2ZXlmZGVKcVUtam13dnlxMk93ZHNidmZtYlpjTldtcDlUM2FkZVpLWFUwTEhmWmVKd0U?oc=5)
 - [일본 제치고 '수출 5강' 등극?…"반도체 빼면 암울" 한국 경제 명과 암 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFA0NTIwZkVXb2lNMDdHU1BUV05ZSjJSZUIzN01SSVpYZVpCSFpZanBDX3F1YmpLWUU5ZWVXUEo4RXhfU2R1eF9kYUJ1dzFMSktsNzdCd01NalhfQXhFdDJra1drb3NLSGZCTVZn0gFwQVVfeXFMTWNwMmtzYk5HbzVDRE9FVGtsdWtvMHpFSjktSy0tQU5pTlN5WUZUVUZCY3Byak5XSDJReUtna3Z1bjFGNDVqWllQRTBoa2lHWGc1OXQwQzFvVzRtUzlxRjlIamgzaXRUa3V5cGNMdVo1SA?oc=5)
 
 ---
