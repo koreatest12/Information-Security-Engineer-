@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 143 days, 4:24:18
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 143 days, 5:21:30
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.4% | `█████░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.2% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융·서울시, 미래 금융 판도 바꿀 ‘스타트업’ 찾는다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5uT19RNVpKcXEyS18tdWpFWkhhZ29FU1RwYmlsZmFRdjF3YXhtY242WE5FUGFxVlhCdDBJQ1puRTVfb1YyQjY4WHZybExwZnc?oc=5)
+- [[금융 Pick] KB금융, DJSI ‘월드지수’에 10회 연속 편입…신한·농협금융은 - 라이센스뉴스](https://news.google.com/rss/articles/CBMia0FVX3lxTE9nbkYxdVoxOWg5QXNYUmdWSV9Gem5ldzRMQzRpWm5tN1hlck9kNjMwaTdZN3QtUTNPdlZJc1NyTUdMOUY0Xy1jUlJUOFFramtTY2lpU1l6a2ZSQ2RRVHRVSDBjam1KY1ZqSVVB?oc=5)
 - [일본 제치고 '수출 5강' 등극?…"반도체 빼면 암울" 한국 경제 명과 암 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFA0NTIwZkVXb2lNMDdHU1BUV05ZSjJSZUIzN01SSVpYZVpCSFpZanBDX3F1YmpLWUU5ZWVXUEo4RXhfU2R1eF9kYUJ1dzFMSktsNzdCd01NalhfQXhFdDJra1drb3NLSGZCTVZn0gFwQVVfeXFMTWNwMmtzYk5HbzVDRE9FVGtsdWtvMHpFSjktSy0tQU5pTlN5WUZUVUZCY3Byak5XSDJReUtna3Z1bjFGNDVqWllQRTBoa2lHWGc1OXQwQzFvVzRtUzlxRjlIamgzaXRUa3V5cGNMdVo1SA?oc=5)
 
 ---
