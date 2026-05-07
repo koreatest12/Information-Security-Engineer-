@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 144 days, 14:03:56
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 144 days, 14:37:52
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.3% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 37.1% | `█████░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[포토] 신한금융, 어버이날 맞아 어르신 가정 방문 - 매일경제TV](https://news.google.com/rss/articles/CBMiaEFVX3lxTE84aHBaZnUzOG0wdjJLYVEzcEN4RFZHVmItOEJhbXYyLWpQUUpQMWgzZG93SC1aUHRLcjVKeUVXajhnYWpLMjZld2RxU2IyS1pXT2E0bXZvT3dBUjF4RFBYZk5hV1BwZnVl?oc=5)
+- [신한금융그룹 CEO들, 어버이날 맞아 봉사활동 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5WY2gway1HU0ppUml0VkdJQmJpTmF6a2NMREpiaUZreGRKV1RsMUJMaENBdHJ3WUVlU3pJRVl2bkRCOXNzeWJVY0VxVkc1RE9Wb3NsNVFZSEJxSlJIaWY4eg?oc=5)
 - [일본 제치고 '수출 5강' 등극?…"반도체 빼면 암울" 한국 경제 명과 암 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFA0NTIwZkVXb2lNMDdHU1BUV05ZSjJSZUIzN01SSVpYZVpCSFpZanBDX3F1YmpLWUU5ZWVXUEo4RXhfU2R1eF9kYUJ1dzFMSktsNzdCd01NalhfQXhFdDJra1drb3NLSGZCTVZn0gFwQVVfeXFMTWNwMmtzYk5HbzVDRE9FVGtsdWtvMHpFSjktSy0tQU5pTlN5WUZUVUZCY3Byak5XSDJReUtna3Z1bjFGNDVqWllQRTBoa2lHWGc1OXQwQzFvVzRtUzlxRjlIamgzaXRUa3V5cGNMdVo1SA?oc=5)
 
 ---
