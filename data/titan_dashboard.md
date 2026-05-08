@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 144 days, 22:02:14
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 144 days, 22:49:05
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.6% | `███░░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 37.0% | `█████░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한카드-스타벅스 ‘맞손’…"상반기 전용카드 출시" - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1nQTRSWERwSFlMclNZQ1Nmbi1XLU9KdFRsZFNoRGdKbUYzNjR5NU9xVjFuZldSVGx0LWhiWXYwUDY5ZS10NHhESFZLY3NtOUhGTmhTVWhNV2Qtdw?oc=5)
