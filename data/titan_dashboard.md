@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 145 days, 3:50:04
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 145 days, 4:39:54
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.5% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.1% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 5월 ‘가족의 의미’ 되살려 - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTFA4aG5pYXh0NE9GVVlhM29rYTBhUVVRSDJZc2d2R2ozUVFsdENhX2RKcjAxX1g2WUVRYnY3ZUk4eWVLR2xsZ1Q1NzhFSkNVQ2JjLUljam1KR1BoY3VmVFpUS1htUUdORHJ5MGtLOG9RbVFaM2fSAXdBVV95cUxNd3lNeGlGR1FGcDlsRkdWU1dmSWsyTXg5SC1HT3Q5bnhUVm5RRFhwWnQySV91eFFFbm0xMndYdDd5TzBvSGd4V3g0d0hrTGU1M201UWlFZnJSdGlmQkJKVklLSWsxME1fUTh1NTcyblp6OWJfa00tMA?oc=5)
+- [신한카드-스타벅스 ‘맞손’…"상반기 전용카드 출시" - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1nQTRSWERwSFlMclNZQ1Nmbi1XLU9KdFRsZFNoRGdKbUYzNjR5NU9xVjFuZldSVGx0LWhiWXYwUDY5ZS10NHhESFZLY3NtOUhGTmhTVWhNV2Qtdw?oc=5)
 - [삼성전자 '최고의 순간' 아직 오지 않았다…"여전히 저평가" [종목+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE82anJVUmtkWEJjTkcyNVRicklDYU1WQVVmcG1wdHBFN05LZm96eS1pdjBYU3VXMjVQN01FMXlNd2o2RXhZV05MeFVYM2IzRkVqYjQ3WWFXaUpaZ9IBVEFVX3lxTE1tRVd5a3d4d2t2RWFuNVRfd01TSzhnd3hTbVNFdVJSN1QtMzQxZ2ZIQ0oxaVpJZlp2amJrU0hGdUxweU9uQWJIbEl4NzRHTXhENFNydA?oc=5)
 
 ---
