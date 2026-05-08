@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 145 days, 7:47:16
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 145 days, 8:19:35
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.0% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.0% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한카드-스타벅스 ‘맞손’…"상반기 전용카드 출시" - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1nQTRSWERwSFlMclNZQ1Nmbi1XLU9KdFRsZFNoRGdKbUYzNjR5NU9xVjFuZldSVGx0LWhiWXYwUDY5ZS10NHhESFZLY3NtOUhGTmhTVWhNV2Qtdw?oc=5)
-- [삼성전자 '최고의 순간' 아직 오지 않았다…"여전히 저평가" [종목+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE82anJVUmtkWEJjTkcyNVRicklDYU1WQVVmcG1wdHBFN05LZm96eS1pdjBYU3VXMjVQN01FMXlNd2o2RXhZV05MeFVYM2IzRkVqYjQ3WWFXaUpaZ9IBVEFVX3lxTE1tRVd5a3d4d2t2RWFuNVRfd01TSzhnd3hTbVNFdVJSN1QtMzQxZ2ZIQ0oxaVpJZlp2amJrU0hGdUxweU9uQWJIbEl4NzRHTXhENFNydA?oc=5)
+- ["나만 못 벌었어"…'삼전닉스' 없는 찐개미 담은 종목 봤더니 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE0yWGp5RjlsZExDMXJTZ0lOMHhKM1ZZeVNIMlRvTDdIc2xqX1lSVmFBTHh6eTlUS0lxdUpoa0RiejF3RmFCbnVhX2lUYjA5dEJLNWZSSEN3UXpNQdIBVEFVX3lxTE1pMWl6c0RndWxaSlJmUWJKMFhxM1Nac0pOTTNRNXZBX1QzSFprdGhDdGpOWkRPSTlxeEV2d3lSdXNGbVlReVZqZmpucEdvNWgxZUhKRg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
