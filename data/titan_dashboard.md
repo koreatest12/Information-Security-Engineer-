@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 145 days, 18:34:08
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 145 days, 20:00:58
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.1% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.9% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [디지털로그, 신한퓨처스랩 선정…“소셜미디어를 금융 고객 접점으로” - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1nNmY2enZvbjNkcVVRb0RUM0ZNcmZqRjVPWnBfMlJxajg3MkVyM0l5QjlEUklHNFpUSXlCOERzN0NDSW9sXzlSd054dlE3aG8?oc=5)
-- [삼성전자 노조 "정부 요청 수용, 사후조정 절차 돌입" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Id0ZHMVJ2TGZUU0xJWjh0V1JqLXZnYnJMSTdfZlNqM0R1ZGpFUHM5allTZzdtN2k4UFdoLTc3cVhqYlMzaVU0OXNnZjdKcUVZT2NqUEFhYVdQZ9IBVEFVX3lxTE9fUS1TODZpdGtIWnlRZkZpRnRwYURKOWNPUUlUdFFkTkl5a1liR1pBdFFOUTFhX2I0a013ejk5Qy1ZYUI5Sng0OHlJNVAyVC14b19HZw?oc=5)
+- [신한카드-스타벅스 ‘맞손’…"상반기 전용카드 출시" - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1nQTRSWERwSFlMclNZQ1Nmbi1XLU9KdFRsZFNoRGdKbUYzNjR5NU9xVjFuZldSVGx0LWhiWXYwUDY5ZS10NHhESFZLY3NtOUhGTmhTVWhNV2Qtdw?oc=5)
+- ["코스피 상승률 두 배 벌었다"…수익률 '318%' 터진 비결 [투자톡] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9PcDJPRDB3RTNXbmZQNzhia1dkdGtvdVhuSjd1cXBKRlJlUy1yUHpJekloVTE0RzRZanhwNjZpTmROSWQyZjBxeTNFU1RnQ2s4WThUN0FNakdNZ9IBVEFVX3lxTFBiQUtiMEQzYWpVUXlUcTZNZk50SjBZMmotZGsyMmFmTHFyOEJfYnZlWThLSHJObUZtTklkV1pLY3EtX1FjS0JmOEJTaFMzUURqcTVnag?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
