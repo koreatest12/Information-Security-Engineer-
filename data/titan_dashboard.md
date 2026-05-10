@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 146 days, 16:02:57
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 146 days, 16:35:41
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.7% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.1% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 5월 ‘가족의 의미’ 되살려 - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTFA4aG5pYXh0NE9GVVlhM29rYTBhUVVRSDJZc2d2R2ozUVFsdENhX2RKcjAxX1g2WUVRYnY3ZUk4eWVLR2xsZ1Q1NzhFSkNVQ2JjLUljam1KR1BoY3VmVFpUS1htUUdORHJ5MGtLOG9RbVFaM2fSAXdBVV95cUxNd3lNeGlGR1FGcDlsRkdWU1dmSWsyTXg5SC1HT3Q5bnhUVm5RRFhwWnQySV91eFFFbm0xMndYdDd5TzBvSGd4V3g0d0hrTGU1M201UWlFZnJSdGlmQkJKVklLSWsxME1fUTh1NTcyblp6OWJfa00tMA?oc=5)
-- ["50만전자 간다" 파격 전망…증권가, 눈높이 올리는 이유 [종목+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBJNHVZMmhYekl5cnNBTERFVFNxV2lVUDdmVWVVMFZORFNLVEV0M0thcEVwcVVRWl9yWkF1RG5UNk9KQUUyZ3J0dUZQWWxDckpqSFNOS2dCV1VCUdIBVEFVX3lxTE0yUDRzUVpydmhIR2dtenZkWEgwY3ppVHlVX1p2VVByNnVQU2E3TnF2YVk1SGhpRUYxME1oT3VFdkRBbnR6MkJsR3BaRnFiMGc1TGkzVw?oc=5)
+- [진옥동 신한금융 회장, 북중미 해외 투자자에게 ‘밸류업 2.0’ 알린다 - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5RV2ttYlh4aUVYU0NJOUR1M3Y1UTladDNGbXdNN0ZRRmdVMk1Mb2l6czAzZWpCVHpkT3p6V19vMzNWS2FjVmNfN205aVFLNTBLcHc?oc=5)
+- ["나만 못 벌었어"…'삼전닉스' 없는 찐개미 담은 종목 봤더니 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE0yWGp5RjlsZExDMXJTZ0lOMHhKM1ZZeVNIMlRvTDdIc2xqX1lSVmFBTHh6eTlUS0lxdUpoa0RiejF3RmFCbnVhX2lUYjA5dEJLNWZSSEN3UXpNQdIBVEFVX3lxTE1pMWl6c0RndWxaSlJmUWJKMFhxM1Nac0pOTTNRNXZBX1QzSFprdGhDdGpOWkRPSTlxeEV2d3lSdXNGbVlReVZqZmpucEdvNWgxZUhKRg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
