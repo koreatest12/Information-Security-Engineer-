@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 146 days, 20:01:22
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 146 days, 21:27:41
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.3% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.3% | `████░░░░░░░░░░░` |
 | **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [진옥동 신한금융 회장, 북중미서 투자 세일즈…주주환원 확대 - 아주경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9JY3hyZU5rUFVOaXVXR2lOZ2g2SlhFWHNUMi1pa3phVkJpRTNia0Z5eXlWOUtnalVMX2tRVnNmc2NNcEFrcmgtZzFzdDNFNC1yaFUyTzdLUTUyQdIBWEFVX3lxTE01SzFxdkEwZmRmUVJDc0dUOTBFblFpVk5ldGd1d0FuOFgxR2NxaTRUNlBvUkNmS1ZfTDlObDBtUnRSUS00NzFCUXdibmpFalpzTkIta21IM3M?oc=5)
-- ["부업 짭짤하네" 투잡 뛴 직장인 무심코 넘겼다간…'날벼락' [고정삼의 절세GPT] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9tTklIaV91RFBKQ3BhRmlBN0JMZ1BibEpXQmNfZWRENXp4ZlpKRzBTZ2tVSWZIdGFTVzVGUnhOLWNQakNzeThIS0JGQkVDbndzdDlFR05xMFRyQdIBVEFVX3lxTFBremR6dk82allQbHdDZUtJOHR6NGdQeTBOTFMzcHpkbG5TR1JPUkw5Yl9KR3JndnVmaWRER19GTXB1aFEyOWd6emFQNFRmbUtnMlpiMg?oc=5)
+- [“상한없는 주주환원”...진옥동 신한금융 회장, 북중미 IR - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9HdFhlekxaaFpocENTNDBvMEo3ZFFnU1ZvcjcwMHpXX2FIS1hqR0Q1NjFlQmZiMTFHTm5WQ1FtUTdNbEZ3dHJOdWh1bzNscTY1ckHSAVNBVV95cUxPcm5LVmdfY2xJT2FZQlpNcl9UQ253dUhTcEZ1X0RzdmpMWUN3TFp3eVk5QUE1M2FUX0hUbWZ0ai1pazNFemI3UmtIQm13Sm84T1ZXTQ?oc=5)
+- ["삼전닉스 사도 돼?" AI에 물었더니…"시총 1000조는 바닥" [노정동의 어쩌다 투자자] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9pLXhaTGJQUm14Nl9heUQ0VnozNVlqUmpfXzZYRTZFX3lsdjQ4UHRva2o5ZmhZSndiQ0hNQ1ZRdmlheUd4dVUzazdpd3NqYzB4NHc1QWJibGlVd9IBVEFVX3lxTE44NktBSVN2WmVucjRpMzhpU3NnQ193NUt5X0hQSzROQ2tiMUo0QjhOSmhUaFZKSTVoVHBqa1JQczEyekFid2ZMckFMOEpGWUM0b0RfTg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
