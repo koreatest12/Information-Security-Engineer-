@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 146 days, 23:35:27
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 147 days, 0:31:40
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.7% | `████░░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.1% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [“상한없는 주주 환원”… 진옥동 신한금융 회장, 북중미서 투자설명회 열어 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFB0WlJseGltUDhWTkVqZVNxWU5SYkhGLUdTMTJsV2lVNzZ1YnRqaVlQMzdkTGZIQWhOXzNnem0zTThGakFzUVdQdy1ISkk3T1phcjNEY0pKTkQ1dw?oc=5)
+- [진옥동 신한금융 회장 "밸류업 2.0"…북중미 IR 나선다 - newsis.com](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5Td0F2VkJxUTJPZlJVMjlEeFhsU3pLc2xoSUhYcGxIMTRYQ014dXRRTTJCYXhfQmVUTDlCYkZfUkRmdzNuN0JtUmVNdUN1endVN18xR29ZWjdzMHBtd0VFUtIBeEFVX3lxTE4xelhQeVMtS3UzSlhyc1hWbG15cXFhMzVDNHhDVlI5TnBIZjJNOWozRlRZX254S0FpS0F6QlRINFU4eGtNMzk1aEQ1WmtlWVpRSEpMY3I4WWFfZ3pSVzhRa1BtN2Npa1FCaXc3eXRhVnJCWWd2TERaQg?oc=5)
 - ["삼전닉스 사도 돼?" AI에 물었더니…"시총 1000조는 바닥" [노정동의 어쩌다 투자자] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9pLXhaTGJQUm14Nl9heUQ0VnozNVlqUmpfXzZYRTZFX3lsdjQ4UHRva2o5ZmhZSndiQ0hNQ1ZRdmlheUd4dVUzazdpd3NqYzB4NHc1QWJibGlVd9IBVEFVX3lxTE44NktBSVN2WmVucjRpMzhpU3NnQ193NUt5X0hQSzROQ2tiMUo0QjhOSmhUaFZKSTVoVHBqa1JQczEyekFid2ZMckFMOEpGWUM0b0RfTg?oc=5)
 
 ---
