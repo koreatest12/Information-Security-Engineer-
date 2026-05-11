@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 148 days, 2:02:15
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 148 days, 3:21:01
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.7% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.5% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 운영리스크 자본 산정체계 손본다 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE51QUhWUFJfSEQxVktMd1AtUmtyY1c3NXVldnBUNGZ0bWxqSEREa0RVd1FLQjYtY3ZVRU5Vd2NERzVQVVd2STRKZk9IUE9VQQ?oc=5)
+- [진옥동 신한금융 '밸류업 2.0'도 직접 뛴다, 스킨십 늘려 외국인투자자 증가세 이어간다 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTFA1Um1FdTlkZGxZRG93VTVlZndCSXhMRE5Xd2IwU2ZTcWNTU1JRclgxT3JqQVNiV2JWQzV4XzFSOHpZNlRublVGZUpSSlN1TXVWWFJCM0V0eGlpcjhXVjQ5X012eGVjTzVsekFBRko2UXliVXc?oc=5)
 - ["미사일 날면 주식 사라" 또 적중…공포에 산 개미들 '환호' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE44ZnhXWFd4NEQyY2xpc2c0UXZMaUFoYmd6NlFYVElUTVhOYUVyMk5pOGpNRDZHcWVjZWNUbXlpYUg1TDRJZl9XWTBJRnRIREVUNmN0VTh1ZUlTUdIBVEFVX3lxTFBxMHlPRDVwM2xqd1F5V0xvNXhRTGw4VUIxV3dRUFZfa2M4djRsa1FHY1dnYXZxLThiRDJVai1MR1hhcHJCSWU5b0czLTlNbzdmVHhFZw?oc=5)
 
 ---
