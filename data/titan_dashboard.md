@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 150 days, 7:45:46
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 150 days, 8:35:06
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.2% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 37.2% | `█████░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [미래에셋그룹 시총, 신한지주 제쳤다 … 은행 중심 금융질서 흔들 - 매일경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qbDVJU21yS1pkUU5oR2VoMGJycUhMQkpyNzFQMU9EOFBkXzZXMEc4dEN3V3NIVDlmMEVjU2VJakdSWE0zSHJEQlVWUzZHY2FxTXc?oc=5)
-- [LG전자 90% 폭등 '무서운 질주'…"지금 살까" AI에 물었더니 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE80R2pUcy1xeHZDMmxmcGY2SzVNNllLeHpSZ19MdUdFODQ5MW85WG5hZnRWRXJ5Qm9NSWVnaGdka21zQzJrT3l2LUFORi1jem9rSzM5dHVCVUR2Z9IBVEFVX3lxTE90RFcxaURFOVNHN2VRXzBsaHBTdkpzZVZISWZreG5KMGl2bko3NG5YTlk0OXNaUVRKa2g1b09HelcwalZQWjk4NnEtNDk0VG11cXozOA?oc=5)
+- [신한투자증권, ‘생산적 금융’ 전사 교육 실시 - 헤럴드경제](https://news.google.com/rss/articles/CBMiVkFVX3lxTE1temZYT2Uyckt2RktTT0JCTkp0cFotMDhsSDBnS1ZQM2JuUkpXWktud09BQ3dDdlRKOWw0bmw5MW5GTmZ3c2RBa0FNWG5fWlROenB2U1hB?oc=5)
+- ['300만원 혜택' 받고 전기차 샀는데…14년만에 '결단' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE04U1JkbjUyTWJ0ZXJWS2U0Zm1YZjlFV1poZG10Q2ExdUw2SVdSVV8xamdCbzZiR1BVR1BJcHA4WGVBOC13ZDN0a0xnc0pETTR4T1ItcHpkUXRjZ9IBVEFVX3lxTE04ZFNPMW1tTU5qRTZCR0FOX2VmRHV2SFE0OG1oeGFESlFCNm9hUHhCd1g0R0dWa2JLbENsT0JwRkpmU203eGZ2ek9aZkI0Yl8xamJ5LQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
