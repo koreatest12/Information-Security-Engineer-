@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 150 days, 6:34:41
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 150 days, 7:45:46
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.2% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.2% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [“은행원 말고 증권맨 사위 없나”…미래에셋그룹 시총, 신한지주 추월했다 - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE1PT18tTnBTN29UY3RnNzdzTzBFeG5ab2V2anByOWxWUDRma2Z5aDdQaXotZkptdk85NkZzZkNYVWFDLXBDamQwYTVxTk5lU29NdWc?oc=5)
+- [미래에셋그룹 시총, 신한지주 제쳤다 … 은행 중심 금융질서 흔들 - 매일경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qbDVJU21yS1pkUU5oR2VoMGJycUhMQkpyNzFQMU9EOFBkXzZXMEc4dEN3V3NIVDlmMEVjU2VJakdSWE0zSHJEQlVWUzZHY2FxTXc?oc=5)
 - [LG전자 90% 폭등 '무서운 질주'…"지금 살까" AI에 물었더니 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE80R2pUcy1xeHZDMmxmcGY2SzVNNllLeHpSZ19MdUdFODQ5MW85WG5hZnRWRXJ5Qm9NSWVnaGdka21zQzJrT3l2LUFORi1jem9rSzM5dHVCVUR2Z9IBVEFVX3lxTE90RFcxaURFOVNHN2VRXzBsaHBTdkpzZVZISWZreG5KMGl2bko3NG5YTlk0OXNaUVRKa2g1b09HelcwalZQWjk4NnEtNDk0VG11cXozOA?oc=5)
 
 ---
