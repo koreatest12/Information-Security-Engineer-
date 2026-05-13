@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 150 days, 3:35:42
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 150 days, 4:30:45
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,10 +15,10 @@
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
 | **CPU** | `128 vCores` | 29.1% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [미래에셋그룹 시총, 신한지주 제쳤다 … 은행 중심 금융질서 흔들 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5EVmVySU8wOGRyVDlLMjlqYXhfTjZQZngxY19GNW8yU2dITDdYWmRJTW81OGRBQmFkbGxyLUd2NnRDTkRtdzlaR3hTMkUwaVk?oc=5)
+- [미래에셋그룹 시총, 신한지주 제쳤다 … 은행 중심 금융질서 흔들 - 매일경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qbDVJU21yS1pkUU5oR2VoMGJycUhMQkpyNzFQMU9EOFBkXzZXMEc4dEN3V3NIVDlmMEVjU2VJakdSWE0zSHJEQlVWUzZHY2FxTXc?oc=5)
 - [코스피, 또 사상 최고 찍었다…7844 마감 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5JZjlRLUNQSE9ibjFYYVpRWTd0VDJ5b0xRVXdlbEVrY3Y1N1p6NnVRZEJGZTh1ZVlDSlJ5UGZpQi05SnRvdG1na1ctSkZiUUl0MG12YjM0RXE2UdIBVEFVX3lxTE1yT0xZSmVhQnVyV1ZpenJJQWF4VGRvVXh4bndUTlJjTF9JNW9ITVJhTDFfZnpkdm9uWlNnV2FUTGUxRlI2STJwN0UwN3FNYmZPNklobw?oc=5)
 
 ---
