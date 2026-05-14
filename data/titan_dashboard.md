@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 150 days, 18:34:45
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 150 days, 20:01:15
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.5% | `█████░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.9% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [미래에셋그룹 시총, 신한지주 제쳤다 … 은행 중심 금융질서 흔들 - 매일경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qbDVJU21yS1pkUU5oR2VoMGJycUhMQkpyNzFQMU9EOFBkXzZXMEc4dEN3V3NIVDlmMEVjU2VJakdSWE0zSHJEQlVWUzZHY2FxTXc?oc=5)
+- ["신한금융·우리카드 대표번호 사칭 음성광고"…대출·대환 피해 94억 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5kYTFiUTZLZWM1WnZnQ19taWt3R2hPeExGanEwMl8zV2RVUEl6akE5eFVOZ2Qwb0Nkb01xYm1tSXpQNmtUcHdzenBFX3RQOGM?oc=5)
 - [LG전자 90% 폭등 '무서운 질주'…"지금 살까" AI에 물었더니 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE80R2pUcy1xeHZDMmxmcGY2SzVNNllLeHpSZ19MdUdFODQ5MW85WG5hZnRWRXJ5Qm9NSWVnaGdka21zQzJrT3l2LUFORi1jem9rSzM5dHVCVUR2Z9IBVEFVX3lxTE90RFcxaURFOVNHN2VRXzBsaHBTdkpzZVZISWZreG5KMGl2bko3NG5YTlk0OXNaUVRKa2g1b09HelcwalZQWjk4NnEtNDk0VG11cXozOA?oc=5)
 
 ---
