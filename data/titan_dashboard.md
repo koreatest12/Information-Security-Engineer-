@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 151 days, 3:50:01
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 151 days, 4:47:46
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.3% | `█████░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.3% | `████░░░░░░░░░░░` |
+| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [미래에셋그룹 시총, 신한지주 제쳤다 … 은행 중심 금융질서 흔들 - 매일경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qbDVJU21yS1pkUU5oR2VoMGJycUhMQkpyNzFQMU9EOFBkXzZXMEc4dEN3V3NIVDlmMEVjU2VJakdSWE0zSHJEQlVWUzZHY2FxTXc?oc=5)
-- [[단독] 올해도 철강사 줄도산 한다는데…'중견업체 버티기'에 구조조정 난항 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5taUdZWVVaN1ViRHg2MU1VTzJZWVJTUmFURmJuc21keVJ4Q3V2aEZ2T0t5cUFCYlh6cDFyU0Q2MndxYk1Vc2FTbkx4TzNwUFk?oc=5)
+- [“삼성 멈추면 한국 경제도 흔들린다”… 정부, 결국 ‘긴급조정’까지 꺼냈다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1CbTd3bmhiTVNpbVVhdjhwX3ZHbVZVLWlvc2hGMFVaVG1VaTB0Y0R6OUhvb0FURUpfYS00bGxtd0JPY2psa3ZBNEN4NFAzR28?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
