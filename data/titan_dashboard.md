@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 151 days, 2:03:23
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 151 days, 3:02:56
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.7% | `█████░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.1% | `█████░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [“은행원 말고 증권맨 사위 없나”…미래에셋그룹 시총, 신한지주 추월했다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5FQmVCWmtwUHRTLXU0eVlERV9abS1FRkZQM3IwNkVwSlhUWFFqWmFyZ0pKZk9maDl0MDVYMFBuZ0E1MEFpQWVrZ0V3Y0FNcEU?oc=5)
-- [[단독] 올해도 철강사 줄도산 한다는데…'중견업체 버티기'에 구조조정 난항 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5taUdZWVVaN1ViRHg2MU1VTzJZWVJTUmFURmJuc21keVJ4Q3V2aEZ2T0t5cUFCYlh6cDFyU0Q2MndxYk1Vc2FTbkx4TzNwUFk?oc=5)
+- [트럼프, 환영만찬장 도착…오늘만 세번째 시진핑 만난다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBsazhIclpDWGVBMklhelBPY1JhaWtEUDR6QU5JWWtLaWs1endXbWtuRDhfYVNDWE1JYktYdmMxamUzWVVoM0F5NFFlb3dTQnQxRU11UnRMSGdVd9IBVEFVX3lxTE15SkktR1dKWjJYUGtNbkh5aXM0UnFsLTlWV2kzRENMOUZkS2g0UldPbzkwVW9jemVfNmdSNWdCRXJocnBZZkh0UWtwVjB4eE9tTFZlaA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
