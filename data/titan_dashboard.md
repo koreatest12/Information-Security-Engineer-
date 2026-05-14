@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 150 days, 20:01:15
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 150 days, 21:31:18
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.9% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - ["신한금융·우리카드 대표번호 사칭 음성광고"…대출·대환 피해 94억 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5kYTFiUTZLZWM1WnZnQ19taWt3R2hPeExGanEwMl8zV2RVUEl6akE5eFVOZ2Qwb0Nkb01xYm1tSXpQNmtUcHdzenBFX3RQOGM?oc=5)
