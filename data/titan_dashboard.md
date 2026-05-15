@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 151 days, 16:04:05
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 151 days, 16:38:08
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.4% | `████░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.8% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [미래에셋그룹 시총, 신한지주 제쳤다 … 은행 중심 금융질서 흔들 - 매일경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qbDVJU21yS1pkUU5oR2VoMGJycUhMQkpyNzFQMU9EOFBkXzZXMEc4dEN3V3NIVDlmMEVjU2VJakdSWE0zSHJEQlVWUzZHY2FxTXc?oc=5)
-- [코스피 90% 폭등했는데…"여기 한국 맞나요?" 청년들 '한숨' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE95c3QwZVVzc0kyYW1aaG8ycGJIYXhqblRmNzhUTF84NF80aGQ2czlwMzFvQUxGX0VpZjBXRnB0NVNJRmstMVpjOEZMY2FlYS13YUpSd0dOU2dpd9IBVEFVX3lxTE93YU1CN2kzYkpHUTRjMnd2MmNtWVFrVTBaeWpxTTlkdDM2TWlxdjJsZVhKcVdYVW5nWk5IcDZRcUphZWpqVHM1al9ndEszRGxCX3ZkaA?oc=5)
+- [12% 급등하자 "먹고 바로 빠지자"…단타족 몰리는 종목 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1MTzQwbUpLdGJ3WlpKZWtJQ1diMmxQQWZMaFRzVkNzXzFoWG5hT1FGTTV4cFN2akloZXp4REdkM1dPVktPZHJ0OUFtY2M3UkZDbXJWODFWaWRIUdIBVEFVX3lxTE9JcnVXeDAzLWdud0JNaFZnTE5fUVJDTlRJTGVxM0tLVVB2T2FkY0RsOG9KbUhPQ0VlNmhwUXFlVjJqTXFMbnBmb0VLLVA3Z1FBbmtTdg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
