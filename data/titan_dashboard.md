@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 151 days, 20:01:53
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 151 days, 21:32:53
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,18 +8,19 @@
 
 > **Q:** 종합 상황 브리핑
 
-관련 정보 없음
+**🤖 AI Analysis:**
+- [KR_ECON] IMF "한국 부채 지속가능 수준…증가 속도보다 전체 상황 봐야" [이상은의 워싱턴나우] - 한국경제
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.9% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 24.6% | `███░░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [“은행원 말고 증권맨 사위 없나”…미래에셋그룹 시총, 신한지주 추월했다 - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE9zOXlzeUNsdXJ3ajJiQkE1OWpJa09ndUdpZDlicExteExJQXdoellDSGhsXzVMcFg1NWFPTXdFODNKOGJza3c?oc=5)
-- [12% 급등하자 "먹고 바로 빠지자"…단타족 몰리는 종목 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1MTzQwbUpLdGJ3WlpKZWtJQ1diMmxQQWZMaFRzVkNzXzFoWG5hT1FGTTV4cFN2akloZXp4REdkM1dPVktPZHJ0OUFtY2M3UkZDbXJWODFWaWRIUdIBVEFVX3lxTE9JcnVXeDAzLWdud0JNaFZnTE5fUVJDTlRJTGVxM0tLVVB2T2FkY0RsOG9KbUhPQ0VlNmhwUXFlVjJqTXFMbnBmb0VLLVA3Z1FBbmtTdg?oc=5)
+- [미래에셋그룹 시총, 신한지주 제쳤다 … 은행 중심 금융질서 흔들 - 매일경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qbDVJU21yS1pkUU5oR2VoMGJycUhMQkpyNzFQMU9EOFBkXzZXMEc4dEN3V3NIVDlmMEVjU2VJakdSWE0zSHJEQlVWUzZHY2FxTXc?oc=5)
+- [IMF "한국 부채 지속가능 수준…증가 속도보다 전체 상황 봐야" [이상은의 워싱턴나우] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qeFVzZmFjdlN5b1U4QTBsWWdLWko2WS1LT2N3bDZCQVNEM1BmbVlrbldUWWRWbkZDblhpdExKdjdaYVc3QTZCNnhBbjhMYzlVZ3hSUE5PV3otZ9IBVEFVX3lxTE9RUENWUmhZRTh4TEdUdV9iRHI0azI2TmRyVUpsd1NhS0JnZjZVNnBRaXFnZlllcVl1enA5bm5FeHp6cUdLb0pUSEptM280ajFjMmwtcQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
