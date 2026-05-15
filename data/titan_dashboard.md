@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 151 days, 21:32:53
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 151 days, 22:57:24
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,19 +8,18 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [KR_ECON] IMF "한국 부채 지속가능 수준…증가 속도보다 전체 상황 봐야" [이상은의 워싱턴나우] - 한국경제
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 24.6% | `███░░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [미래에셋그룹 시총, 신한지주 제쳤다 … 은행 중심 금융질서 흔들 - 매일경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qbDVJU21yS1pkUU5oR2VoMGJycUhMQkpyNzFQMU9EOFBkXzZXMEc4dEN3V3NIVDlmMEVjU2VJakdSWE0zSHJEQlVWUzZHY2FxTXc?oc=5)
-- [IMF "한국 부채 지속가능 수준…증가 속도보다 전체 상황 봐야" [이상은의 워싱턴나우] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qeFVzZmFjdlN5b1U4QTBsWWdLWko2WS1LT2N3bDZCQVNEM1BmbVlrbldUWWRWbkZDblhpdExKdjdaYVc3QTZCNnhBbjhMYzlVZ3hSUE5PV3otZ9IBVEFVX3lxTE9RUENWUmhZRTh4TEdUdV9iRHI0azI2TmRyVUpsd1NhS0JnZjZVNnBRaXFnZlllcVl1enA5bm5FeHp6cUdLb0pUSEptM280ajFjMmwtcQ?oc=5)
+- [“은행원 말고 증권맨 사위 없나”…미래에셋그룹 시총, 신한지주 추월했다 - 매일경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9xODU1NWtTR1hSZHNRNVJQeERrd0IyaDljYk4zZVc5aGN4dmZ5SUtuVU02eXJsY2ZsS1NraWxDYmRtVm1idnhPazlQNXgxNTI1amc?oc=5)
+- [목대균 "반도체 더 간다…달리는 말에서 내리지 마라" [한경 PREMIUM9 TODAY] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tckpiUG1taFdMVlhVV05memFyRHA4QXpHZGZCM3F4d0xSVzU5VThERnZjYnlGaktMSDFBSm1SNGJsbEdKZFNiZkdJV3hraF9FTUZaOEU4ZE1Bd9IBVEFVX3lxTE1qUkFWaGZpbmhiXzA1UDVkcEpVenZDbGt6MWpKNVdrTXdLSFFhSkQtbmVRTFhyVHpHSWpZUmZGV1p2SllCSlZWVWJNQmZOZ3pyVG9ESw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
