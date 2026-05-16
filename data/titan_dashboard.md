@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 152 days, 17:29:53
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 152 days, 18:33:52
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.6% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.9% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [“은행원 말고 증권맨 사위 없나”…미래에셋그룹 시총, 신한지주 추월했다 - 매일경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9xODU1NWtTR1hSZHNRNVJQeERrd0IyaDljYk4zZVc5aGN4dmZ5SUtuVU02eXJsY2ZsS1NraWxDYmRtVm1idnhPazlQNXgxNTI1amc?oc=5)
-- ["내 주식 1000원도 안 돼?"…속타는 개미들 '나 떨고 있니' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9CQ2p1Yy1rUVExbVBGNFAwaHcxdDZhRzNNTHlkRDJkei1iMW5vNE1QT3VHWWVFaTg4akRiMEI3MDgzbWk4SXdNRElUemFfLWs2Q1RhMENXV3FjQdIBVEFVX3lxTE9YNmtuVHpVVVViMFZ5R3Jyc0cyUXdjLVQ3c2ZVdVJHLTdENGdlVlUySG14UHdXTUNaR3RadW13Rl9YQm9YSVJHNEJrcVhaOGpzQURJaw?oc=5)
+- [연금개미도 '바이 코리아'…세대별 '황금 포트폴리오'는 [투자톡] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ubXExdFRoaWtOTkc0czc0UEJ6dHdYb3drMHJHcmwwNnc3UGZpZnY0OHBNdTFpRzVzOW8tWGQ1UjZMakFqVjA4cDJEY0Q0b2EwR284bDcwdEZRd9IBVEFVX3lxTFB3YS1rNG9KZ2IzMkU0bkY2Qk5xa1BTVGtqUWJiZXdfZkt4S1BqZFY3eDlJSlFna0F2TDlpUmNZR2lUUFJQdnY1aU10aFFjNnJ5UDhmcQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
