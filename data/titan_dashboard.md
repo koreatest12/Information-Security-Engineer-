@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 153 days, 5:46:54
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 153 days, 6:22:25
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,19 +8,18 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [KR_ECON] IMF "한국 부채 지속가능 수준…증가 속도보다 전체 상황 봐야" [이상은의 워싱턴나우] - v.daum.net
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.8% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.2% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [“은행원 말고 증권맨 사위 없나”…미래에셋그룹 시총, 신한지주 추월했다 - 매일경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9xODU1NWtTR1hSZHNRNVJQeERrd0IyaDljYk4zZVc5aGN4dmZ5SUtuVU02eXJsY2ZsS1NraWxDYmRtVm1idnhPazlQNXgxNTI1amc?oc=5)
-- ['자고 일어나면 돈 복사라는데'…50대 직장인 결국 [투자톡] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ubXExdFRoaWtOTkc0czc0UEJ6dHdYb3drMHJHcmwwNnc3UGZpZnY0OHBNdTFpRzVzOW8tWGQ1UjZMakFqVjA4cDJEY0Q0b2EwR284bDcwdEZRd9IBVEFVX3lxTFB3YS1rNG9KZ2IzMkU0bkY2Qk5xa1BTVGtqUWJiZXdfZkt4S1BqZFY3eDlJSlFna0F2TDlpUmNZR2lUUFJQdnY1aU10aFFjNnJ5UDhmcQ?oc=5)
+- [KB·신한·우리, ‘美 공시’ 논란에 금요일 밤 입장문… “생산적·포용 금융 정책에 깊이 공감” - 조선비즈 - Chosunbiz](https://news.google.com/rss/articles/CBMigAFBVV95cUxNUF94aUtKTV9pTXZPR19jcFhGcWl3d3V0Q0NkXy1wLVlhSVp5UUNZbjdZZi1MQTZDZnF4MHZMMDIwTHN3cDlVSC1EbFJJcTFXa0ZMdjFnVjNuU2NvVEkzVi1scnR1LV9Wb2RBQS1BcTdEYldOQzNkajNTYzROYlVVVtIBlAFBVV95cUxNejB0OWV3QUM4aXRldHUwYjdXd1VjNXpUd3k4U3ZJSkxESEFJNGRDamltT3FtU3FJV2RvcFpuZEw0SkFnbjl2WloxZTZGbDNidjllLVVQYXRVMGFTTXlwUVhyd1Bpc29BelpVaGp5T1BPdjdGZVl2ZzlGU0M3dmNaNjJXRGRWZjVmOWR6b2NhMU9wcUVB?oc=5)
+- ["집 팔아 11억 생겼는데"…주식 몰빵하려던 40대의 대반전 [돈 버는 법 아끼는 법] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9TcU5TUnAxMUNycmZMb2J3azFnUlVwbVA1UG8wbHRBQUgxa0EybjktdGU0Vk9RemV3SHI4NXQwNEFndkx5TjdsUXRXa1J6QTRWbGVvd2xOd09EUdIBVEFVX3lxTFA4cmluWFlid2RTVjJydUowbWZaRnl5LTg1ZmZhU1Mtcnl3eVNLMGZJcVVwdjUwcWFPRHRGSG5HVk05U0s1aFM3NUVnQ3VneXRjRW9BNg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
