@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 153 days, 13:02:41
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 153 days, 13:32:18
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.8% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.3% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[은행 이사회 분석] 제주은행, 더존비즈온 품었다…신한 출신 부사장 이사회 합류 - 딜사이트](https://news.google.com/rss/articles/CBMiT0FVX3lxTE91VlZJZXpvQl9tVUwyaFNXcjFiVFhieVRSUkVhMjVjYmt6ckRBQ1hNMXVwa1JDRUVWYW94cnlaWDJyNFlTWi03RVo3RW9SWkE?oc=5)
+- [“은행원 말고 증권맨 사위 없나”…미래에셋그룹 시총, 신한지주 추월했다 - 매일경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9xODU1NWtTR1hSZHNRNVJQeERrd0IyaDljYk4zZVc5aGN4dmZ5SUtuVU02eXJsY2ZsS1NraWxDYmRtVm1idnhPazlQNXgxNTI1amc?oc=5)
 - ['자고 일어나면 돈 복사라는데'…50대 직장인 결국 [투자톡] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ubXExdFRoaWtOTkc0czc0UEJ6dHdYb3drMHJHcmwwNnc3UGZpZnY0OHBNdTFpRzVzOW8tWGQ1UjZMakFqVjA4cDJEY0Q0b2EwR284bDcwdEZRd9IBVEFVX3lxTFB3YS1rNG9KZ2IzMkU0bkY2Qk5xa1BTVGtqUWJiZXdfZkt4S1BqZFY3eDlJSlFna0F2TDlpUmNZR2lUUFJQdnY1aU10aFFjNnJ5UDhmcQ?oc=5)
 
 ---
