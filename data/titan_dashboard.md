@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 154 days, 10:35:33
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 154 days, 11:04:32
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,15 +8,14 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [KR_ECON] IMF "한국 부채 지속가능 수준…증가 속도보다 전체 상황 봐야" [이상은의 워싱턴나우] - v.daum.net
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.7% | `████░░░░░░░░░░░` |
-| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.7% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [금융지주들 “포용금융 공감”…美 SEC 공시 논란 이례적 진화 - 주간한국](https://news.google.com/rss/articles/CBMicEFVX3lxTFBIamZldy1zOUMteWdPbk1KNmtTS2IwUFNPdFo3MWJ3WXV3TmFEQThNazRpVUF4clVNV1c4c1ZhWmZXVUhjVm5RNlczQkpCVUdISXgxVmpzZzZEZDZQSnNodEVteG9YZUlaVDhWVy02OVXSAXRBVV95cUxQNXE0Tm9nZWlTb19mM3BaMDdCZ1RUTWU1VVpCZHlYSEt3dHpHd2pvd0JNVi1zTFFDRWFMeGEwb3MwMmc2MEJPNVEyajN1Y2N2aDExNGUtdjNOUjZFSkE0ZUlHRkxyVVNXZUFnU1hPSEdaUUhOQQ?oc=5)
