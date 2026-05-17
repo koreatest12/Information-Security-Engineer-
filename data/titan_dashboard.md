@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 154 days, 4:32:08
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 154 days, 5:05:12
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,12 +15,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 36.8% | `█████░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융플러스 2026년 4월 생보사 실적 M/S…신한라이프 선두 유지, 메트라이프생명·교보생명 상위권 재편 - 보험저널](https://news.google.com/rss/articles/CBMib0FVX3lxTE5tU3o3YTFvRnJITElidkZMS2wwSjEzN1RGalpPX1FTMTZRUUliMTA5UGIyWUp3MXFaclBQd2JTU2d2dHdkRGZEejNwbE5ydENQQTF6ODRsUXp3YVBBYlFwZUFaTXJGVml1eWNaaWg4aw?oc=5)
-- ['자고 일어나면 돈 복사라는데'…50대 직장인 결국 [투자톡] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ubXExdFRoaWtOTkc0czc0UEJ6dHdYb3drMHJHcmwwNnc3UGZpZnY0OHBNdTFpRzVzOW8tWGQ1UjZMakFqVjA4cDJEY0Q0b2EwR284bDcwdEZRd9IBVEFVX3lxTFB3YS1rNG9KZ2IzMkU0bkY2Qk5xa1BTVGtqUWJiZXdfZkt4S1BqZFY3eDlJSlFna0F2TDlpUmNZR2lUUFJQdnY1aU10aFFjNnJ5UDhmcQ?oc=5)
+- [신한금융지주 장정훈 CRO, “매년 두 자릿수 이익 성장 가능”… ROE 10%·PBR 1배 기대 키운다 - PRESS9](https://news.google.com/rss/articles/CBMiZEFVX3lxTFAxbzI0eTdWTzBVeDQ0Z3VFakl6NDNVREFoMWMwMkVNai1icHFBbFpDWHhxZ0NZSG1ha2Y3YXdDV195aTUwcWcwMHFuUFE5VW1sMUxoX3BrV2JWbGpyYVJ1WmQyNDY?oc=5)
+- ["얘들아, 삼전 샀어?"…요즘 교실마다 난리 났다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE03aFJXVFU1a2lobmZscjNFbnRXcGd1UTlYSzFKd2xBeC1CRllTZkt6VHAteFF3eTI4SFlHNktCMHZzSzdEeDNOY3FIdi1reFV2amJ1Y09FMDk2Z9IBVEFVX3lxTE5yQVVFNnp4VWVDdlB3ejk2aUhTOUV4NHhqeGx2N29XdThNbHp2TXRUTURidXZRQ3dTZE0wVXFGNkRjR1JfU1NTcGszTVhldWtHeTNKNQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
