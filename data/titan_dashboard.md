@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 154 days, 0:57:29
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 154 days, 1:49:08
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,14 +8,15 @@
 
 > **Q:** 종합 상황 브리핑
 
-관련 정보 없음
+**🤖 AI Analysis:**
+- [KR_ECON] IMF "한국 부채 지속가능 수준…증가 속도보다 전체 상황 봐야" [이상은의 워싱턴나우] - v.daum.net
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.1% | `█████░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 40.5% | `██████░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융플러스 2026년 4월 생보사 실적 M/S…신한라이프 선두 유지, 메트라이프생명·교보생명 상위권 재편 - 보험저널](https://news.google.com/rss/articles/CBMib0FVX3lxTE5tU3o3YTFvRnJITElidkZMS2wwSjEzN1RGalpPX1FTMTZRUUliMTA5UGIyWUp3MXFaclBQd2JTU2d2dHdkRGZEejNwbE5ydENQQTF6ODRsUXp3YVBBYlFwZUFaTXJGVml1eWNaaWg4aw?oc=5)
