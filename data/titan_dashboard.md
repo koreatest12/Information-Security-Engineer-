@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 154 days, 17:40:43
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 154 days, 18:34:41
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,11 +15,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.3% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융지주 장정훈 CFO, “매년 두 자릿수 이익 성장 가능”… ROE 10%·PBR 1배 기대 키운다 - PRESS9](https://news.google.com/rss/articles/CBMiZEFVX3lxTFAxbzI0eTdWTzBVeDQ0Z3VFakl6NDNVREFoMWMwMkVNai1icHFBbFpDWHhxZ0NZSG1ha2Y3YXdDV195aTUwcWcwMHFuUFE5VW1sMUxoX3BrV2JWbGpyYVJ1WmQyNDY?oc=5)
+- [하나 다음은 KB·신한? … 금융지주 향한 '포용금융 세무 칼날' - 뉴데일리 경제](https://news.google.com/rss/articles/CBMie0FVX3lxTFA1OHMyd3JaNWdwQm80aUd1MG1CUGxqYURFbVRmdWJvQ2VfR0dCanpSRzJ0UnhLMEhJUWlyeGVHSUl4cDRETlNtUXFOdFoyaS1EbXhxemZEZXExZVRRb0p6S1M5SVBQWHlRS0NOSm1WVXBMSlpUZnlWTWpOMA?oc=5)
 - [급락장에 코스피 매도 사이드카 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBUWGlHRlFxRzl2cGYxekpUd2dIcHFYNXZSOTBtTGtaWWd5dWNjSDJRU1VrNExJSV9JU0hNS2ZYTlJNUlVfcmgzNTVJeW96c3ZZblE1dElBMEpVZ9IBVEFVX3lxTE5wbEFYMUlCcWlKSjlkZTd5RnNBV3lHMk5WcGwxZEVoZHZRRGk4bjZoak5EeWRGYkFnV0FRM0J0NEUyRmNiZTkyRENXcFZwWHp0UU5OUQ?oc=5)
 
 ---
