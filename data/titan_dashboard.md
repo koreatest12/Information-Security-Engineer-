@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 155 days, 2:03:52
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 155 days, 3:33:02
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 19.5% | `██░░░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 24.4% | `███░░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 통합 금융 플랫폼 '슈퍼SOL' 사전예약 이벤트 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBNNG1vZXhOLV81RjZuUnY1TVRzQXBlekVUczF3TWdoak1wZTBYeVVNQnNRM2ZvVzl4NnZJaV9LelAyaVpWYWQ1SHNxNzlsZVVzUmxMRTljTkd0QU1WbWktbNIBeEFVX3lxTE9FOWhHZWMwUE5BZ1Z3Umk2UFFjSjEtemtCZFFySE5NSGV2NnBuRklPaWhpV1F3b3pscTR4bmVIa055U1Y0Um0zSWxPcjY5XzVRV2JFbzVZR0VpMlBJeER1dDhOY2Y3Y0NBWmh0Y2RrN1B5djFOSmM0Vg?oc=5)
+- [‘은행 올인’의 그늘…KB·신한·하나 날 때, 우리금융만 뒷걸음질 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1cHBkOE9ZWDlMcmlkWjY3eFU2NWJRclJkNmdFVllNbFhXOE5nLXR3a0xpZHVVbmVnY1NnWERQU0Z4eUpQMk1FRzhYd0JWV3RfS1ZhNnpabGtfZw?oc=5)
 - [급락장에 코스피 매도 사이드카 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBUWGlHRlFxRzl2cGYxekpUd2dIcHFYNXZSOTBtTGtaWWd5dWNjSDJRU1VrNExJSV9JU0hNS2ZYTlJNUlVfcmgzNTVJeW96c3ZZblE1dElBMEpVZ9IBVEFVX3lxTE5wbEFYMUlCcWlKSjlkZTd5RnNBV3lHMk5WcGwxZEVoZHZRRGk4bjZoak5EeWRGYkFnV0FRM0J0NEUyRmNiZTkyRENXcFZwWHp0UU5OUQ?oc=5)
 
 ---
