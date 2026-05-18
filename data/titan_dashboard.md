@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 154 days, 16:38:41
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 154 days, 17:40:43
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,12 +15,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.9% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.3% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [금융지주들 “포용금융 공감”…美 SEC 공시 논란 이례적 진화 - 주간한국](https://news.google.com/rss/articles/CBMicEFVX3lxTFBIamZldy1zOUMteWdPbk1KNmtTS2IwUFNPdFo3MWJ3WXV3TmFEQThNazRpVUF4clVNV1c4c1ZhWmZXVUhjVm5RNlczQkpCVUdISXgxVmpzZzZEZDZQSnNodEVteG9YZUlaVDhWVy02OVXSAXRBVV95cUxQNXE0Tm9nZWlTb19mM3BaMDdCZ1RUTWU1VVpCZHlYSEt3dHpHd2pvd0JNVi1zTFFDRWFMeGEwb3MwMmc2MEJPNVEyajN1Y2N2aDExNGUtdjNOUjZFSkE0ZUlHRkxyVVNXZUFnU1hPSEdaUUhOQQ?oc=5)
-- ["얘들아, 삼전 샀어?"…요즘 교실마다 난리 났다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE03aFJXVFU1a2lobmZscjNFbnRXcGd1UTlYSzFKd2xBeC1CRllTZkt6VHAteFF3eTI4SFlHNktCMHZzSzdEeDNOY3FIdi1reFV2amJ1Y09FMDk2Z9IBVEFVX3lxTE5yQVVFNnp4VWVDdlB3ejk2aUhTOUV4NHhqeGx2N29XdThNbHp2TXRUTURidXZRQ3dTZE0wVXFGNkRjR1JfU1NTcGszTVhldWtHeTNKNQ?oc=5)
+- [신한금융지주 장정훈 CFO, “매년 두 자릿수 이익 성장 가능”… ROE 10%·PBR 1배 기대 키운다 - PRESS9](https://news.google.com/rss/articles/CBMiZEFVX3lxTFAxbzI0eTdWTzBVeDQ0Z3VFakl6NDNVREFoMWMwMkVNai1icHFBbFpDWHhxZ0NZSG1ha2Y3YXdDV195aTUwcWcwMHFuUFE5VW1sMUxoX3BrV2JWbGpyYVJ1WmQyNDY?oc=5)
+- [급락장에 코스피 매도 사이드카 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBUWGlHRlFxRzl2cGYxekpUd2dIcHFYNXZSOTBtTGtaWWd5dWNjSDJRU1VrNExJSV9JU0hNS2ZYTlJNUlVfcmgzNTVJeW96c3ZZblE1dElBMEpVZ9IBVEFVX3lxTE5wbEFYMUlCcWlKSjlkZTd5RnNBV3lHMk5WcGwxZEVoZHZRRGk4bjZoak5EeWRGYkFnV0FRM0J0NEUyRmNiZTkyRENXcFZwWHp0UU5OUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
