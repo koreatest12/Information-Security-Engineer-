@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 155 days, 23:03:20
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 156 days, 0:26:00
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.6% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 37.3% | `█████░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 통합 금융 플랫폼 '슈퍼SOL' 사전예약 이벤트 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBNNG1vZXhOLV81RjZuUnY1TVRzQXBlekVUczF3TWdoak1wZTBYeVVNQnNRM2ZvVzl4NnZJaV9LelAyaVpWYWQ1SHNxNzlsZVVzUmxMRTljTkd0QU1WbWktbNIBeEFVX3lxTE9FOWhHZWMwUE5BZ1Z3Umk2UFFjSjEtemtCZFFySE5NSGV2NnBuRklPaWhpV1F3b3pscTR4bmVIa055U1Y0Um0zSWxPcjY5XzVRV2JFbzVZR0VpMlBJeER1dDhOY2Y3Y0NBWmh0Y2RrN1B5djFOSmM0Vg?oc=5)
+- [[신남방 리부트④] 신한금융 진옥동 시선은 베트남 외국계 1위 은행 너머에, 무기는 '원신한'과 '현지파트너십' - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE9iTmFFTGNDVU5ESThzWmtKTkRFSG1YaFh2WnZHVktOTk9SZV9FZVc0Ti15b3R4ZUxIU3E0OXQ4Ykc5bWJXYzk2LUhzRkM4dGtRZktSWXVSdWREdmpXYzVKWFdBZm5TSEhmZ1pmS3gzeExPczA?oc=5)
 - [코스피, 장중 4%대 급락…7100선으로 후퇴 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFA3Q2pSbnRNaWtBTXRNZ3hid1hrQmw2RFNESEtjM2NZZHFzRTJWbGNhUEU1dUpNTFg1ZnRWUUdjU09la3JfV2RmRW9DSzh0bFFyLUNMRTVRcWtYQdIBVEFVX3lxTE10YnhWSDlGRmpaOXR0TUlSTTVRODJ3TUpTMFloY051bnRLSWRDazRxbmUtV2JjLWItUjR1Q0tNOE5GYUI3eUhVcTJIcHZBazNqUjBSeA?oc=5)
 
 ---
