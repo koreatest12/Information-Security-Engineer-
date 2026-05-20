@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 156 days, 16:42:12
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 156 days, 17:41:40
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.7% | `████░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.9% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [NH투자 "은행주 상승 여력 여전, 최선호주 신한금융지주 KB금융지주" - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE5GUmZITExsLWd1WmtpMkJ2QXNubkVoYXlWV3BKMkFlTy1lQlZkbEFFbk45ajJXX0stclA4Z3g0LXd2RFpmbTkwMWNXUGtTZGtvYlVkYkZQeVNxNXRSeEdaUnFhb1Z5SFVMZHJaVUtGdDZmNHM?oc=5)
-- [코스피, 장중 4%대 급락…7100선으로 후퇴 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFA3Q2pSbnRNaWtBTXRNZ3hid1hrQmw2RFNESEtjM2NZZHFzRTJWbGNhUEU1dUpNTFg1ZnRWUUdjU09la3JfV2RmRW9DSzh0bFFyLUNMRTVRcWtYQdIBVEFVX3lxTE10YnhWSDlGRmpaOXR0TUlSTTVRODJ3TUpTMFloY051bnRLSWRDazRxbmUtV2JjLWItUjR1Q0tNOE5GYUI3eUhVcTJIcHZBazNqUjBSeA?oc=5)
+- [코스피 장중 7100선 아래로…2%대 급락 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UQS1JS3NsZmQ3ZmRYd2Fha3QwV3ZjZklfVXFtVjhGUkFST3RlUXhtTVJ5X3ctVDNpVEZjc09WLWxNR3poVVJZZkZuQnA4T0RMaGNSVldLQWZDd9IBVEFVX3lxTFBobC1ENzRpM2ZPeFlRTmt0eTdqUXE3MUp5TEt0LW5pZFQzWjgzaEc1cW1BWjN4dnBvY2hWdG0zYW5vRVZ4U1F6YmVYbDg2N3hfZWlfTw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
