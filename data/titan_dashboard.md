@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 157 days, 20:02:17
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 157 days, 21:38:59
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.9% | `█████░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.4% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [증시 활황에…신한 '슈퍼앱'으로 증권 몸집 키운다 - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5IRUpIMjB0WklhcnlBQWJ6WWFHOTM3ajBILVBGVDlnX19BNXNVNm9SRlBkR25Td00xYUI0dUxiZkxMS25QdjNHelpXYWJjZXZXV2c?oc=5)
-- ['급등장' 코스피, 매수 사이드카 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1BbVBTUWdOYXdvNVNtWVIteWJmd09hZ2pUQllidFo2RWxDU1hONjRabWtPaWktczR0N2prTmd6YXRaREJ2MHlHT3JBajlhYk9IeXRoM2tiSmpCZ9IBVEFVX3lxTE96SHVLUUJiRkVHdElIY0hyZTZHNGNVMXhVSDRjMGtybGJ4TGZzLVB4N2R3dWhOLU40S2tXRkZESGh0elltWkI0UHIyMkN2ZDJXNl9Lcg?oc=5)
+- ['삼전닉스' 팔아치우자 증시 휘청이는데…증권가 웃는 이유 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ybmUySzZtempaRDlvV3l5dW0yVXh1Ti1iT1Q2bFRGaDlOTkhMRUV1UWhraF9fYnExelRFbjRQbHZHLWliWmhtTmtHcUVRMkZZNzYwalZ6TDhxUdIBVEFVX3lxTE90Um8tZ1h6dGozTDhnWk5CekVWVDJFcER3VnpGV3VFQkZTbk1MQk51U2o2TUdwWDFMZXpkUDc2d3lvUmdKZHR3Z295bzhKMGhMb2MtUA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
