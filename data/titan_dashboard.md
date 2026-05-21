@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 157 days, 16:48:30
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 157 days, 17:44:17
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.1% | `███░░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 17.0% | `██░░░░░░░░░░░░░` |
+| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [NH투자 "은행주 상승 여력 여전, 최선호주 신한금융지주 KB금융지주" - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE5GUmZITExsLWd1WmtpMkJ2QXNubkVoYXlWV3BKMkFlTy1lQlZkbEFFbk45ajJXX0stclA4Z3g0LXd2RFpmbTkwMWNXUGtTZGtvYlVkYkZQeVNxNXRSeEdaUnFhb1Z5SFVMZHJaVUtGdDZmNHM?oc=5)
-- [파업이 오히려 호재?…'57만전자·380만닉스' 파격 전망 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqN29jOHlUb2IyR1RHWnpGbVd3R0FuWm0tMGs1ZzEtdjhtTVRrQjF2UU9WVXNMT21iTUw3ZlFpaWtuMzFfcmdjWTlFNUlSMEZVcFFFOFN1aEhmd9IBVEFVX3lxTE92dnNDRHlrMlN2dENacjlRYXlFOW55UzhsbUtLcDBuaU9adnlhYkRvSXc5UTA2N0ZralZxcExWaTlabnhyNkNaOVhFQmdrQnRiWFhyeA?oc=5)
+- [증시 활황에…신한 '슈퍼앱'으로 증권 몸집 키운다 - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5IRUpIMjB0WklhcnlBQWJ6WWFHOTM3ajBILVBGVDlnX19BNXNVNm9SRlBkR25Td00xYUI0dUxiZkxMS25QdjNHelpXYWJjZXZXV2c?oc=5)
+- ['급등장' 코스피, 매수 사이드카 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1BbVBTUWdOYXdvNVNtWVIteWJmd09hZ2pUQllidFo2RWxDU1hONjRabWtPaWktczR0N2prTmd6YXRaREJ2MHlHT3JBajlhYk9IeXRoM2tiSmpCZ9IBVEFVX3lxTE96SHVLUUJiRkVHdElIY0hyZTZHNGNVMXhVSDRjMGtybGJ4TGZzLVB4N2R3dWhOLU40S2tXRkZESGh0elltWkI0UHIyMkN2ZDJXNl9Lcg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
