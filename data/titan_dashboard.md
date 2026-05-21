@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 158 days, 8:27:35
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 158 days, 9:39:17
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.0% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 25.2% | `███░░░░░░░░░░░░` |
 | **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [증시 활황에…신한 '슈퍼앱'으로 증권 몸집 키운다 - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5IRUpIMjB0WklhcnlBQWJ6WWFHOTM3ajBILVBGVDlnX19BNXNVNm9SRlBkR25Td00xYUI0dUxiZkxMS25QdjNHelpXYWJjZXZXV2c?oc=5)
-- [한화솔루션, 미국 태양광 보조금 2000억 추가 유동화 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE01aUx6RmVDMDdEekExR2Zuc05Cekg2R2xtRGk2M2g5eVVLd0VOdWdWeEl3bEZuS1NEXzNkQ3dyLUoxN0tjbGlmNG9rRmx3NmJqSXkweVI0c2VaZ9IBVEFVX3lxTE9rYTd2bklZaWtFUElxRlNwdkRYN28xSnFnb1JJSHZUTGxPZjJvRlpBQzFLSWpwck1jbFdNYU0tLXI2aFhDVjA3Sk9uOGNWaU9STUFxeA?oc=5)
+- [[은행 비금융 격전 ]진옥동의 한 수…소상공인 데이터 품은 '신한은행 땡겨요' : 네이버 블로그 - Naver Blog](https://news.google.com/rss/articles/CBMijwFBVV95cUxOd3dNRjNiVWFWd3FIbk5WMDRNeFBqcnh1a29Ma2FneFdRbmtJenUxNkVQbU5XdVdqZlNzZVJkWnR5OUtHcG50YXVHblpZV2hvOC1HYXJpOGZDOXozcHh4REVMU2FlNG54eDRRUUlxZ04xWm81ZEt6OFRPNHVmTXpEN0JjMDZDQTRGTXVpdGYxVQ?oc=5)
+- ['급등장' 코스피, 매수 사이드카 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1BbVBTUWdOYXdvNVNtWVIteWJmd09hZ2pUQllidFo2RWxDU1hONjRabWtPaWktczR0N2prTmd6YXRaREJ2MHlHT3JBajlhYk9IeXRoM2tiSmpCZ9IBVEFVX3lxTE96SHVLUUJiRkVHdElIY0hyZTZHNGNVMXhVSDRjMGtybGJ4TGZzLVB4N2R3dWhOLU40S2tXRkZESGh0elltWkI0UHIyMkN2ZDJXNl9Lcg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
