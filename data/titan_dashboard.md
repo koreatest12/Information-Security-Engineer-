@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 158 days, 20:02:04
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 158 days, 21:34:42
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.9% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.6% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[은행 비금융 격전 ]진옥동의 한 수…소상공인 데이터 품은 '신한은행 땡겨요' : 네이버 블로그 - Naver Blog](https://news.google.com/rss/articles/CBMijwFBVV95cUxOd3dNRjNiVWFWd3FIbk5WMDRNeFBqcnh1a29Ma2FneFdRbmtJenUxNkVQbU5XdVdqZlNzZVJkWnR5OUtHcG50YXVHblpZV2hvOC1HYXJpOGZDOXozcHh4REVMU2FlNG54eDRRUUlxZ04xWm81ZEt6OFRPNHVmTXpEN0JjMDZDQTRGTXVpdGYxVQ?oc=5)
-- ["이번엔 안놓친다"…삼성전자 '빚투' 4조 돌파 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tV29tRHoxM2F5bm5PTmxhOF9MSFlYVG5WZEV2OVdRbzdwWmxGTzl3V2ZqVUJ0R09JeWdDOU8wWU92TTN6TUxLX3RHVmJ5MzNVN1VHYUJyOWw1UdIBVEFVX3lxTE9vTS11NjFxcUNQc2g2MUxVN25tTWs4d1hMdlFHTHp6T0FpenItd0FsRzlRcnZvbENhNTBXS2xreG9pXzhlMEpDN3FHMExiSURLalNMVQ?oc=5)
+- [코스피, 장중 4%대 급락…7100선으로 후퇴 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFA3Q2pSbnRNaWtBTXRNZ3hid1hrQmw2RFNESEtjM2NZZHFzRTJWbGNhUEU1dUpNTFg1ZnRWUUdjU09la3JfV2RmRW9DSzh0bFFyLUNMRTVRcWtYQdIBVEFVX3lxTE10YnhWSDlGRmpaOXR0TUlSTTVRODJ3TUpTMFloY051bnRLSWRDazRxbmUtV2JjLWItUjR1Q0tNOE5GYUI3eUhVcTJIcHZBazNqUjBSeA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
