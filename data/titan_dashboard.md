@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 162 days, 2:10:32
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 162 days, 3:36:58
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,15 +8,14 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [KR_ECON] 김용범 "한국경제 3高 상황…도약 위한 성공비용" - 한국경제
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.9% | `████░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.7% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한투자증권, 美 조지워싱턴대 연수단 초청…한국 자본시장 체험 진행 - 인더스트리뉴스](https://news.google.com/rss/articles/CBMickFVX3lxTE5MOFZZdFc0TGdraFlXZk4xMmJaOFVEa1FwQVgwOV9sZGpVTDVXcTFfY2lpSEJNYVpTV1FRMXRaTHlpTi12OFpHMWVyNTNhMGhLS2ttbzNlVUdadmxwak9UTU54WEtHZXUzUmdCWGZ2QWpDZw?oc=5)
