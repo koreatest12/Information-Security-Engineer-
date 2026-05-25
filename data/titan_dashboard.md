@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 161 days, 23:14:28
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 162 days, 0:48:08
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.5% | `█████░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한투자증권, 美 조지워싱턴대 연수단 초청…한국 자본시장 체험 진행 - 인더스트리뉴스](https://news.google.com/rss/articles/CBMickFVX3lxTE5MOFZZdFc0TGdraFlXZk4xMmJaOFVEa1FwQVgwOV9sZGpVTDVXcTFfY2lpSEJNYVpTV1FRMXRaTHlpTi12OFpHMWVyNTNhMGhLS2ttbzNlVUdadmxwak9UTU54WEtHZXUzUmdCWGZ2QWpDZw?oc=5)
+- [美 조지워싱턴대 연수단, 신한투자증권서 K-자본시장 특강 청취 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE84cV9uYnhFaUpUU3VHNVVWa1BySkRlVGNra0I2aklsRlV6WEotM1hNaDlGWmo0QXlQR05NM01vTTdfRXRyd2lCTF9ZU2lNdDZwRm9NekRwMFVhOWJpT1JZTjhMZEtHT2Z2NnVIVmtHdzZ2T2c?oc=5)
 - [김용범 "고금리·고물가·고환율은 '성공의 비용'…한국경제 새 차원 진입" - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE9kVXlWMW5xNnc1ZEQyeURneTZ3XzNfS2dHVHRGbUZZalhXQ2FLTUYwcVFvelZSSXUyTDFTcUhzelc5TnJuOHI2UzFqQmpvWWwxaUtXVGVVMkJoTHJUSVVLNmd0LUtjX05rMW9wNTJEY1A?oc=5)
 
 ---
