@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 161 days, 17:43:18
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 161 days, 18:35:04
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.9% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.5% | `████░░░░░░░░░░░` |
 | **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[신한은행 ESG점검] 민원 줄었지만 판매 손실 확대…소비자보호 '사전예방' 전환 - DealSite경제TV](https://news.google.com/rss/articles/CBMiVkFVX3lxTFA1dzdFb0dDbUxMN2NFdmhCMnJ4Qy1EdktnYVVEVnNaMHJGbkZzY3J2RGxhR1lWTkNCdl9YVHRDNU4yQTl4RDVMTDNfcDhaZUdvWFNrdjZR?oc=5)
-- [투자전문 AI가 꼽은 '스타 실적주' 톱5…개미들 몰린 이유 보니 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE12dnVwenRGQUYzNmhsVjFUN2stMUFlU005eDdtM1RKLXE4c0VBYUJlN081Mmh1UndzTm5QeHB2czdLZXhzNXpIRjg5cWxwRDlVSGF1dklhOUFfd9IBVEFVX3lxTE5NcTV2cWZRWHYxRHNsbmkyUkdROVhFTDhJaWIySEJxRkI4OVFkUkhQUEptTVl2MlpLUUxINDNTaGVMS29BYktvU2pXUlJPLV9sa2hMMw?oc=5)
+- ['한국판 고압경제'의 등장…김용범의 新 한국경제 해석법 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1xd29JZ1RseUZXVDZQYjgzXzhEWG83VEVGdG1tdUtwMkMtblRMYTh3MXNCcTF2czdiYVZOZGRBRm5iLU5ZVnBzUkRjUl90ejY1VGhxZzBUblIzQ0tjMzAxdGNUYzFkYW9LTmMyX0htM1k?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
