@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 163 days, 13:21:32
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 163 days, 14:19:09
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.7% | `█████░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.7% | `█████░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [1,520원 위협 속 구조적 외환포지션 추가 승인…신한·하나금융 '최대 수혜' - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1EamxUaGJoLWg4ZzlXTGVHYnN0azNRenlyZmJodzBhdVdncFpocjJVbnVLZUFiSElUSmZzWHZ0NTg5emNpWnN0ZUk0NW80ckE0Y3N5eDloWjhTQ2VfMXYzZ0gzOTVoSWI0WUNVd3BQWlQ?oc=5)
+- [“구조화금융 강점으로 커버리지 확대…내부통제도 강화” - 인베스트조선](https://news.google.com/rss/articles/CBMickFVX3lxTFBwUXZyREdjMzdvbWFNVEtuTmNsbEx6ZnZvT3cyT0g2VUtOelpEVDBVZzZ4UjVnVFA3eWJSbUdQSWRmN3dtSlZfX1owcVg4anNQck9XNFNXOS1BSkpzWnFLZXVlWHpZWlpTMThsa2d3cjZQZw?oc=5)
 - ['한국판 고압경제'의 등장…김용범의 新 한국경제 해석법 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1xd29JZ1RseUZXVDZQYjgzXzhEWG83VEVGdG1tdUtwMkMtblRMYTh3MXNCcTF2czdiYVZOZGRBRm5iLU5ZVnBzUkRjUl90ejY1VGhxZzBUblIzQ0tjMzAxdGNUYzFkYW9LTmMyX0htM1k?oc=5)
 
 ---
