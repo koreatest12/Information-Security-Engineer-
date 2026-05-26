@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 162 days, 23:02:42
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 163 days, 0:28:20
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.2% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 24.5% | `███░░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [1,520원 위협 속 구조적 외환포지션 추가 승인…신한·하나금융 '최대 수혜' - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1EamxUaGJoLWg4ZzlXTGVHYnN0azNRenlyZmJodzBhdVdncFpocjJVbnVLZUFiSElUSmZzWHZ0NTg5emNpWnN0ZUk0NW80ckE0Y3N5eDloWjhTQ2VfMXYzZ0gzOTVoSWI0WUNVd3BQWlQ?oc=5)
-- [[팩트체크] 김용범 “고환율은 한국경제 성공의 역설적 현상” 사실일까 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1zWGFYaXRVUmo5ZjRaQVc0R1hCS3hJNDFGU1ZlNE9VbnVMejRrSVlzMFhwd0I2LVh2NGJuY2loOEFPUUhSWFBIQmhqMVRJUnc?oc=5)
+- ['한국판 고압경제'의 등장…김용범의 新 한국경제 해석법 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1xd29JZ1RseUZXVDZQYjgzXzhEWG83VEVGdG1tdUtwMkMtblRMYTh3MXNCcTF2czdiYVZOZGRBRm5iLU5ZVnBzUkRjUl90ejY1VGhxZzBUblIzQ0tjMzAxdGNUYzFkYW9LTmMyX0htM1k?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
