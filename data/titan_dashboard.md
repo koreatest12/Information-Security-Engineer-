@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 163 days, 21:43:59
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 163 days, 23:07:24
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,18 +8,17 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [FIN_SHINHAN] [더밸류 브리핑] 오늘의 신한금융투자 소식…신한투자증권· 신한자산운용 - 더밸류뉴스
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.8% | `█████░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.9% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[더밸류 브리핑] 오늘의 신한금융투자 소식…신한투자증권· 신한자산운용 - 더밸류뉴스](https://news.google.com/rss/articles/CBMiVEFVX3lxTE14VGtFeWVPMzlEUm9HN0JydXc2TUF3a1JnSW1haWZvZW1YZU9wNkJienNkYkswQjNBaDU1VWtCY3pMbHNiVWhlY0xOelduYVZJanlVcw?oc=5)
+- [1,520원 위협 속 구조적 외환포지션 추가 승인…신한·하나금융 '최대 수혜' - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1EamxUaGJoLWg4ZzlXTGVHYnN0azNRenlyZmJodzBhdVdncFpocjJVbnVLZUFiSElUSmZzWHZ0NTg5emNpWnN0ZUk0NW80ckE0Y3N5eDloWjhTQ2VfMXYzZ0gzOTVoSWI0WUNVd3BQWlQ?oc=5)
 - ['한국판 고압경제'의 등장…김용범의 新 한국경제 해석법 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1xd29JZ1RseUZXVDZQYjgzXzhEWG83VEVGdG1tdUtwMkMtblRMYTh3MXNCcTF2czdiYVZOZGRBRm5iLU5ZVnBzUkRjUl90ejY1VGhxZzBUblIzQ0tjMzAxdGNUYzFkYW9LTmMyX0htM1k?oc=5)
 
 ---
