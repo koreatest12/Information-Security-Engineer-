@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 164 days, 21:39:07
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 164 days, 23:03:35
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.7% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.2% | `████░░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융지주, 신한투자증권 정상화에 발행어음까지… ROE 10% 퍼즐 맞춰지나 - PRESS9](https://news.google.com/rss/articles/CBMiZEFVX3lxTE9lUFI2Z1YwdWtYT2tmR2VOclNvUXRrM0Jkd01HOV92aDNkcWtFam5vSXRCRXZLWUZEQWU4V1BSLWdiLU1aRUdVek9IQ1QxY1FOX0xLR3Z3eTJydlNXMW9yYmlEc1A?oc=5)
+- [신한금융지주, ROE 연동형 주주환원 정책으로 밸류업 선도 - 키움증권 - PRESS9](https://news.google.com/rss/articles/CBMiZEFVX3lxTE9RdEpla2Fhb19QV3pUQVdJRm5kYUR6OVc1b0xOWjBVVzFwWTc0bFlYbjhoWE5qN0V1TUtTQ083VlFfTmdwb1BUMG1JdGw0d0hHLWR4SmctbC1aN1BMSUtER2kwLW8?oc=5)
 - [찬밥 신세였는데 '대반전'…삼전닉스 주가 폭등한 진짜 이유 - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1oVWlhcEQ4YUJsemdaNG1tUWxMb2wzeGVWV0pSeFpmSnFoZS11aVlRb0J0SU5tSTc4T19QLWtGWU16MzNESVNDLUVOQzA0dnhMd1VfXzV3QWJkUdIBVEFVX3lxTE5zZlVLcnRBTXRQLUdGU2VrSDBLc3pOb191X282anV3eDNCVmpiR1NVRU5EZGh0VElQa2Q5STRPdWY0UktmQlFRN2dIamdPWWQxRDd0bg?oc=5)
 
 ---
