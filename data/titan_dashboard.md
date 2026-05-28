@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 165 days, 8:03:55
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 165 days, 9:27:44
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.5% | `█████░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.8% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [금융사고 AI로 사전예방...신한銀 내부통제 고도화 - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9QTkVISzBpZ3hURl91M3dYNUlIYk1KTXpaRkdmM29qY1lhUE9FUERsQndsYlZ0VzFndUNrT1FpZzJ0RUdLMjVXM2xFTlVCVGQ3eEHSAVNBVV95cUxNbjZxY1VMckEyZ1Z0YlFtYnl3Tk9MNE5rZ3g4SDVFbTVJNTBDZEV4NVk4S3lTZC10SHJZcHR2N2dzOGtyaVNzREZSTTNGNHdQTjJ1cw?oc=5)
-- [삼전닉스 앞질렀다…삼성전기·LG이노텍 '무서운 질주' [종목+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE4zakx2SWd1bnNUdUMyQlhwcGU5dEREMGtDYThmWTdyeXdNRk1seVh3Rm9TVEp0SjlSWFA0TFJUbW92ZnpmVTFtUzA3SkpmaUtiLWktNUpYdFpDQdIBVEFVX3lxTFBDN2l5VzRiNVFabzVRbVVyYjQ3N2d3aWJ3dFFuUjFjM2ZSV3FvdWd1eFFNeEYxa0NXNkJVMHBDLUhNc0hBNjRob24yVUtHQUZMSV9nTg?oc=5)
+- [삼전닉스 올해 84.5조 처분…외국인 매도의 진실 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ucE5ZNjRDaVFKRVpHUC1xeTJrNks0aThENng1NlRrVUtGc1FtYkRhSERhSU1DdGxSenRyMk03amhLeUFJWnFCVXFCOGR6WWRrankzRHJnS0xBd9IBVEFVX3lxTE9SdHhLOFdZaW9uRktlOGo3ZTdSb0JFQ2g1bEdtem9GcHUtTFBncmFfZXF0d0JSNjNkRmcycHRjX29sWUxGVmJfVkNIWXBvQVJXd1BjTA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
