@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 164 days, 23:03:35
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 165 days, 0:35:26
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.2% | `████░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.0% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융지주, ROE 연동형 주주환원 정책으로 밸류업 선도 - 키움증권 - PRESS9](https://news.google.com/rss/articles/CBMiZEFVX3lxTE9RdEpla2Fhb19QV3pUQVdJRm5kYUR6OVc1b0xOWjBVVzFwWTc0bFlYbjhoWE5qN0V1TUtTQ083VlFfTmdwb1BUMG1JdGw0d0hHLWR4SmctbC1aN1BMSUtER2kwLW8?oc=5)
-- [찬밥 신세였는데 '대반전'…삼전닉스 주가 폭등한 진짜 이유 - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1oVWlhcEQ4YUJsemdaNG1tUWxMb2wzeGVWV0pSeFpmSnFoZS11aVlRb0J0SU5tSTc4T19QLWtGWU16MzNESVNDLUVOQzA0dnhMd1VfXzV3QWJkUdIBVEFVX3lxTE5zZlVLcnRBTXRQLUdGU2VrSDBLc3pOb191X282anV3eDNCVmpiR1NVRU5EZGh0VElQa2Q5STRPdWY0UktmQlFRN2dIamdPWWQxRDd0bg?oc=5)
+- [삼전닉스 올해 84.5조 처분…외국인 매도의 진실 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ucE5ZNjRDaVFKRVpHUC1xeTJrNks0aThENng1NlRrVUtGc1FtYkRhSERhSU1DdGxSenRyMk03amhLeUFJWnFCVXFCOGR6WWRrankzRHJnS0xBd9IBVEFVX3lxTE9SdHhLOFdZaW9uRktlOGo3ZTdSb0JFQ2g1bEdtem9GcHUtTFBncmFfZXF0d0JSNjNkRmcycHRjX29sWUxGVmJfVkNIWXBvQVJXd1BjTA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
