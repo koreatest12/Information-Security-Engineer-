@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 164 days, 18:34:20
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 164 days, 20:02:21
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.0% | `████░░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 25.6% | `███░░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [‘주식 투자자-반려동물’ 포섭...신한은행, 내달 ‘슈퍼SOL’ 출격 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5XLTZmNmhuZ3gzWDYyVlQ0RlpnVGRVdVdlM1FMWDRmRGg4bGJSb3pzNDNLOFVlUTJsUmxINjRxOVhlVUNvMFd6VXFyVXJDMm5ucl9ySzR0OXJYRkU?oc=5)
-- ["삼전닉스 언제까지 올라요?"…개미들 놀랄 증권가 전망 [분석+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvV0xnVV9sc3RzaHQ4SlZxSDhOSGpodHJwSkFYRWdFUVBWSWdfWTgtV1FneHVGWkJPYW1sZEVJNGliUVk2NkdoNWVvbVRmWlZSZnVQZVY1ZFJ4Z9IBVEFVX3lxTE56NnhDT3lITlltRXpLeERjUWFiYmM3bnBXV2c5LWM3NmtFYlBzanNuZWFSMHBjNV9peVdUbEFoQ3l5dW5aTmRuLW41aWNIX0RCZ21UYQ?oc=5)
+- ["삼전닉스 언제까지 올라요?"…개미들 놀랄 증권가 전망 [분석+] - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvV0xnVV9sc3RzaHQ4SlZxSDhOSGpodHJwSkFYRWdFUVBWSWdfWTgtV1FneHVGWkJPYW1sZEVJNGliUVk2NkdoNWVvbVRmWlZSZnVQZVY1ZFJ4Z9IBVEFVX3lxTE56NnhDT3lITlltRXpLeERjUWFiYmM3bnBXV2c5LWM3NmtFYlBzanNuZWFSMHBjNV9peVdUbEFoQ3l5dW5aTmRuLW41aWNIX0RCZ21UYQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
