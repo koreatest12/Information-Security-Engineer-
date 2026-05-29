@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 165 days, 18:34:38
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 165 days, 20:02:12
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.6% | `███░░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.6% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [일본·베트남 현지화 성공… 글로벌 부문 세전 이익 1조원 돌파 - 조선비즈 - Chosunbiz](https://news.google.com/rss/articles/CBMiiAFBVV95cUxOLVNZZTRzNlVNd1RmaHJXYmhOMDQyOXdNX3Nud3RlSHJGb1h0ZEtmcHBKUnZFb2g1UzJQQnVFRWpQcjJseVQ1cEtpTDhNV044bEtFMkpuakhrZjUwRFFhUUtROExBYU85X0d5dGRBVjZCQkNDRG9HZXJ0aUFSUThVcG9PWkgtRFRS0gGcAUFVX3lxTFBmUFNOWldWVVlCeVdaUEtpUW5NeldFX2RTM2lPNG05cDRuZHB0M2Iwbm13WVZ6R1BrNFhKS1A5bTcyYTFqSWRTWGQ2VFh5WEt5Z2JWWVB0eUFrWFhwV3pzOGtFV1BkSENkbnlOT2QzaXZpU0Z5eW1wSHRGd3hhUWR0WkF1YTFMSDlaQlRxWTNUczRzVnJuTkJ1WktLSw?oc=5)
