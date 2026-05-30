@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 167 days, 0:10:16
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 167 days, 1:03:20
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.0% | `████░░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.7% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한카드, 잠실구장 접수 나선다…금융권 '야구팬 모시기' 경쟁 - 뉴스웍스](https://news.google.com/rss/articles/CBMib0FVX3lxTE1JaURFazlJakVtamx5Qk1ELW1oczJSUGN5cmFtTkJaUjl3enNOajFtN1UtQzFwM0NqYV8zMVh0YmtDZ0xXNHdILXVydlR1eUtxY3RyeGdFSlI1SU5KbWFXRmVqWEc0ZFVUb0hDUERhUdIBc0FVX3lxTE1pNU1wdkZtdWh1LVRFbms3a29kREhhQVJjQ3d5ajJWTmtTVXdkbFN3djFvTzJaZWJFMmdseDFzeGNhOU5xcjY3NkhEb3VEN3VnclVISllYMHQ2eVlXSHdzbGw2YVRUalQ2UDdpblhta1pPNEk?oc=5)
+- [[카드레터] 신한카드·우리카드·BC카드 등 - 비즈월드](https://news.google.com/rss/articles/CBMiakFVX3lxTE4zcHlmcGVYNzVOQ3B0WDlfLXFZMkI2ZnhqNkhwc29sUkU1Vmc3MkpYLW5ZbnJqMnpZRlFRaXFQMHA1QWl6ZlB6TGtGTGV2LUJyVlM2V3p2Uy1hTVNaM19GRlFDeTdKWnpsRmc?oc=5)
 - ["다시 앞서간다"...초고수가 선택한 1위 반도체 기업은? - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9LU3dBVF81R29LNS1CQm5uYkY2NV9DSUJ2cmhJZkdud1JRR3hlajRjSWZWQXo5YTV4bktNN2U5S1p5N0pUWTdOX0hnUXdOdHRkMVoxX3podEJ0UdIBVEFVX3lxTE1RelhkREVWUmdPRVVUNU5lVHlIZ3dXNk1xQ3BMekZUY09sT2RjbjRyak0wLVY5Vm9hQmdTNGhZWlExY2w0SHZxNkdIY0ZrUkVqYjhYTQ?oc=5)
 
 ---
