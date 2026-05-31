@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 168 days, 13:04:18
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 168 days, 13:36:43
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.6% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.2% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - ["사이버 공격 막아라" KB·신한금융, AI 보안 강화 박차 - 더구루](https://news.google.com/rss/articles/CBMiY0FVX3lxTFBLdmh6TjVHTEZYYWVOM3F1MGFGQlZ2XzZYZjNVcVVuSVRLQ2RpUXRiQmltbFVoRHBORnJDM01QSUJIcHpfaURjRk5Fa05ZVjVLSURndDRMek50bEVaUmJ2VVhZQQ?oc=5)
-- ["다른 반도체주 오를 때 뭐했지?"…1/4 토막 났다가 반등 시작 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBQM3JmQnJRQkM2YnNkRlpEdVA4WDV1a1B6QWgzQ21wbkxOZmJTcGs5c2JjTVFtUDI4bTFyN01wQWlJMmRxd0hGRmZNdXVZNGFjUGhVYjZxOU45QdIBVEFVX3lxTE5xTy1BYy1yOWlCUkE4QWREU3Nkd2hWQnJSZVgwY2Q2LUZveGt0ampYbjdJanVpanpVOFRMOWxqbUVveVNyTnR4dURUR2kxVE5kYXo2MA?oc=5)
+- ["삼전닉스 믿었다간 큰 코 다친다"…역대급 빚투에 '경고' [노정동의 어쩌다 투자자] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBUb1h4bDNZcndvZHZqTEhHVVZfaXV1dGhDR0p4N1ZWX1M3djRmV0hxTlhrWUtEOWNBVC1xQ1NkcWE0UmZWeHhQclc5S0ZVWnpZWkQyTzgyZ0VmQdIBVEFVX3lxTFBXUHQtakgwN29tNGdoMVQtVHZ2TmFDZ180YVk4YzB3ZkZwX2RZT1BoQTRQUjBGS04xVHRDZHJGNTlDYXBqeFF6a2lRODI2Y21TcHVnRA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
