@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 168 days, 12:11:52
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 168 days, 12:40:20
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,15 +8,14 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [FIN_SHINHAN] [더밸류 브리핑] 오늘의 신한금융투자 소식…신한투자증권· 신한자산운용 - 더밸류뉴스
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.2% | `█████░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.4% | `███░░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - ["사이버 공격 막아라" KB·신한금융, AI 보안 강화 박차 - 더구루](https://news.google.com/rss/articles/CBMiY0FVX3lxTFBLdmh6TjVHTEZYYWVOM3F1MGFGQlZ2XzZYZjNVcVVuSVRLQ2RpUXRiQmltbFVoRHBORnJDM01QSUJIcHpfaURjRk5Fa05ZVjVLSURndDRMek50bEVaUmJ2VVhZQQ?oc=5)
