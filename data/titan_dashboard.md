@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 169 days, 5:36:44
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 169 days, 7:52:28
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.8% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.6% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[단독]신한, 은행 코인연합 가세…두나무·하나 동맹에 맞대응 - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE1fcHBEUS1wS3hpUmRsNGVqNXlQOHU2aktKYUJkRFAyNk5KY0VZVkxKRWVfcm5QbGZmdnA4UmNZb3RzXzlGOVUyNTNoMmkyWkNLQVHSAVNBVV95cUxPdFRjc08wRjlXRVBhUFZTQjB0Ti1nWnZzbkczNFNEbVZuLUJBYUhOaVRnZnV1b0NwSTVINzZRWm9iYWdMV0RERGxBa0pyMDdCZXVDQQ?oc=5)
-- [한화그룹, 美 스페이스X 공급망 뚫었다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFA5anlKaEcta2k1WHRCd2RDZnRnTjhkay0wSmJNUzluOGhhd3RiWlBBOGZfR2RmdHV4MjVINHdWTWtPOTI1eDJZbWtVU2Jsam5NTFgtLWs3ZThZQdIBVEFVX3lxTE5SVzFycm00UzNqTWx4X3FXR0tWNEN0bDdVeXZhRDNTNWtwUmx0aHZvSW1xM3JRTkpORU9MSVBFeTBIcm43cTBaOWZqSmtRRVRUVFFCTA?oc=5)
+- [신한금융, 회계관리에 AI 입힌다…내부통제 고도화 착수 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1GVUZTUWg4T25FMFpPT183bHJvVzlCbjVpaWpReV9kVGNyeF9uX3BSOUlicXZIdXZqUTJZRTRvMEZzWU9UTkp4V29OSjNsZ2s?oc=5)
+- [삼성전기 차익실현한 고수들…이 종목에 집중 투자 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5uT1NfazVaVEhGdVkzMXhTbFBJVkx5U2E1V0lHY0NYRC1NOVUyVy1IcDM5RlYxVVVEeWFuRFpoUGx1azItcDlaUW84OW9EdHBfT20xU3JlOWdmQdIBVEFVX3lxTFA5ZFd1Zi1DZkZmRHpiYVdzcXd4X0ltWjItRE96a2FyVWsxaEhVSzBpZndqaVhRZTk5MU91RzZ5bGtqX0VZSUtqMTk4b1h0RzFqZjNoUw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
