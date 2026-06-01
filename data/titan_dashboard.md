@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 168 days, 23:30:21
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 169 days, 1:33:31
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.6% | `███░░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 35.6% | `█████░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [美서 포용금융 걱정한 KB·신한·우리[김보형의 뷰파인더] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5yWV9HLUt6WTIxSE8xbFo0LXcxY1IzY0NCUTlFS3dNamU2QlNoc3dyWGFGXzhwc3NwcHRRRXROd3pWM0ZtYWUzWWpTYUVVazQ?oc=5)
-- ["역대급 '불장'이라는데 내 주식만 한겨울"…이유 있었네 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1IQ1dKZHFaa3FIU0VnTnBpTnY0dVFfdXBWV2ZDbXA2NDRsVE5vUk1YMWlUSFZJcDR3MU5Gd1BFLU1WUlkwUUVKXzl6WmhzdWgwUUpQd0VzeFdpUdIBVEFVX3lxTE1naURMT3JDcXoyMFZXQWNiRnVzNi1qcldNaFYtX3V3V053czNQd3ZyeGlKbjlPak5nSmc0RTRjdDdxU0NLSlhjT1FEdW53VjFaWWpmYg?oc=5)
+- [[단독] 신한銀의 AX … AI에이전트끼리 스스로 앱 개발 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5JVWpDYnl4T3hTVzlsckstQ01ENWM4TnBxWVdONWRtSUMxdXJYQTdFYTVwOFJQazdzSXNXejB1S2gtQ3RQU19DMTBwUWVpQnF3Yk1MSw?oc=5)
+- [네이버, 엔비디아 협력 기대에 장중 20%대 급등 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1LUFItcVZ2R3c4QUNRSlkyU2U2Z2l2YXlIV1VnYkhJampBUW8weW11X3JBc0pZUzRQSk1OVURRVmFwaWFJUVlubHVidGZQYnBCN1pGZnA4RkJCZ9IBVEFVX3lxTE9oRm0wZURDa19HSmFzSkZHOHVXSzJvTnRURjQ4blo4WW9tWjQtUF96ZFRBc2lMcm9fZTN5eVNHbEpZRkNnbDZQYWh1Q2ZZbEx0TVZpbw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
