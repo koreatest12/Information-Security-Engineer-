@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 168 days, 19:19:40
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 168 days, 21:27:51
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.5% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 40.6% | `██████░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [美서 포용금융 걱정한 KB·신한·우리[김보형의 뷰파인더] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5yWV9HLUt6WTIxSE8xbFo0LXcxY1IzY0NCUTlFS3dNamU2QlNoc3dyWGFGXzhwc3NwcHRRRXROd3pWM0ZtYWUzWWpTYUVVazQ?oc=5)
-- [트럼프 "종전협상 최종결정 위해 백악관 상황실서 회의" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE8tay1od1dTWS1DM2lldFpqa2xJSGc0UGhKeXBESlFFMkdoUE9Oa1JELTg4eHJzTkplSy1pczhpcGJRempOdUVIcUpaSklCYzA2aHN6Y3VacWNLZ9IBVEFVX3lxTE5CR2ZKY3lqU19YSi01ZWlobzQ3OUhvWXdvZTVOZWd4eHUtMncyd3dMV1FLWmszUG41cUR3dS1YaGpXWUh4Ykh5bUtaUFRmRXdmNjVvTg?oc=5)
+- ["역대급 '불장'이라는데 내 주식만 한겨울"…이유 있었네 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1IQ1dKZHFaa3FIU0VnTnBpTnY0dVFfdXBWV2ZDbXA2NDRsVE5vUk1YMWlUSFZJcDR3MU5Gd1BFLU1WUlkwUUVKXzl6WmhzdWgwUUpQd0VzeFdpUdIBVEFVX3lxTE1naURMT3JDcXoyMFZXQWNiRnVzNi1qcldNaFYtX3V3V053czNQd3ZyeGlKbjlPak5nSmc0RTRjdDdxU0NLSlhjT1FEdW53VjFaWWpmYg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
