@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 168 days, 17:49:59
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 168 days, 19:19:40
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.0% | `████░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.5% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [美서 포용금융 걱정한 KB·신한·우리[김보형의 뷰파인더] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5yWV9HLUt6WTIxSE8xbFo0LXcxY1IzY0NCUTlFS3dNamU2QlNoc3dyWGFGXzhwc3NwcHRRRXROd3pWM0ZtYWUzWWpTYUVVazQ?oc=5)
-- ["삼전닉스 믿었다간 큰 코 다친다"…역대급 빚투에 '경고' [노정동의 어쩌다 투자자] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBUb1h4bDNZcndvZHZqTEhHVVZfaXV1dGhDR0p4N1ZWX1M3djRmV0hxTlhrWUtEOWNBVC1xQ1NkcWE0UmZWeHhQclc5S0ZVWnpZWkQyTzgyZ0VmQdIBVEFVX3lxTFBXUHQtakgwN29tNGdoMVQtVHZ2TmFDZ180YVk4YzB3ZkZwX2RZT1BoQTRQUjBGS04xVHRDZHJGNTlDYXBqeFF6a2lRODI2Y21TcHVnRA?oc=5)
+- [트럼프 "종전협상 최종결정 위해 백악관 상황실서 회의" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE8tay1od1dTWS1DM2lldFpqa2xJSGc0UGhKeXBESlFFMkdoUE9Oa1JELTg4eHJzTkplSy1pczhpcGJRempOdUVIcUpaSklCYzA2aHN6Y3VacWNLZ9IBVEFVX3lxTE5CR2ZKY3lqU19YSi01ZWlobzQ3OUhvWXdvZTVOZWd4eHUtMncyd3dMV1FLWmszUG41cUR3dS1YaGpXWUh4Ykh5bUtaUFRmRXdmNjVvTg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
