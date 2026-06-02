@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 169 days, 16:46:40
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 169 days, 17:50:42
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,18 +8,19 @@
 
 > **Q:** 종합 상황 브리핑
 
-관련 정보 없음
+**🤖 AI Analysis:**
+- [FIN_SHINHAN] [더밸류 브리핑] 오늘의 신한금융투자 소식…신한투자증권· 신한자산운용 - 더밸류뉴스
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 40.8% | `██████░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.8% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 회계관리에 AI 입힌다…내부통제 고도화 착수 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1GVUZTUWg4T25FMFpPT183bHJvVzlCbjVpaWpReV9kVGNyeF9uX3BSOUlicXZIdXZqUTJZRTRvMEZzWU9UTkp4V29OSjNsZ2s?oc=5)
-- [삼성전기 차익실현한 고수들…이 종목에 집중 투자 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5uT1NfazVaVEhGdVkzMXhTbFBJVkx5U2E1V0lHY0NYRC1NOVUyVy1IcDM5RlYxVVVEeWFuRFpoUGx1azItcDlaUW84OW9EdHBfT20xU3JlOWdmQdIBVEFVX3lxTFA5ZFd1Zi1DZkZmRHpiYVdzcXd4X0ltWjItRE96a2FyVWsxaEhVSzBpZndqaVhRZTk5MU91RzZ5bGtqX0VZSUtqMTk4b1h0RzFqZjNoUw?oc=5)
+- [[더밸류 브리핑] 오늘의 신한금융투자 소식…신한투자증권· 신한자산운용 - 더밸류뉴스](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1qTDRsazc5a3dfaHNTMXBUcmFHSXIzdG1HT1F5RUhDMHZfUEpVc1EzMFE5ampaMF9FYU1Xc0dZbUpYT0M0MXJuZE5iNG9SRnVnSzAwUg?oc=5)
+- [젠슨 황 "엔비디아, 한국 로보틱스에 투자하겠다" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBPWUJtUlZNMzlxVXphMEhBYkFEUmFZZFZlamxHWFZENDdZWTVUdTY2OW54bEV1dHhHWlBLZHgzVmRyR09wTldoV2Zwd1JwWk1CU2ZoS2VpemR5Z9IBVEFVX3lxTE9FekstakVmYmhsLXdFTENlZHhuV0VLdW5OUDFjSlZ1RTlzT3JPdU8zVmpBMF9fbjlFUUhBWXg5SzY1UVlqcm9Ub1M4YXl5MVRFeUNEcw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
