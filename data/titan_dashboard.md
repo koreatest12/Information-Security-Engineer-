@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 169 days, 21:21:23
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 169 days, 23:20:03
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.3% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 24.3% | `███░░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 슈퍼SOL 리뉴얼 승부수…'원앱' 전략 통할까 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1qdU1WZld6RlBjeTZ4RGRqNmJ4bE5FOVFabUJlODRmVzVjY190U2hobEdlM1Iybk5pWW1fVmR6T2x0VEJnMkdwRDJVMmh0am8?oc=5)
+- [신한투자증권, 슈퍼SOL 효과 톡톡…비대면 계좌 개설 9배 증가 - PRESS9](https://news.google.com/rss/articles/CBMiZEFVX3lxTE56QTRKaVhlTl9UcmxRMjkzcXhTWUZ5Z094RnlmOUlERDJPaklkZVBUSnFtNEJCbVpCQXFvWG1lMFM4X2pTOGhHSzV5aC11OWNicGdPRFRwTWxVYng5LWhyUnlQeUs?oc=5)
 - [젠슨 황 "엔비디아, 한국 로보틱스에 투자하겠다" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBPWUJtUlZNMzlxVXphMEhBYkFEUmFZZFZlamxHWFZENDdZWTVUdTY2OW54bEV1dHhHWlBLZHgzVmRyR09wTldoV2Zwd1JwWk1CU2ZoS2VpemR5Z9IBVEFVX3lxTE9FekstakVmYmhsLXdFTENlZHhuV0VLdW5OUDFjSlZ1RTlzT3JPdU8zVmpBMF9fbjlFUUhBWXg5SzY1UVlqcm9Ub1M4YXl5MVRFeUNEcw?oc=5)
 
 ---
