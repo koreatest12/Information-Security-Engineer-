@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 171 days, 1:23:19
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 171 days, 3:31:32
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.4% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.2% | `████░░░░░░░░░░░` |
 | **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [스테이블코인 연합전선 강화 속도전, '선두' 하나금융에 KB금융·신한금융 '전방위' 연합으로 맞불 놓나 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE9icDItNGV4MFJmYW96TmpQaGpNdGlObGhOSDRBTkRhN3JfaGpXZHJQMUF0eWtIQ3VaeFVtZlhmR1FPNzMxQVUzNHZRV1dTWmlZN3M0WnJLTW5qTWxjM2ZnLXBTam4zaFFjUk9EdjJZQnlMc3c?oc=5)
-- [99% 폭등주도 팔았다…국민연금 조용히 쓸어담은 종목은 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9MQUo3cHFzV0V2b1R0ZGV6WEwyOGU4YlRId29XT2FTWnZqRUhhX19lNUVaYl9MX1lBYi03aEYzVzdkZnl5eE5qSngtWEJUWkc0MEZvS2tJWkFvQdIBVEFVX3lxTFB1WmVIdFMxdnJoUEt4SXRBRmVsODBkblctd2RUZGszeWdYbk9QQW5OOXBXc1k3cmg0V2JxS2gySWZnSldZQW9TVU1mbExwcDJib09ULQ?oc=5)
+- [신한금융, 회계관리에 AI 입힌다…내부통제 고도화 착수 - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE5vUzNPc2h0YnYwck9BSjE0Snd4QUk0SlBUWVcxZjR2RVpPdVRTYnFwYnVFZDdOM0VUNW5jTHVhU0hPQ3BrM1E?oc=5)
+- ["삼전보다 삼전우 사라"…ETF가 외면한 우선주, 저평가·특별배당 매력 부각 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5zWTNET3N5UjdjYmw5dW56RUx1ZGtodm81RF8xNWxYaURsZUxZN0dOQi1ST2pkUjZ0OWVhQ0hCVHNmY29NUk9IVUljYXd3dTMxOHlJbC14M0Frd9IBVEFVX3lxTFBoa0VBbUFaeGliUU8xUDQ3VHNPN3dTZHVjM2kwS0FUamNPYklqZ1FyVmg3SF9KTlZlSzJKWWFIN0w3d1NsS1NXNlRZbkYyRmZFVTlFQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
