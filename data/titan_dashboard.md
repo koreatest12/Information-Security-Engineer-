@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 171 days, 5:14:57
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 171 days, 6:50:12
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,18 +8,17 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [FIN_SHINHAN] [더밸류 브리핑] 오늘의 신한금융투자 소식…신한투자증권· 신한자산운용 - 더밸류뉴스
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.0% | `█████░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 36.9% | `█████░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 회계관리에 AI 입힌다…내부통제 고도화 착수 - v.daum.net](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5TQklFUWIxOFNQS0h4WF9LcHdpU0lZSDFuZHE4bEw3Z1lEaWd0OW1KRkVfQy1jX1ZJUGt1WFR0d040a042anZTZ0pTSGxzMWdzSHFZcw?oc=5)
+- [신한금융, 회계관리에 AI 입힌다…내부통제 고도화 착수 - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE5vUzNPc2h0YnYwck9BSjE0Snd4QUk0SlBUWVcxZjR2RVpPdVRTYnFwYnVFZDdOM0VUNW5jTHVhU0hPQ3BrM1E?oc=5)
 - ["삼성전자 안 사는 이유 있다"…156억 번 투자 전설의 일침 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1aUUltT0RjdnJ3bW1lWWZpWTd1QmhVb0xFdHZBR1pXdG42dURhOWhyNTkzM2JBSlYySjJrelZxaDdYRF9NMmpPUXNXRGRrcGE1NV9UREk4aU5iZ9IBVEFVX3lxTE95MkhXempUX0pJLTlaei0yR1M4U1RobWwtLUlVbWJydG5EdXZsUnFjZ2M3dTg1QjZHc3FyMFlIblNqTnFxOHZiMDd3SjNldF9xT3VrMw?oc=5)
 
 ---
