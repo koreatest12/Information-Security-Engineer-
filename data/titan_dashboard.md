@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 171 days, 10:44:11
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 171 days, 12:03:54
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,11 +15,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.2% | `█████░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.7% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 회계관리에 AI 입힌다…내부통제 고도화 착수 - v.daum.net](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5TQklFUWIxOFNQS0h4WF9LcHdpU0lZSDFuZHE4bEw3Z1lEaWd0OW1KRkVfQy1jX1ZJUGt1WFR0d040a042anZTZ0pTSGxzMWdzSHFZcw?oc=5)
+- [신한금융, 슈퍼SOL 리뉴얼 승부수…'원앱' 전략 통할까 - v.daum.net](https://news.google.com/rss/articles/CBMiS0FVX3lxTFA3akw1NkRNSHUtb3ljbks0bEpXcEE4aTYzNGJoOUwyMlZOXzJ3VXp4MUdhNDNqdERuLUVZcmZMSnpjdWNyY3BFaG8zVQ?oc=5)
 - ["삼전보다 삼전우 사라"…ETF가 외면한 우선주, 저평가·특별배당 매력 부각 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5zWTNET3N5UjdjYmw5dW56RUx1ZGtodm81RF8xNWxYaURsZUxZN0dOQi1ST2pkUjZ0OWVhQ0hCVHNmY29NUk9IVUljYXd3dTMxOHlJbC14M0Frd9IBVEFVX3lxTFBoa0VBbUFaeGliUU8xUDQ3VHNPN3dTZHVjM2kwS0FUamNPYklqZ1FyVmg3SF9KTlZlSzJKWWFIN0w3d1NsS1NXNlRZbkYyRmZFVTlFQQ?oc=5)
 
 ---
