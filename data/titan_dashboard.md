@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 171 days, 16:22:25
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 171 days, 17:53:44
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.5% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.3% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [“하나금융 선공에”...KB·신한, 스테이블코인 ‘다음 수’ 고민 - 에너지경제신문](https://news.google.com/rss/articles/CBMiY0FVX3lxTE5SU1I4RE5POC1wYkkzZVZTczNSRWF3SC1xb2F2T1J2SGZ3S0p3LXVTX2ZIbWdPZFJfYWxUNW9fdmhUWGNMaE1UUHUwT05UcmZLMzlTUEQzWURMX1hmYWlHekg2TQ?oc=5)
+- [“하나금융 선공에”...KB·신한, 스테이블코인 ‘다음 수’ 고민 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1GTlBISEJ1QzJNOTJXNF9JTmlERnk0WGd3azdLQWlMNUNKVHA5VW9ndC1mbnIyNDVLNDNXX21XamhNNnE4aXA2dTZ0QVM1TjJmbkVLOTJ0VC0zNzg?oc=5)
 - ["삼성전자 안 사는 이유 있다"…156억 번 투자 전설의 일침 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1aUUltT0RjdnJ3bW1lWWZpWTd1QmhVb0xFdHZBR1pXdG42dURhOWhyNTkzM2JBSlYySjJrelZxaDdYRF9NMmpPUXNXRGRrcGE1NV9UREk4aU5iZ9IBVEFVX3lxTE95MkhXempUX0pJLTlaei0yR1M4U1RobWwtLUlVbWJydG5EdXZsUnFjZ2M3dTg1QjZHc3FyMFlIblNqTnFxOHZiMDd3SjNldF9xT3VrMw?oc=5)
 
 ---
