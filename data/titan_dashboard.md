@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 171 days, 17:53:44
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 171 days, 19:19:56
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.3% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.0% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [“하나금융 선공에”...KB·신한, 스테이블코인 ‘다음 수’ 고민 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1GTlBISEJ1QzJNOTJXNF9JTmlERnk0WGd3azdLQWlMNUNKVHA5VW9ndC1mbnIyNDVLNDNXX21XamhNNnE4aXA2dTZ0QVM1TjJmbkVLOTJ0VC0zNzg?oc=5)
-- ["삼성전자 안 사는 이유 있다"…156억 번 투자 전설의 일침 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1aUUltT0RjdnJ3bW1lWWZpWTd1QmhVb0xFdHZBR1pXdG42dURhOWhyNTkzM2JBSlYySjJrelZxaDdYRF9NMmpPUXNXRGRrcGE1NV9UREk4aU5iZ9IBVEFVX3lxTE95MkhXempUX0pJLTlaei0yR1M4U1RobWwtLUlVbWJydG5EdXZsUnFjZ2M3dTg1QjZHc3FyMFlIblNqTnFxOHZiMDd3SjNldF9xT3VrMw?oc=5)
+- [신한금융, 슈퍼SOL 리뉴얼 승부수…'원앱' 전략 통할까 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1qdU1WZld6RlBjeTZ4RGRqNmJ4bE5FOVFabUJlODRmVzVjY190U2hobEdlM1Iybk5pWW1fVmR6T2x0VEJnMkdwRDJVMmh0am8?oc=5)
+- ["젠슨 황 온다" 41% 뛰었는데…여의도 증권가 '서늘한 경고' [종목+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE4zaU13ajQ1VmVITGY0TFA2aWowT2ctdDZGN3pmWS1YQTlNdGt0MlJmRnpUUGE1SHFYd3Vka2xuTV9XeWVTcWhiMHNYQTJQdF9OSUdpUVFOai1JUdIBVEFVX3lxTFB5MWJkTlcwZ2htbVNyTGZqNE5kbTE4TDQ1YTIzQ203Q1dhZXlWUHhVcDFlQWYxQVkyNjNKcUZEUUpVVElVbzM3RG5vdTdWSjlYREJjdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
