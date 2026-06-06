@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 174 days, 1:07:44
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 174 days, 1:56:19
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.8% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 35.8% | `█████░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [비은행 부진에 발목 잡힌 신한금융…‘진옥동 2기’ 리딩금융 탈환 험로 - 일요신문](https://news.google.com/rss/articles/CBMiZkFVX3lxTE1lMlVCZ191V196ZUR3bndRZnlKQk9RRjB1U2hFeThUS3dacmItZERFdTBFRXlTT2p4T2hFclVlRlFVRmM5RzJ5R2V4aVR3bFQxUURncUt5a1pDZExqUEVGZXRjWkhOUQ?oc=5)
-- [심상치 않은 美 반도체 투매…삼전닉스 투자 전략은? - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Ec1lqeVRWbDQ1VFFTd2F6QTRSQVJsS0E2UlBNTmZGWTRFOXVDbWNNQ3pJa2FHbnd3NTZ4ZkROamJHcHg2YkFtblYtcDFqTkJsVXpJaGpTWkxoUdIBVEFVX3lxTE5LQXdwOG80UGpoLUtDWU5QTEpiU0FZQlFxd1Rnbl9Md1NqTkt0dTJpRG44Q3lFQXY0c1d6YWZRenA0RFViSXE3Z3hES1hQMGcxZnFzUw?oc=5)
+- [신한금융 임직원들, 산불 피해 복원 '숲 가꾸기' 봉사활동 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9kcGdzbHpCcjFqNEFQYmFxWFNIbEVmNC0zbXIzYzJON3lNcmV0OFJiajJJOGlmTlJtaE1zQ3dlYXRsNE1JYXY3ZTJnV1RVeEc1dXNGazBQXzF1SWxCMThZM9IBeEFVX3lxTE42akNMTl9pUlJaVFBacDBrQlNUUVJtSjNrOWJzTWtWbEgyR3hUNUV4S1hHS3dnZkxXZkcwRkRQSXdTalUtZV83NGFHMl9hTGR5NkYxdlA2TGVZM3JrR3l1T3J4cjhKLVhwZmVMNUxDQWpPQ1BvOG5UZQ?oc=5)
+- [미친 듯이 파는 외국인…증시·환율 '검은 금요일' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9rc2VkUnY5d0ZZZVZMUW44emVIY1g3TDZocnlxdWJOS09KQmZfUUxfbjlQZGdscHlGR1JYWExfcVdJNVdUbmVSaGRPT2J2aHRmMmFuNkRYMmtqQdIBVEFVX3lxTFBEN3J2aXp2amxGcjFmblYyMUFMME0wdW9rZXpwMUkxTjF5UEluMmVEdmpWQl80aGN4UkpiQWRSd2I3ZHlGUmVfVFlhYmdjOWl3S243Ng?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
