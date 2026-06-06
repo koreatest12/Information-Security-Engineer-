@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 173 days, 16:08:53
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 173 days, 16:42:38
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.4% | `█████░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.9% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융 임직원들, 산불 피해 복원 '숲 가꾸기' 봉사활동 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9kcGdzbHpCcjFqNEFQYmFxWFNIbEVmNC0zbXIzYzJON3lNcmV0OFJiajJJOGlmTlJtaE1zQ3dlYXRsNE1JYXY3ZTJnV1RVeEc1dXNGazBQXzF1SWxCMThZM9IBeEFVX3lxTE42akNMTl9pUlJaVFBacDBrQlNUUVJtSjNrOWJzTWtWbEgyR3hUNUV4S1hHS3dnZkxXZkcwRkRQSXdTalUtZV83NGFHMl9hTGR5NkYxdlA2TGVZM3JrR3l1T3J4cjhKLVhwZmVMNUxDQWpPQ1BvOG5UZQ?oc=5)
-- ["우린 임대주택 싫다"…투기꾼 취급에 뿔난 2030, 등 돌렸다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9MU2Jjc19nYUdCZklmLWZ0LUp4Y3U2Mzd6YnJNemNkNzQzSUJZRWp3VFk0X2VMbW5tc2dlZ2x6U01PQTNfVUNZZ0k4QUdoMGxQRW52MW9sckhXZ9IBVEFVX3lxTFBSS041Rm80SkZiR1hKY0JrTlhobGNnVzFMVnYwaGZ0RzhJNXA3OHU3LW9BamVvMHRjRzNaWFlVUkY1cmNySHV0SVA0STBOUzJWdVl2Uw?oc=5)
+- [심상치 않은 美 반도체 투매…삼전닉스 투자 전략은? - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Ec1lqeVRWbDQ1VFFTd2F6QTRSQVJsS0E2UlBNTmZGWTRFOXVDbWNNQ3pJa2FHbnd3NTZ4ZkROamJHcHg2YkFtblYtcDFqTkJsVXpJaGpTWkxoUdIBVEFVX3lxTE5LQXdwOG80UGpoLUtDWU5QTEpiU0FZQlFxd1Rnbl9Md1NqTkt0dTJpRG44Q3lFQXY0c1d6YWZRenA0RFViSXE3Z3hES1hQMGcxZnFzUw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
