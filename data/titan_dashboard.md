@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 175 days, 16:44:39
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 175 days, 17:48:31
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.3% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.8% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 안동 산불 피해 복원 ‘숲 가꾸기’ 봉사 - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9Zc1o5cGZ5YXJld0FXbVJBSXExTGdqdFdnREpMYjJncG1PS3FQWG1jQm10aGtJWkI5dGxOekZtdXo3M1BLMi1hNWhpY09PSlRRUnfSAVNBVV95cUxQSUQtZ1psTm50R3JnUWlrZV81NldVYU42OUJXdVpDaTVfNkNoS21vUDR5RmJiZHN5ZHlna3VIX1R0c2Z4b2xEMTQ0eEV4bjBxQ3RBRQ?oc=5)
-- [美 정부, 상호관세 환급…기업들 4조원대 관세 돌려받는다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5CTF8yVjJXMGFCaGg5eW9ac3NBQWpKV1NiVmdaeGl4SnhPcENGbnk1TXYyS3JXTmI4dlI1SHVnVkRsNEVFX0dvSGR2Wl9TcEhja2FtaGFyV2UwQdIBVEFVX3lxTFA2LVlRTHJ0bVFYMTVWaDFHQTN0QTFaN2RkV3p5Q2tUWUJWQ09RMkNLREs4bjExSXVadWo0cDloT0hOWjV4aDRNQmFvOWRjTHMzTmw0Ug?oc=5)
+- [코스피, 개장 직후 1단계 서킷브레이커 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1VQlhZdDdPQUdIWThDOV9wd1JYSGVvekktcWJMMTBKUmNrdzFpRmRzYk9aR1lNTW9GYktmeTY1RXdWa0tlNU1VWEZTOGZ0b2ItRnRXRl85ZzUxZ9IBVEFVX3lxTE55TDg2cWZqS3pHUTJsRFRmOS1qQkk0bE1kT1NmV0JsZVRUVko5SEFtcXhCbUZQdHFJMWFYVUsxQl81YUx2aFF2U2Z1XzBZcUFGbl9EMw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
