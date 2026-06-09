@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 177 days, 10:56:49
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 177 days, 11:56:16
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.5% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.6% | `███░░░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[단독] 신한금융, 자본시장 중심 성장 전략 속도전 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5DbUlpeHFnN0RqdGRoc3BSTThlNzduVk11eGhSd3B3ZVFCR1dYajZBdkY2YUgtSnFJWG9rWDZFZ09OTTQ4UTR1cEJOTEVIQ2c?oc=5)
-- ["잘 키운 AI 인재 다 빠져나간다"…경고등 켜진 한국 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1xNy1STjhsdHNTNDZGa1lOUFdjT1NFQnRIYUF3bFRVTFM2eUJwbzVQRk1aUDZkVGtEdmZYUjdUcmpFaTRKbmVVeDhWQTJvcHlUZ09Bb3BtM0FsUdIBVEFVX3lxTE1wSjNLNmgwbHNsZUpLVk5rOFNkbFpGc0c0bnFocFVzX2c0cW5hWnhJN1RvYmRqUnlsZW8zbllDbEpaZDFxaGU3YnlpSHVaRzhOemRLeA?oc=5)
+- [[속보] 코스피 '매수 사이드카' 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ucEdseDBHWkdJSXMyV1JyVkFrSU9Fc2hDc1lrbU5YS29zcGN0LUZoc21EVHdObE5tOFJtbmhOZ0E2OUFXYWFoVV9GZkNZcGpCaGhHdnRKVUc3dw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
