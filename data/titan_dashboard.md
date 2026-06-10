@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 178 days, 11:38:56
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 178 days, 12:33:59
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.0% | `█████░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 36.5% | `█████░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 연체채권 5000억원 소각…포용금융에 5조 투입 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5BalNkNHdRZzZvR2xpU3lzekxCaEhjQlJnMVBHNVMtZVBfRGJROElOT3JMNmxoRWhoNUlIZmlrNzlCY00yNXRlcFFTVDd0Q00?oc=5)
-- ["직원은 리스크 없이 과실 독식"…'n% 성과급'에 제동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBmYUxfaC1jTkNHUk1iTTFWSEstVUVMNjRVdm9EOHR3dG5yQWczRFdxRmxLd2lhUV83bndTRFcydEp6TjNDUzdBVHk2cWl0angza1pjZ1NNZU1LZ9IBVEFVX3lxTE55blgzSlgtXzJZakhHdjlGZ3NhMl9HUXZYV0d2SVRadFdjbklfY0d5OVlrdjV4QWd0QlBRc0xDNXp0Wk5PaHplc1BWRlozVUI5dF9lTg?oc=5)
+- [美 5월 소비자물가, 연 4.2% 상승…37개월 만에 최대 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5EaWlTY3NVNkRkUGhLd3RVOXRlWkhBMzQ0RVFOOUlKc2hwOFgxTWVvbkZrMU8tdnh3Uk9ublBUTWQxZjd4ZkhXRzNVT3ZVRnVPakc4aHZYVXFad9IBVEFVX3lxTE11X2x4QS1tamVKX2l2NmxING54UEE3U0dVbkJCenNLVW54WTdCN0o5em9Xb0k1VlpMZVE5S1p6Znl3dU5YU2JCYzA4REN0amZsX1B4eA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
