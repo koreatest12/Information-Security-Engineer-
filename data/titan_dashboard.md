@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 179 days, 4:37:46
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 179 days, 6:04:35
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.2% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 20.4% | `███░░░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 5000억 연체 채권 소각…5조 규모 포용금융 시동 - 경향신문](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWMVE0RVpHcEFEQk0wQUptZnJwVUhnLU5tM1dGak9KdUtMRXB4NThOMUZsRjdUc2xGbDN2M053X1Z3Z0ZkcFROU2hWUWNlTDhfZVRfU29FYlAzZ9IBX0FVX3lxTFBIYUtwUmp6cWJXLXljdHAzai1yZl8wMlZIT3A1QnRVUUllRUd0RmVmbmZ0V0c1YmtHZmh4bkpEajlJdnItXzhRSlhoMTZxQlFLX2c4NXA1blgtZVl2dE4w?oc=5)
+- [신한금융, 연체채권 5000억원 소각…포용금융에 5조 투입 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5BalNkNHdRZzZvR2xpU3lzekxCaEhjQlJnMVBHNVMtZVBfRGJROElOT3JMNmxoRWhoNUlIZmlrNzlCY00yNXRlcFFTVDd0Q00?oc=5)
 - ["한곳 터지면 줄줄이 무너진다"…월가의 '서늘한 경고' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9XRjg3M1Q5WmtQaDgxMlMtZlJIMGVCTjh0R1ZvU2tpcHhQenU4ZFJjamNkaDFmNkljU2kwb2VaYUNsUVBwTDN6Qkg0eVlSaU9HM0VzSk9hejNTUdIBVEFVX3lxTFBmZmxUSG4yQVVjNlZ2N2xUR0M1WEtBVUFxVUQwQnM0NXk1WTZ3ZGFuM0RUMy04U3Y3bU9DZHBFWVFudUc1TzBGM2liTjdYa29JM0JObQ?oc=5)
 
 ---
