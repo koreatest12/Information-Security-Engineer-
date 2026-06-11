@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 178 days, 23:27:37
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 179 days, 1:17:08
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.0% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 기초연금 수급자 '착오송금·피싱피해' 무료보험 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE0wLXp2Snhha3QxQ0FTTVBHYWVUa01NaDl4MjlPN21fWXRlTXl0eE1zdVBHN2RjWEdVNGFrbVY5NGdsNnZ5VWJ6R00ta0xHb3VCeUFvT01KcnZUQV8xTElMMQ?oc=5)
+- [[제주경제소식] 제주은행·신한금융그룹, 적십자사 금융 교육 지원 - 뉴스1](https://news.google.com/rss/articles/CBMiUEFVX3lxTE5kRU9fMEdwS0cyT0VjQW1GSW5jUWo2akl5NmhkQnp6Z2p6RmFsMW1OS1JIMDNtaDBmMnllNk9zdFg4aDlieFNxanpyaEc1UDNm?oc=5)
 - ["한곳 터지면 줄줄이 무너진다"…월가의 '서늘한 경고' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9XRjg3M1Q5WmtQaDgxMlMtZlJIMGVCTjh0R1ZvU2tpcHhQenU4ZFJjamNkaDFmNkljU2kwb2VaYUNsUVBwTDN6Qkg0eVlSaU9HM0VzSk9hejNTUdIBVEFVX3lxTFBmZmxUSG4yQVVjNlZ2N2xUR0M1WEtBVUFxVUQwQnM0NXk1WTZ3ZGFuM0RUMy04U3Y3bU9DZHBFWVFudUc1TzBGM2liTjdYa29JM0JObQ?oc=5)
 
 ---
