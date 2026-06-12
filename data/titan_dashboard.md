@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 180 days, 1:07:03
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 180 days, 2:46:38
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.9% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.4% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- ['진옥동표 배달앱' 신한銀 땡겨요, 880만 회원 품고 소상공인 금융지원 확대 - 녹색경제신문](https://news.google.com/rss/articles/CBMiaEFVX3lxTE9XNjA2UzFYYl94ZWdlQWlJdGVVSW5SRDdOcWdkcDdSb0dXajVDMVRiWW04WEtlNF9lRWxBWkM4U1psTkxnb2ktbkhoTGFJM3oyN0JxN29YMmJqT2tHWHlPYkxzU0N1Ri1X?oc=5)
+- ["지금 잠이 옵니까"…'불가능한 목표' 주문받은 신한금융 사장단 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxNeXBaYkdsTXpXZnhoY0t1ZnZHMmlGRW5GUjl4Q05GWWMyOW9EaFhwQXg2cUZKRFN0Z3NPLTltay1qSXlzbVBvQ05xTFpZY29FRXVjSXFzY1A4cURUcWxPYmhxVkVXTFJubWZ6VVpUSFF1WWFHc0RVUjBtOW84Nkx2VFpFaw?oc=5)
 - ["삼전, 가장 싼 주식인데 안 샀다고?"…4조 굴리는 큰손의 일침 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9SSWc2eVpucHdoWGExYmpPamxiZnlHNVhjVG5tZDRTX2YydzVVQmI3dGlZLVlIMU9MWWRlYUZQMm45b0FobW02ZnFodnJKZ19KLUhBT2Y2UklTZ9IBVEFVX3lxTE9MLW04UVN5WnIxbHFUOWdCZmMwWm5xbkJ1c0JKeHVSQm42Q3QyOXFvZGZHdTQtdXVKeGxYYXBLUG56V2dpa0EzVUIwN0ZKZFo3SnBubw?oc=5)
 
 ---
