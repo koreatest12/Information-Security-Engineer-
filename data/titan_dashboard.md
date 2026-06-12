@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 179 days, 17:41:02
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 179 days, 18:35:17
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.8% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.7% | `█████░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [‘이젠 시중은행도 대출 오픈런’…신한은행, 신용대출 일일 접수량 제한키로 - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE52bE0tOEtVd2czemdUY1BkUTRpRVBpZDZ6UjRiOVFhWjUxRnJGZkNqR21wNWMwZkxST216b1dfelE4VXd3eGxyQ2Y4NlhkS3NsZFE?oc=5)
-- [한 달 만에 주가 900% 띄우더니 '상폐'…개미들 '날벼락' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE41VE4tNlNJMHZsUGFmRC1udUk0aWstRXprOFFhd1F3cldVSHU3T0dCVzk0bm5NaTlJSTBVaG1ZVDQzSmY1dmFValhvM0R1VkJCSEJmS0RKemNEd9IBVEFVX3lxTE4tYnFJWHdnaEVTd3cxcUpqa3Z1dlhnRlpENFJEZkxYZGowTVJLWC1sOGZTaW1DSXVmd0M5VFdlc2c3SlBQNTNtWEtOekplQmE2NDlsUQ?oc=5)
+- ["한곳 터지면 줄줄이 무너진다"…월가의 '서늘한 경고' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9XRjg3M1Q5WmtQaDgxMlMtZlJIMGVCTjh0R1ZvU2tpcHhQenU4ZFJjamNkaDFmNkljU2kwb2VaYUNsUVBwTDN6Qkg0eVlSaU9HM0VzSk9hejNTUdIBVEFVX3lxTFBmZmxUSG4yQVVjNlZ2N2xUR0M1WEtBVUFxVUQwQnM0NXk1WTZ3ZGFuM0RUMy04U3Y3bU9DZHBFWVFudUc1TzBGM2liTjdYa29JM0JObQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
