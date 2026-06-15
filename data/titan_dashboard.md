@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 182 days, 19:20:27
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 182 days, 21:31:10
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.6% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 25.3% | `███░░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, '그냥드림' 지원 확대 이어 임직원 봉사활동 실시 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTE8tdFIzOVFZY2xHdWdGZ1Y0dUc3c0Q2eU5xNUFYaUo5ekwzelcxWFNpODdKbG5kOXRxU1BPV0x5SHh1cE90Vy1mb0V1OXR4U2NGZ24zSVFBUDJnSV84c0hOMWZJdElrb0RTNFdr0gFwQVVfeXFMUDRGYk9VWWtFZkJBcXlOOTRPTjZWYmkwLUFjVi0xMFJzNVJXLV8yQ3J0MUpxSDctMXNSckptUjM2bGhuSDVlaDBTY19XY0toNnFyMUZJQy1XUEliWXhqaE53QXhOeGVCQlgwRWxvcTY1aw?oc=5)
+- ["지금 잠이 옵니까"…'불가능한 목표' 주문받은 신한금융 사장단 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxNeXBaYkdsTXpXZnhoY0t1ZnZHMmlGRW5GUjl4Q05GWWMyOW9EaFhwQXg2cUZKRFN0Z3NPLTltay1qSXlzbVBvQ05xTFpZY29FRXVjSXFzY1A4cURUcWxPYmhxVkVXTFJubWZ6VVpUSFF1WWFHc0RVUjBtOW84Nkx2VFpFaw?oc=5)
 - [원화보다 가치 떨어진 통화는 사실상 없다...한국 경제의 소리 없는 경고 [지금이뉴스] - YTN](https://news.google.com/rss/articles/CBMiXkFVX3lxTFBET0h1QlNDQ1BvN21RSkdBSkZTT3ZrMENZYnlNN0E1TEFzTVRYdk9MRGJJRHNWRVhReE5PUXo1cVlJYnZKaTd2LWZxV2pGd0ptQjlaUTdQRjlrMmlBY0E?oc=5)
 
 ---
