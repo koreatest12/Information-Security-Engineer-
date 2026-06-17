@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 185 days, 6:28:38
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 185 days, 8:02:18
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.6% | `████░░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.0% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융 ‘슈퍼SOL’ 가동…진옥동 ‘AI에이젠틱 금융’ 출사표 던졌다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1FZTdpc3lFUE1XdVlhUjRYdmoycmxMS0swd2dyYnVMTnZTa2FLN3VtRU1TNVVieVhWQUtCS1dhdE5uUTc4ZVJTMGN2dTREN1k?oc=5)
-- [최태원의 '빅픽처'…SK하닉, 100조 역대급 주주환원 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5zRi1DNTJoU2Ryck1JMXZvWHIyQ0t1WWZ6YzVRTnpkbjBjNFlXZEIwdGJ3RFJfc2JfWmVEZWdESFhlazFmdl9idEQtdDV2eUtxeTZ2QzJlV0xQUdIBVEFVX3lxTE56YzZOUjZuRGFKVjBZUHpUOGhHRXM0c3FvNmozUV9OaGlPblNKaW9nSnd3TDIwUURQSWY1c1hKbjN3RERjWURhQ0g4eVFVOENaWmRVVA?oc=5)
+- [원화보다 가치 떨어진 통화는 사실상 없다...한국 경제의 소리 없는 경고 [지금이뉴스] - YTN](https://news.google.com/rss/articles/CBMiXkFVX3lxTFBET0h1QlNDQ1BvN21RSkdBSkZTT3ZrMENZYnlNN0E1TEFzTVRYdk9MRGJJRHNWRVhReE5PUXo1cVlJYnZKaTd2LWZxV2pGd0ptQjlaUTdQRjlrMmlBY0E?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
