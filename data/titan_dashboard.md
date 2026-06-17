@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 185 days, 9:16:44
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 185 days, 10:14:00
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.8% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.6% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 새로운 앱 ‘신한 슈퍼SOL’로 경계를 지우다 - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTFB4MTZTdVhuREhsVC1Tei1Cd19faDJ0RHdQSzN6M2xVcUNsOFJYY2c3Z0JPUHNVUEFkQy1VUnVuRjBxdkFhakl6OWhFTWZGUmU4Yy1zS2hVUjYwUnhfS2pjdVNEMHNkUHBybHJNYWlPQmVQdUnSAXdBVV95cUxQeEpQU1VfdVdRNUctY045Z0RWRjQ5TUVfTjZKQl9VTEwySUxCWEw4WVVPNVdSQW9XVVJCV1JFS0xnT1YyOHhLNGtoazJyeldTeXR1VWpWZWRQWGJXQ0xDbzJSbDFxbTAwUmxvaC1hSF80d2tqNDBpSQ?oc=5)
