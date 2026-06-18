@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 186 days, 4:25:30
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 186 days, 5:57:40
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.3% | `███░░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 36.0% | `█████░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - ["신한증권 초유의 1,300억 금융사고, 개인 일탈 때문 아니다" - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1GeERGaHF1bXIyYWZ1VDY0dFhXc0tLeS03bnNzRGhYY2RKVDdmXzRHRF95TlNQQ3pvYTFtVW1yM0EzQlFFTi16ZnJpVVVLMXRaV2xfcVRkOEFybHNNZHlsYS0xOHdLdnROaHM5c2xadE8?oc=5)
-- [고점 대비 37% 추락한 바이오…반드시 상승할 8가지 이유 [프리미엄9 투자스쿨] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBxeGNVT2V3YzkyNF9YYkxHSHJfMkE3ZHdVNkRkc09zMHNzdzI3a3lzMWhaeUpnMU55V3gwa0M2ZjQ2Vk5CSnRVSF8xVGZONE9kd3ZzTXJIelFHUdIBVEFVX3lxTE1tZXZLVC1qUVRqUjhMOUprdTFlMExhYVktdGVsM3NRNkxmbkFZLWczZXZHNXV3MnlyV0JUWkhFR3FvcktpVVV6MmJreTBVREIzcUVDQg?oc=5)
+- [5분 만에 '300억' 몰려…외국인 'K주식 직구' 시대 열린다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5VT3Y3MUtOZUhvQTFzdXFfQ1N6bE5lSWJobV8zTHRIQVZJakt3V2xPODAtRXU4V2xZSFRGMDlDaUxzczdLaEVVNkFnLXpBS1B6RXh2WWNyQTdVd9IBVEFVX3lxTE5FVXlUT0VMNXhjd0ZlYmNaZWhMSkFxeVd1VEI2OGdlZ28xZTBGNC1makk4M3VNNFh6SzlGVGY0QWkxbWlTakhHVEdmWlNKRWZ5U0lDTw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
