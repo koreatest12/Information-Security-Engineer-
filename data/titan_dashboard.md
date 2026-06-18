@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 186 days, 2:55:07
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 186 days, 4:25:30
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.2% | `█████░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.3% | `███░░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한 슈퍼SOL 대변신, 금융경계 지운다 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTE84dWc5T1dMMTIzekdlaWpsYXhsdExlNUk4ZmxTWUU1SW1nWk0wOUFZc3FZVlV1eW5hbDhBRzVrazk3SFFSN21rZEk2UzdzNVFDMXRzUXBzWTlYMTMxeFJ3enZ2Z2lLZ25EOVlV0gFwQVVfeXFMTmFIV2N6bWRxWHZjOU5fVm1xRnE0aFdCYVBrNUhYdTFWWVRfZW1OUG15SG81ZXJJSmRFcW5IRXl1OTh2RDdfWjNIYllUTU1xSTZhNVduSDdkU28xZGJPQkUxTEZJMVBheUZ5LTFJRjJrWg?oc=5)
+- ["신한증권 초유의 1,300억 금융사고, 개인 일탈 때문 아니다" - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1GeERGaHF1bXIyYWZ1VDY0dFhXc0tLeS03bnNzRGhYY2RKVDdmXzRHRF95TlNQQ3pvYTFtVW1yM0EzQlFFTi16ZnJpVVVLMXRaV2xfcVRkOEFybHNNZHlsYS0xOHdLdnROaHM5c2xadE8?oc=5)
 - [고점 대비 37% 추락한 바이오…반드시 상승할 8가지 이유 [프리미엄9 투자스쿨] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBxeGNVT2V3YzkyNF9YYkxHSHJfMkE3ZHdVNkRkc09zMHNzdzI3a3lzMWhaeUpnMU55V3gwa0M2ZjQ2Vk5CSnRVSF8xVGZONE9kd3ZzTXJIelFHUdIBVEFVX3lxTE1tZXZLVC1qUVRqUjhMOUprdTFlMExhYVktdGVsM3NRNkxmbkFZLWczZXZHNXV3MnlyV0JUWkhFR3FvcktpVVV6MmJreTBVREIzcUVDQg?oc=5)
 
 ---
