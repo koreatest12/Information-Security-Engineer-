@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 189 days, 21:30:59
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 189 days, 23:33:45
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,18 +8,17 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [KR_ECON] 26년 '삼성 천하' 끝났다…SK하이닉스, 코스피 새 대장주 등극 [종합] - 한국경제
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.5% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 22.4% | `███░░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [제주은행, 36억원 규모 장기 연체채권 소각 - 더팩트](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5vZXF6akpTNHpoMm9RRDRESzVtdFVyZmtnS1FoaG9FeVB4VkJZSFIzSkFLeExnMFVfSlZKc2taemdpV1g1am5vaXp6NkVyUXZZRndIVVkwVFoxUdIBVEFVX3lxTE1faEFMcDZSNk1yNXp1ZnU3RHc2X080cDVQN2xKN0FTZDVTV1AwWGRXUlZwdENKUGlzNlBvLVRFMDNRYlJZYl9aQkV0TmtBQXRyRlZBUg?oc=5)
+- [금감원, 신한금융 사회공헌 현장조사…내달 초 하나금융 마무리 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE5PU2xPUUd5TEZlaU1CMlprLVVnWEZhRVVXT1F2bU1DWWVWV19LeHQ1czBRa3ptVS1tT0FsZldXa002WllXdmlNR0VlQVphaHJ6VVJLLUFPMURtWkxWVS0zMG5ac3BPSHRyUmpqdkpYaG_SAXRBVV95cUxOTU5JYVduWG9UZWV4Sk4zNWEyenV2QjVIUjRnTUhSaHlJcHQ1WU5zcnNtMko0c1NzSnN1ek9JbWNCN2xHV2h0cTZUMW5Pc3VlZm1IM0xuQnFQVXg4cGhrVHlGWEg3OEF2Y1hVZDJjd3RkT0VjYg?oc=5)
 - [팔고, 팔고, 또 팔고…국민연금, '9천피'에 1.2조 던진 이유 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9RcnhjUGNSLV8wcGh3NGFfYzFad3dObU90LUx1b1hHbVEwalNxSklTQ3FLaTRaV1RtOTRjRFhIcDIzc3FCYVlCLXBidHZicGdDaUxDUy1tZUVHUdIBVEFVX3lxTE5vVjJNU3BWOUpCVFBTWGFxSkRHZTNuMGRPUWVydnNEMWF1SF9BUUh3bzQwUTZja1g5Mmh6M1FNVncxWTZ5LU1tVThEWFRhM2tuX1JTOQ?oc=5)
 
 ---
