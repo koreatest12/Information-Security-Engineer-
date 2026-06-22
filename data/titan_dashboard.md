@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 190 days, 11:03:38
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 190 days, 12:18:55
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.4% | `█████░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.5% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융·BNK부산은행, 2231억 원 규모 '국내 첫 항만물류 인프라 펀드' 조성 참여 - v.daum.net](https://news.google.com/rss/articles/CBMifEFVX3lxTE90aGV4X3RYUzdYak9PYzVVSE9TNldvYlAyYmFLdXlkdzRlZE5TUHNYcTk1VENBd0dxYlYtZllRaS1zR2pXNjZ5dTZ3M3p1dDU0UVZMWkk1cmhSZ1BYX1FQUG9pLUFod0dqZHFuN0F1d1diLXNIS0FGYVZZRE8?oc=5)
