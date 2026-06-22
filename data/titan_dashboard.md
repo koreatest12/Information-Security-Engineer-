@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 190 days, 3:42:04
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 190 days, 5:37:53
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.5% | `████░░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.4% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 국내 첫 항만물류 인프라 블라인드펀드 참여 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE41c1hna05tc2J4UC1rQ3hxdXlRekVRQ0lHZHBHYjM1TElwOFZhN0EyQlE5NXQtd1lKdmtIT3lScWZ4T2xya1IzVjh0WnRqcWFOUHNvRS1BSzNPbHM?oc=5)
+- [신한금융·BNK부산은행, 2231억 원 규모 '국내 첫 항만물류 인프라 펀드' 조성 참여 - v.daum.net](https://news.google.com/rss/articles/CBMifEFVX3lxTE90aGV4X3RYUzdYak9PYzVVSE9TNldvYlAyYmFLdXlkdzRlZE5TUHNYcTk1VENBd0dxYlYtZllRaS1zR2pXNjZ5dTZ3M3p1dDU0UVZMWkk1cmhSZ1BYX1FQUG9pLUFod0dqZHFuN0F1d1diLXNIS0FGYVZZRE8?oc=5)
 - [팔고, 팔고, 또 팔고…국민연금, '9천피'에 1.2조 던진 이유 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9RcnhjUGNSLV8wcGh3NGFfYzFad3dObU90LUx1b1hHbVEwalNxSklTQ3FLaTRaV1RtOTRjRFhIcDIzc3FCYVlCLXBidHZicGdDaUxDUy1tZUVHUdIBVEFVX3lxTE5vVjJNU3BWOUpCVFBTWGFxSkRHZTNuMGRPUWVydnNEMWF1SF9BUUh3bzQwUTZja1g5Mmh6M1FNVncxWTZ5LU1tVThEWFRhM2tuX1JTOQ?oc=5)
 
 ---
