@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 189 days, 17:54:35
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 189 days, 19:20:32
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.5% | `█████░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.3% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[2026 100대 CEO] 진옥동 신한금융지주 회장 - 한경매거진&북](https://news.google.com/rss/articles/CBMibEFVX3lxTE5zcFNJcElhVDlBNk5HODlhQjhlVm9fek0wYkxTaHUzdkJqdUw1Ym82cEluYXlMamtFaGl2Z2VtMVNfM0JkU3NQS29PSFdoZ1UtNkZXV1RPY2ViYjlRN0NmNFJod09iWjlBQ0x4Xw?oc=5)
+- [제주은행, 36억원 규모 장기 연체채권 소각 - 더팩트](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5vZXF6akpTNHpoMm9RRDRESzVtdFVyZmtnS1FoaG9FeVB4VkJZSFIzSkFLeExnMFVfSlZKc2taemdpV1g1am5vaXp6NkVyUXZZRndIVVkwVFoxUdIBVEFVX3lxTE1faEFMcDZSNk1yNXp1ZnU3RHc2X080cDVQN2xKN0FTZDVTV1AwWGRXUlZwdENKUGlzNlBvLVRFMDNRYlJZYl9aQkV0TmtBQXRyRlZBUg?oc=5)
 - [반도체 폭등에 올라탔다…10억 굴리는 고수들 쓸어 담은 종목 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBXNHczRVExWkR6ZWVLNXdBaTFUaWV1WVN0dUgycnJrVTFkRWN5cXZwcGRjZUU1dWVGbFhaa1hsWDg4SnJsaUlCbDRtRGdqZEJMaDIxZ1JGdUJ4Z9IBVEFVX3lxTE5TaThaRG9aQmFPLWhJdzBHRU1VY0ZFQmhXXzNycDhpdVRCNXJ0UnZXUWN5S1hNMHpzdWlEUWVRODBrQ0hQazd3cThObUZVMnIyeFJ1cg?oc=5)
 
 ---
