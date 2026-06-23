@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 190 days, 20:01:58
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 190 days, 21:34:42
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.6% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.3% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 중저신용자 대상 최고 연6.9% '신한중금리대출' - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE02UlpxR1ZtLWZMbE0zT2dMeXZWeEczbjc1VkdTdVpkcmJ5OXhoYk00NnNvQmFBaDJ1RHdTTnlMa1czb0hMMS1oUlRoc3M1VGpzSU9zZnlac1Q0alRyZ1lhN0lGLVpSc0ZLcWhrR0xqNHBxQWs?oc=5)
-- ["반도체 우려할 때 아니다"…더 사도 되는 이유 봤더니 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5JVWMxVmdzckw0bU5BakNzZ0hBa1ROZktmSnlJbzZQVUhWU0VoaTJ6WUZDZS1wOEZ0Tm1mTVlJdVU0bFFqSFR2TlZjQjlNUHRnUDVsalBXSlY5UdIBVEFVX3lxTE5kREtPQ3lJbE1HS2hZYmZHczI2eEdROF9rZ21lR1p3TkI2MGhQRXhreEZSVW5jaDhvM25KSWlDbTUyZDdnaDN0SC1qc21RMm01VTRzcQ?oc=5)
+- [신한은행, ‘포용금융 2.0’ 시동…최고 연 6.9% 중금리대출 시행 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9VNnI4ZlZwalVCTlo5b1RjazFqRnUycTdOWXN4TUJGNDV4empBak8xbmU3OElnOXR6MUFlLWdPNkJOaVNXeXFmeW1ic2VOdTJxMTdsWm9TcGZEdw?oc=5)
+- [코스닥 이어 코스피도 매도 사이드카 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBuOGU2NG9OX1E0N0diMXRmNWY2MzhtU0ZmMkV1YmVPSmFweFFBd05iQ0RXZ1lRLUdTNEFuZkNtVGhNLTNfSnlDbXJoRURBdXN5ZFpXOHNiNUF2Z9IBVEFVX3lxTFAwN3JvNGN5VS1OTWt2d1RYa0EtTkV4YkU0eEhEbjlIeXZoY3hTcWtlVjFpT3FrSVc5X2UxTHVTRzZSU3JhWHp2YklnWFBoU3VoRHpHaQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
