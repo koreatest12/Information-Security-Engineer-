@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 190 days, 21:34:42
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 190 days, 23:03:36
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.3% | `████░░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 23.8% | `███░░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, ‘포용금융 2.0’ 시동…최고 연 6.9% 중금리대출 시행 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9VNnI4ZlZwalVCTlo5b1RjazFqRnUycTdOWXN4TUJGNDV4empBak8xbmU3OElnOXR6MUFlLWdPNkJOaVNXeXFmeW1ic2VOdTJxMTdsWm9TcGZEdw?oc=5)
+- [신한 ‘중금리 대출 패키지’로 포용금융 - 문화일보](https://news.google.com/rss/articles/CBMiUEFVX3lxTE9IbGFyQ2V2ZXVTT01tT2tKNlJVUFJ5aE5LOEViNjZxRXdsQktnZ3RkbGxjekxDMXoySVdnRGJMTFlUZFo3RVQ5YnhCY3NDWGlN?oc=5)
 - [코스닥 이어 코스피도 매도 사이드카 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBuOGU2NG9OX1E0N0diMXRmNWY2MzhtU0ZmMkV1YmVPSmFweFFBd05iQ0RXZ1lRLUdTNEFuZkNtVGhNLTNfSnlDbXJoRURBdXN5ZFpXOHNiNUF2Z9IBVEFVX3lxTFAwN3JvNGN5VS1OTWt2d1RYa0EtTkV4YkU0eEhEbjlIeXZoY3hTcWtlVjFpT3FrSVc5X2UxTHVTRzZSU3JhWHp2YklnWFBoU3VoRHpHaQ?oc=5)
 
 ---
