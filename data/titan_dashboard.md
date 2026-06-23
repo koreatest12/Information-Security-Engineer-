@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 190 days, 17:38:58
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 190 days, 18:34:35
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.1% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.1% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 중저신용자 대상 최고 연6.9% '신한중금리대출' - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE02UlpxR1ZtLWZMbE0zT2dMeXZWeEczbjc1VkdTdVpkcmJ5OXhoYk00NnNvQmFBaDJ1RHdTTnlMa1czb0hMMS1oUlRoc3M1VGpzSU9zZnlac1Q0alRyZ1lhN0lGLVpSc0ZLcWhrR0xqNHBxQWs?oc=5)
+- [신한은행, 중저신용자 최고 연 6.9% '신한중금리대출' 시행 - 뉴스1](https://news.google.com/rss/articles/CBMiYkFVX3lxTFBKN3Q2UGpDQ0hWTHc2ajd0VjFQWmpYM2JnS1o2eTZNbjVoSTktR2pFbkJlSmhFQU5vUVJ6VVBQOXdkUUZXZnlXWUlHbWotTUh1THM0YlYyZUhlOUdTRTBQcHR3?oc=5)
 - ["반도체 우려할 때 아니다"…더 사도 되는 이유 봤더니 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5JVWMxVmdzckw0bU5BakNzZ0hBa1ROZktmSnlJbzZQVUhWU0VoaTJ6WUZDZS1wOEZ0Tm1mTVlJdVU0bFFqSFR2TlZjQjlNUHRnUDVsalBXSlY5UdIBVEFVX3lxTE5kREtPQ3lJbE1HS2hZYmZHczI2eEdROF9rZ21lR1p3TkI2MGhQRXhreEZSVW5jaDhvM25KSWlDbTUyZDdnaDN0SC1qc21RMm01VTRzcQ?oc=5)
 
 ---
