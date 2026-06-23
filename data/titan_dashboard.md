@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 190 days, 23:03:36
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 191 days, 0:28:31
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 23.8% | `███░░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.3% | `████░░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한 ‘중금리 대출 패키지’로 포용금융 - 문화일보](https://news.google.com/rss/articles/CBMiUEFVX3lxTE9IbGFyQ2V2ZXVTT01tT2tKNlJVUFJ5aE5LOEViNjZxRXdsQktnZ3RkbGxjekxDMXoySVdnRGJMTFlUZFo3RVQ5YnhCY3NDWGlN?oc=5)
+- [더팩트 ESG 경영대상 환경 부문 우수상 수상한 신한금융그룹 [포토] - 더팩트](https://news.google.com/rss/articles/CBMiXkFVX3lxTE1FdmdqMEdBcFRVUmFpb0pXenNMQ3RRWVFjNjd5VzNLT1pObnVnVTYzb2JDd0Z0RTFCVFZCajhTV0xyaWFxeUpueDF2Y2hqNEZjTWl1cVJSb0VzSGpONHfSAVhBVV95cUxPODVIcTAtOUlrYkVKUmVzeWVScnk0RzdneWs3VXlWdHUtS3hpcVdBX1VlSW9LNHRodmw2dTFJUWNuT3gxSU9IR3FJcFJwQ0U2dHlYdFdvVWF3?oc=5)
 - [코스닥 이어 코스피도 매도 사이드카 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBuOGU2NG9OX1E0N0diMXRmNWY2MzhtU0ZmMkV1YmVPSmFweFFBd05iQ0RXZ1lRLUdTNEFuZkNtVGhNLTNfSnlDbXJoRURBdXN5ZFpXOHNiNUF2Z9IBVEFVX3lxTFAwN3JvNGN5VS1OTWt2d1RYa0EtTkV4YkU0eEhEbjlIeXZoY3hTcWtlVjFpT3FrSVc5X2UxTHVTRzZSU3JhWHp2YklnWFBoU3VoRHpHaQ?oc=5)
 
 ---
