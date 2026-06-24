@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 191 days, 20:02:11
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 191 days, 21:34:19
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.5% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.0% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행, 중저신용자 대출금리 6.9% 상한…포용금융 확대 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5Hcmt6OVJOM1luYUxZRmpMODZoRWh0cFhKQ2ZReWQxRGtwY1hiVFZ1NWFqYV9TcXloSUJxa1VrbWpoNUh3ekVnY2VOT1RqMkE?oc=5)
-- [악재 한꺼번에…코스피 10% 폭락 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9sUHRkVUdZXzNoWkQweW51WFdhc3p1MlpCVjFNS3FNVHdqMXl1TFp0aFdyR2JpanFJTGxQb1ZCQW54NmZkM2RVZW9MRHl0OW40ZFVvYkFMQVZ6UdIBVEFVX3lxTE5DbFotb04tRkNvMWZZQkt5S1llaERoS3oyRDJ0NHVsUTQteG9YWXhYLWM2SFIyemVTWlFON3RWcFlhdEpIOGRlSkdBT3lpdDJQTDhXNQ?oc=5)
+- [코닝 "반도체 유리기판, 한국 투자 검토" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFA4cXc0bGJrZDQwUEJvY1k2Yl96bDJJcmFNX1ZnVi1SU3FpNmpYYjBmTlg3N2t5d3ZkbTVfamdtbS1MTDRTLUlYT2RiT25NSGlmWFA2bWtLUzlXQdIBVEFVX3lxTE56c21PUDRvNUlyZjBzRFJ2MDJpZ0dVYm04ZDhwVkdmdlJNVFMxWHY2SzFlUVJkLTk3dmtuSWFwX3VrR2hfUUdjVTVuRG5rZ3NhNjVHOA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
