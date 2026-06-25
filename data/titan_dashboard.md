@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 193 days, 5:58:23
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 193 days, 7:13:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.1% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.5% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [진옥동 신한금융 회장, 우즈벡 장관 면담…투자·금융 협력 논의 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE93N1FMWWg0RklWazRPWFROR3h1Y0pXa2J0R3J0SWtOUHcwLXlpcW5NOGxvNGhuRkk4RGFZejBLUlVSVVhFOUxYS0xuSktyR252eUxTOG9DRzNYSlB2VDlsUdIBeEFVX3lxTE0wbFVOTmI5UjRkU0huRm1xbmVIalg3eWxhc3otQTB5Y0tvSTVIYTN3SVdOVklIOVNCYnFmSXJTbVVzdW9UaEhfU1FGSklrbThhQmU5eDdVSUxIRG93VzRsRDAzT3JRQ0hZWGdCS3dzUGNDdXZQNGVtQg?oc=5)
-- ["생활비 때문에 시작했는데 빚만 늘어"…60대 사장님 '한숨' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1a3g5UEU1SnQ3OVVpTFVqUS1ESWlPb2dKMk9EUFZUNm12MlIxek5Lc3FNN2hwTmlmQnU5MDBYbmVLOVRpelFXdE1sQkJyNUdzNU81dU5mY2VIUdIBVEFVX3lxTFBfQXV6NGdOMU1aZlJMemdGd0hZZUZtNURzSnZVY3RSb1hjRHRxYnJ2NjlnajI3aU5MbHpJcDdSNzhfZWt4eFIzM3A2Uk8ybW9feDhyMg?oc=5)
+- [대박 난 SK하이닉스, 스스로 밝힌 '리스크 요인' 보니… - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwX1dEUWZvd1Bqc3FHX2t2dE1taUluMWZtcTZJWkdZUDBjT1ZYd3BpdnZoWVN0MXBoaUZEN0J0bk0zT2lxYUMtSXprNlNGX1hkLXVXTzE2SndIZ9IBVEFVX3lxTE5SdF8zb3ktZHdVaXZVOC05X1dOTnNIaWU0WW5HTW52aXFXaUxWR3NqNWVJcVpiUWlzMGJ3MGx3WmV2SDBNWXZuZ1BaY0R2bnVEend6ag?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
