@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 192 days, 17:41:48
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 192 days, 18:34:36
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.8% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.5% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [진옥동 신한금융 회장, 우즈베키스탄 투자산업무역부 장관과 투자·금융 협력 확대 논의 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5kOFJnck5RTzk4dWd6NHdZaktDVG1lbHV5QW1DbW5YSm51UU5yRWt1b2FqUEdWQkZDSXFDdWpodlVYeTVlYmZoVS1saUp3eFU?oc=5)
+- [진옥동 신한금융 회장, 우즈벡 장관 면담…투자·금융 협력 논의 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE93N1FMWWg0RklWazRPWFROR3h1Y0pXa2J0R3J0SWtOUHcwLXlpcW5NOGxvNGhuRkk4RGFZejBLUlVSVVhFOUxYS0xuSktyR252eUxTOG9DRzNYSlB2VDlsUdIBeEFVX3lxTE0wbFVOTmI5UjRkU0huRm1xbmVIalg3eWxhc3otQTB5Y0tvSTVIYTN3SVdOVklIOVNCYnFmSXJTbVVzdW9UaEhfU1FGSklrbThhQmU5eDdVSUxIRG93VzRsRDAzT3JRQ0hZWGdCS3dzUGNDdXZQNGVtQg?oc=5)
 - [코스피, 매수 사이드카 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9CNzY3dy1uWnpJWGxxS1k1WF9ONzhZOHdDcmJmcHpGc1B5WTFxVjZEa3ZoUWZnV1VkUnR5bnF5M29ScmhrcWlHNTBjcjVTRHNPN3R6TzNhZV9wd9IBVEFVX3lxTE9XOEh4OXl3RFVNMVpFTVJfQmRQWWRDVzB3RkhNNU5BM215NDF2eWxBb3B6RFlDUFZwaDNmLUVDQ1czVzlmS29SLWZOZGFGRk5HLWZKaA?oc=5)
 
 ---
