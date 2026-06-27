@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 195 days, 2:55:07
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 195 days, 3:47:09
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,15 +8,14 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [KR_ECON] "막상 은퇴하면 상황 달라진다"…요즘 뜨는 '연금 투자 전략' - 한국경제
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.5% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.4% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행, 장기 연체·중저신용자 지원 강화...포용금융 실행 방식 확장 - 녹색경제신문](https://news.google.com/rss/articles/CBMiaEFVX3lxTFBhbTMwMlNYb2tKdG9KRlljTzdySTUxaUI4a1lGLUp3dlJBVGtQbkt2eUhyTmdMWXpMbWtrbU5Ba0V1emFXV2ZvVGcyYzhEaloya1FBZElLMWpYcUtZa3dKZHdweFlTcGpB?oc=5)
