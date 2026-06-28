@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 196 days, 5:53:03
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 196 days, 6:49:46
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.4% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.3% | `█████░░░░░░░░░░` |
 | **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- ['마지막 퍼즐' 손해보험…신한금융, 롯데손보 인수 검토 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBqNmNHNFBRczFUQUhsWHg4VHlmNnA5QXhXMG5YTWtldko5NHdFTVB1NHZuMVRReklwNzU2NFBqTUI2dVZBa1prbzJPTVotX1R0NUx6UDlUUUZPTG1sdzk5bA?oc=5)
+- [신한금융, 내부통제에 AI 결합…'SCoRE AI' 구축 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE43RGIzVlFpT1ItNG1BNEx1SmFSUUZCTThPa2QxSjdVNnItd1NEQkJnWklWWjNaUkQwUEJTVi1EakdGS3ZJU3RtSm5laF85dEE?oc=5)
 - [화성 장비 부품 제조업체서 큰불…대응 1단계 발령 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE12Y0Y4REV4cjBTVnRmbktRRVhjWTRBYk5KaWtiZVhHSjF3LXcwQlR5UjhKQU9vNk85cDJ1Nk1fcHVaSnIxTkVKYW1iNHlqd1Q5YTdOeFR6TkhiUdIBVEFVX3lxTFA0SzJGalBZeHZLR2hGX3V2UmNYaWZHVlRUUEM2Z2d6QUVzT25CSEk4NWp6UE9NczRJU2g2aDhvS19GcGEwNzRfS3dBYWhtTlpCRzVfUA?oc=5)
 
 ---
