@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 195 days, 16:05:36
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 195 days, 16:41:20
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.6% | `████░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.1% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [‘슈퍼쏠’ 사활 건 신한금융…직원들은 “구시대적 캠페인” [재계톡톡] - 매일경제](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5DUk1lcmFPMTJqSGFLMVNRTEJsR0NLVlpoNHpFSXFsczNEbnNNWjhiNTNrbF9rSUltbERwWHVtNDdDMS1uRVNxUjBBeF9FSGMtRlZtN0pn?oc=5)
-- ['자산 26억' 58세 명퇴자, 국민연금 7년 남았는데…'날벼락' [돈 버는 법 아끼는 법] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5Kb1BCanJ2TkU4Yng2OURwNFd6RnFXN2plNzBXalNCU0Q3VkxRMlBOV0x3OFl3amdoSkJDWGNYd3FmQkNYa3VBM2FhSVFma05qR29HeVdPZGlJQdIBVEFVX3lxTE9EVHMxRFdtQlVNWVpoamJIaW56dFc4NWZ2bVJSQ3duMUQyTHNVYVpnYXpzbm9PMl8xdWdHZmdzUW1DcHFXOHZpQXN6eTA3RnE0c2hPeA?oc=5)
+- [신한금융, 내부통제에 AI 결합…'SCoRE AI' 구축 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE43RGIzVlFpT1ItNG1BNEx1SmFSUUZCTThPa2QxSjdVNnItd1NEQkJnWklWWjNaUkQwUEJTVi1EakdGS3ZJU3RtSm5laF85dEE?oc=5)
+- [삼전닉스 못 샀다면…올해 소외된 대형주 10개 뽑아보니 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBJZm5LNlpXRUx4bVRQSEM2eDlsM3FSa0FnVjFSR1lYQmFYVmJqTEJiT2FydlJFaGF2bU9uVTRwWWl4NUQ5dTNnQ281dUNKUVVMR3pVRHZFazQwd9IBVEFVX3lxTE9PQTlieG10MWpxTXNmT210dFVwQUZxTE5RcnpaSmRPRnZ6U0djWHd3UktSNE9YanpwT1N6dFBWTzBhVnB4djV6WG5DM29HaDZwbE02ag?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
