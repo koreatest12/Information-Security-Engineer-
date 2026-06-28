@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 195 days, 21:44:49
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 195 days, 23:06:14
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.2% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.1% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 책무구조도에 생성형 AI 결합…'SCoRE AI' 구축 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5CTW5CZmZSQmk2cHNIMC1ucEhzZmh3a2NZcFBocGNGR3c5WVlkbHJURFVya1F4RW93T3BDUERUVTFNamY0M2pUekF3OVE0eGhHWnk1NFRyM0pCam_SAWBBVV95cUxQdVBqYWhyQk10V0RDMFFHMnNrWHM5Tzl6bmR6MUJyakxQSElpcmtmUl8tZlhJVUJtczNYT0I4UGtocmtRZEJvRjM2djd2UFVodTBxZGlfWTlxMlN6N0tYdFk?oc=5)
+- [신한금융 'SCoRE AI' 구축, 책무구조도에 인공지능 결합해 내부통제 강화 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTFB4eG15MUZVeC1meHhZejBEbE9TNUZCZ1pJODFRMUxudG1XdmJDUW5HWkJ3MklITTctVDdXc2NfbFhONkY1NllmUUhac0k4WkRlbjRXUkpWYlhBMlpNcmlocnFuMElfc1ZZT2cwc1ZkVnQ2ZjA?oc=5)
 - [삼전닉스 못 샀다면…올해 소외된 대형주 10개 뽑아보니 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBJZm5LNlpXRUx4bVRQSEM2eDlsM3FSa0FnVjFSR1lYQmFYVmJqTEJiT2FydlJFaGF2bU9uVTRwWWl4NUQ5dTNnQ281dUNKUVVMR3pVRHZFazQwd9IBVEFVX3lxTE9PQTlieG10MWpxTXNmT210dFVwQUZxTE5RcnpaSmRPRnZ6U0djWHd3UktSNE9YanpwT1N6dFBWTzBhVnB4djV6WG5DM29HaDZwbE02ag?oc=5)
 
 ---
