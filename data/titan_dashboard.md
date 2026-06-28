@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 196 days, 3:00:21
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 196 days, 3:49:30
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.1% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.4% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [롯데손보 매각 급물살…한투·신한, 인수 타진 - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTFBfTGgxbUtxRFBWcGlhakpDNjlvcUdhR0p3X0pOZ2x1SWxOWk9nSWMyeUdEa2lvNDlTX0ptZC1uUUg0T2xPZWhFcVYxTEw1UDQwZFE?oc=5)
-- [삼전닉스 못 샀다면…올해 소외된 대형주 10개 뽑아보니 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBJZm5LNlpXRUx4bVRQSEM2eDlsM3FSa0FnVjFSR1lYQmFYVmJqTEJiT2FydlJFaGF2bU9uVTRwWWl4NUQ5dTNnQ281dUNKUVVMR3pVRHZFazQwd9IBVEFVX3lxTE9PQTlieG10MWpxTXNmT210dFVwQUZxTE5RcnpaSmRPRnZ6U0djWHd3UktSNE9YanpwT1N6dFBWTzBhVnB4djV6WG5DM29HaDZwbE02ag?oc=5)
+- ['자산 26억' 58세 명퇴자, 국민연금 7년 남았는데…'날벼락' [돈 버는 법 아끼는 법] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5Kb1BCanJ2TkU4Yng2OURwNFd6RnFXN2plNzBXalNCU0Q3VkxRMlBOV0x3OFl3amdoSkJDWGNYd3FmQkNYa3VBM2FhSVFma05qR29HeVdPZGlJQdIBVEFVX3lxTE9EVHMxRFdtQlVNWVpoamJIaW56dFc4NWZ2bVJSQ3duMUQyTHNVYVpnYXpzbm9PMl8xdWdHZmdzUW1DcHFXOHZpQXN6eTA3RnE0c2hPeA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
