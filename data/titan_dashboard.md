@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 196 days, 11:08:56
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 196 days, 11:46:46
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.4% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.4% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 내부통제에 AI 결합…'SCoRE AI' 구축 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE43RGIzVlFpT1ItNG1BNEx1SmFSUUZCTThPa2QxSjdVNnItd1NEQkJnWklWWjNaUkQwUEJTVi1EakdGS3ZJU3RtSm5laF85dEE?oc=5)
-- [화성 장비 부품 제조업체서 큰불…대응 1단계 발령 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE12Y0Y4REV4cjBTVnRmbktRRVhjWTRBYk5KaWtiZVhHSjF3LXcwQlR5UjhKQU9vNk85cDJ1Nk1fcHVaSnIxTkVKYW1iNHlqd1Q5YTdOeFR6TkhiUdIBVEFVX3lxTFA0SzJGalBZeHZLR2hGX3V2UmNYaWZHVlRUUEM2Z2d6QUVzT25CSEk4NWp6UE9NczRJU2g2aDhvS19GcGEwNzRfS3dBYWhtTlpCRzVfUA?oc=5)
+- [펀드매니저 60% "3개월 안에 코스피 1만피 찍는다" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5JaHhsMndjRnlsczItdDAtVkVIVEdlbkg0SW1CYllPUUVKQzdYeERkSmJoWWE5cEtiMS1KSUVSZ1ZfRXZqZHYwNFhIZzdHSTlxY0wxNU9CMTdGQdIBVEFVX3lxTE1VTk5MUmVuUkNYdmR1U3R5dTZvMklWMlB0RDhBMUlVbmJuZTR0TlVUQ3BzbTN6U0NxZ2FKbFI2bEtubzFJTWRKOGp4TlFIY0FOamh1Wg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
