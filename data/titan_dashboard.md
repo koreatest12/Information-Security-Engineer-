@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 197 days, 6:39:03
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 197 days, 8:02:40
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.2% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
+| **RAM** | `33.8/512 GB` | 6.6% | `░░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - ["최약체 손보 강화"…신한금융, 롯데손보 인수 추진 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE43RTBvdHZTUWtJU1hxb0dDUlF5NWpFUUJhS3RpMm5vbFZVYXFiXzd3X0pJVG1EZnlMcklTdGJFRVRBT01yMnR2c0xXOGpYSkd6NXdaZ2xFeWZ3Z9IBVEFVX3lxTE5wR2lvQ1g4VVR1ZUdsUHFEUDFiZjJSM19wSHVYWUdUdDBCVGllaUYzV0JhLWpvcjRLS2RIR1hQN0dFWGU1SkJzU2RNLUYtY3BmWHByZw?oc=5)
-- [펀드매니저 60% "3개월 안에 코스피 1만피 찍는다" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5JaHhsMndjRnlsczItdDAtVkVIVEdlbkg0SW1CYllPUUVKQzdYeERkSmJoWWE5cEtiMS1KSUVSZ1ZfRXZqZHYwNFhIZzdHSTlxY0wxNU9CMTdGQdIBVEFVX3lxTE1VTk5MUmVuUkNYdmR1U3R5dTZvMklWMlB0RDhBMUlVbmJuZTR0TlVUQ3BzbTN6U0NxZ2FKbFI2bEtubzFJTWRKOGp4TlFIY0FOamh1Wg?oc=5)
+- ["테슬라 팔고 갈아탑니다"…100억 부자들 몰려든 곳이 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1UYU9VM0NrNVJDa193R3N2NGFINUZoSXZ5T056b3h5NHZfYmF4ZHpOQ25aMENCUk9GWnJqY3FFM2s3bkU5NWREM2pBdDhCSFFZOUFlN2xpeEIwZ9IBVEFVX3lxTFBhSmxIMDZObksybmRGLVlHQmFLdWtldnRfVnNJWDlpenZtSHBWV0FjMzYta1ZuZjlVNDVaUDBpM2t4VFk3cFJLei1kMW1NVFpkS0hhQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
