@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 197 days, 9:17:43
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 197 days, 10:10:19
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.3% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.8% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- ["최약체 손보 강화"…신한금융, 롯데손보 인수 추진 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE43RTBvdHZTUWtJU1hxb0dDUlF5NWpFUUJhS3RpMm5vbFZVYXFiXzd3X0pJVG1EZnlMcklTdGJFRVRBT01yMnR2c0xXOGpYSkd6NXdaZ2xFeWZ3Z9IBVEFVX3lxTE5wR2lvQ1g4VVR1ZUdsUHFEUDFiZjJSM19wSHVYWUdUdDBCVGllaUYzV0JhLWpvcjRLS2RIR1hQN0dFWGU1SkJzU2RNLUYtY3BmWHByZw?oc=5)
+- [신한금융그룹, 롯데손해보험 인수 추진 - 이데일리](https://news.google.com/rss/articles/CBMigAFBVV95cUxPd2M1MlJEc2tuZVQzY3JOU1FQblFadGY3VTEtcHRQQWtGUTVmMHZGM1BXcVNQa2lGUHk1eEdETGx4eHo2SHh5Q2FVQjI2cXNlWTBCdzA0THk4ZGdNb2t2cXo5bXkxX0gxU1oxQU8zd3hMTW9OYWpzUXVJYVJ2UUF2Yw?oc=5)
 - ["테슬라 팔고 갈아탑니다"…100억 부자들 몰려든 곳이 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1UYU9VM0NrNVJDa193R3N2NGFINUZoSXZ5T056b3h5NHZfYmF4ZHpOQ25aMENCUk9GWnJqY3FFM2s3bkU5NWREM2pBdDhCSFFZOUFlN2xpeEIwZ9IBVEFVX3lxTFBhSmxIMDZObksybmRGLVlHQmFLdWtldnRfVnNJWDlpenZtSHBWV0FjMzYta1ZuZjlVNDVaUDBpM2t4VFk3cFJLei1kMW1NVFpkS0hhQQ?oc=5)
 
 ---
