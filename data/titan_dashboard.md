@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 197 days, 16:42:48
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 197 days, 17:40:45
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.2% | `████░░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.5% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[ET특징주]롯데손보, 신한금융 인수 추진설에 상승세 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTFBoNVZsY1hUVFVWVmJGYTdvSE15amFRdU9MMklzd25aQWduM0hvYWxDbkluMTNocXpFZFAweFFZZC1QclpTT0VEUEljZ2VXdw?oc=5)
-- ["테슬라 팔고 갈아탑니다"…100억 부자들 몰려든 곳이 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1UYU9VM0NrNVJDa193R3N2NGFINUZoSXZ5T056b3h5NHZfYmF4ZHpOQ25aMENCUk9GWnJqY3FFM2s3bkU5NWREM2pBdDhCSFFZOUFlN2xpeEIwZ9IBVEFVX3lxTFBhSmxIMDZObksybmRGLVlHQmFLdWtldnRfVnNJWDlpenZtSHBWV0FjMzYta1ZuZjlVNDVaUDBpM2t4VFk3cFJLei1kMW1NVFpkS0hhQQ?oc=5)
+- [신한금융그룹, 롯데손해보험 인수 추진 - 이데일리](https://news.google.com/rss/articles/CBMigAFBVV95cUxPd2M1MlJEc2tuZVQzY3JOU1FQblFadGY3VTEtcHRQQWtGUTVmMHZGM1BXcVNQa2lGUHk1eEdETGx4eHo2SHh5Q2FVQjI2cXNlWTBCdzA0THk4ZGdNb2t2cXo5bXkxX0gxU1oxQU8zd3hMTW9OYWpzUXVJYVJ2UUF2Yw?oc=5)
+- [펀드매니저 60% "3개월 안에 코스피 1만피 찍는다" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5JaHhsMndjRnlsczItdDAtVkVIVEdlbkg0SW1CYllPUUVKQzdYeERkSmJoWWE5cEtiMS1KSUVSZ1ZfRXZqZHYwNFhIZzdHSTlxY0wxNU9CMTdGQdIBVEFVX3lxTE1VTk5MUmVuUkNYdmR1U3R5dTZvMklWMlB0RDhBMUlVbmJuZTR0TlVUQ3BzbTN6U0NxZ2FKbFI2bEtubzFJTWRKOGp4TlFIY0FOamh1Wg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
