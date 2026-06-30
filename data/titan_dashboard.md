@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 198 days, 5:50:09
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 198 days, 7:06:22
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.0% | `█████░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.2% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[ET특징주]롯데손보, 신한금융 인수 추진설에 상승세 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTFBoNVZsY1hUVFVWVmJGYTdvSE15amFRdU9MMklzd25aQWduM0hvYWxDbkluMTNocXpFZFAweFFZZC1QclpTT0VEUEljZ2VXdw?oc=5)
-- [명품백 대신 '이것' 들쳐멨다…루이비통 '파격 변신' [트렌드+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1iUHU3R1k2NjdUWDVzcjJ1dXdXUVNvRUhtSjdxamQxMFRpbG5IM04yOVdlaktpV29HMDdEVUNuNlBqZFdvelBaRTc5QUgtRk11bDd5dzNQNDg0UdIBVEFVX3lxTE5mLWNkcFFsdXBMMlpyUUVEakk1Nnk2NkN2MTJkZWx0OHpyNUZNRTlnWnRkUDUxRjZPVmgwb3hZbVJUTHVCVWJzei0za3ZxZzRlQTVEXw?oc=5)
+- [신한금융 진옥동 시대 첫 인수합병 이뤄낼까, '롯데손보 인수' 리딩금융 탈환 승부수 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTFBQeWxGejMzVEY1N2hSNUJMUENiZkxhemFXRXl1dy1pZmZLSE1XSXpRQ3ZaVzBDNmtlZjJWNXRwdlc4TG1QbFd2QTA5dU14Z3FubVdSUU5fcVVWNkhZZnFkRlA1UFdSOS12Y1hmQk92cEJCbk0?oc=5)
+- [국민연금이 수십조 판다?…7월 매도폭탄설 '오해와 진실' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBCQmdWelN0MHE0Z0NtR1NoVHlrdzdNQ2VPOE1uOEJDZUpEbF9xVWdxdG85SG5YN2FfemZqcFZudUpET2ZVZTJXVWRQSXhlQ0VZUkZSVF9XMzdZUdIBVEFVX3lxTFAxanp1TkJKMlRiS1VxNEZCbzFaUlNkejBXUGNPOGdmMFp5ZjBDcXBOTWVFWDBqOF95S2YzREtiLW0yVEZERGpWTkdsaUpVTTVrWkdBcQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
