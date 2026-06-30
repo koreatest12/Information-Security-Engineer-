@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 197 days, 21:37:13
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 197 days, 23:04:05
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.2% | `████░░░░░░░░░░░` |
-| **RAM** | `33.3/512 GB` | 6.5% | `░░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 35.3% | `█████░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[ET특징주]롯데손보, 신한금융 인수 추진설에 상승세 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTFBoNVZsY1hUVFVWVmJGYTdvSE15amFRdU9MMklzd25aQWduM0hvYWxDbkluMTNocXpFZFAweFFZZC1QclpTT0VEUEljZ2VXdw?oc=5)
-- [개인정보보호위원회 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5GQW93UVVWTHRnTW9xaEZUWUxwLXBWTUNBQWRETTQtSU1YUzlfVG41aGhYdTFLVHNfaFhsMmwwdmNqRkZoNHF0M2dsOW1PT3luV3hfbmR6WXIwUdIBVEFVX3lxTE0taGtuQmZWSFNEY1JnNTJOSHZjdXNfWEg1azYyOXV5OGxLQjB5RFIwMFBkUGZ4QUVMazZ0Z1NQMnhPTzRsUGJmSG5sc1l4NDVPRzRrXw?oc=5)
+- [현대로템, 2026 지속가능경영보고서 발간 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ORF80eGJZbFN1RnBpUXVCTVl1dGVTYjRtZjBENXZhelVkZDQ3VDNEbVJvN1hvd1lwRGJtNjBzTUItbFZ2UEJWS1JJMkdLWFlxY2QyamU4REpBQdIBVEFVX3lxTFBvZGFIZEVkRUJwTjdvYUl5RjJ2M1lVRzJtRU56VnVJdUVFbVZrNDBqWWV2NHlhUlB1VTlidWpBaUk0UldZQzdpbVl5WC1xMzFzbHJ2MQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
