@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 199 days, 6:33:45
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 199 days, 7:41:49
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.9% | `█████░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.6% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융그룹, 롯데손해보험 인수 추진 - 이데일리](https://news.google.com/rss/articles/CBMigAFBVV95cUxPd2M1MlJEc2tuZVQzY3JOU1FQblFadGY3VTEtcHRQQWtGUTVmMHZGM1BXcVNQa2lGUHk1eEdETGx4eHo2SHh5Q2FVQjI2cXNlWTBCdzA0THk4ZGdNb2t2cXo5bXkxX0gxU1oxQU8zd3hMTW9OYWpzUXVJYVJ2UUF2Yw?oc=5)
-- [더 워룸 - 한국경제TV](https://news.google.com/rss/articles/CBMiowFBVV95cUxQMERmdlJGNXVDU1k3WkFqaGZYVWFIbnNUUGZMMlppV0hkRmVXWjlSUW5Wd2Y4RVE1TTVPUzhiX3VPUURpcS0xMS04bDVyc2xsRHRTdmdNX3RYWFVYNHJzZFU0LVYtRGZiUml2UDhTZ2dqdmItSkQ5dkhMYlZNcjNHbEdvRzlFd1pNSGRITS1HTHVIc1dhZzdycXl1MWw5MjJyWjZN?oc=5)
+- [마지막 퍼즐 ‘보험’ 찾는 신한금융… 롯데손보 인수전 메기되나 - IT조선](https://news.google.com/rss/articles/CBMicEFVX3lxTE5LN3dBV2RBdmhwQzQtYlhwMnpyRlF4anRyeVo3MUlBN1hrbzBfTW9NZFB3NUhrUEFDRXAyRzR6eXJJQkozMGNCSmJ2Mm90d2VEdlNMWWIzVWJ5bm9wS0Y4OGFGRXBPb2d3dVBOTDFDQU3SAXRBVV95cUxPV1RsNFdKek5GYzk5cDJvQi1BcEdtVVRaeGlIeWNROVA1N2tsd2Y0UXNCUmJ5eHREVGJ1em82UUVpT1JmQjV0NHE5OS1hVURFVWxwR2ptaWJJdURRMFM0cHBrRGh0UE91RkNnZDZXLUY4VDR5WA?oc=5)
+- [美 증시, 제조업 활동 회복에 낙폭 축소 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE95Uk80ek9jMUJORmJaQncwd1RYZkNXNnhaT3Npdk1Ld0p5LVU1V3UwNnR5NmxkVHFpRnpBaXlZWHE0Y3ZHdXFLUTNGbDRFdmVZYU1fd3R5THpsd9IBVEFVX3lxTFBjb3hQMUpsZzFsVldBMERuYlNtNmpKR2FhSExwdU5WZkRRUUlJWWI5aVJoWjRYWmpPSmwtSGl1c0tCRGl1QmlwWE9hZklTNTU1d21VOQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
