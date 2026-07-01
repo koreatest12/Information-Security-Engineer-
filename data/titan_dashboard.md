@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 199 days, 13:56:41
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 199 days, 14:43:53
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.9% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.9% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [마지막 퍼즐 ‘보험’ 찾는 신한금융… 롯데손보 인수전 메기되나 - IT조선](https://news.google.com/rss/articles/CBMicEFVX3lxTE5LN3dBV2RBdmhwQzQtYlhwMnpyRlF4anRyeVo3MUlBN1hrbzBfTW9NZFB3NUhrUEFDRXAyRzR6eXJJQkozMGNCSmJ2Mm90d2VEdlNMWWIzVWJ5bm9wS0Y4OGFGRXBPb2d3dVBOTDFDQU3SAXRBVV95cUxPV1RsNFdKek5GYzk5cDJvQi1BcEdtVVRaeGlIeWNROVA1N2tsd2Y0UXNCUmJ5eHREVGJ1em82UUVpT1JmQjV0NHE5OS1hVURFVWxwR2ptaWJJdURRMFM0cHBrRGh0UE91RkNnZDZXLUY4VDR5WA?oc=5)
+- [신한, 리딩금융 탈환 승부수…롯데손보 품고 '비은행 퍼즐' 맞출까 - 데일리안](https://news.google.com/rss/articles/CBMiV0FVX3lxTE5vWG03bHRqYXdQcl92WS1lOFI5ZjN5bmxDUU12eW5aX0hKNU9hdG1wVWtQWWVEU2N0NlhIZmNqTER0cmRGb0hXSUZXbHk4MFQ3a1pCS0tGMNIBpgJBVV95cUxNUlZSTlgxMGVpQjI2SlpnejdNX0RpdzBZUTdDNGsyZ0JaTE1JcHJrdlNPNUhnMFk3V05JNGpGcW5FYklmSnRpQ180aF93RGJjRTYtWXFJak9wbWVZN2tPLVlNRTljNXc3SUk2Sy01eVBIbmh0MlBBXzdKOHNEbHdGS2tib0NLNVFsY1dWSW5hUUFGenJoYV9EVk5TYk1xLUlHa2tOb24weXRBUUpjTjBNVVFBZHdJb1hPajJNS3hXOGtHU0dkdVI1azZEbkpvWmlESXNTTlduMUdqMjM1VlBpeGNkb2xZQW5fWENkeVBTU3BNS2p0NGcxWUgyTjB3LWtyWXItTEswWmx0WmVxbXJaUlY0UXhtVC1RUjJYWTI3dVhxRWlnU1E?oc=5)
 - [메가프로젝트 '돈방석' 앉았다…하루 만에 12% 급등한 회사 [종목+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBlWnZmWWp0azNhRGlheUViNVVvcnZqYlVGMDhrSldjckVHdHRqcjMyM2poOU1XUExzWXBSNHFGQUtOVXZGTXgzVkpIOWtsMEV4bVhCc0pwWUNvd9IBVEFVX3lxTE9nOTBkcl9UclM2djZSV2JVT0VjME9TaHMzQjh6WmYxYnkwUFltU0FYUnd0b1g4WmlfcklFb0dUbUdmcF96cnpUR0Nfc0o5dDBNTmVFRg?oc=5)
 
 ---
