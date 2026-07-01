@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 199 days, 7:41:49
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 199 days, 8:34:09
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.6% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 18.3% | `██░░░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [마지막 퍼즐 ‘보험’ 찾는 신한금융… 롯데손보 인수전 메기되나 - IT조선](https://news.google.com/rss/articles/CBMicEFVX3lxTE5LN3dBV2RBdmhwQzQtYlhwMnpyRlF4anRyeVo3MUlBN1hrbzBfTW9NZFB3NUhrUEFDRXAyRzR6eXJJQkozMGNCSmJ2Mm90d2VEdlNMWWIzVWJ5bm9wS0Y4OGFGRXBPb2d3dVBOTDFDQU3SAXRBVV95cUxPV1RsNFdKek5GYzk5cDJvQi1BcEdtVVRaeGlIeWNROVA1N2tsd2Y0UXNCUmJ5eHREVGJ1em82UUVpT1JmQjV0NHE5OS1hVURFVWxwR2ptaWJJdURRMFM0cHBrRGh0UE91RkNnZDZXLUY4VDR5WA?oc=5)
-- [美 증시, 제조업 활동 회복에 낙폭 축소 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE95Uk80ek9jMUJORmJaQncwd1RYZkNXNnhaT3Npdk1Ld0p5LVU1V3UwNnR5NmxkVHFpRnpBaXlZWHE0Y3ZHdXFLUTNGbDRFdmVZYU1fd3R5THpsd9IBVEFVX3lxTFBjb3hQMUpsZzFsVldBMERuYlNtNmpKR2FhSExwdU5WZkRRUUlJWWI5aVJoWjRYWmpPSmwtSGl1c0tCRGl1QmlwWE9hZklTNTU1d21VOQ?oc=5)
+- [엔화 '날개없는 추락'…일본 개입해도 안된다? [김현석의 퀵브리프] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBtM0VTekQ1LWNPV2g2d3B5YXozaklDYWtrY29LcDV6aFd3RmJJblBXdG1MS3FwQlRmVThUaGJVWW5hbjVvZHVsVEdCVk83bm15VFdUbUtwYVlQQdIBVEFVX3lxTFB3NGxORWNXQVRYS2NjZklUZmJhV01RenR3U0FjWUxFeU9ybnBVRUJ2WEV4TXFramd1T2gyNUR0c2FDZEE0U0tkU0p3Qjh1cjFqWlkycg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
