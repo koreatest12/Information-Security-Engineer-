@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 199 days, 3:19:33
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 199 days, 4:39:59
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.2% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.8% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [마지막 퍼즐 ‘보험’ 찾는 신한금융… 롯데손보 인수전 메기되나 - IT조선](https://news.google.com/rss/articles/CBMicEFVX3lxTE5LN3dBV2RBdmhwQzQtYlhwMnpyRlF4anRyeVo3MUlBN1hrbzBfTW9NZFB3NUhrUEFDRXAyRzR6eXJJQkozMGNCSmJ2Mm90d2VEdlNMWWIzVWJ5bm9wS0Y4OGFGRXBPb2d3dVBOTDFDQU3SAXRBVV95cUxPV1RsNFdKek5GYzk5cDJvQi1BcEdtVVRaeGlIeWNROVA1N2tsd2Y0UXNCUmJ5eHREVGJ1em82UUVpT1JmQjV0NHE5OS1hVURFVWxwR2ptaWJJdURRMFM0cHBrRGh0UE91RkNnZDZXLUY4VDR5WA?oc=5)
-- [삼전 노조 "현장 여건 먼저"…'메가 프로젝트' 노사정 협의 촉구 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE84SmxrRmtXZF9Bb2xla2JxOUIybTdRRUFENkp2M2dHRHBpM2ZmUi1fVUF5czFZVGZyVEJjN3JPcGxGNFFiRVdOQV9rbllCWXBkdmktYkFRczEzd9IBVEFVX3lxTE9yampWTjdKX2tkZWJ3YXVmVl9odEFDTmxtOTRqaF9mNTRncTV4V2RKUnFfWERVRjV4Vk1hQ2xhbC1HY2dxUFFVSHBCSV81TGRCSUhGQg?oc=5)
+- [달러 이렇게 많이 버는데…환율은 더 올라 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBieV9WbV9BNlVybmVpUkxOdlloU2J1Y3p2R3lXU2t3YXVrNEtMa1FKb0EyM1JjR1ptc0tZUkdDTEx4NFByZy1GZ3RvX0JJVFMwdjJnRlZ0UF9EUdIBVEFVX3lxTE9pSEdCQnNsdy1LRmYzeERablpIUlBtYTdEVjBaSUZzVS1FZzdBMlpKWDF4Wm1BcVc2cnI1amgwS2FUa2c0c2kyQW9mdUR3eFAyNkkteQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
