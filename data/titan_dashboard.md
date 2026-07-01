@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 198 days, 23:15:38
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 199 days, 0:45:04
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.7% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.5% | `████░░░░░░░░░░░` |
 | **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [마지막 퍼즐 ‘보험’ 찾는 신한금융… 롯데손보 인수전 메기되나 - IT조선](https://news.google.com/rss/articles/CBMicEFVX3lxTE5LN3dBV2RBdmhwQzQtYlhwMnpyRlF4anRyeVo3MUlBN1hrbzBfTW9NZFB3NUhrUEFDRXAyRzR6eXJJQkozMGNCSmJ2Mm90d2VEdlNMWWIzVWJ5bm9wS0Y4OGFGRXBPb2d3dVBOTDFDQU3SAXRBVV95cUxPV1RsNFdKek5GYzk5cDJvQi1BcEdtVVRaeGlIeWNROVA1N2tsd2Y0UXNCUmJ5eHREVGJ1em82UUVpT1JmQjV0NHE5OS1hVURFVWxwR2ptaWJJdURRMFM0cHBrRGh0UE91RkNnZDZXLUY4VDR5WA?oc=5)
-- [[아주사설 | 기본 원칙 상식] 40년 만의 엔저가 한국 경제에 던지는 질문 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBnaW5KdHNuYWNzY1VaSVNnVzVTdHRWMUFiU0xNbTBEX2dJbTZjTXQ0TEt4YkNWT1JnWkJlYldNV1V5czNxRHJmV1RnOTgyZk0?oc=5)
+- [환율 1555원 찍었다…’1550원 시대’ 현실화, 한국경제 다시 시험대 By EBN - Investing.com 한국어](https://news.google.com/rss/articles/CBMicEFVX3lxTE44NHY5WUtHZzJzUHh0dVRNNFFfUkVqT1pzWjZqalRhczgyTVcwWTc4c0hRaklmbmlxdXZ6Q2FCOWZRVy1lQzBQcHFfRkhLX1dTTXZ6alRlU1JwLTJRYlJ2S2tBYjZ6Y2FGdi05MTJnNXk?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
