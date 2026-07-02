@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 200 days, 0:19:51
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 200 days, 1:53:15
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 18.9% | `██░░░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.8% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한, 리딩금융 탈환 승부수…롯데손보 품고 '비은행 퍼즐' 맞출까 - 데일리안](https://news.google.com/rss/articles/CBMiV0FVX3lxTE5vWG03bHRqYXdQcl92WS1lOFI5ZjN5bmxDUU12eW5aX0hKNU9hdG1wVWtQWWVEU2N0NlhIZmNqTER0cmRGb0hXSUZXbHk4MFQ3a1pCS0tGMNIBpgJBVV95cUxNUlZSTlgxMGVpQjI2SlpnejdNX0RpdzBZUTdDNGsyZ0JaTE1JcHJrdlNPNUhnMFk3V05JNGpGcW5FYklmSnRpQ180aF93RGJjRTYtWXFJak9wbWVZN2tPLVlNRTljNXc3SUk2Sy01eVBIbmh0MlBBXzdKOHNEbHdGS2tib0NLNVFsY1dWSW5hUUFGenJoYV9EVk5TYk1xLUlHa2tOb24weXRBUUpjTjBNVVFBZHdJb1hPajJNS3hXOGtHU0dkdVI1azZEbkpvWmlESXNTTlduMUdqMjM1VlBpeGNkb2xZQW5fWENkeVBTU3BNS2p0NGcxWUgyTjB3LWtyWXItTEswWmx0WmVxbXJaUlY0UXhtVC1RUjJYWTI3dVhxRWlnU1E?oc=5)
-- [기후변화·식량안보·농업AX…국내 농업 전문가들 머리 맞댄다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE15Tk8wM0pwV3pabzBmSlg1QWEwVDhSTWFBb3lJbUR6ZkJ0OGM4TEVxcTI0bC1wM1lvS09xTnpwcDVTYW55bmd0X0ZWQVVMcktWbFVpTXRPV0Nmd9IBVEFVX3lxTE9MRVpTM2JOM01fTW93dUx5bzRXSzhSSHI1N0JNRnN6a2duRkJqYTl3N1pheXIzY202RGR5WTFteXNNUUVhVEhYWXpwLVU3cW11dTFseg?oc=5)
+- [신한금융, 롯데손보 인수전 완주할까…업계 의견 ‘엇갈려’ - 녹색경제신문](https://news.google.com/rss/articles/CBMiaEFVX3lxTE5pSVN1Wkh3NzZHdGJQZ2NCWUJrRFhTS3ZEVHhyY3UtcHVGXzFMZ2FfTl9TbGdXcXRUeDdERjJLeC1Nbjk2bUxjUmxQTGJpMlk2b3hveU5SQ2lvRW1yX3RtVkN6WDU5YkR1?oc=5)
+- [손에 묻은 기름때 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBYNW02SVJRSHBSWmZNc0Y5VkpVTnQ0U0R2Rm9tUTZRdTIxc3pXZTkwV2NzcUQzbzg1OV9ZQ0doRHBORVNzWUt6Nk54cHVhVklZQlJpTzFjcFd0Z9IBVEFVX3lxTE9XRXpCNUdwZktGU0RTTGNhanpsREU2T1psZDlxZTZaLV82b20tVWpOQktJeHhaTE1aT3VQTmhqanJ2OFp0MURPNjB5LUpPb2NUS2VuOQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
