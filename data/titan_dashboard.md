@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 200 days, 3:10:01
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 200 days, 4:05:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.9% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.2% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 친환경 금융 26.2조 성과...전환금융으로 기후금융 보폭 확대 - 녹색경제신문](https://news.google.com/rss/articles/CBMiaEFVX3lxTFB5U0pUMUJZZE5NRDdjWjg0UzF2ZTg2S2oxV3IwbHhQb3psVzRJakRnODc3U0lqempXWVRPY2s0RWs5cHEySHZXWWVLSzJaaENRRHJRVGFFSVl2LUJkOGM5dXZGNFhiNUlH?oc=5)
-- [메타 쇼크에 레버리지 충격까지…코스피 가장 세게 맞았다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE00ODRfZUJvNFU2TjIyNTZQdmRuaGZWWGVBTWluQVFYR0pZdS0zd0NOYmNRVWRJVUZ0dmlzUmNMS09ZS2lSM0NPeU1uaDVHRUZqOTh3VERZM29yUdIBVEFVX3lxTFBPR0dTSUV5OVpDRDI3Nl9qUzl5dWNXYVUtTGlxT0trdzYzUjVLRXZrdVprYjhtRnNIQS1Ya3c5RUt6dTNtQ0c1QTJhT0lLcmZGOUNqTg?oc=5)
+- [급락장에 코스피 매도 사이드카 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9XLTJnR2lwMEk1Vlh6eW5GSVRUaVlzS2lFX2NfZWN3WjZPamNHcEVVcXZneVFNcTNtc1E2b0g5RU9rNUVJaHRVcVh0T2lLOFNnbkFSekJPTGs3d9IBVEFVX3lxTE9GeE1UY0NaalVlUzdSeWhDelp3NWNLQVpIWjU2QVlybWs1WUpwTFlnU2dDQndnTThUVjBKeDYxRm5jV082TmRCZUNXRGowZDdNVGNoMg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
