@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 200 days, 4:05:27
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 200 days, 4:52:47
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.2% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.5% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 친환경 금융 26.2조 성과...전환금융으로 기후금융 보폭 확대 - 녹색경제신문](https://news.google.com/rss/articles/CBMiaEFVX3lxTFB5U0pUMUJZZE5NRDdjWjg0UzF2ZTg2S2oxV3IwbHhQb3psVzRJakRnODc3U0lqempXWVRPY2s0RWs5cHEySHZXWWVLSzJaaENRRHJRVGFFSVl2LUJkOGM5dXZGNFhiNUlH?oc=5)
+- [신한금융, 롯데손보 인수전 완주할까…업계 의견 ‘엇갈려’ - 녹색경제신문](https://news.google.com/rss/articles/CBMiaEFVX3lxTE5pSVN1Wkh3NzZHdGJQZ2NCWUJrRFhTS3ZEVHhyY3UtcHVGXzFMZ2FfTl9TbGdXcXRUeDdERjJLeC1Nbjk2bUxjUmxQTGJpMlk2b3hveU5SQ2lvRW1yX3RtVkN6WDU5YkR1?oc=5)
 - [급락장에 코스피 매도 사이드카 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9XLTJnR2lwMEk1Vlh6eW5GSVRUaVlzS2lFX2NfZWN3WjZPamNHcEVVcXZneVFNcTNtc1E2b0g5RU9rNUVJaHRVcVh0T2lLOFNnbkFSekJPTGs3d9IBVEFVX3lxTE9GeE1UY0NaalVlUzdSeWhDelp3NWNLQVpIWjU2QVlybWs1WUpwTFlnU2dDQndnTThUVjBKeDYxRm5jV082TmRCZUNXRGowZDdNVGNoMg?oc=5)
 
 ---
