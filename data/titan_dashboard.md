@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 200 days, 15:40:17
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 200 days, 16:06:36
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.7% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 36.4% | `█████░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [서울시, 핀테크 스타트업 6개사 선정…신한금융과 서비스 실증 - 뉴스1](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBEZHY0NWw1UTQxUUF1QUM2UDM1eTduVUR2RWllUGVRSWxYR3RPNkJnZjZmSHA4NFFCX1BjMWZSSEI1Zno4RTV1NnJPcEdxMDA?oc=5)
-- ["미국이 연장 거부"…2조 달러 북미 교역 흔드는 USMCA 파국 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1PbDhaZDhuM21aNm5RREdoeXMzYUR0VkFjMHplVkloMlZXZU1PN2NXQTZrRC1tNmR6bk83LWVTdHBnRy1wa1BxcUZLZE1CRV9rOHZNbC1sV3FpZ9IBVEFVX3lxTE91RVpsd2ZxaTY1T2g3XzJWc2MtMkdfMkRQeDNZek5tVW5nVzhkdk1IZ1d1QjdLTkFpQlUtaEJmZlRqenpBMFhSak00VWRZREtlR1NXTQ?oc=5)
+- [고점 대비 30% 빠진 전력기기 업종, 투자전략 물어보니 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE44SDYxMm4zaEJuSGl4QUpEdDg3WGJyY0Fxc2prOVhUVUFlTlNYdmtNTDlLcTNQWFVtRkZEUExZWjRTTkY5U2JLaXJTNnd1ZVFXTHRicUhwTlJtZ9IBVEFVX3lxTE5OOEJvVFBqNkwtaThjSGQ1ZlpsV3RnYWlsS3NpN25RYzNYZUVQNWVobWR2MlRRLXB2cjV1a3hDN25RVU1melpkVEdNYXVud2U2N2dJNA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
