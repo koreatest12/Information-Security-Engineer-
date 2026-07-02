@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 199 days, 16:43:46
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 199 days, 17:40:55
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 25.9% | `███░░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.4% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한, 리딩금융 탈환 승부수…롯데손보 품고 '비은행 퍼즐' 맞출까 - 데일리안](https://news.google.com/rss/articles/CBMiV0FVX3lxTE5vWG03bHRqYXdQcl92WS1lOFI5ZjN5bmxDUU12eW5aX0hKNU9hdG1wVWtQWWVEU2N0NlhIZmNqTER0cmRGb0hXSUZXbHk4MFQ3a1pCS0tGMNIBpgJBVV95cUxNUlZSTlgxMGVpQjI2SlpnejdNX0RpdzBZUTdDNGsyZ0JaTE1JcHJrdlNPNUhnMFk3V05JNGpGcW5FYklmSnRpQ180aF93RGJjRTYtWXFJak9wbWVZN2tPLVlNRTljNXc3SUk2Sy01eVBIbmh0MlBBXzdKOHNEbHdGS2tib0NLNVFsY1dWSW5hUUFGenJoYV9EVk5TYk1xLUlHa2tOb24weXRBUUpjTjBNVVFBZHdJb1hPajJNS3hXOGtHU0dkdVI1azZEbkpvWmlESXNTTlduMUdqMjM1VlBpeGNkb2xZQW5fWENkeVBTU3BNS2p0NGcxWUgyTjB3LWtyWXItTEswWmx0WmVxbXJaUlY0UXhtVC1RUjJYWTI3dVhxRWlnU1E?oc=5)
-- [국내에서 일어난 바이오산업 관련 소식 업데이트 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBZQXdLQ3BsUk9LMWwyVmdjY0kxV3NZMEthYTd5UVJPQ0pSNnhkcmN5b2tZOW9IZkZHMFIxaVRxZDM0RHkxWDVha2Zzd3B4cmFWenUwT0V5MjRUUdIBVEFVX3lxTE1OQmljMnpkTlBDMW5jd1VCdXFlY0dNRmc2d1paNUhtSVh2MHJSR1h6aTF4aTNXQU1PMnpxOGduWERVVkhVLXQzVkFrTUlYQk5DbkVYdA?oc=5)
+- [신한투자, '은행·증권 통합계좌' SOL LINK 출시 이벤트 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5HMlh5WjdrV29PVjBCLTRSNlk4d0tNM1VkZVpnaGg1bHhVbi1PdmFxbXpHUU0wdTNocS0yUGhQZWs4WGtfNFdSakxIODVWaHFGNDB0OWZkUUlQdVXSAWBBVV95cUxPRFdLUGF0cDdGR3BjSTJ4Tm1neUJQRUY0dU1VQ0tQclJYTFg0NXFlQzVENVJhY0dSSEM5LU5NZ1pDd3Y1YWNGTmtNVVJ5N3ZCU1hBMThHc2F0bEFGZC1FME0?oc=5)
+- [급락장에 코스피 매도 사이드카 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9XLTJnR2lwMEk1Vlh6eW5GSVRUaVlzS2lFX2NfZWN3WjZPamNHcEVVcXZneVFNcTNtc1E2b0g5RU9rNUVJaHRVcVh0T2lLOFNnbkFSekJPTGs3d9IBVEFVX3lxTE9GeE1UY0NaalVlUzdSeWhDelp3NWNLQVpIWjU2QVlybWs1WUpwTFlnU2dDQndnTThUVjBKeDYxRm5jV082TmRCZUNXRGowZDdNVGNoMg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
