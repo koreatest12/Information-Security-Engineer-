@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 200 days, 17:25:06
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 200 days, 18:34:11
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.6% | `█████░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.4% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [서울시, 핀테크 스타트업 6개사 선정…신한금융과 서비스 실증 - 뉴스1](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBEZHY0NWw1UTQxUUF1QUM2UDM1eTduVUR2RWllUGVRSWxYR3RPNkJnZjZmSHA4NFFCX1BjMWZSSEI1Zno4RTV1NnJPcEdxMDA?oc=5)
-- [반 학기 만에 공대 떠난 03년생…주식에 인생을 걸었다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qN1cyRUxlMDdKbzZVb2dGdUxnNmNXNVFHM2JJTVdIWlhxVlRNdXp4ckdRRzdxY1gzTVpvX1ROMGE2aHFxa3VoMTVJSFZZN2UxNXdpRVp2dUo3UdIBVEFVX3lxTFBOUjBtNFJCeXY5MDlUMnJLQWJqRlFYQjlJREVwbC1HZG5nWVBSamVmdXZmREtoV2tyMHQ0dmJDUjNlbUJZZjlhaUxRRk1CVmVteHdDaQ?oc=5)
+- [은행株, 증시 급락 속 나홀로 강세…신한지주3%↑ KB금융 2%↑ - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5yRVp4R2liSXQzcVBtbHNOSHJScXRnYW1ub0V2ZlZ4NDlnbGV1QzVGTm5nUVV0T2s0UzkyQUVzWXBVLWs4Sm9OZldtTXdfelhkQklVMERQaWdVbGptWGpGS9IBeEFVX3lxTE95ZHVGNmRvZTFsTVdIN0gyMVg5cGYzQlV3dS1ST2JmdGF3eUdOMGxsQmZiNU1zakZadDRwQlJVcWVfM2ZqUjRibGFyVE9wLUJkR25xcDNWcE9mUVBIVFFnUWVxTkk2T0ROSVBUYnZHVXljb2pWYkszag?oc=5)
+- [국세청 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFAyeEh2cWRHemFpc2RxSms1NnU3clFRazlINkdHUXBvcG8xSnFHVE5ROTNkc2w2T3ptb1VqRUxxa04wU1RKM2tmYlJtS3lVYVpqNWVrbEJHWWJ2UdIBVEFVX3lxTE9KZ2pRTndJZ01WenNvb3pfRFI2YkhUQUJIeGNycDdQbnl0Uzl2dmlXWjJJUkQ5cXF0ZXNXdWlDcTdqdUFpTmg0cjd2amFiNXpfcnFGbg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
