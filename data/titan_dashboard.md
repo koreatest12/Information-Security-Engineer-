@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 201 days, 7:31:39
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 201 days, 8:20:46
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.1% | `█████░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.4% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [서울시, 핀테크 스타트업 6개사 선정…신한금융과 서비스 실증 - 뉴스1](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBEZHY0NWw1UTQxUUF1QUM2UDM1eTduVUR2RWllUGVRSWxYR3RPNkJnZjZmSHA4NFFCX1BjMWZSSEI1Zno4RTV1NnJPcEdxMDA?oc=5)
+- [은행株, 증시 급락 속 나홀로 강세…신한지주3%↑ KB금융 2%↑ - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5yRVp4R2liSXQzcVBtbHNOSHJScXRnYW1ub0V2ZlZ4NDlnbGV1QzVGTm5nUVV0T2s0UzkyQUVzWXBVLWs4Sm9OZldtTXdfelhkQklVMERQaWdVbGptWGpGS9IBeEFVX3lxTE95ZHVGNmRvZTFsTVdIN0gyMVg5cGYzQlV3dS1ST2JmdGF3eUdOMGxsQmZiNU1zakZadDRwQlJVcWVfM2ZqUjRibGFyVE9wLUJkR25xcDNWcE9mUVBIVFFnUWVxTkk2T0ROSVBUYnZHVXljb2pWYkszag?oc=5)
 - [초과세수 5조 투입…'소버린 AI' 개발한다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5zc2JFcnJaNnJvbWlMcGFJOGdnUVVwMGFZZ09fZnNzNy1US2J1RmlfQ2gtQnM4VWlqWklCSUFiMVM0a2VqY2xEVzhRakV0dmJNR1kzU0ZrUXUwd9IBVEFVX3lxTE5NbUR4UWlKTXJhVVYzcHFJbFFsdDU0QlI3RTRHUERzZkVHUDJtcDkxcUdNTU9pYllwbDU5d2lPNkZrdnZwN3hlQ3VGLXBHQkU2Q2JhSQ?oc=5)
 
 ---
