@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 200 days, 20:01:38
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 200 days, 21:32:59
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.7% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [은행株, 증시 급락 속 나홀로 강세…신한지주3%↑ KB금융 2%↑ - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5yRVp4R2liSXQzcVBtbHNOSHJScXRnYW1ub0V2ZlZ4NDlnbGV1QzVGTm5nUVV0T2s0UzkyQUVzWXBVLWs4Sm9OZldtTXdfelhkQklVMERQaWdVbGptWGpGS9IBeEFVX3lxTE95ZHVGNmRvZTFsTVdIN0gyMVg5cGYzQlV3dS1ST2JmdGF3eUdOMGxsQmZiNU1zakZadDRwQlJVcWVfM2ZqUjRibGFyVE9wLUJkR25xcDNWcE9mUVBIVFFnUWVxTkk2T0ROSVBUYnZHVXljb2pWYkszag?oc=5)
-- [OECD 한국 경제성장 전망 2.6% 유지, "반도체 호황 끝 우려는 시기상조" - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE9lZS15clB5THQ5eXE5ZVdOZUd2WXhJNHRRbTZ1ZUNqMlVyUkllWVpHMXZfQjZlYWJ5cmtIT2lEeE8ybi1XYnZ6Qll6TTB0cVRXdE1pTjV1S1JaSTc2ZG5JRXFXaWVBamNoRTcxRFJ5TFZIVmM?oc=5)
+- [서울시, 핀테크 스타트업 6개사 선정…신한금융과 서비스 실증 - 뉴스1](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBEZHY0NWw1UTQxUUF1QUM2UDM1eTduVUR2RWllUGVRSWxYR3RPNkJnZjZmSHA4NFFCX1BjMWZSSEI1Zno4RTV1NnJPcEdxMDA?oc=5)
+- [초과세수 5조 투입…'소버린 AI' 개발한다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5zc2JFcnJaNnJvbWlMcGFJOGdnUVVwMGFZZ09fZnNzNy1US2J1RmlfQ2gtQnM4VWlqWklCSUFiMVM0a2VqY2xEVzhRakV0dmJNR1kzU0ZrUXUwd9IBVEFVX3lxTE5NbUR4UWlKTXJhVVYzcHFJbFFsdDU0QlI3RTRHUERzZkVHUDJtcDkxcUdNTU9pYllwbDU5d2lPNkZrdnZwN3hlQ3VGLXBHQkU2Q2JhSQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
