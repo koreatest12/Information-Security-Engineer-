@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 203 days, 4:15:32
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 203 days, 4:48:39
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.9% | `█████░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [진옥동 신한금융 회장, “단순 매니저 벗어나라… AI 시대 리더는 ‘조정자’” - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5YYUZUOU1iZDhvbE9VbGNoWkJTa2RKLXA4QkNBVWQtaFZGVFczLXNFUGZKTFlWLWUwNVZEQUJNWnZkY3FKUDRzd3lUdlRwVkE?oc=5)
-- ['AI 모델 증류' 규제 본격화…韓 기술 경쟁력 약화되나 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE10TVJOSzlwYkxfN1E0YWhxT1NuakxoaVdBSl9ZQUFzNmRFOG01TmJscjhieW8yQk8tV0tVc1pVbGl5NmhZQVY4LTQtNnQ4dU5qcnN3bUF2QkE3UdIBVEFVX3lxTE5MTzJyc3NVdVlVUWZHVDNGT0trS3kzZ1VHZ3hHeHgwUFRzNkxHcldKa29oSEZwNTVSYmtzOTN6NXFYUU5yM3VBcHJ2VkNYRU9xdm1fbQ?oc=5)
+- ["동네 마트 겁나서 못 가요"…2030 싱글족 몰리더니 7조 잭팟 [장바구니+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5tSUFhOWRoUXhUZHFTLVNTcVVQRE5oNFFMWENBMGo4MXNSc1g0aTFMRFVkTy1qbHBmN3ozRko2NklJRm1HdGxxdldzVUpCLTQzYjA5dktRMTZ1Z9IBVEFVX3lxTE8xemZtZ1ZRTGV4WTh6SmFzTEdGWV8zR3g0WmEwNDlFOUFHTm9YS0lOdkNSUDhrQk1tYnFaRmVmaDh0NnJFcDZYSnZJMWs5UzhKM2xRZA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
