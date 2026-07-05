@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 203 days, 14:04:03
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 203 days, 14:36:45
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.7% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.9% | `████░░░░░░░░░░░` |
 | **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [진옥동 신한금융 회장, “단순 매니저 벗어나라… AI 시대 리더는 ‘조정자’” - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5YYUZUOU1iZDhvbE9VbGNoWkJTa2RKLXA4QkNBVWQtaFZGVFczLXNFUGZKTFlWLWUwNVZEQUJNWnZkY3FKUDRzd3lUdlRwVkE?oc=5)
-- [고되기는 해도 "월급 600 넘는다"…청년들 '우르르' 몰렸다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBjV25YTVhycWdyanVoZ3BNTkljQVJndXFRVFJGRVR2UlIzdmFITm9TVkpYbFEybkg2VlRwd09zcEo0cDQ1NW8tMjQ4akVhSmc?oc=5)
+- [굿모닝 한경 글로벌마켓 - 한국경제TV](https://news.google.com/rss/articles/CBMiowFBVV95cUxPVHJZMllqVVVKRW9NRnA4eGk5TC1CM3VkZnVVNjNLemlTMkhjcnRpWlY0REp2S2pDenhVczUxV0JyekUxRGVwdXYyODBnSVZPOWlXM0poVnRqZ1ViZ3c4MVNaSE1WWVhBSXJGWXJLLU9lLUZEYnRPTkxaSGJDLThTSmF6dUFFa1hZUF8tZzd4RGVWempxYUFaYWxhVXA3RlhDRkJF?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
