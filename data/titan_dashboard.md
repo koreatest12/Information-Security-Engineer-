@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 203 days, 17:26:53
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 203 days, 18:34:28
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.4% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.5% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [하나증권 "은행주 2분기 실적 양호, 최선호주 KB금융지주 신한금융지주" - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE52SmpZVTJjdEtjU0ZFSEJpSkVfSEZDX0lsMklLaHpWRE90ZG0wSGUwS00wbVdqUjNOeXpGRy1LdXNiWWJVc1oxeTRGS20xdHhveHVwYUlMVm85aGZtRDdCNzI0Y0Y2X29UV1ZpenItWktmOU0?oc=5)
-- ["사두면 돈 된다"…반도체 주춤한 사이 4000억 쓸어 담았다 [분석+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9vWVlwVDRrWFpBVUM1RHMxQnZwT3BOc1FHbHB3OFdJa0lWUGtHeHF0MS1zWXhkbVZMTXFsU2t5aEMxLWVmMERhcjZXQ1pTTjBtckNtZGhFNGUtQdIBVEFVX3lxTFBlU3R6ejVSVzFaOXBzd0JhNzFwMXpDWnBSRWpiNF9KYzdSMURLT1RBQVZlenFyNS02Z2xMTTdROWNhWHVoVnJEbUxmQ1FaOVJKWGpLTw?oc=5)
+- [장동혁 “증시로 국민 눈 못 속여…한국경제 벼랑 끝” - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2R3lQOUhBUEFoSXVPS3hFSy0wNEVMVFBaQ2VnMDJNaktPYTdiSndVd1FHUzZYdFlVOEFseXVzVmtIMElQWWVYcTBiZExMTGxmT2FiLXlVYlJGZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
