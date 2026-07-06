@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 204 days, 8:01:36
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 204 days, 9:15:59
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.8% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 21.7% | `███░░░░░░░░░░░░` |
 | **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [진옥동 신한금융 회장 “지금 안 바꾸면 미래없어…AI역량 강화해야” - 서울경제신문](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9GclVaRjh3TTNyRjQ3bzFnTGxCc3l2QktqcXhoYldKTzZnM0h1d2hTYUJxZ2Q5VnlTNjgtb0stMTl6RnZjdlZvMzNNeGlXRlFKVUHSAVNBVV95cUxOWG8wUmUzTVRhMEEzMWhxNDFZQ1RLMm51LTJjQzBvd293TV96WnNoWnZjemFhQlZJQWxqZFl0V3FqQ1ZTeHVxVmNrR0h6bnprblJqZw?oc=5)
+- [진옥동 신한금융 회장 "야성으로 미래 금융혁신 주도" - 조선일보](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPS09NZk1mejJsMC1yalVOSGU5U3R5NlRjbDUzR1dtcEw1QlQwOXZ4YkNrVTYwSlYxR0Vsc2ljc0FjbWNxN190dkgwZDJ0RXc5cW1QdTllR2dDOE9jaEJQMHZtS1RNRlp4WDcyOXpMdVF1Mm1aNlBoSjFqMV9GQmxKTFRud3ZJN1dqU3Vj?oc=5)
 - [네이버, 수도권에 첫 자체 물류센터 짓는다…쿠팡과 전면전 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBmTjhDeW1fWTY3Ym0tekN1NnVGRnhPeUZ2Vnl5MG5aSG1UMDBPdGZfQ1pja3QwSHZnYTNyM1FZc3R1SGZURVpIRlA5XzZ2UFE2TmFTMHBQUU9PQdIBVEFVX3lxTE15N0NhVzJwNlM4NlJIQmhueUt4Q1g4b1ZqaW1oM2ZITGlxVE13WHVZeTl3dEw3S1Q5ZU5mdnFFQ3I5Qm9KRm1xUFQ3cGl2RjQ3NzliSg?oc=5)
 
 ---
