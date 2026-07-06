@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 203 days, 20:01:56
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 203 days, 21:41:32
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.8% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.4% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [하나증권 "은행주 2분기 실적 양호, 최선호주 KB금융지주 신한금융지주" - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE52SmpZVTJjdEtjU0ZFSEJpSkVfSEZDX0lsMklLaHpWRE90ZG0wSGUwS00wbVdqUjNOeXpGRy1LdXNiWWJVc1oxeTRGS20xdHhveHVwYUlMVm85aGZtRDdCNzI0Y0Y2X29UV1ZpenItWktmOU0?oc=5)
-- [대전 대덕구 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE00V2ttYUZxeW1uVXVHTFYzLVZKaVBKSEFRRHVrb09pWkxDaHNUQmttbW81T2IyYlhaVURLNDg4TjR2TDhBQWc1Rm1jN2E5MEowMnVaSWI4ZWstd9IBVEFVX3lxTE91bkt2UW9nbWRlWVNoakgwcU16SXNyLXQ2djl2UGpHMHA2RHBidFRQazJKN3VuUVhqSTFCMVdTdU5UOGtNVVlOVm1JeFZhdFdlSkQzYw?oc=5)
+- [진옥동 신한금융 회장, “단순 매니저 벗어나라… AI 시대 리더는 ‘조정자’” - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5YYUZUOU1iZDhvbE9VbGNoWkJTa2RKLXA4QkNBVWQtaFZGVFczLXNFUGZKTFlWLWUwNVZEQUJNWnZkY3FKUDRzd3lUdlRwVkE?oc=5)
+- [탄력 받는 모아타운…초기 사업지는 신축 빌라 주의보 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFA0V0tTMGVjMnZQYVBJckI5YktsaWpmci1sTWJ2bzBmTzhEY1lGRm9iTVo4U3A1QXZJQ1VkVDlZT3Y0UHI0TDJOY1dKRGdmdVluN0pKcno2N3VZd9IBVEFVX3lxTE9LcFdIRnBLTUFlSlRKZXFMUW9FNzB0TFh3YTZ6V3NLRF9mNWUxZFV1a0JaRFlfUGotU25RX1lZVGtDWVpuZzhQTXMwSXpkUHVoM1FDdg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
