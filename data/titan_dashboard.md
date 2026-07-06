@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 203 days, 16:06:53
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 203 days, 16:40:39
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.8% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.3% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [진옥동 신한금융 회장, “단순 매니저 벗어나라… AI 시대 리더는 ‘조정자’” - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5YYUZUOU1iZDhvbE9VbGNoWkJTa2RKLXA4QkNBVWQtaFZGVFczLXNFUGZKTFlWLWUwNVZEQUJNWnZkY3FKUDRzd3lUdlRwVkE?oc=5)
-- [베이조스·트럼프 밀착…블루오리진 계약 급증 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFB4YTBacDBITzNjQWRJdEhmajJQel9ab2JSd05sUHpSc2hES3MxRW5IakVpQUZuSjQ5UWU0WE05aHhRVU9QbXJuUGZveVppSUsxQlIxUnZpelJzUdIBVEFVX3lxTFBNTVBLMmdrTFpfMmQ0UWxvSE5jN3h6SDFJTUtVOWJBZ2ZhZVRFeF9pcUs1aDVnaFpyOHh2OTRNa3BKaFZsVUxBMENxZHhuX1FmV0dNTQ?oc=5)
+- [한국앤컴퍼니, 지속가능경영보고서 발간 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5POEs4Um9DSTNaSk95b2ZObzRkdEdTWEZvOUhfaTVJVVpqcUdLelB5SUx5bVpnMFluUGpldG1PakZLZkZhUEgzRG1YZ1ZxNmhfTGprMkVwMFpDd9IBVEFVX3lxTE50Q0FJbndUUFBRaXdrTGt2djVhSGp3R2VoUEpHSERHRXN3VlNFQnhTMjg1R0FENWdiN0J6UUs4ZXNWQ25NYUkwMlU3S21EZ0QzU2NoYw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
