@@ -12,7 +12,7 @@
 | **데이터 수집** | 📂 **2** items |
 | **보안 점검** | ✅ Secure (SHA-512) (Field Analysis) |
 | **빌드 상태** | ✅ Hybrid (Py/Java) Compiled |
-| **동기화** | 2026-07-06 13:25:17 (KST) |
+| **동기화** | 2026-07-06 16:22:36 (KST) |
 
 ---
 > _System v10.7: Automated Security Intelligence_
