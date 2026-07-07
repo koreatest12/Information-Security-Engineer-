@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 205 days, 0:22:35
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 205 days, 2:02:07
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.0% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.9% | `████░░░░░░░░░░░` |
 | **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- ['금융보국 44년' 신한은행⋯"다시 초심으로" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBhS25yN29HTDBWdnJJel93Mzc3OXhSMmVxbkxhcVNnYlhNVzRqT0JpdEgyXzI1NVlveWRLMmNUdjJUWWg4eDRMUXlwdklVcTQ?oc=5)
-- [네이버, 독자 물류사업 진출…"우리도 직배송" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBLeDhZQm9wcGFYZDJZN3RYR1pGb2xjalQ0T3RRdEcxRUZ3a0oyYVBRS1RORmQxNU8wTFljQVZwdzhFQ3VKUEs5VTk0VlF6NzNTSEs4eHZYUGgyZ9IBVEFVX3lxTE5sMjNvaDNZdFF2cEwzbjA0Tm8zbDVyOFNScEZuWDNHdGNocXBvNkdrdEhzd21qLThTQ3ZDXzZCSlVsaFJ6MVc1U2w4V1hBYllMajV5WA?oc=5)
+- [[단독] 주재원까지 총동원… 신한금융 ‘슈퍼쏠’ 영업 확대 논란 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9QWm1rYUpobGlZeFd5ak1JblZucnlqMjEycDBSeU5DMGY1TVRyeVlPX21RSmkzeHctSF9nQzVsNWNVTkJvYmVWbVR1bVUzMW8?oc=5)
+- [AI 인재는 어떻게 길러야 하는가 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1DTEUwZDBEbEdQQ29DMkpDYW1nTmlRTFg5V0I4bVh2VlZSRVNlQzdHN0M0Z1J2NzVLTUllam9VdlBLZnB1NHc1WWNGQUZuU3M0d0FTZ1dXek5XZ9IBVEFVX3lxTE5jSnAyY290aEdjV2tYNmxCMW5hbTA4ZTZMSHNpRFRhZXJ4c0lrOVJ6SUdZZkl4TnU4d2NNNDJIakNzZ0tjSm5XQ0RQWFZ2RjFTZjB1bA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
