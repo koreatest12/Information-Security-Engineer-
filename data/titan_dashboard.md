@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 205 days, 6:33:41
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 205 days, 7:46:07
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.2% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 36.4% | `█████░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[단독] 주재원까지 총동원… 신한금융 ‘슈퍼쏠’ 영업 확대 논란 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9QWm1rYUpobGlZeFd5ak1JblZucnlqMjEycDBSeU5DMGY1TVRyeVlPX21RSmkzeHctSF9nQzVsNWNVTkJvYmVWbVR1bVUzMW8?oc=5)
-- ["클릭수·체류시간보다 중요한 것" 뭐길래…확 달라진 네이버 'AI 검색' [2026 한경 AX 서밋] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE45LU9GdnFrSkJabDh2ajBxb2NKUmJOVW5uYi1yN0lkU0kydmE3YkQ4ak1PNEM0YU5HOHlCal9xcVZIQjBjM3FkRU1acVhjdXJhS0Z0bDNtcFZXd9IBVEFVX3lxTFAxUzRKVTYtSXh2MVVlTUNCN0JVUVptX3VXcXN6RUl1ZnlKdjdvWk9hbnNtWmRpMS1KYUozcHpzVEp3cDVabzJkWXJOOGo4cHktaWtzbA?oc=5)
+- [AI 투자우려에도…아마존,"38조원 더"채권 발행 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE53UjgxRjRXQlNpLUtLNFhRQ2t0am9KSVgxX2ZUOGxCUEVQV2lsWGhNcVA2TGxiTHY2Q1dWc05BV2dKd01nSGd6U1FtZUQzc281RDNUZWZCdkdkQdIBVEFVX3lxTE5jMkJXXzA3SnNvbFJjU0laV0JkN055Y3FGRWNMcWJndjYzZ2dnT0NrdWJ0YmlTSjB0NEhhZVk5b3l3b1dYd3lOZmozOHpaSDBleUN6SA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
