@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 205 days, 5:33:36
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 205 days, 6:33:41
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.2% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.2% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[단독] 주재원까지 총동원… 신한금융 ‘슈퍼쏠’ 영업 확대 논란 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9QWm1rYUpobGlZeFd5ak1JblZucnlqMjEycDBSeU5DMGY1TVRyeVlPX21RSmkzeHctSF9nQzVsNWNVTkJvYmVWbVR1bVUzMW8?oc=5)
-- ["샤넬백은 이제 흔하잖아요"…요즘 가방 대신 몰리는 곳 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBaSTVxRHZnWGd3empaR1c0NVI1MWo2M2ZmVlFocnowUEptbGp3aXE3emlaSzFCeDdUQzg2QXU1Y0dBb0FuVjg4WktHcE1vSnlXbV9XalBGNVNXUdIBVEFVX3lxTE45TjYzZkZyWUM4YndCMVJxOFoxRXJCd3pxY3ppa3NIQTJ2UG5EZlI4QnRocW9DbWJJN19seWhjSTZhcTlMVDRhR29HZXVycHB1THBUTQ?oc=5)
+- ["클릭수·체류시간보다 중요한 것" 뭐길래…확 달라진 네이버 'AI 검색' [2026 한경 AX 서밋] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE45LU9GdnFrSkJabDh2ajBxb2NKUmJOVW5uYi1yN0lkU0kydmE3YkQ4ak1PNEM0YU5HOHlCal9xcVZIQjBjM3FkRU1acVhjdXJhS0Z0bDNtcFZXd9IBVEFVX3lxTFAxUzRKVTYtSXh2MVVlTUNCN0JVUVptX3VXcXN6RUl1ZnlKdjdvWk9hbnNtWmRpMS1KYUozcHpzVEp3cDVabzJkWXJOOGo4cHktaWtzbA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
