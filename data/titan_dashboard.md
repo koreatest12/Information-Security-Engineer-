@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 204 days, 18:34:10
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 204 days, 20:01:43
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.1% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.7% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [시장 동전수레서 글로벌 이익 1조까지…'신한금융 44년' 다큐 - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTFBCd2pkbldLWGNZRHF2WFhLYU9HeDR5R1RJaWJDYWpKWGZHRWQzNlJEVWFBanBGYm5BZ3dwdWpjb2ppZ2ZwbjQyUUpLTUk2RHBrMEE?oc=5)
+- [[단독] 주재원까지 총동원… 신한금융 ‘슈퍼쏠’ 영업 확대 논란 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9QWm1rYUpobGlZeFd5ak1JblZucnlqMjEycDBSeU5DMGY1TVRyeVlPX21RSmkzeHctSF9nQzVsNWNVTkJvYmVWbVR1bVUzMW8?oc=5)
 - [네이버, 독자 물류사업 진출…"우리도 직배송" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBLeDhZQm9wcGFYZDJZN3RYR1pGb2xjalQ0T3RRdEcxRUZ3a0oyYVBRS1RORmQxNU8wTFljQVZwdzhFQ3VKUEs5VTk0VlF6NzNTSEs4eHZYUGgyZ9IBVEFVX3lxTE5sMjNvaDNZdFF2cEwzbjA0Tm8zbDVyOFNScEZuWDNHdGNocXBvNkdrdEhzd21qLThTQ3ZDXzZCSlVsaFJ6MVc1U2w4V1hBYllMajV5WA?oc=5)
 
 ---
