@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 206 days, 5:22:02
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 206 days, 6:32:48
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.1% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 19.1% | `██░░░░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 사회연대경제 활성화에 3년간 60억원 지원 - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9mZVV0bmRxWnV3eXdCQ1hpbWE3Z0ZpZ0tOWmdxenJ2dDRMMVl2aWJmUjR1eG1nNy00aXg4TmxDMEo4RXI3OUM4ZlhySzJONTlIT2c?oc=5)
-- ["기업 원하는 것 다 지원"…이게 메가 프로젝트의 성공 조건 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE92Y2RNQ1BBV09OUXBKWWJhMktOZUd1TldUcE9RaG1QOV9GaHFTWXZWSGw0YW0zVmhydUc5eFYyS3Z0RjNzb1U0a1hxS29aeklnb3Jhd3J5d3NXUdIBVEFVX3lxTE1IcTV4NjF3TlZYREFKaW9Pdkttam9TNE9icWlZTTNsSnQ0THBYOTF4MGJMVFpjV2hhSHpnS19mXzY0c3doSEVNcmhmMElvUkhzWC12eA?oc=5)
+- [신한금융, 3년간 60억 ‘사회연대경제 활성화’에 - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTE15ZURqRXkzd2FzZklBME41NHd0YlpyVmVYT09sdEk1SXU2MEpNYmU3SjFwWUdrX3pUUlB1SHZkWExPRW1DeVdrM2NUdEYwWHNIeFFpTHF0MW9iYXZadWJLSlZvWVotNTVxNlNHdnhBdXdWeVnSAXdBVV95cUxPcUpjNE9aSF94cnI0MXhReHRKLXN6TEZ6S3RZNDVlcmZzWFRrUGxfb2dac3l6ZDRYV3hsaFh5aTBfOUNNSGtKdjVhTlpxeGJSYlBMZUVNUW4ycUo3UWs1NC1PanNUMnFtT08xSXFOSXMwbWtMR0JUbw?oc=5)
+- [IMF, 한국경제 4월 보다 0.7%포인트 올려 2.6%로 상향 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBiVWgtN3pmLVRjU2dwb1FPSkFmU04wUlZBRUZJOTBOcVBUWXFSeThiblpqUjR0LXNkTWUxYm0xRXIzdXhCbnA0dzdIR0tseVU?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
