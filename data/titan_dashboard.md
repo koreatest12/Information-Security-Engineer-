@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 206 days, 2:57:10
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 206 days, 3:51:25
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.9% | `█████░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 사회연대경제 활성화에 3년간 60억원 지원 - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9mZVV0bmRxWnV3eXdCQ1hpbWE3Z0ZpZ0tOWmdxenJ2dDRMMVl2aWJmUjR1eG1nNy00aXg4TmxDMEo4RXI3OUM4ZlhySzJONTlIT2c?oc=5)
-- [기업 규제가 키운 로펌…컨설팅·로비 영역까지 장악했다 - 한국경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1jZkJPVV91X1JFbUI3d3hTa1J4OGFvNnNzSlZ5cjZ3dkl6WE1nckM4c2V0SWhHVFdFTnpIMm9nLW4xY3NmdTA2V25Lb3RfXzJ4aDctVNIBVEFVX3lxTE1jZkJPVV91X1JFbUI3d3hTa1J4OGFvNnNzSlZ5cjZ3dkl6WE1nckM4c2V0SWhHVFdFTnpIMm9nLW4xY3NmdTA2V25Lb3RfXzJ4aDctVA?oc=5)
+- ["늘어나는 소득에 맞게…부동산 대출총량 규제 완화 고민 중" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE0tNmxNaTFnOTVLTVBXVThiTWFtRWVQOGNVcWh4c1B0UlphaHNJZmY3V3RKcnRtYWxvSmlXR2owbkdzazE4b3NmdVZhSmF6OGh2TGYxdW4tTVg2UdIBVEFVX3lxTFBCX1J1NE1WdXZYbjlWUHpSNWZOSkduSWVwQnZmYWJTM2VtdW9jWG4tVzZlWVpBYlMycUpmcy1Vc0Z4X1NwUVh0MFhIU2xsa0JRZER1dg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
