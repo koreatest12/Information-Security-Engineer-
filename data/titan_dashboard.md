@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 205 days, 20:25:21
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 205 days, 21:51:24
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,18 +8,17 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [FIN_SHINHAN] [더밸류 브리핑] 오늘의 신한금융그룹 소식...신한금융· 신한은행 - 더밸류뉴스
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.5% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 18.0% | `██░░░░░░░░░░░░░` |
 | **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- ["자녀 집값 빌려줄까?"…신한금융이 답한 '자산가들의 77가지 고민' - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTE1wQjQ2cTRPYUFNWXF1Q1ExSE9sc28xV2FINmRhNGNURnlSZS1WSDVIQnVteWI2cFBwVlY3V3VpSXUwQlEzQUJBZ2pHeFhuTGFHVnBFZldRcUVPRXpzUGI5NUYyWXFJR25DLWs00gFwQVVfeXFMTjBaMW94c0t4dkRFYWR6cFdNT2dZaVV1VG1lay01bllwd3ZMM19FZllXQWU1bUNhOEVKUWhxNlZnMm45NkNXRFR6LVVFb01VME1Tc3p4MTNYZnh0T2hJT1hyOEVaRS1zcHpRdzB2TkFkRQ?oc=5)
+- [신한금융, VVIP 자산관리서 '2026혜안' 발간…내달 포럼 첫 개최 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE41a1V2LUJGWU1OeTkzWkZ4STJWVEtxMUdNUUJUMEVoYURTZ0JQQVExRU01dGJIMjlUdFVNWVBFb1VDVDZvdU9qRnd3RGVqWGNpbXJDVHkxZHhGOWlQWlplSg?oc=5)
 - [코스피, 전날 이어 급락 출발…3%대 하락 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFAtTjNSUnBDWlBTaE5nMFQ0RUhTV0JUVkJlZmtCWjJ0ZmJWSU8xbjBlMVBaQW1qU3ZLNklyTlcwN1N2RlRlM2JIb0lUOUVZSW5MNU5jTFkwU2xGUdIBVEFVX3lxTFBsY3VmeEFVdWNrV2VlYno3eTBfNEw2R2s3QndDZ2NacnJnenpZVFZ5Rmp6MXI3Qkh0YXZJemtuU1Jxb3JNazBkUDRsTnZzaGpPLXd6dg?oc=5)
 
 ---
