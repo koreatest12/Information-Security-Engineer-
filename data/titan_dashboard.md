@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 206 days, 0:03:38
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 206 days, 1:06:51
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.9% | `█████░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 24.9% | `███░░░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, TV 뱅킹 '신한홈뱅크' 시니어 맞춤형 채널로 개편 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE12SVYyU0R5a0J3WlBTaDFCN0dmNHpDeXAtX0ExdnQzR0x2aENrY2U0NTJZc2VjZ0lfMEpfZ1BrT0pQR2FfTnFmRGpYRDZYQQ?oc=5)
-- [코스피, 전날 이어 급락 출발…3%대 하락 - 한국경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBsY3VmeEFVdWNrV2VlYno3eTBfNEw2R2s3QndDZ2NacnJnenpZVFZ5Rmp6MXI3Qkh0YXZJemtuU1Jxb3JNazBkUDRsTnZzaGpPLXd6dtIBVEFVX3lxTFBsY3VmeEFVdWNrV2VlYno3eTBfNEw2R2s3QndDZ2NacnJnenpZVFZ5Rmp6MXI3Qkh0YXZJemtuU1Jxb3JNazBkUDRsTnZzaGpPLXd6dg?oc=5)
+- [신한금융, 사회연대경제 활성화에 3년간 60억원 지원 - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9mZVV0bmRxWnV3eXdCQ1hpbWE3Z0ZpZ0tOWmdxenJ2dDRMMVl2aWJmUjR1eG1nNy00aXg4TmxDMEo4RXI3OUM4ZlhySzJONTlIT2c?oc=5)
+- [기업 규제가 키운 로펌…컨설팅·로비 영역까지 장악했다 - 한국경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1jZkJPVV91X1JFbUI3d3hTa1J4OGFvNnNzSlZ5cjZ3dkl6WE1nckM4c2V0SWhHVFdFTnpIMm9nLW4xY3NmdTA2V25Lb3RfXzJ4aDctVNIBVEFVX3lxTE1jZkJPVV91X1JFbUI3d3hTa1J4OGFvNnNzSlZ5cjZ3dkl6WE1nckM4c2V0SWhHVFdFTnpIMm9nLW4xY3NmdTA2V25Lb3RfXzJ4aDctVA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
