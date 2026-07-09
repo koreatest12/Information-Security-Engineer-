@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 207 days, 15:42:34
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 207 days, 16:09:01
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,8 +15,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.0% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.6% | `████░░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [롯데손보 인수에 걸린 신한금융의 채권 회수 압박 - DFT 대한금융신문](https://news.google.com/rss/articles/CBMibEFVX3lxTFAyUEdHdTh6YWNmZGZMWVNPaTdfbUplcmRBYXNPMlViOW0tVjJYRXdWNHdLSFlWVm42WHlCWW5hNVFvLVAwbTFTX051VHR4MTdpaWRaMlVORDlJWlJrSEV1bmFPcUFhdHRQanBSa9IBcEFVX3lxTE9pblY0M1VLZWFQS1VCY3l2ZHM3R3FMRkVqRXlKZ09sNUJQVmtqejZIQTFnSkdiT3BqanJJYS05SmRLQmtER1J5ODVUa1RBQTU3NHhGNjIwVW1UMkRVLWZzVm5BaEVYbmMxMWhxaHkxUWU?oc=5)
