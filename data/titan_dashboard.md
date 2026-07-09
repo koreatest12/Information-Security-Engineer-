@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 207 days, 0:25:53
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 207 days, 2:02:11
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 20.2% | `███░░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 20.7% | `███░░░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융 사회연대경제 활성화에 3년간 60억 지원하기로, 행안부와 협력 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE1sRWNTS2VSYXphbE9fMFRGcWUtMmdrNHZFN3FETW5LVDlaeXRxODliX0FYVmhPRDN3b2szV205cmVVZWFwdFdqc2dUaGNvYjZ5THMzb2VhWlIzbUc2N09sRmtGbHlJUy1IWDRqd01hTVlsMVk?oc=5)
-- [TV광고 줄고 드라마 편성 축소…미디어株 이중고 덮쳤다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9nbkJNdjkxUDdMYjhOdllaNTNJajZaOEFsQzlheVhCaVZEWWJYS09VX3FBdEwtV0lqM1h0ZFg1SmNlWGc4TVNoZHVvcmxDaWJ2WU42Q2I1c3Y2UdIBVEFVX3lxTE1fZEhTTlNYbDByaWdoMG1GRUkwckhKdEoxUFNlSHZoNG9XZWhkQkRTWUJuR3Y1N09SeS1STmhabmlrZnphSXlxOVdBaHhaVDBsWkV3MA?oc=5)
+- [신한銀·증권 협업 통했다…WM 자산 올해 65조 불어나 - 서울경제신문](https://news.google.com/rss/articles/CBMiUkFVX3lxTE8wcDFMeGgxZVhWVjFPNGgwRlBJTlRZbU5xRVpPcWJwNFYwX3hzSDR6U0NGUGc1cUdZb241NmZzbm5mVjVJT04tVTVaZWw1WGo5WmfSAVNBVV95cUxOR0N2MFdCeFFDLWNKMTh4WXVMWHVJZFJnQ0ZEdXkwWmpQeUVyQTVsX1FtOVZfV0lhTkZYSDNpNktlb3ZSVk1wLVNySnVWb0tmTm5CUQ?oc=5)
+- ["한국에서 왔다고요?" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBDX3dBTjUzY3RHU0ZvRThhUWdfOU51QmhRcHAtY1B6V0FJcWI1N0tfRnFfeGhzeHB2cWtRQW5EWVRTYXRxMDh1VGtQeW91SUM0SGZFOXlycUItd9IBVEFVX3lxTFBmZkVCY1dZYWEtdDRSS05CYTZkb1o5dU9aRzhJTUJLMXhNaHlJZkQ5aFJ0RmJMNzhyN3M1Vm1ObWNEdllNSDg3NkJEX2xIdFNOMUp1Wg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
