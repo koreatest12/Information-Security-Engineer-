@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 207 days, 12:28:30
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 207 days, 13:18:40
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.7% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.5% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 롯데손보 인수 시 CET1 13% '흔들'…新주주환원식 시험대 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE5zR2YxaWtJVU5Bb1ZQeVp4YW9uZWZ5YmR4OVZIYTI5bHZfRzVFdHJWZjZCemExQ29NUFZZTDFrZUE1azFseTBfNXJoZWU4UDFEb0FHdWVRZEk5T3lrQ05HeDJQZ2ZWbGxSNTJqb19YUlE?oc=5)
+- [롯데손보 인수에 걸린 신한금융의 채권 회수 압박 - DFT 대한금융신문](https://news.google.com/rss/articles/CBMibEFVX3lxTFAyUEdHdTh6YWNmZGZMWVNPaTdfbUplcmRBYXNPMlViOW0tVjJYRXdWNHdLSFlWVm42WHlCWW5hNVFvLVAwbTFTX051VHR4MTdpaWRaMlVORDlJWlJrSEV1bmFPcUFhdHRQanBSa9IBcEFVX3lxTE9pblY0M1VLZWFQS1VCY3l2ZHM3R3FMRkVqRXlKZ09sNUJQVmtqejZIQTFnSkdiT3BqanJJYS05SmRLQmtER1J5ODVUa1RBQTU3NHhGNjIwVW1UMkRVLWZzVm5BaEVYbmMxMWhxaHkxUWU?oc=5)
 - ["한국에서 왔다고요?" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBDX3dBTjUzY3RHU0ZvRThhUWdfOU51QmhRcHAtY1B6V0FJcWI1N0tfRnFfeGhzeHB2cWtRQW5EWVRTYXRxMDh1VGtQeW91SUM0SGZFOXlycUItd9IBVEFVX3lxTFBmZkVCY1dZYWEtdDRSS05CYTZkb1o5dU9aRzhJTUJLMXhNaHlJZkQ5aFJ0RmJMNzhyN3M1Vm1ObWNEdllNSDg3NkJEX2xIdFNOMUp1Wg?oc=5)
 
 ---
