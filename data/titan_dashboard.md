@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 207 days, 18:34:20
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 207 days, 20:01:32
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,11 +15,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.5% | `███░░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 24.4% | `███░░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [롯데손보 인수에 걸린 신한금융의 채권 회수 압박 - DFT 대한금융신문](https://news.google.com/rss/articles/CBMibEFVX3lxTFAyUEdHdTh6YWNmZGZMWVNPaTdfbUplcmRBYXNPMlViOW0tVjJYRXdWNHdLSFlWVm42WHlCWW5hNVFvLVAwbTFTX051VHR4MTdpaWRaMlVORDlJWlJrSEV1bmFPcUFhdHRQanBSa9IBcEFVX3lxTE9pblY0M1VLZWFQS1VCY3l2ZHM3R3FMRkVqRXlKZ09sNUJQVmtqejZIQTFnSkdiT3BqanJJYS05SmRLQmtER1J5ODVUa1RBQTU3NHhGNjIwVW1UMkRVLWZzVm5BaEVYbmMxMWhxaHkxUWU?oc=5)
+- [신한금융, 롯데손보 인수 시 CET1 13% '흔들'…新주주환원식 시험대 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE5zR2YxaWtJVU5Bb1ZQeVp4YW9uZWZ5YmR4OVZIYTI5bHZfRzVFdHJWZjZCemExQ29NUFZZTDFrZUE1azFseTBfNXJoZWU4UDFEb0FHdWVRZEk5T3lrQ05HeDJQZ2ZWbGxSNTJqb19YUlE?oc=5)
 - [중동쇼크 삼킨 반도체…한국 경제 바라보는 시각 바뀌었다(종합) - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE9WVjdITVlfN0pwWVE4ek0wNXlwS3VZb0pTWGpkWFNMZkNLX2FiWXNKVGE0YXdZOGdWdGJ1NXNuMDJKOGt2aUE?oc=5)
 
 ---
