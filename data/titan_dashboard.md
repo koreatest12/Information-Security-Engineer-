@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 207 days, 21:34:06
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 207 days, 23:03:02
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,19 +8,18 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [KR_ECON] 중동쇼크 삼킨 반도체…한국 경제 바라보는 시각 바뀌었다(종합) - v.daum.net
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.8% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.9% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 롯데손보 인수 시 CET1 13% '흔들'…新주주환원식 시험대 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE5zR2YxaWtJVU5Bb1ZQeVp4YW9uZWZ5YmR4OVZIYTI5bHZfRzVFdHJWZjZCemExQ29NUFZZTDFrZUE1azFseTBfNXJoZWU4UDFEb0FHdWVRZEk5T3lrQ05HeDJQZ2ZWbGxSNTJqb19YUlE?oc=5)
-- [중동쇼크 삼킨 반도체…한국 경제 바라보는 시각 바뀌었다(종합) - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE9WVjdITVlfN0pwWVE4ek0wNXlwS3VZb0pTWGpkWFNMZkNLX2FiWXNKVGE0YXdZOGdWdGJ1NXNuMDJKOGt2aUE?oc=5)
+- [롯데손보 인수에 걸린 신한금융의 채권 회수 압박 - DFT 대한금융신문](https://news.google.com/rss/articles/CBMibEFVX3lxTFAyUEdHdTh6YWNmZGZMWVNPaTdfbUplcmRBYXNPMlViOW0tVjJYRXdWNHdLSFlWVm42WHlCWW5hNVFvLVAwbTFTX051VHR4MTdpaWRaMlVORDlJWlJrSEV1bmFPcUFhdHRQanBSa9IBcEFVX3lxTE9pblY0M1VLZWFQS1VCY3l2ZHM3R3FMRkVqRXlKZ09sNUJQVmtqejZIQTFnSkdiT3BqanJJYS05SmRLQmtER1J5ODVUa1RBQTU3NHhGNjIwVW1UMkRVLWZzVm5BaEVYbmMxMWhxaHkxUWU?oc=5)
+- [증시 출렁일때…반도체 장비·소비재株 늘린 외국인 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1tZVRyWTJWWXN5STVhMzBBU0VfZDF0aFJxLUNOLWNGSHR2WmNlWXp4M19QMmxVM2plUGVzWmdtMU16QTBKQ1JRUkExbVNyalJuUmlYNHk2NzhBQdIBVEFVX3lxTE4wdnU1NEhSR0ppcTlyRElraTEzdEhPTVFYd3FtdC1RWlNkcklVeDVOOV9OM3VyamZkaVZTUXdCdHl5dGtGYXdNUHY2RGRHVGVhUzFTLQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
