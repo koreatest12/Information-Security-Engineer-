@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 208 days, 15:35:59
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 208 days, 16:04:22
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.9% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.2% | `████░░░░░░░░░░░` |
 | **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 롯데손보 인수 시 CET1 13% '흔들'…新주주환원식 시험대 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE5zR2YxaWtJVU5Bb1ZQeVp4YW9uZWZ5YmR4OVZIYTI5bHZfRzVFdHJWZjZCemExQ29NUFZZTDFrZUE1azFseTBfNXJoZWU4UDFEb0FHdWVRZEk5T3lrQ05HeDJQZ2ZWbGxSNTJqb19YUlE?oc=5)
-- [훨훨 나는 한국...해외서도 '깜짝' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9YWkhMNndMcGNFMWM5WEJHcGRZNGMzTlFaTWlHeU90MVZNU25lTzdDSUZEbG52aXNuczQ0VHlPLVhsVnFTeUJWTkktZUlSaE0?oc=5)
+- [최태원 "메모리 사이클, 구조 변화"…14일 CPI·워시·어닝 몰렸다 [김현석의 월스트리트나우] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5MVThtTlBqWWROYWhMcnFzZzZoYjZ1TmhmM0J5MXVHWHFIRXl2Y0diOXlLaGplLW5QNzgtUVc3NmczdnlpOEFISE5VX0ktczhtQlFnZGRBbEswQdIBVEFVX3lxTE5GNmljUVZIc2V6Sm1ubzBkZkE1U0pGQ0ItUEp1N1MzOUUzXzRqNGdlaThTWGR3OE1QOFJjLU5rb2VTSkhVazQyMmtWN29TZ3dabENnTQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
