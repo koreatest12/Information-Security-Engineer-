@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 209 days, 15:34:07
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 209 days, 16:03:52
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.8% | `████░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.7% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [롯데손보 인수에 걸린 신한금융의 채권 회수 압박 - DFT 대한금융신문](https://news.google.com/rss/articles/CBMibEFVX3lxTFAyUEdHdTh6YWNmZGZMWVNPaTdfbUplcmRBYXNPMlViOW0tVjJYRXdWNHdLSFlWVm42WHlCWW5hNVFvLVAwbTFTX051VHR4MTdpaWRaMlVORDlJWlJrSEV1bmFPcUFhdHRQanBSa9IBcEFVX3lxTE9pblY0M1VLZWFQS1VCY3l2ZHM3R3FMRkVqRXlKZ09sNUJQVmtqejZIQTFnSkdiT3BqanJJYS05SmRLQmtER1J5ODVUa1RBQTU3NHhGNjIwVW1UMkRVLWZzVm5BaEVYbmMxMWhxaHkxUWU?oc=5)
-- [이란 혁명수비대 "호르무즈 해협, 추가 공지 시까지 폐쇄" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1meEt6Y0pQSDJiUmNBb0hzLWhUb0I5S29BVFBiVkVjdkFxTWJXQ0lFNUM0Y0NlSnJ4bWZRLTNVd28wLTE3SlhpSHI0ZnU0SVJYUjg3bmpZWnVRZ9IBVEFVX3lxTE9ialVvOGRaNDhuMFhtTDJyRXJHbGU4di1FUnBtalFZRnZnTmJNenJJMW5rYXhDRmszN0JRLXdVTkttXzRxaDN6QjBDT2tFWUx3bEJ4ZA?oc=5)
+- [이란군 "호르무즈 해협, 추가 공지까지 전면 봉쇄" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1FWjhmY3RvWmU4ZTZWQlZQb3BuOUZEbW85SGUzc29kaFVEbTdZZUlPWGw5NVdXMEpuZlRyWUlGVERUd3VQMjlQRm9ja0pUanhIYjJXWGQ5bndJUdIBVEFVX3lxTE9BaG9HbUVDNl8zR1dzNnEtMzVidlJGZkoxbXEyLWtyRE54VEN5cVZDWDRCaEZRZHVEZ0JFY0NQb2lULTJxbm1yM2N2SWx3WmplV0t0TQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
