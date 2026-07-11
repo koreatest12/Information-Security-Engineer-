@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 208 days, 17:16:28
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 208 days, 17:55:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.3% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.5% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 롯데손보 인수 시 CET1 13% '흔들'…新주주환원식 시험대 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE5zR2YxaWtJVU5Bb1ZQeVp4YW9uZWZ5YmR4OVZIYTI5bHZfRzVFdHJWZjZCemExQ29NUFZZTDFrZUE1azFseTBfNXJoZWU4UDFEb0FHdWVRZEk5T3lrQ05HeDJQZ2ZWbGxSNTJqb19YUlE?oc=5)
-- [반학기 만에 공대 떠난 03년생…주식에 인생을 걸었다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1NUnVUVHJ6UC13WERhZHg2YVd4UFlEbUYxaU5oMEw4T0lMbW1jR2ZRTW1KODJpdGg0a0tBVldZQ2JyU25JTGtYNXFiZEJpTEtRclNFWmYxVndrd9IBVEFVX3lxTE45QXZoTUVMc3J6elpCbnNrR0lMQVoteEV0eUVRQUYxa0w3R0QtR0lZLVdnbzBnN294T19YNGIzcGpjYkNWUEZhWEk1ZHRRUG4xSHB3SA?oc=5)
+- [국고처 4부 - 한국경제TV](https://news.google.com/rss/articles/CBMiowFBVV95cUxQRk8yRWN3cUw3M0hVS2VWTk96Q3pYd3ZKSnR0ZzVNZEx6ZUhRdnBHaGczWnA1WFRBdTAyNGdFLW9qU29hT0xXV0dLTXl0Qkl1bTR0NlZsb2swSjRjaHZwclJYUDY1MVhBY01ENmxqc3lRWExya3JseWgyLVM4V190QjZYWTgzb2dDdm1aWkUzZ1lHRFF4OGFVbUx3eVFTcUZIZmFN?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
