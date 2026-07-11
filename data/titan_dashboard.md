@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 208 days, 20:24:25
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 208 days, 21:45:13
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 21.9% | `███░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.8% | `████░░░░░░░░░░░` |
 | **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 롯데손보 인수 시 CET1 13% '흔들'…新주주환원식 시험대 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE5zR2YxaWtJVU5Bb1ZQeVp4YW9uZWZ5YmR4OVZIYTI5bHZfRzVFdHJWZjZCemExQ29NUFZZTDFrZUE1azFseTBfNXJoZWU4UDFEb0FHdWVRZEk5T3lrQ05HeDJQZ2ZWbGxSNTJqb19YUlE?oc=5)
-- [최고 전문가도 '당혹'…고3 뒤흔든 '오답률 74%' 킬러문항 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE91Ukh2SV9sbnRnYjZlc1lsTENfSUZkcUo0bjFhNWRrTkxaWFNzMU5sYjNVaW55Umdpd0l2NXJTSkZOcGFMU3MxZGJESWNvRVJ3UVhnUlA3YTJzd9IBVEFVX3lxTE9zWkxhRVNGWnV3Vy1hLXN5OGNkU1BubE9zVzdiZEs3TFhHc1dxWmcxT1FacTN2UktFM0ZZV0p4UTJZWVhhM19Gck5VVG1JSlNwTmFCOA?oc=5)
+- [롯데손보 인수에 걸린 신한금융의 채권 회수 압박 - DFT 대한금융신문](https://news.google.com/rss/articles/CBMibEFVX3lxTFAyUEdHdTh6YWNmZGZMWVNPaTdfbUplcmRBYXNPMlViOW0tVjJYRXdWNHdLSFlWVm42WHlCWW5hNVFvLVAwbTFTX051VHR4MTdpaWRaMlVORDlJWlJrSEV1bmFPcUFhdHRQanBSa9IBcEFVX3lxTE9pblY0M1VLZWFQS1VCY3l2ZHM3R3FMRkVqRXlKZ09sNUJQVmtqejZIQTFnSkdiT3BqanJJYS05SmRLQmtER1J5ODVUa1RBQTU3NHhGNjIwVW1UMkRVLWZzVm5BaEVYbmMxMWhxaHkxUWU?oc=5)
+- [훨훨 나는 한국...해외서도 '깜짝' - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTFAxZ2pXckhpdnNMTTY3NF9RYURjUXo3TDBrS2NtTWdyV2lILTl4TzNlSUZDY1hJdklZbnBNVFVGTEIwS2ZZQkE?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
