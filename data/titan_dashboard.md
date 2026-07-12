@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 210 days, 7:03:47
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 210 days, 7:37:35
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.3% | `████░░░░░░░░░░░` |
-| **RAM** | `39.9/512 GB` | 7.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.7% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융 이사회 의장, 영국서 투자자들 소통 - 조선비즈 - Chosunbiz](https://news.google.com/rss/articles/CBMigAFBVV95cUxORG0yS2w3VU5LTkx6dHJxRW1fd3BOWGlRcTh1dFgwUUVHWWoxcUNlM0RwREhDYTBDQTlNSllUSWFRY1c5dnpvNnZIZHdGblFzOW9hSmtfaGxGUFhicmdVQ1JMWnZNdHJGMFE5S2hadUliZTFzemhOTnNkdlNab1huQtIBlAFBVV95cUxQSklwT21Ld1hNaDVvUndiR0ZkVjd1Vlk5aVRVZmhSVlFxWFZjdjhrLVFpUVR2SU1TTU1sd1ZfUXM3WWVSQTJJWDlTb010ZkRmdlBfaU9DcEgyNzRWejRHYktqbTBCZHlYV2tmUWloaDd3YmNlZ1NCMGFSQnVtVUVoQWo4TldyVFNYVXlQNm9ibW1MWlR1?oc=5)
-- ["한국오면 꼭 해본다" 외국인들 난리…4배 폭증한 '이것' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5nSjY1bTNPYUo2M0ViSGd3ejRKcFlGdmRyaEhqSmlaVTFvSGdRRnFmZTBFRzRXR18yNDlTTWZtNFRJMEdsUC1lZVZubTgzcDg?oc=5)
+- [[차현진의 박람궁리] 이솝 우화와 한국 경제 - 서울신문](https://news.google.com/rss/articles/CBMijwFBVV95cUxQcXdvVldSbDA2eGRleXcxSFM0bUE5Zkl0SXhUSGV6RjZGZ1BIdXVRdVVtQzl3UXBSU3FqczVGUF9POTl4dDNBTVRKVzRhdXIySmd5d1VWTGFmTDlaR3h2aUZLYVoydjZ6ZWF0NzhQT3VVUm52ZkJyYXdwNEdxZHpxSHFQajZHZl9FOW9xZXNocw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
