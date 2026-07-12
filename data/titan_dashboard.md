@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 210 days, 1:50:21
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 210 days, 2:47:07
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.8% | `█████░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 16.7% | `██░░░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한지주 해외IR, 곽수근 이사회 의장 직접 나서 - 스트레이트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTFB0TlZyQlVham9LZjF6NUhfSGFnRkctUkhkZ3VyUHVjaTJyWU5nMWpxRjZJWVFGSkd3RElxRlpsdnhWcVN4bFBKd0ZYWmtiRkM2OFEwOEV5Y1pDR1lLaG00VUV5dmEzWW13eHRhWnZxUVVPYTDSAXdBVV95cUxNYVEycU9Td201UmpWTDRQakxyc2pOUWVHajBkMTBabFg1OHo3czEtMGMzelNWMG1XVjdJV0dQMkYwc1ZqdlJpYUs1c250eW1ZeFhlWnNxU2ZJOTZJNW8zQmN5ZmdOXzdOc29HYkdnZDhkYnhVQjZLaw?oc=5)
-- [김용범 "한국 경제, 한 번도 가보지 않은 성장 경로 이미 들어섰을 수도" - JTBC](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5NX3F3ZUFSUUswVURvZXBYa013bGw2S0pmTGF6UmhuMHJhM0tZemZFYjlDZUt4R25DODJaT2d5RWdONEtTaXRHa3R1RkJEOTFWUkRYUg?oc=5)
+- ["한국오면 꼭 해본다" 외국인들 난리…4배 폭증한 '이것' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5nSjY1bTNPYUo2M0ViSGd3ejRKcFlGdmRyaEhqSmlaVTFvSGdRRnFmZTBFRzRXR18yNDlTTWZtNFRJMEdsUC1lZVZubTgzcDg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
