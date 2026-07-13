@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 210 days, 19:17:27
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 210 days, 20:37:11
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.1% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.5% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한장학재단, 2026년 신한장학캠프 개최…총 415억원 지원 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE1pVXpLZjlmTElUclYzMEZqcHNBWG14VHBWeExtSERoWl96QW5oeWpmVEZveFNkSW1FV3ljc0hTcFoyVU90cW92MWNWeDBfZw?oc=5)
-- [출발증시 2부 - 한국경제TV](https://news.google.com/rss/articles/CBMiowFBVV95cUxNc216TjNQZ05HV2pqRVVLOTRGczFCY2EwSnBZNFJKa1JPcHdLeUN6MUM5NjVGUkhOUXVVcTEtS1VpN0IwSnQ4aUFTR1ZodnJ6V0dHMDNiZ29oY0V1eU9MWkFYOW5rZERLR0RjMmZaRnlVNk80SGRJOGo5bnQwUWlqLVpWS3RoSkoxMDAySXRfVllBRl9oVlc2cGlvYlRvcVZtVmNn?oc=5)
+- [마켓인사이트 - 한국경제TV](https://news.google.com/rss/articles/CBMiowFBVV95cUxQZFlwSW9FbGlMRmVfVUZCZktRX0xxcGNHQmp1MTI0WUxkRFdJQU5yNDFRNldOdkNQUFFYSTU3YU1qaFlXRWtJdmwydHNuOVh5c2NoZm40cUN5UlpnOFc1b1R1RlFyWUhSRlRBdlNXQWJ3eDVjbmlyUEJLaks3OUZFQ1FaUW1BLWJBUURjSjBycG5WNC1DS2FTa1drQlo4VW9hZzVV?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
