@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 211 days, 14:04:34
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 211 days, 14:34:30
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.6% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한지주, 올해 총주주환원율 51.7% 전망...목표가 ’상향’ By 알파경제 alphabiz - Investing.com 한국어](https://news.google.com/rss/articles/CBMicEFVX3lxTFBaSGpzbnBQd1pkRVItcDZlOTRJSWdxc2pEeklUT3ZObzk4Y2NRZVUyV3hQRnphT0laT1huaFdoM2JLa1BaTzdaX1k3TXBHbGtfWEVGaU56V1JaOEZRZzNSVW01TE5iVmc5ZFhBZWJfTkg?oc=5)
-- ['15조->7조' 반토막....코스닥 개미 다 어디갔나 했더니 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1CelNaVVJ6bVBDT0RxbUlpVzd2WUx4eENnX0hlZk5BbjBIWGROdzJWbUpkUWMtX1JMd0t5c1ZWdkRRY08ySTgta0dENk9vczg?oc=5)
+- [굿모닝 한경 글로벌마켓 - 한국경제TV](https://news.google.com/rss/articles/CBMiowFBVV95cUxOWG8xMFFwcFJDdGNKcXNBUngzU1FYblUzaUo4NTdYRTJZakVlV1d2bURMdklDY3BDNHZKR196TVJiRFhZOG9YemlLbVVYSkNDVzg4aE1FaWl6cGwwaFN4X1J4djVfU1VYWDZYWWNDaGQ3ZzV0TEQ0NmpUYVpxN1hLdlZkMHloSXJtT1JKZXRlMjBlM2x2QzJrdmttVU1XV0d1S1ZR?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
