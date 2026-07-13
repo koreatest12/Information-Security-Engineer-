@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 211 days, 0:27:47
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 211 days, 2:00:45
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.7% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.3% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [“기존 앱 그대로면 왜 출시했나”… 통합 앱 ‘신한 슈퍼SOL’ 딜레마 - 조선비즈 - Chosunbiz](https://news.google.com/rss/articles/CBMigAFBVV95cUxNMU1lZm5qMjQ1VXhuMS04SmhVSW5aSFF3Q2ZoTDVLMk1SWnNIWmlnM1htS0JpM1lzSUFpcElqZDdab0dvbi1raFBncW9fMVA1ajhMN1FjV1lLWUdWRU9DdWpjaDU5UDNuXzZjY19Pcm52RzVMNjlibmxDZXFNcG51TdIBlAFBVV95cUxQNHlqaFBNanF3MlR3UFdFTDl1a09aWXM4LXBRR1NDNTdybmZudFlLaGhuNFp3Y2lRZkJsS2NMNld3Smx6ZmtJWURHX3N0MlZ5RElmVHJTTEx0QklPdXpydzFPU2dmZ2w1QXZmY1FwZlZva3NKcXRVOE1WWlFxNUJ5NTZYVnpxYUlIVmtUZVAwd2FkSk92?oc=5)
-- [종목쇼 - 한국경제TV](https://news.google.com/rss/articles/CBMiowFBVV95cUxNTE5xd3VLeDRUQmxnaHpFelY5SURhNVNfMVMxZHMzNUNETTQzb0xDUHpkTEptOVllczhaa0tzel9nTzY3UFpEdndnMUpIdDRKd3RjdUZYdVk0OXpLUGVEWnd5WjdNVFJRcmY5LUxtczlmeXZlOFJlMlhaMi14YThOOHBJQWdhYV82blEwMzhoUTlkOXdOeU04ZUlzckt4bmhqZzhJ?oc=5)
+- [신한금융, 채무조정 8136억으로 5대 지주 1위…KPI 반영이 격차 만들었다 - 녹색경제신문](https://news.google.com/rss/articles/CBMiaEFVX3lxTE5DeW1KSGk0U2Q5UkVmMG0tMGxjVVNYTWtSaFdBNUF4SkpLVGFYSl9sTnFzY05sN1VsR1ptUkNfT1Y0Y0N6WF9vandfT2k2aktnUkpPUDdtc2E3NlRCOGsxUHREejVKalFi?oc=5)
+- ["한국오면 꼭 해본다" 외국인들 난리…4배 폭증한 '이것' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5nSjY1bTNPYUo2M0ViSGd3ejRKcFlGdmRyaEhqSmlaVTFvSGdRRnFmZTBFRzRXR18yNDlTTWZtNFRJMEdsUC1lZVZubTgzcDg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
