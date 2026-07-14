@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 212 days, 5:48:05
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 212 days, 6:36:04
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 15.9% | `██░░░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.5% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[단독]신한금융, 롯데손보 우선협상자 유력.. 몸값 1조 안팎 협상 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFBheHQ0YkQ2bUx2Z2VyZTVjY0ptT3ZHakZZXzZzam13RHJaenUyTkg2M292LTNET2dUVDE1LVlxN0VTcHZqOHVYWllZWk1kbGEwbXB4b091LVplZjZIeUtNeW9BM2hIdEV3WXRN0gFwQVVfeXFMTWVfMUJBNzlnYU1QV2N1c3pVZmtyeGRHVUsxQ1pUWTkxREJGeUQ3WEc1LXIwRUlwb0hZT1JoeVNQTlBqd3MtdFUxMU9aa0tyNnczSWdFeTVHTzI1UGRwTFdEX0oyTEg5bGhGVXgySlJkeg?oc=5)
-- [더 워룸 - 한국경제TV](https://news.google.com/rss/articles/CBMiowFBVV95cUxPV2JITGFtWE5pZHdnYVNGNi1iM3MwRmVnUmJTRW1jTEhrVW4yeTN3eEFEdlNXVTRWS2NGcHc0OTRITDJES2FxWEo1X1M5WUFyNENBLVZmeHNaRmhuZnJ0MjZMRjBlRFd0aDJFZDRqdUZocEN4cmh3V1o3WTFEOEJHVU1jam5DQVFRbzNFb3N3QzUwSFE0eW8ybkdiMjY4Z2pxcE9n?oc=5)
+- [한경 글로벌마켓 - 한국경제TV](https://news.google.com/rss/articles/CBMiowFBVV95cUxNdTVoNHBsZ0Nha2lDVTY0RXduNFczQUVKYTlISFgxU1dxaXBnQkdCVlhlRUxNczZYX1BxTUctRGpnYThvWGdXbVl4bHFodFZqbGR1cmI3eWpnNDI5Ylc5SWozeTNHazVlQjRadzBkRmtwdzIyVVYwOFU4S25rNDN3ZmR4UGFsY2dHWGVPTGc3eDFxYkI2OXREblJnczViRm5ObEo4?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
