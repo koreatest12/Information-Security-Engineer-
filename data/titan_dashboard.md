@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 211 days, 17:51:21
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 211 days, 19:16:25
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.6% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 25.3% | `███░░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [유엠브이기술, 신한금융·JT친애저축은행에 AI 웹쉘 탐지 솔루션 공급 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTFA5SGFSMmU1R3hRbFVIalhIMC1GWndGMDFmenNGSkR2eFhObzRkSzg2VTY0ZktZOUlGcTAtNzlaNmRMS1ZlS2pGWHlEQ2otUQ?oc=5)
-- [출발증시 1부 - 한국경제TV](https://news.google.com/rss/articles/CBMiowFBVV95cUxOSzM0N3ZpemRLcHhYNHRrV0JzNThtSnpXbXdjMWlMR3RQVDdOeW9JTWVLVVRFNm84WG1MVndJSjQ5LUZldGo3cVZIM3JHb2UxOXhwdnhrdWZRYklfNFotVWYtenludDhpZUF3OUt5Y05qM2NmalZZSEstRDV0dmI1WWlYSGthWGE1TWdFUGI0TGdsRFJzX1U1THRmNlZNcmZ4MlRR?oc=5)
+- [출발증시 2부 - 한국경제TV](https://news.google.com/rss/articles/CBMiowFBVV95cUxOS3VHWkduaWxfRVo5UEtrZnN2eV9wZ0tFVEp0UGJHLV8yMHkwa3lwNVRpQTliYWFPWmxhc1V5UWNoVnR3NWg1SFlMNDdyeDk3QXdwSVBEaDY5d1BYRTNLWE5GUnRjQnRzdDY4NDFoZ2lya2xaa0VCX2xhNTI4R0x5bkhLaFJNckphSGdRSlUxZHhfR09qX25sQWI3ZTZPN3BwOHI4?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
