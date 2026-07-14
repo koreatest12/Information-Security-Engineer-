@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 211 days, 21:35:17
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 211 days, 22:31:45
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.2% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 14.0% | `██░░░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 상반기 실적도 '순항' 전망…비이자 체력 빛날까 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1fQjNzN05QcGN0T19BX0RiTHA0c0Nxa0RiY3FLcUh4eGpqQmxsUzE5VWRrTjFIbjNBd1RwZWs5aHhuN3hSRGVlSS0xMVR5RGs?oc=5)
-- [K-스탁 라이브 - 한국경제TV](https://news.google.com/rss/articles/CBMiowFBVV95cUxQWE5vM1RVMms4TE1oRmVlNTdfMFhOZE5BT2RrWGxsNWRSUGZkdmgyWXY2RW1pNDgzdjZreDVNR0tsM01tM09xM09PWG42TnJTbFJUUHBoRWg3bFlWTmxxUkRhX0hZLTJYY19ucDhKUW1fOHR5cUU3TE1JT09LcDhsOERJQkM2cXFrMUlzUnRvdzZ5SkM0QXZDVy1vcmZnY1l6VmZB?oc=5)
+- [[단독]신한금융, 롯데손보 우선협상자 유력.. 몸값 1조 안팎 협상 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFBheHQ0YkQ2bUx2Z2VyZTVjY0ptT3ZHakZZXzZzam13RHJaenUyTkg2M292LTNET2dUVDE1LVlxN0VTcHZqOHVYWllZWk1kbGEwbXB4b091LVplZjZIeUtNeW9BM2hIdEV3WXRN0gFwQVVfeXFMTWVfMUJBNzlnYU1QV2N1c3pVZmtyeGRHVUsxQ1pUWTkxREJGeUQ3WEc1LXIwRUlwb0hZT1JoeVNQTlBqd3MtdFUxMU9aa0tyNnczSWdFeTVHTzI1UGRwTFdEX0oyTEg5bGhGVXgySlJkeg?oc=5)
+- ['아랫목 경제'는 비명인데 … '경기 낙관론'에 취한 李 정부 - 뉴데일리](https://news.google.com/rss/articles/CBMie0FVX3lxTE1wZWlwcjNTVDZ6LUJMUm5wVGF0NkhCSDdDaUFFcF9XY2RLQ2hkb0xHYnJtZkRQLVROZGxLbG9XMWtpRlhwVWJLZ2FSMWFWV1JjWC1kSzhYLUZvcDdLN3EwemlJSko1d3ZzVERhZGpuVFVTQkRNdndEN2Jqc9IBgAFBVV95cUxORUZJR3RvQjJxa3N3MmlQSEk5Y0ViTUpfY2w5c3VnN3RRWnUzVFVYZXA1bkxYMDAwTXVGQlBPVkFfa0VjWUd1aWFlcE9DMVh6RHZCTV9oYzhDdU9Db0FGNVV6NGxXemp3V3NYTGRacEpNUWpURm5sQ1pnc3BwTDVBTQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
