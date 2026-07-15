@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 213 days, 1:31:18
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 213 days, 2:29:08
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.1% | `███░░░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.9% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- ["해외서 1조 버는데 국내선 뭐하나?" 절실한 진옥동 회장신한금융, 롯데손보 품고 '리딩금융' 탈환하나 - 한경매거진&북](https://news.google.com/rss/articles/CBMibEFVX3lxTE4xdnRSREJuSHJ3cVdpTGg0cFpScHJNQ01NVktXRi1sdXFQZWUxbnllX2J6VVFUaFV5Mm11TGw5ZXJDcXlhcjk2eGl6TnV3d3liMFQ0dnM2OVdJUE11WmduaHhTaFYyZlp4TUJWNQ?oc=5)
-- [AI시대 한국경제 성장 해법은…대한상의 제주포럼 개막 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE8zdXZNZkNRVHFOSWlMcmFXNWxNeERzYTZLbWZtM0RNQWNNTy01UUJKWGNfc1F3c2dGaHRDWmI4SERpN0NkeEs0TlhRUkN1OW8?oc=5)
+- [[단독]신한금융, 롯데손보 우선협상자 유력.. 몸값 1조 안팎 협상 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFBheHQ0YkQ2bUx2Z2VyZTVjY0ptT3ZHakZZXzZzam13RHJaenUyTkg2M292LTNET2dUVDE1LVlxN0VTcHZqOHVYWllZWk1kbGEwbXB4b091LVplZjZIeUtNeW9BM2hIdEV3WXRN0gFwQVVfeXFMTWVfMUJBNzlnYU1QV2N1c3pVZmtyeGRHVUsxQ1pUWTkxREJGeUQ3WEc1LXIwRUlwb0hZT1JoeVNQTlBqd3MtdFUxMU9aa0tyNnczSWdFeTVHTzI1UGRwTFdEX0oyTEg5bGhGVXgySlJkeg?oc=5)
+- [제주 모인 경제계… 최태원 "AI 물결 올라타야" 류진 "혁신의 한국돼야" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBFZTFmaTg3S3NlcjUyZENKMHpiel84Q1NCYkQyQVliWUtiVXktd1lJbHlLY3I0OER6NWNjOC1IYVRCVzJ5blNFNE9LUVR6UlU?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
