@@ -1,25 +1,21 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 212 days, 23:32:17
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 213 days, 0:32:06
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
 
 [![Reboot](https://img.shields.io/badge/COMMAND-SYSTEM__REBOOT-red?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![ScaleUp](https://img.shields.io/badge/COMMAND-SCALE__UP-blue?style=for-the-badge&logo=server&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml) [![Reset](https://img.shields.io/badge/COMMAND-FACTORY__RESET-grey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/koreatest12/Information-Security-Engineer-/actions/workflows/main.yml)
 
-> **Q:** 종합 상황 브리핑
-
-관련 정보 없음
+데이터 부족
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 40.8% | `██████░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.8% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 롯데손보 새주인 유력… 몸값 1조 '막판 협상' - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTE9RdUU1V1Jyb2tGZzhGaGtBcjZ0eEZ5cHE5MXE5dHc0dDRjd2ppY3JtWnRydjVNX2Jrd2RDRktKV3pMM0R5Ui1xSnoyVVNncjAyUVFmbXF2NEcxOTZxVjBKUjhpcUpyeEhJSDIw0gFwQVVfeXFMTzF3VUw3RWZKcDV5enhQczJaZHVaMmg0cmpIMk5VbXhmdFl1cllEM2xoSU5udEtFMDlKMy1yYXBWX21mdXhTa25PTy1UVklwZThGU05UcFIzSnZvSW53RW5seTRsWGRRV3lJbWwwS2h6OA?oc=5)
-- [[한국경제] 이상욱 철학과 교수, 뤼튼 '사용자위원회' 위원장에 임명 - 뉴스H](https://news.google.com/rss/articles/CBMiakFVX3lxTE5MUl9sQ2drZFdlTHd0WExWSzQ2cnM4WGhuaW9kaTJfMC1taENtWktyWTRHSmE3T3VsVk5mcjBvN0hfR2otc21zOGNYS1p0b0EweTc3VHNUQk1rX0JkX2EwYXRlbTMtZk1sZHc?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
