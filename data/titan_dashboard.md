@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 213 days, 2:29:08
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 213 days, 3:21:41
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.9% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.3% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[단독]신한금융, 롯데손보 우선협상자 유력.. 몸값 1조 안팎 협상 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFBheHQ0YkQ2bUx2Z2VyZTVjY0ptT3ZHakZZXzZzam13RHJaenUyTkg2M292LTNET2dUVDE1LVlxN0VTcHZqOHVYWllZWk1kbGEwbXB4b091LVplZjZIeUtNeW9BM2hIdEV3WXRN0gFwQVVfeXFMTWVfMUJBNzlnYU1QV2N1c3pVZmtyeGRHVUsxQ1pUWTkxREJGeUQ3WEc1LXIwRUlwb0hZT1JoeVNQTlBqd3MtdFUxMU9aa0tyNnczSWdFeTVHTzI1UGRwTFdEX0oyTEg5bGhGVXgySlJkeg?oc=5)
-- [제주 모인 경제계… 최태원 "AI 물결 올라타야" 류진 "혁신의 한국돼야" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBFZTFmaTg3S3NlcjUyZENKMHpiel84Q1NCYkQyQVliWUtiVXktd1lJbHlLY3I0OER6NWNjOC1IYVRCVzJ5blNFNE9LUVR6UlU?oc=5)
+- [신한금융, 롯데손보 새주인 유력… 몸값 1조 '막판 협상' - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTE9RdUU1V1Jyb2tGZzhGaGtBcjZ0eEZ5cHE5MXE5dHc0dDRjd2ppY3JtWnRydjVNX2Jrd2RDRktKV3pMM0R5Ui1xSnoyVVNncjAyUVFmbXF2NEcxOTZxVjBKUjhpcUpyeEhJSDIw0gFwQVVfeXFMTzF3VUw3RWZKcDV5enhQczJaZHVaMmg0cmpIMk5VbXhmdFl1cllEM2xoSU5udEtFMDlKMy1yYXBWX21mdXhTa25PTy1UVklwZThGU05UcFIzSnZvSW53RW5seTRsWGRRV3lJbWwwS2h6OA?oc=5)
+- [판도라 (판을 읽는 도파민 라이브) - 한국경제TV](https://news.google.com/rss/articles/CBMiowFBVV95cUxOc3AxcHFOX25TZmJ4d2kzNmxxX1BjQldxd1BpWVpNQlRzZVFoM2dKcUU2TGVKa1JDRmxaNHAtUGhkWVdtWkNTdGRsYUpLU2RMbVRIMmx0MWhRSy1DNWNIdzlCdzRrM0FFQWxmWUN1MmxNeVkwMldiUjR1ZG04anFmdzdIMWR5ZTA2TkpVRzliMEd6ZDVfb1VqbXVXYW8tYl9TYTZF?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
