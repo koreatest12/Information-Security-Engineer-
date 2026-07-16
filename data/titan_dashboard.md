@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 214 days, 7:31:07
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 214 days, 8:16:30
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.5% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 20.5% | `███░░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [“실익은 분명, 부담도 선명”...롯데손보 품기 나선 신한지주 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE50WkkwLVZoTHFVLTJXdHlDbEFYWXRkTW05dURvWXpBNFFpU0JRYW5SeGpDRjlmRFNGZDhTU1ZkblhwbUpldVlVLS1Qa3EyWTkweHVHVHpXWXM5Nm8?oc=5)
-- [한은 총재 "반도체 가격 주시…한국 경제 미래에 시사점 많아" - 연합뉴스TV](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9TWXFDTFpuVGxRa09iVEp4QUhocFZkZGZnNUxWU0YzaldzV0ZKUWJkN0YyLWJsZGRVUUIyQ1BMRVJ4c3JXTVhCcFpIVkxEaW5IQTJxZHFMc0JyUnIxQ1YySFY0cVBhM1E?oc=5)
+- [[한경에세이] 어렵지만 재미있습니다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5RdnNXcUdwOVhoNjRGSkZ2NFhzLWJ5THJsaVBIVGJVNXVJemN4bmw3UVZrdExKWWtkMjkxS1hGTUlTZzYyUFgzYm1tWFo5bVZnYjZVTW9rY0hhUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
