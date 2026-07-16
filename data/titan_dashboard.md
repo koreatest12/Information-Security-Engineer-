@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 213 days, 16:36:06
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 213 days, 17:16:16
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.3% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 25.2% | `███░░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[단독]신한금융, 롯데손보 우선협상자 유력.. 몸값 1조 안팎 협상 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFBheHQ0YkQ2bUx2Z2VyZTVjY0ptT3ZHakZZXzZzam13RHJaenUyTkg2M292LTNET2dUVDE1LVlxN0VTcHZqOHVYWllZWk1kbGEwbXB4b091LVplZjZIeUtNeW9BM2hIdEV3WXRN0gFwQVVfeXFMTWVfMUJBNzlnYU1QV2N1c3pVZmtyeGRHVUsxQ1pUWTkxREJGeUQ3WEc1LXIwRUlwb0hZT1JoeVNQTlBqd3MtdFUxMU9aa0tyNnczSWdFeTVHTzI1UGRwTFdEX0oyTEg5bGhGVXgySlJkeg?oc=5)
-- [AI시대 한국경제 성장 해법은…대한상의 제주포럼 개막 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE8zdXZNZkNRVHFOSWlMcmFXNWxNeERzYTZLbWZtM0RNQWNNTy01UUJKWGNfc1F3c2dGaHRDWmI4SERpN0NkeEs0TlhRUkN1OW8?oc=5)
+- [신한금융, 롯데손보 새주인 유력… 몸값 1조 '막판 협상' - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTE9RdUU1V1Jyb2tGZzhGaGtBcjZ0eEZ5cHE5MXE5dHc0dDRjd2ppY3JtWnRydjVNX2Jrd2RDRktKV3pMM0R5Ui1xSnoyVVNncjAyUVFmbXF2NEcxOTZxVjBKUjhpcUpyeEhJSDIw0gFwQVVfeXFMTzF3VUw3RWZKcDV5enhQczJaZHVaMmg0cmpIMk5VbXhmdFl1cllEM2xoSU5udEtFMDlKMy1yYXBWX21mdXhTa25PTy1UVklwZThGU05UcFIzSnZvSW53RW5seTRsWGRRV3lJbWwwS2h6OA?oc=5)
+- [키움증권 "한국 경제 반도체 중심 성장 흐름 이어질 것, AI 투자 사이클 유효" - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE9BTWdMN192Q3hPVGJsdmt2b1BxV0ZPLVpWUjAtaHFrZzViUkZ3ekd4Qnk0YkRmR1l5VzdTaGpKUE1xZWo3WUhXUGs0VTBQcEJwZGRaeEw4THVnMWZaQW11bXRlN0w1M2lBeXZGLTg3S293clU?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
