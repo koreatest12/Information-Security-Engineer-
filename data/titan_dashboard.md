@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 214 days, 16:37:27
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 214 days, 17:22:42
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.9% | `████░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.2% | `████░░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 롯데손보 품나…비은행 경쟁력 강화 '승부수' - ER 이코노믹리뷰](https://news.google.com/rss/articles/CBMibEFVX3lxTE1wcUE1UGt0TGZzbk83Yl9ZQVN4UG5vYkYwYkk0YUtrVm5mcVlLaElwLUJ5OUVFZm14MmVBYWVBRjlWMU91SW5lR01GZ3RkMTg3MXE3cnJZdm5pQlA5YlhTOUs4NVhrSGFlMUlobQ?oc=5)
-- [TSMC 끝내줬지만, 반도체 4.3% 급락…스페이스X의 경착륙 [김현석의 월스트리트나우] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5xTDFfVGMtWWtQeV9LUmJkU0hZdXpPSFlISkpjX2pnd3JDT2NHeTVncThzREFOaGtlQ0ZkNTc1Nk1GOVUwTDUwQkhPdi00ZGpHT3JwMkpRRXNZdw?oc=5)
+- [신한금융, 롯데손보 새주인 유력… 몸값 1조 '막판 협상' - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTE9RdUU1V1Jyb2tGZzhGaGtBcjZ0eEZ5cHE5MXE5dHc0dDRjd2ppY3JtWnRydjVNX2Jrd2RDRktKV3pMM0R5Ui1xSnoyVVNncjAyUVFmbXF2NEcxOTZxVjBKUjhpcUpyeEhJSDIw0gFwQVVfeXFMTzF3VUw3RWZKcDV5enhQczJaZHVaMmg0cmpIMk5VbXhmdFl1cllEM2xoSU5udEtFMDlKMy1yYXBWX21mdXhTa25PTy1UVklwZThGU05UcFIzSnZvSW53RW5seTRsWGRRV3lJbWwwS2h6OA?oc=5)
+- [중국 AI 모델 약진의 명과 암 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE93UDNLRXJKcEpGanFucENvNXI4cVBrazlFUzhxRWpiemFDejZwS1VJWnVyWlBsMl80bHFpR3UxdVNJcHBpYjVyTXRiSjNCdjBHMUY4RE1QX1ZnUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
