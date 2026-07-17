@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 215 days, 11:07:09
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 215 days, 11:42:42
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.9% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.2% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 롯데손보 품나…비은행 경쟁력 강화 '승부수' - ER 이코노믹리뷰](https://news.google.com/rss/articles/CBMibEFVX3lxTE1wcUE1UGt0TGZzbk83Yl9ZQVN4UG5vYkYwYkk0YUtrVm5mcVlLaElwLUJ5OUVFZm14MmVBYWVBRjlWMU91SW5lR01GZ3RkMTg3MXE3cnJZdm5pQlA5YlhTOUs4NVhrSGFlMUlobQ?oc=5)
-- ["금리 8월 또 오른다"…한은 긴축에 영끌족 '이자 폭탄' 걱정 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTFB1MTctN21qYmx2UDhVOF9JS0V5SUdTbExjV2NjVFdUYThQai1tcjdnQVdBN0hCQmYxemppQ1o0bVFfRmJiMFhfSnVFM0lSWDRjdGxz?oc=5)
+- [신한금융, 롯데손보 새주인 유력… 몸값 1조 '막판 협상' - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTE9RdUU1V1Jyb2tGZzhGaGtBcjZ0eEZ5cHE5MXE5dHc0dDRjd2ppY3JtWnRydjVNX2Jrd2RDRktKV3pMM0R5Ui1xSnoyVVNncjAyUVFmbXF2NEcxOTZxVjBKUjhpcUpyeEhJSDIw0gFwQVVfeXFMTzF3VUw3RWZKcDV5enhQczJaZHVaMmg0cmpIMk5VbXhmdFl1cllEM2xoSU5udEtFMDlKMy1yYXBWX21mdXhTa25PTy1UVklwZThGU05UcFIzSnZvSW53RW5seTRsWGRRV3lJbWwwS2h6OA?oc=5)
+- [[포토] 여야 원내대표 만난 국회의장 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE16TURQb3VHSWh3T0wxTGxzZGdsOXBBYXpTV2xkWUdZTGlwTzNQcGdPT3JLVjBnRDluUjVyRTJzVV9ETXRCRXJKWExHWUROQ3RHMGx5TWpTbDJrZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
