@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 215 days, 5:07:47
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 215 days, 5:48:00
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.8% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 25.5% | `███░░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 롯데손보 품나…비은행 경쟁력 강화 '승부수' - ER 이코노믹리뷰](https://news.google.com/rss/articles/CBMibEFVX3lxTE1wcUE1UGt0TGZzbk83Yl9ZQVN4UG5vYkYwYkk0YUtrVm5mcVlLaElwLUJ5OUVFZm14MmVBYWVBRjlWMU91SW5lR01GZ3RkMTg3MXE3cnJZdm5pQlA5YlhTOUs4NVhrSGFlMUlobQ?oc=5)
-- [한은 총재 "반도체 가격 주시…한국 경제 미래에 시사점 많아" - 연합뉴스TV](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9TWXFDTFpuVGxRa09iVEp4QUhocFZkZGZnNUxWU0YzaldzV0ZKUWJkN0YyLWJsZGRVUUIyQ1BMRVJ4c3JXTVhCcFpIVkxEaW5IQTJxZHFMc0JyUnIxQ1YySFY0cVBhM1E?oc=5)
+- [최저임금 1만700원 적절? 한겨레 “미흡해” 한국경제 “취약계층 일자리 위협” - 미디어오늘](https://news.google.com/rss/articles/CBMicEFVX3lxTFAySmZjdnRSQzNzMU51cUhYOEl0WkxFYWxpUTN4MkdGQlRjejZBRmpPTEFHbW9fR1lDWVlFYk9uSUNTdmx5Yl9adTBGMEhQU0VQZnZ6OHNuaURJTURVaHRKZUhnMy11T2haMURIcy1fS0Q?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
