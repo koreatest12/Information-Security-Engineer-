@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 215 days, 1:31:14
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 215 days, 2:26:53
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.7% | `█████░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.9% | `████░░░░░░░░░░░` |
+| **RAM** | `39.9/512 GB` | 7.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 롯데손보 새주인 유력… 몸값 1조 '막판 협상' - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTE9RdUU1V1Jyb2tGZzhGaGtBcjZ0eEZ5cHE5MXE5dHc0dDRjd2ppY3JtWnRydjVNX2Jrd2RDRktKV3pMM0R5Ui1xSnoyVVNncjAyUVFmbXF2NEcxOTZxVjBKUjhpcUpyeEhJSDIw0gFwQVVfeXFMTzF3VUw3RWZKcDV5enhQczJaZHVaMmg0cmpIMk5VbXhmdFl1cllEM2xoSU5udEtFMDlKMy1yYXBWX21mdXhTa25PTy1UVklwZThGU05UcFIzSnZvSW53RW5seTRsWGRRV3lJbWwwS2h6OA?oc=5)
-- ['한국경제의 AI 성장을 위한 아젠다'라는 주제로 대담하는 최태원 회장 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTE5oQWE0LURhMFhDS1lJMVh3bE1US1JQb2NBR3N6LXROdXZpcFJxTUhnNlVndHNBemh2cVRBU3FxYzlaVWhTdlVHcEZSbmRoRmlfNzk1alhMVFEwVU9M?oc=5)
+- [한은 총재 "반도체 가격 주시…한국 경제 미래에 시사점 많아" - 연합뉴스TV](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9TWXFDTFpuVGxRa09iVEp4QUhocFZkZGZnNUxWU0YzaldzV0ZKUWJkN0YyLWJsZGRVUUIyQ1BMRVJ4c3JXTVhCcFpIVkxEaW5IQTJxZHFMc0JyUnIxQ1YySFY0cVBhM1E?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
