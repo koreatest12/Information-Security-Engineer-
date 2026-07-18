@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 216 days, 5:04:31
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 216 days, 5:46:19
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.0% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.7% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[뱅커스토리] 전성익 신한은행 본부장 "'슈퍼쏠'로 금융 통합, 포인트는 개인화" - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTE9NRUhFRklXRU9ZMGw3aXJMMXRaTEFmYUlkaF9mRHBWSzVGYUdTT0pTU3hrczh2b2VZalM2TUxxM1pMOGRadjBRcXNyT2w4SkZaYkRwU2ppTzl1Ykhy?oc=5)
-- [상장폐지 위기라는데…'오히려 좋아' 대주주 웃는 이유 [한경우의 케이스스터디] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ydmpXN1ZqbkgtVTZYQ0ZuX1IzOG02M2Z0Qlp2RTVJZ2QyWjlNQzVRRTkxUnlJcnlja2dPNi1BYmdGU1V3UW4tUWQxMksyVUcxbmJqd1ZIZnVtdw?oc=5)
+- ["비단뱀 잡아오면 피자 공짜"…美 플로리다 이색 퇴치 작전 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE92eHg3eW1uWFdYUTk3OWNFLThocHRSZHcxTmJMVEc5S2ZKS1k1MV9DMzZSdFdSd1AteGJlWGlnWHpUcFlJQmo0T2hnX0pRREFPZzVLNjN0bVJqdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
