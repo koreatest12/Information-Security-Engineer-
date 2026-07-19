@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 216 days, 16:35:58
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 216 days, 17:17:47
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.4% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.0% | `████░░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[뱅커스토리] 전성익 신한은행 본부장 "'슈퍼쏠'로 금융 통합, 포인트는 개인화" - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTE9NRUhFRklXRU9ZMGw3aXJMMXRaTEFmYUlkaF9mRHBWSzVGYUdTT0pTU3hrczh2b2VZalM2TUxxM1pMOGRadjBRcXNyT2w4SkZaYkRwU2ppTzl1Ykhy?oc=5)
-- [소수 주주의 주총 문턱 낮추는 '권고적 주주제안' [디엘지 기업법무 핵심노트] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5fM1VBc3RPRXJzM25NQmsyYV9WVU1OUHg1eUpDRUpCYVZoam43eGtLejNZd3pnR2x2NXpTNnFUbk8zMGpaX3BERGJoUWdxZnJpdnpGOUhrN0JlZw?oc=5)
+- [진옥동 신한금융 회장 "고객 신뢰가 일류로 가는 길" - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9USnNPSld5WEhyaF94RndtXzRpSy03RnNXNlRjY2pGT29EOG5JRWNpUjdmbTRMMnJQTFMzS2FFcEdOcDlZWUc4cUhXcjZPcTRuV2pURndQTXZtRU3SAWBBVV95cUxOcWZOR2trVThiN3NoNjd2aHRtY0pwdGphckVhZ3JaM0tITklYR1Y5SkhhdGx4dlo4clhLQmJRVTgzUGFWXzRGYk9kbVZrNGt1TXQwMEJPc3NJOHE0Rm1reE0?oc=5)
+- ["싸면 더 쓴다"…'가성비 AI'가 뒤흔든 반도체 폭락의 역설 [빈난새의 빈틈없이월가] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBuVm9vWXkyNTFXMDBJLXhaaERmN1NMc2JhYmxBb2Y4Z1FnQ1dNN1pUd3l3bVA0WWFOdTBnaWsxRm0tZUtianZrVml3N2VTdWttcEd0Z0dWVjg2UQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
