@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 217 days, 3:17:16
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 217 days, 3:45:51
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.1% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.8% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [진옥동 신한금융 회장 "고객과의 신뢰, 100년 지속하는 길" - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTE56Nks3RU9CUE5oZUNVSUZxc2tyM1JURjBicy1FYzJ0eHdGdFdPNUNRRDBBSFhKTzA1Tjk4c2VFR25ISE5rQm03bkVnaWRWdV91ekRuVFhmc1gtUnJFMVBid09tOWlIMWRfT2cw0gFwQVVfeXFMUC0xRmUxS0NFSG5vbzY0ZTduLWFhMnJmOVU5SHZjZHdqbzRXVS0xbVI4RlItVG1JY1FZTHpZUnBhLVl1MVdyRWJDckZqbVNBSVhEbWhoTHdraEJoT01aTWJxSVFKRlJxcC1TWjBSTm9EVA?oc=5)
-- [인간한계 넘은 申…AI '2점의 벽' 깼다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9KWllGaWE2T3ZnbjQtWU9LNlVhUlF3elQ4N1hvQktJZlpxRjBxUjRKTzFndmVObVZnSlNCeThPenZSMEZiT0hERWllc0E3ZUFPX2dUZXFRRXFEdw?oc=5)
+- [진옥동 신한금융 회장 "100년 금융의 답은 고객 신뢰" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBHanJCMlgzSU5pQUVIZjhvYjVzN0JDcTVXRXJ1WDVJV0p4VTl4Ml9FV3UzNnM2bUp0TUM2aUhJY01pTGVGN09RR0lLVW9HbEU?oc=5)
+- [韓 2분기 GDP 발표…깜짝 성장 이어가나 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9RUkEyR2I1dU9QX1E3dEpXLWZSOFZnT2NveEZGWDRWVTVROWktYkVvX2tTaGlXR3A1RU8tSFpZblRUNG95VWxmVXd0eFQ1Qi1aRGY1ZVZzSkRrdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
