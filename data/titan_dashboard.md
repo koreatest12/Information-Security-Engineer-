@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 216 days, 17:17:47
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 216 days, 17:58:52
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.0% | `████░░░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 15.3% | `██░░░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [진옥동 신한금융 회장 "고객 신뢰가 일류로 가는 길" - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9USnNPSld5WEhyaF94RndtXzRpSy03RnNXNlRjY2pGT29EOG5JRWNpUjdmbTRMMnJQTFMzS2FFcEdOcDlZWUc4cUhXcjZPcTRuV2pURndQTXZtRU3SAWBBVV95cUxOcWZOR2trVThiN3NoNjd2aHRtY0pwdGphckVhZ3JaM0tITklYR1Y5SkhhdGx4dlo4clhLQmJRVTgzUGFWXzRGYk9kbVZrNGt1TXQwMEJPc3NJOHE0Rm1reE0?oc=5)
-- ["싸면 더 쓴다"…'가성비 AI'가 뒤흔든 반도체 폭락의 역설 [빈난새의 빈틈없이월가] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBuVm9vWXkyNTFXMDBJLXhaaERmN1NMc2JhYmxBb2Y4Z1FnQ1dNN1pUd3l3bVA0WWFOdTBnaWsxRm0tZUtianZrVml3N2VTdWttcEd0Z0dWVjg2UQ?oc=5)
+- ['외교인가 휴가인가'…6,700억짜리 요트에 쏟아진 비판 - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE5lNjgxaUpMRU5CVTdoQXg2UTFjZHR6cm5GV2NyTmc4djNYci1jMTROeDRwRmh4UFZqRVNiTVh1RjJxMzg4WXc?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
