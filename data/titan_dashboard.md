@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 217 days, 8:04:19
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 217 days, 8:35:42
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 17.2% | `██░░░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.7% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [진옥동 신한금융 회장 "고객과의 신뢰, 100년 지속하는 길" - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTE56Nks3RU9CUE5oZUNVSUZxc2tyM1JURjBicy1FYzJ0eHdGdFdPNUNRRDBBSFhKTzA1Tjk4c2VFR25ISE5rQm03bkVnaWRWdV91ekRuVFhmc1gtUnJFMVBid09tOWlIMWRfT2cw0gFwQVVfeXFMUC0xRmUxS0NFSG5vbzY0ZTduLWFhMnJmOVU5SHZjZHdqbzRXVS0xbVI4RlItVG1JY1FZTHpZUnBhLVl1MVdyRWJDckZqbVNBSVhEbWhoTHdraEJoT01aTWJxSVFKRlJxcC1TWjBSTm9EVA?oc=5)
-- ["전투는 자살행위"라던 신진서…결국 AI와 난전에서 웃었다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBDUUZkVFpSWHpLWmNDbUJvcjdVOE12akt3ekVHQTVWbXJ1UTF2dVBTVzVydkgtT09tZU8teEF1TzFHZGRmX2VZcmd1eUdvQ1c3bmRwYjNmcThjZw?oc=5)
+- [하정우 前 수석 "AI 종속 벗어날 독자 모델 필요" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE02aE9TOHRmNW9Hbm5ZRHlESXUxNmEzdGhLbXM2M08zTUxseXQ4TDRJSklSUWNkNG5IMllTOHItZGhlUmo2MmJFYWZwVVVGQjVoMlp3X21ZQnNvUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
