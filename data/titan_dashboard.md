@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 218 days, 12:24:24
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 218 days, 13:11:19
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.0% | `████░░░░░░░░░░░` |
-| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.1% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 롯데손보 품으면 '손보 체급' 확대…'인수가+증자'는 부담 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1oZGlyY044TW5OWTNSU2l3MnI0ZVB6MGNid1J6a0VtTEo0bnhMaEZHX3dEd3ZhcjBCdEZGaDhLQ0lWd2lSdGNrUmVLbUU5Tzg?oc=5)
-- [하락장서 존재감 커진 '전통적 방어주' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5KLVJVYU5sdUthQklLSy16LVBYcEJrSUpBQXlXVVpkYlJfRDE5TXd2TjR5X0h0XzRtNVF6ZFY5TThuQjY0cFUzZE02SG5kSTJWZnBKTmUwQXJlQQ?oc=5)
+- [반도체 쏠림 한국 경제에… 한은, ‘네덜란드 병’ 경고 - 조선일보](https://news.google.com/rss/articles/CBMijgFBVV95cUxQRXFzaVJ0SEdHRkRrSjdBQ1BjZ3MzVmpjLW5DeTBIbm5HMElSTUh3Wk1pVVU5QTIxbFlrQ1k1WGtfaXFJWmxxM0cxNkszQ3NJaTlIWnh4SjFjX09zWEwxVWtWUmFrZ0VodDJrQTJKUkFMb3hLRl81T3RWSXJsS0pPMU5McnEzck9MQk5lSERB?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
