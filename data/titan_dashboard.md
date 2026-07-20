@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 217 days, 18:33:53
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 217 days, 20:01:19
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.9% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.1% | `████░░░░░░░░░░░` |
 | **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [진옥동 신한금융 회장 "100년 금융의 답은 고객 신뢰" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBHanJCMlgzSU5pQUVIZjhvYjVzN0JDcTVXRXJ1WDVJV0p4VTl4Ml9FV3UzNnM2bUp0TUM2aUhJY01pTGVGN09RR0lLVW9HbEU?oc=5)
-- [상장폐지 위기라는데…'오히려 좋아' 대주주 웃는 이유 [한경우의 케이스스터디] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ydmpXN1ZqbkgtVTZYQ0ZuX1IzOG02M2Z0Qlp2RTVJZ2QyWjlNQzVRRTkxUnlJcnlja2dPNi1BYmdGU1V3UW4tUWQxMksyVUcxbmJqd1ZIZnVtdw?oc=5)
+- [신한금융, 롯데손보 품으면 '손보 체급' 확대…'인수가+증자'는 부담 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1oZGlyY044TW5OWTNSU2l3MnI0ZVB6MGNid1J6a0VtTEo0bnhMaEZHX3dEd3ZhcjBCdEZGaDhLQ0lWd2lSdGNrUmVLbUU5Tzg?oc=5)
+- [반도체 독주의 그늘…'한국판 네덜란드 병' 경고 나선 한국은행 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE16SUYwejVxd0F1SkVicVBwdkpPNVEwTHZIdEJyQUtWZkFRNkx5bTUxVkxweEFDMzMtUmRFZ0JCNlRfaWJWc3JuMEhjVWQyUkU?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
