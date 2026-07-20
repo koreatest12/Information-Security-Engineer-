@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 217 days, 23:56:32
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 218 days, 1:17:47
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.9% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.3% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 롯데손보 품으면 '손보 체급' 확대…'인수가+증자'는 부담 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1oZGlyY044TW5OWTNSU2l3MnI0ZVB6MGNid1J6a0VtTEo0bnhMaEZHX3dEd3ZhcjBCdEZGaDhLQ0lWd2lSdGNrUmVLbUU5Tzg?oc=5)
-- [[현안기고]아스펜 안보 포럼이 한국경제에 던진 경고 - 한국세정신문](https://news.google.com/rss/articles/CBMiY0FVX3lxTFAtZXM1X0wxTXpWXzZiUUVCNkdKbjdOVnkzX0V0ZzZUdjJQbXlYQ2hqajNkenY0UWdEVUVsTXJ1ZGo5NzlmSUNOZHVHaTNITFItRjNmM1lram5KbjNyR29QMzNIcw?oc=5)
+- [KB금융·신한지주 … 증시 먹구름 뚫는 은행株 - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE4wTmF2cm5PQUNMcGxSbE5VT2l2OWdTQTcyRXdrX0xPa0ZWUDlyQnhKajliUkJjM0JCQ3NUWnFVdmd5NE9yQ3czcU9GYmc4dHFQdWc?oc=5)
+- ["한국 경제, 기회 왔다...이념·진영 뛰어넘는 '더 큰 정치' 필요" - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMibEFVX3lxTFBLWGZuWThWaUk5M1JBRDdZRUZNckRiZ3JZS0Nhb1NIZVY2Q3hibjMybW9BZHdIV25tUllUZG5GTFV1ejFWRS1iWnp4THR0WE8yVGtBVTFELW5ieUdGejJwQktSLVBDRlNhUmREWtIBckFVX3lxTE9zZzZxOWxNNEJzZHNkenhBRWxObm94SUdBWGlCNTBVX2lodzE4aEl4QUVNeERSYWNEcW5ubzVzcXltYmFVcHdrOXFyS1p4aGZjNFRDVFAyRVYwOTFfdmZscEJRcW9aR2ROY2Jyb0x4czduZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
