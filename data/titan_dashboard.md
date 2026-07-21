@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 218 days, 21:50:13
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 218 days, 23:05:08
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.3% | `████░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.7% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행, 자체 개발 AI 에이전트 21종 공개…'AX 에이전트 서밋' 개최 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE5ManpBTTZsNXlIdmRXWjRKbEluSktzZm1SN1ZrTVhOSDFQSjV6ZXlxMmU2ZGZ6Y01SS1hTazRhZEpDeXNISVgzN04wbFdZUQ?oc=5)
-- [수익 낸 ETF '0'개...코스닥 투자 전멸 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5FRWZQNEl4Z29RQUNiTVdjVHZQdHdSTkFXSDJCcVZ4dkJ0YjAwbDdUZ1VaMWRPdVpZVkRkcEZRanZNbGV3R2E4RnlQY2x4MWZRZUlZMnF4dlNwZw?oc=5)
+- ['키미 쇼크' 벗어난 코스피…올 19번째 '매수 사이드카' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5sU18yQXU0SVI2SHpNaHNUQ216dHNEdi0zQmRrTTdralZvdFlRdWFnMDRBckUyMkk5NDdUal95MnYzSkhjUThUSnY2SWNJUS1IeFFaLXBpbjBuZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
