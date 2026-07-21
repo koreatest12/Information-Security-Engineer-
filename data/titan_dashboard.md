@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 219 days, 8:53:01
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 219 days, 9:19:36
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.0% | `█████░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.4% | `█████░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행, 'AX 에이전트 서밋' 개최…"금융 AI 에이전트 고도화" - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9yWVNURjhZb0szd05EOHhkSnZkUVh1QnNnbDd2eGltZzFRS1FGc2d0MERfYzVMQTEzNnY2RnVELTRZTzg2TG9xNHlsWjZvZmEtTlJpMk5DdHBac1VqQmZTX9IBeEFVX3lxTE05ZFVibkx3YnpvS2xFS2gxQm95cGgxNVhGQzhzRlo4MzBuTEV1MTE0SkFrNWJMc0VrQldRU2drQXJKLVBqTnotUlRRQkpibGYxMmtUMEZWVnVpSHBjdXQwTmdMTzdxeHlZUlZyQ0Q5R0VLRk5pSjd1cw?oc=5)
