@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 220 days, 14:12:50
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 220 days, 14:37:34
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.8% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 25.7% | `███░░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [고객 한 명 ‘더 오래’ 잡는다…신한 ‘슈퍼쏠’의 계산법 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9xcmd2U19MN1JsUkhKenJmSjNYUUJmWmdJT19qOFZTVGZnZkZWNkpJaDgxTkNmaXMxbWllSXIwZGZhb0prTDdiUTdjd1k1UW5wMVllemlYaUNfMUU?oc=5)
-- [반도체 쏠림 한국 경제에… 한은, ‘네덜란드 병’ 경고 - 조선일보](https://news.google.com/rss/articles/CBMijgFBVV95cUxQRXFzaVJ0SEdHRkRrSjdBQ1BjZ3MzVmpjLW5DeTBIbm5HMElSTUh3Wk1pVVU5QTIxbFlrQ1k1WGtfaXFJWmxxM0cxNkszQ3NJaTlIWnh4SjFjX09zWEwxVWtWUmFrZ0VodDJrQTJKUkFMb3hLRl81T3RWSXJsS0pPMU5McnEzck9MQk5lSERB?oc=5)
+- [오늘 부동산 정책 국민 대토론회…민심 톺아보니 [시장톡] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5pRUZ6YnlrdGhFS1NjbHFXaTBZUV9MS2w3SzViY0NnMEQ5ZGI2clRWUi1WbExzdjR4VzNEZzZ4Qi0tazlYcU8xWVYzNng4aEhzenkza2NKZnBoUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
