@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 219 days, 17:16:11
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 219 days, 17:54:44
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.6% | `████░░░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 35.0% | `█████░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - ["신한금융·SC벤처스, 캔턴 개발사 디지털에셋에 148억원 투자" - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE9qT0Jva2h4ZjltMmtjc1pyQjlmeDItZENENDFUOFVOUGt6OF9mTWNxZmJBeGFPdk0wMHY2UkxwTjdPSGRQaFAwa193U2pMTkRPeGF4Tm81a1FkX2paTzlHdmppbnpBcXRsMkhzaElVaEc3dmc?oc=5)
