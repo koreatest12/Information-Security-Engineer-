@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 220 days, 4:46:52
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 220 days, 5:21:15
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.7% | `████░░░░░░░░░░░` |
-| **RAM** | `41.5/512 GB` | 8.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.5% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[롯데손보 M&A] 롯데손보 인수만으론 부족…신한, KB 추격 아직 멀었다 - 딜사이트](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1iU25uWi05STEySDRnWDZQWGY3SHBxMDlSTXpEY3ZwZnpmbnRCV2JtSE42bmlYN2VONkswY3hZNWE2LXhPSEt6anFqcDREODQ?oc=5)
+- [고객 한 명 ‘더 오래’ 잡는다…신한 ‘슈퍼쏠’의 계산법 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9xcmd2U19MN1JsUkhKenJmSjNYUUJmWmdJT19qOFZTVGZnZkZWNkpJaDgxTkNmaXMxbWllSXIwZGZhb0prTDdiUTdjd1k1UW5wMVllemlYaUNfMUU?oc=5)
 - [반도체 쏠림 한국 경제에… 한은, ‘네덜란드 병’ 경고 - 조선일보](https://news.google.com/rss/articles/CBMijgFBVV95cUxQRXFzaVJ0SEdHRkRrSjdBQ1BjZ3MzVmpjLW5DeTBIbm5HMElSTUh3Wk1pVVU5QTIxbFlrQ1k1WGtfaXFJWmxxM0cxNkszQ3NJaTlIWnh4SjFjX09zWEwxVWtWUmFrZ0VodDJrQTJKUkFMb3hLRl81T3RWSXJsS0pPMU5McnEzck9MQk5lSERB?oc=5)
 
 ---
