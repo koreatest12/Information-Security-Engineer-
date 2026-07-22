@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 219 days, 16:04:33
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 219 days, 16:35:55
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.5% | `████░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.7% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 'AX 에이전트 서밋' 개최…"금융 AI 에이전트 고도화" - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9yWVNURjhZb0szd05EOHhkSnZkUVh1QnNnbDd2eGltZzFRS1FGc2d0MERfYzVMQTEzNnY2RnVELTRZTzg2TG9xNHlsWjZvZmEtTlJpMk5DdHBac1VqQmZTX9IBeEFVX3lxTE05ZFVibkx3YnpvS2xFS2gxQm95cGgxNVhGQzhzRlo4MzBuTEV1MTE0SkFrNWJMc0VrQldRU2drQXJKLVBqTnotUlRRQkpibGYxMmtUMEZWVnVpSHBjdXQwTmdMTzdxeHlZUlZyQ0Q5R0VLRk5pSjd1cw?oc=5)
+- ["신한금융·SC벤처스, 캔턴 개발사 디지털에셋에 148억원 투자" - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE9qT0Jva2h4ZjltMmtjc1pyQjlmeDItZENENDFUOFVOUGt6OF9mTWNxZmJBeGFPdk0wMHY2UkxwTjdPSGRQaFAwa193U2pMTkRPeGF4Tm81a1FkX2paTzlHdmppbnpBcXRsMkhzaElVaEc3dmc?oc=5)
 - [노벨 경제학 수상자도 걱정 "한국 경제 최대 장애물은 서울 집값" - 조선일보](https://news.google.com/rss/articles/CBMigAFBVV95cUxPN3JRMEhHYWFLRmZ2aXZ5cFVLRFEtX3FxYlUwTFlKR2tCb20yZ2pHcjRJVDFaeUJTZm53c2YxbGlPdTFkQkx4ZEF1em5KYk02R1Q0dXl3ZE1XaEg3R2VyVjlJSWMxOXBIdWg2MVVmTmhnbTdPM1BEMERLUkczWF9udw?oc=5)
 
 ---
