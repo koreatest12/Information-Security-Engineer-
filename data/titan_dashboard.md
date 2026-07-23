@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 221 days, 7:33:30
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 221 days, 14:22:32
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,12 +15,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.1% | `█████░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.4% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [KB·신한금융 2분기 최대 실적…주주환원도 ‘역대급’ 예고 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5VTTNQYi1mQ2YxcnRpbWh0MHJSdkZXblB1QUlWUGtxSV9xWVVYcEpVVGh5VHBqR3dlLWFrYTRPaTBDdWF5elZPcW9HeF9sYVE?oc=5)
-- [2분기 한국 경제 0.6% '깜짝 성장'…연간 3% 돌파 가시권(종합) - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1pbWlGS2NLRE5JRkY4Z3EzZzc1QmFqNkdSWnlIMEhQNWRXS0EyamxrTWc4cExUMElKcGRWX3g3YUNNZkxiYS1FMFpzNWFjaWQ0MzU5dWt5bE1LRlHSAWBBVV95cUxPekx5M1ZuRXVaTW9TbnNXZUprSHk5R25sUkdVV1h6T194Ukt5Z0xOMnA3SFVJVTVxdjBLUjZVbUd6TmxSWjVSX2E3VEU1TmkxYnh0dEZSTW1vQmJKZmp2RXY?oc=5)
+- [“증권사 버스 탔습니다”…사상 최대실적 KB·신한, 상반기 순익이 무려 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5YTWlERURWSEhNTi1xSHBEdUxlcGpmYWgwN3VTT1BJMHVnQTZnNERrQ01HMXJiMUpQOWZrbW9oeWJ5cGk0MkdPenM1ZmVFZkk?oc=5)
+- ['반도체 올인' 한국 경제 괜찮을까...AI에게 토론시켰더니 - 지디넷코리아](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5TR2U0eTUwNTRuc044TGxja2NjY21VM3Atc0N0TmpCWG5kSjBhNzFoODh6eDlXZGk5aUc1clhKcDdHZklHTXZOWE5WdXJvWWxZRGY2VG53?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
