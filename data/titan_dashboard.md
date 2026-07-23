@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 220 days, 16:05:04
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 220 days, 16:37:38
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.9% | `████░░░░░░░░░░░` |
-| **RAM** | `40.4/512 GB` | 7.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 22.7% | `███░░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [고객 한 명 ‘더 오래’ 잡는다…신한 ‘슈퍼쏠’의 계산법 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9xcmd2U19MN1JsUkhKenJmSjNYUUJmWmdJT19qOFZTVGZnZkZWNkpJaDgxTkNmaXMxbWllSXIwZGZhb0prTDdiUTdjd1k1UW5wMVllemlYaUNfMUU?oc=5)
+- [신한은행, 'AX 에이전트 서밋' 개최…"금융 AI 에이전트 고도화" - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9yWVNURjhZb0szd05EOHhkSnZkUVh1QnNnbDd2eGltZzFRS1FGc2d0MERfYzVMQTEzNnY2RnVELTRZTzg2TG9xNHlsWjZvZmEtTlJpMk5DdHBac1VqQmZTX9IBeEFVX3lxTE05ZFVibkx3YnpvS2xFS2gxQm95cGgxNVhGQzhzRlo4MzBuTEV1MTE0SkFrNWJMc0VrQldRU2drQXJKLVBqTnotUlRRQkpibGYxMmtUMEZWVnVpSHBjdXQwTmdMTzdxeHlZUlZyQ0Q5R0VLRk5pSjd1cw?oc=5)
 - [반도체 쏠림 한국 경제에… 한은, ‘네덜란드 병’ 경고 - 조선일보](https://news.google.com/rss/articles/CBMijgFBVV95cUxQRXFzaVJ0SEdHRkRrSjdBQ1BjZ3MzVmpjLW5DeTBIbm5HMElSTUh3Wk1pVVU5QTIxbFlrQ1k1WGtfaXFJWmxxM0cxNkszQ3NJaTlIWnh4SjFjX09zWEwxVWtWUmFrZ0VodDJrQTJKUkFMb3hLRl81T3RWSXJsS0pPMU5McnEzck9MQk5lSERB?oc=5)
 
 ---
