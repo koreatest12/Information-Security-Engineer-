@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 221 days, 3:00:14
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 221 days, 3:52:39
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,18 +8,19 @@
 
 > **Q:** 종합 상황 브리핑
 
-관련 정보 없음
+**🤖 AI Analysis:**
+- [KR_ECON] 2분기 한국 경제 0.6% '깜짝 성장'…연간 3% 돌파 가시권(종합) - 연합뉴스
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.7% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.0% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융 "손보사 인수 확정 없어⋯밸류업 2.0 원칙 유지" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1HSXFwd1htd2hzTkJzYUh0STNBbFBRM29YdmRNUWoySklLMXdGeXdWWldYRUZBRkdNWlRMaHY1cU5vVU1jOERoQXRSUHZKVXM?oc=5)
-- [‘반도체 수출 호조’ 2분기 한국 경제 0.6% 성장…예상치 웃돌아 - JTBC](https://news.google.com/rss/articles/CBMiVEFVX3lxTE50ckVBME5qMmNXRDJNdVVYa0Ixb1VRQ0pLbXF0UTlJLVFBdkhLY2ZmSGdpM0t3MVVWRnJYNEZLNHRkVGthT0JrSXRRSGpMbm1qWDRKMg?oc=5)
+- [2분기 한국 경제 0.6% '깜짝 성장'…연간 3% 돌파 가시권(종합) - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1pbWlGS2NLRE5JRkY4Z3EzZzc1QmFqNkdSWnlIMEhQNWRXS0EyamxrTWc4cExUMElKcGRWX3g3YUNNZkxiYS1FMFpzNWFjaWQ0MzU5dWt5bE1LRlHSAWBBVV95cUxPekx5M1ZuRXVaTW9TbnNXZUprSHk5R25sUkdVV1h6T194Ukt5Z0xOMnA3SFVJVTVxdjBLUjZVbUd6TmxSWjVSX2E3VEU1TmkxYnh0dEZSTW1vQmJKZmp2RXY?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
