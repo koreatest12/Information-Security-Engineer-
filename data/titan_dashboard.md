@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 221 days, 6:31:45
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 221 days, 7:33:30
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,18 +8,19 @@
 
 > **Q:** 종합 상황 브리핑
 
-관련 정보 없음
+**🤖 AI Analysis:**
+- [KR_ECON] 2분기 한국 경제 0.6% '깜짝 성장'…연간 3% 돌파 가시권(종합) - 연합뉴스
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.6% | `█████░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.1% | `█████░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [KB·신한 상반기 실적 사상 최대…증권이 살렸다 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE9aNTF3NGhaZnAtWjNoN3ZFY090eHBqQlNuajJxZmI4S3Y4ZmJXQ21KMWNrLU1NX05oekgyd3ctMDBEZEU1SjVfZ2xsZy1NREZ2c0FmaHk3cEtNVXJjWGJjdWJqbnk5UTFPVzU2MXM2NHQ5eE0?oc=5)
-- [2분기 한국 경제, 0.6% 성장···실질소득 상승률 38년만에 최고치 - 경향신문](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Ham9yMHRFb3hlVDU3WG9fR2pOVEZYZ1JmeGpBWnpGQ21mRXl5YjBQSWNIampXYnc0TWI3dklHc3NrWVJid2Y4eFVueDN3Z0pMclh5QVgxdzJvQdIBX0FVX3lxTE5rLVFjaElFNEVrd2hWaHpfcDBkYlJzajE1WFg0bHgtUU1zMFJHUkJDWHlWRmQyS1ZnamxXdHdhajVWVjhQczc0OFgzblJJZGJXZmpVQVBxbDhRVEd4eEFN?oc=5)
+- [KB·신한금융 2분기 최대 실적…주주환원도 ‘역대급’ 예고 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5VTTNQYi1mQ2YxcnRpbWh0MHJSdkZXblB1QUlWUGtxSV9xWVVYcEpVVGh5VHBqR3dlLWFrYTRPaTBDdWF5elZPcW9HeF9sYVE?oc=5)
+- [2분기 한국 경제 0.6% '깜짝 성장'…연간 3% 돌파 가시권(종합) - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1pbWlGS2NLRE5JRkY4Z3EzZzc1QmFqNkdSWnlIMEhQNWRXS0EyamxrTWc4cExUMElKcGRWX3g3YUNNZkxiYS1FMFpzNWFjaWQ0MzU5dWt5bE1LRlHSAWBBVV95cUxPekx5M1ZuRXVaTW9TbnNXZUprSHk5R25sUkdVV1h6T194Ukt5Z0xOMnA3SFVJVTVxdjBLUjZVbUd6TmxSWjVSX2E3VEU1TmkxYnh0dEZSTW1vQmJKZmp2RXY?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
