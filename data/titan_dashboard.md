@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 221 days, 16:04:43
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 221 days, 16:36:15
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.7% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.7% | `████░░░░░░░░░░░` |
 | **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [“증권사 버스 탔습니다”…사상 최대실적 KB·신한, 상반기 순익이 무려 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5YTWlERURWSEhNTi1xSHBEdUxlcGpmYWgwN3VTT1BJMHVnQTZnNERrQ01HMXJiMUpQOWZrbW9oeWJ5cGk0MkdPenM1ZmVFZkk?oc=5)
-- [반도체 수출 호조에 유가 충격 딛고 2분기 한국 경제 0.6% 성장 - MBC 뉴스](https://news.google.com/rss/articles/CBMidEFVX3lxTE5lLVIxalRPTXN2aHpPMWdwb2dqNHAySmV0NVZCd0tMemZ3bzNMVG1Fb3NGbkJuYWZjMGx0bGtMRU1rWUFwX1lJWXVjMlpBSU9TRERhbjZVRDdjWDBKTU1GVFM2YjUwQWJnWE1KbWt0Mk5hMUxj0gF0QVVfeXFMUG9nbFdfcU9hNjgzMDdtWlNjUDU2X0F5WjA1T1UyMTl2TExKMDI0czg1dXJlXzdVeTlxMWdnVzIxSGJlRlQwVEctckNlaXJKd2F6SlhHdl9LRXYxZlJ5UnJpU3RfSnE2eUdwT2oxX25uenNhWnk?oc=5)
+- [[단독] 진옥동 신한금융 회장, 월드컵 현장서 비자 경영진과 '글로벌 스킨십' - MTN 머니투데이방송](https://news.google.com/rss/articles/CBMiZEFVX3lxTE44Zk0xdC1uTVNzaEYzUTgzUWVKMkFhaUFKVVR2RmRUVDJveGNTZk0xejZhSS1jbmdRbmR3OW9BcnhzZWZLOXVlbEhKdlNfQ2NBdEVsZ1IySXZkNmVjR2c5aEVsaTA?oc=5)
+- ['반도체 올인' 한국 경제 괜찮을까...AI에게 토론시켰더니 - 지디넷코리아](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5TR2U0eTUwNTRuc044TGxja2NjY21VM3Atc0N0TmpCWG5kSjBhNzFoODh6eDlXZGk5aUc1clhKcDdHZklHTXZOWE5WdXJvWWxZRGY2VG53?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
