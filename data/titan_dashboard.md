@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 221 days, 20:24:34
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 221 days, 21:50:16
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.7% | `█████░░░░░░░░░░` |
-| **RAM** | `41.0/512 GB` | 8.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.1% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[단독] 진옥동 신한금융 회장, 월드컵 현장서 비자 경영진과 '글로벌 스킨십' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1KT000d3JHbkh6Sk1lMlV5c1hpa3o3NEc1blJGaU5aSWZQX2owS0cwQ0NHYk5RdU9qMnlneUpNWGNfUWNYSzN6UU5pMllKUjA?oc=5)
-- ['반도체 올인' 한국 경제 괜찮을까...AI에게 토론시켰더니 - 지디넷코리아](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5TR2U0eTUwNTRuc044TGxja2NjY21VM3Atc0N0TmpCWG5kSjBhNzFoODh6eDlXZGk5aUc1clhKcDdHZklHTXZOWE5WdXJvWWxZRGY2VG53?oc=5)
+- [신한금융, 올해 두 번째 신종자본증권 발행…자본비율 관리 집중 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE9LNTIxd0lOQ3lyc2hSS0tsalg1V2NlcVF0NFJDRGtUUks2eUg3U25fajVGeGVMV1Uyc0t2Ri1uN0hMdHhqbzFIUnRZUWI5SmVzc0dKXzg1TnNMRFc3SGMyQVlVLXFvV2Zfd2R2Y0xDeG8?oc=5)
+- [2분기 한국 경제 0.6% 성장…반도체 수출로 중동발 악재 상쇄 - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE1qTmFYVktpOVI5b2s3akZvRFd2WVFidHVrUmR5RXhObmNzRUF4aXVhM2xfMVdkMFl6Nm1iNkpVcjdEbFRqdFE?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
