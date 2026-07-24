@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 222 days, 2:03:15
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 222 days, 2:56:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.9% | `████░░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.7% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융 상반기 순익 13% 늘어 최대 3.4조…비은행 '제몫' 다했다 - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE5VdmtobGM3dUE4cEU5anFnRjIzSUZERXF4SHZWeWJpRXMzU1l1MC1Well4OFFrMXROcTFpTGFVNnVUSGY4YkE?oc=5)
+- [KB는 '리딩금융'·신한은 '리딩뱅크'…4대 금융 상반기 순익 11조3392억원 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFAwQ29iWkhxYTNzYXZkWDhQQkw0cWV0S2JJMWhYQXNvQjNsNHU3NzBnY3JBR25BV0tLSDUzb21zRDJDS3RrUkpXV3hQT0pHM2c?oc=5)
 - ['반도체 올인' 한국 경제 괜찮을까...AI에게 토론시켰더니 - 지디넷코리아](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5TR2U0eTUwNTRuc044TGxja2NjY21VM3Atc0N0TmpCWG5kSjBhNzFoODh6eDlXZGk5aUc1clhKcDdHZklHTXZOWE5WdXJvWWxZRGY2VG53?oc=5)
 
 ---
