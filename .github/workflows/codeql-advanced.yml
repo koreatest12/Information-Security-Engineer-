@@ -40,11 +40,21 @@ jobs:
           - language: python
             build-mode: none
           - language: swift
-            build-mode: autobuild
+            build-mode: manual
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
+
+      # The repository's Swift sources belong to the Flutter macOS project.
+      # Flutter generates macos/Flutter/ephemeral and workspace metadata during
+      # dependency resolution/build, so CodeQL autobuild cannot run first.
+      - name: Set up Flutter for Swift analysis
+        if: matrix.language == 'swift'
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v4
@@ -53,13 +63,15 @@ jobs:
           build-mode: ${{ matrix.build-mode }}
           queries: +security-extended,security-and-quality
 
-      - name: Run manual build steps
-        if: matrix.build-mode == 'manual'
+      - name: Build Flutter macOS for Swift extraction
+        if: matrix.language == 'swift' && matrix.build-mode == 'manual'
+        working-directory: korea_sec_app
         shell: bash
         run: |
-          echo "Manual build mode was selected, but no build commands were configured." >&2
-          echo "Add the required compiler/runtime setup and project build commands." >&2
-          exit 1
+          set -euo pipefail
+          flutter config --enable-macos-desktop
+          flutter pub get
+          flutter build macos --debug
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v4
