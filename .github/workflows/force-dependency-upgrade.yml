@@ -1,0 +1,183 @@
+name: Force Repository Dependency Upgrade
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "safe keeps compatibility ranges; latest permits major upgrades"
+        required: true
+        default: "safe"
+        type: choice
+        options:
+          - safe
+          - latest
+      strict:
+        description: "Fail the workflow when any project upgrade command fails"
+        required: true
+        default: false
+        type: boolean
+      create_pull_request:
+        description: "Push an automation branch and open a pull request"
+        required: true
+        default: true
+        type: boolean
+  schedule:
+    - cron: "35 1 * * 1"
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: read
+
+concurrency:
+  group: force-repository-upgrade
+  cancel-in-progress: false
+
+jobs:
+  upgrade:
+    name: Discover, upgrade, validate, and propose changes
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      UPGRADE_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'safe' }}
+      STRICT_UPGRADE: ${{ github.event_name == 'workflow_dispatch' && inputs.strict || false }}
+      CREATE_PULL_REQUEST: ${{ github.event_name == 'workflow_dispatch' && inputs.create_pull_request || true }}
+      DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+
+    steps:
+      - name: Checkout default branch
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          check-latest: true
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          check-latest: true
+          package-manager-cache: false
+
+      - name: Set up Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: "temurin"
+          java-version: "21"
+          check-latest: true
+
+      - name: Set up Go
+        uses: actions/setup-go@v6
+        with:
+          go-version: "stable"
+          check-latest: true
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: "stable"
+          cache: true
+
+      - name: Install upgrade helpers
+        shell: bash
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install --upgrade pyyaml uv pur poetry pipenv
+          npm install --global npm-check-updates@latest
+          corepack enable || true
+          chmod +x scripts/force_dependency_upgrade.sh
+
+      - name: Upgrade dependency manifests recursively
+        shell: bash
+        run: scripts/force_dependency_upgrade.sh "$UPGRADE_MODE"
+
+      - name: Validate modified files
+        shell: bash
+        run: |
+          git diff --check
+          bash -n scripts/force_dependency_upgrade.sh
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          import yaml
+
+          excluded = {'.git', '.cache', 'node_modules', 'vendor', '.venv', 'venv', 'dist', 'build'}
+
+          for path in Path('.').rglob('package.json'):
+              if excluded.intersection(path.parts):
+                  continue
+              with path.open(encoding='utf-8') as handle:
+                  json.load(handle)
+
+          with Path('.github/dependabot.yml').open(encoding='utf-8') as handle:
+              config = yaml.safe_load(handle)
+          assert config.get('version') == 2
+          assert isinstance(config.get('updates'), list) and config['updates']
+          print('Manifest syntax validation passed.')
+          PY
+
+      - name: Detect repository changes
+        id: changes
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No dependency changes were produced." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Dependency changes are ready for review." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Commit and push upgrade branch
+        id: publish
+        if: steps.changes.outputs.changed == 'true'
+        shell: bash
+        run: |
+          branch="automation/force-upgrade-${GITHUB_RUN_ID}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add -A
+          git commit -m "build(deps): force repository dependency upgrade"
+          git push --set-upstream origin "$branch"
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+
+      - name: Open dependency upgrade pull request
+        if: steps.changes.outputs.changed == 'true' && env.CREATE_PULL_REQUEST == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HEAD_BRANCH: ${{ steps.publish.outputs.branch }}
+        shell: bash
+        run: |
+          cat > /tmp/upgrade-pr.md <<EOF
+          ## What changed
+
+          - Recursively discovered supported dependency manifests across the repository.
+          - Applied the **${UPGRADE_MODE}** upgrade policy.
+          - Refreshed compatible lockfiles where package-manager tooling was available.
+          - Validated JSON, YAML, shell syntax, and whitespace errors before publishing.
+
+          ## Review guidance
+
+          The **latest** mode can include breaking major-version changes. Review application tests, build output, and CodeQL results before merging.
+
+          Generated by workflow run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}
+          EOF
+
+          gh pr create \
+            --repo "$GITHUB_REPOSITORY" \
+            --base "$DEFAULT_BRANCH" \
+            --head "$HEAD_BRANCH" \
+            --title "build(deps): force repository dependency upgrade" \
+            --body-file /tmp/upgrade-pr.md
+
+      - name: Explain pull-request permission fallback
+        if: failure() && steps.changes.outputs.changed == 'true'
+        shell: bash
+        run: |
+          echo "::warning::The upgrade branch may have been pushed, but GitHub Actions could not create a pull request. Enable Settings > Actions > General > Allow GitHub Actions to create and approve pull requests, then create the PR from the pushed automation branch."
