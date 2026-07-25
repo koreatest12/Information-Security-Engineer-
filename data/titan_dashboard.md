@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 223 days, 9:04:04
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 223 days, 9:37:47
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.3% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.5% | `█████░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [KB는 '리딩금융'·신한은 '리딩뱅크'…4대 금융 상반기 순익 11조3392억원 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFAwQ29iWkhxYTNzYXZkWDhQQkw0cWV0S2JJMWhYQXNvQjNsNHU3NzBnY3JBR25BV0tLSDUzb21zRDJDS3RrUkpXV3hQT0pHM2c?oc=5)
+- [몸값 반토막에도…신한금융, 롯데손보 인수 신중한 이유 - 마켓인](https://news.google.com/rss/articles/CBMickFVX3lxTFBEZzlOckR3dFg3Z3lhWFY1XzM0akR2UFZNUFhhX3c4TEpmUmxRM2RrRE92NDlzZ0Myd3lmN00yUzlrdlhWRWhlZjlzQS1PUlF6eHNyWlFlRzRpMWpxU0hucUdGa2MyeHJnMW1rMS1MN3kyQQ?oc=5)
 - [‘반도체야 고맙다’ 2분기 한국경제 0.6% ‘깜짝 성장’ - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBSUTdkYkdsRnVfOWRRUEdtOF94YUVSZUdvcm9ka1hCdHI4TTRiY1FENDlrUkc4Sy1SX2xQdG9PZTdkbVFPcjVDdml2S2MxSFE?oc=5)
 
 ---
