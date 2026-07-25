@@ -2,7 +2,7 @@ name: ⚔️ Grand Ops Server Lifecycle & Upgrade Master v11
 
 on:
   push:
-    branches: [ "**" ]
+    branches: [ "main" ]
   workflow_dispatch:
 
 permissions:
@@ -19,7 +19,7 @@ jobs:
   manage-grand-ops-lifecycle:
     name: 🚀 Server Installation & Upgrade Ops
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: 📥 Checkout Code (Auto-Sync Ready)
         uses: actions/checkout@v4
@@ -30,22 +30,22 @@ jobs:
       - name: 🛠️ Initialize Omni-Installer Engine
         run: |
           mkdir -p ops_control/installer_engine
-          
+
           # [핵심] 범용 설치 및 업그레이드 함수 정의
           # 이 스크립트는 모든 서버 설치의 표준이 됩니다.
           cat <<EOF > ops_control/installer_engine/omni_installer.sh
           #!/bin/bash
-          
+
           SERVICE_NAME=\$1
           VERSION=\$2
           TYPE=\$3 # (app, db, security)
-          
+
           BASE_DIR="servers/\$TYPE/\$SERVICE_NAME"
           BACKUP_DIR="backups/\$SERVICE_NAME/\$(date +%Y%m%d_%H%M%S)"
-          
+
           echo "--------------------------------------------------"
           echo "🔧 Process Initiated: \$SERVICE_NAME (Target: v\$VERSION)"
-          
+
           # 1. 업그레이드 감지 및 백업 (Upgrade & Backup)
           if [ -d "\$BASE_DIR" ]; then
             echo "⚠️  Existing installation detected. Starting Backup..."
@@ -56,27 +56,27 @@ jobs:
           else
             echo "🆕 New Installation Mode Activated."
           fi
-          
+
           # 2. 표준 디렉토리 구조 생성 (Standard Directory Provisioning)
           mkdir -p \$BASE_DIR/bin
           mkdir -p \$BASE_DIR/conf
           mkdir -p \$BASE_DIR/logs
           mkdir -p \$BASE_DIR/data
-          
+
           # 3. 바이너리 및 설정 파일 설치 (Simulation)
           echo "Binary Data for \$SERVICE_NAME v\$VERSION" > \$BASE_DIR/bin/\$SERVICE_NAME.bin
           echo "Config Standard v\$VERSION" > \$BASE_DIR/conf/\$SERVICE_NAME.conf
           echo "Installation Date: \$(date)" > \$BASE_DIR/install_receipt.txt
-          
+
           # 4. 매니페스트 업데이트 (Inventory Update)
           echo "{\"\$SERVICE_NAME\": \"\$VERSION\"}" >> inventory/server_manifest.json
-          
+
           echo "✨ \$SERVICE_NAME v\$VERSION Installation/Upgrade Complete."
           echo "--------------------------------------------------"
           EOF
-          
+
           chmod +x ops_control/installer_engine/omni_installer.sh
-          
+
           # 인벤토리 폴더 생성
           mkdir -p inventory
           echo "{}" > inventory/server_manifest.json
@@ -84,26 +84,26 @@ jobs:
       - name: 🏗️ Execute Massive Server Installation & Upgrade
         run: |
           INSTALLER="./ops_control/installer_engine/omni_installer.sh"
-          
+
           echo "🚀 Starting Grand Ops Massive Deployment..."
-          
+
           # --- [Tier 1: Web & Application Servers] ---
           $INSTALLER "nginx_gateway" "1.24.0" "app"
           $INSTALLER "auth_service" "2.1.0" "app"
           $INSTALLER "payment_core" "3.5.2" "app"
           $INSTALLER "frontend_ui" "5.0.0" "app"
-          
+
           # --- [Tier 2: Database Systems] ---
           $INSTALLER "postgresql_primary" "15.4" "db"
           $INSTALLER "redis_cache" "7.0" "db"
           $INSTALLER "mongodb_analytics" "6.0" "db"
-          
+
           # --- [Tier 3: Security & Monitoring Arsenal] ---
           $INSTALLER "sqlmap_scanner" "1.7.0" "security"
           $INSTALLER "acra_firewall" "0.94.0" "security"
           $INSTALLER "prometheus_monitor" "2.45.0" "security"
           $INSTALLER "grafana_dashboard" "10.0.0" "security"
-          
+
           # --- [Tier 4: Download & Collector Nodes (기존 기능 통합)] ---
           $INSTALLER "download_node" "8.1" "infra"
           $INSTALLER "central_collector" "4.0" "infra"
@@ -111,13 +111,13 @@ jobs:
       - name: 🚨 Simulate Urgent Security Upgrade (Patching)
         run: |
           INSTALLER="./ops_control/installer_engine/omni_installer.sh"
-          
+
           echo "📢 ALERT: Critical Vulnerability Found in Nginx!"
           echo "⚡ Executing Emergency Patch..."
-          
+
           # 기존 설치된 Nginx 위에 새로운 버전을 덮어쓰기 (자동 백업 트리거)
           $INSTALLER "nginx_gateway" "1.25.1-PATCHED" "app"
-          
+
           # 로그 확인
           ls -R backups/nginx_gateway
 
@@ -125,15 +125,15 @@ jobs:
         run: |
           REPORT_PATH="reports/daily_ops/Grand_Ops_Lifecycle_Report_v11.md"
           mkdir -p reports/daily_ops
-          
+
           echo "# 🏗️ Grand Ops Server Lifecycle Report v11" > $REPORT_PATH
           echo "### 📅 Execution Date: $(date)" >> $REPORT_PATH
-          
+
           echo "## 📦 Installed Inventory" >> $REPORT_PATH
           echo '```json' >> $REPORT_PATH
           cat inventory/server_manifest.json >> $REPORT_PATH
           echo '```' >> $REPORT_PATH
-          
+
           echo "## 🔄 Upgrade Actions (Backups Created)" >> $REPORT_PATH
           find backups -type d -name "20*" >> $REPORT_PATH
 
@@ -141,17 +141,17 @@ jobs:
         run: |
           git config --global user.name "Grand Ops Commander"
           git config --global user.email "commander@grandops.io"
-          
+
           git add .
           git commit -m "🚀 Grand Ops: Server Lifecycle & Upgrade System v11 [skip ci]" || echo "No changes"
-          
+
           # --- Auto-Repair Logic (Resilience) ---
           MAX_RETRIES=10
           RETRY_COUNT=0
           SUCCESS=false
           CURRENT_BRANCH=${{ github.ref_name }}
           git config pull.rebase true
-          
+
           while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
             echo "Attempt $((RETRY_COUNT+1)): Syncing..."
             if git pull --rebase origin $CURRENT_BRANCH; then
@@ -160,9 +160,9 @@ jobs:
               git rebase --abort
               git pull origin $CURRENT_BRANCH -X theirs --no-rebase
             fi
-            
+
             git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-            
+
             if git push origin HEAD:$CURRENT_BRANCH; then
               SUCCESS=true
               break
@@ -171,5 +171,5 @@ jobs:
               RETRY_COUNT=$((RETRY_COUNT+1))
             fi
           done
-          
+
           if [ "$SUCCESS" = false ]; then exit 1; fi
