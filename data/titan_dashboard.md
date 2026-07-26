@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 223 days, 21:23:45
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 223 days, 22:41:35
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.1% | `████░░░░░░░░░░░` |
-| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.6% | `███░░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융 품에 안길까, 공개매각 갈까…롯데손보 M&A 분수령 [M&A복덕방] - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE1PNEo1UHBfXzhoSS01VlNxbE4tb2laQzNVQldPSzdfWDdsb3BtX2ptUVNQWGJpNFJTOTVOTjhIcURDZ1FRX0xXZ0d4LUxNMk5UcUE?oc=5)
+- [몸값 반토막에도…신한금융, 롯데손보 인수 신중한 이유 - 마켓인](https://news.google.com/rss/articles/CBMickFVX3lxTFBEZzlOckR3dFg3Z3lhWFY1XzM0akR2UFZNUFhhX3c4TEpmUmxRM2RrRE92NDlzZ0Myd3lmN00yUzlrdlhWRWhlZjlzQS1PUlF6eHNyWlFlRzRpMWpxU0hucUdGa2MyeHJnMW1rMS1MN3kyQQ?oc=5)
 - [‘반도체 수출 호조’ 2분기 한국 경제 0.6% 성장…예상치 웃돌아 - JTBC](https://news.google.com/rss/articles/CBMiVEFVX3lxTE50ckVBME5qMmNXRDJNdVVYa0Ixb1VRQ0pLbXF0UTlJLVFBdkhLY2ZmSGdpM0t3MVVWRnJYNEZLNHRkVGthT0JrSXRRSGpMbm1qWDRKMg?oc=5)
 
 ---
