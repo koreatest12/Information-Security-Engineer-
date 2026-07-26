@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 224 days, 5:05:30
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 224 days, 5:47:41
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.6% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.2% | `████░░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융 품에 안길까, 공개매각 갈까…롯데손보 M&A 분수령 [M&A복덕방] - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE1PNEo1UHBfXzhoSS01VlNxbE4tb2laQzNVQldPSzdfWDdsb3BtX2ptUVNQWGJpNFJTOTVOTjhIcURDZ1FRX0xXZ0d4LUxNMk5UcUE?oc=5)
-- [한경 특파원의 AMD 밀착 취재 [한경 프리미엄9 TODAY] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9HYlphQ0ZMUHNhVEFxdU1kenFOdkNWUUE5NFZOcUNqalB3TTZwc0dCY1doZ293cmJGYWt3U2R4ekswNTRoSzhCT0Q4S1RmTnhtWmQwVWVmT1NTdw?oc=5)
+- ['반도체 올인' 한국 경제 괜찮을까...AI에게 토론시켰더니 - 지디넷코리아](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5TR2U0eTUwNTRuc044TGxja2NjY21VM3Atc0N0TmpCWG5kSjBhNzFoODh6eDlXZGk5aUc1clhKcDdHZklHTXZOWE5WdXJvWWxZRGY2VG53?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
