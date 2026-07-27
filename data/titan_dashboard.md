@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 224 days, 21:32:07
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 224 days, 22:56:49
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.4% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행이 2331억 더 벌었는데…'리딩금융'은 KB가 차지한 이유 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5QWWRpcTM1Y0duaXg2aVQ1TEVZcE4zTmh0emhKa1B6Unp3NXJxTUZhLTN0U3Q3bGFMZVVIQXJ3Nmk2MVJEdDRTVkdEdlBUc00?oc=5)
-- [[속보] 코스피, 장중 하락 전환…삼전닉스도 하락 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBBVUhWTGlucC1jZ3ZGNUZoY3ppM1RLVVE3NG5PcGFaMFJoZlk1LU43UjFhT2EwRFZ5aW14YVZ5ZW1JQWhIa0czTWlfcHdYSTJfN1o0ZVZIZGJjQQ?oc=5)
+- [결국 믿을 건 실적…여의도가 뽑은 '반드시 좋아질 종목' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1RM29pcmZiQ3lVOWpQdVVXbGpyb3JiSkZJZkNPUFF5MU1Rc0hLZ1h2am84ZmQ5VnpoUzlKaG1ERzBtSHRlQ1p1VEI3ZkRoUUkwOEZ0ek10OE9zdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
