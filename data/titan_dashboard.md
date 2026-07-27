@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 225 days, 4:54:44
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 225 days, 6:05:02
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.3% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 37.5% | `█████░░░░░░░░░░` |
 | **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융 품에 안길까, 공개매각 갈까…롯데손보 M&A 분수령 [M&A복덕방] - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE1PNEo1UHBfXzhoSS01VlNxbE4tb2laQzNVQldPSzdfWDdsb3BtX2ptUVNQWGJpNFJTOTVOTjhIcURDZ1FRX0xXZ0d4LUxNMk5UcUE?oc=5)
+- [[모닝 리포트] "신한지주, 계열사 전반 실적 개선"…목표가 13만원 유지 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTFB0UFdkR1hJQ2p2WFkxbWE0MldvWFlSWFRfTlZwZlFqcHZvcGJmSXlYSEhSbGFSckx5OWkxVktFTjNBZUV0WGt3NU5mejNEcHdHNllKTWZBT3NnMU9Q?oc=5)
 - [[단독] 할부금융 강화했더니…대동, 북미 매출 '껑충' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5iV29iampWbC1vSEdDOXlWZnNTaXU1OFk1cFl5c2FaeXV4bGdWSVJkdGQ4LURnNTc0V0FsTllqaVN3WnotUm52bFJVN1M0UFliOFh3ZXdqdDUwUQ?oc=5)
 
 ---
