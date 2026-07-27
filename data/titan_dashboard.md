@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 225 days, 11:18:14
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 225 days, 11:53:10
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.6% | `█████░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.4% | `████░░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[모닝 리포트] "신한지주, 계열사 전반 실적 개선"…목표가 13만원 유지 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTFB0UFdkR1hJQ2p2WFkxbWE0MldvWFlSWFRfTlZwZlFqcHZvcGJmSXlYSEhSbGFSckx5OWkxVktFTjNBZUV0WGt3NU5mejNEcHdHNllKTWZBT3NnMU9Q?oc=5)
+- [신한은행, 최고 연 3.5% ‘시니어 특화 예금’ 5차 특별판매 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9lam5BX0JTMWNfWWtsMFBLNEF0SmMySzBYM21VV1MxeklJMGhDS2VWdGVfU1lTTDk5Y0pveXFBV19jNGJwNnF2MTh3Wm01UVU?oc=5)
 - [[포토] 한화손보 "여성 경제·펨테크 적극 지원" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5mUTFaSGxPc3lKb3lxR1BDNVhPaTExVXdDbllyQ2hNRUQzbEViUy1mVlFhUWY2ZEk4cU5KMEc5d0dibklxamI2RUliRnNDbjI4MEt3ZnlReGRCZw?oc=5)
 
 ---
