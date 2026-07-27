@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 224 days, 16:04:57
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 224 days, 16:38:59
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.9% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.8% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [김준태 신한투자증권 부사장 "기업 생애주기 함께하는 투자형 IB로 도약" [커버리지, 기업을 잡는 손]⑨ - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1XMlNudHhYcHVtdElhdGZsSkFPNXNtTXNvRkgtdVZRRmRvTXk1bzZlcnJ4VHE1dFJoUTVUNW5IVFlZaDUwb2RQbDJRd3d1cno4X3NvLQ?oc=5)
-- ["삼전닉스 어쩌나요"…급락한 반도체주 다시 보라는 이유 [종목+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9XaEdWUUljUlFvcm9NcU04T2cwLVlwbmF3dmlMaXNPdU5EdHNMOEl2TFd4bXptSzljZm9nWU9leGN6TWpOeW5Vall4NjQwRlpFTTdXS3VKbjZodw?oc=5)
+- [[모닝 리포트] "신한지주, 계열사 전반 실적 개선"…목표가 13만원 유지 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTFB0UFdkR1hJQ2p2WFkxbWE0MldvWFlSWFRfTlZwZlFqcHZvcGJmSXlYSEhSbGFSckx5OWkxVktFTjNBZUV0WGt3NU5mejNEcHdHNllKTWZBT3NnMU9Q?oc=5)
+- [코스피, 급락 딛고 상승세…장초반 1% 오른 6700대 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE96WmZibFRBa3IwS1g1UU1sd2RRMkVndlYxS1NHSmJCMVdZUk0wS2FHME5uM1BXRG9VdFpyZ3JXdlVLWDdJN0ZZYnU0WC1pV0o5dzJ4dE1ZNkhnZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
