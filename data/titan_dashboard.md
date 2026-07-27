@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 225 days, 9:49:16
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 225 days, 10:49:33
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.3% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 21.4% | `███░░░░░░░░░░░░` |
+| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[모닝 리포트] "신한지주, 계열사 전반 실적 개선"…목표가 13만원 유지 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTFB0UFdkR1hJQ2p2WFkxbWE0MldvWFlSWFRfTlZwZlFqcHZvcGJmSXlYSEhSbGFSckx5OWkxVktFTjNBZUV0WGt3NU5mejNEcHdHNllKTWZBT3NnMU9Q?oc=5)
-- [[단독] 할부금융 강화했더니…대동, 북미 매출 '껑충' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5iV29iampWbC1vSEdDOXlWZnNTaXU1OFk1cFl5c2FaeXV4bGdWSVJkdGQ4LURnNTc0V0FsTllqaVN3WnotUm52bFJVN1M0UFliOFh3ZXdqdDUwUQ?oc=5)
+- [[포토] 한화손보 "여성 경제·펨테크 적극 지원" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5mUTFaSGxPc3lKb3lxR1BDNVhPaTExVXdDbllyQ2hNRUQzbEViUy1mVlFhUWY2ZEk4cU5KMEc5d0dibklxamI2RUliRnNDbjI4MEt3ZnlReGRCZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
