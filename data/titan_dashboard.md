@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 225 days, 19:16:57
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 225 days, 20:22:23
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.6% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.4% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [손보사는 필요한데 자본이 문제…신한, 롯데손보 인수 셈법 복잡 - 데일리안](https://news.google.com/rss/articles/CBMiowJBVV95cUxNUkdIVEhOMlZMb1FvZWQ1bTVnRHlKMU9GRVRiY21UdGxpcW9rSG42d1lzTmpabWctaWMxYm5kSDRRZlFZZW84S0VSWVpJVzkxR0M4V1NTbTR3VW5PUG5mWnhXWjdRRlhkY3VTMmhONjNTQ3JrYVNPdlR5Si1mZWw3S3ZRVldWSzlONXdWRU9GYllYRDdHd0NNV0steHJVLWduVkxwdDZaOWR0akRNOGF2VkRFLTlPQVppcmN2VWpmcGphRUdienFueUFrZXZWd0h5anFkSWZvOGlKM001S2NVclFNZEk4RVAwdG1XenA1cDdfVmtGbFNnVU5LNGtMRkFYdnI4Z0xGSjlUU1B4dnZhWVZKOUo1SDBfd29mdFZrVWFUWVk?oc=5)
