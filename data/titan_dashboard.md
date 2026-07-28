@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 226 days, 15:05:09
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 226 days, 15:37:24
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.2% | `█████░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.8% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 청년 위한 취업 사다리…'커리어넥스트' 교육생 모집 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5PUkExWHhnMnNfZGFZaUhmNDJZd2x1bzVYdUFMNktTOTZmdmlLZ3gxbUFBQ3JQZVhNV1MtcWtVcEVFX1dFQU5EYUw0Zk1SYzZuM2Y4aHpiT3N4Qk1fX3JIMdIBeEFVX3lxTE5LUVRkVjRoeEFjOFpvVDBIbGZNdm1lLWhTc3pObFBTc21fdjF4a2VQYlJ0OU9wRXQwYjVmZl93Z0dMd19IckxTSkJPRmtpT0NNV05acTI2OUl4SlltWm1IeUxJQVNhQUlFc1FEUWZHTTktalUwWGtaMA?oc=5)
-- ["한국 경제 민낯"이라며 서울역·구룡마을 찍은 日유튜버…"사실적인 영상" vs "자극적 왜곡" 논란 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE05TFFCWGlOOTFPaFU3RUJ5MGl0dzkxZzFkOW9QRnJ5Z1B2aHh1aFRGRlBodGFuQnZORU9RLVFrX3VSNE5lZkZjQWRYak9JaEk?oc=5)
+- [서울역 노숙인 찍고 "한국 경제의 민낯"…日 유튜버 영상 논란 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFAxQm5qS3hYU0hxUEtSWWs3emdHNTBSZktOajhvMmoxdGFLUjhXcGs4WGl2VHNjNXRJT183RmJsbWVmZXNYMjVUa240TjN0WUhBNjVwMXdkRWtPZ3ZWWDRXNNIBeEFVX3lxTE1XTDN2dFJQRjR4Rm9NX2FuanpCME5pODBERVpEVnNsQVlrQ1N0V0F2amlNMVFKdGx4bjJkeTVmbmU2NDFDV1dtcVpicGxfMkpFdklwcTZxVFJmSDdZcDU5WVc2cE9lQjFlR1dLQzRDem12UTF2ck9SdA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
