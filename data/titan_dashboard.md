@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 225 days, 16:06:49
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 225 days, 16:36:19
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.9% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.3% | `█████░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 최고 연 3.5% ‘시니어 특화 예금’ 5차 특별판매 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9lam5BX0JTMWNfWWtsMFBLNEF0SmMySzBYM21VV1MxeklJMGhDS2VWdGVfU1lTTDk5Y0pveXFBV19jNGJwNnF2MTh3Wm01UVU?oc=5)
-- [[포토] 한화손보 "여성 경제·펨테크 적극 지원" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5mUTFaSGxPc3lKb3lxR1BDNVhPaTExVXdDbllyQ2hNRUQzbEViUy1mVlFhUWY2ZEk4cU5KMEc5d0dibklxamI2RUliRnNDbjI4MEt3ZnlReGRCZw?oc=5)
+- [신한금융 품에 안길까, 공개매각 갈까…롯데손보 M&A 분수령 [M&A복덕방] - 매일경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE8zMXBrNTdiMEJCUTMzM2VGWFJaY2VJb1I5NktDU0dfbDFob0IzZHdsV0JKRFQ5LUVJZzAxalJuN0NKMWtSbGNqWXo5bDkzZklOeUE?oc=5)
+- [[속보] 코스피, 미국발 찬바람에 급락 출발…5%대 하락 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwSUlsMlJHMWFwUU9ZbE40VjlZcmJVSC1MVWZEdHlOMGZiUW5vUnVTdWtrbUJVeS1VV0RXRmthYkdIQm5vMjEwekJFT2drMzI5RmZlTkpyb3VPUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
