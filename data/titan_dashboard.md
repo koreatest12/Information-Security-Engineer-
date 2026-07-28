@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 226 days, 7:46:09
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 226 days, 8:29:44
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.8% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.3% | `████░░░░░░░░░░░` |
+| **RAM** | `41.0/512 GB` | 8.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융노조 "슈퍼쏠 유치 압박…직원들 '앱팔이'로 내몰아" - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE5LWDB1cTRDZ1hWejJndk1KUjVjSUJhZlJxRDI1NEcySC1wdlhiT3RKOVYwLWFHdWc0bU5EYjJIbk1VNTVtTUdsSlI1VTczaTVjWmtBOW4zNlVNTHdUczBJRnB6a29IT0l1SnhzLXlIai0?oc=5)
-- [반도체 '최악의 날'…증시 '검은 화요일' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9yTlVTSU1oMHJORl8zWGp4a3QzbFJPZmtteGhkYXRmQnJDQmtvZGVpdXFvdEMzZlVmMmN4SHJvMDJDYWk1VzZzektVRENIaG1ZNERVRVpJenBRZw?oc=5)
+- [6,000p '위태' 왜 이러나…개미 조단위 '뭉칫돈' 총력 방어 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1wU1c3MTBkbTVBNGtmd1A3a0xhRllDZXk5bDdRc3R6UlUzeTFHTnAzcU1DYVNNc3Z4dEsxMTV3TWJhdkU1SmFtZVhjOFQwVEE?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
