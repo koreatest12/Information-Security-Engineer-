@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 225 days, 21:47:33
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 225 days, 22:39:15
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.2% | `█████░░░░░░░░░░` |
-| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.4% | `████░░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [손보사는 필요한데 자본이 문제…신한, 롯데손보 인수 셈법 복잡 - 데일리안](https://news.google.com/rss/articles/CBMiowJBVV95cUxNUkdIVEhOMlZMb1FvZWQ1bTVnRHlKMU9GRVRiY21UdGxpcW9rSG42d1lzTmpabWctaWMxYm5kSDRRZlFZZW84S0VSWVpJVzkxR0M4V1NTbTR3VW5PUG5mWnhXWjdRRlhkY3VTMmhONjNTQ3JrYVNPdlR5Si1mZWw3S3ZRVldWSzlONXdWRU9GYllYRDdHd0NNV0steHJVLWduVkxwdDZaOWR0akRNOGF2VkRFLTlPQVppcmN2VWpmcGphRUdienFueUFrZXZWd0h5anFkSWZvOGlKM001S2NVclFNZEk4RVAwdG1XenA1cDdfVmtGbFNnVU5LNGtMRkFYdnI4Z0xGSjlUU1B4dnZhWVZKOUo1SDBfd29mdFZrVWFUWVk?oc=5)
-- ["SK하이닉스 한달새 시총 반토막" 韓·日 증시 패닉 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9BMXdURnEwZ3pCem1Eb0hLY08zQUhqVWxENW11WExsU2tRZVc0enRMeUtpN0VhZWg2X0VKc2F1eV9uN2ktYV80UktxRWVZaWs?oc=5)
+- [신한금융, 청년 위한 취업 사다리…'커리어넥스트' 교육생 모집 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5PUkExWHhnMnNfZGFZaUhmNDJZd2x1bzVYdUFMNktTOTZmdmlLZ3gxbUFBQ3JQZVhNV1MtcWtVcEVFX1dFQU5EYUw0Zk1SYzZuM2Y4aHpiT3N4Qk1fX3JIMdIBeEFVX3lxTE5LUVRkVjRoeEFjOFpvVDBIbGZNdm1lLWhTc3pObFBTc21fdjF4a2VQYlJ0OU9wRXQwYjVmZl93Z0dMd19IckxTSkJPRmtpT0NNV05acTI2OUl4SlltWm1IeUxJQVNhQUlFc1FEUWZHTTktalUwWGtaMA?oc=5)
+- ["추격 매수 말고 조정 때 담아라"…증권사들 한목소리 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KYmZaLU01anBycDBFc3AzZVNTMzJHUFVIZEMwTndqQUpZYVNCNU1zcVJHR05tUkRNQ21YRmdYVXRfR1MtcXBMXzJqSkNwOHhsdW44MnJoeVhiQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
