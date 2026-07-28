@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 226 days, 3:32:56
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 226 days, 4:27:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.9% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.0% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 청년 위한 취업 사다리…'커리어넥스트' 교육생 모집 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5PUkExWHhnMnNfZGFZaUhmNDJZd2x1bzVYdUFMNktTOTZmdmlLZ3gxbUFBQ3JQZVhNV1MtcWtVcEVFX1dFQU5EYUw0Zk1SYzZuM2Y4aHpiT3N4Qk1fX3JIMdIBeEFVX3lxTE5LUVRkVjRoeEFjOFpvVDBIbGZNdm1lLWhTc3pObFBTc21fdjF4a2VQYlJ0OU9wRXQwYjVmZl93Z0dMd19IckxTSkJPRmtpT0NNV05acTI2OUl4SlltWm1IeUxJQVNhQUlFc1FEUWZHTTktalUwWGtaMA?oc=5)
-- [코스피 때린 中 반도체 공습…시장 떠받친 개미도 체력 바닥 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5xZHNMWWVHdDJjOXJsWjBpVkJidVJ0cmJVWnBGclFhRml0TmJvOGo4WkhxaDZDcFlXc0ZMcHFmOHRybGJJNXd0cEt1aUJsS1pjNWZqOXBiczBlZw?oc=5)
+- [반도체 '최악의 날'…증시 '검은 화요일' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9yTlVTSU1oMHJORl8zWGp4a3QzbFJPZmtteGhkYXRmQnJDQmtvZGVpdXFvdEMzZlVmMmN4SHJvMDJDYWk1VzZzektVRENIaG1ZNERVRVpJenBRZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
