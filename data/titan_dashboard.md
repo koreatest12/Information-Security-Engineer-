@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 226 days, 14:07:49
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 226 days, 14:38:06
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.8% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.6% | `█████░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 청년 위한 취업 사다리…'커리어넥스트' 교육생 모집 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5PUkExWHhnMnNfZGFZaUhmNDJZd2x1bzVYdUFMNktTOTZmdmlLZ3gxbUFBQ3JQZVhNV1MtcWtVcEVFX1dFQU5EYUw0Zk1SYzZuM2Y4aHpiT3N4Qk1fX3JIMdIBeEFVX3lxTE5LUVRkVjRoeEFjOFpvVDBIbGZNdm1lLWhTc3pObFBTc21fdjF4a2VQYlJ0OU9wRXQwYjVmZl93Z0dMd19IckxTSkJPRmtpT0NNV05acTI2OUl4SlltWm1IeUxJQVNhQUlFc1FEUWZHTTktalUwWGtaMA?oc=5)
-- [AI가 엮은 운명…코스피와 나스닥 100 동조화 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE8xcC1kWExIVkZWSFBPWDZ3dXpXYzl0SnVYRWxMcGVSaDZvdTVQTXhTVDJkazZrZ09IVjFJa0M1a2FFc1VfZXlqbURMckhOQVVSakRkSmxvd1ZXUQ?oc=5)
+- ["한국 경제 민낯"이라며 서울역·구룡마을 찍은 日유튜버…"사실적인 영상" vs "자극적 왜곡" 논란 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE05TFFCWGlOOTFPaFU3RUJ5MGl0dzkxZzFkOW9QRnJ5Z1B2aHh1aFRGRlBodGFuQnZORU9RLVFrX3VSNE5lZkZjQWRYak9JaEk?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
