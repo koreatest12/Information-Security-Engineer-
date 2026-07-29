@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 226 days, 17:17:02
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 226 days, 17:56:19
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 15.7% | `██░░░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.4% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융노조 "슈퍼쏠 유치 압박…직원들 '앱팔이'로 내몰아" - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE5LWDB1cTRDZ1hWejJndk1KUjVjSUJhZlJxRDI1NEcySC1wdlhiT3RKOVYwLWFHdWc0bU5EYjJIbk1VNTVtTUdsSlI1VTczaTVjWmtBOW4zNlVNTHdUczBJRnB6a29IT0l1SnhzLXlIai0?oc=5)
-- [서울역 노숙인 찍고 “한국 경제의 민낯”…日 유튜버 영상 논란 - 동아일보](https://news.google.com/rss/articles/CBMidkFVX3lxTE5sU0RoS1drLVhOV1N3TGJxa29zbUdpZUFBaW5EMk9kMVZleGcyaW9SN1VqcUlBN2pEX1gwbXgzMW9GSjN0Qy11M3VrS0ZkazJSeGp0Y2JJWENQalZUd3dYclJIWkR5aXZ6bFBWaW9sMVdvOFBGbGfSAWZBVV95cUxNTDM1aXVselllRjkzT2dXdjFvNXk5bzl5NFpXX0pLLWdJcXAxTUpIbmlERkFkMWtRUUZmOUdwN0xBQ0NPbW1QekFrT0ZwN0x1TXF4a0MwWXdxeW9sQXZMWHVMZlJpemc?oc=5)
+- [신한금융, '신한 커리어넥스트'교육생 모집…금융IT 인재양성 - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5SN3BUbG9VWGF3aUlRd2hmM29DbVBkamVXTDg2MDVHbTdMMFMxc3BoZjRaYWdJTS03ZlhfbXRqZXNmNlVCVDVHZzdITjF0T19Qdnc?oc=5)
+- [6,000p '위태' 왜 이러나…개미 조단위 '뭉칫돈' 총력 방어 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1wU1c3MTBkbTVBNGtmd1A3a0xhRllDZXk5bDdRc3R6UlUzeTFHTnAzcU1DYVNNc3Z4dEsxMTV3TWJhdkU1SmFtZVhjOFQwVEE?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
