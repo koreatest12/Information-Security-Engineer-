@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 227 days, 9:33:01
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 227 days, 9:44:01
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.1% | `█████░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.1% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [롯데손보 M&A1조 뒤에 더 큰 계산서…신한금융, 롯데손보 '키울 돈' 따진다 : 네이버 블로그 - Naver Blog](https://news.google.com/rss/articles/CBMijwFBVV95cUxNcDNpbzFkZUI0dUFPWVdNZnlwU0xnSExMZm5qd0Y3ZHFSRU9kNV9Rempnd2R2UjJXLVBZUGpQME85dkNObXdtY2Jnakc4ek1yeUNtYWEydXd4d05tb0hvLXlqbFB2TmY5X0U3MFRJUFIxNnJSOVotbGFJVDBpZnkzTjB0cThnUlg2R1ZQSW14TQ?oc=5)
