@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 226 days, 16:04:53
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 226 days, 16:35:56
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.4% | `█████░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.3% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 청년 위한 취업 사다리…'커리어넥스트' 교육생 모집 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5PUkExWHhnMnNfZGFZaUhmNDJZd2x1bzVYdUFMNktTOTZmdmlLZ3gxbUFBQ3JQZVhNV1MtcWtVcEVFX1dFQU5EYUw0Zk1SYzZuM2Y4aHpiT3N4Qk1fX3JIMdIBeEFVX3lxTE5LUVRkVjRoeEFjOFpvVDBIbGZNdm1lLWhTc3pObFBTc21fdjF4a2VQYlJ0OU9wRXQwYjVmZl93Z0dMd19IckxTSkJPRmtpT0NNV05acTI2OUl4SlltWm1IeUxJQVNhQUlFc1FEUWZHTTktalUwWGtaMA?oc=5)
+- [신한금융노조 "슈퍼쏠 유치 압박…직원들 '앱팔이'로 내몰아" - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE5LWDB1cTRDZ1hWejJndk1KUjVjSUJhZlJxRDI1NEcySC1wdlhiT3RKOVYwLWFHdWc0bU5EYjJIbk1VNTVtTUdsSlI1VTczaTVjWmtBOW4zNlVNTHdUczBJRnB6a29IT0l1SnhzLXlIai0?oc=5)
 - [서울역 노숙인 찍고 “한국 경제의 민낯”…日 유튜버 영상 논란 - 동아일보](https://news.google.com/rss/articles/CBMidkFVX3lxTE5sU0RoS1drLVhOV1N3TGJxa29zbUdpZUFBaW5EMk9kMVZleGcyaW9SN1VqcUlBN2pEX1gwbXgzMW9GSjN0Qy11M3VrS0ZkazJSeGp0Y2JJWENQalZUd3dYclJIWkR5aXZ6bFBWaW9sMVdvOFBGbGfSAWZBVV95cUxNTDM1aXVselllRjkzT2dXdjFvNXk5bzl5NFpXX0pLLWdJcXAxTUpIbmlERkFkMWtRUUZmOUdwN0xBQ0NPbW1QekFrT0ZwN0x1TXF4a0MwWXdxeW9sQXZMWHVMZlJpemc?oc=5)
 
 ---
