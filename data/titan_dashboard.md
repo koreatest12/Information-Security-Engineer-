@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 227 days, 13:35:13
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 227 days, 14:07:28
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.9% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.2% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [롯데손보 M&A 고민하는 신한···인수하면 경쟁상대는 농협손보 - 시사저널e](https://news.google.com/rss/articles/CBMickFVX3lxTE5ZTGtNaWxwZEdnT3l1alcxOUhyOW9WREJlQ2N2TGo3dVlEUkxtSGFfSlU5dE9sNkZsU3gxcHNzd0ZZeEJkSGVxcnhiSURqMGxtR20wUllKdmwxOVJqV0xTWHRzTW10X3pEUU5wTURyS2VSZ9IBdkFVX3lxTE1oU3pYZmNrckRJS0dNYkIyUllZMm9qX0V2dTVHX0lWcFpJYk1sazVtNGJVdEczUVFPN2syajJyWFNoN3JMRXFoNXNKOTZGU254LXFCS1RwMkNiUGt3dmJ1S2dpMW5tbzFHOW5iMlpwOEYzWVM5aFE?oc=5)
+- [“몸값 1조? 글쎄”… 신한금융, 롯데손보 인수 고심 - IT조선](https://news.google.com/rss/articles/CBMicEFVX3lxTFA0a2RfWUZhRFBVWkp1QzhwLUUzSFNjUzlxckZ0S1haTGh2ekNEWjk1LS1Oa2dBRXpEVURzWXBEYlA1UFd1WEM1QjFqX2RFd1FkUnNVOFQyZUFfak5yRjU4QU1sWVdyM3FJdDlHcHpTdG3SAXRBVV95cUxNbE0tc2NJMVAtdlBrelM1UDRnTllBS013Vl9KeWR6Mm8xSHlrT3dGUjZsSjljdUo4dUc1d09RSVdTbHFDaUNTbjRJRm12YjV0dWVIM0QyNExfek9Mb2EtRnpNcllBNV9KZXV1OEtZUk82UzFRTw?oc=5)
 - [노숙인·판자촌 찍곤 ‘한국 경제의 민낯’…日 유튜버 영상에 ‘왜곡 논란’ - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9fTl93eE1hbDBMMFJnZ0J0cnQyR095UkhwV3Z3LXVYR2dVNDk2MjgxT1J1WEFKcHBBUURqUE9NQlZNQWVxZEtkZXFIazVlYlk?oc=5)
 
 ---
