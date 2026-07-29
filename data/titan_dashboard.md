@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 227 days, 3:08:43
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 227 days, 4:00:29
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.4% | `████░░░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.3% | `█████░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 기업대출 2.8% 확대...국가핵심산업·녹색금융에 역량 집중 - 녹색경제신문](https://news.google.com/rss/articles/CBMiaEFVX3lxTE0zbFVLbmtDM2pjM0dTOVMtbTRVZjFEYkNCaTNGaHhSNTM1a0lBTzE5ZXBRWldWSkw5ZGtzaFNTWlpBY2pWMjRZSzY2MER5WEhxQnRFWVZTNExxUEpYcXZLNktpWTR3b2dG?oc=5)
+- [신한은 왜 롯데손보가 간절할까…상반기 실적이 보여준 ‘보험의 빈자리’ - 마이데일리](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1FMmhmRVgtWDVnWV94VFc3c2g0alZ4T1QxcHNYVjhHSWdGd1J5TnJvcER5aEFMT1lvMXBzQTc5aW5xT2lsdzJVMG8yYV9obnBGdl9rQzIxSDBIbUtsWm01bA?oc=5)
 - [에어컨 빵빵한 한국, 이유 있었네...일본의 '반값' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFB4ZHo1SlJLVUVKU0VvbS1SYVRkY2dvU0lXc3pwa0tXR1NEVW9tbHZNTzN6MWpFOURLVU1EcmY1czZiZU1WM3lwR09icmVKLTg?oc=5)
 
 ---
