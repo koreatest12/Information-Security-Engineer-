@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 228 days, 13:07:24
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 228 days, 13:40:53
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.9% | `█████░░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.0% | `█████░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 자회사 신한자산신탁·신한리츠운용 흡수합병 결의 - yna.co.kr](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9nLUdIeTRDZzlRLW51ejRLWU1FYkFnRHUwNWxwRVJUeGNKZFBoRi1JTlNTVERudjRUYm92bkVoQlEzVzdKWHAtUDU1VWFJLVhraHM4aWtYU285WGvSAWBBVV95cUxOQW9EUDFZSU5maUpJMHVwSXB6SnpRWGZOc2F2OTgtRm1TLVNPXzlRWkR5cC1GSHB6dDJReEJSbEphTHNUaWVCRlV2T244aUgyOEo5cnJLd29nbUlHN21neHU?oc=5)
-- [[목요일 아침에] ‘포템킨 빌리지’와 한국 경제 - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9lMWFXYUZZS3JJUFlBUDgwZFQ4TEpsU0VWMTBrb0NSLUhaMW9CWDBIME51eFVzRU93REQxZ0tHOUdTRjhiTDJ3SG54Tk41Z2ZXSGfSAVNBVV95cUxNRTlZeUtnVUpUN1JlUEpVQ09oVFZfeGZZeHBoY1B1WUNiS2NOX3ljY0VNczFPdTRyU0s0Q0p2LWg0VjZfU2ZiSTRHcVJTY1c2aUNDSQ?oc=5)
+- [전필환 신한캐피탈 대표, 수익성 회복·포트폴리오 체질 개선…사모대출 시장 진출·우량자산 확보 [진옥동호 신한금융, 부스트업 점검] - 한국금융신문](https://news.google.com/rss/articles/CBMifEFVX3lxTE9qeUdnYkFVMWhqUTlqX25KUEN4ZWozS3hWNWdFTUVTSUdfc2FWdERxbnUzQ25GNDNYRUZ2d2dJUjR0ZlNCdXZrMkJhM0hWaWVGUDF1UmRFU0ZWeUF5azhhbk9vbHJadlhUOUFIZFFmNnFvVEt3cVA0eUVydHo?oc=5)
+- [40년 만에 '최저치' 내려앉은 엔화…한국 경제 미칠 파장은 - 데일리안](https://news.google.com/rss/articles/CBMiggJBVV95cUxPMHpDdFJGZmJpZ3VEY0VhQ01mREt5dTZYeW9sQlR0d1dTRFNFQ2lsWHZfQ05pYkhMVDNiMFY5VXA0aS1lVzZhRzU5UTNQUkR5UGpUMGwyVFdjWVRSTTNqZnNhSFpSZFRRV2NzcE1nQ2JkRWZWVkN3dWc0bzZfSV9hVkIxVVhQdkdEaExIa1kxUUpCbVMyRnl3UzMtZnlPM3ZEaksyclR1SVYtdGtsSkdldGY3eEc5S2VmSk9Ma0FNWXJ1VzhRT3NydVpkamRYMHpRc3NMbkZfMXhFdXExVHJiX1pqdU1ybFl5VXdfcXY3TDIwLWpYZHh5cjB0TF9MUmV6Q0E?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
