@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 229 days, 13:08:02
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 229 days, 14:07:36
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 20.8% | `███░░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.2% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 자산신탁·리츠운용 합병…"부동산 사업 일원화" - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1CY2hqUVlsWFlBbGJGRm1DakhTWFB6b2ZqRzM1M0JFYVRhVVVtYzVqR2lFajBkTGw2ZjhtS2pXX25zWThhMWJqeVFzVVRZM05mdlFyV1pPM1pLaW1Dd2ZkZdIBeEFVX3lxTE81SUtEX3RteXdnTmdhZERjV3pFc2o5Y2FDS0ZISl9JOG5fbmgxOE9NVEkyUGQxQ3ViNWNmR05ETTV5Nm5sWjN0T2laMDJfZDZPU3BHZk1aU2x1U2w1Qm5jVG5seHRwaHNxb2t1a3hJNTNvTUVFQWZmVg?oc=5)
-- ["700명 빠졌는데"…아무도 관심 없는 카카오뱅크 파업 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5hMTcyOUdVclUxM09rOS1KMjF2UDdtZDRpWWFzeHJzaC1QeXgzWlYwdU9lQm1IR05VYmo5SV95bThKeGhPM2ExMXhTTzkxMlhJYnVaVkZiTlJGZw?oc=5)
+- [신한·KB 등 10곳, 내년에도 '시스템 중요 금융사' 지정 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE56N2FSTXFFaHM5OHlPNFltWDBMajdSa19renV4YWdadE84UlgxUjJfRlVja203bF9mNUFKTXZreEd3ZF81VlJfMHlfcVVxNEJlNFFTdXk1NVRtOUNDb0hsUFkwRlotWFlEM1lGZGRINUxMdUk?oc=5)
+- [맥도날드 불매한 도시?…20년간 떠돈 ‘폐점 미스터리’ [권용훈의 트렌드워치] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9rSmEyWFdGT3dnb254N0ZSOFNWY2t6U2xBbTJmQTFnUlgwT3Y0MzJCT25XaXZzd3d1QkhiendYbWpVMWdRV3JGTl92ZVBxcFlGcTdsOERqTG45dw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
