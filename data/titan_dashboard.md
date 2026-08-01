@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 229 days, 19:17:36
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 229 days, 20:29:58
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.0% | `█████░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.1% | `████░░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융 부동산 밸류체인 일원화, 진옥동 ROE 중심 경영 기조 힘 싣는다 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE5lS1VtZS1zc09uaVVwVzlpWVdzRVhNd3RqUkZBRTdTenBFbkZ4bkpEaXJGOTRaZFZXOWNlSDFzQnZkUmdvX1V1TWdjb016OHNmZ2pFM3hlMXFKc21XVW9vOGNfc0EzdWJGQlFLWjBjUTBGNjQ?oc=5)
-- [[토요칼럼] 아이들에게 뭘 가르쳐야 할지 모르겠다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5pR1ZzV0J3eGlEblZtLWpGZUdVUDVaWHUzRjBTdF9UcmdZYUQwQ3JlWVFwa2t4VE1UVEljUUFCVC03MVM4M09OYXNxaWxleHZvaEQ4WjRwNF80Zw?oc=5)
+- [신한·KB 등 10곳, 내년에도 '시스템 중요 금융사' 지정 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE56N2FSTXFFaHM5OHlPNFltWDBMajdSa19renV4YWdadE84UlgxUjJfRlVja203bF9mNUFKTXZreEd3ZF81VlJfMHlfcVVxNEJlNFFTdXk1NVRtOUNDb0hsUFkwRlotWFlEM1lGZGRINUxMdUk?oc=5)
+- [40년 만에 '최저치' 내려앉은 엔화…한국 경제 미칠 파장은 - 데일리안](https://news.google.com/rss/articles/CBMiggJBVV95cUxPMHpDdFJGZmJpZ3VEY0VhQ01mREt5dTZYeW9sQlR0d1dTRFNFQ2lsWHZfQ05pYkhMVDNiMFY5VXA0aS1lVzZhRzU5UTNQUkR5UGpUMGwyVFdjWVRSTTNqZnNhSFpSZFRRV2NzcE1nQ2JkRWZWVkN3dWc0bzZfSV9hVkIxVVhQdkdEaExIa1kxUUpCbVMyRnl3UzMtZnlPM3ZEaksyclR1SVYtdGtsSkdldGY3eEc5S2VmSk9Ma0FNWXJ1VzhRT3NydVpkamRYMHpRc3NMbkZfMXhFdXExVHJiX1pqdU1ybFl5VXdfcXY3TDIwLWpYZHh5cjB0TF9MUmV6Q0E?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
