@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 230 days, 7:06:49
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 230 days, 7:39:36
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.8% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.0% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한·KB 등 10곳 '금융체계 중요기관' 재선정…전년도와 동일 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTE5CYi1GSVJUbjhDUEdmWGJiR1dncmJQY0NXWXk1ZFB3V3BzMzMxUktUZ3UyZVNGMnFuYm5hc0d5YnFwdHhVaHk1bElsd3dDcFBjQXFoWEFUSTViZlMwdGJ3bnRjaFdvVUlDN0E00gFwQVVfeXFMT2lyVTA0VzZaZGlJU0pVa3pQSlNFYzRfSURsN0ZnTTQtNjQxRVN4MWp0U0o2NzRsQmpTZFh6Q0o1Nm9aWmQ0WG9HaDJwUmRONVVNaEg0M2prT05GY2poUnFSQVpmb0U5Y1dEbkV1dm1TSA?oc=5)
-- [삼전닉스 레버리지 ETF 후폭풍…"김용범 경질해야" 56.3% - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jMFZ0OF8tWWJZWk1kUjZsZU9LRDZyMFR1UDBLdUxyaTd5MGI5cTN2OS1ETkMxbkN6cTd3c2JNc19UMTZjMl9QZlFnQVdNTUdRbks5QUxQZXpkUQ?oc=5)
+- [[오늘의 운세] 2026년 8월 2일 별자리 운세 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBUSjVwX1JxUTBNWDBCVzR1VVFmcFVobFFlMGZBTFF5d19TbmVnSDVRTVpuUHN3Y1ZFbldXU2xhYUtMNWJkRS0wUkZpV1JkT1RzLU0zQm1QMUhaUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
