@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 230 days, 0:01:22
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 230 days, 1:01:52
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.1% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.4% | `████░░░░░░░░░░░` |
 | **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한·KB 등 10곳, 내년에도 '시스템 중요 금융사' 지정 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE56N2FSTXFFaHM5OHlPNFltWDBMajdSa19renV4YWdadE84UlgxUjJfRlVja203bF9mNUFKTXZreEd3ZF81VlJfMHlfcVVxNEJlNFFTdXk1NVRtOUNDb0hsUFkwRlotWFlEM1lGZGRINUxMdUk?oc=5)
-- [보험 해약 않고 유지하는 법 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9oSDNER2ZUcm5CYmlXT1pROG1jYmpBWndQNUhyMW80OVB3RFh0ellXaWRiMEZ4SXlSSGhxVWI4SGExVFZrczlmZkR3OTFHZmw2amJ2U0RvdkYtZw?oc=5)
+- [신한금융 부동산 밸류체인 일원화, 진옥동 ROE 중심 경영 기조 힘 싣는다 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE5lS1VtZS1zc09uaVVwVzlpWVdzRVhNd3RqUkZBRTdTenBFbkZ4bkpEaXJGOTRaZFZXOWNlSDFzQnZkUmdvX1V1TWdjb016OHNmZ2pFM3hlMXFKc21XVW9vOGNfc0EzdWJGQlFLWjBjUTBGNjQ?oc=5)
+- ["얼마나 빠졌나 묻지 마라"…폭락장에서 봐야 할 '이것' [이주영의 시장을 꿰뚫는 기술] - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTE44cTJOejU1OThDNlhQQXdKUmFLa0ZSNlRkRVNCcm9Qb0dwNnhJN0RrdG5FMk9FbzlNYTd6S2E1QXRzUVVvdFozVnRlVFBsbVZadzBfeW9VaEJpUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
