@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 231 days, 13:03:30
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 231 days, 13:33:59
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.0% | `█████░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.7% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한투자증권, 발행어음·그룹사 시너지로 체급 키운다 [전업계 추격하는 은행계 증권사 (4)] - 한국금융신문](https://news.google.com/rss/articles/CBMifEFVX3lxTFBSdGNjbmNpWFllejhhdzRFbWZxOWlUeDdpc1V6SFdDLWZ2MThQQ09VZ21INlFyNUUzRkZUZVo2Q0hqTXowWkZxcnRQVF9tZXA2NEtwdXVkZl9NZ1o4a1RBd3FvcGM0Y1F1Yzlka0l5VS1oOTdGM1VNcExWWXQ?oc=5)
-- [李 대통령, 귀국 즉시 출근…부동산·증시 비공개 회의 소집 - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTE0yTVdhZEFVSVFrNC1Ianpqc2tRdkdrUXV0UUFqeG9TejhnVG5xSlVzNnFrRXJxcFFlSjJwRWJKRHVpVEZIYlI3dGZwdGxNZGtUQXg1OFhmR1JtUQ?oc=5)
+- [공적 연기금이 주도하는 '임팩트 투자'의 확대 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5GTWIxOWNMS2pfWWlJZ3ZPNGpNYnBMQXNNMWdBNkdaMEhsa2tENEVNOUVYeC1JcnA1TGdtVjBVWlhaMzBfSEUtM1RIYmlKZ01vSzQxUHRpNjRRdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
