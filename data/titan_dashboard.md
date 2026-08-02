@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 231 days, 9:37:58
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 231 days, 10:06:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.5% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.8% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [비은행 ‘추격ʼ 진옥동, 달아나는 양종희…‘멀어지는ʼ 함영주 [2026 금융사 상반기 리그테이블] - 한국금융신문](https://news.google.com/rss/articles/CBMie0FVX3lxTE04UnAzLTlUQ0xGUFdIdmdueWNYaXdlMm52YkVDc3diQkFSakxzMFk5VzJnNWlrYUNYNTJ0TGN2eGtVY3hmTkNObnFIX21lSWdTOEVrM0ZLMkRDTUF1RXJNa3VnQm9uckJQN0FJbVBFRDhxal9SUmlTM3I4SQ?oc=5)
-- [美 AI 관련 ETF 강세…인도·팔라듐도 '양호' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ScVh1QXVmZ3FONTJoX0ZWc05sZGV1MXdqUWJ5Ym0xZmJ0ZV9uTFZjaFZnT3g4cmViNTM0V0pOemxiUTJLMEhNbFRyT0xSZDUyLXRLRG14aTlGUQ?oc=5)
+- [李 대통령, 귀국 즉시 출근…부동산·증시 비공개 회의 소집 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE0yTVdhZEFVSVFrNC1Ianpqc2tRdkdrUXV0UUFqeG9TejhnVG5xSlVzNnFrRXJxcFFlSjJwRWJKRHVpVEZIYlI3dGZwdGxNZGtUQXg1OFhmR1JtUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
