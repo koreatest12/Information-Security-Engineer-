@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 231 days, 20:12:59
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 231 days, 21:27:43
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.5% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.6% | `████░░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - ["대표님 저는 반대합니다"…회의실에 들어온 신한금융 AI - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE83anA0UUJZY3NCckJmbGdQa0RxNWgwT2FqTjB2dWJDb0JXQVphVGFvMy12b3l1cFRVOGRudFgyUzJDVXEwdXFzYlFUbHdQMG8?oc=5)
-- [한경ESG Vol.62 - 2026년 08월호 - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTE03c0J5ZzloTGJCc2NLTmVGYk8zMjcydkZGMjctcE1vSnU2U2RLbTJsTXdqVlNxcFpKZEdNV2FKeGdNbXlnRk4tTEdOSzdnS3NTak11akg1cHBKZw?oc=5)
+- [[속보] 대구 북구 40.9도…오후 1시 56분 기준 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFAxNFQ5ZmNCN3dFcExwVzNTNnNUUzlEQlc4eWczS2I4OXloLVA5RWI0cExhaGdOX2NoRTJpV1pTVHZtSkQ2NnMzOUc2cEhHZTZjLTBIUEM4XzJRUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
