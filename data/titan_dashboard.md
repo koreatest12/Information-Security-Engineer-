@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 232 days, 6:08:22
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 232 days, 7:16:28
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.9% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.2% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [진옥동 글로벌 전략 '순항'...상반기 신한금융 해외사업 성장세 가속 - 머니투데이 - mt.co.kr](https://news.google.com/rss/articles/CBMia0FVX3lxTE1fZ1cwdWhvMEJNek03VGgtc3VNOXFmNzFlYkZ3TE01S0poRGlheEZNbm8wSUhmR3AyeFY5RG5ELWhKOUVQMlM1RmpPVHVRYjhCRjdfa0Y1VE5uUi1KazVPRFRlS1pESmRiNjY00gFwQVVfeXFMTXB4Z3o1NkRpZkt3dnVQU2s0X1lZdDM1SF9OTnI3c2pHZEE4aTZYQnd6T0xVMTROZzNzTndCMkJqR214VDEtUDhQYlF1bmRKR0FFR1B4dk9hMG9uQlNGZld3TGotaFhwckh3Y2Q2YWFVQw?oc=5)
+- ["대표님 저는 반대합니다"…회의실에 들어온 신한금융 AI - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTFA3dVo1VmM3VTJyV0RaSTNtaWg1VHdROW5RbU5rQWVlakR4cl9Jcm44ZDZlR3luaXVUQnZuOEVkY01USzJJcUE?oc=5)
 - [K로봇주 '급등'…美의 중국산 규제가 호재 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5EYlNWSG1hNlU0VnpIRDI3RUNwYUUtaFIwcUo1T3ZIYmZucGtFVUs3Sk1FSkszOG1faVBxbUdHcVBiZUEzV3dibE1YQzNCX1JMZjIwQkxLNG91UQ?oc=5)
 
 ---
