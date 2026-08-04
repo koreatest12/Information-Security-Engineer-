@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 233 days, 7:34:03
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 233 days, 8:31:57
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.6% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.0% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- ['신한 슈퍼SOL' MAU 1100만명 돌파 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFBLeXRWM0FaUHpMTktTQmJQTGlDS2pwbzdiYlZjdXVGREFyZGJKYTN0dHpxSDBsVUpkR0dhQmlTNlNKWDR1ampPcVp6ZFctZVk3Q0lxb2hZa0VvM3FtNHRqZWNlcmFiZ3RXQXdZ0gFwQVVfeXFMTlZBamc2MHlKWEdRdHRMMzZwdWtFY0VRSUl2cmd0dGUyNU9rcC1DZE1qWDJxbUtySHIwMldKXzROcXA4Tk11SjdtLXlocU1GTmNKWjVQV2h6OGFZQnR2NmxyTjNKWVZqbFRMWjJySC00eg?oc=5)
+- ['신한 슈퍼SOL' MAU 1100만명 돌파 - 머니투데이 - mt.co.kr](https://news.google.com/rss/articles/CBMia0FVX3lxTFBLeXRWM0FaUHpMTktTQmJQTGlDS2pwbzdiYlZjdXVGREFyZGJKYTN0dHpxSDBsVUpkR0dhQmlTNlNKWDR1ampPcVp6ZFctZVk3Q0lxb2hZa0VvM3FtNHRqZWNlcmFiZ3RXQXdZ0gFwQVVfeXFMTlZBamc2MHlKWEdRdHRMMzZwdWtFY0VRSUl2cmd0dGUyNU9rcC1DZE1qWDJxbUtySHIwMldKXzROcXA4Tk11SjdtLXlocU1GTmNKWjVQV2h6OGFZQnR2NmxyTjNKWVZqbFRMWjJySC00eg?oc=5)
 - [‘김용범의 입’이 뒤흔든 한국경제 1년…페북에 정책 던지고 ‘아니면 말고?’ - 시사저널](https://news.google.com/rss/articles/CBMib0FVX3lxTFBVeVRYNzVUdEtRWV82RUFWZk9NWGNsMi16ZktoUWdOYktpT1JYMXFpVnJia0JubXRlcjhwcC1HNmhEa2ZHamw0RzhaWkkwdThEVzlZMmhRVWl4SmZFVXVIS21VRm5vZmhYTk5kaEVwQdIBc0FVX3lxTE9KWXV5Z1FPNkx2ZFljQmtEZmFWV2FVRnFPRnRYSF8xSl9tTGxvaWtTWF81clhJQXNBLUIxc0FDWlV1Ym5LbEVRZC1PMVlNeFM1cmdkcW54bjM2VC11S05BMFFoMFl2SENOVmxhVW5mTnZKejA?oc=5)
 
 ---
