@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 232 days, 17:57:52
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 232 days, 19:17:02
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.3% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융 슈퍼앱 ‘신한 슈퍼SOL’, 출신 한달여만에 MAU 1100만 돌파 - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTFBXRURnWHRqNFNCbjlfLW4wX3JWMkdCZUh5LWZCeEJUSWktbFR2TVl6RGFMb2lzV0lQeV9aV1lkbks4SDVjNmMwNUEwRHhZTXdWOEE?oc=5)
-- [코스피 반등에 베팅…초고수가 담은 종목 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1NdnpoX0tYazF5bEd6bW9FZ1ZiNmV2ODh4alIzTEIzTTMtb3d4V3kwTjVCalRuTXpkcmg4a0NJSDlFaG1HVG05QTdfbVBJX0JydzhxNTJ4M1hrdw?oc=5)
+- [[속보] 코스닥 5%대 급등…3거래일째 매수 사이드카 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1IMmphMVRCUnRDZlUxUXViWHQ3cDJTQTc0b1pBaDJfSk8xN1BnMXBXQlc2ZkR2N1hibFZKRFhRNTNrdHEwSGI0LTdXbThZODdaNEw3VXpXVHhMQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
