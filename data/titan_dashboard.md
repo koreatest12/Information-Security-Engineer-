@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 233 days, 1:42:52
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 233 days, 2:37:11
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.8% | `█████░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 24.6% | `███░░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [과기정통부·신한금융그룹, 취약계층 인공지능·디지털 역량강화를 위해 힘모은다 - 서울Pn](https://news.google.com/rss/articles/CBMiYkFVX3lxTFBxWDh3Z2d2anNlV3ZrME1BeXhKX0VydFhZd25fY0ppTTExcTFFNUdYUlZKc01LLXY4ZldFT0t4OUt5ZGdhUTdpNTB1NkJ3SzZmNi1RcFYwMXhmd08xd2FFVVBR?oc=5)
-- [성장률 1위 한국경제, 2분기 9위로 ‘곤두박질’…中에도 밀렸다 - 국민일보](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE15bnBkcFlrVWtkbXdOaUZKZDJQMmVLdVA3V1lSWF9ORndSanhlRUNLTkdkZ1J4MDdMN1huZThTbG9TUXJJRkFfclFwUl9DbkNvWWtXa2dIY1dsTVJUQUJlNmVoMVJ5M0nSAWxBVV95cUxPSUt0RjlFbXA4UmRjcS1hblpoSXpiUXNJdmhlcnJYMDFtZmp1RkdBb2xRSVhJOURrVDFWTlBjVmJubmh1X1pXalNNN3luamlzR3JJeERMNmU1aEJTSDV1M2Y3dDM3b08tWTBhMlc?oc=5)
+- [과기정통부·신한금융그룹, '포용적 AI' 맞손 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE16cHM4cUZkN3pLQncxbVd4eXFyb2pudnhaMVk3QjlqR2hibGRZanRoMTdHVjQ2cUlJeFJGajdYckE2S25mdTg5aVlnU25FcWM?oc=5)
+- [‘김용범의 입’이 뒤흔든 한국경제 1년…페북에 정책 던지고 ‘아니면 말고?’ - 시사저널](https://news.google.com/rss/articles/CBMib0FVX3lxTFBVeVRYNzVUdEtRWV82RUFWZk9NWGNsMi16ZktoUWdOYktpT1JYMXFpVnJia0JubXRlcjhwcC1HNmhEa2ZHamw0RzhaWkkwdThEVzlZMmhRVWl4SmZFVXVIS21VRm5vZmhYTk5kaEVwQdIBc0FVX3lxTE9KWXV5Z1FPNkx2ZFljQmtEZmFWV2FVRnFPRnRYSF8xSl9tTGxvaWtTWF81clhJQXNBLUIxc0FDWlV1Ym5LbEVRZC1PMVlNeFM1cmdkcW54bjM2VC11S05BMFFoMFl2SENOVmxhVW5mTnZKejA?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
