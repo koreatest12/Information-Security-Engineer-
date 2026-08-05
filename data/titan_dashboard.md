@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 233 days, 23:48:33
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 234 days, 2:32:30
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.8% | `████░░░░░░░░░░░` |
-| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.5% | `████░░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [과기정통부-신한금융, 디지털 취약계층 AI·디지털 역량 강화 맞손 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1QNm5DOWRTaFR2NTFBZzNxV2ZndnJoQmJRUEZ5d1JzTlRVRERDM2stZmRFMU82V252Unc5bVMtNFRoem9tdUk1U2lFTkxWb0ZnQndfNlpFdm0tQQ?oc=5)
-- [[단독] 테슬라 로보택시 '눈', 삼성·LG가 독점 공급 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE41TWcxc25HaERVQmFZa0dMSTl6LUh5dmd2Z1M1ZEowQWZPZ2N1RkVaNUlJa3JlU3BVSzh4al9MWFM2eU5VOE1TZmUwQXFCRGw0ZDE0dzB4SDBRdw?oc=5)
+- [과기정통부·신한금융그룹, '포용적 AI' 맞손 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE16cHM4cUZkN3pLQncxbVd4eXFyb2pudnhaMVk3QjlqR2hibGRZanRoMTdHVjQ2cUlJeFJGajdYckE2S25mdTg5aVlnU25FcWM?oc=5)
+- [[단독] SK하이닉스 美 자회사 솔리다임, 프리 IPO 추진 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBpc19jUzZweS1rVEFQdlpQQXJZbEhOMzVtUm1YM1BrbU1HZjJqNG9RRmJ3Y2RGVUg2dnEwZE1XdTRtS0hSYmVOcFV4OERkdnkzZVNMVmMzRzBhdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
