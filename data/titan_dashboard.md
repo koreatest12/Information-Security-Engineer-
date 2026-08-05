@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 233 days, 16:10:47
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 233 days, 17:40:52
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.1% | `████░░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.6% | `████░░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [강병관 신한EZ손보 대표, 적자 개선·영업강화 특명…하반기 성과 가시화 [진옥동호 신한금융, 부스트업 점검] - 한국금융신문](https://news.google.com/rss/articles/CBMifEFVX3lxTFBMd0RJVWY2ZmRnV21BTk9GX2lxTVRBT0ZFSWZGNVlRRW9tNzZzZnE1UWtCNWZTV0stVTJaaGVyQlptUkJ0Sm52UE5nREYzbE1MVG5WNm5BeUZ0S1RETXc3U1IzSGJYSmszeHl5TGdTRTNBUW5vWUcwSVhENHQ?oc=5)
-- [‘김용범의 입’이 뒤흔든 한국경제 1년…페북에 정책 던지고 ‘아니면 말고?’ - 시사저널](https://news.google.com/rss/articles/CBMib0FVX3lxTFBVeVRYNzVUdEtRWV82RUFWZk9NWGNsMi16ZktoUWdOYktpT1JYMXFpVnJia0JubXRlcjhwcC1HNmhEa2ZHamw0RzhaWkkwdThEVzlZMmhRVWl4SmZFVXVIS21VRm5vZmhYTk5kaEVwQdIBc0FVX3lxTE9KWXV5Z1FPNkx2ZFljQmtEZmFWV2FVRnFPRnRYSF8xSl9tTGxvaWtTWF81clhJQXNBLUIxc0FDWlV1Ym5LbEVRZC1PMVlNeFM1cmdkcW54bjM2VC11S05BMFFoMFl2SENOVmxhVW5mTnZKejA?oc=5)
+- [강병관 신한EZ손보 대표, 적자 개선·영업강화 특명…하반기 성과 가시화 [진옥동호 신한금융, 부스트업 점검] - fntimes.com](https://news.google.com/rss/articles/CBMifEFVX3lxTFBMd0RJVWY2ZmRnV21BTk9GX2lxTVRBT0ZFSWZGNVlRRW9tNzZzZnE1UWtCNWZTV0stVTJaaGVyQlptUkJ0Sm52UE5nREYzbE1MVG5WNm5BeUZ0S1RETXc3U1IzSGJYSmszeHl5TGdTRTNBUW5vWUcwSVhENHQ?oc=5)
+- [[속보] 코스피 4%대 급등…매수 사이드카 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1BbXp0S0hoM0ZLa3hxOW1fWVZySUxCdTVxR3VIMjNib3lMVTZ6VUEwVVRNNmlJaFBzTHdyMWZhanAzUVc2VENnWVA2RVhjS2U4emswcHpqYkJrdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
