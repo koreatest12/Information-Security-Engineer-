@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 234 days, 7:00:18
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 234 days, 8:43:47
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.5% | `████░░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.5% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [과기정통부·신한금융그룹, '포용적 AI' 맞손 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE16cHM4cUZkN3pLQncxbVd4eXFyb2pudnhaMVk3QjlqR2hibGRZanRoMTdHVjQ2cUlJeFJGajdYckE2S25mdTg5aVlnU25FcWM?oc=5)
-- [버리 "1987년때 같은 폭락장 올수도" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1iaGFxUTg0UU5rWEdGVWd3MWFvSXMyZjl6eF82NF9lLVJXQmUyZ0t1Y1ZKQ1Y2UTkwSFpiQ09iUndNQmN5cmJ6ZlN4VGV0NFhWUzFaRy1KRnBQQQ?oc=5)
+- [DX 속도내는 신한금융…디지털 영업익 35% ‘쑥’ - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5tTEhLWTlUR0VtR1JWeDhQc1R3bGNQdUN2QTNPWkdDWFZYQ1Fjd2N3QTRRZHRzdmhtYXRXUG8yQ2QwSTNOLWxPY3FVemwtQy1CV0HSAVNBVV95cUxPTU9JV1o3eDFfVm9NS3MtemdNaXYxRnRnU1JMQ1BYZGNXRVc5cHBHeVE4cm9wOWhwdy1tMUxkOVFGRnFteUNFQnVMNU5rMGhvWDY5bw?oc=5)
+- [전고점 뚫은 S&P, 코스피 반등…증시 조정장 끝났나 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBfa1V4bzVYbV9UWXpWRmlWdGo2WjUzdmotUlk4Z1lBTlNjWnNVU25PZ2c4ZngzaGhLWDFvRWdLQVY3ZGFaTVFVV19nQnZ5RHlSVF92X2VvVG9jZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
