@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 237 days, 2:18:27
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 237 days, 2:50:31
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 25.0% | `███░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.3% | `████░░░░░░░░░░░` |
 | **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [전 계열사로 번진 슈퍼SOL 영업 압박...신한금융 내부서 쌓이는 KPI 불만 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxOQWVvak5kM1pfbllnUjNsWWFMQi1tLWlSb19tNzVYbjA2azlnd3Z5VjV0UnhiQVdKVEpyZ1V1VE9ETDBZd05hZ0tPei1ERHo1b0dkZTJDMUUtRmlfMGx4R1Z2eVpCUS1YdVBwM0MzMnhUOUxmWGstOUxUWFcxY2xkek1YZw?oc=5)
+- [전 계열사로 번진 슈퍼SOL 영업 압박...신한금융 내부서 쌓이는 KPI 불만 - investchosun.com](https://news.google.com/rss/articles/CBMigwFBVV95cUxOQWVvak5kM1pfbllnUjNsWWFMQi1tLWlSb19tNzVYbjA2azlnd3Z5VjV0UnhiQVdKVEpyZ1V1VE9ETDBZd05hZ0tPei1ERHo1b0dkZTJDMUUtRmlfMGx4R1Z2eVpCUS1YdVBwM0MzMnhUOUxmWGstOUxUWFcxY2xkek1YZw?oc=5)
 - ["한국이 이 정도라니"...충격 빠진 '일본' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE40aGI2dnBWZjRCSjhKMU1KVkVUZFlhZTJDMkt6bVlzT1U0eVI3R0ZuczJURURuMHpkVVY2c0hJNldIOUF3eGdLcEV6UFNfak0?oc=5)
 
 ---
