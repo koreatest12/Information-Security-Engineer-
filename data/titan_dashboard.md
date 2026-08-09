@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 238 days, 2:20:10
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 238 days, 3:17:06
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.9% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 11.1% | `█░░░░░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[이슈] 신한금융 '슈퍼SOL', 계열사 시너지 본격화됐다...MAU·가입자 급증 - 팍스경제TV](https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA5RXUxUFN2bm4xUWRzU0l0c3FyU2lMTzB2S2Ruc0kwVUxmcUJTdUhfNDdWUEZ0MUJIWm1ZRnAzNVpuY1hVcEtUWUI4UTRIcTZJU1RIMU9GWnp0UFp0MWlQeE9lMFRqOHc?oc=5)
-- ["한국이 이 정도라니"...충격 빠진 '일본' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE40aGI2dnBWZjRCSjhKMU1KVkVUZFlhZTJDMkt6bVlzT1U0eVI3R0ZuczJURURuMHpkVVY2c0hJNldIOUF3eGdLcEV6UFNfak0?oc=5)
+- [[fn광장] TSMC 멈추면 한국경제도 멈춘다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5UdkZFU1IwbkNZNi1jdVFzZDFCWmhnQXZqZmQ1aUJOSGNoajVqQmtHenJZNVlqQk5hZ1UtU2cxSUcweDZLLTZzU2VPbU5nR0E?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
