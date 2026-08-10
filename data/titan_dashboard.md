@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 238 days, 19:22:37
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 238 days, 21:19:17
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.9% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 36.0% | `█████░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 그룹 첫 공동 자산관리 포럼 '혜안 2026' 개최 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTFBoNG1aRnpPXzBmVVhRTWR5Um5DSVBkbF9CaXE0clRERXZTM0ZqdHJMOHZEVDNib2JVOXJBN3A1dE9TUWI1NmVVWjZPaG9tR2ZJWTJpVVBBemVXci1C?oc=5)
+- [신한금융, 그룹 통합 자산관리 포럼 31일 첫 개최 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFBUVUZTaTNOVzVSRGw1b0hpazdPQ1dTOHdpWGxYRWVrRkhLMzVfb0RaMXBCZzBNWk8zVWlMYnFCS2pKSV9zdWdWT3Fmb3FBaldUb3paeFVzMElYTlJvd1Vyc3h0eXVqLUFyZzdB0gFwQVVfeXFMTk42QUhYdkEzZi01VjRsTkFkTVZMRkFYQmtDVFdxNGh6ekhVSUlMV0ZMTDJKQkpJTkZJRHVDSXFGOURxRVQ3eTBVem1mS1ROWmtxektnM0wyNkNubjBvdU9UaVdLNTJEVGFoUjkyMDl4Mg?oc=5)
 - [[fn광장] TSMC 멈추면 한국경제도 멈춘다 - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE9ST25DdVU2YzVyUHdReG5hNWlPSjAzNVN0SmNDanluVFZWTUVGUzFwRjJBQUtCVkcxYjMyWXJ6ZmF0U2R0V2c?oc=5)
 
 ---
