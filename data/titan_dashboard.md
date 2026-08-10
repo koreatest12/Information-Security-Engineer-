@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 238 days, 21:19:17
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 238 days, 23:05:58
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.0% | `█████░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.7% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 그룹 통합 자산관리 포럼 31일 첫 개최 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFBUVUZTaTNOVzVSRGw1b0hpazdPQ1dTOHdpWGxYRWVrRkhLMzVfb0RaMXBCZzBNWk8zVWlMYnFCS2pKSV9zdWdWT3Fmb3FBaldUb3paeFVzMElYTlJvd1Vyc3h0eXVqLUFyZzdB0gFwQVVfeXFMTk42QUhYdkEzZi01VjRsTkFkTVZMRkFYQmtDVFdxNGh6ekhVSUlMV0ZMTDJKQkpJTkZJRHVDSXFGOURxRVQ3eTBVem1mS1ROWmtxektnM0wyNkNubjBvdU9UaVdLNTJEVGFoUjkyMDl4Mg?oc=5)
-- [[fn광장] TSMC 멈추면 한국경제도 멈춘다 - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE9ST25DdVU2YzVyUHdReG5hNWlPSjAzNVN0SmNDanluVFZWTUVGUzFwRjJBQUtCVkcxYjMyWXJ6ZmF0U2R0V2c?oc=5)
+- [[fn광장] TSMC 멈추면 한국경제도 멈춘다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5UdkZFU1IwbkNZNi1jdVFzZDFCWmhnQXZqZmQ1aUJOSGNoajVqQmtHenJZNVlqQk5hZ1UtU2cxSUcweDZLLTZzU2VPbU5nR0E?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
