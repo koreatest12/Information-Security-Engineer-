@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 239 days, 15:20:18
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 239 days, 16:15:14
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,19 +8,18 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [KR_ECON] 미·이란 협상 교착에 약보합 마감…다우 0.1%↓ [뉴욕증시 브리핑] - hankyung.com
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.8% | `█████░░░░░░░░░░` |
-| **RAM** | `41.0/512 GB` | 8.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.6% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 10억 자산가 1000명 모은다…그룹 첫 공동 WM 포럼 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1jV21TT1NQcDVpallhWndfNnhIOUZJcmVScWNlV2lnQzNaMW0wektYdzktUGxGc3o5VW41OVZ2MjZPTzN3UlZyQXNMUjBqaTA?oc=5)
-- ["다 죽는다는데"…사람 없어도 돈 몰리는 동네의 '대반전' - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9neU02cGMxXzg3aXc5alVJUWJsbk5rVnkzNV9aeGVwQm9nUFpta1ZwZnB1RTI5YnNxOU5BOFpwcnJycTJYQ0czQWpMSWhYbUJTcE5HZ3ZnTU5WUQ?oc=5)
+- [신한금융, 그룹 통합 자산관리 포럼 31일 첫 개최 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFBUVUZTaTNOVzVSRGw1b0hpazdPQ1dTOHdpWGxYRWVrRkhLMzVfb0RaMXBCZzBNWk8zVWlMYnFCS2pKSV9zdWdWT3Fmb3FBaldUb3paeFVzMElYTlJvd1Vyc3h0eXVqLUFyZzdB0gFwQVVfeXFMTk42QUhYdkEzZi01VjRsTkFkTVZMRkFYQmtDVFdxNGh6ekhVSUlMV0ZMTDJKQkpJTkZJRHVDSXFGOURxRVQ3eTBVem1mS1ROWmtxektnM0wyNkNubjBvdU9UaVdLNTJEVGFoUjkyMDl4Mg?oc=5)
+- ["삼전닉스 주식 다시 오를까요?" 전문가에 물었더니… - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTFAxdThWQmRBczNWOXVaRE9iMHNZb01mSE13NzlmaGxqSThmempDb2JsSV8wdElNZWJoQ2EzZzBweEVLSGxVSDZSZGc4U0JoLU9oSVdOb2NqOGVDUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
