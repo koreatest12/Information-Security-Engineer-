@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 238 days, 16:13:04
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 238 days, 17:05:07
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.9% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.8% | `████░░░░░░░░░░░` |
+| **RAM** | `43.0/512 GB` | 8.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [전 계열사로 번진 슈퍼SOL 영업 압박...신한금융 내부서 쌓이는 KPI 불만 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxOQWVvak5kM1pfbllnUjNsWWFMQi1tLWlSb19tNzVYbjA2azlnd3Z5VjV0UnhiQVdKVEpyZ1V1VE9ETDBZd05hZ0tPei1ERHo1b0dkZTJDMUUtRmlfMGx4R1Z2eVpCUS1YdVBwM0MzMnhUOUxmWGstOUxUWFcxY2xkek1YZw?oc=5)
-- [고용 쇼크? 트럼프, 증시 부양 더 세게 밀어붙인다! | 韓 정부, 맞짱 뜰 증시 부양책 나와야! | 한상춘 한국경제신문 논설위원 - 한국경제TV](https://news.google.com/rss/articles/CBMid0FVX3lxTE1sV0RvWENPWTktTk5taW5md0NwRGdkSGJDVGFweHA3bzVqYkdZY2l5R2pMdl9pdms5Q3lDM200c0d5RElEMF8xbjVxVmMtUmVFeFU4TWNkZEVLTWx6OU45czhILWFvLUV1SWFCN1ZyemtIeW1ueFIw?oc=5)
+- [신한금융, 그룹 공동 자산관리 포럼 개최 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFA1TnhHSjVMcVZaQUlpQTczUGdzRzJYdTNIN3lEUE84VHJZbHhkSHZOdGhrX3E3SDZQOU1EODNDTUxJT253NzJUeXpZOXNfRkhMVW1UT0VqT3ZVZU3SAWBBVV95cUxNa1lzTEtpSlpfdElGZEU2U3NLZmdYa2xVZmlSUWhBcUJCc1hLU0Z3UmpmUWhJcUZqTjRyd3M3bjhvWm00ZHhGUmxXSkoyblhxeDgwRERWQml6S2lfOHJpbG0?oc=5)
+- [[fn광장] TSMC 멈추면 한국경제도 멈춘다 - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE9ST25DdVU2YzVyUHdReG5hNWlPSjAzNVN0SmNDanluVFZWTUVGUzFwRjJBQUtCVkcxYjMyWXJ6ZmF0U2R0V2c?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
