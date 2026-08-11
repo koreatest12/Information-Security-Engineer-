@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 239 days, 21:03:47
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 239 days, 22:03:45
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.7% | `█████░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.3% | `████░░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 10억 자산가 1000명 모은다…그룹 첫 공동 WM 포럼 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1jV21TT1NQcDVpallhWndfNnhIOUZJcmVScWNlV2lnQzNaMW0wektYdzktUGxGc3o5VW41OVZ2MjZPTzN3UlZyQXNMUjBqaTA?oc=5)
+- [신한은행, GCF와 첫 외환파생거래…글로벌 녹색금융 협력 확대 - 한경매거진&북](https://news.google.com/rss/articles/CBMiaEFVX3lxTFBkTkRCUUtaclNJM1FyVDRjZmhEc0FnLTBad2FsdHMwSTI4VElLMkZud1l2Y19PY1lsNHZObzd5azloN2lYLTR3elpzUkNidGM4Z1VjdlcxMk1fVUlkSEk5M3dnLXpuTHFI?oc=5)
 - [한국 경제 '초성장·신공간'을 여는 산업통상부 10대 핵심과제는? - 대한민국 정책브리핑](https://news.google.com/rss/articles/CBMiZEFVX3lxTFBFbWtIbG1YRVp4U2Rub0VleHFTLTBkNGhPTjdkX1BIMXlsS253cVotYjY3OU1ZTzRYc3NPQnBuY2FEeHU2cWk4OFV2LVhGRUNiNE1VTW1QUURLdkM5ZldSdFc1TTg?oc=5)
 
 ---
