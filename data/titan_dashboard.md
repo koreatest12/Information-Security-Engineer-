@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 239 days, 23:01:42
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 240 days, 0:19:09
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.6% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.9% | `████░░░░░░░░░░░` |
 | **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, GCF와 첫 외환파생거래…글로벌 녹색금융 협력 확대 - 한경매거진&북](https://news.google.com/rss/articles/CBMiaEFVX3lxTFBkTkRCUUtaclNJM1FyVDRjZmhEc0FnLTBad2FsdHMwSTI4VElLMkZud1l2Y19PY1lsNHZObzd5azloN2lYLTR3elpzUkNidGM4Z1VjdlcxMk1fVUlkSEk5M3dnLXpuTHFI?oc=5)
-- [한국 경제 '초성장·신공간'을 여는 산업통상부 10대 핵심과제는? - 대한민국 정책브리핑](https://news.google.com/rss/articles/CBMiZEFVX3lxTFBFbWtIbG1YRVp4U2Rub0VleHFTLTBkNGhPTjdkX1BIMXlsS253cVotYjY3OU1ZTzRYc3NPQnBuY2FEeHU2cWk4OFV2LVhGRUNiNE1VTW1QUURLdkM5ZldSdFc1TTg?oc=5)
+- [신한금융, 예비유니콘 2곳 배출 … 日·베트남 판로개척도 지원 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1EbnpCTGlQVWZXRXU0enowQVZnMzNzZC1nTnpvVXFWT1FBelIzYlBnWWFIQm5CQ05uQm5lQUYxM2ViNVN6MTM4OTB5Vk1XV1k?oc=5)
+- [초대형 이벤트 앞두고 반등하는 게임주 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Kb25sSFUtU29Ed0RsTG5PeHdJRTZLR0ZaaTRUUm13Zm45cnEwZVdMWk13RjE2MXc1X3BBSTdIUXg5TUlHczFCUllsbkpIR0xxYUtFMnlOanpCZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
