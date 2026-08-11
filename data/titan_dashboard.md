@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 239 days, 16:15:14
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 239 days, 17:19:40
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.6% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.4% | `████░░░░░░░░░░░` |
 | **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 그룹 통합 자산관리 포럼 31일 첫 개최 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFBUVUZTaTNOVzVSRGw1b0hpazdPQ1dTOHdpWGxYRWVrRkhLMzVfb0RaMXBCZzBNWk8zVWlMYnFCS2pKSV9zdWdWT3Fmb3FBaldUb3paeFVzMElYTlJvd1Vyc3h0eXVqLUFyZzdB0gFwQVVfeXFMTk42QUhYdkEzZi01VjRsTkFkTVZMRkFYQmtDVFdxNGh6ekhVSUlMV0ZMTDJKQkpJTkZJRHVDSXFGOURxRVQ3eTBVem1mS1ROWmtxektnM0wyNkNubjBvdU9UaVdLNTJEVGFoUjkyMDl4Mg?oc=5)
-- ["삼전닉스 주식 다시 오를까요?" 전문가에 물었더니… - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTFAxdThWQmRBczNWOXVaRE9iMHNZb01mSE13NzlmaGxqSThmempDb2JsSV8wdElNZWJoQ2EzZzBweEVLSGxVSDZSZGc4U0JoLU9oSVdOb2NqOGVDUQ?oc=5)
+- [[단독] 네이버, 클로드 개발사 美 앤트로픽에 투자 - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTE83YTFXMUM1LUljNkxtdHJ6c3Q2V3hqcXlIZVZPQy1sd1hXQ1A0aVVyd2lOYlVLZHVRWnN5aVVWbi02aFVReGkyclNMNjExb21NcF84UV82RXRzQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
