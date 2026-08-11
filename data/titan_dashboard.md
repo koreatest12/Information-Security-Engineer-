@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 240 days, 8:04:45
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 240 days, 9:03:41
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.6% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 6.1% | `░░░░░░░░░░░░░░░` |
+| **RAM** | `39.9/512 GB` | 7.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 예비유니콘 2곳 배출 … 日·베트남 판로개척도 지원 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1EbnpCTGlQVWZXRXU0enowQVZnMzNzZC1nTnpvVXFWT1FBelIzYlBnWWFIQm5CQ05uQm5lQUYxM2ViNVN6MTM4OTB5Vk1XV1k?oc=5)
-- [[단독] 美 TPG, 롯데렌탈 1.3조원에 인수한다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE82OVB6TzJJdmNUN20xemZyUFdRNGR6QTlHYUdUUW5QRWVHRU1ZZk1GV1RuVHh3Z0VkOFE3dmJYUXZrS3FCcW84TzhVY1BZa2I2OWpTQ0JoNHJodw?oc=5)
+- [KEIT 원장, 이용필 前산업부 기조실장 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE80Z21ZV1R1YUZwbTRLSmFyODVzRWVlSkdyRUFxQUFxbjJDM3lPTTVtd04tQ1I2NndOdlYxb0hVRmc0RzZFa0J1Y1l3aHJtVGVkNnVySkZ2b28zQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
