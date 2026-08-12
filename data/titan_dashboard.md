@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 240 days, 19:19:45
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 240 days, 21:29:16
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.1% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 35.9% | `█████░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 부산에 ‘해양금융 거점’ 띄웠다…조선·방산·항만기업 성장 지원 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9jWEE3RXlDSC1FeldIWGdmWWg5U054OG93RVZPQ1dzSjNvaUpfOWNDNGRfVGFLVTNqejFKbU5kWVY1Q2VleFZod3pFajg2WlU?oc=5)
-- [코스피, 1.42% 상승 출발…코스닥은 1.21% 하락 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1MSmI2dThVMFJiTEFQSWVISlNVT09KWGZYZU1XWlZwVFJHUEQxOFNsZVBfbGV4aGM3MFNRbzdaYXBGa2l0aUxxTzZ0bGZlTnNVN0VYMjJCUlBWQQ?oc=5)
+- [신한은행, '신한SOL클러스터부산' 개소…조선·방산 등 해양산업 지원 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9qY3ZIQmY0VEZZeUFJem1fT0hZMWx0TTBWbjYzcmpBemlhTVlTeHhRcTBBaUY0V2dkUzRkcUNkMTBaalZNVGs1b2tJVnE3TWV2Qlp1VzdEVElYZ2d0ZGlBQdIBeEFVX3lxTE94cnh5d0g0eUctM1dFMUR0ZlF0dVpkVWFqR0NPS01ENnh4YUdsMjJvUWNLSzhYT2cxZlZ6dzB3cm5kS285cF9XVDg5TVlNNVdJT0pjbGpyZWdTd1VXMTlibkdqZG9iRDB6RWZQR3k2VHJfeEJ5dnFXcg?oc=5)
+- [[속보] 서울시, 421억 '경의선숲길 사용료 분쟁' 패소 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBTN01kQUFiSkcxbFllank2bWdrU21qb1RaMmxCWW9WbTRSejlwZm1lc01qdmFYaVplR2l1Uk5iZWRWY3hmbzVaTDQ0T01RSTA1WVpYOE0zcElRdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
