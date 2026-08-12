@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 241 days, 14:25:52
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 241 days, 15:25:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.2% | `████░░░░░░░░░░░` |
-| **RAM** | `40.4/512 GB` | 7.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.0% | `████░░░░░░░░░░░` |
+| **RAM** | `39.9/512 GB` | 7.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [미래에셋증권, 분기 순이익으로 신한금융 넘어 - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9weWRGWW9UdVVicDBMWXZ3NVRoNGVyTVRSM0owa1pUeWtuTjc3ZVA2dklvT0M5c2NsUngxcXhqUU1CTkt5bUt2aVh5amoxTzRCb0E?oc=5)
-- [다들 최신만 쫓았더니…뜻밖의 품귀에 주가 ‘껑충’ - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5mVHRlbmJFMUZBelJSN0l3WUdBd1A3X0pFaHRXb1l4YVRSUm1uQ01mUVRsMnh4RF84emFKNTZGU0RhWXJrV0lhM2ZaamJSV1VHcWpQTnF6TlctZw?oc=5)
+- [3년간 KTX 운임 10% 인하…마냥 좋아해도 될까? [백광현의 페어플레이] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBMX0ZLMFFDZWxTWWJRNUtwdzhrck9ISXBDNkZKY2h2OUVKaVg5d2NWNEZKZWFXeXBVYlF0aWlSOEpFc09WLXh0WGlycmEtejh3N090UDRxNWdfdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
