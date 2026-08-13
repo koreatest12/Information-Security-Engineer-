@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 242 days, 8:33:25
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 242 days, 9:43:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,12 +15,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.5% | `█████░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.4% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행, 부산에 ‘해양금융 거점’ 띄웠다…조선·방산·항만기업 성장 지원 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9jWEE3RXlDSC1FeldIWGdmWWg5U054OG93RVZPQ1dzSjNvaUpfOWNDNGRfVGFLVTNqejFKbU5kWVY1Q2VleFZod3pFajg2WlU?oc=5)
-- ["하영 증조부, 이토 히로부미 추모"…친일파 명단서 빠진 이유 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwbDhSbUlmNnktLThVbndQazMyck9Uc3NGd0w2dTQ2cDN3Zno4dmNyVGxBVG1EOC1ZSG9zZGl3Q0JyNG10N3VRTGM4SXdTOGFrSXVKc3dvd0RHUQ?oc=5)
+- [美 인플레 둔화에 AI 투자심리 회복…코스피 '훈풍' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE53TGRDbERJeDRjTFhSeFNfOTVtUV9ja0dfNTEzNW96SFlibW1vSVdCVGVEMF96WGtRYXJSbGJPeGhQZ0JLOFJad1VNXzR2RGJkNlZBUGJ0T0NKQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
