@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 242 days, 6:31:11
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 242 days, 7:45:44
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,14 +8,15 @@
 
 > **Q:** 종합 상황 브리핑
 
-관련 정보 없음
+**🤖 AI Analysis:**
+- [FIN_SHINHAN] 미래에셋證, 2분기 순익 1.9조…신한금융 제치고 KB금융 턱밑 [종합] - 네이트
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.4% | `█████░░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.3% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행, 부산에 ‘해양금융 거점’ 띄웠다…조선·방산·항만기업 성장 지원 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9jWEE3RXlDSC1FeldIWGdmWWg5U054OG93RVZPQ1dzSjNvaUpfOWNDNGRfVGFLVTNqejFKbU5kWVY1Q2VleFZod3pFajg2WlU?oc=5)
