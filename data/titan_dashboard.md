@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 243 days, 12:35:01
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 243 days, 12:50:04
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.8% | `█████░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.0% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한이 '책' 읽을 때 미래는 '투자'...체면 구긴 금융지주, 남은 건 '자산배분' 뿐 - investchosun.com](https://news.google.com/rss/articles/CBMigwFBVV95cUxNZHhRSUZELUtNMjh0eWhqSG1ENEotTXhSMGVwN2lJcmQ3c2tCd1UtSG5Eelp2d0Faa1praE9iczRGNXJmS0VHMExFUlZiTTlLNFQxYXBPSWxvdmlZbG1waGlRMGhXNEFpMllJTkpEWjZBd2NyR3R0bS1zZ3NaalhaSjNJSQ?oc=5)
-- [이번주 내내 오른 코스피, '칠천피' 근접 마감…코스닥도 상승 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9MNkdGUWlPNmloQTZRV05ueWtBVlV4RjJ3eDYzLTdUQUVSWllJR01ra0VtTUdBLThoZW80d1FnWnA4cGlNbS1rbUtqTVNSeUh3VGRvbEpvQWVMUQ?oc=5)
+- [신한이 '책' 읽을 때 미래는 '투자'...체면 구긴 금융지주, 남은 건 '자산배분' 뿐 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxNZHhRSUZELUtNMjh0eWhqSG1ENEotTXhSMGVwN2lJcmQ3c2tCd1UtSG5Eelp2d0Faa1praE9iczRGNXJmS0VHMExFUlZiTTlLNFQxYXBPSWxvdmlZbG1waGlRMGhXNEFpMllJTkpEWjZBd2NyR3R0bS1zZ3NaalhaSjNJSQ?oc=5)
+- [인텔에 주목하는 월가…"CPU 시장 10배 커진다"[박신영의 개장전 요것만] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBhMkRPX1ZuaHdGY25YdnZORmJSWHA4LXRYTDI5MS03ZzlaZGJROVltZF9SejRpSlBQQ3Y2T0VMeGMtN01uR1RUNXMyNmlaTUZSa011ODdlSFphdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
