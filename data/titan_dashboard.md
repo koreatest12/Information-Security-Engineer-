@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 243 days, 3:04:12
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 243 days, 3:53:16
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.2% | `████░░░░░░░░░░░` |
-| **RAM** | `39.9/512 GB` | 7.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.9% | `████░░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [증시 호황 물결 탄 신한證…WM·IB 날개 달고 ‘ROE 19.7%’ - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTFByaHpVT0lRSWIyaDV5SXpuN0tzemhETzlrX3ZhVzkzNV9DMGpkQWlLQ0ZpNkNjYnFQa19GSFRIU3JFcmpNN0M0dHpTblN0WlFFQVE?oc=5)
-- [[단독] "대미투자 빨리 안하면 韓 관세인상" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Ea0tBZHhfNVFjMWJJN3Z5aTdYYm1TS2NGTElqYkktYnNXQlRaaHhhcDNmQnZWUU5VQzhyQ1U3NG5aM0pha3BweVV6MWhGaHBOZEdDX0gzMzB4QQ?oc=5)
+- [신한이 '책' 읽을 때 미래는 '투자'...체면 구긴 금융지주, 남은 건 '자산배분' 뿐 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxNZHhRSUZELUtNMjh0eWhqSG1ENEotTXhSMGVwN2lJcmQ3c2tCd1UtSG5Eelp2d0Faa1praE9iczRGNXJmS0VHMExFUlZiTTlLNFQxYXBPSWxvdmlZbG1waGlRMGhXNEFpMllJTkpEWjZBd2NyR3R0bS1zZ3NaalhaSjNJSQ?oc=5)
+- [[단독] 美 "투자 빨리 안하면 관세인상"…한국에 '최후통첩' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Ea0tBZHhfNVFjMWJJN3Z5aTdYYm1TS2NGTElqYkktYnNXQlRaaHhhcDNmQnZWUU5VQzhyQ1U3NG5aM0pha3BweVV6MWhGaHBOZEdDX0gzMzB4QQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
