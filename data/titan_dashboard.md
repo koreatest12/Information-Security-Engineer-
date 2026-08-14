@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 243 days, 0:24:03
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 243 days, 1:49:54
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.1% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.6% | `█████░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [리딩뱅크 되찾은 정상혁…신한은행 첫 3연임 '청신호' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE8yc2RjN1JCYXUxWVVzQkN3QllOTFI4dGo3VUl2a1FRT2ZIR083SlhIdW9qWmhXNFllQnlvWkpRWWZCWmlGb1gtaUtFY0Nnams?oc=5)
-- [돈 몰리는 모험자본 시장…때아닌 ‘소값 논쟁’ - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1UMU11Z3M1d0d3U01ueEFTNVN5V1dkdk84dGJtbmgzZXJlZU5pU0pWWHhMUmVxUzVwRFM2MHBoRGJSOFNhNHNNUmphMTIxQ2ZaTUJJSnhScWhjdw?oc=5)
+- [증시 호황 물결 탄 신한證…WM·IB 날개 달고 ‘ROE 19.7%’ - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTFByaHpVT0lRSWIyaDV5SXpuN0tzemhETzlrX3ZhVzkzNV9DMGpkQWlLQ0ZpNkNjYnFQa19GSFRIU3JFcmpNN0M0dHpTblN0WlFFQVE?oc=5)
+- [[단독] "대미투자 빨리 안하면 韓 관세인상" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Ea0tBZHhfNVFjMWJJN3Z5aTdYYm1TS2NGTElqYkktYnNXQlRaaHhhcDNmQnZWUU5VQzhyQ1U3NG5aM0pha3BweVV6MWhGaHBOZEdDX0gzMzB4QQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
