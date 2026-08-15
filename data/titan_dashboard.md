@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 244 days, 3:03:35
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 244 days, 3:27:04
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.2% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.7% | `████░░░░░░░░░░░` |
+| **RAM** | `39.9/512 GB` | 7.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [리딩뱅크 되찾은 정상혁…신한은행 첫 3연임 '청신호' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE8yc2RjN1JCYXUxWVVzQkN3QllOTFI4dGo3VUl2a1FRT2ZIR083SlhIdW9qWmhXNFllQnlvWkpRWWZCWmlGb1gtaUtFY0Nnams?oc=5)
-- [인텔에 주목하는 월가…"CPU 시장 10배 커진다" [박신영의 개장전 요것만] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBhMkRPX1ZuaHdGY25YdnZORmJSWHA4LXRYTDI5MS03ZzlaZGJROVltZF9SejRpSlBQQ3Y2T0VMeGMtN01uR1RUNXMyNmlaTUZSa011ODdlSFphdw?oc=5)
+- ["코인 투자자가 제일 만만하냐"…2030 분노한 이유 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5RUmpiT0w0cFF6N1pscWVVcGVEVW04ZzlDWll2c1Jsd2ZXcm91OWF3VE9mOHJ3cTE4cjFwZndPZy14djRwT1hpczFrQUsxUlMwOXoxam05TTJ5Zw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
