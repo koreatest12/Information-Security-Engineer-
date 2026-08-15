@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 244 days, 11:10:37
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 244 days, 11:30:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.3% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.2% | `████░░░░░░░░░░░` |
+| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [리딩뱅크 되찾은 정상혁…신한은행 첫 3연임 '청신호' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE8yc2RjN1JCYXUxWVVzQkN3QllOTFI4dGo3VUl2a1FRT2ZIR083SlhIdW9qWmhXNFllQnlvWkpRWWZCWmlGb1gtaUtFY0Nnams?oc=5)
-- [줄줄이 마이너스인데…"거꾸로 넣었더니" 나홀로 웃은 정체 [투자톡] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFByVVFGVjA2ckF1U1hFWDk1cDNLeWlkX1FESTlCakpudEw2WDVtZlhVZl94T0V3OXZuNHBpN2c4YjR0WHlWTHpwT19qMzBrOXRBaUY5Rjctc1RhUQ?oc=5)
+- [줄줄이 마이너스인데…"거꾸로 넣었더니" 나홀로 웃은 정체 [투자톡] - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTFByVVFGVjA2ckF1U1hFWDk1cDNLeWlkX1FESTlCakpudEw2WDVtZlhVZl94T0V3OXZuNHBpN2c4YjR0WHlWTHpwT19qMzBrOXRBaUY5Rjctc1RhUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
