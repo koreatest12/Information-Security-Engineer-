@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 245 days, 11:30:40
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 245 days, 11:58:44
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.9% | `████░░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한이 '책' 읽을 때 미래는 '투자'...체면 구긴 금융지주, 남은 건 '자산배분' 뿐 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxNZHhRSUZELUtNMjh0eWhqSG1ENEotTXhSMGVwN2lJcmQ3c2tCd1UtSG5Eelp2d0Faa1praE9iczRGNXJmS0VHMExFUlZiTTlLNFQxYXBPSWxvdmlZbG1waGlRMGhXNEFpMllJTkpEWjZBd2NyR3R0bS1zZ3NaalhaSjNJSQ?oc=5)
-- [[단독] 공작기계 상반기 수주 8년 만에 최대 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9GRjQybFVJbklJSjRsVWpQREV3Tm5ncm9iaHdvWG1udG9KVE9aSzVfd18weDRfdVQxWGZIMWJXd3hGSk01bC1Rc1dXbVB2d0NwOFZqbkhDeURlZw?oc=5)
+- [김정관 "美 요구, 투자속도 내자는 취지..막판 쟁점 어떻게든 해결"[이상은의 워싱턴나우] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9XRHNzdHJnSXMwQmhaeHEwRXdENERGQ1VrMUd3RTViWDdmdFFIclZQajduWVUtWWlxWkZ0cW1iWV9nbVRFNzdJTWpVbmlwbWRfYTdKTmh0cUNGdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
