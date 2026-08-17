@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 246 days, 13:33:12
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 246 days, 14:05:38
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 15.3% | `██░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
 | **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [정상혁 신한은행장, 리딩뱅크 탈환…3연임 관문 넘을까 [2027 은행장 레이스] - 한국금융신문](https://news.google.com/rss/articles/CBMifEFVX3lxTFBvTTA5bzVMODFwR1VTMmVaMURITjVWUno3NVVtdGxtdVZWcHpiSkZtbWVKZ2xaLV9tN0lyM2R3NHpad0x1azVfWnZaSXBObms5Vm1WbTBfalFOdmFVQXNXdVBQRV9mRDZ3Y1k2LWJkZzBORmxZMTJkVTRVSEk?oc=5)
-- [알파벳 쓸어담는 월가 구루들[박신영의 개장전 요것만] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBtLXM2bTl5RDVRU05TMzNnZ0cyVHJXWVlaS0xlX19JZEg4RFJwbDdwdVVGRDlRU3VscDFCVUxKam0wR2l1ZVhkNEJaSTJiSHZ0MHIwdWp4WENfdw?oc=5)
+- ["삼전닉스 다음 기회"…투자 고수들이 본 '텐배거' 파격 전망 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5qbWxBcTd4WDRxWE92RElwd08wM1VzQVBUem45eUx3MjlDMTV6OFVyamFXYUN0djhzNW1FMnVLTkhpYUZ3dTRZOVJBalR6RW1OQzNNWjNSOUgtUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
