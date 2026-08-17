@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 246 days, 4:37:57
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 246 days, 5:35:48
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.1% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.0% | `████░░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [롯데손보 매각 공개시장으로… 신한금융 ‘느긋한 줄다리기’ - 조선비즈 - Chosunbiz](https://news.google.com/rss/articles/CBMigAFBVV95cUxQc3Z6RnRtRXQxTm13SW5kWlFKeXN0TGVQVDNYQ0VYQU9odXJNSkVqUGFxVk5HQzBVNEVCRzFKZVVNQ3owcHFUYkNHTUlpNEV0eF9zWVpLNDFtYU1aVFlYT3FoRE1TZVVfbTY4SHp6TGRzVDJrdGZPVDBhb2lpV1c2OdIBlAFBVV95cUxQUDY2Yk1ZUjRVMUlvRnpST3dVWEZCV1JNZVA1MUhGcm5GN0pzcGdybmlKXzZnX1dFYkQ5eE1maFZhTDZuZ0hWYUNyVjBac25XVE4xQVVnWkVtZG5nYURCb09VTjBpbDl0T0RWZlZwcV9yclVDd2ZGS21lSjR4RWNaT2czbW16OTc2VmozTHZ3clNMdVgt?oc=5)
+- [롯데손보 매각 공개시장으로… 신한금융 ‘느긋한 줄다리기’ - 조선비즈 - biz.chosun.com](https://news.google.com/rss/articles/CBMigAFBVV95cUxQc3Z6RnRtRXQxTm13SW5kWlFKeXN0TGVQVDNYQ0VYQU9odXJNSkVqUGFxVk5HQzBVNEVCRzFKZVVNQ3owcHFUYkNHTUlpNEV0eF9zWVpLNDFtYU1aVFlYT3FoRE1TZVVfbTY4SHp6TGRzVDJrdGZPVDBhb2lpV1c2OdIBlAFBVV95cUxQUDY2Yk1ZUjRVMUlvRnpST3dVWEZCV1JNZVA1MUhGcm5GN0pzcGdybmlKXzZnX1dFYkQ5eE1maFZhTDZuZ0hWYUNyVjBac25XVE4xQVVnWkVtZG5nYURCb09VTjBpbDl0T0RWZlZwcV9yclVDd2ZGS21lSjR4RWNaT2czbW16OTc2VmozTHZ3clNMdVgt?oc=5)
 - [겁먹은 개미 머뭇거릴 때…외국인은 삼전닉스 '5조 베팅' [분석+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE83UUZSNTBpOW9hanBhY3pjNDdkMEVvbkM0V1E1M081RHVMUTBuTnJaekFSVkhFYnIyV3JMUFJRbW9jb1Nfb2gyN0x5ZGJXd1ZxbF9LZ1BCb2Nqdw?oc=5)
 
 ---
