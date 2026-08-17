@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 245 days, 19:42:47
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 245 days, 20:27:03
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 41.9% | `██████░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 18.5% | `██░░░░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [롯데손보 매각 공개시장으로… 신한금융 ‘느긋한 줄다리기’ - 조선비즈 - Chosunbiz](https://news.google.com/rss/articles/CBMigAFBVV95cUxQc3Z6RnRtRXQxTm13SW5kWlFKeXN0TGVQVDNYQ0VYQU9odXJNSkVqUGFxVk5HQzBVNEVCRzFKZVVNQ3owcHFUYkNHTUlpNEV0eF9zWVpLNDFtYU1aVFlYT3FoRE1TZVVfbTY4SHp6TGRzVDJrdGZPVDBhb2lpV1c2OdIBlAFBVV95cUxQUDY2Yk1ZUjRVMUlvRnpST3dVWEZCV1JNZVA1MUhGcm5GN0pzcGdybmlKXzZnX1dFYkQ5eE1maFZhTDZuZ0hWYUNyVjBac25XVE4xQVVnWkVtZG5nYURCb09VTjBpbDl0T0RWZlZwcV9yclVDd2ZGS21lSjR4RWNaT2czbW16OTc2VmozTHZ3clNMdVgt?oc=5)
-- [시험대 오른 반도체주…'이번주 주식시장 주요 변수' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5STHh4Ymd0OU9BS05Pek1MM0R4QzAwcGltZjIxUFM1cmRGSkR1NFh0UHRmZTNxWmR5ckUtRHU3U3dsNVJGVGpNN0VSMTVjS3BMUUw3VEQ5WVhDdw?oc=5)
+- [시험대 오른 반도체주…'이번주 주식시장 주요 변수' - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5STHh4Ymd0OU9BS05Pek1MM0R4QzAwcGltZjIxUFM1cmRGSkR1NFh0UHRmZTNxWmR5ckUtRHU3U3dsNVJGVGpNN0VSMTVjS3BMUUw3VEQ5WVhDdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
