@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 246 days, 15:29:51
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 246 days, 16:07:56
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 14.5% | `██░░░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.7% | `████░░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [정상혁 신한은행장, 리딩뱅크 탈환…3연임 관문 넘을까 [2027 은행장 레이스] - 한국금융신문](https://news.google.com/rss/articles/CBMifEFVX3lxTFBvTTA5bzVMODFwR1VTMmVaMURITjVWUno3NVVtdGxtdVZWcHpiSkZtbWVKZ2xaLV9tN0lyM2R3NHpad0x1azVfWnZaSXBObms5Vm1WbTBfalFOdmFVQXNXdVBQRV9mRDZ3Y1k2LWJkZzBORmxZMTJkVTRVSEk?oc=5)
-- [시장의 색깔이 달라졌다…11개 증권사가 꼽은 증시 차기 주도주는? - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBOZkI5SnlUWFk1WlBEMGVzOVBkRlRjOUk2V2JDekg5TDhfV2FjbjFNRWN4eno4VnJOOVpiWVdMem9ta3hKYVNhTkhWa3lXV2ZnbE9wZk9TWTVzUQ?oc=5)
+- ['리스크 관리' 앞세운 이선훈號 신한증권, CIB까지 실적 날았다 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE5zNnZlMDRoeGNWWDk3eW1rOW1Nd2luMjhZRVRKNXJLSXNKci1KUjBlNU5RY1BKRmJWakY2a1Q3XzI0TE5IYldGeXdMS0lUTlJ3bXFhWXFrRkVGcG9MdlpNeDJ5bVllM3dwUTBnYkM0V0w?oc=5)
+- [[외신 에스프레소 영상]미·이란 휴전 시한연장 무산…호르무즈 봉쇄 둘러싼 경제전 장기화 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9TeXVLTVN2MkVqcXAtQkItRm84LU0xRUZJcFlkWFNodUU1OUlLVE9FUmNaTU92N0NTRk1OMEdkSE9wSENUeEx1TWduMG1GdUhDOEt1UXJYdnNrQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
