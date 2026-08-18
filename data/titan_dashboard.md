@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 247 days, 15:27:22
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 247 days, 16:01:08
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.1% | `████░░░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.7% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [보험 M&A 철수 신한·하나금융…"회사는 탐나지만 자본이 아깝다" By EBN - Investing.com 한국어](https://news.google.com/rss/articles/CBMicEFVX3lxTE93MXc5cERWZHNpbVRaZTh1TlA4R2xnRUVwM0owM3FsdlFXbThqVmh0UzZ4UTVIaGtnVGJ2UFlZaElvUmlzV09SLVNsYThfUlB4Mk1XRllPMlhLSnIxVE12MTIzSmFlZURtaGRMMzhweXU?oc=5)
-- [음식료업 40%가 '이익 서프라이즈'…추가 상승 키워드는 '해외' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1FZFlWbHotY2txTWc4ekdkMlNyQm50Y1JIMXF1bkZmb0dvamRQWDFwVGJWdkFwYS1hUWR0RWVLWkVZdG1WOGxSTjJmTEE0VFlUMlFFeUY0b3VsUQ?oc=5)
+- [[외신 에스프레소 영상] "진짜 전쟁은 시작도 안 했다"…이란, 전면전 준비 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5KdTV3LUd0bGxkUWZ3SE9tUDZWMG1kVWtndkJoUjhrT1ZvbEF3QldETmpSWFhMZFBoWHRkN2NkNm9EMnJPLUNPTWFPVDVZR21vTGlsbFNGaGM3dw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
