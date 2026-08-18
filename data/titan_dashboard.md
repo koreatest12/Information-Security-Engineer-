@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 246 days, 20:41:30
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 246 days, 21:17:44
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.2% | `█████░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.8% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [“장사 잘한 사장님껜 더 빌려준다”…신한, 땡겨요 우수가맹점 대출 확대 - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5VNTluekpfNDI1VFM1S1k3TUk3TmpFSTZ1dUJEQlF0TlRjSHFfc1g1eURYdnlnZXZCVFFzTVFJUC1aWVp4NTJQRWRzeV9rTmh3S3c?oc=5)
-- [코스피, 삼전닉스 랠리에 장중 7200선 돌파하기도 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBPWmlOZkpQY29naUU4dk5laVhrOW9jWEhVWVdqOHRrTVFWUV9VNWtuLWRNR1NEVHhFNTE1ZzVDZ284MUdQWlNNblR4SDJjOFVTQlJDVUNJcUFLUQ?oc=5)
+- ['7000피' 바짝 다가선 증시…상승 이끈 일등공신 꼽아보니 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1GNWxibjBxSXY4dndTZFdiRThrZ1JkN0JINjN1eDRLc3FRYm84QlFST0dIcTZJSldLU0RGV29Da2hNT3l2VnFoRk1jSTlZNEVXM1VSVmZXMHJVUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
