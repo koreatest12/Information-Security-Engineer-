@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 246 days, 22:39:22
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 246 days, 23:29:32
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.4% | `█████░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.7% | `█████░░░░░░░░░░` |
+| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행 '슈퍼 SOL 유니버스', 2026 IBA 동영상 부문 금상 수상 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTFBvUW5ERHotRjRvMGNXZndOVHAzM18wWVNieWs2LXRjSHRZbzhTVVJxV1k5YmdEMGpFTGh4cmp1d0llSDN1aUd0U3dfVFB5dw?oc=5)
-- [AI 에이전트 시대, 카드·계좌 대신 스테이블코인을 쓰는 이유 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE82cG1YaC1aRWlaQjlLaTd3S25JYnF6VEpEMTVYenBBV2kxdzBNVXBMTmItMV9QMGIzc0xEMTkxMG4zcUh2eU02LUtRZ1ljeEpHUTczOHhiY3VlUQ?oc=5)
+- [외국인 변심에…7200선 찍고 '육천피'로 내려앉았다 - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9rNkUydnlUNkZCaUtWZzVfM1ZicG1aczhDWnhpZDZ2VDdWZG9KS3lXUWRJbWpncUMxMXUzdEY4TUpKd0VSa1JDWUNmNnlPMVdjenVfZWw3bzZ0Zw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
