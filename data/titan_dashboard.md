@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 247 days, 20:22:25
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 248 days, 3:16:42
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 20.5% | `███░░░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.8% | `████░░░░░░░░░░░` |
+| **RAM** | `41.0/512 GB` | 8.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[금융권 풍향계] 신한금융, 제42회 신한동해오픈 개최…韓·日 정상급 선수 격돌 外 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9RVEl2QlNlTUpFcjlxWFJhcjV4ektXNWFKYmkwQjZ1cjlSdlRycUlBSDFHUkdMZ0hXYUxSNzQ5eGNvRDNMeV9TaFpzU0ZqTDV4UDJ0RENtWTVaR2M?oc=5)
-- ["연 3.85% 보장"…폭락장에 주목받는 증권사 발행어음 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5iVUlTV2pOYVl4bHhIZEZqMGZERzh6VzJiMWNLdnFaU2hONlpnVy1UOWtGSUs2U2hjc3l5NUxjbnJUNk9oVlFJcFpWTUpkTGpVWDZpanQ1c0RnUQ?oc=5)
+- ["금리 낮춰 1금융권으로 이동"...신한은행, 상생 대환 취급액 1년 새 3배 '껑충' - 녹색경제신문](https://news.google.com/rss/articles/CBMiaEFVX3lxTFB5Vndfb1JqTEcwRWFYVFFsTU5QaXl4bXEyaEFkMk5WOUtORFhWeXNRX1ExOWNDY2xIbUpSZU5ibndZaUVxVUhibE00TWhQOGVINnIzVWxiUWN0dzA3N3VJcmFTTmphUkRT?oc=5)
+- [“반도체 호황 2027년 중반까지”…무디스가 내다본 한국 경제 [잇슈 머니] - KBS 뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9hNFNlei1sUHZROEZCZTRMZnM0LURjTG5YM0RBV0kyMnM3RHJTOHV3TmxSUG1EREZQQWQ1b2VQbHlsMGVxY1BtbEpabFRlaXk2emwtcVVFNzVlT1E?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
