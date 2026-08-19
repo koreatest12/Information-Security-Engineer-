@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 247 days, 18:29:52
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 247 days, 19:34:20
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.4% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.3% | `████░░░░░░░░░░░` |
 | **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[금융권 풍향계] 신한금융, 제42회 신한동해오픈 개최…韓·日 정상급 선수 격돌 外 - ekn.kr](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9RVEl2QlNlTUpFcjlxWFJhcjV4ektXNWFKYmkwQjZ1cjlSdlRycUlBSDFHUkdMZ0hXYUxSNzQ5eGNvRDNMeV9TaFpzU0ZqTDV4UDJ0RENtWTVaR2M?oc=5)
-- [[속보] 코스피 5~6%대 급락…매도 사이드카 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9iTXgzSEtlOXZaTU1mMzFBUjRGYWRKcVhLUjlfRUxJaUZpLUZvUnZVVHB0d3dOTVVwd19mUHIyREE1aWhUZ0xjS1I0SGt2Z2JUVjhWb3VNVVA3QQ?oc=5)
+- [[금융권 풍향계] 신한금융, 제42회 신한동해오픈 개최…韓·日 정상급 선수 격돌 外 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9RVEl2QlNlTUpFcjlxWFJhcjV4ektXNWFKYmkwQjZ1cjlSdlRycUlBSDFHUkdMZ0hXYUxSNzQ5eGNvRDNMeV9TaFpzU0ZqTDV4UDJ0RENtWTVaR2M?oc=5)
+- ["연 3.85% 보장"…폭락장에 주목받는 증권사 발행어음 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5iVUlTV2pOYVl4bHhIZEZqMGZERzh6VzJiMWNLdnFaU2hONlpnVy1UOWtGSUs2U2hjc3l5NUxjbnJUNk9oVlFJcFpWTUpkTGpVWDZpanQ1c0RnUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
