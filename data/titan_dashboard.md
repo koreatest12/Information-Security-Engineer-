@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 249 days, 0:20:04
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 249 days, 1:30:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,17 +8,18 @@
 
 > **Q:** 종합 상황 브리핑
 
-관련 정보 없음
+**🤖 AI Analysis:**
+- [FIN_SHINHAN] [더밸류 브리핑] 오늘의 금융권 소식...신한은행·신한투자증권·BNK 부산은행 - 더밸류뉴스
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.1% | `███░░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.5% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 중저신용자에 최대 2000만원…연 5.5~6.9% 비대면 신용대출 출시 - 조선일보](https://news.google.com/rss/articles/CBMijgFBVV95cUxQS0l6dDBMMDhCc0YzMjFXZjlha1pQVmVKbzZGcE1nTV9OTzVrRUNrMnBRbE50UGt0U2owTURoQ1FzQlhFbTItUzM0R19aRzJPSkdCODFTRTE5TlpHZ1NEUFdxanZVdTV2OU1ZVmxZZGRDZ3ZiY1drSF9SVGNhdmwyWVhxWjFLeTUyUkV6NDNR?oc=5)
+- [[더밸류 브리핑] 오늘의 금융권 소식...신한은행·신한투자증권·BNK 부산은행 - 더밸류뉴스](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1Fdm1INUhUWXZJT0hlZ294RVp0anpzSHR6aWlOcjdCZjJkNlRPQUtrMWl5eVo4TGNjY2lUVTkyNTBzR0V1OGNCYkxqYUN5RFlaNVpvRg?oc=5)
 - [[속보] 코스피, 5%대 급등 마감…6850선 회복 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5xZG5BcnN2REZ1T2F1VXhPR3owWWhTQTlES1VSaDgtWGRWVFNMbS1aZk5GQi1ZZ09VNXM3NFR4NlNTT0k3YlBtUm9iZVBOQnVOMElCZnNRZFhpZw?oc=5)
 
 ---
