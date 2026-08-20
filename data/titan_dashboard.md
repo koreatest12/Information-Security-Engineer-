@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 249 days, 12:34:39
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 249 days, 13:10:50
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.1% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.2% | `███░░░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[금융뒷담] ‘신한 슈퍼쏠’ 신규 설치량 KB 3배인데 이용자는 태부족 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1PZTFVVUxRZF82TFUyNGpBRktrSmRQY3JqbDB5OGlCZVZjYlBkcUhNdlZFMlI1V1NONV9fSXJpQmdndUU3Q2N5ZDZ3djBoYzQ?oc=5)
-- [모더나 잭팟에 K바이오주도 훈풍…"추격매수는 유의해야" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wRC1KR3pMWkRweG5zaVRQeVJobEtTVkJQakltd2hSVm8zaGNNVXBxY2FNdERHYnpwdmFKSVVMUXNrdThIVHg1Zi1xLW1vemt6WVBTMHVlLWlwdw?oc=5)
+- [[속보] 중수청 특례임용 지원, 정원의 83%…"세부 지원내역 비공개" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBtUmlMZEdvbTJ4di01OTJqVU12UnBuTjNpaExJaGNkVHN0d2ZNWjdmbUZGNlM1aEU1MXRSaDBHZ3h0cVJRTWtrNVZ0aGF0cEJRUGxvM0p1Umxhdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
