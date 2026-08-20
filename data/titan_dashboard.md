@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 248 days, 21:18:10
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 248 days, 21:46:56
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.4% | `████░░░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.4% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행, 중저신용자에 최대 2000만원…연 5.5~6.9% 비대면 신용대출 출시 - 조선일보](https://news.google.com/rss/articles/CBMijgFBVV95cUxQS0l6dDBMMDhCc0YzMjFXZjlha1pQVmVKbzZGcE1nTV9OTzVrRUNrMnBRbE50UGt0U2owTURoQ1FzQlhFbTItUzM0R19aRzJPSkdCODFTRTE5TlpHZ1NEUFdxanZVdTV2OU1ZVmxZZGRDZ3ZiY1drSF9SVGNhdmwyWVhxWjFLeTUyUkV6NDNR?oc=5)
-- [[속보] 코스피 4%대 급등…매수 사이드카 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE15d0FHLUg4QWJTTmZMQjU5anh6T0ZSbXpnWHhIbWlrYkNtSnFMaEFua0VMZVJsejA1S0NRdHM0dThPYXpwT2hwaXkycnF3RXRxVlNpY1JfM2ZNUQ?oc=5)
+- [초록숲 vs 청년주택 | 집코노미 타임즈 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrZ3FoUGhoVnVHNjBEbk5vcHU2Zm9vQ2Q5RlNOSG8xQVhvV3BJc2szemdiUjBjTGg2TE9rbWFKMTN4YmcwNjhFb2ZhWTNFQ0pvMXpVYmQ0dWNaUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
