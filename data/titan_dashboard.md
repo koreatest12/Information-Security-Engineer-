@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 249 days, 8:12:45
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 249 days, 8:37:47
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,11 +15,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.4% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.3% | `████░░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[더밸류 브리핑] 오늘의 금융권 소식...신한은행·신한투자증권·BNK 부산은행 - 더밸류뉴스](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1Fdm1INUhUWXZJT0hlZ294RVp0anpzSHR6aWlOcjdCZjJkNlRPQUtrMWl5eVo4TGNjY2lUVTkyNTBzR0V1OGNCYkxqYUN5RFlaNVpvRg?oc=5)
+- [신한투자증권, '신한 Premier 시니어 라이프 밸런스 세미나' 성료 - 서울경제TV](https://news.google.com/rss/articles/CBMiZEFVX3lxTE1sMHhTS2Frdk1tYlRnWFlQUUk3OHJMX2lBTmIyUWs2US1qRUl3VGNmWGt0Q3NJSV9odUEza01ZTjctVjFrQVdPRHJjRUNUNVhEYndsc2FVNXpYYk43UjdNWkpGZ2w?oc=5)
 - [한국은행 신임 부총재에 권민수 부총재보 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5YV2JXTU42SjdwTGJFdU5mbjBNbFdYY1Y1Mk1ROUlvR0Vra3ZlWWttQ0RnMm9CNGotLWloTmNJNzQ0cDFmaGZNYTdXakxESmdJZFN0RTFHbGVrdw?oc=5)
 
 ---
