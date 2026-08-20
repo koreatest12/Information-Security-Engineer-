@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 249 days, 13:10:50
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 249 days, 13:35:28
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.2% | `███░░░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 19.7% | `██░░░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[금융뒷담] ‘신한 슈퍼쏠’ 신규 설치량 KB 3배인데 이용자는 태부족 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1PZTFVVUxRZF82TFUyNGpBRktrSmRQY3JqbDB5OGlCZVZjYlBkcUhNdlZFMlI1V1NONV9fSXJpQmdndUU3Q2N5ZDZ3djBoYzQ?oc=5)
-- [[속보] 중수청 특례임용 지원, 정원의 83%…"세부 지원내역 비공개" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBtUmlMZEdvbTJ4di01OTJqVU12UnBuTjNpaExJaGNkVHN0d2ZNWjdmbUZGNlM1aEU1MXRSaDBHZ3h0cVJRTWtrNVZ0aGF0cEJRUGxvM0p1Umxhdw?oc=5)
+- ["더 비싸질 줄 알았는데"…바나나 가격 '뚝' 떨어진 이유 [프라이스&] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1aRXZ2S1VtLTlzNktPUnM0ZVUxZWxCbUJ2QmNmemhfSHFmWWRncjVaODZYMlQzb0dibWFKZV9nUm1OOXdaR0J5bUZwek9fcnNfajFjV3hHSzhjQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
