@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 250 days, 10:47:35
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 250 days, 11:21:49
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.8% | `█████░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 36.2% | `█████░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [4대 금융, 경남 집중호우 피해 복구에 20억 기부 - 연합뉴스TV](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1BZGM5a18tTmI0WHQzeUFuYkg3Wld2c0xTTU5uZExqalN2Xzc1NUw2YnpiMXVHUWFERTlpNEhPempjZElONVZJVVVxb3gweHp6QkJkc1pqaldiOFpKSW5pTWlIQnY0ODg?oc=5)
-- [삼성전자, 최대 '110조 주주환원'…3분기 30조 현금배당 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1FYzM3d05xUHVJWk1HWFJpaTFxbE9iYm1sSVMwa29kckVoWmgyUmVMTlJlaHJQbEJnbVVCZk5SVVZuT2FfTDRKbG1LcENMOERhUmZZTHlMNklTZw?oc=5)
+- [코스피, 0.88% 오른 6912.95…코스닥, 4%대 하락 마감 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5CRXVpenNvbm16eDZxWkgwS2JFN0JrcEY3ZDhOSzVyRmh4UUJpQVBmaWk4TU9NY2EwTTRjankwYk15dTEtOXkyaVVsLTJUeWFNY2VUczMxV0lzQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
