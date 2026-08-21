@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 250 days, 1:23:53
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 250 days, 2:15:37
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 25.4% | `███░░░░░░░░░░░░` |
-| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.3% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융그룹, 경남 집중호우 피해지역 복구 성금 5억원 전달 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTFBjdUFzQzRScVpiSUNGSmZveExUczhTdW8yVG1hRk9YcHJaRUtzVmFYOXRKdjRnTENHTFMxNWVDT0kxYkNsLTc1WUduRDdiQQ?oc=5)
+- [신한금융, 경남 집중호우 피해지역에 성금 5억원 전달 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTE40UGg1ZDJtQnBERXg4Z3RtR2tqSTFXTEQ4OUJ1dXJyb1pCNXpTWWVRVkxnSjVNUUxSUF9JWEN3elgyNjRMS21uWFFhX0hlSWpyY25pNWhXZ242elQ3?oc=5)
 - [李 "정부 이기는 시장 없다"에…이병태 "권력의 오만함" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBtWWhIMTlJT3VrM21maUVYdUY4dU1WS1h4RW9qbnlIUkNJUV92QndNSmg1Rk9EaUo2SUo0dDF3WHNFRDhJMHBzbDcxb01qY09ZLVk4VnRGXzQ5Zw?oc=5)
 
 ---
