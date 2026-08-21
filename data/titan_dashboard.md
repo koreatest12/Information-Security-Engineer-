@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 250 days, 2:15:37
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 250 days, 2:39:11
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.3% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.8% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 경남 집중호우 피해지역에 성금 5억원 전달 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTE40UGg1ZDJtQnBERXg4Z3RtR2tqSTFXTEQ4OUJ1dXJyb1pCNXpTWWVRVkxnSjVNUUxSUF9JWEN3elgyNjRMS21uWFFhX0hlSWpyY25pNWhXZ242elQ3?oc=5)
-- [李 "정부 이기는 시장 없다"에…이병태 "권력의 오만함" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBtWWhIMTlJT3VrM21maUVYdUY4dU1WS1h4RW9qbnlIUkNJUV92QndNSmg1Rk9EaUo2SUo0dDF3WHNFRDhJMHBzbDcxb01qY09ZLVk4VnRGXzQ5Zw?oc=5)
+- [[단독] LG전자, 스마트홈 '씽큐'에 챗GPT 탑재 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5STUM0WW1ROGpUbWxqX0dINlVRR0RRTTNITmVvclcxaW9vX21IcUlYdUJLTTRBaXFxVGxOM0hONmZYbHRreUhrWkhCTl9wOENTb2xEOXBURGVBZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
