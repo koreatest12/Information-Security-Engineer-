@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 249 days, 22:41:31
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 249 days, 23:31:57
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.2% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.3% | `████░░░░░░░░░░░` |
+| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융 "반도체 수혜 편중…외형 성장·체감경기 괴리" - 연합뉴스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9PeUVDV1ZicTJ2S0ppSlVIM0ljQTEyRTBNZktGanNWVWE2UHNOYmFIb19FbmNiLXFEVjk5am1TWXJWa0ZGVDBTTmRBYkFGbUZjcXRWWDgwY2RZcm1ocU5ES9IBYEFVX3lxTE9PeUVDV1ZicTJ2S0ppSlVIM0ljQTEyRTBNZktGanNWVWE2UHNOYmFIb19FbmNiLXFEVjk5am1TWXJWa0ZGVDBTTmRBYkFGbUZjcXRWWDgwY2RZcm1ocU5ESw?oc=5)
-- [[속보] 카카오 "카카오X 지주사 전환 계획 전혀 없다" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ndXRlbHZ4dXNCTlJpU1BRU0pTaHFRTnhyMWtWek9rMTBOZUlBSll5eTlSNHUtR1A0LXh1WmVseXgyckhmcmZMY1hoV2haZVdFUlkyMFJQeHVCZw?oc=5)
+- [신한금융그룹, 경남 집중호우 피해지역 복구 성금 5억원 전달 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTFBjdUFzQzRScVpiSUNGSmZveExUczhTdW8yVG1hRk9YcHJaRUtzVmFYOXRKdjRnTENHTFMxNWVDT0kxYkNsLTc1WUduRDdiQQ?oc=5)
+- [두 회사로 쪼개지는 카카오…주가 어떻게 될까 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE13SnBwS0RBcDIzcWswSFRKYzZta3RWOWJSRV9WMGxiYkdOYlRFSHdfeWw3UTFaYkxwTVZURVNacm14YWhaVVpfQk5QZThGODRIelZHVVJXNUdNQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
