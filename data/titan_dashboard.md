@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 249 days, 16:52:15
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 249 days, 18:33:42
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.5% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.2% | `████░░░░░░░░░░░` |
 | **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융 "반도체 수혜 편중…외형 성장·체감경기 괴리" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBqWFBUUTc0NkUzT081cWxxZ194YXl4UDR3R1o5R19nbjhzcHBuTUoxNUdsQ1hTUGZDRXdFVGdKRWw2SXNVQkVEZ1IxUk93Znc?oc=5)
-- [코스피 1.35% 내린 6759.95 출발…코스닥은 824.05 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ZRW0wazl0NERhV2tfQUJTeGRRZUJINFdBYUdpMVJfRzNSMWdMMTQtVEFacEx0Wk1hdTRnNlY1aVVhNXMtcXNTSkkyLUxIUnoxWXl2LXJsQlBidw?oc=5)
+- [신한금융 "반도체 수혜 편중…외형 성장·체감경기 괴리" - 연합뉴스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9PeUVDV1ZicTJ2S0ppSlVIM0ljQTEyRTBNZktGanNWVWE2UHNOYmFIb19FbmNiLXFEVjk5am1TWXJWa0ZGVDBTTmRBYkFGbUZjcXRWWDgwY2RZcm1ocU5ES9IBYEFVX3lxTE9PeUVDV1ZicTJ2S0ppSlVIM0ljQTEyRTBNZktGanNWVWE2UHNOYmFIb19FbmNiLXFEVjk5am1TWXJWa0ZGVDBTTmRBYkFGbUZjcXRWWDgwY2RZcm1ocU5ESw?oc=5)
+- [[속보] 코스닥 4%대 급락…매도 사이드카 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9XQmNmTTZmWjJiaHNzRjZNdXRWYm1WRklORFg1LUxNbGlxaDk2M1dOY2lxQWNKV1YyTUc3cDh4eHNGTGgwTTVleHl1UEhHLXFDeVFDbGZuYXNfUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
