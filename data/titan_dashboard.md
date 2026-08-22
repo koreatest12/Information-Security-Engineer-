@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 251 days, 15:01:41
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 251 days, 15:27:39
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 25.3% | `███░░░░░░░░░░░░` |
-| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 15.6% | `██░░░░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한카드 해외사업 역량 재확인, 박창훈 우즈베키스탄으로 성장동력 이어간다 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTFBZTmZBa09UZVk5R3NTTjk3ZXZqdmhUTklhSzZkbXNpRUxMY2hZMTcyWE5IMkNhX1Jtc1hfNUQwWndRN0RJS2tBLW1IX1ZRdkhCQmN5WXk5S2VXcy1jaFVPZG54bGVvdjRHX2gtaUdPUG15Z00?oc=5)
-- ["대통령도 했잖아요"…급증하는 ‘매도인 대출’ 정말 될까 [김용우의 각개전투] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1RQmhlWFZadWZ6akxxSTRTS25kTkdFeEhUMzRVMktyQ2Fzc0plVTVuSHFZT3lFbmtkRThQRDM2dVFJeWZwb09rVExVX0syRTZDeTdtRWZERnU5Zw?oc=5)
+- ["제재 동참하면 적"…이란, 트럼프 '경제 전쟁'에 맞불 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5KNzFEeEg5VmhucmUxZ28yZWpfN1pnSVlraDYtMV9yMlF6TlB6aTFhTXhKVEhnWDVUM3NRT19vaTVHZTF1Y2hjRWlyU0NBb2V3WFZOU1prbktwUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
