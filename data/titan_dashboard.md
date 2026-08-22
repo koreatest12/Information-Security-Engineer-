@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 250 days, 23:24:54
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 251 days, 0:09:13
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.3% | `████░░░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 19.8% | `██░░░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [4대 금융, 경남 집중호우 피해 복구에 20억 기부 - 연합뉴스TV](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1BZGM5a18tTmI0WHQzeUFuYkg3Wld2c0xTTU5uZExqalN2Xzc1NUw2YnpiMXVHUWFERTlpNEhPempjZElONVZJVVVxb3gweHp6QkJkc1pqaldiOFpKSW5pTWlIQnY0ODg?oc=5)
+- [“대출부터 카드값까지 미뤄준다”...4대 금융, 수해지역 ‘전방위 지원’ - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9melRXbmxpQ0p5T3NTb2wzYklqTUJhVjczRW9VYTVTenByV2hoRFNfMWQ4cTdYOWd6enc0QzV1ZV8xd1NNSFFwZzlMeVBpMlVyTElva0dnRmlzaTA?oc=5)
 - [삼전닉스 턱밑까지 쫓아온 中 YMTC…6.8조 실탄 마련 나선다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE83VWNzUDJLcWZWaEtmNmlBcnd0NnNyLUNsTXBiMEwzOVpwS0ZFVWU5RHdTZ25KYjVYZF9LUk1IVmFPZUxTY1A5RVB2NzBXTTZOMnhXOVJwOEZfdw?oc=5)
 
 ---
