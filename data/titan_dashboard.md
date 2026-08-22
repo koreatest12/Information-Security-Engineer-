@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 250 days, 18:27:22
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 250 days, 19:30:31
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.5% | `█████░░░░░░░░░░` |
-| **RAM** | `39.9/512 GB` | 7.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.0% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [4대 금융, 경남 집중호우 피해 복구에 20억 기부 - 연합뉴스TV](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1BZGM5a18tTmI0WHQzeUFuYkg3Wld2c0xTTU5uZExqalN2Xzc1NUw2YnpiMXVHUWFERTlpNEhPempjZElONVZJVVVxb3gweHp6QkJkc1pqaldiOFpKSW5pTWlIQnY0ODg?oc=5)
-- ['170만원 하이닉스 주식' 비싸서 못 샀는데…개미들 설렌다 [투자톡] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5KSUh5cnplYlZLS2FyTG1fdFEyb1k1RUluYnBKZ0hqaTNMN0Y5dElMLU1LRlZRdVdNZG5RSHJLeVlLNmN0WERhTGVfTjJrei1zZVR0TU9Ud1R4dw?oc=5)
+- [홍콩에 도전하는 싱가포르…아시아 금융허브는? - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9vRGgtU1RZTWUyY2FLamlvNmJZcTkwdjZNakd6VXZZVlpEa2VPWHhfZ2dDeVZWS05UazBNdnV6V21SX2M1bEtNaHFoUnpELTY1aUh4c1Z0c2M2QQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
