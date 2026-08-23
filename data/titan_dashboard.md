@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 252 days, 3:59:52
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 252 days, 4:33:10
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.3% | `█████░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.7% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [20년 인천시 금고지기 신한은행, 스타트업 성장까지 ‘동행’…361개사 지원 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFA1bUJXUzNzMkQ2Q3ZpQlVweFBmQWVjVEFlZDFyS0pKSU9UWEFzRURoSFNFdWFSSDNFTVdETnRrR1F3NzJxUlN1anNybHZKeXM?oc=5)
-- [[다산칼럼] AI 경제 '신중론'에도 귀 기울여야 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBoYjV0bGtObEtpdkZhMVFBSXAzREtnd3BodzFmVjk0eXVYamxIdEVwUWpIWHNna3JqYjVWeEpSRzBtaUt6VVBreS1DMk5yQmJpeGNDXzFFY3J4QQ?oc=5)
+- [경제전문가 63% "한은, 두 달 연속 금리 올릴 것" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE51SVE4cjhGUHZFcVd2MXU5RXZBTGlxcDBYWGFuX1RqNTdBcHBJcVI5NVBKNkFhUkZzemZxM0dFZUkwRkVxcjJzTEpJVHZRUXRwVzRSaEdheUNZdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
