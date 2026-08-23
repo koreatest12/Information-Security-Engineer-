@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 251 days, 18:34:45
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 251 days, 19:44:39
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.1% | `█████░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한카드 상반기 실적서 해외사업 강자 재확인, 박창훈 우즈베키스탄으로 성장동력 이어간다 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTFBZTmZBa09UZVk5R3NTTjk3ZXZqdmhUTklhSzZkbXNpRUxMY2hZMTcyWE5IMkNhX1Jtc1hfNUQwWndRN0RJS2tBLW1IX1ZRdkhCQmN5WXk5S2VXcy1jaFVPZG54bGVvdjRHX2gtaUdPUG15Z00?oc=5)
-- [‘뉴페이스’에 미래 맡긴 김범수…과감한 결단 빛볼까 [정지은의 산업노트] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1TTFZBM1pOc2Ffd0RnOEFrRkVKNk5CNVJDZ1U1ME5wd1V3b0xUYWNsWGlPZ015YkItNUJBaThUTVlmV1VKWFBudFpMTWpBS3pQSE1rN2RDQ2dJQQ?oc=5)
+- [자발적 불편, 적당한 불편 [고병국 칼럼] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFB0WGhnSWVVU0JqZzVvOHlTaWxZemVCR0gwSzVkUzV5Wk02WVA4a3FMRXlZaUQ0VF9yd2lVbWJBNVZVRHB3LVAwa0ZWcFVkOENFM3FpZTdKZ2p0UQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
