@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 252 days, 10:00:07
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 252 days, 10:29:43
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.5% | `████░░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.0% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [20년 인천시 금고지기 신한은행, 스타트업 성장까지 ‘동행’…361개사 지원 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFA1bUJXUzNzMkQ2Q3ZpQlVweFBmQWVjVEFlZDFyS0pKSU9UWEFzRURoSFNFdWFSSDNFTVdETnRrR1F3NzJxUlN1anNybHZKeXM?oc=5)
-- [[다산칼럼] AI 경제 '신중론'에도 귀 기울여야 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBoYjV0bGtObEtpdkZhMVFBSXAzREtnd3BodzFmVjk0eXVYamxIdEVwUWpIWHNna3JqYjVWeEpSRzBtaUt6VVBreS1DMk5yQmJpeGNDXzFFY3J4QQ?oc=5)
+- [[포토] ‘포천 메이저퀸’ 시상식 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5pWjZILVdCcnlvNVJQNnVUUHJKYkVLb2QtMjE2b09HVHY3T3FHV2ltUmU3a1FrdU1ZUHdlSTcxOHB4ZmIwUFZ6dXBYUXM0VGhTN3l0UzZGeVUyQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
