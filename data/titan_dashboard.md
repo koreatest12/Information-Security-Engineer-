@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 253 days, 14:08:08
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 253 days, 15:11:06
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,19 +8,18 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [FIN_SHINHAN] [더밸류 브리핑] 오늘의 신한금융그룹 소식...신한투자증권· 신한카드 - 더밸류뉴스
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.2% | `█████░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.3% | `████░░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[더밸류 브리핑] 오늘의 신한금융그룹 소식...신한투자증권· 신한카드 - 더밸류뉴스](https://news.google.com/rss/articles/CBMiVEFVX3lxTE4yeHNXVmJDNHBKTmFWYTFEcXVvTmVPS0QzWHc3dXNFWjJXbjNoaC1WSUpfcjl3RzBlaVVyelFwUThLNm9iQ0ZGY3dzdE9Zc2FvNk1DVg?oc=5)
-- [서울 리모델링 대어…분담금 폭탄 나올까 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1BaWRfck1lSVNqbGZIclJwWlprNl8tX3VvU1NzdFpJMjM0MVYtTUdYTzJrRjRoTlo1MFdGaHVaTXBxcU1xbkZySGFSMTU1eElVaGRDcG5GaEs4QQ?oc=5)
+- [금융 투톱 디지털 성적표 보니…KB 플랫폼 ‘1위’ ·신한 ‘성장률’로 맹추격 - CEO스코어데일리](https://news.google.com/rss/articles/CBMiaEFVX3lxTE5MaEhlakR0c3JyX1FxR3NRazk4TmNURDQxc2ZUQVVnUXgwZEpYSTMzNkVOeUxZYmVNbWlPbW5EY2d6OGFHZU5rUGM2LThEZzJMNFRGSFMyR3NwOTBGYlRkbDh4MXVtME1f?oc=5)
+- [코스닥·화장품·금 ‘날았다’…8월 ETF 수익률 상위권 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5MR2NsQlh4Zjc1UHN6cTNXNmlCczRMdDNTT09iZnJ3YmhIQURGMEFielpJZ2lwWUNNMlFjTlVMTUdYQXZmb3pHdmk1V0t2eWVWbTR1NThJZ1Jadw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
