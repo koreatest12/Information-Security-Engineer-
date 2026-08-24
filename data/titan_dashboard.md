@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 253 days, 0:51:53
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 253 days, 1:51:43
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,12 +15,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.1% | `████░░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.6% | `█████░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[더밸류 브리핑] 오늘의 신한금융그룹 소식...신한투자증권· 신한카드 - 더밸류뉴스](https://news.google.com/rss/articles/CBMiVEFVX3lxTE4yeHNXVmJDNHBKTmFWYTFEcXVvTmVPS0QzWHc3dXNFWjJXbjNoaC1WSUpfcjl3RzBlaVVyelFwUThLNm9iQ0ZGY3dzdE9Zc2FvNk1DVg?oc=5)
-- [미래 40년, 차원 도약! - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5qVklYMXpYaVd6X2ZDM1JfaGxpM1RBWlFaQnU2eVRGSlNBTi1qaUZyTllWR000TkoyMFhvVGF6TXk0emViNGNpSnpGNTkzaXVmQjE1WmZCY0NFZw?oc=5)
+- [안전자산 금·위험자산 코인, 이례적 '동반랠리' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tWkVodlRIZ3BYTTYzcDFzUnhDUk9EV09pWU50VzNPUGVqUDhUdkhySmhxMG9ZejVNbnBrLWNEZmlPN0V3SDM1dkltYjlNam92M19qN0ltYjVxZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
