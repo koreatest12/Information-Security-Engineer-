@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 252 days, 20:31:02
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 252 days, 21:25:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,18 +8,19 @@
 
 > **Q:** 종합 상황 브리핑
 
-관련 정보 없음
+**🤖 AI Analysis:**
+- [FIN_SHINHAN] [더밸류 브리핑] 오늘의 신한금융그룹 소식...신한투자증권· 신한카드 - 더밸류뉴스
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 24.4% | `███░░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.1% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 경남지역 집중호우 피해 복구 성금 기부..종합금융지원 실시 - 한강타임즈](https://news.google.com/rss/articles/CBMia0FVX3lxTE9KNVdpam5HOFhTc3Z6SktVbjlKcjVFSndoVVdfdGZwa0tOVlByenRibHdTM1lUai1qcnp0QVRrLW8zek5EWG8xU3o1WmR5Mzlubnh5WFU4TmtOMm03ZWpPTlQ5ZGt0UVp3OFNR?oc=5)
-- [SK증권, '비지오 테크놀로지스' 국내 로드쇼 주관 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBkSTZvM1dESFM2OE1RdjZ6bkRUWDN4eHdkUHZtSHc3MWprN2lHMGNia3ZoYzBUNDJYcjRjYUl0NVRDUXdyMXg1YkVRUHFnTU1QUnVPMS05amIzQQ?oc=5)
+- [[더밸류 브리핑] 오늘의 신한금융그룹 소식...신한투자증권· 신한카드 - 더밸류뉴스](https://news.google.com/rss/articles/CBMiVEFVX3lxTE4yeHNXVmJDNHBKTmFWYTFEcXVvTmVPS0QzWHc3dXNFWjJXbjNoaC1WSUpfcjl3RzBlaVVyelFwUThLNm9iQ0ZGY3dzdE9Zc2FvNk1DVg?oc=5)
+- [[속보] "실종 장미란씨 착용 옷가지 시신 주변서 발견" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ERExTZFFYOEx3eThZZnpnc194b0NGSE9kM3poVjU1a2VmUTZCMVA4UmM4X3JCY3U0cGF2SnZodW92RHdfNTBudEV5aVNVZnY5SWNIa2dybktuQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
