@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 254 days, 14:07:40
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 254 days, 14:32:57
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.0% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.1% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[기획] ④ 신한금융, 책무구조도 '강화' … 금융사고 관리 체계 개선 - 세이프타임즈](https://news.google.com/rss/articles/CBMic0FVX3lxTE1KaTdLZENHSGpjSTBmWmFOamxDcGd1d2F6RVpUZGE5dXQ2LTBheVIwSVRvN0s3dkdvNWpPeUZHdS1ZSlJ1ZVFBY25VNEJHTU45V1RfMHB6NGdHVzJTYzhBMFZUMXBmdUk3VmtSWTBxRXBIYjDSAXNBVV95cUxNSmk3S2RDR0hqY0kwZlphTmpsQ3BndXdhekVaVGRhOXV0Ni0wYXlSMElUbzdLN3ZHbzVqT3lGR3UtWUpSdWVRQWNuVTRCR01OOVdUXzBwejRnR1cyU2M4QTBWVDFwZnVJN1ZrUlkwcUVwSGIw?oc=5)
+- [4대 금융 ‘실탄충전’ 경쟁…우리금융·KB금융, 잇단 신종자본증권 발행 - CEO스코어데일리](https://news.google.com/rss/articles/CBMiaEFVX3lxTFBPWEVXaTAtNi1BX2lFRWlZT1hxV0VKa2Z6eVoyLVBaTlF3TmZ1V1pZVFFvWVVGWXU5VWEwZm16NllmU0NGOHJTQS1Oekk3SmVpOUd1M1h1Y3JQSTRMcWh0eURPS0ZGNi1m?oc=5)
 - [중국의 반내권…더 무서운 중국이 온다 [조평규의 중국 본색] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE15R1R2eW5lb1YwWGc1dlZObE0wQ1RNRFNWVFBmd2ZSMWxvaTFqY05ReXBLdi1SQjhfN0x6eVIxcF9GajVYQ3lRT0dQaXFUeEV3eUllbnBmckFnZw?oc=5)
 
 ---
