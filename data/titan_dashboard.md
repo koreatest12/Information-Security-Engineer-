@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 254 days, 20:28:36
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 254 days, 21:19:51
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.8% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 비자 손잡고 '한국형 스테이블코인' 생태계 구축 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE45Q05WV2dtRHdWZDAtN3BocUYta3hNcElEY2ZPa0VTd2FPblFrbFEwQW9sdDdKaFZzcHVPYmRLa0NNNTFnZk16UDJSVEo2UQ?oc=5)
+- [신한금융, 비자와 스테이블코인 등 '미래금융' 협력 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE80MzlTLXZ1NkdHNE5xRl9uMEpVcGZvcGJkYlNLU3NZMkRqUzQzOWZ5SzBhY1E5dy11cEo0U1pCVzZPWk8yOGJGdkNUNlFYVmgtbjFHZVFuc1VSTlXSAWBBVV95cUxQbExhcFljZFpTQTJERlVScXM3SHNLWlVzbE1Qa3hwd2hJMVFndXdESVVHUzk0aWpUVHNXQnVUSm5XWnZ2Mm9HMm1hcm5fTm52TnlyVk9saDhxZ3Rpck04NFU?oc=5)
 - [李 지지율 30%대…4050도, 중도층도 돌아섰다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9CNWtCa3IxU3lzOUFIVW9xcTVCX0c5UFVwV3BnRWJXdW81U0RtVXpCdVRTdzNMZTQ1WjZRekhGbDMyQk9ad2g2YWJqb3JCOHlsclhrM0Q1anNjZw?oc=5)
 
 ---
