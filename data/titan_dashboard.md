@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 255 days, 0:23:22
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 255 days, 1:25:47
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.8% | `█████░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.8% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한카드, 을지로 사옥 팔렸다…'2천억+ α' 매각이익 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE5jOWhjUUpzWkxVQU5oZFhpcXhZVlM3ODZORmp6NFNVTFZoSE1xSnNKLVFhTFdoR3ZHSVU3SHNKY1dMT3lnQ3h5cndnd1hJUHB1cXV5RXZUSUJqR2E1aVZhUHNobG5VRmFaZEVjOVBlNjE?oc=5)
-- ["한국 반도체, 이게 시급하다"…애플·구글·MS의 경고 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE14QVF6RDhjUW9RM0lEUnlmLUxWNHI0UlhGRDc0RWFCaHE0dlZTMDFLdHpXTFA4NC1OVGl4djNxdlZocDNTVGF3aVBQdzJ1MDJTNHM3dE1YMzR5Zw?oc=5)
+- [15만명 교육…금융 문턱 낮추는 신한 - 서울경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5BQVdGMjJuc2Z2SE1iRFdYenRPRmJad3Rkc2tUTVp6cjdMeXJ4RmZlRDhJWW8tbXJOSzlYaHhveVB2N2hHTmozS0V3cmFVMnVJQlE?oc=5)
+- [유럽 IPO 대어들, 줄줄이 '뉴욕행' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9kZ0ZwTzFnUFRaZ2VXY1kwLXplcTVGSDNtSFRQdS1qeE1EZWdISGNpU01YYU11ZUZCV0p4RDhia0ZheXpSX183bXFSbFlnX1E5aWhhS2ZFcE1SUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
