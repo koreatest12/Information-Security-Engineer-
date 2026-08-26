@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 254 days, 22:45:08
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 254 days, 23:43:01
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.3% | `█████░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.6% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 비자와 스테이블코인 등 '미래금융' 협력 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE80MzlTLXZ1NkdHNE5xRl9uMEpVcGZvcGJkYlNLU3NZMkRqUzQzOWZ5SzBhY1E5dy11cEo0U1pCVzZPWk8yOGJGdkNUNlFYVmgtbjFHZVFuc1VSTlXSAWBBVV95cUxQbExhcFljZFpTQTJERlVScXM3SHNLWlVzbE1Qa3hwd2hJMVFndXdESVVHUzk0aWpUVHNXQnVUSm5XWnZ2Mm9HMm1hcm5fTm52TnlyVk9saDhxZ3Rpck04NFU?oc=5)
-- [李 지지율 30%대…4050도, 중도층도 돌아섰다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9CNWtCa3IxU3lzOUFIVW9xcTVCX0c5UFVwV3BnRWJXdW81U0RtVXpCdVRTdzNMZTQ1WjZRekhGbDMyQk9ad2g2YWJqb3JCOHlsclhrM0Q1anNjZw?oc=5)
+- [JB·iM·신한금융지주, 자본 확충 나선다…9월 영구채 발행 - 마켓인](https://news.google.com/rss/articles/CBMickFVX3lxTE1xTlpfTVJEN2duWXZTbVBXMngxUnNWdzlpZ3pZUVdWYUlIRWVNdkQzV2lDMUJjWGdnemNUUmVWalJpTWtuNUMtME8xYW83cFJMVGVZb0RmaHpGMXBQOU1HWGNlS3J5Q3I0U25wZkJDV21VQQ?oc=5)
+- ["한국 반도체, 이게 시급하다"…애플·구글·MS의 경고 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE14QVF6RDhjUW9RM0lEUnlmLUxWNHI0UlhGRDc0RWFCaHE0dlZTMDFLdHpXTFA4NC1OVGl4djNxdlZocDNTVGF3aVBQdzJ1MDJTNHM3dE1YMzR5Zw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
