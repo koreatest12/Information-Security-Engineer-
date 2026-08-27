@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 255 days, 17:13:12
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 256 days, 3:01:10
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,18 +8,19 @@
 
 > **Q:** 종합 상황 브리핑
 
-관련 정보 없음
+**🤖 AI Analysis:**
+- [FIN_SHINHAN] [더밸류 브리핑] 오늘의 금융계 소식…신한은행·BNK금융 - 더밸류뉴스
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.0% | `███░░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.6% | `█████░░░░░░░░░░` |
+| **RAM** | `40.4/512 GB` | 7.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한카드, 을지로 사옥 팔렸다…'2천억+ α' 매각이익 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE5jOWhjUUpzWkxVQU5oZFhpcXhZVlM3ODZORmp6NFNVTFZoSE1xSnNKLVFhTFdoR3ZHSVU3SHNKY1dMT3lnQ3h5cndnd1hJUHB1cXV5RXZUSUJqR2E1aVZhUHNobG5VRmFaZEVjOVBlNjE?oc=5)
-- [답안지 없는 시대, 한국 경제는 무엇을 그릴까 [김효선의 부동산 이지!] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9wMExpNncxX0xYVGxBNVhyNWI4WXhyN0JzNjhjNjh4Q2lfcDlWdnpwVXh6bWJDYThjSlVudWVPdElaTDZON0xGbU5qeTlEYjNNSEl6cWtZSkFtQQ?oc=5)
+- [[더밸류 브리핑] 오늘의 금융계 소식…신한은행·BNK금융 - 더밸류뉴스](https://news.google.com/rss/articles/CBMiU0FVX3lxTE02Q3YzZUl0TmthaWRKTHM5c202Mm90NzdCSllRWFVOekZFUnFadmNtSVg2WVNLVGdIN2dmVHEyMlZHcjVzcm43WkNXOW9OVzJWb01N?oc=5)
+- [주요국 내년 증시 미리보기 [한경 프리미엄9 TODAY] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBFRnVPdHJ6Sk14czNUbXBiLW1oVEVQLUlfY05lNC1ZdUZnUkVkQnBmNTlwUDNnQnB1WUppWEtyLUZhX2xZVklMRk9UelVCcmVta0FqOGxjcGJWdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
