@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 256 days, 21:18:19
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 257 days, 10:19:39
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.1% | `█████░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 25.4% | `███░░░░░░░░░░░░` |
+| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 롯데손보 품을까…다른 금융사들 관심은 - 라이센스뉴스](https://news.google.com/rss/articles/CBMia0FVX3lxTFBuOU1yZ0psNmJkdE5TT3g2R1RodzB6QjNmcS1VVGp2bWJfY3lUMkVvN2s2b3BkRE9UWGRBcGtMTEJqb294ZHlDODNKUm9DcTdMUkQ5WldDMU83UE85STZXZGpoNjJjZVdYaW1B?oc=5)
-- [K-푸드 세계화, 이제 ‘법의 국경’을 넘어야 한다 [황우진의 글로벌 퍼스펙티브] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBadThZVk13MF9qYlhnT2xESlgxdEM3WHNCSHZpLUk5LVdneVp6aW5aczVwZ2FROGhya2p4VGp5UUgwaGNVdlpPWmF0NWpQNFR4UE43bVdtUVgyQQ?oc=5)
+- [신한금융, 그룹 여성 리더 프로그램서 전문가 특강 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5mbEhkZHFMLUpZUDNnREk1dUlQRGU4VkoyaFpOX1lWczlZZS1nVV9RSFYzUFNJRzZPZl9nT2FLV0QxR2dLQmlYdmZvX3Y3bE5LWWFkQTU5bFR2NDTSAWBBVV95cUxNU3haS0RXYk95SkJtQloydlBOTUZWVWdFbFl4eWhsVWp1M0hZQUZYVml2eERrUzQ1akJ3ZlJ5OWhTNkNQOWZVY1JnNllUNlJjSGczVHc5VGo3ZXhTU0o3RFk?oc=5)
+- [[책마을] "한국, 대체 불가능한 기술로 승부하라" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFAxSWo3WVdCTmZuZXUwNkM1akF5NkdIbGc5S2pBY1VoX1luSC1JaDdpcndKVHNHamRxNk96Q3JYWTY5UTJ3anAwbmpnY1lXUExuYnJCLUZHUXdOQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
