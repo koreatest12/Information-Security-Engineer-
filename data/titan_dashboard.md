@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 258 days, 0:15:27
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 258 days, 5:48:23
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.3% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 그룹 여성 리더 프로그램서 전문가 특강 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5mbEhkZHFMLUpZUDNnREk1dUlQRGU4VkoyaFpOX1lWczlZZS1nVV9RSFYzUFNJRzZPZl9nT2FLV0QxR2dLQmlYdmZvX3Y3bE5LWWFkQTU5bFR2NDTSAWBBVV95cUxNU3haS0RXYk95SkJtQloydlBOTUZWVWdFbFl4eWhsVWp1M0hZQUZYVml2eERrUzQ1akJ3ZlJ5OWhTNkNQOWZVY1JnNllUNlJjSGczVHc5VGo3ZXhTU0o3RFk?oc=5)
-- [물적분할과 인적분할, 뭐가 다를까 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zS0tfM0JsaDNtRWJOeW9IcW03TGF5Q0hDVEJPR2FHcVhGYkdOdk12dTQ3aTRaeUJCdVBOMlRjT05CdDJndzZDczFQd3NvMzQ4SWxxZ2VPb2txdw?oc=5)
+- [신한금융 '신한 쉬어로즈 리더십 특강' 열어, 여성 인재 70여 명 대상 강연 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTFBJV3hIT1ppTnpHaHFIWUd0cThKOWhSdjRVdEZocTdHQ0FlSFhVU0dLREU1ellVazFoNDZmLW04azczZ01EZUpkM05TQ3BXSTdUbEhpZ2o4M1RvdVRjems2bnpRdGVYSEMtOHRCZW5ESW1JR2M?oc=5)
+- [워시 '매파 본색'에도 '美 국채 30년 만기' 덜 뛴 이유…뒤엔 베센트가 있었다? [글로벌 머니 X파일] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFAxWTcxeDdJazF3NkJyQkJOWVo5U05LOVk1OUptay1aTzR1dkppdVpXeVV3N0YyaDdIbFFPcVZNcVN0UlNkV0lZUElXczAzeEpoSmNVQnY0SzNuQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
