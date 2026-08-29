@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 257 days, 17:20:57
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 258 days, 0:15:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,19 +8,18 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [FIN_SHINHAN] [더밸류 브리핑] 오늘의 신한금융 소식...신한금융그룹· 신한투자증권 - 더밸류뉴스
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.2% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융그룹·한양대가 함께 AI 솔로프리너 찾는다… 'Tomorrow Challenge' 참가자 모집 - 뉴스H](https://news.google.com/rss/articles/CBMia0FVX3lxTFB5OE5oSkNwTHYyS0lGd0dLUGhfaEdBU0dYVXAyc1Y1d3c1aVloUjZBWVB2cFU5MTFTdTdHOTA5bXdFaTVOVW1EbW84MjNnNjlEcVZpRG1DY2F2a2VCQ21aempJNjFGTE5MNzFB?oc=5)
-- [정청래-장동혁의 '평행이론' [여의도는 지금] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wOEQ0VTNPdmZxWWl4cDdjMGRnRWhRYlFSczhpWWQ1S1ZQZkVZcWZiQkRtV3BGdmdYWFBJYXRaUlV6Tk5iY2VMaGRqSzVvM0thbUR3NURwRXRUQQ?oc=5)
+- [신한금융, 그룹 여성 리더 프로그램서 전문가 특강 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5mbEhkZHFMLUpZUDNnREk1dUlQRGU4VkoyaFpOX1lWczlZZS1nVV9RSFYzUFNJRzZPZl9nT2FLV0QxR2dLQmlYdmZvX3Y3bE5LWWFkQTU5bFR2NDTSAWBBVV95cUxNU3haS0RXYk95SkJtQloydlBOTUZWVWdFbFl4eWhsVWp1M0hZQUZYVml2eERrUzQ1akJ3ZlJ5OWhTNkNQOWZVY1JnNllUNlJjSGczVHc5VGo3ZXhTU0o3RFk?oc=5)
+- [물적분할과 인적분할, 뭐가 다를까 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zS0tfM0JsaDNtRWJOeW9IcW03TGF5Q0hDVEJPR2FHcVhGYkdOdk12dTQ3aTRaeUJCdVBOMlRjT05CdDJndzZDczFQd3NvMzQ4SWxxZ2VPb2txdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
