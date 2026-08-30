@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 258 days, 16:46:55
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 258 days, 21:56:06
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.2% | `████░░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.9% | `████░░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 독립이사에 금융 전문가 늘린다…선임 원칙 정비 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFBBS0h4RldzX05jUkNIcEZqUk4wOXdTdWZ0RnpmSVBoQ05TcWNwOWdTR3BfckIwRUlwUmgyV19HVFdYUThZZXFQQkJ0NEw1WnR5eWo2ZVRnb2ZMNGRCSmJNdnktME1NV2ZJb0I40gFwQVVfeXFMTW5xOGxWV3ZoSjFjeDk1cEJ5YlIzTDc2bkluTldFaVNNNnoxb0JZUXM0d0FJMWRBNF9pMW9qM0EtSUxUN3c0RVlmaWtwQzdQODNwdm1WYnlDdm9FbEZRemRoZzZpeUlwcXpwbms3TlJvdw?oc=5)
-- ["지금 사도 될까요?"…불확실한 시장, 분산투자가 필요할 때 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9fNmF1Tnh2eU5qQ09jcjFGQXlSNDNWbGtTNjJyaWVSMW1iSE1URWxoeXQxOWUyU3Z1Nm11ZFBhSjk3dlB1LVNTeG5OY0tMc3gtX2owRHg5VnBWdw?oc=5)
+- [투자자 만난 신한금융…“독립이사 전문성·AI 내부통제 강화” - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE1XbUVUX1RfLTd1cjJkM2gwRjhFYjVJeXl0aG0xMjA0bFl2bFIzcFNqZkV3U1RRV1lTbUZ4aEhOTmZCOTcyR25ybUZRYWlzdkF5Qmc?oc=5)
+- [밥상 물가 뛰자 취약계층 '직격탄'…저소득층 식비 지출 '껑충' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ZQV9UMWQ4cmV0S2tOaWN5aHBQRVdZdDJiSUZ6ZGkzSVJLemxQMmR4RlkwZzNDUHJBcGpqbTVqU29zb0JTS3VKMTltWlMwYXZsdWJuMmY1bW9pdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
