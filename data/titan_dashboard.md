@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 259 days, 20:08:06
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 260 days, 2:29:29
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,18 +8,19 @@
 
 > **Q:** 종합 상황 브리핑
 
-관련 정보 없음
+**🤖 AI Analysis:**
+- [FIN_SHINHAN] [더밸류 브리핑] 오늘의 신한금융 소식…신한금융지주· 신한은행 - 더밸류뉴스
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.6% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 35.0% | `█████░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [‘교수 쏠림’ 지적에 답한 신한금융…실무형 독립이사로 재편 - DFT 대한금융신문](https://news.google.com/rss/articles/CBMibEFVX3lxTFAxQlByS3p2eUpybXNtMnp0SU93N2hPX2dMZFVSaVg3TUlwNWFxYk1uUTU4Y1VrZlNUS2ZIblRpYk5tbnZlLWtVTHNZbnJUcmRCWHk4bWw0Q2NYRkhpOE16anZnZDBfTjE3ejZZd9IBcEFVX3lxTE5kSEo5S3R5UGlPV1Q0WGFYdUlnTnl5VUZaTEVYS2ZiN3djcEtJYVNaRkRNTWM0Y0Ztb015TGF4aVJMYmdhN0dnRW1ZUkloQ2JBV1dQNHZtOEVtVXhpcmdSQ1lqSzdTQUNqeWRYd1VIblo?oc=5)
-- [“성장률 4% 가능?”...한국 경제 성장 기대 확 커졌다 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE93OW9RZnNRS0g2YVNjZllQcHNqT2RFYllkRk90RmhNaU5KaURXc25LMjNETVhkSlZObDNfOXJOVkV3MDVKcXM5bGtGczJ2ZzJVTEpCTnQzZ3I3Wjg?oc=5)
+- [신한금융, 10억 자산가 1천명에 자산관리 노하우 전수 | - 연합인포맥스](https://news.google.com/rss/articles/CBMidEFVX3lxTE1tcFNiY2s1eFhLNG83ZFlTM0FNU1BiVnBwLWlzU1pyNGt5NGRlSFlHdXdGYk1oS3c3TjlXamwtZ0hlTGtOUVlwc2tHd1g2S0Y1RlliMVJtR1BkWlNqelpiT3FkQmVFV21PMjJxZE4ySmNmUlB4?oc=5)
+- [국내외 주요기관 3곳 중 1곳 “올해 한국 경제 3.5% 이상 성장” - 경향신문](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBNY0pqOVliRlRQRUhpT1hMN3NLejg3UnY5MV9hckFGSi1nTHQzWnNxNGRHWEs1LTBaNzUxWFFmZzlKSHBwN0lkWW9sN1FydWdEQ0NQSUNwY2xoQdIBX0FVX3lxTE9wQmMtMFZSNWYzdklmanQwa3Z0NnpsaU1jNndLaklMZ0NETHpaSUVLYVlrZVMxMEdXRnZDbThuWFlQUm1jaWZaZmxVZXNxRy1aSDEtSG9aZjJKeFJjNlZJ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
