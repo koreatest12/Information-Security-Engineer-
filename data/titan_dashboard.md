@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 261 days, 7:57:57
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 261 days, 11:16:38
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,12 +15,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.4% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.2% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융 창립 25주년…진옥동 회장 “신뢰 기반 성장” 강조 - 경향신문](https://news.google.com/rss/articles/CBMiX0FVX3lxTE8yUkt3X2ZnRHZUdE83VkM2OU5abWR5Q1JwbE1uZGJsZ0FwNllBaUY5bkhZZE55OXR1cE1WZ0VfZDFxakY2LXZ6ZGdDOEtRaWVIWFhYOHBJVWdoQnp0ZVlj0gFfQVVfeXFMTzJSS3dfZmdEdlR0TzdWQzY5TlptZHlDUnBsTW5kYmxnQXA2WUFpRjluSFlkTnk5dHVwTVZnRV9kMXFqRjYtdnpkZ0M4S1FpZUhYWFg4cElVZ2hCenRlWWM?oc=5)
-- [[한경에세이] 최초의 여성이 그 다음 여성들에게 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5YM2FheEtVUGpzQjZBM1lsSnhKeUp1RVBIdGpGLXB0UkFqXzJNY0oxSGVqSDl6TWpCUHZCUVZkc0VwOC1kWFVGX0hKLWgzVWdkQ0dlMFJVdkIyQQ?oc=5)
+- [[포토] 노르웨이 연어는 언제나 옳다, '2026 올해의 브랜드 대상' 미식문화 캠페인 부문 수상 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5Idy05Nk5taEpXdEhGc0w2Tkphd3gycm81QnJMVUlZT2Ntb3l2M0Q2eGNPX2FuQWp3QVY4YU5mTHEwc2FLV21ZVDcySFpFRnVoUjd6cFoyczNiZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
