@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 260 days, 17:38:09
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 260 days, 22:37:52
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,18 +8,19 @@
 
 > **Q:** 종합 상황 브리핑
 
-관련 정보 없음
+**🤖 AI Analysis:**
+- [FIN_SHINHAN] [더밸류 브리핑] 오늘의 신한금융 소식…신한금융지주· 신한은행 - 더밸류뉴스
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.1% | `████░░░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 20.9% | `███░░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[금융권 풍향계] 신한금융, 자산가 10대 고민별 ‘맞춤 해법’ 제시 外 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTFBBdlg4OVVXSEZmeXRPd1pHd0VGeFFxOGFFQ0RhVlM2Mno4X044UmoxY0tuXzdIT3NGbUYzSC1HbDdjdmJsRWFtNWdLVDljYmZFMFVoY1hsamM3dlE?oc=5)
-- [삼전닉스 말고 또 있다…큰손이 찍은 韓 '잠자는 호랑이' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE02ME16Rkdid3J4cjFLNDZ3THQ3Tkk5Z0ZISldkZ1ExTjJtb3JId3ZGU25xekZtNEZwMVRUVEkzRlN5c2c3SWxSZElPdWlXNFhwcHNIOE1vTVZFQQ?oc=5)
+- [신한금융 창립 25주년…진옥동 회장 “신뢰 잃으면 성장 기회도 잃어” - 경향신문](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5VTC1aWlp1ZElCTl9VbUp2X240azRuODFwY1ZUcW9pVEp6bDVUaVJNLXU4V3BRSWhCZXRpQ1V5a0JDemdIcGhJTnlyOV90c0tEMmpuZThOaUxFZ9IBX0FVX3lxTE1QMThrQmNEUzRKLUludmlVSloxMGsxWUtwUTJFRU9tUDhJa2sxNVVGVFdONy1GdndUMENsM2p2Y19yWnJXeTlNeHJfNkN0RlVrUVZiYWY5WktPekxpeWJn?oc=5)
+- [AI 버블의 끝은 곧 온다 - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1pd1NfakRmel8ybUhNanNOX25SQXBKN3l6c2hKU0RLVWtJU05EcXVKOWN4c1N1cU5MRFpualNobWpHaURnY0Z0aUtxS0ZZSnppYXltUENEc1pTZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
