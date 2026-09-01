@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 261 days, 13:47:25
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 261 days, 15:46:07
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,19 +8,18 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [FIN_SHINHAN] [더밸류 브리핑] 오늘의 신한금융 소식…신한금융지주· 신한은행 - thevaluenews.co.kr
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.2% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.0% | `█████░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융 창립 25주년…진옥동 회장 “신뢰 기반 성장” 강조 - 경향신문](https://news.google.com/rss/articles/CBMiX0FVX3lxTE8yUkt3X2ZnRHZUdE83VkM2OU5abWR5Q1JwbE1uZGJsZ0FwNllBaUY5bkhZZE55OXR1cE1WZ0VfZDFxakY2LXZ6ZGdDOEtRaWVIWFhYOHBJVWdoQnp0ZVlj0gFfQVVfeXFMTzJSS3dfZmdEdlR0TzdWQzY5TlptZHlDUnBsTW5kYmxnQXA2WUFpRjluSFlkTnk5dHVwTVZnRV9kMXFqRjYtdnpkZ0M4S1FpZUhYWFg4cElVZ2hCenRlWWM?oc=5)
-- [수십억 배럴 묻힌 베네수엘라…셰브론, 대형유전 추가 확보 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBhRktnWHBFQTFSbG1RUk1kRUNfN0d6cUlyakxkOU1lQi1waUVkVU9hMkp2UkE5TVpKUWJNZDkxeVcySkxiajlWRFFjY2hvNl8xbTEwa2FJUDVvZw?oc=5)
+- [[ESG 특집] 신한금융 ‘아름다운 동행’으로 상생 보폭 넓힌다 - 천지일보](https://news.google.com/rss/articles/CBMiakFVX3lxTE1JYWxzMjNyQXpiWnAwMWZ0NTJEMEpjUlA1T3F1d21hZHNWUEJlSXZZMThaR1NhX0xfamZZQlVDcUdHUFNDQ3hRV1RINW56aHRWSVc3TENZN2ZNRzVXcmgwbVctUl8xYld2Y0E?oc=5)
+- ["한국 없으면 AI도 없다"…미·중 무역전쟁 판 뒤집을 'HBM의 힘' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5lcU1IX19CS2dweEJ3aFgtV2R1ZHFLV3JVX2w4cFBFSkoyQTBIalJla3lQb2o4Uy1sY1lBV3QyWDg5TWpIMkxnMVhEYTF0VGkyRHBRWkNRQXFkUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
