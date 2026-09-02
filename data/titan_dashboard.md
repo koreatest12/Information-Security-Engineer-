@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 261 days, 15:46:07
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 261 days, 17:28:56
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.0% | `█████░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 16.6% | `██░░░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[ESG 특집] 신한금융 ‘아름다운 동행’으로 상생 보폭 넓힌다 - 천지일보](https://news.google.com/rss/articles/CBMiakFVX3lxTE1JYWxzMjNyQXpiWnAwMWZ0NTJEMEpjUlA1T3F1d21hZHNWUEJlSXZZMThaR1NhX0xfamZZQlVDcUdHUFNDQ3hRV1RINW56aHRWSVc3TENZN2ZNRzVXcmgwbVctUl8xYld2Y0E?oc=5)
-- ["한국 없으면 AI도 없다"…미·중 무역전쟁 판 뒤집을 'HBM의 힘' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5lcU1IX19CS2dweEJ3aFgtV2R1ZHFLV3JVX2w4cFBFSkoyQTBIalJla3lQb2o4Uy1sY1lBV3QyWDg5TWpIMkxnMVhEYTF0VGkyRHBRWkNRQXFkUQ?oc=5)
+- [신한금융지주, '슈퍼SOL' 1100만명 넘었다…이제 MAU보다 '교차판매' 본다 - PRESS9](https://news.google.com/rss/articles/CBMiZEFVX3lxTE9Uc0R1QjBaTk9DWkFISGExcUl2ZFItNV9mVk52QmtmeDJxMnVTNzhXcHdCZ1JKZ19LZGRtOGdXTzY5WUlYb20tampDczltR0djZm1LbWF1a0hSVWw1NlM5YmZwcW0?oc=5)
+- [투자 심리 진정과 상승 에너지 비축의 9월! - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9uSEkxb0phRk4xYm1lNFZrMF9nSFdJek9ZTEk4TTJaLXplWlJJbEk2MWZoOFBTb2RzLVZEZW1HTDlYRi1qM002WnNTSVRrLUFwWVRHbENmLWRtQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
