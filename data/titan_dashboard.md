@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 261 days, 17:28:56
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 261 days, 22:18:05
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 16.6% | `██░░░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 35.9% | `█████░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융지주, '슈퍼SOL' 1100만명 넘었다…이제 MAU보다 '교차판매' 본다 - PRESS9](https://news.google.com/rss/articles/CBMiZEFVX3lxTE9Uc0R1QjBaTk9DWkFISGExcUl2ZFItNV9mVk52QmtmeDJxMnVTNzhXcHdCZ1JKZ19LZGRtOGdXTzY5WUlYb20tampDczltR0djZm1LbWF1a0hSVWw1NlM5YmZwcW0?oc=5)
-- [투자 심리 진정과 상승 에너지 비축의 9월! - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9uSEkxb0phRk4xYm1lNFZrMF9nSFdJek9ZTEk4TTJaLXplWlJJbEk2MWZoOFBTb2RzLVZEZW1HTDlYRi1qM002WnNTSVRrLUFwWVRHbENmLWRtQQ?oc=5)
+- [캐피털그룹, 신한금융 3대 주주로…세계 최대 액티브 운용사 '귀환' - KB Think](https://news.google.com/rss/articles/CBMickFVX3lxTE5JSkFjZGN1YXFJRFg5dk1KVWowVE44RUd4VWNSUU9pUDFZT3pYM0VaMG5mZ0FqTy10XzU0T1RBTGxSWGZwcGRWUENIMWNkOE9ybWdScFJCTG54QmR6QTY3SDRMWEJ5a184a2NrWVRlaGlrQQ?oc=5)
+- [[속보] 코스피, 3.08% 내린 6625.47 출발…코스닥도 2.25% 하락 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1IOGNUbTd5WDFZaUF0NlB1VmdFQjliTjlKS2pfclJKQ1RHN2pFZGlYTUg3Z2VZalg4TDlYUW1WWWlCQThuSE9TbXo2RU10NERRVHRYQVQyOXhBQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
