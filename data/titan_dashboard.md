@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 262 days, 10:29:44
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 262 days, 13:28:21
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,18 +8,19 @@
 
 > **Q:** 종합 상황 브리핑
 
-관련 정보 없음
+**🤖 AI Analysis:**
+- [KR_ECON] 글로벌 ESG 뉴스 브리핑 - 한국경제
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.5% | `████░░░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 40.4% | `██████░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [캐피털그룹, 신한금융 3대 주주로…세계 최대 액티브 운용사 '귀환' - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE9TREJQeEZJRXZiWWZnMGJtMHVsbV9WTzEyQzA2Umt4Rklkc1ZkUnhqbkpGU0xBMW1WRERCMzRNNWY0clRlMlB4cVhURlBkZDJUZUJPX2dVWHhPempvZjdaZ0dfWGN4RFpaUmo0blFTTG0?oc=5)
-- [[단독] 삼성화재·생명, 英·美 대형 보험사 인수 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1GcTBYWUxzLURqWUZKWS1mMDdHa25UYW5SemE1bk1RT0poTExiYU02aV9ROWc5SmxXbzYtYzdmR2xkaXd0RGVpYUp0NFJ5cHZDMFhMT0xxdE5OZw?oc=5)
+- [캐피털그룹, 신한금융 3대 주주로…세계 최대 액티브 운용사 '귀환' - news.einfomax.co.kr](https://news.google.com/rss/articles/CBMicEFVX3lxTE9TREJQeEZJRXZiWWZnMGJtMHVsbV9WTzEyQzA2Umt4Rklkc1ZkUnhqbkpGU0xBMW1WRERCMzRNNWY0clRlMlB4cVhURlBkZDJUZUJPX2dVWHhPempvZjdaZ0dfWGN4RFpaUmo0blFTTG0?oc=5)
+- [ESG 공시 의무화 시대, '데이터'가 수익률 가른다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ETFBnRTJ0eEttX3pfeU9UeE9CSHl0UnQzX3lhenlxVWllRGVQUnV4RDZLZ3BZTzg2WlNTLXNUSHJoWTl1eUl1NjBYd2pPVnc3SzhuTXlNaGZUdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
