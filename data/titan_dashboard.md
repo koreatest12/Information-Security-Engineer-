@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 263 days, 7:03:54
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 263 days, 10:38:45
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,17 +8,19 @@
 
 > **Q:** 종합 상황 브리핑
 
-관련 정보 없음
+**🤖 AI Analysis:**
+- [FIN_SHINHAN] [더밸류 브리핑] 오늘의 신한금융 소식…신한금융그룹·신한은행· 신한카드 - 더밸류뉴스
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 10.6% | `█░░░░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.3% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 성실상환 청년에 최대 300만원 환급 시행 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9hbVBaM1Bvb0JVd1YxN2JpYV9jZ2I2QUVDNzlKbjAxT09mTjlFRlllSDhzZ3RxQXBvTWk0em9SY01NMk9nS3FyRENnaGlqczRjaWVYUGJaUTY5LXNIek5sRQ?oc=5)
+- [[더밸류 브리핑] 오늘의 신한금융 소식…신한금융그룹·신한은행· 신한카드 - 더밸류뉴스](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5lOFpCNVFrYVFnQ2lJVnBid3REa0d0eEZWZnFBanFCcFdHeDlFMGhCUlBzS3ZKZDBpSHdaRXFrYlFETjJLcnRnXzc0U0M0TE5XaTRINg?oc=5)
+- [월러 이사, 금리 동결 시사...워시와 엇박자 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1yMEJYd1lnR1pjOVNPQjhOaWh6TENwSFpQQk9ZVkxtV2hqLUZIcVRjS0hNRmNhc2cyS3owekJnbmhzZmhuUU9zUzMyNHgyMVRaLUF6bENVSjkzQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
