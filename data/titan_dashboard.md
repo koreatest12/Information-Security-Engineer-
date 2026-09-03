@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 262 days, 22:17:13
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 263 days, 2:53:33
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.0% | `███░░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 36.8% | `█████░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 성실상환 청년에 최대 300만원 환급 시행 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9hbVBaM1Bvb0JVd1YxN2JpYV9jZ2I2QUVDNzlKbjAxT09mTjlFRlllSDhzZ3RxQXBvTWk0em9SY01NMk9nS3FyRENnaGlqczRjaWVYUGJaUTY5LXNIek5sRQ?oc=5)
-- [[속보] 코스피, 돌연 하락 전환해 6400대로…코스닥도 2%↓ - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5WM21vWFBPeFFNdkxFZVE5NjRPZFVOX3Z2dEFXazZRMHNiZS1aOGdsbkxkUFFQcFhSSkZWQ19KOWFnWDExdy1sUGhLU2U2eDhQeDU5SDFUQnpHQQ?oc=5)
+- [[한경에세이] 미래는 어느 날 오지 않는다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBYcFc0X0V6SFl2ZE9GM1RnTGwxTFJoZmtDdERTMDZrb0c0OHhXbjlpSENIVHduU3lKRlBCSWZsLTJPVXRtZTI0TktuNi1fSWdnbGhpWUx0eG9ZZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
