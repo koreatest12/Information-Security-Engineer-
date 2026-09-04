@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 263 days, 22:24:03
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 264 days, 3:49:26
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 22.8% | `███░░░░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 21.1% | `███░░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [금리상승·원화강세·주주환원 3박자 … 금융지주 주가 잘나가네 - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE1vRWE2VEZsd2ptV1FGZGlSS2F3ZFJQeWNrTkZUU0JlcnlhbzRBSjIzTmdFdTZ3WTZZZHlzX240ZlNXMEUwVC1ZTllXZHp1cHZQb3c?oc=5)
-- [[속보] '정교유착' 한학자 통일교 총재 징역 2년, 특검 항소 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBLanJPMFNxUnBFQS1vdzRWand4bEV5XzVsdDBmbTFiUlQteVJIOGlsZFpFdjE0dmxXUzN5aXpNUVJFeGU3Q29oWmdfLW8tbW1lbEUxTHdab1Nwdw?oc=5)
+- [신한은행 "강원 주민들에 밀착형 복합 금융지원 제공" - 연합뉴스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3NGtibXJmQkRwTVhmb3ZQX04xWGkyblJ0M2wtNVVzakFIRjVadFJPcjNITklWZ2NxX29JZWZ4V0RfcGZ5TUliMXlOU0ttSUI3bS1oa3hXZl9Hc3RKYmFyctIBYEFVX3lxTFB3NGtibXJmQkRwTVhmb3ZQX04xWGkyblJ0M2wtNVVzakFIRjVadFJPcjNITklWZ2NxX29JZWZ4V0RfcGZ5TUliMXlOU0ttSUI3bS1oa3hXZl9Hc3RKYmFycg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
