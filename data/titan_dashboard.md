@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 263 days, 17:24:36
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 263 days, 22:24:03
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.5% | `████░░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 22.8% | `███░░░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한투자증권 ‘신한 Premier Film Festa’ 수상작 5편 선정 - yonhapnewstv.co.kr](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1pajd1TW13aUFIcllodXdiVmU1VzN6RkpEZHBCQkM1MGN4YnJCNG9uRTFSUXVqeDB3aUJmZXFRVXlhZjIwNjlpOFZ0MS0ySjZOY3BtcE1hclNEWDdnNkw0Ri1QTHlYc0E?oc=5)
-- [스카이랩스, 코스닥 상장 첫날 15%대 하락 출발 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5lZE5yTVZhbEZsRmJWVkxxQ1lYMEdjOVV6RTBPRVBfcTFxYjNKTkRORmZ2N0Nhczk2b0w4ZnVVM3J4N3N0Q2QxVm1nT3RUUWd5LTZjenBsLWYtQQ?oc=5)
+- [금리상승·원화강세·주주환원 3박자 … 금융지주 주가 잘나가네 - 매일경제 마켓](https://news.google.com/rss/articles/CBMiUkFVX3lxTE1vRWE2VEZsd2ptV1FGZGlSS2F3ZFJQeWNrTkZUU0JlcnlhbzRBSjIzTmdFdTZ3WTZZZHlzX240ZlNXMEUwVC1ZTllXZHp1cHZQb3c?oc=5)
+- [[속보] '정교유착' 한학자 통일교 총재 징역 2년, 특검 항소 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBLanJPMFNxUnBFQS1vdzRWand4bEV5XzVsdDBmbTFiUlQteVJIOGlsZFpFdjE0dmxXUzN5aXpNUVJFeGU3Q29oWmdfLW8tbW1lbEUxTHdab1Nwdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
