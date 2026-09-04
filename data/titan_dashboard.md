@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 264 days, 13:14:25
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 264 days, 14:56:44
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,12 +15,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.0% | `█████░░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.3% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [강원도·신한은행 "강원 주민들에 밀착형 복합 금융지원 제공"(종합) - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFBMcjRRZEZWX2xmNHdVcllGSVAxZWFVaEpWVTVhLXo0MnRvVGhhLTV1YjU3NUtxVXFpQVdSQm9fY0lCeWd2cUliWFNfOWx1T09kZ0RjMlhxUDUwcEXSAWBBVV95cUxPaTN4cUMxS2ZZWDUtVGV3RzRGN1FRMnR1ZTFsRzNiazBFWXVlYzM5dHFIYmlWanRFbE1JTzNJR2FrLTZ2eV9LaTFKSjNMTWpIWDUtcHp4U1RMRXpGT2FWSXI?oc=5)
-- [김정관 "반도체 관세, 불리하지 않게 논의…대미투자 9월 중 발표" [이상은의 워싱턴나우] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tSXFFM3pUd3BtNDZXTTUydHVOMTRjWERLRFZ4aFhEX2NRYkxDTTBVNE9DakEyS2t4aGFkSXNzRVEtUGhwRURUdGJVMkpwNk5oQjlmdndiVWowdw?oc=5)
+- [중소기업 시작해 이젠 '월가 금융가' 모두 제쳤다…비결 뭐길래 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5CeHJjVDdjRTQtZXJMQmFRRzJxSVV2czE5NzVvWFR6ay1nRnNMZU5PSUJMVkVodTJvaHBYTjJDOUlVTzlfWV82SFBRZG04TFRKZFNCX3BGOHR3UQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
