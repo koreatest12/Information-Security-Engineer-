@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 265 days, 7:41:12
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 265 days, 9:43:24
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,12 +15,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.2% | `████░░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.6% | `████░░░░░░░░░░░` |
+| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [강원도·신한은행 "강원 주민들에 밀착형 복합 금융지원 제공"(종합) - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFBMcjRRZEZWX2xmNHdVcllGSVAxZWFVaEpWVTVhLXo0MnRvVGhhLTV1YjU3NUtxVXFpQVdSQm9fY0lCeWd2cUliWFNfOWx1T09kZ0RjMlhxUDUwcEXSAWBBVV95cUxPaTN4cUMxS2ZZWDUtVGV3RzRGN1FRMnR1ZTFsRzNiazBFWXVlYzM5dHFIYmlWanRFbE1JTzNJR2FrLTZ2eV9LaTFKSjNMTWpIWDUtcHp4U1RMRXpGT2FWSXI?oc=5)
-- [“금리인하 안하면 미국 적자보는 나라와 무역 안한다”는 트럼프…한국은? - 매일경제](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5tMkxwalRsdW5xWHRVS0VMeHExbDYycWtuYzJqWmdVeElJWG1UWVgzUW1DamI5dUxINlNrVWROUXd3Z1hhR01HdjA4ZDlMaTdFZnc?oc=5)
+- ["지금이라도 사야하나" 비명 쏟아지는데…삼전닉스 '미소' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwdV8xWFRHdVZpTEt3UWc1RE4wZDBhT3FiU2w4YWxEbGVBMFN3azB0NU1xVUZkZTFYMXEtQ1Nvam5WR0V0aFk3WDhfNnhjMzBpR290eTJaWHFOQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
