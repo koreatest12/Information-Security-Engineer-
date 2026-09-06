@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 266 days, 9:28:46
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 266 days, 11:38:23
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.7% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.3% | `█████░░░░░░░░░░` |
 | **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행 "강원 주민들에 밀착형 복합 금융지원 제공" - 연합뉴스](https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3NGtibXJmQkRwTVhmb3ZQX04xWGkyblJ0M2wtNVVzakFIRjVadFJPcjNITklWZ2NxX29JZWZ4V0RfcGZ5TUliMXlOU0ttSUI3bS1oa3hXZl9Hc3RKYmFyctIBYEFVX3lxTFB3NGtibXJmQkRwTVhmb3ZQX04xWGkyblJ0M2wtNVVzakFIRjVadFJPcjNITklWZ2NxX29JZWZ4V0RfcGZ5TUliMXlOU0ttSUI3bS1oa3hXZl9Hc3RKYmFycg?oc=5)
-- [[비즈니스 인사이트] 기업은 실적보다 먼저 늙는다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1pN1Fsd0p2UkVjQ2pBczU3X2tlallEb0hXNTFTZWpNdjZROE82ODNVMXFDWWNRQl9oMWRSVm5vaVRIZDIyWkU5X3ZIRG1RU2M3dFlsbVRVRXBBdw?oc=5)
+- [강원특별자치도에 ‘서민금융 복합지원센터’ 구축 추진 - 강원일보](https://news.google.com/rss/articles/CBMiW0FVX3lxTFBOREhVenBMTGlBRGNNcy13WGhPcUcyLV80VUNsU084aU53d250M0VvNW1HNmZFMlppb3VtUlk0TkRsSG5oWkdTaE1BOFYtZlFUWW9ncWtseHJkdDg?oc=5)
+- [파도, 파도, 또 나오는 김승원 의혹…"혈세에 빨대" - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Tc05qeS1IUnJSb1R3WWpib2dsV0hJMUs1M1hmQTlSYlNlZUtRWm83ckVKRUMxdXFORFlld1l1SUFGeE9ObVZ5SFJkVFpyNkNheVJLRWU4U0tiZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
