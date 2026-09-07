@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 267 days, 2:50:23
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 267 days, 8:28:34
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -9,18 +9,18 @@
 > **Q:** 종합 상황 브리핑
 
 **🤖 AI Analysis:**
-- [FIN_SHINHAN] [더밸류 브리핑] 오늘의 신한금융 소식…신한은행· 신한카드 - 더밸류뉴스
+- [FIN_SHINHAN] [더밸류 브리핑] 오늘의 신한금융 소식...신한투자증권· 신한자산운용 - 더밸류뉴스
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.5% | `█████░░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 24.8% | `███░░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[더밸류 브리핑] 오늘의 신한금융 소식…신한은행· 신한카드 - 더밸류뉴스](https://news.google.com/rss/articles/CBMiVEFVX3lxTFA2S0FTRW9RYi1MaGQ4bDZwYmlTT1gxZTU2N0lmbVQyVXpJVFdpNVJmdElCNVQwZ2VZQXY3NzFXWGhaZ1g3ZXNvVnk5QXVVYzNINHpHQw?oc=5)
-- [[단독]국민은행, 빗썸과 1년 재계약…FIU에 승인 신청 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5mZVAzeThOamFHOGY5blM2ZFZOYmNOX01UT2RwS1JQNElwNm1PdGxBaHNIRkZKU2ZBRDRyUnZ6MWVXNThYMV9rd1h1dEE2S2Q1QVMyWkpyeWpTUQ?oc=5)
+- [[더밸류 브리핑] 오늘의 신한금융 소식...신한투자증권· 신한자산운용 - 더밸류뉴스](https://news.google.com/rss/articles/CBMiVEFVX3lxTE9SalRFVXdIWVZLQ2tYa3JfN1pEblVFRnpZS25zM1BuMzNiTlloSTZUaDhGTmU2cEhLRFNRb1A3SEFfX3RPRmY3akx1WXJ4R3QwNUJSTQ?oc=5)
+- [골드만 "메모리 이익 사이클, 시장이 과소평가" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWZ3Z0MFNUVVdBNTB0S1lPaTE1Nk9HbkNrdDFPRlhwbVdRdEF5bGNST2pNbm5rMjZFRTAzNEJ0LXp2eEFTTGtZMzU2eERsaGtpNFd6SXFsd1pudw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
