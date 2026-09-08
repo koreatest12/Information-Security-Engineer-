@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 267 days, 21:42:57
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 268 days, 2:11:00
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.5% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.7% | `████░░░░░░░░░░░` |
+| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융지주, 외국계 기관 신규 베팅…8만4207주 사들여 - PRESS9](https://news.google.com/rss/articles/CBMiZEFVX3lxTE5TM1REUlZaQUllNC1vWWdoTG15LWgwbzNfOUpXWW84OU9PZG5mY2drbmxpMW1SMFdKd1NXVWJINlJaTW9NdThTTnJsSmMxVEJqeFpjTUVmQjFzNHptR2o2d0VGWEw?oc=5)
-- [2분기 한국 경제 0.6% 성장…수출·민간소비 동반 증가 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBLejZqZ2drUTREYlQ4ZmdLdG9QbzFGZmZiSV9XRFJHRk9LYWRDTGhUZ1lGaUJsdDRhZUR2a2NQcF9PVml4U1NMNHloWnR5cGM?oc=5)
+- [신한금융지주, 외국계 기관 신규 베팅…8만4207주 사들여 - press9.kr](https://news.google.com/rss/articles/CBMiZEFVX3lxTE5TM1REUlZaQUllNC1vWWdoTG15LWgwbzNfOUpXWW84OU9PZG5mY2drbmxpMW1SMFdKd1NXVWJINlJaTW9NdThTTnJsSmMxVEJqeFpjTUVmQjFzNHptR2o2d0VGWEw?oc=5)
+- [창간 62주년, 한경이 감사선물 쏩니다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBSZEFZUDJVeWZHaTJKbTg0UVJwb21QMmFjUGZEMHh0Zjl1emdXOG5TRVVUV3JjYVRCOHZTdnVmZldGVkY1RzVyRDFGRk5RMmNjN3pmMEU0a3FPUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
