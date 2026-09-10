@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 269 days, 21:42:32
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 270 days, 2:11:54
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.1% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 36.1% | `█████░░░░░░░░░░` |
 | **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 경기신보·금감원과 소상공인 '성공 두드림 세미나' 개최 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTE14aEZpeWc0eHREV3NiQkVyeEJyUGZUbUdvcmxzWGsxNUdEZEZaODBEMlNTdnUzdy1WTERvbDljcTJPaGRiTWJSQXhQNW83b2hjZlpDSHBVV05ud0NU?oc=5)
-- ["반도체 매출 2012조원" 파격 전망…메모리가 '왕좌' 차지 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE45Z1c2VWJYcVJJanhlTFdvbmJ4MjFmeW1aSEUyZllDdVJOMFNKNVljV1FqQzZpT0VaZGtmbW4waEliVEVqdkwzNEYxY29xX1N1NWtta0JCZG01dw?oc=5)
+- [“어려운 순간에도 든든한 버팀목”…장유빈, 스폰서 신한금융에 보낸 ‘진심’ - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1FTllRNTVrVUFNaDVZSzFtYlgwcFpha1NodmYzc25UbUYzcGhpc05CWUhpT2lJNHVlSFYwZzZKWEVqY0J1eDdmLVlSYjVLdm8?oc=5)
+- [[한경에세이] 다시, 회의를 시작했다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE80TVNjdFA0dHJDYXZmcEN3LVdPU1h2STVfSnBQajdQRWFKV2FseXRGbmxtSVNsQ19OMXhrWFhMekRYZW5HQmtabTdkY2IwM2d5Ty14d295ZXd0Zw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
