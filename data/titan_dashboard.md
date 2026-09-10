@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 269 days, 15:00:59
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 269 days, 16:59:28
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.6% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 36.4% | `█████░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [’중앙 회사채 불완전판매 의혹’ 신한투자증권, 회사채 순위 10위로 추락 - 연합뉴스TV](https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBDUnNwdk9RVVU5MVdWMTE4Q1pQR1hNSWd1cmZiY3czdTdnU05jRm1tVThtT2d6VFZTeDZvcU9ES0xvcnJvN3Y2N2JjLXdIcklheEYtZjhLSXVnVnJMZXBvdkhlZklKTzQ?oc=5)
-- [[단독] "개미가 투기판 만들었다?"…뚜껑 열어보니 '반전' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1feU5tWnZoQlFvRTZEU21nTnFiMGxjNk5uZFRlUy1RMTdrYno1VnQyRE5HWjBHeXFheGRVWHVwaTdsZnZhQ1FHdU13RzdXUXBrY0dtamVla1JYdw?oc=5)
+- [신한은행, 경기신보·금감원과 소상공인 '성공 두드림 세미나' 개최 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTE14aEZpeWc0eHREV3NiQkVyeEJyUGZUbUdvcmxzWGsxNUdEZEZaODBEMlNTdnUzdy1WTERvbDljcTJPaGRiTWJSQXhQNW83b2hjZlpDSHBVV05ud0NU?oc=5)
+- [[밤 사이 해외뉴스 영상]유가 100달러 재돌파…호르무즈 마비에 인플레 경고 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFA5THBrNXMtdVpWZWRZd0pWb2dNck0zZnhNdEJ4dzdER2k2eUktaVN4Z2NjeThRM1ZkQmp3aFpQeXJXa2hRMHF5am5DVTA4cFZHMEdmdGJEVlBiUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
