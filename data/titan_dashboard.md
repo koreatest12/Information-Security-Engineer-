@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 270 days, 16:35:00
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 270 days, 21:11:43
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,19 +8,18 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [KR_ECON] 유가·美 국채금리 급등에 일제 하락…반도체주 급락 [뉴욕증시 브리핑] - 한국경제
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.5% | `███░░░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.2% | `████░░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[신한은행 차기 리더십] 리딩뱅크 쥔 정상혁, 사상 첫 3연임 갈림길 - DealSite경제TV](https://news.google.com/rss/articles/CBMiVkFVX3lxTE4xMThkRnRGYldOVG53YXlxTHEwV3ZYRFhRdzNyWjBHa25uUXZ5dFFieU03Wng1UUtXSUxfUzJ3MG93M3FfYTU0bTRXQXVHaF9UUDBYcGFR?oc=5)
-- [전쟁·AI·약달러가 불붙였다…이례적 원자재 '에브리싱 랠리' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1VOTd2UGxPNVprQ21YMXRGU0tVMkRVd25oS1l2VDlxMlNwM2R0Nm1xaGdxNG4wZ25telFBd09fdHpldjZiNmt6QmtjLWNqVWtaenFybUxmbUh2dw?oc=5)
+- [[신한금융 주주 빅3]③ 블랙록, 목소리 아끼는 2인자 - 블로터](https://news.google.com/rss/articles/CBMibEFVX3lxTE5xMngtTXpRUGlLTmctWUMwSU9HTmwzZWNCRV9pRnAwWFk3V0ZHUEdQMlpuRDktMW95ZUFSUUkwb3hyQjNaNnZLLWNFRzNXemtQR1dtQW5Qc000YzRibGxhS3VsQjZmSnAxeDdhMdIBbEFVX3lxTE5xMngtTXpRUGlLTmctWUMwSU9HTmwzZWNCRV9pRnAwWFk3V0ZHUEdQMlpuRDktMW95ZUFSUUkwb3hyQjNaNnZLLWNFRzNXemtQR1dtQW5Qc000YzRibGxhS3VsQjZmSnAxeDdhMQ?oc=5)
+- [[포토] 한성숙 총리, 제임스 김 암참 회장과 경제 대화 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ndWpzTFAyRTZ0WW5xWUFCTkFzbGZpT3JWQ2xmWkNsMWdBUDk1bjVLTHVuXzlIQzBBYnBGZ29Sc2NCVThfc2R2UUJnQnN2SmV3eW4xWGxaYWdxdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
