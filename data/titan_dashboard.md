@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 271 days, 5:58:38
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 271 days, 9:40:56
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.5% | `████░░░░░░░░░░░` |
-| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.5% | `████░░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[이슈] 토큰화 사업판 넓히는 신한…상품화·글로벌 확장 동시 모색 - 팍스경제TV](https://news.google.com/rss/articles/CBMiaEFVX3lxTFBOcjNtRUoxX3F1SlVvYW1XdDdOZ1RJX0tfZVlmRUZHQVBkS2xRMFNfV2J3c1ppc2ZmdlFoRU1hMF9OM2ZmRUFXQjhKQ0FYOEZmbElEUTdBcUhrZXU1bTlrSkd1VEsyUlhS?oc=5)
-- [저성장 돌파구 어디에…이종욱 의원, 한국경제 재도약 해법 찾는다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9GUm9aUGo3Z1dZRVhjT3gxNVd4WURSZGFIT1poN2F6eDMxME4zck96M3o2U2k0WDRmZHJtc29yNml4ZUMyNEl5ZXBWLU96ajQ?oc=5)
+- [“원화 MMF를 온체인으로”…신한금융, 토큰화 자산 ‘글로벌 유통 레일’ 만든다 - 디지털데일리](https://news.google.com/rss/articles/CBMiZEFVX3lxTE5RNEU2eXdOQmtjZHNMMlZ5elpWdHB5cEYzUkJ0TmszVG85SmlwbWN1V2pYTE1pQkJzNmtLMkM0MXEtdWVJWGliRjRaTkFhVTZzbFp0SVdMZGhFLWNHR0VIbWNrQXg?oc=5)
+- [美 경제 목줄 쥔 일본?…엔화가 움직이면 미국이 흔들린다 [박신영의 월가 아나토미] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE4wQktJRjRPWGpFZXY5QmsyVjhvRGpqRTN0UTNDVVlQX25CSG81MEhlRkRQRmozOG44REZOZ3VLc1hhY3oyTHk2bGxFWmlYU043T1VlUk4teTAzQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
