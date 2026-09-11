@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 271 days, 1:32:01
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 271 days, 5:58:38
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 22.6% | `███░░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.5% | `████░░░░░░░░░░░` |
+| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [정상혁호 신한은행 '자본효율' 고도화…건전성 관리는 '숙제' - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5ZSmFYc3JUOXJLTnhLdWxzYmZZaEpSM3MtdlRObHNWbHpCUUo0S19scXo1RG9YdW1tbW1KQUh1WXpmTU10Ny1ONkkyUG1qUXM?oc=5)
-- ["주식창 끄고 떠난다" 개미들 '백기'…1000조 뭉칫돈 대이동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5FSF93VU51dzJPYy1hWTkxYVBfMG93dHRwYjBKNUJpTHpBeWhTVG1TQWt4dnpuNTFxcjF5UFUwU2xZcjNBZV9DUEp4QWZJTW1Jai1lenoyR0Z1UQ?oc=5)
+- [[이슈] 토큰화 사업판 넓히는 신한…상품화·글로벌 확장 동시 모색 - 팍스경제TV](https://news.google.com/rss/articles/CBMiaEFVX3lxTFBOcjNtRUoxX3F1SlVvYW1XdDdOZ1RJX0tfZVlmRUZHQVBkS2xRMFNfV2J3c1ppc2ZmdlFoRU1hMF9OM2ZmRUFXQjhKQ0FYOEZmbElEUTdBcUhrZXU1bTlrSkd1VEsyUlhS?oc=5)
+- [저성장 돌파구 어디에…이종욱 의원, 한국경제 재도약 해법 찾는다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9GUm9aUGo3Z1dZRVhjT3gxNVd4WURSZGFIT1poN2F6eDMxME4zck96M3o2U2k0WDRmZHJtc29yNml4ZUMyNEl5ZXBWLU96ajQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
