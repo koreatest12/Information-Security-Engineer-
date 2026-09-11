@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 270 days, 14:18:53
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 270 days, 16:35:00
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,18 +8,19 @@
 
 > **Q:** 종합 상황 브리핑
 
-관련 정보 없음
+**🤖 AI Analysis:**
+- [KR_ECON] 유가·美 국채금리 급등에 일제 하락…반도체주 급락 [뉴욕증시 브리핑] - 한국경제
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 15.0% | `██░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.5% | `███░░░░░░░░░░░░` |
 | **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [“어려운 순간에도 든든한 버팀목”…장유빈, 스폰서 신한금융에 보낸 ‘진심’ - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1FTllRNTVrVUFNaDVZSzFtYlgwcFpha1NodmYzc25UbUYzcGhpc05CWUhpT2lJNHVlSFYwZzZKWEVqY0J1eDdmLVlSYjVLdm8?oc=5)
-- [한국경제, "K원전 핵심 경쟁력 '공기 준수' 주 52시간 규제에 발목 잡히나" 기사 관련 - 대한민국 정책브리핑](https://news.google.com/rss/articles/CBMib0FVX3lxTFBpXzNDZW9XTFVoa29kZ0hYUXpHUjVVUGN3M05Od0V0eVVXZ1VzbUV4VkQ1Vm9BUHQtdmlGdlAyUXdUYmtsNFRjUXBjSmtvbjNlZ2RaLWdiQ0lwTklZdDZPYzF0MkJ1Q0xZeEw3cjhmSQ?oc=5)
+- [[신한은행 차기 리더십] 리딩뱅크 쥔 정상혁, 사상 첫 3연임 갈림길 - DealSite경제TV](https://news.google.com/rss/articles/CBMiVkFVX3lxTE4xMThkRnRGYldOVG53YXlxTHEwV3ZYRFhRdzNyWjBHa25uUXZ5dFFieU03Wng1UUtXSUxfUzJ3MG93M3FfYTU0bTRXQXVHaF9UUDBYcGFR?oc=5)
+- [전쟁·AI·약달러가 불붙였다…이례적 원자재 '에브리싱 랠리' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1VOTd2UGxPNVprQ21YMXRGU0tVMkRVd25oS1l2VDlxMlNwM2R0Nm1xaGdxNG4wZ25telFBd09fdHpldjZiNmt6QmtjLWNqVWtaenFybUxmbUh2dw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
