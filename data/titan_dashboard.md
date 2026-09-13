@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 272 days, 17:36:57
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 272 days, 22:40:29
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.1% | `█████░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.8% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 사외이사 7명 내년 임기 만료…주주추천제로 후보군 확대 - 네이트](https://news.google.com/rss/articles/CBMiU0FVX3lxTFAzSExFNW0yYzN3X0VvRFU1cEpjMWVaUU9CSFNRcWppT1VmSC1CV1QyV3dnTkpsa1oycjZFX0V1QS1QS2ZjMWNubjJvdzhCM3cyeDI4?oc=5)
-- ["아침엔 선선, 낮엔 30도"…일요일 곳곳 빗방울 [날씨] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ORHZsTTVtWTN6ZU80WEJYSVJTYmtYVEJFN3NnRVBmSjJtOXdycm5ncks5Wk1ZVFNRNnItcWREMnFUb2tzNlJPYzFTRXJHdG5BWV8xRVRuUHhaUQ?oc=5)
+- [신한금융, 사외이사 7명 내년 임기 만료…주주추천제로 후보군 확대 - 데일리한국](https://news.google.com/rss/articles/CBMib0FVX3lxTE1lbzl4cUktazRneEpudVo5LW1MQ1FwR2doMjI2Uk5WTnpuY0RJRFhWRjNpNW5UMnZIZENtdzd3OVFPNjB0TGZTVU10dmVWVjVPNXo5SVp1aUM0YlB0UTEwOUFOMnpUejhqSThzaGVjZ9IBc0FVX3lxTE1MSXNRQ1B4QkFwQmNhTFVKNDNZWDI1Ykw5NlpoZEZlcG1LT3VHcnpYQlFkQ2FxWTVKXzJsb1ZpVGc5WVBCVlZFU1NHd2lMcllVRTdnSFQ2ZFJZc2pya3JQVXZSSjN0MHZZSVZ0N3FvYmJuN0U?oc=5)
+- [고액자산가들의 선택은 삼성전자우..."메모리 주도권 유지할 것" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9aYzdVZFppYkpORTYwMFRLcGRlMGduM1UxU1JmNTkyeEQzOWlGdndqSUtWSmVuMU5iOW95aVdQY2tlVFZIY0RFQm5aRElrQmRzV2JDajZsZXNrUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
