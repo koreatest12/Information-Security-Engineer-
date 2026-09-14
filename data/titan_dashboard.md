@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 273 days, 22:49:52
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 274 days, 5:44:57
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.3% | `█████░░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 37.3% | `█████░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[4대금융 자본전략③] 롯데손보에 신중한 신한금융…가격 아닌 자본효율 | - 연합인포맥스](https://news.google.com/rss/articles/CBMidEFVX3lxTE81M3FuNFhFalVteGhJSUxQMV9wNHRZejl6czBvVWV1U0kwWWkwdnp6ZnE2ckJpMmJkZ21iLWJwb2FQOFJhTnhIOElhZ3JGV0NoRkJ2VGgxU1pRaVhObDBlSTdTYWRBRnZCNXB6NTF4dE1aR25P?oc=5)
-- [2026국제방송영상마켓 개막 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5EUEVtbGlSVGZ6TFdkYzJ2VFRPaGtVeVlqWHNkbXNmT0xaY29HdEcyUi10WGNlaEt2Y3Y3TTNjOTlYUmtSdHpYMl80NGptQ3NRREZzQzVMT1ZwZw?oc=5)
+- [현대로템·신한금융·KAI 총출동…한·우즈벡 국빈만찬 '경제외교' - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1uVHFhTnpPbVh0bW1ZZ3dGQ1g4S2hsVVVBVWR3VzdMaFZLcmFHUUpyVlVpMV9BTlJhVGhkeEZjMmtHYjJacnZCbmx2R003R2hDQ3lBT2p0aGtub3ZXVEN2aXR5VklVSDk5Wmp3N0s2OVA?oc=5)
+- [반도체 급락할 때 '이 주식' 담았더니…"15%나 올랐다" 환호 [한경우의 케이스스터디] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9xc053bHZGbWFraGFId2k5bGRrU2llZ2ktdHZjcE1aR2p6UDRBVkdQWHVNVnVXN1M4SlJQaEx0SXpQQ0tWd1NGQkJaWEVjS0g0aWF6YVhHMFpQdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
