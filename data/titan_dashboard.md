@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 274 days, 21:50:36
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 275 days, 2:52:52
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.1% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.3% | `████░░░░░░░░░░░` |
+| **RAM** | `40.4/512 GB` | 7.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[단독] 신한금융, 카자흐스탄 정책금융사 손잡고 현지 투자 확대 추진 - 더구루](https://news.google.com/rss/articles/CBMiXkFVX3lxTFBiMW5INGdxUkoyNnR2QXRnWF9mY2hjOVJMWFlXT1hvQXFDNk9Zc2xDeDQ3ZFhzNkNtTm1uRWNpOHBPanJ3djBFNFJMdnNrUkZ4UkZvbnRwRU9SVE9PNVE?oc=5)
-- [[단독] 한미반도체, 테라팹에 AI 시스템반도체 패키징 장비 공급 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9keEVkYUZOY042eDZTcFlrRm9aN3hxYkJ3dWtHbDB3TkNHYmVjLWhGbXJLYWZJYU42UFc3cGwwbXZFSDFlWVNGWHU2cldtY1ZfUnR3dGNtTWotZw?oc=5)
+- [[금융권 풍향계] 신한금융, 노쇼사기 피해 캠페인 실시 外 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9xVXJKMmFaODNTYkNXU00xRlRKS25Yd3RTMEFZMHk1XzF2NU53bWhEX1ptNlhkR2tCS0ZPbUhkQ3JqaVA0aWswRHVyUVNIaFhtdTRFamdHeHhUUnc?oc=5)
+- [[단독] 한국 정부, 웨스팅하우스 지분 15% 인수 타진 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5RQ3VYWGJkTlA3X3hPdlFXSDJkSXo5Vm5fNzlzMy1pN190RlVBVlVyMnFjXzZ4UHFrZGpMbTdreVJDVzZNcDdKc1hCemFZU3dXVFhCb1llb1pnQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
