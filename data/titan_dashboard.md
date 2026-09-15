@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 275 days, 11:25:18
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 275 days, 14:40:58
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.7% | `████░░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.1% | `█████░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[금융권 풍향계] 신한금융, 노쇼사기 피해 캠페인 실시 外 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9xVXJKMmFaODNTYkNXU00xRlRKS25Yd3RTMEFZMHk1XzF2NU53bWhEX1ptNlhkR2tCS0ZPbUhkQ3JqaVA0aWswRHVyUVNIaFhtdTRFamdHeHhUUnc?oc=5)
-- ["퇴근하자마자 샀다가 26% 급락"…첫날부터 개미들 '멘붕' - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1lcl9vaFI5UVVGR0dDZm5hMUZpNnJPNDEtQ1UxOFZDQ09fSUt6QlB4cU11ZktaQjhsUkdsZ0FndEUwR1RXVGlWSmlkemtaZkVHNXZidUI2dzNiQQ?oc=5)
+- [[단독] 한국 정부, 웨스팅하우스 지분 15% 인수 타진 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5RQ3VYWGJkTlA3X3hPdlFXSDJkSXo5Vm5fNzlzMy1pN190RlVBVlVyMnFjXzZ4UHFrZGpMbTdreVJDVzZNcDdKc1hCemFZU3dXVFhCb1llb1pnQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
