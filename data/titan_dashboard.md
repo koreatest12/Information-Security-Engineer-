@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 276 days, 2:25:38
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 276 days, 7:31:09
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.5% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 15.1% | `██░░░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [경찰청, 신한금융과 소상공인 '노쇼사기' 피해 예방 캠페인 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5jVTdEMTdBUHhBOW1ZRHBzcEFpaGxUa3VVRDcwcUVTcjhTMU9tMVZUQS1qNlpUMGtLMlE5Q0cxcldUTnZhOEdDZ0lqOGdCWlU?oc=5)
+- [경찰청, 신한금융그룹과 함께 소상공인 대상 노쇼사기 예방 캠페인 추진 - 서울Pn](https://news.google.com/rss/articles/CBMiYkFVX3lxTE96NVNaWWVTNUFzY014dXJFd3U3NUZtMEczbU9aZDBvc0QtUXU3Z3pxM2hHNkJ0Vzc0TmFKVFNfMWJtTU05aElSX05XMlE3NkVLalB2aDRYaHMxWlJDd25oczJn?oc=5)
 - [[단독] 정부, 국내 원전기업에 '웨스팅하우스 투자' 참여 제안 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1tQlVtS2NhM2FGTXo3MTRVdmhoZ2ktQkVrNXlGODJ4X0FPLXNHM2JGa1lfWlUxZVdIYXVpZU00VUc1dm9pZDBtcmJoUFNYNXBPcl9BUVhRbHh0QQ?oc=5)
 
 ---
