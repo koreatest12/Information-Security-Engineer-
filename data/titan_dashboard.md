@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 276 days, 7:31:09
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 276 days, 11:15:49
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 15.1% | `██░░░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.0% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [경찰청, 신한금융그룹과 함께 소상공인 대상 노쇼사기 예방 캠페인 추진 - 서울Pn](https://news.google.com/rss/articles/CBMiYkFVX3lxTE96NVNaWWVTNUFzY014dXJFd3U3NUZtMEczbU9aZDBvc0QtUXU3Z3pxM2hHNkJ0Vzc0TmFKVFNfMWJtTU05aElSX05XMlE3NkVLalB2aDRYaHMxWlJDd25oczJn?oc=5)
-- [[단독] 정부, 국내 원전기업에 '웨스팅하우스 투자' 참여 제안 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1tQlVtS2NhM2FGTXo3MTRVdmhoZ2ktQkVrNXlGODJ4X0FPLXNHM2JGa1lfWlUxZVdIYXVpZU00VUc1dm9pZDBtcmJoUFNYNXBPcl9BUVhRbHh0QQ?oc=5)
+- [신한금융, 슈퍼SOL '줄세우기·의무할당' 논란 잠재울까 - v.daum.net](https://news.google.com/rss/articles/CBMiRkFVX3lxTE02dnRYV3E2YW5kTzJlQk1udjg2TWloTTRwRXcyN05MWnM4QzRpQ3NNOU9WWGdmVVloNDVaZkNhYnFtdVNDcWc?oc=5)
+- ["다신 주식 안 해"…삼전닉스 물린 개미들 돌변하더니 결국 [분석+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KbTJJaGVqTHJJOTRrQ2NCaXBFWUltYXp0SENrUjNMbmM0dHhrUXRPNHR4SVppbHlrZE80c0tFRUhqcmlYcmJIS2dGUHgwcUQ0STBla1lwbHJ1QQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
