@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 275 days, 14:40:58
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 275 days, 16:52:16
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,17 +8,18 @@
 
 > **Q:** 종합 상황 브리핑
 
-관련 정보 없음
+**🤖 AI Analysis:**
+- [FIN_SHINHAN] [더밸류 브리핑] 오늘의 신한금융 소식...신한투자증권· 신한자산운용 - 버핏연구소
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.1% | `█████░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.0% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[금융권 풍향계] 신한금융, 노쇼사기 피해 캠페인 실시 外 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9xVXJKMmFaODNTYkNXU00xRlRKS25Yd3RTMEFZMHk1XzF2NU53bWhEX1ptNlhkR2tCS0ZPbUhkQ3JqaVA0aWswRHVyUVNIaFhtdTRFamdHeHhUUnc?oc=5)
+- [진옥동 신한금융 회장, 우즈벡 대통령 만나…신한은행 현지법인 탄력받을 듯 - 더구루](https://news.google.com/rss/articles/CBMiXkFVX3lxTE02d2ZJR2M3SWtkaExzWEtUODk5YndIU1ZaTEFJNTBrdmFIcXhtRFJHbHk0UERwUmx0X2tKV0xpbzFKejdncjhOdFF1SzZadU9nbXhGRXdiM2luaDZ2YlE?oc=5)
 - [[단독] 한국 정부, 웨스팅하우스 지분 15% 인수 타진 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5RQ3VYWGJkTlA3X3hPdlFXSDJkSXo5Vm5fNzlzMy1pN190RlVBVlVyMnFjXzZ4UHFrZGpMbTdreVJDVzZNcDdKc1hCemFZU3dXVFhCb1llb1pnQQ?oc=5)
 
 ---
