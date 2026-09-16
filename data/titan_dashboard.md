@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 275 days, 16:52:16
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 275 days, 21:42:43
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,15 +8,14 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [FIN_SHINHAN] [더밸류 브리핑] 오늘의 신한금융 소식...신한투자증권· 신한자산운용 - 버핏연구소
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.0% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.9% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [진옥동 신한금융 회장, 우즈벡 대통령 만나…신한은행 현지법인 탄력받을 듯 - 더구루](https://news.google.com/rss/articles/CBMiXkFVX3lxTE02d2ZJR2M3SWtkaExzWEtUODk5YndIU1ZaTEFJNTBrdmFIcXhtRFJHbHk0UERwUmx0X2tKV0xpbzFKejdncjhOdFF1SzZadU9nbXhGRXdiM2luaDZ2YlE?oc=5)
