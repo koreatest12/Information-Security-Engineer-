@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 277 days, 10:12:24
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 277 days, 12:59:35
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.4% | `█████░░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.2% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 우즈베크·카자흐 금융협력 확대…협약 체결 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5PWXA5Sks4aXd1dkxWcnhiRnFJTUFCSm5yQkIwWHhreGEwczVxR216UFNfbGJFZEVSQlZlYmVJckxvZWhPUm5CTVpjbXkyWXF1Smk0SC10MFFtQ1HSAWBBVV95cUxNcUNWVWw1Q012NEtUTEdzQzVYVENuVlk2c2hYWmtZdGgwaUJWSlpCUkNfaVRydnlCbjFhV2pLTFNweF9Ec2RrWWs4OFBHM0VfX3lYOGFxeHlFYnpCRUstYTA?oc=5)
-- [중국인들 심기 한번 건드렸다가…"시총 1위 뺏겼다" 날벼락 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE96eWNfRkdwcjZYV3JsU0wyM0hSMDhiSW9VbGJ1ZFhtTko1alJ5dkFyY1NPdXJ4OElmVFZMbTZOaUtBMWcwdHlSaExjRlA0dlFXSk1vQVRxd2Vkdw?oc=5)
+- [[은행 Talk Talk] 신한금융, 우즈벡·카자흐와 금융협력 확대 外 - DealSite경제TV](https://news.google.com/rss/articles/CBMiVkFVX3lxTFA0MVBxazk2VjB2NmN5OXRyU2JPNjRIbzdJNVloajdDcUJwTGxteTE5T21KYTFnb0Y4ejkyUktaZzh1M2ZYbzNObzBVVHJ0THFMUW53a2Fn?oc=5)
+- ["다신 주식 안 해"…삼전닉스 물린 개미들 돌변하더니 결국 [분석+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KbTJJaGVqTHJJOTRrQ2NCaXBFWUltYXp0SENrUjNMbmM0dHhrUXRPNHR4SVppbHlrZE80c0tFRUhqcmlYcmJIS2dGUHgwcUQ0STBla1lwbHJ1QQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
