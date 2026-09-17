@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 277 days, 12:59:35
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 277 days, 15:30:00
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.2% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.6% | `█████░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[은행 Talk Talk] 신한금융, 우즈벡·카자흐와 금융협력 확대 外 - DealSite경제TV](https://news.google.com/rss/articles/CBMiVkFVX3lxTFA0MVBxazk2VjB2NmN5OXRyU2JPNjRIbzdJNVloajdDcUJwTGxteTE5T21KYTFnb0Y4ejkyUktaZzh1M2ZYbzNObzBVVHJ0THFMUW53a2Fn?oc=5)
-- ["다신 주식 안 해"…삼전닉스 물린 개미들 돌변하더니 결국 [분석+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KbTJJaGVqTHJJOTRrQ2NCaXBFWUltYXp0SENrUjNMbmM0dHhrUXRPNHR4SVppbHlrZE80c0tFRUhqcmlYcmJIS2dGUHgwcUQ0STBla1lwbHJ1QQ?oc=5)
+- [신한금융, 우즈벡 금융기관에 최대 2억달러 지원 추진 - v.daum.net](https://news.google.com/rss/articles/CBMiS0FVX3lxTE1xRHJiWTBKVWt1eXg3c3p4SFZ6Vm90RkFQcGR3bTVUX3dYanZzSy16NmJteGR2QUFiVzQ1RGdkamNrSnk0dUpMeS1ZTQ?oc=5)
+- [연료전지주 일제히 강세…AI전력난 해결사로 부상 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBidlhfQWNUVUtyNnNWY093ZFl5eUY4eDR3MTkyUTBaVmwzY0g1NFlIZEVlOHNlREl4b0U1bmZCdTZLZFZKaE43bmYtZ09IQld6WkxDYnhxZ2d2QQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
