@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 278 days, 3:48:49
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 278 days, 7:24:03
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.0% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.6% | `████░░░░░░░░░░░` |
 | **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융지주, 한국IR대상서 '대상' 수상 - news.bbsi.co.kr](https://news.google.com/rss/articles/CBMia0FVX3lxTE1ERGZiQ21DZXotc01xZ1YzelJWM3EwU0UwNFM0TnZwRzNKc0JZcEpTalhGSWNZcUR2cUNRSWt3aG9mckJRTExqVzB1VVpQS3FWSHZxNjZ2VzZXRHRvVUFJZmNJTlM5andGQy1z?oc=5)
-- ["삼전닉스 주춤할 때 치솟았다"…뒤에서 웃은 종목 뭐길래 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFAzVmhveGp6TXdLTWlqM19TY1IxaFFJYzh1R0JYU2FvSUlSODBWOUdQZ3M1ekNNNEhQZVpaNTVDX19DekY5LXRZSUk3akFBbV9kVXZobTBaWU1MUQ?oc=5)
+- [신한금융지주, 한국IR대상서 '대상' 수상 - BBS불교방송](https://news.google.com/rss/articles/CBMia0FVX3lxTE1ERGZiQ21DZXotc01xZ1YzelJWM3EwU0UwNFM0TnZwRzNKc0JZcEpTalhGSWNZcUR2cUNRSWt3aG9mckJRTExqVzB1VVpQS3FWSHZxNjZ2VzZXRHRvVUFJZmNJTlM5andGQy1z?oc=5)
+- ["7천피 다시 가나요" 들썩…美·日 금리 올렸는데 '대반전' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9fcjNwMUZ2Tzl1Ti1RZE9Da2s3ckhUTmROQ1NVSHBtSmUyRDVtYk8wNUhRRDhzZVNRa3FSVkFVMFhSckVWaWxMSVpRelJ6R1hidE1QRU9GaHFxUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
