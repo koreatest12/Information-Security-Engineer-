@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 280 days, 13:58:23
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 280 days, 15:57:37
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.6% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 베트남 빈그룹과 협력 확대 - 세계일보](https://news.google.com/rss/articles/CBMia0FVX3lxTFA0MzNZY012bHhsWFdPN0kxaUxwNHFQbHZocmp5d3VXRWphN0xWQWhzcUVhM0VkS1owb2duc2hNS2ZhNFpVVFVFamdMTWQyZUxWenIwaExlRXp2OGd6WEFrODRFMFBadnZTa3pv0gFUQVVfeXFMT2s1dzREcExPVUx2OWVCQ0FFSVc3WlVJQjg0ZmZfNUxyVmJVdUc1QjZGVzh2aGJSamRRME1NUnlnVkJzeDhBSDNoblZUUWxoeFRFenkx?oc=5)
+- [“베트남 빈그룹·중앙아시아 국가와 협력 확대” 글로벌 금융 네트워크 확장하는 신한금융 - 스포츠동아](https://news.google.com/rss/articles/CBMic0FVX3lxTE00RGhyaFd1clZhYlFVSnhfdUtJT3JobmNVY25Va3RZUXA1M1o5OWRtbC1ST0w1RmdIWmN6Q05haHhweUFzSy1JekJhaG5pVGZvWndaMXNtV0RQUDBCN0pfRl80ZFpvM0xaaTVNUjZuMGc2MHc?oc=5)
 - [[단독] 드러켄밀러, 첫 방한…삼성·두산과 투자 논의 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wNktSVGY4YUdlNG1wZVZNRG9vSkNMSGhSVFNTTXBFV3RNMGRURWVYaUlRdi1ZLUFVMWFpYVNLZU9lNHRBclBCQmxOczd6Qzk5X2xpRkJMcnktQQ?oc=5)
 
 ---
