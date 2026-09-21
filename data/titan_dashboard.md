@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 280 days, 15:57:37
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 280 days, 18:19:28
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.6% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.6% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [“베트남 빈그룹·중앙아시아 국가와 협력 확대” 글로벌 금융 네트워크 확장하는 신한금융 - 스포츠동아](https://news.google.com/rss/articles/CBMic0FVX3lxTE00RGhyaFd1clZhYlFVSnhfdUtJT3JobmNVY25Va3RZUXA1M1o5OWRtbC1ST0w1RmdIWmN6Q05haHhweUFzSy1JekJhaG5pVGZvWndaMXNtV0RQUDBCN0pfRl80ZFpvM0xaaTVNUjZuMGc2MHc?oc=5)
-- [[단독] 드러켄밀러, 첫 방한…삼성·두산과 투자 논의 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wNktSVGY4YUdlNG1wZVZNRG9vSkNMSGhSVFNTTXBFV3RNMGRURWVYaUlRdi1ZLUFVMWFpYVNLZU9lNHRBclBCQmxOczd6Qzk5X2xpRkJMcnktQQ?oc=5)
+- [“연임할 성적은 됐는데”...정상혁 신한은행장, 복잡해진 인사 셈법 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE15cXE1bXNTYVFVV0dCNDFkZ2k1RFFaMkRYeUhuWnozWGtaXzduN0xMX2dMRFZycjUwOGJZT3BJSGg3cGs3c1VnOEJZOTVyNzExaUJyYnIySElSbms?oc=5)
+- ["언젠가 오르겠지" 대형주 버텼는데…3년간 이자도 못 벌었다 [한경우의 케이스스터디] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE10WFBsUUJ0Y2ZEWTBiUkxRcUl0RVVabEdJVzFlR1N5dFFLcTlrWmJBT1VrYVlqTGw4bmE2TklsckhjNDcteFRkUGoyekNtcV9falBpbjVuaEdFZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
