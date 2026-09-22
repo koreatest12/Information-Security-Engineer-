@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 281 days, 17:57:41
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 281 days, 23:16:17
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.6% | `█████░░░░░░░░░░` |
-| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.8% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융그룹, 12개 자회사 CEO 승계절차 돌입 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE4xRnJubHBTNTJmRXBsaVZQMkFKSHBpcFFKVUNZS0tIWU9qR0pETTVBd2k1OVJOc3YzYU01cGkwcmpjREFOTGVCZE5GMVBfMFU?oc=5)
-- [[단독] 네이버페이, 롯데카드 제치고 '빅5' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9OUmZiT2EzOEYxeERxZkJHRl9IMC1wNVJqS2Z3LWxHdDBmN0JMSndnWHlCaF9GOVFXR19kMWJ6MjZZQkZvNUFHRTdScjRiMTBHVlNPUkdMWVczUQ?oc=5)
+- [신한금융, 12개 자회사 CEO 인선 돌입…은행 임추위 권한 강화 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE02MU5BN1JKU2F6enNHV0Qta1o4eWo3T0lwcTBhazVsbzl5UkkybmprWHBKWEVRRnNvQ1NxQ09CRFlLWFo3Y2E3RW94cV9DaGs?oc=5)
+- ['로봇 프리미엄' 사라진 현대차, '반등의 시간' 언제 올까 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5YdVRONmxkVHdWUGcwMnZvdUVOVk1LdmYxaHFVNG1yV3lCNko1UWE3WldpVDRlUm5IeS0wYmcyZTFJQS1KOXJOWE9rV0NEeDR0ODEzVTdHaXdiZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
