@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 281 days, 23:16:17
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 282 days, 4:34:24
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.8% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 35.8% | `█████░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 12개 자회사 CEO 인선 돌입…은행 임추위 권한 강화 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE02MU5BN1JKU2F6enNHV0Qta1o4eWo3T0lwcTBhazVsbzl5UkkybmprWHBKWEVRRnNvQ1NxQ09CRFlLWFo3Y2E3RW94cV9DaGs?oc=5)
-- ['로봇 프리미엄' 사라진 현대차, '반등의 시간' 언제 올까 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5YdVRONmxkVHdWUGcwMnZvdUVOVk1LdmYxaHFVNG1yV3lCNko1UWE3WldpVDRlUm5IeS0wYmcyZTFJQS1KOXJOWE9rV0NEeDR0ODEzVTdHaXdiZw?oc=5)
+- [신한금융, 12개 자회사 CEO 승계 절차 착수 - 이로운넷](https://news.google.com/rss/articles/CBMiZkFVX3lxTE84aUl6RVhLLV95T21pcUtNbTJwOEN3ZGJtZjFLYWFaSDFKLWFhTUkxN3p5RlFURHJWUmItcm1UUUdtR3hyQ01oejdvU0lQMWJEajFZTkNmM2U5WThDSzVpMHZTMnR5UQ?oc=5)
+- [돈 되는 뉴스 '한경 프리미엄9' 24시간 쏟아진다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBIb2pvdWs1c21KSW05ZXhCckI3VmYwWVBLcGdyamRaalpMd2hvMFhPaGUyb1FmV3NyU2NhNWN1WTFfeVJUWmFkN3NUbFd5VFJ2Z095OTEyb0NJQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
