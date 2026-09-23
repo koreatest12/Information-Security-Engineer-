@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 282 days, 15:20:57
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 282 days, 17:51:57
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.1% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.2% | `█████░░░░░░░░░░` |
 | **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 12개 자회사 CEO 인선 돌입…은행 임추위 권한 강화 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE02MU5BN1JKU2F6enNHV0Qta1o4eWo3T0lwcTBhazVsbzl5UkkybmprWHBKWEVRRnNvQ1NxQ09CRFlLWFo3Y2E3RW94cV9DaGs?oc=5)
-- [[단독] 대기업 대신 찾은 곳이…한국 온 '월가 전설' 파격 행보 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE0yVjh4ZTFkRXpibjQ1SFQzZUMycTlENHlhRUk4RmhhbDhNbjNnTUwxREZ4N1NsRnZ5OXFMVTRsMW1PQmZPWVhieWtkcGxWclEySjg0SDJUZm9Rdw?oc=5)
+- ["추석 끝나고 코스피 날아오를까?"…개미들 시선 쏠린 곳 [분석+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1kZ3pPRjBqT0NVc2xtSE1aSHJPSXJOVTlhLUhPTGRFTXZYUEE3MkFUcWVTeERkVzdyUTBOTVFLN2tyalhOcE0zRHM0WEJUcDRyZzRQclhkU09sUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
