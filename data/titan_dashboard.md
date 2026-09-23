@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 283 days, 12:55:29
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 283 days, 15:33:18
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.2% | `█████░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 19.7% | `██░░░░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, ‘연말 인사 시즌’ 개막…자회사 12곳 CEO 승계 착수 - 뉴스톱](https://news.google.com/rss/articles/CBMib0FVX3lxTFBTLTEyc01fNnFzTDNoTFBSUERKajFLekVNdmRib3FFd084QnR3b25TQ1p1RExLNVZ2aE1ZdkkyVmFpRU9yWlhuMUF4c0FJMzRzVEN0cGVRUmdOel9aWkswVU9PeWwtNUJldmc1MWFHSQ?oc=5)
-- [메타 '뮤즈AI'가 스테이블코인 키운다 [박신영의 개장전 요것만] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9IaTRqOUNnYTJqeXdNTVc4SExCMHhjdXQ4WG1Yak9WN2ZvdVgyYUNHMWc4WnJEbHFwLTQ1SUxMQ1NObnRHZVlVVnU0VkxuRFlZNUxPOTRiR2NEUQ?oc=5)
+- [관세·반도체 협상 어떻게 되나…미중 정상회담 투자자 관전 포인트 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Dc1czRDdKenBQMUEtT1l3OXY4bUtlbTBNQUN3enQxazZrSHpmUFFiR2N6cGhwRlJJbWFuMUp3cFRLdExLRGlHanFOVllMdHRzR3pNSXBBSlcwUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
