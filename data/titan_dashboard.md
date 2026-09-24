@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 283 days, 15:33:18
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 283 days, 17:48:31
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 19.7% | `██░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.6% | `████░░░░░░░░░░░` |
 | **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, ‘연말 인사 시즌’ 개막…자회사 12곳 CEO 승계 착수 - 뉴스톱](https://news.google.com/rss/articles/CBMib0FVX3lxTFBTLTEyc01fNnFzTDNoTFBSUERKajFLekVNdmRib3FFd084QnR3b25TQ1p1RExLNVZ2aE1ZdkkyVmFpRU9yWlhuMUF4c0FJMzRzVEN0cGVRUmdOel9aWkswVU9PeWwtNUJldmc1MWFHSQ?oc=5)
-- [관세·반도체 협상 어떻게 되나…미중 정상회담 투자자 관전 포인트 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Dc1czRDdKenBQMUEtT1l3OXY4bUtlbTBNQUN3enQxazZrSHpmUFFiR2N6cGhwRlJJbWFuMUp3cFRLdExLRGlHanFOVllMdHRzR3pNSXBBSlcwUQ?oc=5)
+- [[금융 게시판] 신한금융, 임직원 1억원 물품 구매해 취약계층 기부…우리금융·농협금융은 - 라이센스뉴스](https://news.google.com/rss/articles/CBMia0FVX3lxTE1mejljNHJLY1VsRU0wS3ZDTWN2Wk1pMDhFTHJ4S2VoSVV3Q2haeGowSkFESWkzTExLUHVCU3NjREJacnNoNFZpTmRWSlhKby13QXBDZ3EzSU54TFV0XzVscnFjOG5paTRUNXE0?oc=5)
+- [흔들리는 글로벌 증시…연내 꼭 확인해야 할 3가지 이벤트 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE81NUd2OUVEdTU2R3BlcDNpcnl1OF9ZZXVnZmlZZVRkaDUxYlJFREdUSE53cjJuaVdCU0lGejBEX1Nrc0Z4eGpOREE4SDYzNWpET3ZLNGRjMUhYQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
