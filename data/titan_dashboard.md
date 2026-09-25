@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 285 days, 5:34:23
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 285 days, 10:28:17
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.9% | `████░░░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 23.7% | `███░░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 12곳 자회사 대표이사 승계절차 개시…임추위 역할 확대 - 뉴스1](https://news.google.com/rss/articles/CBMiYkFVX3lxTE55bHZXT2pYXzZnOWJpZkpTa09DVHJvSHRzWVNCanlsOTdMWDg1ZUZQTGVpSFUtVU1vZ2djVmhUTEdHWWJfSEpERXZpRUxqWHdtSmRPOE10eEhJU2JtQ2xuRGRn0gFnQVVfeXFMTzRReTk4STNyUzk0ZDl4LU1JbXNCbkE5RWNBUFk3WDNBS3Y3bmN1T3l4V29DRktGVHBvaW5PSkFSdXhJLVU2NUZVSkplSE0zOWNDb0JZOWJlc0pWSUduZno4WWpFdEhlbw?oc=5)
-- ["AI 시대의 업무 OS" MS, 새로운 코파일럿 공개 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9CQnBkNWh1MWxTRzkyVzdiZ3hKYWVSY3BFUUFzcGY1SVpKbWpFX200TGcyeGdJSHVSajZSb3J6UFNjRVFXMkhQVThDcDJxY1pIRTVMTExnLWswZw?oc=5)
+- ['다마고치' 들고 나온 저커버그의 속내는? [월가 백브리핑] - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTE8tTmVCUU9OWTNyM21nQU5ZMFQ4U1NOVlRrNm1pNVpaWFhtUkJLbUs0YTlsaG5qY0xoeXlSX2dsSFcxWHIyRUtwaW4wbTFybjE0d2xpRENfYVY5QQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
