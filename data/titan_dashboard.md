@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 284 days, 15:55:06
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 284 days, 18:29:04
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,15 +8,14 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [KR_ECON] 10년물 5.2% 돌파…美 증시 덮친 '고금리 장기화' [뉴욕증시 브리핑] - 한국경제
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.0% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.2% | `████░░░░░░░░░░░` |
+| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [다시 칠천피, '은행·증권 결합 계좌' 대세…'SOL LINK' 50만좌 돌파 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5Qck96TndIYVdQUTR4bEFXeTZhaUlFSG54eTVhUklvd0xuWFI4NS1FR3dEdWl0R2pHYmp0UVExUGtrandBa2lOcUxzNUt6alk?oc=5)
