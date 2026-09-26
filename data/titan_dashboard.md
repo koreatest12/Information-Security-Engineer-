@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 285 days, 13:27:29
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 285 days, 16:17:11
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,19 +8,18 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [KR_ECON] 10년물 금리 2007년 이후 최고…美증시는 버텼다[뉴욕증시 브리핑] - 한국경제
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.1% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.2% | `████░░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 12곳 자회사 대표이사 승계절차 개시…임추위 역할 확대 - news1.kr](https://news.google.com/rss/articles/CBMiYkFVX3lxTE55bHZXT2pYXzZnOWJpZkpTa09DVHJvSHRzWVNCanlsOTdMWDg1ZUZQTGVpSFUtVU1vZ2djVmhUTEdHWWJfSEpERXZpRUxqWHdtSmRPOE10eEhJU2JtQ2xuRGRn0gFnQVVfeXFMTzRReTk4STNyUzk0ZDl4LU1JbXNCbkE5RWNBUFk3WDNBS3Y3bmN1T3l4V29DRktGVHBvaW5PSkFSdXhJLVU2NUZVSkplSE0zOWNDb0JZOWJlc0pWSUduZno4WWpFdEhlbw?oc=5)
-- [10년물 금리 2007년 이후 최고…美증시는 버텼다[뉴욕증시 브리핑] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Va1ZkOFJwUHppZ1lEZllBdXozZmZCeXNweFo4UjFWejRES1pqUGZKOGRvcTVYVGFwUU9fMmQ5c19ORHdvdkZlSGN1YU1pQ2tPdmtwaDdfZHZ2Zw?oc=5)
+- [4대 지주, 은행서 배당으로만 7.4조 받았다…의존도 되레 높아져 - KB Think](https://news.google.com/rss/articles/CBMickFVX3lxTE5xdHBqT1hMVE1lcnNFcGNfQlJNNmtFU0VteG5KTXQzcXM0TmNTOG5qUHRIeWRFRzIxUk0wOHU4c2hCSjYwbzdQQTlwSHcxeXFrekdyYTU3dWN3SkJHemsybElER2djU04ybmNlRW1VcXV0UQ?oc=5)
+- [이란 협상 진전? 9월 계절성 무너뜨린 뉴욕 증시 [김현석의 월스트리트나우] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5iM0FBRkZkWnEwaktLUWw2YTR0WVAxUDV6YkxldWxENHlOMHJ6V3RXRV93ckxQcnNhYkYzd2R3THJoTHNqYXNrbXlmaHF1R3FOcmM4TXVhc2VRdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
