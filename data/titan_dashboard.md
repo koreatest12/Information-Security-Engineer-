@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 286 days, 12:17:38
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 286 days, 14:40:35
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.6% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.1% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 12곳 자회사 대표이사 승계절차 개시…임추위 역할 확대 - news1.kr](https://news.google.com/rss/articles/CBMiYkFVX3lxTE55bHZXT2pYXzZnOWJpZkpTa09DVHJvSHRzWVNCanlsOTdMWDg1ZUZQTGVpSFUtVU1vZ2djVmhUTEdHWWJfSEpERXZpRUxqWHdtSmRPOE10eEhJU2JtQ2xuRGRn0gFnQVVfeXFMTzRReTk4STNyUzk0ZDl4LU1JbXNCbkE5RWNBUFk3WDNBS3Y3bmN1T3l4V29DRktGVHBvaW5PSkFSdXhJLVU2NUZVSkplSE0zOWNDb0JZOWJlc0pWSUduZno4WWpFdEhlbw?oc=5)
-- ["아빠 요즘 이게 유행이래"…초등생 딸 춤 보고 '화들짝' [유지희의 ITMI] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9yUFFUVXUzN2k3c1J3SlZ3aVFHakE0RVhsU2NIejVROU53cmNCQWNpa1liZnlYMmZpblJtcVVoUlcxLVlIMjE5cFBxZWRKTXRxZFZBNlE5OGJPQQ?oc=5)
+- [연휴 뒤 5대 은행장 인선 본격화…은행 추천위 역할 확대 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5qUzZ6Z1QzMHF2WDBXWlN4b3Ytdm1MMjdaaEF5U0ZZTjRRREw5QVIzMGZnZ3p3cXB5WlNHa2Q5NkxvMG1FbVNHdWNjSWt4b1U?oc=5)
+- [한국, 랜섬웨어 표적 됐다…상반기 피해 36건, 1년 새 3배 급증 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBsZk5oM0hLVF9LTGR5WkxZTk0xVWY2anp5NUhRQTlrRk1hNmltbmlIdUJFYU5QT1VUVDBJWEFSeDZ1QXlIaHprSGNEUXRvN2oxbnFmTm9fajJ0dw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
