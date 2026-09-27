@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 287 days, 7:49:01
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 287 days, 11:27:59
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 27.4% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 35.4% | `█████░░░░░░░░░░` |
+| **RAM** | `39.9/512 GB` | 7.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [‘유종의 미ʼ 양종희 vs ‘도약ʼ 진옥동, KB-신한 ‘밸류업ʼ 사활 [2026 3분기 실적 미리보기] - fntimes.com](https://news.google.com/rss/articles/CBMifEFVX3lxTE5ENDZ0NHFZVXR1YmVPYTZ5bTd6UWRXbzlSVFZHM2Y5SllDUTZjY2UwbkFDOHc3M0R3QXltNVNQMW51SDRzOC1xN01BXzBoNlFpMVY1Zm02c1YwS0Q2cy1TVi1JX1lUcFE0eDB6ZlhsU053RTE4QVVTU1R2WFM?oc=5)
-- [[한경에세이] 멀지만 가까운 나라 호주 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1VWXE1NXRHd1RHbjVOZ3J3dDd3aHVOWWw3dGFYQUNsTmVRVm1jVndaVTBUZExuYmdtREpHdnlXOW5LcE1Oem9vUElRQ25INFBaS2hsTnd5ODhtUQ?oc=5)
+- [‘유종의 미ʼ 양종희 vs ‘도약ʼ 진옥동, KB-신한 ‘밸류업ʼ 사활 [2026 3분기 실적 미리보기] - 한국금융신문](https://news.google.com/rss/articles/CBMifEFVX3lxTE5ENDZ0NHFZVXR1YmVPYTZ5bTd6UWRXbzlSVFZHM2Y5SllDUTZjY2UwbkFDOHc3M0R3QXltNVNQMW51SDRzOC1xN01BXzBoNlFpMVY1Zm02c1YwS0Q2cy1TVi1JX1lUcFE0eDB6ZlhsU053RTE4QVVTU1R2WFM?oc=5)
+- [반도체 호황에…올 초과세수 50조 웃돌 듯 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9tcFVCa295QWFLX3hqOWxVbVp0dHFPVGxKbnJ6UzY4NGdMV3BiQkhBVXZFVW5ZcHM5MV9CUkt3bGNIYUMwRDN6ZG5hY3NKaWFKXzEwYXJCMFF4dw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
