@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 287 days, 3:17:13
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 287 days, 7:49:01
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.7% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.4% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [“해외에서 벌어 해외로”...진옥동, 글로벌 수익원 ‘2막’ 연다 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9rc2QzUGJYcm5SY3NxU3dRWk1NOGt5QVFQcE85SFZ0ckUwQkNwWlNvSHhBNG1TQURRakw1bWdjTW9kN1VyekZSZ3NFSFgxT2s2ZUpsajhGTi1oSFU?oc=5)
-- [[속보] 軍·유엔사, DMZ 폭발현장 조사…"추가 조사 예정" - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1HZG55RXMyTm9zN3RvNlhqckp3blNlXzJsRU9GQmFkS20xSW14VGt2VjR2ZlZ4Tm5UdTZYLUNkXzVTWG9rSUVYdGlZalUwYWtMcUczWFQtanVrUQ?oc=5)
+- [‘유종의 미ʼ 양종희 vs ‘도약ʼ 진옥동, KB-신한 ‘밸류업ʼ 사활 [2026 3분기 실적 미리보기] - fntimes.com](https://news.google.com/rss/articles/CBMifEFVX3lxTE5ENDZ0NHFZVXR1YmVPYTZ5bTd6UWRXbzlSVFZHM2Y5SllDUTZjY2UwbkFDOHc3M0R3QXltNVNQMW51SDRzOC1xN01BXzBoNlFpMVY1Zm02c1YwS0Q2cy1TVi1JX1lUcFE0eDB6ZlhsU053RTE4QVVTU1R2WFM?oc=5)
+- [[한경에세이] 멀지만 가까운 나라 호주 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1VWXE1NXRHd1RHbjVOZ3J3dDd3aHVOWWw3dGFYQUNsTmVRVm1jVndaVTBUZExuYmdtREpHdnlXOW5LcE1Oem9vUElRQ25INFBaS2hsTnd5ODhtUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
