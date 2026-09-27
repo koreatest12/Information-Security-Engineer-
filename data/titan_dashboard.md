@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 286 days, 22:14:17
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 287 days, 3:17:13
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.8% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.7% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [“해외에서 벌어 해외로”...진옥동, 글로벌 수익원 ‘2막’ 연다 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9rc2QzUGJYcm5SY3NxU3dRWk1NOGt5QVFQcE85SFZ0ckUwQkNwWlNvSHhBNG1TQURRakw1bWdjTW9kN1VyekZSZ3NFSFgxT2s2ZUpsajhGTi1oSFU?oc=5)
-- [美는 물가, 中은 경기…글로벌 증시 변수 쏟아진다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ta0hYLUhiam1QbnhDaHBmZDNSc3JaOXkzbE1vMGZJNmFJbGpheUlURnFFaHJ3ZWs4TTM4RHA4aFFUYW5CNUM3RGVNZ3pKMnRucFpHX1g0VkkzQQ?oc=5)
+- [[속보] 軍·유엔사, DMZ 폭발현장 조사…"추가 조사 예정" - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1HZG55RXMyTm9zN3RvNlhqckp3blNlXzJsRU9GQmFkS20xSW14VGt2VjR2ZlZ4Tm5UdTZYLUNkXzVTWG9rSUVYdGlZalUwYWtMcUczWFQtanVrUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
