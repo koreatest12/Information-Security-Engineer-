@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 287 days, 14:41:43
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 287 days, 17:15:11
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.2% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 29.9% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [‘유종의 미ʼ 양종희 vs ‘도약ʼ 진옥동, KB-신한 ‘밸류업ʼ 사활 [2026 3분기 실적 미리보기] - fntimes.com](https://news.google.com/rss/articles/CBMifEFVX3lxTE5ENDZ0NHFZVXR1YmVPYTZ5bTd6UWRXbzlSVFZHM2Y5SllDUTZjY2UwbkFDOHc3M0R3QXltNVNQMW51SDRzOC1xN01BXzBoNlFpMVY1Zm02c1YwS0Q2cy1TVi1JX1lUcFE0eDB6ZlhsU053RTE4QVVTU1R2WFM?oc=5)
-- [예금보다 낫다?…증권사 발행어음 고금리 경쟁 톺아보니 [투자톡] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE4xa2IwTzBiUzMxdE1ldkRySF9Nd2dycF93Y0F2ZTRwcnVMQWtVdTdDTXNFbU5SOFZsbmhXblBwWXNXZjdkQmNpcUJPY0l0eGRJNHc2YXRLbWJ0dw?oc=5)
+- [신한銀, 유언대용신탁 잔고 1조5000억원 돌파 - 주간한국](https://news.google.com/rss/articles/CBMicEFVX3lxTE52blVPdEdMbU5DbldCclNOWnkxNERtamFxcktXT01jQ2NEWjlzeDkzaXU0R1hhRzNPZnJrc1duZS1uMnFQZWs1aVRLUVZTSG1acjZDUTRTTVV6WlppYi1Kb0xROXpwWGtDajNsaFdlTmPSAXRBVV95cUxPU2V5dUJGRjhvVU5nMF92aVBkQkVLN2NOQ2tuNklFZW82QVBib2JlRmtEdlFidzE0aDdFQXNkLVNma2RBR3BBMS1XYVFwQzVsdWgzSWFid3JPLTA0Z3Rlei1GWk4zNEdEcFVjRWw3WEtzb2ZmUA?oc=5)
+- [코스피, 0.33% 내린 7057.86 출발…코스닥 0.12% 오른 845.48 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1zSlRBU0ozcGlpa1g1dGNGZVFGMm55dlVKVUFxVXA4eFZQTEctbTU2MnU1NDl4Y3FfVGJUellmNW5JU2UySExnT19kWGt5eHFRejBfWFY3RHRMUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
