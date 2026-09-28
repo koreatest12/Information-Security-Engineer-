@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 287 days, 22:24:39
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 288 days, 6:32:09
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 15.2% | `██░░░░░░░░░░░░░` |
-| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.9% | `█████░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 유언대용신탁 잔고 1.5조 돌파…신한금융 자산관리 사업 확대 - Korea IT Times](https://news.google.com/rss/articles/CBMicEFVX3lxTE1jU0JLZDl1TndBSmRMWDktUFhKRW84aG1sdkYzYTEwZ3R3Skk4SUdmOEFPMVRBUDE5ZXlabS14RGpSbWVuN0NFdUlnQW9ndXFpc25zTG9yVEFodmhFdHpsdTdPSVhsR2doNzhJd3lBT1Y?oc=5)
-- [“고금리 무서워 주식 팔았더니”…땅 치고 후회할 수도 - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5PajVyZ1RId1FQWXNqblpwM0J5N0NwNFVPZ0RZSnRPLXFNNW5XNW9fbk1qQjNFeU9uQURVVHVrazdQZkFfOURqY3FkV1RsMVNEUTQxLVA2bVNEZw?oc=5)
+- [신한금융지주, 은행장 인사권 나눈다…‘진옥동 낙점’ 구조 달라질까 - press9.kr](https://news.google.com/rss/articles/CBMiZEFVX3lxTE5XVHN5dGhZd0xjamRLcFVuVmc2NF8tUGc1d054S3lmWWVlSXBjcVFBRkZrdU1FX0RPYjBHdDhUcXlTTEl3cXFNUXpNeFN6dmR3SHFaRzlVeW5ycWc3cllmTFMwdWk?oc=5)
+- [엔비디아 "자사주 204조원 추가 매입"…사상 최대규모 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBSdGtocDlrLU1HbkZFTUxwOE1DR01qVnNvSjdEU0tiX2Jtb0E0X3ZOUGg0cjY1T0ZaMlFpb01uV2JlYnM3ai05dWxSTU1yLW4yai1uVDIybTRLdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
