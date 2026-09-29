@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 289 days, 11:02:00
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 289 days, 15:02:01
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 28.7% | `████░░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.4% | `████░░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [진옥동 신한금융 회장 "디지털자산 인프라 연계, 책임 있게 준비" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE14aTRwM3hGMVZudTE3RzRCdUVYWGc1ZWJEbnFOOGx0RUVsTWR5MllOSkZtWmpxNTJVTGFVNXk1S0d0dE9FTXg1NVgzbjc5SFk?oc=5)
-- [美 30년물국채 수익률 5.609%…2002년 이후 최고치 - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jOHR3Q0pMdGc5RUVsakdFaW8zYkFrVVI0eDdneHRCakh3OFY5TUcyZS02Q3NjWk1nWS1jSXZhSFk5MGFNRXZBVm5IaUJ5TEdIYXJ3WDZveXZBdw?oc=5)
+- [은퇴자와 영리치가 만나는 미래의 상급지 [심형석의 부동산 정석] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBRdFNBLUpCUHh3XzV0emR4Yng3a1Y5LXhWbUN2M2FHTzdYWWMtaTRvbkZmeGZzYU9CUmNEdlhsb19aUlloWHBZbndBNXFMSnl3czlveTdJZk9UUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
