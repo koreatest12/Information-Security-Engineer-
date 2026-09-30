@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 290 days, 11:49:14
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 290 days, 15:35:06
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.1% | `█████░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.5% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [주요 금융그룹, 계열사 CEO 승계 절차 돌입…자회사 임추위 역할 확대 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9UTk14RnVGM0FzZldXZE4tMng5UnZDMUV6VnZNbmlfTmJFOW5MTE00d0ZYZEFtNzRBSmhsQ0tyRmN0dGc2TlFaY3JzS1h3RGM?oc=5)
-- [美 8월 PCE 물가 3.4% 상승…예상치 밑돌았다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBBTnZnMkhtVHhHVGNUYnYxU2xhWm9FWjBlb2RKQXFUUU1lSmJFSGtJWG1hVnV0VE5XOTdQM0ptbUlkRDhQQmhtbDl4Yk1uWHhXcHJpUkJCLURQZw?oc=5)
+- [반도체 50% 급락, 게임주는 50% 급등…엇갈린 日증시 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFA3Z3BQVl9senlNclhWelFhUDdmZnpfdXMzWGstYzNQRTQ2NWJKWGlVblQxaFZLaEJNamJ4Z2RoR1ZQVnM0M3FXNzFjc1gxWGhHcGVwRDhzVFlsQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
