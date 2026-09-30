@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 289 days, 23:54:53
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 290 days, 6:40:07
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.3% | `█████░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 25.6% | `███░░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [진옥동 신한금융 회장 "디지털자산 인프라 연계, 책임 있게 준비" - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE14aTRwM3hGMVZudTE3RzRCdUVYWGc1ZWJEbnFOOGx0RUVsTWR5MllOSkZtWmpxNTJVTGFVNXk1S0d0dE9FTXg1NVgzbjc5SFk?oc=5)
-- [유가 3.5% 폭락에도 정유주 '빵끗'…"제품가 여전히 높다" - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTE94NWZIamFheTN5T0hsUVRXX0ZUQ2h1b1cwVTBYNEQ2eWJiUkpEMm9EQ09Zd001aTZPTS10VkEwTW9ZWmxHUkVqVExXemxDRFZPeW1hdGdOdlhjZw?oc=5)
+- [주요 금융그룹, 계열사 CEO 승계 절차 돌입…자회사 임추위 역할 확대 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9UTk14RnVGM0FzZldXZE4tMng5UnZDMUV6VnZNbmlfTmJFOW5MTE00d0ZYZEFtNzRBSmhsQ0tyRmN0dGc2TlFaY3JzS1h3RGM?oc=5)
+- [美 2분기 성장률 2.2% 확정…잠정치보다 0.7%P↑ - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE44ek5aRktmLXd6OXpFMFdWMk5hSndiZ0NBdFpyUldLd3lIaEJvYlpNYzRtM3ZYZUFrdXFYQ0Q1R3BtWjV1dUc3b0haSVY0LVlCbU45c2ZkNjFSQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
