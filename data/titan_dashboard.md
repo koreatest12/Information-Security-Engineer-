@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 291 days, 1:26:50
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 291 days, 9:19:03
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.8% | `████░░░░░░░░░░░` |
-| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 30.3% | `████░░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행장 “2만5000명 고객정보 유출…손해 전액 보상” - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1mcmdRWGsyTEktaE14THZkbXZtVkY0TE9oejE1aHJtSnk3aVM2bElrbjRfTEIxM3ItYUoyakpLMG9YdXJ2SzBfa0tGZklHZ3o4RXRFWA?oc=5)
-- [홍콩 변수 터졌다…주식 결제 'T+1' 도입 두고 신중론 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9IbzBEX1J3YmpBRjlMLUMxVzZra3dEdXY5NmN1YXlPcVNpZmZYcmtpbUpXc1g5SjJWX3BNb05vQ3hVbFFFc2l4Und0NTBGME9sdmhOaHltczhBdw?oc=5)
+- [삼전닉스 '한방' 기다리는데…"먼저 갑니다" 40% 뛴 종목 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE11M2FyaklCOENiM09jUTV6ek9qZUtCbWdoQklmVGdPbUhrSkpycnRvSVJwZktJbVJTb2pxdWNLSzlaU2tYWURjajZPZE5iZXVlejNBR0w3TVM4QQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
