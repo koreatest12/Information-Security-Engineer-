@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 291 days, 17:17:12
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 291 days, 22:57:32
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 25.4% | `███░░░░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.9% | `█████░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한은행장 “2만5000명 고객정보 유출…손해 전액 보상” - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1mcmdRWGsyTEktaE14THZkbXZtVkY0TE9oejE1aHJtSnk3aVM2bElrbjRfTEIxM3ItYUoyakpLMG9YdXJ2SzBfa0tGZklHZ3o4RXRFWA?oc=5)
-- [삼전닉스 '한방' 기다리는데…"먼저 갑니다" 40% 뛴 종목 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE11M2FyaklCOENiM09jUTV6ek9qZUtCbWdoQklmVGdPbUhrSkpycnRvSVJwZktJbVJTb2pxdWNLSzlaU2tYWURjajZPZE5iZXVlejNBR0w3TVM4QQ?oc=5)
+- [AI가 바꾼 부의 지도…'한경 넥스트 머니포럼'서 길 찾아보세요 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9YRlVlTVhNUnJYS1FpRjMxNmhhTWt1LUdHWWNIWXBPQU81V2ZidVlzUUhRdVVSVFZCcG5RNXRFakx6S09zU0xjUENQR0hLWU9XMEtSM2ZJek8yUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
