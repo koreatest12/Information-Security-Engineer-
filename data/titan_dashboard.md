@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 293 days, 18:08:27
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 293 days, 23:49:24
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.5% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.3% | `█████░░░░░░░░░░` |
 | **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[4대 은행장, 누가 남나] ② 정상혁 신한은행장 '3연임' 도전, 성과·세대교체 '기로' - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTE05THdTTG12ZGlOY1VUYVdiLU9VX1lveUdzUTkxNDRaVEFldGNfdTIzSGtwdS1sS01yRW43WTlKeGplTWtuaTdDZmtLZEQ2YUxhektNVFloT19jcXBI?oc=5)
-- [아르헨티나선 OTT 구독료도 '달러 코인'으로 낸다 [스테이블코인 레이더] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBMVmlYY0F5MTYyMVRpQ3dHbUVUdUh6YVNiaDNHRnZram85V2RLOGU2M2tDZklGd3hoYU9NYzl1ZkJuTkpSQ1JwWWNfSnlTT3dUaC1MRHhTQVlOUQ?oc=5)
+- [“국내·해외주식 수수료 국내 최저” 신한금융 ‘신한 SOL LINK’로 머니무브 수요 공략 [헤럴드머니페스타2026] - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE13YWU4am4tNDhNZDQ5cnpHNTNyTzJCZUJZM2o0ZUNtY1FETjBaSDZPd0VVU0hFb3RWOFEza1YyTFkyNHZuZE5VeHBvWTdlUXM?oc=5)
+- [주가 반토막 난 키옥시아…기관은 다시 담는다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBLa2g3eVNyYVZBWXREUy15QWxpb3QtMTE5ZW1IZHd0MFB2dVFuU2ljMDBXSzNtUFpiN20zQnlENjRrc1g2Wnpuc3hkTVRSZ244UEM0VjJ0WGFrdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
