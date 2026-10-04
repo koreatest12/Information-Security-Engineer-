@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 293 days, 14:47:30
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 293 days, 18:08:27
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 18.2% | `██░░░░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.5% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [롯데손보 매각 또 지연…'신한금융 대안' 찾기 난항 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTE1LTnpJODBhYWN5RGRxS29ZT2M0X3o2b0w0enhYdjB3SE9UM2RKYlJPRy0yZEdlVXdJTEdfUHVnX1VTWXdBNTk5bUFxLXF1TGstYWExQ0pZRWVwcklPREdaLVpnejJweXhoN1dN0gFwQVVfeXFMUE1pRnZOeU1ocEl5RGxiR0ZMWWt6dUNObFptbmhHLW9yZjhLY18wNVJsRHN6SmhRZ2E3ZEsxMnVoMGpOWk1FMTV5OUxyUEZXV1hFVThhdy1IT3F0bGxqYXhLNzhaUlRTNFRTbm4xTzdSLQ?oc=5)
-- [주요 IB, 엔비디아 HPE 등 'AI 인프라' 다시 주목 [월가 업&다운] - hankyung.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTE12Y2dYZEp4bEpnOUtwcFg3MFc4a1lxeWxYeUZ4MGpfeDlvaWhfbU9ONkREQUExdE9ETUx0dDJWU0dtV0xBd0N2ZEZlOFdLVnhIYnJBb2w0cjRsdw?oc=5)
+- [[4대 은행장, 누가 남나] ② 정상혁 신한은행장 '3연임' 도전, 성과·세대교체 '기로' - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTE05THdTTG12ZGlOY1VUYVdiLU9VX1lveUdzUTkxNDRaVEFldGNfdTIzSGtwdS1sS01yRW43WTlKeGplTWtuaTdDZmtLZEQ2YUxhektNVFloT19jcXBI?oc=5)
+- [아르헨티나선 OTT 구독료도 '달러 코인'으로 낸다 [스테이블코인 레이더] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBMVmlYY0F5MTYyMVRpQ3dHbUVUdUh6YVNiaDNHRnZram85V2RLOGU2M2tDZklGd3hoYU9NYzl1ZkJuTkpSQ1JwWWNfSnlTT3dUaC1MRHhTQVlOUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
