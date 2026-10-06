@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 295 days, 16:44:00
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 295 days, 22:55:24
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 18.5% | `██░░░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.3% | `████░░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[生기업TALK] 신한금융그룹, 디지털자산시장 주도권 선점 위한 노력 경주 - 시사캐스트](https://news.google.com/rss/articles/CBMiaEFVX3lxTE9EN3pBNnVBbVhyVHhBYXRUaUpsVGtvVmUwcTJPX01kZkQtZWNQT2pLUHdlNW85R1NqYmxzWU5KRUNUeXU1OGxEb3JBcm1XdDVaSVVPRVMySjBma0owTGt2YzNPMFppeExT?oc=5)
-- [환율 12% 빠지자…순이익 쇼크 주의보 떴다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBiMjZIa3J1YW9oeGVuX01fSzVfS1lQa3otY0FnOEhzcVVKb3FHOExoSU5aWTY2NlUydk5VaVRhTER4bWdHcGxaaC14SXBDa1psdW9hOHo0RDlhUQ?oc=5)
+- [신한금융, 일상 속 친환경 실천…‘신그러운 챌린지’ 이어간다 - econovill.com](https://news.google.com/rss/articles/CBMibEFVX3lxTFAzV1RGUTc0UjFBbjZ2OVd5NUZPZkU5MmlIRlQ5WlZxYVRrdW9MdGxjQnphaU1mUDQ1VkhEM2lRM2lySnBqdTVTWHNGVHVnMlo0bUxJekV0ZE1CVmVDOE5xc05LYXdEdkh0RmNkUg?oc=5)
+- [[하워드 막스 메모] "경제법칙을 폐기시킬까요" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1MmowQWlzUUZHcHJUWnl4U2c1VEZadFQxTmoxcHJoTElyaGJtb3gwMzR3ZzVqTGp4UGlIVjRORWozQVhRUTJRNHBVY3BnSTctclZyci0waG1fZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
