@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 295 days, 11:35:17
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 295 days, 16:44:00
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.3% | `█████░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 18.5% | `██░░░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[금융맞수] KB금융 vs 신한금융, 은행은 신한·비은행은 KB…리딩금융 승부처는 - 스트레이트뉴스](https://news.google.com/rss/articles/CBMid0FVX3lxTFBhMzdYbHNudm85SDhrZDNCRUZYcy1Ma3RJRjlLOFNscS0zdW1UVDBTZVJpLTZlZ0oxV05OY1p2cExSUUZtbmtxWFdKVGJsUkZBenpIaUNzQ29kc244OTN2VUxxaktsWHNYblgyTTQ4MENMSk16bXNz0gF3QVVfeXFMUGEzN1hsc252bzlIOGtkM0JFRlhzLUxrdElGOUs4U2xxLTN1bVRUMFNlUmktNmVnSjFXTk5jWnZwTFJRRm1ua3FYV0pUYmxSRkF6ekhpQ3NDb2Rzbjg5M3ZVTHFqS2xYc1huWDJNNDgwQ0xKTXptc3M?oc=5)
-- ["달려라 한국경제"…직장 동료들도 함께 뛴 '한경서울마라톤' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE4xNGxpYlN6VU9MV0hCaGVjQUlXZFFERzZ6Qk5ZM1B1ZmZ2amZUcFo0STA3cUxGS1M0bnd5a2tWZjJEejFRbFpuVlMzQ3FVWFBBTTZKY0Z2WEYwZw?oc=5)
+- [[生기업TALK] 신한금융그룹, 디지털자산시장 주도권 선점 위한 노력 경주 - 시사캐스트](https://news.google.com/rss/articles/CBMiaEFVX3lxTE9EN3pBNnVBbVhyVHhBYXRUaUpsVGtvVmUwcTJPX01kZkQtZWNQT2pLUHdlNW85R1NqYmxzWU5KRUNUeXU1OGxEb3JBcm1XdDVaSVVPRVMySjBma0owTGt2YzNPMFppeExT?oc=5)
+- [환율 12% 빠지자…순이익 쇼크 주의보 떴다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBiMjZIa3J1YW9oeGVuX01fSzVfS1lQa3otY0FnOEhzcVVKb3FHOExoSU5aWTY2NlUydk5VaVRhTER4bWdHcGxaaC14SXBDa1psdW9hOHo0RDlhUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
