@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 296 days, 18:49:02
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 297 days, 1:45:04
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,19 +8,18 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [FIN_SHINHAN] [더밸류 브리핑] 오늘의 신한금융 소식...신한투자증권· 신한자산운용 - 더밸류뉴스
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 32.0% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.5% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [승계 구도 시금석 될 신한금융 연말 인사...60년대생 물갈이론 확산 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxOcHRjeFdKQlJhalctLWFhakFjdmpfa0EzTkdoNzNFdGl3eWgxend2aUU0TFRkaVppWnhqbnpWTlU2V1pfZC10QkVKdzRlUHZnU0M4NDIya0wySWdmTDVvUFZIQWpuLTh0Y1NnV21RaExVTVg3RzVNVXZKQU9ZWEc2cVNwbw?oc=5)
-- [[속보] 누리호, 연료탱크 충전 시작 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HWW8zb2FzckRuTm02bDJoT180c2tfaUhUWjhJSUZsQUhwRmY0WjgtU1JWdmZoMDFHSjlFSzRLTXpuRC16U0NBQzVsYmczU05XLTFheVU1eWtBdw?oc=5)
+- [한국경제평론가협회, 국회서 '한국경제 전망·부동산 정책 쟁점' 논의 - 뉴시스](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1VV0w3VGpHZTR6TTdUWDRpSkpNZkJoY25TbFNMbmVmd21SN20ybTczR2xaRTZRRXF6WDc5NnZqZjU2SzA2QjB6bjVBNjlsN2w0MnVlQlVNdTM3VFVHVjNuYdIBeEFVX3lxTE03U3I1eDEzQm41ek5ybXJDUUN5bE5ZSTYwbzUxNGM4RC1xdDg3MkVFRkpxSHBrQS1ldnFzaElpZGZ4NDUtdWMwUXdMS081V2JGc2c1VEIzMWwwNFk2aVJCMGN1MlpESC1FenptbDF5d09UN1pnYmxmWg?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
