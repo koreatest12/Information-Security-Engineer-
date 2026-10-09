@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 298 days, 23:12:20
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 299 days, 6:14:50
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.1% | `████░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 21.3% | `███░░░░░░░░░░░░` |
 | **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [與 "신한은행 해킹 책임져야"…野 '암살자(들)' 투자 지적(종합2보) - 뉴스1](https://news.google.com/rss/articles/CBMiYkFVX3lxTE56MDkwN3l1eW1ZVzJkZGFwNGtEVGNWbW4yVVVMX0E3WXc1S185V2ZJUFlfTG1tVDJvOEt0NXRtTVZMbV9wVTJzRHJxV1FfcDdxVzR2UmoxV3F1WDJXZm1oWl93?oc=5)
-- [李 "우리 말이 곧 경쟁력…앞으로 100년 한글 가능성 넓히는 시간" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qZ0w3QXoxQU8yLVF0aFN3X01Pa3JIb0lTdEVObDl6c2xVcVlRbTViWUJxLTdYUndyVnJoQ3MxYTNIemxpMndNLTdaTTdFZy14dGFMTGhIQkJmQQ?oc=5)
+- [신한투자증권 ‘상환 무난’ JTBC채 넉 달 만에 회생…대표 고른 진옥동 회장 책임 심사도 맡는다 - 뉴스필드](https://news.google.com/rss/articles/CBMirgJBVV95cUxPeUxTUm1TN1d6cFFjVGs2S2Fhd1lhMXhtWmRCTVlYZDI5SlgzSUpObEF3VGlPQjkyRnhSMTYtaWV3OTZRa2VmYWNVZ2FXcmNwMTZxYnl1UXhrSV91YjBhanhweThxcGFYV3VBb215LXhJMjc2TktRR1BMQ0J0TGJFaXBySllUQlBEMGlETHZCeWpNRDBVcllPM3p1LUZ3T1k3Q3RzbVgyTHRNa0t3Q1QxMTliYUI4WDctZWlDMHJtcEprWlZ4QlVIZ3FuT1kteDJDT0tXMHN0YjJQQ3N3c1pOMEtQbkVqZGxlVF9pT0xidUdPRWlLcXQ4RURFSVNIU21PSVYxcnN3NU0wOEtQSVVaNmtHT1NyUlVjZGZzWHlFVWFSYUU1YVpKajhVbW9RZw?oc=5)
+- [AI·여행·금융…쏟아진 월가 매수콜 [한경 프리미엄9 TODAY] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWVVJ5ODJXLVpHZllpVEVaNlhIbkJKYS15TGpWc3Jxa2dXTkJ6N2tmVFBGQ2o0UEZtUnFUY3BRcWMxX2t0djdMOUszMmdiZzVySXJ3MDVPaG1jUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
