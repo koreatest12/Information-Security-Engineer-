@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 300 days, 7:10:22
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 300 days, 11:18:54
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,18 +8,19 @@
 
 > **Q:** 종합 상황 브리핑
 
-관련 정보 없음
+**🤖 AI Analysis:**
+- [KR_ECON] 대구서 건물서 천장 붕괴…38명 부상·9명 병원 이송 [종합] - 한국경제
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 24.0% | `███░░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 35.3% | `█████░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 민단 창단 80주년 행사서 재일동포 투자 참여 지원 - 핀포인트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTFBDOHV4dnNIYUJndzBaM3FrUHgzNXRRNndDaUc1RTduaDg1WDhnZTRGelU5U1JKZklsR3o1b0xpcjllby1RNW92Y3FpQjl6dGdYeUJ6S0hlZ1F0YktwWGQzQWpUX1k2WFVCT1BHN0h2TkptSjTSAXdBVV95cUxQODJBMHVXczBGbDlMQ2pfNE1fWDVCN3ZKNWFUdG9UYWNvMWlDQWYxbS1Ka05rVzR1SmhEMnBkYWx6TFhtXzJ4cVBTZW1rSUlvWldPTHpQVnRfYXBkNkw4aHBULUQwWV90TDM2QlQ1QXZ1cHJKVUlOcw?oc=5)
-- [주식을 블록딜로 파는 이유 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBSZW1WREZSaU1HYWZvMkpzdWUxSHp4ZkRKbWQ5OFpzYXlpOHd4Nnc1bXFpc3JoaHZ0aE51a1hZQ3Jyby1HNEZTTUF4dEltRy13Q0ZXRkswejJNdw?oc=5)
+- [승계 구도 시금석 될 신한금융 연말 인사...60년대생 물갈이론 확산 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxOcHRjeFdKQlJhalctLWFhakFjdmpfa0EzTkdoNzNFdGl3eWgxend2aUU0TFRkaVppWnhqbnpWTlU2V1pfZC10QkVKdzRlUHZnU0M4NDIya0wySWdmTDVvUFZIQWpuLTh0Y1NnV21RaExVTVg3RzVNVXZKQU9ZWEc2cVNwbw?oc=5)
+- [대구서 건물서 천장 붕괴…38명 부상·9명 병원 이송 [종합] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5tY08wYWdnbzZMNVNMdk1mOExzVGNpeHRCdDFQOWtLal9ndlFJYzZxbk84dHVXNHFoWVB6R0F4bldYTFhfUU4tQXdINk9QWlVBb1dOaXlLVGVyZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
