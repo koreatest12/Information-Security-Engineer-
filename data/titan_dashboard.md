@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 299 days, 15:39:00
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 299 days, 18:46:38
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.0% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.5% | `████░░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [승계 구도 시금석 될 신한금융 연말 인사...60년대생 물갈이론 확산 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxOcHRjeFdKQlJhalctLWFhakFjdmpfa0EzTkdoNzNFdGl3eWgxend2aUU0TFRkaVppWnhqbnpWTlU2V1pfZC10QkVKdzRlUHZnU0M4NDIya0wySWdmTDVvUFZIQWpuLTh0Y1NnV21RaExVTVg3RzVNVXZKQU9ZWEc2cVNwbw?oc=5)
-- [AI·여행·금융…쏟아진 월가 매수콜 [한경 프리미엄9 TODAY] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWVVJ5ODJXLVpHZllpVEVaNlhIbkJKYS15TGpWc3Jxa2dXTkJ6N2tmVFBGQ2o0UEZtUnFUY3BRcWMxX2t0djdMOUszMmdiZzVySXJ3MDVPaG1jUQ?oc=5)
+- [신한금융 진옥동 회장의 ‘신뢰’ 선언, 정상혁 행장의 ‘4억 성과급’에 답하라 - 리드경제](https://news.google.com/rss/articles/CBMicEFVX3lxTE1lNHdUVHRlMlBtUWRESzJXSnhwa2R6cWM0alZsbTRHcjBkUllSc1FIeGZuM3dOdEJvclFlT0VNVjRGVnJKaFFXRFdsWURmNEE5cUlUdmkxNU5ma2l1VFFzY2RpNm5TblJKWi1ib1N3RHU?oc=5)
+- ["증시 덮칠 '진짜 공포' 따로 있다"…증권가 '무서운 경고' [분석+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE45QkdqMWxXQ3RjRkxKSXYwbzIwOVFkc2doS18yaUt5bUlHS1J6Wm5VOG9GelhsMXZHTHNCc2RIQm1PZktuMXRld3hwdjUwX0pRMk40dl8xYkhaZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
