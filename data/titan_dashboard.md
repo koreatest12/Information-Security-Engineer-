@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 301 days, 6:32:20
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 301 days, 11:20:01
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.3% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.6% | `████░░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [4대 금융 순익 늘지만 속도는 제각각…3분기 성적표 주목 - 에너지경제신문](https://news.google.com/rss/articles/CBMiY0FVX3lxTE9qNExkMmN3SWxLRmxzcldVTWlVQ240SGh2UGpLQ3g0clE4djRwbXhFdi1waG92TnctVVI3eVJBTGdHZjMxWHo2RDNZZkQ2RzNNcWdXRzk4OUJaaFYzX1FzTjI0RQ?oc=5)
-- ["北경제 이해 필독서 저술…통일·외교현안 해결 공헌" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ITC1pX0FpaTREUVRxUzk3YU5ONTlDODFZUjdmZHhUSWxDamtlS3VtOXQxaF9pOGsyMGhlN3NyQ1NNbzZ0WTdpNFVGX3h3NFNaUENJeWJZbzBnUQ?oc=5)
+- ["룸서비스 되나요?" 말 걸었더니…호텔 직원의 '반전 정체' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5iUjJuWnRZT2dDNHdsdEZOSjBERDZyYTg3WW1wNWh1LThhMWR0aXNiancwa3MzalkwOHFUaS0waGJxT2pGdWRoZFBnWS1SdktvQjc5REQtUGtsUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
