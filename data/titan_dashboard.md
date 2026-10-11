@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 300 days, 15:01:49
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 300 days, 17:41:07
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.3% | `█████░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 36.2% | `█████░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [승계 구도 시금석 될 신한금융 연말 인사...60년대생 물갈이론 확산 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxOcHRjeFdKQlJhalctLWFhakFjdmpfa0EzTkdoNzNFdGl3eWgxend2aUU0TFRkaVppWnhqbnpWTlU2V1pfZC10QkVKdzRlUHZnU0M4NDIya0wySWdmTDVvUFZIQWpuLTh0Y1NnV21RaExVTVg3RzVNVXZKQU9ZWEc2cVNwbw?oc=5)
-- ["층간소음 때문에 못 살겠네"…10년간 상담 35만건 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9oLXBnVE5fS0hLY0Vqc2FxMExQWUZJYklKdWMteThNRmFNUDMzcS1ZUGxxbUpMcVVEenhMdGF1anBVY2FiTzJYcXkyTUNLLVpUYXotZ2l3RmpoZw?oc=5)
+- [반도체 부럽지 않은 '건담 파워'...미국에서도 통할까 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5oYVB6STB4Ym5wVHJWZk1JdWtQSlRNRzVveXNETU5JZXJhMW5Ya1JpTkFxVmdvVFhTeU5aeUVnRl95eVkwZGZnaWpCZ0lxUFRqLVAxWGNoS2N6dw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
