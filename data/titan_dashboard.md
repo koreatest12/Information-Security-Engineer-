@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 300 days, 17:41:07
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 300 days, 23:42:01
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.2% | `█████░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.8% | `█████░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [승계 구도 시금석 될 신한금융 연말 인사...60년대생 물갈이론 확산 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxOcHRjeFdKQlJhalctLWFhakFjdmpfa0EzTkdoNzNFdGl3eWgxend2aUU0TFRkaVppWnhqbnpWTlU2V1pfZC10QkVKdzRlUHZnU0M4NDIya0wySWdmTDVvUFZIQWpuLTh0Y1NnV21RaExVTVg3RzVNVXZKQU9ZWEc2cVNwbw?oc=5)
-- [반도체 부럽지 않은 '건담 파워'...미국에서도 통할까 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5oYVB6STB4Ym5wVHJWZk1JdWtQSlRNRzVveXNETU5JZXJhMW5Ya1JpTkFxVmdvVFhTeU5aeUVnRl95eVkwZGZnaWpCZ0lxUFRqLVAxWGNoS2N6dw?oc=5)
+- [[집코노미2026 다시보기 영상] "정부, 공급 확대에 최우선…집값 잡을 것" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1YRldOeW1hVTFMaE1JeUoyZzA0dnI3RFE3UDlyYXFfSUs0OVpod0NsOWM3a3pVTnpvX19WeV9QUEZ2bnJkLXY4RDFYOEJwOC1FVUhRTmlhbXg3UQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
