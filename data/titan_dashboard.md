@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 302 days, 1:47:41
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 302 days, 11:30:26
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.7% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 20.4% | `███░░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [4대 은행서도 연 4% 정기예금 등장 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE01N0VzWVhKTXNLWnNNUEpReVlmNEFIbWNjLVp5dHlYcU4zSGhLay1MREY2RkRqQ3F6M1FDOGNTWFF6b1dJV0NHek9Ealo3bndtdnJ2ZFU1QzRXZw?oc=5)
-- ["반도체만 믿다가 2030년 역성장"…경제학계의 충격 진단 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBCYW1CYm9UZjN0N3JNOWJlMlRTVWxXaURVS20zSkRUSnU1VVgyRDROZ21STm9OWGtwM0FhdGsteEotYi04N0hGcUd0MUZLYVZVTWduRHVGYzdWQQ?oc=5)
+- [[금융지주 임원 인사 전망] [신한금융] 임기 2년여 남긴 진옥동…차기 체제까지 걸린 인사에 '긴장' - Naver Blog](https://news.google.com/rss/articles/CBMijwFBVV95cUxOaW5pZkYySWZWeWRVcWhTWHBMQnh2TGwzTzFxeTdqRmZ1TGZEd2tlQnRMdXlaLURXbVBYLXlULTZyckZwamFBbnZyOWRBSTBZakdUQVV3ZnhXdk83UVM1QlpQM2FLRkZ4Nm5NeVFpVFo1YmRmaVl5cW5lYVRKbVlybTV5RHRySm5OSVV5MEpDNA?oc=5)
+- [최태원 "사회공헌 성과, AI 통해 가치 측정해야" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBaYXoxTXc4dzJaOHNGdjhOcDdOcjJ3UFlWci1BRHY4Zm9waVl6SVFpLVhGWWktNGtJaEV2TmdqRGs0bVBjZ25YdjNJUll5aEpSMDBvVy1MMWZhQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
