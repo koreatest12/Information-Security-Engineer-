@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 304 days, 11:49:16
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 304 days, 15:04:23
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.7% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.9% | `████░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[단독] 신한금융, 롯데손보 인수…리딩금융 '마지막 퍼즐' 완성 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9vYUZXVUU3bFFMdVZqRDdYYk9SbzM1ZVRwdEc2MHFCS0w5bEJmS0dqcEM4czhSaTFaZGN2cGdVQW12MndrZXltN3FaWUVsQlBidHhMblNaY1hBZw?oc=5)
-- [[속보] 코스피, 하락 전환해 장중 6000선 밑으로 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE4teEVPNDE5aTlpaFoySTBKcUxQSW91Mld3YXB3VzAyM2lrVXRfanotX0lHNEtValpTWDRTUzhPYmt3NF9wbTRhMHl6NUJzUnVNbGxnaWRUWU9mdw?oc=5)
+- [신한지주 품에 안긴 롯데손보, 상장폐지 가나…잔여지분 시나리오 '주목' - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1KWTJpYnBXUDR3TnNRMGJXQmdrWGlsblJkN2pqVUdQdG04NTd5R09nbnh1TFpDX0d1X2xzZG5FSnUxRDRGYjBIeUpkZWVGMm8yQUV1Y09yalZiSXBMRHZ2VjI1aVdhRkFfbk42LVR0MTI?oc=5)
+- ["집값 떨어진다?"…부동산 판 뒤집은 4가지 변화 [심형석의 부동산정석] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1sdGE2bEU2ZU8xaklCNUtIdGNhc2haTjJVR2hjRk12TFZabndEeTk2THNDaHNGMlZsWTZ3bHgxUlhqS3RKTzMybENJSm9NYzJoQkxJbEtkVFExZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
