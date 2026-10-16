@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 306 days, 6:45:42
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 306 days, 10:33:17
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 21.0% | `███░░░░░░░░░░░░` |
-| **RAM** | `39.9/512 GB` | 7.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 롯데손해보험 7000억원에 인수 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE93RnBpNEh1MWQ1ZDJvRGVnOEUtQU9fSW1VSkpHdUJwVEtOdXRYaTZUQTk1cTVvdzFXRTJQcFBQTy1YNXhUdG5pd0FmZkFWbldoaXNhaA?oc=5)
-- [현대엘리베이터, 무벡스 지분 1160억 매각·자사주 1700억 소각…"주주가치 제고" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5fS0lpNERxb1d4MGg4LU9wek5oX0JmY0laWlNjM1V6R3BVNmNIVlJMR21qeWl4dWg1RGpjNV81cmxIa1doMC1oMEpMemo4R1hzZEEtTHJTYnQ3dw?oc=5)
+- [롯데손보 인수는 했지만… 신한금융, 자본 확충·수익성 과제 - 아시아투데이](https://news.google.com/rss/articles/CBMibkFVX3lxTE5la1IxT0FJRlpWbFpjUFZYMnVnUnIyVlk5cVFjYk9FMmlMc1FxR3lMWWpDSDh0em1ZTHVMMzY3aENwZmhEdFA1Z3IyZ0RIa2hXMGpsZk5SUDNhQjVscl9aQkktQkRyeHdRZHI2YW1B?oc=5)
+- [[단독] "돈 넣어둔 사람 많은데"…'368곳' 경고등 켜졌다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1CeXh3MXBiUzFPVE15NlVUWlktakw1Q193aTI5LWI5bXJRdDQtREtfXzRtdkhmSHc2YTFvTzhJcmx4ZGlFRm5EbjhtV3NfSnA2WlNwSUd4SUYtQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
