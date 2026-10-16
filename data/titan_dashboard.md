@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 306 days, 10:33:17
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 306 days, 13:43:58
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.3% | `████░░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.7% | `████░░░░░░░░░░░` |
+| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [롯데손보 인수는 했지만… 신한금융, 자본 확충·수익성 과제 - 아시아투데이](https://news.google.com/rss/articles/CBMibkFVX3lxTE5la1IxT0FJRlpWbFpjUFZYMnVnUnIyVlk5cVFjYk9FMmlMc1FxR3lMWWpDSDh0em1ZTHVMMzY3aENwZmhEdFA1Z3IyZ0RIa2hXMGpsZk5SUDNhQjVscl9aQkktQkRyeHdRZHI2YW1B?oc=5)
-- [[단독] "돈 넣어둔 사람 많은데"…'368곳' 경고등 켜졌다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1CeXh3MXBiUzFPVE15NlVUWlktakw1Q193aTI5LWI5bXJRdDQtREtfXzRtdkhmSHc2YTFvTzhJcmx4ZGlFRm5EbjhtV3NfSnA2WlNwSUd4SUYtQQ?oc=5)
+- [신한금융, 롯데손보 인수에 '5천억+α' 더 든다…"최소 1.2조 예상" - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE55YlJCYjlYdHlxb3JNb1JQTnRXLWtsMTNlRnJaRXY2aHdpU2ZfNVJwZlc1ZmRIQ3k4ZHk1OVpQc2JGLTQwYjRaa09vc0NWS203aFBveF9CUkJjQXZHMFRKcWFnb2k3NXo4c2ktcWJ1U0Q?oc=5)
+- [한미 재무·통화당국 첫 '2+2' 회동…"금융충격 땐 신속 공조" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE8zZFBydHc3OFVIWkY5NE1jTXQwRy1VYU84cGxuYVRWejl3dzJldjliYTBqemVFTzJHWnhHQkdPUEpTSFNyLW51UDh5WWxqeXRWbE1KTG1hcnV4dw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
