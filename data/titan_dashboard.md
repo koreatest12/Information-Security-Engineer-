@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 305 days, 21:30:59
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 306 days, 2:16:00
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 18.5% | `██░░░░░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 27.1% | `████░░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[단독] 신한, '리딩 금융그룹 마지막 퍼즐' 롯데손보 품는다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBNdHlRYUVoaFQzRVhDM1I3X1VhRGk4NDY5V3g3VnFpNC1zZ0Mzb0hVeFFfU2dPbTlla280ZE9EeVF3enA5Zm5vYWhGdWswWkFRU3Yzc1RHM2lPdw?oc=5)
-- [[속보] 코스닥 장중 4.9% 급등에 '매수 사이드카' 발동 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBPM1ZtVEFQa1otRHBySjBZVUE3RFhicXpOZXJaWElyMlh4NEd5bWpGRnZKbmkyNDJQZFRXRjhjR0pWN3ZJbHpZV0o4NG9mVDh2TEFWd0RoLTliUQ?oc=5)
+- [신한금융, 롯데손해보험 7000억원에 인수 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE93RnBpNEh1MWQ1ZDJvRGVnOEUtQU9fSW1VSkpHdUJwVEtOdXRYaTZUQTk1cTVvdzFXRTJQcFBQTy1YNXhUdG5pd0FmZkFWbldoaXNhaA?oc=5)
+- [코스피 PER 26년來 최저…이렇게 싼데 선뜻 안산다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9OdF9EdXlLR1IxdUZ0cklXWGRtTmFsaXZ6QjFIQVV5cE9JNFJ2ZGlVT2wwamN3SzBqcjZBXzNycmpuOTJoYmdzb0RJTzJPZzhWb3lQWlQ1ZGR3dw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
