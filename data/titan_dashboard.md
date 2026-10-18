@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 307 days, 15:53:19
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 307 days, 18:06:33
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.7% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.5% | `████░░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[금융지주 임원 인사 전망] [신한금융] '부회장 없는 신한' 바뀌나…진옥동 2기 조직개편 '촉각' : 네이버 블로그 - Naver Blog](https://news.google.com/rss/articles/CBMijwFBVV95cUxPWmpQQV8xNk45NGZFOUJVVWY0YWtsYXFoOXNhekxYLXZjQjI4Z1BDRkhYM0ItemhremNpTHBiSUFJQVVJd2xvNzlrWmJmQWYwWXRMaGFsVVZhQnZscXk2V2l0UDZkclVkcTM0UWlsSFhfNTZWcGpRVHpxcnRmZFl0V3VZYW5GcHlXUzdOTUwxSQ?oc=5)
-- [코스피, 급락 후 반등 이어갈까…美 빅테크 실적에 쏠리는 눈 [주간전망] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE05ajFpRkJYSzRyTWRXTHlwX1A0VU1wWW1ybjJjdmtpY3BDUjFWeWZ2cUY2Y29PcWFpMy1VRm1pUUQ4bllQdGJSX01yc2xBaTZ6aVMyNU9hSENnUQ?oc=5)
+- [신한은행, 중저신용자 민간 중금리대출 금리 0.3%p 추가 인하 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE9aN0V6NEFKTDQ2d1pBTVF5bFZiY2N1bmYxd0N1MVByVkV0b0swZkxmZk9OLWdwR2Y5el9tYy02OXdYMmlHZE5DX2tZLUVUQQ?oc=5)
+- [전세금도 안 올렸는데…'너무한 거 아냐?' 집주인들 '멘붕' [김용우의 각개전투] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9yTHZ3Wm5sZ2pGNkROSGxOTER1dVQxQUxpRGV0LVZhak1sdDljSWVUZ1BwMmpNcVl2NHpKR200dkFKOWNnaHJfdEtEOUwzbWxoeVBfWm43bW5NQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
