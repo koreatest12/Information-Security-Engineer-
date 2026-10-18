@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 307 days, 23:01:28
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 308 days, 4:08:14
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.9% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.9% | `████░░░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행, 중저신용자 민간 중금리대출 금리 0.3%p 추가 인하 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE9aN0V6NEFKTDQ2d1pBTVF5bFZiY2N1bmYxd0N1MVByVkV0b0swZkxmZk9OLWdwR2Y5el9tYy02OXdYMmlHZE5DX2tZLUVUQQ?oc=5)
+- [신한지주 품에 안긴 롯데손보, 상장폐지 가나…잔여지분 시나리오 '주목' - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1KWTJpYnBXUDR3TnNRMGJXQmdrWGlsblJkN2pqVUdQdG04NTd5R09nbnh1TFpDX0d1X2xzZG5FSnUxRDRGYjBIeUpkZWVGMm8yQUV1Y09yalZiSXBMRHZ2VjI1aVdhRkFfbk42LVR0MTI?oc=5)
 - [“살림은 엉망인데, 한국 경제 체력 살아난다?”…잠재성장률 40년만에 반전 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE9Kdzk5a1o1TkpHUzY3aDk5WXpsMjJTN3pYR0o5Xzd0OXVuVFFOaEd2NXlXdWRBTWVqbFhTdkJzazA2NV9IdmV0c3F0NHFmc2dmNTVpMw?oc=5)
 
 ---
