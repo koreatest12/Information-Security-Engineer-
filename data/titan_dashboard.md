@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 308 days, 14:17:20
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 308 days, 16:12:36
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 23.8% | `███░░░░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 35.5% | `█████░░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한지주 품에 안긴 롯데손보, 상장폐지 가나…잔여지분 시나리오 '주목' - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1KWTJpYnBXUDR3TnNRMGJXQmdrWGlsblJkN2pqVUdQdG04NTd5R09nbnh1TFpDX0d1X2xzZG5FSnUxRDRGYjBIeUpkZWVGMm8yQUV1Y09yalZiSXBMRHZ2VjI1aVdhRkFfbk42LVR0MTI?oc=5)
-- ["비밀번호 당장 바꾸세요"…할리스도 고객 정보 유출 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE45UFJZMTNTWjNHWWRNeXZJZEpkYWY0dDJDN1hJNTZXT0wyMDJBQU4ycHM3bnlZRklWZjBTdENjYnh1QzAyaTFNaktaM0lIeE0wY1VwM29jOUdOUQ?oc=5)
+- [[글로컬] '성장률 반등' 한국 경제, 대만 닮아간다는데 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFBkeFFCUHZsaHAyODJDay0xTmZWWGhEMVQ1STFqMVo1c2RhRjd6c1NrTmNFUXNjVlI2Rm1xQWpibFZScmN3ZzBFVl8yTk5kbHpxWnk0YjF6YWw4ZEnSAWBBVV95cUxPXzFTS1RaVjBvUk52b0RIM2t4aE1wSjZqaWdUQU1YbDlKY3J0ZVdaaFFhTm52bFJXd0RRM1A2QW12ZDVIc3VKRmpZOTJBaVlZN0FST2hjdEJvNy1yMmRnVUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
