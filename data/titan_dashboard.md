@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 308 days, 18:24:32
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 309 days, 0:14:58
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,11 +15,11 @@
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
 | **CPU** | `128 vCores` | 31.7% | `████░░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한투자증권, 신한 슈퍼 SOL 연 4.0% 특판 RP 출시 - 뉴스1](https://news.google.com/rss/articles/CBMiX0FVX3lxTE1kQ2FCWW44bmhrQS1ZQm9lQjh3bjV4cWtPNFpEOTdaeFhRdGoxTnpMbzRqN2x4OUxPemN5eEp0RUlrTU9YaEpzVkttTk90OXkzaTdNYXRsSDRDd2dva1JB?oc=5)
-- ["AI 집중된 한국경제, 취약성도 점점 커져" - 조선일보](https://news.google.com/rss/articles/CBMijgFBVV95cUxPcF9VY21uYjB2eE12Sl9sWWpDay1aSXJtZ01wd2g5OExfZmVtaU4yWWVTblRTbVktMVZfVGItd3dyY1h6QklVN0JJNUxudkVaVzBwYkpfal8xTDZISExCNkotckVwZ1hmYzhYb1l1VU0zQ2FOMllhMnJDUl9wWEJUVHJlYW9vSERIUllrLWZ3?oc=5)
+- ["해킹은 못 막고" 신한은행장 '성과급 53억' 도마 위...국감 소환 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFBZRktrRmo1Tmx0MWMzVEZyU0hHTjNPZ0drNWVhQVk1WGFKbzBLTE1sYTFtX1pRRVhzZkhhenQ5UmIyNUhXZWFCYzNfN0t2Q0VYTVIzdmdpMFlmQUNVUHd4VXkzUW8zVEJWUndV0gFwQVVfeXFMT1ZkYS1HcC1LVWxfSll0MEhROVpFSDdKd2E3dFNyS05sZnlSdzZ5eVluTDcyTWhkaFgwVVRpcGRlUHZpWG5aTEVzXzA5Y05Lbm9Xamg3MEU3SVVlQWpCSE5hellteU1HQ2h0SXg3SjNWUQ?oc=5)
+- [HD현대, 캘리포니아에 무인수상함 띄웠다…美 안두릴과 공동 개발 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5uR0k2ZW9vWGNKZmZ5NUpkZVdHVndoVWF5a0dmdEZFTVNuUE5VTEx6WURRemg2OUNYc0JyZEpzRElYTjhidnhsd0VfWWFLY1VMZkUtdDZQMWlzZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
