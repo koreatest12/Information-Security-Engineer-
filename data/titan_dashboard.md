@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 309 days, 0:14:58
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 309 days, 7:26:25
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.7% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 28.2% | `████░░░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - ["해킹은 못 막고" 신한은행장 '성과급 53억' 도마 위...국감 소환 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFBZRktrRmo1Tmx0MWMzVEZyU0hHTjNPZ0drNWVhQVk1WGFKbzBLTE1sYTFtX1pRRVhzZkhhenQ5UmIyNUhXZWFCYzNfN0t2Q0VYTVIzdmdpMFlmQUNVUHd4VXkzUW8zVEJWUndV0gFwQVVfeXFMT1ZkYS1HcC1LVWxfSll0MEhROVpFSDdKd2E3dFNyS05sZnlSdzZ5eVluTDcyTWhkaFgwVVRpcGRlUHZpWG5aTEVzXzA5Y05Lbm9Xamg3MEU3SVVlQWpCSE5hellteU1HQ2h0SXg3SjNWUQ?oc=5)
-- [HD현대, 캘리포니아에 무인수상함 띄웠다…美 안두릴과 공동 개발 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5uR0k2ZW9vWGNKZmZ5NUpkZVdHVndoVWF5a0dmdEZFTVNuUE5VTEx6WURRemg2OUNYc0JyZEpzRElYTjhidnhsd0VfWWFLY1VMZkUtdDZQMWlzZw?oc=5)
+- [[속보] 코스피, 1.8% 오른 5768 마감…코스닥도 1.8% 올라 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5UMzIxV0RkRXBqbENBb2ZBVnNfb2xzWVd4ZkZrektmZ0RfM1pHd0Z4cjRFbi1jZW1qLWpwREZlQkdVU0pFMGRqcy1UeFpUbEh6T3dGOFl2SDR6QQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
