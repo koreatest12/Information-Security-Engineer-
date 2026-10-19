@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 308 days, 16:12:36
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 308 days, 18:24:32
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.5% | `█████░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.7% | `████░░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한지주 품에 안긴 롯데손보, 상장폐지 가나…잔여지분 시나리오 '주목' - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1KWTJpYnBXUDR3TnNRMGJXQmdrWGlsblJkN2pqVUdQdG04NTd5R09nbnh1TFpDX0d1X2xzZG5FSnUxRDRGYjBIeUpkZWVGMm8yQUV1Y09yalZiSXBMRHZ2VjI1aVdhRkFfbk42LVR0MTI?oc=5)
-- [[글로컬] '성장률 반등' 한국 경제, 대만 닮아간다는데 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFBkeFFCUHZsaHAyODJDay0xTmZWWGhEMVQ1STFqMVo1c2RhRjd6c1NrTmNFUXNjVlI2Rm1xQWpibFZScmN3ZzBFVl8yTk5kbHpxWnk0YjF6YWw4ZEnSAWBBVV95cUxPXzFTS1RaVjBvUk52b0RIM2t4aE1wSjZqaWdUQU1YbDlKY3J0ZVdaaFFhTm52bFJXd0RRM1A2QW12ZDVIc3VKRmpZOTJBaVlZN0FST2hjdEJvNy1yMmRnVUQ?oc=5)
+- [신한투자증권, 신한 슈퍼 SOL 연 4.0% 특판 RP 출시 - 뉴스1](https://news.google.com/rss/articles/CBMiX0FVX3lxTE1kQ2FCWW44bmhrQS1ZQm9lQjh3bjV4cWtPNFpEOTdaeFhRdGoxTnpMbzRqN2x4OUxPemN5eEp0RUlrTU9YaEpzVkttTk90OXkzaTdNYXRsSDRDd2dva1JB?oc=5)
+- ["AI 집중된 한국경제, 취약성도 점점 커져" - 조선일보](https://news.google.com/rss/articles/CBMijgFBVV95cUxPcF9VY21uYjB2eE12Sl9sWWpDay1aSXJtZ01wd2g5OExfZmVtaU4yWWVTblRTbVktMVZfVGItd3dyY1h6QklVN0JJNUxudkVaVzBwYkpfal8xTDZISExCNkotckVwZ1hmYzhYb1l1VU0zQ2FOMllhMnJDUl9wWEJUVHJlYW9vSERIUllrLWZ3?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
