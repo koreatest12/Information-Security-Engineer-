@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 309 days, 16:17:33
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 309 days, 20:01:21
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.2% | `█████░░░░░░░░░░` |
-| **RAM** | `40.4/512 GB` | 7.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 33.9% | `█████░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [금융사고 반복에도 성과급 10억…신한은행장 보수체계 질타 By EBN - Investing.com 한국어](https://news.google.com/rss/articles/CBMicEFVX3lxTE5FbldwMy16dTJLRGk5Nk1xZ0NDNlhxbGxial9iajdYc2pBdEpHS01NZGw4dGFPMmktQTRHQ1gxcnNIUVRwVjVGeEZja1JaeGNZc0ZsbEk0ZGlnbUdiMmlHQVVxWC1WelV4VE5NUFp3Yy0?oc=5)
-- [JB금융, ‘AI 유니콘’ 업스테이지에 400억 투자 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBKSktXMUNrTGdMRks2RHM4SDFReG1vX21QUFl0U3NLV3cxemNLOVNwYk9nMTMzNFdBVjJrbXYtaWFZZFA4RDlGOVVnZW9VMHVmUlZvLXMzcjZHQQ?oc=5)
+- [신한금융, 롯데손보 관리 가능? 돈도 사람도 시간도 없다 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxOQ2psN1F3V3Z4MEptR1I4b1dOeWlyZ0VrRmNXZUZPOXFralQwWGFTZExJaW9rMmNibXhjMUFrelhFUTlzbmZxdW92ZmQ3eXQ2ZDFjdWhCT1U3aE1Ic0libmFMS3I1bV9RXzgydFQwRGVOZFRPQ3BJLUs5dmlFczkyUG1sNA?oc=5)
+- [김수현, 가세연 채널 폐쇄 요청…유튜브에 수사·기소 자료 냈다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBIenFUNlB1bXVFOHNOemZ3YXk2bzBRXzVTSlNTM0kwUi1DLW9FYUVvUktkQXpXRXE3UmRnWHFQREs4bURRTkZWZ3o3UkcwcjVIN3I4ZUJBUlBoZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
