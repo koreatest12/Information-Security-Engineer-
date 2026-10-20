@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 309 days, 12:57:13
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 309 days, 16:17:33
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.9% | `█████░░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 36.2% | `█████░░░░░░░░░░` |
+| **RAM** | `40.4/512 GB` | 7.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- ["해킹은 못 막고" 신한은행장 '성과급 53억' 도마 위...국감 소환 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTFBZRktrRmo1Tmx0MWMzVEZyU0hHTjNPZ0drNWVhQVk1WGFKbzBLTE1sYTFtX1pRRVhzZkhhenQ5UmIyNUhXZWFCYzNfN0t2Q0VYTVIzdmdpMFlmQUNVUHd4VXkzUW8zVEJWUndV0gFwQVVfeXFMT1ZkYS1HcC1LVWxfSll0MEhROVpFSDdKd2E3dFNyS05sZnlSdzZ5eVluTDcyTWhkaFgwVVRpcGRlUHZpWG5aTEVzXzA5Y05Lbm9Xamg3MEU3SVVlQWpCSE5hellteU1HQ2h0SXg3SjNWUQ?oc=5)
-- [[속보] 코스피, 1.8% 오른 5768 마감…코스닥도 1.8% 올라 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5UMzIxV0RkRXBqbENBb2ZBVnNfb2xzWVd4ZkZrektmZ0RfM1pHd0Z4cjRFbi1jZW1qLWpwREZlQkdVU0pFMGRqcy1UeFpUbEh6T3dGOFl2SDR6QQ?oc=5)
+- [금융사고 반복에도 성과급 10억…신한은행장 보수체계 질타 By EBN - Investing.com 한국어](https://news.google.com/rss/articles/CBMicEFVX3lxTE5FbldwMy16dTJLRGk5Nk1xZ0NDNlhxbGxial9iajdYc2pBdEpHS01NZGw4dGFPMmktQTRHQ1gxcnNIUVRwVjVGeEZja1JaeGNZc0ZsbEk0ZGlnbUdiMmlHQVVxWC1WelV4VE5NUFp3Yy0?oc=5)
+- [JB금융, ‘AI 유니콘’ 업스테이지에 400억 투자 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBKSktXMUNrTGdMRks2RHM4SDFReG1vX21QUFl0U3NLV3cxemNLOVNwYk9nMTMzNFdBVjJrbXYtaWFZZFA4RDlGOVVnZW9VMHVmUlZvLXMzcjZHQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
