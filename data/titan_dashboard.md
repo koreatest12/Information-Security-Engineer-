@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 311 days, 2:39:37
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 311 days, 7:44:28
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.0% | `█████░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.2% | `██████░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [금감원, 신한銀 해킹 현장검사 종료···보안사고 첫 CEO 문책 시험대 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1PanhPUzc3UVpxRHFMVTVWZ2JUVDF4eEFoQTdvcjhsV25IZG8tOWJENEZaVm5halJjSjNrRWI4em03S2gyYXRyR2RaSFJXMHZ5eUxCWFdaeUdDZw?oc=5)
-- [[속보] 北 "국경선, 굳건한 요새로…적 도발시 즉시 반격" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFB6cFMxaWZBQnRDTzh0RU55dnQ4N1dDQ3lSMmtTVEs2dHBJN2pJNEhxU2hJa1RnRWV5b0tJMHI5elk0ekhmcHdqUi0yRU5tTUFYXzJvY3FzLVRFdw?oc=5)
+- [금융자산 1억~10억 자산가, 예금 빼서 주식 투자 2배 이상 늘렸다 - 조선일보](https://news.google.com/rss/articles/CBMijgFBVV95cUxOZTVvcjA4RWx1S2JFMEV2TTZaRzdRdnpfczJCZGhpZXNVTHZUd3ZYTWEtQi1UdFl1alNUcGN1cnFqeXBqazJLbW5EanYybllFa1NSb3ZZWmxOV1JWTlg3Y3RpcWxEZDg4X1Brd3BkRzVjMDhjUFhlWFk0aHFBZFNJVk82b291XzRnUGIzTktn?oc=5)
+- [SK하이닉스, 40조 자사주 매입 한 달 앞당겨 끝냈다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5NNW4tUE1meklCLUstUmJNOHFKdWJycFJlMUNkc1F4bDc1SnpIYzdnZ0lUeGRPeG5rNVA3emZKclo1SE9jeHdtWkcxbXFpR014LVFoUFhtYUVuZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
