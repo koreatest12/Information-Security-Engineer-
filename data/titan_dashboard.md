@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 310 days, 21:21:00
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 311 days, 2:39:37
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.7% | `█████░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.0% | `█████░░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- ['파랑새 스타' 최찬, 신한금융그룹 후원 받는다 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE54QnR2dUplbXJuRHBXLWFWQXItWFlXQ1ZzZkQzUWYxTkdYOFBuQjE0cUJxSGMwNk1ka3dYRW9rR0RiZE9vTmRGdDBtblNSSVpSVWxIZThKUGdwcEpVYlRxVQ?oc=5)
-- [외신도 주목한 엘리스그룹, 상장 둘째 날 상한가 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5UNXlXNVpNMzdRZTZkOEYtWTBWRW5lTF9YcVYwZzhvdUtaQWh6ZDBxVUdORlRSdDY3U3JlYWhJMEdsT1oxeGM0NFhCd0NUMWg1aTljUWJ3ZV8wdw?oc=5)
+- [금감원, 신한銀 해킹 현장검사 종료···보안사고 첫 CEO 문책 시험대 - 브릿지경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1PanhPUzc3UVpxRHFMVTVWZ2JUVDF4eEFoQTdvcjhsV25IZG8tOWJENEZaVm5halJjSjNrRWI4em03S2gyYXRyR2RaSFJXMHZ5eUxCWFdaeUdDZw?oc=5)
+- [[속보] 北 "국경선, 굳건한 요새로…적 도발시 즉시 반격" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFB6cFMxaWZBQnRDTzh0RU55dnQ4N1dDQ3lSMmtTVEs2dHBJN2pJNEhxU2hJa1RnRWV5b0tJMHI5elk0ekhmcHdqUi0yRU5tTUFYXzJvY3FzLVRFdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
