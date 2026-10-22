@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 311 days, 17:21:23
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 311 days, 22:30:48
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 42.5% | `██████░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 48.7% | `███████░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 롯데손보 관리 가능? 돈도 사람도 시간도 없다 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxOQ2psN1F3V3Z4MEptR1I4b1dOeWlyZ0VrRmNXZUZPOXFralQwWGFTZExJaW9rMmNibXhjMUFrelhFUTlzbmZxdW92ZmQ3eXQ2ZDFjdWhCT1U3aE1Ic0libmFMS3I1bV9RXzgydFQwRGVOZFRPQ3BJLUs5dmlFczkyUG1sNA?oc=5)
-- [외국인, 삼전닉스 1조 순매수에…코스피 반등 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9JV1JEbU1aYTNkOXIySVhYRXVyZzZhb1pELVlSNEJVakN3MXV0ZDZ4YkJCUGpENEtvMWlkanp5dFliTGJCMEhKM0pVOFZRZDMtaGtBQ1N2YUNyZw?oc=5)
+- [PHP서 치명적 보안 결함 발견…인증 없이 시스템 장악 가능성 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFB1b3FfalN6RmFUZlc3S3lMQ0o5bXBBTW9JLWlvNUN4by1UUlU0MXAxZFR3SEUzNmczZUVLdFVXNXBOMzE5OEVXVkVNWFAtQjlNVk1rLWhoSVdUdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
