@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 313 days, 5:13:26
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 313 days, 9:50:41
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 40.1% | `██████░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 31.8% | `████░░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[기자수첩] 다시 M&A 승부수 신한금융···이번에도 성공할까 - 시사저널e](https://news.google.com/rss/articles/CBMidkFVX3lxTFBEOFVFbHRHa1lUNm11aGctLThVNWc1b3RwTkpFQWhoQ09kQzRCVW1EMVZnNDZneS0zZlJCMF9mOEM0b3JjUWVOZTg2YjRZUzlFUmhuWU1wQzJpQVBhR3lWdkJWb3FXRGJyNkJMd1pwNjJDcVFCTWfSAXZBVV95cUxQRDhVRWx0R2tZVDZtdWhnLS04VTVnNW90cE5KRUFoaENPZEM0QlVtRDFWZzQ2Z3ktM2ZSQjBfZjhDNG9yY1FlTmU4NmI0WVM5RVJobllNcEMyaUFQYUd5VnZCVm9xV0RicjZCTHdacDYyQ3FRQk1n?oc=5)
-- [이중근 "유엔의 날, 국경일 재지정" 촉구 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5zY2h5ZTlRX3pTME5FMzdaS0YxM1VtU2JKQmNrTDk1dWItb1FPOXBoREdBWDFtZjEyWnlyekowZElGWVJiMTA5MDBkXzdVWnNzNVdQd2lWRUNWdw?oc=5)
+- [“희망퇴직에 150명 또 손들었다”…신한카드 인력 구조조정 속도 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBuMUdmQnIweFdZb0padDkyd29DM2t2LUdCQmR0cjh2TjRjZzkwUUluTTVKUnB3OUNFV1RpWm5lcWtmS1dQT2RlcTgtNF9sUlFOWklRbA?oc=5)
+- [[속보] 대한항공 고객 정보 유출…"협력사 해킹 피해" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5TX0p4clVtX25iMkJZV1Z2UElKbTVPS0s2SXdpMDMxNDAyNWpKYlg4NGszQXdHdFRRVjR3Q0dQU28zaDQ4YUlyZTJUTTZkOW9IdnBLNm8zeHhlZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
