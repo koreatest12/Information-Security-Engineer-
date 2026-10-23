@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 313 days, 9:50:41
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 313 days, 13:02:34
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 31.8% | `████░░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 40.7% | `██████░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [“희망퇴직에 150명 또 손들었다”…신한카드 인력 구조조정 속도 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBuMUdmQnIweFdZb0padDkyd29DM2t2LUdCQmR0cjh2TjRjZzkwUUluTTVKUnB3OUNFV1RpWm5lcWtmS1dQT2RlcTgtNF9sUlFOWklRbA?oc=5)
-- [[속보] 대한항공 고객 정보 유출…"협력사 해킹 피해" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5TX0p4clVtX25iMkJZV1Z2UElKbTVPS0s2SXdpMDMxNDAyNWpKYlg4NGszQXdHdFRRVjR3Q0dQU28zaDQ4YUlyZTJUTTZkOW9IdnBLNm8zeHhlZw?oc=5)
+- [美 금리 결정에 구글·아마존·삼전닉스 실적까지...코스피 운명가를 슈퍼위크[다음주 변수 미리보기] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1iV0cxOEYyZGZMc2lmZU5DOUJqQ3FDajBoZWw3d0I1UWhTTzVMOTFoSFZTaDRkbEc2UkJTTEp4VThxaFhpU1U1dnVUNVU5UkVVS1hZWU1CR3FKdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
