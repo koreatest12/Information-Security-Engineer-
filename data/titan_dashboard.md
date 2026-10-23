@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 313 days, 13:02:34
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 313 days, 15:55:17
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 40.7% | `██████░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.1% | `██████░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [“희망퇴직에 150명 또 손들었다”…신한카드 인력 구조조정 속도 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBuMUdmQnIweFdZb0padDkyd29DM2t2LUdCQmR0cjh2TjRjZzkwUUluTTVKUnB3OUNFV1RpWm5lcWtmS1dQT2RlcTgtNF9sUlFOWklRbA?oc=5)
-- [美 금리 결정에 구글·아마존·삼전닉스 실적까지...코스피 운명가를 슈퍼위크[다음주 변수 미리보기] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1iV0cxOEYyZGZMc2lmZU5DOUJqQ3FDajBoZWw3d0I1UWhTTzVMOTFoSFZTaDRkbEc2UkJTTEp4VThxaFhpU1U1dnVUNVU5UkVVS1hZWU1CR3FKdw?oc=5)
+- [[KPGA] '파랑새 스타' 최찬 , 신한금융과 후원 계약 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTFBQUDA5VDhDMXJsOVg5ZExoT1dVUTh6OEc2YnFlQ1M0Z0EzOFY3U1NtUGRLRjV0TWtBMHVnOWVVVU1zNi1GMFdzdVlSWDZXY0V5bUxnNE5idWU0bkJP?oc=5)
+- ["결국 엔비디아가 돈 댄다"…중간 선거 끝나면 또 전쟁?[월가 백브리핑] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9uQWlESjBNdTJ1V2hVMGpZU0pwUklMTXRDUURROFRqVm5qdjFUZ2dxTHFJcUhHRVFlWFliektrZURwaHJ2dUI2NUtjNE81STNsYTlmbllSM0x1Zw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
