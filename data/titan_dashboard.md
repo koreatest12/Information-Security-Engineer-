@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 313 days, 0:03:22
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 313 days, 5:13:26
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.7% | `█████░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 40.1% | `██████░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[보험직썰] 신한서 살아남고픈 롯데손보, 지주사 언어로 보고하라 - www.ebn.co.kr](https://news.google.com/rss/articles/CBMiaEFVX3lxTFBuaEtoNFpKRWNGT0ZpeVVvQkloWkJKdjhBQlY5OUVyMG94dDdPQVVNSUlHUGtwVFJQYkxvcWN3bmtCcXF3TzhWMlNJbGVpV3NkQml3V0UtQkhOeVpKSFh4N2M3SHZWSjRW?oc=5)
-- [[단독] 솔리다임 美상장 전격 철회…SK하이닉스, 주주의견 수용 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9naHJFY1J4UTRwenN1Yi1SYjRJeGdjVktaQTJ5VWM2eHo4N3dMbURfckswbmR4SlJ5WGlfNUk4NVJTS2RGaGhFWFZhQ1l3UU5MOGYwejgzMjJBQQ?oc=5)
+- [[기자수첩] 다시 M&A 승부수 신한금융···이번에도 성공할까 - 시사저널e](https://news.google.com/rss/articles/CBMidkFVX3lxTFBEOFVFbHRHa1lUNm11aGctLThVNWc1b3RwTkpFQWhoQ09kQzRCVW1EMVZnNDZneS0zZlJCMF9mOEM0b3JjUWVOZTg2YjRZUzlFUmhuWU1wQzJpQVBhR3lWdkJWb3FXRGJyNkJMd1pwNjJDcVFCTWfSAXZBVV95cUxQRDhVRWx0R2tZVDZtdWhnLS04VTVnNW90cE5KRUFoaENPZEM0QlVtRDFWZzQ2Z3ktM2ZSQjBfZjhDNG9yY1FlTmU4NmI0WVM5RVJobllNcEMyaUFQYUd5VnZCVm9xV0RicjZCTHdacDYyQ3FRQk1n?oc=5)
+- [이중근 "유엔의 날, 국경일 재지정" 촉구 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5zY2h5ZTlRX3pTME5FMzdaS0YxM1VtU2JKQmNrTDk1dWItb1FPOXBoREdBWDFtZjEyWnlyekowZElGWVJiMTA5MDBkXzdVWnNzNVdQd2lWRUNWdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
