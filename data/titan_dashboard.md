@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 312 days, 18:33:49
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 313 days, 0:03:22
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.9% | `██████░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 37.7% | `█████░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 롯데손보 관리 가능? 돈도 사람도 시간도 없다 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxOQ2psN1F3V3Z4MEptR1I4b1dOeWlyZ0VrRmNXZUZPOXFralQwWGFTZExJaW9rMmNibXhjMUFrelhFUTlzbmZxdW92ZmQ3eXQ2ZDFjdWhCT1U3aE1Ic0libmFMS3I1bV9RXzgydFQwRGVOZFRPQ3BJLUs5dmlFczkyUG1sNA?oc=5)
+- [[보험직썰] 신한서 살아남고픈 롯데손보, 지주사 언어로 보고하라 - www.ebn.co.kr](https://news.google.com/rss/articles/CBMiaEFVX3lxTFBuaEtoNFpKRWNGT0ZpeVVvQkloWkJKdjhBQlY5OUVyMG94dDdPQVVNSUlHUGtwVFJQYkxvcWN3bmtCcXF3TzhWMlNJbGVpV3NkQml3V0UtQkhOeVpKSFh4N2M3SHZWSjRW?oc=5)
 - [[단독] 솔리다임 美상장 전격 철회…SK하이닉스, 주주의견 수용 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9naHJFY1J4UTRwenN1Yi1SYjRJeGdjVktaQTJ5VWM2eHo4N3dMbURfckswbmR4SlJ5WGlfNUk4NVJTS2RGaGhFWFZhQ1l3UU5MOGYwejgzMjJBQQ?oc=5)
 
 ---
