@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 313 days, 18:31:58
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 313 days, 23:44:49
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 40.8% | `██████░░░░░░░░░` |
-| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 45.0% | `██████░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 롯데손보 관리 가능? 돈도 사람도 시간도 없다 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxOQ2psN1F3V3Z4MEptR1I4b1dOeWlyZ0VrRmNXZUZPOXFralQwWGFTZExJaW9rMmNibXhjMUFrelhFUTlzbmZxdW92ZmQ3eXQ2ZDFjdWhCT1U3aE1Ic0libmFMS3I1bV9RXzgydFQwRGVOZFRPQ3BJLUs5dmlFczkyUG1sNA?oc=5)
-- [반도체 투자 확대 기대에...1주일간 40% 오른 '이 종목' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1nSXZrQjFfbVU1eDZZOHB3QTNvY3Z0cmlwVE9Ed2puZWI4TEJsZldfbGxGV0lZbFp5NC16RTdGNUlKcWF3V1VlVGNxeS1kUFNaVlhVeU82b19Gdw?oc=5)
+- [“희망퇴직에 150명 또 손들었다”…신한카드 인력 구조조정 속도 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBuMUdmQnIweFdZb0padDkyd29DM2t2LUdCQmR0cjh2TjRjZzkwUUluTTVKUnB3OUNFV1RpWm5lcWtmS1dQT2RlcTgtNF9sUlFOWklRbA?oc=5)
+- [[속보] 통일부 "김정은 방중…오늘 신압록대교 통해 단둥 도착" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE51dDZfV1J3YklnRnRNVlBmU1JxeHZTN3NsTGdtdmU1a0pRb216ZFVBdWxhUmEwZzlRXy1rVVF4bU9HZTRscmlpV3lKUDlsZF8ybDJwbFN3UU9pdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
