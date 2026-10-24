@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 314 days, 11:10:33
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 314 days, 13:35:37
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 41.5% | `██████░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 32.1% | `████░░░░░░░░░░░` |
+| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[KPGA] '파랑새 스타' 최찬 , 신한금융과 후원 계약 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTFBQUDA5VDhDMXJsOVg5ZExoT1dVUTh6OEc2YnFlQ1M0Z0EzOFY3U1NtUGRLRjV0TWtBMHVnOWVVVU1zNi1GMFdzdVlSWDZXY0V5bUxnNE5idWU0bkJP?oc=5)
-- [김정은 '당일치기 방중' 끝났다…'中 서열 4위' 왕후닝과 회담 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE15cXNjZG9TMGJkQjRFem83ZG40SVV5dzZWUFIzemFIU0lrMUstczVhM3NLTThXOFdaclhPOTJoMG1rNWdlbGNsVHpxaGZxSVpkMkEzUHluYUpLUQ?oc=5)
+- [[박종면칼럼] 신한 손보 인수, KB 회장 교체…1위 경쟁 승부수 - 블로터](https://news.google.com/rss/articles/CBMiaEFVX3lxTE0yRjRhV0ZjYTJrakhDR2M3VDlBQWlxVDlxaHVSM29mSE02QnJlQ2doZGQ2RWZNQThsS2NiN29tUl83NUw1SVFNQnQ5R2tBV0Z5SEEwbVBvUE1sUjZsaGpGR3R3SzhMMVVQ0gFsQVVfeXFMUE5HR2tkMTdNQ2t2QjBZbzIyN3lzWl81NWkwSUNmTFBrczQyNHJmdEVZOEppQXg2NmlSN3hjVXVPVFZTZWtkMlYtVjl4aDI3eG13MGdKOHhpOHZQV2swVGpEWFNSUGdpa0JnXzRf?oc=5)
+- [코스피 빠질 때 혼자 37% '불기둥'…실적 두 배 터진 이 회사 [종목+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9NRElSSkEtQmdSZHpLbUs5dGJVaWhFdTZMRUxZbkstVUlDc0RlVUVoczRVYW5YTnhqN2MzTWhPZGFNbGpvMk1GSEsySVg4eUJ3bl9Hb3FWazRKUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
