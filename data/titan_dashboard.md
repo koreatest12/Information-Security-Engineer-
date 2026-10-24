@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 313 days, 23:44:49
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 314 days, 4:25:32
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 45.0% | `██████░░░░░░░░░` |
+| **CPU** | `128 vCores` | 26.5% | `███░░░░░░░░░░░░` |
 | **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [“희망퇴직에 150명 또 손들었다”…신한카드 인력 구조조정 속도 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBuMUdmQnIweFdZb0padDkyd29DM2t2LUdCQmR0cjh2TjRjZzkwUUluTTVKUnB3OUNFV1RpWm5lcWtmS1dQT2RlcTgtNF9sUlFOWklRbA?oc=5)
-- [[속보] 통일부 "김정은 방중…오늘 신압록대교 통해 단둥 도착" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE51dDZfV1J3YklnRnRNVlBmU1JxeHZTN3NsTGdtdmU1a0pRb216ZFVBdWxhUmEwZzlRXy1rVVF4bU9HZTRscmlpV3lKUDlsZF8ybDJwbFN3UU9pdw?oc=5)
+- [[KPGA] '파랑새 스타' 최찬 , 신한금융과 후원 계약 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTFBQUDA5VDhDMXJsOVg5ZExoT1dVUTh6OEc2YnFlQ1M0Z0EzOFY3U1NtUGRLRjV0TWtBMHVnOWVVVU1zNi1GMFdzdVlSWDZXY0V5bUxnNE5idWU0bkJP?oc=5)
+- [코스피 빠질 때 혼자 37% '불기둥'…실적 두 배 터진 이 회사 [종목+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9NRElSSkEtQmdSZHpLbUs5dGJVaWhFdTZMRUxZbkstVUlDc0RlVUVoczRVYW5YTnhqN2MzTWhPZGFNbGpvMk1GSEsySVg4eUJ3bl9Hb3FWazRKUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
