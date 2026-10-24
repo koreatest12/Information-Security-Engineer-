@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 314 days, 4:25:32
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 314 days, 8:24:24
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 26.5% | `███░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 36.9% | `█████░░░░░░░░░░` |
 | **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[KPGA] '파랑새 스타' 최찬 , 신한금융과 후원 계약 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTFBQUDA5VDhDMXJsOVg5ZExoT1dVUTh6OEc2YnFlQ1M0Z0EzOFY3U1NtUGRLRjV0TWtBMHVnOWVVVU1zNi1GMFdzdVlSWDZXY0V5bUxnNE5idWU0bkJP?oc=5)
-- [코스피 빠질 때 혼자 37% '불기둥'…실적 두 배 터진 이 회사 [종목+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9NRElSSkEtQmdSZHpLbUs5dGJVaWhFdTZMRUxZbkstVUlDc0RlVUVoczRVYW5YTnhqN2MzTWhPZGFNbGpvMk1GSEsySVg4eUJ3bl9Hb3FWazRKUQ?oc=5)
+- [김정은 '당일치기 방중' 끝났다…'中 서열 4위' 왕후닝과 회담 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE15cXNjZG9TMGJkQjRFem83ZG40SVV5dzZWUFIzemFIU0lrMUstczVhM3NLTThXOFdaclhPOTJoMG1rNWdlbGNsVHpxaGZxSVpkMkEzUHluYUpLUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
