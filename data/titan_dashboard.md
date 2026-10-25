@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 315 days, 7:27:25
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 315 days, 10:45:58
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 41.8% | `██████░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 46.0% | `██████░░░░░░░░░` |
+| **RAM** | `39.9/512 GB` | 7.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, 롯데손보 관리 가능? 돈도 사람도 시간도 없다 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxOQ2psN1F3V3Z4MEptR1I4b1dOeWlyZ0VrRmNXZUZPOXFralQwWGFTZExJaW9rMmNibXhjMUFrelhFUTlzbmZxdW92ZmQ3eXQ2ZDFjdWhCT1U3aE1Ic0libmFMS3I1bV9RXzgydFQwRGVOZFRPQ3BJLUs5dmlFczkyUG1sNA?oc=5)
-- [李 대통령 "2분기 경상수지 흑자, 일본·독일 합계 넘어" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KX0tBRERwZWdoblVfZGJFeTJ6bFdpUWdyZjMxMVZYbFpwNWwySFhvQnZtbS14bmZFSlhxRkJGcmFtakloSWtTRUdHWUdLWEFjazFFRHlFYS1Tdw?oc=5)
+- ['근원 경쟁력' 회복한 삼성…AI 전환·미래 투자 속도전 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBjUmxRalRKa0pxZU96TUR4SlFvaVR1RVRGcTlnekJ4SVBhbWoyajRoVHBqZjhGWlRNRlZLZEZscWduRDNlN3pJQ0tGV2g3SGc3Y2xfcWVGTHFOQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
