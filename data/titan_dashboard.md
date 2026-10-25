@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 315 days, 13:20:56
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 315 days, 15:40:53
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.2% | `█████░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 45.6% | `██████░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 롯데손보 관리 가능? 돈도 사람도 시간도 없다 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxOQ2psN1F3V3Z4MEptR1I4b1dOeWlyZ0VrRmNXZUZPOXFralQwWGFTZExJaW9rMmNibXhjMUFrelhFUTlzbmZxdW92ZmQ3eXQ2ZDFjdWhCT1U3aE1Ic0libmFMS3I1bV9RXzgydFQwRGVOZFRPQ3BJLUs5dmlFczkyUG1sNA?oc=5)
-- [李 대통령 "2분기 경상수지 흑자, 일본·독일 합계 넘어" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KX0tBRERwZWdoblVfZGJFeTJ6bFdpUWdyZjMxMVZYbFpwNWwySFhvQnZtbS14bmZFSlhxRkJGcmFtakloSWtTRUdHWUdLWEFjazFFRHlFYS1Tdw?oc=5)
+- [증권보다 손보 택한 신한금융…달라지는 비은행 지원 셈법 - 딜사이트](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1aTUl3SWpZZDJpa2l5SFpBcVM0VXRqT3AwVVA4b0VJZ1FNZ0RNWkxscGg5aXdSaGxnd3dCVWFYRlc1WFU1aHFrRDc4M3VfMmc?oc=5)
+- [[밤 사이 해외뉴스 영상] 암 재발 위험 42% 낮췄는데…모더나 주가 19% 급락한 이유 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nZFVsalhYa1c5ajlNcERweDVaMFZGamI5TWFtbFVwV3RZSW1fVWlpS0hqZ3VBcUFTNWlIMXprRGpDTHhhQTRiSjVpM2htTV9sTU9VX2tlbFh4UQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
