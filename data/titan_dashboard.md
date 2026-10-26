@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 316 days, 5:44:29
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 316 days, 11:45:54
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 29.9% | `████░░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.8% | `█████░░░░░░░░░░` |
+| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, '中 실리콘밸리' 선전을 배우자…진옥동도 직접 방문 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTFBKVURmN1JZcGROS2hrY3hzT3MtcTJxdnFpVEdLVGUxemJuNTVnNHNTanlNWUJKVkUyM25pUnNLOFJfbXRPRUJWeThOTmU4M3h1Rmd3dUl0U2g1czdCZHRWRkpBR3pwQnh0T1E5ZnlyMzM?oc=5)
-- [활력 떨어진 한국 증시…평균 거래대금 올 최저 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBaV0R0OTVaYWdVU3ZwdDZuX3AzTmxUQnl2bzc4VS1waEh4bUlLQ3dLWWU5MXdNdjRabWJkMV9va19zZlpXUWowa0ZldUJIeDV6NDJVeERFWHk0dw?oc=5)
+- [신한금융, 서울시와 '피노베이션 챌린지' 우수기업 선정 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9QbFE4NFpCQ2QyZXoyVFotRndDVERxTXRXdkhvWGhqaENfV2dVUm41Q0FQUDNuYjRmZDVmN21YRDl4WXJPR0xQY2N1T2JQVGVKOFVWdnlGZUFUYmvSAWBBVV95cUxONlpkTEFmTW5WbThBbXdJZ25hcDJSSl9TN3hIblFiSjNVRmlmdkhIeEM1V3h1bFZaa21vd054cmtNR2dwVTdDdW0tQXNhNTEzdWhrbXFTLXhiaEx3Z2g1VjQ?oc=5)
+- ["AI 낙오주가 피난처로"…애플, 나스닥100과 거꾸로 가는 '안티 AI주' 됐다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE95WTJMaUJYS25aVHZOTmVlQmtXcWVlSUhlM0dRM09kUTRKVGRoWHZidmhweFdqMHJvdVpYNlc4S1lnT3hmNGFNeThMM3p1R1ZWV0RLQXREVFl3Zw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
