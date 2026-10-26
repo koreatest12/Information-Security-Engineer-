@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 315 days, 15:40:53
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 315 days, 17:42:20
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 45.6% | `██████░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 41.0% | `██████░░░░░░░░░` |
+| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [증권보다 손보 택한 신한금융…달라지는 비은행 지원 셈법 - 딜사이트](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1aTUl3SWpZZDJpa2l5SFpBcVM0VXRqT3AwVVA4b0VJZ1FNZ0RNWkxscGg5aXdSaGxnd3dCVWFYRlc1WFU1aHFrRDc4M3VfMmc?oc=5)
-- [[밤 사이 해외뉴스 영상] 암 재발 위험 42% 낮췄는데…모더나 주가 19% 급락한 이유 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nZFVsalhYa1c5ajlNcERweDVaMFZGamI5TWFtbFVwV3RZSW1fVWlpS0hqZ3VBcUFTNWlIMXprRGpDTHhhQTRiSjVpM2htTV9sTU9VX2tlbFh4UQ?oc=5)
+- [신한금융, '中 실리콘밸리' 선전을 배우자…진옥동도 직접 방문 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTFBKVURmN1JZcGROS2hrY3hzT3MtcTJxdnFpVEdLVGUxemJuNTVnNHNTanlNWUJKVkUyM25pUnNLOFJfbXRPRUJWeThOTmU4M3h1Rmd3dUl0U2g1czdCZHRWRkpBR3pwQnh0T1E5ZnlyMzM?oc=5)
+- [빅테크 실적, AI 투자불안 잠재울까…슈퍼위크의 시작[오늘 아침, 당신이 알아야 할 7가지] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE02X253SUJXZzRjU28zRy1mcWEzaFRwNUlUTVdTRFdFbXlBN3VSSVBCVVc5OFFDTTNLc2wzWGdIQ05HYUhqaGdTeVh3MFV1R1ZNNTVXRzBsakZqZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
