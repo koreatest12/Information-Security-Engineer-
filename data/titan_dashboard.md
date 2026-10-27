@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 316 days, 18:30:37
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 317 days, 0:22:43
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.2% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 34.1% | `█████░░░░░░░░░░` |
 | **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- ['해킹 책임론'에 움직이는 신한은행장 인사…'퓨처AMP' 출신 변수 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxOVEhxNDBSakVZaDkwcnRIODVPd2gyRWdoY3kyeGpvalZ4QXpEeDgtcmdNNnlmT0NYMHNtaTAyZ0xyS2psNkpGSEVzRmZRLVlJV0VMZXBqUlVWUWdFVl8yQUU3OHNfWHR3SnJycE5fQ3hhTkplVWwybmpOWmFXRWJsTWFlWQ?oc=5)
-- [반도체 수출 호조에 3분기 한국 경제 1.0％ `깜짝 성장` - 서울특별시 미디어재단 TBS](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTV9fQ2ZFc1AyVjRQV290cWJsQXZFdU1BLTdINEhHME5hNGxSZzRidWRMMmNWYmt5MjV6NTJYWWRKRktlR2c1S0M5aHEtR0dVOEtkTHdKbWp0MjM2Wkp4QW8tcVpxdTl2M3VjT2hIbl9EOWtpZlNHaXRWMGd0b3BLMmNqNVpja3pW?oc=5)
+- [신한금융 "롯데손보 증자, 다른 자본수단 활용 가능"…NIM 개선은 내년 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxObC0yYUNOZ0lwa0x2WklCZG1vUkF1U2JBdGdPbzlBTnB1RDRRekhrZXhhT2VuVHc5UEp5TTJpZlB2NTBMaTJVekd6N2VScUhtQnhySUtOM1Q0V0lZYThQZW9zbDg5LVR4eU5EdjJtWEgxd3JTSDlLX1d1by00T1pKSzVYOA?oc=5)
+- [반도체 수출 호조에 3분기 한국 경제 1.0% '깜짝 성장' - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqSDRJeW1UQ3hjQmdlaHZjdUczTFhLWDNnVThSTXNvRDNybXB4em9nUnJGc2JfaUhIZ0pKMGtlYTZ3MC1QNk5IU2pqcXdEaEFmcVIwSlNZVXROQ03SAWBBVV95cUxNTmlyUVlkbjZiZlpwektESng4bnpNRGo4eTJ0RjZwOEk4cHc5ZGlnUVN3Z180NFJGdjJnVWFJMkxuUkNiLVRXN0QzZ1QxUThzcVdfNjNSUWdtTVFrMzN6S0s?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
