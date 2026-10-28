@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 317 days, 18:44:14
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 318 days, 1:05:19
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 42.0% | `██████░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.6% | `█████░░░░░░░░░░` |
+| **RAM** | `39.9/512 GB` | 7.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한은행장 후보 2∼3배수로 압축…은행 임추위 권한 강화 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE15bG1ZT1kwTlZhYkprR3JJLVladDBQbHVvNTBXS3VJdFJqemY1OTdPSW91d3BxUDFKcGgtaHo2OEVKTlh6UTdIcXJuQ1RiV0dJSVowUmxCblM1cU0?oc=5)
-- [[속보] 코스피, 장중 6000선 회복…10거래일 만에 탈환 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1SVmhyUnlTUXpLWkx5a051STlLMnUtXzJZcU9vVGx0RmNYcUR5UktyNXdrR201S1NSZGFtbVpWdllEZmZ4dlZ6NTZvekhpN3huNXJMVnNPenhZdw?oc=5)
+- [신한금융, 차기 은행장 인선 본격화…신한·제주은행 1차 후보군 압축 By 알파경제 alphabiz - Investing.com 한국어](https://news.google.com/rss/articles/CBMicEFVX3lxTE5tT1BFNGlaT2R3akJRaFhEb1h4YkVzeDJwbnh5V2RBRlBhM1lIa0lnMTRYX3hvbWFsT3o0dVdVcHdhNUdUM0ZKdVFwMHkyekNweE4xN1BvMkpyTlptZXY0MGQ4NlQxek05US1GSTN2ZUs?oc=5)
+- ['삼전닉스' 폭등에 코스피 6000선 탈환…6.63% 급등 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE8wYXN1NFJXSUJrTU45RWNDTE1TQkptNXN0eVdlcjdFMGk3bDZtM0xvU0pyTklfTzRVdnFwSFY4MUFTQnY3T2hWdTR2TjBDR29PYXZzSU9lZHA4Zw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
