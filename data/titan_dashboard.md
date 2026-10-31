@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 321 days, 12:25:46
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 321 days, 15:47:09
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 42.8% | `██████░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 46.9% | `███████░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[신한은행] 신한은행, ‘2026 Swith Global CSR 프로젝트'' 행사 개최 - 신한금융그룹](https://news.google.com/rss/articles/CBMiaEFVX3lxTFBxOWlWSWxEYXVEcGVHZ0c2QklkSDgwM0hYVVpCeGZsaVFlTV9jZERXTFFpR0tOVTRqamM4WjRQRF92UXhLNEJ6TXlWcTkzeWtDLWdfMXJ5Y3dwQUQ4MDdEVVZ6VkxqYkdI?oc=5)
-- [[속보] 핼러윈 인파 혼잡으로 지하철 이태원역 무정차 통과 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE52VWVpaGxDMHV3eENjbFNUeVhvUG5BZ0ktWmd2MkZXakt5c0pSU2J1eVd3bmRCWHd6TnVNMUs5dUpwUi1XM3VoYm1pVVlRUWlKZGE1OHp3RXhpUQ?oc=5)
+- [은행장 후보 추천하고 심의도…신한은행 이사회 역할 커졌다 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5TTUNQLXJHb3dkQmQtUE1UTHZlTmJXZGwwZUNucXFDWXJHS3FpREpwWm9zLTNsQWNZaUhMcnFhTnpRUDhPejhibzkxS0htOUdqdzZlTUhySm9QVkHSAWBBVV95cUxPSjRpMGgzLTR1Sjl5WVZYYVNIWUprT2s4bG9ldHJtMl83ZVV5ZXpDRm1BN3MxOHdVX05zY0xwSFU0cWFYcmhBcHprbC1EWU5WamRwbjFNdFBMaXZhd3pDYWQ?oc=5)
+- [다시 변동성 커지는 증시…코스피 지난달 -16%, 역대 일곱번째 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9fYjlmbjZUSnFzQ3RDNDFXTWpvem0zbGk4d01tWFZXRDFGTVJNbmlsV012bmFlWGVKM2ZjaFczYzJmYm52QTlPUnJRLTI0bXpMN2NaMklJWXJMZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
