@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 321 days, 15:47:09
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 321 days, 18:44:43
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 46.9% | `███████░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 45.3% | `██████░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [은행장 후보 추천하고 심의도…신한은행 이사회 역할 커졌다 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5TTUNQLXJHb3dkQmQtUE1UTHZlTmJXZGwwZUNucXFDWXJHS3FpREpwWm9zLTNsQWNZaUhMcnFhTnpRUDhPejhibzkxS0htOUdqdzZlTUhySm9QVkHSAWBBVV95cUxPSjRpMGgzLTR1Sjl5WVZYYVNIWUprT2s4bG9ldHJtMl83ZVV5ZXpDRm1BN3MxOHdVX05zY0xwSFU0cWFYcmhBcHprbC1EWU5WamRwbjFNdFBMaXZhd3pDYWQ?oc=5)
-- [다시 변동성 커지는 증시…코스피 지난달 -16%, 역대 일곱번째 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9fYjlmbjZUSnFzQ3RDNDFXTWpvem0zbGk4d01tWFZXRDFGTVJNbmlsV012bmFlWGVKM2ZjaFczYzJmYm52QTlPUnJRLTI0bXpMN2NaMklJWXJMZw?oc=5)
+- [이자마진은 하락했지만 대손비용 안정…신한금융지주 실적 방어력 주목 - 핀포인트뉴스](https://news.google.com/rss/articles/CBMic0FVX3lxTFBFdXN2Q1Z2Tnhlek51QmRvaFlkbE1nOGVkTTVPTmZ5MUNycl9NQjFrdGU1N1FXLTFxbFV6VjlKRWp0RXdJUmR0TjcyYjFYUU1kZ21wS2N3VU96S2Fwa2VoMFdwRVl1WEpKN3VBRWFjNU5LNEHSAXdBVV95cUxPVnhJWW43UTZGSWhRVGppdXR6YjFYWlkyelQyMlBqYm5TZy1nNFgtcTBFMGxTZWh6LUY4b3lnLWhkM1pmSnotMTBWU1d0aXNWak12RVkxbTg4cXA2VlYxYXFKdEh5c1J3TVZtZEQzQjdXeWpUUk1wOA?oc=5)
+- [연금 고수들, 美 지수 대신 코스피200·반도체 담았다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5vOEEyeGNjS0dGeFFCZU5hTEVJSnktZ0hnSzhNSWFtQUxTZklyYjZZZy1sM2k4c0pVNDRHaWYzUFc2NG0xR0Z3NlJLaGZHUUJpQ2ZMekM0OEJldw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
