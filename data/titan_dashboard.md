@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 322 days, 8:29:35
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 322 days, 12:57:11
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.7% | `█████░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.9% | `██████░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [전필환 신한캐피탈 대표, 유가증권 평가익 감소 불구 대손충당금 축소로 순익 유지 [금융사 2026 3분기 실적] - 금융신문](https://news.google.com/rss/articles/CBMifEFVX3lxTE5jQmRBYURzLVdTYUNkcFpua1FwcmlOaHJ1UXJxZzh6d3VKQXFIcUZUNkZRYjFLMWs5TjZTUmIxQ3JaR3FMM2pFNzk0SHNiRkl2ckxKRzR4N1laaTZySjY2REhTSl9OS3gyYTB3UnBZWjBhanhveUItUVdoYlU?oc=5)
-- [韓증시, 美기술주 폭락 속 바닥론 고개 드는 이유 [한상춘의 국제경제 읽기] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1IM0p1eTdKMzVLUXpCR1RSSVY4eGg0TmJjMGJvUEstVl84dU9tSEgxM3JNRGtkbmNYc3BrVHJyQlhzck9GYmhPaFV0am5TVTZHbmNFdFZxa0RFdw?oc=5)
+- [[신한은행] 신한은행, 2026 신한 영 아티스트 페스타 ？올해 마지막 전시 ‘염원’ 개최 - 신한금융그룹](https://news.google.com/rss/articles/CBMiaEFVX3lxTE0zWVlldlR1WVA0QWZLdG1VSDgzUWM0amVZOC1pcEZmWDVIQWk4czZmTDV4Zm1hU3NETjRBSGxTaDFjdWprRjAwaUFvX293aks2b0NSUjZUYmV6R20tcnptTV9DMHBxMXNU?oc=5)
+- ["우리 쫓아내려고 불냈다" 부글부글…구룡마을에 무슨 일이 [이송렬의 부동산한입] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2Um9xY1pjQXVDUEl2YmNCRE1Ma0szcUhJVVU5blVidkh5X0pTVVE1ZmF4dzBiQjhzU0dIbW1rSW81dUVFZUg5M0xXYVVvaHlWaWpQbEVyOWVaQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
