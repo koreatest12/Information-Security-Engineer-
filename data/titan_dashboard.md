@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 322 days, 20:56:58
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 323 days, 5:12:55
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.3% | `█████░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 43.1% | `██████░░░░░░░░░` |
+| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 임직원 가족과 숲 가꾸기…산불피해 복원 지원 By EBN - Investing.com 한국어](https://news.google.com/rss/articles/CBMicEFVX3lxTE13R1ZpVUVTQzlvMlktbE41NmJ0RFdfMXI3MkZ6UEJfcFlQVFFaNlkyREstanJ6dnNCbjMwcHlhNHpPaVRwbmN0Vi00bmZsRXBOdkhzd3VhYkw4YTZjVXZVb3BvQ2FpQXdna2R3MVV1enc?oc=5)
-- ["공산당 통제가 경제 망친다고?"…시진핑, 정면 반박 [차이나 워치] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBkTDJ6T3U4NTR4Z2R1SGRjZ2xET201YV91eWdCU19Dd0cwSWhaXzQ5cHExeENlamNYN1dvX3hkOEsyeFJMVjJPajJ1WXBCQVQyWjVFd1RHYVc0QQ?oc=5)
+- [신한금융, 경기 이천서 산림 복원 봉사 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE8wTkRuT0FxQVlrNUdqVTEyS3dfOFpza1h6dGppTWVwQTlPaG5lMzd4YTVrOWxUTkJUTHB3Z0ZfTHJrMU9PdlBFeGloSm9pTGFxNW4tVnN5UnNhQQ?oc=5)
+- [오늘의 프리미엄9 콘텐츠 다이제스트(11월 2일) - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1sODliZFdsenhlcWlDUVIwaFZYWVl3Y0RuYUxnckVMUFlsOTZucm8xZ3V4NlZSUXRUZG14cnRRdHdhUkc5ZUszWnE2V3BDVURfaHpLVjdIMkVTQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
