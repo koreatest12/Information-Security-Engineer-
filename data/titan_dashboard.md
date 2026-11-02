@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 323 days, 5:12:55
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 323 days, 14:18:08
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.1% | `██████░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.8% | `██████░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 경기 이천서 산림 복원 봉사 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE8wTkRuT0FxQVlrNUdqVTEyS3dfOFpza1h6dGppTWVwQTlPaG5lMzd4YTVrOWxUTkJUTHB3Z0ZfTHJrMU9PdlBFeGloSm9pTGFxNW4tVnN5UnNhQQ?oc=5)
-- [오늘의 프리미엄9 콘텐츠 다이제스트(11월 2일) - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1sODliZFdsenhlcWlDUVIwaFZYWVl3Y0RuYUxnckVMUFlsOTZucm8xZ3V4NlZSUXRUZG14cnRRdHdhUkc5ZUszWnE2V3BDVURfaHpLVjdIMkVTQQ?oc=5)
+- [진옥동號 신한금융, 친환경금융 2년 새 49.4%↑…탄소배출 감축 과제 [기후금융 진단] - 금융신문](https://news.google.com/rss/articles/CBMifEFVX3lxTE1wLWdkTl83QWdraXNNUUd5VmpkUC1wOE5jYU5nbl9iQkdrOF9vd19jVERLWGE0Z196MWkwUGU2ZjdfQ2FhSzB2dUZfWno2dVJkTEZnV00wcDRoNGprakhLYXBneEZaTk1qX0p6Y0pMempPdkU4QlgtX0xNS24?oc=5)
+- [[칼럼] 경제안보와 기후, 한 프레임으로 봐야 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5kbTFpUDZsMGViNWNsNlQwNDlnTmtLWGotVnh5Q1dtTkpoTnF1U3dJOXgwS2lYU2FoNmlNMVAzYnNBWURaZkhSc0ljb01laElEbGtxbV93Si1oQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
