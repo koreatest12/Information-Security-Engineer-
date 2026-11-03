@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 324 days, 3:24:44
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 324 days, 15:52:14
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.2% | `██████░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.6% | `█████░░░░░░░░░░` |
 | **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [[신한금융 인사 기상도] 진옥동 2기 ‘쇄신 성적표’…이봉재·최혁재·강대오 주목 - 디지털데일리](https://news.google.com/rss/articles/CBMiZEFVX3lxTE9ybkl3SjVoa2M4NkxJNTZsVUlydVIxQkJaX0pRNGc5eFhodVZBS01sdzlfSTF3ZWU1Y3ROc3J4WXVaWnExSFdOeFNaQ1JPaXlfVWxPX2tmS0RwbDVHc0VXb19WcTc?oc=5)
-- ["너무 비싸게 샀나"…마벨, 루멘텀 인수발표 후 급락 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5GMjdHa0M3c3UtY1pfNzVfSDFpN1FGeEtIVHkyRUhWUWxRWUEwdmI4R3A0R240NDRiYkJpU0pFTlc2Q1R6VkJnX2NyMXA5Z0hoRV9sQy1lclpsUQ?oc=5)
+- ["반도체만 보다가 놓쳤다"…3년째 돈 버는데 몰라본 '이 종목' [한경우의 케이스스터디] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE8wN0I0c21DWm1iZVA5eHZvMXRZZ3VJSjdnWDlpbVZENU9Qb1hWNWdMdmZ3dUFQY3VSb2RHV0ExazFpam5KcnpCaHZ3VUtBMzdWdE0tSUplQXJ6UQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
