@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 326 days, 18:10:03
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 327 days, 0:57:56
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 37.4% | `█████░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 37.5% | `█████░░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 제주서 '자연자본' 공시 사례 발표 - 전자신문](https://news.google.com/rss/articles/CBMiTkFVX3lxTE5uRjBzSkZYbjlfMFRTX003LUdkT2M1S1ZWNE5GR2hXSFlSWENHVnZ5eUV0RXd5Q0RSZU5nbnpWVW9FUHoweURNRk5VWEx1QQ?oc=5)
-- [[속보] 코스닥, 이틀 연속 '매도 사이드카' 발동…6%대 급락 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1MNWJvdTJtQkEzeXFmYmZpdnFyM2owZy1Fc3QxNmZoSlZ0c0hUbzl2MFk5amFOUk1lWUtQcTk3U21EMVE2WTFDWEhRYWlxeEVXSUVhZWp4TjdIUQ?oc=5)
+- [신한금융, ‘2026 대한민국 나눔국민대상’ 대통령표창 수상 - BBS불교방송](https://news.google.com/rss/articles/CBMia0FVX3lxTFBZbGhIRU5tQ1dkMGZ0cnR0d0JCMHExUlRLTWFvQmF0U0dxX2VKME1zRXZ1d2g1OGN3NmxkWHd2Zk94UW9qa0tocjhuRU83QkxKNjZ3NzNlVHlnODUxdmpmS0Z0am1RZnowZ1lF?oc=5)
+- ["최근 주가 하락은 과도…팔지 말고 버틸 때" [리서치센터장 긴급 진단] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5DYWFIbUd5YkZ3dy0xNVFPVEF6c3gtcWIyMUJ0S3gxQUZ4azd0bE5KLTZJT1VySXl3STl4SWgzSmhFN2djUktCaG9aLWFxUlYzSnp2ZHVFekJpZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
