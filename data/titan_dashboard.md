@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 327 days, 8:43:04
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 327 days, 13:58:02
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 35.0% | `█████░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.6% | `█████░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [신한금융, ‘2026 대한민국 나눔국민대상’ 대통령표창 수상 - BBS불교방송](https://news.google.com/rss/articles/CBMia0FVX3lxTFBZbGhIRU5tQ1dkMGZ0cnR0d0JCMHExUlRLTWFvQmF0U0dxX2VKME1zRXZ1d2g1OGN3NmxkWHd2Zk94UW9qa0tocjhuRU83QkxKNjZ3NzNlVHlnODUxdmpmS0Z0am1RZnowZ1lF?oc=5)
-- ["삼전닉스 콱 물렸는데 어떡하죠"…전문가가 내놓은 답은 [리서치센터장 긴급 진단] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5DYWFIbUd5YkZ3dy0xNVFPVEF6c3gtcWIyMUJ0S3gxQUZ4azd0bE5KLTZJT1VySXl3STl4SWgzSmhFN2djUktCaG9aLWFxUlYzSnp2ZHVFekJpZw?oc=5)
+- [AI 반등 랠리 시작할까? vs "데드캣 바운스일 뿐"[월가 백브리핑] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFByM1pfcXl0TDhCQ1dHS0dsY19Sa0RpRTNHVzdKWWZpRW5JbzYwWG51YmFBN3N6M0I2REJPM0VPcmp6Uk8tS1IzMmRnSkdLOXlzWUc5THpGWFNmUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
