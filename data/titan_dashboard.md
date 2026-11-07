@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 328 days, 11:13:44
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 328 days, 14:42:17
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.8% | `█████░░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 40.3% | `██████░░░░░░░░░` |
+| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 자연자본 대응 논의…지속가능금융 실천 - 아주경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFA5SlF1bWZwbXI2X05fVDFTN3diMXBacWktRDNHN0pZZFFCUWpMN2VBOEFRSEU2WmdzejZ4Yk45S2ZfMXhkRzhXOVJWQ1lIbWhqS0NOT2pUdkstZ9IBWEFVX3lxTE04VjBUYkVuWEdwR0c0aTdnWkFpOS1Fdl9tSkhpbHh5V00xU0JGZjZxQXVTTWMtMFh3cThwZEFBSXppd3FlMFkyVWtiRjlZRm1WREQ1UUowRDY?oc=5)
-- ["하루 만에 라면 2만 그릇 팔렸다"…매출 1억7000만원 초대박 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1NOUk4WDdOM2xCYlVqUXhRbFhKdEU2U0JyOXNrUDdNdzZlX1pLS3Vfdk9LSHZoSGNWOUJfWWViX19leUhHMHY2WFp4cG4xUndNYS1FT2N5Y0ZqUQ?oc=5)
+- [신한금융, ‘2026 대한민국 나눔국민대상’ 대통령표창 수상 - BBS불교방송](https://news.google.com/rss/articles/CBMia0FVX3lxTFBZbGhIRU5tQ1dkMGZ0cnR0d0JCMHExUlRLTWFvQmF0U0dxX2VKME1zRXZ1d2g1OGN3NmxkWHd2Zk94UW9qa0tocjhuRU83QkxKNjZ3NzNlVHlnODUxdmpmS0Z0am1RZnowZ1lF?oc=5)
+- ["집에 있으면 돈 아끼는 줄 알았는데"…'소파 경제'의 함정 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1xWWlPRHJqWmJUNmJwenpCa1NiaThiTkd1RVR1SFVISVI2ZW1PZGpja0xDel9tMXppM0JhZi1YNWh6V01CTEtJOVVlZG5LVkYycmd4cXJpS09hQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
