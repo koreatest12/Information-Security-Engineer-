@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 328 days, 17:52:47
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 329 days, 0:29:38
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 45.0% | `██████░░░░░░░░░` |
-| **RAM** | `38.9/512 GB` | 7.6% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 41.5% | `██████░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, ‘2026 대한민국 나눔국민대상’ 대통령표창 수상 - BBS불교방송](https://news.google.com/rss/articles/CBMia0FVX3lxTFBZbGhIRU5tQ1dkMGZ0cnR0d0JCMHExUlRLTWFvQmF0U0dxX2VKME1zRXZ1d2g1OGN3NmxkWHd2Zk94UW9qa0tocjhuRU83QkxKNjZ3NzNlVHlnODUxdmpmS0Z0am1RZnowZ1lF?oc=5)
-- ['블루 웨이브 쇼크'에 휘청인 코스피…반등 열쇠는 [주간전망] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE94c29HUVZ3dWd3SkcteTk3cUMtWXBTc1QwWnJWa0xsT1EzUlRrZ1FRdlExTUpUMUJacHNxZkFkc1p4N28yVVpiR0VWNVd5a0JlVjJ6THFLNmFtdw?oc=5)
+- [신한금융그룹, ‘2026 제주국제생태포럼’에서 자연자본 공시 대응 방안 논의 - 일간제주](https://news.google.com/rss/articles/CBMia0FVX3lxTE16clphaGMxQWhuazdjb1puOGVfSWVXeWRpTUJqZFd0dUFkWXZsZEpKamRacWFYOGFwSXlFSnZPTDdTUm90WnE0YmFtMTN0VGgta0RmWWh0SVpZSXFhQUN3SVlkc0lpTlpoT3ZJ?oc=5)
+- [[속보] 프로야구 삼성, 한국시리즈 정상 탈환…9번째 우승 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jQ1J3UGFyTGNkRWltaXdyOTNCYjZ2YlMybVQ5Q3gwSjR0M0QzeVBIUGUwLV9YQ1lhUXN6M3oya2tTSWVnbV9wNEFYbWtKMWY0Q1JkVHpfa1Y0dw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
