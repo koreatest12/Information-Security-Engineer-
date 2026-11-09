@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 330 days, 2:48:36
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 330 days, 13:16:02
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 52.0% | `███████░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 41.7% | `██████░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 나눔국민대상 대통령표창…"사회공헌 노력 결실" - 논객닷컴](https://news.google.com/rss/articles/CBMiaEFVX3lxTE1JdG1yLW9DcTJZbGVCM0lQa0NQOG5sQ3Z5Ymc4dmxlY21aM1d3eEptWGhjU01SS1Zwd2MwdWZDeUQ5RXBUR3phZzlCd2FqT3ZQMlFYTjRWUDJ5ZmJhUndBV1VIVzROV3I4?oc=5)
-- [반도체 투매 정말 끝났나 [한경 프리미엄9 TODAY] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBpRmR4ZkhYbzEzdnRTbWlnalc2MDRJR3VUU0JNVDJoRUtFMko2QmdfZGdIaHVPVFZ6X1dEbktfUWlxdm16SWhJRlBmWWd3UWZOMTRpQlc2UFp2Zw?oc=5)
+- [진옥동의 신한금융, 은행 현장에서 다진 ‘신뢰경영’…이제는 자본 효율성으로 답한다 - 파이낸스투데이](https://news.google.com/rss/articles/CBMibEFVX3lxTFBmSWhjYVUxakxpV3BUUURRZ1FxY3BvSmRjWDdhY3U1WXFScXhUcTBFTWVENm8tUHREMGIxV0pZRUFRUk1ab2RNWVhQWXBtbTR4VWFPdzh4QWFRMEQyLVFSV2o2UVlvVGVrSEE0Yw?oc=5)
+- [코스피, 5천피 테스트…"반도체 저가매수" vs "AI 비중 조정" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1sS0wwQXBKOWVDd2NzRE1yeDdCNGJIbXA5eFpMcGtsUG8zNVNPSktpY0R4LUo5STVzcHdCaTN5c0swc2FTR1A4RDVBemJablJlYWpRSndJbzBjQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
