@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 332 days, 3:36:21
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 332 days, 11:04:34
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 42.0% | `██████░░░░░░░░░` |
-| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 37.3% | `█████░░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, ESG 통합 A+ 12년 연속…국내 유일 By EBN - Investing.com 한국어](https://news.google.com/rss/articles/CBMicEFVX3lxTE1PWUs3OXZVT2d4NUFFTFo3enFCU3hRZDN4M09qSGllc1B3aFJXRFFEQUJLUUNEZElqek9KNFJtSTN0V05feHpDOXZFa2ZZdmlVRWc5ZWpDRE5GcE1rN05OSUFrY2I0cVktYkpOemNkNFU?oc=5)
+- [[금융지주 풍향계] 신한지주, 국내 유일 ‘12년 연속 ESG A+’ 外 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1kMU9HcEM4ZmpTWXhtTTZpT2FfNUNxZ2Y3cFFFUGllc1djaGZreXBzRTBEX2t3WnZySEVMbUhUbElKQ2c1enFGY0JKYXZVMGVYRkc3dVp1NEZsR2M?oc=5)
 - [[단독] 국비 다 못 썼는데…지역화폐 예산 '역대 최대' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFAtbVk3SE1KbzlpRHBNSlpHZHVOWHBQMTBXTDByeVhqeDk5OXgyWjQ1UDJkRGQ4VmlUWXNnM3NDVHJ0NkZsMktSRVRYMzJjR2tldjN3UExkd0Z4QQ?oc=5)
 
 ---
