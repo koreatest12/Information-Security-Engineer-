@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 331 days, 16:06:40
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 331 days, 19:45:15
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,19 +8,18 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [KR_ECON] 중국 '미인계' 그림자에 한국 경제 '덜덜' [이브닝 브리핑] - SBS 뉴스
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 41.7% | `██████░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 45.4% | `██████░░░░░░░░░` |
+| **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[인사 나침반] 이인균 신한금융 COO, 7년 장수 참모…계열사 CEO로 보폭 넓힐까 - www.fetv.co.kr](https://news.google.com/rss/articles/CBMiaEFVX3lxTE96eFZwMTVwSGIyVFZVbGx3YTk5dmNnQTBDMGgza3pEbDVxRTR5X3F5QUZOcVlocXpBUko5SXFTcXN1dmp2bWtWM0ZQZ3d3UHp5Zko5QzN1WGVIdTQ0dnp6MW5BNmRrR0Fn?oc=5)
-- [금융연 "내년 한국경제 3.1% 성장…반도체 호황에 내수 회복" - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5wZGJWVFlDTWE3aVRzSFJtdFd3UndYNG1EOVFkWTdXTWpuT240V010YnZ5Y1JobUN3WmdtWUpQN2lQc25zVDBDSy1mVFdzYmNqU19rTHpDYzJYVFU?oc=5)
+- [신한금융, ESG 통합 A+ 12년 연속…국내 유일 By EBN - Investing.com 한국어](https://news.google.com/rss/articles/CBMicEFVX3lxTE1PWUs3OXZVT2d4NUFFTFo3enFCU3hRZDN4M09qSGllc1B3aFJXRFFEQUJLUUNEZElqek9KNFJtSTN0V05feHpDOXZFa2ZZdmlVRWc5ZWpDRE5GcE1rN05OSUFrY2I0cVktYkpOemNkNFU?oc=5)
+- [코스피, 0.56% 내린 5209…코스닥, 0.13% 오른 668 개장 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFByUXlCNnN3dmJmQ2FJMDRiWGxLWDRWV2pEdU80bktVNGRiOUhwY1Jzc05wOVJCTzdybEpnNTRvYm1rZ0REQ1k4bG43eVRnNUdnOWUwTW9Tb3FtZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
