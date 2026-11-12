@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 332 days, 17:25:01
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 333 days, 0:47:20
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 34.8% | `█████░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 46.0% | `██████░░░░░░░░░` |
 | **RAM** | `36.9/512 GB` | 7.2% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[금융지주 풍향계] 신한지주, 국내 유일 ‘12년 연속 ESG A+’ 外 - 에너지경제신문](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1kMU9HcEM4ZmpTWXhtTTZpT2FfNUNxZ2Y3cFFFUGllc1djaGZreXBzRTBEX2t3WnZySEVMbUhUbElKQ2c1enFGY0JKYXZVMGVYRkc3dVp1NEZsR2M?oc=5)
-- [코어위브가 되살린 AI 랠리…마이크론 12% 폭등, 코스피 반등 이어질까 [오늘 아침 당신이 알아야 할 7가지] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBnUDNIeVk1cTVjQ3VzbE1kQnc1WG9CSmcwLXhDYXd6S25nUXA1RDFSU1BJVXQtZWFLZm4wdWpfbWZrMllNZnUzX2ZUUllmY3M2eWVFa2Q1c21KZw?oc=5)
+- [신한은행, 외국인 유학생 취업·금융 정착 지원 By EBN - Investing.com 한국어](https://news.google.com/rss/articles/CBMicEFVX3lxTFBSV1JTdWNna0QyTklGcndweG5EaVljOTJ3ZklGNUdNU012cl9VdHlHRG5EdGltWnZvOWNYQ0RvdWR0MFVEWlFNRDM2SHo1WEFMdnVuMTlnR29jOGdJZVhrTEhWbURjQ3hDdHNPdXctUWQ?oc=5)
+- ['반도체 초호황' 맞아?…올해 소비 기여도 고작 '0.003%P' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFByazVDN011ZVR0dzFiQUVHcTBuZ1paMlp6RXBweDBybDZTdWxMRzNWODlrZnBhVlZteUVjM1FjakJYcmVuMzdVU0F0ZDBLT0tOMmNZQ0JiSFFGUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
