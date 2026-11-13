@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 333 days, 14:51:10
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 333 days, 19:18:14
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 42.2% | `██████░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 40.3% | `██████░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- ["금융 사각지대 줄여 사회 안전망 역할 다할 것" - 조선일보](https://news.google.com/rss/articles/CBMijgFBVV95cUxOb3lhczNjOFZ4SURGSGVOQnEyd25CMDVPQ1FiTjhpX3F1VU1OMVFnb2VhLTVSck9sZi1PY19DbFlNQjNqNDNtMHdBQmxjbWhJTEpDZ2hWa01wUVM4bEp2ZXNiUElaeE1OZVY3TGV1MG9neFNkczdpYmVoUVEtNzdCbU53Y1lEcnU5cG5Qd3Bn?oc=5)
-- [K웨이브의 힘…외국인 관광객 2000만 시대 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE14SDRQZEx6Y3JWTzlMUEdyQS1vV3Atb2Z3MVNKb0wwMm92ejFnbURHcEtMQ3dkdXpiS1JrQ3A3NkVBMUtEU2hfRWU5b0ZiaTBJNFFzQ2hIYnpwQQ?oc=5)
+- [ESG 성적 'A+' 자랑한 KB·신한금융…옥에 티는 'LTV 담합' - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE44QXVITU1KTnlkRWg1NDJrVnFxdTM5SHhJRVNGaTRTcmJRNlBZbmUwRktqMC1KNWhlXzRYQ1JNN093bmV2cmE0ZzlIUERWVDVxUGdPa0JnRWlhbXk5aGlJWUJhNHpIUTJFTWh4NTEtSHc?oc=5)
+- [그야말로 '첩첩산중'…젠슨 황, 세 번째 '불륜 의혹' 터졌다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9oMWVfQktPN1ROVlh1clB4Qm95ZVY5bFNSMWFWVzc3cFNFNmJTYV91cmZ6cWViNEVRYW1sUURJOFFTeDM2QmlDWFRVN3IzNUlVM3hleG40N3JyZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
