@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 334 days, 2:55:23
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 334 days, 10:30:33
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 41.7% | `██████░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.4% | `█████░░░░░░░░░░` |
 | **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [[오늘의 주목주] '금융주 강세' 신한지주 주가 5%대 상승, 코스피 외국인 순매도에 5290선 하락 마감 - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE9lbE1mTUtKcDZLUzVHRnZCeU41ODIyVXUya3VNelVBbnRKbzhPam5YQ29CSnlQY09FMEl5UzFBeUJVdlQ4Z083SXFGSnhPNGdFdURnZm1pQlJnVXhENWFSeG5sdUZoeFNKWVQ3R1VtdjVLVnM?oc=5)
-- [정진완 우리은행장 1년 연임 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1hVVBXeVVPdF83WFlveVAwaVd6VlpHNS1oRGFUc2wyS2Vrc0VkdVUwR2p2WFRuc25jQlZTOGZmNzh0QzU2RjlPTDBCbU9xa2VabkxUMkxUbXdfdw?oc=5)
+- [ESG 성적 'A+' 자랑한 KB·신한금융…옥에 티는 'LTV 담합' - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE44QXVITU1KTnlkRWg1NDJrVnFxdTM5SHhJRVNGaTRTcmJRNlBZbmUwRktqMC1KNWhlXzRYQ1JNN093bmV2cmE0ZzlIUERWVDVxUGdPa0JnRWlhbXk5aGlJWUJhNHpIUTJFTWh4NTEtSHc?oc=5)
+- [반나절만에 돌아선 외국인 [한경 프리미엄9 TODAY] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBLS1hKZ1VoMnpTSFNUOTNsRF9MdEFKci1PRUlpck5mQk95djkwRWQ2bGhQZWZMdVFOOE9US2pyTnA5V0tVbWpfWjZ2MmJPOFdMbVBmVzhfYVVBdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
