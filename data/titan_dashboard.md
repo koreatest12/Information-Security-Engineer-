@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 336 days, 7:34:51
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 336 days, 12:44:57
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.2% | `██████░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 45.2% | `██████░░░░░░░░░` |
+| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [ESG 성적 'A+' 자랑한 KB·신한금융…옥에 티는 'LTV 담합' - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE44QXVITU1KTnlkRWg1NDJrVnFxdTM5SHhJRVNGaTRTcmJRNlBZbmUwRktqMC1KNWhlXzRYQ1JNN093bmV2cmE0ZzlIUERWVDVxUGdPa0JnRWlhbXk5aGlJWUJhNHpIUTJFTWh4NTEtSHc?oc=5)
-- [[한경에세이] 루트 하나 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HdFNZaktaUHc0VmU5amJHSDFSVnVxTy1OVkJ1NzdGMlZvVEpmd0dKNWJ2Uk1DVnNRdThGclhHWE9EcDVYaTdmUWswa3F3bGRKazlMb2p0bktCdw?oc=5)
+- [앤트로픽 상장일 시총에 관심 [한경 프리미엄9 TODAY] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBRMWhQUlZqeWp2MXJaS0lxT3RHZ3c0dWxsai0ySUJtRHhYYnZualFnU0ZuWnFkN2lfNlhndWlPTjBZTFNKdDY1bjZ0UXNvZGltejZmY0M3X2RSUQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
