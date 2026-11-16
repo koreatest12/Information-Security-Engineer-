@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 336 days, 23:12:14
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 337 days, 8:52:05
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 42.4% | `██████░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 40.8% | `██████░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한자산신탁, 리츠운용 합병 앞두고 순익 회복세 - 딜사이트](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1jZzlxTWpBVzZfUl9nZGN6MGtndFd1Qm5DM3EwSzQ5NG50aXBTcVM5ZG1zdFBQUjBUWE1JM1BQZ1Q0dTF4bTlNU2ktZTZpanc?oc=5)
-- [교육부 "수능 연기 없다…AI 부정행위 추가 대책 검토" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBVXzM4SDZfZi0yZGp6cWFBZTdHdFY4cnd0YnZzNXJEV3FDa2J6bnJueEotUFlJQktfbGMtM3hLV3RkcF8zcEtEaWxvVm1kNzA3TnRPM1ZIR3Bkdw?oc=5)
+- [금융사 ESG 경영 성과 가시화…KB·신한금융, ESG 평가 ‘최상위권’ - 데일리e뉴스](https://news.google.com/rss/articles/CBMib0FVX3lxTE90S05ROGh0blN2NW1ZdkhsMmw3LU9mbTVIaFdPeVNqQ3ktcjd5UDVpZHlBMzducVJEbWVPMGVVZU5ITDJ3MWFlUmhQRkFrSGxmb0g2R2w2a0ZQa1BGZzVHR3doMzVGTHN1TmNHUDF0RQ?oc=5)
+- [대기업·中企 모두 대출 연체율 치솟아 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9vTXZZYnhGM0Q4cEJUbTJ5aExrNldyVUhTUjR2WUozaVRLYkNvTmI5bjlJbXRFNlBaemExTzJmSEd2T3J5QnlUbmU3NHVZRGpEaldVb1pkZkQ4UQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
