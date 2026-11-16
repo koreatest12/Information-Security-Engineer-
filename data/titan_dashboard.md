@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 336 days, 12:44:57
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 336 days, 16:23:43
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 45.2% | `██████░░░░░░░░░` |
+| **CPU** | `128 vCores` | 52.8% | `███████░░░░░░░░` |
 | **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [ESG 성적 'A+' 자랑한 KB·신한금융…옥에 티는 'LTV 담합' - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE44QXVITU1KTnlkRWg1NDJrVnFxdTM5SHhJRVNGaTRTcmJRNlBZbmUwRktqMC1KNWhlXzRYQ1JNN093bmV2cmE0ZzlIUERWVDVxUGdPa0JnRWlhbXk5aGlJWUJhNHpIUTJFTWh4NTEtSHc?oc=5)
-- [앤트로픽 상장일 시총에 관심 [한경 프리미엄9 TODAY] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBRMWhQUlZqeWp2MXJaS0lxT3RHZ3c0dWxsai0ySUJtRHhYYnZualFnU0ZuWnFkN2lfNlhndWlPTjBZTFNKdDY1bjZ0UXNvZGltejZmY0M3X2RSUQ?oc=5)
+- ['신한금융·포스코·유한양행' 성장 비결은 '창업자 정신' - 한경매거진](https://news.google.com/rss/articles/CBMibEFVX3lxTFBjY0lvRnJkbTh0RGh4LTllQVNHRzBJdld5czJDYzR1QmcyYXVad0VfTGdrMkx2NkgyeU5PMjU1RUZaTERGVlphUWxhVzJ6NDNoa0gxUzhzenNDcjFwMHdlTm9tMG5zVVpnclAwVA?oc=5)
+- [[밤 사이 해외뉴스 영상] 엔비디아 파문에…미국, AI 반도체 규제 강화 추진 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE43WF84akpkeDVqZDlxRE5iUjBjcDZsSXZkSWc0b0RkN0E4aWxXRUlKRVF5T3hfejVBc3NNd2VlY29iTHNVOHVzZ0dsRjljM203REtLN1VYcWlvdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
