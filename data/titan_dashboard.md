@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 336 days, 16:23:43
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 336 days, 23:12:14
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 52.8% | `███████░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.4% | `██████░░░░░░░░░` |
 | **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- ['신한금융·포스코·유한양행' 성장 비결은 '창업자 정신' - 한경매거진](https://news.google.com/rss/articles/CBMibEFVX3lxTFBjY0lvRnJkbTh0RGh4LTllQVNHRzBJdld5czJDYzR1QmcyYXVad0VfTGdrMkx2NkgyeU5PMjU1RUZaTERGVlphUWxhVzJ6NDNoa0gxUzhzenNDcjFwMHdlTm9tMG5zVVpnclAwVA?oc=5)
-- [[밤 사이 해외뉴스 영상] 엔비디아 파문에…미국, AI 반도체 규제 강화 추진 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE43WF84akpkeDVqZDlxRE5iUjBjcDZsSXZkSWc0b0RkN0E4aWxXRUlKRVF5T3hfejVBc3NNd2VlY29iTHNVOHVzZ0dsRjljM203REtLN1VYcWlvdw?oc=5)
+- [신한자산신탁, 리츠운용 합병 앞두고 순익 회복세 - 딜사이트](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1jZzlxTWpBVzZfUl9nZGN6MGtndFd1Qm5DM3EwSzQ5NG50aXBTcVM5ZG1zdFBQUjBUWE1JM1BQZ1Q0dTF4bTlNU2ktZTZpanc?oc=5)
+- [교육부 "수능 연기 없다…AI 부정행위 추가 대책 검토" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBVXzM4SDZfZi0yZGp6cWFBZTdHdFY4cnd0YnZzNXJEV3FDa2J6bnJueEotUFlJQktfbGMtM3hLV3RkcF8zcEtEaWxvVm1kNzA3TnRPM1ZIR3Bkdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
