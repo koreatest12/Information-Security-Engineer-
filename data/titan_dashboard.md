@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 337 days, 8:52:05
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 337 days, 16:49:41
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 40.8% | `██████░░░░░░░░░` |
-| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 36.7% | `█████░░░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [금융사 ESG 경영 성과 가시화…KB·신한금융, ESG 평가 ‘최상위권’ - 데일리e뉴스](https://news.google.com/rss/articles/CBMib0FVX3lxTE90S05ROGh0blN2NW1ZdkhsMmw3LU9mbTVIaFdPeVNqQ3ktcjd5UDVpZHlBMzducVJEbWVPMGVVZU5ITDJ3MWFlUmhQRkFrSGxmb0g2R2w2a0ZQa1BGZzVHR3doMzVGTHN1TmNHUDF0RQ?oc=5)
-- [대기업·中企 모두 대출 연체율 치솟아 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9vTXZZYnhGM0Q4cEJUbTJ5aExrNldyVUhTUjR2WUozaVRLYkNvTmI5bjlJbXRFNlBaemExTzJmSEd2T3J5QnlUbmU3NHVZRGpEaldVb1pkZkQ4UQ?oc=5)
+- [“모바일 뱅킹 쓴다지만 너무하네”…올해만 400대 폐쇄된 ATM, 신한은행 최다 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE9fZUM3UmszU3RZeFFQVFVQNkZ6ZHZ3WmNFVEhfa0dLbmZPeE83S0dPLTVFSFZKRzhSbHpLakRSNE5fYXFocDhOWmtmS3pnTVJkNUozYw?oc=5)
+- [[마켓라이브] 11월17일 증시(테스트) - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9FWTV6MFkxZ0NSYVFSX2hGbmdHWU8wWHUzVF8wTnduWWpDNUdqRmZwdUhfVEFDV2NWWWpZVmlHM3M0ZTFlejBYYVZCaFFhT0ZJcGRkSmpVR1V3QQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
