@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 337 days, 16:49:41
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 338 days, 0:55:26
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.7% | `█████░░░░░░░░░░` |
-| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 43.6% | `██████░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [“모바일 뱅킹 쓴다지만 너무하네”…올해만 400대 폐쇄된 ATM, 신한은행 최다 - 매일경제](https://news.google.com/rss/articles/CBMiVEFVX3lxTE9fZUM3UmszU3RZeFFQVFVQNkZ6ZHZ3WmNFVEhfa0dLbmZPeE83S0dPLTVFSFZKRzhSbHpLakRSNE5fYXFocDhOWmtmS3pnTVJkNUozYw?oc=5)
-- [[마켓라이브] 11월17일 증시(테스트) - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9FWTV6MFkxZ0NSYVFSX2hGbmdHWU8wWHUzVF8wTnduWWpDNUdqRmZwdUhfVEFDV2NWWWpZVmlHM3M0ZTFlejBYYVZCaFFhT0ZJcGRkSmpVR1V3QQ?oc=5)
+- [신한금융, 차기 은행장 등 자회사 CEO 숏리스트 선정 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1pdG5wOTJid1FFWkdZVzItR3AxeHFRSk9nS0FFb3ZSOS1jaldrZjJHUlV3aWRYZmhsT0lqTjBnWlcwY284V1Z0QnN0OGJ1TUNEZWh3YW9RbXNWOWcybGZscVdoQTdIQVg3VmpBVkNPbWM?oc=5)
+- [IMF "올해 한국경제 3.9% 성장 전망…AI발 이례적 호황" - 국제신문](https://news.google.com/rss/articles/CBMilAFBVV95cUxOUUZKWXRKUkxjcXQyZERTZlFOemkzX1R4M1doNUdIcTRnQmtfaVBUSUlmbWlhNTBRaE9XaWc1UjJadF90OG0yZW1UbmJURVhSYjFnYTNwWTBReGdNQkU4SmI0ZVZlanNaVTFLRVhiUFVkUDFrVjU1VVlSd0EweE1uRlBQc1hseWpEU0FOUVhRYUpTQnJI?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
