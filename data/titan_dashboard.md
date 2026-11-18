@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 338 days, 16:37:31
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 339 days, 0:03:38
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 36.8% | `█████░░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.0% | `██████░░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [주주가치 종합대상에 신한금융지주 - 조선일보](https://news.google.com/rss/articles/CBMiiwFBVV95cUxNYkphMzU0bjBYLWNzQklRTjdKZHVNbXZrU3FtM2gyQ0REQjZOdWVKNjRlTjBmOHZ2czk2azFnWlhhaHNDTlBMbFozSWl3Z1FoZnV5eDA3Rl9vckRpVHB4SlV5SS1INEZPRmJfd2t0aEI4djV6WTUxZTd6NV9BVGhYQXd0clR6eF9CY1NR?oc=5)
-- [[속보] 코스피 2.62% 상승 출발…다시 '5000피' 회복 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBhMUcxeTZQYlppblhvZ2ZXZ3RTNlNseTFwUmFoMjZKdHc3Nk9id0pUV1pVNndPR3NaYmctSHU5eTZjN043am5seUdTa2hoYWFFTTFkSFJIUFl5QQ?oc=5)
+- [신한금융, 차기 은행장 등 자회사 CEO 숏리스트 선정 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1pdG5wOTJid1FFWkdZVzItR3AxeHFRSk9nS0FFb3ZSOS1jaldrZjJHUlV3aWRYZmhsT0lqTjBnWlcwY284V1Z0QnN0OGJ1TUNEZWh3YW9RbXNWOWcybGZscVdoQTdIQVg3VmpBVkNPbWM?oc=5)
+- [[속보] 코스피 1.99% 상승 마감…5000피 회복 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1OR3RYOHExRVdiTG90cENBeUhHaVBnZDlxUXJEVGRzLURqa0lRU1JsdUZDMVE4Uk9qajhILTB3WXYyUlRDckVIbC1pQjVUazM2SnREVUJnMlBtZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
