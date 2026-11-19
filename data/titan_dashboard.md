@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 339 days, 20:35:57
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 340 days, 5:54:39
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 33.8% | `█████░░░░░░░░░░` |
-| **RAM** | `35.3/512 GB` | 6.9% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 49.8% | `███████░░░░░░░░` |
+| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 차기 은행장 등 자회사 CEO 숏리스트 선정 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1pdG5wOTJid1FFWkdZVzItR3AxeHFRSk9nS0FFb3ZSOS1jaldrZjJHUlV3aWRYZmhsT0lqTjBnWlcwY284V1Z0QnN0OGJ1TUNEZWh3YW9RbXNWOWcybGZscVdoQTdIQVg3VmpBVkNPbWM?oc=5)
-- [코스닥은 16% 빠졌는데…이 종목, 나 홀로 35% 뛰었다 [종목+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5EQ256SmZMUlpVdmJOQUE1YlJqN0FOVWhvSy02NlhnMGdRMHNockVXeXJNZVgtcElhTWRwZV9XSUdDeEplZVQ4bmVVdS1vcGJuSzk0eE5jU0FDZw?oc=5)
+- [롯데손보, 2800억 규모 무상감자…신한금융 편입 앞두고 재무구조 개선 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE1UOXJESjJqaUxsM0lHZVdMOFJwYzhBbTB0RTRza2VTRTFWWXdWRUdHNzR6bE5sNUlRb3k3VG5NV3VXRms4cjhGaGpmWmlydDVvbHVlc3pKUjJGMXl5eldHUzlhNlBaVzNCTjV2akFoUEtHbDg?oc=5)
+- [주가 40% 폭락했는데 쓸어담았다…외인 매수 1위 '이 종목' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBheWc2N3FZNm45X0t1OWM1eXRCczBVekI1QXl1N0VxbDZIQmNSRTZueUpaQWRrdGtBYVBIR1hqUzB1MkIzX0JWdFFrSXF2blRpVzFSV2FHbllqdw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
