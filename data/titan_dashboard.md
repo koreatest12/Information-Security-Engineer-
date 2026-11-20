@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 340 days, 14:12:27
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 340 days, 19:01:47
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -9,18 +9,18 @@
 > **Q:** 종합 상황 브리핑
 
 **🤖 AI Analysis:**
-- [FIN_SHINHAN] 롯데손보, 무상감자 추진…신한금융 "건전성 강화 지원할 것"(종합) - 뉴시스
+- [KR_ECON] 앤트로픽 상장 직후 AI株 투매…나스닥 2.25%↓ [뉴욕증시 브리핑] - 한국경제
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 40.7% | `██████░░░░░░░░░` |
-| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.2% | `█████░░░░░░░░░░` |
+| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한금융, 차기 은행장 등 자회사 CEO 숏리스트 선정 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE1pdG5wOTJid1FFWkdZVzItR3AxeHFRSk9nS0FFb3ZSOS1jaldrZjJHUlV3aWRYZmhsT0lqTjBnWlcwY284V1Z0QnN0OGJ1TUNEZWh3YW9RbXNWOWcybGZscVdoQTdIQVg3VmpBVkNPbWM?oc=5)
-- ["내년 '3000조원' 쏟아진다"…삼전닉스에 또 '초대형 호재' - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5iUGR6dV9XaXl3ZU1zMnBvbXBuaEFMcm50SzhaSDVyUVBSZkNaOFE2Q2NTNDVxczFjWlMyY085emVXdDBTWnNBNDh2cW04LVdFYjQwbl8wbDFqQQ?oc=5)
+- [신한증권·벤처, LP 성장펀드 펀드레이징 나섰다 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTFBpU0VMSXRoOEwyOWItbUR6Q2tvWU1UZWhuZE0wcDFlVGhqSUc3Z1Q0VS1ZTXcyN2lDa2ZTYi1QamhWeGxmQ0tobm50ZkNtcHU5NjA4bVJObDlHUzFzcWl3WUhMb3hXTXpKN29KMndoTUo?oc=5)
+- [앤트로픽 상장 직후 AI株 투매…나스닥 2.25%↓ [뉴욕증시 브리핑] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9zTVR6YjluNnQ4Y0loTmdLNDJCSHIxRkxlUlVpbUd3UkxHZ2VIUHZGRjFFVzRHQ2hBM1ZiYXVZVUtzcmFPTThTOWprb1lRVFVfUTBEVHNOME1pQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
