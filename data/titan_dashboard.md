@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 340 days, 19:01:47
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 341 days, 2:58:34
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -8,19 +8,18 @@
 
 > **Q:** 종합 상황 브리핑
 
-**🤖 AI Analysis:**
-- [KR_ECON] 앤트로픽 상장 직후 AI株 투매…나스닥 2.25%↓ [뉴욕증시 브리핑] - 한국경제
+관련 정보 없음
 
 ---
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.2% | `█████░░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 40.5% | `██████░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한증권·벤처, LP 성장펀드 펀드레이징 나섰다 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTFBpU0VMSXRoOEwyOWItbUR6Q2tvWU1UZWhuZE0wcDFlVGhqSUc3Z1Q0VS1ZTXcyN2lDa2ZTYi1QamhWeGxmQ0tobm50ZkNtcHU5NjA4bVJObDlHUzFzcWl3WUhMb3hXTXpKN29KMndoTUo?oc=5)
-- [앤트로픽 상장 직후 AI株 투매…나스닥 2.25%↓ [뉴욕증시 브리핑] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9zTVR6YjluNnQ4Y0loTmdLNDJCSHIxRkxlUlVpbUd3UkxHZ2VIUHZGRjFFVzRHQ2hBM1ZiYXVZVUtzcmFPTThTOWprb1lRVFVfUTBEVHNOME1pQQ?oc=5)
+- [차기 신한은행장 내달 3일 결정…숏리스트엔 정상혁 현 행장 포함 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxNemlsb2F2Ykh3U25CVzg3LUhSMlJaVVFkWV9mdnNtZHYyekdaRHFocWlGcFl0TGhMWXJGRVJiX2p6Tld2QlBVV0l5YWd3WHpEYzVvcHJacjVXUDIyRG5IM0RxSTJ5c3BySHBTYkFJTl9Gb1lySnNvMkNKWUNITnBUTnRrZw?oc=5)
+- ["2억7000만원이 1억 됐다"…버티다 지친 삼전닉스 개미들 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5tOFB6aS1FOTI5dGpUQV9mWkNQekd2UHlEeWR3aUZDNFRiZFg0clZxeTI5MUFzanJheE94R2VDb2VoZXVLSEczdEJBTzBSdm1OQjg4U0lhb2hZQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
