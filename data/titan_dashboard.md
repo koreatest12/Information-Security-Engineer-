@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 342 days, 23:55:30
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 343 days, 8:02:13
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,11 +14,11 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.1% | `██████░░░░░░░░░` |
-| **RAM** | `36.4/512 GB` | 7.1% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 39.9% | `█████░░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신한·KB·JB금융, ESG등급 ‘A+’ 최우수 - 매일일보](https://news.google.com/rss/articles/CBMiZEFVX3lxTE9EMWlEMG1uQk9XaWY3RlpvcDhlUDBaOW5RT3RwSmVZQ0cwMU4zNWdOYnpzNm43SkRwc1paN2JNYXpyejc2YUZqN2JuZGxOOTFpakVQeHlZb2Y0ZFFHVEtxcHh0enM?oc=5)
+- [롯데손보, 신한 편입 전 90% 무상감자…기본자본 4600억원 확충 - 인베스트조선](https://news.google.com/rss/articles/CBMigwFBVV95cUxNT2hIOE04Z2JoamFrb0xma2dzSGY2eHhwT1RJVi1SdkRZNFJ4QWZmVWNMQUlJT2ZobmYtWFZCUE5MRTNxdTlfZW0xLVVmWVZwaGtGX1pnT3ljRW1vYjI3dWtYVmJ0QkRxZGJRMnByTVVlT3p1MGFnZ2ladkNkclo4UVY1UQ?oc=5)
 - [개미들 덮친 170조 폭탄…패닉셀 부른 '숨은 리스크' 있었다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Rc0lWeW0tYlVtSDVBWk9HejVJWG0zUlp2eGxLQnZ6ZzZiRERZUUJaNVNxOFRfNmY3Rll5N2VlSTRqUF8zendtX01uQTJVT3J3SWh4cS1aRS1MUQ?oc=5)
 
 ---
