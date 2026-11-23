@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 344 days, 2:14:35
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 344 days, 14:05:03
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -15,12 +15,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 40.4% | `██████░░░░░░░░░` |
-| **RAM** | `37.4/512 GB` | 7.3% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 48.2% | `███████░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [박종복 차기 은행연합회장, 신한금융 사외이사 8개월 만에 물러난다 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE5SbGlPMTd6eVhvLWpPc0hsNXE5TXdyS1N3TEdSenVUMnk0eDY3SUR1UWFPTVZtZk9QOUJQVjlVMVh6dG84Q1h2YzBESEZ0UmwyTHRvbmhucncyYWVLbzhFSm5ObFJwaFFLb3QtLURZVHE?oc=5)
-- [삼전닉스 싸다고 줍줍했다간…증권가 '서늘한 경고' [머니팁] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wWHhOeDlCTElJRnlaQUl4a0U3NkluLV9xSzMxa2VHdXNyRTNnQnB5aDA1NkFBQWFoN0lURHpuRDBTR3J6VnpRSWM0Zk1QejVIeFlob1N0amxYQQ?oc=5)
+- [[금융지주 임원 인사 전망] [신한금융] 진옥동의 '파격 발탁' 통했다…채수웅 대표, 순익 선두로 재신임 받을까 - 딜사이트](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5WQ25NOTJSU0s1NWZsNGVMaUdSb0JnUDAyMlc1eEY2QUMwd3Y0bUcxb2hvT0puTkNIdkNTVG1oY1FnNjI1TU1QT29OekNpWUk?oc=5)
+- [경제부총리 "증안펀드 포함 비상계획 있다…상황 검토해 투입 판단" - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ZYlp2MVlvUklsOHRUczZnOElHTDNMQVBaSXdtTTJsVkFob3ItSzR0TVEtS3FoR0tkZUlXT0l3VGthbUpTWHdDdzdpcmU0eXRYWjg0emJQZ3E0dw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
