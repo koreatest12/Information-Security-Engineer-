@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 344 days, 21:57:58
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 345 days, 8:54:55
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 39.5% | `█████░░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.5% | `██████░░░░░░░░░` |
+| **RAM** | `34.8/512 GB` | 6.8% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [박종복 차기 은행연합회장, 신한금융 사외이사 8개월 만에 물러난다 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE5SbGlPMTd6eVhvLWpPc0hsNXE5TXdyS1N3TEdSenVUMnk0eDY3SUR1UWFPTVZtZk9QOUJQVjlVMVh6dG84Q1h2YzBESEZ0UmwyTHRvbmhucncyYWVLbzhFSm5ObFJwaFFLb3QtLURZVHE?oc=5)
-- [현대차 로봇 1400대 관리하는 K 소프트웨어 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFB1TlVGT3FQT2lqRm81ZnNHNTFFMzB1eXpNamM4eTZJckRpOTBiSjZ3czJHOHZIektNQnJBZHhUUTNMVmQ1cnZFNmJtRl9qLWtyYW5QYURvcmd4UQ?oc=5)
+- [신한금융 '지속가능성보고서상' 11번째 수상, 진옥동 "ESG 성과 창출 지속" - 비즈니스포스트](https://news.google.com/rss/articles/CBMic0FVX3lxTE9ZOFdFbEg2RUlWVEZGWEdTLTBPSHpremV3QVFMeEhiZkt5a3dXNVBzZzUwSk9tOWZkYVQ4c2R5dG9LaWVLZ0dfMmktYjdzUEMwRDktSE00VFBOUU5NY2ZCRENFRVdiQWxOR1dNUU80cmhPbk0?oc=5)
+- [[속보] 코스피 6.32% 급등해 '오천피' 회복…코스닥도 4.79%↑ - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9YVXpQQ3RaZ0x1M1RhT1VMX2VmSDZSNllWVU1IS3dsUjdSU1BZSnNDeHgtMGxLYkdKN2pOeFpIMDZXWDFvUGJZV2x1dUJLUFEtMFBnMWhEUWV2UQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
