@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 346 days, 18:48:49
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 347 days, 3:54:47
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 30.2% | `████░░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 47.2% | `███████░░░░░░░░` |
+| **RAM** | `38.4/512 GB` | 7.5% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [현대건설 끌고 신한금융 밀고…힐튼호텔 부지 개발자금 3.7조 모았다 - 딜북뉴스](https://news.google.com/rss/articles/CBMiugFBVV95cUxQVVN2Q25Xd0hYakVsQTRxZkZfTFBUUUxJdEtaM3otUDhjWC1MZ2RWcDBqZ0s3ckhyT1lQUE1QMnJtRGtpbnNFRkxnSlozVEtGUmRGcjQ0Y2c1Z2Q2eS14MERYanFkOC1zUGVSbUJ4a2dDcTFDX0JTd1ZaZ0NkelAtWGV6MDE4WjdXTTRKRm9pMl9CYXdjN29pejZERENKaGtCQm93VnF0SUVmRWYtaWg0ZWl4blNkYVotWkE?oc=5)
-- [[단독] 코스피 6% 급락한 날…정부, 증안펀드 확대 추진 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE4zZW9JZXdkaG1NN3Zib3h2Mi1MbGxOWjlaQUFsLVZhZW93dm5BaVoxZWZmbXB2MjZYeHpLZmpCcGw3Zi1OdXg0dE1VcTRDRU9SdnB6eWY2ZG40QQ?oc=5)
+- [박종복 은행연합회장 내정자, 신한금융 사외이사 중도 사임 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE5DcVJ0dWJNUkxrcERkQ2dnZjd2T2loZzk2SE9HZHVNZENqZF9laU9tZGJXX05BUVl6MS1nclJqMF9mSjBMalhCU1RMd3puY2RrUzliMVY3NnVwNk1fYXFHREF0QWNhRHdKeGxucFN1Z08?oc=5)
+- [[단독] 증안펀드 투자관리위 긴급 개최…5대 금융지주 회장도 모인다 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1hT1R1LVd1clNkWUc4aFZ3cGdvUFpNSkUzTWNYdENyczhWaXJIS1ZMSmlQRWQwX096U05XVVNiZ3hnZlhIdThselhoclhNOTZ3Ukt3cDZpZmc5Zw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
