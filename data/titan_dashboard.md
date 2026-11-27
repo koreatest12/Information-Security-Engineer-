@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 347 days, 19:38:46
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 348 days, 5:08:40
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 42.1% | `██████░░░░░░░░░` |
-| **RAM** | `39.4/512 GB` | 7.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.0% | `██████░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [신보-신한은행, 유망 청년창업기업에 1,000억 금융 지원 - 와우테일](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5Ld21xNDVVdWlCY0VBbTdtMkxraVlhemlWT3RwbXVEa1ZERnhoa1NMbWI4RHVMQ2JDTVFZSmpiWFZkdm40RnlXbHdWck4wRzA?oc=5)
-- [[속보] 한은, 내년 경제성장률 2.9%→4.1% 대폭 상향 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1OYVFHbG9hWnZsRllUZGhfTEdkaTZTX2JHNUZQVUVVOVh3U0IyaGhpdk4xSXZRd1ltdlFOQ0hkVFNnWUVKS1lsNGFyOVRoMU5TaTJrTEUtRHNHdw?oc=5)
+- [롯데손보, 19년 만에 간판 바꾼다…내년 7월 '신한손해보험' - 딜사이트](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9oSmVvZTh1VVU4RlZKcG9yWEVKWEtKTXpzV2NjVUlmSUFta0NCc1p0Y3ZfZ2UtWHlVS0ZHVUlneHFhZmVkVVRDbEpSeEhWelU?oc=5)
+- ['이 시나리오면 2028년 먹구름'…한국은행이 보낸 경고 [분석+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5IemJGWkRqX1VIWmo2cmI2Y1pCTXh5bi1CV2tzYzM0VU83MVZSVUdzUHpzSFh1RHVsV0FzbkpfWHB4VWlPS2pvN2FwOFAyZklvNVZVM3d1WVQtQQ?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
