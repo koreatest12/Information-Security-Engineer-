@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 348 days, 14:00:37
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 348 days, 19:55:13
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,12 +14,12 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 43.8% | `██████░░░░░░░░░` |
-| **RAM** | `37.9/512 GB` | 7.4% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 38.7% | `█████░░░░░░░░░░` |
+| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
-- [롯데손보, 19년 만에 간판 바꾼다…내년 7월 '신한손해보험' - 딜사이트](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9oSmVvZTh1VVU4RlZKcG9yWEVKWEtKTXpzV2NjVUlmSUFta0NCc1p0Y3ZfZ2UtWHlVS0ZHVUlneHFhZmVkVVRDbEpSeEhWelU?oc=5)
-- ["없어서 못 판다더니 웬일"…반도체 시장에 심상찮은 신호 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBhZ085a2U0Ui01czVPZHZFd2RtUEotSU9jdHlMaVBpVWllS1d3VGdEOEdvLV9WNmxZTkhhSHlrUnJweFZvenI0Zkhud2xEWnVvRTY2SF9wOTgtUQ?oc=5)
+- [박종복 은행연합회장 내정자, 신한금융 사외이사 중도 사임 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE5DcVJ0dWJNUkxrcERkQ2dnZjd2T2loZzk2SE9HZHVNZENqZF9laU9tZGJXX05BUVl6MS1nclJqMF9mSjBMalhCU1RMd3puY2RrUzliMVY3NnVwNk1fYXFHREF0QWNhRHdKeGxucFN1Z08?oc=5)
+- ['한한령 풀리면 날아갈 줄 알았는데'…일주일 만에 '날벼락' [종목+] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1uV1lEZ2ZxbjFES2hLSm1xb0RQbUlQZzZfTFgwVjRZa19aX0RXeDdkMGxwT19QYVRrQXQ0QnRfY1JVb0owSVJIUlhTOUdMektQVHdNSzNSeTdFZw?oc=5)
 
 ---
 *Titan-Infra v35.0 Automated Dashboard*
