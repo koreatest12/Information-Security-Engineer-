@@ -1,5 +1,5 @@
 # 🏛️ Grand Ops Titan-Infra Control Center
-> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 348 days, 19:55:13
+> **Status:** 🟢 Optimal (Gen 1) | **Uptime:** 349 days, 4:49:06
 
 ### 🎮 Operations Control Center
 시스템 제어가 필요하면 아래 버튼을 클릭하여 **Run workflow**를 실행하십시오.
@@ -14,8 +14,8 @@
 ### ⚡ Hardware Metrics
 | Resource | Spec | Usage | Graph |
 |---|---|---|---|
-| **CPU** | `128 vCores` | 38.7% | `█████░░░░░░░░░░` |
-| **RAM** | `34.3/512 GB` | 6.7% | `█░░░░░░░░░░░░░░` |
+| **CPU** | `128 vCores` | 42.3% | `██████░░░░░░░░░` |
+| **RAM** | `35.8/512 GB` | 7.0% | `█░░░░░░░░░░░░░░` |
 
 ### 🏦 Financial Briefing
 - [박종복 은행연합회장 내정자, 신한금융 사외이사 중도 사임 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTE5DcVJ0dWJNUkxrcERkQ2dnZjd2T2loZzk2SE9HZHVNZENqZF9laU9tZGJXX05BUVl6MS1nclJqMF9mSjBMalhCU1RMd3puY2RrUzliMVY3NnVwNk1fYXFHREF0QWNhRHdKeGxucFN1Z08?oc=5)
